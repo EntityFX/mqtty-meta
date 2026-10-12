@@ -1,0 +1,12 @@
+[submodule "diss"]
+	path = diss
+	url = https://github.com/EntityFX/diss
+	branch = develop
+[submodule "MqttBenchmark"]
+	path = MqttBenchmark
+	url = https://github.com/EntityFX/MqttBenchmark
+	branch = develop
+[submodule "mqtty"]
+	path = mqtty
+	url = https://github.com/entityfx/mqtty
+	branch = develop
