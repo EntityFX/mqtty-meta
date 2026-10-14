@@ -72,7 +72,7 @@ class AdapterTests(unittest.TestCase):
         write(self.root / 'transport.json', {'network': {'transferTicks': 2}, 'transferTicksByBroker': {'Aedes': 2}})
         return campaign, write, read
 
-    def execute_fake(self, campaign, stage, code=3):
+    def execute_fake(self, campaign, stage, code=3, free_gib=100):
         live = set()
         processes = []
         maximum = [0]
@@ -112,7 +112,7 @@ class AdapterTests(unittest.TestCase):
                 self.code = -9
                 live.discard(self.pid)
 
-        with mock.patch.object(pathlib.Path, 'read_text', memory_read), mock.patch.object(adapter.subprocess, 'Popen', Process), mock.patch.object(adapter.time, 'sleep'):
+        with mock.patch.object(pathlib.Path, 'read_text', memory_read), mock.patch.object(adapter.subprocess, 'Popen', Process), mock.patch.object(adapter.time, 'sleep'), mock.patch.object(adapter.shutil, 'disk_usage', return_value=types.SimpleNamespace(free=free_gib * 1024**3)):
             campaign.simulate('Aedes', stage)
         return maximum[0], processes
 
@@ -164,6 +164,14 @@ class AdapterTests(unittest.TestCase):
         campaign, _, _ = self.campaign()
         with self.assertRaisesRegex(RuntimeError, 'CLI exit 2'):
             self.execute_fake(campaign, 'holdout', code=2)
+        self.assertFalse((self.root / 'brokers/Aedes/simulations/holdout-10s/index.json').exists())
+        self.assertNotIn('activeSimulations', campaign.state)
+
+    def test_low_disk_cancels_children_without_deleting_evidence(self):
+        campaign, _, _ = self.campaign()
+        with self.assertRaisesRegex(RuntimeError, 'Low disk space'):
+            self.execute_fake(campaign, 'holdout', free_gib=5)
+        self.assertTrue(list(campaign.storage.rglob('summary.json')))
         self.assertFalse((self.root / 'brokers/Aedes/simulations/holdout-10s/index.json').exists())
         self.assertNotIn('activeSimulations', campaign.state)
 
