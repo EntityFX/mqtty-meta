@@ -86,6 +86,8 @@ def main():
         report.LIMITATIONS += (f' Ревизия симуляций: {cohort}; MqttY commit {plan["simulatorRevision"]}. '
             'Таблицы и графики включают только эту ревизию модели. Результаты прежней модели сохранены отдельно; '
             'натурные observations и замороженные профили используются повторно без перекалибровки.')
+        if plan.get('modelRevisionNote'):
+            report.LIMITATIONS += ' ' + plan['modelRevisionNote']
     if plan.get('reportMachineDescription'):
         original_build = run.build
 
