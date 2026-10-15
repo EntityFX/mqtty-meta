@@ -46,6 +46,30 @@ def cohort_rows(rows, cohort):
     return [row for row in rows if pathlib.Path(row['directory']).parents[1].name.endswith('-' + cohort)]
 
 
+def memory_working_set(current, statistics):
+    # memory.current includes reclaimable file cache populated by archive checks.
+    # Keep dirty/writeback pages in the budget until they can be reclaimed.
+    reclaimable = max(0, statistics.get('inactive_file', 0) - statistics.get('file_dirty', 0)
+                      - statistics.get('file_writeback', 0))
+    return current - min(current, reclaimable)
+
+
+def memory_admission(working, baseline, active, available, policy):
+    reserve = int(policy['reservationPerJobBytes'])
+    projected = max(working + reserve, baseline + (active + 1) * reserve)
+    return (projected <= int(policy['maxWorkingSetBytes']) and
+            available >= reserve + int(policy['minSystemAvailableBytes']))
+
+
+def memory_snapshot(group):
+    current = int((group / 'memory.current').read_text())
+    stat = {k: int(v) for k, v in (line.split() for line in (group / 'memory.stat').read_text().splitlines())}
+    available = int(next(line.split()[1] for line in pathlib.Path('/proc/meminfo').read_text().splitlines()
+                         if line.startswith('MemAvailable:'))) * 1024
+    return {'current': current, 'workingSet': memory_working_set(current, stat),
+            'anon': stat.get('anon', 0), 'file': stat.get('file', 0), 'systemAvailable': available}
+
+
 def main():
     root = pathlib.Path(sys.argv[sys.argv.index('--series') + 1]).resolve()
     plan = json.loads((root / 'series.json').read_text(encoding='utf-8-sig'))
@@ -201,15 +225,36 @@ def main():
             if not 1 <= workers <= 4:
                 raise RuntimeError('Simulation concurrency must be between one and four')
             active = []
+            policy = self.plan.get('simulationMemoryPolicy')
+            group = pathlib.Path('/sys/fs/cgroup' + self.state['controllerRuntime']['cgroup'])
+            baseline = memory_snapshot(group)['workingSet'] if policy else 0
+            last_memory_log = 0
+
+            def memory_ready():
+                nonlocal last_memory_log
+                if not policy:
+                    used = int((group / 'memory.current').read_text())
+                    if used > 7 * run.GIB:
+                        raise RuntimeError('Simulator process group exceeded 7 GiB; evidence retained')
+                    return used < 5 * run.GIB
+                snapshot = memory_snapshot(group)
+                self.state['simulationResources'] = snapshot | {'activeProcesses': len(active), 'workerLimit': workers}
+                if time.monotonic() - last_memory_log >= 10:
+                    with (self.root / 'simulation-memory.ndjson').open('a', encoding='utf-8') as stream:
+                        stream.write(json.dumps({'utc': datetime.datetime.now(datetime.timezone.utc).isoformat()}
+                                                | self.state['simulationResources']) + '\n')
+                    last_memory_log = time.monotonic()
+                if snapshot['workingSet'] > int(policy['maxWorkingSetBytes']):
+                    raise RuntimeError('Simulator working-set memory guard; evidence retained')
+                if snapshot['systemAvailable'] < int(policy['minSystemAvailableBytes']):
+                    raise RuntimeError('Host available-memory guard; evidence retained')
+                return memory_admission(snapshot['workingSet'], baseline, len(active), snapshot['systemAvailable'], policy)
+
             try:
                 while jobs or active:
                     self.storage_check()
-                    # Stop admitting new work if resident memory approaches the 8 GiB group limit.
-                    memory = pathlib.Path('/sys/fs/cgroup' + self.state['controllerRuntime']['cgroup']) / 'memory.current'
-                    memory_used = int(memory.read_text())
-                    if memory_used > 7 * run.GIB:
-                        raise RuntimeError('Simulator process group exceeded 7 GiB; evidence retained')
-                    while jobs and len(active) < workers and memory_used < 5 * run.GIB:
+                    ready = memory_ready()
+                    while jobs and len(active) < workers and ready:
                         self.storage_check()
                         job = jobs.pop(0)
                         tag = broker + '-' + stage + '-' + job['key']
@@ -228,7 +273,7 @@ def main():
                         self.state['activeSimulations'] = [{'tag': t, 'pid': p.pid, 'log': str(l)} for _, p, _, l, t in active]
                         self.state['active'] = self.state['activeSimulations'][0]
                         self.save()
-                        memory_used = int(memory.read_text())
+                        ready = memory_ready()
                     if not active and jobs:
                         raise RuntimeError('Insufficient memory to admit another simulator')
                     time.sleep(2)

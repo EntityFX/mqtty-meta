@@ -16,6 +16,18 @@ spec.loader.exec_module(adapter)
 
 
 class AdapterTests(unittest.TestCase):
+    def test_working_set_keeps_anon_and_dirty_cache_in_memory_budget(self):
+        self.assertEqual(350, adapter.memory_working_set(1000, {'inactive_file': 800, 'file_dirty': 100, 'file_writeback': 50}))
+        self.assertEqual(1000, adapter.memory_working_set(1000, {'inactive_file': 20, 'file_dirty': 100}))
+        self.assertEqual(0, adapter.memory_working_set(1000, {'inactive_file': 2000}))
+
+    def test_admission_reserves_for_starting_jobs_before_their_heaps_grow(self):
+        policy = {'reservationPerJobBytes': 200, 'maxWorkingSetBytes': 600, 'minSystemAvailableBytes': 100}
+        self.assertTrue(adapter.memory_admission(50, 50, 1, 1000, policy))
+        self.assertFalse(adapter.memory_admission(50, 50, 2, 1000, policy))
+        self.assertFalse(adapter.memory_admission(450, 50, 1, 1000, policy))
+        self.assertFalse(adapter.memory_admission(50, 50, 0, 299, policy))
+
     def test_cohort_names_reject_path_escape_and_rows_exclude_old_model(self):
         for name in ('../old', '/tmp', 'a/b', '', 'ratefix-bd34c7c'):
             if name in ('', 'ratefix-bd34c7c'):
@@ -160,6 +172,31 @@ class AdapterTests(unittest.TestCase):
         base = self.root / 'brokers/Aedes/simulations/fidelity-10s-ratefix-bd34c7c'
         self.assertEqual(72, len(read(base / 'index.json')['runs']))
         self.assertEqual(100_000, read(base / 'm16.q0.p1.s42.json')['experiment']['measurementTicks'])
+
+    def test_memory_reservations_limit_pool_before_child_memory_is_visible(self):
+        campaign, _, read = self.campaign()
+        campaign.plan['simulationFidelityWorkers'] = 4
+        campaign.plan['simulationMemoryPolicy'] = {'reservationPerJobBytes': 2 * 1024**3,
+            'maxWorkingSetBytes': 6 * 1024**3, 'minSystemAvailableBytes': 2 * 1024**3}
+        snapshot = {'current': 5 * 1024**3, 'workingSet': 100 * 1024**2,
+                    'systemAvailable': 10 * 1024**3, 'anon': 100 * 1024**2, 'file': 4 * 1024**3}
+        with mock.patch.object(adapter, 'memory_snapshot', return_value=snapshot):
+            maximum, processes = self.execute_fake(campaign, 'fidelity')
+        self.assertEqual(2, maximum)
+        self.assertEqual(72, len(processes))
+        self.assertEqual(72, len(read(self.root / 'brokers/Aedes/simulations/fidelity-10s/index.json')['runs']))
+
+    def test_memory_guard_cancels_started_children_without_indexing_incomplete_work(self):
+        campaign, _, _ = self.campaign()
+        campaign.plan['simulationMemoryPolicy'] = {'reservationPerJobBytes': 2 * 1024**3,
+            'maxWorkingSetBytes': 6 * 1024**3, 'minSystemAvailableBytes': 2 * 1024**3}
+        low = {'current': 100, 'workingSet': 100, 'systemAvailable': 10 * 1024**3}
+        high = dict(low, workingSet=7 * 1024**3)
+        with mock.patch.object(adapter, 'memory_snapshot', side_effect=[low, low, high]):
+            with self.assertRaisesRegex(RuntimeError, 'working-set memory guard'):
+                self.execute_fake(campaign, 'holdout')
+        self.assertNotIn('activeSimulations', campaign.state)
+        self.assertFalse((self.root / 'brokers/Aedes/simulations/holdout-10s/index.json').exists())
 
     def test_four_workers_preserve_all_seeds_and_short_window_has_separate_directory(self):
         campaign, write, read = self.campaign()
