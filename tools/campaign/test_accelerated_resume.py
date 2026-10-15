@@ -1,6 +1,9 @@
 import importlib.util
+import base64
+import html
 import json
 import pathlib
+import re
 import tempfile
 import types
 import unittest
@@ -34,7 +37,7 @@ class AdapterTests(unittest.TestCase):
         with self.assertRaises(ET.ParseError):
             adapter.graphml_parse(ET.parse, path)
 
-    def campaign(self):
+    def campaign(self, machine_description=None):
         def read(path):
             return json.loads(pathlib.Path(path).read_text(encoding='utf-8'))
 
@@ -47,12 +50,26 @@ class AdapterTests(unittest.TestCase):
         write(example, {'experiment': {}, 'network': {}})
         write(self.root / 'series.json', {'benchmarkRepository': str(self.root), 'simulatorExample': str(example),
             'simulationMeasurementSeconds': 10, 'mqttYRepository': str(self.root), 'simulatorCli': 'frozen.dll'})
+        if machine_description:
+            plan = read(self.root / 'series.json')
+            plan['reportMachineDescription'] = machine_description
+            write(self.root / 'series.json', plan)
         fake_run = types.SimpleNamespace(Campaign=object, read=read, atomic_json=write, BROKERS=('Aedes',),
             GIB=1024**3, digest=lambda path: 'frozen-sha')
         captured = []
         fake_run.main = lambda: captured.append(fake_run.Campaign)
         fake_report = types.SimpleNamespace(ET=types.SimpleNamespace(parse=ET.parse),
             experiments=lambda root, broker: [], table=lambda headers, rows: (headers, rows), LIMITATIONS='')
+
+        def build(directory, broker, entry):
+            reports = pathlib.Path(directory) / 'reports'
+            reports.mkdir(exist_ok=True)
+            (reports / (broker + '.md')).write_text('# Report\n\nLinux 192.168.5.1 выполняет контроллер old CPU layout\n\nResult: completed', encoding='utf-8')
+            (reports / (broker + '.html')).write_text('<!doctype html><html><style>body{}</style>old</html>', encoding='utf-8')
+
+        fake_run.build = build
+        fake_report.markdown = types.SimpleNamespace(markdown=lambda text, extensions: '<p>' + html.escape(text) + '</p>')
+        fake_report.html, fake_report.base64, fake_report.re = html, base64, re
         with mock.patch.dict('sys.modules', {'run': fake_run, 'report': fake_report}), mock.patch('sys.argv', ['adapter', '--series', str(self.root)]):
             adapter.main()
         cls = captured[0]
@@ -65,6 +82,7 @@ class AdapterTests(unittest.TestCase):
         campaign.storage_check = lambda: None
         campaign.system_disk = lambda: self.root
         campaign.report = lambda broker, stage: None
+        campaign.test_run = fake_run
         points = [{'messageBytes': size, 'qos': qos, 'publishers': n, 'attemptedRps': {'mean': 100}}
                   for size in (16, 256) for qos in range(3) for n in (1, 16, 64, 128)]
         for stage in ('calibration', 'validation'):
@@ -132,6 +150,16 @@ class AdapterTests(unittest.TestCase):
         self.assertEqual(0, config['experiment']['refreshStrategy'])
         self.assertTrue(pathlib.Path(config['referenceObservationsPath']).as_posix().endswith('validation/broker-observations.v3.json'))
         self.assertNotIn('activeSimulations', campaign.state)
+
+    def test_portable_report_replaces_old_host_cpu_layout_in_markdown_and_html(self):
+        campaign, _, _ = self.campaign(machine_description='Linux target-machine; broker CPU 8; controller CPU 1,3,7,9')
+        campaign.test_run.build(self.root, 'Aedes', {'stage': 'pending'})
+        for suffix in ('md', 'html'):
+            text = (self.root / 'reports' / ('Aedes.' + suffix)).read_text(encoding='utf-8')
+            self.assertIn('broker CPU 8', text)
+            self.assertIn('controller CPU 1,3,7,9', text)
+            self.assertNotIn('192.168.5.1', text)
+            self.assertIn('Result: completed', text)
 
     def test_relay_starts_only_two_workers(self):
         campaign, _, read = self.campaign()

@@ -62,11 +62,41 @@ def main():
         return original_table(headers, rows)
 
     report.experiments, report.table = experiments_with_duration, table_with_duration
-    report.LIMITATIONS += (' Изменение программы разрешено пользователем: новые симуляции измеряют 10 секунд после прежнего warmup 5 секунд; '
+    report.LIMITATIONS += (f' Программа серии: новые симуляции измеряют {plan.get("simulationMeasurementSeconds", 30)} секунд после warmup 5 секунд; '
         'drain максимум 30 секунд, tick 0,1 мс, seeds, пороги и профили сохранены. Натурные измерения остаются 30-секундными. '
-        'Ранее завершённые 30-секундные симуляции Aedes сохранены отдельной выборкой; длительность каждой строки указана в таблице и JSON. '
+        'Выборки с разной длительностью сохраняются отдельно; длительность каждой строки указана в таблице и JSON. '
         'Сокращённое окно уменьшает число наблюдений и устойчивость p99; эти выборки нельзя считать одинаковыми по длительности. '
         'Параллельны независимые процессы экспериментов; внутри каждого сохранён последовательный refresh. Натурные измерения с ними не пересекаются.')
+    if plan.get('reportMachineDescription'):
+        original_build = run.build
+
+        def build_portable_report(directory, broker, entry):
+            original_build(directory, broker, entry)
+            reports = pathlib.Path(directory) / 'reports'
+            md = reports / (broker + '.md')
+            text = md.read_text(encoding='utf-8')
+            paragraphs = text.split('\n\n')
+            original = next((p for p in paragraphs if p.startswith('Linux 192.168.5.1 выполняет контроллер')), None)
+            if original is None:
+                raise RuntimeError('Unknown native report layout; machine description was not replaced')
+            text = text.replace(original, plan['reportMachineDescription'], 1)
+            md.write_text(text, encoding='utf-8')
+            body = report.markdown.markdown(text, extensions=['tables', 'fenced_code'])
+
+            def inline_image(match):
+                path = reports / report.html.unescape(match.group(1))
+                if not path.is_file():
+                    return match.group(0)
+                return 'src="data:image/png;base64,' + report.base64.b64encode(path.read_bytes()).decode() + '"'
+
+            body = report.re.sub(r'src="([^"]+)"', inline_image, body)
+            target = reports / (broker + '.html')
+            header, separator, _ = target.read_text(encoding='utf-8').partition('</style>')
+            if not separator:
+                raise RuntimeError('Unknown native HTML report layout')
+            target.write_text(header + separator + body + '</html>', encoding='utf-8')
+
+        run.build = build_portable_report
 
     class AcceleratedCampaign(run.Campaign):
         def profile(self, broker):
