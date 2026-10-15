@@ -13,6 +13,18 @@ import time
 GIB = 1024**3
 
 
+def scientific_output(directory):
+    directory = pathlib.Path(directory)
+    counters = json.loads((directory / 'counters.json').read_text())
+    # graph is a human-readable dump containing RealTime and wall-clock rates.
+    # Compare every structured broker/receiver counter and preserve the raw dump.
+    if 'graph' in counters and not isinstance(counters['graph'], str):
+        raise ValueError('Unexpected diagnostic graph format')
+    counters.pop('graph', None)
+    return {'summary': json.loads((directory / 'summary.json').read_text()),
+            'histogram': json.loads((directory / 'latency-histogram.json').read_text()), 'counters': counters}
+
+
 def run(root):
     root = pathlib.Path(root).resolve()
     plan = json.loads((root / 'pilot-plan.json').read_text())
@@ -51,14 +63,13 @@ def run(root):
             baseline = job.get('baseline')
             equal = None
             if baseline:
-                equal = all(json.loads((directory / name).read_text()) ==
-                            json.loads((pathlib.Path(baseline) / name).read_text())
-                            for name in ('summary.json', 'latency-histogram.json', 'counters.json'))
+                equal = scientific_output(directory) == scientific_output(baseline)
                 if not equal:
                     raise RuntimeError('Parallel pilot differs from sequential scientific baseline')
             checks.append({'name': job['name'], 'directory': str(directory), 'baselineIdentical': equal,
                            'configSha256': hashlib.sha256(pathlib.Path(job['config']).read_bytes()).hexdigest()})
-        result.update(status='passed', checks=checks)
+        result.update(status='passed', checks=checks,
+                      excludedDiagnosticFields=['counters.json:graph (wall-clock diagnostic text)'])
     except BaseException as error:
         result.update(status='failed', error=str(error))
         raise
