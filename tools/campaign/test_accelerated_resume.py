@@ -141,6 +141,14 @@ class AdapterTests(unittest.TestCase):
         self.assertEqual(400, config['experiment']['offeredRps'])
         self.assertEqual(4, config['experiment']['brokers'])
 
+    def test_explicit_relay_limit_admits_four_independent_processes(self):
+        campaign, _, read = self.campaign()
+        campaign.plan['simulationRelayWorkers'] = 4
+        maximum, processes = self.execute_fake(campaign, 'relay')
+        self.assertEqual(4, maximum)
+        self.assertEqual(72, len(processes))
+        self.assertEqual(72, len(read(self.root / 'brokers/Aedes/simulations/relay-10s/index.json')['runs']))
+
     def test_complete_legacy_cohort_is_reused_without_rerunning_or_relabeling(self):
         campaign, write, read = self.campaign()
         runs = [{'key': f'm{b}.q{q}.p{n}.s{s}'} for b in (16, 256) for q in range(3) for n in (1, 16, 64, 128) for s in (42, 43, 44)]

@@ -39,6 +39,14 @@ warmup 5 с, measurement **10 с**, drain максимум 30 с, tick 0,1 мс.
 
 Проверки адаптера:
 
+Позднее пользователь разрешил повысить MqttRelay с двух до четырёх процессов:
+измеренный RSS тяжёлого процесса около 0,75 GiB; запас CPU и памяти достаточен.
+`relay-concurrency-handoff.py` записывает новый лимит и ждёт завершения текущего
+этапа Aedes/relay. На границе он останавливает только owned controller, повторно
+проверяет отсутствие active workloads и дочерних процессов и возобновляет ту же
+серию новым контроллером. Текущие прогоны не прерываются. Все источники,
+хэши, состояния до/после и service identities сохраняются в revision-transition.
+
 ```powershell
 python -m unittest discover -s tools/campaign -p test_accelerated_resume.py -v
 ```
