@@ -8,6 +8,7 @@ import hashlib
 import io
 import json
 import pathlib
+import re
 import shutil
 import signal
 import subprocess
@@ -32,9 +33,23 @@ def scientific_result(directory):
             for name in ('summary.json', 'latency-histogram.json', 'counters.json')}
 
 
+def cohort_name(plan):
+    value = plan.get('simulationCohort', '')
+    if not isinstance(value, str) or (value and not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_-]{0,79}', value)):
+        raise ValueError('Invalid simulation cohort name')
+    return value
+
+
+def cohort_rows(rows, cohort):
+    if not cohort:
+        return rows
+    return [row for row in rows if pathlib.Path(row['directory']).parents[1].name.endswith('-' + cohort)]
+
+
 def main():
     root = pathlib.Path(sys.argv[sys.argv.index('--series') + 1]).resolve()
     plan = json.loads((root / 'series.json').read_text(encoding='utf-8-sig'))
+    cohort = cohort_name(plan)
     sys.path.insert(0, str(pathlib.Path(plan['benchmarkRepository']) / 'scripts/campaign'))
     import run
     import report
@@ -46,7 +61,7 @@ def main():
     durations = {}
 
     def experiments_with_duration(root, broker):
-        rows = original_experiments(root, broker)
+        rows = cohort_rows(original_experiments(root, broker), cohort)
         durations.clear()
         for row in rows:
             manifest = read(pathlib.Path(row['directory']) / 'experiment-manifest.json')
@@ -67,6 +82,10 @@ def main():
         'Выборки с разной длительностью сохраняются отдельно; длительность каждой строки указана в таблице и JSON. '
         'Сокращённое окно уменьшает число наблюдений и устойчивость p99; эти выборки нельзя считать одинаковыми по длительности. '
         'Параллельны независимые процессы экспериментов; внутри каждого сохранён последовательный refresh. Натурные измерения с ними не пересекаются.')
+    if cohort:
+        report.LIMITATIONS += (f' Ревизия симуляций: {cohort}; MqttY commit {plan["simulatorRevision"]}. '
+            'Таблицы и графики включают только эту ревизию модели. Результаты прежней модели сохранены отдельно; '
+            'натурные observations и замороженные профили используются повторно без перекалибровки.')
     if plan.get('reportMachineDescription'):
         original_build = run.build
 
@@ -129,10 +148,12 @@ def main():
                 raise RuntimeError('Only explicitly supported 10s or 30s simulation windows are allowed')
             legacy = parent / stage / 'index.json'
             # Reuse a complete original cohort, preserving its original window and files.
-            complete_legacy = legacy.exists() and len(read(legacy)['runs']) == 72
+            complete_legacy = not cohort and legacy.exists() and len(read(legacy)['runs']) == 72
             if complete_legacy:
                 measurement_seconds = 30
             base = parent / (stage if measurement_seconds == 30 else stage + '-10s')
+            if cohort:
+                base = base.with_name(base.name + '-' + cohort)
             base.mkdir(parents=True, exist_ok=True)
             index = read(base / 'index.json') if (base / 'index.json').exists() else {'stage': stage, 'measurementSeconds': measurement_seconds, 'runs': []}
             names = list(run.BROKERS) if mixed else [broker]

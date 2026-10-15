@@ -16,6 +16,17 @@ spec.loader.exec_module(adapter)
 
 
 class AdapterTests(unittest.TestCase):
+    def test_cohort_names_reject_path_escape_and_rows_exclude_old_model(self):
+        for name in ('../old', '/tmp', 'a/b', '', 'ratefix-bd34c7c'):
+            if name in ('', 'ratefix-bd34c7c'):
+                self.assertEqual(name, adapter.cohort_name({'simulationCohort': name}))
+            else:
+                with self.assertRaises(ValueError):
+                    adapter.cohort_name({'simulationCohort': name})
+        rows = [{'directory': '/evidence/fidelity-10s/key/run'},
+                {'directory': '/evidence/fidelity-10s-ratefix-bd34c7c/key/run'}]
+        self.assertEqual(rows[1:], adapter.cohort_rows(rows, 'ratefix-bd34c7c'))
+
     def setUp(self):
         self.temporary = tempfile.TemporaryDirectory()
         self.addCleanup(self.temporary.cleanup)
@@ -37,7 +48,7 @@ class AdapterTests(unittest.TestCase):
         with self.assertRaises(ET.ParseError):
             adapter.graphml_parse(ET.parse, path)
 
-    def campaign(self, machine_description=None):
+    def campaign(self, machine_description=None, cohort=None):
         def read(path):
             return json.loads(pathlib.Path(path).read_text(encoding='utf-8'))
 
@@ -50,6 +61,10 @@ class AdapterTests(unittest.TestCase):
         write(example, {'experiment': {}, 'network': {}})
         write(self.root / 'series.json', {'benchmarkRepository': str(self.root), 'simulatorExample': str(example),
             'simulationMeasurementSeconds': 10, 'mqttYRepository': str(self.root), 'simulatorCli': 'frozen.dll'})
+        if cohort:
+            plan = read(self.root / 'series.json')
+            plan.update(simulationCohort=cohort, simulatorRevision='fixed-commit')
+            write(self.root / 'series.json', plan)
         if machine_description:
             plan = read(self.root / 'series.json')
             plan['reportMachineDescription'] = machine_description
@@ -133,6 +148,18 @@ class AdapterTests(unittest.TestCase):
         with mock.patch.object(pathlib.Path, 'read_text', memory_read), mock.patch.object(adapter.subprocess, 'Popen', Process), mock.patch.object(adapter.time, 'sleep'), mock.patch.object(adapter.shutil, 'disk_usage', return_value=types.SimpleNamespace(free=free_gib * 1024**3)):
             campaign.simulate('Aedes', stage)
         return maximum[0], processes
+
+    def test_new_model_cohort_reruns_complete_legacy_without_overwriting_it(self):
+        campaign, write, read = self.campaign(cohort='ratefix-bd34c7c')
+        legacy = self.root / 'brokers/Aedes/simulations/fidelity/index.json'
+        old = {'stage': 'fidelity', 'runs': [{'key': str(i)} for i in range(72)]}
+        write(legacy, old)
+        _, processes = self.execute_fake(campaign, 'fidelity')
+        self.assertEqual(72, len(processes))
+        self.assertEqual(old, read(legacy))
+        base = self.root / 'brokers/Aedes/simulations/fidelity-10s-ratefix-bd34c7c'
+        self.assertEqual(72, len(read(base / 'index.json')['runs']))
+        self.assertEqual(100_000, read(base / 'm16.q0.p1.s42.json')['experiment']['measurementTicks'])
 
     def test_four_workers_preserve_all_seeds_and_short_window_has_separate_directory(self):
         campaign, write, read = self.campaign()
