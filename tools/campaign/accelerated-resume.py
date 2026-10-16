@@ -114,15 +114,17 @@ def main():
         return original_table(headers, rows)
 
     report.experiments, report.table = experiments_with_duration, table_with_duration
-    report.LIMITATIONS += (f' Программа серии: новые симуляции измеряют {plan.get("simulationMeasurementSeconds", 30)} секунд после warmup 5 секунд; '
-        'drain максимум 30 секунд, tick 0,1 мс, seeds, пороги и профили сохранены. ' + native_window_note(plan) + ' '
+    compact_protocol = plan.get('coverageProtocol') == 'compact-v1'
+    report.LIMITATIONS += (f' Программа серии: новые симуляции измеряют {plan.get("simulationMeasurementSeconds", 30)} секунд после warmup {1 if compact_protocol else 5} секунд; '
+        f'drain максимум {5 if compact_protocol else 30} секунд, tick 0,1 мс, seeds, пороги и профили сохранены. ' + native_window_note(plan) + ' '
         'Выборки с разной длительностью сохраняются отдельно; длительность каждой строки указана в таблице и JSON. '
         'Сокращённое окно уменьшает число наблюдений и устойчивость p99; эти выборки нельзя считать одинаковыми по длительности. '
         'Параллельны независимые процессы экспериментов; внутри каждого сохранён последовательный refresh. Натурные измерения с ними не пересекаются.')
     if cohort:
         report.LIMITATIONS += (f' Ревизия симуляций: {cohort}; MqttY commit {plan["simulatorRevision"]}. '
-            'Таблицы и графики включают только эту ревизию модели. Результаты прежней модели сохранены отдельно; '
-            'натурные observations и замороженные профили используются повторно без перекалибровки.')
+            'Таблицы и графики включают только эту ревизию модели. ' +
+            ('Натурные observations и профили получены заново по сокращённому протоколу.' if compact_protocol else
+             'Результаты прежней модели сохранены отдельно; натурные observations и замороженные профили используются повторно без перекалибровки.'))
         if plan.get('modelRevisionNote'):
             report.LIMITATIONS += ' ' + plan['modelRevisionNote']
     if plan.get('programAmendmentNote'):
@@ -158,7 +160,60 @@ def main():
 
         run.build = build_portable_report
 
+    if compact_protocol:
+        original_compact_build = run.build
+
+        def build_compact_report(directory, broker, entry):
+            original_compact_build(directory, broker, entry)
+            reports = pathlib.Path(directory) / 'reports'
+            md = reports / (broker + '.md')
+            text = md.read_text(encoding='utf-8')
+            text = text.replace('/72 успешных ключей**', '/36 успешных ключей**').replace('/24 точек.', '/12 точек.')
+            text = text.replace('python scripts/campaign/run.py --series <абсолютный каталог серии> --resume',
+                                'python ' + plan['orchestrationAdapter'] + ' --series <абсолютный каталог серии> --resume')
+            text += '\n\nПродолжение compact-v1 допускается только в пределах исходного шестичасового бюджета; повторный запуск не обнуляет deadline.\n'
+            md.write_text(text, encoding='utf-8')
+            body = report.markdown.markdown(text, extensions=['tables', 'fenced_code'])
+
+            def inline_image(match):
+                path = reports / report.html.unescape(match.group(1))
+                if not path.is_file():
+                    return match.group(0)
+                return 'src="data:image/png;base64,' + report.base64.b64encode(path.read_bytes()).decode() + '"'
+
+            body = report.re.sub(r'src="([^"]+)"', inline_image, body)
+            target = reports / (broker + '.html')
+            header, separator, _ = target.read_text(encoding='utf-8').partition('</style>')
+            if not separator:
+                raise RuntimeError('Unknown native HTML report layout')
+            target.write_text(header + separator + body + '</html>', encoding='utf-8')
+
+        run.build = build_compact_report
+
     class AcceleratedCampaign(run.Campaign):
+        def real(self, broker, stage, pilot=False):
+            if self.plan.get('coverageProtocol') != 'compact-v1':
+                return super().real(broker, stage, pilot=pilot)
+            cli = ['dotnet', self.plan['benchmarkCli']]
+            raw = self.raw / f'{broker}-{stage}'
+            self.invoke(cli + ['preflight'] + self.common(broker, stage) +
+                        ['--output', self.root / 'preflight' / (broker + '-' + stage + '-' + uuid.uuid4().hex[:8])],
+                        broker + '-' + stage + '-preflight')
+            args = cli + ['matrix'] + self.common(broker, stage) + ['--campaign', raw, '--archive-root', self.storage / 'attempts',
+                    '--archive-mount', self.plan['archiveMount'], '--archive-device', self.plan['archiveDevice']]
+            if (raw / 'campaign.json').exists(): args += ['--resume']
+            self.invoke(args, broker + '-' + stage + '-matrix')
+            self.registry()
+            if not pilot:
+                output = self.root / 'brokers' / broker / stage
+                if not (output / 'broker-observations.v3.json').exists():
+                    self.invoke(cli + ['aggregate'] + self.common(broker, stage) + ['--raw', raw, '--output', output], broker + '-' + stage + '-aggregate')
+                observations = read(output / 'broker-observations.v3.json')
+                if observations['runCount'] != 36 or len(observations['points']) != 12:
+                    raise RuntimeError('Incomplete compact native matrix')
+                self.report(broker, stage)
+                self.verify_stage(broker, stage)
+
         def profile(self, broker):
             cli = pathlib.Path(self.plan['calibratorCli'])
             with cli.open('rb') as stream:
@@ -168,6 +223,11 @@ def main():
             try:
                 self.plan['simulatorCli'] = str(cli)
                 self.plan['mqttYRepository'] = self.plan['calibratorRepository']
+                profile = self.root / 'brokers' / broker / 'broker-calibration.v3.json'
+                if self.plan.get('coverageProtocol') == 'compact-v1' and not profile.exists():
+                    self.invoke(['dotnet', str(cli), 'calibrate', '--observations', self.root / 'brokers' / broker / 'calibration/broker-observations.v3.json',
+                                 '--output', profile, '--mqtty-repository', self.plan['calibratorRepository'],
+                                 '--broker', broker, '--coverage-protocol', 'compact-v1'], broker + '-calibrate-compact')
                 return super().profile(broker)
             finally:
                 self.plan['simulatorCli'], self.plan['mqttYRepository'] = original
@@ -185,14 +245,15 @@ def main():
             relay = stage == 'relay' or mixed
             parent = self.root / ('mixed' if mixed else 'brokers/' + broker) / 'simulations'
             measurement_seconds = int(self.plan.get('simulationMeasurementSeconds', 30))
-            if measurement_seconds not in (10, 30):
+            compact = self.plan.get('coverageProtocol') == 'compact-v1'
+            if measurement_seconds not in ((2,) if compact else (10, 30)):
                 raise RuntimeError('Only explicitly supported 10s or 30s simulation windows are allowed')
             legacy = parent / stage / 'index.json'
             # Reuse a complete original cohort, preserving its original window and files.
             complete_legacy = not cohort and legacy.exists() and len(read(legacy)['runs']) == 72
             if complete_legacy:
                 measurement_seconds = 30
-            base = parent / (stage if measurement_seconds == 30 else stage + '-10s')
+            base = parent / (stage if measurement_seconds == 30 else stage + f'-{measurement_seconds}s')
             if cohort:
                 base = base.with_name(base.name + '-' + cohort)
             base.mkdir(parents=True, exist_ok=True)
@@ -205,7 +266,7 @@ def main():
             jobs = []
             for payload in (16, 256):
                 for qos in range(3):
-                    for publishers in (1, 16, 64, 128):
+                    for publishers in ((1, 16) if compact else (1, 16, 64, 128)):
                         points = {name: next(p for p in observations[name]['points'] if (p['messageBytes'], p['qos'], p['publishers']) == (payload, qos, publishers)) for name in names}
                         offered = (4 if relay else 1) * min(p['attemptedRps']['mean'] for p in points.values())
                         for seed in (42, 43, 44):
@@ -218,7 +279,8 @@ def main():
                                 publishQos=['atMostOnce', 'atLeastOnce', 'exactlyOnce'][qos], subscribeQos=['atMostOnce', 'atLeastOnce', 'exactlyOnce'][qos],
                                 brokerAssignmentMode='mixed' if mixed else broker[0].lower() + broker[1:], mixedBrokerTypes=list(run.BROKERS) if mixed else [],
                                 offeredRps=offered, randomSeed=seed, parallel=False, refreshStrategy=0, profileClientCountMode='publishers',
-                                warmupTicks=50000, measurementTicks=measurement_seconds * 10000, drainTimeoutTicks=300000)
+                                warmupTicks=10000 if compact else 50000, measurementTicks=measurement_seconds * 10000,
+                                drainTimeoutTicks=50000 if compact else 300000)
                             config['network'].update(transport['network'])
                             config['network']['transferTicks'] = transport['transferTicksByBroker'][names[0]] if not mixed else max(transport['transferTicksByBroker'].values())
                             config.update(mqttYRepository=self.plan['mqttYRepository'], mqttBenchmarkRepository=self.plan['benchmarkRepository'])
@@ -229,6 +291,7 @@ def main():
                                 config['brokerProfilePath'] = str(profiles[0])
                             if stage == 'holdout':
                                 config['referenceObservationsPath'] = str(self.root / 'brokers' / broker / 'validation/broker-observations.v3.json')
+                                if compact: config['referenceCoverageProtocol'] = 'compact-v1'
                             path = base / (key + '.json')
                             if path.exists() and read(path) != config:
                                 raise RuntimeError('Simulation config changed')

@@ -74,7 +74,7 @@ class AdapterTests(unittest.TestCase):
         with self.assertRaises(ET.ParseError):
             adapter.graphml_parse(ET.parse, path)
 
-    def campaign(self, machine_description=None, cohort=None):
+    def campaign(self, machine_description=None, cohort=None, compact=False):
         def read(path):
             return json.loads(pathlib.Path(path).read_text(encoding='utf-8'))
 
@@ -91,6 +91,10 @@ class AdapterTests(unittest.TestCase):
             plan = read(self.root / 'series.json')
             plan.update(simulationCohort=cohort, simulatorRevision='fixed-commit')
             write(self.root / 'series.json', plan)
+        if compact:
+            plan = read(self.root / 'series.json')
+            plan.update(coverageProtocol='compact-v1', simulationMeasurementSeconds=2, orchestrationAdapter='frozen-compact.py')
+            write(self.root / 'series.json', plan)
         if machine_description:
             plan = read(self.root / 'series.json')
             plan['reportMachineDescription'] = machine_description
@@ -105,7 +109,7 @@ class AdapterTests(unittest.TestCase):
         def build(directory, broker, entry):
             reports = pathlib.Path(directory) / 'reports'
             reports.mkdir(exist_ok=True)
-            (reports / (broker + '.md')).write_text('# Report\n\nLinux 192.168.5.1 выполняет контроллер old CPU layout\n\nResult: completed', encoding='utf-8')
+            (reports / (broker + '.md')).write_text('# Report\n\nLinux 192.168.5.1 выполняет контроллер old CPU layout\n\nResult: completed\n\nПокрытие: **36/72 успешных ключей**, 12/24 точек.', encoding='utf-8')
             (reports / (broker + '.html')).write_text('<!doctype html><html><style>body{}</style>old</html>', encoding='utf-8')
 
         fake_run.build = build
@@ -186,6 +190,31 @@ class AdapterTests(unittest.TestCase):
         base = self.root / 'brokers/Aedes/simulations/fidelity-10s-ratefix-bd34c7c'
         self.assertEqual(72, len(read(base / 'index.json')['runs']))
         self.assertEqual(100_000, read(base / 'm16.q0.p1.s42.json')['experiment']['measurementTicks'])
+
+    def test_compact_uses_36_runs_and_explicit_short_independent_reference(self):
+        campaign, _, read = self.campaign(cohort='compact-v1', compact=True)
+        maximum, processes = self.execute_fake(campaign, 'holdout')
+        self.assertEqual(36, len(processes))
+        self.assertEqual(4, maximum)
+        base = self.root / 'brokers/Aedes/simulations/holdout-2s-compact-v1'
+        rows = read(base / 'index.json')['runs']
+        self.assertEqual({1, 16}, {row['publishers'] for row in rows})
+        self.assertEqual({42, 43, 44}, {row['seed'] for row in rows})
+        config = read(base / 'm256.q2.p16.s44.json')
+        self.assertEqual('compact-v1', config['referenceCoverageProtocol'])
+        self.assertEqual(10000, config['experiment']['warmupTicks'])
+        self.assertEqual(20000, config['experiment']['measurementTicks'])
+        self.assertEqual(50000, config['experiment']['drainTimeoutTicks'])
+
+    def test_compact_reports_do_not_claim_full_coverage(self):
+        campaign, _, _ = self.campaign(cohort='compact-v1', compact=True)
+        campaign.test_run.build(self.root, 'Aedes', {'stage': 'calibration'})
+        for extension in ('md', 'html'):
+            text = (self.root / 'reports' / ('Aedes.' + extension)).read_text(encoding='utf-8')
+            self.assertIn('36/36 успешных ключей', text)
+            self.assertIn('12/12 точек.', text)
+            self.assertIn('шестичасового бюджета', text)
+            self.assertNotIn('/72 успешных ключей', text)
 
     def test_memory_reservations_limit_pool_before_child_memory_is_visible(self):
         campaign, _, read = self.campaign()
