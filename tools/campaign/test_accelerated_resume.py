@@ -16,6 +16,20 @@ spec.loader.exec_module(adapter)
 
 
 class AdapterTests(unittest.TestCase):
+    def test_native_window_note_distinguishes_preserved_and_amended_cohorts(self):
+        note = adapter.native_window_note({'nativeMeasurementSecondsByBroker': {'Aedes': 30, 'ActiveMQ': 20}})
+        self.assertIn('Aedes — 30 с', note)
+        self.assertIn('ActiveMQ — 20 с', note)
+        self.assertIn('30 секунд', adapter.native_window_note({}))
+        with self.assertRaises(ValueError):
+            adapter.native_window_note({'nativeMeasurementSecondsByBroker': {'Aedes': 0}})
+
+    def test_four_relay_workers_have_separate_reservation_without_changing_fidelity(self):
+        plan = {'simulationMemoryPolicy': {'reservationPerJobBytes': 2},
+                'simulationRelayMemoryPolicy': {'reservationPerJobBytes': 1.25}}
+        self.assertEqual(2, adapter.simulation_memory_policy(plan, False)['reservationPerJobBytes'])
+        self.assertEqual(1.25, adapter.simulation_memory_policy(plan, True)['reservationPerJobBytes'])
+
     def test_working_set_keeps_anon_and_dirty_cache_in_memory_budget(self):
         self.assertEqual(350, adapter.memory_working_set(1000, {'inactive_file': 800, 'file_dirty': 100, 'file_writeback': 50}))
         self.assertEqual(1000, adapter.memory_working_set(1000, {'inactive_file': 20, 'file_dirty': 100}))
@@ -185,6 +199,21 @@ class AdapterTests(unittest.TestCase):
         self.assertEqual(2, maximum)
         self.assertEqual(72, len(processes))
         self.assertEqual(72, len(read(self.root / 'brokers/Aedes/simulations/fidelity-10s/index.json')['runs']))
+
+    def test_relay_four_processes_fit_separate_budget_and_preserve_matrix(self):
+        campaign, _, read = self.campaign()
+        campaign.plan['simulationRelayWorkers'] = 4
+        campaign.plan['simulationMemoryPolicy'] = {'reservationPerJobBytes': 2 * 1024**3,
+            'maxWorkingSetBytes': 6 * 1024**3, 'minSystemAvailableBytes': 2 * 1024**3}
+        campaign.plan['simulationRelayMemoryPolicy'] = dict(campaign.plan['simulationMemoryPolicy'],
+            reservationPerJobBytes=1280 * 1024**2)
+        snapshot = {'current': 100 * 1024**2, 'workingSet': 100 * 1024**2,
+                    'systemAvailable': 10 * 1024**3}
+        with mock.patch.object(adapter, 'memory_snapshot', return_value=snapshot):
+            maximum, processes = self.execute_fake(campaign, 'relay')
+        self.assertEqual(4, maximum)
+        self.assertEqual(72, len(processes))
+        self.assertEqual(72, len(read(self.root / 'brokers/Aedes/simulations/relay-10s/index.json')['runs']))
 
     def test_memory_guard_cancels_started_children_without_indexing_incomplete_work(self):
         campaign, _, _ = self.campaign()

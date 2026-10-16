@@ -70,6 +70,19 @@ def memory_snapshot(group):
             'anon': stat.get('anon', 0), 'file': stat.get('file', 0), 'systemAvailable': available}
 
 
+def native_window_note(plan):
+    windows = plan.get('nativeMeasurementSecondsByBroker')
+    if not windows:
+        return 'Натурные измерения: окно 30 секунд.'
+    if any(not isinstance(value, (int, float)) or value <= 0 for value in windows.values()):
+        raise ValueError('Invalid native measurement window')
+    return 'Натурное измеряемое окно: ' + '; '.join(f'{name} — {seconds:g} с' for name, seconds in windows.items()) + '.'
+
+
+def simulation_memory_policy(plan, relay):
+    return plan.get('simulationRelayMemoryPolicy', plan.get('simulationMemoryPolicy')) if relay else plan.get('simulationMemoryPolicy')
+
+
 def main():
     root = pathlib.Path(sys.argv[sys.argv.index('--series') + 1]).resolve()
     plan = json.loads((root / 'series.json').read_text(encoding='utf-8-sig'))
@@ -102,7 +115,7 @@ def main():
 
     report.experiments, report.table = experiments_with_duration, table_with_duration
     report.LIMITATIONS += (f' Программа серии: новые симуляции измеряют {plan.get("simulationMeasurementSeconds", 30)} секунд после warmup 5 секунд; '
-        'drain максимум 30 секунд, tick 0,1 мс, seeds, пороги и профили сохранены. Натурные измерения остаются 30-секундными. '
+        'drain максимум 30 секунд, tick 0,1 мс, seeds, пороги и профили сохранены. ' + native_window_note(plan) + ' '
         'Выборки с разной длительностью сохраняются отдельно; длительность каждой строки указана в таблице и JSON. '
         'Сокращённое окно уменьшает число наблюдений и устойчивость p99; эти выборки нельзя считать одинаковыми по длительности. '
         'Параллельны независимые процессы экспериментов; внутри каждого сохранён последовательный refresh. Натурные измерения с ними не пересекаются.')
@@ -112,6 +125,8 @@ def main():
             'натурные observations и замороженные профили используются повторно без перекалибровки.')
         if plan.get('modelRevisionNote'):
             report.LIMITATIONS += ' ' + plan['modelRevisionNote']
+    if plan.get('programAmendmentNote'):
+        report.LIMITATIONS += ' ' + plan['programAmendmentNote']
     if plan.get('reportMachineDescription'):
         original_build = run.build
 
@@ -225,7 +240,7 @@ def main():
             if not 1 <= workers <= 4:
                 raise RuntimeError('Simulation concurrency must be between one and four')
             active = []
-            policy = self.plan.get('simulationMemoryPolicy')
+            policy = simulation_memory_policy(self.plan, relay)
             group = pathlib.Path('/sys/fs/cgroup' + self.state['controllerRuntime']['cgroup'])
             baseline = memory_snapshot(group)['workingSet'] if policy else 0
             last_memory_log = 0
