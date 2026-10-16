@@ -83,6 +83,23 @@ def simulation_memory_policy(plan, relay):
     return plan.get('simulationRelayMemoryPolicy', plan.get('simulationMemoryPolicy')) if relay else plan.get('simulationMemoryPolicy')
 
 
+def empirical_options(config, plan, relay, calibration_points):
+    """Keep RTT fitting calibration-only; Relay retains explicitly assumed fixed transport."""
+    if not plan.get('empiricalProfiles'):
+        return config
+    tick_us = 100 if relay else 10
+    per_second = 1000000 // tick_us
+    config.setdefault('ticks', {}).update(tickPeriod=f'00:00:00.{tick_us * 10:07d}', outgoingWaitTicks=1)
+    config['experiment'].update(loadMode='openLoopRate' if relay else 'closedLoopPerPublisher',
+        transportTiming='fixed' if relay else 'calibratedRttBudget',
+        warmupTicks=per_second, measurementTicks=int(plan['simulationMeasurementSeconds']) * per_second,
+        drainTimeoutTicks=5 * per_second)
+    rtt = sum(p['rttBaselineMs'] for p in calibration_points) / len(calibration_points)
+    config['network'].update(transferTicks=max(1, round(rtt / 2 / (tick_us / 1000))),
+                             throughputWindowTicks=per_second // 100)
+    return config
+
+
 def main():
     root = pathlib.Path(sys.argv[sys.argv.index('--series') + 1]).resolve()
     plan = json.loads((root / 'series.json').read_text(encoding='utf-8-sig'))
@@ -129,6 +146,11 @@ def main():
             report.LIMITATIONS += ' ' + plan['modelRevisionNote']
     if plan.get('programAmendmentNote'):
         report.LIMITATIONS += ' ' + plan['programAmendmentNote']
+    if plan.get('empiricalProfiles'):
+        # Replace the legacy timing sentence rather than appending contradictory timings.
+        report.LIMITATIONS = report.LIMITATIONS.replace(
+            f'warmup {1 if compact_protocol else 5} секунд; drain максимум {5 if compact_protocol else 30} секунд, tick 0,1 мс',
+            'warmup 1 секунды; drain максимум 5 секунд; tick Fidelity 0,01 мс, Relay 0,1 мс')
     if plan.get('reportMachineDescription'):
         original_build = run.build
 
@@ -224,6 +246,15 @@ def main():
                 self.plan['simulatorCli'] = str(cli)
                 self.plan['mqttYRepository'] = self.plan['calibratorRepository']
                 profile = self.root / 'brokers' / broker / 'broker-calibration.v3.json'
+                if self.plan.get('empiricalProfiles') and not profile.exists():
+                    histograms = profile.with_name('latency-histograms.json')
+                    observations = profile.parent / 'calibration/broker-observations.v3.json'
+                    if not histograms.exists():
+                        self.invoke([sys.executable, self.plan['histogramExporter'], '--observations', observations,
+                                     '--raw', self.raw / (broker + '-calibration'), '--output', histograms], broker + '-histograms')
+                    self.invoke(['dotnet', str(cli), 'calibrate', '--observations', observations,
+                                 '--latency-histograms', histograms, '--output', profile,
+                                 '--mqtty-repository', self.plan['calibratorRepository'], '--broker', broker], broker + '-calibrate-empirical')
                 if self.plan.get('coverageProtocol') == 'compact-v1' and not profile.exists():
                     self.invoke(['dotnet', str(cli), 'calibrate', '--observations', self.root / 'brokers' / broker / 'calibration/broker-observations.v3.json',
                                  '--output', profile, '--mqtty-repository', self.plan['calibratorRepository'],
@@ -246,7 +277,7 @@ def main():
             parent = self.root / ('mixed' if mixed else 'brokers/' + broker) / 'simulations'
             measurement_seconds = int(self.plan.get('simulationMeasurementSeconds', 30))
             compact = self.plan.get('coverageProtocol') == 'compact-v1'
-            if measurement_seconds not in ((2,) if compact else (10, 30)):
+            if measurement_seconds not in ((2,) if compact or self.plan.get('empiricalProfiles') else (10, 30)):
                 raise RuntimeError('Only explicitly supported 10s or 30s simulation windows are allowed')
             legacy = parent / stage / 'index.json'
             # Reuse a complete original cohort, preserving its original window and files.
@@ -283,6 +314,9 @@ def main():
                                 drainTimeoutTicks=50000 if compact else 300000)
                             config['network'].update(transport['network'])
                             config['network']['transferTicks'] = transport['transferTicksByBroker'][names[0]] if not mixed else max(transport['transferTicksByBroker'].values())
+                            if self.plan.get('empiricalProfiles'):
+                                calibration_points = [point for name in names for point in read(self.root / 'brokers' / name / 'calibration/broker-observations.v3.json')['points']]
+                                empirical_options(config, self.plan, relay, calibration_points)
                             config.update(mqttYRepository=self.plan['mqttYRepository'], mqttBenchmarkRepository=self.plan['benchmarkRepository'])
                             config.pop('brokerProfilePath', None)
                             if mixed:
@@ -348,6 +382,7 @@ def main():
                             output_stream.close()
                             raise
                         active.append((job, process, output_stream, log, tag))
+                        job['startedMonotonic'] = time.monotonic()
                         self.state['activeSimulations'] = [{'tag': t, 'pid': p.pid, 'log': str(l)} for _, p, _, l, t in active]
                         self.state['active'] = self.state['activeSimulations'][0]
                         self.save()
@@ -361,6 +396,8 @@ def main():
                         job, process, output_stream, log, tag = item
                         code = process.poll()
                         if code is None:
+                            if self.plan.get('simulationCommandTimeoutSeconds') and time.monotonic() - job['startedMonotonic'] > self.plan['simulationCommandTimeoutSeconds']:
+                                raise RuntimeError('Simulation command timed out; partial evidence retained: ' + tag)
                             continue
                         output_stream.close()
                         if code not in (0, 3):

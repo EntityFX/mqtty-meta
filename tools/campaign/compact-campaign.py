@@ -202,11 +202,15 @@ def comparison_report(root):
 def run_series(root):
     root = pathlib.Path(root).resolve()
     plan = read(root / 'series.json')
-    if plan.get('coverageProtocol') != 'compact-v1':
-        raise ValueError('This runner requires compact-v1')
+    if plan.get('coverageProtocol') not in ('compact-v1', 'overnight-v1'):
+        raise ValueError('Unsupported bounded campaign protocol')
     for name in ('simulationAdapter', 'orchestrationAdapter'):
         if digest(plan[name]) != plan[name + 'Sha256']:
             raise RuntimeError(name + ' changed')
+    if (root / 'frozen-files.json').exists():
+        for name, sha in read(root / 'frozen-files.json').items():
+            if digest(name) != sha:
+                raise RuntimeError('Frozen campaign file changed: ' + name)
     sys.path.insert(0, str(pathlib.Path(plan['benchmarkRepository']) / 'scripts/campaign'))
     import run
     import report
@@ -228,7 +232,9 @@ def run_series(root):
                 with (self.root / 'commands.ndjson').open('a', encoding='utf-8') as stream:
                     stream.write(json.dumps({'utc': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'argv': list(map(str, args)), 'log': str(log)}) + '\n')
                 command = str(args[2]) if len(args) > 2 else ''
-                timeout = 1800 if command == 'matrix' else 600 if command == 'aggregate' else 180
+                timeout = self.plan.get('nativeCommandTimeoutSeconds', 1800) if command == 'matrix' else 600 if command == 'aggregate' else 180
+                if tag.endswith('-histograms'):
+                    timeout = 1200
                 process = None
                 try:
                     with log.open('w') as output:
@@ -254,9 +260,15 @@ def run_series(root):
             def checked_report(self, broker, stage, status, error=None):
                 try:
                     self.report(broker, stage, status, error)
-                    comparison_report(self.root)
-                    for path in (self.root / 'reports').glob('Full-vs-Compact.*'):
-                        shutil.copy2(path, self.storage / 'reports' / path.name)
+                    if self.plan['coverageProtocol'] == 'compact-v1':
+                        comparison_report(self.root)
+                        for path in (self.root / 'reports').glob('Full-vs-Compact.*'):
+                            shutil.copy2(path, self.storage / 'reports' / path.name)
+                    else:
+                        spec = importlib.util.spec_from_file_location('broker_analysis', self.root / 'source/analyse-campaign.py')
+                        analysis = importlib.util.module_from_spec(spec)
+                        spec.loader.exec_module(analysis)
+                        analysis.analyse(self.root)
                 except Exception as failure:
                     self.state.setdefault('reportErrors', []).append({'broker': broker, 'error': str(failure)})
                     self.save()
@@ -291,7 +303,7 @@ def run_series(root):
                     return False
 
             def execute(self):
-                self.state.update(status='running', coverageProtocol='compact-v1', startedAtUtc=self.plan['startedAtUtc'],
+                self.state.update(status='running', coverageProtocol=self.plan['coverageProtocol'], startedAtUtc=self.plan['startedAtUtc'],
                                   deadlineUtc=self.plan['deadlineUtc'])
                 self.state.pop('active', None)
                 self.state.pop('activeSimulations', None)
@@ -326,7 +338,8 @@ def run_series(root):
                         if exhausted and entry['status'] not in ('завершён', 'failed'):
                             self.checked_report(broker, entry['stage'], 'notCompleted', self.state['budgetReason'])
                     self.registry()
-                    comparison_report(self.root)
+                    if self.plan['coverageProtocol'] == 'compact-v1':
+                        comparison_report(self.root)
                     write(self.root / 'completion.json', {'status': self.state['status'], 'completed': self.state['completed'],
                         'stageFailures': self.state.get('stageFailures', {}), 'deadlineUtc': self.plan['deadlineUtc'],
                         'elapsedSeconds': (datetime.datetime.now(datetime.timezone.utc) - datetime.datetime.fromisoformat(self.plan['startedAtUtc'])).total_seconds()})
