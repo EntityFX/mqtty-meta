@@ -103,16 +103,18 @@ def build(cohort, baseline):
         '2. FIFO capacity pacing откладывает краткие всплески вместо превращения их в отказы. Это модель backpressure только для single-broker closed-loop; реальные вероятности отказа и недоставки не обнуляются. Эмпирическая задержка уже включает очередь, поэтому capacity eligibility и processing residual объединяются максимумом, а не складываются дважды.\n'
         '3. QoS0 не ждёт ACK и сохраняет дробный offered load. QoS1/2 сохраняют дробный остаток токена при ограничении числа ожидающих publishers.',
         '## Результаты',
-        '![До и после](assets/Aedes-service-budget.png)',
+        '![До и после](assets/Aedes-service-budget.png)']
+    table_rows = [
         '| Сценарий | Натурный RPS | RPS до → после | Натурный p99, мс | p99 до → после | Failure до → после | Провалы после |',
         '| --- | ---: | ---: | ---: | ---: | ---: | --- |']
     for r in rows:
         before, after, reference = r['before'], r['after'], r['reference']
         failed = ', '.join(c['name'] for c in r['criteria'] if c['status'] == 'failed') or 'нет'
-        lines.append('| ' + ' | '.join([r['key'], number(reference['completedRps']),
+        table_rows.append('| ' + ' | '.join([r['key'], number(reference['completedRps']),
             number(before['completedRps']) + ' → ' + number(after['completedRps']), number(reference['latencyP99Ms']),
             number(before['latencyP99Ms']) + ' → ' + number(after['latencyP99Ms']),
             number(before['publishFailureRate']) + ' → ' + number(after['publishFailureRate']), failed]) + ' |')
+    lines.append('\n'.join(table_rows))
     lines += ['## Область доказательности',
         'Пороги **RPS 15%, p99 20%, абсолютная разность failure/loss 0,05** не изменены; генератор проверяет их идентичность и одинаковую native reference. '
         'Профиль сохранён побайтно. Шесть уже изученных калибровочных точек Aedes, seeds 42/43/44, native 20 с, simulation warmup/measurement/drain 1/2/5 с, tick 10 мкс. '
