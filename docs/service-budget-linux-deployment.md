@@ -23,6 +23,9 @@
 натурных этапов reserve захвата увеличен с 3 до 18 секунд (envelope 54 с);
 заимствованные полные матрицы сохраняют свой прежний reserve. Контроль с новым
 input hash выполняется заново, а не дополняет старые 24 строки.
+Проверка старых ZIP показала: fence опережает последний sample на 0,01344 и
+0,13520 секунды. Это ошибка покрытия хвоста capture, а не провал полноты
+двадцатисекундного measurement; guard не ослаблен.
 
 Переключение выполняет `tools/campaign/service-revision-handoff.py`:
 
@@ -52,3 +55,24 @@ deadline exhausted и failed с причиной; `controller-service.json` по
 Проверки до развёртывания: 118 MqttY tests, 45 Python tests. Сравнение Aedes на
 Windows: 18/18 completed, 15 passed, три p99 failed из-за различия pooled p99 и
 mean-of-repeat-p99; это ограничение сохраняется явно и не исправляется подгонкой.
+
+## Фактический deployment
+
+Runtime размещён в `tools/simulator-service-115885e-runtime`, исходники — в
+`tools/mqtty-service-115885e` на hd250. CLI SHA-256:
+`60c5a79fca5291b061af345f3fb98e758c62ae551763693d5f39f74d40e9cebd`.
+Все runtime-файлы сверены с проверенным архивом; clean checkout указывает на
+115885e. Linux load check не запускал симуляцию во время native-измерений;
+его результат хранится в `tools/service-deploy-20261016/linux-load-check.json`.
+Три теста whole-matrix reuse/partial-control protection/idle boundary повторены
+на Linux и прошли.
+
+Автоматическое переключение запущено 16 октября в 22:52 МСК, unit:
+`mqttbenchmark-service-handoff-57b24d7c6e4248ed8df4555c8aa8689c.service`.
+При запуске наблюдателя состояние было `waiting-for-idle-boundary`; активна
+натурная калибровка Mosquitto предшественника. Это не объявляется стартом новой
+нагрузки: реальный запуск подтверждают `handoff-status.json: switched` и
+новый `controller-service.json` вместе с `state.json: running`.
+
+Локальная копия статусов и будущих отчётов обновляется каждые 30 секунд в
+`MqttBenchmark/artifacts/overnight-20261016-service-v1/`.
