@@ -62,6 +62,7 @@ def prepare(args):
         expectedRelayRuns=360, expectedRunsPerStage=72, simulationCohort='overnight-v1',
         nativeMeasurementSecondsByBroker={broker: 20 for broker in compact.BROKERS},
         empiricalProfiles=True, histogramExporter=str(root / 'source/export-latency-histograms.py'),
+        empiricalTransportTiming=getattr(args, 'transport_timing', 'calibratedRttBudget'),
         nativeCommandTimeoutSeconds=7200, simulationCommandTimeoutSeconds=1800,
         modelRevisionNote='Новая schema 4: эмпирическая CDF; Fidelity closed-loop, tick 10 мкс и калибровочный RTT budget. Relay open-loop, tick 100 мкс и фиксированная модель транспорта; натурная точность Relay не установлена.',
         programAmendmentNote='overnight-v1: полная сетка 16/256 байт × QoS0/1/2 × publishers 1/16/64/128 × 3 повтора. Native warmup/measurement/cooldown/drain 5/20/1/10 с; capture envelope 39 с. Модель warmup/measurement/drain 1/2/5 с. Существующие провалы критериев не скрываются. Native-настройки брокеров сохранены без подбора по контролю; Mosquitto outgoing queue loss остаётся предметом измерения. QoS0 ACK latency неприменима. Симуляции не пересекаются с native; CPU/RSS не моделируются. Незавершённое покрытие при deadline сохраняется явно.',
@@ -84,4 +85,5 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     for field in ('source', 'destination', 'simulator', 'repository', 'orchestration-commit', 'deadline', 'diagnostic'):
         parser.add_argument('--' + field, required=True)
+    parser.add_argument('--transport-timing', choices=('calibratedRttBudget', 'empiricalServiceBudget'), default='calibratedRttBudget')
     print(prepare(parser.parse_args()))

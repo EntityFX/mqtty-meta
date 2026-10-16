@@ -51,6 +51,13 @@ class OvernightTests(unittest.TestCase):
         self.assertEqual('openLoopRate', relay['experiment']['loadMode'])
         self.assertEqual(20000, relay['experiment']['measurementTicks'])
         self.assertEqual('00:00:00.0001000', relay['ticks']['tickPeriod'])
+        plan['empiricalTransportTiming'] = 'empiricalServiceBudget'
+        service = adapter.empirical_options(config(), plan, False, [{'rttBaselineMs': .1}])
+        self.assertEqual('empiricalServiceBudget', service['experiment']['transportTiming'])
+        self.assertEqual('fixed', adapter.empirical_options(config(), plan, True, [{'rttBaselineMs': .1}])['experiment']['transportTiming'])
+        plan['empiricalTransportTiming'] = 'unknown'
+        with self.assertRaises(ValueError):
+            adapter.empirical_options(config(), plan, False, [{'rttBaselineMs': .1}])
 
 
 if __name__ == '__main__':

@@ -113,3 +113,13 @@
 * Полные результаты: [evidence-summary.json](../MqttBenchmark/artifacts/compact-20261016-6h-v1/diagnostics/mosquitto/evidence-summary.json), [timing results](../MqttBenchmark/artifacts/compact-20261016-6h-v1/diagnostics/mosquitto/timing-sensitivity/results.json). Каждый audit хранит SHA-256 ZIP; рядом receipt, исходный сжатый ZIP и raw-пересчёт. Raw не извлекался на системный диск.
 * Пример: `python tools/campaign/audit-delivery.py --archive <ZIP> --expected-sha <SHA256 receipt> --output <audit.json>`.
 * Текущая Linux-кампания и её scientific coverage не включают эти диагностические симуляции. Source snapshots и native stand configs не менялись.
+
+## Последующее исправление общей модели
+
+Расширенная ночная матрица Aedes выявила дополнительные ограничения echo RTT,
+capacity rejection и дробного offered load. Исправления входят в отдельный
+opt-in режим `empiricalServiceBudget`, MqttY `115885e`; численные допуски
+15%/20%/0,05 сохранены. [Описание механизмов и проверки](empirical-service-budget-fix.md).
+Эта последующая проверка Aedes не подменяет приведённые выше результаты Mosquitto
+и не доказывает точность исправленного режима для всех брокеров. Ночная серия
+продолжает работать на своей зафиксированной версии; новая ревизия проверяется отдельно.

@@ -89,9 +89,12 @@ def empirical_options(config, plan, relay, calibration_points):
         return config
     tick_us = 100 if relay else 10
     per_second = 1000000 // tick_us
+    timing = plan.get('empiricalTransportTiming', 'calibratedRttBudget')
+    if timing not in ('calibratedRttBudget', 'empiricalServiceBudget'):
+        raise ValueError('Unsupported empirical transport timing revision')
     config.setdefault('ticks', {}).update(tickPeriod=f'00:00:00.{tick_us * 10:07d}', outgoingWaitTicks=1)
     config['experiment'].update(loadMode='openLoopRate' if relay else 'closedLoopPerPublisher',
-        transportTiming='fixed' if relay else 'calibratedRttBudget',
+        transportTiming='fixed' if relay else timing,
         warmupTicks=per_second, measurementTicks=int(plan['simulationMeasurementSeconds']) * per_second,
         drainTimeoutTicks=5 * per_second)
     rtt = sum(p['rttBaselineMs'] for p in calibration_points) / len(calibration_points)
