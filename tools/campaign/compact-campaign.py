@@ -212,6 +212,14 @@ def run_series(root):
             if digest(name) != sha:
                 raise RuntimeError('Frozen campaign file changed: ' + name)
     sys.path.insert(0, str(pathlib.Path(plan['benchmarkRepository']) / 'scripts/campaign'))
+    if plan.get('campaignRunnerModule'):
+        runner = pathlib.Path(plan['campaignRunnerModule'])
+        if digest(runner) != plan['campaignRunnerModuleSha256']:
+            raise RuntimeError('Campaign runner revision changed')
+        spec = importlib.util.spec_from_file_location('run', runner)
+        module = importlib.util.module_from_spec(spec)
+        sys.modules['run'] = module
+        spec.loader.exec_module(module)
     import run
     import report
     original_main = run.main
@@ -385,7 +393,7 @@ def main():
             except ProcessLookupError:
                 continue
             command = [os.environ['MQB_STAND_SHELL'], '-NoLogo', '-NoProfile', '-NonInteractive',
-                       '-File', str(pathlib.Path(plan['benchmarkRepository']) / 'scripts/BrokerStand.ps1'),
+                       '-File', plan.get('standScript', str(pathlib.Path(plan['benchmarkRepository']) / 'scripts/BrokerStand.ps1')),
                        '-Action', 'stop', '-ConfigPath', str(provenance.parent / 'stand.selected.json'),
                        '-OutputDirectory', str(provenance.parent)]
             try:
