@@ -1,0 +1,654 @@
+{
+  "stage": "holdout",
+  "measurementSeconds": 2,
+  "runs": [
+    {
+      "key": "m16.q0.p1.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 28858.09826633208,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q0.p1.s42/20261016T232410063Z-c81653f00df743039df3782ac9e72bca"
+    },
+    {
+      "key": "m16.q0.p1.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 28858.09826633208,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q0.p1.s43/20261016T232410064Z-6c71de6c83a649a7beb2b73a9e67a22e"
+    },
+    {
+      "key": "m16.q0.p1.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 28858.09826633208,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q0.p1.s44/20261016T232410070Z-3318832ee3cb49ae85fd4351c5782f60"
+    },
+    {
+      "key": "m16.q0.p16.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 57891.89814483543,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q0.p16.s42/20261016T232410070Z-87e715a6752f43d998b105f6260ec641"
+    },
+    {
+      "key": "m16.q0.p16.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 57891.89814483543,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q0.p16.s43/20261016T232432028Z-b8bd363d6902407d872d41c046108809"
+    },
+    {
+      "key": "m16.q0.p16.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 57891.89814483543,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q0.p16.s44/20261016T232432026Z-edfa506583294341818588bf59a5a97f"
+    },
+    {
+      "key": "m16.q0.p64.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 53177.92068409911,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q0.p64.s42/20261016T232431999Z-c49283c680ef440a9e9a17b61e9054a3"
+    },
+    {
+      "key": "m16.q0.p64.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 53177.92068409911,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q0.p64.s43/20261016T232620383Z-f77b296bbef34501996b51ee1905ccb9"
+    },
+    {
+      "key": "m16.q0.p64.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 53177.92068409911,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q0.p64.s44/20261016T232642482Z-a8cbd108afce46efb8f52f23b929706b"
+    },
+    {
+      "key": "m16.q0.p128.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 53696.71335164964,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q0.p128.s42/20261016T232646494Z-dc82659d4bcf472b8f831a6087b6edc1"
+    },
+    {
+      "key": "m16.q0.p128.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 53696.71335164964,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q0.p128.s43/20261016T233001135Z-8c5ad3a8007f4ae4b3ed82cd79eab90c"
+    },
+    {
+      "key": "m16.q0.p128.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 53696.71335164964,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q0.p128.s44/20261016T233151522Z-67a5f2f4696d41c4b8032a6a25eb4d82"
+    },
+    {
+      "key": "m16.q1.p1.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 8901.000701019315,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q1.p1.s42/20261016T233207572Z-901bcfbc9f85444986a1442b900e39f0"
+    },
+    {
+      "key": "m16.q1.p1.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 8901.000701019315,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q1.p1.s43/20261016T233227652Z-756540806b084e77b097c13774d6af28"
+    },
+    {
+      "key": "m16.q1.p1.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 8901.000701019315,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q1.p1.s44/20261016T233247711Z-6f93203990b24d2dbfda365843792e54"
+    },
+    {
+      "key": "m16.q1.p16.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 18715.33209493091,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q1.p16.s42/20261016T233307833Z-14c4f533caa4466e8adbf49645c0e983"
+    },
+    {
+      "key": "m16.q1.p16.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 18715.33209493091,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q1.p16.s43/20261016T233452201Z-08ffe345f5534b8494d9b8c657160114"
+    },
+    {
+      "key": "m16.q1.p16.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 18715.33209493091,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q1.p16.s44/20261016T233636495Z-8cb7d4abe75c4f55a9753f6712732fe7"
+    },
+    {
+      "key": "m16.q1.p64.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 19735.07564497681,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q1.p64.s42/20261016T233720629Z-8027f428416f45a89256594d94f45783"
+    },
+    {
+      "key": "m16.q1.p64.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 19735.07564497681,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q1.p64.s43/20261016T233818875Z-fd1b0c57111a407e84fa6799498eb559"
+    },
+    {
+      "key": "m16.q1.p64.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 19735.07564497681,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q1.p64.s44/20261016T234059361Z-9b675c3877f842c8b3d167d19dbdec84"
+    },
+    {
+      "key": "m16.q1.p128.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 19971.388833983903,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q1.p128.s42/20261016T234229658Z-4081e3a8aa754facbd17f47d6713e86a"
+    },
+    {
+      "key": "m16.q1.p128.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 19971.388833983903,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q1.p128.s43/20261016T234255786Z-f2a5303ae46343ffbb2a25faac6fead7"
+    },
+    {
+      "key": "m16.q1.p128.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 19971.388833983903,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q1.p128.s44/20261016T234400070Z-e149bde47bc74e2cafc5eb08a61fd14c"
+    },
+    {
+      "key": "m16.q2.p1.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 3148.15001603366,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q2.p1.s42/20261016T234626545Z-d437f026819c45e69391fd162a8096fd"
+    },
+    {
+      "key": "m16.q2.p1.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 3148.15001603366,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q2.p1.s43/20261016T234646610Z-d65acd8385ca477d97c5a4c19537c897"
+    },
+    {
+      "key": "m16.q2.p1.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 3148.15001603366,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q2.p1.s44/20261016T234706704Z-a30ff95873e8477c8b496ab5e594b8fd"
+    },
+    {
+      "key": "m16.q2.p16.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 7415.583606944026,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q2.p16.s42/20261016T234726751Z-228b618beb034e92ae060c55b6c86344"
+    },
+    {
+      "key": "m16.q2.p16.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 7415.583606944026,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q2.p16.s43/20261016T234905120Z-c536470ad7b64896b67b2525e4e64965"
+    },
+    {
+      "key": "m16.q2.p16.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 7415.583606944026,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q2.p16.s44/20261016T235041440Z-03996c03039d448ba616f87e885814cc"
+    },
+    {
+      "key": "m16.q2.p64.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 7414.104876443761,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q2.p64.s42/20261016T235219759Z-dd8d4de05ba14b0c9b1d4b4e96e074f2"
+    },
+    {
+      "key": "m16.q2.p64.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 7414.104876443761,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q2.p64.s43/20261016T235408145Z-a5650927fb5a4c46b5e9138df8f6189d"
+    },
+    {
+      "key": "m16.q2.p64.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 7414.104876443761,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q2.p64.s44/20261016T235440256Z-50ec8fb4302e4e4bb154df4bf338de6c"
+    },
+    {
+      "key": "m16.q2.p128.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 7397.940780513825,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q2.p128.s42/20261016T235604583Z-2eb707832f0646899fd74bdb6d5cacdd"
+    },
+    {
+      "key": "m16.q2.p128.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 7397.940780513825,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q2.p128.s43/20261016T235837090Z-07add893e83f44768262d786333666b2"
+    },
+    {
+      "key": "m16.q2.p128.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 7397.940780513825,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q2.p128.s44/20261017T000053471Z-b840097aaa674421ac0c7290a7b1ed5f"
+    },
+    {
+      "key": "m256.q0.p1.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 24769.844196970374,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q0.p1.s42/20261017T000055531Z-d85f91b93662451f9331ecaff74378b3"
+    },
+    {
+      "key": "m256.q0.p1.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 24769.844196970374,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q0.p1.s43/20261017T000117607Z-36a9a038ba6649a7a86d4cac829f37c6"
+    },
+    {
+      "key": "m256.q0.p1.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 24769.844196970374,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q0.p1.s44/20261017T000139716Z-df505e6416b54bda802016c07e367156"
+    },
+    {
+      "key": "m256.q0.p16.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 52891.40152003378,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q0.p16.s42/20261017T000201804Z-b7e246be65fb4c479fa6fca7aa6f408b"
+    },
+    {
+      "key": "m256.q0.p16.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 52891.40152003378,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q0.p16.s43/20261017T000342128Z-1efa710ee08547a6b0b7e1ca6a01142e"
+    },
+    {
+      "key": "m256.q0.p16.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 52891.40152003378,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q0.p16.s44/20261017T000522429Z-179c8405781e4984b67484bad9033310"
+    },
+    {
+      "key": "m256.q0.p64.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 51852.10772974082,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q0.p64.s42/20261017T000702706Z-d132aa6565b749c28cc4389f431d30c2"
+    },
+    {
+      "key": "m256.q0.p64.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 51852.10772974082,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q0.p64.s43/20261017T000931207Z-fde28bb15c944dea8f386b3db5a0578e"
+    },
+    {
+      "key": "m256.q0.p64.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 51852.10772974082,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q0.p64.s44/20261017T001151667Z-72f92286b9454211a1ef33ad224d3ee1"
+    },
+    {
+      "key": "m256.q0.p128.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 51324.49438070092,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q0.p128.s42/20261017T001233846Z-38d496e46a2e4582869d181be5ad0040"
+    },
+    {
+      "key": "m256.q0.p128.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 51324.49438070092,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q0.p128.s43/20261017T001352103Z-091f5404210a49d897c0c3cfe0ed0dfd"
+    },
+    {
+      "key": "m256.q0.p128.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 51324.49438070092,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q0.p128.s44/20261017T001458316Z-3146677f60b840ae970728765b201043"
+    },
+    {
+      "key": "m256.q1.p1.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 8859.584269924599,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q1.p1.s42/20261017T001720782Z-a0fb0a1aabad417195f110acafd65f88"
+    },
+    {
+      "key": "m256.q1.p1.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 8859.584269924599,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q1.p1.s43/20261017T001740814Z-59c42c6e73b242f6a9312b1f313e90b6"
+    },
+    {
+      "key": "m256.q1.p1.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 8859.584269924599,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q1.p1.s44/20261017T001800975Z-0c5e9c247a344c86ae62d6bd000639ca"
+    },
+    {
+      "key": "m256.q1.p16.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 18667.79151145386,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q1.p16.s42/20261017T001821015Z-4f256222fc8346d9badb4835abeaad69"
+    },
+    {
+      "key": "m256.q1.p16.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 18667.79151145386,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q1.p16.s43/20261017T002005371Z-531c31f852fd42c0922235b530a26528"
+    },
+    {
+      "key": "m256.q1.p16.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 18667.79151145386,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q1.p16.s44/20261017T002143734Z-253f2de6a17e458f960a6e3658626666"
+    },
+    {
+      "key": "m256.q1.p64.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 19676.676323448803,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q1.p64.s42/20261017T002328068Z-ee4de68467f54aa797658a7a4af9a2f2"
+    },
+    {
+      "key": "m256.q1.p64.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 19676.676323448803,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q1.p64.s43/20261017T002404235Z-7d8436f712fa42db9e8ec248daa794b5"
+    },
+    {
+      "key": "m256.q1.p64.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 19676.676323448803,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q1.p64.s44/20261017T002526464Z-30808440c4b04fb9b2c1b750a5134192"
+    },
+    {
+      "key": "m256.q1.p128.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 19227.728168816193,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q1.p128.s42/20261017T002626691Z-7fe1788c757142cea3b36b18f93f65df"
+    },
+    {
+      "key": "m256.q1.p128.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 19227.728168816193,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q1.p128.s43/20261017T002933290Z-8882e200401a4ee1a47949e777c9b4a5"
+    },
+    {
+      "key": "m256.q1.p128.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 19227.728168816193,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q1.p128.s44/20261017T003013438Z-c7235a068bcc4f2ca302d9e1491b8684"
+    },
+    {
+      "key": "m256.q2.p1.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 3106.4456221107444,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q2.p1.s42/20261017T003103636Z-d7c3b142e1fa4d8ab276e9c70e19298d"
+    },
+    {
+      "key": "m256.q2.p1.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 3106.4456221107444,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q2.p1.s43/20261017T003123704Z-0dfcfb751fbe49409b3faa12a68ae93c"
+    },
+    {
+      "key": "m256.q2.p1.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 3106.4456221107444,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q2.p1.s44/20261017T003143735Z-7f34d58f404b46678b2868993bb57855"
+    },
+    {
+      "key": "m256.q2.p16.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 7354.521526016218,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q2.p16.s42/20261017T003203860Z-d5dde36b44084815b6e12d5a108f21c1"
+    },
+    {
+      "key": "m256.q2.p16.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 7354.521526016218,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q2.p16.s43/20261017T003340193Z-d721216edcac4cb694939c9a5c9975af"
+    },
+    {
+      "key": "m256.q2.p16.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 7354.521526016218,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q2.p16.s44/20261017T003516525Z-cc875bfb44814589abf9b04fb0b07965"
+    },
+    {
+      "key": "m256.q2.p64.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 7222.223518599436,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q2.p64.s42/20261017T003654830Z-242c6a824a804f2aa7647e65c8be9f6a"
+    },
+    {
+      "key": "m256.q2.p64.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 7222.223518599436,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q2.p64.s43/20261017T003807079Z-a1d8d69562c643f3bd26dd5c86ed5f69"
+    },
+    {
+      "key": "m256.q2.p64.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 7222.223518599436,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q2.p64.s44/20261017T004105647Z-046faf7599a343458b0609f718001991"
+    },
+    {
+      "key": "m256.q2.p128.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 7419.19900362237,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q2.p128.s42/20261017T004245947Z-abc69a2c1407433da02a17a162c8aeb3"
+    },
+    {
+      "key": "m256.q2.p128.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 7419.19900362237,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q2.p128.s43/20261017T004326112Z-de3d4c51c369409ca5d4d71ef7594e64"
+    },
+    {
+      "key": "m256.q2.p128.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 7419.19900362237,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q2.p128.s44/20261017T004404267Z-8081ace0f1d04aff9262ebb4459a2e4f"
+    }
+  ]
+}

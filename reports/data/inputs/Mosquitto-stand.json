@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "broker-stand.v1",
+  "deploymentMode": "singleHostSequential",
+  "cpuMode": "singleCorePinned",
+  "activeBroker": "Mosquitto",
+  "dockerContext": "native-local",
+  "controlInterface": "127.0.0.1",
+  "networkMode": "host",
+  "brokers": [
+    {
+      "name": "Mosquitto",
+      "mqttUri": "mqtt://127.0.0.1:2883",
+      "executable": "/usr/sbin/mosquitto",
+      "args": [
+        "-c",
+        "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/mosquitto.conf"
+      ],
+      "configFiles": [
+        "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/mosquitto.conf"
+      ],
+      "versionArgs": [
+        "-h"
+      ],
+      "brokerVersion": "2.0.15",
+      "linuxLaunchMode": "systemdUser",
+      "runtime": "native",
+      "lifecycle": "managed",
+      "serviceName": "mosquitto",
+      "containerName": "mosquitto",
+      "loaded": true,
+      "executableSha256": "34cee46d71bd97aca34c75fcb844674ab787434468c06423a3a1f2825a213dea",
+      "singleHostMqttPort": 2883,
+      "distributedMqttPort": 1883,
+      "managementUri": null,
+      "cpuset": "0",
+      "memoryLimit": 4294967296
+    }
+  ]
+}

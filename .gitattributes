@@ -1,0 +1,3 @@
+# Published evidence and its manifests must retain their exact bytes on checkout.
+# In particular, CRLF conversion would invalidate SHA-256 on Windows.
+/reports/** -text

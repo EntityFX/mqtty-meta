@@ -1,0 +1,8 @@
+{
+  "broker": "Aedes",
+  "stage": "calibration",
+  "verified": true,
+  "originalSha256": "1ff2c53c99b1f7e58738d9779ec228482787d62bad4c75478da84720a74b786d",
+  "restoredAggregateSha256": "8cb7e66e00b66f82dfea478d5db90a9cf8f40cbb9e3e38ce38370e0819565567",
+  "note": "Scientific points and campaign identity match; inputSha256 differs between compact and restored representation."
+}

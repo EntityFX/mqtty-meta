@@ -1,0 +1,111 @@
+{
+  "status": "running",
+  "completed": [
+    "Aedes/calibration",
+    "Aedes/pilot",
+    "Mosquitto/pilot",
+    "ActiveMQ/pilot",
+    "EMQX/pilot",
+    "Aedes/profile",
+    "Aedes/fidelity",
+    "Aedes/validation",
+    "Aedes/holdout",
+    "Aedes/relay",
+    "Mosquitto/calibration",
+    "Mosquitto/profile",
+    "Mosquitto/fidelity",
+    "EMQX/calibration",
+    "EMQX/profile",
+    "Mosquitto/validation"
+  ],
+  "brokers": {
+    "Aedes": {
+      "stage": "relay",
+      "status": "завершён"
+    },
+    "Mosquitto": {
+      "stage": "holdout",
+      "status": "в работе"
+    },
+    "ActiveMQ": {
+      "stage": "pending",
+      "status": "не начат"
+    },
+    "EMQX": {
+      "stage": "pending",
+      "status": "не начат"
+    },
+    "MqttRelay-Mixed": {
+      "stage": "pending",
+      "status": "не начат"
+    }
+  },
+  "coverageProtocol": "overnight-v1",
+  "profiles": {
+    "Aedes": "e16c599ebf32dda761f84afa2e21c8d2fc29e95bbb31b987607d83906b347239",
+    "Mosquitto": "d9cf125fb8cb6ec3677fc3c596bafcdfced8be0502362e2b4ff03da1421d46eb",
+    "EMQX": "effe28c0fabf2d835579de8e6c40aa7d03a2865b7a23336d6f57189e79340b6f"
+  },
+  "startedAtUtc": "2026-10-18T20:31:43.261913+00:00",
+  "deadlineUtc": "2026-10-19T05:00:00+00:00",
+  "controllerRuntime": {
+    "pid": 96087,
+    "affinity": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "cgroup": "/user.slice/user-500.slice/user@500.service/app.slice/mqttbenchmark-repaired-restart-eb30a9829e7b45acafc2d801251fd818.service",
+    "memoryMaxBytes": 8589934592
+  },
+  "simulationResources": {
+    "current": 4526882816,
+    "workingSet": 4452847616,
+    "anon": 2314604544,
+    "file": 2185715712,
+    "systemAvailable": 10778431488,
+    "activeProcesses": 3,
+    "workerLimit": 4
+  },
+  "activeSimulations": [
+    {
+      "tag": "Mosquitto-holdout-m16.q0.p128.s42",
+      "pid": 98494,
+      "log": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/controller/logs/Mosquitto-holdout-m16.q0.p128.s42-eef3176e.log"
+    },
+    {
+      "tag": "Mosquitto-holdout-m16.q0.p128.s43",
+      "pid": 98512,
+      "log": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/controller/logs/Mosquitto-holdout-m16.q0.p128.s43-6ab5d5ba.log"
+    },
+    {
+      "tag": "Mosquitto-holdout-m16.q0.p128.s44",
+      "pid": 98535,
+      "log": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/controller/logs/Mosquitto-holdout-m16.q0.p128.s44-f401981f.log"
+    }
+  ],
+  "active": {
+    "tag": "Mosquitto-holdout-m16.q0.p128.s42",
+    "pid": 98494,
+    "log": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/controller/logs/Mosquitto-holdout-m16.q0.p128.s42-eef3176e.log"
+  }
+}

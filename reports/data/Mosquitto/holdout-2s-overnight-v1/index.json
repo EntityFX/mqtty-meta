@@ -1,0 +1,87 @@
+{
+  "stage": "holdout",
+  "measurementSeconds": 2,
+  "runs": [
+    {
+      "key": "m16.q0.p1.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 33784.921967258844,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/holdout-2s-overnight-v1/m16.q0.p1.s42/20261018T213016288Z-96897e93414841b388b2dc65c556f5a6"
+    },
+    {
+      "key": "m16.q0.p1.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 33784.921967258844,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/holdout-2s-overnight-v1/m16.q0.p1.s43/20261018T213016294Z-9633c26f8cca492c840bf45015cbca9f"
+    },
+    {
+      "key": "m16.q0.p1.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 33784.921967258844,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/holdout-2s-overnight-v1/m16.q0.p1.s44/20261018T213016337Z-f97b2c52a7584cf7b9e21f4e50f87b9d"
+    },
+    {
+      "key": "m16.q0.p16.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 56481.04215933012,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/holdout-2s-overnight-v1/m16.q0.p16.s42/20261018T213048396Z-3b14a6bf00464574b987e4ef3a4b5832"
+    },
+    {
+      "key": "m16.q0.p16.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 56481.04215933012,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/holdout-2s-overnight-v1/m16.q0.p16.s43/20261018T213048416Z-14bbd42ea6454e83b8259021864610dd"
+    },
+    {
+      "key": "m16.q0.p16.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 56481.04215933012,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/holdout-2s-overnight-v1/m16.q0.p16.s44/20261018T213048404Z-db4bb25b31c947cba955b32530d4e917"
+    },
+    {
+      "key": "m16.q0.p64.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 55306.32197281852,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/holdout-2s-overnight-v1/m16.q0.p64.s42/20261018T213240753Z-e343fef6b2be49bfa329a37507defa1f"
+    },
+    {
+      "key": "m16.q0.p64.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 55306.32197281852,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/holdout-2s-overnight-v1/m16.q0.p64.s43/20261018T213242734Z-4f82e8ea1dfa412ba059ef1c75e3456a"
+    },
+    {
+      "key": "m16.q0.p64.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 55306.32197281852,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/holdout-2s-overnight-v1/m16.q0.p64.s44/20261018T213248828Z-55adac1f87d647dea0b15c2a94cc7849"
+    }
+  ]
+}

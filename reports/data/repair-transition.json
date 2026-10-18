@@ -1,0 +1,40 @@
+{
+  "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/controller",
+  "utc": "2026-10-18T20:31:43.265340+00:00",
+  "sourceStateSha256": "1c8c45c9d594e8f5fc35cc88658f1bacbd63d61b5d9db22a65f4d6441d83f72e",
+  "excludedIncompleteMatrices": [
+    {
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/ActiveMQ-calibration",
+      "reason": "Incomplete matrix; retained at source, rerun separately with fence-driven telemetry"
+    }
+  ],
+  "originalDeadlineUtc": "2026-10-19T05:00:00+00:00",
+  "profileSha256": {
+    "Aedes": "e16c599ebf32dda761f84afa2e21c8d2fc29e95bbb31b987607d83906b347239",
+    "Mosquitto": "d9cf125fb8cb6ec3677fc3c596bafcdfced8be0502362e2b4ff03da1421d46eb",
+    "EMQX": "effe28c0fabf2d835579de8e6c40aa7d03a2865b7a23336d6f57189e79340b6f"
+  },
+  "measurementCliUnchanged": true,
+  "simulatorUnchanged": true,
+  "nativeControllerRevision": {
+    "createdUtc": "2026-10-18T20:07:03.913177+00:00",
+    "rootCommit": "63228f94a5888c072afce286cd5e66ea11dd3563",
+    "benchmarkSourceCommit": "30c21c4537f090f5b52507374e9c2e5fabdcb41a",
+    "deploymentMode": "unchanged measurement CLI + explicit new native-controller component; same simulator/profiles; separate cohort",
+    "files": {
+      "BrokerStand.ps1": "63164b1794caadf27098e5cb39f56b7016ad14b1cbe5907c9c2cecdfef2bd7a8",
+      "compact-campaign.py": "ec7ae6bbda3ee95375dba6e58c3a63183db34eca350d6b597547c2da5446b455",
+      "instrumentation-repair-20261018.md": "0499e20941af9094c98d7cb87a1b21e918d886855c9f328400f5324b5955f256",
+      "MqttBenchmark-repair.bundle": "b7f874794453908d6db242e25973795ce70a983a8aeb9da882f9a66ea111e004",
+      "mqtty-meta-repair.bundle": "2d0276804b9ab937abaee3dc079d6c85f8255f4a60c1de34fcdbb3e1827ee773",
+      "RemoteNativeStand.ps1": "6f31be62ba3f320c8494cc38df2f2ed28d6c4d2ba77daad93aa37afd6b0fd3c1",
+      "repair-campaign-handoff.py": "5ca4e179c4303ea52cbd215f345151b37145a6741482de61a76b65094af7c1d5",
+      "run.py": "7e6cceb40b2970565f37bb9e4eb4afb54a6beafdb7c010510d2a69a1eb1e0185",
+      "start-repaired-controller.py": "f00269ad06698f9db5fad26fb5c6e4c1232d6f15209d37d78edfb671c121f3fb",
+      "test_attempt_restore.py": "82e60b6772f4592162d30e911b1dcf04c12f924073f7e754eb5c8852d4a98c9e",
+      "test_native_capture.py": "dec4308d65b2a8db47f51f40bea946687f72302ec614a96f057a9409f898b473",
+      "test_repair_campaign_handoff.py": "492a0f41d20329ddd13d915a4907d3de58cd4e618f1ca3b62e7f41bc8ab85d5b"
+    }
+  },
+  "reusedSimulationScope": "Same simulator/profile bytes and inputs; original indices and output paths retained"
+}

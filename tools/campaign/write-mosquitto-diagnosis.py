@@ -98,7 +98,9 @@ def main():
     evidence['sourceCommits'] = {'MqttBenchmark': '3a689466009a0d5410f5dc88dc1282d72c27f7dd',
         'MqttY': '4caf41246ec6636acc53b82ff2a8d918b74a6dbe'}
     (DIAG / 'evidence-summary.json').write_text(json.dumps(evidence, indent=2), encoding='utf-8')
-    source = REPO / 'docs/mosquitto-fidelity-diagnosis.md'
+    # Preserve the edited explanation in reports/history when regenerating data.
+    source = REPO / 'reports/Mosquitto-diagnosis-generated.md'
+    source.parent.mkdir(parents=True, exist_ok=True)
     prefix = '../MqttBenchmark/artifacts/compact-20261016-6h-v1/diagnostics/mosquitto/'
     grouped = []
     for size in (16, 256):

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 3,
+  "seed": 20260909,
+  "deploymentMode": "singleHostSequential",
+  "cpuMode": "singleCorePinned",
+  "brokers": [
+    "Mosquitto"
+  ],
+  "customImageBrokers": [],
+  "messageBytes": [
+    16,
+    256
+  ],
+  "qos": [
+    0,
+    1,
+    2
+  ],
+  "publishers": [
+    1,
+    16,
+    64,
+    128
+  ],
+  "repeats": 3,
+  "warmupSeconds": 5,
+  "measurementSeconds": 20,
+  "cooldownSeconds": 1,
+  "drainTimeoutSeconds": 10,
+  "quietPeriodSeconds": 10,
+  "networkThresholdPercentByBroker": {
+    "Mosquitto": null
+  },
+  "cpuThresholdPercent": 99,
+  "telemetryCaptureReserveSeconds": 3,
+  "preflightSysWaitSeconds": 2,
+  "maxAttempts": 2
+}

@@ -1,0 +1,41 @@
+{
+  "experiment": {
+    "topologyMode": "mqttRelay",
+    "profileClientCountMode": "publishers",
+    "brokers": 4,
+    "networkLength": 2,
+    "clientsPerBroker": 1,
+    "publishQos": "atMostOnce",
+    "subscribeQos": "atMostOnce",
+    "payloadBytes": 16,
+    "brokerAssignmentMode": "aedes",
+    "mixedBrokerTypes": [],
+    "warmupTicks": 10000,
+    "measurementTicks": 20000,
+    "drainTimeoutTicks": 50000,
+    "offeredRps": 122695.89629474428,
+    "randomSeed": 42,
+    "parallel": false,
+    "refreshStrategy": 0,
+    "enableCounters": true,
+    "fidelityMode": true,
+    "loadMode": "openLoopRate",
+    "transportTiming": "fixed"
+  },
+  "ticks": {
+    "tickPeriod": "00:00:00.0001000",
+    "receiveWaitPeriod": "00:00:01",
+    "outgoingWaitTicks": 1,
+    "counterHistoryDepth": 100
+  },
+  "network": {
+    "capacityBytesPerSecond": 125000000,
+    "throughputWindowTicks": 100,
+    "queueCapacity": 100000,
+    "transferTicks": 2,
+    "networkType": "ethernet"
+  },
+  "mqttYRepository": "/run/media/entityfx/hd250/mqtty-evidence/tools/mqtty-service-115885e",
+  "mqttBenchmarkRepository": "/home/entityfx/projects/mqtty-meta/MqttBenchmark",
+  "brokerProfilePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/controller/brokers/Aedes/broker-calibration.v3.json"
+}

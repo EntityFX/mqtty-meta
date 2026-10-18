@@ -1,0 +1,320 @@
+{
+  "seriesId": "overnight-20261016-service-v1",
+  "profileSha256": "e16c599ebf32dda761f84afa2e21c8d2fc29e95bbb31b987607d83906b347239",
+  "nativeRuns": 144,
+  "fidelityRuns": 144,
+  "relayRuns": 72,
+  "criteria": {
+    "fidelity": {
+      "rps": {
+        "passed": 69,
+        "failed": 3
+      },
+      "latencyP99Ms": {
+        "notApplicable": 24,
+        "passed": 43,
+        "failed": 5
+      },
+      "publishFailureRate": {
+        "passed": 72
+      },
+      "deliveryLossRate": {
+        "passed": 72
+      }
+    },
+    "holdout": {
+      "rps": {
+        "passed": 69,
+        "failed": 3
+      },
+      "latencyP99Ms": {
+        "notApplicable": 24,
+        "passed": 46,
+        "failed": 2
+      },
+      "publishFailureRate": {
+        "passed": 72
+      },
+      "deliveryLossRate": {
+        "passed": 63,
+        "failed": 9
+      }
+    },
+    "relay": {
+      "rps": {
+        "notApplicable": 72
+      },
+      "latencyP99Ms": {
+        "notApplicable": 72
+      },
+      "publishFailureRate": {
+        "notApplicable": 72
+      },
+      "deliveryLossRate": {
+        "notApplicable": 72
+      }
+    }
+  },
+  "failedScenarios": {
+    "fidelity": 8,
+    "holdout": 14,
+    "relay": 0
+  },
+  "failedCriteria": [
+    {
+      "stage": "fidelity",
+      "key": "m16.q1.p64.s42",
+      "name": "latencyP99Ms",
+      "reference": 4.790933333333366,
+      "simulated": 3.79,
+      "error": 0.2089224089947733,
+      "limit": 0.2,
+      "status": "failed"
+    },
+    {
+      "stage": "fidelity",
+      "key": "m16.q1.p64.s43",
+      "name": "latencyP99Ms",
+      "reference": 4.790933333333366,
+      "simulated": 3.8000000000000003,
+      "error": 0.20683513302906026,
+      "limit": 0.2,
+      "status": "failed"
+    },
+    {
+      "stage": "fidelity",
+      "key": "m16.q1.p64.s44",
+      "name": "latencyP99Ms",
+      "reference": 4.790933333333366,
+      "simulated": 3.7800000000000002,
+      "error": 0.21100968496048625,
+      "limit": 0.2,
+      "status": "failed"
+    },
+    {
+      "stage": "fidelity",
+      "key": "m16.q2.p1.s42",
+      "name": "rps",
+      "reference": 3117.0596696404555,
+      "simulated": 2648,
+      "error": 0.15048145347007755,
+      "limit": 0.15,
+      "status": "failed"
+    },
+    {
+      "stage": "fidelity",
+      "key": "m16.q2.p1.s44",
+      "name": "rps",
+      "reference": 3117.0596696404555,
+      "simulated": 2624,
+      "error": 0.15818101733590764,
+      "limit": 0.15,
+      "status": "failed"
+    },
+    {
+      "stage": "fidelity",
+      "key": "m256.q1.p1.s44",
+      "name": "rps",
+      "reference": 8779.059376161043,
+      "simulated": 6826.5,
+      "error": 0.2224110001423489,
+      "limit": 0.15,
+      "status": "failed"
+    },
+    {
+      "stage": "fidelity",
+      "key": "m256.q2.p64.s42",
+      "name": "latencyP99Ms",
+      "reference": 71.32323333333382,
+      "simulated": 24.080000000000002,
+      "error": 0.6623821036343019,
+      "limit": 0.2,
+      "status": "failed"
+    },
+    {
+      "stage": "fidelity",
+      "key": "m256.q2.p64.s44",
+      "name": "latencyP99Ms",
+      "reference": 71.32323333333382,
+      "simulated": 37.4,
+      "error": 0.47562668919945567,
+      "limit": 0.2,
+      "status": "failed"
+    },
+    {
+      "stage": "holdout",
+      "key": "m16.q1.p64.s42",
+      "name": "deliveryLossRate",
+      "reference": 0.07078471357869483,
+      "simulated": 0.12368887762857872,
+      "error": 0.05290416404988389,
+      "limit": 0.05,
+      "status": "failed"
+    },
+    {
+      "stage": "holdout",
+      "key": "m16.q1.p64.s43",
+      "name": "deliveryLossRate",
+      "reference": 0.07078471357869483,
+      "simulated": 0.12610692446271343,
+      "error": 0.055322210884018605,
+      "limit": 0.05,
+      "status": "failed"
+    },
+    {
+      "stage": "holdout",
+      "key": "m16.q1.p64.s44",
+      "name": "deliveryLossRate",
+      "reference": 0.07078471357869483,
+      "simulated": 0.12460988049021848,
+      "error": 0.053825166911523656,
+      "limit": 0.05,
+      "status": "failed"
+    },
+    {
+      "stage": "holdout",
+      "key": "m16.q1.p128.s42",
+      "name": "deliveryLossRate",
+      "reference": 0.35368717781189307,
+      "simulated": 0.274185257530585,
+      "error": 0.07950192028130809,
+      "limit": 0.05,
+      "status": "failed"
+    },
+    {
+      "stage": "holdout",
+      "key": "m16.q1.p128.s43",
+      "name": "deliveryLossRate",
+      "reference": 0.35368717781189307,
+      "simulated": 0.2729861467419189,
+      "error": 0.08070103106997417,
+      "limit": 0.05,
+      "status": "failed"
+    },
+    {
+      "stage": "holdout",
+      "key": "m16.q1.p128.s44",
+      "name": "deliveryLossRate",
+      "reference": 0.35368717781189307,
+      "simulated": 0.2763502749370471,
+      "error": 0.07733690287484596,
+      "limit": 0.05,
+      "status": "failed"
+    },
+    {
+      "stage": "holdout",
+      "key": "m16.q2.p1.s42",
+      "name": "rps",
+      "reference": 3148.15001603366,
+      "simulated": 2664,
+      "error": 0.1537887373752406,
+      "limit": 0.15,
+      "status": "failed"
+    },
+    {
+      "stage": "holdout",
+      "key": "m16.q2.p1.s44",
+      "name": "rps",
+      "reference": 3148.15001603366,
+      "simulated": 2641.5,
+      "error": 0.16093579195821997,
+      "limit": 0.15,
+      "status": "failed"
+    },
+    {
+      "stage": "holdout",
+      "key": "m256.q1.p1.s44",
+      "name": "rps",
+      "reference": 8859.584269924599,
+      "simulated": 6872.5,
+      "error": 0.22428640096241334,
+      "limit": 0.15,
+      "status": "failed"
+    },
+    {
+      "stage": "holdout",
+      "key": "m256.q1.p64.s42",
+      "name": "deliveryLossRate",
+      "reference": 0.7030020328968266,
+      "simulated": 0.322553259225851,
+      "error": 0.3804487736709756,
+      "limit": 0.05,
+      "status": "failed"
+    },
+    {
+      "stage": "holdout",
+      "key": "m256.q1.p64.s43",
+      "name": "deliveryLossRate",
+      "reference": 0.7030020328968266,
+      "simulated": 0.3246874666096805,
+      "error": 0.3783145662871461,
+      "limit": 0.05,
+      "status": "failed"
+    },
+    {
+      "stage": "holdout",
+      "key": "m256.q1.p64.s44",
+      "name": "deliveryLossRate",
+      "reference": 0.7030020328968266,
+      "simulated": 0.3244840900013314,
+      "error": 0.37851794289549523,
+      "limit": 0.05,
+      "status": "failed"
+    },
+    {
+      "stage": "holdout",
+      "key": "m256.q2.p64.s42",
+      "name": "latencyP99Ms",
+      "reference": 43.44726666666611,
+      "simulated": 24.82,
+      "error": 0.4287327626287119,
+      "limit": 0.2,
+      "status": "failed"
+    },
+    {
+      "stage": "holdout",
+      "key": "m256.q2.p64.s43",
+      "name": "latencyP99Ms",
+      "reference": 43.44726666666611,
+      "simulated": 75.99,
+      "error": 0.7490168157874366,
+      "limit": 0.2,
+      "status": "failed"
+    }
+  ],
+  "resources": [
+    [
+      "calibration",
+      72,
+      "63.0263–73.5789",
+      "81.9727–1065.69",
+      "54.5994"
+    ],
+    [
+      "validation",
+      72,
+      "43.2453–54.6038",
+      "82.0273–1060.9",
+      "49.9788"
+    ]
+  ],
+  "archiveVerification": {
+    "calibration": {
+      "broker": "Aedes",
+      "stage": "calibration",
+      "verified": true,
+      "originalSha256": "1ff2c53c99b1f7e58738d9779ec228482787d62bad4c75478da84720a74b786d",
+      "restoredAggregateSha256": "8cb7e66e00b66f82dfea478d5db90a9cf8f40cbb9e3e38ce38370e0819565567",
+      "note": "Scientific points and campaign identity match; inputSha256 differs between compact and restored representation."
+    },
+    "validation": {
+      "broker": "Aedes",
+      "stage": "validation",
+      "verified": true,
+      "originalSha256": "865f5552318afb49fd65b4be709b5dbf7a34d334e6c26ba15b24f7ad32608a68",
+      "restoredAggregateSha256": "425286528881db3345d8a24b9441a3f8a812fa383d48a534379315213532b14e",
+      "note": "Scientific points and campaign identity match; inputSha256 differs between compact and restored representation."
+    }
+  },
+  "generatorSha256": "136f75c9c8236be806f14da34fbc284cd6f26fed31d1c5173fe9671ca6f86419"
+}
