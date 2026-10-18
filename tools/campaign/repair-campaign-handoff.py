@@ -109,6 +109,11 @@ def prepare(old, new, patches, source_state):
         standScript=str(new / 'source/BrokerStand.ps1'),
         instrumentationRevision=revision,
         repairPredecessor=str(old))
+    now = datetime.datetime.now(datetime.timezone.utc)
+    plan['predecessorStartedAtUtc'] = plan.get('startedAtUtc')
+    plan['createdAtUtc'] = plan['startedAtUtc'] = now.isoformat()
+    plan['budgetSeconds'] = int((datetime.datetime.fromisoformat(plan['deadlineUtc']) - now).total_seconds())
+    plan['workloadBudgetSeconds'] = int((datetime.datetime.fromisoformat(plan['workloadDeadlineUtc']) - now).total_seconds()) if plan.get('workloadDeadlineUtc') else plan['budgetSeconds'] - 900
     plan['programAmendmentNote'] += ' Separate instrumentation-repair cohort: native capture remains active until the workload fence, within a bounded maximum. Prior successful matrices/simulations retained with original identities; incomplete ActiveMQ calibration is not merged. Model, profiles and fidelity thresholds unchanged.'
     frozen = read(old / 'frozen-files.json')
     for p in (new / 'source').iterdir():
