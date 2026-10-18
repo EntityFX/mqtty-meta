@@ -5,13 +5,19 @@ import os
 import pathlib
 import subprocess
 import sys
+import uuid
 import zipfile
 
 root = pathlib.Path(sys.argv[sys.argv.index('--series') + 1]).resolve()
 plan = json.loads((root / 'series.json').read_text())
 state = json.loads((root / 'state.json').read_text())
-diagnostic = root.parent / 'diagnostics/ActiveMQ-telemetry'
+diagnostic = root.parent / 'diagnostics/ActiveMQ-telemetry' / uuid.uuid4().hex
 diagnostic.mkdir(parents=True)
+# EnsureLinuxMount checks the actual archive-root path before the first attempt;
+# findmnt -T must be given an existing directory. Each launch gets a fresh pilot
+# directory so failures and their logs are never overwritten on restart.
+(diagnostic / 'archives').mkdir()
+state.pop('error', None)
 config = json.loads((root / 'inputs/ActiveMQ-calibration.json').read_text())
 config.update(messageBytes=[16], qos=[0], publishers=[128], repeats=1, maxAttempts=1)
 config_path = diagnostic / 'config.json'
