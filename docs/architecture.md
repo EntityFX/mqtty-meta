@@ -62,10 +62,10 @@ MqttBenchmark поддерживает локальное управление, 
 
 | Компонент / модуль | Вид | Файлов | Строк всего | Непустых строк |
 | --- | --- | ---: | ---: | ---: |
-| **Корневой репозиторий** | **Итого** | **48** | **7321** | **6637** |
+| **Корневой репозиторий** | **Итого** | **50** | **7834** | **7110** |
 | [tools](../tools/) | Скрипты | 1 | 109 | 97 |
-| [tools/campaign](../tools/campaign/) | Скрипты | 32 | 6029 | 5513 |
-| [tools/campaign](../tools/campaign/) | Тестовые скрипты | 15 | 1183 | 1027 |
+| [tools/campaign](../tools/campaign/) | Скрипты | 33 | 6481 | 5937 |
+| [tools/campaign](../tools/campaign/) | Тестовые скрипты | 16 | 1244 | 1076 |
 | **MqttBenchmark** | **Итого** | **177** | **14082** | **12782** |
 | [EntityFX.MqttBenchmark](../MqttBenchmark/src/EntityFX.MqttBenchmark/) | Модуль .NET | 28 | 1281 | 1139 |
 | [EntityFX.MqttBenchmark.Bomber](../MqttBenchmark/src/EntityFX.MqttBenchmark.Bomber/) | Модуль .NET | 16 | 1338 | 1108 |
@@ -101,7 +101,7 @@ MqttBenchmark поддерживает локальное управление, 
 | [book](../diss/book/) | Скрипты | 5 | 308 | 267 |
 | [doc](../diss/doc/) | Скрипты | 2 | 582 | 539 |
 | [doc](../diss/doc/) | Тестовые скрипты | 1 | 148 | 135 |
-| **Всего** | | **535** | **49996** | **43422** |
+| **Всего** | | **537** | **50509** | **43895** |
 
 <!-- code-inventory:end -->
 

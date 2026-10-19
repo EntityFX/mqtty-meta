@@ -746,6 +746,7 @@
     "data/EMQX/validation/archive-verification.json": "450dc3d55a9f38dcf11db9ba9a194b9b03c14f01ea4cbb65bb2081a4251a5656",
     "data/EMQX/validation/observations.json": "8af337a5dfcd91cbb782e7da6079ba50021ecd81b4fc43b742169a1d0fa4aa62",
     "data/environment.json": "99404f0c2ce30ed8f24a569488feeaa6ea1e8cdb4eed55a53374eba2710e0d20",
+    "data/evidence-assessment.json": "cc5eecdd2da9be4cb79b7f681b67d0fc0b7a1e2a6b05f6d3fe6c2d14cccb1e9a",
     "data/external-archives.json": "3d111f2bd11b7922b46b2eac3269206e699958fe96828bf3499bc81632afb70f",
     "data/final-evidence-sha256.json": "f4bd9a52ce0e19362462eeaf3e6a6935e344656d42b70af26a9de836733a7c6d",
     "data/frozen-files.json": "be618c610c32b47d526671d7d5550fc9874c10eb051a4277397e41bcdb5f3ece",
@@ -1077,6 +1078,8 @@
     "EMQX-validation.csv": "9ef1a25b2303cbe0b5e8b7851f9c6c57de0d89d2086fd1f55d9aef2760a5e966",
     "EMQX.html": "729f86f8e2079475ff5ec7b24d6143c636886fc96da241385c71ff0fa11076f5",
     "EMQX.md": "5615396f0eedcca8ba81bf2c33ed9aebf26824084c2f19a25a5309eb462326b2",
+    "Evidence-assessment.html": "25e70d8e1f77de77673061bf6eeaf75dd8887aea1dafbfb9c6f22ddd67040465",
+    "Evidence-assessment.md": "e3059d5a30c3b702f8a32b4e9f10f0c1eee9dd8bf5c0ff689886718f137d8030",
     "Full-vs-Compact.md": "1084c3860304844ff0356df05a776ee3cfef4813584535cb285155267343f2da",
     "history/empirical-fidelity-deployment.md": "a02da47cdeda0bd49d99b3d61b6f25b136257bf39cd528aa20cb8fc2d6b3ce5e",
     "history/empirical-service-budget-fix.md": "2a7f0e19111dda2639cc1dd37ec8074b22de469def61ed6592eba95f64c181a1",
@@ -1095,6 +1098,6 @@
     "MqttRelay-Mixed-relay.csv": "efba00ecb1d2fe15f6b837fd944172cca2847ce7d83a40770e8678a1f8ddf09c",
     "MqttRelay-Mixed.html": "330aa211f0643bdcbe1878529a0d74744dad0d23b8818139ab920b1f45249cfb",
     "MqttRelay-Mixed.md": "eca443d4ce05cd1e9e2b24418385dffcd6ed692fc46e1eb3975142283e6765ce",
-    "README.md": "303b0cfd71192d2f728798030160bc568ebb05771b88c47acc2f518c3fab2c49"
+    "README.md": "0d25a067364c965cbdf6c1669ed22fddc0f2c68b2f7116f591edf87953e526ec"
   }
 }
