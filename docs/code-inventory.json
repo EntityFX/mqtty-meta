@@ -1,12 +1,12 @@
 {
   "method": "physical-lines-v1",
   "revisions": {
-    ".": "93658878d22276fc79f32f3c41eb73ea81a9c9e4",
+    ".": "08e9a73d4d0b2ea0f6067900b00c975d9ec7735c",
     "MqttBenchmark": "30c21c4537f090f5b52507374e9c2e5fabdcb41a",
     "mqtty": "115885e012053d0112413e07743b061369ebea93",
     "diss": "ec51bde8d6cda707eb27eb99857417a733ccd730"
   },
-  "sourceSha256": "fa754e3a06640a67da166e475953f1bb533512b1f8ffbfe9787f277bc1115df4",
+  "sourceSha256": "36a1256f0dd88765082fe7f1b5726afd63ac633eb20c14c20e294afc242c3e8f",
   "modules": [
     {
       "repository": ".",
@@ -25,11 +25,11 @@
       "module": "tools/campaign",
       "kind": "Скрипты",
       "directory": "tools/campaign",
-      "files": 26,
-      "lines": 4641,
-      "nonblank": 4223,
+      "files": 32,
+      "lines": 6029,
+      "nonblank": 5513,
       "extensions": {
-        ".py": 26
+        ".py": 32
       }
     },
     {
@@ -37,11 +37,11 @@
       "module": "tools/campaign",
       "kind": "Тестовые скрипты",
       "directory": "tools/campaign",
-      "files": 13,
-      "lines": 1062,
-      "nonblank": 930,
+      "files": 15,
+      "lines": 1183,
+      "nonblank": 1027,
       "extensions": {
-        ".py": 13
+        ".py": 15
       }
     },
     {
@@ -436,8 +436,8 @@
     }
   ],
   "totals": {
-    "files": 527,
-    "lines": 48487,
-    "nonblank": 42035
+    "files": 535,
+    "lines": 49996,
+    "nonblank": 43422
   }
 }

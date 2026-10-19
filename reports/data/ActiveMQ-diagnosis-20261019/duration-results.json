@@ -1,0 +1,325 @@
+{
+  "excludedFromCampaignCoverage": true,
+  "notIndependentValidation": true,
+  "purpose": "Duration sensitivity only; no fitting to holdout and no change to thresholds",
+  "profileSha256": "d66a0f64cb195e29565e03a5531bdde45ccd9aee7b5d39ca7b26102d45706b2a",
+  "referenceSha256": "74336cb03f1bb3de721e639e89c78b66b9d153d5a662d3b437aac1e74c15548d",
+  "runtimeFiles": {
+    "EntityFX.MqttY.Contracts.dll": "e1e84114cce7a876cc1aa6f889237a730036ee2530a3b47ece83c5398da3d3d9",
+    "EntityFX.MqttY.Contracts.Mqtt.dll": "41eb4c77e47bc9cdf6b52a62166b1fdc364eace23dd57f352521315b57e095f1",
+    "EntityFX.MqttY.Contracts.Scenarios.dll": "9f46355aae89c0d35b394b7156857a2a5e9fa5293b415931017721f32f33d162",
+    "EntityFX.MqttY.dll": "e01a4fc48bbe57663b81dded357907443447bf9e5d7112a61a3fba044c4d1803",
+    "EntityFX.MqttY.MqttRelay.App.dll": "60c5a79fca5291b061af345f3fb98e758c62ae551763693d5f39f74d40e9cebd",
+    "EntityFX.MqttY.Plugin.Mqtt.dll": "c66e46423e071a62373b7eb5080cd90d370a02c93fa1c65946fae3812800e87d",
+    "Microsoft.Extensions.Configuration.Abstractions.dll": "3124386219566a2c386e6999d83a7d507584de46cde4ae733a8af3c373c42b8c",
+    "Microsoft.Extensions.Configuration.Binder.dll": "4449f40e0645a61067c5e206e956cc5bc3b4421593b3c27188d8c71ef45c64a6",
+    "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "ac9cd953b7eeb03cf48e343c5ace6fc9b48ac968b68d1cb30ad1d6111178bf4d",
+    "Microsoft.Extensions.DependencyInjection.dll": "df0ae00b1599acae93d9f4df2bcc6d0ba109221ccc44d2d1486183f84a5fec78",
+    "Microsoft.Extensions.Logging.Abstractions.dll": "ab36e8201d41dd751cbb712704dbe8492bdd0ab1bff6fb35371cf59bcd982181",
+    "Microsoft.Extensions.Logging.dll": "37b87b16ac688d5619168554a22cca2677e1115f21c2d5ebe2f39c024fee2b7f",
+    "Microsoft.Extensions.Options.dll": "fbb309a36bc91d90ec2984397bff4f75f35ac92909e0acd952c5264c5ac0a753",
+    "Microsoft.Extensions.Primitives.dll": "f9f47907a041067d9bc1b9a9f516009b6ca0a9c6325ce83527883cc0d053dfa5",
+    "System.Diagnostics.DiagnosticSource.dll": "d6935e993b69f8abd934f01b0d7dd8ca9616a7ea94c7af59ed07b2fd3cf93a97"
+  },
+  "rows": [
+    {
+      "key": "m16.q1.p16.s42",
+      "measurementSeconds": 2,
+      "wallSeconds": 126.20400000002701,
+      "summary": {
+        "status": "completed",
+        "measurementStartTick": 100014,
+        "measurementEndTick": 300014,
+        "simulated": {
+          "attempted": 10916,
+          "admitted": 10916,
+          "completed": 10916,
+          "expectedDeliveries": 10916,
+          "delivered": 5258,
+          "rateRejected": 0,
+          "publishFailed": 0,
+          "deliveryDropped": 5658,
+          "completedRps": 5458,
+          "publishFailureRate": 0,
+          "deliveryLossRate": 0.5183217295712715,
+          "latencyP99Ms": 23.650000000000002
+        },
+        "reference": {
+          "attempted": 0,
+          "admitted": 0,
+          "completed": 0,
+          "expectedDeliveries": 0,
+          "delivered": 0,
+          "rateRejected": 0,
+          "publishFailed": 0,
+          "deliveryDropped": 0,
+          "completedRps": 5534.740303209743,
+          "publishFailureRate": 0,
+          "deliveryLossRate": 0.6432720236286598,
+          "latencyP99Ms": 23.22536666666747
+        },
+        "acceptanceCriteria": [
+          {
+            "name": "rps",
+            "reference": 5534.740303209743,
+            "simulated": 5458,
+            "error": 0.013865203967246479,
+            "limit": 0.15,
+            "status": "passed"
+          },
+          {
+            "name": "publishFailureRate",
+            "reference": 0,
+            "simulated": 0,
+            "error": 0,
+            "limit": 0.05,
+            "status": "passed"
+          },
+          {
+            "name": "deliveryLossRate",
+            "reference": 0.6432720236286598,
+            "simulated": 0.5183217295712715,
+            "error": 0.12495029405738822,
+            "limit": 0.05,
+            "status": "failed"
+          },
+          {
+            "name": "latencyP99Ms",
+            "reference": 23.22536666666747,
+            "simulated": 23.650000000000002,
+            "error": 0.01828317026925381,
+            "limit": 0.2,
+            "status": "passed"
+          }
+        ],
+        "error": null
+      },
+      "directory": "MqttBenchmark\\artifacts\\diagnostics\\ActiveMQ-duration-20261019-v2\\m16.q1.p16.s42-2s\\20261019T095509960Z-eb8cad74a2c24c27951168cf4e83331e",
+      "originalSummary": {
+        "status": "completed",
+        "measurementStartTick": 100014,
+        "measurementEndTick": 300014,
+        "simulated": {
+          "attempted": 10916,
+          "admitted": 10916,
+          "completed": 10916,
+          "expectedDeliveries": 10916,
+          "delivered": 5258,
+          "rateRejected": 0,
+          "publishFailed": 0,
+          "deliveryDropped": 5658,
+          "completedRps": 5458,
+          "publishFailureRate": 0,
+          "deliveryLossRate": 0.5183217295712715,
+          "latencyP99Ms": 23.650000000000002
+        },
+        "reference": {
+          "attempted": 0,
+          "admitted": 0,
+          "completed": 0,
+          "expectedDeliveries": 0,
+          "delivered": 0,
+          "rateRejected": 0,
+          "publishFailed": 0,
+          "deliveryDropped": 0,
+          "completedRps": 5534.740303209743,
+          "publishFailureRate": 0,
+          "deliveryLossRate": 0.6432720236286598,
+          "latencyP99Ms": 23.22536666666747
+        },
+        "acceptanceCriteria": [
+          {
+            "name": "rps",
+            "reference": 5534.740303209743,
+            "simulated": 5458,
+            "error": 0.013865203967246479,
+            "limit": 0.15,
+            "status": "passed"
+          },
+          {
+            "name": "publishFailureRate",
+            "reference": 0,
+            "simulated": 0,
+            "error": 0,
+            "limit": 0.05,
+            "status": "passed"
+          },
+          {
+            "name": "deliveryLossRate",
+            "reference": 0.6432720236286598,
+            "simulated": 0.5183217295712715,
+            "error": 0.12495029405738822,
+            "limit": 0.05,
+            "status": "failed"
+          },
+          {
+            "name": "latencyP99Ms",
+            "reference": 23.22536666666747,
+            "simulated": 23.650000000000002,
+            "error": 0.01828317026925381,
+            "limit": 0.2,
+            "status": "passed"
+          }
+        ],
+        "error": null
+      },
+      "originalConfigSha256": "b230ac2f3032a66cb5fc18b8c37417ef45ec30e03a85ec2baddb72c20b64f23b",
+      "sameScientificSummaryAsLinux": true,
+      "originalConfigCanonicalJsonSha256": "2889bf1c111e284a15e41de721a0991753ba4eab2ac90f3b95e5f4d0117b2802"
+    },
+    {
+      "key": "m16.q1.p16.s42",
+      "measurementSeconds": 10,
+      "wallSeconds": 426.14100000000326,
+      "summary": {
+        "status": "completed",
+        "measurementStartTick": 100014,
+        "measurementEndTick": 1100014,
+        "simulated": {
+          "attempted": 54819,
+          "admitted": 54819,
+          "completed": 54819,
+          "expectedDeliveries": 54819,
+          "delivered": 26600,
+          "rateRejected": 0,
+          "publishFailed": 0,
+          "deliveryDropped": 28219,
+          "completedRps": 5481.9,
+          "publishFailureRate": 0,
+          "deliveryLossRate": 0.5147667779419545,
+          "latencyP99Ms": 22.84
+        },
+        "reference": {
+          "attempted": 0,
+          "admitted": 0,
+          "completed": 0,
+          "expectedDeliveries": 0,
+          "delivered": 0,
+          "rateRejected": 0,
+          "publishFailed": 0,
+          "deliveryDropped": 0,
+          "completedRps": 5534.740303209743,
+          "publishFailureRate": 0,
+          "deliveryLossRate": 0.6432720236286598,
+          "latencyP99Ms": 23.22536666666747
+        },
+        "acceptanceCriteria": [
+          {
+            "name": "rps",
+            "reference": 5534.740303209743,
+            "simulated": 5481.9,
+            "error": 0.00954702484940433,
+            "limit": 0.15,
+            "status": "passed"
+          },
+          {
+            "name": "publishFailureRate",
+            "reference": 0,
+            "simulated": 0,
+            "error": 0,
+            "limit": 0.05,
+            "status": "passed"
+          },
+          {
+            "name": "deliveryLossRate",
+            "reference": 0.6432720236286598,
+            "simulated": 0.5147667779419545,
+            "error": 0.1285052456867053,
+            "limit": 0.05,
+            "status": "failed"
+          },
+          {
+            "name": "latencyP99Ms",
+            "reference": 23.22536666666747,
+            "simulated": 22.84,
+            "error": 0.01659249010783278,
+            "limit": 0.2,
+            "status": "passed"
+          }
+        ],
+        "error": null
+      },
+      "directory": "MqttBenchmark\\artifacts\\diagnostics\\ActiveMQ-duration-20261019-v2\\m16.q1.p16.s42-10s\\20261019T095716255Z-98ea761504f84f7087ad5f80a94e1d4e",
+      "originalSummary": {
+        "status": "completed",
+        "measurementStartTick": 100014,
+        "measurementEndTick": 300014,
+        "simulated": {
+          "attempted": 10916,
+          "admitted": 10916,
+          "completed": 10916,
+          "expectedDeliveries": 10916,
+          "delivered": 5258,
+          "rateRejected": 0,
+          "publishFailed": 0,
+          "deliveryDropped": 5658,
+          "completedRps": 5458,
+          "publishFailureRate": 0,
+          "deliveryLossRate": 0.5183217295712715,
+          "latencyP99Ms": 23.650000000000002
+        },
+        "reference": {
+          "attempted": 0,
+          "admitted": 0,
+          "completed": 0,
+          "expectedDeliveries": 0,
+          "delivered": 0,
+          "rateRejected": 0,
+          "publishFailed": 0,
+          "deliveryDropped": 0,
+          "completedRps": 5534.740303209743,
+          "publishFailureRate": 0,
+          "deliveryLossRate": 0.6432720236286598,
+          "latencyP99Ms": 23.22536666666747
+        },
+        "acceptanceCriteria": [
+          {
+            "name": "rps",
+            "reference": 5534.740303209743,
+            "simulated": 5458,
+            "error": 0.013865203967246479,
+            "limit": 0.15,
+            "status": "passed"
+          },
+          {
+            "name": "publishFailureRate",
+            "reference": 0,
+            "simulated": 0,
+            "error": 0,
+            "limit": 0.05,
+            "status": "passed"
+          },
+          {
+            "name": "deliveryLossRate",
+            "reference": 0.6432720236286598,
+            "simulated": 0.5183217295712715,
+            "error": 0.12495029405738822,
+            "limit": 0.05,
+            "status": "failed"
+          },
+          {
+            "name": "latencyP99Ms",
+            "reference": 23.22536666666747,
+            "simulated": 23.650000000000002,
+            "error": 0.01828317026925381,
+            "limit": 0.2,
+            "status": "passed"
+          }
+        ],
+        "error": null
+      },
+      "originalConfigSha256": "b230ac2f3032a66cb5fc18b8c37417ef45ec30e03a85ec2baddb72c20b64f23b",
+      "originalConfigCanonicalJsonSha256": "2889bf1c111e284a15e41de721a0991753ba4eab2ac90f3b95e5f4d0117b2802"
+    }
+  ],
+  "profileUnchanged": true,
+  "scope": {
+    "status": "completed-selected-point",
+    "keys": [
+      "m16.q1.p16.s42"
+    ],
+    "excludedFromCampaignCoverage": true,
+    "reason": "Duration sensitivity restricted to one diagnostic point; additional heavyweight probes cancelled administratively",
+    "completedUtc": "2026-10-19T10:04:20.0445178Z"
+  }
+}

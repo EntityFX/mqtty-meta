@@ -1,0 +1,160 @@
+{
+  "excludedFromCampaignCoverage": true,
+  "purpose": "Same-input repeatability; not additional blind validation",
+  "runtimeFiles": {
+    "EntityFX.MqttY.Contracts.Mqtt.dll": "41eb4c77e47bc9cdf6b52a62166b1fdc364eace23dd57f352521315b57e095f1",
+    "EntityFX.MqttY.Contracts.Scenarios.dll": "9f46355aae89c0d35b394b7156857a2a5e9fa5293b415931017721f32f33d162",
+    "EntityFX.MqttY.Contracts.dll": "e1e84114cce7a876cc1aa6f889237a730036ee2530a3b47ece83c5398da3d3d9",
+    "EntityFX.MqttY.MqttRelay.App.dll": "60c5a79fca5291b061af345f3fb98e758c62ae551763693d5f39f74d40e9cebd",
+    "EntityFX.MqttY.Plugin.Mqtt.dll": "c66e46423e071a62373b7eb5080cd90d370a02c93fa1c65946fae3812800e87d",
+    "EntityFX.MqttY.dll": "e01a4fc48bbe57663b81dded357907443447bf9e5d7112a61a3fba044c4d1803",
+    "Microsoft.Extensions.Configuration.Abstractions.dll": "3124386219566a2c386e6999d83a7d507584de46cde4ae733a8af3c373c42b8c",
+    "Microsoft.Extensions.Configuration.Binder.dll": "4449f40e0645a61067c5e206e956cc5bc3b4421593b3c27188d8c71ef45c64a6",
+    "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "ac9cd953b7eeb03cf48e343c5ace6fc9b48ac968b68d1cb30ad1d6111178bf4d",
+    "Microsoft.Extensions.DependencyInjection.dll": "df0ae00b1599acae93d9f4df2bcc6d0ba109221ccc44d2d1486183f84a5fec78",
+    "Microsoft.Extensions.Logging.Abstractions.dll": "ab36e8201d41dd751cbb712704dbe8492bdd0ab1bff6fb35371cf59bcd982181",
+    "Microsoft.Extensions.Logging.dll": "37b87b16ac688d5619168554a22cca2677e1115f21c2d5ebe2f39c024fee2b7f",
+    "Microsoft.Extensions.Options.dll": "fbb309a36bc91d90ec2984397bff4f75f35ac92909e0acd952c5264c5ac0a753",
+    "Microsoft.Extensions.Primitives.dll": "f9f47907a041067d9bc1b9a9f516009b6ca0a9c6325ce83527883cc0d053dfa5",
+    "System.Diagnostics.DiagnosticSource.dll": "d6935e993b69f8abd934f01b0d7dd8ca9616a7ea94c7af59ed07b2fd3cf93a97"
+  },
+  "rows": [
+    {
+      "broker": "Aedes",
+      "stage": "holdout",
+      "key": "m16.q1.p1.s42",
+      "wallSeconds": 19.110728037994704,
+      "originalDirectory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q1.p1.s42/20261016T233207572Z-901bcfbc9f85444986a1442b900e39f0",
+      "repeatDirectory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/diagnostics/final-replay-20261019/Aedes-holdout/20261019T135838740Z-7c8722a705d84841b6f2cbe688764086",
+      "configSha256": "af579e9ddac4f09cbdec98fdafb51589894b0f7765e07bf60cd4ac48bfa8e2d8",
+      "profileSha256": {
+        "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/controller/brokers/Aedes/broker-calibration.v3.json": "e16c599ebf32dda761f84afa2e21c8d2fc29e95bbb31b987607d83906b347239"
+      },
+      "profilesUnchanged": true,
+      "equal": {
+        "summary.json": true,
+        "counters.json": false,
+        "latency-histogram.json": true,
+        "phases": true,
+        "profiles": true,
+        "scientificCounters": true
+      },
+      "returnCode": 0
+    },
+    {
+      "broker": "Mosquitto",
+      "stage": "holdout",
+      "key": "m16.q1.p1.s42",
+      "wallSeconds": 18.732390847988427,
+      "originalDirectory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/holdout-2s-overnight-v1/m16.q1.p1.s42/20261018T214952329Z-1822b7111d454340a44808d0da531d4a",
+      "repeatDirectory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/diagnostics/final-replay-20261019/Mosquitto-holdout/20261019T135857803Z-f5db781d643c4cb1ba74cc8e22c67984",
+      "configSha256": "6e486077234d550492fc5b2459b5cafbcabd04ce75083df2019bb12a0f67d14f",
+      "profileSha256": {
+        "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/controller/brokers/Mosquitto/broker-calibration.v3.json": "d9cf125fb8cb6ec3677fc3c596bafcdfced8be0502362e2b4ff03da1421d46eb"
+      },
+      "profilesUnchanged": true,
+      "equal": {
+        "summary.json": true,
+        "counters.json": false,
+        "latency-histogram.json": true,
+        "phases": true,
+        "profiles": true,
+        "scientificCounters": true
+      },
+      "returnCode": 0
+    },
+    {
+      "broker": "ActiveMQ",
+      "stage": "holdout",
+      "key": "m16.q1.p1.s42",
+      "wallSeconds": 20.206001795013435,
+      "originalDirectory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q1.p1.s42/20261019T052946332Z-2cddb9d4f823412c9420ca16a17e9889",
+      "repeatDirectory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/diagnostics/final-replay-20261019/ActiveMQ-holdout/20261019T135917712Z-72eb6f756cc745eca2693d9de8b543a1",
+      "configSha256": "abab47176976dc2f7f9d60df618a5306ff15ab7363337c0a2794f3f40ee0b93f",
+      "profileSha256": {
+        "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/controller/brokers/ActiveMQ/broker-calibration.v3.json": "d66a0f64cb195e29565e03a5531bdde45ccd9aee7b5d39ca7b26102d45706b2a"
+      },
+      "profilesUnchanged": true,
+      "equal": {
+        "summary.json": true,
+        "counters.json": false,
+        "latency-histogram.json": true,
+        "phases": true,
+        "profiles": true,
+        "scientificCounters": true
+      },
+      "returnCode": 0
+    },
+    {
+      "broker": "EMQX",
+      "stage": "holdout",
+      "key": "m16.q1.p1.s42",
+      "wallSeconds": 18.31597290901118,
+      "originalDirectory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q1.p1.s42/20261019T101926498Z-0d12f8c6c3ad49f881b1a1f0db6fb3c1",
+      "repeatDirectory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/diagnostics/final-replay-20261019/EMQX-holdout/20261019T135936791Z-3ea7477e4a0f49b699c3b17e00999754",
+      "configSha256": "6645e8627fdc3ab888054013473fe456efbeb00d1cb18c8caa1bf5333eca675b",
+      "profileSha256": {
+        "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/controller/brokers/EMQX/broker-calibration.v3.json": "effe28c0fabf2d835579de8e6c40aa7d03a2865b7a23336d6f57189e79340b6f"
+      },
+      "profilesUnchanged": true,
+      "equal": {
+        "summary.json": true,
+        "counters.json": false,
+        "latency-histogram.json": true,
+        "phases": true,
+        "profiles": true,
+        "scientificCounters": true
+      },
+      "returnCode": 3
+    },
+    {
+      "broker": "Aedes",
+      "stage": "relay",
+      "key": "m16.q1.p1.s42",
+      "wallSeconds": 32.34480716500548,
+      "originalDirectory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/relay-2s-overnight-v1/m16.q1.p1.s42/20261017T010111515Z-041a800213824812918dd3f650e1c3d5",
+      "repeatDirectory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/diagnostics/final-replay-20261019/Aedes-relay/20261019T135955151Z-0d9fae4a264a4e9b932927ee373946e9",
+      "configSha256": "e57bd15786e3a7b48d646c53350f3b24e73643741bcea46ed176d40894366202",
+      "profileSha256": {
+        "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/controller/brokers/Aedes/broker-calibration.v3.json": "e16c599ebf32dda761f84afa2e21c8d2fc29e95bbb31b987607d83906b347239"
+      },
+      "profilesUnchanged": true,
+      "equal": {
+        "summary.json": true,
+        "counters.json": false,
+        "latency-histogram.json": true,
+        "phases": true,
+        "profiles": true,
+        "scientificCounters": true
+      },
+      "returnCode": 0
+    },
+    {
+      "broker": "MqttRelay-Mixed",
+      "stage": "relay",
+      "key": "m16.q1.p1.s42",
+      "wallSeconds": 31.1965289790096,
+      "originalDirectory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/mixed/simulations/relay-2s-overnight-v1/m16.q1.p1.s42/20261019T124707605Z-bc329860473448de9464129e504a7b91",
+      "repeatDirectory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/diagnostics/final-replay-20261019/MqttRelay-Mixed-relay/20261019T140029506Z-caf85f0dc47b49e09763e0834e921ad7",
+      "configSha256": "17c00ffb3f4cb40713e9f3a66e6a7e622151d629a4ff6c24fed6ff70effcf00a",
+      "profileSha256": {
+        "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/controller/brokers/Aedes/broker-calibration.v3.json": "e16c599ebf32dda761f84afa2e21c8d2fc29e95bbb31b987607d83906b347239",
+        "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/controller/brokers/Mosquitto/broker-calibration.v3.json": "d9cf125fb8cb6ec3677fc3c596bafcdfced8be0502362e2b4ff03da1421d46eb",
+        "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/controller/brokers/ActiveMQ/broker-calibration.v3.json": "d66a0f64cb195e29565e03a5531bdde45ccd9aee7b5d39ca7b26102d45706b2a",
+        "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/controller/brokers/EMQX/broker-calibration.v3.json": "effe28c0fabf2d835579de8e6c40aa7d03a2865b7a23336d6f57189e79340b6f"
+      },
+      "profilesUnchanged": true,
+      "equal": {
+        "summary.json": true,
+        "counters.json": false,
+        "latency-histogram.json": true,
+        "phases": true,
+        "profiles": true,
+        "scientificCounters": true
+      },
+      "returnCode": 0
+    }
+  ],
+  "originalResultsSha256": "959070d59a3a38584e337d35f5a501bda89d883b2ad7def0bd58d5cf86f3f8b4",
+  "counterComparisonNote": "scientificCounters compared after execution, excluding graph text containing wall time; original full JSON equality preserved"
+}

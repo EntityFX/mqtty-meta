@@ -1,0 +1,791 @@
+{
+  "diagnosticOnly": true,
+  "notSignificanceTest": true,
+  "referenceForRelativeError": "validation mean",
+  "rows": [
+    {
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "metrics": {
+        "completedRps": {
+          "calibration": 25022.292663515076,
+          "validation": 25463.727520455326,
+          "error": 0.017335830215181182,
+          "limit": 0.15,
+          "exceedsLimit": false
+        },
+        "publishFailureRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "deliveryLossRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        }
+      }
+    },
+    {
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "metrics": {
+        "completedRps": {
+          "calibration": 11045.589221755836,
+          "validation": 10892.248921761768,
+          "error": 0.014077928359469229,
+          "limit": 0.15,
+          "exceedsLimit": false
+        },
+        "publishFailureRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "deliveryLossRate": {
+          "calibration": 0.48786664773749394,
+          "validation": 0.5013855428862013,
+          "error": 0.013518895148707355,
+          "limit": 0.05,
+          "exceedsLimit": false
+        }
+      }
+    },
+    {
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "metrics": {
+        "completedRps": {
+          "calibration": 10124.798037859242,
+          "validation": 10254.847205262346,
+          "error": 0.01268172648504875,
+          "limit": 0.15,
+          "exceedsLimit": false
+        },
+        "publishFailureRate": {
+          "calibration": 0.0003365778718653553,
+          "validation": 0.00035078861516831564,
+          "error": 1.4210743302960321e-05,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "deliveryLossRate": {
+          "calibration": 0.7802012321247888,
+          "validation": 0.7746982647541522,
+          "error": 0.005502967370636602,
+          "limit": 0.05,
+          "exceedsLimit": false
+        }
+      }
+    },
+    {
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 128,
+      "metrics": {
+        "completedRps": {
+          "calibration": 13981.976460143012,
+          "validation": 13954.54860285171,
+          "error": 0.0019655137598429784,
+          "limit": 0.15,
+          "exceedsLimit": false
+        },
+        "publishFailureRate": {
+          "calibration": 0.0005505401672171313,
+          "validation": 0.0005705499840383544,
+          "error": 2.000981682122316e-05,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "deliveryLossRate": {
+          "calibration": 0.9656586886513874,
+          "validation": 0.966098629285494,
+          "error": 0.0004399406341065726,
+          "limit": 0.05,
+          "exceedsLimit": false
+        }
+      }
+    },
+    {
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 1,
+      "metrics": {
+        "completedRps": {
+          "calibration": 7711.678257978271,
+          "validation": 7300.372367171868,
+          "error": 0.056340398834442085,
+          "limit": 0.15,
+          "exceedsLimit": false
+        },
+        "publishFailureRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "deliveryLossRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "latencyP99Ms": {
+          "calibration": 0.21346666666643918,
+          "validation": 0.21766666666765863,
+          "error": 0.019295558964166813,
+          "limit": 0.2,
+          "exceedsLimit": false
+        }
+      }
+    },
+    {
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 16,
+      "metrics": {
+        "completedRps": {
+          "calibration": 6545.225061498616,
+          "validation": 5534.740303209743,
+          "error": 0.1825713046920858,
+          "limit": 0.15,
+          "exceedsLimit": true
+        },
+        "publishFailureRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "deliveryLossRate": {
+          "calibration": 0.5165701931238628,
+          "validation": 0.6432720236286598,
+          "error": 0.126701830504797,
+          "limit": 0.05,
+          "exceedsLimit": true
+        },
+        "latencyP99Ms": {
+          "calibration": 22.8145333333329,
+          "validation": 23.22536666666747,
+          "error": 0.017688992351805922,
+          "limit": 0.2,
+          "exceedsLimit": false
+        }
+      }
+    },
+    {
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 64,
+      "metrics": {
+        "completedRps": {
+          "calibration": 5592.465976836439,
+          "validation": 5939.23088264143,
+          "error": 0.058385490083990445,
+          "limit": 0.15,
+          "exceedsLimit": false
+        },
+        "publishFailureRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "deliveryLossRate": {
+          "calibration": 0.6059907020699238,
+          "validation": 0.5358806822409002,
+          "error": 0.07011001982902354,
+          "limit": 0.05,
+          "exceedsLimit": true
+        },
+        "latencyP99Ms": {
+          "calibration": 109.77936666666635,
+          "validation": 112.06363333333381,
+          "error": 0.020383657023442216,
+          "limit": 0.2,
+          "exceedsLimit": false
+        }
+      }
+    },
+    {
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 128,
+      "metrics": {
+        "completedRps": {
+          "calibration": 5556.10436688668,
+          "validation": 4931.450267820487,
+          "error": 0.1266674234032711,
+          "limit": 0.15,
+          "exceedsLimit": false
+        },
+        "publishFailureRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "deliveryLossRate": {
+          "calibration": 0.5988985792219864,
+          "validation": 0.6912246907756249,
+          "error": 0.09232611155363846,
+          "limit": 0.05,
+          "exceedsLimit": true
+        },
+        "latencyP99Ms": {
+          "calibration": 230.55129999999977,
+          "validation": 229.52733333333344,
+          "error": 0.004461197068757207,
+          "limit": 0.2,
+          "exceedsLimit": false
+        }
+      }
+    },
+    {
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 1,
+      "metrics": {
+        "completedRps": {
+          "calibration": 5288.586896152599,
+          "validation": 5137.431071571985,
+          "error": 0.02942245306550904,
+          "limit": 0.15,
+          "exceedsLimit": false
+        },
+        "publishFailureRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "deliveryLossRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "latencyP99Ms": {
+          "calibration": 0.36579999999988405,
+          "validation": 0.5553333333342986,
+          "error": 0.3412965186087967,
+          "limit": 0.2,
+          "exceedsLimit": true
+        }
+      }
+    },
+    {
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 16,
+      "metrics": {
+        "completedRps": {
+          "calibration": 5600.721782991561,
+          "validation": 5606.5174877109675,
+          "error": 0.0010337441615246008,
+          "limit": 0.15,
+          "exceedsLimit": false
+        },
+        "publishFailureRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "deliveryLossRate": {
+          "calibration": 0.30204438903953085,
+          "validation": 0.3039553626706422,
+          "error": 0.0019109736311113679,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "latencyP99Ms": {
+          "calibration": 21.078133333333426,
+          "validation": 20.07239999999941,
+          "error": 0.050105285533072634,
+          "limit": 0.2,
+          "exceedsLimit": false
+        }
+      }
+    },
+    {
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 64,
+      "metrics": {
+        "completedRps": {
+          "calibration": 5313.005539151151,
+          "validation": 5049.209998560226,
+          "error": 0.052244913692665984,
+          "limit": 0.15,
+          "exceedsLimit": false
+        },
+        "publishFailureRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "deliveryLossRate": {
+          "calibration": 0.30590901606306514,
+          "validation": 0.49496626342835137,
+          "error": 0.18905724736528623,
+          "limit": 0.05,
+          "exceedsLimit": true
+        },
+        "latencyP99Ms": {
+          "calibration": 96.34306666666696,
+          "validation": 93.56706666666712,
+          "error": 0.02966855859540137,
+          "limit": 0.2,
+          "exceedsLimit": false
+        }
+      }
+    },
+    {
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 128,
+      "metrics": {
+        "completedRps": {
+          "calibration": 5236.964588376494,
+          "validation": 5232.111268021894,
+          "error": 0.0009276026647719257,
+          "limit": 0.15,
+          "exceedsLimit": false
+        },
+        "publishFailureRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "deliveryLossRate": {
+          "calibration": 0.30772847876816933,
+          "validation": 0.2944124557747475,
+          "error": 0.013316022993421828,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "latencyP99Ms": {
+          "calibration": 211.09813333333418,
+          "validation": 206.6273666666663,
+          "error": 0.021636856428026683,
+          "limit": 0.2,
+          "exceedsLimit": false
+        }
+      }
+    },
+    {
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 1,
+      "metrics": {
+        "completedRps": {
+          "calibration": 24028.75276294572,
+          "validation": 23106.12663986553,
+          "error": 0.03992993449141589,
+          "limit": 0.15,
+          "exceedsLimit": false
+        },
+        "publishFailureRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "deliveryLossRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        }
+      }
+    },
+    {
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 16,
+      "metrics": {
+        "completedRps": {
+          "calibration": 10352.418715378635,
+          "validation": 10260.117014672183,
+          "error": 0.008996164524679244,
+          "limit": 0.15,
+          "exceedsLimit": false
+        },
+        "publishFailureRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "deliveryLossRate": {
+          "calibration": 0.5982246209226644,
+          "validation": 0.5105718894022558,
+          "error": 0.08765273152040853,
+          "limit": 0.05,
+          "exceedsLimit": true
+        }
+      }
+    },
+    {
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 64,
+      "metrics": {
+        "completedRps": {
+          "calibration": 7970.07510021653,
+          "validation": 7882.979399022518,
+          "error": 0.011048576532473441,
+          "limit": 0.15,
+          "exceedsLimit": false
+        },
+        "publishFailureRate": {
+          "calibration": 0,
+          "validation": 0.066753096295479,
+          "error": 0.066753096295479,
+          "limit": 0.05,
+          "exceedsLimit": true
+        },
+        "deliveryLossRate": {
+          "calibration": 0.7260634907535017,
+          "validation": 0.7157505237868461,
+          "error": 0.010312966966655623,
+          "limit": 0.05,
+          "exceedsLimit": false
+        }
+      }
+    },
+    {
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 128,
+      "metrics": {
+        "completedRps": {
+          "calibration": 7550.328246124501,
+          "validation": 7871.021802767936,
+          "error": 0.040743573665449555,
+          "limit": 0.15,
+          "exceedsLimit": false
+        },
+        "publishFailureRate": {
+          "calibration": 0.12582607810203447,
+          "validation": 0.42120255625694397,
+          "error": 0.2953764781549095,
+          "limit": 0.05,
+          "exceedsLimit": true
+        },
+        "deliveryLossRate": {
+          "calibration": 0.7970887970229934,
+          "validation": 0.7878848473544054,
+          "error": 0.009203949668587952,
+          "limit": 0.05,
+          "exceedsLimit": false
+        }
+      }
+    },
+    {
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 1,
+      "metrics": {
+        "completedRps": {
+          "calibration": 7291.851693728112,
+          "validation": 7353.709190295627,
+          "error": 0.00841174092784984,
+          "limit": 0.15,
+          "exceedsLimit": false
+        },
+        "publishFailureRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "deliveryLossRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "latencyP99Ms": {
+          "calibration": 0.22393333333335855,
+          "validation": 0.22470000000066648,
+          "error": 0.003411956685828466,
+          "limit": 0.2,
+          "exceedsLimit": false
+        }
+      }
+    },
+    {
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 16,
+      "metrics": {
+        "completedRps": {
+          "calibration": 5357.888077612795,
+          "validation": 5966.633936942252,
+          "error": 0.10202500534856401,
+          "limit": 0.15,
+          "exceedsLimit": false
+        },
+        "publishFailureRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "deliveryLossRate": {
+          "calibration": 0.7230023193762559,
+          "validation": 0.6575627460112757,
+          "error": 0.06543957336498019,
+          "limit": 0.05,
+          "exceedsLimit": true
+        },
+        "latencyP99Ms": {
+          "calibration": 23.052533333332274,
+          "validation": 21.747566666666597,
+          "error": 0.060005180656181385,
+          "limit": 0.2,
+          "exceedsLimit": false
+        }
+      }
+    },
+    {
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 64,
+      "metrics": {
+        "completedRps": {
+          "calibration": 4967.242161423262,
+          "validation": 6735.965895399975,
+          "error": 0.26257908092803495,
+          "limit": 0.15,
+          "exceedsLimit": true
+        },
+        "publishFailureRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "deliveryLossRate": {
+          "calibration": 0.7150725778224256,
+          "validation": 0.38898067891224414,
+          "error": 0.3260918989101815,
+          "limit": 0.05,
+          "exceedsLimit": true
+        },
+        "latencyP99Ms": {
+          "calibration": 108.34056666666584,
+          "validation": 108.58639999999953,
+          "error": 0.0022639422002542994,
+          "limit": 0.2,
+          "exceedsLimit": false
+        }
+      }
+    },
+    {
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 128,
+      "metrics": {
+        "completedRps": {
+          "calibration": 4949.486697503898,
+          "validation": 5437.8827531723755,
+          "error": 0.08981364215393486,
+          "limit": 0.15,
+          "exceedsLimit": false
+        },
+        "publishFailureRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "deliveryLossRate": {
+          "calibration": 0.707237766014447,
+          "validation": 0.5919467252439493,
+          "error": 0.11529104077049768,
+          "limit": 0.05,
+          "exceedsLimit": true
+        },
+        "latencyP99Ms": {
+          "calibration": 225.3062000000003,
+          "validation": 233.1260666666661,
+          "error": 0.033543510506900936,
+          "limit": 0.2,
+          "exceedsLimit": false
+        }
+      }
+    },
+    {
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 1,
+      "metrics": {
+        "completedRps": {
+          "calibration": 4990.26724515216,
+          "validation": 5036.900704872837,
+          "error": 0.009258363913261663,
+          "limit": 0.15,
+          "exceedsLimit": false
+        },
+        "publishFailureRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "deliveryLossRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "latencyP99Ms": {
+          "calibration": 0.7543666666664043,
+          "validation": 0.7184333333334507,
+          "error": 0.050016239038112136,
+          "limit": 0.2,
+          "exceedsLimit": false
+        }
+      }
+    },
+    {
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 16,
+      "metrics": {
+        "completedRps": {
+          "calibration": 5021.097540722833,
+          "validation": 5288.2708047385395,
+          "error": 0.050521857499488544,
+          "limit": 0.15,
+          "exceedsLimit": false
+        },
+        "publishFailureRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "deliveryLossRate": {
+          "calibration": 0.6101268849017935,
+          "validation": 0.5203565888138174,
+          "error": 0.08977029608797604,
+          "limit": 0.05,
+          "exceedsLimit": true
+        },
+        "latencyP99Ms": {
+          "calibration": 20.86100000000018,
+          "validation": 19.621566666666695,
+          "error": 0.06316688949405068,
+          "limit": 0.2,
+          "exceedsLimit": false
+        }
+      }
+    },
+    {
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 64,
+      "metrics": {
+        "completedRps": {
+          "calibration": 5459.527010829643,
+          "validation": 5397.18086022103,
+          "error": 0.011551614115458617,
+          "limit": 0.15,
+          "exceedsLimit": false
+        },
+        "publishFailureRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "deliveryLossRate": {
+          "calibration": 0.31377792367857965,
+          "validation": 0.40167344886838235,
+          "error": 0.0878955251898027,
+          "limit": 0.05,
+          "exceedsLimit": true
+        },
+        "latencyP99Ms": {
+          "calibration": 95.27676666666714,
+          "validation": 94.78066666666716,
+          "error": 0.005234189813674888,
+          "limit": 0.2,
+          "exceedsLimit": false
+        }
+      }
+    },
+    {
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 128,
+      "metrics": {
+        "completedRps": {
+          "calibration": 5099.264207920783,
+          "validation": 5141.487352462994,
+          "error": 0.008212243198844888,
+          "limit": 0.15,
+          "exceedsLimit": false
+        },
+        "publishFailureRate": {
+          "calibration": 0,
+          "validation": 0,
+          "error": 0,
+          "limit": 0.05,
+          "exceedsLimit": false
+        },
+        "deliveryLossRate": {
+          "calibration": 0.31595150944425415,
+          "validation": 0.45983019762767485,
+          "error": 0.1438786881834207,
+          "limit": 0.05,
+          "exceedsLimit": true
+        },
+        "latencyP99Ms": {
+          "calibration": 207.91623333333396,
+          "validation": 205.21559999999923,
+          "error": 0.013159980690233811,
+          "limit": 0.2,
+          "exceedsLimit": false
+        }
+      }
+    }
+  ]
+}

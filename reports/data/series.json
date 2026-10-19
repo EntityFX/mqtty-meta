@@ -67,13 +67,13 @@
   "simulationAdapterSha256": "089537cf2f2ccf3a318c1acfaba601063ed42082d72a47663c3872e48f1d038d",
   "predecessorSeries": "/run/media/entityfx/hd250/mqtty-evidence/compact-20261016-6h-v1/controller",
   "borrowedBrokerAssets": "/run/media/entityfx/hd250/mqtty-evidence/compact-20261016-6h-v1/brokers-native",
-  "budgetSeconds": 30496,
-  "workloadBudgetSeconds": 29596,
+  "budgetSeconds": 73696,
+  "workloadBudgetSeconds": 72796,
   "commandTimeoutSeconds": 1800,
   "startedAtUtc": "2026-10-18T20:31:43.261913+00:00",
-  "deadlineUtc": "2026-10-19T05:00:00+00:00",
-  "workloadDeadlineUtc": "2026-10-19T04:45:00+00:00",
-  "runtimeMaxSeconds": 44509,
+  "deadlineUtc": "2026-10-19T17:00:00+00:00",
+  "workloadDeadlineUtc": "2026-10-19T16:45:00+00:00",
+  "runtimeMaxSeconds": 62939,
   "stopTimeoutSeconds": 30,
   "empiricalProfiles": true,
   "histogramExporter": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/controller/source/export-latency-histograms.py",
@@ -98,6 +98,14 @@
       "newDeadlineUtc": "2026-10-19T05:00:00+00:00",
       "reason": "User requested continuation; deadline-only extension; workload inputs, model, profiles and acceptance thresholds unchanged",
       "nativePauseNote": "Mosquitto validation resumes 50 existing successful runs after a multi-day pause/reboot; report as two sessions, not uninterrupted homogeneous acquisition"
+    },
+    {
+      "resumedAtUtc": "2026-10-18T23:30:00.781542+00:00",
+      "previousDeadlineUtc": "2026-10-19T05:00:00+00:00",
+      "newDeadlineUtc": "2026-10-19T17:00:00+00:00",
+      "reason": "User explicitly requested extending the running experiments; deadline extended from 08:00 to 20:00 MSK on 2026-10-19. Measurement inputs, profiles and acceptance thresholds unchanged.",
+      "kind": "deadline-only-extension",
+      "policy": "Same workload, model, profiles, acceptance criteria and completed run indices; no active job interrupted"
     }
   ],
   "campaignRunnerModule": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/controller/source/run.py",

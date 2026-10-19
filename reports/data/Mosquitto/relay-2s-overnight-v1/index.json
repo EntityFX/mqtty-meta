@@ -1,0 +1,654 @@
+{
+  "stage": "relay",
+  "measurementSeconds": 2,
+  "runs": [
+    {
+      "key": "m16.q0.p1.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 132515.20300435845,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q0.p1.s42/20261018T233021252Z-987fd4a837404740b22b28aa89405da6"
+    },
+    {
+      "key": "m16.q0.p1.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 132515.20300435845,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q0.p1.s43/20261018T233021243Z-603163f867b9456faa3fa3ac6de01a13"
+    },
+    {
+      "key": "m16.q0.p1.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 132515.20300435845,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q0.p1.s44/20261018T233021344Z-99c85fe2b5d842528ae2f2eae558ae89"
+    },
+    {
+      "key": "m16.q0.p16.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 222307.60957581454,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q0.p16.s42/20261018T233021314Z-3ccac0e23bf9460abb4c13a80c73bdfe"
+    },
+    {
+      "key": "m16.q0.p16.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 222307.60957581454,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q0.p16.s43/20261018T233101350Z-b94037080a06432bbcce74d133baadf9"
+    },
+    {
+      "key": "m16.q0.p16.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 222307.60957581454,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q0.p16.s44/20261018T233101425Z-c8b9bb640a7d45fdb64625e7a46d7ea2"
+    },
+    {
+      "key": "m16.q0.p64.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 220439.21930804057,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q0.p64.s42/20261018T233101354Z-6da337c3fdcf43349186eeb5f13de2bb"
+    },
+    {
+      "key": "m16.q0.p64.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 220439.21930804057,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q0.p64.s43/20261018T233139498Z-00c18dbc3092433cbbb16410a199d1e1"
+    },
+    {
+      "key": "m16.q0.p64.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 220439.21930804057,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q0.p64.s44/20261018T233219686Z-6636683a1cc1405598843d7ca8717848"
+    },
+    {
+      "key": "m16.q0.p128.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 214395.5192064939,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q0.p128.s42/20261018T233219682Z-bcbefa9d8de94a729042521d8285dd7c"
+    },
+    {
+      "key": "m16.q0.p128.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 214395.5192064939,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q0.p128.s43/20261018T233404000Z-2d76de9391ad420bb6829f0eb342a7c7"
+    },
+    {
+      "key": "m16.q0.p128.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 214395.5192064939,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q0.p128.s44/20261018T233446214Z-3cbf93e955474b5b879335be08aea154"
+    },
+    {
+      "key": "m16.q1.p1.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 30356.543093959976,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q1.p1.s42/20261018T233528345Z-f7df899e57b241b689bf883fb7dd155a"
+    },
+    {
+      "key": "m16.q1.p1.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 30356.543093959976,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q1.p1.s43/20261018T233600517Z-e39bbef5c33c42ca9fa8ab41516197c2"
+    },
+    {
+      "key": "m16.q1.p1.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 30356.543093959976,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q1.p1.s44/20261018T233630612Z-6f10a53620f2480da272e93e25695e5f"
+    },
+    {
+      "key": "m16.q1.p16.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 223747.09299536553,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q1.p16.s42/20261018T233702751Z-9196ba3125404db09498974730dff9a0"
+    },
+    {
+      "key": "m16.q1.p16.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 223747.09299536553,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q1.p16.s43/20261018T233821038Z-9521f3ca5df645d6b70dd1427f117d9b"
+    },
+    {
+      "key": "m16.q1.p16.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 223747.09299536553,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q1.p16.s44/20261018T233937313Z-cad4392fb3534403aa6e7fe1609697af"
+    },
+    {
+      "key": "m16.q1.p64.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 182086.51713240962,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q1.p64.s42/20261018T234009449Z-66f0dfbea7614502ad4c6f4ddff423a6"
+    },
+    {
+      "key": "m16.q1.p64.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 182086.51713240962,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q1.p64.s43/20261018T234051587Z-866e6c81919044be8a74e5b01be0d11e"
+    },
+    {
+      "key": "m16.q1.p64.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 182086.51713240962,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q1.p64.s44/20261018T234157806Z-610083797bc34b2596732021a726fdd3"
+    },
+    {
+      "key": "m16.q1.p128.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 188487.32491841624,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q1.p128.s42/20261018T234245971Z-13dc5b0f898f41f58f7c7ec15b0d8fba"
+    },
+    {
+      "key": "m16.q1.p128.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 188487.32491841624,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q1.p128.s43/20261018T234328124Z-fd2a31a77e3044c9999c070b54c7fad9"
+    },
+    {
+      "key": "m16.q1.p128.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 188487.32491841624,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q1.p128.s44/20261018T234410303Z-3a9ae5fe4e7f49bd8299471939de117d"
+    },
+    {
+      "key": "m16.q2.p1.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 24402.14471683904,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q2.p1.s42/20261018T234524560Z-bcba78b727f24d008ae5d7bf9fa0258b"
+    },
+    {
+      "key": "m16.q2.p1.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 24402.14471683904,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q2.p1.s43/20261018T234604674Z-251996c391484b38bdaffeacb3b9af13"
+    },
+    {
+      "key": "m16.q2.p1.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 24402.14471683904,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q2.p1.s44/20261018T234644826Z-1adda6764f63445fba5535d1e7a18b20"
+    },
+    {
+      "key": "m16.q2.p16.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 132941.10835064272,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q2.p16.s42/20261018T234722946Z-f0809201ea904db4907e5174aa2dc7bc"
+    },
+    {
+      "key": "m16.q2.p16.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 132941.10835064272,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q2.p16.s43/20261018T234905309Z-11f67d8c798c4eb2af99639917dbea0d"
+    },
+    {
+      "key": "m16.q2.p16.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 132941.10835064272,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q2.p16.s44/20261018T235039570Z-035920b78b8642468468597aedfbf457"
+    },
+    {
+      "key": "m16.q2.p64.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 139288.12427645669,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q2.p64.s42/20261018T235107704Z-e0366791818c41349be572d3cc5988d5"
+    },
+    {
+      "key": "m16.q2.p64.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 139288.12427645669,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q2.p64.s43/20261018T235159885Z-efc9d80c04914046ac239e26b997ba03"
+    },
+    {
+      "key": "m16.q2.p64.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 139288.12427645669,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q2.p64.s44/20261018T235215907Z-a85dfed1abd9425eb4acae8ddc254677"
+    },
+    {
+      "key": "m16.q2.p128.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 139769.1894676501,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q2.p128.s42/20261018T235304018Z-1032e7c4173b4b19bd7131e1240da03d"
+    },
+    {
+      "key": "m16.q2.p128.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 139769.1894676501,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q2.p128.s43/20261018T235418278Z-3816e77d52894934afdb6e08bf721e91"
+    },
+    {
+      "key": "m16.q2.p128.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 139769.1894676501,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q2.p128.s44/20261018T235514535Z-5dce0114f2b146228b0abf0a782eeba1"
+    },
+    {
+      "key": "m256.q0.p1.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 127465.02878019722,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q0.p1.s42/20261018T235542618Z-bf20dedea38f435fb4e447c4912f7475"
+    },
+    {
+      "key": "m256.q0.p1.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 127465.02878019722,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q0.p1.s43/20261018T235624745Z-4ef7fe0890a74fad9c9274570eb45813"
+    },
+    {
+      "key": "m256.q0.p1.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 127465.02878019722,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q0.p1.s44/20261018T235708890Z-6cf040e408604fe682c73992ae03ccab"
+    },
+    {
+      "key": "m256.q0.p16.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 216188.100824513,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q0.p16.s42/20261018T235751042Z-b5a22f94650c42079354afb1d41004d9"
+    },
+    {
+      "key": "m256.q0.p16.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 216188.100824513,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q0.p16.s43/20261018T235915336Z-c17c84fa70c5469587bd15d34436745e"
+    },
+    {
+      "key": "m256.q0.p16.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 216188.100824513,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q0.p16.s44/20261019T000037545Z-8a461762e34c4311b069c0e13ca97ad2"
+    },
+    {
+      "key": "m256.q0.p64.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 223974.380332972,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q0.p64.s42/20261019T000103694Z-c524959b5791462f96482be8956823cb"
+    },
+    {
+      "key": "m256.q0.p64.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 223974.380332972,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q0.p64.s43/20261019T000201885Z-bbf69752b0b847f7b0512a71f4094b76"
+    },
+    {
+      "key": "m256.q0.p64.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 223974.380332972,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q0.p64.s44/20261019T000244089Z-6595968c52f2463981e29e10f9942542"
+    },
+    {
+      "key": "m256.q0.p128.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 220158.25727167408,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q0.p128.s42/20261019T000322175Z-75daa15bc119478c8c70af405a07adff"
+    },
+    {
+      "key": "m256.q0.p128.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 220158.25727167408,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q0.p128.s43/20261019T000404354Z-38ade8abd7de4416b044ab0af03389c7"
+    },
+    {
+      "key": "m256.q0.p128.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 220158.25727167408,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q0.p128.s44/20261019T000506554Z-e152a0e81c63433281bfe77b0afb31d4"
+    },
+    {
+      "key": "m256.q1.p1.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 29118.944489729194,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q1.p1.s42/20261019T000546692Z-6b5ad5f3d5ef424fa5a3d4845ef8df38"
+    },
+    {
+      "key": "m256.q1.p1.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 29118.944489729194,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q1.p1.s43/20261019T000616821Z-e38cbd4d0f36474da0b5dcf8d6da8c2e"
+    },
+    {
+      "key": "m256.q1.p1.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 29118.944489729194,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q1.p1.s44/20261019T000648939Z-e809df1f52d4402386e449c27b11158d"
+    },
+    {
+      "key": "m256.q1.p16.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 213308.7728917834,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q1.p16.s42/20261019T000721042Z-e5187365543d4807ac0986dc6101d266"
+    },
+    {
+      "key": "m256.q1.p16.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 213308.7728917834,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q1.p16.s43/20261019T000837288Z-0f88fb097e414cb9818570bd19d4782c"
+    },
+    {
+      "key": "m256.q1.p16.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 213308.7728917834,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q1.p16.s44/20261019T000951525Z-cf2ced76797c4592af33ceddac88e5a7"
+    },
+    {
+      "key": "m256.q1.p64.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 183188.93876364667,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q1.p64.s42/20261019T001109786Z-f190d435947d4acb8c706615642c9750"
+    },
+    {
+      "key": "m256.q1.p64.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 183188.93876364667,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q1.p64.s43/20261019T001125857Z-c50941adbd5041b6a3dc29203331a200"
+    },
+    {
+      "key": "m256.q1.p64.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 183188.93876364667,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q1.p64.s44/20261019T001155916Z-6b434bb801774dc49eb2633a03a76181"
+    },
+    {
+      "key": "m256.q1.p128.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 191767.62566923935,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q1.p128.s42/20261019T001300132Z-5d32538534e840a6bff58885a51fc6fc"
+    },
+    {
+      "key": "m256.q1.p128.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 191767.62566923935,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q1.p128.s43/20261019T001438501Z-46c35f73e981479a81fcb51cd19dbde3"
+    },
+    {
+      "key": "m256.q1.p128.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 191767.62566923935,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q1.p128.s44/20261019T001450598Z-dbfa5d39172041c382271d9184a78f1b"
+    },
+    {
+      "key": "m256.q2.p1.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 22614.231373432238,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q2.p1.s42/20261019T001530688Z-8e0b8719c7104b42866e3f5286d6d31b"
+    },
+    {
+      "key": "m256.q2.p1.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 22614.231373432238,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q2.p1.s43/20261019T001608858Z-44aacbd9aadf49ae836990625d8211cf"
+    },
+    {
+      "key": "m256.q2.p1.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 22614.231373432238,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q2.p1.s44/20261019T001649055Z-03b7f3aa9fc34f2697d5ea8a8f86c992"
+    },
+    {
+      "key": "m256.q2.p16.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 129015.42125126558,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q2.p16.s42/20261019T001727102Z-cf238584516147589d81e67f4693f5b1"
+    },
+    {
+      "key": "m256.q2.p16.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 129015.42125126558,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q2.p16.s43/20261019T001859446Z-7ca1e77696f045819f6c02e3b4954b8a"
+    },
+    {
+      "key": "m256.q2.p16.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 129015.42125126558,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q2.p16.s44/20261019T002041812Z-263b88ca74364a38bc35eadc58badc39"
+    },
+    {
+      "key": "m256.q2.p64.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 133243.19115267482,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q2.p64.s42/20261019T002148029Z-e7976577929547398ab8da7503bb17d0"
+    },
+    {
+      "key": "m256.q2.p64.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 133243.19115267482,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q2.p64.s43/20261019T002228177Z-508ed9dc73a84149b50abcae16e58ae4"
+    },
+    {
+      "key": "m256.q2.p64.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 133243.19115267482,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q2.p64.s44/20261019T002346427Z-321095d827e24182b8f4259340585f79"
+    },
+    {
+      "key": "m256.q2.p128.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 135520.0394585042,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q2.p128.s42/20261019T002348447Z-0af70ab9ffd143ef9d7d5ace62c07228"
+    },
+    {
+      "key": "m256.q2.p128.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 135520.0394585042,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q2.p128.s43/20261019T002520803Z-042616a863904dbaa4e3c3d6287c1dba"
+    },
+    {
+      "key": "m256.q2.p128.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 135520.0394585042,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q2.p128.s44/20261019T002542848Z-4f4e7d4e3c914696aff0d664f84c5b85"
+    }
+  ]
+}

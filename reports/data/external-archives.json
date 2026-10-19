@@ -1,0 +1,42 @@
+{
+  "note": "Archives deliberately excluded from Git. Copy from evidence storage or supply --archive-root to verify original model files.",
+  "linuxRoot": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/publications/final-20261019/archives",
+  "windowsShare": "\\\\192.168.5.1\\mqtty-evidence\\overnight-20261018-instrumentation-v2\\publications\\final-20261019\\archives",
+  "archives": {
+    "ActiveMQ-model-evidence.zip": {
+      "sha256": "2ee77ce59278ee204f876d63f47dcf823c777fda7b0d6269dad9c56fe2df5786",
+      "bytes": 7616989,
+      "path": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/publications/final-20261019/archives/ActiveMQ-model-evidence.zip"
+    },
+    "Aedes-model-evidence.zip": {
+      "sha256": "f799c01d5144afb7ab35e169247c7e992cbfed626de908228d4193601cb12b40",
+      "bytes": 6413738,
+      "path": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/publications/final-20261019/archives/Aedes-model-evidence.zip"
+    },
+    "EMQX-model-evidence.zip": {
+      "sha256": "20e1a4fc46094d413454d2da1567b30c5a79ee0a0ed53a88fc004aef187b2a50",
+      "bytes": 6299588,
+      "path": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/publications/final-20261019/archives/EMQX-model-evidence.zip"
+    },
+    "Mosquitto-model-evidence.zip": {
+      "sha256": "3646703b17e947ff60a1eb7067b00b06bb4e9b2166530be9e241da6836a44605",
+      "bytes": 6394428,
+      "path": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/publications/final-20261019/archives/Mosquitto-model-evidence.zip"
+    },
+    "MqttRelay-Mixed-model-evidence.zip": {
+      "sha256": "84cf3201514fe13c2d688d5387a0aff756cbb4482f062814c3d8537d7b595091",
+      "bytes": 5793519,
+      "path": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/publications/final-20261019/archives/MqttRelay-Mixed-model-evidence.zip"
+    },
+    "native-members.zip": {
+      "sha256": "e336e7e561fcc932de120d0c77f4f5aa7b16b76bc7516906ca6381d81c04d5e0",
+      "bytes": 4178361,
+      "path": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/publications/final-20261019/archives/native-members.zip"
+    },
+    "replay-evidence.zip": {
+      "sha256": "429b17378fa35dcaa6679417cddd68ea2997b2cd1f5a39135428a1209676d73f",
+      "bytes": 173344,
+      "path": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/publications/final-20261019/archives/replay-evidence.zip"
+    }
+  }
+}

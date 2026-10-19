@@ -1,0 +1,79 @@
+{
+  "nativeRuns": 576,
+  "modelRuns": 936,
+  "modelReplaySamples": 6,
+  "modelReplayScientificEquality": true,
+  "targetedTestsPassed": 11,
+  "independentScoreBootstrapSamples": 2000,
+  "bootstrapSeed": 20261019,
+  "scientificValidation": "576 sealed native records, RPS/failure/loss means and Student-t intervals; 936 model configs, profile sets, counters, references and acceptance calculations verified",
+  "archiveScope": "Extracted members checked against seals; prior full reaggregation receipts retained. No claim of new full raw archive audit.",
+  "deterministicRerender": {
+    "checkedFiles": 1095,
+    "changedFiles": 0,
+    "modes": [
+      "with external ZIP verification",
+      "compact JSON only"
+    ]
+  },
+  "htmlChecks": [
+    {
+      "document": "Aedes",
+      "sha256": "81a9f4654cdd599493b2a5c9d5bfd26aa6b539fdc64ae1cf38ff8bf1d0d17189",
+      "images": 5,
+      "tables": 8,
+      "brokenOrExternalImages": 0
+    },
+    {
+      "document": "Mosquitto",
+      "sha256": "75cd1b59ed85f6de696967e98b2b1dbb119958e91bd8d0dd5ffac96212d7d575",
+      "images": 5,
+      "tables": 8,
+      "brokenOrExternalImages": 0
+    },
+    {
+      "document": "ActiveMQ",
+      "sha256": "7b933e1eeaf7b264d23a58880c13f5729d71b7ebd990d0810e3cf23bad5bbfe9",
+      "images": 5,
+      "tables": 8,
+      "brokenOrExternalImages": 0
+    },
+    {
+      "document": "EMQX",
+      "sha256": "729f86f8e2079475ff5ec7b24d6143c636886fc96da241385c71ff0fa11076f5",
+      "images": 5,
+      "tables": 8,
+      "brokenOrExternalImages": 0
+    },
+    {
+      "document": "MqttRelay-Mixed",
+      "sha256": "330aa211f0643bdcbe1878529a0d74744dad0d23b8818139ab920b1f45249cfb",
+      "images": 2,
+      "tables": 1,
+      "brokenOrExternalImages": 0
+    },
+    {
+      "document": "Broker-comparison",
+      "sha256": "acaebf00b11b1583843ef441cef8f46e841c0887ffe4d41d509cb53472c11e26",
+      "images": 1,
+      "tables": 5,
+      "brokenOrExternalImages": 0
+    },
+    {
+      "document": "Best-broker",
+      "sha256": "ecd3b3efd187bd845cd67333a8d23753c0f20ccdda3c22ca56e6ba54f00d2733",
+      "images": 0,
+      "tables": 1,
+      "brokenOrExternalImages": 0
+    },
+    {
+      "document": "Model-validation",
+      "sha256": "7b22b62628239c0b0ebe8e44c1c0bbfba0b4023317d340c08f2a6b1f742cde07",
+      "images": 1,
+      "tables": 2,
+      "brokenOrExternalImages": 0
+    }
+  ],
+  "zipFilesInPublicationManifest": 0,
+  "externalArchiveCount": 7
+}

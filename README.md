@@ -17,6 +17,8 @@
 
 Документы о брокерах: [Aedes](docs/brokers/Aedes.md), [Mosquitto](docs/brokers/Mosquitto.md), [ActiveMQ Classic](docs/brokers/ActiveMQ.md), [EMQX](docs/brokers/EMQX.md).
 
+Итоговая серия завершена: **1512/1512 запусков**. [Краткий выбор брокера](reports/Best-broker.md), [сравнение с интегральной оценкой](reports/Broker-comparison.md), [доказательства и границы моделей](reports/Model-validation.md). По EST\* с равными весами лидирует Mosquitto, при приоритете доставки — Aedes. Полная точность моделей на всей сетке не подтверждена.
+
 ## Структура
 
 | Каталог | Содержание |

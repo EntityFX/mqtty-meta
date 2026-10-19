@@ -300,6 +300,8 @@ def main():
     parser.add_argument('--evidence-root', type=Path)
     parser.add_argument('--output', type=Path, default=Path('reports'))
     args = parser.parse_args()
+    if (args.output / 'data/final-evidence-sha256.json').exists():
+        raise ValueError('This is a final publication; use render-final-reports.py to preserve full coverage and conclusions')
     if args.source:
         if not args.evidence_root:
             parser.error('--source requires --evidence-root')

@@ -1,5 +1,5 @@
 {
-  "status": "running",
+  "status": "completed",
   "completed": [
     "Aedes/calibration",
     "Aedes/pilot",
@@ -16,7 +16,20 @@
     "Mosquitto/fidelity",
     "EMQX/calibration",
     "EMQX/profile",
-    "Mosquitto/validation"
+    "Mosquitto/validation",
+    "Mosquitto/holdout",
+    "Mosquitto/relay",
+    "ActiveMQ/calibration",
+    "ActiveMQ/profile",
+    "ActiveMQ/fidelity",
+    "ActiveMQ/validation",
+    "ActiveMQ/holdout",
+    "ActiveMQ/relay",
+    "EMQX/fidelity",
+    "EMQX/validation",
+    "EMQX/holdout",
+    "EMQX/relay",
+    "MqttRelay-Mixed/relay"
   ],
   "brokers": {
     "Aedes": {
@@ -24,32 +37,33 @@
       "status": "завершён"
     },
     "Mosquitto": {
-      "stage": "holdout",
-      "status": "в работе"
+      "stage": "relay",
+      "status": "завершён"
     },
     "ActiveMQ": {
-      "stage": "pending",
-      "status": "не начат"
+      "stage": "relay",
+      "status": "завершён"
     },
     "EMQX": {
-      "stage": "pending",
-      "status": "не начат"
+      "stage": "relay",
+      "status": "завершён"
     },
     "MqttRelay-Mixed": {
-      "stage": "pending",
-      "status": "не начат"
+      "stage": "relay",
+      "status": "завершён"
     }
   },
   "coverageProtocol": "overnight-v1",
   "profiles": {
     "Aedes": "e16c599ebf32dda761f84afa2e21c8d2fc29e95bbb31b987607d83906b347239",
     "Mosquitto": "d9cf125fb8cb6ec3677fc3c596bafcdfced8be0502362e2b4ff03da1421d46eb",
-    "EMQX": "effe28c0fabf2d835579de8e6c40aa7d03a2865b7a23336d6f57189e79340b6f"
+    "EMQX": "effe28c0fabf2d835579de8e6c40aa7d03a2865b7a23336d6f57189e79340b6f",
+    "ActiveMQ": "d66a0f64cb195e29565e03a5531bdde45ccd9aee7b5d39ca7b26102d45706b2a"
   },
   "startedAtUtc": "2026-10-18T20:31:43.261913+00:00",
-  "deadlineUtc": "2026-10-19T05:00:00+00:00",
+  "deadlineUtc": "2026-10-19T17:00:00+00:00",
   "controllerRuntime": {
-    "pid": 96087,
+    "pid": 104582,
     "affinity": [
       1,
       2,
@@ -74,38 +88,17 @@
       22,
       23
     ],
-    "cgroup": "/user.slice/user-500.slice/user@500.service/app.slice/mqttbenchmark-repaired-restart-eb30a9829e7b45acafc2d801251fd818.service",
+    "cgroup": "/user.slice/user-500.slice/user@500.service/app.slice/mqttbenchmark-extended-dce862b6416b461bafa4ef556d16ccbf.service",
     "memoryMaxBytes": 8589934592
   },
   "simulationResources": {
-    "current": 4526882816,
-    "workingSet": 4452847616,
-    "anon": 2314604544,
-    "file": 2185715712,
-    "systemAvailable": 10778431488,
-    "activeProcesses": 3,
+    "current": 2371477504,
+    "workingSet": 1502334976,
+    "anon": 1342582784,
+    "file": 962105344,
+    "systemAvailable": 10153410560,
+    "activeProcesses": 1,
     "workerLimit": 4
   },
-  "activeSimulations": [
-    {
-      "tag": "Mosquitto-holdout-m16.q0.p128.s42",
-      "pid": 98494,
-      "log": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/controller/logs/Mosquitto-holdout-m16.q0.p128.s42-eef3176e.log"
-    },
-    {
-      "tag": "Mosquitto-holdout-m16.q0.p128.s43",
-      "pid": 98512,
-      "log": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/controller/logs/Mosquitto-holdout-m16.q0.p128.s43-6ab5d5ba.log"
-    },
-    {
-      "tag": "Mosquitto-holdout-m16.q0.p128.s44",
-      "pid": 98535,
-      "log": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/controller/logs/Mosquitto-holdout-m16.q0.p128.s44-f401981f.log"
-    }
-  ],
-  "active": {
-    "tag": "Mosquitto-holdout-m16.q0.p128.s42",
-    "pid": 98494,
-    "log": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/controller/logs/Mosquitto-holdout-m16.q0.p128.s42-eef3176e.log"
-  }
+  "finishedAtUtc": "2026-10-19T13:44:35.847926+00:00"
 }
