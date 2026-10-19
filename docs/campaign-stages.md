@@ -139,6 +139,6 @@ flowchart TD
 
 Для продолжения контроллер читает `state.json` и индексы завершённых запусков. Перечень файлов не заменяет проверку целостности: изменённый профиль или несовместимые входы нельзя выдавать за продолжение прежнего опыта.
 
-Связанные документы: [число запусков и команды](full-campaign-runbook.md), [показатели и формулы](campaign-metrics.md), [устройство Relay](mqtt-relay-explained.md).
+Связанные документы: [состав программ и ключевые классы](architecture.md), [число запусков и команды](full-campaign-runbook.md), [показатели и формулы](campaign-metrics.md), [устройство Relay](mqtt-relay-explained.md).
 
 Описание сверено со сценариями: [основной контроллер](../MqttBenchmark/scripts/campaign/run.py), [управление симуляциями](../tools/campaign/accelerated-resume.py), [серии с ограничением времени](../tools/campaign/compact-campaign.py).

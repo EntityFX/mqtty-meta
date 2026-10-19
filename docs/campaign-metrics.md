@@ -4,7 +4,7 @@
 
 Порядок установки и запуска приведён в [руководстве](full-campaign-runbook.md). Примеры измерений и выводов — в [отчётах](../reports/README.md).
 
-Подробности: [кто выполняет каждый этап и что сохраняет](campaign-stages.md), [устройство MqttRelay](mqtt-relay-explained.md).
+Подробности: [кто выполняет каждый этап и что сохраняет](campaign-stages.md), [устройство MqttRelay](mqtt-relay-explained.md), [модули и классы, которые собирают показатели](architecture.md).
 
 ## Что делает каждый этап
 

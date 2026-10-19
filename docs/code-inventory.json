@@ -1,0 +1,443 @@
+{
+  "method": "physical-lines-v1",
+  "revisions": {
+    ".": "93658878d22276fc79f32f3c41eb73ea81a9c9e4",
+    "MqttBenchmark": "30c21c4537f090f5b52507374e9c2e5fabdcb41a",
+    "mqtty": "115885e012053d0112413e07743b061369ebea93",
+    "diss": "ec51bde8d6cda707eb27eb99857417a733ccd730"
+  },
+  "sourceSha256": "fa754e3a06640a67da166e475953f1bb533512b1f8ffbfe9787f277bc1115df4",
+  "modules": [
+    {
+      "repository": ".",
+      "module": "tools",
+      "kind": "Скрипты",
+      "directory": "tools",
+      "files": 1,
+      "lines": 109,
+      "nonblank": 97,
+      "extensions": {
+        ".py": 1
+      }
+    },
+    {
+      "repository": ".",
+      "module": "tools/campaign",
+      "kind": "Скрипты",
+      "directory": "tools/campaign",
+      "files": 26,
+      "lines": 4641,
+      "nonblank": 4223,
+      "extensions": {
+        ".py": 26
+      }
+    },
+    {
+      "repository": ".",
+      "module": "tools/campaign",
+      "kind": "Тестовые скрипты",
+      "directory": "tools/campaign",
+      "files": 13,
+      "lines": 1062,
+      "nonblank": 930,
+      "extensions": {
+        ".py": 13
+      }
+    },
+    {
+      "repository": "MqttBenchmark",
+      "module": "EntityFX.MqttBenchmark",
+      "kind": "Модуль .NET",
+      "directory": "MqttBenchmark/src/EntityFX.MqttBenchmark",
+      "files": 28,
+      "lines": 1281,
+      "nonblank": 1139,
+      "extensions": {
+        ".cs": 28
+      }
+    },
+    {
+      "repository": "MqttBenchmark",
+      "module": "EntityFX.MqttBenchmark.Bomber",
+      "kind": "Модуль .NET",
+      "directory": "MqttBenchmark/src/EntityFX.MqttBenchmark.Bomber",
+      "files": 16,
+      "lines": 1338,
+      "nonblank": 1108,
+      "extensions": {
+        ".cs": 16
+      }
+    },
+    {
+      "repository": "MqttBenchmark",
+      "module": "EntityFX.MqttBenchmark.Campaign",
+      "kind": "Модуль .NET",
+      "directory": "MqttBenchmark/src/EntityFX.MqttBenchmark.Campaign",
+      "files": 64,
+      "lines": 3413,
+      "nonblank": 3183,
+      "extensions": {
+        ".cs": 64
+      }
+    },
+    {
+      "repository": "MqttBenchmark",
+      "module": "EntityFX.MqttBenchmark.Cli",
+      "kind": "Модуль .NET",
+      "directory": "MqttBenchmark/src/EntityFX.MqttBenchmark.Cli",
+      "files": 1,
+      "lines": 153,
+      "nonblank": 142,
+      "extensions": {
+        ".cs": 1
+      }
+    },
+    {
+      "repository": "MqttBenchmark",
+      "module": "EntityFX.MqttBenchmark.Counters",
+      "kind": "Модуль .NET",
+      "directory": "MqttBenchmark/src/EntityFX.MqttBenchmark.Counters",
+      "files": 4,
+      "lines": 254,
+      "nonblank": 199,
+      "extensions": {
+        ".cs": 4
+      }
+    },
+    {
+      "repository": "MqttBenchmark",
+      "module": "EntityFX.MqttBenchmark.Scenario",
+      "kind": "Модуль .NET",
+      "directory": "MqttBenchmark/src/EntityFX.MqttBenchmark.Scenario",
+      "files": 6,
+      "lines": 547,
+      "nonblank": 445,
+      "extensions": {
+        ".cs": 6
+      }
+    },
+    {
+      "repository": "MqttBenchmark",
+      "module": "EntityFX.MqttBenchmark.StatAggregator",
+      "kind": "Модуль .NET",
+      "directory": "MqttBenchmark/src/EntityFX.MqttBenchmark.StatAggregator",
+      "files": 4,
+      "lines": 208,
+      "nonblank": 165,
+      "extensions": {
+        ".cs": 4
+      }
+    },
+    {
+      "repository": "MqttBenchmark",
+      "module": "EntityFX.MqttBenchmark.Tests",
+      "kind": "Тесты .NET",
+      "directory": "MqttBenchmark/src/EntityFX.MqttBenchmark.Tests",
+      "files": 19,
+      "lines": 3203,
+      "nonblank": 2996,
+      "extensions": {
+        ".cs": 19
+      }
+    },
+    {
+      "repository": "MqttBenchmark",
+      "module": "data_processing",
+      "kind": "Скрипты",
+      "directory": "MqttBenchmark/data_processing",
+      "files": 1,
+      "lines": 102,
+      "nonblank": 78,
+      "extensions": {
+        ".py": 1
+      }
+    },
+    {
+      "repository": "MqttBenchmark",
+      "module": "docker",
+      "kind": "Скрипты",
+      "directory": "MqttBenchmark/docker",
+      "files": 2,
+      "lines": 64,
+      "nonblank": 60,
+      "extensions": {
+        ".js": 1,
+        ".sh": 1
+      }
+    },
+    {
+      "repository": "MqttBenchmark",
+      "module": "scripts",
+      "kind": "Скрипты",
+      "directory": "MqttBenchmark/scripts",
+      "files": 26,
+      "lines": 3101,
+      "nonblank": 2888,
+      "extensions": {
+        ".ps1": 17,
+        ".py": 9
+      }
+    },
+    {
+      "repository": "MqttBenchmark",
+      "module": "scripts",
+      "kind": "Тестовые скрипты",
+      "directory": "MqttBenchmark/scripts",
+      "files": 3,
+      "lines": 299,
+      "nonblank": 266,
+      "extensions": {
+        ".py": 3
+      }
+    },
+    {
+      "repository": "MqttBenchmark",
+      "module": "src",
+      "kind": "Скрипты",
+      "directory": "MqttBenchmark/src",
+      "files": 2,
+      "lines": 14,
+      "nonblank": 8,
+      "extensions": {
+        ".ps1": 2
+      }
+    },
+    {
+      "repository": "MqttBenchmark",
+      "module": "src",
+      "kind": "Тестовые скрипты",
+      "directory": "MqttBenchmark/src",
+      "files": 1,
+      "lines": 105,
+      "nonblank": 105,
+      "extensions": {
+        ".ps1": 1
+      }
+    },
+    {
+      "repository": "diss",
+      "module": "biblio",
+      "kind": "Скрипты",
+      "directory": "diss/biblio",
+      "files": 1,
+      "lines": 102,
+      "nonblank": 97,
+      "extensions": {
+        ".py": 1
+      }
+    },
+    {
+      "repository": "diss",
+      "module": "book",
+      "kind": "Скрипты",
+      "directory": "diss/book",
+      "files": 5,
+      "lines": 308,
+      "nonblank": 267,
+      "extensions": {
+        ".ps1": 1,
+        ".lua": 3,
+        ".py": 1
+      }
+    },
+    {
+      "repository": "diss",
+      "module": "doc",
+      "kind": "Скрипты",
+      "directory": "diss/doc",
+      "files": 2,
+      "lines": 582,
+      "nonblank": 539,
+      "extensions": {
+        ".ps1": 1,
+        ".sh": 1
+      }
+    },
+    {
+      "repository": "diss",
+      "module": "doc",
+      "kind": "Тестовые скрипты",
+      "directory": "diss/doc",
+      "files": 1,
+      "lines": 148,
+      "nonblank": 135,
+      "extensions": {
+        ".sh": 1
+      }
+    },
+    {
+      "repository": "mqtty",
+      "module": "CustomNetwork",
+      "kind": "Пример .NET",
+      "directory": "mqtty/doc/examples/custom-network",
+      "files": 1,
+      "lines": 118,
+      "nonblank": 115,
+      "extensions": {
+        ".cs": 1
+      }
+    },
+    {
+      "repository": "mqtty",
+      "module": "EntityFX.MqttY",
+      "kind": "Модуль .NET",
+      "directory": "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttSimulator",
+      "files": 57,
+      "lines": 6365,
+      "nonblank": 5110,
+      "extensions": {
+        ".cs": 57
+      }
+    },
+    {
+      "repository": "mqtty",
+      "module": "EntityFX.MqttY.Cli",
+      "kind": "Модуль .NET",
+      "directory": "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Cli",
+      "files": 4,
+      "lines": 269,
+      "nonblank": 226,
+      "extensions": {
+        ".cs": 4
+      }
+    },
+    {
+      "repository": "mqtty",
+      "module": "EntityFX.MqttY.Contracts",
+      "kind": "Модуль .NET",
+      "directory": "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttSimulator.Contracts",
+      "files": 52,
+      "lines": 1061,
+      "nonblank": 786,
+      "extensions": {
+        ".cs": 52
+      }
+    },
+    {
+      "repository": "mqtty",
+      "module": "EntityFX.MqttY.Contracts.Mqtt",
+      "kind": "Модуль .NET",
+      "directory": "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Contracts.Mqtt",
+      "files": 39,
+      "lines": 1358,
+      "nonblank": 1147,
+      "extensions": {
+        ".cs": 39
+      }
+    },
+    {
+      "repository": "mqtty",
+      "module": "EntityFX.MqttY.Contracts.Scenarios",
+      "kind": "Модуль .NET",
+      "directory": "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Contracts.Scenarios",
+      "files": 6,
+      "lines": 148,
+      "nonblank": 113,
+      "extensions": {
+        ".cs": 6
+      }
+    },
+    {
+      "repository": "mqtty",
+      "module": "EntityFX.MqttY.Designer",
+      "kind": "Модуль .NET",
+      "directory": "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Designer",
+      "files": 39,
+      "lines": 5334,
+      "nonblank": 4692,
+      "extensions": {
+        ".axaml": 7,
+        ".cs": 32
+      }
+    },
+    {
+      "repository": "mqtty",
+      "module": "EntityFX.MqttY.MqttRelay.App",
+      "kind": "Модуль .NET",
+      "directory": "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.MqttRelay.App",
+      "files": 4,
+      "lines": 1071,
+      "nonblank": 896,
+      "extensions": {
+        ".cs": 4
+      }
+    },
+    {
+      "repository": "mqtty",
+      "module": "EntityFX.MqttY.Plugin.Mqtt",
+      "kind": "Модуль .NET",
+      "directory": "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Plugin.Mqtt",
+      "files": 57,
+      "lines": 6280,
+      "nonblank": 5209,
+      "extensions": {
+        ".cs": 57
+      }
+    },
+    {
+      "repository": "mqtty",
+      "module": "EntityFX.MqttY.Plugin.Scenarios",
+      "kind": "Модуль .NET",
+      "directory": "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Plugin.Scenarios",
+      "files": 8,
+      "lines": 388,
+      "nonblank": 311,
+      "extensions": {
+        ".cs": 8
+      }
+    },
+    {
+      "repository": "mqtty",
+      "module": "EntityFX.Tests.Integration",
+      "kind": "Тесты .NET",
+      "directory": "mqtty/src/EntityFX.MqttSimulator/EntityFX.Tests.Integration",
+      "files": 30,
+      "lines": 4901,
+      "nonblank": 4220,
+      "extensions": {
+        ".cs": 30
+      }
+    },
+    {
+      "repository": "mqtty",
+      "module": "doc",
+      "kind": "Скрипты",
+      "directory": "mqtty/doc",
+      "files": 2,
+      "lines": 81,
+      "nonblank": 81,
+      "extensions": {
+        ".ps1": 2
+      }
+    },
+    {
+      "repository": "mqtty",
+      "module": "tools",
+      "kind": "Скрипты",
+      "directory": "mqtty/tools",
+      "files": 1,
+      "lines": 34,
+      "nonblank": 29,
+      "extensions": {
+        ".py": 1
+      }
+    },
+    {
+      "repository": "mqtty",
+      "module": "utils",
+      "kind": "Скрипты",
+      "directory": "mqtty/utils",
+      "files": 1,
+      "lines": 45,
+      "nonblank": 30,
+      "extensions": {
+        ".py": 1
+      }
+    }
+  ],
+  "totals": {
+    "files": 527,
+    "lines": 48487,
+    "nonblank": 42035
+  }
+}
