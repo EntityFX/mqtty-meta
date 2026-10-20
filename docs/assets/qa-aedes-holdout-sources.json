@@ -1,0 +1,48 @@
+{
+  "broker": "Aedes",
+  "payloadBytes": 256,
+  "qos": 1,
+  "stage": "holdout",
+  "purpose": "Illustrate measurement vs model; this subset is not an overall broker ranking",
+  "sourceSha256": {
+    "reports/data/native-evidence.json": "7010fc352b64125a44aa9d7dbe54c9df76cb224631f2971d2f1579c44e5450de",
+    "reports/data/model-evidence.json": "778b25feee8272e7d97deba5fae19086da2ba2a91a3b0a7b3a0c077e4cbdb015",
+    "reports/data/Aedes/validation/observations.json": "865f5552318afb49fd65b4be709b5dbf7a34d334e6c26ba15b24f7ad32608a68",
+    "reports/data/inputs/Aedes-calibration.json": "3bcf2008ff0b70fcc5db7f14500b851650be7cfac934fc0fda0f62d96edf494f"
+  },
+  "configs": {
+    "Aedes-calibration.json": {
+      "source": "reports/data/inputs/Aedes-calibration.json",
+      "sourceSha256": "3bcf2008ff0b70fcc5db7f14500b851650be7cfac934fc0fda0f62d96edf494f",
+      "changedFields": []
+    },
+    "Aedes-holdout-m256.q1.p64.s42.json": {
+      "archive": "Aedes-model-evidence.zip",
+      "archiveSha256": "f799c01d5144afb7ab35e169247c7e992cbfed626de908228d4193601cb12b40",
+      "member": "holdout/m256.q1.p64.s42/config.json",
+      "sourceSha256": "2c6bfc0b99d5f1a2937f961075ee61dec19c948944a786005e3339c34a996285",
+      "adaptedSha256": "e7b65b154a91684fc6d8d1cd5fa15e2bdb0d4eeedecade172ef5049773981e8e",
+      "changedFields": {
+        "mqttYRepository": "mqtty",
+        "mqttBenchmarkRepository": "MqttBenchmark",
+        "brokerProfilePath": "reports/data/Aedes/profile/broker-calibration.v3.json",
+        "referenceObservationsPath": "reports/data/Aedes/validation/observations.json"
+      }
+    },
+    "Aedes-relay-m256.q1.p64.s42.json": {
+      "archive": "Aedes-model-evidence.zip",
+      "archiveSha256": "f799c01d5144afb7ab35e169247c7e992cbfed626de908228d4193601cb12b40",
+      "member": "relay/m256.q1.p64.s42/config.json",
+      "sourceSha256": "5cd07452c93c86497ef7e9b6f99790c7200024a184c6c9be56214618cf8a1fb2",
+      "adaptedSha256": "b973f98b3e2fdb42a67ad483997617b668bbecfd3812f067f844855451281379",
+      "changedFields": {
+        "mqttYRepository": "mqtty",
+        "mqttBenchmarkRepository": "MqttBenchmark",
+        "brokerProfilePath": "reports/data/Aedes/profile/broker-calibration.v3.json"
+      }
+    }
+  },
+  "chartCsvSha256": "81c471ebd58224bc1de14613553535e76874c69b65205ba794b9dd241e1db62a",
+  "profileSha256": "e16c599ebf32dda761f84afa2e21c8d2fc29e95bbb31b987607d83906b347239",
+  "chartRows": 24
+}
