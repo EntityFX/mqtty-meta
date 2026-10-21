@@ -1,12 +1,12 @@
 {
   "method": "physical-lines-v1",
   "revisions": {
-    ".": "0b0c6dd843ab2bc59439b39e1d25cd1b97fa8f83",
+    ".": "afd816c4bf67ef2d49282b31e66201d30b1a116c",
     "MqttBenchmark": "30c21c4537f090f5b52507374e9c2e5fabdcb41a",
     "mqtty": "115885e012053d0112413e07743b061369ebea93",
     "diss": "ec51bde8d6cda707eb27eb99857417a733ccd730"
   },
-  "sourceSha256": "a1b46bdfe56a0237936efc3ad0fb3766d0216840ad47569e106bc1ecfa120043",
+  "sourceSha256": "861da276207661a70a06e25ab8c3d3ebc2acd7258e04032bb43d51064dfc8a5d",
   "modules": [
     {
       "repository": ".",
@@ -25,11 +25,11 @@
       "module": "tools/campaign",
       "kind": "Скрипты",
       "directory": "tools/campaign",
-      "files": 33,
-      "lines": 6481,
-      "nonblank": 5937,
+      "files": 34,
+      "lines": 6619,
+      "nonblank": 6064,
       "extensions": {
-        ".py": 33
+        ".py": 34
       }
     },
     {
@@ -436,8 +436,8 @@
     }
   ],
   "totals": {
-    "files": 537,
-    "lines": 50509,
-    "nonblank": 43895
+    "files": 538,
+    "lines": 50647,
+    "nonblank": 44022
   }
 }
