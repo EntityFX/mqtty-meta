@@ -1,0 +1,37 @@
+{
+  "formulaAndRawDeliveryChecked": 54,
+  "replays": [
+    {
+      "id": "ideal-single-q2-s42",
+      "identical": true,
+      "summarySha256": "fb63f60434c9232396758af137a2577a3867073f8bc1adf9831098b28081c1e1"
+    },
+    {
+      "id": "ideal-relay-q2-s42",
+      "identical": true,
+      "summarySha256": "5823ebec9dde5b095b62577558d4195fefe48887bb3dc0f8583c39b056246461"
+    },
+    {
+      "id": "ideal-federation-q2-s42",
+      "identical": true,
+      "summarySha256": "c3d4afa66de9cdab0415a3361447e7c1907a07772ed7c152be08417fdb9ce5bc"
+    },
+    {
+      "id": "mosquitto-single-q2-s42",
+      "identical": true,
+      "summarySha256": "dcec54f9a0b7341fa0237cccdf80d28480514be0f00a9a6a260f39134d1c7bc3"
+    },
+    {
+      "id": "mosquitto-relay-q2-s42",
+      "identical": true,
+      "summarySha256": "d6a4ebb37ef1dbc92bcab51dfdd67f2af516098a2811b7e8e779c7eeb7cce36d"
+    },
+    {
+      "id": "mosquitto-federation-q2-s42",
+      "identical": true,
+      "summarySha256": "9439203992dfa6e6ac301375cb33cd0b1c90d19fc70698eb3b3713b845a7153c"
+    }
+  ],
+  "technicalFailures": 0,
+  "method": "recompute ID/receiver pairs, payload hashes, latency ranks, drain, forwarding counts and source counter formulas"
+}

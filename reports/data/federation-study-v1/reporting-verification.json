@@ -1,0 +1,11 @@
+{
+  "pythonVersion": "3.12.10",
+  "matplotlibVersion": "3.10.8",
+  "missingLatencyExplicit": true,
+  "confidenceIntervalsOnlyForThreeApplicableSeeds": true,
+  "sourcesSha256": {
+    "study.py": "6f72cecd246ca1f77e26cc91e96db73e949b5b222a72dde3e1bb93ee4285f455",
+    "report.py": "e0c2e363ba82a392171ae229f8001b7e1a3142c798b654d79d1fcffafe88b7a0",
+    "archive.py": "f87eebc52c7f0fffe0dcefd73f4ca9930d6df7c92d93f82964120e5b7e740ec6"
+  }
+}

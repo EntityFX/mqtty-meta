@@ -1,0 +1,7 @@
+{
+  "csharpRegressionPassed": 304,
+  "csharpFederationAfterDiagramChangePassed": 27,
+  "pythonEvidenceAndArchivePassed": 4,
+  "regressionCommand": "dotnet test src/EntityFX.MqttSimulator/EntityFX.Tests.Integration -c Release --filter TestCategory!=LongRunning",
+  "coverage": "LongRunning tests excluded"
+}

@@ -1,0 +1,19 @@
+{
+  "role": "initial layout, retained separately from the final acceptance dataset",
+  "remoteHost": "192.168.5.1",
+  "remotePath": "/run/media/entityfx/hd250/mqtty-evidence/federation-study-v1/initial-layout.tar.gz",
+  "sha256": "0db2a79e42d3375f91d093d90508a77d11a91d6cefff60d0e81f7cf4a9547223",
+  "bytes": 35625339,
+  "allLocalMembersVerified": true,
+  "remoteArchiveHashVerified": true,
+  "remoteRunRegistriesVerified": 60,
+  "remoteRegisteredFilesVerified": 1050,
+  "archiveFileMembers": 1422,
+  "mount": {
+    "target": "/run/media/entityfx/hd250",
+    "source": "/dev/sdb1",
+    "fstype": "ext4",
+    "uuid": "c1ca2de7-c618-4a3d-8ffc-59d37f42ccec"
+  },
+  "sourceCopiesRetained": true
+}

@@ -1,0 +1,758 @@
+[
+  {
+    "family": "ideal",
+    "mode": "single",
+    "qos": 0,
+    "successful": 3,
+    "failed": 0,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 3000,
+      "ci95": 0.0
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.2000000000000002,
+      "ci95": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95": null
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    },
+    "suppressedDuplicates": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    }
+  },
+  {
+    "family": "ideal",
+    "mode": "single",
+    "qos": 1,
+    "successful": 3,
+    "failed": 0,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 3000,
+      "ci95": 0.0
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.2000000000000002,
+      "ci95": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.2000000000000002,
+      "ci95": 0.0
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    },
+    "suppressedDuplicates": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    }
+  },
+  {
+    "family": "ideal",
+    "mode": "single",
+    "qos": 2,
+    "successful": 3,
+    "failed": 0,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 3000,
+      "ci95": 0.0
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 3.6,
+      "ci95": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 2.4000000000000004,
+      "ci95": 0.0
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    },
+    "suppressedDuplicates": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    }
+  },
+  {
+    "family": "ideal",
+    "mode": "relay",
+    "qos": 0,
+    "successful": 3,
+    "failed": 0,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 3000,
+      "ci95": 0.0
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 2.6,
+      "ci95": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95": null
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 400,
+      "ci95": 0.0
+    },
+    "suppressedDuplicates": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    }
+  },
+  {
+    "family": "ideal",
+    "mode": "relay",
+    "qos": 1,
+    "successful": 3,
+    "failed": 0,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 3000,
+      "ci95": 0.0
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 2.6,
+      "ci95": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 0.8,
+      "ci95": 0.0
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 400,
+      "ci95": 0.0
+    },
+    "suppressedDuplicates": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    }
+  },
+  {
+    "family": "ideal",
+    "mode": "relay",
+    "qos": 2,
+    "successful": 3,
+    "failed": 0,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 3000,
+      "ci95": 0.0
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 7.800000000000001,
+      "ci95": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95": 0.0
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 400,
+      "ci95": 0.0
+    },
+    "suppressedDuplicates": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    }
+  },
+  {
+    "family": "ideal",
+    "mode": "federation",
+    "qos": 0,
+    "successful": 3,
+    "failed": 0,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 3000,
+      "ci95": 0.0
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 2.8000000000000003,
+      "ci95": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95": null
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 800,
+      "ci95": 0.0
+    },
+    "suppressedDuplicates": {
+      "n": 3,
+      "mean": 400,
+      "ci95": 0.0
+    }
+  },
+  {
+    "family": "ideal",
+    "mode": "federation",
+    "qos": 1,
+    "successful": 3,
+    "failed": 0,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 3000,
+      "ci95": 0.0
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 5.5,
+      "ci95": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 0.8,
+      "ci95": 0.0
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 800,
+      "ci95": 0.0
+    },
+    "suppressedDuplicates": {
+      "n": 3,
+      "mean": 400,
+      "ci95": 0.0
+    }
+  },
+  {
+    "family": "ideal",
+    "mode": "federation",
+    "qos": 2,
+    "successful": 3,
+    "failed": 0,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 3000,
+      "ci95": 0.0
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 145.8,
+      "ci95": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95": 0.0
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 800,
+      "ci95": 0.0
+    },
+    "suppressedDuplicates": {
+      "n": 3,
+      "mean": 400,
+      "ci95": 0.0
+    }
+  },
+  {
+    "family": "mosquitto",
+    "mode": "single",
+    "qos": 0,
+    "successful": 3,
+    "failed": 0,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 996.6666666666666,
+      "ci95": 14.342175766370916
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1350,
+      "ci95": 93.77414219416326
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0.6625,
+      "ci95": 0.02344353554854074
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95": null
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    },
+    "suppressedDuplicates": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    }
+  },
+  {
+    "family": "mosquitto",
+    "mode": "single",
+    "qos": 1,
+    "successful": 3,
+    "failed": 0,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 871.6666666666666,
+      "ci95": 51.711450127367385
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0.7820833333333334,
+      "ci95": 0.012927862531841833
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 6.033333333333333,
+      "ci95": 3.7372308716408074
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 5.333333333333333,
+      "ci95": 1.8972915168697326
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    },
+    "suppressedDuplicates": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    }
+  },
+  {
+    "family": "mosquitto",
+    "mode": "single",
+    "qos": 2,
+    "successful": 3,
+    "failed": 0,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 51.666666666666664,
+      "ci95": 18.972915168697327
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0.9870833333333333,
+      "ci95": 0.004743228792174381
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 6.5,
+      "ci95": 1.2907958189733828
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 5.300000000000001,
+      "ci95": 1.0828105247765274
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    },
+    "suppressedDuplicates": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    }
+  },
+  {
+    "family": "mosquitto",
+    "mode": "relay",
+    "qos": 0,
+    "successful": 3,
+    "failed": 0,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 4000,
+      "ci95": 0.0
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 3.6,
+      "ci95": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95": null
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 600,
+      "ci95": 0.0
+    },
+    "suppressedDuplicates": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    }
+  },
+  {
+    "family": "mosquitto",
+    "mode": "relay",
+    "qos": 1,
+    "successful": 3,
+    "failed": 0,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 10,
+      "ci95": 12.420688559218762
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0.9975,
+      "ci95": 0.0031051721398047626
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 3.1,
+      "ci95": 2.3697163450459486
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.1,
+      "ci95": 0.0
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 51.666666666666664,
+      "ci95": 26.32873485859923
+    },
+    "suppressedDuplicates": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    }
+  },
+  {
+    "family": "mosquitto",
+    "mode": "relay",
+    "qos": 2,
+    "successful": 3,
+    "failed": 0,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 8.333333333333334,
+      "ci95": 18.972915168697327
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0.9979166666666667,
+      "ci95": 0.004743228792174351
+    },
+    "receiverP99Ms": {
+      "n": 2,
+      "mean": 10.100000000000001,
+      "ci95": null
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 2.1333333333333333,
+      "ci95": 0.1434217576637093
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 48,
+      "ci95": 36.08418457117065
+    },
+    "suppressedDuplicates": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    }
+  },
+  {
+    "family": "mosquitto",
+    "mode": "federation",
+    "qos": 0,
+    "successful": 3,
+    "failed": 0,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 4000,
+      "ci95": 0.0
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 3.9000000000000004,
+      "ci95": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95": null
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "suppressedDuplicates": {
+      "n": 3,
+      "mean": 400,
+      "ci95": 0.0
+    }
+  },
+  {
+    "family": "mosquitto",
+    "mode": "federation",
+    "qos": 1,
+    "successful": 3,
+    "failed": 0,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 10,
+      "ci95": 12.420688559218762
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0.9975,
+      "ci95": 0.0031051721398047626
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 2.4333333333333336,
+      "ci95": 2.725013395610474
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.1,
+      "ci95": 0.0
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 49.666666666666664,
+      "ci95": 23.479153632789217
+    },
+    "suppressedDuplicates": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    }
+  },
+  {
+    "family": "mosquitto",
+    "mode": "federation",
+    "qos": 2,
+    "successful": 3,
+    "failed": 0,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 6.666666666666667,
+      "ci95": 18.972915168697327
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0.9983333333333333,
+      "ci95": 0.004743228792174381
+    },
+    "receiverP99Ms": {
+      "n": 2,
+      "mean": 7.700000000000001,
+      "ci95": null
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 2.1333333333333333,
+      "ci95": 0.1434217576637093
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 42.333333333333336,
+      "ci95": 18.644828496282194
+    },
+    "suppressedDuplicates": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    }
+  }
+]

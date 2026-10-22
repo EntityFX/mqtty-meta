@@ -7,7 +7,9 @@ dotnet build mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App -c R
 python -m pip install matplotlib
 python tools/federation/study.py run --work-dir /data/mqtt/federation-study-new
 python tools/federation/study.py verify --work-dir /data/mqtt/federation-study-new
-python tools/federation/study.py report --work-dir /data/mqtt/federation-study-new
+python tools/federation/report.py --work-dir /data/mqtt/federation-study-new
+python -m unittest discover -s tools/federation -p "test_*.py" -v
+python tools/federation/archive.py --work-dir /data/mqtt/federation-study-new --archive-path /data/mqtt/federation-study-new.tar.gz
 ```
 
 Путь результата замените каталогом подготовленного диска. До начала серии MqttY должен быть закоммичен и чист. Сценарий сохраняет commit, хэши исполняемых DLL, собственный snapshot и профиль Mosquitto; перед каждым основным опытом проверяет неизменность исходников, DLL и профиля. Каталоги опытов новые, старые результаты не перезаписываются. Перед очередным опытом требуется резерв 5 ГиБ. Полные данные не добавляются в Git.
@@ -19,5 +21,7 @@ python tools/federation/study.py report --work-dir /data/mqtt/federation-study-n
 Проверка читает журналы publications/transmissions/delivery-receipts, пересчитывает уникальные пары ID–subscriber, неизменность payload, задержки, гистограммы, знаменатели потерь, получения в drain и пересылки. Завершения исходных publishers проверяются по их отдельным счётчикам и гистограммам; сумма всех публикаций брокеров не используется. Шесть повторов сравниваются по байтам summary.json.
 
 Отчёт `reports/Federation-study.md` содержит таблицы, два графика, физические и логические топологии и границы выводов. `reports/data/federation-study-v1` содержит компактные результаты, CSV, агрегаты, проверку и хэши. Это фиксированное имя публикации одной приёмочной программы; при новом научном исследовании нужно выделить новую версию публикации, сохранив прежнюю.
+
+`study.py` — замороженная программа исполнения. Отдельный `report.py` повторно проверяет её данные и оформляет интерпретацию: показывает неприменимые p99 при отсутствии получений, не рисует нулевые CI для неполных групп и явно описывает разное число служебных соединений у федерации и Relay. Его утверждения проверяются по числам фиксированной приёмочной программы; для новой программы нужна отдельная интерпретация. Базовая команда `study.py report` сохраняется, но итоговый документ строится через `report.py`.
 
 Это проверка механизма с условными модельными результатами. Профиль Mosquitto не калибровался на дополнительной пересылке, fanout и новой интенсивности. Интервалы по seeds описывают разброс модели, не её натурную точность. Для публикации доказательств настоящей федерации нужна отдельная натурная программа и независимый контроль. Архивирование выполняется отдельно после проверки; перед переносом на Linux проверяются mount, UUID и свободное место диска доказательств. Исходники evidence автоматически не удаляются.
