@@ -1,0 +1,345 @@
+{
+  "arithmeticChecked": 198,
+  "strategyEquality": [
+    {
+      "family": "demo",
+      "load": 1000,
+      "qos": 0,
+      "seed": 42,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "demo",
+      "load": 1000,
+      "qos": 0,
+      "seed": 43,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "demo",
+      "load": 1000,
+      "qos": 0,
+      "seed": 44,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "demo",
+      "load": 1000,
+      "qos": 1,
+      "seed": 42,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "demo",
+      "load": 1000,
+      "qos": 1,
+      "seed": 43,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "demo",
+      "load": 1000,
+      "qos": 1,
+      "seed": 44,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "demo",
+      "load": 1000,
+      "qos": 2,
+      "seed": 42,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "demo",
+      "load": 1000,
+      "qos": 2,
+      "seed": 43,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "demo",
+      "load": 1000,
+      "qos": 2,
+      "seed": 44,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "demo",
+      "load": 60000,
+      "qos": 0,
+      "seed": 42,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "demo",
+      "load": 60000,
+      "qos": 0,
+      "seed": 43,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "demo",
+      "load": 60000,
+      "qos": 0,
+      "seed": 44,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "demo",
+      "load": 60000,
+      "qos": 1,
+      "seed": 42,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "demo",
+      "load": 60000,
+      "qos": 1,
+      "seed": 43,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "demo",
+      "load": 60000,
+      "qos": 1,
+      "seed": 44,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "demo",
+      "load": 60000,
+      "qos": 2,
+      "seed": 42,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "demo",
+      "load": 60000,
+      "qos": 2,
+      "seed": 43,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "demo",
+      "load": 60000,
+      "qos": 2,
+      "seed": 44,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "mosquitto",
+      "load": 1000,
+      "qos": 0,
+      "seed": 42,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "mosquitto",
+      "load": 1000,
+      "qos": 0,
+      "seed": 43,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "mosquitto",
+      "load": 1000,
+      "qos": 0,
+      "seed": 44,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "mosquitto",
+      "load": 1000,
+      "qos": 1,
+      "seed": 42,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "mosquitto",
+      "load": 1000,
+      "qos": 1,
+      "seed": 43,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "mosquitto",
+      "load": 1000,
+      "qos": 1,
+      "seed": 44,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "mosquitto",
+      "load": 1000,
+      "qos": 2,
+      "seed": 42,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "mosquitto",
+      "load": 1000,
+      "qos": 2,
+      "seed": 43,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "mosquitto",
+      "load": 1000,
+      "qos": 2,
+      "seed": 44,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "mosquitto",
+      "load": 60000,
+      "qos": 0,
+      "seed": 42,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "mosquitto",
+      "load": 60000,
+      "qos": 0,
+      "seed": 43,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "mosquitto",
+      "load": 60000,
+      "qos": 0,
+      "seed": 44,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "mosquitto",
+      "load": 60000,
+      "qos": 1,
+      "seed": 42,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "mosquitto",
+      "load": 60000,
+      "qos": 1,
+      "seed": 43,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "mosquitto",
+      "load": 60000,
+      "qos": 1,
+      "seed": 44,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "mosquitto",
+      "load": 60000,
+      "qos": 2,
+      "seed": 42,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "mosquitto",
+      "load": 60000,
+      "qos": 2,
+      "seed": 43,
+      "threeSummariesIdentical": true
+    },
+    {
+      "family": "mosquitto",
+      "load": 60000,
+      "qos": 2,
+      "seed": 44,
+      "threeSummariesIdentical": true
+    }
+  ],
+  "replays": {
+    "demo-r60000-q2-single48-s42": {
+      "exitCode": 0,
+      "wallSeconds": 4.437680199975148,
+      "command": [
+        "dotnet",
+        "C:\\projects\\mqtty-meta\\mqtty\\src\\EntityFX.MqttSimulator\\EntityFX.MqttY.LoadBalancing.App\\bin\\Release\\net6.0\\EntityFX.MqttY.LoadBalancing.App.dll",
+        "run",
+        "--config",
+        "C:\\projects\\mqtty-meta\\MqttBenchmark\\artifacts\\load-balancing-study-v1\\runs\\demo-r60000-q2-single48-s42\\run-config.json",
+        "--output",
+        "C:\\projects\\mqtty-meta\\MqttBenchmark\\artifacts\\load-balancing-study-v1\\replays\\demo-r60000-q2-single48-s42"
+      ],
+      "identicalSummary": true
+    },
+    "demo-r60000-q2-roundRobin-s42": {
+      "exitCode": 0,
+      "wallSeconds": 4.241651799995452,
+      "command": [
+        "dotnet",
+        "C:\\projects\\mqtty-meta\\mqtty\\src\\EntityFX.MqttSimulator\\EntityFX.MqttY.LoadBalancing.App\\bin\\Release\\net6.0\\EntityFX.MqttY.LoadBalancing.App.dll",
+        "run",
+        "--config",
+        "C:\\projects\\mqtty-meta\\MqttBenchmark\\artifacts\\load-balancing-study-v1\\runs\\demo-r60000-q2-roundRobin-s42\\run-config.json",
+        "--output",
+        "C:\\projects\\mqtty-meta\\MqttBenchmark\\artifacts\\load-balancing-study-v1\\replays\\demo-r60000-q2-roundRobin-s42"
+      ],
+      "identicalSummary": true
+    },
+    "mosquitto-r60000-q0-single16-s42": {
+      "exitCode": 0,
+      "wallSeconds": 3.6738014000002295,
+      "command": [
+        "dotnet",
+        "C:\\projects\\mqtty-meta\\mqtty\\src\\EntityFX.MqttSimulator\\EntityFX.MqttY.LoadBalancing.App\\bin\\Release\\net6.0\\EntityFX.MqttY.LoadBalancing.App.dll",
+        "run",
+        "--config",
+        "C:\\projects\\mqtty-meta\\MqttBenchmark\\artifacts\\load-balancing-study-v1\\runs\\mosquitto-r60000-q0-single16-s42\\run-config.json",
+        "--output",
+        "C:\\projects\\mqtty-meta\\MqttBenchmark\\artifacts\\load-balancing-study-v1\\replays\\mosquitto-r60000-q0-single16-s42"
+      ],
+      "identicalSummary": true
+    },
+    "mosquitto-r60000-q2-single16-s42": {
+      "exitCode": 0,
+      "wallSeconds": 3.157904400024563,
+      "command": [
+        "dotnet",
+        "C:\\projects\\mqtty-meta\\mqtty\\src\\EntityFX.MqttSimulator\\EntityFX.MqttY.LoadBalancing.App\\bin\\Release\\net6.0\\EntityFX.MqttY.LoadBalancing.App.dll",
+        "run",
+        "--config",
+        "C:\\projects\\mqtty-meta\\MqttBenchmark\\artifacts\\load-balancing-study-v1\\runs\\mosquitto-r60000-q2-single16-s42\\run-config.json",
+        "--output",
+        "C:\\projects\\mqtty-meta\\MqttBenchmark\\artifacts\\load-balancing-study-v1\\replays\\mosquitto-r60000-q2-single16-s42"
+      ],
+      "identicalSummary": true
+    },
+    "mosquitto-r60000-q2-single64-s42": {
+      "exitCode": 0,
+      "wallSeconds": 8.081744600087404,
+      "command": [
+        "dotnet",
+        "C:\\projects\\mqtty-meta\\mqtty\\src\\EntityFX.MqttSimulator\\EntityFX.MqttY.LoadBalancing.App\\bin\\Release\\net6.0\\EntityFX.MqttY.LoadBalancing.App.dll",
+        "run",
+        "--config",
+        "C:\\projects\\mqtty-meta\\MqttBenchmark\\artifacts\\load-balancing-study-v1\\runs\\mosquitto-r60000-q2-single64-s42\\run-config.json",
+        "--output",
+        "C:\\projects\\mqtty-meta\\MqttBenchmark\\artifacts\\load-balancing-study-v1\\replays\\mosquitto-r60000-q2-single64-s42"
+      ],
+      "identicalSummary": true
+    },
+    "mosquitto-r60000-q2-roundRobin-s42": {
+      "exitCode": 0,
+      "wallSeconds": 5.223450900055468,
+      "command": [
+        "dotnet",
+        "C:\\projects\\mqtty-meta\\mqtty\\src\\EntityFX.MqttSimulator\\EntityFX.MqttY.LoadBalancing.App\\bin\\Release\\net6.0\\EntityFX.MqttY.LoadBalancing.App.dll",
+        "run",
+        "--config",
+        "C:\\projects\\mqtty-meta\\MqttBenchmark\\artifacts\\load-balancing-study-v1\\runs\\mosquitto-r60000-q2-roundRobin-s42\\run-config.json",
+        "--output",
+        "C:\\projects\\mqtty-meta\\MqttBenchmark\\artifacts\\load-balancing-study-v1\\replays\\mosquitto-r60000-q2-roundRobin-s42"
+      ],
+      "identicalSummary": true
+    }
+  },
+  "fullMatrixComplete": true,
+  "successful": 198
+}

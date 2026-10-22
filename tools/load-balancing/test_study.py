@@ -3,9 +3,11 @@ import json
 import math
 import tempfile
 import unittest
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 import study
+import topologies
 
 
 class StudyVerificationTests(unittest.TestCase):
@@ -42,9 +44,7 @@ class StudyVerificationTests(unittest.TestCase):
                 study.verify_seal(root)
 
     def test_independent_recalculation_rejects_incorrect_rates_and_drain(self):
-        fixture = study.ROOT / "MqttBenchmark/artifacts/load-balancing-v1-verified-smoke/007-Aedes-RoundRobin-q1-s42/summary.json"
-        if not fixture.exists():
-            self.skipTest("Optional local smoke fixture unavailable; algebraic tests remain independent.")
+        fixture = Path(__file__).with_name("fixtures") / "ideal-qos1-summary.json"
         original = study.read(fixture)
         study.validate_summary(original)
         for key in ("uniqueGoodput", "backendCompletedRps", "uniqueReceivedDuringDrain", "publishP99Ms", "backpressureUnsent"):
@@ -66,6 +66,34 @@ class StudyVerificationTests(unittest.TestCase):
         self.assertIsNone(value["uniqueGoodput"]["ci95HalfWidth"])
         self.assertEqual(value["scheduleFulfillment"]["mean"], 1)
         self.assertIsNone(value["publishP99Ms"]["mean"])
+
+    def test_topology_check_rejects_wrong_receiver_segment_and_extra_network_link(self):
+        namespace = "{http://graphml.graphdrawing.org/xmlns}"
+        root = ET.Element(namespace + "graphml")
+        graph = ET.SubElement(root, namespace + "graph")
+        for identity, label, kind in (("n0", "clients", "Network"), ("n1", "backend0-hop1", "Network"),
+                                      ("n2", "backend0-hop2", "Network"), ("p", "publisher0000", "Client"),
+                                      ("r", "receiver0000", "Client"), ("b", "broker0000", "Server")):
+            node = ET.SubElement(graph, namespace + "node", id=identity)
+            ET.SubElement(node, namespace + "data", key="label").text = label
+            ET.SubElement(node, namespace + "data", key="type").text = kind
+        for source, target in (("n0", "n1"), ("n1", "n2"), ("p", "n0"), ("b", "n2")):
+            ET.SubElement(graph, namespace + "edge", source=source, target=target)
+        receiver_edge = ET.SubElement(graph, namespace + "edge", source="r", target="n0")
+        options = {"backendCount": 1, "networkLength": 2, "totalPublishers": 1}
+        with tempfile.TemporaryDirectory() as temporary:
+            file = Path(temporary) / "topology.graphml"
+            ET.ElementTree(root).write(file, encoding="utf-8", xml_declaration=True)
+            self.assertTrue(topologies.verify_graph(file, options)["allClientAttachmentsVerified"])
+            receiver_edge.set("target", "n2")
+            ET.ElementTree(root).write(file, encoding="utf-8", xml_declaration=True)
+            with self.assertRaises(ValueError):
+                topologies.verify_graph(file, options)
+            receiver_edge.set("target", "n0")
+            ET.SubElement(graph, namespace + "edge", source="n0", target="n2")
+            ET.ElementTree(root).write(file, encoding="utf-8", xml_declaration=True)
+            with self.assertRaises(ValueError):
+                topologies.verify_graph(file, options)
 
 
 if __name__ == "__main__":

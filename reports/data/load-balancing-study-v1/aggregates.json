@@ -1,0 +1,3170 @@
+[
+  {
+    "family": "demo",
+    "load": 1000,
+    "qos": 0,
+    "variant": "single16",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95HalfWidth": null
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 1000,
+    "qos": 0,
+    "variant": "single48",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95HalfWidth": null
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 1000,
+    "qos": 0,
+    "variant": "single64",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95HalfWidth": null
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 1000,
+    "qos": 0,
+    "variant": "directBalanced",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95HalfWidth": null
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 1000,
+    "qos": 0,
+    "variant": "roundRobin",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95HalfWidth": null
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 1000,
+    "qos": 0,
+    "variant": "leastConnections",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95HalfWidth": null
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 1000,
+    "qos": 1,
+    "variant": "single16",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 1000,
+    "qos": 1,
+    "variant": "single48",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 1000,
+    "qos": 1,
+    "variant": "single64",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 1000,
+    "qos": 1,
+    "variant": "directBalanced",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 1000,
+    "qos": 1,
+    "variant": "roundRobin",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 1000,
+    "qos": 1,
+    "variant": "leastConnections",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 1000,
+    "qos": 2,
+    "variant": "single16",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 3.2,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 4.800000000000001,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 1000,
+    "qos": 2,
+    "variant": "single48",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 3.2,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 4.800000000000001,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 1000,
+    "qos": 2,
+    "variant": "single64",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 3.2,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 4.800000000000001,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 1000,
+    "qos": 2,
+    "variant": "directBalanced",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 3.2,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 4.800000000000001,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 1000,
+    "qos": 2,
+    "variant": "roundRobin",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 3.2,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 4.800000000000001,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 1000,
+    "qos": 2,
+    "variant": "leastConnections",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 3.2,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 4.800000000000001,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 60000,
+    "qos": 0,
+    "variant": "single16",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 60000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 60000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95HalfWidth": null
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 60000,
+    "qos": 0,
+    "variant": "single48",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 60000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 60000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95HalfWidth": null
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 60000,
+    "qos": 0,
+    "variant": "single64",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 60000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 60000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95HalfWidth": null
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 60000,
+    "qos": 0,
+    "variant": "directBalanced",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 60000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 60000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95HalfWidth": null
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 60000,
+    "qos": 0,
+    "variant": "roundRobin",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 60000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 60000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95HalfWidth": null
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 60000,
+    "qos": 0,
+    "variant": "leastConnections",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 60000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 60000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95HalfWidth": null
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 60000,
+    "qos": 1,
+    "variant": "single16",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 9440,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 9440,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.15733333333333333,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 60000,
+    "qos": 1,
+    "variant": "single48",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 28320,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 28320,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.472,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 60000,
+    "qos": 1,
+    "variant": "single64",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 37710,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 37710,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.6285,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 60000,
+    "qos": 1,
+    "variant": "directBalanced",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 28320,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 28320,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.472,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 60000,
+    "qos": 1,
+    "variant": "roundRobin",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 28320,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 28320,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.472,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 60000,
+    "qos": 1,
+    "variant": "leastConnections",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 28320,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 28320,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.472,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 60000,
+    "qos": 2,
+    "variant": "single16",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 4850,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 4850,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 3.2,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 4.800000000000001,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.08083333333333333,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 60000,
+    "qos": 2,
+    "variant": "single48",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 14610,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 14610,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 3.2,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 4.800000000000001,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.2435,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 60000,
+    "qos": 2,
+    "variant": "single64",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 19490,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 19490,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 3.2,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 4.800000000000001,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.3248333333333333,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 60000,
+    "qos": 2,
+    "variant": "directBalanced",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 14610,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 14610,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 3.2,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 4.800000000000001,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.2435,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 60000,
+    "qos": 2,
+    "variant": "roundRobin",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 14610,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 14610,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 3.2,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 4.800000000000001,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.2435,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "demo",
+    "load": 60000,
+    "qos": 2,
+    "variant": "leastConnections",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 14610,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 14610,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 3.2,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 4.800000000000001,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.2435,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 1000,
+    "qos": 0,
+    "variant": "single16",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95HalfWidth": null
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 1000,
+    "qos": 0,
+    "variant": "single64",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 996.6666666666666,
+      "ci95HalfWidth": 14.342175766370916
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 325,
+      "ci95HalfWidth": 37.262065677656295
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95HalfWidth": null
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.6749999999999999,
+      "ci95HalfWidth": 0.03726206567765632
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0.0033333333333333335,
+      "ci95HalfWidth": 0.014342175766370919
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0.6738552188552188,
+      "ci95HalfWidth": 0.041600720542575305
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.325,
+      "ci95HalfWidth": 0.03726206567765632
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 1000,
+    "qos": 0,
+    "variant": "directBalanced",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95HalfWidth": null
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 1000,
+    "qos": 0,
+    "variant": "roundRobin",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95HalfWidth": null
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 1000,
+    "qos": 0,
+    "variant": "leastConnections",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95HalfWidth": null
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 1000,
+    "qos": 1,
+    "variant": "single16",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 68.33333333333333,
+      "ci95HalfWidth": 25.855725063683693
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.9000000000000001,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.8666666666666667,
+      "ci95HalfWidth": 0.1434217576637093
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.9316666666666666,
+      "ci95HalfWidth": 0.0258557250636836
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0.9316666666666666,
+      "ci95HalfWidth": 0.0258557250636836
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.06833333333333333,
+      "ci95HalfWidth": 0.025855725063683693
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 1000,
+    "qos": 1,
+    "variant": "single64",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 200,
+      "ci95HalfWidth": 37.262065677656295
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 5.666666666666667,
+      "ci95HalfWidth": 2.1703650224878372
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 6.0,
+      "ci95HalfWidth": 3.360479208932842
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.8,
+      "ci95HalfWidth": 0.037262065677656185
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0.8,
+      "ci95HalfWidth": 0.037262065677656185
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.2,
+      "ci95HalfWidth": 0.03726206567765629
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 1000,
+    "qos": 1,
+    "variant": "directBalanced",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 998.3333333333334,
+      "ci95HalfWidth": 7.171087883185458
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 66.66666666666667,
+      "ci95HalfWidth": 37.94583033739465
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.9666666666666668,
+      "ci95HalfWidth": 0.14342175766370896
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.8333333333333335,
+      "ci95HalfWidth": 0.1434217576637093
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.9332160804020101,
+      "ci95HalfWidth": 0.038044397315746305
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0.9332160804020101,
+      "ci95HalfWidth": 0.038044397315746305
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.06666666666666667,
+      "ci95HalfWidth": 0.037945830337394654
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 1000,
+    "qos": 1,
+    "variant": "roundRobin",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 998.3333333333334,
+      "ci95HalfWidth": 7.171087883185458
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 66.66666666666667,
+      "ci95HalfWidth": 37.94583033739465
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.9666666666666668,
+      "ci95HalfWidth": 0.14342175766370896
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.8333333333333335,
+      "ci95HalfWidth": 0.1434217576637093
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.9332160804020101,
+      "ci95HalfWidth": 0.038044397315746305
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0.9332160804020101,
+      "ci95HalfWidth": 0.038044397315746305
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.06666666666666667,
+      "ci95HalfWidth": 0.037945830337394654
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 1000,
+    "qos": 1,
+    "variant": "leastConnections",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 998.3333333333334,
+      "ci95HalfWidth": 7.171087883185458
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 66.66666666666667,
+      "ci95HalfWidth": 37.94583033739465
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.9666666666666668,
+      "ci95HalfWidth": 0.14342175766370896
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.8333333333333335,
+      "ci95HalfWidth": 0.1434217576637093
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.9332160804020101,
+      "ci95HalfWidth": 0.038044397315746305
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0.9332160804020101,
+      "ci95HalfWidth": 0.038044397315746305
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.06666666666666667,
+      "ci95HalfWidth": 0.037945830337394654
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 1000,
+    "qos": 2,
+    "variant": "single16",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 65,
+      "ci95HalfWidth": 32.862053039878006
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 3.7333333333333334,
+      "ci95HalfWidth": 0.1434217576637093
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 5.233333333333334,
+      "ci95HalfWidth": 0.2868435153274186
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.9349999999999999,
+      "ci95HalfWidth": 0.032862053039877874
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0.9349999999999999,
+      "ci95HalfWidth": 0.032862053039877874
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.065,
+      "ci95HalfWidth": 0.032862053039878006
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 1000,
+    "qos": 2,
+    "variant": "single64",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 11.666666666666666,
+      "ci95HalfWidth": 18.972915168697327
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 6.2666666666666675,
+      "ci95HalfWidth": 0.14342175766370993
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 6.5,
+      "ci95HalfWidth": 1.0828105247765274
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.9883333333333333,
+      "ci95HalfWidth": 0.018972915168697344
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0.9883333333333333,
+      "ci95HalfWidth": 0.018972915168697344
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.011666666666666667,
+      "ci95HalfWidth": 0.018972915168697327
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 1000,
+    "qos": 2,
+    "variant": "directBalanced",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 998.3333333333334,
+      "ci95HalfWidth": 7.171087883185458
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 60,
+      "ci95HalfWidth": 44.7834294768322
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 3.8000000000000003,
+      "ci95HalfWidth": 0.2484137711843755
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 5.233333333333334,
+      "ci95HalfWidth": 0.2868435153274186
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.9398911222780569,
+      "ci95HalfWidth": 0.04489825366243334
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0.9398911222780569,
+      "ci95HalfWidth": 0.04489825366243334
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.06,
+      "ci95HalfWidth": 0.04478342947683219
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 1000,
+    "qos": 2,
+    "variant": "roundRobin",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 998.3333333333334,
+      "ci95HalfWidth": 7.171087883185458
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 60,
+      "ci95HalfWidth": 44.7834294768322
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 3.8000000000000003,
+      "ci95HalfWidth": 0.2484137711843755
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 5.233333333333334,
+      "ci95HalfWidth": 0.2868435153274186
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.9398911222780569,
+      "ci95HalfWidth": 0.04489825366243334
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0.9398911222780569,
+      "ci95HalfWidth": 0.04489825366243334
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.06,
+      "ci95HalfWidth": 0.04478342947683219
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 1000,
+    "qos": 2,
+    "variant": "leastConnections",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 998.3333333333334,
+      "ci95HalfWidth": 7.171087883185458
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 60,
+      "ci95HalfWidth": 44.7834294768322
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 3.8000000000000003,
+      "ci95HalfWidth": 0.2484137711843755
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 5.233333333333334,
+      "ci95HalfWidth": 0.2868435153274186
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.9398911222780569,
+      "ci95HalfWidth": 0.04489825366243334
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0.9398911222780569,
+      "ci95HalfWidth": 0.04489825366243334
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.06,
+      "ci95HalfWidth": 0.04478342947683219
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 60000,
+    "qos": 0,
+    "variant": "single16",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 55580,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 55580,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95HalfWidth": null
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.07366666666666666,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0.07366666666666667,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.9263333333333333,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 60000,
+    "qos": 0,
+    "variant": "single64",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 54626.666666666664,
+      "ci95HalfWidth": 125.03218959221769
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 18900,
+      "ci95HalfWidth": 1081.9553366546138
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95HalfWidth": null
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.685,
+      "ci95HalfWidth": 0.018032588944243564
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0.08955555555555555,
+      "ci95HalfWidth": 0.0020838698265369577
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0.6540169229803204,
+      "ci95HalfWidth": 0.019494099721876712
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.315,
+      "ci95HalfWidth": 0.018032588944243564
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 60000,
+    "qos": 0,
+    "variant": "directBalanced",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 60000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 60000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95HalfWidth": null
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 60000,
+    "qos": 0,
+    "variant": "roundRobin",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 60000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 60000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95HalfWidth": null
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 60000,
+    "qos": 0,
+    "variant": "leastConnections",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 60000,
+      "ci95HalfWidth": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 60000,
+      "ci95HalfWidth": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95HalfWidth": null
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 1.0,
+      "ci95HalfWidth": 0.0
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 60000,
+    "qos": 1,
+    "variant": "single16",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 8735,
+      "ci95HalfWidth": 720.7210895540371
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 831.6666666666666,
+      "ci95HalfWidth": 261.81837293058004
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.9000000000000001,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.9000000000000001,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.904978402658424,
+      "ci95HalfWidth": 0.022914900004972847
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0.904978402658424,
+      "ci95HalfWidth": 0.022914900004972847
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.01386111111111111,
+      "ci95HalfWidth": 0.004363639548842998
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 60000,
+    "qos": 1,
+    "variant": "single64",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 26203.333333333332,
+      "ci95HalfWidth": 534.2821421579407
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 6035,
+      "ci95HalfWidth": 390.41288686938424
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 5.800000000000001,
+      "ci95HalfWidth": 0.2484137711843755
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 5.666666666666667,
+      "ci95HalfWidth": 0.7171087883185457
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.7767366583081737,
+      "ci95HalfWidth": 0.014511034491511737
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0.030638113688870237,
+      "ci95HalfWidth": 0.005179282627927744
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0.7696722930940688,
+      "ci95HalfWidth": 0.016008340112207985
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.10058333333333333,
+      "ci95HalfWidth": 0.006506881447823064
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 60000,
+    "qos": 1,
+    "variant": "directBalanced",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 26640,
+      "ci95HalfWidth": 291.02603638252754
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 2285,
+      "ci95HalfWidth": 199.89206489964266
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.9000000000000001,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.9000000000000001,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.9142324366527432,
+      "ci95HalfWidth": 0.0068140545954937706
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0.9142324366527432,
+      "ci95HalfWidth": 0.0068140545954937706
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.03808333333333334,
+      "ci95HalfWidth": 0.003331534414994041
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 60000,
+    "qos": 1,
+    "variant": "roundRobin",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 26640,
+      "ci95HalfWidth": 291.02603638252754
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 2285,
+      "ci95HalfWidth": 199.89206489964266
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.9000000000000001,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.9000000000000001,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.9142324366527432,
+      "ci95HalfWidth": 0.0068140545954937706
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0.9142324366527432,
+      "ci95HalfWidth": 0.0068140545954937706
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.03808333333333334,
+      "ci95HalfWidth": 0.003331534414994041
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 60000,
+    "qos": 1,
+    "variant": "leastConnections",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 26640,
+      "ci95HalfWidth": 291.02603638252754
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 2285,
+      "ci95HalfWidth": 199.89206489964266
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.9000000000000001,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 1.9000000000000001,
+      "ci95HalfWidth": 0.0
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.9142324366527432,
+      "ci95HalfWidth": 0.0068140545954937706
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0,
+      "ci95HalfWidth": 0.0
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0.9142324366527432,
+      "ci95HalfWidth": 0.0068140545954937706
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.03808333333333334,
+      "ci95HalfWidth": 0.003331534414994041
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 60000,
+    "qos": 2,
+    "variant": "single16",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 4498.333333333333,
+      "ci95HalfWidth": 329.8700426265311
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 381.6666666666667,
+      "ci95HalfWidth": 127.4760465788169
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 3.7,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 5.333333333333334,
+      "ci95HalfWidth": 0.14342175766370865
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.9153873598625133,
+      "ci95HalfWidth": 0.022626471685089355
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0.0007278020378457059,
+      "ci95HalfWidth": 0.0015657397124859077
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0.9153221360733292,
+      "ci95HalfWidth": 0.022760640787039398
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.006361111111111111,
+      "ci95HalfWidth": 0.0021246007763136144
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 60000,
+    "qos": 2,
+    "variant": "single64",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 13161.666666666666,
+      "ci95HalfWidth": 165.4020397694432
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 248.33333333333334,
+      "ci95HalfWidth": 75.8916606747893
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 6.300000000000001,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 8.033333333333333,
+      "ci95HalfWidth": 0.37945830337394754
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.9814197632736774,
+      "ci95HalfWidth": 0.00560265771189239
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0.015070734906606393,
+      "ci95HalfWidth": 0.009139024544805167
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0.9811354837189583,
+      "ci95HalfWidth": 0.005673872177786792
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.004138888888888889,
+      "ci95HalfWidth": 0.0012648610112464885
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 60000,
+    "qos": 2,
+    "variant": "directBalanced",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 13618.333333333334,
+      "ci95HalfWidth": 323.9713064691096
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1046.6666666666667,
+      "ci95HalfWidth": 72.77859333019592
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 3.7,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 5.333333333333334,
+      "ci95HalfWidth": 0.14342175766370865
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.9232020570566223,
+      "ci95HalfWidth": 0.006958614645475976
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0.0009798341835081422,
+      "ci95HalfWidth": 0.0014065740930830452
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0.9231258758467166,
+      "ci95HalfWidth": 0.007053339632646501
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.017444444444444443,
+      "ci95HalfWidth": 0.0012129765555032636
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 60000,
+    "qos": 2,
+    "variant": "roundRobin",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 13618.333333333334,
+      "ci95HalfWidth": 323.9713064691096
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1046.6666666666667,
+      "ci95HalfWidth": 72.77859333019592
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 3.7,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 5.333333333333334,
+      "ci95HalfWidth": 0.14342175766370865
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.9232020570566223,
+      "ci95HalfWidth": 0.006958614645475976
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0.0009798341835081422,
+      "ci95HalfWidth": 0.0014065740930830452
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0.9231258758467166,
+      "ci95HalfWidth": 0.007053339632646501
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.017444444444444443,
+      "ci95HalfWidth": 0.0012129765555032636
+    }
+  },
+  {
+    "family": "mosquitto",
+    "load": 60000,
+    "qos": 2,
+    "variant": "leastConnections",
+    "successful": 3,
+    "planned": 3,
+    "backendCompletedRps": {
+      "n": 3,
+      "mean": 13618.333333333334,
+      "ci95HalfWidth": 323.9713064691096
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 1046.6666666666667,
+      "ci95HalfWidth": 72.77859333019592
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 3.7,
+      "ci95HalfWidth": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 5.333333333333334,
+      "ci95HalfWidth": 0.14342175766370865
+    },
+    "attemptDeliveryLoss": {
+      "n": 3,
+      "mean": 0.9232020570566223,
+      "ci95HalfWidth": 0.006958614645475976
+    },
+    "backendPublishFailureRate": {
+      "n": 3,
+      "mean": 0.0009798341835081422,
+      "ci95HalfWidth": 0.0014065740930830452
+    },
+    "backendDeliveryLossRate": {
+      "n": 3,
+      "mean": 0.9231258758467166,
+      "ci95HalfWidth": 0.007053339632646501
+    },
+    "scheduleFulfillment": {
+      "n": 3,
+      "mean": 0.017444444444444443,
+      "ci95HalfWidth": 0.0012129765555032636
+    }
+  }
+]
