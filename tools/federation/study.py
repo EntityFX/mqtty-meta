@@ -18,6 +18,7 @@ APP = MQTTY / "src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App"
 DLL = APP / "bin/Release/net6.0/EntityFX.MqttY.Federation.App.dll"
 PROFILE = ROOT / "reports/data/Mosquitto/profile/broker-calibration.v3.json"
 MODES = ("single", "relay", "federation")
+PUBLICATION = "federation-full-mesh-v1"
 
 
 def read(path):
@@ -84,6 +85,8 @@ def verify_run(directory):
         assert t["measurement"] == p["measurement"] and t["payloadSha256"] == hashes[p["id"]]
         assert t["payloadBytes"] == o["payloadBytes"]
         assert t["topicPayloadBytes"] == len(t["topic"].encode("utf-8")) + t["payloadBytes"]
+    if o.get("mode") == "relay":
+        verify_relay(o, publications, transmissions)
     source = [t for t in transmissions if t["measurement"] and t["role"] == "source"]
     forwards = [t for t in transmissions if t["measurement"] and t["role"] == "forward"]
     assert len(source) == s["apiAttempts"] == sum(p["measurement"] for p in publications.values())
@@ -154,6 +157,22 @@ def verify_run(directory):
     return s
 
 
+def verify_relay(options, publications, transmissions):
+    # Independently check source-only export. A physical multi-hop path is still one MQTT export.
+    forwards = [t for t in transmissions if t["role"] == "forward"]
+    pairs = set()
+    for t in forwards:
+        p = publications[t["publicationId"]]
+        assert t["site"] == p["origin"] and t["target"] != p["origin"]
+        assert 0 <= t["target"] < options["brokers"]
+        assert t["topic"] == f"federation/routing/{p['origin']}"
+        pair = (p["id"], t["target"])
+        assert pair not in pairs, "Imported or repeated Relay export"
+        pairs.add(pair)
+    if options["ideal"]:
+        assert len(pairs) == len(publications) * (options["brokers"] - 1)
+
+
 def cases():
     result = []
     for family in ("ideal", "mosquitto"):
@@ -175,7 +194,7 @@ def run(work):
         plan = read(plan_path)
         assert plan["sources"] == sources
     else:
-        plan = dict(experiment="static-federation-acceptance-v1", sources=sources, cases=cases(),
+        plan = dict(experiment="static-federation-full-mesh-v1", relayTopology="fullMeshSourceOnlyExport", sources=sources, cases=cases(),
                     duration=dict(warmup=.01, measurement=.2, drain=1, tick=.0001), offeredRps=1000)
         write(plan_path, plan)
         (work / "study-script.py").write_bytes(Path(__file__).read_bytes())
@@ -241,7 +260,9 @@ def publish(work):
     matplotlib.rcParams["svg.hashsalt"] = "static-federation-v1"
     import matplotlib.pyplot as plt
     plan = read(work / "study-plan.json")
-    data = ROOT / "reports/data/federation-study-v1"
+    if plan["experiment"] != "static-federation-full-mesh-v1":
+        raise ValueError("Use the archived scripts for the previous BFS protocol.")
+    data = ROOT / "reports/data/federation-full-mesh-v1"
     data.mkdir(parents=True, exist_ok=True)
     records = []
     for case in plan["cases"]:
@@ -312,7 +333,7 @@ def publish(work):
              f"Повторены {len(replays)}/6 точек; scientific summaries совпадают побайтно. Новых натурных измерений нет.", "",
              "## Условия и исполнители", "",
              "Federation.App строит сеть и запускает фазы; ядро MqttY исполняет MQTT и транспорт. StaticFederator выполняет пересылку по соседям с подавлением повторов. "
-             "В режиме relay работает существующий MqttRelay с деревом от каждого источника. Python-сценарий проверяет журналы и строит этот отчёт. MqttBenchmark не запускается.", "",
+             "В режиме relay работает существующий MqttRelay: каждый брокер соединён со всеми остальными; импортированные сообщения доставляются только локально. Python-сценарий проверяет журналы и строит этот отчёт. MqttBenchmark не запускается.", "",
              "Идеальная модель: три площадки, 12 publishers, три subscribers. Mosquitto: четыре площадки, 64 publishers, четыре subscribers. "
              "Для каждого семейства расположение клиентов и физическое кольцо сохраняются в трёх режимах; центральный брокер single находится на площадке 0. "
              "Каждый subscriber получает все исходные сообщения. В двух семействах разный fanout, поэтому их goodput нельзя непосредственно ранжировать.", "",
@@ -341,14 +362,14 @@ def publish(work):
             loss_f, loss_r = f["deliveryLoss"]["mean"], r["deliveryLoss"]["mean"]
             difference = loss_f - loss_r if loss_f is not None and loss_r is not None else None
             lines.append(f"| {family} | {qos} | {number(ratio('receiverP99Ms'))} | {number(ratio('forwardAttempts'))} | {number(difference)} |")
-    lines += ["", "## Графики", "", "![Идеальная модель](data/federation-study-v1/ideal-comparison.svg)", "",
-              "![Профиль Mosquitto](data/federation-study-v1/mosquitto-comparison.svg)", "", "## Топологии", "",
+    lines += ["", "## Графики", "", "![Идеальная модель](data/federation-full-mesh-v1/ideal-comparison.svg)", "",
+              "![Профиль Mosquitto](data/federation-full-mesh-v1/mosquitto-comparison.svg)", "", "## Топологии", "",
               "Физическая сеть и расположение исходных клиентов сверены с GraphML приложением. Логические стрелки обозначают MQTT-соединения, а не обход физических сетевых участков. "
-              "Разные источники Relay имеют разные деревья; в федерации связи допускают циклы, а идентификаторы препятствуют повторной обработке.", ""]
+              "Relay образует N × (N−1) направленных MQTT-соединений между брокерами: 6 для трёх брокеров, 12 для четырёх. Импорт не экспортируется повторно. Федераторы используют соседей физической сети и подавляют повторные ID.", ""]
     for family in ("ideal", "mosquitto"):
-        lines += [f"### {family}", "", f"![Физическая сеть](data/federation-study-v1/{family}-federation-physical.svg)", ""]
+        lines += [f"### {family}", "", f"![Физическая сеть](data/federation-full-mesh-v1/{family}-federation-physical.svg)", ""]
         for mode in MODES:
-            lines += [f"![Логическая топология {mode}](data/federation-study-v1/{family}-{mode}-logical.svg)", ""]
+            lines += [f"![Логическая топология {mode}](data/federation-full-mesh-v1/{family}-{mode}-logical.svg)", ""]
     lines += ["## Что означают числа", "",
               "Source completed RPS учитывает только завершения исходных publishers; служебные публикации не добавляются к нему. Goodput — уникальные пары ID–subscriber за секунду нагрузки. "
               "Ожидаемая доставка = число API-попыток исходного Publish × число subscribers; потери включают немедленные исходные отказы. Поздние получения в drain включены в свою когорту и показаны отдельно в JSON. "
@@ -357,7 +378,7 @@ def publish(work):
               "## Вывод и ограничения", "",
               "Статическая федерация обеспечивает модельную межброкерную пересылку с конечной обработкой циклов; действительное покрытие и потери приведены в таблице. "
               "Преимущество не предполагается заранее: сравниваются фактическая доставка, задержка и дополнительный трафик. В идеальной модели при малой нагрузке одинаковая доставка не означает равную стоимость архитектур. "
-              "У федерации есть избыточные пути и накладные расходы повторных межброкерных получений; Relay использует настроенные деревья без циклов. "
+              "У федерации есть избыточные пути и накладные расходы повторных межброкерных получений; Relay использует полносвязную логическую сеть с экспортом только локального исходного потока. "
               "Одиночный брокер исключает межброкерную пересылку, но меняет место обслуживания клиентов.", "",
               "Профиль Mosquitto неизменён: N=64 для single, N=16 для распределённых брокеров. Он содержит исходную высокую условную недоставку для QoS 1/2. "
               "Дополнительные федераторы, fanout, новые темы и новая интенсивность не калибровались; результат не доказывает ту же недоставку у настоящего Mosquitto или точность настоящей федерации. "
@@ -369,8 +390,8 @@ def publish(work):
               "Счётчики исходных завершений отдельно проверены тестами инструментации; они не выводятся из одного исчезновения pending.", "",
               "Повтор всей программы: собрать приложение в Release, выполнить `python tools/federation/study.py run --work-dir <новый-каталог>`, "
               "затем `python tools/federation/study.py report --work-dir <тот-же-каталог>`. Отдельный опыт повторяется командой приложения `run --config <run>/run-config.json --output <новый-каталог>`.", "",
-              "[CSV](data/federation-study-v1/runs.csv), [scientific summaries](data/federation-study-v1/runs.json), [агрегаты](data/federation-study-v1/aggregates.json), "
-              "[проверка](data/federation-study-v1/verification.json), [точная программа](data/federation-study-v1/study-plan.json). "
+              "[CSV](data/federation-full-mesh-v1/runs.csv), [scientific summaries](data/federation-full-mesh-v1/runs.json), [агрегаты](data/federation-full-mesh-v1/aggregates.json), "
+              "[проверка](data/federation-full-mesh-v1/verification.json), [точная программа](data/federation-full-mesh-v1/study-plan.json). "
               "Полные архивы хранятся отдельно от Git; квитанция внешнего хранения публикуется после проверки архива.", ""]
     (ROOT / "reports/Federation-study.md").write_text("\n".join(lines),encoding="utf-8",newline="\n")
     files = [*data.iterdir(), ROOT / "reports/Federation-study.md"]

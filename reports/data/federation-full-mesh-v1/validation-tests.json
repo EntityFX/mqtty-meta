@@ -1,0 +1,12 @@
+{
+  "csharpDistinctPassed": 319,
+  "firstBatchPassed": 163,
+  "secondBatchPassed": 187,
+  "repeatedFederationChecks": 31,
+  "pythonEvidenceAndArchivePassed": 5,
+  "filters": [
+    "TestCategory=Regression",
+    "(TestCategory!=LongRunning&TestCategory!=Regression)|FullyQualifiedName~FederationTests"
+  ],
+  "fullMeshChecks": "QoS 0/1/2, line/ring/diamond, source-only export to each peer, subscribers and no subscribers, diagram tampering"
+}

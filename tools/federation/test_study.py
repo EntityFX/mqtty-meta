@@ -72,6 +72,20 @@ class FederationEvidenceTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 study.seal(root)
 
+    def test_full_mesh_exports_to_all_peers_only_from_the_source(self):
+        options = dict(brokers=4, ideal=True)
+        publications = {1: dict(id=1, origin=0)}
+        exports = [dict(role="forward", publicationId=1, site=0, target=target,
+                        topic="federation/routing/0") for target in (1, 2, 3)]
+        study.verify_relay(options, publications, exports)
+        with self.assertRaises(AssertionError):
+            study.verify_relay(options, publications, exports[:2])
+        with self.assertRaises(AssertionError):
+            study.verify_relay(options, publications, [*exports, exports[0]])
+        exports[2]["site"] = 1  # An intermediate BFS broker reexporting the source is invalid.
+        with self.assertRaises(AssertionError):
+            study.verify_relay(options, publications, exports)
+
 
 if __name__ == "__main__":
     unittest.main()

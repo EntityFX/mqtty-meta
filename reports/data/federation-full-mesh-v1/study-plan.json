@@ -1,0 +1,413 @@
+{
+  "experiment": "static-federation-full-mesh-v1",
+  "relayTopology": "fullMeshSourceOnlyExport",
+  "sources": {
+    "mqttYCommit": "36fbec481d9dc3e1744bf96da5a9ff298f74ed2e",
+    "scriptSha256": "5a1f3afa1df5c5d414c1b22f50ef763c79a50b87922dfea2f097bfdcff4a2e19",
+    "profileSha256": "d9cf125fb8cb6ec3677fc3c596bafcdfced8be0502362e2b4ff03da1421d46eb",
+    "binaries": {
+      "EntityFX.MqttY.Contracts.dll": "3b01272dcfa5a46565aa333d1cb10431bce4cb90d545929061b4b821b91c648d",
+      "EntityFX.MqttY.Contracts.Mqtt.dll": "237d22468805432a30558c6310c767ae9e2c2cfbc3cc786000e24fb0dffe2691",
+      "EntityFX.MqttY.Contracts.Scenarios.dll": "af38fb06ff5c64754b7ef2d2cb0995d6181269a90e5c43b9ed4e42ff1081f5ac",
+      "EntityFX.MqttY.dll": "a238bbd6e3f4f1431e78a04dcd7abb9dbd1599e203acf873b4832298e66e73d8",
+      "EntityFX.MqttY.Federation.App.dll": "7f3907dee90ff13d60235571d9cb3547991c24e9be332d26163179dfbf4417f9",
+      "EntityFX.MqttY.Plugin.Mqtt.dll": "c0f6648c2bc7e80b5497c8c7a0a63d089f3041727f9d5315f1cf426c092a1cc1",
+      "Microsoft.Extensions.Configuration.Abstractions.dll": "3124386219566a2c386e6999d83a7d507584de46cde4ae733a8af3c373c42b8c",
+      "Microsoft.Extensions.Configuration.Binder.dll": "4449f40e0645a61067c5e206e956cc5bc3b4421593b3c27188d8c71ef45c64a6",
+      "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "ac9cd953b7eeb03cf48e343c5ace6fc9b48ac968b68d1cb30ad1d6111178bf4d",
+      "Microsoft.Extensions.DependencyInjection.dll": "df0ae00b1599acae93d9f4df2bcc6d0ba109221ccc44d2d1486183f84a5fec78",
+      "Microsoft.Extensions.Logging.Abstractions.dll": "ab36e8201d41dd751cbb712704dbe8492bdd0ab1bff6fb35371cf59bcd982181",
+      "Microsoft.Extensions.Logging.dll": "37b87b16ac688d5619168554a22cca2677e1115f21c2d5ebe2f39c024fee2b7f",
+      "Microsoft.Extensions.Options.dll": "fbb309a36bc91d90ec2984397bff4f75f35ac92909e0acd952c5264c5ac0a753",
+      "Microsoft.Extensions.Primitives.dll": "f9f47907a041067d9bc1b9a9f516009b6ca0a9c6325ce83527883cc0d053dfa5",
+      "System.Diagnostics.DiagnosticSource.dll": "d6935e993b69f8abd934f01b0d7dd8ca9616a7ea94c7af59ed07b2fd3cf93a97"
+    }
+  },
+  "cases": [
+    {
+      "id": "ideal-single-q0-s42",
+      "family": "ideal",
+      "mode": "single",
+      "qos": 0,
+      "seed": 42
+    },
+    {
+      "id": "ideal-single-q0-s43",
+      "family": "ideal",
+      "mode": "single",
+      "qos": 0,
+      "seed": 43
+    },
+    {
+      "id": "ideal-single-q0-s44",
+      "family": "ideal",
+      "mode": "single",
+      "qos": 0,
+      "seed": 44
+    },
+    {
+      "id": "ideal-single-q1-s42",
+      "family": "ideal",
+      "mode": "single",
+      "qos": 1,
+      "seed": 42
+    },
+    {
+      "id": "ideal-single-q1-s43",
+      "family": "ideal",
+      "mode": "single",
+      "qos": 1,
+      "seed": 43
+    },
+    {
+      "id": "ideal-single-q1-s44",
+      "family": "ideal",
+      "mode": "single",
+      "qos": 1,
+      "seed": 44
+    },
+    {
+      "id": "ideal-single-q2-s42",
+      "family": "ideal",
+      "mode": "single",
+      "qos": 2,
+      "seed": 42
+    },
+    {
+      "id": "ideal-single-q2-s43",
+      "family": "ideal",
+      "mode": "single",
+      "qos": 2,
+      "seed": 43
+    },
+    {
+      "id": "ideal-single-q2-s44",
+      "family": "ideal",
+      "mode": "single",
+      "qos": 2,
+      "seed": 44
+    },
+    {
+      "id": "ideal-relay-q0-s42",
+      "family": "ideal",
+      "mode": "relay",
+      "qos": 0,
+      "seed": 42
+    },
+    {
+      "id": "ideal-relay-q0-s43",
+      "family": "ideal",
+      "mode": "relay",
+      "qos": 0,
+      "seed": 43
+    },
+    {
+      "id": "ideal-relay-q0-s44",
+      "family": "ideal",
+      "mode": "relay",
+      "qos": 0,
+      "seed": 44
+    },
+    {
+      "id": "ideal-relay-q1-s42",
+      "family": "ideal",
+      "mode": "relay",
+      "qos": 1,
+      "seed": 42
+    },
+    {
+      "id": "ideal-relay-q1-s43",
+      "family": "ideal",
+      "mode": "relay",
+      "qos": 1,
+      "seed": 43
+    },
+    {
+      "id": "ideal-relay-q1-s44",
+      "family": "ideal",
+      "mode": "relay",
+      "qos": 1,
+      "seed": 44
+    },
+    {
+      "id": "ideal-relay-q2-s42",
+      "family": "ideal",
+      "mode": "relay",
+      "qos": 2,
+      "seed": 42
+    },
+    {
+      "id": "ideal-relay-q2-s43",
+      "family": "ideal",
+      "mode": "relay",
+      "qos": 2,
+      "seed": 43
+    },
+    {
+      "id": "ideal-relay-q2-s44",
+      "family": "ideal",
+      "mode": "relay",
+      "qos": 2,
+      "seed": 44
+    },
+    {
+      "id": "ideal-federation-q0-s42",
+      "family": "ideal",
+      "mode": "federation",
+      "qos": 0,
+      "seed": 42
+    },
+    {
+      "id": "ideal-federation-q0-s43",
+      "family": "ideal",
+      "mode": "federation",
+      "qos": 0,
+      "seed": 43
+    },
+    {
+      "id": "ideal-federation-q0-s44",
+      "family": "ideal",
+      "mode": "federation",
+      "qos": 0,
+      "seed": 44
+    },
+    {
+      "id": "ideal-federation-q1-s42",
+      "family": "ideal",
+      "mode": "federation",
+      "qos": 1,
+      "seed": 42
+    },
+    {
+      "id": "ideal-federation-q1-s43",
+      "family": "ideal",
+      "mode": "federation",
+      "qos": 1,
+      "seed": 43
+    },
+    {
+      "id": "ideal-federation-q1-s44",
+      "family": "ideal",
+      "mode": "federation",
+      "qos": 1,
+      "seed": 44
+    },
+    {
+      "id": "ideal-federation-q2-s42",
+      "family": "ideal",
+      "mode": "federation",
+      "qos": 2,
+      "seed": 42
+    },
+    {
+      "id": "ideal-federation-q2-s43",
+      "family": "ideal",
+      "mode": "federation",
+      "qos": 2,
+      "seed": 43
+    },
+    {
+      "id": "ideal-federation-q2-s44",
+      "family": "ideal",
+      "mode": "federation",
+      "qos": 2,
+      "seed": 44
+    },
+    {
+      "id": "mosquitto-single-q0-s42",
+      "family": "mosquitto",
+      "mode": "single",
+      "qos": 0,
+      "seed": 42
+    },
+    {
+      "id": "mosquitto-single-q0-s43",
+      "family": "mosquitto",
+      "mode": "single",
+      "qos": 0,
+      "seed": 43
+    },
+    {
+      "id": "mosquitto-single-q0-s44",
+      "family": "mosquitto",
+      "mode": "single",
+      "qos": 0,
+      "seed": 44
+    },
+    {
+      "id": "mosquitto-single-q1-s42",
+      "family": "mosquitto",
+      "mode": "single",
+      "qos": 1,
+      "seed": 42
+    },
+    {
+      "id": "mosquitto-single-q1-s43",
+      "family": "mosquitto",
+      "mode": "single",
+      "qos": 1,
+      "seed": 43
+    },
+    {
+      "id": "mosquitto-single-q1-s44",
+      "family": "mosquitto",
+      "mode": "single",
+      "qos": 1,
+      "seed": 44
+    },
+    {
+      "id": "mosquitto-single-q2-s42",
+      "family": "mosquitto",
+      "mode": "single",
+      "qos": 2,
+      "seed": 42
+    },
+    {
+      "id": "mosquitto-single-q2-s43",
+      "family": "mosquitto",
+      "mode": "single",
+      "qos": 2,
+      "seed": 43
+    },
+    {
+      "id": "mosquitto-single-q2-s44",
+      "family": "mosquitto",
+      "mode": "single",
+      "qos": 2,
+      "seed": 44
+    },
+    {
+      "id": "mosquitto-relay-q0-s42",
+      "family": "mosquitto",
+      "mode": "relay",
+      "qos": 0,
+      "seed": 42
+    },
+    {
+      "id": "mosquitto-relay-q0-s43",
+      "family": "mosquitto",
+      "mode": "relay",
+      "qos": 0,
+      "seed": 43
+    },
+    {
+      "id": "mosquitto-relay-q0-s44",
+      "family": "mosquitto",
+      "mode": "relay",
+      "qos": 0,
+      "seed": 44
+    },
+    {
+      "id": "mosquitto-relay-q1-s42",
+      "family": "mosquitto",
+      "mode": "relay",
+      "qos": 1,
+      "seed": 42
+    },
+    {
+      "id": "mosquitto-relay-q1-s43",
+      "family": "mosquitto",
+      "mode": "relay",
+      "qos": 1,
+      "seed": 43
+    },
+    {
+      "id": "mosquitto-relay-q1-s44",
+      "family": "mosquitto",
+      "mode": "relay",
+      "qos": 1,
+      "seed": 44
+    },
+    {
+      "id": "mosquitto-relay-q2-s42",
+      "family": "mosquitto",
+      "mode": "relay",
+      "qos": 2,
+      "seed": 42
+    },
+    {
+      "id": "mosquitto-relay-q2-s43",
+      "family": "mosquitto",
+      "mode": "relay",
+      "qos": 2,
+      "seed": 43
+    },
+    {
+      "id": "mosquitto-relay-q2-s44",
+      "family": "mosquitto",
+      "mode": "relay",
+      "qos": 2,
+      "seed": 44
+    },
+    {
+      "id": "mosquitto-federation-q0-s42",
+      "family": "mosquitto",
+      "mode": "federation",
+      "qos": 0,
+      "seed": 42
+    },
+    {
+      "id": "mosquitto-federation-q0-s43",
+      "family": "mosquitto",
+      "mode": "federation",
+      "qos": 0,
+      "seed": 43
+    },
+    {
+      "id": "mosquitto-federation-q0-s44",
+      "family": "mosquitto",
+      "mode": "federation",
+      "qos": 0,
+      "seed": 44
+    },
+    {
+      "id": "mosquitto-federation-q1-s42",
+      "family": "mosquitto",
+      "mode": "federation",
+      "qos": 1,
+      "seed": 42
+    },
+    {
+      "id": "mosquitto-federation-q1-s43",
+      "family": "mosquitto",
+      "mode": "federation",
+      "qos": 1,
+      "seed": 43
+    },
+    {
+      "id": "mosquitto-federation-q1-s44",
+      "family": "mosquitto",
+      "mode": "federation",
+      "qos": 1,
+      "seed": 44
+    },
+    {
+      "id": "mosquitto-federation-q2-s42",
+      "family": "mosquitto",
+      "mode": "federation",
+      "qos": 2,
+      "seed": 42
+    },
+    {
+      "id": "mosquitto-federation-q2-s43",
+      "family": "mosquitto",
+      "mode": "federation",
+      "qos": 2,
+      "seed": 43
+    },
+    {
+      "id": "mosquitto-federation-q2-s44",
+      "family": "mosquitto",
+      "mode": "federation",
+      "qos": 2,
+      "seed": 44
+    }
+  ],
+  "duration": {
+    "warmup": 0.01,
+    "measurement": 0.2,
+    "drain": 1,
+    "tick": 0.0001
+  },
+  "offeredRps": 1000
+}

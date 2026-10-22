@@ -2,6 +2,7 @@
 import argparse
 import platform
 import sys
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -16,7 +17,22 @@ def publish(work):
 
     study.publish(work)
     reports = study.ROOT / "reports"
-    data = reports / "data/federation-study-v1"
+    data = reports / "data/federation-full-mesh-v1"
+    # Opposite full-mesh links cross in the four-site view. Their arrows already
+    # identify the origin; omit redundant origin captions without changing paths.
+    for path in data.glob("*-relay-logical.svg"):
+        tree = ET.parse(path)
+        root = tree.getroot()
+        original_paths = [dict(e.attrib) for e in root if e.tag.endswith("}path")]
+        children = list(root)
+        for index, element in enumerate(children):
+            if element.tag.endswith("}text") and (element.text or "").startswith("источник "):
+                previous = children[index - 1]
+                assert previous.tag.endswith("}rect") and previous.get("fill") == "white"
+                root.remove(previous)
+                root.remove(element)
+        assert original_paths == [dict(e.attrib) for e in root if e.tag.endswith("}path")]
+        tree.write(path, encoding="utf-8", xml_declaration=True)
     aggregates = study.read(data / "aggregates.json")
     records = study.read(data / "runs.json")
     warnings = []
@@ -35,6 +51,7 @@ def publish(work):
     study.write(data / "warnings.json", warnings)
     report_path = reports / "Federation-study.md"
     text = report_path.read_text(encoding="utf-8")
+    text = text.replace("Каждый subscriber получает все исходные сообщения.", "Для каждого subscriber ожидаются сообщения всех источников; фактические получения проверяются по ID.")
     for a in aggregates:
         prefix = f"| {a['family']} | {a['mode']} | {a['qos']} | "
         line = next(line for line in text.splitlines() if line.startswith(prefix))
@@ -57,29 +74,26 @@ def publish(work):
                 fields = line.split(" | ")
                 fields[2] = "н/п: неполное покрытие p99"
                 text = text.replace(line, " | ".join(fields))
-    interpretation = """## Наблюдаемые ограничения реализации
-
-В идеальной модели все три архитектуры доставили все 200 исходных сообщений каждому из трёх subscribers во всех повторах. Федерация в кольце выполнила 800 пересылок и подавила 400 повторов; Relay выполнил 400 пересылок без циклов. Дополнительная пересылка сама по себе не дала выигрыша по доставке при этой нагрузке.
-
-При QoS 2 p99 получения составил 145,8 мс у федерации, 7,8 мс у Relay и 3,6 мс у одного брокера. Это реальное ограничение текущей модели: федератор использует один служебный publisher на направление и ждёт завершения его QoS-обмена. В режиме Relay отдельный экземпляр создаётся для каждого источника, поэтому служебных соединений больше. Сравнение включает это различие реализации; оно не изолирует стоимость алгоритма маршрутизации. Для следующего этапа нужен отдельный контролируемый опыт с одинаковым бюджетом служебных соединений и более длинным окном нагрузки; текущие числа не подгоняются.
-
-В профилированных распределённых режимах при QoS 1/2 недоставка превышает 99% ожидаемых пар. Сохранённая условная потеря применяется при доставке федераторам и при следующих пересылках, поэтому потери накапливаются. Успешный ACK исходному publisher не гарантирует получение ни федератором, ни конечным subscriber. p99 рассчитан только по дошедшим сообщениям: меньший p99 при почти полной недоставке не означает лучшего обслуживания всего потока. Для QoS 2 есть seeds совсем без получений; они показаны как неприменимые, а не как нулевая задержка.
-
-Предупреждения отделены от технических отказов: [причины по каждому запуску](data/federation-study-v1/warnings.json). Они описывают фактическую недоставку, отсутствие получений и ограничения очередей/переходов, не вводя новых порогов натурной точности.
-
-"""
-    # These statements describe this fixed acceptance protocol; fail rather than reuse them for another matrix.
-    ideal = [r["summary"] for r in records if r["family"] == "ideal"]
-    assert len(ideal) == 27 and all(s["apiAttempts"] == 200 and s["uniqueDeliveries"] == 600 for s in ideal)
     def get(family, mode, qos):
         return next(a for a in aggregates if (a["family"], a["mode"], a["qos"]) == (family, mode, qos))
-    for mode, latency in (("single", 3.6), ("relay", 7.8), ("federation", 145.8)):
-        study.close(get("ideal", mode, 2)["receiverP99Ms"]["mean"], latency)
-    for qos in range(3):
-        study.close(get("ideal", "relay", qos)["forwardAttempts"]["mean"], 400)
-        study.close(get("ideal", "federation", qos)["forwardAttempts"]["mean"], 800)
-        study.close(get("ideal", "federation", qos)["suppressedDuplicates"]["mean"], 400)
-    assert all(get("mosquitto", mode, qos)["deliveryLoss"]["mean"] > .99 for mode in ("relay", "federation") for qos in (1, 2))
+    ideal = [r["summary"] for r in records if r["family"] == "ideal"]
+    assert len(ideal) == 27 and all(s["apiAttempts"] == 200 and s["uniqueDeliveries"] == 600 for s in ideal)
+    latencies = {mode: get("ideal", mode, 2)["receiverP99Ms"]["mean"] for mode in study.MODES}
+    forwarding = {mode: get("ideal", mode, 2)["forwardAttempts"]["mean"] for mode in ("relay", "federation")}
+    loss = [get("mosquitto", mode, qos)["deliveryLoss"]["mean"] for mode in ("relay", "federation") for qos in (1, 2)]
+    interpretation = f"""## Наблюдаемые ограничения реализации
+
+В идеальной модели все три архитектуры доставили все 200 исходных сообщений каждому из трёх subscribers во всех повторах. При QoS 2 Relay выполнил в среднем {forwarding['relay']:.0f} межброкерных пересылок, федерация — {forwarding['federation']:.0f}. В Relay каждый брокер экспортирует свой поток всем остальным, а импорт направляет только локальным subscribers. Повторная рассылка импорта отсутствует; это проверено по источнику, месту отправки и адресату каждой пересылки.
+
+При QoS 2 среднее p99 получения: single — {latencies['single']:.3f} мс, Relay — {latencies['relay']:.3f} мс, федерация — {latencies['federation']:.3f} мс. На каждой площадке работает один MqttRelay, с раздельными MQTT-клиентами для маршрутов разных источников. Федератор использует один выходной MQTT-клиент на направление и ждёт завершения QoS-обмена. Число служебных соединений и способ обслуживания различаются, поэтому сравнение не изолирует стоимость алгоритма. Для этого нужен контролируемый опыт с одинаковым бюджетом соединений и более длинной нагрузкой.
+
+В профилированных распределённых режимах при QoS 1/2 средняя недоставка находится в диапазоне {min(loss)*100:.3f}–{max(loss)*100:.3f}%. Сохранённая условная потеря применяется при доставке служебным клиентам и на следующих этапах; потери накапливаются. ACK исходному publisher не гарантирует доставку конечному subscriber. p99 рассчитан только по дошедшим сообщениям: меньшая задержка при почти полной недоставке не означает лучшего обслуживания потока. Запуски без получений имеют неприменимый p99.
+
+Предупреждения отделены от технических отказов: [причины по каждому запуску](data/federation-full-mesh-v1/warnings.json). Они показывают фактическую недоставку, отсутствие получений и ограничения очередей/переходов.
+
+Это отдельная программа с полносвязным Relay. [Предыдущий отчёт с деревьями](Federation-study-bfs.md) и его данные сохранены; запуски разных программ не объединяются в статистические повторы.
+
+"""
     drain_values = [r["summary"]["uniqueDuringDrain"] / r["summary"]["uniqueDeliveries"] for r in records
                     if (r["family"], r["mode"], r["qos"]) == ("ideal", "federation", 2)]
     interpretation += (f"В идеальной федерации с QoS 2 в среднем {sum(drain_values)/len(drain_values)*100:.1f}% получений произошли в drain. "
@@ -87,7 +101,7 @@ def publish(work):
                        "часть работы завершена после остановки подачи. Для проверки устойчивого режима нужен более длинный опыт с наблюдением роста очередей.\n\n")
     text = text.replace("## Вывод и ограничения\n", interpretation + "## Вывод и ограничения\n")
     text = text.replace("python tools/federation/study.py report --work-dir", "python tools/federation/report.py --work-dir")
-    text += "\n[Квитанции внешнего хранения и дополнительные проверки](data/federation-study-v1/README.md).\n"
+    text += "\n[Квитанции внешнего хранения и дополнительные проверки](data/federation-full-mesh-v1/README.md).\n"
     report_path.write_text(text, encoding="utf-8", newline="\n")
     labels = {"sourceCompletedRps": "Завершения исходных / с", "deliveryLoss": "Недоставка, доля", "receiverP99Ms": "p99 получения, мс", "forwardAttempts": "Попытки пересылки"}
     for family in ("ideal", "mosquitto"):
@@ -113,6 +127,7 @@ def publish(work):
         plt.close(fig)
     study.write(data / "reporting-verification.json", dict(pythonVersion=platform.python_version(), matplotlibVersion=matplotlib.__version__,
         missingLatencyExplicit=True, confidenceIntervalsOnlyForThreeApplicableSeeds=True,
+        relaySvgOriginCaptionsOmitted=True, relaySvgPathsPreserved=True,
         sourcesSha256={name: study.sha(Path(__file__).with_name(name)) for name in ("study.py", "report.py", "archive.py")}))
     reseal(data)
 

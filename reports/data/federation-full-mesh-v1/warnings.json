@@ -1,0 +1,261 @@
+[
+  {
+    "id": "ideal-single-q0-s42",
+    "reasons": []
+  },
+  {
+    "id": "ideal-single-q0-s43",
+    "reasons": []
+  },
+  {
+    "id": "ideal-single-q0-s44",
+    "reasons": []
+  },
+  {
+    "id": "ideal-single-q1-s42",
+    "reasons": []
+  },
+  {
+    "id": "ideal-single-q1-s43",
+    "reasons": []
+  },
+  {
+    "id": "ideal-single-q1-s44",
+    "reasons": []
+  },
+  {
+    "id": "ideal-single-q2-s42",
+    "reasons": []
+  },
+  {
+    "id": "ideal-single-q2-s43",
+    "reasons": []
+  },
+  {
+    "id": "ideal-single-q2-s44",
+    "reasons": []
+  },
+  {
+    "id": "ideal-relay-q0-s42",
+    "reasons": []
+  },
+  {
+    "id": "ideal-relay-q0-s43",
+    "reasons": []
+  },
+  {
+    "id": "ideal-relay-q0-s44",
+    "reasons": []
+  },
+  {
+    "id": "ideal-relay-q1-s42",
+    "reasons": []
+  },
+  {
+    "id": "ideal-relay-q1-s43",
+    "reasons": []
+  },
+  {
+    "id": "ideal-relay-q1-s44",
+    "reasons": []
+  },
+  {
+    "id": "ideal-relay-q2-s42",
+    "reasons": []
+  },
+  {
+    "id": "ideal-relay-q2-s43",
+    "reasons": []
+  },
+  {
+    "id": "ideal-relay-q2-s44",
+    "reasons": []
+  },
+  {
+    "id": "ideal-federation-q0-s42",
+    "reasons": []
+  },
+  {
+    "id": "ideal-federation-q0-s43",
+    "reasons": []
+  },
+  {
+    "id": "ideal-federation-q0-s44",
+    "reasons": []
+  },
+  {
+    "id": "ideal-federation-q1-s42",
+    "reasons": []
+  },
+  {
+    "id": "ideal-federation-q1-s43",
+    "reasons": []
+  },
+  {
+    "id": "ideal-federation-q1-s44",
+    "reasons": []
+  },
+  {
+    "id": "ideal-federation-q2-s42",
+    "reasons": []
+  },
+  {
+    "id": "ideal-federation-q2-s43",
+    "reasons": []
+  },
+  {
+    "id": "ideal-federation-q2-s44",
+    "reasons": []
+  },
+  {
+    "id": "mosquitto-single-q0-s42",
+    "reasons": [
+      "incompleteDelivery"
+    ]
+  },
+  {
+    "id": "mosquitto-single-q0-s43",
+    "reasons": [
+      "incompleteDelivery"
+    ]
+  },
+  {
+    "id": "mosquitto-single-q0-s44",
+    "reasons": [
+      "incompleteDelivery"
+    ]
+  },
+  {
+    "id": "mosquitto-single-q1-s42",
+    "reasons": [
+      "incompleteDelivery"
+    ]
+  },
+  {
+    "id": "mosquitto-single-q1-s43",
+    "reasons": [
+      "incompleteDelivery"
+    ]
+  },
+  {
+    "id": "mosquitto-single-q1-s44",
+    "reasons": [
+      "incompleteDelivery"
+    ]
+  },
+  {
+    "id": "mosquitto-single-q2-s42",
+    "reasons": [
+      "incompleteDelivery"
+    ]
+  },
+  {
+    "id": "mosquitto-single-q2-s43",
+    "reasons": [
+      "incompleteDelivery"
+    ]
+  },
+  {
+    "id": "mosquitto-single-q2-s44",
+    "reasons": [
+      "incompleteDelivery"
+    ]
+  },
+  {
+    "id": "mosquitto-relay-q0-s42",
+    "reasons": []
+  },
+  {
+    "id": "mosquitto-relay-q0-s43",
+    "reasons": []
+  },
+  {
+    "id": "mosquitto-relay-q0-s44",
+    "reasons": []
+  },
+  {
+    "id": "mosquitto-relay-q1-s42",
+    "reasons": [
+      "incompleteDelivery"
+    ]
+  },
+  {
+    "id": "mosquitto-relay-q1-s43",
+    "reasons": [
+      "incompleteDelivery"
+    ]
+  },
+  {
+    "id": "mosquitto-relay-q1-s44",
+    "reasons": [
+      "incompleteDelivery"
+    ]
+  },
+  {
+    "id": "mosquitto-relay-q2-s42",
+    "reasons": [
+      "incompleteDelivery"
+    ]
+  },
+  {
+    "id": "mosquitto-relay-q2-s43",
+    "reasons": [
+      "incompleteDelivery"
+    ]
+  },
+  {
+    "id": "mosquitto-relay-q2-s44",
+    "reasons": [
+      "incompleteDelivery"
+    ]
+  },
+  {
+    "id": "mosquitto-federation-q0-s42",
+    "reasons": []
+  },
+  {
+    "id": "mosquitto-federation-q0-s43",
+    "reasons": []
+  },
+  {
+    "id": "mosquitto-federation-q0-s44",
+    "reasons": []
+  },
+  {
+    "id": "mosquitto-federation-q1-s42",
+    "reasons": [
+      "incompleteDelivery"
+    ]
+  },
+  {
+    "id": "mosquitto-federation-q1-s43",
+    "reasons": [
+      "incompleteDelivery"
+    ]
+  },
+  {
+    "id": "mosquitto-federation-q1-s44",
+    "reasons": [
+      "incompleteDelivery"
+    ]
+  },
+  {
+    "id": "mosquitto-federation-q2-s42",
+    "reasons": [
+      "incompleteDelivery"
+    ]
+  },
+  {
+    "id": "mosquitto-federation-q2-s43",
+    "reasons": [
+      "incompleteDelivery",
+      "noMeasuredDeliveries"
+    ]
+  },
+  {
+    "id": "mosquitto-federation-q2-s44",
+    "reasons": [
+      "incompleteDelivery"
+    ]
+  }
+]
