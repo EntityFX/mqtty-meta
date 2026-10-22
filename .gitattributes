@@ -3,3 +3,4 @@
 /reports/** -text
 # Study provenance records hashes of these source files as well.
 /tools/load-balancing/** -text
+/tools/federation/** -text

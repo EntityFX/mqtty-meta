@@ -14,6 +14,7 @@
 | Понять этапы, исполнителей и результаты | [Этапы эксперимента](docs/campaign-stages.md) |
 | Разобраться в показателях и допусках | [Метрики](docs/campaign-metrics.md) |
 | Понять сетевую модель | [MqttRelay](docs/mqtt-relay-explained.md) |
+| Смоделировать статическую федерацию и сравнить её с Relay и одним брокером | [Приложение федерации](docs/mqtt-federation-plan.md) |
 | Посмотреть измерения и выводы | [Отчёты](reports/README.md) |
 
 Документы о брокерах: [Aedes](docs/brokers/Aedes.md), [Mosquitto](docs/brokers/Mosquitto.md), [ActiveMQ Classic](docs/brokers/ActiveMQ.md), [EMQX](docs/brokers/EMQX.md).
