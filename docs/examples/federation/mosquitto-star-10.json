@@ -1,0 +1,16 @@
+{
+  "mode": "relay",
+  "topology": "star",
+  "brokers": 10,
+  "publishers": 160,
+  "ideal": false,
+  "brokerType": "Mosquitto",
+  "brokerProfilePath": "../../../reports/data/Mosquitto/profile/broker-calibration.v3.json",
+  "payloadBytes": 16,
+  "qos": 1,
+  "offeredRps": 1000,
+  "seed": 42,
+  "warmupSeconds": 0.01,
+  "measurementSeconds": 0.2,
+  "drainTimeoutSeconds": 1
+}

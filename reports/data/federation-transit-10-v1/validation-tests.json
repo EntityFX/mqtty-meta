@@ -1,0 +1,10 @@
+{
+  "csharpRegressionPassed": 316,
+  "csharpTransitAndFederationPassed": 39,
+  "pythonEvidenceAndArchivePassed": 7,
+  "longRunningTestsExcluded": true,
+  "commands": [
+    "dotnet test -c Release --filter TestCategory!=LongRunning",
+    "python -m unittest discover -s tools/federation -p test_*.py"
+  ]
+}

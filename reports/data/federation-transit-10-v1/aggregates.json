@@ -1,0 +1,236 @@
+[
+  {
+    "family": "ideal",
+    "qos": 0,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 10000,
+      "ci95": 0.0
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 2.8000000000000003,
+      "ci95": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95": null
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 1800,
+      "ci95": 0.0
+    },
+    "transitPackets": {
+      "n": 3,
+      "mean": 1800,
+      "ci95": 0.0
+    }
+  },
+  {
+    "family": "ideal",
+    "qos": 1,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 10000,
+      "ci95": 0.0
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 2.8000000000000003,
+      "ci95": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 0.8,
+      "ci95": 0.0
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 1800,
+      "ci95": 0.0
+    },
+    "transitPackets": {
+      "n": 3,
+      "mean": 3600,
+      "ci95": 0.0
+    }
+  },
+  {
+    "family": "ideal",
+    "qos": 2,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 10000,
+      "ci95": 0.0
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 8.4,
+      "ci95": 0.0
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.6,
+      "ci95": 0.0
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 1800,
+      "ci95": 0.0
+    },
+    "transitPackets": {
+      "n": 3,
+      "mean": 7200,
+      "ci95": 0.0
+    }
+  },
+  {
+    "family": "mosquitto",
+    "qos": 0,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 10000,
+      "ci95": 0.0
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0,
+      "ci95": 0.0
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 2.8000000000000003,
+      "ci95": 0.0
+    },
+    "publishP99Ms": {
+      "n": 0,
+      "mean": null,
+      "ci95": null
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 1800,
+      "ci95": 0.0
+    },
+    "transitPackets": {
+      "n": 3,
+      "mean": 1800,
+      "ci95": 0.0
+    }
+  },
+  {
+    "family": "mosquitto",
+    "qos": 1,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 15,
+      "ci95": 12.420688559218762
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0.9985,
+      "ci95": 0.0012420688559218775
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 2.7,
+      "ci95": 1.9717231823926804
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 1.1,
+      "ci95": 0.0
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 174,
+      "ci95": 46.540305114630634
+    },
+    "transitPackets": {
+      "n": 3,
+      "mean": 348,
+      "ci95": 93.08061022926127
+    }
+  },
+  {
+    "family": "mosquitto",
+    "qos": 2,
+    "sourceCompletedRps": {
+      "n": 3,
+      "mean": 1000,
+      "ci95": 0.0
+    },
+    "uniqueGoodput": {
+      "n": 3,
+      "mean": 8.333333333333334,
+      "ci95": 7.171087883185458
+    },
+    "deliveryLoss": {
+      "n": 3,
+      "mean": 0.9991666666666666,
+      "ci95": 0.0007171087883186261
+    },
+    "receiverP99Ms": {
+      "n": 3,
+      "mean": 7.7,
+      "ci95": 5.391208418092768
+    },
+    "publishP99Ms": {
+      "n": 3,
+      "mean": 2.1,
+      "ci95": 0.0
+    },
+    "forwardAttempts": {
+      "n": 3,
+      "mean": 162,
+      "ci95": 80.61017305829795
+    },
+    "transitPackets": {
+      "n": 3,
+      "mean": 648,
+      "ci95": 322.4406922331918
+    }
+  }
+]

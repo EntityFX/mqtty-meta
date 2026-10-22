@@ -1,0 +1,76 @@
+{
+  "mainRuns": 18,
+  "technicalFailures": 0,
+  "replays": {
+    "ideal-relay-q0-s42": {
+      "exitCode": 0,
+      "identicalSummary": true,
+      "identicalNetworkEvidence": true
+    },
+    "ideal-relay-q1-s42": {
+      "exitCode": 0,
+      "identicalSummary": true,
+      "identicalNetworkEvidence": true
+    },
+    "ideal-relay-q2-s42": {
+      "exitCode": 0,
+      "identicalSummary": true,
+      "identicalNetworkEvidence": true
+    },
+    "mosquitto-relay-q0-s42": {
+      "exitCode": 0,
+      "identicalSummary": true,
+      "identicalNetworkEvidence": true
+    },
+    "mosquitto-relay-q1-s42": {
+      "exitCode": 0,
+      "identicalSummary": true,
+      "identicalNetworkEvidence": true
+    },
+    "mosquitto-relay-q2-s42": {
+      "exitCode": 0,
+      "identicalSummary": true,
+      "identicalNetworkEvidence": true
+    }
+  },
+  "rawPairsAndPayloadChecked": true,
+  "transitPathAndCounterDeltasChecked": true,
+  "warnings": [
+    {
+      "id": "mosquitto-relay-q1-s42",
+      "deliveryLoss": 0.998,
+      "noMeasuredReceipts": false,
+      "transitAdmissionRefusals": 0
+    },
+    {
+      "id": "mosquitto-relay-q1-s43",
+      "deliveryLoss": 0.9985,
+      "noMeasuredReceipts": false,
+      "transitAdmissionRefusals": 0
+    },
+    {
+      "id": "mosquitto-relay-q1-s44",
+      "deliveryLoss": 0.999,
+      "noMeasuredReceipts": false,
+      "transitAdmissionRefusals": 0
+    },
+    {
+      "id": "mosquitto-relay-q2-s42",
+      "deliveryLoss": 0.999,
+      "noMeasuredReceipts": false,
+      "transitAdmissionRefusals": 0
+    },
+    {
+      "id": "mosquitto-relay-q2-s43",
+      "deliveryLoss": 0.999,
+      "noMeasuredReceipts": false,
+      "transitAdmissionRefusals": 0
+    },
+    {
+      "id": "mosquitto-relay-q2-s44",
+      "deliveryLoss": 0.9995,
+      "noMeasuredReceipts": false,
+      "transitAdmissionRefusals": 0
+    }
+  ]
+}

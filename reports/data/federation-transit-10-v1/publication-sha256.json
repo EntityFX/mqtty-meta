@@ -1,0 +1,17 @@
+{
+  "data/federation-transit-10-v1/aggregates.json": "3a50d753fd01181ec93c30de6cdc0d9d572a92eb3b899d09e2aa4314ea312f07",
+  "data/federation-transit-10-v1/archive-receipt.json": "52241e47164394c964f2728afe77774a9651fd0eb06be813c8251bbcfd74deb8",
+  "data/federation-transit-10-v1/comparison.svg": "5c22fb25f2ad91a6f11e15612b268adfe6990f8227cd694c132d9b03a5ae138a",
+  "data/federation-transit-10-v1/README.md": "2d71fd29a2bf27b1d3cbb89df848aa2a7100b21d0e494da5ba9ba824937ca53c",
+  "data/federation-transit-10-v1/report-reproduction.json": "af484b5d6f4c5fe9ec08ffe6b944138eec87904769aeda5dd04d66b99df084e6",
+  "data/federation-transit-10-v1/runs.csv": "c859abe16af4a0af78e51a41ce6cbd558c61f70e3eced0d1c4da23e1bbe6bdc8",
+  "data/federation-transit-10-v1/runs.json": "7a0a2b7105835a7342a98ae65e6c444cf186040b80de0a80cb60673eac33662b",
+  "data/federation-transit-10-v1/study-plan.json": "f23a80a4a394ce69378e31541826b5ed923f05888051e6a2e122db4e186a8e5e",
+  "data/federation-transit-10-v1/topology-logical.mmd": "2d4128c2b19f182560d87daa669539a14bea732a93bf5980c1c4190be478826a",
+  "data/federation-transit-10-v1/topology-logical.svg": "c14b23072131f66b5f4cc2632130c6bbe79158869cda817d21d0119a45711c88",
+  "data/federation-transit-10-v1/topology-physical.mmd": "c788797db691d1ff72273106b3dbf68871c9d9e98cbb94ee2f4752379504209b",
+  "data/federation-transit-10-v1/topology-physical.svg": "e1baad2c2538f3768bc8c5bd1937d19a7ff4a7cfbd08799abbdbe762fcce8384",
+  "data/federation-transit-10-v1/validation-tests.json": "70785bbd3336be34c8faf53c037834793e3e33e924d5becf82eb5bcff59b4b4c",
+  "data/federation-transit-10-v1/verification.json": "6a759aae1993e0d4e5224b7100d9221d8a144f8105067b399cedb1b68201e1d0",
+  "Federation-ten-brokers.md": "bd8efc20e85230bcba75ff3cb66e2bc8b51e0c22582236b72eb942197101a273"
+}
