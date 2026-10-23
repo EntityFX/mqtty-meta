@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "suite": "unittest discover -s tools/dissertation -p test_*.py -q",
+  "testsPassed": 68,
+  "runnerTestsPassed": 14,
+  "sourceSha256": {
+    "tools/dissertation/network_review.py": "b914cc1c266ed91e8b3902fe49757ed3d20ffee8fee319c2777c74159119a939",
+    "tools/dissertation/network_runner_smoke.py": "4e5f9aedf949c0449154e6374a6a9d1f81948c6eab3d784012d772077b9f38ea",
+    "tools/dissertation/network_runner_test_fixture.py": "fe4c805ebf1e74ce05911eae0621eaaccc07923982e2b5328eb90d660202f761",
+    "tools/dissertation/network_study_inputs.py": "fe00f7dcf32411ba97dfbfb8e13e7df0dac8938aba949630779bbaa9e479feeb",
+    "tools/dissertation/network_study_process.py": "eb91d20d5feace120c4dbb4826c62f2c96323f886c5384f3c0a1251b207766ec",
+    "tools/dissertation/network_study_verification.py": "ebdbfa8481f5dd81467f0423154bd52d3c6100e9103244d9e7e54f87b52a1504",
+    "tools/dissertation/prepare_network_study.py": "43a214ef38817ccaefd7e67ac5d19d6b1c9a5a1c68a2d124f50cd3a1b1eabde0",
+    "tools/dissertation/run_network_study.py": "05936cc72db788b1263149b7043314c41b6a2282e8804f364abd87ac4cc9247b",
+    "tools/dissertation/test_network_review.py": "2986df59788619156a559f5310c9df2faa1b424bf1cc524a45de816522bad808",
+    "tools/dissertation/test_network_runner.py": "1abcac0acbbbb5964d774673a7812e563401449ff9f40f3d2b2079b8afcb141f",
+    "tools/dissertation/test_prepare_network_study.py": "06ae5cd81b103fd55e5201b41fae7bc68696a085e5b1cbcd678da35481ee51ae"
+  },
+  "linuxExecutionTested": false
+}

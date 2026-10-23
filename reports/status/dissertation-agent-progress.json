@@ -196,28 +196,38 @@
       "remaining": "Freeze clean code/runtime, implement controlled runner, execute pilots and review duration sufficiency and measured cost before matrix"
     },
     "22": {
-      "status": "configurationPreparationImplementedRunnerPending",
+      "status": "runnerImplementedAndLocallyTestedAwaitingLinuxPreflight",
       "generator": "tools/dissertation/prepare_network_study.py",
-      "remaining": "Linux runtime snapshot, resource/storage guards, resume, isolated execution, raw-journal verification and partial-failure receipts"
+      "remaining": "Linux mount/cgroup preflight and pilot execution; phase sufficiency and ACK-time observations still require review",
+      "runner": "tools/dissertation/run_network_study.py",
+      "guide": "docs/dissertation/network-runner.md",
+      "verification": "reports/audits/dissertation/network-runner-v1/smoke-verification.json",
+      "testsPassed": 68,
+      "runnerTestsPassed": 14,
+      "latestLocalCliSimulations": 15,
+      "totalLocalCliSmokeSimulations": 30,
+      "scientificProgramSimulations": 0,
+      "linuxPreflightDone": false
     }
   },
   "humanAcceptanceNotReplaced": true,
   "progressDocument": "reports/status/Progress.md",
   "goalConstraints": "reports/status/goal-constraints.json",
   "manualContinuationRequired": true,
-  "continuationCheckpoint": "Sensitivity running unchanged with 36h operational limit; check manually around 24 October 09:00 MSK; next implement isolated network pilot runner, freeze inputs/runtime and run pilots after sensitivity completes",
+  "continuationCheckpoint": "Network runner is locally tested. Next manually inspect Linux sensitivity, finish its analysis, then stage clean runner/runtime and execute isolated network preflight/pilots. Keep the stop-after-long-launch rule.",
   "articleWritingOwner": "human",
   "recommendedManualReviewAt": "2026-10-24T09:00:00+03:00",
   "parallelWork": {
-    "changes": "One status observation, measured ETA, operational timer extension without restart, candidate network program and local CLI validation",
+    "changes": "Implemented and tested network runner locally; Linux not contacted",
     "documents": [
-      "docs/dissertation/network-study.md",
-      "reports/status/Linux-work-queue.md"
+      "docs/dissertation/network-runner.md",
+      "reports/audits/dissertation/network-runner-v1/Review.md"
     ],
     "runningExperimentInputsChanged": false,
-    "additionalCalculationsStarted": false,
-    "linuxStatusNotPolledDuringThisWork": false,
-    "latestAction": "Prepared 252 configurations, all validated locally; zero new network simulations; steps 21/22 remain partial"
+    "additionalCalculationsStarted": true,
+    "linuxStatusNotPolledDuringThisWork": true,
+    "latestAction": "Final runner: 68 unit tests, 15 real CLI cases with 3 exact replays; Linux preflight remains",
+    "calculationScope": "30 local Windows functional smoke simulations across two code versions; no Linux research runs"
   },
   "storageCleanup": {
     "status": "completed",

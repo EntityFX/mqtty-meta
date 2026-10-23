@@ -4,3 +4,6 @@
 # Study provenance records hashes of these source files as well.
 /tools/load-balancing/** -text
 /tools/federation/** -text
+# Runner/source hashes in research verification must also survive checkout.
+/tools/dissertation/*network*.py -text
+/tools/dissertation/estimate_sensitivity.py -text
