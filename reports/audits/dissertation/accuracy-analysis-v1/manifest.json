@@ -1,0 +1,26 @@
+{
+  "codeSha256": "04ad628ea7808bff79004dfa64949503d1b23f2cff2e98907a2585c31892e34b",
+  "files": {
+    "Accuracy-analysis.md": "e155585474422c74d270a1aa3eeba7729a98f576b81f4523ceb372b531a0c357",
+    "analysis.json": "46f1bb81917c54e6dbe04756b5536ed3206879f6510eda8d9de18c50d5eaa8da",
+    "criteria.csv": "4ab1d69e1d811dd82f1f2872dc6912523166f699da3c96886dffd2b70d8ca910",
+    "failures.csv": "b83b577a4a1519ab266e8cb3d22e3f0eae7ca69c7f951e137dbdc945479e1ad6",
+    "holdout-map.png": "5127849832438e6f0b05be4206e857cd02b4c7fe9c6e5aba747af50e7f3f1c72",
+    "holdout-map.svg": "d3cbf03eabdf62a4be73be110848861dcb541a4e18a16342c0b7551ebf6c5ef0",
+    "native-loss-spread.png": "b1dadc7722ed57266c761e9481f5da9d9ef1e050afcc0ce2bb82576e241861da",
+    "native-loss-spread.svg": "2c01158ea09c100c1ee5e9d3d2087a1774da749983f092781911d07772a98e5d",
+    "points.csv": "6699ddd03e88fc22f1dd9272897dc870a3f462c71574a597c1d5ab69658e7458",
+    "rawWindows.csv": "4b67d7b45ebd4187ae6d1ffa7bcbeaa5a4f87f5674a1a37a1e1fb939eb7b42ce"
+  },
+  "foundationManifestSha256": "6a45616a5548adea2a7067efca536b71c8cbfeaf20123a1c4a2186814a0e0fd2",
+  "holdoutRuns": 288,
+  "method": "Point-wise unchanged holdout criteria and native repeat/window context; no causal identification",
+  "nativeRuns": 576,
+  "notNewExperiments": true,
+  "reportKind": "Reviewed narrative alongside reproducibly generated CSV/JSON/plots",
+  "sourceSha256": {
+    "C:\\projects\\mqtty-meta\\reports\\data\\model-evidence.json": "778b25feee8272e7d97deba5fae19086da2ba2a91a3b0a7b3a0c077e4cbdb015",
+    "C:\\projects\\mqtty-meta\\reports\\data\\native-evidence.json": "7010fc352b64125a44aa9d7dbe54c9df76cb224631f2971d2f1579c44e5450de",
+    "MqttBenchmark\\artifacts\\documentation-layout\\linux-audit-results.json": "8af5751b2abe4f3c2983efc8eb1e45cda3cf89166cc14b4de7ce29adae9f28c3"
+  }
+}

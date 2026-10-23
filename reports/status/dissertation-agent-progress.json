@@ -92,9 +92,22 @@
     "07": {
       "status": "handoffPreparedAwaitingIndependentPerson",
       "independentPersonHasRun": false
+    },
+    "10": {
+      "status": "analysisPreparedNotScientificallyAccepted",
+      "document": "reports/audits/dissertation/accuracy-analysis-v1/Accuracy-analysis.md",
+      "holdoutRunsAnalysed": 288,
+      "failedHoldoutRuns": 85,
+      "causesNotFullyIdentified": true
+    },
+    "13": {
+      "status": "partialTablesAndMapsPrepared",
+      "remaining": "sensitivity results, intervals and final article figure set"
     }
   },
   "humanAcceptanceNotReplaced": true,
   "progressDocument": "reports/status/Progress.md",
-  "goalConstraints": "reports/status/goal-constraints.json"
+  "goalConstraints": "reports/status/goal-constraints.json",
+  "manualContinuationRequired": true,
+  "continuationCheckpoint": "Saved accuracy analysis; no long sensitivity calculation started; awaiting manual continuation under user stop rule"
 }

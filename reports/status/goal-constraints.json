@@ -15,5 +15,6 @@
   "statusRequestScope": "one observation and progress update",
   "resumeOnUserRequest": true,
   "policyDocument": "docs/dissertation/agent-work-policy.md",
-  "platformObjectiveTextEditable": false
+  "platformObjectiveTextEditable": false,
+  "conditionNowInUserGoalObjective": true
 }
