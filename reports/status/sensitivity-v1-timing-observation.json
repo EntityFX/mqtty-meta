@@ -1,0 +1,3190 @@
+{
+  "observedAtUtc": "2026-10-23T20:05:09.700583+00:00",
+  "root": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1",
+  "service": "RuntimeMaxUSec=1d\nMainPID=40598\nResult=success\nExecMainStartTimestamp=Fri 2026-10-23 21:04:18 MSK\nExecMainStatus=0\nMemoryCurrent=834838528\nActiveState=active\nSubState=running\n",
+  "progress": {
+    "active": {
+      "Aedes.m16.q0.p128.s43.doubleWindow": {
+        "elapsedSeconds": 1030.781401884,
+        "peakRssBytes": 851116032,
+        "pid": 42300,
+        "rssBytes": 818847744
+      }
+    },
+    "counts": {
+      "matrix": {
+        "done": 15,
+        "failedCriteria": 0,
+        "total": 216
+      },
+      "pilot": {
+        "done": 8,
+        "failedCriteria": 4,
+        "total": 8
+      },
+      "replay": {
+        "done": 0,
+        "failedCriteria": 0,
+        "total": 6
+      }
+    },
+    "elapsedSeconds": 7249.425751488001,
+    "estimatedFullMatrixWallHoursAfterPilot": {
+      "assumption": "Extrapolate QoS1 baseline timing to 3 QoS, 3 seeds and 3 variants; not a guaranteed deadline",
+      "lower": 10.980446754836267,
+      "upper": 21.960893509672534
+    },
+    "planSha256": "dfda8401e9e3f96aebece1b4baa116b58437c94752ecc0324b6e8c909243ae3c",
+    "reason": null,
+    "status": "running",
+    "technicalErrors": 0,
+    "workers": 2
+  },
+  "disk": {
+    "total": 244995190784,
+    "used": 72417583104,
+    "free": 160057925632
+  },
+  "systemDisk": {
+    "total": 124323721216,
+    "used": 53627580416,
+    "free": 64354054144
+  },
+  "mountAvailable": true,
+  "rows": [
+    {
+      "file": "Aedes.m16.q0.p1.s43.halfTick.json",
+      "data": {
+        "configSha256": "30a991d8ea6ad1d5cfbb9a0cbc12783fe311bbee19e0490a7c845333603def70",
+        "fidelityFailed": false,
+        "histogramSha256": "74311bb917d98c6101d95d7ab14e3f558fafa5cf2bac00dcb0b070b2980b615f",
+        "id": "Aedes.m16.q0.p1.s43.halfTick",
+        "kind": "matrix",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/Aedes.m16.q0.p1.s43.halfTick/output-001/20261023T185257798Z-ba3eead0af994f61af2f176f2f5fcddf",
+        "peakRssBytes": 838926336,
+        "returnCode": 0,
+        "scientificCountersSha256": "af629f7f19238a8d8d3da15295dc21da8ee1052e1773e060ad6ffb16e4383cbc",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 3.4051561947124006e-06,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 28858.09826633208,
+              "simulated": 28858,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": null,
+              "limit": null,
+              "name": "latencyP99Ms",
+              "reference": null,
+              "simulated": null,
+              "status": "notApplicable"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 600122,
+          "measurementStartTick": 200122,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 28858.09826633208,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 57716,
+            "attempted": 57716,
+            "completed": 57716,
+            "completedRps": 28858,
+            "delivered": 57716,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 57716,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "83f3705afea71eb23d7ceb8550a0fc37b0579158860838b2000096b410cc8857",
+        "technicalError": null,
+        "variant": "halfTick",
+        "wallSeconds": 38.057111885995255
+      }
+    },
+    {
+      "file": "pilot.ActiveMQ.m16.q1.p128.s42.baseline.json",
+      "data": {
+        "configSha256": "79c7cd167335278d6fd1e46070ed6d7a7f7759bdf0982e5317ce85fea35c78e1",
+        "fidelityFailed": true,
+        "histogramSha256": "f71fbc2dacf6e87269dcd0112e8418f3add08dd9e441a108f8217974e22a36c7",
+        "id": "pilot.ActiveMQ.m16.q1.p128.s42.baseline",
+        "kind": "pilot",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/pilot.ActiveMQ.m16.q1.p128.s42.baseline/output-001/20261023T182755634Z-72104d65d007440b85c3d549b118f01a",
+        "peakRssBytes": 1161539584,
+        "returnCode": 3,
+        "scientificCountersSha256": "9299a8b679b7cb0bba1144d183407d41c4c6019005f64fec6cecdd3a90628161",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 9.130535563246614e-05,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 4931.450267820487,
+              "simulated": 4931,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0.08789879339172713,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0.6912246907756249,
+              "simulated": 0.6033258973838977,
+              "status": "failed"
+            },
+            {
+              "error": 0.03708781234478919,
+              "limit": 0.2,
+              "name": "latencyP99Ms",
+              "reference": 229.52733333333344,
+              "simulated": 238.04,
+              "status": "passed"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 300014,
+          "measurementStartTick": 100014,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 4931.450267820487,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0.6912246907756249,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": 229.52733333333344,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 9862,
+            "attempted": 9862,
+            "completed": 9862,
+            "completedRps": 4931,
+            "delivered": 3912,
+            "deliveryDropped": 5950,
+            "deliveryLossRate": 0.6033258973838977,
+            "expectedDeliveries": 9862,
+            "latencyP99Ms": 238.04,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "c66e558d277c1dc5a6b21fe64399949c2ed0330333ac78731fd3340a5faa5a65",
+        "technicalError": null,
+        "variant": "baseline",
+        "wallSeconds": 718.5054980569985
+      }
+    },
+    {
+      "file": "Aedes.m16.q0.p1.s43.baseline.json",
+      "data": {
+        "configSha256": "6bb4fd73d1313d07a0fa0bf22ddea5047ceeeac944d2c0e703f1bb46943fb033",
+        "fidelityFailed": false,
+        "histogramSha256": "74311bb917d98c6101d95d7ab14e3f558fafa5cf2bac00dcb0b070b2980b615f",
+        "id": "Aedes.m16.q0.p1.s43.baseline",
+        "kind": "matrix",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/Aedes.m16.q0.p1.s43.baseline/output-001/20261023T185221742Z-bebbf4d885094804a4e9196faf81d5fb",
+        "peakRssBytes": 838717440,
+        "returnCode": 0,
+        "scientificCountersSha256": "917bc54f8497583a0c4ef37b8fc4cccde5d3cb16ca6e818685713b6c66591629",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 3.4051561947124006e-06,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 28858.09826633208,
+              "simulated": 28858,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": null,
+              "limit": null,
+              "name": "latencyP99Ms",
+              "reference": null,
+              "simulated": null,
+              "status": "notApplicable"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 300062,
+          "measurementStartTick": 100062,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 28858.09826633208,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 57716,
+            "attempted": 57716,
+            "completed": 57716,
+            "completedRps": 28858,
+            "delivered": 57716,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 57716,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "c939b5dc7f6500e75184c2a3a3203dc7b446a13838cb40b147357e186075ef81",
+        "technicalError": null,
+        "variant": "baseline",
+        "wallSeconds": 22.019012543998542
+      }
+    },
+    {
+      "file": "pilot.Aedes.m16.q1.p1.s42.baseline.json",
+      "data": {
+        "configSha256": "714a1f666d0e3e3875c888774f24df9111e6d8cd3a2e81982a41922a477b4141",
+        "fidelityFailed": false,
+        "histogramSha256": "124a3bbf09886e8b93e55c50e53ac955575284ca7c3a305af2e732ca61bcb061",
+        "id": "pilot.Aedes.m16.q1.p1.s42.baseline",
+        "kind": "pilot",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/pilot.Aedes.m16.q1.p1.s42.baseline/output-001/20261023T180419735Z-69d321e7a5af4aada6994ee7ee72117b",
+        "peakRssBytes": 831877120,
+        "returnCode": 0,
+        "scientificCountersSha256": "8c552f5c88c57d602870eda1fea4ba0919b865b24443cf6560f40f6c2195b84e",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 0.015953341179161282,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 8901.000701019315,
+              "simulated": 8759,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0.0718705378321429,
+              "limit": 0.2,
+              "name": "latencyP99Ms",
+              "reference": 0.1400666666656131,
+              "simulated": 0.13,
+              "status": "passed"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 300014,
+          "measurementStartTick": 100014,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 8901.000701019315,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": 0.1400666666656131,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 17518,
+            "attempted": 17518,
+            "completed": 17518,
+            "completedRps": 8759,
+            "delivered": 17518,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 17518,
+            "latencyP99Ms": 0.13,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "55ff46ed17646c421d9cab5ea785bd7dfbedf22e37a1a657a717bbc322aa331a",
+        "technicalError": null,
+        "variant": "baseline",
+        "wallSeconds": 22.040007967007114
+      }
+    },
+    {
+      "file": "Aedes.m16.q0.p128.s42.doubleWindow.json",
+      "data": {
+        "configSha256": "0f3f16adfaa2f4ecb52b464cce720c7c428aed536afc6e17a514bbee6c8071c7",
+        "fidelityFailed": false,
+        "histogramSha256": "72f94bc9de8d07fd61ed1efed347ee1a6b6ec3cbdc9f31aa4fb6158470e39592",
+        "id": "Aedes.m16.q0.p128.s42.doubleWindow",
+        "kind": "matrix",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/Aedes.m16.q0.p128.s42.doubleWindow/output-001/20261023T190504350Z-eeebf520c7194e048479d070ea756f97",
+        "peakRssBytes": 851214336,
+        "returnCode": 0,
+        "scientificCountersSha256": "b9c5a9ee91a02fdd406e03e2cb5d2d8027cd5c1e9760e294565ea39f5b025fa6",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 3.973272037013935e-06,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 53696.71335164964,
+              "simulated": 53696.5,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": null,
+              "limit": null,
+              "name": "latencyP99Ms",
+              "reference": null,
+              "simulated": null,
+              "status": "notApplicable"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 500062,
+          "measurementStartTick": 100062,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 53696.71335164964,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 214786,
+            "attempted": 214786,
+            "completed": 214786,
+            "completedRps": 53696.5,
+            "delivered": 214786,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 214786,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "5a8af40462496be4f2310eb74c93a6bf9fbeea9b068b6a22818faf05179472e5",
+        "technicalError": null,
+        "variant": "doubleWindow",
+        "wallSeconds": 1108.7900297570013
+      }
+    },
+    {
+      "file": "pilot.Mosquitto.m16.q1.p1.s42.baseline.json",
+      "data": {
+        "configSha256": "05e323044cb5df0aab164e78547e24df14f6aa7eb471d0dbd13df0ea6bb11f7f",
+        "fidelityFailed": false,
+        "histogramSha256": "6c47e19fab2edcc58f12506d95a1fc026eb141da0a0bb7f097733dd96872ff5d",
+        "id": "pilot.Mosquitto.m16.q1.p1.s42.baseline",
+        "kind": "pilot",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/pilot.Mosquitto.m16.q1.p1.s42.baseline/output-001/20261023T181616224Z-272f0f5fc7ca42009e148fe233249205",
+        "peakRssBytes": 833187840,
+        "returnCode": 0,
+        "scientificCountersSha256": "5c9aa1c8c8edd721f736d9145e1d445e01f4839393040825408dabc3076ec277",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 0.010093203939058833,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 7423.426154099873,
+              "simulated": 7348.5,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0.02458849827168188,
+              "limit": 0.2,
+              "name": "latencyP99Ms",
+              "reference": 0.16403333333316064,
+              "simulated": 0.16,
+              "status": "passed"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 300014,
+          "measurementStartTick": 100014,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 7423.426154099873,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": 0.16403333333316064,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 14697,
+            "attempted": 14697,
+            "completed": 14697,
+            "completedRps": 7348.5,
+            "delivered": 14697,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 14697,
+            "latencyP99Ms": 0.16,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "fc57876f6986f7a4f84f7c8c9a92348f9798564e29fd6db04dcfcfe119a852d5",
+        "technicalError": null,
+        "variant": "baseline",
+        "wallSeconds": 20.01635387299757
+      }
+    },
+    {
+      "file": "Aedes.m16.q0.p1.s42.baseline.json",
+      "data": {
+        "configSha256": "5730ea0c1317d72de84c1ee5259d0795e3f865811353bd989c379ceb8d2f174c",
+        "fidelityFailed": false,
+        "histogramSha256": "74311bb917d98c6101d95d7ab14e3f558fafa5cf2bac00dcb0b070b2980b615f",
+        "id": "Aedes.m16.q0.p1.s42.baseline",
+        "kind": "matrix",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/Aedes.m16.q0.p1.s42.baseline/output-001/20261023T185143722Z-9b6afde11f9f481aa4a01d2dada20ce0",
+        "peakRssBytes": 840892416,
+        "returnCode": 0,
+        "scientificCountersSha256": "917bc54f8497583a0c4ef37b8fc4cccde5d3cb16ca6e818685713b6c66591629",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 3.4051561947124006e-06,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 28858.09826633208,
+              "simulated": 28858,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": null,
+              "limit": null,
+              "name": "latencyP99Ms",
+              "reference": null,
+              "simulated": null,
+              "status": "notApplicable"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 300062,
+          "measurementStartTick": 100062,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 28858.09826633208,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 57716,
+            "attempted": 57716,
+            "completed": 57716,
+            "completedRps": 28858,
+            "delivered": 57716,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 57716,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "c939b5dc7f6500e75184c2a3a3203dc7b446a13838cb40b147357e186075ef81",
+        "technicalError": null,
+        "variant": "baseline",
+        "wallSeconds": 22.01675313001033
+      }
+    },
+    {
+      "file": "pilot.Mosquitto.m16.q1.p128.s42.baseline.json",
+      "data": {
+        "configSha256": "6f9a8cfd11d1ec4c28685609120a3151c1fcd9e9959c8216334b9a931b61ef85",
+        "fidelityFailed": false,
+        "histogramSha256": "19240dfa2873c652e215ba838b6fd2b17a3c1865e2fd3b62dd7bf6fa717204d7",
+        "id": "pilot.Mosquitto.m16.q1.p128.s42.baseline",
+        "kind": "pilot",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/pilot.Mosquitto.m16.q1.p128.s42.baseline/output-001/20261023T181616200Z-477fe1efa93e497d8563aebf0a1bc374",
+        "peakRssBytes": 844042240,
+        "returnCode": 0,
+        "scientificCountersSha256": "9716c8a7a249c121282c0448f4608365a5f338a6df21ed075ff1b2df305f5912",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 6.989287642093816e-06,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 46358.82401515579,
+              "simulated": 46358.5,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0.006451577611336301,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0.8768707904549299,
+              "simulated": 0.8833223680662662,
+              "status": "passed"
+            },
+            {
+              "error": 0.0025239486487616232,
+              "limit": 0.2,
+              "name": "latencyP99Ms",
+              "reference": 10.393766666666124,
+              "simulated": 10.42,
+              "status": "passed"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 300014,
+          "measurementStartTick": 100014,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 46358.82401515579,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0.8768707904549299,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": 10.393766666666124,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 92717,
+            "attempted": 92717,
+            "completed": 92717,
+            "completedRps": 46358.5,
+            "delivered": 10818,
+            "deliveryDropped": 81899,
+            "deliveryLossRate": 0.8833223680662662,
+            "expectedDeliveries": 92717,
+            "latencyP99Ms": 10.42,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "a1806d8b2de8149b1838960d726e9605706df951872db9a1402acaae1ab6d411",
+        "technicalError": null,
+        "variant": "baseline",
+        "wallSeconds": 698.4556017129944
+      }
+    },
+    {
+      "file": "Aedes.m16.q0.p1.s44.baseline.json",
+      "data": {
+        "configSha256": "1caf72800ff8021886de4cbdbefec4d5e1b26d011bcd11ffcdd1ed7fd2d86c13",
+        "fidelityFailed": false,
+        "histogramSha256": "74311bb917d98c6101d95d7ab14e3f558fafa5cf2bac00dcb0b070b2980b615f",
+        "id": "Aedes.m16.q0.p1.s44.baseline",
+        "kind": "matrix",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/Aedes.m16.q0.p1.s44.baseline/output-001/20261023T185335856Z-a9398f16ea394e20bfae7444d7dbb24b",
+        "peakRssBytes": 840986624,
+        "returnCode": 0,
+        "scientificCountersSha256": "917bc54f8497583a0c4ef37b8fc4cccde5d3cb16ca6e818685713b6c66591629",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 3.4051561947124006e-06,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 28858.09826633208,
+              "simulated": 28858,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": null,
+              "limit": null,
+              "name": "latencyP99Ms",
+              "reference": null,
+              "simulated": null,
+              "status": "notApplicable"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 300062,
+          "measurementStartTick": 100062,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 28858.09826633208,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 57716,
+            "attempted": 57716,
+            "completed": 57716,
+            "completedRps": 28858,
+            "delivered": 57716,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 57716,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "c939b5dc7f6500e75184c2a3a3203dc7b446a13838cb40b147357e186075ef81",
+        "technicalError": null,
+        "variant": "baseline",
+        "wallSeconds": 22.016854486995726
+      }
+    },
+    {
+      "file": "Aedes.m16.q0.p128.s42.baseline.json",
+      "data": {
+        "configSha256": "72960ac74611d72308911b8bb55f1b797105c9a1d2d6c3e8cc6cc9aeb487dff4",
+        "fidelityFailed": false,
+        "histogramSha256": "72f94bc9de8d07fd61ed1efed347ee1a6b6ec3cbdc9f31aa4fb6158470e39592",
+        "id": "Aedes.m16.q0.p128.s42.baseline",
+        "kind": "matrix",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/Aedes.m16.q0.p128.s42.baseline/output-001/20261023T185413872Z-f02a9c09d333421897781c2ce9883a5d",
+        "peakRssBytes": 853286912,
+        "returnCode": 0,
+        "scientificCountersSha256": "dc098ee9b4a1b5c12c8297147ac1f09e7e269fc2a1223c42b86195a8eb5d6a9d",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 3.973272037013935e-06,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 53696.71335164964,
+              "simulated": 53696.5,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": null,
+              "limit": null,
+              "name": "latencyP99Ms",
+              "reference": null,
+              "simulated": null,
+              "status": "notApplicable"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 300062,
+          "measurementStartTick": 100062,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 53696.71335164964,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 107393,
+            "attempted": 107393,
+            "completed": 107393,
+            "completedRps": 53696.5,
+            "delivered": 107393,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 107393,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "d3ccb775f233e88eff737c5ae19f155f8d158c52e0d243e7ccc6844c8ffbc436",
+        "technicalError": null,
+        "variant": "baseline",
+        "wallSeconds": 650.463353774001
+      }
+    },
+    {
+      "file": "pilot.EMQX.m16.q1.p1.s42.baseline.json",
+      "data": {
+        "configSha256": "4b1c7a15f5e584a925ec8ff25f5f42371dbd130cabce257c3735d5164c27991c",
+        "fidelityFailed": true,
+        "histogramSha256": "165a05efd9e7167fe6f770375550a5a3b098f1633dd58cc0ef2320aa9d5820eb",
+        "id": "pilot.EMQX.m16.q1.p1.s42.baseline",
+        "kind": "pilot",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/pilot.EMQX.m16.q1.p1.s42.baseline/output-001/20261023T183953225Z-7981f910857942bd8b31715f1969fe7e",
+        "peakRssBytes": 836448256,
+        "returnCode": 3,
+        "scientificCountersSha256": "98e1e3102c1bb06bd50b193fc13af4aaea94378f492f8341dd52398796929bde",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 0.03588720798242973,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 5954.6974664509735,
+              "simulated": 5741,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0.20236336779873662,
+              "limit": 0.2,
+              "name": "latencyP99Ms",
+              "reference": 0.22566666666655996,
+              "simulated": 0.18,
+              "status": "failed"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 300018,
+          "measurementStartTick": 100018,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 5954.6974664509735,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": 0.22566666666655996,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 11482,
+            "attempted": 11482,
+            "completed": 11482,
+            "completedRps": 5741,
+            "delivered": 11482,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 11482,
+            "latencyP99Ms": 0.18,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "c8af529573aa5c74909c0431bdef82dcaf160c96d900d5badb35330a729a5801",
+        "technicalError": null,
+        "variant": "baseline",
+        "wallSeconds": 20.01499543200771
+      }
+    },
+    {
+      "file": "Aedes.m16.q0.p1.s42.halfTick.json",
+      "data": {
+        "configSha256": "3d2a35ce33fe2b632268fb6c20dfb24cd35106f5dbfc7d6450e0cb5e502afce1",
+        "fidelityFailed": false,
+        "histogramSha256": "74311bb917d98c6101d95d7ab14e3f558fafa5cf2bac00dcb0b070b2980b615f",
+        "id": "Aedes.m16.q0.p1.s42.halfTick",
+        "kind": "matrix",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/Aedes.m16.q0.p1.s42.halfTick/output-001/20261023T185143746Z-250d6585adf4445ea3c8d1a5c380c312",
+        "peakRssBytes": 838721536,
+        "returnCode": 0,
+        "scientificCountersSha256": "af629f7f19238a8d8d3da15295dc21da8ee1052e1773e060ad6ffb16e4383cbc",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 3.4051561947124006e-06,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 28858.09826633208,
+              "simulated": 28858,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": null,
+              "limit": null,
+              "name": "latencyP99Ms",
+              "reference": null,
+              "simulated": null,
+              "status": "notApplicable"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 600122,
+          "measurementStartTick": 200122,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 28858.09826633208,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 57716,
+            "attempted": 57716,
+            "completed": 57716,
+            "completedRps": 28858,
+            "delivered": 57716,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 57716,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "83f3705afea71eb23d7ceb8550a0fc37b0579158860838b2000096b410cc8857",
+        "technicalError": null,
+        "variant": "halfTick",
+        "wallSeconds": 38.029969351991895
+      }
+    },
+    {
+      "file": "pilot.EMQX.m16.q1.p128.s42.baseline.json",
+      "data": {
+        "configSha256": "325d1e3694f8cf1b99402425494fd38efd92c1491cffdfbc49da5228f58869f5",
+        "fidelityFailed": true,
+        "histogramSha256": "f4d7cfcd87a6cb6cdca9562127544fc5484adb70fd34a0fcaf74c9e5cdb4b7e2",
+        "id": "pilot.EMQX.m16.q1.p128.s42.baseline",
+        "kind": "pilot",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/pilot.EMQX.m16.q1.p128.s42.baseline/output-001/20261023T183953209Z-fd7dd2d7b5a8492aa1673ac3af0009f7",
+        "peakRssBytes": 846913536,
+        "returnCode": 3,
+        "scientificCountersSha256": "6ba87e4c0fed8da279c493191d62441691ac9d0a55f99dc63ccb26b2b67af894",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 4.9255748183569605e-05,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 8624.4248024963,
+              "simulated": 8624,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0.08238636363636365,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0,
+              "simulated": 0.08238636363636365,
+              "status": "failed"
+            },
+            {
+              "error": 0.1926300460622314,
+              "limit": 0.2,
+              "name": "latencyP99Ms",
+              "reference": 26.666833333333972,
+              "simulated": 21.53,
+              "status": "passed"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 300022,
+          "measurementStartTick": 100022,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 8624.4248024963,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": 26.666833333333972,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 17248,
+            "attempted": 17248,
+            "completed": 17248,
+            "completedRps": 8624,
+            "delivered": 15827,
+            "deliveryDropped": 1421,
+            "deliveryLossRate": 0.08238636363636365,
+            "expectedDeliveries": 17248,
+            "latencyP99Ms": 21.53,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "f7b8bbd4c2cdd6e4771f7ad14ac69e202b64a07a103258cef00f381a5ce4265c",
+        "technicalError": null,
+        "variant": "baseline",
+        "wallSeconds": 710.485710064997
+      }
+    },
+    {
+      "file": "Aedes.m16.q0.p1.s42.doubleWindow.json",
+      "data": {
+        "configSha256": "14c303ef327d349b47e8fb2d9bad235e5b4394e315533c58dff9d2d2ef350a35",
+        "fidelityFailed": false,
+        "histogramSha256": "74311bb917d98c6101d95d7ab14e3f558fafa5cf2bac00dcb0b070b2980b615f",
+        "id": "Aedes.m16.q0.p1.s42.doubleWindow",
+        "kind": "matrix",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/Aedes.m16.q0.p1.s42.doubleWindow/output-001/20261023T185221749Z-bd753fef131942d0adc71695409121be",
+        "peakRssBytes": 836960256,
+        "returnCode": 0,
+        "scientificCountersSha256": "024107d67a6e798dc05389f1c39cc08fc0cf13da892d98ebbb8e3c53acda0fa9",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 3.4051561947124006e-06,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 28858.09826633208,
+              "simulated": 28858,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": null,
+              "limit": null,
+              "name": "latencyP99Ms",
+              "reference": null,
+              "simulated": null,
+              "status": "notApplicable"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 500062,
+          "measurementStartTick": 100062,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 28858.09826633208,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 115432,
+            "attempted": 115432,
+            "completed": 115432,
+            "completedRps": 28858,
+            "delivered": 115432,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 115432,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "ba9c5cf668986b1c31fcb62dbc759079c09f429b377fad4c94f3f55985003d0b",
+        "technicalError": null,
+        "variant": "doubleWindow",
+        "wallSeconds": 36.02996200299822
+      }
+    },
+    {
+      "file": "Aedes.m16.q0.p128.s44.baseline.json",
+      "data": {
+        "configSha256": "486d9701b348288d94c802937343beb40f974caee9be2ea4311a3f5c063fea19",
+        "fidelityFailed": false,
+        "histogramSha256": "72f94bc9de8d07fd61ed1efed347ee1a6b6ec3cbdc9f31aa4fb6158470e39592",
+        "id": "Aedes.m16.q0.p128.s44.baseline",
+        "kind": "matrix",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/Aedes.m16.q0.p128.s44.baseline/output-001/20261023T194758376Z-5d79880bbef1459c885830f00c08fac4",
+        "peakRssBytes": 851509248,
+        "returnCode": 0,
+        "scientificCountersSha256": "dc098ee9b4a1b5c12c8297147ac1f09e7e269fc2a1223c42b86195a8eb5d6a9d",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 3.973272037013935e-06,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 53696.71335164964,
+              "simulated": 53696.5,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": null,
+              "limit": null,
+              "name": "latencyP99Ms",
+              "reference": null,
+              "simulated": null,
+              "status": "notApplicable"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 300062,
+          "measurementStartTick": 100062,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 53696.71335164964,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 107393,
+            "attempted": 107393,
+            "completed": 107393,
+            "completedRps": 53696.5,
+            "delivered": 107393,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 107393,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "d3ccb775f233e88eff737c5ae19f155f8d158c52e0d243e7ccc6844c8ffbc436",
+        "technicalError": null,
+        "variant": "baseline",
+        "wallSeconds": 642.4654499159951
+      }
+    },
+    {
+      "file": "Aedes.m16.q0.p128.s42.halfTick.json",
+      "data": {
+        "configSha256": "36388094746cc573b62da745c0c3dd7478128ff8a451b0342a389aaf8ed17128",
+        "fidelityFailed": false,
+        "histogramSha256": "72f94bc9de8d07fd61ed1efed347ee1a6b6ec3cbdc9f31aa4fb6158470e39592",
+        "id": "Aedes.m16.q0.p128.s42.halfTick",
+        "kind": "matrix",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/Aedes.m16.q0.p128.s42.halfTick/output-001/20261023T190504359Z-6281ec41d060423eaf3164150ac5e9df",
+        "peakRssBytes": 851410944,
+        "returnCode": 0,
+        "scientificCountersSha256": "6343e9ad400920ee4219ee94e519a80a3ae7c7309c643a5cf93d51b24bae15db",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 3.973272037013935e-06,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 53696.71335164964,
+              "simulated": 53696.5,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": null,
+              "limit": null,
+              "name": "latencyP99Ms",
+              "reference": null,
+              "simulated": null,
+              "status": "notApplicable"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 600126,
+          "measurementStartTick": 200126,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 53696.71335164964,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 107393,
+            "attempted": 107393,
+            "completed": 107393,
+            "completedRps": 53696.5,
+            "delivered": 107393,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 107393,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "86a27ad3c2c1c2af3b0273dc78b8a80740a589a049641f5fdfe14d33910330dd",
+        "technicalError": null,
+        "variant": "halfTick",
+        "wallSeconds": 1302.9541679609974
+      }
+    },
+    {
+      "file": "Aedes.m16.q0.p1.s44.doubleWindow.json",
+      "data": {
+        "configSha256": "14e438ee0c32c539f645fb119e456484a892a94d73caafed02df034dba3f6b6f",
+        "fidelityFailed": false,
+        "histogramSha256": "74311bb917d98c6101d95d7ab14e3f558fafa5cf2bac00dcb0b070b2980b615f",
+        "id": "Aedes.m16.q0.p1.s44.doubleWindow",
+        "kind": "matrix",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/Aedes.m16.q0.p1.s44.doubleWindow/output-001/20261023T185413916Z-ffa712e0ae31494a88f79e21e3f03b36",
+        "peakRssBytes": 840986624,
+        "returnCode": 0,
+        "scientificCountersSha256": "024107d67a6e798dc05389f1c39cc08fc0cf13da892d98ebbb8e3c53acda0fa9",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 3.4051561947124006e-06,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 28858.09826633208,
+              "simulated": 28858,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": null,
+              "limit": null,
+              "name": "latencyP99Ms",
+              "reference": null,
+              "simulated": null,
+              "status": "notApplicable"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 500062,
+          "measurementStartTick": 100062,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 28858.09826633208,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 115432,
+            "attempted": 115432,
+            "completed": 115432,
+            "completedRps": 28858,
+            "delivered": 115432,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 115432,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "ba9c5cf668986b1c31fcb62dbc759079c09f429b377fad4c94f3f55985003d0b",
+        "technicalError": null,
+        "variant": "doubleWindow",
+        "wallSeconds": 34.048616555999615
+      }
+    },
+    {
+      "file": "pilot.Aedes.m16.q1.p128.s42.baseline.json",
+      "data": {
+        "configSha256": "33c16de7554b6e5bae79db4c57a33d4de0b6258cb9a955e010352e1aa88f81da",
+        "fidelityFailed": true,
+        "histogramSha256": "3bda0f38da85f0c2185f2b2832d8883f97dc1bcbab091277a2a86890d63e58b3",
+        "id": "pilot.Aedes.m16.q1.p128.s42.baseline",
+        "kind": "pilot",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/pilot.Aedes.m16.q1.p128.s42.baseline/output-001/20261023T180419792Z-99637409e0be4d659161d8f0f8c819c5",
+        "peakRssBytes": 844861440,
+        "returnCode": 3,
+        "scientificCountersSha256": "e87c23b98324dc4541adcdb9f24670e7abfff7075d354a0a999e06ebd3a3b2ad",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 0.025906502461336044,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 19971.388833983903,
+              "simulated": 19454,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0.07950192028130809,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0.35368717781189307,
+              "simulated": 0.274185257530585,
+              "status": "failed"
+            },
+            {
+              "error": 0.006593817347302247,
+              "limit": 0.2,
+              "name": "latencyP99Ms",
+              "reference": 11.414733333331847,
+              "simulated": 11.49,
+              "status": "passed"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 300022,
+          "measurementStartTick": 100022,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 19971.388833983903,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0.35368717781189307,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": 11.414733333331847,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 38908,
+            "attempted": 38908,
+            "completed": 38908,
+            "completedRps": 19454,
+            "delivered": 28240,
+            "deliveryDropped": 10668,
+            "deliveryLossRate": 0.274185257530585,
+            "expectedDeliveries": 38908,
+            "latencyP99Ms": 11.49,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "dff2b6d3af12e70c0ee675c1eb464056d8ec7cb18c5d86d48fbc44e6004320e0",
+        "technicalError": null,
+        "variant": "baseline",
+        "wallSeconds": 716.5831404460041
+      }
+    },
+    {
+      "file": "Aedes.m16.q0.p1.s44.halfTick.json",
+      "data": {
+        "configSha256": "0568639e27d3150ade5190bfdaaf71b23c621ecabccd94db6ee850692a7a5589",
+        "fidelityFailed": false,
+        "histogramSha256": "74311bb917d98c6101d95d7ab14e3f558fafa5cf2bac00dcb0b070b2980b615f",
+        "id": "Aedes.m16.q0.p1.s44.halfTick",
+        "kind": "matrix",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/Aedes.m16.q0.p1.s44.halfTick/output-001/20261023T185335909Z-a19e75226cb548f884d5341b585a9388",
+        "peakRssBytes": 838893568,
+        "returnCode": 0,
+        "scientificCountersSha256": "af629f7f19238a8d8d3da15295dc21da8ee1052e1773e060ad6ffb16e4383cbc",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 3.4051561947124006e-06,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 28858.09826633208,
+              "simulated": 28858,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": null,
+              "limit": null,
+              "name": "latencyP99Ms",
+              "reference": null,
+              "simulated": null,
+              "status": "notApplicable"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 600122,
+          "measurementStartTick": 200122,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 28858.09826633208,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 57716,
+            "attempted": 57716,
+            "completed": 57716,
+            "completedRps": 28858,
+            "delivered": 57716,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 57716,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "83f3705afea71eb23d7ceb8550a0fc37b0579158860838b2000096b410cc8857",
+        "technicalError": null,
+        "variant": "halfTick",
+        "wallSeconds": 38.05293143300514
+      }
+    },
+    {
+      "file": "pilot.ActiveMQ.m16.q1.p1.s42.baseline.json",
+      "data": {
+        "configSha256": "e25a39aa6f231fd9754c69329a793d42c20467721a52f0123582bf56cb0f62f7",
+        "fidelityFailed": false,
+        "histogramSha256": "c145cd04c2baafb38e8cbbeae59b72317823d35f15e61f84633914c19ff89415",
+        "id": "pilot.ActiveMQ.m16.q1.p1.s42.baseline",
+        "kind": "pilot",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/pilot.ActiveMQ.m16.q1.p1.s42.baseline/output-001/20261023T182755505Z-bf837e930f9e448193599f5cc9d0df5f",
+        "peakRssBytes": 1148723200,
+        "returnCode": 0,
+        "scientificCountersSha256": "4eec629544601da744b020cb6d2db2a8674233b4d9658c298d62356c5becb102",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 0.0627875324871188,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 7300.372367171868,
+              "simulated": 6842,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0.010719754972422984,
+              "limit": 0.2,
+              "name": "latencyP99Ms",
+              "reference": 0.21766666666765863,
+              "simulated": 0.22,
+              "status": "passed"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 300014,
+          "measurementStartTick": 100014,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 7300.372367171868,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": 0.21766666666765863,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 13684,
+            "attempted": 13684,
+            "completed": 13684,
+            "completedRps": 6842,
+            "delivered": 13684,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 13684,
+            "latencyP99Ms": 0.22,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "70a8791888392ece67cd2bc3364c9ce4ed1bacb35641928545698e1c0a7b0f74",
+        "technicalError": null,
+        "variant": "baseline",
+        "wallSeconds": 22.01782706999802
+      }
+    },
+    {
+      "file": "Aedes.m16.q0.p1.s43.doubleWindow.json",
+      "data": {
+        "configSha256": "0b6f501bf716b491fedc102e6020b5029fb0e5c3de11a281842496e846b96677",
+        "fidelityFailed": false,
+        "histogramSha256": "74311bb917d98c6101d95d7ab14e3f558fafa5cf2bac00dcb0b070b2980b615f",
+        "id": "Aedes.m16.q0.p1.s43.doubleWindow",
+        "kind": "matrix",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/Aedes.m16.q0.p1.s43.doubleWindow/output-001/20261023T185257818Z-c72918a7ac094f8a8a6c59cc95488ded",
+        "peakRssBytes": 838643712,
+        "returnCode": 0,
+        "scientificCountersSha256": "024107d67a6e798dc05389f1c39cc08fc0cf13da892d98ebbb8e3c53acda0fa9",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 3.4051561947124006e-06,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 28858.09826633208,
+              "simulated": 28858,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": null,
+              "limit": null,
+              "name": "latencyP99Ms",
+              "reference": null,
+              "simulated": null,
+              "status": "notApplicable"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 500062,
+          "measurementStartTick": 100062,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 28858.09826633208,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 115432,
+            "attempted": 115432,
+            "completed": 115432,
+            "completedRps": 28858,
+            "delivered": 115432,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 115432,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "ba9c5cf668986b1c31fcb62dbc759079c09f429b377fad4c94f3f55985003d0b",
+        "technicalError": null,
+        "variant": "doubleWindow",
+        "wallSeconds": 36.02650222599914
+      }
+    },
+    {
+      "file": "Aedes.m16.q0.p128.s43.baseline.json",
+      "data": {
+        "configSha256": "057ee17d6831d006af9d7a409757991fd2e562f2317f37d91449a3b7038db44b",
+        "fidelityFailed": false,
+        "histogramSha256": "72f94bc9de8d07fd61ed1efed347ee1a6b6ec3cbdc9f31aa4fb6158470e39592",
+        "id": "Aedes.m16.q0.p128.s43.baseline",
+        "kind": "matrix",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/Aedes.m16.q0.p128.s43.baseline/output-001/20261023T192647367Z-04dd201f098141578245d171bfdd879a",
+        "peakRssBytes": 851664896,
+        "returnCode": 0,
+        "scientificCountersSha256": "dc098ee9b4a1b5c12c8297147ac1f09e7e269fc2a1223c42b86195a8eb5d6a9d",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 3.973272037013935e-06,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 53696.71335164964,
+              "simulated": 53696.5,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": null,
+              "limit": null,
+              "name": "latencyP99Ms",
+              "reference": null,
+              "simulated": null,
+              "status": "notApplicable"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 300062,
+          "measurementStartTick": 100062,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 53696.71335164964,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 107393,
+            "attempted": 107393,
+            "completed": 107393,
+            "completedRps": 53696.5,
+            "delivered": 107393,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 107393,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "d3ccb775f233e88eff737c5ae19f155f8d158c52e0d243e7ccc6844c8ffbc436",
+        "technicalError": null,
+        "variant": "baseline",
+        "wallSeconds": 644.4518438119994
+      }
+    },
+    {
+      "file": "Aedes.m16.q0.p128.s43.halfTick.json",
+      "data": {
+        "configSha256": "55ac61c50ecfafe2f91eb28604a6a660c7fa544f0180f3fcd3ee1961b5457a4e",
+        "fidelityFailed": false,
+        "histogramSha256": "72f94bc9de8d07fd61ed1efed347ee1a6b6ec3cbdc9f31aa4fb6158470e39592",
+        "id": "Aedes.m16.q0.p128.s43.halfTick",
+        "kind": "matrix",
+        "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/Aedes.m16.q0.p128.s43.halfTick/output-001/20261023T192647389Z-aac3260b129640fe9d3ee73ded6f5242",
+        "peakRssBytes": 851038208,
+        "returnCode": 0,
+        "scientificCountersSha256": "6343e9ad400920ee4219ee94e519a80a3ae7c7309c643a5cf93d51b24bae15db",
+        "summary": {
+          "acceptanceCriteria": [
+            {
+              "error": 3.973272037013935e-06,
+              "limit": 0.15,
+              "name": "rps",
+              "reference": 53696.71335164964,
+              "simulated": 53696.5,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "publishFailureRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": 0,
+              "limit": 0.05,
+              "name": "deliveryLossRate",
+              "reference": 0,
+              "simulated": 0,
+              "status": "passed"
+            },
+            {
+              "error": null,
+              "limit": null,
+              "name": "latencyP99Ms",
+              "reference": null,
+              "simulated": null,
+              "status": "notApplicable"
+            }
+          ],
+          "error": null,
+          "measurementEndTick": 600126,
+          "measurementStartTick": 200126,
+          "reference": {
+            "admitted": 0,
+            "attempted": 0,
+            "completed": 0,
+            "completedRps": 53696.71335164964,
+            "delivered": 0,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 0,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "simulated": {
+            "admitted": 107393,
+            "attempted": 107393,
+            "completed": 107393,
+            "completedRps": 53696.5,
+            "delivered": 107393,
+            "deliveryDropped": 0,
+            "deliveryLossRate": 0,
+            "expectedDeliveries": 107393,
+            "latencyP99Ms": null,
+            "publishFailed": 0,
+            "publishFailureRate": 0,
+            "rateRejected": 0
+          },
+          "status": "completed"
+        },
+        "summarySha256": "86a27ad3c2c1c2af3b0273dc78b8a80740a589a049641f5fdfe14d33910330dd",
+        "technicalError": null,
+        "variant": "halfTick",
+        "wallSeconds": 1270.9396264599927
+      }
+    }
+  ],
+  "plan": {
+    "jobTimeoutSeconds": 1800,
+    "jobs": [
+      {
+        "broker": "Aedes",
+        "id": "pilot.Aedes.m16.q1.p1.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Aedes",
+        "id": "pilot.Aedes.m16.q1.p128.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "pilot.Mosquitto.m16.q1.p1.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "pilot.Mosquitto.m16.q1.p128.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "pilot.ActiveMQ.m16.q1.p1.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "pilot.ActiveMQ.m16.q1.p128.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "EMQX",
+        "id": "pilot.EMQX.m16.q1.p1.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "EMQX",
+        "id": "pilot.EMQX.m16.q1.p128.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q0.p1.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q0.p1.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q0.p1.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q0.p1.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q0.p1.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q0.p1.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q0.p1.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q0.p1.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q0.p1.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q0.p128.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q0.p128.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q0.p128.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q0.p128.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q0.p128.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q0.p128.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q0.p128.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q0.p128.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q0.p128.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q1.p1.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q1.p1.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q1.p1.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q1.p1.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q1.p1.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q1.p1.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q1.p1.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q1.p1.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q1.p1.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q1.p128.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q1.p128.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q1.p128.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q1.p128.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q1.p128.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q1.p128.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q1.p128.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q1.p128.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q1.p128.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q2.p1.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q2.p1.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q2.p1.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q2.p1.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q2.p1.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q2.p1.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q2.p1.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q2.p1.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q2.p1.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q2.p128.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q2.p128.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q2.p128.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q2.p128.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q2.p128.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q2.p128.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q2.p128.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q2.p128.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Aedes",
+        "id": "Aedes.m16.q2.p128.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q0.p1.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q0.p1.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q0.p1.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q0.p1.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q0.p1.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q0.p1.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q0.p1.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q0.p1.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q0.p1.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q0.p128.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q0.p128.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q0.p128.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q0.p128.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q0.p128.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q0.p128.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q0.p128.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q0.p128.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q0.p128.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q1.p1.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q1.p1.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q1.p1.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q1.p1.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q1.p1.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q1.p1.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q1.p1.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q1.p1.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q1.p1.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q1.p128.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q1.p128.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q1.p128.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q1.p128.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q1.p128.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q1.p128.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q1.p128.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q1.p128.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q1.p128.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q2.p1.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q2.p1.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q2.p1.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q2.p1.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q2.p1.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q2.p1.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q2.p1.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q2.p1.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q2.p1.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q2.p128.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q2.p128.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q2.p128.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q2.p128.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q2.p128.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q2.p128.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q2.p128.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q2.p128.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "Mosquitto.m16.q2.p128.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q0.p1.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q0.p1.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q0.p1.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q0.p1.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q0.p1.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q0.p1.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q0.p1.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q0.p1.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q0.p1.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q0.p128.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q0.p128.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q0.p128.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q0.p128.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q0.p128.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q0.p128.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q0.p128.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q0.p128.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q0.p128.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q1.p1.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q1.p1.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q1.p1.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q1.p1.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q1.p1.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q1.p1.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q1.p1.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q1.p1.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q1.p1.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q1.p128.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q1.p128.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q1.p128.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q1.p128.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q1.p128.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q1.p128.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q1.p128.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q1.p128.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q1.p128.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q2.p1.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q2.p1.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q2.p1.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q2.p1.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q2.p1.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q2.p1.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q2.p1.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q2.p1.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q2.p1.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q2.p128.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q2.p128.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q2.p128.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q2.p128.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q2.p128.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q2.p128.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q2.p128.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q2.p128.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "ActiveMQ.m16.q2.p128.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q0.p1.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q0.p1.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q0.p1.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q0.p1.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q0.p1.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q0.p1.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q0.p1.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q0.p1.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q0.p1.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q0.p128.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q0.p128.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q0.p128.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q0.p128.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q0.p128.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q0.p128.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q0.p128.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q0.p128.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q0.p128.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q1.p1.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q1.p1.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q1.p1.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q1.p1.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q1.p1.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q1.p1.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q1.p1.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q1.p1.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q1.p1.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q1.p128.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q1.p128.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q1.p128.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q1.p128.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q1.p128.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q1.p128.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q1.p128.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q1.p128.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q1.p128.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q2.p1.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q2.p1.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q2.p1.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q2.p1.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q2.p1.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q2.p1.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q2.p1.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q2.p1.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q2.p1.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q2.p128.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q2.p128.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q2.p128.s42.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q2.p128.s43.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q2.p128.s43.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q2.p128.s43.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q2.p128.s44.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q2.p128.s44.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "EMQX",
+        "id": "EMQX.m16.q2.p128.s44.doubleWindow",
+        "variant": "doubleWindow"
+      },
+      {
+        "broker": "Aedes",
+        "id": "replay.Aedes.m16.q0.p1.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Mosquitto",
+        "id": "replay.Mosquitto.m16.q1.p1.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "replay.ActiveMQ.m16.q2.p1.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "EMQX",
+        "id": "replay.EMQX.m16.q1.p128.s42.baseline",
+        "variant": "baseline"
+      },
+      {
+        "broker": "Aedes",
+        "id": "replay.Aedes.m16.q1.p128.s42.halfTick",
+        "variant": "halfTick"
+      },
+      {
+        "broker": "ActiveMQ",
+        "id": "replay.ActiveMQ.m16.q0.p128.s42.doubleWindow",
+        "variant": "doubleWindow"
+      }
+    ]
+  },
+  "failureLogs": []
+}

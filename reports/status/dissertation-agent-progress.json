@@ -11,11 +11,13 @@
     "03",
     "04",
     "06",
-    "11"
+    "11",
+    "19",
+    "20"
   ],
-  "verifiedTechnicalWeightPersonDays": 5,
+  "verifiedTechnicalWeightPersonDays": 7.5,
   "localPercent": 80,
-  "globalPercent": 10.6,
+  "globalPercent": 16.0,
   "basis": "Plan effort weights; not scientific confidence or elapsed labour",
   "steps": {
     "03": {
@@ -119,11 +121,11 @@
       "status": "runningOnLinux",
       "unit": "mqtty-sensitivity-v1.service",
       "remoteRoot": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1",
-      "observedAtUtc": "2026-10-23T19:03:12.080342+00:00",
-      "observation": "reports/status/sensitivity-v1-observation.json",
+      "observedAtUtc": "2026-10-23T20:05:09.700583+00:00",
+      "observation": "reports/status/sensitivity-v1-latest.json",
       "counts": {
         "matrix": {
-          "done": 9,
+          "done": 15,
           "failedCriteria": 0,
           "total": 216
         },
@@ -139,7 +141,9 @@
         }
       },
       "planSha256": "dfda8401e9e3f96aebece1b4baa116b58437c94752ecc0324b6e8c909243ae3c",
-      "technicalErrors": 0
+      "technicalErrors": 0,
+      "timeEstimate": "reports/status/sensitivity-v1-time-estimate.json",
+      "operationalDeadlineAmendment": "reports/status/sensitivity-runtime-limit-amendment.json"
     },
     "14": {
       "status": "humanAuthorTask",
@@ -159,23 +163,92 @@
       "document": "docs/dissertation/broker-twin-method-map.md",
       "scope": "Actors, commands, sequence diagram, parameter origins, formulas, calibration/Fidelity/holdout separation",
       "articleTextWritten": false
+    },
+    "19": {
+      "status": "technicalChecksPassed",
+      "document": "docs/dissertation/network-model-contract.md",
+      "verification": "reports/audits/dissertation/network-model-review-v1/verification.json",
+      "scientificAuthorReviewReplaced": false,
+      "physicalComparisonGroupsVerified": 18,
+      "resourceAsymmetryExplicit": true
+    },
+    "20": {
+      "status": "technicalChecksPassed",
+      "document": "docs/dissertation/network-model-contract.md",
+      "verification": "reports/audits/dissertation/network-model-review-v1/verification.json",
+      "scientificAuthorReviewReplaced": false,
+      "targetedDotnetTests": 39,
+      "pythonVerifierTests": 12,
+      "savedMainRunsVerified": 72,
+      "exactReplaysVerified": 12
+    },
+    "21": {
+      "status": "programPreparedAwaitingLinuxPilot",
+      "document": "docs/dissertation/network-study.md",
+      "plan": "reports/audits/dissertation/network-study-v1/plan.json",
+      "pilotJobs": 30,
+      "pilotJobsExecuted": 0,
+      "candidateIdealMatrix": 162,
+      "exactReplays": 6,
+      "optionalMosquittoDiagnostic": 54,
+      "localCliConfigurationsValidated": 252,
+      "unitTestsPassed": 4,
+      "remaining": "Freeze clean code/runtime, implement controlled runner, execute pilots and review duration sufficiency and measured cost before matrix"
+    },
+    "22": {
+      "status": "configurationPreparationImplementedRunnerPending",
+      "generator": "tools/dissertation/prepare_network_study.py",
+      "remaining": "Linux runtime snapshot, resource/storage guards, resume, isolated execution, raw-journal verification and partial-failure receipts"
     }
   },
   "humanAcceptanceNotReplaced": true,
   "progressDocument": "reports/status/Progress.md",
   "goalConstraints": "reports/status/goal-constraints.json",
   "manualContinuationRequired": true,
-  "continuationCheckpoint": "Sensitivity pipeline started in systemd; pilot then 216 matrix runs and 6 replays automatically, stop on technical error; agent pauses per user rule",
+  "continuationCheckpoint": "Sensitivity running unchanged with 36h operational limit; check manually around 24 October 09:00 MSK; next implement isolated network pilot runner, freeze inputs/runtime and run pilots after sensitivity completes",
   "articleWritingOwner": "human",
   "recommendedManualReviewAt": "2026-10-24T09:00:00+03:00",
   "parallelWork": {
-    "changes": "Local documentation and source review only",
+    "changes": "One status observation, measured ETA, operational timer extension without restart, candidate network program and local CLI validation",
     "documents": [
-      "docs/dissertation/broker-twin-method-map.md",
-      "docs/dissertation/claim-evidence-map.md"
+      "docs/dissertation/network-study.md",
+      "reports/status/Linux-work-queue.md"
     ],
     "runningExperimentInputsChanged": false,
     "additionalCalculationsStarted": false,
-    "linuxStatusNotPolledDuringThisWork": true
-  }
+    "linuxStatusNotPolledDuringThisWork": false,
+    "latestAction": "Prepared 252 configurations, all validated locally; zero new network simulations; steps 21/22 remain partial"
+  },
+  "storageCleanup": {
+    "status": "completed",
+    "observedAtUtc": "2026-10-23T19:44:51.740102+00:00",
+    "receipt": "reports/status/evidence-cleanup.json",
+    "deletedObsoleteArchives": 294,
+    "freedBytes": 17704513536,
+    "diskFreeBytes": 160058462208,
+    "rawArchivesRetained": 592,
+    "modelArchivesRetained": 7,
+    "protectedMetadataUnchanged": true,
+    "progressPercentagesUnchanged": true
+  },
+  "progressChange": {
+    "previous": {
+      "localPercent": 80,
+      "globalPercent": 10.6,
+      "verifiedTechnicalWeightPersonDays": 5
+    },
+    "current": {
+      "localPercent": 80,
+      "globalPercent": 16.0,
+      "verifiedTechnicalWeightPersonDays": 7.5
+    },
+    "addedAcceptedTechnicalSteps": [
+      "19",
+      "20"
+    ],
+    "removedAcceptedSteps": [],
+    "denominatorPersonDaysUnchanged": 47,
+    "interpretation": "Weighted technical plan completion; not confidence or physical accuracy"
+  },
+  "linuxWorkQueue": "reports/status/Linux-work-queue.md"
 }

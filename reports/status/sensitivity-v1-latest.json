@@ -1,0 +1,58 @@
+{
+  "observedAtUtc": "2026-10-23T20:05:09.700583+00:00",
+  "root": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1",
+  "service": "RuntimeMaxUSec=1d\nMainPID=40598\nResult=success\nExecMainStartTimestamp=Fri 2026-10-23 21:04:18 MSK\nExecMainStatus=0\nMemoryCurrent=834838528\nActiveState=active\nSubState=running\n",
+  "progress": {
+    "active": {
+      "Aedes.m16.q0.p128.s43.doubleWindow": {
+        "elapsedSeconds": 1030.781401884,
+        "peakRssBytes": 851116032,
+        "pid": 42300,
+        "rssBytes": 818847744
+      }
+    },
+    "counts": {
+      "matrix": {
+        "done": 15,
+        "failedCriteria": 0,
+        "total": 216
+      },
+      "pilot": {
+        "done": 8,
+        "failedCriteria": 4,
+        "total": 8
+      },
+      "replay": {
+        "done": 0,
+        "failedCriteria": 0,
+        "total": 6
+      }
+    },
+    "elapsedSeconds": 7249.425751488001,
+    "estimatedFullMatrixWallHoursAfterPilot": {
+      "assumption": "Extrapolate QoS1 baseline timing to 3 QoS, 3 seeds and 3 variants; not a guaranteed deadline",
+      "lower": 10.980446754836267,
+      "upper": 21.960893509672534
+    },
+    "planSha256": "dfda8401e9e3f96aebece1b4baa116b58437c94752ecc0324b6e8c909243ae3c",
+    "reason": null,
+    "status": "running",
+    "technicalErrors": 0,
+    "workers": 2
+  },
+  "disk": {
+    "total": 244995190784,
+    "used": 72417583104,
+    "free": 160057925632
+  },
+  "systemDisk": {
+    "total": 124323721216,
+    "used": 53627580416,
+    "free": 64354054144
+  },
+  "mountAvailable": true,
+  "failureLogs": [],
+  "completedRows": 23,
+  "timingObservation": "reports/status/sensitivity-v1-timing-observation.json",
+  "operationalAmendment": "reports/status/sensitivity-runtime-limit-amendment.json"
+}

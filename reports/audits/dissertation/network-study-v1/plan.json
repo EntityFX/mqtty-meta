@@ -1,0 +1,1536 @@
+{
+  "status": "candidateProgramPreparedNotExecuted",
+  "schemaVersion": 1,
+  "purpose": "Longer ideal-network mechanism comparison; optional Mosquitto diagnostic kept separate",
+  "pilotJobs": 30,
+  "matrixJobs": 162,
+  "replayJobs": 6,
+  "optionalDiagnosticJobs": 54,
+  "requiresCleanCommittedSourcesBeforeExecution": true,
+  "requiresRuntimeSnapshotBeforeExecution": true,
+  "matrixGate": "Review all pilots: technical validity, phase sufficiency, disk and measured wall/RSS budget; no automatic promotion",
+  "linuxIsolationGate": "Wait for sensitivity campaign to finish; do not launch concurrent studies",
+  "proposedWorkerCount": 1,
+  "jobs": [
+    {
+      "id": "pilot.line.single.q1.r1000.w2.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.line.single.q1.r1000.w2.s42.json",
+      "sha256": "4c1c5f4698af8d98ddd7bfd8abb3a5e108d86d7eb4b74c9d33be8c06bb6fb081"
+    },
+    {
+      "id": "pilot.line.single.q1.r1000.w10.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.line.single.q1.r1000.w10.s42.json",
+      "sha256": "0ec12459f505e033fcd8cefbb2ab628e03296f2df4c4ec8b8a335e5c853f98ce"
+    },
+    {
+      "id": "pilot.line.single.q1.r5000.w2.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.line.single.q1.r5000.w2.s42.json",
+      "sha256": "c75f20f6d77914c38e951a6a7301c04b6699629c35fed3ecc828e7c064ff21c3"
+    },
+    {
+      "id": "pilot.line.single.q1.r5000.w10.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.line.single.q1.r5000.w10.s42.json",
+      "sha256": "f4625bfba88f534c852b53884258c8c6a28556ad3b62b139f3eef7c56437f8cf"
+    },
+    {
+      "id": "pilot.line.relay.q1.r1000.w2.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.line.relay.q1.r1000.w2.s42.json",
+      "sha256": "c4efde854a0bccad9d938510de2418370f4429fcb2e2501920b99d21798d795e"
+    },
+    {
+      "id": "pilot.line.relay.q1.r1000.w10.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.line.relay.q1.r1000.w10.s42.json",
+      "sha256": "bb90be4922afd206d1bf0bf77ee782aa44c8c6a5aff888c262d4492ab68c6c7a"
+    },
+    {
+      "id": "pilot.line.relay.q1.r5000.w2.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.line.relay.q1.r5000.w2.s42.json",
+      "sha256": "d535ec0fd88011a0b255309c3fd907edf6cd1bd20ec676009b847d7d4998da5a"
+    },
+    {
+      "id": "pilot.line.relay.q1.r5000.w10.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.line.relay.q1.r5000.w10.s42.json",
+      "sha256": "fb02677081d4e958cdb7751c861c8cd95ea94edc9bc72fa0e8985cdbf160c2dd"
+    },
+    {
+      "id": "pilot.line.federation.q1.r1000.w2.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.line.federation.q1.r1000.w2.s42.json",
+      "sha256": "94427f90ae4d0074eb5828e6fec0eee5c9ec7d06799b005b83edf336f584705c"
+    },
+    {
+      "id": "pilot.line.federation.q1.r1000.w10.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.line.federation.q1.r1000.w10.s42.json",
+      "sha256": "8c3d2fae92134857c08776cb481ac5a09d884a54f385db557c93aac483452ed5"
+    },
+    {
+      "id": "pilot.line.federation.q1.r5000.w2.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.line.federation.q1.r5000.w2.s42.json",
+      "sha256": "abd3e9e5f76c7e4ffe43d964b5c90747dc80a5b241715bfbef917996fa3189fe"
+    },
+    {
+      "id": "pilot.line.federation.q1.r5000.w10.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.line.federation.q1.r5000.w10.s42.json",
+      "sha256": "a201fd6d3495a3ff819db7a11d4e177d72c1830946d30c7304c28891233f54e4"
+    },
+    {
+      "id": "pilot.star.single.q1.r1000.w2.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.star.single.q1.r1000.w2.s42.json",
+      "sha256": "e9d0ba53074cf8246c3a2213df06d613dc2c485adc015161937083f77aaede7d"
+    },
+    {
+      "id": "pilot.star.single.q1.r1000.w10.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.star.single.q1.r1000.w10.s42.json",
+      "sha256": "5336c9290d38fc056fcf109acefa19c9d5c75342eacfd8395c29b5ff2f85bd0d"
+    },
+    {
+      "id": "pilot.star.single.q1.r5000.w2.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.star.single.q1.r5000.w2.s42.json",
+      "sha256": "e33d806df831f408baabba12655ec0646057a89c655329691700f0643b3031bb"
+    },
+    {
+      "id": "pilot.star.single.q1.r5000.w10.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.star.single.q1.r5000.w10.s42.json",
+      "sha256": "aae67da8bd6e184de568b37edd3f1285e7ee24fda98fd7c88cc9e9417ecc927a"
+    },
+    {
+      "id": "pilot.star.relay.q1.r1000.w2.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.star.relay.q1.r1000.w2.s42.json",
+      "sha256": "8d6c2521d09df098031c233e03de9c9acfe74046254c170f83ddd40c342a888e"
+    },
+    {
+      "id": "pilot.star.relay.q1.r1000.w10.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.star.relay.q1.r1000.w10.s42.json",
+      "sha256": "dce5be2ca72a8f51e88355c5c307ef907c841f0951ce053100544d646315ef6f"
+    },
+    {
+      "id": "pilot.star.relay.q1.r5000.w2.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.star.relay.q1.r5000.w2.s42.json",
+      "sha256": "7056f362b6be4583e45242546ec4b3eef70ab0b1e7d3499680ec8041ffa43a69"
+    },
+    {
+      "id": "pilot.star.relay.q1.r5000.w10.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.star.relay.q1.r5000.w10.s42.json",
+      "sha256": "88b19194834f283c9dc2715523bafae98c2d30dfb6611897f7926ba649f7e95c"
+    },
+    {
+      "id": "pilot.star.federation.q1.r1000.w2.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.star.federation.q1.r1000.w2.s42.json",
+      "sha256": "34b2eb868e6a070a20dc89f022ca9a684adc37cf87ed21969516f946719d8530"
+    },
+    {
+      "id": "pilot.star.federation.q1.r1000.w10.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.star.federation.q1.r1000.w10.s42.json",
+      "sha256": "bcdbec763ffd4fbfe6c3510b0ff3454bfdcf75fc2ffdf4bca42ce7fcc4d16785"
+    },
+    {
+      "id": "pilot.star.federation.q1.r5000.w2.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.star.federation.q1.r5000.w2.s42.json",
+      "sha256": "2e6fb642fb9d61b8cac44f8827fa84c50d70f4c31d44bda162c9599769ab2aa8"
+    },
+    {
+      "id": "pilot.star.federation.q1.r5000.w10.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.star.federation.q1.r5000.w10.s42.json",
+      "sha256": "9142e62d30a7f9a421a96eed6306377cd027d266f2728268b597b5240c8c68a4"
+    },
+    {
+      "id": "pilot.star.single.q0.r5000.w10.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.star.single.q0.r5000.w10.s42.json",
+      "sha256": "5e3c2581625970a2c5d676d37ef32024ae845281a20585ffced415f0e8bb202a"
+    },
+    {
+      "id": "pilot.star.single.q2.r5000.w10.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.star.single.q2.r5000.w10.s42.json",
+      "sha256": "9ce1a3761a8ae00844c5c1cae865f97c35399f2a4be139654fd1df404a6bf901"
+    },
+    {
+      "id": "pilot.star.relay.q0.r5000.w10.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.star.relay.q0.r5000.w10.s42.json",
+      "sha256": "47d7f9c8480d6bd3226f3961f7bc88ae6ddd3a8a31608f1af0d7583be1472b15"
+    },
+    {
+      "id": "pilot.star.relay.q2.r5000.w10.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.star.relay.q2.r5000.w10.s42.json",
+      "sha256": "8f22bde6005caf7b3fca9c28fbf6a6d67e238833ce173b365b891759a156df1b"
+    },
+    {
+      "id": "pilot.star.federation.q0.r5000.w10.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.star.federation.q0.r5000.w10.s42.json",
+      "sha256": "c660b019db7f7bf0e2b8f914c45fa3b6888da98add3b6883bedaa2b14b51baa6"
+    },
+    {
+      "id": "pilot.star.federation.q2.r5000.w10.s42",
+      "kind": "pilot",
+      "config": "configs/pilot/pilot.star.federation.q2.r5000.w10.s42.json",
+      "sha256": "2b3b52210811a36d6a2ced6033739182b356bfb554f40dd532c305728e0eadbd"
+    },
+    {
+      "id": "matrix.line.single.q0.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.single.q0.r1000.w10.s42.json",
+      "sha256": "be43de6a459a65ee28dc2b11a8ff00a536614dde3f4990ad57f26582c0fe3ce6"
+    },
+    {
+      "id": "matrix.line.single.q0.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.single.q0.r1000.w10.s43.json",
+      "sha256": "92909135b6eebee741d11e013afa5d02aa95107dfed729fca3326c95b309c58d"
+    },
+    {
+      "id": "matrix.line.single.q0.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.single.q0.r1000.w10.s44.json",
+      "sha256": "49f1e2e4e83ad017e277238a307fedf6877a8e9a43daded54039edb03a109d0c"
+    },
+    {
+      "id": "matrix.line.single.q0.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.single.q0.r5000.w10.s42.json",
+      "sha256": "b55c937e17f462080bf0bba5f367e6a8bdf491f44f178b135db9f0d500ba8c2b"
+    },
+    {
+      "id": "matrix.line.single.q0.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.single.q0.r5000.w10.s43.json",
+      "sha256": "4c7c9ebd9164903e2da39baff4066ef278ccf6eb65102d43558d5b6585db8d53"
+    },
+    {
+      "id": "matrix.line.single.q0.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.single.q0.r5000.w10.s44.json",
+      "sha256": "4e1b453c97ba7d1af90e833abd0f423b365720c900b9e60769f923c35afab1a8"
+    },
+    {
+      "id": "matrix.line.single.q1.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.single.q1.r1000.w10.s42.json",
+      "sha256": "0ec12459f505e033fcd8cefbb2ab628e03296f2df4c4ec8b8a335e5c853f98ce"
+    },
+    {
+      "id": "matrix.line.single.q1.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.single.q1.r1000.w10.s43.json",
+      "sha256": "a17bf57ee7bd98348612d9f1e795d384e9604a86c2dfe814c63651cf829256b9"
+    },
+    {
+      "id": "matrix.line.single.q1.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.single.q1.r1000.w10.s44.json",
+      "sha256": "4e8543001c5a5945934b92e12272ce0851d491c5d50c5c5adcdabfe9f9e6ddc8"
+    },
+    {
+      "id": "matrix.line.single.q1.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.single.q1.r5000.w10.s42.json",
+      "sha256": "f4625bfba88f534c852b53884258c8c6a28556ad3b62b139f3eef7c56437f8cf"
+    },
+    {
+      "id": "matrix.line.single.q1.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.single.q1.r5000.w10.s43.json",
+      "sha256": "2ff21e586138367d42f2dbb0364b7ba68c1755f917fd1b72ae278a1c9375404f"
+    },
+    {
+      "id": "matrix.line.single.q1.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.single.q1.r5000.w10.s44.json",
+      "sha256": "69397bb387de098bfe706075cf7aa95380bfa669e969313d0def7d9f15977b0a"
+    },
+    {
+      "id": "matrix.line.single.q2.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.single.q2.r1000.w10.s42.json",
+      "sha256": "aa8fc24fe451284155352ed6a8141fb6861dd2a8b8a8ae9c1e84e144714e3d69"
+    },
+    {
+      "id": "matrix.line.single.q2.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.single.q2.r1000.w10.s43.json",
+      "sha256": "fe687f42d970cceda32b27765e7af5deeafbb15f94f2010de461c385d4ebca6d"
+    },
+    {
+      "id": "matrix.line.single.q2.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.single.q2.r1000.w10.s44.json",
+      "sha256": "2624d1d6cd83d0f8fa249976c8ac68a81a7c77b4157ef5258da85304ca6aff9b"
+    },
+    {
+      "id": "matrix.line.single.q2.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.single.q2.r5000.w10.s42.json",
+      "sha256": "df6c7108838bdbfe2f723c2e3a8c9b0c514f648ce3023b00c4cbe65f6eee2eea"
+    },
+    {
+      "id": "matrix.line.single.q2.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.single.q2.r5000.w10.s43.json",
+      "sha256": "0f976932f21bc8a9f4122fad9e332e4b6acfb47983d51747b4f7cb41203bdaba"
+    },
+    {
+      "id": "matrix.line.single.q2.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.single.q2.r5000.w10.s44.json",
+      "sha256": "c3708d34e60da515106a3ac259650dcfd19647badf4bef1aa823f63bd04c0291"
+    },
+    {
+      "id": "matrix.line.relay.q0.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.relay.q0.r1000.w10.s42.json",
+      "sha256": "c44bc116e37640999b682cdf69f4f1edd045fcd750db524af00c91ef2076f86d"
+    },
+    {
+      "id": "matrix.line.relay.q0.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.relay.q0.r1000.w10.s43.json",
+      "sha256": "f41d5704691675aae49cc27f2a02a65d5880a499329357f86bb2aba17d673b82"
+    },
+    {
+      "id": "matrix.line.relay.q0.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.relay.q0.r1000.w10.s44.json",
+      "sha256": "eeff18151657d317cbff86e5fd84c1056fd8d1a0b5433582f2cfa460155d57aa"
+    },
+    {
+      "id": "matrix.line.relay.q0.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.relay.q0.r5000.w10.s42.json",
+      "sha256": "a44c2c806ae49eb41d5bf23b39d6c11305523bf25a3b275fba28738e95a177de"
+    },
+    {
+      "id": "matrix.line.relay.q0.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.relay.q0.r5000.w10.s43.json",
+      "sha256": "d5ed2b33026b421b9f0646d1a3aaf631ba91fe47d6dbbe35544dec399e54538a"
+    },
+    {
+      "id": "matrix.line.relay.q0.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.relay.q0.r5000.w10.s44.json",
+      "sha256": "8719551edb1a9fcebb4d4af8b29c1a9c92013a235f2dd90a7a6359c5453691ef"
+    },
+    {
+      "id": "matrix.line.relay.q1.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.relay.q1.r1000.w10.s42.json",
+      "sha256": "bb90be4922afd206d1bf0bf77ee782aa44c8c6a5aff888c262d4492ab68c6c7a"
+    },
+    {
+      "id": "matrix.line.relay.q1.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.relay.q1.r1000.w10.s43.json",
+      "sha256": "85f8eed25cec161f76e641a6bf4b6ea0a769bc4c1e737d8b3d9f8c77ad41064c"
+    },
+    {
+      "id": "matrix.line.relay.q1.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.relay.q1.r1000.w10.s44.json",
+      "sha256": "ace7dc9b7100f650dc6377d4e4bf9869e3de7bf36bbdcec265736ca174cd44a9"
+    },
+    {
+      "id": "matrix.line.relay.q1.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.relay.q1.r5000.w10.s42.json",
+      "sha256": "fb02677081d4e958cdb7751c861c8cd95ea94edc9bc72fa0e8985cdbf160c2dd"
+    },
+    {
+      "id": "matrix.line.relay.q1.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.relay.q1.r5000.w10.s43.json",
+      "sha256": "4c534247e6cbc1167109a9a6b3fbe6f3822e5ddaa162c14d08623b5307873b18"
+    },
+    {
+      "id": "matrix.line.relay.q1.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.relay.q1.r5000.w10.s44.json",
+      "sha256": "16b730fae57fc54a8b8433bb6d3b3528c56aaebe2333a9ffa331602484a2c201"
+    },
+    {
+      "id": "matrix.line.relay.q2.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.relay.q2.r1000.w10.s42.json",
+      "sha256": "e40c1216ad96187dc039ebed494a154f52887f9c5d2dcc1ac30734f206b04606"
+    },
+    {
+      "id": "matrix.line.relay.q2.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.relay.q2.r1000.w10.s43.json",
+      "sha256": "1cffce538affe6c048c460a3f25e71e3249f9b126a325b272fafd4b79b3ee051"
+    },
+    {
+      "id": "matrix.line.relay.q2.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.relay.q2.r1000.w10.s44.json",
+      "sha256": "abf1e326732af1606ef0dad6e4f1c428545370d9d31ae2d21b4bc1afca88f1a0"
+    },
+    {
+      "id": "matrix.line.relay.q2.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.relay.q2.r5000.w10.s42.json",
+      "sha256": "e8468cf6b81488cc283fffc7ec61a562297ca69c55d1bc99efee4e003fed1afd"
+    },
+    {
+      "id": "matrix.line.relay.q2.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.relay.q2.r5000.w10.s43.json",
+      "sha256": "3f9fc8e7f8e3665b602aff96784c3a160f0c425f1d1d8127b408a046579a4aa3"
+    },
+    {
+      "id": "matrix.line.relay.q2.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.relay.q2.r5000.w10.s44.json",
+      "sha256": "68343f9c0ae5c7c5ba68508cb19903e44e0a99c530af624ffe005343761bd82c"
+    },
+    {
+      "id": "matrix.line.federation.q0.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.federation.q0.r1000.w10.s42.json",
+      "sha256": "25d28f8dbe4cae3f93a04abdc8118336f465fc139f6d1c55f9e3e25d0b034ef7"
+    },
+    {
+      "id": "matrix.line.federation.q0.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.federation.q0.r1000.w10.s43.json",
+      "sha256": "b6dbff56487d40845fcf8dc1dbb5c57548d50c3e21e59bc7b4cf358bd460c98c"
+    },
+    {
+      "id": "matrix.line.federation.q0.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.federation.q0.r1000.w10.s44.json",
+      "sha256": "f8db4b1ab984dc917bdb3e085f16c8fc5266091dc1970371eec9e3d6a3b9526c"
+    },
+    {
+      "id": "matrix.line.federation.q0.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.federation.q0.r5000.w10.s42.json",
+      "sha256": "c8a924cac99713070a85f930132347f8be22b0d6debb7ea481d12a4814d42ac8"
+    },
+    {
+      "id": "matrix.line.federation.q0.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.federation.q0.r5000.w10.s43.json",
+      "sha256": "fe9cc6d821680bd798b4f7ffbee29dff03882d5e796a42a45a0b689ff6e18e57"
+    },
+    {
+      "id": "matrix.line.federation.q0.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.federation.q0.r5000.w10.s44.json",
+      "sha256": "b38eefb41ec430b52f2c8ae538752e40b061e7f31c1894a1c7091f20d289294f"
+    },
+    {
+      "id": "matrix.line.federation.q1.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.federation.q1.r1000.w10.s42.json",
+      "sha256": "8c3d2fae92134857c08776cb481ac5a09d884a54f385db557c93aac483452ed5"
+    },
+    {
+      "id": "matrix.line.federation.q1.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.federation.q1.r1000.w10.s43.json",
+      "sha256": "01134234f64eaebbd97fc10cbed1ad5cc9e4f30d64fc16f04648a6b127cb7a8c"
+    },
+    {
+      "id": "matrix.line.federation.q1.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.federation.q1.r1000.w10.s44.json",
+      "sha256": "b5a9c54416ecef68f06297105304c825ef5056b2d8cedb7e09ba373d286e58b8"
+    },
+    {
+      "id": "matrix.line.federation.q1.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.federation.q1.r5000.w10.s42.json",
+      "sha256": "a201fd6d3495a3ff819db7a11d4e177d72c1830946d30c7304c28891233f54e4"
+    },
+    {
+      "id": "matrix.line.federation.q1.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.federation.q1.r5000.w10.s43.json",
+      "sha256": "880e8425daa895bfad5df0ae4f52e97aebe659e43289ce1dd9c14e79fe1f6b48"
+    },
+    {
+      "id": "matrix.line.federation.q1.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.federation.q1.r5000.w10.s44.json",
+      "sha256": "93d991395d030facad45b49f5375812932fd71d607f3d0afc3d2c6d4503496c4"
+    },
+    {
+      "id": "matrix.line.federation.q2.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.federation.q2.r1000.w10.s42.json",
+      "sha256": "f74c2448c507dff372c574dc1f91e08ded44757b59d6b5814babfa6a7904bed6"
+    },
+    {
+      "id": "matrix.line.federation.q2.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.federation.q2.r1000.w10.s43.json",
+      "sha256": "86c037bfddcbcb6e2685ae0cbcd735e33bb6a8483daa8653ef76cb164b2cb5c3"
+    },
+    {
+      "id": "matrix.line.federation.q2.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.federation.q2.r1000.w10.s44.json",
+      "sha256": "6e485f2ffe38e65425d208607fbc7b8eca998d775102e7d95bda45f1e48eda85"
+    },
+    {
+      "id": "matrix.line.federation.q2.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.federation.q2.r5000.w10.s42.json",
+      "sha256": "98575729b615324f91a7109515c0197e1402d9b4873439fc86d213d480be3a7b"
+    },
+    {
+      "id": "matrix.line.federation.q2.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.federation.q2.r5000.w10.s43.json",
+      "sha256": "c37a1fdf76793ac9d41a4cd5e26c33222004542cd073b4a44d6b685581450be9"
+    },
+    {
+      "id": "matrix.line.federation.q2.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.line.federation.q2.r5000.w10.s44.json",
+      "sha256": "b25bb532a2a278c3fb256533dab23584c97796b64a3958a33a372173407d9f35"
+    },
+    {
+      "id": "matrix.ring.single.q0.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.single.q0.r1000.w10.s42.json",
+      "sha256": "a635876580a8103e7bdf942dfdc1b0ae6b042f0b90d1d8d85c75c580a7517549"
+    },
+    {
+      "id": "matrix.ring.single.q0.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.single.q0.r1000.w10.s43.json",
+      "sha256": "de62dc54341e449a011ac90b2123976fed823761a4126d232e5967ccd1713625"
+    },
+    {
+      "id": "matrix.ring.single.q0.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.single.q0.r1000.w10.s44.json",
+      "sha256": "a4af9f2470a4fcba2ac503bc77db6a0c6f59d2a4b866d05aab18ef0ee7827c0a"
+    },
+    {
+      "id": "matrix.ring.single.q0.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.single.q0.r5000.w10.s42.json",
+      "sha256": "23278e49d943eebd8ec06e3d55f2b01d81fff0aa28fafee1c7f4525ed086d1ff"
+    },
+    {
+      "id": "matrix.ring.single.q0.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.single.q0.r5000.w10.s43.json",
+      "sha256": "187eb2d793e2d62968567191fe8215c3f2733dfb14ee19f33d550dfb94664988"
+    },
+    {
+      "id": "matrix.ring.single.q0.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.single.q0.r5000.w10.s44.json",
+      "sha256": "aa21e66e5dde75ea0edb3c504d9ee46a9a1cb2bca59dd53a6248c613565eb00f"
+    },
+    {
+      "id": "matrix.ring.single.q1.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.single.q1.r1000.w10.s42.json",
+      "sha256": "417eeb24fb2bef70ab878596c1fe5ca5adc38ac4746c0d72f0c0c38ff6db0ef7"
+    },
+    {
+      "id": "matrix.ring.single.q1.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.single.q1.r1000.w10.s43.json",
+      "sha256": "d83e5679acba660305b4614e132d99e3f26bf4bb604c19f7d604c4e6047e933b"
+    },
+    {
+      "id": "matrix.ring.single.q1.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.single.q1.r1000.w10.s44.json",
+      "sha256": "2bb262e661b2f33b1bbc87d3061682e5f12dcf012dccb49eb6e88a0881dfae7f"
+    },
+    {
+      "id": "matrix.ring.single.q1.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.single.q1.r5000.w10.s42.json",
+      "sha256": "f3c9f4f4c045999b2f1f41806dfb318b7171ecdd25d5a7b7f5656185878a2edf"
+    },
+    {
+      "id": "matrix.ring.single.q1.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.single.q1.r5000.w10.s43.json",
+      "sha256": "66b867c2c422a4a4c61cde55684a7db49933ecfc1e2d70deefe924a7fc465634"
+    },
+    {
+      "id": "matrix.ring.single.q1.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.single.q1.r5000.w10.s44.json",
+      "sha256": "fdc321a58ebdf739e84beddda7c7013ac0512f1cb4a58333c1bf1ed023df838f"
+    },
+    {
+      "id": "matrix.ring.single.q2.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.single.q2.r1000.w10.s42.json",
+      "sha256": "8e8ae5eda6ba19d56e32a0dcd449eda7f59fb1c185176a37f794534566999164"
+    },
+    {
+      "id": "matrix.ring.single.q2.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.single.q2.r1000.w10.s43.json",
+      "sha256": "571e57d102202c6a3b2eb358ad7314c7676812ead4d502b6874066b829f4e1a5"
+    },
+    {
+      "id": "matrix.ring.single.q2.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.single.q2.r1000.w10.s44.json",
+      "sha256": "fb5704f848c911a0f4bb39ecc876ed7eaeb42928f16f4bf6f6ef0bf98afee7d6"
+    },
+    {
+      "id": "matrix.ring.single.q2.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.single.q2.r5000.w10.s42.json",
+      "sha256": "bfa6468c64bb6c808f5393c0a82d4b3bb4f4848a6b575f3101992225746ff504"
+    },
+    {
+      "id": "matrix.ring.single.q2.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.single.q2.r5000.w10.s43.json",
+      "sha256": "f24669648c2eddd104778337f054d98414ec80f1b7205a8b661708aac755ac3e"
+    },
+    {
+      "id": "matrix.ring.single.q2.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.single.q2.r5000.w10.s44.json",
+      "sha256": "a9e39118d5a5e4370ea70a2fa71b6313fdb47e52b2d6ae00916395e117d92fd3"
+    },
+    {
+      "id": "matrix.ring.relay.q0.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.relay.q0.r1000.w10.s42.json",
+      "sha256": "c36b0afdc4914d8abf5e345925bed4d9b387663b9c25e45bd276d191636c71c3"
+    },
+    {
+      "id": "matrix.ring.relay.q0.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.relay.q0.r1000.w10.s43.json",
+      "sha256": "1e6d0cd41fa7ff37ebdfb6847b728085657124da11616d6ccd3433a74e6c68e1"
+    },
+    {
+      "id": "matrix.ring.relay.q0.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.relay.q0.r1000.w10.s44.json",
+      "sha256": "1ed0c4f2c0b4aee5e078a23096f2cf6c71c8293b50045e298b6b6ddc5038601c"
+    },
+    {
+      "id": "matrix.ring.relay.q0.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.relay.q0.r5000.w10.s42.json",
+      "sha256": "9350aa3ee206295d5536f61021a4f114c4d321beab324dbda0c5c2b9563dd79d"
+    },
+    {
+      "id": "matrix.ring.relay.q0.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.relay.q0.r5000.w10.s43.json",
+      "sha256": "d6f3df1681a759e1c274d42b091c63d234275b2f22c222235e2d57ecf14f2138"
+    },
+    {
+      "id": "matrix.ring.relay.q0.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.relay.q0.r5000.w10.s44.json",
+      "sha256": "20bad50ff571dd256978baf6a64ce21115e94d131ad1ac7315851ae78019791b"
+    },
+    {
+      "id": "matrix.ring.relay.q1.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.relay.q1.r1000.w10.s42.json",
+      "sha256": "c0b7ef06e9df6d2f520a57067cd657608e3ddcafbb441638c4beb5c8caa03f3d"
+    },
+    {
+      "id": "matrix.ring.relay.q1.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.relay.q1.r1000.w10.s43.json",
+      "sha256": "6f8deb368320844eb47e0d5e9f85662c063094b7381581c3e4c05dd8cc83c86e"
+    },
+    {
+      "id": "matrix.ring.relay.q1.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.relay.q1.r1000.w10.s44.json",
+      "sha256": "d69b95d1b65020480e446e73926302464d01e1b41cf3b5d53c1e9e516e2fbb5d"
+    },
+    {
+      "id": "matrix.ring.relay.q1.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.relay.q1.r5000.w10.s42.json",
+      "sha256": "d4be9a392fbf9e92c1fd608764c39d7dcecb58a5b2a485198dcd8622556b0ab0"
+    },
+    {
+      "id": "matrix.ring.relay.q1.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.relay.q1.r5000.w10.s43.json",
+      "sha256": "cfce0157320c753ea341c86f4fc45f9fb3914618b570fec89dbc2d74be78bca9"
+    },
+    {
+      "id": "matrix.ring.relay.q1.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.relay.q1.r5000.w10.s44.json",
+      "sha256": "503395c664b72e0e6f3028592b71d0a86cf137ba943f7eb8ee0707f79ead2d72"
+    },
+    {
+      "id": "matrix.ring.relay.q2.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.relay.q2.r1000.w10.s42.json",
+      "sha256": "7061bef7d0014df4dd28d48e6f605506b48653111a3d201f9b7167c5a5655e83"
+    },
+    {
+      "id": "matrix.ring.relay.q2.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.relay.q2.r1000.w10.s43.json",
+      "sha256": "08b0feb8939af911065d838484954f70997c97821b896129ff4c3c20a034927b"
+    },
+    {
+      "id": "matrix.ring.relay.q2.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.relay.q2.r1000.w10.s44.json",
+      "sha256": "de45c499c03737bc3fec6eec77410029981739bbc1642246810c66816325a6d8"
+    },
+    {
+      "id": "matrix.ring.relay.q2.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.relay.q2.r5000.w10.s42.json",
+      "sha256": "9c7310108811558e7996dc043b9f01a5efa8f2271cdb09831191d980c947d10b"
+    },
+    {
+      "id": "matrix.ring.relay.q2.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.relay.q2.r5000.w10.s43.json",
+      "sha256": "73a3359a6f3c18fd887d75a5cf19ecd4560032d3be01c987d08863c9c5355d95"
+    },
+    {
+      "id": "matrix.ring.relay.q2.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.relay.q2.r5000.w10.s44.json",
+      "sha256": "a625bb2ac41cae3731df30c317561dcc97ed675f951c0377c816ddcc7d4f2c71"
+    },
+    {
+      "id": "matrix.ring.federation.q0.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.federation.q0.r1000.w10.s42.json",
+      "sha256": "bfdc9e529e97ff71899d32d24dcf8f3ea4cae1522cb480702b2270958030b15d"
+    },
+    {
+      "id": "matrix.ring.federation.q0.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.federation.q0.r1000.w10.s43.json",
+      "sha256": "68c2484038cf757b118a31fe3d8cfc16526bb954fa62a2955c64f2137efc564a"
+    },
+    {
+      "id": "matrix.ring.federation.q0.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.federation.q0.r1000.w10.s44.json",
+      "sha256": "5f4febc4e43cb4f96f6d2772d059d360d46a167b47f920172c1b5a468d95c17e"
+    },
+    {
+      "id": "matrix.ring.federation.q0.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.federation.q0.r5000.w10.s42.json",
+      "sha256": "eb733e3ee501c7558ee0a4a3a3e0c5f6e089a865cc973bc4561c6f7601f8fb5b"
+    },
+    {
+      "id": "matrix.ring.federation.q0.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.federation.q0.r5000.w10.s43.json",
+      "sha256": "cca2aea07c397c95b64102ac24e2c3dbe28b8a2ac7ff0ce2edfd36148f24e3e8"
+    },
+    {
+      "id": "matrix.ring.federation.q0.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.federation.q0.r5000.w10.s44.json",
+      "sha256": "9d75b1173252c15c8c4d2a919616b664643c4dc624102d75a90d82c2ac5c496d"
+    },
+    {
+      "id": "matrix.ring.federation.q1.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.federation.q1.r1000.w10.s42.json",
+      "sha256": "9d6cfa3e309eb3918b309a7365805c15680fc3ec23216ae84e5f81de9f01ac37"
+    },
+    {
+      "id": "matrix.ring.federation.q1.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.federation.q1.r1000.w10.s43.json",
+      "sha256": "14708c31927403f625856cdd1a71824caf521e913af7c59c6f19d3da3af07c99"
+    },
+    {
+      "id": "matrix.ring.federation.q1.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.federation.q1.r1000.w10.s44.json",
+      "sha256": "96a2cb24f7f7a1ab42817afa6c5947848c6822031418803b304306e96b715a4c"
+    },
+    {
+      "id": "matrix.ring.federation.q1.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.federation.q1.r5000.w10.s42.json",
+      "sha256": "caac3557a26bba1a487dc70262a3677e7896d36b0ac2e3f1844a167c8c5c4dae"
+    },
+    {
+      "id": "matrix.ring.federation.q1.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.federation.q1.r5000.w10.s43.json",
+      "sha256": "46ce38a10a85465bf97a2db43e8e2ad5b0ce77d553169420e6370861562cce76"
+    },
+    {
+      "id": "matrix.ring.federation.q1.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.federation.q1.r5000.w10.s44.json",
+      "sha256": "0ea7544a6913083fdde12d6bed4520f56f8b06a65b1fd23476f834a4652fdabd"
+    },
+    {
+      "id": "matrix.ring.federation.q2.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.federation.q2.r1000.w10.s42.json",
+      "sha256": "f975adac965f522ee1d1ebe71346b2a9a69f9be40fac7f46a86c31442ebecb1f"
+    },
+    {
+      "id": "matrix.ring.federation.q2.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.federation.q2.r1000.w10.s43.json",
+      "sha256": "8eaf7f289d4a5733b0857d1aa91acdf9d5520ad430ffc1609fe33cf867f0703d"
+    },
+    {
+      "id": "matrix.ring.federation.q2.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.federation.q2.r1000.w10.s44.json",
+      "sha256": "9b3d4bb616549bd0b85ef2ae9bb9b9cc9d8ad63d6a8e7710904cf10c5a82fd5c"
+    },
+    {
+      "id": "matrix.ring.federation.q2.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.federation.q2.r5000.w10.s42.json",
+      "sha256": "fc3821b2e2fd169ca3d2327ecb2e8e0b47d964372cb819bad68bc01e660edecc"
+    },
+    {
+      "id": "matrix.ring.federation.q2.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.federation.q2.r5000.w10.s43.json",
+      "sha256": "7686cd0748b8e5dbf94ef82d39a26a4f23694ef6dfb7123b50d7ed74263dfc4e"
+    },
+    {
+      "id": "matrix.ring.federation.q2.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.ring.federation.q2.r5000.w10.s44.json",
+      "sha256": "14d0b4e54a727d8c3dd5b60b42d372663c6b3ada92055469471b2affb82f574c"
+    },
+    {
+      "id": "matrix.star.single.q0.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.single.q0.r1000.w10.s42.json",
+      "sha256": "b30280fad92dc9dd3e9b0d65ea4af3a375963b8498094a9eab179387a4a9254a"
+    },
+    {
+      "id": "matrix.star.single.q0.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.single.q0.r1000.w10.s43.json",
+      "sha256": "11ee1101787f38a194aac8eec7cd74c01afab5dcd56995e871d9b0eaefacb25b"
+    },
+    {
+      "id": "matrix.star.single.q0.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.single.q0.r1000.w10.s44.json",
+      "sha256": "1be1fa92c53e36ca59951bdb65bdc6c18837379220cfe8ba6b81200cc597cbc9"
+    },
+    {
+      "id": "matrix.star.single.q0.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.single.q0.r5000.w10.s42.json",
+      "sha256": "5e3c2581625970a2c5d676d37ef32024ae845281a20585ffced415f0e8bb202a"
+    },
+    {
+      "id": "matrix.star.single.q0.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.single.q0.r5000.w10.s43.json",
+      "sha256": "9ede854297319959f2db023a133ac4fe22ad25e32d5e2a92fd6f590ae4e8f069"
+    },
+    {
+      "id": "matrix.star.single.q0.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.single.q0.r5000.w10.s44.json",
+      "sha256": "7fbd8046a285b2fd38c74fd5b704691d5c5ec45970d3afaf60f224f0d69d4144"
+    },
+    {
+      "id": "matrix.star.single.q1.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.single.q1.r1000.w10.s42.json",
+      "sha256": "5336c9290d38fc056fcf109acefa19c9d5c75342eacfd8395c29b5ff2f85bd0d"
+    },
+    {
+      "id": "matrix.star.single.q1.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.single.q1.r1000.w10.s43.json",
+      "sha256": "d09a81eeb38007cc0fac5e478c6a709eef7dbdeccc783834f27facca989d0a1c"
+    },
+    {
+      "id": "matrix.star.single.q1.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.single.q1.r1000.w10.s44.json",
+      "sha256": "50a9fad7d286e7edaf3eec97d7e32ad693e09b9e088fa87ecbc127ede58de695"
+    },
+    {
+      "id": "matrix.star.single.q1.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.single.q1.r5000.w10.s42.json",
+      "sha256": "aae67da8bd6e184de568b37edd3f1285e7ee24fda98fd7c88cc9e9417ecc927a"
+    },
+    {
+      "id": "matrix.star.single.q1.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.single.q1.r5000.w10.s43.json",
+      "sha256": "21093abadcf9e124e93926eb822b27ec6447baf4f4cea9f047b64b4eb6011616"
+    },
+    {
+      "id": "matrix.star.single.q1.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.single.q1.r5000.w10.s44.json",
+      "sha256": "0604837a1c1cfb5fc466077d76bcad97fabeb93c339e3dfaedd9b009411944cd"
+    },
+    {
+      "id": "matrix.star.single.q2.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.single.q2.r1000.w10.s42.json",
+      "sha256": "4b75b8e7b02977f82ad536b0163951a5a3cf3a99aad037c1aee41baedca7aab5"
+    },
+    {
+      "id": "matrix.star.single.q2.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.single.q2.r1000.w10.s43.json",
+      "sha256": "d6309584802b31bb293c7f8071f7e422218b0af570671abad567aec7e2fed8b6"
+    },
+    {
+      "id": "matrix.star.single.q2.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.single.q2.r1000.w10.s44.json",
+      "sha256": "e1198f062f39af94eeb669cec2d202b7f6c82b6ae609c4ee31b7ac552c001b5c"
+    },
+    {
+      "id": "matrix.star.single.q2.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.single.q2.r5000.w10.s42.json",
+      "sha256": "9ce1a3761a8ae00844c5c1cae865f97c35399f2a4be139654fd1df404a6bf901"
+    },
+    {
+      "id": "matrix.star.single.q2.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.single.q2.r5000.w10.s43.json",
+      "sha256": "1fc5e04f3ee279cf9ef3b09d9792d5d0dbd46ff795fe16261d070fc6660b1cc8"
+    },
+    {
+      "id": "matrix.star.single.q2.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.single.q2.r5000.w10.s44.json",
+      "sha256": "56cc59d72ee814f788e8c7169a79b1aad9126c2f39782944fe424b44d41becfd"
+    },
+    {
+      "id": "matrix.star.relay.q0.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.relay.q0.r1000.w10.s42.json",
+      "sha256": "9c91a1c9514ac7e733eaa2ee66fc0750fd19604ec3fbca6e9607b71e5c54fc0f"
+    },
+    {
+      "id": "matrix.star.relay.q0.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.relay.q0.r1000.w10.s43.json",
+      "sha256": "43418d394830018cba4ac84cdaf17364c82d5204fb3333ee71769162ba67435e"
+    },
+    {
+      "id": "matrix.star.relay.q0.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.relay.q0.r1000.w10.s44.json",
+      "sha256": "f1b4cf8d4968d2123315ff727dba9852d59fe896ab23fd4f06d5f43730aba58c"
+    },
+    {
+      "id": "matrix.star.relay.q0.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.relay.q0.r5000.w10.s42.json",
+      "sha256": "47d7f9c8480d6bd3226f3961f7bc88ae6ddd3a8a31608f1af0d7583be1472b15"
+    },
+    {
+      "id": "matrix.star.relay.q0.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.relay.q0.r5000.w10.s43.json",
+      "sha256": "f3c68bf66aec793856511780bac158902695a696433d1eff883e037dc338c570"
+    },
+    {
+      "id": "matrix.star.relay.q0.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.relay.q0.r5000.w10.s44.json",
+      "sha256": "d52302670ea20156da8492ad13959c293d432178ea464af29fcb06b7b329126b"
+    },
+    {
+      "id": "matrix.star.relay.q1.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.relay.q1.r1000.w10.s42.json",
+      "sha256": "dce5be2ca72a8f51e88355c5c307ef907c841f0951ce053100544d646315ef6f"
+    },
+    {
+      "id": "matrix.star.relay.q1.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.relay.q1.r1000.w10.s43.json",
+      "sha256": "9e439c7a11bf979ebd7860f12d1b10bbef29110a5d58a193114954fd1ed14794"
+    },
+    {
+      "id": "matrix.star.relay.q1.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.relay.q1.r1000.w10.s44.json",
+      "sha256": "c6255866f24f1a4b0793fffd06bac2660f9bcaf3eb46b31ddbd1db443a1339f2"
+    },
+    {
+      "id": "matrix.star.relay.q1.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.relay.q1.r5000.w10.s42.json",
+      "sha256": "88b19194834f283c9dc2715523bafae98c2d30dfb6611897f7926ba649f7e95c"
+    },
+    {
+      "id": "matrix.star.relay.q1.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.relay.q1.r5000.w10.s43.json",
+      "sha256": "ada76c252e2b3439672c6facf93f4cfb5ec81cda0b8517df2a4e23dde1ac9f2e"
+    },
+    {
+      "id": "matrix.star.relay.q1.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.relay.q1.r5000.w10.s44.json",
+      "sha256": "36772f73e50739baa2e02edf73a7f7ca06e0f3f8073c11ac161d13ae3055363e"
+    },
+    {
+      "id": "matrix.star.relay.q2.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.relay.q2.r1000.w10.s42.json",
+      "sha256": "9ca2656be3fa19b2e5df87a2987d9b490ddb0882499b973fa1039fb065606d86"
+    },
+    {
+      "id": "matrix.star.relay.q2.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.relay.q2.r1000.w10.s43.json",
+      "sha256": "160189edb777ba8b6965a5e65e6675837353c5d34e4758374f03e75023db329b"
+    },
+    {
+      "id": "matrix.star.relay.q2.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.relay.q2.r1000.w10.s44.json",
+      "sha256": "4136c787a0334237713d43b08fc2b61f54ac6115f58080f3f5bb9249cb517404"
+    },
+    {
+      "id": "matrix.star.relay.q2.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.relay.q2.r5000.w10.s42.json",
+      "sha256": "8f22bde6005caf7b3fca9c28fbf6a6d67e238833ce173b365b891759a156df1b"
+    },
+    {
+      "id": "matrix.star.relay.q2.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.relay.q2.r5000.w10.s43.json",
+      "sha256": "35b1eaa7334283e522d925541a96d2dedfadd3a4087c4da1e561d6ea78b4f222"
+    },
+    {
+      "id": "matrix.star.relay.q2.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.relay.q2.r5000.w10.s44.json",
+      "sha256": "10bb9004783a8f8350ddb2f20633552971ba98bdf27baeec34d15ab91ae2dd3c"
+    },
+    {
+      "id": "matrix.star.federation.q0.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.federation.q0.r1000.w10.s42.json",
+      "sha256": "9c716ac3e3442f3587222afcf43b962a851acf5623d1ba09b42f087ae34050e1"
+    },
+    {
+      "id": "matrix.star.federation.q0.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.federation.q0.r1000.w10.s43.json",
+      "sha256": "52629694c9967480d8070d90f293c1ee65f58ce149ce7d21415d7574b4ecc3ce"
+    },
+    {
+      "id": "matrix.star.federation.q0.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.federation.q0.r1000.w10.s44.json",
+      "sha256": "0750635ef874e8233d296de0639c3d9779a014014a89998eb43446e004618ee4"
+    },
+    {
+      "id": "matrix.star.federation.q0.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.federation.q0.r5000.w10.s42.json",
+      "sha256": "c660b019db7f7bf0e2b8f914c45fa3b6888da98add3b6883bedaa2b14b51baa6"
+    },
+    {
+      "id": "matrix.star.federation.q0.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.federation.q0.r5000.w10.s43.json",
+      "sha256": "99ae42f17cd0bd144ce554c459afe6859cfd02c40c3dda214567496cf9374482"
+    },
+    {
+      "id": "matrix.star.federation.q0.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.federation.q0.r5000.w10.s44.json",
+      "sha256": "5e4bdb0815d5d6f337db30866f826eda5fa06022cf9db34ad76eaef58540e9bd"
+    },
+    {
+      "id": "matrix.star.federation.q1.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.federation.q1.r1000.w10.s42.json",
+      "sha256": "bcdbec763ffd4fbfe6c3510b0ff3454bfdcf75fc2ffdf4bca42ce7fcc4d16785"
+    },
+    {
+      "id": "matrix.star.federation.q1.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.federation.q1.r1000.w10.s43.json",
+      "sha256": "1064095af08266f5e3d35b978d151658e79eb9a5f8c380e6e75aeadfc8b11834"
+    },
+    {
+      "id": "matrix.star.federation.q1.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.federation.q1.r1000.w10.s44.json",
+      "sha256": "ffa56fc57feb21fa7f9fa49837dd674fdb8e1a790c03e55fd6fa450ee9e43650"
+    },
+    {
+      "id": "matrix.star.federation.q1.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.federation.q1.r5000.w10.s42.json",
+      "sha256": "9142e62d30a7f9a421a96eed6306377cd027d266f2728268b597b5240c8c68a4"
+    },
+    {
+      "id": "matrix.star.federation.q1.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.federation.q1.r5000.w10.s43.json",
+      "sha256": "78b62e99e7dd38446147804bc8dc41d4f7fbf168505b7058a7114f7e1815d203"
+    },
+    {
+      "id": "matrix.star.federation.q1.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.federation.q1.r5000.w10.s44.json",
+      "sha256": "4744b8751bece02672babca0fe1cf696148308f308da51c7544d04a43d79d752"
+    },
+    {
+      "id": "matrix.star.federation.q2.r1000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.federation.q2.r1000.w10.s42.json",
+      "sha256": "f19d2eccddbbe44a799e1ed17c39a1b6bb4f521953a9b4e7bca7ac6157c861eb"
+    },
+    {
+      "id": "matrix.star.federation.q2.r1000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.federation.q2.r1000.w10.s43.json",
+      "sha256": "7f110354db0b2e4a2085ba6934f3e9a6c4eba5d8ab365084a01b7d0ec21f7134"
+    },
+    {
+      "id": "matrix.star.federation.q2.r1000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.federation.q2.r1000.w10.s44.json",
+      "sha256": "189ef6b092a9b0c0478e9aacf8416d23f8f8695b783e5ea39c2af5a0557fd9dc"
+    },
+    {
+      "id": "matrix.star.federation.q2.r5000.w10.s42",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.federation.q2.r5000.w10.s42.json",
+      "sha256": "2b3b52210811a36d6a2ced6033739182b356bfb554f40dd532c305728e0eadbd"
+    },
+    {
+      "id": "matrix.star.federation.q2.r5000.w10.s43",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.federation.q2.r5000.w10.s43.json",
+      "sha256": "bdd53c6e89a6875f2c62e96c7f673e4c4953d8fa91ce4f8a3dd09c46a6fb97ae"
+    },
+    {
+      "id": "matrix.star.federation.q2.r5000.w10.s44",
+      "kind": "matrix",
+      "config": "configs/matrix/matrix.star.federation.q2.r5000.w10.s44.json",
+      "sha256": "7e7ebedbea1eb8a936aeb0b69b6265eed1bd1dcc140e259e007f13cd2acacf05"
+    },
+    {
+      "id": "replay.star.single.q2.r1000.w10.s42",
+      "kind": "replay",
+      "replayOf": "matrix.star.single.q2.r1000.w10.s42",
+      "config": "configs/replay/replay.star.single.q2.r1000.w10.s42.json",
+      "sha256": "4b75b8e7b02977f82ad536b0163951a5a3cf3a99aad037c1aee41baedca7aab5"
+    },
+    {
+      "id": "replay.star.single.q2.r5000.w10.s42",
+      "kind": "replay",
+      "replayOf": "matrix.star.single.q2.r5000.w10.s42",
+      "config": "configs/replay/replay.star.single.q2.r5000.w10.s42.json",
+      "sha256": "9ce1a3761a8ae00844c5c1cae865f97c35399f2a4be139654fd1df404a6bf901"
+    },
+    {
+      "id": "replay.star.relay.q2.r1000.w10.s42",
+      "kind": "replay",
+      "replayOf": "matrix.star.relay.q2.r1000.w10.s42",
+      "config": "configs/replay/replay.star.relay.q2.r1000.w10.s42.json",
+      "sha256": "9ca2656be3fa19b2e5df87a2987d9b490ddb0882499b973fa1039fb065606d86"
+    },
+    {
+      "id": "replay.star.relay.q2.r5000.w10.s42",
+      "kind": "replay",
+      "replayOf": "matrix.star.relay.q2.r5000.w10.s42",
+      "config": "configs/replay/replay.star.relay.q2.r5000.w10.s42.json",
+      "sha256": "8f22bde6005caf7b3fca9c28fbf6a6d67e238833ce173b365b891759a156df1b"
+    },
+    {
+      "id": "replay.star.federation.q2.r1000.w10.s42",
+      "kind": "replay",
+      "replayOf": "matrix.star.federation.q2.r1000.w10.s42",
+      "config": "configs/replay/replay.star.federation.q2.r1000.w10.s42.json",
+      "sha256": "f19d2eccddbbe44a799e1ed17c39a1b6bb4f521953a9b4e7bca7ac6157c861eb"
+    },
+    {
+      "id": "replay.star.federation.q2.r5000.w10.s42",
+      "kind": "replay",
+      "replayOf": "matrix.star.federation.q2.r5000.w10.s42",
+      "config": "configs/replay/replay.star.federation.q2.r5000.w10.s42.json",
+      "sha256": "2b3b52210811a36d6a2ced6033739182b356bfb554f40dd532c305728e0eadbd"
+    },
+    {
+      "id": "diagnostic.ring.single.q0.r1000.w10.s42",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.single.q0.r1000.w10.s42.json",
+      "sha256": "cca3e7d35c903a35e43fe8489b26d7912284dc3962918d0eb493c191466bfe93"
+    },
+    {
+      "id": "diagnostic.ring.single.q0.r1000.w10.s43",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.single.q0.r1000.w10.s43.json",
+      "sha256": "9bb884488fba717e17fe62d9721c998f7c7509ec1034cb909c7ba1166d42fcb6"
+    },
+    {
+      "id": "diagnostic.ring.single.q0.r1000.w10.s44",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.single.q0.r1000.w10.s44.json",
+      "sha256": "ce2a1383ecb28c5c1a73d3b1f961895d7863d68f958c5ea9a57d3b572ba7d572"
+    },
+    {
+      "id": "diagnostic.ring.single.q0.r5000.w10.s42",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.single.q0.r5000.w10.s42.json",
+      "sha256": "9e33006fa023e2bd4f7c8b650b6921e79ddf6035bee66d16a0a3f8959730a8cb"
+    },
+    {
+      "id": "diagnostic.ring.single.q0.r5000.w10.s43",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.single.q0.r5000.w10.s43.json",
+      "sha256": "e22020bf61d26fd479b8dc23b645373b3099e7082f243e6f5b97cbc0b3429396"
+    },
+    {
+      "id": "diagnostic.ring.single.q0.r5000.w10.s44",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.single.q0.r5000.w10.s44.json",
+      "sha256": "047e48a2340078538898690d1fc0994d2e30c01af83a91f9b173fa99c88cb2da"
+    },
+    {
+      "id": "diagnostic.ring.single.q1.r1000.w10.s42",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.single.q1.r1000.w10.s42.json",
+      "sha256": "c0310773d78239b4a2e8d857c6cced9e7472634ab5139ca3137c6900229cc276"
+    },
+    {
+      "id": "diagnostic.ring.single.q1.r1000.w10.s43",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.single.q1.r1000.w10.s43.json",
+      "sha256": "f88519743cfc855604e71d19a8dd4f73cfbccdd17f1a6d3c3b28d119fc7b0fab"
+    },
+    {
+      "id": "diagnostic.ring.single.q1.r1000.w10.s44",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.single.q1.r1000.w10.s44.json",
+      "sha256": "bec516f4cc5e441a0b83fc07c4caf11fb6f157938fc3706779e2c92d362419a4"
+    },
+    {
+      "id": "diagnostic.ring.single.q1.r5000.w10.s42",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.single.q1.r5000.w10.s42.json",
+      "sha256": "f5c6c129c0d255d456c30e14839bba3e8ddd2fe3488f73ae600c79df31ef645c"
+    },
+    {
+      "id": "diagnostic.ring.single.q1.r5000.w10.s43",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.single.q1.r5000.w10.s43.json",
+      "sha256": "03b94ecd3bb37b39d1768802b39d82990d1a7fc677d7db88128832348067151b"
+    },
+    {
+      "id": "diagnostic.ring.single.q1.r5000.w10.s44",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.single.q1.r5000.w10.s44.json",
+      "sha256": "0f93245604871682b5974e244ddb5b053380cc98b536008b76e1c7c6f088f512"
+    },
+    {
+      "id": "diagnostic.ring.single.q2.r1000.w10.s42",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.single.q2.r1000.w10.s42.json",
+      "sha256": "a79482fdb2d906948fb61c38b7041ea9d2d8a658b9d5395703a9ede1da712829"
+    },
+    {
+      "id": "diagnostic.ring.single.q2.r1000.w10.s43",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.single.q2.r1000.w10.s43.json",
+      "sha256": "e63c95529696b904891ef505d3593d573aa00a0387b39da66e4e8d7d10c03b33"
+    },
+    {
+      "id": "diagnostic.ring.single.q2.r1000.w10.s44",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.single.q2.r1000.w10.s44.json",
+      "sha256": "b9e3f26c942e91f574b27fe1ff7a6cdfb53e003e2390da433a34c835f1ed063a"
+    },
+    {
+      "id": "diagnostic.ring.single.q2.r5000.w10.s42",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.single.q2.r5000.w10.s42.json",
+      "sha256": "6db5deb070f914adf146653e740533c1326f29f9c2eb5730a3815d681f8b5a8f"
+    },
+    {
+      "id": "diagnostic.ring.single.q2.r5000.w10.s43",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.single.q2.r5000.w10.s43.json",
+      "sha256": "2881d553e12e2357851b01fdfccae5225d9134f114cbdeb09b0032f551a137e5"
+    },
+    {
+      "id": "diagnostic.ring.single.q2.r5000.w10.s44",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.single.q2.r5000.w10.s44.json",
+      "sha256": "a3490bcd8dffdf411417b0c3bbb5968b9c0e767ad442a9c9bc38ff1a4b324cbe"
+    },
+    {
+      "id": "diagnostic.ring.relay.q0.r1000.w10.s42",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.relay.q0.r1000.w10.s42.json",
+      "sha256": "27090440f55eff9791852a0b3d9a3dcecd29f526c8d831de07e0efba6ad4ecc2"
+    },
+    {
+      "id": "diagnostic.ring.relay.q0.r1000.w10.s43",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.relay.q0.r1000.w10.s43.json",
+      "sha256": "70849cf9b40c1a2417fef635d7cad2c8665ab3964a6cce3ae395cfb3b4f0c212"
+    },
+    {
+      "id": "diagnostic.ring.relay.q0.r1000.w10.s44",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.relay.q0.r1000.w10.s44.json",
+      "sha256": "b7309772746a8c341ae1928d41b52c222a1f5da035afa4584f5bf15a18e9e6de"
+    },
+    {
+      "id": "diagnostic.ring.relay.q0.r5000.w10.s42",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.relay.q0.r5000.w10.s42.json",
+      "sha256": "f3defef0820028fc14b94e83bf69bcf8fd05c54ffb9ed3ad307355287f85ec28"
+    },
+    {
+      "id": "diagnostic.ring.relay.q0.r5000.w10.s43",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.relay.q0.r5000.w10.s43.json",
+      "sha256": "ff0d8dc20ef5f90686f9e753f28ca2e60b37b90bc8a271413efd2fca0cf78a3b"
+    },
+    {
+      "id": "diagnostic.ring.relay.q0.r5000.w10.s44",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.relay.q0.r5000.w10.s44.json",
+      "sha256": "38f284d0583a9095ba6e3ef544e0b2ec29f4534a4b29ec2088965001b09508d1"
+    },
+    {
+      "id": "diagnostic.ring.relay.q1.r1000.w10.s42",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.relay.q1.r1000.w10.s42.json",
+      "sha256": "3669b31896db76c4bc14bd2bfb57a3333bc3be83443858b6c54ab2c6be697c32"
+    },
+    {
+      "id": "diagnostic.ring.relay.q1.r1000.w10.s43",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.relay.q1.r1000.w10.s43.json",
+      "sha256": "42c60ffaa051455d84644b6103ec71e95e808c52b9e11e2afe690444b757fad2"
+    },
+    {
+      "id": "diagnostic.ring.relay.q1.r1000.w10.s44",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.relay.q1.r1000.w10.s44.json",
+      "sha256": "fc0fad34ef00edb7e0892c7257e6ba6033d9141c628fa2171f658dbdf474715c"
+    },
+    {
+      "id": "diagnostic.ring.relay.q1.r5000.w10.s42",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.relay.q1.r5000.w10.s42.json",
+      "sha256": "6d1b7055aec1a3ebc59a943c53dd46e52fbd0c5e34c96627588d0751cd5ab42c"
+    },
+    {
+      "id": "diagnostic.ring.relay.q1.r5000.w10.s43",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.relay.q1.r5000.w10.s43.json",
+      "sha256": "d1abdadf2390cada067143eab3e70a69a9de6aa68c604c355ff7a273fe002bf1"
+    },
+    {
+      "id": "diagnostic.ring.relay.q1.r5000.w10.s44",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.relay.q1.r5000.w10.s44.json",
+      "sha256": "007e7a37b90bfd74a013fb7610a62455c52ac74bfce77f5eda749ecc7cec2ae1"
+    },
+    {
+      "id": "diagnostic.ring.relay.q2.r1000.w10.s42",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.relay.q2.r1000.w10.s42.json",
+      "sha256": "f4294d16dc39ab253476df5425630ff3aea0ae00f804af157bf43ee30b737b59"
+    },
+    {
+      "id": "diagnostic.ring.relay.q2.r1000.w10.s43",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.relay.q2.r1000.w10.s43.json",
+      "sha256": "bdb3683683263c099fa39600643280a86639f28f98d36c7d2be581dd5494ddf0"
+    },
+    {
+      "id": "diagnostic.ring.relay.q2.r1000.w10.s44",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.relay.q2.r1000.w10.s44.json",
+      "sha256": "198819553ac562a0111f20dcbb4e3d94d36132c7b0e186d6e1e39cc0db2cc81d"
+    },
+    {
+      "id": "diagnostic.ring.relay.q2.r5000.w10.s42",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.relay.q2.r5000.w10.s42.json",
+      "sha256": "3f55fd9806a9cc73503b60a8d3c53bfb5092d85cb7b083697a398d62c797a6a6"
+    },
+    {
+      "id": "diagnostic.ring.relay.q2.r5000.w10.s43",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.relay.q2.r5000.w10.s43.json",
+      "sha256": "29f5add3655863268e154ff1e41ff29535b957c768571e735f48d2c81eebf204"
+    },
+    {
+      "id": "diagnostic.ring.relay.q2.r5000.w10.s44",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.relay.q2.r5000.w10.s44.json",
+      "sha256": "b8eb6fe4bf89a056647c72f7c88ea66d85de6343e6cb850dfafc618a73b0bad4"
+    },
+    {
+      "id": "diagnostic.ring.federation.q0.r1000.w10.s42",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.federation.q0.r1000.w10.s42.json",
+      "sha256": "84e12dd5e694cb7f1d7413155e37e64d9cda20b1be83b38a5da3fb0c08538ad0"
+    },
+    {
+      "id": "diagnostic.ring.federation.q0.r1000.w10.s43",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.federation.q0.r1000.w10.s43.json",
+      "sha256": "dc2c18548d538714568b77724ca86a2878b1e229848aba325de8833144e46f12"
+    },
+    {
+      "id": "diagnostic.ring.federation.q0.r1000.w10.s44",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.federation.q0.r1000.w10.s44.json",
+      "sha256": "2a0ff402af3340cb52d708a4d9105a729f942c9c646f0e15c0858da553a59896"
+    },
+    {
+      "id": "diagnostic.ring.federation.q0.r5000.w10.s42",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.federation.q0.r5000.w10.s42.json",
+      "sha256": "8249881532e63e68bc07e2436bebafd0e8c4b23e9dedf827dbc8b60d81163fdc"
+    },
+    {
+      "id": "diagnostic.ring.federation.q0.r5000.w10.s43",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.federation.q0.r5000.w10.s43.json",
+      "sha256": "88d731cd6505ac54978e1b8519426a625d8ed7a939a1d4cc7b76a6f64ca6b15a"
+    },
+    {
+      "id": "diagnostic.ring.federation.q0.r5000.w10.s44",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.federation.q0.r5000.w10.s44.json",
+      "sha256": "78d497f931d1c685b0fe1a53ec3532c9245dffb3da976e8dbab9a4d78b7c1dd3"
+    },
+    {
+      "id": "diagnostic.ring.federation.q1.r1000.w10.s42",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.federation.q1.r1000.w10.s42.json",
+      "sha256": "59fdb10010a6f66da8eb8f9c83e35ab6ba3a7f841de5671a02422a069f102cec"
+    },
+    {
+      "id": "diagnostic.ring.federation.q1.r1000.w10.s43",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.federation.q1.r1000.w10.s43.json",
+      "sha256": "5c4df182b2a5fc50133ba4455fa3ac196f3243765ed594d087190d84fd0e49e1"
+    },
+    {
+      "id": "diagnostic.ring.federation.q1.r1000.w10.s44",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.federation.q1.r1000.w10.s44.json",
+      "sha256": "855b026b539c5224fb609b7b8c73f77980391d31e60735af63ce0fef4d20f8ba"
+    },
+    {
+      "id": "diagnostic.ring.federation.q1.r5000.w10.s42",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.federation.q1.r5000.w10.s42.json",
+      "sha256": "44e35c959f4263294db23b5c8880c7339e7c830abf850d860e780082226632d4"
+    },
+    {
+      "id": "diagnostic.ring.federation.q1.r5000.w10.s43",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.federation.q1.r5000.w10.s43.json",
+      "sha256": "19039275a33c6b99a3abb5510d7b488f9ad17af11c7ed44af37958e3eb30a22c"
+    },
+    {
+      "id": "diagnostic.ring.federation.q1.r5000.w10.s44",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.federation.q1.r5000.w10.s44.json",
+      "sha256": "7805cd8985e88f32fb191d9f17205f9603f6c86830bb87dfa1d5d90115e7ccde"
+    },
+    {
+      "id": "diagnostic.ring.federation.q2.r1000.w10.s42",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.federation.q2.r1000.w10.s42.json",
+      "sha256": "aa2c6379523beaa71891dcf90f95eb44b55414f9b059dacc1873df08ddab4a81"
+    },
+    {
+      "id": "diagnostic.ring.federation.q2.r1000.w10.s43",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.federation.q2.r1000.w10.s43.json",
+      "sha256": "1cf06ce0cf4769ccb02414d1218c144f8f2189d1720b6464e28fdacf373e2419"
+    },
+    {
+      "id": "diagnostic.ring.federation.q2.r1000.w10.s44",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.federation.q2.r1000.w10.s44.json",
+      "sha256": "a03968487cf7a2eb4d3f042cf760191ac532435eaa1a7cdf169fcd3b55f032d7"
+    },
+    {
+      "id": "diagnostic.ring.federation.q2.r5000.w10.s42",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.federation.q2.r5000.w10.s42.json",
+      "sha256": "cf91f83253e3839ecc7e5e70f7db520fe87958c249576acc0408be61326fcd60"
+    },
+    {
+      "id": "diagnostic.ring.federation.q2.r5000.w10.s43",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.federation.q2.r5000.w10.s43.json",
+      "sha256": "4b187637f6d08b0de956d3584c98d845c684019bee2aa9a34cd549be305a1aa5"
+    },
+    {
+      "id": "diagnostic.ring.federation.q2.r5000.w10.s44",
+      "kind": "diagnostic",
+      "config": "configs/diagnostic/diagnostic.ring.federation.q2.r5000.w10.s44.json",
+      "sha256": "a062ffef4713030fdfec1428cd3dc801daeff4e63e427607526a3cf6331c56af"
+    }
+  ],
+  "profileSha256": "d9cf125fb8cb6ec3677fc3c596bafcdfced8be0502362e2b4ff03da1421d46eb",
+  "generatorSha256": "43a214ef38817ccaefd7e67ac5d19d6b1c9a5a1c68a2d124f50cd3a1b1eabde0"
+}

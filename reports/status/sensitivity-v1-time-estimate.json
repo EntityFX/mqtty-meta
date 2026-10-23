@@ -1,0 +1,67 @@
+{
+  "observedAtUtc": "2026-10-23T20:05:09.700583+00:00",
+  "method": "Measured per-broker/QoS baseline, otherwise QoS1 pilot; measured per-N variant ratio; sum of pair maxima",
+  "assumptions": [
+    "Initial scheduler without resume/regrouping",
+    "Other QoS and brokers extrapolated where unmeasured",
+    "0.8/1.0/1.3 are scenario multipliers, not confidence intervals",
+    "No new failures, pauses or competing workload"
+  ],
+  "completedMatrix": 15,
+  "scenarios": {
+    "optimistic": {
+      "matrixRemainingHours": 15.764773144573276,
+      "replayRemainingHours": 0.4807762307009294,
+      "totalRemainingHours": 16.245549375274205,
+      "estimatedFinishUtc": "2026-10-24T12:19:53.678334+00:00"
+    },
+    "central": {
+      "matrixRemainingHours": 19.72763549401467,
+      "replayRemainingHours": 0.6009702883761618,
+      "totalRemainingHours": 20.32860578239083,
+      "estimatedFinishUtc": "2026-10-24T16:24:52.681400+00:00"
+    },
+    "slow": {
+      "matrixRemainingHours": 25.73182459237607,
+      "replayRemainingHours": 0.7812613748890104,
+      "totalRemainingHours": 26.51308596726508,
+      "estimatedFinishUtc": "2026-10-24T22:35:56.810065+00:00"
+    }
+  },
+  "perBrokerMatrix": {
+    "Aedes": {
+      "done": 15,
+      "total": 54,
+      "remainingCentralHours": 3.9307048192453107,
+      "blockFinishCentralUtc": "2026-10-24T00:01:00.237932+00:00"
+    },
+    "Mosquitto": {
+      "done": 0,
+      "total": 54,
+      "remainingCentralHours": 5.1842253554290245,
+      "blockFinishCentralUtc": "2026-10-24T05:12:03.449212+00:00"
+    },
+    "ActiveMQ": {
+      "done": 0,
+      "total": 54,
+      "remainingCentralHours": 5.341155040114312,
+      "blockFinishCentralUtc": "2026-10-24T10:32:31.607356+00:00"
+    },
+    "EMQX": {
+      "done": 0,
+      "total": 54,
+      "remainingCentralHours": 5.271550279226014,
+      "blockFinishCentralUtc": "2026-10-24T15:48:49.188361+00:00"
+    }
+  },
+  "variantRatios": {
+    "p1.halfTick": 1.728354586504677,
+    "p128.doubleWindow": 1.7205164984840349,
+    "p1.doubleWindow": 1.6363146809767137,
+    "p128.halfTick": 1.99696363594535
+  },
+  "jobTimeoutSeconds": 1800,
+  "predictedJobsAboveTimeout": [],
+  "observationSha256": "7cd0c55560fab7b25c1717c79cfa9a578f59ab8e3a8a75f73da4a9825756c1ed",
+  "estimatorSha256": "53d10373d888c6f52300049da30ec0709b873a61da407ded3a991c8ffafd548a"
+}
