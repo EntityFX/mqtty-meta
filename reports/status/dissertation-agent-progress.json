@@ -116,7 +116,7 @@
       "status": "runningOnLinux",
       "unit": "mqtty-sensitivity-v1.service",
       "remoteRoot": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1",
-      "observedAtUtc": "2026-10-23T18:04:39.681461+00:00",
+      "observedAtUtc": "2026-10-23T18:07:55.044888+00:00",
       "observation": "reports/status/sensitivity-v1-observation.json",
       "counts": {
         "matrix": {
@@ -125,7 +125,7 @@
           "total": 216
         },
         "pilot": {
-          "done": 0,
+          "done": 1,
           "failedCriteria": 0,
           "total": 8
         },
@@ -152,5 +152,6 @@
   "goalConstraints": "reports/status/goal-constraints.json",
   "manualContinuationRequired": true,
   "continuationCheckpoint": "Sensitivity pipeline started in systemd; pilot then 216 matrix runs and 6 replays automatically, stop on technical error; agent pauses per user rule",
-  "articleWritingOwner": "human"
+  "articleWritingOwner": "human",
+  "recommendedManualReviewAt": "2026-10-23T22:00:00+03:00"
 }
