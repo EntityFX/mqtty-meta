@@ -457,5 +457,19 @@
     "newExperimentsStarted": false,
     "observation": "reports/status/goal-resume-20261023T233919Z.json",
     "pauseSource": "Explicit goal objective: no automatic continuation while long calculations run"
+  },
+  "scheduledContinuation": {
+    "status": "registeredNotYetDispatched",
+    "taskName": "MqttY-Goal-Resume-20261024-0400",
+    "scheduledForMsk": "2026-10-24T04:00:00+03:00",
+    "timezone": "Europe/Moscow",
+    "once": true,
+    "userExplicitlyRequested": true,
+    "delivery": "codex queue existing thread",
+    "taskStateVerified": "Ready",
+    "metadata": "reports/status/scheduled-resume.json",
+    "inputValidationPassed": true,
+    "messageSentNow": false,
+    "newScientificJobsStarted": false
   }
 }

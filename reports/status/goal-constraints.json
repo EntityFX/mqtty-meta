@@ -30,5 +30,12 @@
   "objectiveDocument": "reports/status/Goal.md",
   "objectiveUpdatedByUser": true,
   "platformStatusLastObserved": "active",
-  "humanChoosesPublicationVenues": true
+  "humanChoosesPublicationVenues": true,
+  "explicitOneTimeContinuation": {
+    "authorizedByUser": true,
+    "scheduledFor": "2026-10-24T04:00:00+03:00",
+    "taskName": "MqttY-Goal-Resume-20261024-0400",
+    "recurring": false,
+    "generalNoPollingRuleStillApplies": true
+  }
 }

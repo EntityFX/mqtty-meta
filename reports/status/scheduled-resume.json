@@ -1,0 +1,17 @@
+{
+  "taskName": "MqttY-Goal-Resume-20261024-0400",
+  "status": "Ready",
+  "scheduledForMsk": "2026-10-24T04:00:00.0000000+03:00",
+  "timezone": "Europe/Moscow",
+  "nextRunTimeLocal": "2026-10-24T04:00:00.0000000+03:00",
+  "threadId": "01a1396c-38e4-7e83-8ced-2984171e286a",
+  "delivery": "codex queue to existing session",
+  "logonType": "Interactive",
+  "wakeToRun": true,
+  "startWhenAvailable": true,
+  "runOnce": true,
+  "messageSentNow": false,
+  "script": "C:\\projects\\mqtty-meta\\tools\\status\\Queue-GoalResume.ps1",
+  "prompt": "C:\\projects\\mqtty-meta\\reports\\status\\scheduled-resume-request.md",
+  "dispatchReceipt": "C:\\projects\\mqtty-meta\\reports\\status\\scheduled-resume-dispatch.json"
+}
