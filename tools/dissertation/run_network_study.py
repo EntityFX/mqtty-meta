@@ -173,15 +173,29 @@ def attempt(root, job, manifest, manifest_sha, guard, on_state, retry_reason=Non
     return row
 
 
-def publish(root, phase, rows, guard, status, manifest_sha, active=None, reason=None):
+def progress_context(root, plan):
+    totals = {kind: sum(j["kind"] == kind for j in plan["jobs"]) for kind in ("pilot", "matrix", "replay", "diagnostic")}
+    attempts = {kind: {"total": 0, "failed": 0} for kind in totals}
+    for row in map(read, (root / "rows").glob("*.json")):
+        attempts[row["kind"]]["total"] += 1
+        attempts[row["kind"]]["failed"] += bool(row["technicalError"])
+    return {"totals": totals, "attempts": attempts}
+
+
+def publish(root, phase, rows, guard, status, manifest_sha, context, active=None, reason=None):
+    counts = {kind: {"done": sum(r["kind"] == kind and not r["technicalError"] for r in rows.values()),
+                    "unresolvedErrors": sum(r["kind"] == kind and bool(r["technicalError"]) for r in rows.values()),
+                    "warnings": sum(r["kind"] == kind and bool(r.get("warnings")) for r in rows.values()), "total": total}
+              for kind, total in context["totals"].items()}
     guard.save(root / "progress.json", {"status": status, "phase": phase, "executionManifestSha256": manifest_sha,
                "verified": sum(not r["technicalError"] for r in rows.values()),
                "technicalErrors": sum(bool(r["technicalError"]) for r in rows.values()),
+               "counts": counts, "attempts": context["attempts"],
                "warnings": sum(bool(r.get("warnings")) for r in rows.values()), "active": active, "reason": reason,
                "observedAtUtc": datetime.now(timezone.utc).isoformat()})
 
 
-def phase_results(root, phase, jobs, rows, guard, manifest_sha):
+def phase_results(root, phase, jobs, rows, guard, manifest_sha, context):
     selected = [rows[j["id"]] for j in jobs]
     fields = ("id", "measurementSeconds", "scheduledPublishes", "apiAttempts", "sendRejected", "sourceCompleted",
               "sourceCompletedRps", "sourceCompletedBeforeDrain", "sourceCompletedDuringDrain", "backpressureUnsent",
@@ -196,6 +210,7 @@ def phase_results(root, phase, jobs, rows, guard, manifest_sha):
         values["warnings"] = ";".join(row.get("warnings", [])); writer.writerow(values)
     guard.identity(); (root / f"summary-{phase}.csv").write_text(stream.getvalue(), encoding="utf-8", newline="")
     body = f"# Этап сетевой программы: {phase}\n\nПроверено {len(selected)}/{len(jobs)} опытов. Технических отказов 0; с предупреждениями {sum(bool(r.get('warnings')) for r in selected)}.\n\n"
+    body += f"Всего попыток этапа: {context['attempts'][phase]['total']}; сохранённых неуспешных попыток: {context['attempts'][phase]['failed']}. Завершённые опыты используют последние проверенные попытки.\n\n"
     body += "Предупреждения о недоставке, очередях и backpressure сохранены как результаты модели. Они не доказывают дефект настоящего брокера. Следующий этап автоматически не запускается.\n\n"
     body += f"Данные: [JSON](results-{phase}.json), [CSV](summary-{phase}.csv).\n\n"
     for row in selected:
@@ -219,6 +234,7 @@ def run(root, phase, resume=False, decision_path=None, retry_job=None, retry_rea
     with lock(root / "run.lock"), lock(guard.mount / ".mqtty-network-study.lock"):
         isolation(manifest["afterUnits"])
         rows = load_rows(root, manifest_sha, indexed, guard)
+        context = progress_context(root, plan)
         jobs = [j for j in plan["jobs"] if j["kind"] == phase]
         if not jobs:
             raise ValueError("No jobs for phase")
@@ -226,7 +242,7 @@ def run(root, phase, resume=False, decision_path=None, retry_job=None, retry_rea
             if not resume:
                 raise ValueError("Phase already exists; use explicit --resume to reverify")
             check_phase_result(root, phase, plan, rows, manifest_sha)
-            publish(root, phase, rows, guard, "completed", manifest_sha)
+            publish(root, phase, rows, guard, "completed", manifest_sha, context)
             return {"status": "completed", "phase": phase, "verified": len(jobs), "reverifiedOnly": True}
         if any(j["id"] in rows for j in jobs) and not resume:
             raise ValueError("Use --resume for a partial phase")
@@ -249,7 +265,7 @@ def run(root, phase, resume=False, decision_path=None, retry_job=None, retry_rea
             raise ValueError("Replay originals are incomplete")
         (root / "rows").mkdir(exist_ok=True)
         try:
-            publish(root, phase, rows, guard, "running", manifest_sha)
+            publish(root, phase, rows, guard, "running", manifest_sha, context)
             for job in jobs:
                 if job["id"] in rows and not rows[job["id"]]["technicalError"]:
                     continue
@@ -258,21 +274,23 @@ def run(root, phase, resume=False, decision_path=None, retry_job=None, retry_rea
                     raise ValueError("Execution manifest changed")
                 verify_snapshot(root)
                 row = attempt(root, job, manifest, manifest_sha, guard,
-                              lambda state: publish(root, phase, rows, guard, "running", manifest_sha, {"id": job["id"], **state}),
+                              lambda state: publish(root, phase, rows, guard, "running", manifest_sha, context, {"id": job["id"], **state}),
                               retry_reason if job["id"] == retry_job else None)
                 rows[job["id"]] = row
+                context["attempts"][phase]["total"] += 1
+                context["attempts"][phase]["failed"] += bool(row["technicalError"])
                 if row["technicalError"]:
                     raise RuntimeError(row["technicalError"])
                 verify_snapshot(root)
-            phase_results(root, phase, jobs, rows, guard, manifest_sha)
-            publish(root, phase, rows, guard, "completed", manifest_sha)
+            phase_results(root, phase, jobs, rows, guard, manifest_sha, context)
+            publish(root, phase, rows, guard, "completed", manifest_sha, context)
             return {"status": "completed", "phase": phase, "verified": len(jobs)}
         except BaseException as error:
             try:
                 guard.save(root / f"partial-{phase}.json", {"status": "failed", "phase": phase,
                            "executionManifestSha256": manifest_sha, "reason": repr(error),
                            "expectedJobs": [j["id"] for j in jobs], "rows": [rows[j["id"]] for j in jobs if j["id"] in rows]})
-                publish(root, phase, rows, guard, "failed", manifest_sha, reason=repr(error))
+                publish(root, phase, rows, guard, "failed", manifest_sha, context, reason=repr(error))
             except Exception:
                 print("Cannot persist failure on unavailable evidence mount: " + repr(error), file=sys.stderr)
             raise
@@ -322,7 +340,7 @@ def recover_interruption(root, identifier, reason):
         (root / "rows").mkdir(exist_ok=True)
         guard.save(root / "rows" / f"{identifier}.{destination.name}.json", row)
         rows = load_rows(root, manifest_sha, indexed, guard)
-        publish(root, job["kind"], rows, guard, "failed", manifest_sha, reason=row["technicalError"])
+        publish(root, job["kind"], rows, guard, "failed", manifest_sha, progress_context(root, plan), reason=row["technicalError"])
         return {"status": "interruptionRecorded", "id": identifier, "attempt": row["attempt"], "retryExecuted": False}
 
 

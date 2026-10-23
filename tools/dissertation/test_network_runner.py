@@ -64,6 +64,9 @@ class NetworkRunnerTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'explicit inspected retry'): runner.run(root,'pilot',resume=True)
         runner.run(root,'pilot',resume=True,retry_job='pilot.0',retry_reason='Synthetic transient failure inspected')
         self.assertEqual((root/'rows/pilot.0.attempt-001.json').read_bytes(),old)
+        progress=inputs.read(root/'progress.json')
+        self.assertEqual(progress['counts']['pilot'],{'done':2,'unresolvedErrors':0,'warnings':0,'total':2})
+        self.assertEqual(progress['attempts']['pilot'],{'total':3,'failed':1})
         self.assertTrue((root/'runs/pilot.0/attempt-002/output/summary.json').exists())
         self.assertIn('inspected',inputs.read(root/'runs/pilot.0/attempt-002/command.json')['retryReason'])
 
