@@ -11,4 +11,5 @@
 /tools/dissertation/test_sensitivity_scheduler_v2.py -text
 /tools/dissertation/analyse_sensitivity.py -text
 /tools/dissertation/test_analyse_sensitivity.py -text
+/tools/dissertation/*control*.py -text
 /tools/status/** -text

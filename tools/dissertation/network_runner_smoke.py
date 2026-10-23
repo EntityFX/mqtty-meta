@@ -1,4 +1,4 @@
-"""Bounded Windows/.NET check of the runner, not part of the research matrix."""
+"""Bounded real-CLI runner check; Linux uses the actual dedicated mount."""
 import argparse
 from datetime import datetime, timezone
 import json
@@ -7,6 +7,7 @@ from pathlib import Path
 import shutil
 import sys
 from unittest.mock import patch
+from contextlib import ExitStack
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import run_network_study as runner
@@ -16,9 +17,18 @@ from prepare_network_study import configuration
 ROOT = Path(__file__).resolve().parents[2]
 
 
-def smoke(work):
+def smoke(work, mount=None):
     work = Path(work).resolve()
-    if os.name != "nt" or not work.is_relative_to(ROOT / "MqttBenchmark/artifacts") or work.exists():
+    linux = sys.platform.startswith("linux")
+    if work.exists():
+        raise ValueError("Smoke output already exists")
+    if linux:
+        if mount is None:
+            raise ValueError("Linux smoke requires an actual dedicated --mount-root")
+        mount = Path(mount).resolve()
+        if not mount.is_mount() or mount == Path(mount.anchor) or not work.is_relative_to(mount) or work == mount:
+            raise ValueError("Smoke output must be below a dedicated mounted evidence disk")
+    elif os.name != "nt" or not work.is_relative_to(ROOT / "MqttBenchmark/artifacts"):
         raise ValueError("Use a new ignored artifacts directory on Windows for this local test")
     program = work / "program-source"; (program / "inputs").mkdir(parents=True)
     (program / "configs").mkdir()
@@ -42,10 +52,12 @@ def smoke(work):
     original_execute = runner.execute
     def fast(*args, **kwargs):
         return original_execute(*args, **kwargs, sample_seconds=.05)
-    # Only the mount predicate is simulated. Real disk free space, process limits,
-    # immutable files, source cleanliness, CLI and raw-journal checks are retained.
-    with patch("network_study_inputs.Path.is_mount", return_value=True), patch("run_network_study.execute", side_effect=fast):
-        manifest = stage(program, runtime, study, work, ROOT, timeout=30)
+    # Windows development only simulates the mount predicate. Linux never does.
+    with ExitStack() as stack:
+        if not linux:
+            stack.enter_context(patch("network_study_inputs.Path.is_mount", return_value=True))
+        stack.enter_context(patch("run_network_study.execute", side_effect=fast))
+        manifest = stage(program, runtime, study, mount if linux else work, ROOT, timeout=30)
         pilot = runner.run(study, "pilot")
         runner.run(study, "pilot", resume=True)
         decision = work / "smoke-decision.json"
@@ -59,8 +71,8 @@ def smoke(work):
     assert len(rows) == 15 and not any(r["technicalError"] for r in rows)
     assert all(r["summary"]["uniqueDeliveries"] == r["summary"]["expectedDeliveries"] == 18 for r in rows)
     receipt = {"status": "passed", "observedAtUtc": datetime.now(timezone.utc).isoformat(),
-               "scope": "Local Windows runner test with actual MqttY CLI; not dissertation study coverage",
-               "mountPredicateSimulated": True, "sourceCleanCheckReal": True, "linuxExecutionTested": False,
+               "scope": "Bounded runner test with actual MqttY CLI; not dissertation study coverage",
+               "mountPredicateSimulated": not linux, "sourceCleanCheckReal": True, "linuxExecutionTested": linux,
                "hardCgroupLimitTested": False, "linuxPolled": False, "simulationsExecuted": 15,
                "pilot": pilot, "matrix": matrix, "replay": replay, "exactReplays": 3,
                "resumeDidNotRerunCompletedJobs": len(list((study / "runs").glob("*/attempt-*"))) == 15,
@@ -76,4 +88,6 @@ def smoke(work):
 if __name__ == "__main__":
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--work-dir", type=Path, required=True)
-    smoke(p.parse_args().work_dir)
+    p.add_argument("--mount-root", type=Path)
+    args = p.parse_args()
+    smoke(args.work_dir, args.mount_root)

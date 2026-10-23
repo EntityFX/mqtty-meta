@@ -1,0 +1,44 @@
+{
+  "status": "metadataConsistent",
+  "recordCount": 864,
+  "publishedRecordCount": 864,
+  "counts": {
+    "Aedes": {
+      "fidelity": 72,
+      "holdout": 72,
+      "relay": 72
+    },
+    "Mosquitto": {
+      "fidelity": 72,
+      "holdout": 72,
+      "relay": 72
+    },
+    "ActiveMQ": {
+      "fidelity": 72,
+      "holdout": 72,
+      "relay": 72
+    },
+    "EMQX": {
+      "fidelity": 72,
+      "holdout": 72,
+      "relay": 72
+    }
+  },
+  "errors": [],
+  "binaryIdentityMissingCount": 864,
+  "binaryIdentityRecords": [],
+  "profileProvenanceCompared": true,
+  "archiveBytesVerified": false,
+  "binaryBuildOrExecutionVerified": false,
+  "blindedValidationEstablished": false,
+  "limitations": [
+    "Manifest fields are compared from an export; original archive bytes were not reopened by this tool.",
+    "A source commit or .NET version does not identify the executed application binary.",
+    "Recorded binary identities, when present, are reported without independent attestation.",
+    "Metadata consistency does not establish when developers first inspected control results."
+  ],
+  "inputSha256": {
+    "export": "e4ca3cca8277e946acb94177b472651d9228dc98b3c66d9612a4d43fbad2ad99",
+    "modelEvidence": "778b25feee8272e7d97deba5fae19086da2ba2a91a3b0a7b3a0c077e4cbdb015"
+  }
+}

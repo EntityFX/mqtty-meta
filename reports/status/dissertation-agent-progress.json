@@ -121,8 +121,8 @@
       "status": "runningOnLinux",
       "unit": "mqtty-sensitivity-v1.service",
       "remoteRoot": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1",
-      "observedAtUtc": "2026-10-23T23:02:00.942486+00:00",
-      "observation": "reports/status/sensitivity-scheduler-v2-health.json",
+      "observedAtUtc": "2026-10-23T23:13:01.820344+00:00",
+      "observation": "reports/status/sensitivity-next-steps-observation.json",
       "counts": {
         "matrix": {
           "done": 48,
@@ -343,7 +343,7 @@
     "stopAgentAfterSavingState": true
   },
   "summaryPercentages": {
-    "observation": "reports/status/sensitivity-scheduler-v2-health.json",
+    "observation": "reports/status/sensitivity-next-steps-observation.json",
     "localPercent": 80,
     "globalPercent": 16.0,
     "sensitivityAllCompleted": 56,
@@ -370,10 +370,20 @@
     "publicationVenueResearchAssignedToAgent": false
   },
   "controlHistoryAudit": {
-    "status": "chronologyCompatibleIndependenceNotFullyEstablished",
+    "status": "historicalMetadataMatchedBinaryAndBlindingEvidenceIncomplete",
     "document": "reports/audits/dissertation/control-history-v1/Review.md",
     "profileCalibrationHashesMatched": 4,
     "historicalRuntimeManifestMappingComplete": false,
-    "newLinuxJobsStarted": false
+    "newLinuxJobsStarted": false,
+    "historicalManifestsCompared": 864,
+    "metadataDiscrepancies": 0,
+    "binaryIdentityMissing": 864,
+    "manifestReview": "reports/audits/dissertation/control-history-v1/Manifest-review.md"
+  },
+  "platformGoal": {
+    "statusObserved": "active",
+    "objectiveReadFromUserAttachment": true,
+    "objectiveDocument": "reports/status/Goal.md",
+    "oldPausedStateSupersededByUser": true
   }
 }

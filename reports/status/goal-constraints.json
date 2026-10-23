@@ -26,5 +26,9 @@
     "improvement proposals",
     "article layouts, tables and figures"
   ],
-  "latestUserClarification": "Human writes articles; agent provides technical and experimental materials"
+  "latestUserClarification": "Human writes articles; agent provides technical and experimental materials",
+  "objectiveDocument": "reports/status/Goal.md",
+  "objectiveUpdatedByUser": true,
+  "platformStatusLastObserved": "active",
+  "humanChoosesPublicationVenues": true
 }
