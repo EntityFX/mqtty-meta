@@ -122,11 +122,11 @@
       "status": "runningOnLinux",
       "unit": "mqtty-sensitivity-v1.service",
       "remoteRoot": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1",
-      "observedAtUtc": "2026-10-23T23:30:35.779805+00:00",
-      "observation": "reports/status/network-pilot-latest.json",
+      "observedAtUtc": "2026-10-23T23:39:19.813780+00:00",
+      "observation": "reports/status/goal-resume-20261023T233919Z.json",
       "counts": {
         "matrix": {
-          "done": 61,
+          "done": 62,
           "failedCriteria": 13,
           "total": 216
         },
@@ -199,7 +199,7 @@
       "document": "docs/dissertation/network-study.md",
       "plan": "reports/audits/dissertation/network-study-v1/plan.json",
       "pilotJobs": 30,
-      "pilotJobsExecuted": 0,
+      "pilotJobsExecuted": 5,
       "candidateIdealMatrix": 162,
       "exactReplays": 6,
       "optionalMosquittoDiagnostic": 54,
@@ -355,20 +355,20 @@
     "stopAgentAfterSavingState": true
   },
   "summaryPercentages": {
-    "observation": "reports/status/network-pilot-latest.json",
+    "observation": "reports/status/goal-resume-20261023T233919Z.json",
     "localPercent": 80,
     "globalPercent": 19.1,
-    "sensitivityAllCompleted": 69,
+    "sensitivityAllCompleted": 70,
     "sensitivityAllTotal": 230,
-    "sensitivityAllPercent": 30.0,
-    "sensitivityMatrixCompleted": 61,
+    "sensitivityAllPercent": 30.4,
+    "sensitivityMatrixCompleted": 62,
     "sensitivityMatrixTotal": 216,
-    "sensitivityMatrixPercent": 28.2,
+    "sensitivityMatrixPercent": 28.7,
     "scientificFailedIncludedInCompleted": true,
     "updateRule": "Experiment percentages from each confirmed snapshot; readiness from accepted effort-weighted steps only",
-    "networkPilotCompleted": 0,
+    "networkPilotCompleted": 5,
     "networkPilotTotal": 30,
-    "networkPilotPercent": 0.0
+    "networkPilotPercent": 16.7
   },
   "authorPreparation": {
     "document": "docs/dissertation/author-decisions.md",
@@ -413,11 +413,11 @@
     "matrixAutomaticallyStarts": false,
     "unit": "mqtty-network-pilot-v1.service",
     "mainPid": 51204,
-    "observedAtUtc": "2026-10-23T23:30:35.779805+00:00",
-    "observation": "reports/status/network-pilot-latest.json",
+    "observedAtUtc": "2026-10-23T23:39:19.813780+00:00",
+    "observation": "reports/status/goal-resume-20261023T233919Z.json",
     "counts": {
       "pilot": {
-        "done": 0,
+        "done": 5,
         "unresolvedErrors": 0,
         "warnings": 0,
         "total": 30
@@ -443,11 +443,19 @@
     },
     "technicalErrors": 0,
     "active": {
-      "id": "pilot.line.single.q1.r1000.w2.s42",
-      "pid": 51206,
-      "elapsedSeconds": 26.07570266199764,
-      "rssBytes": 409227264,
-      "peakRssBytes": 409227264
+      "id": "pilot.line.relay.q1.r1000.w10.s42",
+      "pid": 51647,
+      "elapsedSeconds": 126.33351319401118,
+      "rssBytes": 434900992,
+      "peakRssBytes": 434900992
     }
+  },
+  "lastGoalTurn": {
+    "previousClassification": "progress",
+    "currentClassification": "verifiedWait",
+    "liveHandleVerified": true,
+    "newExperimentsStarted": false,
+    "observation": "reports/status/goal-resume-20261023T233919Z.json",
+    "pauseSource": "Explicit goal objective: no automatic continuation while long calculations run"
   }
 }
