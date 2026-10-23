@@ -28,7 +28,7 @@
   "data/federation-full-mesh-v1/mosquitto-single-physical.mmd": "471810336d331d779544be1ea01c6dd1b54391be74e48903857c55d27b90cb87",
   "data/federation-full-mesh-v1/mosquitto-single-physical.svg": "f48c30b9165e672a8d2534ae8db56ccf5db89be9787a1c17df6f84b4eb232397",
   "data/federation-full-mesh-v1/protocol-comparison.json": "dc5137b07fc2c41939607da8c6d4b9da051f3dd1d9bb2dce334d289230f20f9d",
-  "data/federation-full-mesh-v1/README.md": "7e05de751d3e4ff91275efede509f04a011be10ce46cf6c2d453108944845b50",
+  "data/federation-full-mesh-v1/README.md": "9426878be73f96dc841c99808c9121f4befd4e24a083fe306d7b9a311b8510aa",
   "data/federation-full-mesh-v1/report-reproduction.json": "b5fcde058e8d409e471fbecc52a26e88fe2047233aa85e5bcf19fd590a876fb6",
   "data/federation-full-mesh-v1/reporting-verification.json": "f961101bd761b15f65e770aad03071066caa03a558e537ab17bf754dba58b79b",
   "data/federation-full-mesh-v1/runs.csv": "46175ac4bcc5a795adc9b8b2d7c153237337779a894106db822291bc2fa20eb9",
@@ -37,5 +37,5 @@
   "data/federation-full-mesh-v1/validation-tests.json": "aa01a39055b5b7c6ec70359df03bb36c8da66f8266017db6628e4ae185838782",
   "data/federation-full-mesh-v1/verification.json": "10e8b67efb73f99ca2f76b702d4948889653fd224224a6459a4d5a7ba074f913",
   "data/federation-full-mesh-v1/warnings.json": "fcea7994b955a642aa2ed8899cf53d5151f44909a783a06d44689345a310df46",
-  "Federation-study.md": "0da3111e5909f17755e42e66cad144a6de96f33be9da71d4d082e18126cfcb14"
+  "mqtty/federation/Federation-study.md": "0d71302552875d2367a66dbf0aefac3e7d96a87d35afd713bba02be469e2f767"
 }

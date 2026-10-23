@@ -32,8 +32,8 @@ def build(root,archive):
     import matplotlib.pyplot as plt
     matplotlib.rcParams['svg.hashsalt']='mqtty-qa-aedes-holdout'
     evidence=root/'reports/data'
-    assets=root/'docs/assets'
-    examples=root/'docs/examples/qa'
+    assets=root/'docs/overview/assets'
+    examples=root/'docs/mqtty/examples/qa'
     assets.mkdir(parents=True,exist_ok=True)
     examples.mkdir(parents=True,exist_ok=True)
     registry=read(evidence/'external-archives.json')['archives']['Aedes-model-evidence.zip']

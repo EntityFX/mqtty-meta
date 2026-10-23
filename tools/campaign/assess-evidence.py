@@ -415,7 +415,7 @@ def document(out,result):
         'Для повторения модели используйте сохранённый config из внешнего модельного архива, тот же runtime, SHA-256 профиля и seed. '
         'Меняются только пути к источникам. Сравнивайте summary, histogram, научные counters и фазы, исключая служебные runId и время вычисления. '
         'Для выбранной шестёрки готов [скрипт](../tools/campaign/replay-final-models.py); для новой установки — '
-        '[руководство полной серии](../docs/full-campaign-runbook.md). Для независимой проверки после исправления модели нужен новый натурный контроль.',
+        '[руководство полной серии](../docs/mqtt-benchmark/runbook.md). Для независимой проверки после исправления модели нужен новый натурный контроль.',
         '## 7. Что необходимо для более сильного заключения',
         '1. Пересчитать первичные ID и перцентили по всем raw-журналам; проверить MQTT-трафик отдельным приёмником или захватом пакетов в диагностических опытах.\n'
         '2. Исправить повторные вызовы отключённого клиента, разделить локальные ошибки и фактические сетевые публикации; собрать новую калибровку и новый контроль.\n'
@@ -447,6 +447,14 @@ def main():
             'table{border-collapse:collapse;display:block;overflow:auto}td,th{border:1px solid #bbb;padding:.4em}'
             'th{background:#e8eef4}code{overflow-wrap:anywhere}a{color:#17548a}</style><body>'+body+'</body></html>',encoding='utf-8')
     print(json.dumps(dict(native=result['native'],est=result['est'],externalArchivesChecked=result['externalArchivesChecked']),ensure_ascii=False))
+    return args.reports
 
 
-if __name__=='__main__': main()
+if __name__=='__main__': report_root = main()
+
+# Canonical meta-repository documentation layout.
+if __name__ == '__main__':
+    import sys as _layout_sys
+    _layout_sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "documentation"))
+    from layout import organize_reports as _organize_reports
+    _organize_reports(report_root)

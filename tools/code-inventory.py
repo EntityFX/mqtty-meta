@@ -1,4 +1,4 @@
-"""Refresh the source-size tables in docs/architecture.md using only Git and Python."""
+"""Refresh the source-size tables in docs/overview/architecture.md using only Git and Python."""
 import argparse
 import hashlib
 import json
@@ -23,6 +23,8 @@ def collect():
     modules = {}
     revisions = {}
     source_hash = hashlib.sha256()
+    layout = ROOT / "tools/documentation/layout.json"
+    documentation_moves = json.loads(layout.read_text(encoding="utf-8"))["moves"] if layout.is_file() else {}
     for name in REPOS:
         repo = ROOT / name
         if git(repo, "rev-parse", "--show-toplevel").strip().replace("\\", "/").lower() != repo.resolve().as_posix().lower():
@@ -38,6 +40,11 @@ def collect():
                 continue
             path = repo / relative
             if not path.is_file():
+                relocated = documentation_moves.get(path.relative_to(ROOT).as_posix())
+                if relocated and (ROOT / relocated).is_file():
+                    # A documented cross-repository move is counted at its new
+                    # location, including before the source deletion is committed.
+                    continue
                 raise RuntimeError(f"Tracked source is missing: {path}")
             project = next((p for p in projects if relative.is_relative_to(p.parent)), None)
             test = any("test" in part.lower() for part in relative.parts)
@@ -78,7 +85,7 @@ def render(data):
         title = "Корневой репозиторий" if name == "." else name
         lines.append(f"| **{title}** | **Итого** | **{sum(m['files'] for m in entries)}** | **{sum(m['lines'] for m in entries)}** | **{sum(m['nonblank'] for m in entries)}** |")
         for m in entries:
-            lines.append(f"| [{m['module']}](../{m['directory']}/) | {m['kind']} | {m['files']} | {m['lines']} | {m['nonblank']} |")
+            lines.append(f"| [{m['module']}](../../{m['directory']}/) | {m['kind']} | {m['files']} | {m['lines']} | {m['nonblank']} |")
     total = data["totals"]
     lines.extend([f"| **Всего** | | **{total['files']}** | **{total['lines']}** | **{total['nonblank']}** |", "", END])
     return "\n".join(lines)
@@ -89,12 +96,12 @@ def main():
     parser.add_argument("--check", action="store_true", help="Fail if the saved inventory differs from the checkout")
     args = parser.parse_args()
     data = collect()
-    doc = ROOT / "docs/architecture.md"
+    doc = ROOT / "docs/overview/architecture.md"
     current = doc.read_text(encoding="utf-8")
     before, rest = current.split(BEGIN, 1)
     _, after = rest.split(END, 1)
     updated = before + render(data) + after
-    inventory = ROOT / "docs/code-inventory.json"
+    inventory = ROOT / "docs/overview/code-inventory.json"
     serialized = json.dumps(data, ensure_ascii=False, indent=2) + "\n"
     if args.check:
         if updated != current or not inventory.exists() or inventory.read_text(encoding="utf-8") != serialized:

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "kind": "functional-native-smoke-not-calibration",
+  "date": "2026-10-13",
+  "environment": "Simply Linux 11.1 p11 x86_64; .NET 6.0.36; PowerShell 7.4.6",
+  "configuration": {
+    "schemaVersion": 3,
+    "seed": 20260909,
+    "deploymentMode": "singleHostSequential",
+    "cpuMode": "hostAllCores",
+    "brokers": [
+      "Aedes",
+      "Mosquitto",
+      "ActiveMQ",
+      "EMQX"
+    ],
+    "customImageBrokers": [],
+    "messageBytes": [
+      16
+    ],
+    "qos": [
+      1
+    ],
+    "publishers": [
+      1
+    ],
+    "repeats": 1,
+    "warmupSeconds": 0.2,
+    "measurementSeconds": 1,
+    "cooldownSeconds": 0,
+    "drainTimeoutSeconds": 1,
+    "quietPeriodSeconds": 0.2,
+    "networkThresholdPercentByBroker": {
+      "Aedes": null,
+      "Mosquitto": null,
+      "ActiveMQ": null,
+      "EMQX": null
+    },
+    "preflightSysWaitSeconds": 1,
+    "preflightRttProbes": 3,
+    "telemetryCaptureReserveSeconds": 10
+  },
+  "brokers": [
+    {
+      "key": {
+        "broker": "ActiveMQ",
+        "messageBytes": 16,
+        "qos": 1,
+        "publishers": 1,
+        "repeat": 1,
+        "key": "ActiveMQ.m16.q1.p1.r1"
+      },
+      "status": "success",
+      "identity": {
+        "campaignId": "four-reduced-run-001",
+        "configSha256": "0a9f792f930050a1c174aba4877f572cc1b21b18daf105bb6074e13894734f94",
+        "standSha256": "3a3aa0d53493b1fc1e37ad1bfe2137282bf602fb0ea057d820ac1316b0976669",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "hostAllCores",
+        "mqttBenchmarkCommitSha": "30986bd28935f556c6f7ce16cb8599bfdf5c5385"
+      },
+      "resultSha256": "5343656daea466aafd69827d71f7c88e61f60de5f3bd06150de9c4fe85c3ad42",
+      "telemetrySamples": 13,
+      "cpuScope": "process-pinned",
+      "networkScope": "host-shared",
+      "fenceCovered": true,
+      "memoryLimitEnforcement": "cgroup-v2-unavailable: Exception calling \"CreateDirectory\" with \"1\" argument(s): \"Access to the path '/sys/fs/cgroup/mqttbenchmark-66889' is denied.\""
+    },
+    {
+      "key": {
+        "broker": "Aedes",
+        "messageBytes": 16,
+        "qos": 1,
+        "publishers": 1,
+        "repeat": 1,
+        "key": "Aedes.m16.q1.p1.r1"
+      },
+      "status": "success",
+      "identity": {
+        "campaignId": "four-reduced-run-001",
+        "configSha256": "0a9f792f930050a1c174aba4877f572cc1b21b18daf105bb6074e13894734f94",
+        "standSha256": "3a3aa0d53493b1fc1e37ad1bfe2137282bf602fb0ea057d820ac1316b0976669",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "hostAllCores",
+        "mqttBenchmarkCommitSha": "30986bd28935f556c6f7ce16cb8599bfdf5c5385"
+      },
+      "resultSha256": "613a91851ee2d1f87125b0b9afa95a054a7e16fe2c54253e95b9fbc01947e36b",
+      "telemetrySamples": 13,
+      "cpuScope": "process-pinned",
+      "networkScope": "host-shared",
+      "fenceCovered": true,
+      "memoryLimitEnforcement": "cgroup-v2-unavailable: Exception calling \"CreateDirectory\" with \"1\" argument(s): \"Access to the path '/sys/fs/cgroup/mqttbenchmark-65384' is denied.\""
+    },
+    {
+      "key": {
+        "broker": "EMQX",
+        "messageBytes": 16,
+        "qos": 1,
+        "publishers": 1,
+        "repeat": 1,
+        "key": "EMQX.m16.q1.p1.r1"
+      },
+      "status": "success",
+      "identity": {
+        "campaignId": "four-reduced-run-001",
+        "configSha256": "0a9f792f930050a1c174aba4877f572cc1b21b18daf105bb6074e13894734f94",
+        "standSha256": "3a3aa0d53493b1fc1e37ad1bfe2137282bf602fb0ea057d820ac1316b0976669",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "hostAllCores",
+        "mqttBenchmarkCommitSha": "30986bd28935f556c6f7ce16cb8599bfdf5c5385"
+      },
+      "resultSha256": "f4259801f18de25e63ce44746453403d10c1e6f7be2ab2cdc8c0c438d2557519",
+      "telemetrySamples": 13,
+      "cpuScope": "process-pinned",
+      "networkScope": "host-shared",
+      "fenceCovered": true,
+      "memoryLimitEnforcement": "cgroup-v2-unavailable: Exception calling \"CreateDirectory\" with \"1\" argument(s): \"Access to the path '/sys/fs/cgroup/mqttbenchmark-66117' is denied.\""
+    },
+    {
+      "key": {
+        "broker": "Mosquitto",
+        "messageBytes": 16,
+        "qos": 1,
+        "publishers": 1,
+        "repeat": 1,
+        "key": "Mosquitto.m16.q1.p1.r1"
+      },
+      "status": "success",
+      "identity": {
+        "campaignId": "four-reduced-run-001",
+        "configSha256": "0a9f792f930050a1c174aba4877f572cc1b21b18daf105bb6074e13894734f94",
+        "standSha256": "3a3aa0d53493b1fc1e37ad1bfe2137282bf602fb0ea057d820ac1316b0976669",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "hostAllCores",
+        "mqttBenchmarkCommitSha": "30986bd28935f556c6f7ce16cb8599bfdf5c5385"
+      },
+      "resultSha256": "401e3bceb06483602acbcf018316619ccb72d7f806b76c3965133f6a5c3d4844",
+      "telemetrySamples": 13,
+      "cpuScope": "process-pinned",
+      "networkScope": "host-shared",
+      "fenceCovered": true,
+      "memoryLimitEnforcement": "cgroup-v2-unavailable: Exception calling \"CreateDirectory\" with \"1\" argument(s): \"Access to the path '/sys/fs/cgroup/mqttbenchmark-65888' is denied.\""
+    }
+  ],
+  "aggregateRunCount": 4,
+  "aggregatePointCount": 4,
+  "aggregateSha256": "ff3371176cf87ec724ce7cedbc43fb5e775793e6ba94dfa2529ddf28c01b9ea7",
+  "sealReferencesChecked": 176,
+  "sealMismatches": [],
+  "rawLocation": "/tmp/mqtty-doc-tools/four-reduced-run-001 (local validation scratch; not a published scientific dataset)",
+  "validationSource": "isolated clean Git snapshot; original repositories were not committed"
+}

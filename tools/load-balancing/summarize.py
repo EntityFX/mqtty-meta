@@ -212,3 +212,10 @@ if __name__ == "__main__":
         svg.write_text(re.sub(r"\s*<dc:date>[^<]*</dc:date>", "", svg.read_text(encoding="utf-8")), encoding="utf-8")
     topologies.publish(work, reports)
     publish(work, reports)
+
+# Canonical meta-repository documentation layout.
+if __name__ == "__main__":
+    import sys as _layout_sys
+    _layout_sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "documentation"))
+    from layout import organize_reports as _organize_reports
+    _organize_reports(reports)

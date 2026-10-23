@@ -119,7 +119,7 @@ def main():
         'Точность двойника на всей матрице **не подтверждена**. Содержательные провалы сохранены, пороги не менялись. Технически успешное выполнение не означает прохождение научной проверки.',
         'Натурный publishFailureRate равен нулю во всех 48 агрегированных точках. Недоставка ID успешных публикаций достигает **92,02% в калибровке и 96,87% в независимом контроле** (256 байт, QoS 1, 128 publishers). '
         'Эту недоставку нельзя приписать исключительно брокеру без разделения влияния очередей, получателя, TCP и окна наблюдения.',
-        '[Отдельный справочник метрик, единиц и формул](../../../../docs/campaign-metrics.md).',
+        '[Отдельный справочник метрик, единиц и формул](../../../../docs/mqtt-benchmark/metrics.md).',
         '## 1. Стенд и версии',
         table(['Параметр', 'Значение'], [
             ['Размещение', 'Контроллер и native-брокер на Linux 192.168.5.1; MQTT 127.0.0.1:1883; Windows — SSH и документы'],
@@ -218,7 +218,7 @@ def main():
         'Повторять эксперименты следует в новом output-каталоге на hd250, сохраняя версию runtime и исходные конфиги. '
         'Точные experiment-конфиги находятся в Linux `controller/brokers/Aedes/simulations/{fidelity,holdout,relay}-2s-overnight-v1/`. '
         'Натурные входы: [calibration](../inputs/Aedes-calibration.json), [validation](../inputs/Aedes-validation.json). '
-        'Пошаговое развёртывание: [runbook](../../../../docs/full-campaign-runbook.md).',
+        'Пошаговое развёртывание: [runbook](../../../../docs/mqtt-benchmark/runbook.md).',
         '[Натурные CSV](Aedes-native-results.csv) · [Relay CSV](Aedes-relay-results.csv) · [Все 216 summaries](Aedes-simulations.json) · '
         '[Попытки и guard](Aedes-attempts.json) · [Сводка JSON](Aedes-summary.json) · [SHA-256 отчёта и приложений](Aedes-report-manifest.json) · '
         '[Подробный исходный автоотчёт](Aedes-detailed.md).']

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "kind": "windows-local-functional-native-smoke-not-calibration",
+  "date": "2026-10-13",
+  "host": "Windows 10 Enterprise LTSC 2019 build17763.9245; PowerShell7.6.6; .NET6.0.36; 2 physical/4 logical CPUs",
+  "configuration": {
+    "cpuMode": "singleCorePinned",
+    "brokerCpu": 0,
+    "controllerCpu": 2,
+    "systemCpuGuardPercent": 70,
+    "qos": 1,
+    "messageBytes": 16,
+    "publishers": 1,
+    "repeats": 1,
+    "warmupSeconds": 5,
+    "measurementSeconds": 3
+  },
+  "runs": [
+    {
+      "broker": "Mosquitto",
+      "lifecycle": "managed",
+      "identity": {
+        "campaignId": "Mosquitto-local-pinned-managed-003",
+        "configSha256": "cb44eaab479af32dc744c5133db7d388c876f159cdc1532e0b24b6b9c2193341",
+        "standSha256": "fa17ea911d8acdc7dc1115a7ae931121f7c698dedb5b4668f3b1d11ebb4f295b",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "singleCorePinned",
+        "mqttBenchmarkCommitSha": "47e6cf4e4cf2f0ab812136e8e5cbec13f38869d7"
+      },
+      "runCount": 1,
+      "aggregateSha256": "90cab5af209f693e9bf3eac338b9115c8a088a47bf44cdb1e2e3312812bcab9d",
+      "sealReferencesChecked": 46,
+      "sealMismatches": [],
+      "rawLocation": "C:/Users/entityfx/mqtty-native-validation-20261013/Mosquitto-local-pinned-managed-003"
+    },
+    {
+      "broker": "Aedes",
+      "lifecycle": "managed",
+      "identity": {
+        "campaignId": "Aedes-local-pinned-managed-003",
+        "configSha256": "358b869699c2d67232dc9e5f4b200ec9920df4c0ce51d7bddbf73ef9ce70d479",
+        "standSha256": "2e7d6969f549c987728ae54f8e34b4f185aa51ade5a46df928a63a82d3efa8ae",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "singleCorePinned",
+        "mqttBenchmarkCommitSha": "47e6cf4e4cf2f0ab812136e8e5cbec13f38869d7"
+      },
+      "runCount": 1,
+      "aggregateSha256": "d949804dd12f9a72fc67248a9fed27f771e454e151c19d5f3c0d5f0a68f2a8f9",
+      "sealReferencesChecked": 46,
+      "sealMismatches": [],
+      "rawLocation": "C:/Users/entityfx/mqtty-native-validation-20261013/Aedes-local-pinned-managed-003"
+    },
+    {
+      "broker": "ActiveMQ",
+      "lifecycle": "managed",
+      "identity": {
+        "campaignId": "ActiveMQ-local-pinned-managed-003",
+        "configSha256": "ded62ddedb56bf29939e8e51a70c85235cf736167b3f7c09a1ee8a3e049e1a56",
+        "standSha256": "34f0d51505c0628b3c59f4a5d6791b7b81b3a9ef22774fc1d1487a715b761d8c",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "singleCorePinned",
+        "mqttBenchmarkCommitSha": "47e6cf4e4cf2f0ab812136e8e5cbec13f38869d7"
+      },
+      "runCount": 1,
+      "aggregateSha256": "5505c943a35f6405393679b3c5a63174c8b3d4999f3cffcf6f529b350c06784d",
+      "sealReferencesChecked": 46,
+      "sealMismatches": [],
+      "rawLocation": "C:/Users/entityfx/mqtty-native-validation-20261013/ActiveMQ-local-pinned-managed-003"
+    },
+    {
+      "broker": "Mosquitto",
+      "lifecycle": "external",
+      "identity": {
+        "campaignId": "Mosquitto-local-pinned-external-003",
+        "configSha256": "cb44eaab479af32dc744c5133db7d388c876f159cdc1532e0b24b6b9c2193341",
+        "standSha256": "e334826acf70149d79d95b71c92949461a426acfd9e4035e9767929ff37a50f0",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "singleCorePinned",
+        "mqttBenchmarkCommitSha": "47e6cf4e4cf2f0ab812136e8e5cbec13f38869d7"
+      },
+      "runCount": 1,
+      "aggregateSha256": "ff4a17a8fd0f9d5ed9395c75423b61917fb937b3b0befb3c9ec5f8e06d77c2e5",
+      "sealReferencesChecked": 44,
+      "sealMismatches": [],
+      "rawLocation": "C:/Users/entityfx/mqtty-native-validation-20261013/Mosquitto-local-pinned-external-003"
+    }
+  ],
+  "externalOperatorRemainedAliveAfterCampaign": true,
+  "operatorCleanup": "Operator helper stopped its process after verifying that external lifecycle left it alive.",
+  "limitations": [
+    "Four short one-key campaigns are not calibration data or fidelity evidence.",
+    "hostAllCores short local run was rejected by the unchanged 70% system CPU guard; resource partition was required on this host.",
+    "This evidence does not prove Windows-to-Windows on two physical machines or EMQX on Windows."
+  ]
+}

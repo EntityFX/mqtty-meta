@@ -143,3 +143,10 @@ if __name__ == "__main__":
     parser.add_argument("--work-dir", type=Path, required=True)
     args = parser.parse_args()
     publish(args.work_dir.resolve())
+
+# Canonical meta-repository documentation layout.
+if __name__ == "__main__":
+    import sys as _layout_sys
+    _layout_sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "documentation"))
+    from layout import organize_reports as _organize_reports
+    _organize_reports(study.ROOT / "reports")

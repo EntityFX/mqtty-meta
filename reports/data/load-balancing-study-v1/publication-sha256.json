@@ -21,7 +21,7 @@
   "data/load-balancing-study-v1/topology-mosquitto-single64.svg": "640c06a65287bd2a02ed50a5af35d444a9595a4fa98687a84c7aadab270abf53",
   "data/load-balancing-study-v1/topology-verification.json": "4b9622cc0f704ac9976fc3d0cd5be9ec4509a584bd39f27aded236302dcaa396",
   "data/load-balancing-study-v1/verification.json": "a06fcb8e8187f9f1b512b34b4b96d90fa5ed954774ae00d15d66bbc535ab75c7",
-  "Load-balancing-demo.md": "4cf08356a9c522717bb0667ff320c24ab3445ec901b2b7eaa15c806d62f6c5e6",
-  "Load-balancing-Mosquitto.md": "825f626f44654b402c707af8cf960443fc434f80a65b467e4c4834cb99b318be",
-  "Load-balancing-study.md": "8ae80a498260c3aba44e0ed9b0862247e787fe28227d8d923e13cc542dd74a1b"
+  "mqtty/load-balancing/Load-balancing-demo.md": "2fc34862dc8fd2ec3b36e39388e2002fb530793b795f59c0ab11bc1b49319b73",
+  "mqtty/load-balancing/Load-balancing-Mosquitto.md": "590756b564268715dd5449e659a17a1f74b35967904ef7b3019aa3ffc8ef8214",
+  "mqtty/load-balancing/Load-balancing-study.md": "03ba3efd5e6cf3ba49bf9e3266fbc15ab52fbac383883e317a413d3568e96065"
 }

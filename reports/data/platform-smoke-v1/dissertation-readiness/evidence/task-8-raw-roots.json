@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "SHA256(UTF8(concat(ordinal-sort(relative-path-with-forward-slashes + TAB + lowercase-file-SHA256 + LF)))); all regular files including .lock and sha256.json; no BOM",
+  "baselineAccepted": 0,
+  "baselineRequired": 288,
+  "brokerFidelityCompleted": 0,
+  "brokerFidelityRequired": 288,
+  "mqttRelayCompleted": 0,
+  "mqttRelayRequired": 24,
+  "roots": [
+    {
+      "rootId": "task4-preflight-four-brokers-003",
+      "localPath": "C:\\projects\\EntityFx.Iot\\MqttBenchmark\\artifacts\\task4-preflight-four-brokers-003",
+      "fileCount": 131,
+      "totalBytes": 206309,
+      "treeSha256": "400352fafdcd03a756d26461d1a68fd09eb6790759e979fa74f69e55a4526f10",
+      "sealedFileReferences": 130,
+      "sealMismatches": 0,
+      "acceptedAttempts": 0,
+      "failedSealedAttempts": 0,
+      "unsealedAttempts": 0,
+      "preflightBrokersPassed": 4,
+      "identity": {
+        "campaignId": "task4-preflight-four-brokers-003",
+        "configSha256": "de986dc07cd2a524f66ad5ff57846371455639cc7a5fc243d30a4225e09db974",
+        "standSha256": "40c2ecd332bcf5958c9599dddc99aa48c450e0a33fc52aa0c7740a0a79cf1276",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "singleCorePinned",
+        "mqttBenchmarkCommitSha": "79d4f404c9fd547268e1d55a408b3c882951e5a8"
+      }
+    },
+    {
+      "rootId": "task4-guarded-pilot-aedes-001",
+      "localPath": "C:\\projects\\EntityFx.Iot\\MqttBenchmark\\campaigns\\task4-guarded-pilot-aedes-001",
+      "fileCount": 198,
+      "totalBytes": 15466012,
+      "treeSha256": "29bb0536a8724bd6810ab6787f97789c9a85735fb954dbfa6ef96b6a55fc4866",
+      "sealedFileReferences": 192,
+      "sealMismatches": 0,
+      "acceptedAttempts": 4,
+      "failedSealedAttempts": 0,
+      "unsealedAttempts": 0,
+      "preflightBrokersPassed": null,
+      "identity": {
+        "campaignId": "task4-guarded-pilot-aedes-001",
+        "configSha256": "a19fea2d7f4a3bb9ff653aaeb3a7309e211c6bd4891a40c9645d870c881180b0",
+        "standSha256": "40c2ecd332bcf5958c9599dddc99aa48c450e0a33fc52aa0c7740a0a79cf1276",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "singleCorePinned",
+        "mqttBenchmarkCommitSha": "79d4f404c9fd547268e1d55a408b3c882951e5a8"
+      }
+    },
+    {
+      "rootId": "task4-guarded-pilot-mosquitto-001",
+      "localPath": "C:\\projects\\EntityFx.Iot\\MqttBenchmark\\campaigns\\task4-guarded-pilot-mosquitto-001",
+      "fileCount": 182,
+      "totalBytes": 14713301,
+      "treeSha256": "8b4ecf399a93b33607729a467b6a1ee37aec534fbdc56eedf7f1b0c5615949c8",
+      "sealedFileReferences": 176,
+      "sealMismatches": 0,
+      "acceptedAttempts": 4,
+      "failedSealedAttempts": 0,
+      "unsealedAttempts": 0,
+      "preflightBrokersPassed": null,
+      "identity": {
+        "campaignId": "task4-guarded-pilot-mosquitto-001",
+        "configSha256": "a19fea2d7f4a3bb9ff653aaeb3a7309e211c6bd4891a40c9645d870c881180b0",
+        "standSha256": "40c2ecd332bcf5958c9599dddc99aa48c450e0a33fc52aa0c7740a0a79cf1276",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "singleCorePinned",
+        "mqttBenchmarkCommitSha": "79d4f404c9fd547268e1d55a408b3c882951e5a8"
+      }
+    },
+    {
+      "rootId": "task4-guarded-pilot-emqx-001",
+      "localPath": "C:\\projects\\EntityFx.Iot\\MqttBenchmark\\campaigns\\task4-guarded-pilot-emqx-001",
+      "fileCount": 137,
+      "totalBytes": 7122414,
+      "treeSha256": "5fa086a7d191be8a9b7550c6013143f4ed692fb3a4072db998e0ccd0ac399b29",
+      "sealedFileReferences": 132,
+      "sealMismatches": 0,
+      "acceptedAttempts": 3,
+      "failedSealedAttempts": 0,
+      "unsealedAttempts": 0,
+      "preflightBrokersPassed": null,
+      "identity": {
+        "campaignId": "task4-guarded-pilot-emqx-001",
+        "configSha256": "a19fea2d7f4a3bb9ff653aaeb3a7309e211c6bd4891a40c9645d870c881180b0",
+        "standSha256": "40c2ecd332bcf5958c9599dddc99aa48c450e0a33fc52aa0c7740a0a79cf1276",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "singleCorePinned",
+        "mqttBenchmarkCommitSha": "79d4f404c9fd547268e1d55a408b3c882951e5a8"
+      }
+    },
+    {
+      "rootId": "task4-guarded-pilot-activemq-001",
+      "localPath": "C:\\projects\\EntityFx.Iot\\MqttBenchmark\\campaigns\\task4-guarded-pilot-activemq-001",
+      "fileCount": 373,
+      "totalBytes": 12368036,
+      "treeSha256": "21513477ce7d9eca2df7b0ca459bef91c7d355fad7482b0b65911e5b914da841",
+      "sealedFileReferences": 364,
+      "sealMismatches": 0,
+      "acceptedAttempts": 7,
+      "failedSealedAttempts": 0,
+      "unsealedAttempts": 0,
+      "preflightBrokersPassed": null,
+      "identity": {
+        "campaignId": "task4-guarded-pilot-activemq-001",
+        "configSha256": "a19fea2d7f4a3bb9ff653aaeb3a7309e211c6bd4891a40c9645d870c881180b0",
+        "standSha256": "40c2ecd332bcf5958c9599dddc99aa48c450e0a33fc52aa0c7740a0a79cf1276",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "singleCorePinned",
+        "mqttBenchmarkCommitSha": "79d4f404c9fd547268e1d55a408b3c882951e5a8"
+      }
+    },
+    {
+      "rootId": "task4-baseline-singlecore-001",
+      "localPath": "H:\\MqttBenchmark-artifacts\\task4-baseline-singlecore-001",
+      "fileCount": 79,
+      "totalBytes": 264988214,
+      "treeSha256": "05bc066855421a780c6572dc75b74b1a96446b21f76d2cb8fb39e8367cd504ba",
+      "sealedFileReferences": 39,
+      "sealMismatches": 0,
+      "acceptedAttempts": 0,
+      "failedSealedAttempts": 1,
+      "unsealedAttempts": 1,
+      "preflightBrokersPassed": null,
+      "identity": {
+        "campaignId": "task4-baseline-singlecore-001",
+        "configSha256": "de986dc07cd2a524f66ad5ff57846371455639cc7a5fc243d30a4225e09db974",
+        "standSha256": "40c2ecd332bcf5958c9599dddc99aa48c450e0a33fc52aa0c7740a0a79cf1276",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "singleCorePinned",
+        "mqttBenchmarkCommitSha": "79d4f404c9fd547268e1d55a408b3c882951e5a8"
+      }
+    }
+  ]
+}

@@ -413,3 +413,10 @@ if __name__ == "__main__":
         for case in read(work / "study-plan.json")["cases"]:
             verify_run(work / "runs" / case["id"])
         print("Verified all saved main runs")
+
+# Canonical meta-repository documentation layout.
+if __name__ == "__main__" and args.command == "report":
+    import sys as _layout_sys
+    _layout_sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "documentation"))
+    from layout import organize_reports as _organize_reports
+    _organize_reports(ROOT / "reports")

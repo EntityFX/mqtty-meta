@@ -467,7 +467,7 @@ def broker_report(out,b,points,models,snapshot):
         '```bash\npython tools/campaign/render-final-reports.py --output reports\n```',
         'Для повтора модели распакуйте model-evidence.zip, возьмите config.json нужной точки, замените только пути к профилям/observations/репозиториям '
         'и вызовите `dotnet EntityFX.MqttY.MqttRelay.App.dll experiment --config <config.json> --output <новый-каталог>`. '
-        'Нужна зафиксированная версия DLL, а не произвольная свежая сборка. Для новой полной натурной серии: [руководство](../docs/full-campaign-runbook.md).']
+        'Нужна зафиксированная версия DLL, а не произвольная свежая сборка. Для новой полной натурной серии: [руководство](../docs/mqtt-benchmark/runbook.md).']
     write(out/f'{b}.md','\n\n'.join(text)+'\n')
 
 
@@ -712,7 +712,15 @@ def main():
         files={p.relative_to(out).as_posix():sha(p) for p in sorted(out.rglob('*')) if p.is_file() and p.suffix.lower()!='.zip' and p!=out/'publication-sha256.json'}))
     print('Verification:', 'external archives and compact JSON' if args.archive_root else 'compact JSON; external archives not read')
     print('REPORTS',result['means'],'winner',result['winner'])
+    return out
 
 
 if __name__=='__main__':
-    main()
+    report_root = main()
+
+# Canonical meta-repository documentation layout.
+if __name__ == '__main__':
+    import sys as _layout_sys
+    _layout_sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "documentation"))
+    from layout import organize_reports as _organize_reports
+    _organize_reports(report_root)

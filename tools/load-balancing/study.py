@@ -479,3 +479,10 @@ if __name__ == "__main__":
         if target.is_relative_to(directory):
             parser.error("The archive must be outside the evidence directory")
         archive(directory, target)
+
+# Canonical meta-repository documentation layout.
+if __name__ == "__main__" and args.action == "report":
+    import sys as _layout_sys
+    _layout_sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "documentation"))
+    from layout import organize_reports as _organize_reports
+    _organize_reports(args.reports.resolve())

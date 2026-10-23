@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "kind": "physical-two-host-functional-native-smoke-not-calibration",
+  "date": "2026-10-13",
+  "controller": "Simply Linux 11.1 p11 x86_64; PowerShell 7.4.6; .NET 6.0.36",
+  "brokerHost": "Windows 10 Enterprise LTSC 2019 build 17763.9245; PowerShell 7.6.6",
+  "sourceProvenance": "Isolated clean Git snapshot, not a published product commit; see each run identity.",
+  "configuration": "Separate single-broker short campaigns: QoS1, 16 bytes, one publisher, one repeat, 1-second measurement.",
+  "brokers": [
+    {
+      "broker": "Mosquitto",
+      "status": "success",
+      "identity": {
+        "campaignId": "linux-to-windows-Mosquitto-007",
+        "configSha256": "f8f82c63d00848dda6126d5bd153c4c3c5d8b64ca67121e1fdce1056ec59ed99",
+        "standSha256": "38e0c67dc647b9673bfa39eb2ec3c6ae908baf4a75c8ed3cadf599b83ed30624",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "hostAllCores",
+        "mqttBenchmarkCommitSha": "89bba24c583eeda9fbc029625930ff2290542462"
+      },
+      "aggregateRunCount": 1,
+      "aggregateSha256": "be7d7058f3a992b8eea5941f6991b16be6fa38d7cc6d64ff29f6bc5d00700f4a",
+      "sealReferencesChecked": 45,
+      "sealMismatches": [],
+      "clock": {
+        "ready": true,
+        "method": "ssh-native-clock-roundtrip",
+        "offsetMs": 452.4755,
+        "uncertaintyMs": 11.889562999999999,
+        "thresholdMs": 3000
+      },
+      "rawLocation": "/tmp/mqtty-doc-tools/linux-to-windows-Mosquitto-007"
+    },
+    {
+      "broker": "Aedes",
+      "status": "success",
+      "identity": {
+        "campaignId": "linux-to-windows-Aedes-007",
+        "configSha256": "0061dbe3c48166f7cf864adcb80a182ce953b0d31a7e0787358342f05800f86d",
+        "standSha256": "e8468c6518821a4fb6bdb4210ef3b385760aa4d468541f2f8d0676ef71ff834e",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "hostAllCores",
+        "mqttBenchmarkCommitSha": "89bba24c583eeda9fbc029625930ff2290542462"
+      },
+      "aggregateRunCount": 1,
+      "aggregateSha256": "c03326946568ad7e6ae533a570016976a1446c3198969de5629570a34e06d887",
+      "sealReferencesChecked": 45,
+      "sealMismatches": [],
+      "clock": {
+        "ready": true,
+        "method": "ssh-native-clock-roundtrip",
+        "offsetMs": 452.9199,
+        "uncertaintyMs": 12.465011000000002,
+        "thresholdMs": 3000
+      },
+      "rawLocation": "/tmp/mqtty-doc-tools/linux-to-windows-Aedes-007"
+    },
+    {
+      "broker": "ActiveMQ",
+      "status": "success",
+      "identity": {
+        "campaignId": "linux-to-windows-ActiveMQ-007",
+        "configSha256": "6811652740da0302b5ce5804bfc2a87b06cbde7bc6279c81ac3f0442d24a4b31",
+        "standSha256": "4c1800a7b057cd6f44e857073939c66cf7c8e47e390a1da71608178feabf9eb4",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "hostAllCores",
+        "mqttBenchmarkCommitSha": "89bba24c583eeda9fbc029625930ff2290542462"
+      },
+      "aggregateRunCount": 1,
+      "aggregateSha256": "44941fce17fd579ca98295580f49215756f09ea5b2069c8db9810b09090ba058",
+      "sealReferencesChecked": 45,
+      "sealMismatches": [],
+      "clock": {
+        "ready": true,
+        "method": "ssh-native-clock-roundtrip",
+        "offsetMs": 453.4377,
+        "uncertaintyMs": 12.1663465,
+        "thresholdMs": 3000
+      },
+      "rawLocation": "/tmp/mqtty-doc-tools/linux-to-windows-ActiveMQ-007"
+    }
+  ],
+  "limitations": [
+    "No full 288-run calibration dataset or fidelity result.",
+    "Windows controller to Linux, Windows local/external and 3+ physical hosts not verified by this evidence.",
+    "EMQX is not a native Windows broker; WSL2 is unavailable on this Windows build."
+  ]
+}

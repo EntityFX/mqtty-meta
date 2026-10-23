@@ -1,0 +1,59 @@
+{
+  "scope": "Two articles and dissertation: 42 steps, 47 person-days baseline",
+  "localSteps": [
+    "03",
+    "04",
+    "05",
+    "06"
+  ],
+  "localWeightPersonDays": 5,
+  "verifiedTechnicalSteps": [
+    "03"
+  ],
+  "verifiedTechnicalWeightPersonDays": 2,
+  "localPercent": 40,
+  "globalPercent": 4.3,
+  "basis": "Plan effort weights; not scientific confidence or elapsed labour",
+  "steps": {
+    "03": {
+      "status": "technicalChecksPassed",
+      "testsPassed": 22
+    },
+    "04": {
+      "status": "runningOnLinux",
+      "systemdUnit": "mqtty-native-audit-v1.service",
+      "remoteRoot": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/full",
+      "observedState": {
+        "MainPID": "8920",
+        "Result": "success",
+        "MemoryCurrent": "441303040",
+        "ActiveState": "active",
+        "SubState": "running",
+        "progress": {
+          "elapsedSeconds": 54.257714374994976,
+          "nonSelectedSuccessArchives": 0,
+          "nonSuccessArchives": 0,
+          "pid": 8920,
+          "processed": 14,
+          "selectedDiscrepancies": 0,
+          "selectedPassed": 14,
+          "status": "running",
+          "technicalErrors": 0,
+          "total": 592,
+          "workerMemoryMiB": 2048,
+          "workers": 2
+        },
+        "pidExists": true
+      }
+    },
+    "05": {
+      "status": "technicalDraftPrepared",
+      "document": "docs/measurement-contract.md",
+      "acceptance": "Scientific definitions await final author review"
+    },
+    "06": {
+      "status": "awaitingCompleteRecount"
+    }
+  },
+  "humanAcceptanceNotReplaced": true
+}
