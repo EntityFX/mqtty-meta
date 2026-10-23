@@ -148,6 +148,17 @@
     "25": {
       "status": "humanAuthorTask",
       "agentDeliverable": "docs/dissertation/article-layouts.md"
+    },
+    "01": {
+      "status": "evidenceMapPreparedAwaitingAuthorAndSupervisor",
+      "document": "docs/dissertation/claim-evidence-map.md",
+      "scientificClaimsApproved": false
+    },
+    "09": {
+      "status": "technicalMethodMapPreparedAwaitingAuthorReview",
+      "document": "docs/dissertation/broker-twin-method-map.md",
+      "scope": "Actors, commands, sequence diagram, parameter origins, formulas, calibration/Fidelity/holdout separation",
+      "articleTextWritten": false
     }
   },
   "humanAcceptanceNotReplaced": true,
@@ -156,5 +167,15 @@
   "manualContinuationRequired": true,
   "continuationCheckpoint": "Sensitivity pipeline started in systemd; pilot then 216 matrix runs and 6 replays automatically, stop on technical error; agent pauses per user rule",
   "articleWritingOwner": "human",
-  "recommendedManualReviewAt": "2026-10-24T09:00:00+03:00"
+  "recommendedManualReviewAt": "2026-10-24T09:00:00+03:00",
+  "parallelWork": {
+    "changes": "Local documentation and source review only",
+    "documents": [
+      "docs/dissertation/broker-twin-method-map.md",
+      "docs/dissertation/claim-evidence-map.md"
+    ],
+    "runningExperimentInputsChanged": false,
+    "additionalCalculationsStarted": false,
+    "linuxStatusNotPolledDuringThisWork": true
+  }
 }
