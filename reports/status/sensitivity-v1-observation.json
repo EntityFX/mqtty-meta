@@ -1,15 +1,15 @@
 {
-  "observedAtUtc": "2026-10-23T18:07:55.044888+00:00",
+  "observedAtUtc": "2026-10-23T18:31:43.225160+00:00",
   "unit": "mqtty-sensitivity-v1.service",
   "root": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1",
-  "service": "MainPID=40598\nResult=success\nExecMainCode=0\nExecMainStatus=0\nMemoryCurrent=701718528\nActiveState=active\nSubState=running\n",
+  "service": "MainPID=40598\nResult=success\nExecMainCode=0\nExecMainStatus=0\nMemoryCurrent=1043648512\nActiveState=active\nSubState=running\n",
   "progress": {
     "active": {
-      "pilot.Aedes.m16.q1.p128.s42.baseline": {
-        "elapsedSeconds": 216.24664770301024,
-        "peakRssBytes": 844861440,
-        "pid": 40604,
-        "rssBytes": 824696832
+      "pilot.ActiveMQ.m16.q1.p128.s42.baseline": {
+        "elapsedSeconds": 228.16170010300993,
+        "peakRssBytes": 1161539584,
+        "pid": 40966,
+        "rssBytes": 1032544256
       }
     },
     "counts": {
@@ -19,8 +19,8 @@
         "total": 216
       },
       "pilot": {
-        "done": 1,
-        "failedCriteria": 0,
+        "done": 5,
+        "failedCriteria": 1,
         "total": 8
       },
       "replay": {
@@ -29,25 +29,66 @@
         "total": 6
       }
     },
-    "elapsedSeconds": 216.25028775900137,
+    "elapsedSeconds": 1643.2218363700085,
     "planSha256": "dfda8401e9e3f96aebece1b4baa116b58437c94752ecc0324b6e8c909243ae3c",
     "reason": null,
     "status": "running",
     "technicalErrors": 0,
     "workers": 2
   },
-  "diskFreeGiB": 132.5808219909668,
-  "stderrTail": "",
   "completedRows": [
     {
       "id": "pilot.Aedes.m16.q1.p1.s42.baseline",
       "kind": "pilot",
       "wallSeconds": 22.040007967007114,
+      "peakRssBytes": 831877120,
+      "technicalError": null,
+      "fidelityFailed": false
+    },
+    {
+      "id": "pilot.Mosquitto.m16.q1.p1.s42.baseline",
+      "kind": "pilot",
+      "wallSeconds": 20.01635387299757,
+      "peakRssBytes": 833187840,
+      "technicalError": null,
+      "fidelityFailed": false
+    },
+    {
+      "id": "pilot.Mosquitto.m16.q1.p128.s42.baseline",
+      "kind": "pilot",
+      "wallSeconds": 698.4556017129944,
+      "peakRssBytes": 844042240,
+      "technicalError": null,
+      "fidelityFailed": false
+    },
+    {
+      "id": "pilot.Aedes.m16.q1.p128.s42.baseline",
+      "kind": "pilot",
+      "wallSeconds": 716.5831404460041,
+      "peakRssBytes": 844861440,
+      "technicalError": null,
+      "fidelityFailed": true
+    },
+    {
+      "id": "pilot.ActiveMQ.m16.q1.p1.s42.baseline",
+      "kind": "pilot",
+      "wallSeconds": 22.01782706999802,
+      "peakRssBytes": 1148723200,
       "technicalError": null,
       "fidelityFailed": false
     }
   ],
-  "diskFreeObservedAtUtc": "2026-10-23T18:04:39.681461+00:00",
-  "recommendedManualReviewAt": "2026-10-23T22:00:00+03:00",
-  "forecastStatus": "Only 1/8 pilots completed; full-series ETA not established"
+  "diskFreeGiB": 132.58002090454102,
+  "stderrTail": "",
+  "provisionalForecast": {
+    "basis": "Extrapolate completed QoS1 pilot times: 3 low-publisher and 2 high-publisher runs. Unfinished brokers and QoS0/2 costs are unknown.",
+    "lowPublishersMeanWallSeconds": 21.3580629700009,
+    "highPublishersMeanWallSeconds": 707.5193710794993,
+    "estimatedMatrixHoursAfterPilots": {
+      "lower": 10.933161510742503,
+      "upper": 21.866323021485005
+    },
+    "notGuaranteedDeadline": true,
+    "nextManualReviewAt": "2026-10-23T22:00:00+03:00"
+  }
 }
