@@ -164,9 +164,10 @@
       "agentDeliverable": "docs/dissertation/article-layouts.md"
     },
     "01": {
-      "status": "evidenceMapPreparedAwaitingAuthorAndSupervisor",
+      "status": "workingQuestionsAcceptedAwaitingNoveltyAndSupervisorAgreement",
       "document": "docs/dissertation/claim-evidence-map.md",
-      "scientificClaimsApproved": false
+      "scientificClaimsApproved": false,
+      "workingQuestionsAcceptedByAuthor": true
     },
     "09": {
       "status": "technicalMethodMapPreparedAwaitingAuthorReview",
@@ -219,6 +220,11 @@
       "scientificProgramSimulations": 0,
       "linuxPreflightDone": false,
       "phaseAndHistoricalFailureCountersTested": true
+    },
+    "02": {
+      "status": "humanAuthorTask",
+      "agentResearchRequested": false,
+      "source": "Author explicitly handles publication venues"
     }
   },
   "humanAcceptanceNotReplaced": true,
@@ -348,5 +354,26 @@
     "sensitivityMatrixPercent": 22.2,
     "scientificFailedIncludedInCompleted": true,
     "updateRule": "Experiment percentages from each confirmed snapshot; readiness from accepted effort-weighted steps only"
+  },
+  "authorPreparation": {
+    "document": "docs/dissertation/author-decisions.md",
+    "status": "workingQuestionsAcceptedHistoryAuditPartial",
+    "questions": [
+      "workingResearchQuestionsAccepted",
+      "controlHistoryUnknownAuditRequested",
+      "publicationVenuesHandledByAuthor"
+    ],
+    "controlHistoryReview": "reports/audits/dissertation/control-history-v1/Review.md",
+    "newLinuxJobsStarted": false,
+    "humanWritesArticles": true,
+    "acceptedStepsChanged": false,
+    "publicationVenueResearchAssignedToAgent": false
+  },
+  "controlHistoryAudit": {
+    "status": "chronologyCompatibleIndependenceNotFullyEstablished",
+    "document": "reports/audits/dissertation/control-history-v1/Review.md",
+    "profileCalibrationHashesMatched": 4,
+    "historicalRuntimeManifestMappingComplete": false,
+    "newLinuxJobsStarted": false
   }
 }

@@ -1,0 +1,300 @@
+{
+  "scope": "Read-only local audit; no SSH, no remeasurement, no alteration of scientific inputs",
+  "brokers": {
+    "Aedes": {
+      "profileSha256": "e16c599ebf32dda761f84afa2e21c8d2fc29e95bbb31b987607d83906b347239",
+      "profileCalibrationCommit": "f61daa47ec581ff88f20ee70882722085d1a0a10",
+      "profileCalibrationIdentity": {
+        "campaignId": "Aedes-calibration",
+        "configSha256": "3bcf2008ff0b70fcc5db7f14500b851650be7cfac934fc0fda0f62d96edf494f",
+        "standSha256": "c5eb957faacaca5179e88e1846db5b2f079778af74bd3c067f5ccd249b18692a",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "singleCorePinned",
+        "mqttBenchmarkCommitSha": "3a689466009a0d5410f5dc88dc1282d72c27f7dd"
+      },
+      "profileObservationsShaMatchesCalibrationFile": true,
+      "validationIdentity": {
+        "campaignId": "Aedes-validation",
+        "configSha256": "5234ff26ceec724a4968fc3007c9bc49d1b7c330cbac8c4816caba64de3cf3d2",
+        "standSha256": "c5eb957faacaca5179e88e1846db5b2f079778af74bd3c067f5ccd249b18692a",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "singleCorePinned",
+        "mqttBenchmarkCommitSha": "3a689466009a0d5410f5dc88dc1282d72c27f7dd"
+      },
+      "validationSha256": "865f5552318afb49fd65b4be709b5dbf7a34d334e6c26ba15b24f7ad32608a68",
+      "nativeStageTimes": {
+        "calibration": {
+          "count": 72,
+          "firstMeasurementUtc": "2026-10-16T16:15:29.124221+00:00",
+          "lastMeasurementUtc": "2026-10-16T17:16:06.0482416+00:00",
+          "archiveSeries": [
+            "overnight-20261016-v1"
+          ]
+        },
+        "validation": {
+          "count": 72,
+          "firstMeasurementUtc": "2026-10-16T21:56:13.5911698+00:00",
+          "lastMeasurementUtc": "2026-10-16T23:13:32.4848896+00:00",
+          "archiveSeries": [
+            "overnight-20261016-service-v1"
+          ]
+        }
+      },
+      "modelStages": {
+        "fidelity": {
+          "count": 72,
+          "profileShaMatchesAllRecordedHashes": true,
+          "directoryNamesFirstLast": [
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q0.p1.s42/20261016T202505242Z-d81162b22cd64deebf29fc625e322cec",
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q2.p64.s44/20261016T214216965Z-c19b7fc6a09b426e978b4273e55042a4"
+          ],
+          "allCriteriaPassed": 64
+        },
+        "holdout": {
+          "count": 72,
+          "profileShaMatchesAllRecordedHashes": true,
+          "directoryNamesFirstLast": [
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m16.q0.p1.s42/20261016T232410063Z-c81653f00df743039df3782ac9e72bca",
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/holdout-2s-overnight-v1/m256.q2.p64.s44/20261017T004105647Z-046faf7599a343458b0609f718001991"
+          ],
+          "allCriteriaPassed": 58
+        },
+        "relay": {
+          "count": 72,
+          "profileShaMatchesAllRecordedHashes": true,
+          "directoryNamesFirstLast": [
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/relay-2s-overnight-v1/m16.q0.p1.s42/20261017T005552392Z-04e0f4aad62f48dc9937e683e4b623d8",
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/relay-2s-overnight-v1/m256.q2.p64.s44/20261017T015146095Z-eaabac59a4974f8fbd609da353f119b6"
+          ],
+          "allCriteriaPassed": 72
+        }
+      }
+    },
+    "Mosquitto": {
+      "profileSha256": "d9cf125fb8cb6ec3677fc3c596bafcdfced8be0502362e2b4ff03da1421d46eb",
+      "profileCalibrationCommit": "f61daa47ec581ff88f20ee70882722085d1a0a10",
+      "profileCalibrationIdentity": {
+        "campaignId": "Mosquitto-calibration",
+        "configSha256": "54d0f823c7b6092f65bfcc3fe9a4d6394e636572bd1ca4aeb775996f406f308d",
+        "standSha256": "b40a2b5b8a7403536c7e3a6f8838578cc5853942e44a12e7156c221e67d4492d",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "singleCorePinned",
+        "mqttBenchmarkCommitSha": "3a689466009a0d5410f5dc88dc1282d72c27f7dd"
+      },
+      "profileObservationsShaMatchesCalibrationFile": true,
+      "validationIdentity": {
+        "campaignId": "Mosquitto-validation",
+        "configSha256": "9f9a7dfc67b0cee00291654ca8eefdfba74dd91231698a8cb63ed0064b964f7e",
+        "standSha256": "b40a2b5b8a7403536c7e3a6f8838578cc5853942e44a12e7156c221e67d4492d",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "singleCorePinned",
+        "mqttBenchmarkCommitSha": "3a689466009a0d5410f5dc88dc1282d72c27f7dd"
+      },
+      "validationSha256": "2be568685ed94eba695cdd90caa490cc1eedbb00d1ed3125c626a2f35649eba2",
+      "nativeStageTimes": {
+        "calibration": {
+          "count": 72,
+          "firstMeasurementUtc": "2026-10-16T19:24:22.8414657+00:00",
+          "lastMeasurementUtc": "2026-10-16T20:21:00.1595745+00:00",
+          "archiveSeries": [
+            "overnight-20261016-v1"
+          ]
+        },
+        "validation": {
+          "count": 72,
+          "firstMeasurementUtc": "2026-10-17T03:52:25.245827+00:00",
+          "lastMeasurementUtc": "2026-10-18T17:01:16.3393769+00:00",
+          "archiveSeries": [
+            "overnight-20261016-service-v1"
+          ]
+        }
+      },
+      "modelStages": {
+        "fidelity": {
+          "count": 72,
+          "profileShaMatchesAllRecordedHashes": true,
+          "directoryNamesFirstLast": [
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q0.p1.s42/20261017T022116275Z-7f9610b0b1f74655bcb497042b8a49fb",
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q2.p64.s44/20261017T033739381Z-03558639bce84c11bac071725e1bd313"
+          ],
+          "allCriteriaPassed": 70
+        },
+        "holdout": {
+          "count": 72,
+          "profileShaMatchesAllRecordedHashes": true,
+          "directoryNamesFirstLast": [
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/holdout-2s-overnight-v1/m16.q0.p1.s42/20261018T213016288Z-96897e93414841b388b2dc65c556f5a6",
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/holdout-2s-overnight-v1/m256.q2.p64.s44/20261018T231149353Z-2df6b482a3224ec2b4c48a99dbee8942"
+          ],
+          "allCriteriaPassed": 58
+        },
+        "relay": {
+          "count": 72,
+          "profileShaMatchesAllRecordedHashes": true,
+          "directoryNamesFirstLast": [
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m16.q0.p1.s42/20261018T233021252Z-987fd4a837404740b22b28aa89405da6",
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/Mosquitto/simulations/relay-2s-overnight-v1/m256.q2.p64.s44/20261019T002346427Z-321095d827e24182b8f4259340585f79"
+          ],
+          "allCriteriaPassed": 72
+        }
+      }
+    },
+    "ActiveMQ": {
+      "profileSha256": "d66a0f64cb195e29565e03a5531bdde45ccd9aee7b5d39ca7b26102d45706b2a",
+      "profileCalibrationCommit": "f61daa47ec581ff88f20ee70882722085d1a0a10",
+      "profileCalibrationIdentity": {
+        "campaignId": "ActiveMQ-calibration",
+        "configSha256": "977923ade5a9c5b0c56c9dba67c2f1ae73a47832d29526b297dece21f778677b",
+        "standSha256": "7feb115e9d54d96ed1195ea31a36ff5d9f74ca53fb6b85f429ea72a2dcf17eb7",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "singleCorePinned",
+        "mqttBenchmarkCommitSha": "3a689466009a0d5410f5dc88dc1282d72c27f7dd"
+      },
+      "profileObservationsShaMatchesCalibrationFile": true,
+      "validationIdentity": {
+        "campaignId": "ActiveMQ-validation",
+        "configSha256": "07a63647ff5bef24eb5872ed7a4ee59903e546360d63e322faa6555ddee720cf",
+        "standSha256": "7feb115e9d54d96ed1195ea31a36ff5d9f74ca53fb6b85f429ea72a2dcf17eb7",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "singleCorePinned",
+        "mqttBenchmarkCommitSha": "3a689466009a0d5410f5dc88dc1282d72c27f7dd"
+      },
+      "validationSha256": "74336cb03f1bb3de721e639e89c78b66b9d153d5a662d3b437aac1e74c15548d",
+      "nativeStageTimes": {
+        "calibration": {
+          "count": 72,
+          "firstMeasurementUtc": "2026-10-19T00:33:52.4140085+00:00",
+          "lastMeasurementUtc": "2026-10-19T01:51:20.4793341+00:00",
+          "archiveSeries": [
+            "overnight-20261018-instrumentation-v2"
+          ]
+        },
+        "validation": {
+          "count": 72,
+          "firstMeasurementUtc": "2026-10-19T03:51:14.2274465+00:00",
+          "lastMeasurementUtc": "2026-10-19T05:08:23.7692103+00:00",
+          "archiveSeries": [
+            "overnight-20261018-instrumentation-v2"
+          ]
+        }
+      },
+      "modelStages": {
+        "fidelity": {
+          "count": 72,
+          "profileShaMatchesAllRecordedHashes": true,
+          "directoryNamesFirstLast": [
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/fidelity-2s-overnight-v1/m16.q0.p1.s42/20261019T015522826Z-7e5ff8c3462c46c4818bb0979473fce0",
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/fidelity-2s-overnight-v1/m256.q2.p64.s44/20261019T033223432Z-974fa23f71034e779b3844f991675d76"
+          ],
+          "allCriteriaPassed": 70
+        },
+        "holdout": {
+          "count": 72,
+          "profileShaMatchesAllRecordedHashes": true,
+          "directoryNamesFirstLast": [
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q0.p1.s42/20261019T051144114Z-d4f3ed5df1ee4c5bb3e79d4668f2d87b",
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q2.p64.s44/20261019T065650728Z-e1ecaa5b75934c14b8ab34111257e14a"
+          ],
+          "allCriteriaPassed": 29
+        },
+        "relay": {
+          "count": 72,
+          "profileShaMatchesAllRecordedHashes": true,
+          "directoryNamesFirstLast": [
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/relay-2s-overnight-v1/m16.q0.p1.s42/20261019T071546933Z-db9ea8dd5cb0479ea8e555b7a6b433a9",
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/relay-2s-overnight-v1/m256.q2.p64.s44/20261019T082308578Z-dd9f417d4d1d471eaf53645064e2da03"
+          ],
+          "allCriteriaPassed": 72
+        }
+      }
+    },
+    "EMQX": {
+      "profileSha256": "effe28c0fabf2d835579de8e6c40aa7d03a2865b7a23336d6f57189e79340b6f",
+      "profileCalibrationCommit": "f61daa47ec581ff88f20ee70882722085d1a0a10",
+      "profileCalibrationIdentity": {
+        "campaignId": "EMQX-calibration",
+        "configSha256": "822d369e6ec32d82618f0e3e217b7e808f78dc05303d8544c2d7e475cf99aa9c",
+        "standSha256": "b28c14e6f6d26042564da5ffd2182057be011e4e3ad1d4edc03e75b26a50e691",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "singleCorePinned",
+        "mqttBenchmarkCommitSha": "3a689466009a0d5410f5dc88dc1282d72c27f7dd"
+      },
+      "profileObservationsShaMatchesCalibrationFile": true,
+      "validationIdentity": {
+        "campaignId": "EMQX-validation",
+        "configSha256": "fa43bfd97cca3ab2881edb32fdcedac3ef1ed6f2f3811b1979117fe752cd9361",
+        "standSha256": "b28c14e6f6d26042564da5ffd2182057be011e4e3ad1d4edc03e75b26a50e691",
+        "deploymentMode": "singleHostSequential",
+        "cpuMode": "singleCorePinned",
+        "mqttBenchmarkCommitSha": "3a689466009a0d5410f5dc88dc1282d72c27f7dd"
+      },
+      "validationSha256": "8af337a5dfcd91cbb782e7da6079ba50021ecd81b4fc43b742169a1d0fa4aa62",
+      "nativeStageTimes": {
+        "calibration": {
+          "count": 72,
+          "firstMeasurementUtc": "2026-10-18T17:28:16.4365529+00:00",
+          "lastMeasurementUtc": "2026-10-18T18:53:35.2759494+00:00",
+          "archiveSeries": [
+            "overnight-20261016-service-v1"
+          ]
+        },
+        "validation": {
+          "count": 72,
+          "firstMeasurementUtc": "2026-10-19T08:36:42.5024115+00:00",
+          "lastMeasurementUtc": "2026-10-19T10:03:46.0001059+00:00",
+          "archiveSeries": [
+            "overnight-20261018-instrumentation-v2"
+          ]
+        }
+      },
+      "modelStages": {
+        "fidelity": {
+          "count": 72,
+          "profileShaMatchesAllRecordedHashes": true,
+          "directoryNamesFirstLast": [
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q0.p1.s42/20261018T190205588Z-316b5998d2cb403ab0a552768725f398",
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q2.p64.s44/20261018T201456908Z-ba6f19e4de2d4ed39273e1edc28ae006"
+          ],
+          "allCriteriaPassed": 72
+        },
+        "holdout": {
+          "count": 72,
+          "profileShaMatchesAllRecordedHashes": true,
+          "directoryNamesFirstLast": [
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q0.p1.s42/20261019T101128696Z-555f10e256414b548e98f7f46e4b5f8e",
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q2.p64.s44/20261019T112629443Z-2393baa0e20a4d148c4db17e04b80d81"
+          ],
+          "allCriteriaPassed": 58
+        },
+        "relay": {
+          "count": 72,
+          "profileShaMatchesAllRecordedHashes": true,
+          "directoryNamesFirstLast": [
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/relay-2s-overnight-v1/m16.q0.p1.s42/20261019T114119760Z-c4d15058983743f7ab647164e36cd05f",
+            "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/relay-2s-overnight-v1/m256.q2.p64.s44/20261019T123214485Z-cb6c8934fc7d4c609ada96fa0b25b084"
+          ],
+          "allCriteriaPassed": 72
+        }
+      }
+    }
+  },
+  "sourceFiles": {
+    "reports/data/native-evidence.json": "7010fc352b64125a44aa9d7dbe54c9df76cb224631f2971d2f1579c44e5450de",
+    "reports/data/model-evidence.json": "778b25feee8272e7d97deba5fae19086da2ba2a91a3b0a7b3a0c077e4cbdb015",
+    "reports/audits/dissertation/foundation-v2/manifest.json": "6a45616a5548adea2a7067efca536b71c8cbfeaf20123a1c4a2186814a0e0fd2",
+    "reports/audits/dissertation/sensitivity-v1/plan.json": "dfda8401e9e3f96aebece1b4baa116b58437c94752ecc0324b6e8c909243ae3c"
+  },
+  "gitChronology": [
+    "4a5be3a55577a3ad002bb214dfc9ea3c0fe2b2d0|2026-10-16T16:48:58+03:00|2026-10-16T16:48:58+03:00|Fix publisher latency origin and add empirical fidelity profiles with closed-loop load",
+    "f61daa47ec581ff88f20ee70882722085d1a0a10|2026-10-16T17:04:07+03:00|2026-10-16T17:04:07+03:00|Resolve empirical fidelity transport from ideal protocol floor and calibration RTT",
+    "f792c0763612ded48aeb5b6ef86e4d62a149df82|2026-10-16T21:53:37+03:00|2026-10-16T21:53:37+03:00|Add calibration-bounded empirical transport and capacity backpressure",
+    "19936997f978490f40eb1efd93ccc2d583586f6e|2026-10-16T21:53:37+03:00|2026-10-16T21:53:37+03:00|Document empirical service assumptions and verification scope",
+    "115885e012053d0112413e07743b061369ebea93|2026-10-16T22:01:43+03:00|2026-10-16T22:01:43+03:00|Preserve fractional closed-loop arrivals and validate queue contracts"
+  ],
+  "limitations": [
+    "Commit timestamps are repository metadata, not proof of first execution or first inspection.",
+    "Profile hashes identify calibration input separation; they do not establish model-development blindness.",
+    "Original simulation manifests are referenced by hash in model evidence but not re-opened from Linux during this audit.",
+    "No record inspected establishes when developer first saw each control series."
+  ]
+}
