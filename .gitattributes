@@ -7,3 +7,8 @@
 # Runner/source hashes in research verification must also survive checkout.
 /tools/dissertation/*network*.py -text
 /tools/dissertation/estimate_sensitivity.py -text
+/tools/dissertation/sensitivity_scheduler_v2.py -text
+/tools/dissertation/test_sensitivity_scheduler_v2.py -text
+/tools/dissertation/analyse_sensitivity.py -text
+/tools/dissertation/test_analyse_sensitivity.py -text
+/tools/status/** -text
