@@ -13,11 +13,12 @@
     "06",
     "11",
     "19",
-    "20"
+    "20",
+    "22"
   ],
-  "verifiedTechnicalWeightPersonDays": 7.5,
+  "verifiedTechnicalWeightPersonDays": 9,
   "localPercent": 80,
-  "globalPercent": 16.0,
+  "globalPercent": 19.1,
   "basis": "Plan effort weights; not scientific confidence or elapsed labour",
   "steps": {
     "03": {
@@ -121,11 +122,11 @@
       "status": "runningOnLinux",
       "unit": "mqtty-sensitivity-v1.service",
       "remoteRoot": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1",
-      "observedAtUtc": "2026-10-23T23:13:01.820344+00:00",
-      "observation": "reports/status/sensitivity-next-steps-observation.json",
+      "observedAtUtc": "2026-10-23T23:30:35.779805+00:00",
+      "observation": "reports/status/network-pilot-latest.json",
       "counts": {
         "matrix": {
-          "done": 48,
+          "done": 61,
           "failedCriteria": 13,
           "total": 216
         },
@@ -194,7 +195,7 @@
       "exactReplaysVerified": 12
     },
     "21": {
-      "status": "programPreparedAwaitingLinuxPilot",
+      "status": "pilotsRunningOnLinux",
       "document": "docs/dissertation/network-study.md",
       "plan": "reports/audits/dissertation/network-study-v1/plan.json",
       "pilotJobs": 30,
@@ -204,10 +205,13 @@
       "optionalMosquittoDiagnostic": 54,
       "localCliConfigurationsValidated": 252,
       "unitTestsPassed": 4,
-      "remaining": "Freeze clean code/runtime, implement controlled runner, execute pilots and review duration sufficiency and measured cost before matrix"
+      "remaining": "Run 30 pilots and review phase sufficiency, memory, storage and measured cost before admission to matrix",
+      "unit": "mqtty-network-pilot-v1.service",
+      "mainPid": 51204,
+      "remoteRoot": "/run/media/entityfx/hd250/mqtty-evidence/network-long-v1"
     },
     "22": {
-      "status": "runnerImplementedAndLocallyTestedAwaitingLinuxPreflight",
+      "status": "technicalChecksPassed",
       "generator": "tools/dissertation/prepare_network_study.py",
       "remaining": "Linux mount/cgroup preflight and pilot execution; phase sufficiency and ACK-time observations still require review",
       "runner": "tools/dissertation/run_network_study.py",
@@ -218,8 +222,16 @@
       "latestLocalCliSimulations": 15,
       "totalLocalCliSmokeSimulations": 45,
       "scientificProgramSimulations": 0,
-      "linuxPreflightDone": false,
-      "phaseAndHistoricalFailureCountersTested": true
+      "linuxPreflightDone": true,
+      "phaseAndHistoricalFailureCountersTested": true,
+      "linuxCliSmokeSimulations": 15,
+      "totalFunctionalSmokeSimulations": 60,
+      "linuxPreflight": "reports/audits/dissertation/network-runner-v1/linux-preflight-verification.json",
+      "hardCgroupConfigured": true,
+      "hardCgroupExhaustionTested": false,
+      "toolTestsRun": 106,
+      "toolTestsPassed": 104,
+      "toolTestsSkipped": 2
     },
     "02": {
       "status": "humanAuthorTask",
@@ -343,17 +355,20 @@
     "stopAgentAfterSavingState": true
   },
   "summaryPercentages": {
-    "observation": "reports/status/sensitivity-next-steps-observation.json",
+    "observation": "reports/status/network-pilot-latest.json",
     "localPercent": 80,
-    "globalPercent": 16.0,
-    "sensitivityAllCompleted": 56,
+    "globalPercent": 19.1,
+    "sensitivityAllCompleted": 69,
     "sensitivityAllTotal": 230,
-    "sensitivityAllPercent": 24.3,
-    "sensitivityMatrixCompleted": 48,
+    "sensitivityAllPercent": 30.0,
+    "sensitivityMatrixCompleted": 61,
     "sensitivityMatrixTotal": 216,
-    "sensitivityMatrixPercent": 22.2,
+    "sensitivityMatrixPercent": 28.2,
     "scientificFailedIncludedInCompleted": true,
-    "updateRule": "Experiment percentages from each confirmed snapshot; readiness from accepted effort-weighted steps only"
+    "updateRule": "Experiment percentages from each confirmed snapshot; readiness from accepted effort-weighted steps only",
+    "networkPilotCompleted": 0,
+    "networkPilotTotal": 30,
+    "networkPilotPercent": 0.0
   },
   "authorPreparation": {
     "document": "docs/dissertation/author-decisions.md",
@@ -384,6 +399,55 @@
     "statusObserved": "active",
     "objectiveReadFromUserAttachment": true,
     "objectiveDocument": "reports/status/Goal.md",
-    "oldPausedStateSupersededByUser": true
+    "oldPausedStateSupersededByUser": true,
+    "pauseAfterLongLaunchRequestedByObjective": true,
+    "pauseTransition": "preparedAfterConfirmedNetworkPilotLaunch"
+  },
+  "networkStudy": {
+    "status": "pilotRunning",
+    "root": "/run/media/entityfx/hd250/mqtty-evidence/network-long-v1",
+    "executionManifestSha256": "c5eb7c63eebbba98908086976c5e45a2a2ed3ccac638f834e59faf3b7b2a25a6",
+    "workers": 1,
+    "jobRssLimitGiB": 2,
+    "serviceMemoryMaxGiB": 3,
+    "matrixAutomaticallyStarts": false,
+    "unit": "mqtty-network-pilot-v1.service",
+    "mainPid": 51204,
+    "observedAtUtc": "2026-10-23T23:30:35.779805+00:00",
+    "observation": "reports/status/network-pilot-latest.json",
+    "counts": {
+      "pilot": {
+        "done": 0,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 30
+      },
+      "matrix": {
+        "done": 0,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 162
+      },
+      "replay": {
+        "done": 0,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 6
+      },
+      "diagnostic": {
+        "done": 0,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 54
+      }
+    },
+    "technicalErrors": 0,
+    "active": {
+      "id": "pilot.line.single.q1.r1000.w2.s42",
+      "pid": 51206,
+      "elapsedSeconds": 26.07570266199764,
+      "rssBytes": 409227264,
+      "peakRssBytes": 409227264
+    }
   }
 }

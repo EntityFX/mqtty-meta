@@ -1,0 +1,764 @@
+{
+  "windowsReceipt": "reports/audits/dissertation/network-runner-v1/smoke-verification.json",
+  "linuxReceipt": "reports/audits/dissertation/network-runner-v1/linux-preflight-verification.json",
+  "comparedExperiments": 15,
+  "comparedFiles": 75,
+  "rawBytesEqualFiles": 0,
+  "lfNormalizedEqualFiles": 75,
+  "semanticJsonEqualFiles": 75,
+  "allScientificFileHashesEqual": false,
+  "explanation": "Native JSON files use CRLF on Windows and LF on Linux. Original raw hashes preserved; line-ending normalization is diagnostic only. Same-platform replays still require original byte hashes.",
+  "scope": "Selected 15 functional experiments, not whole scientific matrix or all environments",
+  "comparisons": [
+    {
+      "id": "matrix.federation.q2",
+      "files": {
+        "summary.json": {
+          "rawSha256": "fe9976856aecdfd82b116e63386406f48da22a0ec4fee50bfdb0982b4e2512f3",
+          "lfSha256": "fe9976856aecdfd82b116e63386406f48da22a0ec4fee50bfdb0982b4e2512f3",
+          "canonicalJsonSha256": "70a21dcab39c6376eb675b7d5c4c63faf46e594e0574c54bf0597fe224547f65",
+          "windowsRawSha256": "acaf41466c0daabc045b68507d27578bdf7acc31fd96a3d738efbf64989b6e28",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "histograms.json": {
+          "rawSha256": "83c687fc8009faae981ed84fae9d342ca06cce87acd717cfa4b764aa282e645a",
+          "lfSha256": "83c687fc8009faae981ed84fae9d342ca06cce87acd717cfa4b764aa282e645a",
+          "canonicalJsonSha256": "b2aa35daab49f1bb2e06288cf9d6c6bcb5196e369146bf58affd7671bd075612",
+          "windowsRawSha256": "652c1ec43124ba6e562ef50bf6bc3076e70bc31d243e9fa128c71e2c19bbc693",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "publications.json": {
+          "rawSha256": "e9bf0336587bad0d1edb6c285b40915359eb3be09f101e5098e2a04b00badb58",
+          "lfSha256": "e9bf0336587bad0d1edb6c285b40915359eb3be09f101e5098e2a04b00badb58",
+          "canonicalJsonSha256": "f80b642f37ca2220a5a69cf9d04021b774e10df8cd52ae633151149333caa70a",
+          "windowsRawSha256": "d8917d9cbaf555238dba87d840f1a9807d8a03a581a6ce41f1134afd3f9c7be9",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "delivery-receipts.json": {
+          "rawSha256": "5b198d3520908d82125ee6a9793641e616dbc10e889acdd58d0c29fd31515510",
+          "lfSha256": "5b198d3520908d82125ee6a9793641e616dbc10e889acdd58d0c29fd31515510",
+          "canonicalJsonSha256": "a6feda17aebc81e7a47a77432e91e89fecccc031abeb8dc74b9e9f6ded61b717",
+          "windowsRawSha256": "591134f7bbea34f9ef7753cc7c99c77755c2d0d37bdd96a7ed152150a5aae0fb",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "transmissions.json": {
+          "rawSha256": "1ac791bbfbb9561e42015e0b6213b12746cf2954bf3e6ffea57239a8ee3f1f74",
+          "lfSha256": "1ac791bbfbb9561e42015e0b6213b12746cf2954bf3e6ffea57239a8ee3f1f74",
+          "canonicalJsonSha256": "bc8cc17c1674ff9711267c3a78ca328c31dad16fc6850f923f8e2721758366fb",
+          "windowsRawSha256": "416e6be7cc4debf10e0f31611265b3d6651c196d72b2188365a3cf50074b2c53",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        }
+      }
+    },
+    {
+      "id": "matrix.relay.q2",
+      "files": {
+        "summary.json": {
+          "rawSha256": "ee2e24a6cb2e9cb54645eeae247ee6c181f18497e23dae92f6f198caeded9bdf",
+          "lfSha256": "ee2e24a6cb2e9cb54645eeae247ee6c181f18497e23dae92f6f198caeded9bdf",
+          "canonicalJsonSha256": "0fa37f4d6b457417ed449866ad2e309879a8c59182593b04e8c85d3002e4c347",
+          "windowsRawSha256": "50314e72b0bd83c3b18e9af38d6a01e08cad4908fd3527c916a51dd16cb05899",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "histograms.json": {
+          "rawSha256": "86ad08382288117e29443b9df6fc0d21fd1171f53d16cca3e769b145e0333fbf",
+          "lfSha256": "86ad08382288117e29443b9df6fc0d21fd1171f53d16cca3e769b145e0333fbf",
+          "canonicalJsonSha256": "f484c5861ecb9e8c614701147590451a16df1ba73b22c89e4a984fdb3b61bf83",
+          "windowsRawSha256": "cea08efbd4d071345579af673a271f37120436dbeb95728001b5f1e6ecab60ab",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "publications.json": {
+          "rawSha256": "fc3a88385258594edff7544e5c5035df4105882de1fbbc52801e57ae58eb33da",
+          "lfSha256": "fc3a88385258594edff7544e5c5035df4105882de1fbbc52801e57ae58eb33da",
+          "canonicalJsonSha256": "12fd4159ee9332518431044f0852888c3e4356875fe278e29e2468230be9fe95",
+          "windowsRawSha256": "bb9bd9485da2314120c99b1fe7d1339bd7d1c7aefe246a25da7af6b131a4f347",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "delivery-receipts.json": {
+          "rawSha256": "75d508066fdb033bc55b1c7a0b4dc82f18a3dea79fbad3c5dfed87d7f7c80548",
+          "lfSha256": "75d508066fdb033bc55b1c7a0b4dc82f18a3dea79fbad3c5dfed87d7f7c80548",
+          "canonicalJsonSha256": "407f0a2f6322d1c6b7fb8bc8d98e59c8323ad86e75998c574b28a360007b5996",
+          "windowsRawSha256": "39c49da90984da62f167c3f5f0cb33919b13c1f8e1df1e3b9f928556a63aaac2",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "transmissions.json": {
+          "rawSha256": "a2e93e7d741b3b40e3598a98efd5c74894da4878728d3afbbf97b2d636c5d82b",
+          "lfSha256": "a2e93e7d741b3b40e3598a98efd5c74894da4878728d3afbbf97b2d636c5d82b",
+          "canonicalJsonSha256": "850b16ce9ea0bc28daa33721ae21c83f0295d58658777367702b2ebaf85f44b7",
+          "windowsRawSha256": "e4da3452f65603751ffc2d71979ef2ed262f2da2fe3efd170f4724d825734444",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        }
+      }
+    },
+    {
+      "id": "matrix.single.q2",
+      "files": {
+        "summary.json": {
+          "rawSha256": "3ca277c9049354c566ca092254a5476993a88f15b47611ced9a4d89f024e7df2",
+          "lfSha256": "3ca277c9049354c566ca092254a5476993a88f15b47611ced9a4d89f024e7df2",
+          "canonicalJsonSha256": "afd8169f1351057891e5b04b5a7e66853340f059b884d567043956e03a677ee3",
+          "windowsRawSha256": "1925fd326efa786d847b867512f0b7f2e1eea840a94ce4cf64523c61e6b07882",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "histograms.json": {
+          "rawSha256": "e0b55bff0904a9b3dc56c28413affd8ab4a7d372d572f2837a9013d263804a6b",
+          "lfSha256": "e0b55bff0904a9b3dc56c28413affd8ab4a7d372d572f2837a9013d263804a6b",
+          "canonicalJsonSha256": "47ebd5291327e8c4c950017b5f6afb76e1a91f06257b3c37e37304530155f4c7",
+          "windowsRawSha256": "42aa906c1390de4ac4580d640608762ab3bf01717cd7759ba6cbb2cac2af656d",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "publications.json": {
+          "rawSha256": "418046df3fa65a7c10cdef5312aa93419d63e868b90b4e23eb6f2cbb71739a97",
+          "lfSha256": "418046df3fa65a7c10cdef5312aa93419d63e868b90b4e23eb6f2cbb71739a97",
+          "canonicalJsonSha256": "edc86c50b9ac2d4a416fef128e5c79907b77f34aa9852026bccb7fdf25748d93",
+          "windowsRawSha256": "327717205549120598b0cfe79caa849199c9073d6e5f6b2919f3ea14ef64883e",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "delivery-receipts.json": {
+          "rawSha256": "6f448f70cba46bd527531e74be14f88a9d7a5845ba1dbf0005cb699c842a17e3",
+          "lfSha256": "6f448f70cba46bd527531e74be14f88a9d7a5845ba1dbf0005cb699c842a17e3",
+          "canonicalJsonSha256": "e3edd965ae78bbf2eea520b38477e4c6109a74e55a836b10cfdccf233fbb3fda",
+          "windowsRawSha256": "64dcf6b258b577d9485b373e95e13c2c6e7adbbaab2f27b7a44f829a2b3eb840",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "transmissions.json": {
+          "rawSha256": "647418ef0060c390b1067d73ba8dc897d0f357407f4dd7d2e8c3daa984a1a4b7",
+          "lfSha256": "647418ef0060c390b1067d73ba8dc897d0f357407f4dd7d2e8c3daa984a1a4b7",
+          "canonicalJsonSha256": "4d6db01b2c6cf7cac80bd6020745a14df7dc6b4a402d02c01366ffa8e331e5f0",
+          "windowsRawSha256": "9ed68fb8f929fa954c296429db199637353e4db010df77c22b99411a5917902d",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        }
+      }
+    },
+    {
+      "id": "pilot.federation.q0",
+      "files": {
+        "summary.json": {
+          "rawSha256": "2bca0f0c83c3948b2f973315b528aa9853ca2b2fabb0c9e6fe537ddee7b684a3",
+          "lfSha256": "2bca0f0c83c3948b2f973315b528aa9853ca2b2fabb0c9e6fe537ddee7b684a3",
+          "canonicalJsonSha256": "b6d3f23bc0171b0c80c57c3f609d5dd98796bcb61df9454e613b419a8887e143",
+          "windowsRawSha256": "22ce7233657a18b292a4fcc6ea75dda2c10050c2b3b8988876b1b96f26ec159f",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "histograms.json": {
+          "rawSha256": "dcc9ceacb6f5c1c69c45106c4f9ae03f5bc9d2249b2eb94ba48a420e41c63db5",
+          "lfSha256": "dcc9ceacb6f5c1c69c45106c4f9ae03f5bc9d2249b2eb94ba48a420e41c63db5",
+          "canonicalJsonSha256": "58d88e83093f7d955ddbec8a2447bc0a246a4a1d9ae69e29daa2a74e93f0ff38",
+          "windowsRawSha256": "828c05a30fd648211ca53361546daae717ae39ed9ba590bb7892d1ac81b9866c",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "publications.json": {
+          "rawSha256": "19ac318e69b30268b7abc68dfc47f1208566cc918573a58998df5bb9c8dcc1f6",
+          "lfSha256": "19ac318e69b30268b7abc68dfc47f1208566cc918573a58998df5bb9c8dcc1f6",
+          "canonicalJsonSha256": "58b9c0832e05512a677c332af36c4038bede987fc4fe1a238fe3cc435e2018a5",
+          "windowsRawSha256": "e54bb1518565510ba195f7de40052a39416faea9f2f235f6a26f9c7524a2607c",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "delivery-receipts.json": {
+          "rawSha256": "96db3fbe8bc728ae983fd323f22a04a40216fb6d3fd5069ba6b38b718e9ad344",
+          "lfSha256": "96db3fbe8bc728ae983fd323f22a04a40216fb6d3fd5069ba6b38b718e9ad344",
+          "canonicalJsonSha256": "b05ee87f06d9d07dc46a2a7b941a98f7357d1170e297e9ab8a2d3270a165c816",
+          "windowsRawSha256": "c4580a2e8287a037fff0026636cff8c6ab1702bbe4280475a9264e9c805973c9",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "transmissions.json": {
+          "rawSha256": "f4c21fabeed762a14ba52b604502a3d2be0f41bac4db61ce9a738a50fdf48cf1",
+          "lfSha256": "f4c21fabeed762a14ba52b604502a3d2be0f41bac4db61ce9a738a50fdf48cf1",
+          "canonicalJsonSha256": "cd5beee39f0278de4429dbe409a4917206a347d9d40da6cfa844dcdaf4602ff5",
+          "windowsRawSha256": "e1fa6d32ad3944a8a871d300933d3b7e343651ee5fde42f499217b73385e4873",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        }
+      }
+    },
+    {
+      "id": "pilot.federation.q1",
+      "files": {
+        "summary.json": {
+          "rawSha256": "1b8504324c2c56c244c2d8a423de5e426f134da8c79c0ea1cf8c5e0047b65a87",
+          "lfSha256": "1b8504324c2c56c244c2d8a423de5e426f134da8c79c0ea1cf8c5e0047b65a87",
+          "canonicalJsonSha256": "5b096e00db45fcf018956eda265348434c5b127c2ac2f81747ca0ff3e22957d0",
+          "windowsRawSha256": "d58fb6dd6433e65f841f27823259ef9bb99e3f31a3cfedfce5831c845b68e5f4",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "histograms.json": {
+          "rawSha256": "fea14b3408b2fc7120752c5d6f04b6554c5bed0ff7ba93a432509f55289767ca",
+          "lfSha256": "fea14b3408b2fc7120752c5d6f04b6554c5bed0ff7ba93a432509f55289767ca",
+          "canonicalJsonSha256": "8134a17af0aebaca2d3fb116a4aa0a76dc8e98ac5b717422de816ada77927953",
+          "windowsRawSha256": "1e1287cebf74f0ed273d8a7120d2ead5753465c7960fb86571a102c5b786a290",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "publications.json": {
+          "rawSha256": "e1ec2ad2f7c27281cc7abb92623004efe445ade11003f6247928d2adb3e2b69c",
+          "lfSha256": "e1ec2ad2f7c27281cc7abb92623004efe445ade11003f6247928d2adb3e2b69c",
+          "canonicalJsonSha256": "c295e20248acb75d52c6256203e375f21894c13884cf163f04231f8f8bf022e8",
+          "windowsRawSha256": "6d8bcaa06582d339fe0c0c2cb8c7656734e33e87cb2f5cea3053102352eb3d52",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "delivery-receipts.json": {
+          "rawSha256": "a212463e02a82b983d2ef233df20d5eb28fbda6639689f5808ac1d72d8a1bc48",
+          "lfSha256": "a212463e02a82b983d2ef233df20d5eb28fbda6639689f5808ac1d72d8a1bc48",
+          "canonicalJsonSha256": "8772eaf9f89451bde6f08fc4d7e77839118659c2624fdeeecfb4b96c2b780bac",
+          "windowsRawSha256": "cef2d3302f9ab1802bd6b1fcb7b8080f4dcff0c95b504b1c3c1c19f45dbe8da4",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "transmissions.json": {
+          "rawSha256": "10767d4d8b58b7e5eff0519a06be47b280e49539bf907d473a5e9080ee704f3d",
+          "lfSha256": "10767d4d8b58b7e5eff0519a06be47b280e49539bf907d473a5e9080ee704f3d",
+          "canonicalJsonSha256": "ae096182f9cddd3f9e77f43d4d420ef47ac4f67ec7e15cb7570d9447db3223cc",
+          "windowsRawSha256": "f0e0bb45edf5170744774c6688d6e5dd9a80090adf0ae3666a630de4c418952b",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        }
+      }
+    },
+    {
+      "id": "pilot.federation.q2",
+      "files": {
+        "summary.json": {
+          "rawSha256": "fe9976856aecdfd82b116e63386406f48da22a0ec4fee50bfdb0982b4e2512f3",
+          "lfSha256": "fe9976856aecdfd82b116e63386406f48da22a0ec4fee50bfdb0982b4e2512f3",
+          "canonicalJsonSha256": "70a21dcab39c6376eb675b7d5c4c63faf46e594e0574c54bf0597fe224547f65",
+          "windowsRawSha256": "acaf41466c0daabc045b68507d27578bdf7acc31fd96a3d738efbf64989b6e28",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "histograms.json": {
+          "rawSha256": "83c687fc8009faae981ed84fae9d342ca06cce87acd717cfa4b764aa282e645a",
+          "lfSha256": "83c687fc8009faae981ed84fae9d342ca06cce87acd717cfa4b764aa282e645a",
+          "canonicalJsonSha256": "b2aa35daab49f1bb2e06288cf9d6c6bcb5196e369146bf58affd7671bd075612",
+          "windowsRawSha256": "652c1ec43124ba6e562ef50bf6bc3076e70bc31d243e9fa128c71e2c19bbc693",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "publications.json": {
+          "rawSha256": "e9bf0336587bad0d1edb6c285b40915359eb3be09f101e5098e2a04b00badb58",
+          "lfSha256": "e9bf0336587bad0d1edb6c285b40915359eb3be09f101e5098e2a04b00badb58",
+          "canonicalJsonSha256": "f80b642f37ca2220a5a69cf9d04021b774e10df8cd52ae633151149333caa70a",
+          "windowsRawSha256": "d8917d9cbaf555238dba87d840f1a9807d8a03a581a6ce41f1134afd3f9c7be9",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "delivery-receipts.json": {
+          "rawSha256": "5b198d3520908d82125ee6a9793641e616dbc10e889acdd58d0c29fd31515510",
+          "lfSha256": "5b198d3520908d82125ee6a9793641e616dbc10e889acdd58d0c29fd31515510",
+          "canonicalJsonSha256": "a6feda17aebc81e7a47a77432e91e89fecccc031abeb8dc74b9e9f6ded61b717",
+          "windowsRawSha256": "591134f7bbea34f9ef7753cc7c99c77755c2d0d37bdd96a7ed152150a5aae0fb",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "transmissions.json": {
+          "rawSha256": "1ac791bbfbb9561e42015e0b6213b12746cf2954bf3e6ffea57239a8ee3f1f74",
+          "lfSha256": "1ac791bbfbb9561e42015e0b6213b12746cf2954bf3e6ffea57239a8ee3f1f74",
+          "canonicalJsonSha256": "bc8cc17c1674ff9711267c3a78ca328c31dad16fc6850f923f8e2721758366fb",
+          "windowsRawSha256": "416e6be7cc4debf10e0f31611265b3d6651c196d72b2188365a3cf50074b2c53",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        }
+      }
+    },
+    {
+      "id": "pilot.relay.q0",
+      "files": {
+        "summary.json": {
+          "rawSha256": "d39fd494abdddd50da89962d1ab1642c01aac01adafcd9290fc0c47c19cfe124",
+          "lfSha256": "d39fd494abdddd50da89962d1ab1642c01aac01adafcd9290fc0c47c19cfe124",
+          "canonicalJsonSha256": "eeb06ff5154efd1170c9158096869472a3384ee71567bd1893682dca4641aa39",
+          "windowsRawSha256": "64a6e0e85dc382c5420a28fa40750160759a68a03176fe9201bd1215642e7324",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "histograms.json": {
+          "rawSha256": "fd02d3cfc844b02a2d326a32f90462921bffe081638666883cf25fe129f0d51f",
+          "lfSha256": "fd02d3cfc844b02a2d326a32f90462921bffe081638666883cf25fe129f0d51f",
+          "canonicalJsonSha256": "558e311bb2d7633a2b79dcfac4b40ecfda97366cec944cb867255bacf69e8df0",
+          "windowsRawSha256": "dd84f79edd3c1b92a2da1fa2fb955669254f98bed604bc6c0c4157db52d6a3dc",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "publications.json": {
+          "rawSha256": "1c62154eb892291ed7e2bc2995d407200e3358eb9d6be9b1d123a74c9cba9449",
+          "lfSha256": "1c62154eb892291ed7e2bc2995d407200e3358eb9d6be9b1d123a74c9cba9449",
+          "canonicalJsonSha256": "7417f443be9e18eb46595d17ec46d2ca14ae18b39570945654e372781582328c",
+          "windowsRawSha256": "f2410eaf0a8acf0f579f879b857745a9ddce5d97d890aed70f0f9284b6f83dd1",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "delivery-receipts.json": {
+          "rawSha256": "b1d40de2b77ba9c019c04ce441947fe65c502bc75d50b623a776a4af2c33c2c0",
+          "lfSha256": "b1d40de2b77ba9c019c04ce441947fe65c502bc75d50b623a776a4af2c33c2c0",
+          "canonicalJsonSha256": "321d646808ea409ba0bfa9aa0a46ef3aaab992c96a2637e4c7ca54a6c2685984",
+          "windowsRawSha256": "398256153dd8bad623e8c51c7523168ff41e097cdfe868820fd9d24e239c4a51",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "transmissions.json": {
+          "rawSha256": "05d695da9699298a71eedf73daf23052404361504a2f4a2f9ce08ca7ba3e2dda",
+          "lfSha256": "05d695da9699298a71eedf73daf23052404361504a2f4a2f9ce08ca7ba3e2dda",
+          "canonicalJsonSha256": "fcf173ab42b17a83ba1d3cd02ea5c565559e7d0179d5ab45a44c199ccdcc429b",
+          "windowsRawSha256": "f5fef4dafe37de6837fbb0e8d9230cd3bd828e2d351c451af41f5005f40bc662",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        }
+      }
+    },
+    {
+      "id": "pilot.relay.q1",
+      "files": {
+        "summary.json": {
+          "rawSha256": "a86091b982df4a4954813fc056b802c09a24ce78f6345608f0fdb7e06a263c17",
+          "lfSha256": "a86091b982df4a4954813fc056b802c09a24ce78f6345608f0fdb7e06a263c17",
+          "canonicalJsonSha256": "23b4cc56a474b909296951de06ff32fc637caae815653e77051d222065a1837e",
+          "windowsRawSha256": "dc9f8dd9ba5ebfd77e3969cefaeb4b0686e00371adf7d2ad9ea39aa9e0521232",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "histograms.json": {
+          "rawSha256": "d46aa36e4a300f0c1bb90ba17a67d0ca33848e0f8735957b8b2b79848752f27c",
+          "lfSha256": "d46aa36e4a300f0c1bb90ba17a67d0ca33848e0f8735957b8b2b79848752f27c",
+          "canonicalJsonSha256": "6b594e966778789504d84da26d3e67bff0358b04a8f9f8e2e0b1f5ecee2daa11",
+          "windowsRawSha256": "1c5f42c060b09e4e2d49998ce32ca1e4a1e6fb98f0e3963c09e4470b31656c17",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "publications.json": {
+          "rawSha256": "19ac318e69b30268b7abc68dfc47f1208566cc918573a58998df5bb9c8dcc1f6",
+          "lfSha256": "19ac318e69b30268b7abc68dfc47f1208566cc918573a58998df5bb9c8dcc1f6",
+          "canonicalJsonSha256": "58b9c0832e05512a677c332af36c4038bede987fc4fe1a238fe3cc435e2018a5",
+          "windowsRawSha256": "e54bb1518565510ba195f7de40052a39416faea9f2f235f6a26f9c7524a2607c",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "delivery-receipts.json": {
+          "rawSha256": "64f4fb1a38547ff0e808109097ff12663734777c97fa088c819073dd8e924dcc",
+          "lfSha256": "64f4fb1a38547ff0e808109097ff12663734777c97fa088c819073dd8e924dcc",
+          "canonicalJsonSha256": "5f5aa78b19390fcf2659ea8517e2ed10b4848fb92c5c423df69b9a9b45c03339",
+          "windowsRawSha256": "3d71da0df90c9382f12546cc9e360d0b4fd056d8cfbaa7e2389efe7347f277bf",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "transmissions.json": {
+          "rawSha256": "0f26878826ec7ff4e726c9f6688fe63f05041e124628c87f3e038ec63034441d",
+          "lfSha256": "0f26878826ec7ff4e726c9f6688fe63f05041e124628c87f3e038ec63034441d",
+          "canonicalJsonSha256": "811bfd05721a4acd7ed3b3b9f594bb59a9a75156d6d2083e64d400a2f48546e7",
+          "windowsRawSha256": "63da84cffacbd450ad3b27fadd36af61ff13ec76007e31b78d257b1a6ee1db5b",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        }
+      }
+    },
+    {
+      "id": "pilot.relay.q2",
+      "files": {
+        "summary.json": {
+          "rawSha256": "ee2e24a6cb2e9cb54645eeae247ee6c181f18497e23dae92f6f198caeded9bdf",
+          "lfSha256": "ee2e24a6cb2e9cb54645eeae247ee6c181f18497e23dae92f6f198caeded9bdf",
+          "canonicalJsonSha256": "0fa37f4d6b457417ed449866ad2e309879a8c59182593b04e8c85d3002e4c347",
+          "windowsRawSha256": "50314e72b0bd83c3b18e9af38d6a01e08cad4908fd3527c916a51dd16cb05899",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "histograms.json": {
+          "rawSha256": "86ad08382288117e29443b9df6fc0d21fd1171f53d16cca3e769b145e0333fbf",
+          "lfSha256": "86ad08382288117e29443b9df6fc0d21fd1171f53d16cca3e769b145e0333fbf",
+          "canonicalJsonSha256": "f484c5861ecb9e8c614701147590451a16df1ba73b22c89e4a984fdb3b61bf83",
+          "windowsRawSha256": "cea08efbd4d071345579af673a271f37120436dbeb95728001b5f1e6ecab60ab",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "publications.json": {
+          "rawSha256": "fc3a88385258594edff7544e5c5035df4105882de1fbbc52801e57ae58eb33da",
+          "lfSha256": "fc3a88385258594edff7544e5c5035df4105882de1fbbc52801e57ae58eb33da",
+          "canonicalJsonSha256": "12fd4159ee9332518431044f0852888c3e4356875fe278e29e2468230be9fe95",
+          "windowsRawSha256": "bb9bd9485da2314120c99b1fe7d1339bd7d1c7aefe246a25da7af6b131a4f347",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "delivery-receipts.json": {
+          "rawSha256": "75d508066fdb033bc55b1c7a0b4dc82f18a3dea79fbad3c5dfed87d7f7c80548",
+          "lfSha256": "75d508066fdb033bc55b1c7a0b4dc82f18a3dea79fbad3c5dfed87d7f7c80548",
+          "canonicalJsonSha256": "407f0a2f6322d1c6b7fb8bc8d98e59c8323ad86e75998c574b28a360007b5996",
+          "windowsRawSha256": "39c49da90984da62f167c3f5f0cb33919b13c1f8e1df1e3b9f928556a63aaac2",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "transmissions.json": {
+          "rawSha256": "a2e93e7d741b3b40e3598a98efd5c74894da4878728d3afbbf97b2d636c5d82b",
+          "lfSha256": "a2e93e7d741b3b40e3598a98efd5c74894da4878728d3afbbf97b2d636c5d82b",
+          "canonicalJsonSha256": "850b16ce9ea0bc28daa33721ae21c83f0295d58658777367702b2ebaf85f44b7",
+          "windowsRawSha256": "e4da3452f65603751ffc2d71979ef2ed262f2da2fe3efd170f4724d825734444",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        }
+      }
+    },
+    {
+      "id": "pilot.single.q0",
+      "files": {
+        "summary.json": {
+          "rawSha256": "d4b48e5717c28257e32a73684b218c90b0f60de425dff734abcafec314bc41f7",
+          "lfSha256": "d4b48e5717c28257e32a73684b218c90b0f60de425dff734abcafec314bc41f7",
+          "canonicalJsonSha256": "2b08b9e0de66a24112ae2bd4f8aa033763ebf6ad43c7dbd12b3b6d3c0927fac0",
+          "windowsRawSha256": "24ae0e8e4f2f75e4782777cf73b0671718b4c3b160431e874d1653a4fddc46f1",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "histograms.json": {
+          "rawSha256": "264384987fafcbab120f48b461dc1986d0dc94a29cd0d4ac891cee9860f16fb4",
+          "lfSha256": "264384987fafcbab120f48b461dc1986d0dc94a29cd0d4ac891cee9860f16fb4",
+          "canonicalJsonSha256": "edf41fd7f5d5788d0f312d2679955d6ffb5e3330a141cc8bee60a89f8699c806",
+          "windowsRawSha256": "4fe23b50ee35b7b461acbc0f8c7a9b577f3c6782753d145ab3f95688ed18887f",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "publications.json": {
+          "rawSha256": "b9b640fc9e9993f4344628b1df11b02c8b431a52b4b9e1eed1e17505414dbe9f",
+          "lfSha256": "b9b640fc9e9993f4344628b1df11b02c8b431a52b4b9e1eed1e17505414dbe9f",
+          "canonicalJsonSha256": "cad60e8ab92aa6aae728881821a7a5c2d4c155cb60a5f59d4d37182a53b07d58",
+          "windowsRawSha256": "9934806da8748ce5320b951b4ecfdf7f79989e885a67e1b149f4040f1ed1a9a4",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "delivery-receipts.json": {
+          "rawSha256": "91dfbfa5b49d49473b4e1bfc10f0731a8200c6ad280bb4b48139444568341e96",
+          "lfSha256": "91dfbfa5b49d49473b4e1bfc10f0731a8200c6ad280bb4b48139444568341e96",
+          "canonicalJsonSha256": "3b375ee16c4f98dc817440c2bf8128f3b22fe96d659554c117f5f9a530a0bfab",
+          "windowsRawSha256": "7cc66e86cf1a86f25ef8cfdb7a74f02f91c8c6fef4f5c661a7fb9e359a8db303",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "transmissions.json": {
+          "rawSha256": "c501dfd41cfe27b971f93dba0528053603ee7e230d51ac535c19e9da0fc56611",
+          "lfSha256": "c501dfd41cfe27b971f93dba0528053603ee7e230d51ac535c19e9da0fc56611",
+          "canonicalJsonSha256": "3b9c34a09b742835020409246aac965ddf7845554b7b4186b76c7cd0b3de0337",
+          "windowsRawSha256": "44161e9719191d5814cc0d38ed4107917e1571c74dc6a2b46b29fbd2c3505b7a",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        }
+      }
+    },
+    {
+      "id": "pilot.single.q1",
+      "files": {
+        "summary.json": {
+          "rawSha256": "1503a2f53c7e40f5647b548410d45ba57bd55c3b7a29b40c91e9b3582b1a3322",
+          "lfSha256": "1503a2f53c7e40f5647b548410d45ba57bd55c3b7a29b40c91e9b3582b1a3322",
+          "canonicalJsonSha256": "905311abc4c96d8f852fab09e14b135f2b72148a2881ad82a7a3a4242a06da84",
+          "windowsRawSha256": "11a7ec68a93fd5d93f256f4fbf8f15b2917609e424db92261d827bc9650b52c7",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "histograms.json": {
+          "rawSha256": "d738612c7d8abcdf4348b728403d7afed8db2bbc39c2811724d7d6ec073f3219",
+          "lfSha256": "d738612c7d8abcdf4348b728403d7afed8db2bbc39c2811724d7d6ec073f3219",
+          "canonicalJsonSha256": "97899ebb91f4945d3ad125bd211c83c02e416d817d6af566e83e129adcb190ec",
+          "windowsRawSha256": "0ce589df80162ccfc4da93b20cadc9f0c3b64b39324acc812700aff92160427d",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "publications.json": {
+          "rawSha256": "697e74967c50c88b5342370a5b8c34ea40f9183962f5f18b13a1f4144f29c41f",
+          "lfSha256": "697e74967c50c88b5342370a5b8c34ea40f9183962f5f18b13a1f4144f29c41f",
+          "canonicalJsonSha256": "89b08395ac3108d66bdc9c48aae5d7d4534845e1b5f34a6f4b9041804842c77e",
+          "windowsRawSha256": "51dab052a35bee253e68a238b36a93c80394e1e5835699056cfcdbfbf46fcc6f",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "delivery-receipts.json": {
+          "rawSha256": "ba90acf56ebacd89b26d30a0f8e1d64f848d32ba3fe89cd592db7b5ce6414b8e",
+          "lfSha256": "ba90acf56ebacd89b26d30a0f8e1d64f848d32ba3fe89cd592db7b5ce6414b8e",
+          "canonicalJsonSha256": "2a02234f6bf8a9094634e5ef08d8975040a51cf1dc35d8b88f474a4b791eebab",
+          "windowsRawSha256": "ec69fcdd1fa76f35f9b607d8bba9f5d82383fdf71067bd5fbdf16e6dfa662d55",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "transmissions.json": {
+          "rawSha256": "2cd8dd1bcd021d1f7edb42462d422313b8724fc18db2b7aee5d0c1f47ff20ba8",
+          "lfSha256": "2cd8dd1bcd021d1f7edb42462d422313b8724fc18db2b7aee5d0c1f47ff20ba8",
+          "canonicalJsonSha256": "5c1eb9d859372866c8967078c103f7d4aa07dfe4d7e67d05981f8238df37427c",
+          "windowsRawSha256": "264f5f14dae7b2dcbd132857752c2ea3a31646d318aff830e7a482e7e32f41e0",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        }
+      }
+    },
+    {
+      "id": "pilot.single.q2",
+      "files": {
+        "summary.json": {
+          "rawSha256": "3ca277c9049354c566ca092254a5476993a88f15b47611ced9a4d89f024e7df2",
+          "lfSha256": "3ca277c9049354c566ca092254a5476993a88f15b47611ced9a4d89f024e7df2",
+          "canonicalJsonSha256": "afd8169f1351057891e5b04b5a7e66853340f059b884d567043956e03a677ee3",
+          "windowsRawSha256": "1925fd326efa786d847b867512f0b7f2e1eea840a94ce4cf64523c61e6b07882",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "histograms.json": {
+          "rawSha256": "e0b55bff0904a9b3dc56c28413affd8ab4a7d372d572f2837a9013d263804a6b",
+          "lfSha256": "e0b55bff0904a9b3dc56c28413affd8ab4a7d372d572f2837a9013d263804a6b",
+          "canonicalJsonSha256": "47ebd5291327e8c4c950017b5f6afb76e1a91f06257b3c37e37304530155f4c7",
+          "windowsRawSha256": "42aa906c1390de4ac4580d640608762ab3bf01717cd7759ba6cbb2cac2af656d",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "publications.json": {
+          "rawSha256": "418046df3fa65a7c10cdef5312aa93419d63e868b90b4e23eb6f2cbb71739a97",
+          "lfSha256": "418046df3fa65a7c10cdef5312aa93419d63e868b90b4e23eb6f2cbb71739a97",
+          "canonicalJsonSha256": "edc86c50b9ac2d4a416fef128e5c79907b77f34aa9852026bccb7fdf25748d93",
+          "windowsRawSha256": "327717205549120598b0cfe79caa849199c9073d6e5f6b2919f3ea14ef64883e",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "delivery-receipts.json": {
+          "rawSha256": "6f448f70cba46bd527531e74be14f88a9d7a5845ba1dbf0005cb699c842a17e3",
+          "lfSha256": "6f448f70cba46bd527531e74be14f88a9d7a5845ba1dbf0005cb699c842a17e3",
+          "canonicalJsonSha256": "e3edd965ae78bbf2eea520b38477e4c6109a74e55a836b10cfdccf233fbb3fda",
+          "windowsRawSha256": "64dcf6b258b577d9485b373e95e13c2c6e7adbbaab2f27b7a44f829a2b3eb840",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "transmissions.json": {
+          "rawSha256": "647418ef0060c390b1067d73ba8dc897d0f357407f4dd7d2e8c3daa984a1a4b7",
+          "lfSha256": "647418ef0060c390b1067d73ba8dc897d0f357407f4dd7d2e8c3daa984a1a4b7",
+          "canonicalJsonSha256": "4d6db01b2c6cf7cac80bd6020745a14df7dc6b4a402d02c01366ffa8e331e5f0",
+          "windowsRawSha256": "9ed68fb8f929fa954c296429db199637353e4db010df77c22b99411a5917902d",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        }
+      }
+    },
+    {
+      "id": "replay.federation.q2",
+      "files": {
+        "summary.json": {
+          "rawSha256": "fe9976856aecdfd82b116e63386406f48da22a0ec4fee50bfdb0982b4e2512f3",
+          "lfSha256": "fe9976856aecdfd82b116e63386406f48da22a0ec4fee50bfdb0982b4e2512f3",
+          "canonicalJsonSha256": "70a21dcab39c6376eb675b7d5c4c63faf46e594e0574c54bf0597fe224547f65",
+          "windowsRawSha256": "acaf41466c0daabc045b68507d27578bdf7acc31fd96a3d738efbf64989b6e28",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "histograms.json": {
+          "rawSha256": "83c687fc8009faae981ed84fae9d342ca06cce87acd717cfa4b764aa282e645a",
+          "lfSha256": "83c687fc8009faae981ed84fae9d342ca06cce87acd717cfa4b764aa282e645a",
+          "canonicalJsonSha256": "b2aa35daab49f1bb2e06288cf9d6c6bcb5196e369146bf58affd7671bd075612",
+          "windowsRawSha256": "652c1ec43124ba6e562ef50bf6bc3076e70bc31d243e9fa128c71e2c19bbc693",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "publications.json": {
+          "rawSha256": "e9bf0336587bad0d1edb6c285b40915359eb3be09f101e5098e2a04b00badb58",
+          "lfSha256": "e9bf0336587bad0d1edb6c285b40915359eb3be09f101e5098e2a04b00badb58",
+          "canonicalJsonSha256": "f80b642f37ca2220a5a69cf9d04021b774e10df8cd52ae633151149333caa70a",
+          "windowsRawSha256": "d8917d9cbaf555238dba87d840f1a9807d8a03a581a6ce41f1134afd3f9c7be9",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "delivery-receipts.json": {
+          "rawSha256": "5b198d3520908d82125ee6a9793641e616dbc10e889acdd58d0c29fd31515510",
+          "lfSha256": "5b198d3520908d82125ee6a9793641e616dbc10e889acdd58d0c29fd31515510",
+          "canonicalJsonSha256": "a6feda17aebc81e7a47a77432e91e89fecccc031abeb8dc74b9e9f6ded61b717",
+          "windowsRawSha256": "591134f7bbea34f9ef7753cc7c99c77755c2d0d37bdd96a7ed152150a5aae0fb",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "transmissions.json": {
+          "rawSha256": "1ac791bbfbb9561e42015e0b6213b12746cf2954bf3e6ffea57239a8ee3f1f74",
+          "lfSha256": "1ac791bbfbb9561e42015e0b6213b12746cf2954bf3e6ffea57239a8ee3f1f74",
+          "canonicalJsonSha256": "bc8cc17c1674ff9711267c3a78ca328c31dad16fc6850f923f8e2721758366fb",
+          "windowsRawSha256": "416e6be7cc4debf10e0f31611265b3d6651c196d72b2188365a3cf50074b2c53",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        }
+      }
+    },
+    {
+      "id": "replay.relay.q2",
+      "files": {
+        "summary.json": {
+          "rawSha256": "ee2e24a6cb2e9cb54645eeae247ee6c181f18497e23dae92f6f198caeded9bdf",
+          "lfSha256": "ee2e24a6cb2e9cb54645eeae247ee6c181f18497e23dae92f6f198caeded9bdf",
+          "canonicalJsonSha256": "0fa37f4d6b457417ed449866ad2e309879a8c59182593b04e8c85d3002e4c347",
+          "windowsRawSha256": "50314e72b0bd83c3b18e9af38d6a01e08cad4908fd3527c916a51dd16cb05899",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "histograms.json": {
+          "rawSha256": "86ad08382288117e29443b9df6fc0d21fd1171f53d16cca3e769b145e0333fbf",
+          "lfSha256": "86ad08382288117e29443b9df6fc0d21fd1171f53d16cca3e769b145e0333fbf",
+          "canonicalJsonSha256": "f484c5861ecb9e8c614701147590451a16df1ba73b22c89e4a984fdb3b61bf83",
+          "windowsRawSha256": "cea08efbd4d071345579af673a271f37120436dbeb95728001b5f1e6ecab60ab",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "publications.json": {
+          "rawSha256": "fc3a88385258594edff7544e5c5035df4105882de1fbbc52801e57ae58eb33da",
+          "lfSha256": "fc3a88385258594edff7544e5c5035df4105882de1fbbc52801e57ae58eb33da",
+          "canonicalJsonSha256": "12fd4159ee9332518431044f0852888c3e4356875fe278e29e2468230be9fe95",
+          "windowsRawSha256": "bb9bd9485da2314120c99b1fe7d1339bd7d1c7aefe246a25da7af6b131a4f347",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "delivery-receipts.json": {
+          "rawSha256": "75d508066fdb033bc55b1c7a0b4dc82f18a3dea79fbad3c5dfed87d7f7c80548",
+          "lfSha256": "75d508066fdb033bc55b1c7a0b4dc82f18a3dea79fbad3c5dfed87d7f7c80548",
+          "canonicalJsonSha256": "407f0a2f6322d1c6b7fb8bc8d98e59c8323ad86e75998c574b28a360007b5996",
+          "windowsRawSha256": "39c49da90984da62f167c3f5f0cb33919b13c1f8e1df1e3b9f928556a63aaac2",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "transmissions.json": {
+          "rawSha256": "a2e93e7d741b3b40e3598a98efd5c74894da4878728d3afbbf97b2d636c5d82b",
+          "lfSha256": "a2e93e7d741b3b40e3598a98efd5c74894da4878728d3afbbf97b2d636c5d82b",
+          "canonicalJsonSha256": "850b16ce9ea0bc28daa33721ae21c83f0295d58658777367702b2ebaf85f44b7",
+          "windowsRawSha256": "e4da3452f65603751ffc2d71979ef2ed262f2da2fe3efd170f4724d825734444",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        }
+      }
+    },
+    {
+      "id": "replay.single.q2",
+      "files": {
+        "summary.json": {
+          "rawSha256": "3ca277c9049354c566ca092254a5476993a88f15b47611ced9a4d89f024e7df2",
+          "lfSha256": "3ca277c9049354c566ca092254a5476993a88f15b47611ced9a4d89f024e7df2",
+          "canonicalJsonSha256": "afd8169f1351057891e5b04b5a7e66853340f059b884d567043956e03a677ee3",
+          "windowsRawSha256": "1925fd326efa786d847b867512f0b7f2e1eea840a94ce4cf64523c61e6b07882",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "histograms.json": {
+          "rawSha256": "e0b55bff0904a9b3dc56c28413affd8ab4a7d372d572f2837a9013d263804a6b",
+          "lfSha256": "e0b55bff0904a9b3dc56c28413affd8ab4a7d372d572f2837a9013d263804a6b",
+          "canonicalJsonSha256": "47ebd5291327e8c4c950017b5f6afb76e1a91f06257b3c37e37304530155f4c7",
+          "windowsRawSha256": "42aa906c1390de4ac4580d640608762ab3bf01717cd7759ba6cbb2cac2af656d",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "publications.json": {
+          "rawSha256": "418046df3fa65a7c10cdef5312aa93419d63e868b90b4e23eb6f2cbb71739a97",
+          "lfSha256": "418046df3fa65a7c10cdef5312aa93419d63e868b90b4e23eb6f2cbb71739a97",
+          "canonicalJsonSha256": "edc86c50b9ac2d4a416fef128e5c79907b77f34aa9852026bccb7fdf25748d93",
+          "windowsRawSha256": "327717205549120598b0cfe79caa849199c9073d6e5f6b2919f3ea14ef64883e",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "delivery-receipts.json": {
+          "rawSha256": "6f448f70cba46bd527531e74be14f88a9d7a5845ba1dbf0005cb699c842a17e3",
+          "lfSha256": "6f448f70cba46bd527531e74be14f88a9d7a5845ba1dbf0005cb699c842a17e3",
+          "canonicalJsonSha256": "e3edd965ae78bbf2eea520b38477e4c6109a74e55a836b10cfdccf233fbb3fda",
+          "windowsRawSha256": "64dcf6b258b577d9485b373e95e13c2c6e7adbbaab2f27b7a44f829a2b3eb840",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        },
+        "transmissions.json": {
+          "rawSha256": "647418ef0060c390b1067d73ba8dc897d0f357407f4dd7d2e8c3daa984a1a4b7",
+          "lfSha256": "647418ef0060c390b1067d73ba8dc897d0f357407f4dd7d2e8c3daa984a1a4b7",
+          "canonicalJsonSha256": "4d6db01b2c6cf7cac80bd6020745a14df7dc6b4a402d02c01366ffa8e331e5f0",
+          "windowsRawSha256": "9ed68fb8f929fa954c296429db199637353e4db010df77c22b99411a5917902d",
+          "rawEqual": false,
+          "lfEqual": true,
+          "jsonEqual": true
+        }
+      }
+    }
+  ]
+}

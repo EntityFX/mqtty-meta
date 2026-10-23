@@ -106,8 +106,10 @@ python3 "$network_study/tools/dissertation/run_network_study.py" recover-interru
 
 После старта долгого этапа подтвердите службу/PID и progress, обновите общий журнал и завершите работу агента до ручного продолжения. Ошибку до создания progress ищите в journal: старый `completed` от другого этапа не доказывает успех нового запуска.
 
-## Проверки разработки и оставшаяся проверка Linux
+## Проверки разработки и Linux-preflight
 
 Пройдены 68 тестов инструментов, включая 14 тестов оркестратора. На настоящем MqttY CLI выполнены 15 коротких локальных симуляций: 9 проверок трёх режимов и QoS 0/1/2, 3 опорных опыта и 3 точных повтора. Resume не добавил попыток. В Windows-тесте имитировался только признак mount; Git, свободное место, runtime и проверка журналов были реальными.
 
-Это не покрытие научной матрицы и не проверка Linux/cgroup. Остались Linux-preflight, реальный pilot, оценка достаточности фаз и бюджета. Критерии шагов 21–22 в полном объёме пока не закрыты. [Компактное подтверждение](../../reports/audits/dissertation/network-runner-v1/smoke-verification.json).
+Это не покрытие научной матрицы. Дополнительно пройден Linux-preflight из 15 реальных CLI-опытов с настоящим mount и настроенным MemoryMax=3 ГиБ: три повтора совпали, resume не добавил попыток, пик около 220 МиБ. Исчерпание cgroup не вызывалось. Шаг 22 принят технически; для 21 остаются 30 содержательных pilots, оценка достаточности фаз и бюджета. Данные 75 выбранных научных JSON Windows/Linux совпали после нормализации CRLF/LF; исходные byte SHA различаются и сохранены. [Компактное подтверждение](../../reports/audits/dissertation/network-runner-v1/smoke-verification.json).
+
+[Подтверждение Linux-preflight](../../reports/audits/dissertation/network-runner-v1/linux-preflight-verification.json). [Сравнение научных файлов](../../reports/audits/dissertation/network-runner-v1/cross-platform-smoke-comparison.json).

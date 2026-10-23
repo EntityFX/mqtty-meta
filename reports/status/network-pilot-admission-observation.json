@@ -1,0 +1,71 @@
+{
+  "observedAtUtc": "2026-10-23T23:29:03.748597+00:00",
+  "memory": {
+    "MemTotal": 16600354816,
+    "MemAvailable": 11188506624
+  },
+  "sensitivity": {
+    "active": {
+      "Aedes.m16.q2.p128.s44.doubleWindow": {
+        "elapsedSeconds": 803.0164432870079,
+        "peakRssBytes": 851439616,
+        "pid": 49987,
+        "rssBytes": 819109888
+      },
+      "Aedes.m16.q2.p128.s44.halfTick": {
+        "elapsedSeconds": 867.1215679279994,
+        "peakRssBytes": 853143552,
+        "pid": 49927,
+        "rssBytes": 820981760
+      },
+      "Mosquitto.m16.q0.p128.s42.baseline": {
+        "elapsedSeconds": 30.065744484003517,
+        "peakRssBytes": 846254080,
+        "pid": 51083,
+        "rssBytes": 845971456
+      },
+      "Mosquitto.m16.q0.p128.s42.halfTick": {
+        "elapsedSeconds": 11.047160886999336,
+        "peakRssBytes": 845697024,
+        "pid": 51114,
+        "rssBytes": 845697024
+      }
+    },
+    "counts": {
+      "matrix": {
+        "done": 61,
+        "failedCriteria": 13,
+        "total": 216
+      },
+      "pilot": {
+        "done": 8,
+        "failedCriteria": 4,
+        "total": 8
+      },
+      "replay": {
+        "done": 0,
+        "failedCriteria": 0,
+        "total": 6
+      }
+    },
+    "elapsedSeconds": 19482.632915679,
+    "planSha256": "dfda8401e9e3f96aebece1b4baa116b58437c94752ecc0324b6e8c909243ae3c",
+    "reason": null,
+    "schedulerVersion": 2,
+    "status": "running",
+    "technicalErrors": 0,
+    "workers": 4
+  },
+  "service": "MainPID=49274\nResult=success\nMemoryCurrent=3207184384\nCPUUsageNSec=6605544730000\nEffectiveCPUs=\nCPUQuotaPerSecUSec=infinity\nActiveState=active\n",
+  "ps": [
+    "    PID %CPU COMMAND         COMMAND",
+    "  51114  105 dotnet          /bin/dotnet /run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runtime/EntityFX.MqttY.MqttRelay.App.dll experiment --config /run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/configs/Mosquitto.m16.q0.p128.s42.halfTick.json --output /run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/Mosquitto.m16.q0.p128.s42.halfTick/output-001",
+    "  51083  102 dotnet          /bin/dotnet /run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runtime/EntityFX.MqttY.MqttRelay.App.dll experiment --config /run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/configs/Mosquitto.m16.q0.p128.s42.baseline.json --output /run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/Mosquitto.m16.q0.p128.s42.baseline/output-001",
+    "  49987 99.9 dotnet          /bin/dotnet /run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runtime/EntityFX.MqttY.MqttRelay.App.dll experiment --config /run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/configs/Aedes.m16.q2.p128.s44.doubleWindow.json --output /run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/Aedes.m16.q2.p128.s44.doubleWindow/output-001",
+    "  49927 99.9 dotnet          /bin/dotnet /run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runtime/EntityFX.MqttY.MqttRelay.App.dll experiment --config /run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/configs/Aedes.m16.q2.p128.s44.halfTick.json --output /run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/Aedes.m16.q2.p128.s44.halfTick/output-001",
+    "  51145 71.4 python3         python3",
+    "  51142 11.1 bash            bash -c echo aW1wb3J0IHBhdGhsaWIsanNvbixzdWJwcm9jZXNzLGRhdGV0aW1lCnI9cGF0aGxpYi5QYXRoKCIvcnVuL21lZGlhL2VudGl0eWZ4L2hkMjUwL21xdHR5LWV2aWRlbmNlL2Rpc3NlcnRhdGlvbi1zZW5zaXRpdml0eS12MSIpCm1lbT17azppbnQodi5zcGxpdCgpWzBdKSoxMDI0IGZvciBrLHYgaW4gKHguc3BsaXQoIjoiLDEpIGZvciB4IGluIHBhdGhsaWIuUGF0aCgiL3Byb2MvbWVtaW5mbyIpLnJlYWRfdGV4dCgpLnNwbGl0bGluZXMoKSkgaWYgayBpbiAoIk1lbVRvdGFsIiwiTWVtQXZhaWxhYmxlIil9CnM9c3VicHJvY2Vzcy5ydW4oWyJzeXN0ZW1jdGwiLCItLXVzZXIiLCJzaG93IiwibXF0dHktc2Vuc2l0aXZpdHktdjEuc2VydmljZSIsIi1wIiwiQWN0aXZlU3RhdGUsTWFpblBJRCxSZXN1bHQsTWVtb3J5Q3VycmVudCxDUFVVc2FnZU5TZWMsQ1BVUXVvdGFQZXJTZWNVU2VjLEVmZmVjdGl2ZUNQVXMiXSxjYXB0dXJlX291dHB1dD1UcnVlLHRleHQ9VHJ1ZSkuc3Rkb3V0CnByaW50KGpzb24uZHVtcHMoeyJvYnNlcnZlZEF0VXRjIjpkYXRldGltZS5kYXRldGltZS5ub3coZGF0ZXRpbWUudGltZXpvbmUudXRjKS5pc29mb3JtYXQoKSwibWVtb3J5IjptZW0sInNlbnNpdGl2aXR5Ijpqc29uLmxvYWRzKChyLyJwcm9ncmVzcy5qc29uIikucmVhZF90ZXh0KCkpLCJzZXJ2aWNlIjpzLCJwcyI6c3VicHJvY2Vzcy5ydW4oWyJwcyIsIi1lbyIsInBpZCxwY3B1LGNvbW0sYXJncyIsIi0tc29ydD0tcGNwdSJdLGNhcHR1cmVfb3V0cHV0PVRydWUsdGV4dD1UcnVlKS5zdGRvdXQuc3BsaXRsaW5lcygpWzo5XX0pKQo= | base64 -d | python3",
+    "  40460  3.9 htop            htop",
+    "  51138  3.5 sshd            sshd: entityfx [priv]"
+  ]
+}

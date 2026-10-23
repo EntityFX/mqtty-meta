@@ -1,0 +1,17 @@
+{
+  "unit": "mqtty-network-preflight-v1.service",
+  "result": "success",
+  "exitStatus": 0,
+  "serviceRuntimeSeconds": 18.547,
+  "cpuSeconds": 16.741,
+  "reportedMemoryPeak": "219.8M",
+  "memoryMaxBytes": 3221225472,
+  "memorySwapMaxBytes": 0,
+  "cpuWeight": 10,
+  "runtimeMaxSeconds": 180,
+  "mountPredicateSimulated": false,
+  "hardLimitConfigured": true,
+  "hardLimitExhaustionDeliberatelyTriggered": false,
+  "scope": "Functional preflight ran alongside sensitivity; wall time is not an isolated speed benchmark",
+  "scientificProgramCoverage": 0
+}

@@ -1,0 +1,43 @@
+{
+  "observedAtUtc": "2026-10-23T23:30:08.055100+00:00",
+  "sharedWithSensitivity": true,
+  "memoryBeforeLaunch": {
+    "MemTotal": 16600354816,
+    "MemAvailable": 11230056448
+  },
+  "sensitivityCgroupMaxGiB": 8,
+  "networkCgroupMaxGiB": 3,
+  "networkJobRssLimitGiB": 2,
+  "hostReserveAdmissionGiB": 2,
+  "requiredAvailableGiB": 6,
+  "evidenceDiskReserveGiB": 10,
+  "studyDiskBudgetGiB": 40,
+  "networkWorkers": 1,
+  "matrixAutoAdmission": false,
+  "reason": "Resource-checked independent deterministic simulations; wall timing is not an isolated hardware benchmark",
+  "launchCommand": [
+    "systemd-run",
+    "--user",
+    "--unit=mqtty-network-pilot-v1.service",
+    "--description=MqttY network 30 pilots only; bounded parallelism with sensitivity",
+    "--property=Type=exec",
+    "--property=MemoryMax=3G",
+    "--property=MemorySwapMax=0",
+    "--property=CPUWeight=10",
+    "--property=KillMode=control-group",
+    "--property=RuntimeMaxSec=12h",
+    "--property=TimeoutStopSec=30s",
+    "--property=StandardOutput=append:/run/media/entityfx/hd250/mqtty-evidence/network-long-v1/service.stdout.log",
+    "--property=StandardError=append:/run/media/entityfx/hd250/mqtty-evidence/network-long-v1/service.stderr.log",
+    "--setenv=PYTHONDONTWRITEBYTECODE=1",
+    "/usr/bin/python3",
+    "/run/media/entityfx/hd250/mqtty-evidence/network-long-v1/tools/dissertation/run_network_study.py",
+    "run",
+    "--study",
+    "/run/media/entityfx/hd250/mqtty-evidence/network-long-v1",
+    "--phase",
+    "pilot"
+  ],
+  "launchReturnCode": 0,
+  "launchOutput": "Running as unit: mqtty-network-pilot-v1.service; invocation ID: e78adbfdf69a41838385d168d9ca1100\n"
+}
