@@ -1,5 +1,5 @@
 {
-  "observedAtUtc": "2026-10-23T13:28:57.610596+00:00",
+  "observedAtUtc": "2026-10-23T14:01:32.513138+00:00",
   "root": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/full",
   "groups": {
     "Aedes": {
@@ -24,26 +24,57 @@
       "archivesOutsidePublishedSelection": 3
     },
     "Mosquitto": {
-      "processed": 113,
-      "passed": 109,
+      "processed": 148,
+      "passed": 144,
       "discrepancies": 0,
       "technicalErrors": 0,
       "archivesOutsidePublishedSelection": 4
     }
   },
   "progress": {
-    "elapsedSeconds": 2774.507118195994,
+    "elapsedSeconds": 3057.159263718,
     "nonSelectedSuccessArchives": 12,
     "nonSuccessArchives": 4,
     "pid": 8920,
-    "processed": 557,
+    "processed": 592,
     "selectedDiscrepancies": 0,
-    "selectedPassed": 541,
-    "status": "running",
+    "selectedPassed": 576,
+    "status": "completed",
     "technicalErrors": 0,
     "total": 592,
     "workerMemoryMiB": 2048,
     "workers": 2
   },
-  "service": "MainPID=8920\nResult=success\nExecMainCode=0\nExecMainStatus=0\nMemoryCurrent=6180712448\nActiveState=active\nSubState=running\n"
+  "service": "MainPID=0\nResult=success\nExecMainCode=0\nExecMainStatus=0\nMemoryCurrent=[not set]\nActiveState=inactive\nSubState=dead\n",
+  "diskFreeBytes": {
+    "system": 64362491904,
+    "hd250": 142485532672
+  },
+  "summary": {
+    "bytes": 6577019,
+    "sha256": "8af5751b2abe4f3c2983efc8eb1e45cda3cf89166cc14b4de7ce29adae9f28c3",
+    "counts": {
+      "nonSelectedSuccessArchives": 12,
+      "nonSuccessArchives": 4,
+      "processed": 592,
+      "selectedDiscrepancies": 0,
+      "selectedPassed": 576,
+      "technicalErrors": 0,
+      "total": 592
+    },
+    "manifest": {
+      "archives": 592,
+      "method": "Read-only event recount, all member seals, identity recomputation, all ACK quantiles",
+      "nativeEvidenceSha256": "7010fc352b64125a44aa9d7dbe54c9df76cb224631f2971d2f1579c44e5450de",
+      "pilotLimit": null,
+      "publishedRuns": 576,
+      "rawExtraction": false,
+      "registrySha256": "7d3cad14004b421e23f815a7f471f90e4a1b3ccbe813d86d4f44f5791093bbb9",
+      "sourceSha256": {
+        "native_audit.py": "9425b250bf9a8a1da1100103f6e9ab035d0c5070065dd953341e2ff0875a6294",
+        "run_native_audit.py": "ef1d1a9824501baa20a77c9077106c2de93408fc908e997af65ba51cc361fddf"
+      },
+      "version": 1
+    }
+  }
 }

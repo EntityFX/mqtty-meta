@@ -1,0 +1,295 @@
+{
+  "observedAtUtc": "2026-10-23T14:01:32.513138+00:00",
+  "status": "completed",
+  "counts": {
+    "nonSelectedSuccessArchives": 12,
+    "nonSuccessArchives": 4,
+    "processed": 592,
+    "selectedDiscrepancies": 0,
+    "selectedPassed": 576,
+    "technicalErrors": 0,
+    "total": 592
+  },
+  "perBroker": {
+    "Aedes": {
+      "processed": 148,
+      "passed": 144,
+      "discrepancies": 0,
+      "technicalErrors": 0,
+      "archivesOutsidePublishedSelection": 4
+    },
+    "EMQX": {
+      "processed": 149,
+      "passed": 144,
+      "discrepancies": 0,
+      "technicalErrors": 0,
+      "archivesOutsidePublishedSelection": 5
+    },
+    "ActiveMQ": {
+      "processed": 147,
+      "passed": 144,
+      "discrepancies": 0,
+      "technicalErrors": 0,
+      "archivesOutsidePublishedSelection": 3
+    },
+    "Mosquitto": {
+      "processed": 148,
+      "passed": 144,
+      "discrepancies": 0,
+      "technicalErrors": 0,
+      "archivesOutsidePublishedSelection": 4
+    }
+  },
+  "remoteSummary": {
+    "path": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/full/audit-results.json",
+    "sha256": "8af5751b2abe4f3c2983efc8eb1e45cda3cf89166cc14b4de7ce29adae9f28c3",
+    "bytes": 6577019,
+    "downloadSha256Verified": true
+  },
+  "manifest": {
+    "archives": 592,
+    "method": "Read-only event recount, all member seals, identity recomputation, all ACK quantiles",
+    "nativeEvidenceSha256": "7010fc352b64125a44aa9d7dbe54c9df76cb224631f2971d2f1579c44e5450de",
+    "pilotLimit": null,
+    "publishedRuns": 576,
+    "rawExtraction": false,
+    "registrySha256": "7d3cad14004b421e23f815a7f471f90e4a1b3ccbe813d86d4f44f5791093bbb9",
+    "sourceSha256": {
+      "native_audit.py": "9425b250bf9a8a1da1100103f6e9ab035d0c5070065dd953341e2ff0875a6294",
+      "run_native_audit.py": "ef1d1a9824501baa20a77c9077106c2de93408fc908e997af65ba51cc361fddf"
+    },
+    "version": 1
+  },
+  "outsidePublishedSelection": [
+    {
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/ActiveMQ-pilot/ActiveMQ.m16.q0.p1.r1/attempt-01.zip",
+      "status": "success",
+      "key": {
+        "broker": "ActiveMQ",
+        "key": "ActiveMQ.m16.q0.p1.r1",
+        "messageBytes": 16,
+        "publishers": 1,
+        "qos": 0,
+        "repeat": 1
+      },
+      "failure": null,
+      "eventCoverage": "complete"
+    },
+    {
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/ActiveMQ-pilot/ActiveMQ.m16.q1.p1.r1/attempt-01.zip",
+      "status": "success",
+      "key": {
+        "broker": "ActiveMQ",
+        "key": "ActiveMQ.m16.q1.p1.r1",
+        "messageBytes": 16,
+        "publishers": 1,
+        "qos": 1,
+        "repeat": 1
+      },
+      "failure": null,
+      "eventCoverage": "complete"
+    },
+    {
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/ActiveMQ-pilot/ActiveMQ.m16.q2.p1.r1/attempt-01.zip",
+      "status": "success",
+      "key": {
+        "broker": "ActiveMQ",
+        "key": "ActiveMQ.m16.q2.p1.r1",
+        "messageBytes": 16,
+        "publishers": 1,
+        "qos": 2,
+        "repeat": 1
+      },
+      "failure": null,
+      "eventCoverage": "complete"
+    },
+    {
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p128.r1/attempt-01.zip",
+      "status": "failed",
+      "key": {
+        "broker": "Aedes",
+        "key": "Aedes.m256.q0.p128.r1",
+        "messageBytes": 256,
+        "publishers": 128,
+        "qos": 0,
+        "repeat": 1
+      },
+      "failure": "InvalidDataException: Telemetry does not cover the remote workload completion fence.",
+      "eventCoverage": "complete"
+    },
+    {
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-pilot/Aedes.m16.q0.p1.r1/attempt-01.zip",
+      "status": "success",
+      "key": {
+        "broker": "Aedes",
+        "key": "Aedes.m16.q0.p1.r1",
+        "messageBytes": 16,
+        "publishers": 1,
+        "qos": 0,
+        "repeat": 1
+      },
+      "failure": null,
+      "eventCoverage": "complete"
+    },
+    {
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-pilot/Aedes.m16.q1.p1.r1/attempt-01.zip",
+      "status": "success",
+      "key": {
+        "broker": "Aedes",
+        "key": "Aedes.m16.q1.p1.r1",
+        "messageBytes": 16,
+        "publishers": 1,
+        "qos": 1,
+        "repeat": 1
+      },
+      "failure": null,
+      "eventCoverage": "complete"
+    },
+    {
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-pilot/Aedes.m16.q2.p1.r1/attempt-01.zip",
+      "status": "success",
+      "key": {
+        "broker": "Aedes",
+        "key": "Aedes.m16.q2.p1.r1",
+        "messageBytes": 16,
+        "publishers": 1,
+        "qos": 2,
+        "repeat": 1
+      },
+      "failure": null,
+      "eventCoverage": "complete"
+    },
+    {
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/EMQX-pilot/EMQX.m16.q0.p1.r1/attempt-01.zip",
+      "status": "success",
+      "key": {
+        "broker": "EMQX",
+        "key": "EMQX.m16.q0.p1.r1",
+        "messageBytes": 16,
+        "publishers": 1,
+        "qos": 0,
+        "repeat": 1
+      },
+      "failure": null,
+      "eventCoverage": "complete"
+    },
+    {
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/EMQX-pilot/EMQX.m16.q1.p1.r1/attempt-01.zip",
+      "status": "success",
+      "key": {
+        "broker": "EMQX",
+        "key": "EMQX.m16.q1.p1.r1",
+        "messageBytes": 16,
+        "publishers": 1,
+        "qos": 1,
+        "repeat": 1
+      },
+      "failure": null,
+      "eventCoverage": "complete"
+    },
+    {
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/EMQX-pilot/EMQX.m16.q2.p1.r1/attempt-01.zip",
+      "status": "success",
+      "key": {
+        "broker": "EMQX",
+        "key": "EMQX.m16.q2.p1.r1",
+        "messageBytes": 16,
+        "publishers": 1,
+        "qos": 2,
+        "repeat": 1
+      },
+      "failure": null,
+      "eventCoverage": "complete"
+    },
+    {
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Mosquitto-calibration/Mosquitto.m256.q1.p128.r2/attempt-01.zip",
+      "status": "failed",
+      "key": {
+        "broker": "Mosquitto",
+        "key": "Mosquitto.m256.q1.p128.r2",
+        "messageBytes": 256,
+        "publishers": 128,
+        "qos": 1,
+        "repeat": 2
+      },
+      "failure": "InvalidDataException: Telemetry does not cover the remote workload completion fence.",
+      "eventCoverage": "complete"
+    },
+    {
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Mosquitto-pilot/Mosquitto.m16.q0.p1.r1/attempt-01.zip",
+      "status": "success",
+      "key": {
+        "broker": "Mosquitto",
+        "key": "Mosquitto.m16.q0.p1.r1",
+        "messageBytes": 16,
+        "publishers": 1,
+        "qos": 0,
+        "repeat": 1
+      },
+      "failure": null,
+      "eventCoverage": "complete"
+    },
+    {
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Mosquitto-pilot/Mosquitto.m16.q1.p1.r1/attempt-01.zip",
+      "status": "success",
+      "key": {
+        "broker": "Mosquitto",
+        "key": "Mosquitto.m16.q1.p1.r1",
+        "messageBytes": 16,
+        "publishers": 1,
+        "qos": 1,
+        "repeat": 1
+      },
+      "failure": null,
+      "eventCoverage": "complete"
+    },
+    {
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Mosquitto-pilot/Mosquitto.m16.q2.p1.r1/attempt-01.zip",
+      "status": "success",
+      "key": {
+        "broker": "Mosquitto",
+        "key": "Mosquitto.m16.q2.p1.r1",
+        "messageBytes": 16,
+        "publishers": 1,
+        "qos": 2,
+        "repeat": 1
+      },
+      "failure": null,
+      "eventCoverage": "complete"
+    },
+    {
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q0.p16.r2/attempt-01.zip",
+      "status": "failed",
+      "key": {
+        "broker": "EMQX",
+        "key": "EMQX.m256.q0.p16.r2",
+        "messageBytes": 256,
+        "publishers": 16,
+        "qos": 0,
+        "repeat": 2
+      },
+      "failure": "InvalidOperationException: Stand controller start failed: Native MQTT listener executable does not match the pinned identity.",
+      "eventCoverage": "journalsUnavailable"
+    },
+    {
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q1.p16.r3/attempt-01.zip",
+      "status": "failed",
+      "key": {
+        "broker": "EMQX",
+        "key": "EMQX.m256.q1.p16.r3",
+        "messageBytes": 256,
+        "publishers": 16,
+        "qos": 1,
+        "repeat": 3
+      },
+      "failure": "InvalidOperationException: Stand controller start failed: Native MQTT listener executable does not match the pinned identity.",
+      "eventCoverage": "journalsUnavailable"
+    }
+  ],
+  "limits": [
+    "Message payload beyond ID and byte count cannot be reverified from these event logs.",
+    "Two rejected EMQX attempts have no publish/delivery journals; their failure record and seals can be checked.",
+    "Receiver measurement/drain boundary is available as bounds, not exact timestamp origin.",
+    "Matched measurements do not establish digital-twin fidelity or network-model accuracy."
+  ]
+}

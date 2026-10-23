@@ -1,12 +1,12 @@
 {
   "method": "physical-lines-v1",
   "revisions": {
-    ".": "e8bc993d0dcb4714baa92fa1cd9590aeb08317d9",
+    ".": "54f9b731a6a5f23a3f35d2946afe5ebb170c6bc1",
     "MqttBenchmark": "a7c3cf93c2aa302cc435310a7b408ce1703219fb",
     "mqtty": "fafa37ee7932a96f0359a0de66eb4d8b3befe212",
     "diss": "c7d4e82fbb5953b83910124d1d5fecd76d423a01"
   },
-  "sourceSha256": "e85ff23a8ad7ecf25e485e4df7dcc179b5b31d716f67ce3ff6fd7a6f136a02ad",
+  "sourceSha256": "71e1cae863cefb6c6f2dce591633ca34209e352d302f4e9eaddfc714bc70d6a8",
   "modules": [
     {
       "repository": ".",
@@ -49,11 +49,11 @@
       "module": "tools/dissertation",
       "kind": "Скрипты",
       "directory": "tools/dissertation",
-      "files": 6,
-      "lines": 1304,
-      "nonblank": 1193,
+      "files": 7,
+      "lines": 1590,
+      "nonblank": 1444,
       "extensions": {
-        ".py": 4,
+        ".py": 5,
         ".ps1": 1,
         ".sh": 1
       }
@@ -63,12 +63,12 @@
       "module": "tools/dissertation",
       "kind": "Тестовые скрипты",
       "directory": "tools/dissertation",
-      "files": 4,
-      "lines": 413,
-      "nonblank": 364,
+      "files": 5,
+      "lines": 567,
+      "nonblank": 500,
       "extensions": {
         ".sh": 1,
-        ".py": 3
+        ".py": 4
       }
     },
     {
@@ -535,8 +535,8 @@
     }
   ],
   "totals": {
-    "files": 629,
-    "lines": 57459,
-    "nonblank": 50310
+    "files": 631,
+    "lines": 57899,
+    "nonblank": 50697
   }
 }

@@ -8,11 +8,13 @@
   ],
   "localWeightPersonDays": 5,
   "verifiedTechnicalSteps": [
-    "03"
+    "03",
+    "04",
+    "06"
   ],
-  "verifiedTechnicalWeightPersonDays": 2,
-  "localPercent": 40,
-  "globalPercent": 4.3,
+  "verifiedTechnicalWeightPersonDays": 4,
+  "localPercent": 80,
+  "globalPercent": 8.5,
   "basis": "Plan effort weights; not scientific confidence or elapsed labour",
   "steps": {
     "03": {
@@ -20,20 +22,20 @@
       "testsPassed": 22
     },
     "04": {
-      "status": "runningOnLinux",
+      "status": "technicalChecksPassed",
       "systemdUnit": "mqtty-native-audit-v1.service",
       "remoteRoot": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/full",
       "observedState": {
-        "systemdShow": "MainPID=8920\nResult=success\nExecMainCode=0\nExecMainStatus=0\nMemoryCurrent=6180712448\nActiveState=active\nSubState=running\n",
+        "systemdShow": "MainPID=0\nResult=success\nExecMainCode=0\nExecMainStatus=0\nMemoryCurrent=[not set]\nActiveState=inactive\nSubState=dead\n",
         "progress": {
-          "elapsedSeconds": 2774.507118195994,
+          "elapsedSeconds": 3057.159263718,
           "nonSelectedSuccessArchives": 12,
           "nonSuccessArchives": 4,
           "pid": 8920,
-          "processed": 557,
+          "processed": 592,
           "selectedDiscrepancies": 0,
-          "selectedPassed": 541,
-          "status": "running",
+          "selectedPassed": 576,
+          "status": "completed",
           "technicalErrors": 0,
           "total": 592,
           "workerMemoryMiB": 2048,
@@ -62,25 +64,37 @@
             "archivesOutsidePublishedSelection": 3
           },
           "Mosquitto": {
-            "processed": 113,
-            "passed": 109,
+            "processed": 148,
+            "passed": 144,
             "discrepancies": 0,
             "technicalErrors": 0,
             "archivesOutsidePublishedSelection": 4
           }
         }
       },
-      "observedAtUtc": "2026-10-23T13:28:57.610596+00:00"
+      "observedAtUtc": "2026-10-23T14:01:32.513138+00:00",
+      "summaryDocument": "reports/status/linux-native-audit-summary.json",
+      "acceptance": "576 published runs recounted; 592 archives checked; 12 pilots and 4 rejected attempts classified; journal limits explicitly recorded"
     },
     "05": {
-      "status": "technicalDraftPrepared",
+      "status": "technicalReviewPassedAwaitingAuthorAcceptance",
       "document": "docs/overview/measurement-contract.md",
-      "acceptance": "Scientific definitions await final author review"
+      "acceptance": "Definitions cross-checked against benchmark, simulator and independent arithmetic; final scientific agreement remains with author",
+      "technicalTestsPassed": 33
     },
     "06": {
-      "status": "awaitingCompleteRecount"
+      "status": "technicalChecksPassed",
+      "manifest": "reports/audits/dissertation/foundation-v2/manifest.json",
+      "frozenFiles": 1095,
+      "profileCount": 4,
+      "linuxVerification": "reports/audits/dissertation/foundation-v2-linux-verification.json"
+    },
+    "07": {
+      "status": "handoffPreparedAwaitingIndependentPerson",
+      "independentPersonHasRun": false
     }
   },
   "humanAcceptanceNotReplaced": true,
-  "progressDocument": "reports/status/Progress.md"
+  "progressDocument": "reports/status/Progress.md",
+  "goalConstraints": "reports/status/goal-constraints.json"
 }

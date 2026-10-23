@@ -1,0 +1,19 @@
+{
+  "scope": "Active thread goal: evidence, two articles and dissertation",
+  "source": "Explicit user instruction to stop agent work after starting a long process",
+  "longProcessThresholdSeconds": 300,
+  "longProcessThresholdKind": "working assumption",
+  "afterLaunch": [
+    "confirm live handle",
+    "save progress and reproduction commands",
+    "pause goal",
+    "end agent turn"
+  ],
+  "stopCalculation": false,
+  "automaticPollingWhileWaiting": false,
+  "automaticContinuationWhileWaiting": false,
+  "statusRequestScope": "one observation and progress update",
+  "resumeOnUserRequest": true,
+  "policyDocument": "docs/dissertation/agent-work-policy.md",
+  "platformObjectiveTextEditable": false
+}

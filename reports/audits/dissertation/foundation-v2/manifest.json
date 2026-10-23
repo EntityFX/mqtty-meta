@@ -1,0 +1,26 @@
+{
+  "humanScientificAcceptance": "pending",
+  "packageFiles": {
+    "input-registry.json": {
+      "bytes": 193073,
+      "sha256": "3d72322a4e76345f6fc6fc6288a034a08832c1f5f12da7d191c58dddcdbdfe36"
+    },
+    "metrics-verification.json": {
+      "bytes": 10308,
+      "sha256": "a566730eae7e59fea08e691e48997ff240cfd320060df33e3c301279795811de"
+    },
+    "native-coverage.csv": {
+      "bytes": 158327,
+      "sha256": "d6b35a88c36b0f0ec0acd96602518cbb8fef5dcd9949073d10b97c33ba4f3b73"
+    }
+  },
+  "rawAuditSha256": "8af5751b2abe4f3c2983efc8eb1e45cda3cf89166cc14b4de7ce29adae9f28c3",
+  "repositoriesAtFreeze": {
+    ".": "54f9b731a6a5f23a3f35d2946afe5ebb170c6bc1",
+    "MqttBenchmark": "a7c3cf93c2aa302cc435310a7b408ce1703219fb",
+    "diss": "c7d4e82fbb5953b83910124d1d5fecd76d423a01",
+    "mqtty": "fafa37ee7932a96f0359a0de66eb4d8b3befe212"
+  },
+  "status": "technicalFoundationVerified",
+  "version": 1
+}

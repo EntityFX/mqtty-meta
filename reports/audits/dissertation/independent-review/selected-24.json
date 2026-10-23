@@ -1,0 +1,366 @@
+{
+  "purpose": "Step 07 independent human review, not performed by this agent",
+  "selection": "One per broker/stage/QoS; highest delivery loss, then failure, then attempts; diagnostic selection, not random",
+  "rows": [
+    {
+      "broker": "Aedes",
+      "stage": "calibration",
+      "key": {
+        "broker": "Aedes",
+        "messageBytes": 256,
+        "qos": 0,
+        "publishers": 64,
+        "repeat": 3,
+        "key": "Aedes.m256.q0.p64.r3"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p64.r3/attempt-01.zip",
+      "sha256": "a91ed935b7cb224f17c34f059e87921ad5978145058ce108a6920532245f5423",
+      "resultMemberSha256": "d8b64994535e89ffaf4bd11edbbf649b3fd512d5abf530de3d4ca0c3dd6ac869"
+    },
+    {
+      "broker": "Aedes",
+      "stage": "calibration",
+      "key": {
+        "broker": "Aedes",
+        "messageBytes": 256,
+        "qos": 1,
+        "publishers": 128,
+        "repeat": 2,
+        "key": "Aedes.m256.q1.p128.r2"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p128.r2/attempt-01.zip",
+      "sha256": "423a3550cd00d450ee1952f28358fffdf7135c4cf680c6e50b3da7ab5706730d",
+      "resultMemberSha256": "090bfffb398b84c3655dba8874b5e3836b5bcd59bd414a7ca4c3314a88bb0fa7"
+    },
+    {
+      "broker": "Aedes",
+      "stage": "calibration",
+      "key": {
+        "broker": "Aedes",
+        "messageBytes": 16,
+        "qos": 2,
+        "publishers": 16,
+        "repeat": 1,
+        "key": "Aedes.m16.q2.p16.r1"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p16.r1/attempt-01.zip",
+      "sha256": "c86fa15ae7f385d1fa37bc303c342f01b1a72c9b342135f6cc8aeeb36e3640f9",
+      "resultMemberSha256": "34bbfdb76e0a16da8385aafc48223146a0c386aa2f29dc6f288c620fee19f001"
+    },
+    {
+      "broker": "Aedes",
+      "stage": "validation",
+      "key": {
+        "broker": "Aedes",
+        "messageBytes": 256,
+        "qos": 0,
+        "publishers": 16,
+        "repeat": 2,
+        "key": "Aedes.m256.q0.p16.r2"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p16.r2/attempt-01.zip",
+      "sha256": "6f475c5f98971e6cd73f9bcc3a4cc2706cb667f040cf7a0ccd9e213ac2350190",
+      "resultMemberSha256": "53d18f232a317582dac8f6cb53e8fad18cbe1e06b9cf5dd838b60a0ec411c3a5"
+    },
+    {
+      "broker": "Aedes",
+      "stage": "validation",
+      "key": {
+        "broker": "Aedes",
+        "messageBytes": 256,
+        "qos": 1,
+        "publishers": 128,
+        "repeat": 1,
+        "key": "Aedes.m256.q1.p128.r1"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p128.r1/attempt-01.zip",
+      "sha256": "20a02cfbd558ac0db8ba298a485e29ea1964d321fbf635485bb5a6daf9941e1f",
+      "resultMemberSha256": "69becc78c14fcd15c00acd4f6ff7de68fa142f3c16071d7d9084bd257664472f"
+    },
+    {
+      "broker": "Aedes",
+      "stage": "validation",
+      "key": {
+        "broker": "Aedes",
+        "messageBytes": 16,
+        "qos": 2,
+        "publishers": 64,
+        "repeat": 1,
+        "key": "Aedes.m16.q2.p64.r1"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p64.r1/attempt-01.zip",
+      "sha256": "f63c15a537c01c2423acbe760f03fc79c49248687eeb8d40ace86df443e40824",
+      "resultMemberSha256": "279b4f745581c3bf24fb07f7432f524316bcd63fe57cc93640d74898e51084de"
+    },
+    {
+      "broker": "Mosquitto",
+      "stage": "calibration",
+      "key": {
+        "broker": "Mosquitto",
+        "messageBytes": 16,
+        "qos": 0,
+        "publishers": 64,
+        "repeat": 2,
+        "key": "Mosquitto.m16.q0.p64.r2"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Mosquitto-calibration/Mosquitto.m16.q0.p64.r2/attempt-01.zip",
+      "sha256": "18724ff12da9e634eaf1f33fe2392b5b3ba380a0375ffaa7725ce8d17afefd6d",
+      "resultMemberSha256": "b552745ffa25a281ec818789d68a284215af18db9709501de6522ee64285d531"
+    },
+    {
+      "broker": "Mosquitto",
+      "stage": "calibration",
+      "key": {
+        "broker": "Mosquitto",
+        "messageBytes": 256,
+        "qos": 1,
+        "publishers": 128,
+        "repeat": 1,
+        "key": "Mosquitto.m256.q1.p128.r1"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Mosquitto-calibration/Mosquitto.m256.q1.p128.r1/attempt-01.zip",
+      "sha256": "586493a355f962fa69aadac511dac8f3130064b0cec9d02e0a5d70ca1b1eba72",
+      "resultMemberSha256": "21b7b00b3da2cbf53aa4b7ccf56cce0e0f9d6146513c2d28947bb2cb4fbdfc71"
+    },
+    {
+      "broker": "Mosquitto",
+      "stage": "calibration",
+      "key": {
+        "broker": "Mosquitto",
+        "messageBytes": 256,
+        "qos": 2,
+        "publishers": 128,
+        "repeat": 2,
+        "key": "Mosquitto.m256.q2.p128.r2"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Mosquitto-calibration/Mosquitto.m256.q2.p128.r2/attempt-01.zip",
+      "sha256": "caddf7f9a408603d934bb85155027a174e64596854aad5a7b06d1cb99d600d5e",
+      "resultMemberSha256": "83ff43448c0d219457bfc8a27fba8f81bccf71c53f3a71f305def4dc066cb6b4"
+    },
+    {
+      "broker": "Mosquitto",
+      "stage": "validation",
+      "key": {
+        "broker": "Mosquitto",
+        "messageBytes": 256,
+        "qos": 0,
+        "publishers": 128,
+        "repeat": 2,
+        "key": "Mosquitto.m256.q0.p128.r2"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q0.p128.r2/attempt-01.zip",
+      "sha256": "7fc9532bef7e6ba1459480f1fc3a28c77790d70230cc916c270e9cabadafcdf3",
+      "resultMemberSha256": "e1d902ccae18c956c9b4a0525399e3516a4151f022a021ce8bbbce2390854277"
+    },
+    {
+      "broker": "Mosquitto",
+      "stage": "validation",
+      "key": {
+        "broker": "Mosquitto",
+        "messageBytes": 256,
+        "qos": 1,
+        "publishers": 128,
+        "repeat": 2,
+        "key": "Mosquitto.m256.q1.p128.r2"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q1.p128.r2/attempt-01.zip",
+      "sha256": "7c39570d645a85c2b51bdf58492f86d61b55288cdf2afcf8eed70ccca422ebd2",
+      "resultMemberSha256": "d4281da89942153328f907459e8181ed4d8173fc4dfa654d4e6b27cc7d03aaed"
+    },
+    {
+      "broker": "Mosquitto",
+      "stage": "validation",
+      "key": {
+        "broker": "Mosquitto",
+        "messageBytes": 16,
+        "qos": 2,
+        "publishers": 128,
+        "repeat": 3,
+        "key": "Mosquitto.m16.q2.p128.r3"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q2.p128.r3/attempt-01.zip",
+      "sha256": "6ab7307a2b2f08f299b27b3d348bb3cd309dbe9a474aa7cf08c1b5e05609e096",
+      "resultMemberSha256": "c537fd07d3e3bce7dc499cf783eafd8ad5d127d8ca1dfd418dee85054300e0bd"
+    },
+    {
+      "broker": "ActiveMQ",
+      "stage": "calibration",
+      "key": {
+        "broker": "ActiveMQ",
+        "messageBytes": 16,
+        "qos": 0,
+        "publishers": 128,
+        "repeat": 1,
+        "key": "ActiveMQ.m16.q0.p128.r1"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-calibration/ActiveMQ.m16.q0.p128.r1/attempt-01.zip",
+      "sha256": "18a7622734bd3caf0f8f8845dcb0de1c5091f335aeaab0246c2f63a1bcedbd4c",
+      "resultMemberSha256": "467d9baba6ff06fcd90b723669e902a8c70fb6fb5218882bd01447b6dc13ff2a"
+    },
+    {
+      "broker": "ActiveMQ",
+      "stage": "calibration",
+      "key": {
+        "broker": "ActiveMQ",
+        "messageBytes": 256,
+        "qos": 1,
+        "publishers": 128,
+        "repeat": 3,
+        "key": "ActiveMQ.m256.q1.p128.r3"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-calibration/ActiveMQ.m256.q1.p128.r3/attempt-01.zip",
+      "sha256": "b5a0573cb7ba85bef892d2fc254ac090c37f8bbb970ff85892636893c2483e0c",
+      "resultMemberSha256": "bcf24f79fa4c9b18e61fbf72a00d2f5ee2eb62ab95068fb902de479f9002a7db"
+    },
+    {
+      "broker": "ActiveMQ",
+      "stage": "calibration",
+      "key": {
+        "broker": "ActiveMQ",
+        "messageBytes": 256,
+        "qos": 2,
+        "publishers": 16,
+        "repeat": 1,
+        "key": "ActiveMQ.m256.q2.p16.r1"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-calibration/ActiveMQ.m256.q2.p16.r1/attempt-01.zip",
+      "sha256": "c8b59c97fe22bc0cb71e441ce41f18f0079f8dc90c2af0d8174912ccbacc7809",
+      "resultMemberSha256": "5f0465bdd80f7076b084c284c201c2f70174b679d2d6c4b8f4b27e755025aabd"
+    },
+    {
+      "broker": "ActiveMQ",
+      "stage": "validation",
+      "key": {
+        "broker": "ActiveMQ",
+        "messageBytes": 16,
+        "qos": 0,
+        "publishers": 128,
+        "repeat": 3,
+        "key": "ActiveMQ.m16.q0.p128.r3"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q0.p128.r3/attempt-01.zip",
+      "sha256": "cdee55ec833981db3d85529abb2f9850168b29da54ece361798df546ee1b1fdb",
+      "resultMemberSha256": "3f9e49d85f5215e7b797d289b5389537729deda49763733de294ba161f83b004"
+    },
+    {
+      "broker": "ActiveMQ",
+      "stage": "validation",
+      "key": {
+        "broker": "ActiveMQ",
+        "messageBytes": 256,
+        "qos": 1,
+        "publishers": 128,
+        "repeat": 2,
+        "key": "ActiveMQ.m256.q1.p128.r2"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q1.p128.r2/attempt-01.zip",
+      "sha256": "b63cbf21e9024fb368559b1e61c2dfe71fe98018976f173379b270e4163ff3a9",
+      "resultMemberSha256": "5ed25800a2191403d4d13b5ab4ecd6d694b1422c412e18c477c11c1804d06969"
+    },
+    {
+      "broker": "ActiveMQ",
+      "stage": "validation",
+      "key": {
+        "broker": "ActiveMQ",
+        "messageBytes": 16,
+        "qos": 2,
+        "publishers": 64,
+        "repeat": 3,
+        "key": "ActiveMQ.m16.q2.p64.r3"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q2.p64.r3/attempt-01.zip",
+      "sha256": "52ff79f886defd80034732d6c0e2e4270318261d43ec3729d91181d408d340a8",
+      "resultMemberSha256": "47945b2a86e6e148a520bef38d3564cd145afcef88d21e2a100e455cb35e0fe6"
+    },
+    {
+      "broker": "EMQX",
+      "stage": "calibration",
+      "key": {
+        "broker": "EMQX",
+        "messageBytes": 16,
+        "qos": 0,
+        "publishers": 128,
+        "repeat": 2,
+        "key": "EMQX.m16.q0.p128.r2"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/EMQX-calibration/EMQX.m16.q0.p128.r2/attempt-01.zip",
+      "sha256": "995e00bec5cae4499df1c6ece32f271c2239c4b13053a77a14d65edef15e3ccd",
+      "resultMemberSha256": "106bb0b01abc62435908a3c37831673a235faed63cedf38fc8c2070c25850621"
+    },
+    {
+      "broker": "EMQX",
+      "stage": "calibration",
+      "key": {
+        "broker": "EMQX",
+        "messageBytes": 16,
+        "qos": 1,
+        "publishers": 128,
+        "repeat": 3,
+        "key": "EMQX.m16.q1.p128.r3"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/EMQX-calibration/EMQX.m16.q1.p128.r3/attempt-01.zip",
+      "sha256": "d4e51197ddebe86fe21e730f05413054815240d77d76710dab97da1146248267",
+      "resultMemberSha256": "1326d117af7b1d8811f7ee2611661409a2c43830698a1a33c5b2ea73751a4e92"
+    },
+    {
+      "broker": "EMQX",
+      "stage": "calibration",
+      "key": {
+        "broker": "EMQX",
+        "messageBytes": 16,
+        "qos": 2,
+        "publishers": 16,
+        "repeat": 1,
+        "key": "EMQX.m16.q2.p16.r1"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/EMQX-calibration/EMQX.m16.q2.p16.r1/attempt-01.zip",
+      "sha256": "1082e2d9a84b30ba053ec6e0b8916b5a6f61b90e0838092fe8b5730b11dba06d",
+      "resultMemberSha256": "47c0804b2510a9e0ce40d1baac8b8aebea4bdfd936ba4f0f0b42a2dfa3ab58b7"
+    },
+    {
+      "broker": "EMQX",
+      "stage": "validation",
+      "key": {
+        "broker": "EMQX",
+        "messageBytes": 256,
+        "qos": 0,
+        "publishers": 128,
+        "repeat": 3,
+        "key": "EMQX.m256.q0.p128.r3"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q0.p128.r3/attempt-01.zip",
+      "sha256": "fc54dd79394ec1dba7d8e55143489623c7492badacae81352cccd439ce01428c",
+      "resultMemberSha256": "77aab53d5d72f0fafab973bad3b5647b895a98c216de74771e4434a62271666b"
+    },
+    {
+      "broker": "EMQX",
+      "stage": "validation",
+      "key": {
+        "broker": "EMQX",
+        "messageBytes": 256,
+        "qos": 1,
+        "publishers": 128,
+        "repeat": 1,
+        "key": "EMQX.m256.q1.p128.r1"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q1.p128.r1/attempt-01.zip",
+      "sha256": "eabf4d181a7ac5bd3047bee91ba20e3fa4efbe84e56257b31154a47baac54be9",
+      "resultMemberSha256": "1f32e44df78a21540513e2941643a59784809c141aa20a40bebeac061662c8c8"
+    },
+    {
+      "broker": "EMQX",
+      "stage": "validation",
+      "key": {
+        "broker": "EMQX",
+        "messageBytes": 16,
+        "qos": 2,
+        "publishers": 16,
+        "repeat": 2,
+        "key": "EMQX.m16.q2.p16.r2"
+      },
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q2.p16.r2/attempt-01.zip",
+      "sha256": "8c8e4014b7afc75ccb97693f330ab85c07f7d1697fe0657b17ccd1f832891d44",
+      "resultMemberSha256": "0223a3713f4d8a104548ce6a8ec52b262300d40d48934db8400b26280976db74"
+    }
+  ]
+}
