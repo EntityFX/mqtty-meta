@@ -1,0 +1,86 @@
+{
+  "firstObservedCompleteAtUtc": "2026-10-23T19:03:12.080342+00:00",
+  "planSha256": "dfda8401e9e3f96aebece1b4baa116b58437c94752ecc0324b6e8c909243ae3c",
+  "rows": [
+    {
+      "id": "pilot.ActiveMQ.m16.q1.p1.s42.baseline",
+      "kind": "pilot",
+      "variant": "baseline",
+      "wallSeconds": 22.01782706999802,
+      "peakRssBytes": 1148723200,
+      "technicalError": null,
+      "fidelityFailed": false
+    },
+    {
+      "id": "pilot.ActiveMQ.m16.q1.p128.s42.baseline",
+      "kind": "pilot",
+      "variant": "baseline",
+      "wallSeconds": 718.5054980569985,
+      "peakRssBytes": 1161539584,
+      "technicalError": null,
+      "fidelityFailed": true
+    },
+    {
+      "id": "pilot.Aedes.m16.q1.p1.s42.baseline",
+      "kind": "pilot",
+      "variant": "baseline",
+      "wallSeconds": 22.040007967007114,
+      "peakRssBytes": 831877120,
+      "technicalError": null,
+      "fidelityFailed": false
+    },
+    {
+      "id": "pilot.Aedes.m16.q1.p128.s42.baseline",
+      "kind": "pilot",
+      "variant": "baseline",
+      "wallSeconds": 716.5831404460041,
+      "peakRssBytes": 844861440,
+      "technicalError": null,
+      "fidelityFailed": true
+    },
+    {
+      "id": "pilot.EMQX.m16.q1.p1.s42.baseline",
+      "kind": "pilot",
+      "variant": "baseline",
+      "wallSeconds": 20.01499543200771,
+      "peakRssBytes": 836448256,
+      "technicalError": null,
+      "fidelityFailed": true
+    },
+    {
+      "id": "pilot.EMQX.m16.q1.p128.s42.baseline",
+      "kind": "pilot",
+      "variant": "baseline",
+      "wallSeconds": 710.485710064997,
+      "peakRssBytes": 846913536,
+      "technicalError": null,
+      "fidelityFailed": true
+    },
+    {
+      "id": "pilot.Mosquitto.m16.q1.p1.s42.baseline",
+      "kind": "pilot",
+      "variant": "baseline",
+      "wallSeconds": 20.01635387299757,
+      "peakRssBytes": 833187840,
+      "technicalError": null,
+      "fidelityFailed": false
+    },
+    {
+      "id": "pilot.Mosquitto.m16.q1.p128.s42.baseline",
+      "kind": "pilot",
+      "variant": "baseline",
+      "wallSeconds": 698.4556017129944,
+      "peakRssBytes": 844042240,
+      "technicalError": null,
+      "fidelityFailed": false
+    }
+  ],
+  "technicalErrors": 0,
+  "baselineSummariesMatchedOriginal": true,
+  "rule": "Runner rejects any baseline summary mismatch as technicalError",
+  "forecast": {
+    "assumption": "Extrapolate QoS1 baseline timing to 3 QoS, 3 seeds and 3 variants; not a guaranteed deadline",
+    "lower": 10.980446754836267,
+    "upper": 21.960893509672534
+  }
+}

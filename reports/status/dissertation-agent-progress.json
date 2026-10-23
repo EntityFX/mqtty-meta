@@ -10,11 +10,12 @@
   "verifiedTechnicalSteps": [
     "03",
     "04",
-    "06"
+    "06",
+    "11"
   ],
-  "verifiedTechnicalWeightPersonDays": 4,
+  "verifiedTechnicalWeightPersonDays": 5,
   "localPercent": 80,
-  "globalPercent": 8.5,
+  "globalPercent": 10.6,
   "basis": "Plan effort weights; not scientific confidence or elapsed labour",
   "steps": {
     "03": {
@@ -105,28 +106,30 @@
       "remaining": "sensitivity results, intervals and final article figure set"
     },
     "11": {
-      "status": "pilotRunningAwaitingCompleteTiming",
+      "status": "technicalChecksPassed",
       "plan": "reports/audits/dissertation/sensitivity-v1/plan.json",
       "matrixJobs": 216,
       "replays": 6,
       "separatePilots": 8,
-      "testsPassed": 42
+      "testsPassed": 42,
+      "pilotTiming": "reports/audits/dissertation/sensitivity-v1/pilot-timing.json",
+      "completedPilots": 8
     },
     "12": {
       "status": "runningOnLinux",
       "unit": "mqtty-sensitivity-v1.service",
       "remoteRoot": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1",
-      "observedAtUtc": "2026-10-23T18:31:43.225160+00:00",
+      "observedAtUtc": "2026-10-23T19:03:12.080342+00:00",
       "observation": "reports/status/sensitivity-v1-observation.json",
       "counts": {
         "matrix": {
-          "done": 0,
+          "done": 9,
           "failedCriteria": 0,
           "total": 216
         },
         "pilot": {
-          "done": 5,
-          "failedCriteria": 1,
+          "done": 8,
+          "failedCriteria": 4,
           "total": 8
         },
         "replay": {
@@ -153,5 +156,5 @@
   "manualContinuationRequired": true,
   "continuationCheckpoint": "Sensitivity pipeline started in systemd; pilot then 216 matrix runs and 6 replays automatically, stop on technical error; agent pauses per user rule",
   "articleWritingOwner": "human",
-  "recommendedManualReviewAt": "2026-10-23T22:00:00+03:00"
+  "recommendedManualReviewAt": "2026-10-24T09:00:00+03:00"
 }
