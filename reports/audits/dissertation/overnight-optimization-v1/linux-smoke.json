@@ -1,0 +1,90 @@
+{
+  "observedAtUtc": "2026-10-23T23:00:29.132583+00:00",
+  "row": {
+    "configSha256": "714a1f666d0e3e3875c888774f24df9111e6d8cd3a2e81982a41922a477b4141",
+    "fidelityFailed": false,
+    "histogramSha256": "124a3bbf09886e8b93e55c50e53ac955575284ca7c3a305af2e732ca61bcb061",
+    "id": "smoke.original-pilot",
+    "kind": "pilot",
+    "outputDirectory": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-scheduler-v2-smoke-v1/runs/smoke.original-pilot/output-001/20261023T230010928Z-42d56599e4c8422091ed7a4d80d06b10",
+    "peakRssBytes": 223408128,
+    "returnCode": 0,
+    "scientificCountersSha256": "8c552f5c88c57d602870eda1fea4ba0919b865b24443cf6560f40f6c2195b84e",
+    "summary": {
+      "acceptanceCriteria": [
+        {
+          "error": 0.015953341179161282,
+          "limit": 0.15,
+          "name": "rps",
+          "reference": 8901.000701019315,
+          "simulated": 8759,
+          "status": "passed"
+        },
+        {
+          "error": 0,
+          "limit": 0.05,
+          "name": "publishFailureRate",
+          "reference": 0,
+          "simulated": 0,
+          "status": "passed"
+        },
+        {
+          "error": 0,
+          "limit": 0.05,
+          "name": "deliveryLossRate",
+          "reference": 0,
+          "simulated": 0,
+          "status": "passed"
+        },
+        {
+          "error": 0.0718705378321429,
+          "limit": 0.2,
+          "name": "latencyP99Ms",
+          "reference": 0.1400666666656131,
+          "simulated": 0.13,
+          "status": "passed"
+        }
+      ],
+      "error": null,
+      "measurementEndTick": 300014,
+      "measurementStartTick": 100014,
+      "reference": {
+        "admitted": 0,
+        "attempted": 0,
+        "completed": 0,
+        "completedRps": 8901.000701019315,
+        "delivered": 0,
+        "deliveryDropped": 0,
+        "deliveryLossRate": 0,
+        "expectedDeliveries": 0,
+        "latencyP99Ms": 0.1400666666656131,
+        "publishFailed": 0,
+        "publishFailureRate": 0,
+        "rateRejected": 0
+      },
+      "simulated": {
+        "admitted": 17518,
+        "attempted": 17518,
+        "completed": 17518,
+        "completedRps": 8759,
+        "delivered": 17518,
+        "deliveryDropped": 0,
+        "deliveryLossRate": 0,
+        "expectedDeliveries": 17518,
+        "latencyP99Ms": 0.13,
+        "publishFailed": 0,
+        "publishFailureRate": 0,
+        "rateRejected": 0
+      },
+      "status": "completed"
+    },
+    "summarySha256": "55ff46ed17646c421d9cab5ea785bd7dfbedf22e37a1a657a717bbc322aa331a",
+    "technicalError": null,
+    "variant": "baseline",
+    "wallSeconds": 19.081926054001087
+  },
+  "schedulerSha256": "4955915fc776f00c680387d39905a7e9af9fc5229236106bd70515e106b80ae0",
+  "scientificCampaignJobsAdded": 0,
+  "smokeSummaryMatchesFrozenOriginal": true,
+  "verifiedExistingResults": 56
+}

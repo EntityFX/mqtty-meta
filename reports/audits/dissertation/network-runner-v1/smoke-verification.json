@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "observedAtUtc": "2026-10-23T21:13:20.179530+00:00",
+  "observedAtUtc": "2026-10-23T21:21:38.666153+00:00",
   "scope": "Local Windows runner test with actual MqttY CLI; not dissertation study coverage",
   "mountPredicateSimulated": true,
   "sourceCleanCheckReal": true,
@@ -26,12 +26,12 @@
   "exactReplays": 3,
   "resumeDidNotRerunCompletedJobs": true,
   "sourceRevisions": {
-    "C:\\projects\\mqtty-meta": "d6b35bcbb573a3a789b7d579403dab8992993e66",
+    "C:\\projects\\mqtty-meta": "2fda92b4fd5aaa629b318df8bb51168ad5d2a511",
     "C:\\projects\\mqtty-meta\\mqtty": "fafa37ee7932a96f0359a0de66eb4d8b3befe212"
   },
-  "executionManifestSha256": "1a045c1d3dfec2f6a2b157451956a77fc83390aa720f5689906cf8a9b9aaaff0",
+  "executionManifestSha256": "97c78275fec60dd7da5fef09c2377c57cc3fd112330a0870dfab562893e8a0d1",
   "sourceSha256": {
-    "tools/dissertation/run_network_study.py": "05936cc72db788b1263149b7043314c41b6a2282e8804f364abd87ac4cc9247b",
+    "tools/dissertation/run_network_study.py": "3d7456c6857f5675bc1e15b9db19dedcd376bf5d18431ef1ee5efec6b1169e2c",
     "tools/dissertation/network_study_inputs.py": "fe00f7dcf32411ba97dfbfb8e13e7df0dac8938aba949630779bbaa9e479feeb",
     "tools/dissertation/network_study_process.py": "eb91d20d5feace120c4dbb4826c62f2c96323f886c5384f3c0a1251b207766ec",
     "tools/dissertation/network_study_verification.py": "ebdbfa8481f5dd81467f0423154bd52d3c6100e9103244d9e7e54f87b52a1504",

@@ -121,12 +121,12 @@
       "status": "runningOnLinux",
       "unit": "mqtty-sensitivity-v1.service",
       "remoteRoot": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1",
-      "observedAtUtc": "2026-10-23T20:05:09.700583+00:00",
-      "observation": "reports/status/sensitivity-v1-latest.json",
+      "observedAtUtc": "2026-10-23T23:02:00.942486+00:00",
+      "observation": "reports/status/sensitivity-scheduler-v2-health.json",
       "counts": {
         "matrix": {
-          "done": 15,
-          "failedCriteria": 0,
+          "done": 48,
+          "failedCriteria": 13,
           "total": 216
         },
         "pilot": {
@@ -143,7 +143,17 @@
       "planSha256": "dfda8401e9e3f96aebece1b4baa116b58437c94752ecc0324b6e8c909243ae3c",
       "technicalErrors": 0,
       "timeEstimate": "reports/status/sensitivity-v1-time-estimate.json",
-      "operationalDeadlineAmendment": "reports/status/sensitivity-runtime-limit-amendment.json"
+      "operationalDeadlineAmendment": "reports/status/sensitivity-runtime-limit-amendment.json",
+      "schedulerVersion": 2,
+      "workers": 4,
+      "mainPid": 49274,
+      "activeProcessesVerified": 4,
+      "handoff": "reports/status/sensitivity-scheduler-v2-handoff.json",
+      "operationallyInterruptedAttempts": [
+        "Aedes.m16.q2.p128.s43.baseline",
+        "Aedes.m16.q2.p128.s43.halfTick"
+      ],
+      "previousEtaApplies": false
     },
     "14": {
       "status": "humanAuthorTask",
@@ -205,9 +215,10 @@
       "testsPassed": 68,
       "runnerTestsPassed": 14,
       "latestLocalCliSimulations": 15,
-      "totalLocalCliSmokeSimulations": 30,
+      "totalLocalCliSmokeSimulations": 45,
       "scientificProgramSimulations": 0,
-      "linuxPreflightDone": false
+      "linuxPreflightDone": false,
+      "phaseAndHistoricalFailureCountersTested": true
     }
   },
   "humanAcceptanceNotReplaced": true,
@@ -227,7 +238,7 @@
     "additionalCalculationsStarted": true,
     "linuxStatusNotPolledDuringThisWork": true,
     "latestAction": "Final runner: 68 unit tests, 15 real CLI cases with 3 exact replays; Linux preflight remains",
-    "calculationScope": "30 local Windows functional smoke simulations across two code versions; no Linux research runs"
+    "calculationScope": "45 local Windows functional smoke simulations across three code versions; no Linux research runs"
   },
   "storageCleanup": {
     "status": "completed",
@@ -260,5 +271,82 @@
     "denominatorPersonDaysUnchanged": 47,
     "interpretation": "Weighted technical plan completion; not confidence or physical accuracy"
   },
-  "linuxWorkQueue": "reports/status/Linux-work-queue.md"
+  "linuxWorkQueue": "reports/status/Linux-work-queue.md",
+  "parallelWorkMap": {
+    "document": "reports/status/Progress.md",
+    "coversPlanSteps": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+    ],
+    "status": "dependenciesAndResourceGatesDocumented",
+    "readinessPercentChanged": false,
+    "authorWritesArticles": true,
+    "targetSimulationWorkers": 4,
+    "targetWorkersDeploymentConfirmed": true
+  },
+  "overnightOptimization": {
+    "codeCommit": "a55094c",
+    "schedulerLinuxTestsPassed": 13,
+    "dissertationTestsRunWindows": 89,
+    "dissertationTestsSkippedWindows": 2,
+    "healthTestsPassed": 16,
+    "smokeMatchesOriginal": true,
+    "completedRowsReused": 56,
+    "monitorModified": false,
+    "otherHeavyPoolLaunched": false,
+    "stopAgentAfterSavingState": true
+  },
+  "summaryPercentages": {
+    "observation": "reports/status/sensitivity-scheduler-v2-health.json",
+    "localPercent": 80,
+    "globalPercent": 16.0,
+    "sensitivityAllCompleted": 56,
+    "sensitivityAllTotal": 230,
+    "sensitivityAllPercent": 24.3,
+    "sensitivityMatrixCompleted": 48,
+    "sensitivityMatrixTotal": 216,
+    "sensitivityMatrixPercent": 22.2,
+    "scientificFailedIncludedInCompleted": true,
+    "updateRule": "Experiment percentages from each confirmed snapshot; readiness from accepted effort-weighted steps only"
+  }
 }
