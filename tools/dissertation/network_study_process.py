@@ -8,11 +8,12 @@ import subprocess
 import time
 
 
-def rss_bytes(pid):
+def rss_bytes(pid, *, peak=False):
     if os.name != "nt":
         try:
             lines = Path(f"/proc/{pid}/status").read_text().splitlines()
-            return int(next(line for line in lines if line.startswith("VmRSS:")).split()[1]) * 1024
+            key = "VmHWM:" if peak else "VmRSS:"
+            return int(next(line for line in lines if line.startswith(key)).split()[1]) * 1024
         except (FileNotFoundError, StopIteration):
             return 0
     class Counters(ctypes.Structure):
@@ -31,7 +32,7 @@ def rss_bytes(pid):
         api.argtypes = [wintypes.HANDLE, ctypes.POINTER(Counters), wintypes.DWORD]
         if not api(process, ctypes.byref(c), c.cb):
             raise OSError(ctypes.get_last_error(), "Cannot read process RSS")
-        return c.workingSet
+        return c.peakWorkingSet if peak else c.workingSet
     finally:
         kernel.CloseHandle(process)
 

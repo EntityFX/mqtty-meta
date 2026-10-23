@@ -4,6 +4,8 @@ import sys
 import tempfile
 import unittest
 from unittest.mock import patch
+import network_review
+from network_study_verification import verify_loaded_relay, verify_loaded_run
 
 import network_study_inputs as inputs
 from network_study_process import execute, rss_bytes
@@ -70,6 +72,20 @@ class NetworkRunnerTests(unittest.TestCase):
         row=inputs.read(root/'rows/pilot.0.attempt-001.json')
         self.assertIsNone(row['technicalError']);self.assertIn('deliveryLoss',row['warnings'])
         self.assertEqual(inputs.read(root/'progress.json')['warnings'],1)
+
+    def test_loaded_relay_does_not_assume_every_source_reaches_helper(self):
+        root=self.staged((100,));runner.run(root,'pilot')
+        out=root/'runs/pilot.0/attempt-001/output';o=inputs.read(out/'run-config.json')
+        o.update(mode='relay',brokers=2);inputs.write(out/'run-config.json',o)
+        seals=inputs.read(out/'sha256.json');seals['run-config.json']=inputs.sha(out/'run-config.json');inputs.write(out/'sha256.json',seals)
+        with self.assertRaises(AssertionError):network_review.evidence.verify_run(out)
+        self.assertEqual(verify_loaded_run(out)['deliveryLoss'],1)
+        pubs={1:{'id':1,'origin':0}}
+        valid={'role':'forward','publicationId':1,'site':0,'target':1,'topic':'federation/routing/0'}
+        verify_loaded_relay(o,pubs,[valid])
+        with self.assertRaises(AssertionError):verify_loaded_relay(o,pubs,[valid,valid])
+        wrong=valid.copy();wrong['site']=1
+        with self.assertRaises(AssertionError):verify_loaded_relay(o,pubs,[wrong])
 
     def test_resume_rejects_corrupt_raw_even_if_seal_is_rewritten(self):
         root=self.staged();runner.run(root,'pilot')

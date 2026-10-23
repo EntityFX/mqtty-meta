@@ -134,6 +134,7 @@ def verify_snapshot(root):
     if sha(Path(__file__)) != manifest["files"]["tools/dissertation/network_study_inputs.py"]:
         raise ValueError("Execute the saved runner snapshot")
     for module, relative in {"network_study_process": "dissertation/network_study_process.py",
+                             "network_study_verification": "dissertation/network_study_verification.py",
                              "network_review": "dissertation/network_review.py", "study": "federation/study.py",
                              "transit_study": "federation/transit_study.py"}.items():
         loaded = sys.modules.get(module)
@@ -162,7 +163,7 @@ def stage(program, runtime, output, mount, source_root, *, timeout=1800, rss_lim
     paths = [(program / "plan.json", "program/plan.json"),
              (program / "inputs/mosquitto-profile.json", "program/inputs/mosquitto-profile.json")]
     paths += [(program / j["config"], "program/" + j["config"]) for j in plan["jobs"]]
-    code = ["dissertation/run_network_study.py", "dissertation/network_study_inputs.py", "dissertation/network_study_process.py",
+    code = ["dissertation/run_network_study.py", "dissertation/network_study_inputs.py", "dissertation/network_study_process.py", "dissertation/network_study_verification.py",
             "dissertation/network_review.py", "federation/study.py", "federation/transit_study.py"]
     paths += [(source_root / "tools" / p, "tools/" + p) for p in code]
     paths += [(p, "runtime/" + p.name) for p in runtime.iterdir() if p.is_file() and p.suffix in (".dll", ".json", ".so")]

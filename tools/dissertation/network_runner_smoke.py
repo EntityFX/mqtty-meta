@@ -45,7 +45,7 @@ def smoke(work):
     # Only the mount predicate is simulated. Real disk free space, process limits,
     # immutable files, source cleanliness, CLI and raw-journal checks are retained.
     with patch("network_study_inputs.Path.is_mount", return_value=True), patch("run_network_study.execute", side_effect=fast):
-        manifest = stage(program, runtime, study, work, ROOT)
+        manifest = stage(program, runtime, study, work, ROOT, timeout=30)
         pilot = runner.run(study, "pilot")
         runner.run(study, "pilot", resume=True)
         decision = work / "smoke-decision.json"

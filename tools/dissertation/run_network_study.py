@@ -13,7 +13,8 @@ import time
 sys.dont_write_bytecode = True
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from network_study_inputs import StorageGuard, contained, lock, program_check, read, sha, stage, verify_snapshot
-from network_study_process import execute, tree_bytes
+from network_study_process import execute, rss_bytes, tree_bytes
+from network_study_verification import verify_loaded_run
 import network_review as checks
 
 if not __debug__:
@@ -31,7 +32,7 @@ def isolation(units):
 
 
 def verify_output(output, config, root):
-    s = checks.evidence.verify_run(output)
+    s = verify_loaded_run(output)
     o, resolved = read(config), read(output / "run-config.json")
     if (output / "inputs/config.json").read_bytes() != config.read_bytes():
         raise ValueError("Saved input differs from the frozen job")
@@ -56,7 +57,7 @@ def verify_output(output, config, root):
         if source["site"] != site or source["broker"] != (0 if o["mode"] == "single" else site):
             raise ValueError("Source placement or broker target changed")
     checks.check_graph(output / "topology.graphml", resolved)
-    warnings = [key for key in ("backpressureUnsent", "queueDrops", "hopLimitDrops", "forwardRejected", "duplicateDeliveries", "deliveryLoss") if s[key]]
+    warnings = [key for key in ("backpressureUnsent", "sendRejected", "queueDrops", "hopLimitDrops", "forwardRejected", "duplicateDeliveries", "deliveryLoss") if s[key]]
     if s["sourceCompleted"] < s["apiAttempts"]:
         warnings.append("sourceNotCompleted")
     # Delivery failure in a loaded ideal model is data, not a process failure.
@@ -163,6 +164,7 @@ def attempt(root, job, manifest, manifest_sha, guard, on_state, retry_reason=Non
         except Exception as error:
             row["technicalError"] = type(error).__name__ + ": " + str(error)
     row["verificationWallSeconds"] = time.monotonic() - verification_started
+    row["supervisorPeakRssBytes"] = rss_bytes(os.getpid(), peak=True)
     row["retryReason"] = retry_reason
     row["totalWallSeconds"] = time.monotonic() - began
     row["attemptBytes"] = tree_bytes(destination)
@@ -181,7 +183,13 @@ def publish(root, phase, rows, guard, status, manifest_sha, active=None, reason=
 
 def phase_results(root, phase, jobs, rows, guard, manifest_sha):
     selected = [rows[j["id"]] for j in jobs]
-    fields = ("id", "sourceCompletedRps", "uniqueDeliveries", "expectedDeliveries", "deliveryLoss", "receiverP99Ms", "forwardAttempts", "uniqueDuringDrain", "backpressureUnsent", "totalWallSeconds", "peakRssBytes", "attemptBytes", "warnings")
+    fields = ("id", "measurementSeconds", "scheduledPublishes", "apiAttempts", "sendRejected", "sourceCompleted",
+              "sourceCompletedRps", "sourceCompletedBeforeDrain", "sourceCompletedDuringDrain", "backpressureUnsent",
+              "uniqueDeliveries", "expectedDeliveries", "deliveryLoss", "fullyDeliveredPublications", "uniqueGoodput",
+              "uniqueBeforeDrain", "uniqueDuringDrain", "publishP50Ms", "publishP95Ms", "publishP99Ms",
+              "receiverP50Ms", "receiverP95Ms", "receiverP99Ms", "forwardAttempts", "forwardRejected",
+              "forwardTopicPayloadBytes", "duplicateDeliveries", "suppressedDuplicates", "queueDrops", "hopLimitDrops",
+              "totalWallSeconds", "peakRssBytes", "supervisorPeakRssBytes", "attemptBytes", "warnings")
     stream = io.StringIO(newline=""); writer = csv.DictWriter(stream, fieldnames=fields); writer.writeheader()
     for row in selected:
         values = {k: row.get(k, row.get("summary", {}).get(k)) for k in fields}
@@ -206,6 +214,8 @@ def run(root, phase, resume=False, decision_path=None, retry_job=None, retry_rea
     plan = program_check(root / "program"); indexed = {j["id"]: j for j in plan["jobs"]}
     if retry_job and (not resume or not retry_reason or not retry_reason.strip()):
         raise ValueError("Explicit retry requires --resume and a nonempty --retry-reason")
+    if retry_reason and not retry_job:
+        raise ValueError("Retry reason requires a failed job ID")
     with lock(root / "run.lock"), lock(guard.mount / ".mqtty-network-study.lock"):
         isolation(manifest["afterUnits"])
         rows = load_rows(root, manifest_sha, indexed, guard)
@@ -259,6 +269,9 @@ def run(root, phase, resume=False, decision_path=None, retry_job=None, retry_rea
             return {"status": "completed", "phase": phase, "verified": len(jobs)}
         except BaseException as error:
             try:
+                guard.save(root / f"partial-{phase}.json", {"status": "failed", "phase": phase,
+                           "executionManifestSha256": manifest_sha, "reason": repr(error),
+                           "expectedJobs": [j["id"] for j in jobs], "rows": [rows[j["id"]] for j in jobs if j["id"] in rows]})
                 publish(root, phase, rows, guard, "failed", manifest_sha, reason=repr(error))
             except Exception:
                 print("Cannot persist failure on unavailable evidence mount: " + repr(error), file=sys.stderr)
