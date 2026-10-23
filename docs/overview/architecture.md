@@ -62,12 +62,12 @@ MqttBenchmark поддерживает локальное управление, 
 
 | Компонент / модуль | Вид | Файлов | Строк всего | Непустых строк |
 | --- | --- | ---: | ---: | ---: |
-| **Корневой репозиторий** | **Итого** | **81** | **12726** | **11535** |
+| **Корневой репозиторий** | **Итого** | **83** | **13086** | **11859** |
 | [tools](../../tools/) | Скрипты | 1 | 116 | 104 |
 | [tools/campaign](../../tools/campaign/) | Скрипты | 34 | 6635 | 6078 |
 | [tools/campaign](../../tools/campaign/) | Тестовые скрипты | 16 | 1244 | 1076 |
-| [tools/dissertation](../../tools/dissertation/) | Скрипты | 8 | 1753 | 1592 |
-| [tools/dissertation](../../tools/dissertation/) | Тестовые скрипты | 6 | 599 | 524 |
+| [tools/dissertation](../../tools/dissertation/) | Скрипты | 9 | 2022 | 1836 |
+| [tools/dissertation](../../tools/dissertation/) | Тестовые скрипты | 7 | 690 | 604 |
 | [tools/documentation](../../tools/documentation/) | Скрипты | 4 | 275 | 240 |
 | [tools/documentation](../../tools/documentation/) | Тестовые скрипты | 1 | 55 | 47 |
 | [tools/federation](../../tools/federation/) | Скрипты | 4 | 890 | 822 |
@@ -109,7 +109,7 @@ MqttBenchmark поддерживает локальное управление, 
 | **diss** | **Итого** | **6** | **410** | **364** |
 | [biblio](../../diss/biblio/) | Скрипты | 1 | 102 | 97 |
 | [book](../../diss/book/) | Скрипты | 5 | 308 | 267 |
-| **Всего** | | **633** | **58094** | **50869** |
+| **Всего** | | **635** | **58454** | **51193** |
 
 <!-- code-inventory:end -->
 

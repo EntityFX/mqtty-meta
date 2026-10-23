@@ -16,5 +16,15 @@
   "resumeOnUserRequest": true,
   "policyDocument": "docs/dissertation/agent-work-policy.md",
   "platformObjectiveTextEditable": false,
-  "conditionNowInUserGoalObjective": true
+  "conditionNowInUserGoalObjective": true,
+  "humanWritesArticles": true,
+  "agentWritesArticleProse": false,
+  "agentResponsibilities": [
+    "measurements",
+    "code improvements and tests",
+    "analysis",
+    "improvement proposals",
+    "article layouts, tables and figures"
+  ],
+  "latestUserClarification": "Human writes articles; agent provides technical and experimental materials"
 }

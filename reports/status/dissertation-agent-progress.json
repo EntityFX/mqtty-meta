@@ -103,11 +103,33 @@
     "13": {
       "status": "partialTablesAndMapsPrepared",
       "remaining": "sensitivity results, intervals and final article figure set"
+    },
+    "11": {
+      "status": "preparedAwaitingPilotTiming",
+      "plan": "reports/audits/dissertation/sensitivity-v1/plan.json",
+      "matrixJobs": 216,
+      "replays": 6,
+      "separatePilots": 8,
+      "testsPassed": 42
+    },
+    "12": {
+      "status": "notStarted",
+      "unit": "mqtty-sensitivity-v1.service",
+      "remoteRoot": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1"
+    },
+    "14": {
+      "status": "humanAuthorTask",
+      "agentDeliverable": "docs/dissertation/article-layouts.md"
+    },
+    "25": {
+      "status": "humanAuthorTask",
+      "agentDeliverable": "docs/dissertation/article-layouts.md"
     }
   },
   "humanAcceptanceNotReplaced": true,
   "progressDocument": "reports/status/Progress.md",
   "goalConstraints": "reports/status/goal-constraints.json",
-  "manualContinuationRequired": true,
-  "continuationCheckpoint": "Saved accuracy analysis; no long sensitivity calculation started; awaiting manual continuation under user stop rule"
+  "manualContinuationRequired": false,
+  "continuationCheckpoint": "Sensitivity study prepared: 8 separate pilots, 216 matrix runs, 6 replays; pending background start confirmation",
+  "articleWritingOwner": "human"
 }
