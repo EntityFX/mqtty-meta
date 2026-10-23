@@ -1,0 +1,48 @@
+{
+  "observedAtUtc": "2026-10-23T18:04:39.681461+00:00",
+  "unit": "mqtty-sensitivity-v1.service",
+  "root": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1",
+  "service": "MainPID=40598\nResult=success\nExecMainCode=0\nExecMainStatus=0\nMemoryCurrent=854274048\nActiveState=active\nSubState=running\n",
+  "progress": {
+    "active": {
+      "pilot.Aedes.m16.q1.p1.s42.baseline": {
+        "elapsedSeconds": 20.03884560499864,
+        "peakRssBytes": 831877120,
+        "pid": 40603,
+        "rssBytes": 831877120
+      },
+      "pilot.Aedes.m16.q1.p128.s42.baseline": {
+        "elapsedSeconds": 20.106063197003095,
+        "peakRssBytes": 844861440,
+        "pid": 40604,
+        "rssBytes": 844861440
+      }
+    },
+    "counts": {
+      "matrix": {
+        "done": 0,
+        "failedCriteria": 0,
+        "total": 216
+      },
+      "pilot": {
+        "done": 0,
+        "failedCriteria": 0,
+        "total": 8
+      },
+      "replay": {
+        "done": 0,
+        "failedCriteria": 0,
+        "total": 6
+      }
+    },
+    "elapsedSeconds": 20.109749310999177,
+    "planSha256": "dfda8401e9e3f96aebece1b4baa116b58437c94752ecc0324b6e8c909243ae3c",
+    "reason": null,
+    "status": "running",
+    "technicalErrors": 0,
+    "workers": 2
+  },
+  "directChildren": "    PID    PPID ELAPSED %CPU   RSS COMMAND\n  40603   40598      20  100     0 [dotnet] <defunct>\n  40604   40598      20  103 825060 /bin/dotnet /run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runtime/EntityFX.MqttY.MqttRelay.App.dll experiment --config /run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/configs/Aedes.m16.q1.p128.s42.baseline.json --output /run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1/runs/pilot.Aedes.m16.q1.p128.s42.baseline/output-001\n",
+  "diskFreeGiB": 132.5808219909668,
+  "stderrTail": ""
+}

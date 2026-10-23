@@ -105,7 +105,7 @@
       "remaining": "sensitivity results, intervals and final article figure set"
     },
     "11": {
-      "status": "preparedAwaitingPilotTiming",
+      "status": "pilotRunningAwaitingTiming",
       "plan": "reports/audits/dissertation/sensitivity-v1/plan.json",
       "matrixJobs": 216,
       "replays": 6,
@@ -113,9 +113,30 @@
       "testsPassed": 42
     },
     "12": {
-      "status": "notStarted",
+      "status": "runningOnLinux",
       "unit": "mqtty-sensitivity-v1.service",
-      "remoteRoot": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1"
+      "remoteRoot": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1",
+      "observedAtUtc": "2026-10-23T18:04:39.681461+00:00",
+      "observation": "reports/status/sensitivity-v1-observation.json",
+      "counts": {
+        "matrix": {
+          "done": 0,
+          "failedCriteria": 0,
+          "total": 216
+        },
+        "pilot": {
+          "done": 0,
+          "failedCriteria": 0,
+          "total": 8
+        },
+        "replay": {
+          "done": 0,
+          "failedCriteria": 0,
+          "total": 6
+        }
+      },
+      "planSha256": "dfda8401e9e3f96aebece1b4baa116b58437c94752ecc0324b6e8c909243ae3c",
+      "technicalErrors": 0
     },
     "14": {
       "status": "humanAuthorTask",
@@ -129,7 +150,7 @@
   "humanAcceptanceNotReplaced": true,
   "progressDocument": "reports/status/Progress.md",
   "goalConstraints": "reports/status/goal-constraints.json",
-  "manualContinuationRequired": false,
-  "continuationCheckpoint": "Sensitivity study prepared: 8 separate pilots, 216 matrix runs, 6 replays; pending background start confirmation",
+  "manualContinuationRequired": true,
+  "continuationCheckpoint": "Sensitivity pipeline started in systemd; pilot then 216 matrix runs and 6 replays automatically, stop on technical error; agent pauses per user rule",
   "articleWritingOwner": "human"
 }
