@@ -24,36 +24,63 @@
       "systemdUnit": "mqtty-native-audit-v1.service",
       "remoteRoot": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/full",
       "observedState": {
-        "MainPID": "8920",
-        "Result": "success",
-        "MemoryCurrent": "441303040",
-        "ActiveState": "active",
-        "SubState": "running",
+        "systemdShow": "MainPID=8920\nResult=success\nExecMainCode=0\nExecMainStatus=0\nMemoryCurrent=6180712448\nActiveState=active\nSubState=running\n",
         "progress": {
-          "elapsedSeconds": 54.257714374994976,
-          "nonSelectedSuccessArchives": 0,
-          "nonSuccessArchives": 0,
+          "elapsedSeconds": 2774.507118195994,
+          "nonSelectedSuccessArchives": 12,
+          "nonSuccessArchives": 4,
           "pid": 8920,
-          "processed": 14,
+          "processed": 557,
           "selectedDiscrepancies": 0,
-          "selectedPassed": 14,
+          "selectedPassed": 541,
           "status": "running",
           "technicalErrors": 0,
           "total": 592,
           "workerMemoryMiB": 2048,
           "workers": 2
         },
-        "pidExists": true
-      }
+        "perBroker": {
+          "Aedes": {
+            "processed": 148,
+            "passed": 144,
+            "discrepancies": 0,
+            "technicalErrors": 0,
+            "archivesOutsidePublishedSelection": 4
+          },
+          "EMQX": {
+            "processed": 149,
+            "passed": 144,
+            "discrepancies": 0,
+            "technicalErrors": 0,
+            "archivesOutsidePublishedSelection": 5
+          },
+          "ActiveMQ": {
+            "processed": 147,
+            "passed": 144,
+            "discrepancies": 0,
+            "technicalErrors": 0,
+            "archivesOutsidePublishedSelection": 3
+          },
+          "Mosquitto": {
+            "processed": 113,
+            "passed": 109,
+            "discrepancies": 0,
+            "technicalErrors": 0,
+            "archivesOutsidePublishedSelection": 4
+          }
+        }
+      },
+      "observedAtUtc": "2026-10-23T13:28:57.610596+00:00"
     },
     "05": {
       "status": "technicalDraftPrepared",
-      "document": "docs/measurement-contract.md",
+      "document": "docs/overview/measurement-contract.md",
       "acceptance": "Scientific definitions await final author review"
     },
     "06": {
       "status": "awaitingCompleteRecount"
     }
   },
-  "humanAcceptanceNotReplaced": true
+  "humanAcceptanceNotReplaced": true,
+  "progressDocument": "reports/status/Progress.md"
 }

@@ -1,0 +1,49 @@
+{
+  "observedAtUtc": "2026-10-23T13:28:57.610596+00:00",
+  "root": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/full",
+  "groups": {
+    "Aedes": {
+      "processed": 148,
+      "passed": 144,
+      "discrepancies": 0,
+      "technicalErrors": 0,
+      "archivesOutsidePublishedSelection": 4
+    },
+    "EMQX": {
+      "processed": 149,
+      "passed": 144,
+      "discrepancies": 0,
+      "technicalErrors": 0,
+      "archivesOutsidePublishedSelection": 5
+    },
+    "ActiveMQ": {
+      "processed": 147,
+      "passed": 144,
+      "discrepancies": 0,
+      "technicalErrors": 0,
+      "archivesOutsidePublishedSelection": 3
+    },
+    "Mosquitto": {
+      "processed": 113,
+      "passed": 109,
+      "discrepancies": 0,
+      "technicalErrors": 0,
+      "archivesOutsidePublishedSelection": 4
+    }
+  },
+  "progress": {
+    "elapsedSeconds": 2774.507118195994,
+    "nonSelectedSuccessArchives": 12,
+    "nonSuccessArchives": 4,
+    "pid": 8920,
+    "processed": 557,
+    "selectedDiscrepancies": 0,
+    "selectedPassed": 541,
+    "status": "running",
+    "technicalErrors": 0,
+    "total": 592,
+    "workerMemoryMiB": 2048,
+    "workers": 2
+  },
+  "service": "MainPID=8920\nResult=success\nExecMainCode=0\nExecMainStatus=0\nMemoryCurrent=6180712448\nActiveState=active\nSubState=running\n"
+}

@@ -1,0 +1,90 @@
+{
+  "observedAtUtc": "2026-10-23T13:24:06.907007+00:00",
+  "root": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/full",
+  "userService": {
+    "returncode": 0,
+    "stdout": "MainPID=8920\nResult=success\nExecMainStartTimestamp=Fri 2026-10-23 15:42:31 MSK\nExecMainExitTimestamp=\nExecMainCode=0\nExecMainStatus=0\nExecStart={ path=/usr/bin/python3 ; argv[]=/usr/bin/python3 /run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/tools/run_native_audit.py --registry /run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/inputs/archive-registry.json --native-evidence /run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/inputs/native-evidence.json --output /run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/full --mount-root /run/media/entityfx/hd250 --workers 2 ; ignore_errors=no ; start_time=[Fri 2026-10-23 15:42:31 MSK] ; stop_time=[n/a] ; pid=8920 ; code=(null) ; status=0/0 }\nMemoryCurrent=6112415744\nId=mqtty-native-audit-v1.service\nLoadState=loaded\nActiveState=active\nSubState=running\nActiveEnterTimestamp=Fri 2026-10-23 15:42:31 MSK\n",
+    "stderr": ""
+  },
+  "systemService": {
+    "returncode": 0,
+    "stdout": "MainPID=0\nResult=success\nExecMainStartTimestamp=\nExecMainExitTimestamp=\nExecMainCode=0\nExecMainStatus=0\nMemoryCurrent=[not set]\nId=mqtty-native-audit-v1.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nActiveEnterTimestamp=\n",
+    "stderr": ""
+  },
+  "files": [
+    {
+      "name": "manifest.json",
+      "bytes": 602
+    },
+    {
+      "name": "audit.lock",
+      "bytes": 0
+    },
+    {
+      "name": "progress.json",
+      "bytes": 301
+    }
+  ],
+  "progress.json": {
+    "elapsedSeconds": 2491.935777302002,
+    "nonSelectedSuccessArchives": 12,
+    "nonSuccessArchives": 4,
+    "pid": 8920,
+    "processed": 523,
+    "selectedDiscrepancies": 0,
+    "selectedPassed": 507,
+    "status": "running",
+    "technicalErrors": 0,
+    "total": 592,
+    "workerMemoryMiB": 2048,
+    "workers": 2
+  },
+  "manifest.json": {
+    "archives": 592,
+    "method": "Read-only event recount, all member seals, identity recomputation, all ACK quantiles",
+    "nativeEvidenceSha256": "7010fc352b64125a44aa9d7dbe54c9df76cb224631f2971d2f1579c44e5450de",
+    "pilotLimit": null,
+    "publishedRuns": 576,
+    "rawExtraction": false,
+    "registrySha256": "7d3cad14004b421e23f815a7f471f90e4a1b3ccbe813d86d4f44f5791093bbb9",
+    "sourceSha256": {
+      "native_audit.py": "9425b250bf9a8a1da1100103f6e9ab035d0c5070065dd953341e2ff0875a6294",
+      "run_native_audit.py": "ef1d1a9824501baa20a77c9077106c2de93408fc908e997af65ba51cc361fddf"
+    },
+    "version": 1
+  },
+  "mount": "{\n   \"filesystems\": [\n      {\n         \"target\": \"/run/media/entityfx/hd250\",\n         \"source\": \"/dev/sdb1\",\n         \"fstype\": \"ext4\",\n         \"options\": \"rw,nosuid,nodev,relatime,errors=remount-ro\"\n      }\n   ]\n}\n",
+  "disks": {
+    "/": {
+      "total": 124323721216,
+      "used": 53619134464,
+      "free": 64362500096
+    },
+    "/run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/full": {
+      "total": 244995190784,
+      "used": 89982529536,
+      "free": 142492979200
+    }
+  },
+  "memory": "               total        used        free      shared  buff/cache   available\nMem:     16600354816  1843277824   615006208    13369344 14505500672 14757076992\nSwap:    11451494400    26476544 11425017856\n",
+  "processes": [
+    "    PID    PPID ELAPSED %CPU   RSS COMMAND",
+    "   8923    8920    2495 97.0 118416 /usr/bin/python3 /run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/tools/run_native_audit.py --registry /run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/inputs/archive-registry.json --native-evidence /run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/inputs/native-evidence.json --output /run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/full --mount-root /run/media/entityfx/hd250 --workers 2",
+    "   8924    8920    2495 96.9 172768 /usr/bin/python3 /run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/tools/run_native_audit.py --registry /run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/inputs/archive-registry.json --native-evidence /run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/inputs/native-evidence.json --output /run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/full --mount-root /run/media/entityfx/hd250 --workers 2",
+    "   9102    9101       0 36.8 15780 python3 -",
+    "   9098    1451       0  2.6  9804 sshd: entityfx [priv]",
+    "   8880       2    2711  0.5     0 [kworker/16:1-events]",
+    "   8920    1434    2495  0.0 36328 /usr/bin/python3 /run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/tools/run_native_audit.py --registry /run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/inputs/archive-registry.json --native-evidence /run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/inputs/native-evidence.json --output /run/media/entityfx/hd250/mqtty-evidence/dissertation-foundation-v1/full --mount-root /run/media/entityfx/hd250 --workers 2",
+    "   1619    1576   74777  0.0 52116 containerd --config /run/user/500/docker/containerd/containerd.toml",
+    "   8971       2    2035  0.0     0 [kworker/1:1-events]",
+    "   1435       1   74778  0.0 55388 /usr/bin/containerd",
+    "   8712       2    3899  0.0     0 [kworker/3:0-events]",
+    "   8321       2    9490  0.0     0 [kworker/0:1-events]",
+    "   8574       2    5837  0.0     0 [kworker/2:2-events]",
+    "   1449    1433   74778  0.0 72120 X -nolisten tcp -background none :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt1 -novtswitch",
+    "   1195       1   74779  0.0 14732 /usr/libexec/udisks2/udisksd",
+    "   9028       2    1376  0.0     0 [kworker/7:1-mm_percpu_wq]",
+    "   9074       2     444  0.0     0 [kworker/0:0-events]",
+    "   2851    2708   74723  0.0 99440 xfwm4"
+  ]
+}
