@@ -38,6 +38,35 @@ class ParallelBudgetTests(unittest.TestCase):
         root=self.staged()
         with patch.object(parallel,'memory_available',return_value=1024):
             with self.assertRaisesRegex(RuntimeError,'RAM'):parallel.run(root,'pilot',workers=4)
+    def test_resource_increase_keeps_original_manifest_and_resumes_without_rerun(self):
+        root=self.staged((42,));original=(root/'execution-manifest.json').read_bytes()
+        policy=root/'resource-policy.json'
+        write(policy,{'executionManifestSha256':hashlib.sha256(original).hexdigest(),
+            'controllerSha256':parallel.sha(Path(parallel.__file__)),'workers':2,
+            'jobRssLimitBytes':4*1024**3,'reason':'Inspected RSS failure; resource-only increase'})
+        result=parallel.run(root,'pilot',workers=2,wall_seconds=30,cleanup_seconds=1,resource_decision=policy)
+        self.assertEqual(result['verified'],1)
+        parallel.run(root,'pilot',workers=2,wall_seconds=30,cleanup_seconds=1,resource_decision=policy,resume=True)
+        self.assertEqual(original,(root/'execution-manifest.json').read_bytes())
+        self.assertEqual(len(list((root/'runs').glob('*/attempt-*'))),1)
+        with self.assertRaisesRegex(ValueError,'worker count'):
+            parallel.run(root,'pilot',workers=4,resource_decision=policy)
+    def test_resource_decision_rejects_wrong_execution(self):
+        root=self.staged();policy=root/'resource-policy.json'
+        write(policy,{'executionManifestSha256':'wrong','reason':'test'})
+        with self.assertRaisesRegex(ValueError,'original execution'):
+            parallel.run(root,'pilot',resource_decision=policy)
+    def test_explicit_retry_keeps_failed_attempt(self):
+        root=self.staged((99,))
+        parallel.run(root,'pilot',workers=1,wall_seconds=30,cleanup_seconds=1)
+        receipt=next((root/'runs').glob('*/attempt-001/result.json'));original=receipt.read_bytes()
+        row=read(receipt)
+        with self.assertRaisesRegex(ValueError,'Inspect failed'):
+            parallel.run(root,'pilot',workers=1,wall_seconds=30,cleanup_seconds=1,resume=True)
+        parallel.run(root,'pilot',workers=1,wall_seconds=30,cleanup_seconds=1,resume=True,
+            retry_job=row['id'],retry_reason='Inspected synthetic failure')
+        self.assertEqual(original,receipt.read_bytes())
+        self.assertEqual(len(list((root/'runs').glob('*/attempt-*'))),2)
     def test_deadline_is_shared_and_not_reset(self):
         root=self.staged();guard=SimpleNamespace(save=lambda p,v:write(p,v))
         parallel.deadline(root,guard,100);saved=read(root/'wall-budget.json')

@@ -66,16 +66,31 @@ def preserved_pilot_decision(root, manifest, manifest_sha, plan, registry_path, 
     return decision
 
 
-def run(root, phase, *, workers=4, wall_seconds=10800, cleanup_seconds=120, decision_path=None, resume=False, pilot_registry=None):
+def resource_policy(path, manifest, manifest_sha, workers):
+    if path is None:
+        return manifest, None
+    raw=Path(path).read_bytes();policy=json.loads(raw)
+    if policy.get('executionManifestSha256')!=manifest_sha or not policy.get('reason','').strip():
+        raise ValueError('Resource decision must bind original execution and reason')
+    if policy.get('controllerSha256')!=sha(Path(__file__)) or policy.get('workers')!=workers:
+        raise ValueError('Resource decision must bind controller and worker count')
+    limit=policy.get('jobRssLimitBytes')
+    if type(limit) is not int or not manifest['jobRssLimitBytes']<=limit<=4*1024**3:
+        raise ValueError('Resource override permits only a bounded RSS increase')
+    return dict(manifest,jobRssLimitBytes=limit),raw
+
+
+def run(root, phase, *, workers=4, wall_seconds=10800, cleanup_seconds=120, decision_path=None, resume=False, pilot_registry=None, resource_decision=None, retry_job=None, retry_reason=None):
     if not 1<=workers<=4 or not 0<=cleanup_seconds<wall_seconds: raise ValueError('Invalid worker or cleanup budget')
     root=Path(root).resolve();manifest=verify_snapshot(root);manifest_sha=sha(root/'execution-manifest.json')
-    for path in (Path(__file__),Path(runner.__file__)):
+    effective,resource_bytes=resource_policy(resource_decision,manifest,manifest_sha,workers)
+    for path in ((Path(runner.__file__),) if resource_bytes else (Path(__file__),Path(runner.__file__))):
         key='tools/dissertation/'+path.name
         if sha(path)!=manifest['files'].get(key): raise ValueError('Execute the pinned controller snapshot')
     memory_limit=10*1024**3
-    if workers*manifest['jobRssLimitBytes']+2*1024**3>memory_limit:
+    if workers*effective['jobRssLimitBytes']+2*1024**3>memory_limit:
         raise ValueError('Workers exceed aggregate memory admission budget')
-    if memory_available()<workers*manifest['jobRssLimitBytes']+2*1024**3:
+    if memory_available()<workers*effective['jobRssLimitBytes']+2*1024**3:
         raise RuntimeError('Insufficient available RAM for requested workers')
     guard=StorageGuard(manifest['mountRoot'],root,manifest['reserveBytes'])
     if guard.device!=manifest['mountDevice']: raise ValueError('Evidence mount identity changed')
@@ -84,7 +99,16 @@ def run(root, phase, *, workers=4, wall_seconds=10800, cleanup_seconds=120, deci
         stop_at=deadline(root,guard,wall_seconds)-cleanup_seconds
         runner.isolation(manifest['afterUnits'])
         rows=runner.load_rows(root,manifest_sha,indexed,guard)
-        if any(r['technicalError'] for r in rows.values()): raise ValueError('Inspect failed attempts before any retry')
+        failures=[r for r in rows.values() if r['technicalError']]
+        if failures and (not resume or not retry_reason or len(failures)!=1 or failures[0]['id']!=retry_job or indexed[retry_job]['kind']!=phase):
+            raise ValueError('Inspect failed attempts before any retry')
+        if retry_job and (not resume or not retry_reason):raise ValueError('Explicit retry requires resume and reason')
+        if resource_bytes:
+            folder=root/'resource-decisions';folder.mkdir(exist_ok=True)
+            target=folder/(hashlib.sha256(resource_bytes).hexdigest()+'.json')
+            if not target.exists():
+                guard.identity()
+                with target.open('xb') as stream:stream.write(resource_bytes)
         if phase in ('matrix','diagnostic'):
             decision_bytes=Path(decision_path).read_bytes() if decision_path else None
             if pilot_registry is not None:
@@ -109,7 +133,7 @@ def run(root, phase, *, workers=4, wall_seconds=10800, cleanup_seconds=120, deci
             return {'status':'completed','verified':len(jobs),'total':len(jobs),'reverifiedOnly':True}
         context=runner.progress_context(root,plan);active={};mutex=threading.RLock()
         verification_mutex=threading.Lock();abort=threading.Event()
-        queue=iter(j for j in jobs if j['id'] not in rows)
+        queue=iter(j for j in jobs if j['id'] not in rows or rows[j['id']]['technicalError'])
         (root/'rows').mkdir(exist_ok=True)
         reason=None
         def expired():return time.monotonic()>=stop_at
@@ -120,7 +144,7 @@ def run(root, phase, *, workers=4, wall_seconds=10800, cleanup_seconds=120, deci
         def work(job):
             def on_state(state):
                 with mutex:active[job['id']]=state;publish()
-            return runner.attempt(root,job,manifest,manifest_sha,guard,on_state,cancel_requested=cancelled,verification_lock=verification_mutex)
+            return runner.attempt(root,job,effective,manifest_sha,guard,on_state,retry_reason if job['id']==retry_job else None,cancel_requested=cancelled,verification_lock=verification_mutex)
         pending={}
         with ThreadPoolExecutor(max_workers=workers) as pool:
             with mutex:publish()
@@ -194,10 +218,12 @@ def main():
     p.add_argument('--decision',type=Path);p.add_argument('--workers',type=int,default=4)
     p.add_argument('--pilot-registry',type=Path)
     p.add_argument('--resume',action='store_true');p.add_argument('--unit',required=True)
+    p.add_argument('--resource-decision',type=Path)
+    p.add_argument('--retry-job');p.add_argument('--retry-reason')
     a=p.parse_args();check_service(a.unit)
     phases=['matrix','replay'] if a.phase=='matrix-replay' else [a.phase]
     for phase in phases:
-        result=run(a.study,phase,workers=a.workers,decision_path=a.decision,resume=a.resume,pilot_registry=a.pilot_registry)
+        result=run(a.study,phase,workers=a.workers,decision_path=a.decision,resume=a.resume,pilot_registry=a.pilot_registry,resource_decision=a.resource_decision,retry_job=a.retry_job,retry_reason=a.retry_reason)
         print(result,flush=True)
         if result['status']!='completed':return 1
     return 0

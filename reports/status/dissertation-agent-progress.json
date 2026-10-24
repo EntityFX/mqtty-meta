@@ -11,6 +11,7 @@
     "03",
     "04",
     "06",
+    "10",
     "11",
     "12",
     "13",
@@ -19,9 +20,9 @@
     "21",
     "22"
   ],
-  "verifiedTechnicalWeightPersonDays": 12.5,
+  "verifiedTechnicalWeightPersonDays": 14.5,
   "localPercent": 80,
-  "globalPercent": 26.6,
+  "globalPercent": 30.9,
   "basis": "Plan effort weights; not scientific confidence or elapsed labour",
   "steps": {
     "03": {
@@ -101,11 +102,25 @@
       "independentPersonHasRun": false
     },
     "10": {
-      "status": "analysisPreparedNotScientificallyAccepted",
-      "document": "reports/audits/dissertation/accuracy-analysis-v1/Accuracy-analysis.md",
+      "status": "technicalChecksPassed",
+      "acceptedWeightPersonDays": 2.0,
+      "report": "reports/analysis/Broker-twins-package.md",
+      "manifest": "reports/audits/dissertation/broker-twins-package-v1/manifest.json",
       "holdoutRunsAnalysed": 288,
-      "failedHoldoutRuns": 85,
-      "causesNotFullyIdentified": true
+      "criterionDecisionsReconciled": 1152,
+      "failedRunsReconciled": 85,
+      "nativeContexts": 96,
+      "testsPassed": 7,
+      "causesNotFullyIdentified": true,
+      "scientificAuthorApproval": false,
+      "acceptanceScope": "All failures reconciled; facts, established measurement semantics and causal hypotheses explicitly separated. No claim that all causes were identified or model corrected.",
+      "previousStatus": {
+        "status": "analysisPreparedNotScientificallyAccepted",
+        "document": "reports/audits/dissertation/accuracy-analysis-v1/Accuracy-analysis.md",
+        "holdoutRunsAnalysed": 288,
+        "failedHoldoutRuns": 85,
+        "causesNotFullyIdentified": true
+      }
     },
     "13": {
       "status": "technicalChecksPassed",
@@ -397,7 +412,7 @@
   "summaryPercentages": {
     "observation": "reports/status/manual-continuation-latest.json",
     "localPercent": 80,
-    "globalPercent": 26.6,
+    "globalPercent": 30.9,
     "sensitivityAllCompleted": 230,
     "sensitivityAllTotal": 230,
     "sensitivityAllPercent": 100,
@@ -814,13 +829,13 @@
     "scientificAccuracyClaim": false
   },
   "networkFull3h": {
-    "status": "running",
+    "status": "restartedRevalidatingSavedResults",
     "unit": "mqtty-network-full-3h-v1.service",
-    "controllerPid": 103006,
+    "controllerPid": 106810,
     "phase": "matrix",
     "matrix": {
-      "done": 16,
-      "unresolvedErrors": 0,
+      "done": 38,
+      "unresolvedErrors": 1,
       "warnings": 0,
       "total": 162
     },
@@ -830,13 +845,38 @@
       "warnings": 0,
       "total": 6
     },
-    "workers": 4,
+    "workers": 2,
     "pilotReview": "reports/audits/dissertation/network-pilot-reuse-v1/registry.json",
     "technicalAdmission": "reports/audits/dissertation/network-full-3h-v1/pilot-technical-decision.json",
     "pilotCohortsAreHeterogeneous": true,
     "receipt": "reports/status/network-full-3h-progress.json",
-    "observedAtUtc": "2026-10-24T18:14:57.454620+00:00",
-    "hardStopMsk": "2026-10-25T00:03:38+03:00"
+    "observedAtUtc": "2026-10-24T18:38:35.169414+00:00",
+    "hardStopMsk": "2026-10-25T00:03:38+03:00",
+    "reason": "RuntimeError: jobRssLimit",
+    "failedAttempt": {
+      "id": "matrix.line.relay.q2.r5000.w10.s43",
+      "attemptNumber": 1,
+      "returnCode": -9,
+      "peakRssBytes": 1641455616,
+      "processWallSeconds": 387.9845910540025,
+      "reason": "RuntimeError: jobRssLimit"
+    },
+    "serviceResult": "exit-code",
+    "execMainStatus": 1,
+    "diskFreeGiB": {
+      "system": 60,
+      "hd250": 144
+    },
+    "webHealth": "ok",
+    "automaticallyRestarted": false,
+    "jobRssLimitBytes": 4294967296,
+    "resourceDecision": "reports/audits/dissertation/network-full-3h-recovery-v1/resource-decision.json",
+    "deadlineReset": false,
+    "recoveryTests": {
+      "finalPassed": 26,
+      "initialRunFailures": 1,
+      "initialFailure": "Existing concurrent delivery test returned 2 rather than 3; unchanged full suite rerun passed. No scientific inputs changed."
+    }
   },
   "networkConsoleMonitor": {
     "status": "restartedForNetworkCampaign",
@@ -850,5 +890,19 @@
     "manifest": "reports/audits/dissertation/claims-and-evidence-v1/manifest.json",
     "scientificApproval": false,
     "remoteOperations": false
+  },
+  "nextMajorMilestone": {
+    "name": "Verified twin evidence package and completed network comparison",
+    "candidateSteps": [
+      "09",
+      "23",
+      "24"
+    ],
+    "candidateWeightPersonDays": 4.0,
+    "conditionalTargetPercent": 39.4,
+    "alreadyAccepted": false,
+    "requiresAuthorMethodReview": true,
+    "requiresCompletedVerifiedNetworkCoverage": true,
+    "firstAction": "Author reads prepared method; prepare network comparison once current campaign results are available. No new twin measurements needed for this package."
   }
 }

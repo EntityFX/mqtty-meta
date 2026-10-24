@@ -1,0 +1,5 @@
+broker,passed,failed,deliveryLossRate,latencyP99Ms,publishFailureRate,rps,failedRunsWithHighNativeLossRange,nativePointsHighLossRange,nativePointsRpsShift
+Aedes,58,14,9,2,0,3,6,4,0
+Mosquitto,58,14,12,0,0,2,12,8,0
+ActiveMQ,29,43,33,4,6,10,30,10,2
+EMQX,58,14,6,10,0,3,3,1,1

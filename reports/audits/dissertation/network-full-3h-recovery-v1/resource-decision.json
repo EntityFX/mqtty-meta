@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "executionManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+  "controllerSha256": "55302af50bedb5f528cea0adc413fb2f205947c75deab5906261cc014350fee0",
+  "workers": 2,
+  "jobRssLimitBytes": 4294967296,
+  "reason": "User explicitly requested RSS increase after inspected jobRssLimit in matrix.line.relay.q2.r5000.w10.s43 attempt-001. Keep original runtime, scientific inputs, evidence and global deadline. Retry only inspected failed point; retain 38 verified successes.",
+  "originalJobRssLimitBytes": 1610612736,
+  "scientificInputsChanged": false,
+  "originalDeadline": {
+    "wallLimitSeconds": 10800,
+    "startedEpoch": 1792865019.3271925,
+    "deadlineEpoch": 1792875819.327193
+  },
+  "createdEpoch": 1792867443.4779682
+}

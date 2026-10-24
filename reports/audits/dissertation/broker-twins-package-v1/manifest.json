@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "sources": {
+    "reports/audits/dissertation/accuracy-analysis-v1/analysis.json": "46f1bb81917c54e6dbe04756b5536ed3206879f6510eda8d9de18c50d5eaa8da",
+    "reports/audits/dissertation/accuracy-analysis-v1/manifest.json": "2d33d19e848ea8411ed9bb47b3916e980c19f9c6b0dae746e3d8f992fa0300e3",
+    "reports/audits/dissertation/sensitivity-final-v1/analysis/analysis.json": "1498b3399219f9e18d1eff2a57d3ed30d8f41f549c3f1a3245da1776a5bb1de1",
+    "reports/audits/dissertation/control-history-v1/evidence.json": "7b904847822340bc067bd992b3fb44879a61082b475db7259eabdaacaa49c194",
+    "docs/dissertation/broker-twin-method-map.md": "e6427136504a59a6bd3e57509991455b9c6f64cfdd49fd9560be64e3f83ccc23"
+  },
+  "generatorSha256": "205e9fe1d528323eab0db9bc9e875d8ad9011619aca4475f6a7b48be396cc6cc",
+  "files": {
+    "broker-summary.csv": "b6c553d145e39d952a55ad8a5eed3d6d7ea9a4a56f822d647f9472b54b09381c",
+    "failures-context.csv": "ca2f3dcaeae59bbb7e5cf5724b92e8d8c91dc74a1700671e222a0cacd71888d1",
+    "Report.md": "60b27269d2eb1fccec7ebb5f37d3d0fa3a7b7941d9d07a848e31cc7d9d425b72",
+    "verification.json": "0d28eb8d0456c9717a36676ba7d22fb9c94a51517269204312ff768719e8bb08"
+  }
+}
