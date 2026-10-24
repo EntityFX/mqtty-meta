@@ -126,4 +126,3 @@
 4. OASIS. MQTT Version 3.1.1. Разделы QoS 1/2. [Стандарт](https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html).
 5. NIST. Credibility Consideration for Digital Twins in Manufacturing. [Описание и публикация](https://www.nist.gov/publications/credibility-consideration-digital-twins-manufacturing). Связь V&V и неопределённости обсуждается применительно к собственной цели модели, не как сертификат настоящей реализации.
 6. Efron B. Bootstrap Methods: Another Look at the Jackknife. Annals of Statistics. Vol. 7, p. 1–26. [DOI: 10.1214/aos/1176344552](https://doi.org/10.1214/aos/1176344552).
-
