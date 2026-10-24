@@ -1,0 +1,69 @@
+{
+  "status": "technicalDraftReviewed",
+  "scientificAuthorApproval": false,
+  "submissionPerformed": false,
+  "protectedDissertationChanged": false,
+  "accuracyRowsVerified": {
+    "Aedes": [
+      58,
+      14,
+      3,
+      2,
+      0,
+      9
+    ],
+    "Mosquitto": [
+      58,
+      14,
+      2,
+      0,
+      0,
+      12
+    ],
+    "ActiveMQ": [
+      29,
+      43,
+      10,
+      4,
+      6,
+      33
+    ],
+    "EMQX": [
+      58,
+      14,
+      3,
+      10,
+      0,
+      6
+    ]
+  },
+  "sensitivityMaximaVerified": 4,
+  "figureLinksVerified": 2,
+  "reviewerSha256": "502ab496e316532ea999aaf66297ea0161568ecac87e5d1f54c6c5b76f7147a4",
+  "sources": {
+    "docs/dissertation/articles/article-1-twin-validation.md": "761de66bf17a5a57ca97a44ba02f5f4187f66f00938e8a30b63c9d8e101e7e78",
+    "reports/audits/dissertation/accuracy-analysis-v1/analysis.json": "46f1bb81917c54e6dbe04756b5536ed3206879f6510eda8d9de18c50d5eaa8da",
+    "reports/audits/dissertation/sensitivity-final-v1/analysis/analysis.json": "1498b3399219f9e18d1eff2a57d3ed30d8f41f549c3f1a3245da1776a5bb1de1",
+    "docs/dissertation/broker-twin-method-map.md": "e6427136504a59a6bd3e57509991455b9c6f64cfdd49fd9560be64e3f83ccc23",
+    "reports/audits/dissertation/control-history-v1/evidence.json": "7b904847822340bc067bd992b3fb44879a61082b475db7259eabdaacaa49c194"
+  },
+  "primarySources": [
+    {
+      "url": "https://www.informs-sim.org/wsc11papers/016.pdf",
+      "scope": "Verification, data validity and domain-specific validation"
+    },
+    {
+      "url": "https://publicatio.bibl.u-szeged.hu/22708/1/MQTT_Perf_Mishra_MDPI_202109_revised_v2.pdf",
+      "scope": "Author version: native broker performance comparison, not our quantitative benchmark"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1186/s43067-024-00181-x",
+      "scope": "Conceptual MQTT model and OMNeT++/INET application evaluation"
+    }
+  ],
+  "limitations": [
+    "Not an exhaustive novelty search",
+    "No journal-specific format selected",
+    "Author and coauthor review pending"
+  ]
+}

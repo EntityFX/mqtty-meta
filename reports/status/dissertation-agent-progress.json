@@ -11,18 +11,20 @@
     "03",
     "04",
     "06",
+    "09",
     "10",
     "11",
     "12",
     "13",
+    "14",
     "19",
     "20",
     "21",
     "22"
   ],
-  "verifiedTechnicalWeightPersonDays": 14.5,
+  "verifiedTechnicalWeightPersonDays": 18.0,
   "localPercent": 80,
-  "globalPercent": 30.9,
+  "globalPercent": 38.3,
   "basis": "Plan effort weights; not scientific confidence or elapsed labour",
   "steps": {
     "03": {
@@ -184,12 +186,23 @@
       "acceptedWeightPersonDays": 1.5
     },
     "14": {
-      "status": "humanAuthorTask",
-      "agentDeliverable": "docs/dissertation/article-layouts.md"
+      "status": "completeAgentDraftTechnicalReviewPassed",
+      "acceptedWeightPersonDays": 2.0,
+      "document": "docs/dissertation/articles/article-1-twin-validation.md",
+      "verification": "reports/audits/dissertation/article-1-draft-v1/verification.json",
+      "reviewTestsPassed": 4,
+      "scientificAuthorApproval": false,
+      "coauthorApproval": false,
+      "submitted": false,
+      "acceptanceScope": "Full working manuscript with problem, related work, method, experiment, verified results, discussion, limitations, conclusion, sources and reproduction appendix. Final author revision remains pending."
     },
     "25": {
-      "status": "humanAuthorTask",
-      "agentDeliverable": "docs/dissertation/article-layouts.md"
+      "status": "partialAgentDraftAwaitingMainNetworkResults",
+      "document": "docs/dissertation/articles/article-2-relay-federation.md",
+      "verification": "reports/audits/dissertation/article-2-draft-v1/verification.json",
+      "scientificAuthorApproval": false,
+      "submitted": false,
+      "acceptedWeightPersonDays": 0
     },
     "01": {
       "status": "workingQuestionsAcceptedAwaitingNoveltyAndSupervisorAgreement",
@@ -198,10 +211,13 @@
       "workingQuestionsAcceptedByAuthor": true
     },
     "09": {
-      "status": "technicalMethodMapPreparedAwaitingAuthorReview",
+      "status": "technicalChecksPassedHumanScientificReviewPending",
+      "acceptedWeightPersonDays": 1.5,
       "document": "docs/dissertation/broker-twin-method-map.md",
-      "scope": "Actors, commands, sequence diagram, parameter origins, formulas, calibration/Fidelity/holdout separation",
-      "articleTextWritten": false
+      "integratedText": "docs/dissertation/articles/article-1-twin-validation.md",
+      "verification": "reports/audits/dissertation/article-1-draft-v1/verification.json",
+      "scientificAuthorApproval": false,
+      "basis": "Method, roles, origins, formulas, phases and limitations reviewed and integrated under explicit authorization to prepare full texts before human revision."
     },
     "19": {
       "status": "technicalChecksPassed",
@@ -301,7 +317,7 @@
   "goalConstraints": "reports/status/goal-constraints.json",
   "manualContinuationRequired": false,
   "continuationCheckpoint": "Continue independent figure package, bibliography audit and reproducible build while separate writer check runs; no cyclic polling. Pause only when independent useful tasks exhausted.",
-  "articleWritingOwner": "human",
+  "articleWritingOwner": "agentWorkingDraftsHumanFinalRevision",
   "recommendedManualReviewAt": null,
   "parallelWork": {
     "changes": "Final sensitivity analysis, network failure audit, streaming writer fix, historical acceleration audit",
@@ -412,7 +428,7 @@
   "summaryPercentages": {
     "observation": "reports/status/manual-continuation-latest.json",
     "localPercent": 80,
-    "globalPercent": 30.9,
+    "globalPercent": 38.3,
     "sensitivityAllCompleted": 230,
     "sensitivityAllTotal": 230,
     "sensitivityAllPercent": 100,
@@ -894,15 +910,15 @@
   "nextMajorMilestone": {
     "name": "Verified twin evidence package and completed network comparison",
     "candidateSteps": [
-      "09",
       "23",
       "24"
     ],
-    "candidateWeightPersonDays": 4.0,
-    "conditionalTargetPercent": 39.4,
+    "candidateWeightPersonDays": 2.5,
+    "conditionalTargetPercent": 43.6,
     "alreadyAccepted": false,
     "requiresAuthorMethodReview": true,
     "requiresCompletedVerifiedNetworkCoverage": true,
-    "firstAction": "Author reads prepared method; prepare network comparison once current campaign results are available. No new twin measurements needed for this package."
-  }
+    "firstAction": "Verify completed network campaign and prepare comparison; article 2 final results depend on actual coverage."
+  },
+  "preliminaryHumanReadingBlocksTechnicalPreparation": false
 }

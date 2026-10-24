@@ -26,3 +26,5 @@
 /tools/dissertation/prepare_twin_package.py -text
 /tools/dissertation/test_prepare_twin_package.py -text
 /docs/dissertation/broker-twin-method-map.md -text
+/docs/dissertation/articles/** -text
+/tools/dissertation/*review_twin_article.py -text
