@@ -13,18 +13,18 @@ class ArticleReviewChecks(unittest.TestCase):
         self.assertEqual(len(verify(self.text, self.accuracy, self.sensitivity)), 4)
 
     def test_corrupted_accuracy_cell_is_detected(self):
-        text = self.text.replace('| Aedes | 58 | 14 |', '| Aedes | 59 | 14 |')
+        text = self.text.replace('| Aedes | 18 | 3 | 3 |', '| Aedes | 19 | 3 | 3 |')
         with self.assertRaisesRegex(ValueError, 'accuracy row'):
             verify(text, self.accuracy, self.sensitivity)
 
-    def test_corrupted_context_is_detected(self):
-        text = self.text.replace('| ActiveMQ | 10 | 2 | 30/43 |', '| ActiveMQ | 10 | 2 | 31/43 |')
-        with self.assertRaisesRegex(ValueError, 'context row'):
+    def test_corrupted_condition_count_is_detected(self):
+        text = self.text.replace('| ActiveMQ | 9 | 2 | 13 |', '| ActiveMQ | 10 | 2 | 13 |')
+        with self.assertRaisesRegex(ValueError, 'accuracy row'):
             verify(text, self.accuracy, self.sensitivity)
 
     def test_loss_of_independence_caveat_is_detected(self):
         with self.assertRaisesRegex(ValueError, 'limitation'):
-            verify(self.text.replace('не установила слепую независимость','установила независимость'), self.accuracy, self.sensitivity)
+            verify(self.text.replace('независимость контрольной серии от разработки модели не подтверждена','независимость подтверждена'), self.accuracy, self.sensitivity)
 
     def test_native_model_table_uses_actual_native_repetitions(self):
         models=json.loads((ROOT/'reports/data/model-evidence.json').read_bytes())

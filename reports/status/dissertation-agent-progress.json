@@ -186,10 +186,10 @@
       "acceptedWeightPersonDays": 1.5
     },
     "14": {
-      "status": "agentDraftRevisedMajorExperimentalCommentsOpen",
+      "status": "plainLanguageDraftRewrittenExperimentalGapsOpen",
       "acceptedWeightPersonDays": 2.0,
       "document": "docs/dissertation/articles/article-1-twin-validation.md",
-      "verification": "reports/audits/dissertation/article-1-response-v2/verification.json",
+      "verification": "reports/audits/dissertation/article-1-plain-v3/verification.json",
       "reviewTestsPassed": 9,
       "scientificAuthorApproval": false,
       "coauthorApproval": false,
@@ -216,6 +216,17 @@
           "extended tick/window/binning/max-rule sensitivity"
         ],
         "percentageIncreased": false
+      },
+      "structure": "Eight requested sections: real measurements, profile, timed phases, outputs, stand, paired comparison, fidelity limits, conclusions",
+      "timeline": "reports/audits/dissertation/article-1-plain-v3/timeline.svg",
+      "technicalAppendix": "reports/analysis/Article-1-technical-notes.md",
+      "languageRevision": {
+        "completeRewrite": true,
+        "technicalDetailMovedToAppendix": true,
+        "nativeModelValuesUnchanged": true,
+        "allModesExactMatchClaimed": false,
+        "linuxTouched": false,
+        "readinessIncrease": false
       }
     },
     "25": {

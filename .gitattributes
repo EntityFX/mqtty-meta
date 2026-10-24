@@ -30,3 +30,4 @@
 /tools/dissertation/*review_twin_article.py -text
 /tools/dissertation/revise_article1_analysis.py -text
 /tools/dissertation/test_article1_revision.py -text
+/tools/dissertation/render_article1_timeline.py -text

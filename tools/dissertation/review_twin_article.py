@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 ARTICLE = ROOT / "docs/dissertation/articles/article-1-twin-validation.md"
-AUDIT = ROOT / "reports/audits/dissertation/article-1-response-v2"
+AUDIT = ROOT / "reports/audits/dissertation/article-1-plain-v3"
 
 
 def verify(text, accuracy, sensitivity):
@@ -18,23 +18,13 @@ def verify(text, accuracy, sensitivity):
         criteria = {key: sum(r["broker"] == name and r["name"] == key and r["status"] == "failed"
                              for r in accuracy["criteria"])
                     for key in ("rps", "latencyP99Ms", "publishFailureRate", "deliveryLossRate")}
-        expected = [72-len(failed), len(failed), *criteria.values()]
+        points=[p for p in accuracy['points'] if p['broker']==name]
+        expected=[sum(p['failedSeeds']==0 for p in points),sum(0<p['failedSeeds']<3 for p in points),sum(p['failedSeeds']==3 for p in points)]
         line = "| " + name + " | " + " | ".join(str(v) for v in expected) + " |"
         if line not in text:
             raise ValueError("Incorrect or missing accuracy row: " + name)
         counts[name] = expected
-        native_points = {(p['bytes'], p['qos'], p['publishers']): p for p in accuracy['points'] if p['broker'] == name}
-        contextual = sum(native_points[(r['bytes'], r['qos'], r['publishers'])]['nativeLossRepeatRange'] > .05
-                         for r in accuracy['failures'] if r['broker'] == name)
-        context_line = f"| {name} | {broker['nativePointsLossRangeAbove005']} | {broker['nativePointsRpsShiftAbove015']} | {contextual}/{len(failed)} |"
-        if context_line not in text:
-            raise ValueError('Incorrect native context row: ' + name)
-        variants = ['baseline', 'halfTick', 'doubleWindow']
-        passed = [18-sum(r['broker'] == name and r['kind'] == 'matrix' and r['variant'] == v
-                         for r in sensitivity['scientificFailures']) for v in variants]
-        if '| ' + name + ' | ' + ' | '.join(map(str, passed)) + ' |' not in text:
-            raise ValueError('Incorrect sensitivity row: ' + name)
-    phrases = ("64/96", "88/96", "85 не прошли", "576 натурных", "1152 решения", "96 неприменимых")
+    phrases = ("64/96", "88/96", "85 с расхождениями", "576 натурных", "96 режимов")
     if any(phrase not in text for phrase in phrases):
         raise ValueError("Core coverage statement missing")
     paired = sensitivity["pairedSummary"]
@@ -43,16 +33,17 @@ def verify(text, accuracy, sensitivity):
         value = 100*paired[variant]["metrics"][metric]["maxAbsoluteRelativeDelta"]
         if f"{value:.3f}".replace(".", ",") + "%" not in text:
             raise ValueError("Sensitivity maximum missing: " + variant + "/" + metric)
-    required = ("не установила слепую независимость", "не является вероятностью",
-                "не заменяют независимую проверку другим сотрудником", "notApplicable")
-    if any(phrase not in text for phrase in required):
+    required = ("независимость контрольной серии от разработки модели не подтверждена",
+                "не являются тремя независимыми натурными испытаниями", "для qos 0 публикационная задержка подтверждения неприменима",
+                "утверждение о точном воспроизведении брокеров во всех условиях пока не подтверждено")
+    if any(phrase not in text.lower() for phrase in required):
         raise ValueError("Required scientific limitation missing")
     return counts
 
 
 def verify_native_model(text, models, native):
-    labels={'rps':'Completed RPS, 1/с','latencyP99Ms':'p99 Publish, мс',
-            'publishFailureRate':'Неуспешные API-операции, доля','deliveryLossRate':'Недоставка, доля'}
+    labels={'rps':'Скорость завершённых публикаций, 1/с','latencyP99Ms':'Задержка p99, мс',
+            'publishFailureRate':'Ошибки вызова публикации, доля','deliveryLossRate':'Недоставка, доля'}
     checked=0
     for broker in ('Aedes','Mosquitto','ActiveMQ','EMQX'):
         real=[r['observation']['measurement'] for r in native['runs'] if r['broker']==broker and r['stage']=='validation' and
