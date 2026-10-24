@@ -1,0 +1,41 @@
+{
+  "observedAtUtc": "2026-10-24T01:13:24.489186+00:00",
+  "sourceCommit": "266ec18",
+  "command": [
+    "systemd-run",
+    "--user",
+    "--unit=mqtty-network-pilot-tail-v1.service",
+    "--description=Six unattempted frozen pilots; retain reviewed drain failure; matrix blocked",
+    "--property=Type=exec",
+    "--property=MemoryMax=3G",
+    "--property=MemorySwapMax=0",
+    "--property=CPUWeight=10",
+    "--property=KillMode=control-group",
+    "--property=RuntimeMaxSec=6h",
+    "--property=TimeoutStopSec=30s",
+    "--property=StandardOutput=append:/run/media/entityfx/hd250/mqtty-evidence/tools/network-pilot-tail-v1/service.stdout.log",
+    "--property=StandardError=append:/run/media/entityfx/hd250/mqtty-evidence/tools/network-pilot-tail-v1/service.stderr.log",
+    "--setenv=PYTHONDONTWRITEBYTECODE=1",
+    "/usr/bin/python3",
+    "/run/media/entityfx/hd250/mqtty-evidence/tools/network-pilot-tail-v1/continue_network_pilot_tail.py",
+    "--study",
+    "/run/media/entityfx/hd250/mqtty-evidence/network-long-v1",
+    "--review",
+    "/run/media/entityfx/hd250/mqtty-evidence/tools/network-pilot-tail-v1/continuation-review.json",
+    "--output",
+    "/run/media/entityfx/hd250/mqtty-evidence/network-long-v1-pilot-tail-v1"
+  ],
+  "operationSha256": "63bd81f383f91d42e6df84d6d58cd1e671d37bb5dc778bc5ac9842257655d040",
+  "reviewSha256": "1747d1b1943ca16e3c4ec42a10ded9e6703d9ada4592cd55538f59681e9cf5ff",
+  "memoryAvailableBytes": 11478532096,
+  "sharedMemoryLimitsGiB": {
+    "sensitivity": 8,
+    "networkTail": 3
+  },
+  "oldFailedAttemptRetained": true,
+  "failedPointNotRetried": true,
+  "onlyUnattemptedPilots": 6,
+  "matrixAdmitted": false,
+  "launchReturnCode": 0,
+  "launchOutput": "Running as unit: mqtty-network-pilot-tail-v1.service; invocation ID: 4bb4c47a623f4601af50c472ac633306\n"
+}
