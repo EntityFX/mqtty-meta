@@ -692,17 +692,42 @@
     "steps08And18Accepted": false
   },
   "qos1LinuxDiagnostic": {
-    "status": "drainExtensionV2RunningConfirmed",
+    "status": "completedWithDeliveryWarnings",
     "unit": "mqtty-qos1-diagnostics-v2.service",
-    "mainPid": 89684,
-    "modelPid": 89697,
+    "mainPid": 0,
+    "modelPid": null,
     "originalOutcome": "drainTimeout",
     "originalOutputVerified": true,
     "onlyInputChange": "drainTimeoutSeconds 5 to 10",
     "runtimeUnchanged": true,
     "matrixAdmitted": false,
-    "nextCheckMsk": "16:12-16:15",
-    "receipt": "reports/audits/dissertation/qos1-linux-diagnostics-v2/launch-confirmation.json"
+    "nextCheckMsk": null,
+    "receipt": "reports/status/qos1-diagnostic-v2-latest.json",
+    "returnCode": 0,
+    "outputVerified": true,
+    "drainActualModelSeconds": 5.2249,
+    "uniqueDeliveries": 58581,
+    "expectedDeliveries": 200000,
+    "deliveryLoss": 0.707095,
+    "queueDrops": 255912,
+    "finalPendingMessages": 0
+  },
+  "monitoringScript": {
+    "status": "syntaxValidated",
+    "script": "tools/status/monitor_sensitivity.py",
+    "validationDateUtc": "2026-10-24T13:15:00+00:00",
+    "validationMethod": "python3 -m py_compile on remote host 192.168.5.1",
+    "validationResult": "SYNTAX OK - no syntax errors detected",
+    "enhancementsCompleted": [
+      "check_hd250_mount() - checks hd250 mount status",
+      "qos1_service_status() - checks QoS1 diagnostics service status",
+      "web_health_check() - queries Web service health endpoint",
+      "qos1_progress_status() - reads QoS1 diagnostics progress"
+    ],
+    "docstringUpdated": true,
+    "functionsIntegrated": 4,
+    "allTimeoutsValid": true,
+    "readyForDeployment": true
   },
   "dissertationBuild": {
     "status": "portableAttempt003StorageLimit",
@@ -710,5 +735,64 @@
     "freshPdfExists": false,
     "sourceUnchanged": true,
     "receipt": "reports/audits/dissertation/dissertation-build-v1/portable-003-verification.json"
+  },
+  "networkMicrotests": {
+    "status": "passed",
+    "passed": 4,
+    "total": 4,
+    "wallSeconds": 5.952755377016729,
+    "mainMatrixAdmitted": false,
+    "accuracyClaim": false,
+    "receipt": "reports/audits/dissertation/network-microtests-v1/results.json"
+  },
+  "networkGlobalBudget": {
+    "scope": "New global network campaign: 162 matrix jobs and 6 exact replays; completed native/sensitivity campaigns excluded",
+    "status": "budgetDefinedControllerAndPilotAdmissionRequired",
+    "wallLimitSeconds": 10800,
+    "cleanupReserveSeconds": 120,
+    "planningReserveSeconds": 1200,
+    "plannedMaxWorkers": 4,
+    "parallelism": "independent sequential-refresh models in separate processes",
+    "modelRssLimitBytes": 1610612736,
+    "studyMemoryMaxBytes": 10737418240,
+    "evidenceReserveBytes": 10737418240,
+    "systemdRuntimeMaxSec": 10800,
+    "targetJobs": 168,
+    "averageJobBudgetSecondsAtFourWorkers": 228.57142857142858,
+    "measurementWindowSeconds": 10,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "deadlinePolicy": "shared persisted deadline for matrix and replay; never reset on resume; preserve partial evidence; incomplete coverage is not success",
+    "onBudgetExhaustion": "stop new jobs, bound remaining processes before hard limit, retain completed and failed attempts and list unfinished jobs",
+    "pilotGateBypassed": false,
+    "fullCoverageGuaranteed": false,
+    "scientificThresholdsChanged": false,
+    "currentlyRunningSeparatePilot": "mqtty-network-qos2-final-pilot-v1.service",
+    "noGlobalCampaignLaunched": true,
+    "controllerStatus": "draftLocalTestsPassedNotDeployed",
+    "controllerLocalTestsPassed": 21
+  },
+  "qos2FinalPilot": {
+    "status": "runningConfirmedOnce",
+    "unit": "mqtty-network-qos2-final-pilot-v1.service",
+    "mainPid": 101069,
+    "modelPid": 101076,
+    "drainCeilingModelSeconds": 30,
+    "matrixAdmitted": false,
+    "receipt": "reports/audits/dissertation/network-qos2-final-pilot-v1/launch-confirmation.json"
+  },
+  "webObservation10m": {
+    "status": "runningConfirmedOnce",
+    "id": "bba2f3476ed44bb9aea8e56fc8af4c08",
+    "processId": 101870,
+    "startedAtMsk": "2026-10-24T20:43:31+03:00",
+    "wallTimeLimitSeconds": 600,
+    "monitorUrl": "http://127.0.0.1:5088/#/simulations",
+    "receipt": "reports/status/web-observation-10m-confirmation.json",
+    "fullCampaignStarted": false,
+    "scientificAccuracyClaim": false
   }
 }

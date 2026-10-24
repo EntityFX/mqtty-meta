@@ -4,9 +4,13 @@ import tempfile
 import unittest
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parent))
-from qos1_linux_diagnostic import validate_diagnostic_config, sha
+from qos1_linux_diagnostic import validate_diagnostic_config, selected_job, sha
 
 class DrainExtensionTests(unittest.TestCase):
+    def test_explicit_q2_identity(self):
+        self.assertEqual(selected_job({'jobId':'pilot.star.federation.q2.r5000.w10.s42'}),'pilot.star.federation.q2.r5000.w10.s42')
+    def test_reject_unplanned_identity(self):
+        with self.assertRaises(ValueError): selected_job({'jobId':'unplanned'})
     def check_config(self, update, declared=10, accepted=True):
         with tempfile.TemporaryDirectory() as folder:
             original=Path(folder)/'original.json'; candidate=Path(folder)/'candidate.json'

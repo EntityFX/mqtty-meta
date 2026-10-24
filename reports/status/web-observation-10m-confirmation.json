@@ -1,0 +1,24 @@
+{
+  "job": {
+    "id": "bba2f3476ed44bb9aea8e56fc8af4c08",
+    "topologyId": null,
+    "engine": "federation",
+    "state": "Running",
+    "totalTicks": 28989,
+    "step": 548149,
+    "errors": 0,
+    "startedAt": "2026-10-24T20:43:31.4576939+03:00",
+    "finishedAt": null,
+    "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/bba2f3476ed44bb9aea8e56fc8af4c08",
+    "error": null,
+    "processId": 101870,
+    "processWorkingSetBytes": 171339776,
+    "processCpuSeconds": 43.39,
+    "lastObservedAt": "2026-10-24T20:44:13.5405696+03:00",
+    "phase": "measure"
+  },
+  "monitorNodeCount": 97,
+  "monitorLinkCount": 8,
+  "monitoredTicks": 28989,
+  "observedAtUtc": "2026-10-24T17:44:14.0290130Z"
+}

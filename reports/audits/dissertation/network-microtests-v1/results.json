@@ -1,0 +1,71 @@
+{
+  "passed": 4,
+  "total": 4,
+  "wallSeconds": 5.952755377016729,
+  "rows": [
+    {
+      "case": "q0",
+      "returnCode": 0,
+      "technicalError": null,
+      "processWallSeconds": 1.0735864309826866,
+      "peakRssBytes": 139550720,
+      "pid": 100818,
+      "passed": true,
+      "uniqueDeliveries": 80,
+      "expectedDeliveries": 80,
+      "queueDrops": 0,
+      "warnings": [],
+      "finalIdle": true,
+      "sealsVerified": true
+    },
+    {
+      "case": "q1",
+      "returnCode": 0,
+      "technicalError": null,
+      "processWallSeconds": 1.2272131869976874,
+      "peakRssBytes": 143413248,
+      "pid": 100828,
+      "passed": true,
+      "uniqueDeliveries": 80,
+      "expectedDeliveries": 80,
+      "queueDrops": 0,
+      "warnings": [],
+      "finalIdle": true,
+      "sealsVerified": true
+    },
+    {
+      "case": "q2",
+      "returnCode": 0,
+      "technicalError": null,
+      "processWallSeconds": 1.4305644020205364,
+      "peakRssBytes": 144220160,
+      "pid": 100838,
+      "passed": true,
+      "uniqueDeliveries": 80,
+      "expectedDeliveries": 80,
+      "queueDrops": 0,
+      "warnings": [],
+      "finalIdle": true,
+      "sealsVerified": true
+    },
+    {
+      "case": "queue-overflow-q1",
+      "returnCode": 0,
+      "technicalError": null,
+      "processWallSeconds": 2.1514319230045658,
+      "peakRssBytes": 150900736,
+      "pid": 100848,
+      "passed": true,
+      "uniqueDeliveries": 239,
+      "expectedDeliveries": 1000,
+      "queueDrops": 1346,
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "finalIdle": true,
+      "sealsVerified": true
+    }
+  ],
+  "matrixAdmitted": false
+}

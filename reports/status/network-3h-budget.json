@@ -1,0 +1,29 @@
+{
+  "scope": "New global network campaign: 162 matrix jobs and 6 exact replays; completed native/sensitivity campaigns excluded",
+  "status": "parallelControllerDraftLocalTestsPassedAwaitingWebAndPilotReview",
+  "wallLimitSeconds": 10800,
+  "cleanupReserveSeconds": 120,
+  "planningReserveSeconds": 1200,
+  "plannedMaxWorkers": 4,
+  "parallelism": "independent sequential-refresh models in separate processes",
+  "modelRssLimitBytes": 1610612736,
+  "studyMemoryMaxBytes": 10737418240,
+  "evidenceReserveBytes": 10737418240,
+  "systemdRuntimeMaxSec": 10800,
+  "targetJobs": 168,
+  "averageJobBudgetSecondsAtFourWorkers": 228.57142857142858,
+  "measurementWindowSeconds": 10,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "deadlinePolicy": "shared persisted deadline for matrix and replay; never reset on resume; preserve partial evidence; incomplete coverage is not success",
+  "onBudgetExhaustion": "stop new jobs, bound remaining processes before hard limit, retain completed and failed attempts and list unfinished jobs",
+  "pilotGateBypassed": false,
+  "fullCoverageGuaranteed": false,
+  "scientificThresholdsChanged": false,
+  "currentlyRunningSeparatePilot": "mqtty-network-qos2-final-pilot-v1.service",
+  "noGlobalCampaignLaunched": true,
+  "localTestsPassed": 21
+}

@@ -1,6 +1,7 @@
 """Stage and run isolated network-study phases with verified resume."""
 import argparse
 import csv
+from contextlib import nullcontext
 from datetime import datetime, timezone
 import io
 import json
@@ -129,7 +130,7 @@ def pilot_decision(root, path, manifest_sha, plan, rows):
     return decision
 
 
-def attempt(root, job, manifest, manifest_sha, guard, on_state, retry_reason=None):
+def attempt(root, job, manifest, manifest_sha, guard, on_state, retry_reason=None, *, cancel_requested=None, verification_lock=None):
     guard.check()
     folder = root / "runs" / job["id"]; folder.mkdir(parents=True, exist_ok=True)
     number = max([int(p.name.split("-")[-1]) for p in folder.glob("attempt-*")] or [0]) + 1
@@ -145,25 +146,27 @@ def attempt(root, job, manifest, manifest_sha, guard, on_state, retry_reason=Non
     def live(state):
         guard.save(destination / "last-process-state.json", state)
         on_state(state)
-    row.update(execute(command, destination, guard, manifest["jobTimeoutSeconds"], manifest["jobRssLimitBytes"], available, live))
-    verification_started = time.monotonic()
-    if row["technicalError"] is None:
-        try:
-            if row["returnCode"] != 0:
-                raise RuntimeError("Federation CLI exit code " + str(row["returnCode"]))
-            summary, warnings = verify_output(destination / "output", config, root)
-            if summary["status"] != "completed":
-                raise RuntimeError("Incomplete simulation: " + str(summary.get("error")))
-            row["summary"], row["warnings"] = summary, warnings
-            row["scientificSha256"] = {name: sha(destination / "output" / name) for name in SCIENTIFIC_FILES if (destination / "output" / name).exists()}
-            if job["kind"] == "replay":
-                prior = [row for row in map(read, (root / "rows").glob("*.json")) if row["id"] == job["replayOf"]]
-                original = max(prior, key=lambda r: r["attemptNumber"])
-                if original["technicalError"] or row["scientificSha256"] != original["scientificSha256"]:
-                    raise ValueError("Scientific replay bytes differ")
-        except Exception as error:
-            row["technicalError"] = type(error).__name__ + ": " + str(error)
-    row["verificationWallSeconds"] = time.monotonic() - verification_started
+    options = {} if cancel_requested is None else {"cancel_requested": cancel_requested}
+    row.update(execute(command, destination, guard, manifest["jobTimeoutSeconds"], manifest["jobRssLimitBytes"], available, live, **options))
+    with verification_lock if verification_lock is not None else nullcontext():
+        verification_started = time.monotonic()
+        if row["technicalError"] is None:
+            try:
+                if row["returnCode"] != 0:
+                    raise RuntimeError("Federation CLI exit code " + str(row["returnCode"]))
+                summary, warnings = verify_output(destination / "output", config, root)
+                if summary["status"] != "completed":
+                    raise RuntimeError("Incomplete simulation: " + str(summary.get("error")))
+                row["summary"], row["warnings"] = summary, warnings
+                row["scientificSha256"] = {name: sha(destination / "output" / name) for name in SCIENTIFIC_FILES if (destination / "output" / name).exists()}
+                if job["kind"] == "replay":
+                    prior = [row for row in map(read, (root / "rows").glob("*.json")) if row["id"] == job["replayOf"]]
+                    original = max(prior, key=lambda r: r["attemptNumber"])
+                    if original["technicalError"] or row["scientificSha256"] != original["scientificSha256"]:
+                        raise ValueError("Scientific replay bytes differ")
+            except Exception as error:
+                row["technicalError"] = type(error).__name__ + ": " + str(error)
+        row["verificationWallSeconds"] = time.monotonic() - verification_started
     row["supervisorPeakRssBytes"] = rss_bytes(os.getpid(), peak=True)
     row["retryReason"] = retry_reason
     row["totalWallSeconds"] = time.monotonic() - began

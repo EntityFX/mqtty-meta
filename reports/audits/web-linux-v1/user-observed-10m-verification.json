@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "jobId": "bba2f3476ed44bb9aea8e56fc8af4c08",
+  "observedEpoch": 1792864604.3657463,
+  "output": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/bba2f3476ed44bb9aea8e56fc8af4c08",
+  "verifierPath": "/run/media/entityfx/hd250/mqtty-evidence/network-long-v1/tools/dissertation/run_network_study.py",
+  "verifierSha256": "3d7456c6857f5675bc1e15b9db19dedcd376bf5d18431ef1ee5efec6b1169e2c",
+  "summarySha256": "f8b27a3991768e3574083c4f1f6058aedcf21040137c3912e427b4bb1644f0ff",
+  "sha256FileSha256": "46258ea8fa7aa7bcb42296368ab8bdfafb6619cba77ee1bcf126cfe8872d1667",
+  "sealedFiles": 18,
+  "frozenRawVerification": {
+    "passed": true,
+    "warnings": [
+      "queueDrops",
+      "deliveryLoss"
+    ]
+  },
+  "httpSummaryEqualsSealedSummary": true,
+  "webStatus": {
+    "id": "bba2f3476ed44bb9aea8e56fc8af4c08",
+    "topologyId": null,
+    "engine": "federation",
+    "state": "Completed",
+    "totalTicks": 338237,
+    "step": 0,
+    "errors": 0,
+    "startedAt": "2026-10-24T17:43:31.4576939+00:00",
+    "finishedAt": "2026-10-24T17:51:24.549811+00:00",
+    "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/bba2f3476ed44bb9aea8e56fc8af4c08",
+    "error": null,
+    "processId": null,
+    "processWorkingSetBytes": 346075136,
+    "processCpuSeconds": 477.35,
+    "lastObservedAt": "2026-10-24T17:51:24.2899442+00:00",
+    "phase": "drain"
+  },
+  "metrics": {
+    "status": "completed",
+    "error": null,
+    "measurementSeconds": 30,
+    "tickMilliseconds": 0.1,
+    "scheduledPublishes": 30000,
+    "apiAttempts": 30000,
+    "sendRejected": 0,
+    "backpressureUnsent": 0,
+    "sourceCompleted": 30000,
+    "sourceCompletedBeforeDrain": 29999,
+    "sourceCompletedDuringDrain": 1,
+    "sourceCompletedRps": 1000,
+    "expectedDeliveries": 120000,
+    "uniqueDeliveries": 117531,
+    "uniqueBeforeDrain": 111791,
+    "uniqueDuringDrain": 5740,
+    "fullyDeliveredPublications": 29008,
+    "deliveryLoss": 0.02057500000000001,
+    "uniqueGoodput": 3917.7,
+    "duplicateDeliveries": 0,
+    "unexpectedDeliveries": 0,
+    "unknownDeliveries": 0,
+    "forwardAttempts": 235449,
+    "forwardAccepted": 235449,
+    "forwardRejected": 0,
+    "forwardTopicPayloadBytes": 10557477,
+    "suppressedDuplicates": 147918,
+    "queueDrops": 29613,
+    "hopLimitDrops": 0,
+    "cacheEntries": 117931,
+    "publishP50Ms": 0.8,
+    "publishP95Ms": 0.8,
+    "publishP99Ms": 0.8,
+    "receiverP50Ms": 1524.7,
+    "receiverP95Ms": 3482.5,
+    "receiverP99Ms": 3485.9
+  },
+  "config": {
+    "schemaVersion": 1,
+    "mode": "federation",
+    "brokers": 4,
+    "topology": "star",
+    "links": null,
+    "publishers": 64,
+    "receiverSites": null,
+    "payloadBytes": 16,
+    "qos": 1,
+    "offeredRps": 1000,
+    "seed": 42,
+    "warmupSeconds": 0.1,
+    "measurementSeconds": 30,
+    "drainTimeoutSeconds": 30,
+    "tickPeriod": "00:00:00.0001000",
+    "queueCapacity": 1024,
+    "cacheCapacity": 100000,
+    "hopLimit": null,
+    "ideal": true,
+    "brokerType": "Mosquitto",
+    "brokerProfilePath": null,
+    "network": {
+      "capacityBytesPerSecond": 125000000,
+      "throughputWindowTicks": 100,
+      "queueCapacity": 100000,
+      "transferTicks": 2
+    }
+  },
+  "receivers": [
+    {
+      "site": 0,
+      "uniqueDeliveries": 29635,
+      "duplicates": 0
+    },
+    {
+      "site": 1,
+      "uniqueDeliveries": 29305,
+      "duplicates": 0
+    },
+    {
+      "site": 2,
+      "uniqueDeliveries": 29249,
+      "duplicates": 0
+    },
+    {
+      "site": 3,
+      "uniqueDeliveries": 29342,
+      "duplicates": 0
+    }
+  ],
+  "phases": [
+    {
+      "name": "construct",
+      "startTick": 0,
+      "endTick": 0,
+      "status": "completed"
+    },
+    {
+      "name": "connect",
+      "startTick": 0,
+      "endTick": 17,
+      "status": "completed"
+    },
+    {
+      "name": "subscribe",
+      "startTick": 17,
+      "endTick": 26,
+      "status": "completed"
+    },
+    {
+      "name": "warmup",
+      "startTick": 26,
+      "endTick": 1026,
+      "status": "completed"
+    },
+    {
+      "name": "warmupDrain",
+      "startTick": 1026,
+      "endTick": 1355,
+      "status": "completed"
+    },
+    {
+      "name": "measure",
+      "startTick": 1355,
+      "endTick": 301355,
+      "status": "completed"
+    },
+    {
+      "name": "drain",
+      "startTick": 301355,
+      "endTick": 338237,
+      "status": "completed"
+    }
+  ],
+  "rawShape": {
+    "publicationKeys": [
+      "id",
+      "origin",
+      "sequence",
+      "publisher",
+      "tick",
+      "measurement",
+      "payload"
+    ],
+    "receiptKeys": [
+      "receiver",
+      "publicationId",
+      "topic",
+      "tick",
+      "payloadSha256"
+    ]
+  },
+  "rawMeasuredPublications": 30000,
+  "independentRawRecount": {
+    "measuredPublicationIds": 30000,
+    "uniquePublicationReceiverPairs": 117531,
+    "expectedPairs": 120000,
+    "missingPairs": 2469,
+    "fullyDeliveredPublications": 29008,
+    "notFullyDeliveredPublications": 992,
+    "publicationReceiverCountHistogram": {
+      "1": 714,
+      "2": 49,
+      "3": 229,
+      "4": 29008
+    },
+    "allEqualSummary": true
+  },
+  "pendingEvidence": {
+    "numericPendingCountersRecorded": false,
+    "diagnosticsFilePresent": false,
+    "drainStatus": "completed",
+    "drainSeconds": 3.6882,
+    "drainLimitSeconds": 30,
+    "modelIdleInferredFromRunnerCompletion": true,
+    "inferenceBoundary": "Runner returns completed after Until(topology.IsIdle): Graph.IsQuiescent AND every federator queue empty/no output-client pending. No per-client/broker numeric final pending snapshot was recorded; do not fabricate counters.",
+    "webStillShowsPhase": "drain is the last executed phase; terminal state is Completed, not a live process",
+    "missingPairsAreNotReportedAsPending": true
+  }
+}

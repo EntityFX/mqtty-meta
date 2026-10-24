@@ -56,7 +56,7 @@ def kill_tree(process):
     process.wait()
 
 
-def execute(command, attempt, guard, timeout, rss_limit, byte_budget, on_state, *, sample_seconds=1, memory_reader=rss_bytes):
+def execute(command, attempt, guard, timeout, rss_limit, byte_budget, on_state, *, sample_seconds=1, memory_reader=rss_bytes, cancel_requested=None):
     started = time.monotonic(); process = None; peak = 0; reason = None; code = None
     try:
         guard.check()
@@ -66,6 +66,10 @@ def execute(command, attempt, guard, timeout, rss_limit, byte_budget, on_state, 
         with (attempt / "process.log").open("xb") as log:
             process = subprocess.Popen(command, cwd=attempt, stdout=log, stderr=subprocess.STDOUT, **kwargs)
             while process.poll() is None:
+                if cancel_requested is not None:
+                    cancelled = cancel_requested()
+                    if cancelled:
+                        raise RuntimeError(cancelled if isinstance(cancelled, str) else "executionBudgetExhausted")
                 guard.check()
                 memory = memory_reader(process.pid)
                 peak = max(peak, memory)

@@ -20,6 +20,13 @@ FAILED_SHA = "4bdb82104b24d1aad85921ad36e1f50153bb817a6bfd6b5b731366335fc6ebd6"
 SUMMARY_SHA = "0abb3711ec412cd91f2c24886a05bc274a45cd1f92686399ad57b9827908ab76"
 
 
+def selected_job(manifest):
+    job = manifest.get("jobId", JOB)
+    if job not in (JOB, "pilot.star.federation.q2.r5000.w10.s42"):
+        raise ValueError("Unsupported diagnostic job")
+    return job
+
+
 def units_snapshot():
     units = {}
     for name in ("mqtty-sensitivity-v1.service", "mqtty-network-pilot-v1.service",
@@ -47,7 +54,7 @@ def validate_original(original, manifest):
         if relative.startswith(("tools/", "program/")) and sha(original / relative) != expected:
             raise ValueError("Original frozen input/verifier changed: " + relative)
     plan = read(original / "program/plan.json")
-    job = next(j for j in plan["jobs"] if j["id"] == JOB)
+    job = next(j for j in plan["jobs"] if j["id"] == selected_job(manifest))
     config = original / "program" / job["config"]
     if sha(config) != manifest.get("originalConfigSha256", manifest["configSha256"]) or sha(config) != job["sha256"]:
         raise ValueError("Original configuration differs from the diagnostic")
@@ -107,6 +114,7 @@ def main():
     parser.add_argument("--root", type=Path, required=True)
     args = parser.parse_args()
     root = args.root.resolve(); manifest = read(root / "staging-manifest.json")
+    job_id = selected_job(manifest)
     guard = StorageGuard(manifest["mount"], root, 10 * 1024**3)
     original = Path(manifest["originalRoot"]).resolve()
     if manifest["sourceCommit"] != SOURCE or not original.is_relative_to(guard.mount):
@@ -131,14 +139,14 @@ def main():
         validate_diagnostic_config(original_config, config, manifest)
         command = [manifest["dotnet"], str(root / "runtime/EntityFX.MqttY.Federation.App.dll"),
                    "run", "--config", str(config), "--output", "output", "--diagnostics"]
-        guard.save(attempt / "command.json", {"argv": command, "jobId": JOB,
+        guard.save(attempt / "command.json", {"argv": command, "jobId": job_id,
                    "stagingManifestSha256": sha(root / "staging-manifest.json"), "sourceCommit": SOURCE})
         def live(state):
             guard.save(attempt / "last-process-state.json", state)
-            guard.save(root / "progress.json", {"status": "running", "jobId": JOB, "active": state,
+            guard.save(root / "progress.json", {"status": "running", "jobId": job_id, "active": state,
                        "observedAtUtc": datetime.now(timezone.utc).isoformat(), "matrixAdmitted": False})
         result = execute(command, attempt, guard, 1800, 2 * 1024**3, 4 * 1024**3, live)
-        result.update({"jobId": JOB, "sourceCommit": SOURCE, "configSha256": sha(config),
+        result.update({"jobId": job_id, "sourceCommit": SOURCE, "configSha256": sha(config),
                        "matrixAdmitted": False, "originalFailureRetained": True,
                        "drainExtensionSeconds": manifest.get("drainExtensionSeconds")})
         try:

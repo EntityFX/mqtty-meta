@@ -1,0 +1,106 @@
+{
+  "observedAtUtc": "2026-10-24T13:21:16.958694+00:00",
+  "units": {
+    "mqtty-qos1-diagnostics-v2.service": "MainPID=0\nResult=success\nExecMainStatus=0\nActiveState=inactive\nSubState=dead\n",
+    "mqtty-web.service": "MainPID=88937\nResult=success\nExecMainStatus=0\nActiveState=active\nSubState=running\n"
+  },
+  "progress": {
+    "status": "diagnosticFinished",
+    "active": null,
+    "matrixAdmitted": false,
+    "observedAtUtc": "2026-10-24T13:08:09.577036+00:00"
+  },
+  "result": {
+    "returnCode": 0,
+    "technicalError": null,
+    "processWallSeconds": 340.1946527590044,
+    "peakRssBytes": 549195776,
+    "pid": 89697,
+    "jobId": "pilot.star.federation.q1.r5000.w10.s42",
+    "sourceCommit": "12601f534f9da3673057b072f8bd6a0c67fd8aed",
+    "configSha256": "fc99496208856a2075eb5571c3ec251c535bf370a6462409122d2090efdbfadf",
+    "matrixAdmitted": false,
+    "originalFailureRetained": true,
+    "drainExtensionSeconds": 10,
+    "outputVerified": true,
+    "warnings": [
+      "queueDrops",
+      "deliveryLoss"
+    ],
+    "diagnosticsSha256": "3e1445173135374f0b6d3230a0b34cdac74b73ca85389e3d1bf39fdeb45f8e90",
+    "outputSealSha256": "7ca052dc3e9de6cd4354866e897a73f0a7c559fdabb43e21c4929139f1d50427",
+    "verifierSha256": "3d7456c6857f5675bc1e15b9db19dedcd376bf5d18431ef1ee5efec6b1169e2c"
+  },
+  "summary": {
+    "status": "completed",
+    "error": null,
+    "sourceCompleted": 50000,
+    "expectedDeliveries": 200000,
+    "uniqueDeliveries": 58581,
+    "deliveryLoss": 0.707095,
+    "queueDrops": 255912,
+    "forwardAttempts": 99518,
+    "sourceCompletedDuringDrain": 4,
+    "uniqueDuringDrain": 14144,
+    "phases": [
+      {
+        "name": "construct",
+        "startTick": 0,
+        "endTick": 0,
+        "status": "completed"
+      },
+      {
+        "name": "connect",
+        "startTick": 0,
+        "endTick": 17,
+        "status": "completed"
+      },
+      {
+        "name": "subscribe",
+        "startTick": 17,
+        "endTick": 26,
+        "status": "completed"
+      },
+      {
+        "name": "warmup",
+        "startTick": 26,
+        "endTick": 10026,
+        "status": "completed"
+      },
+      {
+        "name": "warmupDrain",
+        "startTick": 10026,
+        "endTick": 46790,
+        "status": "completed"
+      },
+      {
+        "name": "measure",
+        "startTick": 46790,
+        "endTick": 146790,
+        "status": "completed"
+      },
+      {
+        "name": "drain",
+        "startTick": 146790,
+        "endTick": 199039,
+        "status": "completed"
+      }
+    ]
+  },
+  "lastDrain": {
+    "tick": 199039,
+    "event": "completed",
+    "isIdle": true,
+    "networkQueued": 0,
+    "federatorQueued": 0,
+    "pendingMessages": 0
+  },
+  "webHealth": {
+    "status": "ok",
+    "processId": 88940,
+    "processWorkingSetBytes": 116027392,
+    "dataDirectoryAvailable": true,
+    "runningJobs": 0,
+    "queuedJobs": 0
+  }
+}

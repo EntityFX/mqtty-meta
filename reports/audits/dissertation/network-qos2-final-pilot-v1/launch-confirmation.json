@@ -1,0 +1,13 @@
+{
+  "observedAtUtc": "2026-10-24T17:36:36.942174+00:00",
+  "unit": "MainPID=101069\nResult=success\nExecMainStatus=0\nActiveState=active\nSubState=running\n",
+  "status": "running",
+  "active": {
+    "pid": 101076,
+    "elapsedSeconds": 104.32607970800018,
+    "rssBytes": 437391360,
+    "peakRssBytes": 437391360
+  },
+  "result": {},
+  "modelCmdline": "/usr/lib64/dotnet/dotnet /run/media/entityfx/hd250/mqtty-evidence/network-qos2-final-pilot-v1/runtime/EntityFX.MqttY.Federation.App.dll run --config /run/media/entityfx/hd250/mqtty-evidence/network-qos2-final-pilot-v1/inputs/config.json --output output --diagnostics "
+}
