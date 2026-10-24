@@ -899,14 +899,14 @@
     "scientificAccuracyClaim": false
   },
   "networkFull3h": {
-    "status": "restartedRevalidatingSavedResults",
+    "status": "running",
     "unit": "mqtty-network-full-3h-v1.service",
     "controllerPid": 106810,
     "phase": "matrix",
     "matrix": {
-      "done": 38,
-      "unresolvedErrors": 1,
-      "warnings": 0,
+      "done": 90,
+      "unresolvedErrors": 0,
+      "warnings": 9,
       "total": 162
     },
     "replay": {
@@ -920,9 +920,9 @@
     "technicalAdmission": "reports/audits/dissertation/network-full-3h-v1/pilot-technical-decision.json",
     "pilotCohortsAreHeterogeneous": true,
     "receipt": "reports/status/network-full-3h-progress.json",
-    "observedAtUtc": "2026-10-24T18:38:35.169414+00:00",
+    "observedAtUtc": "2026-10-24T20:26:23.916522+00:00",
     "hardStopMsk": "2026-10-25T00:03:38+03:00",
-    "reason": "RuntimeError: jobRssLimit",
+    "reason": null,
     "failedAttempt": {
       "id": "matrix.line.relay.q2.r5000.w10.s43",
       "attemptNumber": 1,
@@ -931,11 +931,11 @@
       "processWallSeconds": 387.9845910540025,
       "reason": "RuntimeError: jobRssLimit"
     },
-    "serviceResult": "exit-code",
-    "execMainStatus": 1,
+    "serviceResult": "success",
+    "execMainStatus": 0,
     "diskFreeGiB": {
       "system": 60,
-      "hd250": 144
+      "hd250": 139
     },
     "webHealth": "ok",
     "automaticallyRestarted": false,
@@ -946,7 +946,15 @@
       "finalPassed": 26,
       "initialRunFailures": 1,
       "initialFailure": "Existing concurrent delivery test returned 2 rather than 3; unchanged full suite rerun passed. No scientific inputs changed."
-    }
+    },
+    "memoryCurrentBytes": 7164182528,
+    "recoveryStatus": "Inspected failed point completed successfully in attempt-002; original failure retained",
+    "currentWarningKinds": {
+      "queueDrops": 9,
+      "deliveryLoss": 9
+    },
+    "statusReceipt": "reports/audits/dissertation/network-full-3h-recovery-v1/status.json",
+    "primaryArticleUse": "Article 2 network comparison; not new real-broker validation for Article 1"
   },
   "networkConsoleMonitor": {
     "status": "restartedForNetworkCampaign",

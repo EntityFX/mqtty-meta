@@ -1,0 +1,99 @@
+{
+  "checkedAtUtc": "2026-10-24T20:25:54Z",
+  "service": "mqtty-network-full-3h-v1.service",
+  "activeState": "active",
+  "mainPid": 106810,
+  "memoryCurrentBytes": 7164182528,
+  "memoryMaxGiB": 10,
+  "progress": {
+    "status": "running",
+    "phase": "matrix",
+    "executionManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+    "verified": 90,
+    "technicalErrors": 0,
+    "counts": {
+      "pilot": {
+        "done": 0,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 30
+      },
+      "matrix": {
+        "done": 90,
+        "unresolvedErrors": 0,
+        "warnings": 9,
+        "total": 162
+      },
+      "replay": {
+        "done": 0,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 6
+      },
+      "diagnostic": {
+        "done": 0,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 54
+      }
+    },
+    "attempts": {
+      "pilot": {
+        "total": 0,
+        "failed": 0
+      },
+      "matrix": {
+        "total": 91,
+        "failed": 1
+      },
+      "replay": {
+        "total": 0,
+        "failed": 0
+      },
+      "diagnostic": {
+        "total": 0,
+        "failed": 0
+      }
+    },
+    "warnings": 9,
+    "active": {
+      "workers": 2,
+      "jobs": {
+        "matrix.ring.relay.q2.r5000.w10.s44": {
+          "pid": 114414,
+          "elapsedSeconds": 387.3684832069848,
+          "rssBytes": 1112334336,
+          "peakRssBytes": 1120567296
+        },
+        "matrix.ring.federation.q0.r1000.w10.s43": {
+          "pid": 114785,
+          "elapsedSeconds": 110.41063094499987,
+          "rssBytes": 792035328,
+          "peakRssBytes": 792035328
+        }
+      },
+      "remainingSeconds": 2115.411002859997
+    },
+    "reason": null,
+    "observedAtUtc": "2026-10-24T20:26:23.916522+00:00"
+  },
+  "diskAvailableGiB": {
+    "system": 60,
+    "hd250": 139
+  },
+  "webHealth": "ok",
+  "warningKinds": {
+    "queueDrops": 9,
+    "deliveryLoss": 9
+  },
+  "resolvedAttempt": {
+    "id": "matrix.line.relay.q2.r5000.w10.s43",
+    "attempt": 2,
+    "returnCode": 0,
+    "technicalError": null,
+    "peakRssBytes": 1115545600
+  },
+  "mainMatrixUsesRealBrokerProfiles": false,
+  "nativeMeasurementsPerformed": false,
+  "primaryArticleUse": "article2: single/relay/federation comparison, not new native validation for article1"
+}
