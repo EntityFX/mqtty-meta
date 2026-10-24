@@ -227,6 +227,26 @@
         "allModesExactMatchClaimed": false,
         "linuxTouched": false,
         "readinessIncrease": false
+      },
+      "nextValidation": {
+        "status": "shortNativeStudyProposedNotStarted",
+        "candidateNativeRuns": 48,
+        "candidateModelRuns": 48,
+        "brokers": 4,
+        "qos": [
+          1,
+          2
+        ],
+        "publishers": [
+          16,
+          128
+        ],
+        "payloadBytes": 16,
+        "nativeRepeats": 3,
+        "frozen": false,
+        "independentLoadAndTimeContractRequired": true,
+        "purpose": "Replace preliminary section 7 with new real-broker versus frozen-model comparisons",
+        "wallTimeCommitted": false
       }
     },
     "25": {
