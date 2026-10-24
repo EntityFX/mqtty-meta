@@ -1,0 +1,321 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="920" viewBox="0 0 1160 920">
+<rect width="1160" height="920" fill="white"/>
+<g font-family="sans-serif" font-size="11">
+<text x="20" y="22">Натурный контроль: средний completed RPS и Student CI95 по трём повторам</text>
+<text x="20" y="50">Aedes; шкала панели от 0 до 66143 RPS</text>
+<path d="M65 80 V340 H570" fill="none" stroke="#777"/>
+<text x="20" y="343.000" font-size="9">0</text>
+<text x="20" y="279.250" font-size="9">16536</text>
+<text x="20" y="215.500" font-size="9">33072</text>
+<text x="20" y="151.750" font-size="9">49607</text>
+<text x="20" y="88.000" font-size="9">66143</text>
+<path d="M75 194.292 V263.197 M72 194.292 h6 M72 263.197 h6" stroke="#1565c0" fill="none"/>
+<circle cx="75" cy="228.744" r="2.6" fill="#1565c0"/>
+<text transform="translate(75,353) rotate(65)" font-size="9">16/q0/p1</text>
+<path d="M96 97.143 V136.479 M93 97.143 h6 M93 136.479 h6" stroke="#1565c0" fill="none"/>
+<circle cx="96" cy="116.811" r="2.6" fill="#1565c0"/>
+<text transform="translate(96,353) rotate(65)" font-size="9">16/q0/p16</text>
+<path d="M117 119.970 V150.000 M114 119.970 h6 M114 150.000 h6" stroke="#1565c0" fill="none"/>
+<circle cx="117" cy="134.985" r="2.6" fill="#1565c0"/>
+<text transform="translate(117,353) rotate(65)" font-size="9">16/q0/p64</text>
+<path d="M138 122.238 V143.731 M135 122.238 h6 M135 143.731 h6" stroke="#1565c0" fill="none"/>
+<circle cx="138" cy="132.985" r="2.6" fill="#1565c0"/>
+<text transform="translate(138,353) rotate(65)" font-size="9">16/q0/p128</text>
+<path d="M159 304.631 V306.737 M156 304.631 h6 M156 306.737 h6" stroke="#1565c0" fill="none"/>
+<circle cx="159" cy="305.684" r="2.6" fill="#1565c0"/>
+<text transform="translate(159,353) rotate(65)" font-size="9">16/q1/p1</text>
+<path d="M180 263.084 V272.611 M177 263.084 h6 M177 272.611 h6" stroke="#1565c0" fill="none"/>
+<circle cx="180" cy="267.847" r="2.6" fill="#1565c0"/>
+<text transform="translate(180,353) rotate(65)" font-size="9">16/q1/p16</text>
+<path d="M201 261.409 V266.423 M198 261.409 h6 M198 266.423 h6" stroke="#1565c0" fill="none"/>
+<circle cx="201" cy="263.916" r="2.6" fill="#1565c0"/>
+<text transform="translate(201,353) rotate(65)" font-size="9">16/q1/p64</text>
+<path d="M222 256.632 V269.378 M219 256.632 h6 M219 269.378 h6" stroke="#1565c0" fill="none"/>
+<circle cx="222" cy="263.005" r="2.6" fill="#1565c0"/>
+<text transform="translate(222,353) rotate(65)" font-size="9">16/q1/p128</text>
+<path d="M243 327.576 V328.150 M240 327.576 h6 M240 328.150 h6" stroke="#1565c0" fill="none"/>
+<circle cx="243" cy="327.863" r="2.6" fill="#1565c0"/>
+<text transform="translate(243,353) rotate(65)" font-size="9">16/q2/p1</text>
+<path d="M264 309.978 V312.844 M261 309.978 h6 M261 312.844 h6" stroke="#1565c0" fill="none"/>
+<circle cx="264" cy="311.411" r="2.6" fill="#1565c0"/>
+<text transform="translate(264,353) rotate(65)" font-size="9">16/q2/p16</text>
+<path d="M285 309.747 V313.086 M282 309.747 h6 M282 313.086 h6" stroke="#1565c0" fill="none"/>
+<circle cx="285" cy="311.417" r="2.6" fill="#1565c0"/>
+<text transform="translate(285,353) rotate(65)" font-size="9">16/q2/p64</text>
+<path d="M306 310.470 V312.488 M303 310.470 h6 M303 312.488 h6" stroke="#1565c0" fill="none"/>
+<circle cx="306" cy="311.479" r="2.6" fill="#1565c0"/>
+<text transform="translate(306,353) rotate(65)" font-size="9">16/q2/p128</text>
+<path d="M327 242.323 V246.688 M324 242.323 h6 M324 246.688 h6" stroke="#1565c0" fill="none"/>
+<circle cx="327" cy="244.506" r="2.6" fill="#1565c0"/>
+<text transform="translate(327,353) rotate(65)" font-size="9">256/q0/p1</text>
+<path d="M348 118.923 V153.255 M345 118.923 h6 M345 153.255 h6" stroke="#1565c0" fill="none"/>
+<circle cx="348" cy="136.089" r="2.6" fill="#1565c0"/>
+<text transform="translate(348,353) rotate(65)" font-size="9">256/q0/p16</text>
+<path d="M369 120.707 V159.485 M366 120.707 h6 M366 159.485 h6" stroke="#1565c0" fill="none"/>
+<circle cx="369" cy="140.096" r="2.6" fill="#1565c0"/>
+<text transform="translate(369,353) rotate(65)" font-size="9">256/q0/p64</text>
+<path d="M390 126.264 V157.996 M387 126.264 h6 M387 157.996 h6" stroke="#1565c0" fill="none"/>
+<circle cx="390" cy="142.130" r="2.6" fill="#1565c0"/>
+<text transform="translate(390,353) rotate(65)" font-size="9">256/q0/p128</text>
+<path d="M411 305.598 V306.090 M408 305.598 h6 M408 306.090 h6" stroke="#1565c0" fill="none"/>
+<circle cx="411" cy="305.844" r="2.6" fill="#1565c0"/>
+<text transform="translate(411,353) rotate(65)" font-size="9">256/q1/p1</text>
+<path d="M432 262.764 V273.297 M429 262.764 h6 M429 273.297 h6" stroke="#1565c0" fill="none"/>
+<circle cx="432" cy="268.031" r="2.6" fill="#1565c0"/>
+<text transform="translate(432,353) rotate(65)" font-size="9">256/q1/p16</text>
+<path d="M453 257.990 V270.292 M450 257.990 h6 M450 270.292 h6" stroke="#1565c0" fill="none"/>
+<circle cx="453" cy="264.141" r="2.6" fill="#1565c0"/>
+<text transform="translate(453,353) rotate(65)" font-size="9">256/q1/p64</text>
+<path d="M474 263.810 V267.934 M471 263.810 h6 M471 267.934 h6" stroke="#1565c0" fill="none"/>
+<circle cx="474" cy="265.872" r="2.6" fill="#1565c0"/>
+<text transform="translate(474,353) rotate(65)" font-size="9">256/q1/p128</text>
+<path d="M495 327.752 V328.296 M492 327.752 h6 M492 328.296 h6" stroke="#1565c0" fill="none"/>
+<circle cx="495" cy="328.024" r="2.6" fill="#1565c0"/>
+<text transform="translate(495,353) rotate(65)" font-size="9">256/q2/p1</text>
+<path d="M516 309.725 V313.568 M513 309.725 h6 M513 313.568 h6" stroke="#1565c0" fill="none"/>
+<circle cx="516" cy="311.646" r="2.6" fill="#1565c0"/>
+<text transform="translate(516,353) rotate(65)" font-size="9">256/q2/p16</text>
+<path d="M537 310.992 V313.320 M534 310.992 h6 M534 313.320 h6" stroke="#1565c0" fill="none"/>
+<circle cx="537" cy="312.156" r="2.6" fill="#1565c0"/>
+<text transform="translate(537,353) rotate(65)" font-size="9">256/q2/p64</text>
+<path d="M558 311.259 V311.535 M555 311.259 h6 M555 311.535 h6" stroke="#1565c0" fill="none"/>
+<circle cx="558" cy="311.397" r="2.6" fill="#1565c0"/>
+<text transform="translate(558,353) rotate(65)" font-size="9">256/q2/p128</text>
+<text x="595" y="50">Mosquitto; шкала панели от 0 до 68650 RPS</text>
+<path d="M640 80 V340 H1145" fill="none" stroke="#777"/>
+<text x="595" y="343.000" font-size="9">0</text>
+<text x="595" y="279.250" font-size="9">17163</text>
+<text x="595" y="215.500" font-size="9">34325</text>
+<text x="595" y="151.750" font-size="9">51488</text>
+<text x="595" y="88.000" font-size="9">68650</text>
+<path d="M650 213.175 V215.837 M647 213.175 h6 M647 215.837 h6" stroke="#1565c0" fill="none"/>
+<circle cx="650" cy="214.506" r="2.6" fill="#1565c0"/>
+<text transform="translate(650,353) rotate(65)" font-size="9">16/q0/p1</text>
+<path d="M671 103.927 V156.477 M668 103.927 h6 M668 156.477 h6" stroke="#1565c0" fill="none"/>
+<circle cx="671" cy="130.202" r="2.6" fill="#1565c0"/>
+<text transform="translate(671,353) rotate(65)" font-size="9">16/q0/p16</text>
+<path d="M692 119.091 V150.039 M689 119.091 h6 M689 150.039 h6" stroke="#1565c0" fill="none"/>
+<circle cx="692" cy="134.565" r="2.6" fill="#1565c0"/>
+<text transform="translate(692,353) rotate(65)" font-size="9">16/q0/p64</text>
+<path d="M713 104.742 V171.570 M710 104.742 h6 M710 171.570 h6" stroke="#1565c0" fill="none"/>
+<circle cx="713" cy="138.156" r="2.6" fill="#1565c0"/>
+<text transform="translate(713,353) rotate(65)" font-size="9">16/q0/p128</text>
+<path d="M734 311.075 V313.776 M731 311.075 h6 M731 313.776 h6" stroke="#1565c0" fill="none"/>
+<circle cx="734" cy="312.426" r="2.6" fill="#1565c0"/>
+<text transform="translate(734,353) rotate(65)" font-size="9">16/q1/p1</text>
+<path d="M755 98.940 V185.627 M752 98.940 h6 M752 185.627 h6" stroke="#1565c0" fill="none"/>
+<circle cx="755" cy="142.284" r="2.6" fill="#1565c0"/>
+<text transform="translate(755,353) rotate(65)" font-size="9">16/q1/p16</text>
+<path d="M776 152.883 V183.590 M773 152.883 h6 M773 183.590 h6" stroke="#1565c0" fill="none"/>
+<circle cx="776" cy="168.236" r="2.6" fill="#1565c0"/>
+<text transform="translate(776,353) rotate(65)" font-size="9">16/q1/p64</text>
+<path d="M797 149.248 V186.353 M794 149.248 h6 M794 186.353 h6" stroke="#1565c0" fill="none"/>
+<circle cx="797" cy="167.800" r="2.6" fill="#1565c0"/>
+<text transform="translate(797,353) rotate(65)" font-size="9">16/q1/p128</text>
+<path d="M818 316.725 V319.264 M815 316.725 h6 M815 319.264 h6" stroke="#1565c0" fill="none"/>
+<circle cx="818" cy="317.994" r="2.6" fill="#1565c0"/>
+<text transform="translate(818,353) rotate(65)" font-size="9">16/q2/p1</text>
+<path d="M839 212.054 V221.445 M836 212.054 h6 M836 221.445 h6" stroke="#1565c0" fill="none"/>
+<circle cx="839" cy="216.749" r="2.6" fill="#1565c0"/>
+<text transform="translate(839,353) rotate(65)" font-size="9">16/q2/p16</text>
+<path d="M860 200.550 V222.214 M857 200.550 h6 M857 222.214 h6" stroke="#1565c0" fill="none"/>
+<circle cx="860" cy="211.382" r="2.6" fill="#1565c0"/>
+<text transform="translate(860,353) rotate(65)" font-size="9">16/q2/p64</text>
+<path d="M881 207.316 V211.627 M878 207.316 h6 M878 211.627 h6" stroke="#1565c0" fill="none"/>
+<circle cx="881" cy="209.471" r="2.6" fill="#1565c0"/>
+<text transform="translate(881,353) rotate(65)" font-size="9">16/q2/p128</text>
+<path d="M902 213.829 V223.728 M899 213.829 h6 M899 223.728 h6" stroke="#1565c0" fill="none"/>
+<circle cx="902" cy="218.779" r="2.6" fill="#1565c0"/>
+<text transform="translate(902,353) rotate(65)" font-size="9">256/q0/p1</text>
+<path d="M923 121.244 V157.414 M920 121.244 h6 M920 157.414 h6" stroke="#1565c0" fill="none"/>
+<circle cx="923" cy="139.329" r="2.6" fill="#1565c0"/>
+<text transform="translate(923,353) rotate(65)" font-size="9">256/q0/p16</text>
+<path d="M944 97.143 V161.722 M941 97.143 h6 M941 161.722 h6" stroke="#1565c0" fill="none"/>
+<circle cx="944" cy="129.433" r="2.6" fill="#1565c0"/>
+<text transform="translate(944,353) rotate(65)" font-size="9">256/q0/p64</text>
+<path d="M965 123.095 V168.858 M962 123.095 h6 M962 168.858 h6" stroke="#1565c0" fill="none"/>
+<circle cx="965" cy="145.976" r="2.6" fill="#1565c0"/>
+<text transform="translate(965,353) rotate(65)" font-size="9">256/q0/p128</text>
+<path d="M986 311.455 V313.472 M983 311.455 h6 M983 313.472 h6" stroke="#1565c0" fill="none"/>
+<circle cx="986" cy="312.463" r="2.6" fill="#1565c0"/>
+<text transform="translate(986,353) rotate(65)" font-size="9">256/q1/p1</text>
+<path d="M1007 127.391 V163.480 M1004 127.391 h6 M1004 163.480 h6" stroke="#1565c0" fill="none"/>
+<circle cx="1007" cy="145.435" r="2.6" fill="#1565c0"/>
+<text transform="translate(1007,353) rotate(65)" font-size="9">256/q1/p16</text>
+<path d="M1028 149.906 V205.593 M1025 149.906 h6 M1025 205.593 h6" stroke="#1565c0" fill="none"/>
+<circle cx="1028" cy="177.750" r="2.6" fill="#1565c0"/>
+<text transform="translate(1028,353) rotate(65)" font-size="9">256/q1/p64</text>
+<path d="M1049 115.537 V207.518 M1046 115.537 h6 M1046 207.518 h6" stroke="#1565c0" fill="none"/>
+<circle cx="1049" cy="161.528" r="2.6" fill="#1565c0"/>
+<text transform="translate(1049,353) rotate(65)" font-size="9">256/q1/p128</text>
+<path d="M1070 316.197 V320.787 M1067 316.197 h6 M1067 320.787 h6" stroke="#1565c0" fill="none"/>
+<circle cx="1070" cy="318.492" r="2.6" fill="#1565c0"/>
+<text transform="translate(1070,353) rotate(65)" font-size="9">256/q2/p1</text>
+<path d="M1091 214.701 V225.814 M1088 214.701 h6 M1088 225.814 h6" stroke="#1565c0" fill="none"/>
+<circle cx="1091" cy="220.258" r="2.6" fill="#1565c0"/>
+<text transform="translate(1091,353) rotate(65)" font-size="9">256/q2/p16</text>
+<path d="M1112 209.904 V220.722 M1109 209.904 h6 M1109 220.722 h6" stroke="#1565c0" fill="none"/>
+<circle cx="1112" cy="215.313" r="2.6" fill="#1565c0"/>
+<text transform="translate(1112,353) rotate(65)" font-size="9">256/q2/p64</text>
+<path d="M1133 210.430 V216.471 M1130 210.430 h6 M1130 216.471 h6" stroke="#1565c0" fill="none"/>
+<circle cx="1133" cy="213.451" r="2.6" fill="#1565c0"/>
+<text transform="translate(1133,353) rotate(65)" font-size="9">256/q2/p128</text>
+<text x="20" y="485">ActiveMQ; шкала панели от 0 до 27265 RPS</text>
+<path d="M65 515 V775 H570" fill="none" stroke="#777"/>
+<text x="20" y="778.000" font-size="9">0</text>
+<text x="20" y="714.250" font-size="9">6816</text>
+<text x="20" y="650.500" font-size="9">13633</text>
+<text x="20" y="586.750" font-size="9">20449</text>
+<text x="20" y="523.000" font-size="9">27265</text>
+<path d="M75 532.143 V541.551 M72 532.143 h6 M72 541.551 h6" stroke="#1565c0" fill="none"/>
+<circle cx="75" cy="536.847" r="2.6" fill="#1565c0"/>
+<text transform="translate(75,788) rotate(65)" font-size="9">16/q0/p1</text>
+<path d="M96 662.149 V684.108 M93 662.149 h6 M93 684.108 h6" stroke="#1565c0" fill="none"/>
+<circle cx="96" cy="673.129" r="2.6" fill="#1565c0"/>
+<text transform="translate(96,788) rotate(65)" font-size="9">16/q0/p16</text>
+<path d="M117 671.383 V686.797 M114 671.383 h6 M114 686.797 h6" stroke="#1565c0" fill="none"/>
+<circle cx="117" cy="679.090" r="2.6" fill="#1565c0"/>
+<text transform="translate(117,788) rotate(65)" font-size="9">16/q0/p64</text>
+<path d="M138 638.081 V650.895 M135 638.081 h6 M135 650.895 h6" stroke="#1565c0" fill="none"/>
+<circle cx="138" cy="644.488" r="2.6" fill="#1565c0"/>
+<text transform="translate(138,788) rotate(65)" font-size="9">16/q0/p128</text>
+<path d="M159 701.753 V711.691 M156 701.753 h6 M156 711.691 h6" stroke="#1565c0" fill="none"/>
+<circle cx="159" cy="706.722" r="2.6" fill="#1565c0"/>
+<text transform="translate(159,788) rotate(65)" font-size="9">16/q1/p1</text>
+<path d="M180 702.847 V743.624 M177 702.847 h6 M177 743.624 h6" stroke="#1565c0" fill="none"/>
+<circle cx="180" cy="723.236" r="2.6" fill="#1565c0"/>
+<text transform="translate(180,788) rotate(65)" font-size="9">16/q1/p16</text>
+<path d="M201 704.606 V734.299 M198 704.606 h6 M198 734.299 h6" stroke="#1565c0" fill="none"/>
+<circle cx="201" cy="719.452" r="2.6" fill="#1565c0"/>
+<text transform="translate(201,788) rotate(65)" font-size="9">16/q1/p64</text>
+<path d="M222 724.946 V732.810 M219 724.946 h6 M219 732.810 h6" stroke="#1565c0" fill="none"/>
+<circle cx="222" cy="728.878" r="2.6" fill="#1565c0"/>
+<text transform="translate(222,788) rotate(65)" font-size="9">16/q1/p128</text>
+<path d="M243 723.553 V730.350 M240 723.553 h6 M240 730.350 h6" stroke="#1565c0" fill="none"/>
+<circle cx="243" cy="726.951" r="2.6" fill="#1565c0"/>
+<text transform="translate(243,788) rotate(65)" font-size="9">16/q2/p1</text>
+<path d="M264 720.696 V724.432 M261 720.696 h6 M261 724.432 h6" stroke="#1565c0" fill="none"/>
+<circle cx="264" cy="722.564" r="2.6" fill="#1565c0"/>
+<text transform="translate(264,788) rotate(65)" font-size="9">16/q2/p16</text>
+<path d="M285 710.868 V744.685 M282 710.868 h6 M282 744.685 h6" stroke="#1565c0" fill="none"/>
+<circle cx="285" cy="727.777" r="2.6" fill="#1565c0"/>
+<text transform="translate(285,788) rotate(65)" font-size="9">16/q2/p64</text>
+<path d="M306 722.814 V729.318 M303 722.814 h6 M303 729.318 h6" stroke="#1565c0" fill="none"/>
+<circle cx="306" cy="726.066" r="2.6" fill="#1565c0"/>
+<text transform="translate(306,788) rotate(65)" font-size="9">16/q2/p128</text>
+<path d="M327 547.673 V570.120 M324 547.673 h6 M324 570.120 h6" stroke="#1565c0" fill="none"/>
+<circle cx="327" cy="558.897" r="2.6" fill="#1565c0"/>
+<text transform="translate(327,788) rotate(65)" font-size="9">256/q0/p1</text>
+<path d="M348 670.945 V687.137 M345 670.945 h6 M345 687.137 h6" stroke="#1565c0" fill="none"/>
+<circle cx="348" cy="679.041" r="2.6" fill="#1565c0"/>
+<text transform="translate(348,788) rotate(65)" font-size="9">256/q0/p16</text>
+<path d="M369 694.023 V708.524 M366 694.023 h6 M366 708.524 h6" stroke="#1565c0" fill="none"/>
+<circle cx="369" cy="701.273" r="2.6" fill="#1565c0"/>
+<text transform="translate(369,788) rotate(65)" font-size="9">256/q0/p64</text>
+<path d="M390 690.787 V711.983 M387 690.787 h6 M387 711.983 h6" stroke="#1565c0" fill="none"/>
+<circle cx="390" cy="701.385" r="2.6" fill="#1565c0"/>
+<text transform="translate(390,788) rotate(65)" font-size="9">256/q0/p128</text>
+<path d="M411 703.499 V708.948 M408 703.499 h6 M408 708.948 h6" stroke="#1565c0" fill="none"/>
+<circle cx="411" cy="706.223" r="2.6" fill="#1565c0"/>
+<text transform="translate(411,788) rotate(65)" font-size="9">256/q1/p1</text>
+<path d="M432 700.503 V737.890 M429 700.503 h6 M429 737.890 h6" stroke="#1565c0" fill="none"/>
+<circle cx="432" cy="719.196" r="2.6" fill="#1565c0"/>
+<text transform="translate(432,788) rotate(65)" font-size="9">256/q1/p16</text>
+<path d="M453 671.139 V752.863 M450 671.139 h6 M450 752.863 h6" stroke="#1565c0" fill="none"/>
+<circle cx="453" cy="712.001" r="2.6" fill="#1565c0"/>
+<text transform="translate(453,788) rotate(65)" font-size="9">256/q1/p64</text>
+<path d="M474 692.735 V755.547 M471 692.735 h6 M471 755.547 h6" stroke="#1565c0" fill="none"/>
+<circle cx="474" cy="724.141" r="2.6" fill="#1565c0"/>
+<text transform="translate(474,788) rotate(65)" font-size="9">256/q1/p128</text>
+<path d="M495 722.241 V733.542 M492 722.241 h6 M492 733.542 h6" stroke="#1565c0" fill="none"/>
+<circle cx="495" cy="727.892" r="2.6" fill="#1565c0"/>
+<text transform="translate(495,788) rotate(65)" font-size="9">256/q2/p1</text>
+<path d="M516 709.887 V741.194 M513 709.887 h6 M513 741.194 h6" stroke="#1565c0" fill="none"/>
+<circle cx="516" cy="725.541" r="2.6" fill="#1565c0"/>
+<text transform="translate(516,788) rotate(65)" font-size="9">256/q2/p16</text>
+<path d="M537 719.668 V729.376 M534 719.668 h6 M534 729.376 h6" stroke="#1565c0" fill="none"/>
+<circle cx="537" cy="724.522" r="2.6" fill="#1565c0"/>
+<text transform="translate(537,788) rotate(65)" font-size="9">256/q2/p64</text>
+<path d="M558 720.147 V733.680 M555 720.147 h6 M555 733.680 h6" stroke="#1565c0" fill="none"/>
+<circle cx="558" cy="726.913" r="2.6" fill="#1565c0"/>
+<text transform="translate(558,788) rotate(65)" font-size="9">256/q2/p128</text>
+<text x="595" y="485">EMQX; шкала панели от 0 до 60655 RPS</text>
+<path d="M640 515 V775 H1145" fill="none" stroke="#777"/>
+<text x="595" y="778.000" font-size="9">0</text>
+<text x="595" y="714.250" font-size="9">15164</text>
+<text x="595" y="650.500" font-size="9">30328</text>
+<text x="595" y="586.750" font-size="9">45492</text>
+<text x="595" y="523.000" font-size="9">60655</text>
+<path d="M650 649.263 V680.878 M647 649.263 h6 M647 680.878 h6" stroke="#1565c0" fill="none"/>
+<circle cx="650" cy="665.070" r="2.6" fill="#1565c0"/>
+<text transform="translate(650,788) rotate(65)" font-size="9">16/q0/p1</text>
+<path d="M671 540.813 V608.108 M668 540.813 h6 M668 608.108 h6" stroke="#1565c0" fill="none"/>
+<circle cx="671" cy="574.461" r="2.6" fill="#1565c0"/>
+<text transform="translate(671,788) rotate(65)" font-size="9">16/q0/p16</text>
+<path d="M692 544.086 V586.293 M689 544.086 h6 M689 586.293 h6" stroke="#1565c0" fill="none"/>
+<circle cx="692" cy="565.190" r="2.6" fill="#1565c0"/>
+<text transform="translate(692,788) rotate(65)" font-size="9">16/q0/p64</text>
+<path d="M713 532.143 V583.289 M710 532.143 h6 M710 583.289 h6" stroke="#1565c0" fill="none"/>
+<circle cx="713" cy="557.716" r="2.6" fill="#1565c0"/>
+<text transform="translate(713,788) rotate(65)" font-size="9">16/q0/p128</text>
+<path d="M734 749.446 V750.486 M731 749.446 h6 M731 750.486 h6" stroke="#1565c0" fill="none"/>
+<circle cx="734" cy="749.966" r="2.6" fill="#1565c0"/>
+<text transform="translate(734,788) rotate(65)" font-size="9">16/q1/p1</text>
+<path d="M755 730.437 V734.267 M752 730.437 h6 M752 734.267 h6" stroke="#1565c0" fill="none"/>
+<circle cx="755" cy="732.352" r="2.6" fill="#1565c0"/>
+<text transform="translate(755,788) rotate(65)" font-size="9">16/q1/p16</text>
+<path d="M776 736.111 V739.677 M773 736.111 h6 M773 739.677 h6" stroke="#1565c0" fill="none"/>
+<circle cx="776" cy="737.894" r="2.6" fill="#1565c0"/>
+<text transform="translate(776,788) rotate(65)" font-size="9">16/q1/p64</text>
+<path d="M797 737.656 V739.828 M794 737.656 h6 M794 739.828 h6" stroke="#1565c0" fill="none"/>
+<circle cx="797" cy="738.742" r="2.6" fill="#1565c0"/>
+<text transform="translate(797,788) rotate(65)" font-size="9">16/q1/p128</text>
+<path d="M818 758.081 V759.898 M815 758.081 h6 M815 759.898 h6" stroke="#1565c0" fill="none"/>
+<circle cx="818" cy="758.990" r="2.6" fill="#1565c0"/>
+<text transform="translate(818,788) rotate(65)" font-size="9">16/q2/p1</text>
+<path d="M839 747.408 V750.606 M836 747.408 h6 M836 750.606 h6" stroke="#1565c0" fill="none"/>
+<circle cx="839" cy="749.007" r="2.6" fill="#1565c0"/>
+<text transform="translate(839,788) rotate(65)" font-size="9">16/q2/p16</text>
+<path d="M860 747.090 V752.746 M857 747.090 h6 M857 752.746 h6" stroke="#1565c0" fill="none"/>
+<circle cx="860" cy="749.918" r="2.6" fill="#1565c0"/>
+<text transform="translate(860,788) rotate(65)" font-size="9">16/q2/p64</text>
+<path d="M881 749.482 V751.738 M878 749.482 h6 M878 751.738 h6" stroke="#1565c0" fill="none"/>
+<circle cx="881" cy="750.610" r="2.6" fill="#1565c0"/>
+<text transform="translate(881,788) rotate(65)" font-size="9">16/q2/p128</text>
+<path d="M902 683.577 V694.242 M899 683.577 h6 M899 694.242 h6" stroke="#1565c0" fill="none"/>
+<circle cx="902" cy="688.910" r="2.6" fill="#1565c0"/>
+<text transform="translate(902,788) rotate(65)" font-size="9">256/q0/p1</text>
+<path d="M923 571.853 V592.288 M920 571.853 h6 M920 592.288 h6" stroke="#1565c0" fill="none"/>
+<circle cx="923" cy="582.071" r="2.6" fill="#1565c0"/>
+<text transform="translate(923,788) rotate(65)" font-size="9">256/q0/p16</text>
+<path d="M944 546.972 V570.204 M941 546.972 h6 M941 570.204 h6" stroke="#1565c0" fill="none"/>
+<circle cx="944" cy="558.588" r="2.6" fill="#1565c0"/>
+<text transform="translate(944,788) rotate(65)" font-size="9">256/q0/p64</text>
+<path d="M965 554.277 V567.565 M962 554.277 h6 M962 567.565 h6" stroke="#1565c0" fill="none"/>
+<circle cx="965" cy="560.921" r="2.6" fill="#1565c0"/>
+<text transform="translate(965,788) rotate(65)" font-size="9">256/q0/p128</text>
+<path d="M986 746.238 V752.231 M983 746.238 h6 M983 752.231 h6" stroke="#1565c0" fill="none"/>
+<circle cx="986" cy="749.235" r="2.6" fill="#1565c0"/>
+<text transform="translate(986,788) rotate(65)" font-size="9">256/q1/p1</text>
+<path d="M1007 730.409 V736.571 M1004 730.409 h6 M1004 736.571 h6" stroke="#1565c0" fill="none"/>
+<circle cx="1007" cy="733.490" r="2.6" fill="#1565c0"/>
+<text transform="translate(1007,788) rotate(65)" font-size="9">256/q1/p16</text>
+<path d="M1028 738.058 V739.147 M1025 738.058 h6 M1025 739.147 h6" stroke="#1565c0" fill="none"/>
+<circle cx="1028" cy="738.602" r="2.6" fill="#1565c0"/>
+<text transform="translate(1028,788) rotate(65)" font-size="9">256/q1/p64</text>
+<path d="M1049 701.193 V753.421 M1046 701.193 h6 M1046 753.421 h6" stroke="#1565c0" fill="none"/>
+<circle cx="1049" cy="727.307" r="2.6" fill="#1565c0"/>
+<text transform="translate(1049,788) rotate(65)" font-size="9">256/q1/p128</text>
+<path d="M1070 759.517 V759.633 M1067 759.517 h6 M1067 759.633 h6" stroke="#1565c0" fill="none"/>
+<circle cx="1070" cy="759.575" r="2.6" fill="#1565c0"/>
+<text transform="translate(1070,788) rotate(65)" font-size="9">256/q2/p1</text>
+<path d="M1091 748.288 V750.480 M1088 748.288 h6 M1088 750.480 h6" stroke="#1565c0" fill="none"/>
+<circle cx="1091" cy="749.384" r="2.6" fill="#1565c0"/>
+<text transform="translate(1091,788) rotate(65)" font-size="9">256/q2/p16</text>
+<path d="M1112 748.428 V751.375 M1109 748.428 h6 M1109 751.375 h6" stroke="#1565c0" fill="none"/>
+<circle cx="1112" cy="749.901" r="2.6" fill="#1565c0"/>
+<text transform="translate(1112,788) rotate(65)" font-size="9">256/q2/p64</text>
+<path d="M1133 749.015 V754.570 M1130 749.015 h6 M1130 754.570 h6" stroke="#1565c0" fill="none"/>
+<circle cx="1133" cy="751.793" r="2.6" fill="#1565c0"/>
+<text transform="translate(1133,788) rotate(65)" font-size="9">256/q2/p128</text>
+</g></svg>

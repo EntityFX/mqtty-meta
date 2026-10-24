@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "selection": "targeted six-source technical map, not exhaustive novelty review",
+  "sources": [
+    {
+      "doi": "10.1109/WSC.2011.6147750",
+      "doiRegistryRecord": "doi-registry.json",
+      "id": "S1",
+      "kind": "conferencePaper",
+      "locators": [
+        "printed pp.183-185: validity domain, variables and accuracy bounds",
+        "pp.191-194: operational tests, statistical comparisons and documentation"
+      ],
+      "notEvidenceFor": "acceptance of MqttY thresholds or results",
+      "primaryBodyRead": true,
+      "registrationVerified": true,
+      "url": "https://www.informs-sim.org/wsc11papers/016.pdf",
+      "usedSearchSnippetAsEvidence": false,
+      "verificationRole": "validationMethodology",
+      "versionRead": "WSC2011 proceedings"
+    },
+    {
+      "doi": "10.3390/en14185817",
+      "doiRegistryRecord": "doi-registry.json",
+      "id": "S2",
+      "kind": "authorManuscript",
+      "locators": [
+        "PDF pp.9-10: experimental metrics and sample selection",
+        "PDF pp.14-15: interpretation and limits"
+      ],
+      "metadataUrl": "https://publicatio.bibl.u-szeged.hu/22708/",
+      "notEvidenceFor": "MQTT broker simulator calibration or matching p99",
+      "primaryBodyRead": true,
+      "registrationVerified": true,
+      "url": "https://publicatio.bibl.u-szeged.hu/22708/1/MQTT_Perf_Mishra_MDPI_202109_revised_v2.pdf",
+      "usedSearchSnippetAsEvidence": false,
+      "verificationRole": "nativeBrokerBenchmark",
+      "versionRead": "university repository author version; different pagination from final journal article"
+    },
+    {
+      "doi": "10.1186/s43067-024-00181-x",
+      "doiRegistryRecord": "doi-registry.json",
+      "id": "S3",
+      "kind": "journalPaper",
+      "locators": [
+        "simulation model: OMNeT++/INET; Table5",
+        "Fig.11 and discussion: application outputs and QoS"
+      ],
+      "notEvidenceFor": "calibration of Aedes/Mosquitto/ActiveMQ/EMQX twins against native traces",
+      "primaryBodyRead": true,
+      "registrationVerified": true,
+      "url": "https://link.springer.com/article/10.1186/s43067-024-00181-x",
+      "usedSearchSnippetAsEvidence": false,
+      "verificationRole": "mqttSimulationAndApplicationValidation",
+      "versionRead": "publisher full text"
+    },
+    {
+      "doi": "10.1109/JSAC.2020.3000405",
+      "doiRegistryRecord": "doi-registry.json",
+      "id": "S4",
+      "kind": "authorExtendedVersion",
+      "locators": [
+        "III: model inputs/outputs",
+        "V: simulator-generated training/test data and generalization"
+      ],
+      "metadataUrl": "https://arxiv.org/abs/1910.01508v2",
+      "notEvidenceFor": "numerical comparability between per-path MRE and broker joint pass rates",
+      "primaryBodyRead": true,
+      "registrationVerified": true,
+      "url": "https://arxiv.org/html/1910.01508v2",
+      "usedSearchSnippetAsEvidence": false,
+      "verificationRole": "learnedNetworkModelAccuracy",
+      "versionRead": "arXiv v2; author states extended version of journal paper"
+    },
+    {
+      "doi": "10.3844/jcssp.2022.687.694",
+      "doiRegistryRecord": "doi-registry.json",
+      "id": "S5",
+      "kind": "journalPaper",
+      "locators": [
+        "printed pp.688-691: core, mesh membership, beacon, No Local, LRU",
+        "pp.692-694: evaluation setup and delay results"
+      ],
+      "metadataUrl": "https://thescipub.com/abstract/jcssp.2022.687.694",
+      "notEvidenceFor": "equivalence of static flooding MqttY application or verified fault tolerance",
+      "primaryBodyRead": true,
+      "registrationVerified": true,
+      "url": "https://thescipub.com/pdf/jcssp.2022.687.694.pdf",
+      "usedSearchSnippetAsEvidence": false,
+      "verificationRole": "selfOrganizingMqttFederation",
+      "versionRead": "publisher PDF"
+    },
+    {
+      "doi": null,
+      "id": "S6",
+      "kind": "officialDocumentation",
+      "locators": [
+        "bridge topic directions and prefix mapping",
+        "try_private and loop warning"
+      ],
+      "notEvidenceFor": "measured superiority of MqttRelay over native Mosquitto bridges",
+      "primaryBodyRead": true,
+      "registrationVerified": null,
+      "url": "https://mosquitto.org/man/mosquitto-conf-5.html",
+      "usedSearchSnippetAsEvidence": false,
+      "verificationRole": "nativeBridgeConfigurationMechanism",
+      "versionRead": "live manual; not frozen to locally installed broker version"
+    }
+  ]
+}

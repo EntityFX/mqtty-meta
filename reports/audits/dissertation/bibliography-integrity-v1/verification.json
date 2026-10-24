@@ -1,0 +1,49 @@
+{
+  "allSourcesUnchanged": true,
+  "allTexAndBibProtectedCount": 61,
+  "auditSha256": "d5b14f7114005c2a4abc0c7f7c2fca5bdab0692fe0f07c5c8b9c754b4a4a4b7d",
+  "counts": {
+    "bibFiles": 3,
+    "bibParseErrors": 0,
+    "bibliographyEntries": 62,
+    "citationOccurrences": 71,
+    "duplicateKeys": 0,
+    "duplicateLabels": 2,
+    "includeEdges": 34,
+    "labelDefinitions": 75,
+    "missingCitations": 4,
+    "missingNociteKeys": 4,
+    "missingOrdinaryCitations": 0,
+    "missingReferences": 0,
+    "nociteOccurrences": 6,
+    "referenceOccurrences": 66,
+    "texFiles": 31,
+    "texParseErrors": 0,
+    "uniqueBibliographyKeys": 62,
+    "uniqueCitedKeys": 60
+  },
+  "repeatAuditEqual": true,
+  "runnerSha256": "d937c3dc0ba401b9efb836fbafcd2d885fa10ee3ea51f93019f7bac5a64fdd2b",
+  "testCommand": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tools/dissertation",
+    "-p",
+    "test_audit_bibliography.py",
+    "-v"
+  ],
+  "testExitCode": 0,
+  "testLogSha256": "5754460d70243b9e8994976f6854f79312f56f78bbbe3cec12546e82aced4072",
+  "testRunnerSha256": "06825d8a746afd8bfaa774e54609b89f18b9e0476b29fad1566143fd639a8ec3",
+  "testsPassed": 11,
+  "texToolAvailability": {
+    "biber": null,
+    "kpsewhich": null,
+    "lualatex": null,
+    "pdflatex": null,
+    "xelatex": null
+  }
+}

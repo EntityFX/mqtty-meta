@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="480" viewBox="0 0 920 480">
+<rect width="920" height="480" fill="white"/>
+<rect x="20" y="15" width="880" height="54" rx="6" fill="#e3f2fd" stroke="#456"/>
+<text x="35" y="47" font-family="sans-serif" font-size="16">Натурная калибровка → фиксированный профиль и SHA-256</text>
+<path d="M460 69 v18 l-4 -5 m4 5 l4 -5" fill="none" stroke="#456"/>
+<rect x="20" y="92" width="880" height="54" rx="6" fill="#e3f2fd" stroke="#456"/>
+<text x="35" y="124" font-family="sans-serif" font-size="16">Отдельные натурные измерения: три повтора в точке</text>
+<path d="M460 146 v18 l-4 -5 m4 5 l4 -5" fill="none" stroke="#456"/>
+<rect x="20" y="169" width="880" height="54" rx="6" fill="#e3f2fd" stroke="#456"/>
+<text x="35" y="201" font-family="sans-serif" font-size="16">MqttY: три seed; профиль и контрольный reference фиксированы</text>
+<path d="M460 223 v18 l-4 -5 m4 5 l4 -5" fill="none" stroke="#456"/>
+<rect x="20" y="246" width="880" height="54" rx="6" fill="#e3f2fd" stroke="#456"/>
+<text x="35" y="278" font-family="sans-serif" font-size="16">RPS / ACK p99 / failure / loss → passed / failed / notApplicable</text>
+<path d="M460 300 v18 l-4 -5 m4 5 l4 -5" fill="none" stroke="#456"/>
+<rect x="20" y="323" width="880" height="54" rx="6" fill="#e3f2fd" stroke="#456"/>
+<text x="35" y="355" font-family="sans-serif" font-size="16">Чувствительность tick и окна; шесть точных повторов</text>
+<path d="M460 377 v18 l-4 -5 m4 5 l4 -5" fill="none" stroke="#456"/>
+<rect x="20" y="400" width="880" height="54" rx="6" fill="#e3f2fd" stroke="#456"/>
+<text x="35" y="432" font-family="sans-serif" font-size="16">Таблицы, ошибки, условный разброс; границы выводов</text>
+</svg>

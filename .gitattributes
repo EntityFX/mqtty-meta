@@ -16,3 +16,7 @@
 /tools/status/** -text
 
 /tools/dissertation/probe_qos1_pending.py -text
+/tools/dissertation/*article_figures.py -text
+/tools/dissertation/*bibliography.py -text
+/tools/dissertation/*dissertation_build.py -text
+/tools/web/** -text

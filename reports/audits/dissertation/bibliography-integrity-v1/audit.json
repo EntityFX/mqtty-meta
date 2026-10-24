@@ -1,0 +1,4564 @@
+{
+  "bibParseErrors": [],
+  "bibResources": {
+    "biblio/author": [
+      {
+        "argument": "biblio/author",
+        "command": "bibliography",
+        "line": 41,
+        "path": "biblio/predefined.tex",
+        "target": "biblio/author.bib"
+      },
+      {
+        "argument": "biblio/author",
+        "command": "bibliography",
+        "line": 45,
+        "path": "biblio/predefined.tex",
+        "target": "biblio/author.bib"
+      }
+    ],
+    "biblio/author.bib": [
+      {
+        "argument": "biblio/author.bib",
+        "command": "addbibresource",
+        "line": 131,
+        "path": "biblio/biblatex.tex",
+        "target": "biblio/author.bib"
+      }
+    ],
+    "biblio/external": [
+      {
+        "argument": "biblio/external",
+        "command": "bibliography",
+        "line": 41,
+        "path": "biblio/predefined.tex",
+        "target": "biblio/external.bib"
+      },
+      {
+        "argument": "biblio/external",
+        "command": "bibliography",
+        "line": 49,
+        "path": "biblio/predefined.tex",
+        "target": "biblio/external.bib"
+      }
+    ],
+    "biblio/external.bib": [
+      {
+        "argument": "biblio/external.bib",
+        "command": "addbibresource",
+        "line": 130,
+        "path": "biblio/biblatex.tex",
+        "target": "biblio/external.bib"
+      }
+    ],
+    "biblio/registered.bib": [
+      {
+        "argument": "biblio/registered.bib",
+        "command": "addbibresource",
+        "line": 132,
+        "path": "biblio/biblatex.tex",
+        "target": "biblio/registered.bib"
+      }
+    ]
+  },
+  "citations": [
+    {
+      "command": "cite",
+      "key": "Sharma2018",
+      "line": 2,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Ashton2009",
+      "line": 4,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Foote",
+      "line": 4,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Gershenfeld1999",
+      "line": 4,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "cite",
+      "key": "MQTTv31",
+      "line": 10,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Sinha2025",
+      "line": 14,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Dasari2022",
+      "line": 18,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "cite",
+      "key": "solopiy_simulation_2025",
+      "line": 106,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Alvarez2022",
+      "line": 8,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Kuteinikov2011",
+      "line": 8,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Want2015",
+      "line": 10,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Romkey2017",
+      "line": 10,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Ashton2009",
+      "line": 10,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Wijesinghe2024",
+      "line": 20,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Dieguez2025",
+      "line": 20,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Yagoub2025",
+      "line": 26,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Nast2022",
+      "line": 28,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Just2024",
+      "line": 28,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Dritsas2025",
+      "line": 28,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Ghomi2017",
+      "line": 28,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Uyoata2021",
+      "line": 28,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Dingorkar2024",
+      "line": 30,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Farkas2025",
+      "line": 36,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Koprov2025",
+      "line": 36,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Jennath2018",
+      "line": 59,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Naik2017",
+      "line": 100,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Bormann2012",
+      "line": 102,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Prajapati2021",
+      "line": 104,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "BernersLee1996",
+      "line": 106,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Bziuk2018",
+      "line": 106,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Soni2017",
+      "line": 110,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "MQTTv31",
+      "line": 112,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "MQTTv50",
+      "line": 112,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "MQTTv50",
+      "line": 247,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Belaadel2024",
+      "line": 252,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Wang2023",
+      "line": 281,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Light2017",
+      "line": 283,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "ActiveMQ",
+      "line": 289,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Kashyap2024",
+      "line": 301,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cite",
+      "key": "krylovsk",
+      "line": 9,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cite",
+      "key": "emqtt-bench",
+      "line": 9,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cite",
+      "key": "XMETER",
+      "line": 9,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Halili2008",
+      "line": 11,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Nbomber",
+      "line": 11,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cite",
+      "key": "GheorghePop2020",
+      "line": 34,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cite",
+      "key": "MQTTv31",
+      "line": 64,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Mishra2021",
+      "line": 70,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Piskun2025",
+      "line": 72,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Mishra2021",
+      "line": 122,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Solopiy2024a",
+      "line": 133,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Solopiy2024b",
+      "line": 135,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Mishra2021",
+      "line": 144,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cite",
+      "key": "GheorghePop2020",
+      "line": 181,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cite",
+      "key": "solopiy_choosing_2025",
+      "line": 286,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Ghomi2017",
+      "line": 18,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Kurdi2022",
+      "line": 43,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Gawali2019",
+      "line": 43,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Sylla2023",
+      "line": 83,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Lara2014",
+      "line": 99,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Ribas2022",
+      "line": 125,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Allison2022",
+      "line": 66,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Diana2020",
+      "line": 67,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Nedyalkov2023",
+      "line": 68,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Xamarin",
+      "line": 88,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Kozhin2016",
+      "line": 90,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Egorov",
+      "line": 90,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Solopiy2025",
+      "line": 90,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cite",
+      "key": "progbib1",
+      "line": 91,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Xamarin",
+      "line": 129,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cite",
+      "key": "solopiy_simulation_2025",
+      "line": 453,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cite",
+      "key": "Kozhin2016",
+      "line": 506,
+      "path": "Dissertation/chapter4.tex"
+    }
+  ],
+  "counts": {
+    "bibFiles": 3,
+    "bibParseErrors": 0,
+    "bibliographyEntries": 62,
+    "citationOccurrences": 71,
+    "duplicateKeys": 0,
+    "duplicateLabels": 2,
+    "includeEdges": 34,
+    "labelDefinitions": 75,
+    "missingCitations": 4,
+    "missingNociteKeys": 4,
+    "missingOrdinaryCitations": 0,
+    "missingReferences": 0,
+    "nociteOccurrences": 6,
+    "referenceOccurrences": 66,
+    "texFiles": 31,
+    "texParseErrors": 0,
+    "uniqueBibliographyKeys": 62,
+    "uniqueCitedKeys": 60
+  },
+  "duplicateDoiCandidates": {},
+  "duplicateKeys": {},
+  "duplicateLabels": {
+    "eq:perf_series": [
+      {
+        "command": "label",
+        "key": "eq:perf_series",
+        "line": 468,
+        "path": "Dissertation/chapter4.tex"
+      },
+      {
+        "command": "label",
+        "key": "eq:perf_series",
+        "line": 784,
+        "path": "Dissertation/chapter4.tex"
+      }
+    ],
+    "sec:ch4/sec4": [
+      {
+        "command": "label",
+        "key": "sec:ch4/sec4",
+        "line": 449,
+        "path": "Dissertation/chapter4.tex"
+      },
+      {
+        "command": "label",
+        "key": "sec:ch4/sec4",
+        "line": 788,
+        "path": "Dissertation/chapter4.tex"
+      }
+    ]
+  },
+  "duplicateTitleCandidates": {},
+  "entries": [
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 2,
+          "path": "biblio/author.bib"
+        },
+        "authorvak": {
+          "line": 13,
+          "path": "biblio/author.bib"
+        },
+        "day": {
+          "line": 10,
+          "path": "biblio/author.bib"
+        },
+        "doi": {
+          "line": 11,
+          "path": "biblio/author.bib"
+        },
+        "journal": {
+          "line": 4,
+          "path": "biblio/author.bib"
+        },
+        "language": {
+          "line": 12,
+          "path": "biblio/author.bib"
+        },
+        "month": {
+          "line": 9,
+          "path": "biblio/author.bib"
+        },
+        "number": {
+          "line": 7,
+          "path": "biblio/author.bib"
+        },
+        "pages": {
+          "line": 8,
+          "path": "biblio/author.bib"
+        },
+        "title": {
+          "line": 3,
+          "path": "biblio/author.bib"
+        },
+        "volume": {
+          "line": 6,
+          "path": "biblio/author.bib"
+        },
+        "year": {
+          "line": 5,
+          "path": "biblio/author.bib"
+        }
+      },
+      "fields": {
+        "author": "Солопий, Артем Валерьевич and Классен, Роман Константинович",
+        "authorvak": "true",
+        "day": "19",
+        "doi": "10.33693/2313-223X-2026-13-1-212-221",
+        "journal": "Computational Nanotechnology",
+        "language": "russian",
+        "month": "may",
+        "number": "1",
+        "pages": "212--221",
+        "title": "Симулятор промышленных сетей мониторинга Интернета вещей MqttY: ускорение симуляции больших сетей",
+        "volume": "13",
+        "year": "2026"
+      },
+      "key": "solopiy_mqty_2026",
+      "line": 1,
+      "path": "biblio/author.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "address": {
+          "line": 23,
+          "path": "biblio/author.bib"
+        },
+        "author": {
+          "line": 17,
+          "path": "biblio/author.bib"
+        },
+        "authorconf": {
+          "line": 26,
+          "path": "biblio/author.bib"
+        },
+        "booktitle": {
+          "line": 19,
+          "path": "biblio/author.bib"
+        },
+        "day": {
+          "line": 22,
+          "path": "biblio/author.bib"
+        },
+        "doi": {
+          "line": 24,
+          "path": "biblio/author.bib"
+        },
+        "language": {
+          "line": 25,
+          "path": "biblio/author.bib"
+        },
+        "month": {
+          "line": 21,
+          "path": "biblio/author.bib"
+        },
+        "title": {
+          "line": 18,
+          "path": "biblio/author.bib"
+        },
+        "year": {
+          "line": 20,
+          "path": "biblio/author.bib"
+        }
+      },
+      "fields": {
+        "address": "Sochi, Russia",
+        "author": "Солопий, Артем and Классен, Роман",
+        "authorconf": "true",
+        "booktitle": "2025 International Russian Automation Conference (RusAutoCon)",
+        "day": "7",
+        "doi": "10.1109/rusautocon65989.2025.11177411",
+        "language": "russian",
+        "month": "sep",
+        "title": "Симуляция распределенных сетей Интернета вещей",
+        "year": "2025"
+      },
+      "key": "solopiy_simulation_2025",
+      "line": 16,
+      "path": "biblio/author.bib",
+      "type": "inproceedings"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 30,
+          "path": "biblio/author.bib"
+        },
+        "authorvak": {
+          "line": 41,
+          "path": "biblio/author.bib"
+        },
+        "doi": {
+          "line": 39,
+          "path": "biblio/author.bib"
+        },
+        "issn": {
+          "line": 38,
+          "path": "biblio/author.bib"
+        },
+        "journal": {
+          "line": 32,
+          "path": "biblio/author.bib"
+        },
+        "language": {
+          "line": 40,
+          "path": "biblio/author.bib"
+        },
+        "month": {
+          "line": 37,
+          "path": "biblio/author.bib"
+        },
+        "number": {
+          "line": 35,
+          "path": "biblio/author.bib"
+        },
+        "pages": {
+          "line": 36,
+          "path": "biblio/author.bib"
+        },
+        "title": {
+          "line": 31,
+          "path": "biblio/author.bib"
+        },
+        "volume": {
+          "line": 34,
+          "path": "biblio/author.bib"
+        },
+        "year": {
+          "line": 33,
+          "path": "biblio/author.bib"
+        }
+      },
+      "fields": {
+        "author": "Солопий, А.В. and Классен, Р.К.",
+        "authorvak": "true",
+        "doi": "10.18127/j19997493-202503-04",
+        "issn": "1999-7493",
+        "journal": "Динамика сложных систем - XXI век",
+        "language": "russian",
+        "month": "may",
+        "number": "3",
+        "pages": "44--51",
+        "title": "Выбор брокера сообщений для Интернета вещей на основе нагрузочного тестирования",
+        "volume": "19",
+        "year": "2025"
+      },
+      "key": "solopiy_choosing_2025",
+      "line": 29,
+      "path": "biblio/author.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 3,
+          "path": "biblio/external.bib"
+        },
+        "booktitle": {
+          "line": 5,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 9,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 8,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 4,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 6,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 7,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Sharma, N. and Shamkuwar, M. and Singh, I.",
+        "booktitle": "Internet of Things and Big Data Analytics for Smart Generation",
+        "doi": "10.1007/978-3-030-04203-5_3",
+        "pages": "27--51",
+        "title": "The History, Present and Future with {IoT}",
+        "volume": "154",
+        "year": "2019"
+      },
+      "key": "Sharma2018",
+      "line": 2,
+      "path": "biblio/external.bib",
+      "type": "incollection"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 14,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 15,
+          "path": "biblio/external.bib"
+        },
+        "url": {
+          "line": 16,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Foote, K. D.",
+        "title": "A Brief History of the Internet of Things",
+        "url": "https://www.dataversity.net/brief-history-internet-things/"
+      },
+      "key": "Foote",
+      "line": 13,
+      "path": "biblio/external.bib",
+      "type": "online"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 21,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 23,
+          "path": "biblio/external.bib"
+        },
+        "number": {
+          "line": 25,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 27,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 22,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 24,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 26,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Ashton, K.",
+        "journal": "RFID Journal",
+        "number": "7",
+        "pages": "97--114",
+        "title": "That 'Internet of Things' Thing",
+        "volume": "22",
+        "year": "2009"
+      },
+      "key": "Ashton2009",
+      "line": 20,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 32,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 36,
+          "path": "biblio/external.bib"
+        },
+        "publisher": {
+          "line": 34,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 33,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 35,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Gershenfeld, N. A.",
+        "doi": "10.2307/20049565",
+        "publisher": "Henry Holt",
+        "title": "When Things Start to Think",
+        "year": "1999"
+      },
+      "key": "Gershenfeld1999",
+      "line": 31,
+      "path": "biblio/external.bib",
+      "type": "book"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 41,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 42,
+          "path": "biblio/external.bib"
+        },
+        "url": {
+          "line": 44,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 43,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "{OASIS}",
+        "title": "{MQTT} Version 3.1",
+        "url": "http://docs.oasis-open.org/mqtt/mqtt/v3",
+        "year": "2014"
+      },
+      "key": "MQTTv31",
+      "line": 40,
+      "path": "biblio/external.bib",
+      "type": "misc"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 49,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 50,
+          "path": "biblio/external.bib"
+        },
+        "url": {
+          "line": 52,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 51,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Sinha, S.",
+        "title": "State of {IoT} 2025: Number of connected {IoT} devices growing 14\\% to 21.1 billion globally",
+        "url": "https://iot-analytics.com/number-connected-iot-devices/",
+        "year": "2025"
+      },
+      "key": "Sinha2025",
+      "line": 48,
+      "path": "biblio/external.bib",
+      "type": "online"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 57,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 64,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 59,
+          "path": "biblio/external.bib"
+        },
+        "number": {
+          "line": 61,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 63,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 58,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 60,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 62,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Dasari, S. and Chilakapati, V. and Keshireddy, S. and Nagumotu, V. and Reddy Kavuluri, H. and Pathani, A.",
+        "doi": "10.63282/3050-9246.IJETCSIT-V3I1P115",
+        "journal": "International Journal of Emerging Trends in Computer Science and Information Technology",
+        "number": "1",
+        "pages": "136--144",
+        "title": "Networking Paradigms for Large-Scale {IoT} Deployments: A Survey on Reliability, Latency, and Scalability",
+        "volume": "3",
+        "year": "2022"
+      },
+      "key": "Dasari2022",
+      "line": 56,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 69,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 71,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 74,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 70,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 72,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 73,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Alvarez, J. and Gutierrez, C.",
+        "journal": "AI \\& Society",
+        "pages": "1093--1106",
+        "title": "Cultural, scientific and technical antecedents of the Cybersyn project in Chile",
+        "volume": "37",
+        "year": "2022"
+      },
+      "key": "Alvarez2022",
+      "line": 68,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 79,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 80,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 81,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Кутейников, А. В.",
+        "title": "Проект общегосударственной автоматизированной системы управления советской экономикой (ОГАС) и проблемы его реализации в 1960-1980 гг.",
+        "year": "2011"
+      },
+      "key": "Kuteinikov2011",
+      "line": 78,
+      "path": "biblio/external.bib",
+      "type": "misc"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 86,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 93,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 88,
+          "path": "biblio/external.bib"
+        },
+        "number": {
+          "line": 90,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 92,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 87,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 89,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 91,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Want, R. and Schilit, B. N. and Jenson, S.",
+        "doi": "10.1109/MC.2015.12",
+        "journal": "Computer",
+        "number": "1",
+        "pages": "28--35",
+        "title": "Enabling the Internet of Things",
+        "volume": "48",
+        "year": "2015"
+      },
+      "key": "Want2015",
+      "line": 85,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 98,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 105,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 100,
+          "path": "biblio/external.bib"
+        },
+        "number": {
+          "line": 102,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 104,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 99,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 101,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 103,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Romkey, J.",
+        "doi": "10.1109/MCE.2016.2614740",
+        "journal": "IEEE Consumer Electronics Magazine",
+        "number": "1",
+        "pages": "116--119",
+        "title": "Toast of the {IoT}: The 1990 Interop Internet Toaster",
+        "volume": "6",
+        "year": "2017"
+      },
+      "key": "Romkey2017",
+      "line": 97,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "address": {
+          "line": 113,
+          "path": "biblio/external.bib"
+        },
+        "author": {
+          "line": 110,
+          "path": "biblio/external.bib"
+        },
+        "booktitle": {
+          "line": 112,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 116,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 115,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 111,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 114,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "address": "Colombo, Sri Lanka",
+        "author": "Wijesinghe, S. and Nanayakkara, I. and Pathirana, R.",
+        "booktitle": "International Research Conference on Smart Computing and Systems Engineering (SCSE)",
+        "doi": "10.1109/SCSE61872.2024.10550684",
+        "pages": "1--5",
+        "title": "Impact of {IoT} Integration on Enterprise Resource Planning ({ERP}) Systems: A Comprehensive Literature Analysis",
+        "year": "2024"
+      },
+      "key": "Wijesinghe2024",
+      "line": 109,
+      "path": "biblio/external.bib",
+      "type": "inproceedings"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 121,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 127,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 123,
+          "path": "biblio/external.bib"
+        },
+        "number": {
+          "line": 125,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 122,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 124,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 126,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Dieguez, T. and Machado, J.",
+        "doi": "10.4108/dtip.9768",
+        "journal": "EAI Endorsed Transactions on Digital Transformation of Industrial Processes",
+        "number": "3",
+        "title": "Reviewing Manufacturing Execution System in Industry 4.0: A Global Approach",
+        "volume": "1",
+        "year": "2025"
+      },
+      "key": "Dieguez2025",
+      "line": 120,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 132,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 138,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 134,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 137,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 133,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 135,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 136,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Yagoub, M. A. and Mohandes, M. and El-Gorashi, S. and Alshaer, A.",
+        "doi": "10.1016/j.iot.2025.101703",
+        "journal": "Internet of Things",
+        "pages": "101703",
+        "title": "Survey of {IoT} multi-protocol gateways: Architectures, protocols and cybersecurity",
+        "volume": "3",
+        "year": "2025"
+      },
+      "key": "Yagoub2025",
+      "line": 131,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 143,
+          "path": "biblio/external.bib"
+        },
+        "booktitle": {
+          "line": 145,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 147,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 144,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 146,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Nast, M. and Raddatz, H. and Rother, B. and Golatowski, F. and Timmermann, D.",
+        "booktitle": "Proceedings of the 12th International Conference on the Internet of Things",
+        "pages": "193--200",
+        "title": "A Survey and Comparison of Publish/Subscribe Protocols for the Industrial Internet of Things ({IIoT})",
+        "year": "2022"
+      },
+      "key": "Nast2022",
+      "line": 142,
+      "path": "biblio/external.bib",
+      "type": "inproceedings"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 152,
+          "path": "biblio/external.bib"
+        },
+        "booktitle": {
+          "line": 154,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 157,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 156,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 153,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 155,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Just, V.",
+        "booktitle": "IECON 2024 -- 50th Annual Conference of the IEEE Industrial Electronics Society",
+        "doi": "10.1109/IECON55916.2024.10905285",
+        "pages": "1--6",
+        "title": "Deployment Architectures of {MQTT} Brokers in Event-Driven Industrial Internet of Things",
+        "year": "2024"
+      },
+      "key": "Just2024",
+      "line": 151,
+      "path": "biblio/external.bib",
+      "type": "inproceedings"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 162,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 169,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 164,
+          "path": "biblio/external.bib"
+        },
+        "number": {
+          "line": 166,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 168,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 163,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 165,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 167,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Dritsas, E. and Trigka, M.",
+        "doi": "10.3390/bdcc9020044",
+        "journal": "Big Data and Cognitive Computing",
+        "number": "2",
+        "pages": "44",
+        "title": "A Survey on the Applications of Cloud Computing in the Industrial Internet of Things",
+        "volume": "9",
+        "year": "2025"
+      },
+      "key": "Dritsas2025",
+      "line": 161,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 174,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 180,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 176,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 179,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 175,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 177,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 178,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Ghomi, E. J. and Rahmani, A. M. and Qader, N. N.",
+        "doi": "10.1016/j.jnca.2016.04.016",
+        "journal": "Journal of Network and Computer Applications",
+        "pages": "50--71",
+        "title": "Load-balancing algorithms in cloud computing: A survey",
+        "volume": "88",
+        "year": "2017"
+      },
+      "key": "Ghomi2017",
+      "line": 173,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 185,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 191,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 187,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 190,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 186,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 188,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 189,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Uyoata, U. and Mwangama, J. and Adeogun, R.",
+        "doi": "10.1109/ACCESS.2021.3112940",
+        "journal": "IEEE Access",
+        "pages": "132675--132704",
+        "title": "Relaying in the Internet of Things ({IoT}): A Survey",
+        "volume": "9",
+        "year": "2021"
+      },
+      "key": "Uyoata2021",
+      "line": 184,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "address": {
+          "line": 199,
+          "path": "biblio/external.bib"
+        },
+        "author": {
+          "line": 196,
+          "path": "biblio/external.bib"
+        },
+        "booktitle": {
+          "line": 198,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 201,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 197,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 200,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "address": "Bali",
+        "author": "Dingorkar, S. and Kalshetti, S. and Shah, Y. and Lahane, P.",
+        "booktitle": "2024 First International Conference on Technological Innovations and Advance Computing (TIACOMP)",
+        "pages": "507--513",
+        "title": "Real-Time Data Processing Architectures for {IoT} Applications: A Comprehensive Review",
+        "year": "2024"
+      },
+      "key": "Dingorkar2024",
+      "line": 195,
+      "path": "biblio/external.bib",
+      "type": "inproceedings"
+    },
+    {
+      "fieldLocations": {
+        "address": {
+          "line": 209,
+          "path": "biblio/external.bib"
+        },
+        "author": {
+          "line": 206,
+          "path": "biblio/external.bib"
+        },
+        "booktitle": {
+          "line": 208,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 211,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 207,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 210,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "address": "Porto",
+        "author": "Farkas, T. and Guo, W. and Mboudia, O. and Garmaev, I. and Miny, T. and Kleinert, T.",
+        "booktitle": "2025 IEEE 30th International Conference on Emerging Technologies and Factory Automation (ETFA)",
+        "pages": "1--8",
+        "title": "Toward Low-Code Industrial Data Integration through Asset Administration Shell-Based Flow Generation in {Node-RED}",
+        "year": "2025"
+      },
+      "key": "Farkas2025",
+      "line": 205,
+      "path": "biblio/external.bib",
+      "type": "inproceedings"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 216,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 218,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 221,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 217,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 219,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 220,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Koprov, P. and Starly, B.",
+        "journal": "Manufacturing Letters",
+        "pages": "1254--1265",
+        "title": "Industrial metaverse meets {IIoT}: low-code platforms for machine-to-machine and human-to-machine integration",
+        "volume": "44",
+        "year": "2025"
+      },
+      "key": "Koprov2025",
+      "line": 215,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 226,
+          "path": "biblio/external.bib"
+        },
+        "booktitle": {
+          "line": 228,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 233,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 232,
+          "path": "biblio/external.bib"
+        },
+        "series": {
+          "line": 229,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 227,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 230,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 231,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Jennath, H. and Adarsh, S. and Anoop, V.",
+        "booktitle": "Integrated Intelligent Computing, Communication and Security",
+        "doi": "10.1007/978-981-10-8797-4_34",
+        "pages": "333--341",
+        "series": "Studies in Computational Intelligence",
+        "title": "Distributed {IoT} and Applications: A Survey",
+        "volume": "771",
+        "year": "2018"
+      },
+      "key": "Jennath2018",
+      "line": 225,
+      "path": "biblio/external.bib",
+      "type": "incollection"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 238,
+          "path": "biblio/external.bib"
+        },
+        "booktitle": {
+          "line": 240,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 242,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 239,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 241,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Naik, N.",
+        "booktitle": "2017 IEEE International Systems Engineering Symposium (ISSE)",
+        "pages": "1--7",
+        "title": "Choice of effective messaging protocols for {IoT} systems: {MQTT}, {CoAP}, {AMQP} and {HTTP}",
+        "year": "2017"
+      },
+      "key": "Naik2017",
+      "line": 237,
+      "path": "biblio/external.bib",
+      "type": "inproceedings"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 247,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 254,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 249,
+          "path": "biblio/external.bib"
+        },
+        "number": {
+          "line": 251,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 253,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 248,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 250,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 252,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Bormann, C. and Castellani, A. and Shelby, Z.",
+        "doi": "10.1109/MIC.2012.29",
+        "journal": "IEEE Internet Computing",
+        "number": "2",
+        "pages": "62--67",
+        "title": "{CoAP}: An Application Protocol for Billions of Tiny Internet Nodes",
+        "volume": "16",
+        "year": "2012"
+      },
+      "key": "Bormann2012",
+      "line": 246,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "address": {
+          "line": 262,
+          "path": "biblio/external.bib"
+        },
+        "author": {
+          "line": 259,
+          "path": "biblio/external.bib"
+        },
+        "booktitle": {
+          "line": 261,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 265,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 264,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 260,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 263,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "address": "Glasgow",
+        "author": "Prajapati, A.",
+        "booktitle": "2021 International Conference on Smart Applications, Communications and Networking (SmartNets)",
+        "doi": "10.1109/SmartNets50376.2021.9555419",
+        "pages": "1--6",
+        "title": "{AMQP} and beyond",
+        "year": "2021"
+      },
+      "key": "Prajapati2021",
+      "line": 258,
+      "path": "biblio/external.bib",
+      "type": "inproceedings"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 270,
+          "path": "biblio/external.bib"
+        },
+        "institution": {
+          "line": 274,
+          "path": "biblio/external.bib"
+        },
+        "number": {
+          "line": 272,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 271,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 273,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Berners-Lee, T. and Fielding, R. and Frystyk, H.",
+        "institution": "IETF",
+        "number": "RFC 1945",
+        "title": "Hypertext Transfer Protocol -- {HTTP/1.0}",
+        "year": "1996"
+      },
+      "key": "BernersLee1996",
+      "line": 269,
+      "path": "biblio/external.bib",
+      "type": "techreport"
+    },
+    {
+      "fieldLocations": {
+        "address": {
+          "line": 282,
+          "path": "biblio/external.bib"
+        },
+        "author": {
+          "line": 279,
+          "path": "biblio/external.bib"
+        },
+        "booktitle": {
+          "line": 281,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 284,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 280,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 283,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "address": "Opatija",
+        "author": "Bziuk, W. and Phung, C. and Dizdarević, J. and Jukan, A.",
+        "booktitle": "2018 41st International Convention on Information and Communication Technology, Electronics and Microelectronics (MIPRO)",
+        "pages": "0350--0355",
+        "title": "On {HTTP} performance in {IoT} applications: An analysis of latency and throughput",
+        "year": "2018"
+      },
+      "key": "Bziuk2018",
+      "line": 278,
+      "path": "biblio/external.bib",
+      "type": "inproceedings"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 289,
+          "path": "biblio/external.bib"
+        },
+        "booktitle": {
+          "line": 291,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 290,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 292,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 293,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Soni, D. and Makwana, A.",
+        "booktitle": "International Conference on Telecommunication, Power Analysis and Computing Techniques (ICTPACT-2017)",
+        "title": "A survey on {MQTT}: a protocol of Internet of Things ({IoT})",
+        "volume": "20",
+        "year": "2017"
+      },
+      "key": "Soni2017",
+      "line": 288,
+      "path": "biblio/external.bib",
+      "type": "inproceedings"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 298,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 299,
+          "path": "biblio/external.bib"
+        },
+        "url": {
+          "line": 301,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 300,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "{OASIS}",
+        "title": "{MQTT} Version 5.0",
+        "url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.pdf",
+        "year": "2019"
+      },
+      "key": "MQTTv50",
+      "line": 297,
+      "path": "biblio/external.bib",
+      "type": "misc"
+    },
+    {
+      "fieldLocations": {
+        "address": {
+          "line": 309,
+          "path": "biblio/external.bib"
+        },
+        "author": {
+          "line": 306,
+          "path": "biblio/external.bib"
+        },
+        "booktitle": {
+          "line": 308,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 311,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 307,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 310,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "address": "Almeria",
+        "author": "Belaadel, Y. and Moudni, H. and Zougagh, H. and Er-rouidi, M. and Elouaham, S.",
+        "booktitle": "10th International Conference on Optimization and Applications (ICOA)",
+        "pages": "1--6",
+        "title": "{IoT} Security: Trends, Challenges, and Solutions for {MQTT}-Based Devices",
+        "year": "2024"
+      },
+      "key": "Belaadel2024",
+      "line": 305,
+      "path": "biblio/external.bib",
+      "type": "inproceedings"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 316,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 317,
+          "path": "biblio/external.bib"
+        },
+        "url": {
+          "line": 319,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 318,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Wang, F.",
+        "title": "Comparison of Open Source {MQTT} Brokers 2023",
+        "url": "https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023",
+        "year": "2023"
+      },
+      "key": "Wang2023",
+      "line": 315,
+      "path": "biblio/external.bib",
+      "type": "online"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 324,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 331,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 326,
+          "path": "biblio/external.bib"
+        },
+        "number": {
+          "line": 328,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 330,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 325,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 327,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 329,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Light, R.",
+        "doi": "10.21105/joss.00265",
+        "journal": "The Journal of Open Source Software",
+        "number": "13",
+        "pages": "265",
+        "title": "Mosquitto: server and client implementation of the {MQTT} protocol",
+        "volume": "2",
+        "year": "2017"
+      },
+      "key": "Light2017",
+      "line": 323,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 336,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 337,
+          "path": "biblio/external.bib"
+        },
+        "url": {
+          "line": 338,
+          "path": "biblio/external.bib"
+        },
+        "urldate": {
+          "line": 339,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "{Apache Software Foundation}",
+        "title": "Apache ActiveMQ Documentation. {MQTT}",
+        "url": "https://activemq.apache.org/mqtt",
+        "urldate": "2026-05-31"
+      },
+      "key": "ActiveMQ",
+      "line": 335,
+      "path": "biblio/external.bib",
+      "type": "online"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 344,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 346,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 345,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 347,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 348,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Kashyap, M. and Dev, A. and Sharma, V.",
+        "journal": "e-Prime -- Advances in Electrical Engineering, Electronics and Energy",
+        "title": "Implementation and analysis of {EMQX} broker for {MQTT} protocol in the Internet of Things",
+        "volume": "10",
+        "year": "2024"
+      },
+      "key": "Kashyap2024",
+      "line": 343,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 353,
+          "path": "biblio/external.bib"
+        },
+        "howpublished": {
+          "line": 355,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 354,
+          "path": "biblio/external.bib"
+        },
+        "url": {
+          "line": 356,
+          "path": "biblio/external.bib"
+        },
+        "urldate": {
+          "line": 357,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "krylovsk",
+        "howpublished": "GitHub repository",
+        "title": "mqtt-benchmark: {MQTT} broker benchmarking tool",
+        "url": "https://github.com/krylovsk/mqtt-benchmark",
+        "urldate": "2026-05-28"
+      },
+      "key": "krylovsk",
+      "line": 352,
+      "path": "biblio/external.bib",
+      "type": "misc"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 362,
+          "path": "biblio/external.bib"
+        },
+        "howpublished": {
+          "line": 364,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 363,
+          "path": "biblio/external.bib"
+        },
+        "url": {
+          "line": 365,
+          "path": "biblio/external.bib"
+        },
+        "urldate": {
+          "line": 366,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "{EMQX}",
+        "howpublished": "GitHub repository",
+        "title": "emqtt-bench: Lightweight {MQTT} v5.0 benchmark tool written in Erlang",
+        "url": "https://github.com/emqx/emqtt-bench",
+        "urldate": "2026-05-28"
+      },
+      "key": "emqtt-bench",
+      "line": 361,
+      "path": "biblio/external.bib",
+      "type": "misc"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 371,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 372,
+          "path": "biblio/external.bib"
+        },
+        "url": {
+          "line": 374,
+          "path": "biblio/external.bib"
+        },
+        "urldate": {
+          "line": 375,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 373,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "{EMQX}",
+        "title": "{XMETER}: Fully managed Mqtt Load Testing Service",
+        "url": "https://www.emqx.com/en/products/xmeter",
+        "urldate": "2026-05-28",
+        "year": "2023"
+      },
+      "key": "XMETER",
+      "line": 370,
+      "path": "biblio/external.bib",
+      "type": "online"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 380,
+          "path": "biblio/external.bib"
+        },
+        "publisher": {
+          "line": 382,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 381,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 383,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Halili, E. H.",
+        "publisher": "Packt Publishing",
+        "title": "Apache {JMeter}",
+        "year": "2008"
+      },
+      "key": "Halili2008",
+      "line": 379,
+      "path": "biblio/external.bib",
+      "type": "book"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 388,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 389,
+          "path": "biblio/external.bib"
+        },
+        "url": {
+          "line": 390,
+          "path": "biblio/external.bib"
+        },
+        "urldate": {
+          "line": 391,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "{NBomber}",
+        "title": "Overview: {Nbomber}",
+        "url": "https://nbomber.com/docs/getting-started/overview/",
+        "urldate": "2026-05-28"
+      },
+      "key": "Nbomber",
+      "line": 387,
+      "path": "biblio/external.bib",
+      "type": "online"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 396,
+          "path": "biblio/external.bib"
+        },
+        "booktitle": {
+          "line": 398,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 401,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 400,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 397,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 399,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Gheorghe-Pop, I. D. and Kaiser, A. and Rennoch, A. and Hackel, S.",
+        "booktitle": "2020 IEEE 20th International Conference on Software Quality, Reliability and Security Companion (QRS-C)",
+        "doi": "10.1007/978-3-319-99516-8_9",
+        "pages": "506--513",
+        "title": "A Performance Benchmarking Methodology for {MQTT} Broker Implementations",
+        "year": "2020"
+      },
+      "key": "GheorghePop2020",
+      "line": 395,
+      "path": "biblio/external.bib",
+      "type": "inproceedings"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 406,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 413,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 408,
+          "path": "biblio/external.bib"
+        },
+        "number": {
+          "line": 410,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 412,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 407,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 409,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 411,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Mishra, B. and Mishra, B. and Kertesz, A.",
+        "doi": "10.3390/en14185817",
+        "journal": "Energies",
+        "number": "18",
+        "pages": "5817",
+        "title": "Stress-Testing {MQTT} Brokers: A Comparative Analysis of Performance Measurements",
+        "volume": "14",
+        "year": "2021"
+      },
+      "key": "Mishra2021",
+      "line": 405,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 418,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 424,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 420,
+          "path": "biblio/external.bib"
+        },
+        "number": {
+          "line": 421,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 423,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 419,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 422,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Пискун, Е. and Котько, Е.",
+        "doi": "10.21122/2309-4923-2025-3-29-33",
+        "journal": "Системный анализ и прикладная информатика",
+        "number": "3",
+        "pages": "29--33",
+        "title": "Анализ производительности и устойчивости системы мониторинга платформы электронной коммерции на основе Prometheus и Grafana",
+        "year": "2025"
+      },
+      "key": "Piskun2025",
+      "line": 417,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 429,
+          "path": "biblio/external.bib"
+        },
+        "howpublished": {
+          "line": 431,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 430,
+          "path": "biblio/external.bib"
+        },
+        "url": {
+          "line": 433,
+          "path": "biblio/external.bib"
+        },
+        "urldate": {
+          "line": 434,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 432,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Solopiy, A.",
+        "howpublished": "GitHub repository",
+        "title": "{EntityFX/MqttBenchmark}: The topic listener",
+        "url": "https://github.com/EntityFX/MqttBenchmark/tree/main/src/EntityFX.MqttBenchmark.Counters",
+        "urldate": "2026-05-28",
+        "year": "2024"
+      },
+      "key": "Solopiy2024a",
+      "line": 428,
+      "path": "biblio/external.bib",
+      "type": "misc"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 439,
+          "path": "biblio/external.bib"
+        },
+        "howpublished": {
+          "line": 441,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 440,
+          "path": "biblio/external.bib"
+        },
+        "url": {
+          "line": 443,
+          "path": "biblio/external.bib"
+        },
+        "urldate": {
+          "line": 444,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 442,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Солопий, А.",
+        "howpublished": "GitHub repository",
+        "title": "Результаты измерения производительности брокеров {MQTT}",
+        "url": "https://github.com/EntityFX/MqttBenchmark/tree/main/results",
+        "urldate": "2026-05-31",
+        "year": "2024"
+      },
+      "key": "Solopiy2024b",
+      "line": 438,
+      "path": "biblio/external.bib",
+      "type": "misc"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 449,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 456,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 451,
+          "path": "biblio/external.bib"
+        },
+        "number": {
+          "line": 453,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 455,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 450,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 452,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 454,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Kurdi, H. and Thayananthan, V.",
+        "doi": "10.3390/app12147173",
+        "journal": "Applied Sciences",
+        "number": "14",
+        "pages": "7173",
+        "title": "A Multi-Tier {MQTT} Architecture with Multiple Brokers Based on Fog Computing for Securing Industrial {IoT}",
+        "volume": "12",
+        "year": "2022"
+      },
+      "key": "Kurdi2022",
+      "line": 448,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 461,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 463,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 466,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 462,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 464,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 465,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Gawali, S. and Deshmukh, M.",
+        "journal": "Energy Procedia",
+        "pages": "222--226",
+        "title": "Energy Autonomy in {IoT} Technologies",
+        "volume": "156",
+        "year": "2019"
+      },
+      "key": "Gawali2019",
+      "line": 460,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "address": {
+          "line": 474,
+          "path": "biblio/external.bib"
+        },
+        "author": {
+          "line": 471,
+          "path": "biblio/external.bib"
+        },
+        "booktitle": {
+          "line": 473,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 476,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 472,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 475,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "address": "Montreal",
+        "author": "Sylla, T. and Singh, R. and Mendiboure, L. and Berger, M. S. and Berbineau, M. and Dittmann, L.",
+        "booktitle": "2023 19th International Conference on Wireless and Mobile Computing, Networking and Communications (WiMob)",
+        "pages": "92--97",
+        "title": "{SoD-MQTT}: A {SDN}-based real-time distributed {MQTT} broker",
+        "year": "2023"
+      },
+      "key": "Sylla2023",
+      "line": 470,
+      "path": "biblio/external.bib",
+      "type": "inproceedings"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 481,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 488,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 483,
+          "path": "biblio/external.bib"
+        },
+        "number": {
+          "line": 485,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 487,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 482,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 484,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 486,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Lara, A. and Kolasani, A. and Ramamurthy, B.",
+        "doi": "10.1109/SURV.2013.081313.00105",
+        "journal": "IEEE Communications Surveys \\& Tutorials",
+        "number": "1",
+        "pages": "493--512",
+        "title": "Network Innovation using {OpenFlow}: A Survey",
+        "volume": "16",
+        "year": "2014"
+      },
+      "key": "Lara2014",
+      "line": 480,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 493,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 500,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 495,
+          "path": "biblio/external.bib"
+        },
+        "number": {
+          "line": 497,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 499,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 494,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 496,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 498,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Ribas, N. K. and Spohn, M. A.",
+        "doi": "10.3844/jcssp.2022.687.694",
+        "journal": "Journal of Computer Science",
+        "number": "7",
+        "pages": "687--694",
+        "title": "A New Approach to a Self-Organizing Federation of {MQTT} Brokers",
+        "volume": "18",
+        "year": "2022"
+      },
+      "key": "Ribas2022",
+      "line": 492,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 505,
+          "path": "biblio/external.bib"
+        },
+        "booktitle": {
+          "line": 507,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 510,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 506,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 508,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 509,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Allison, J.",
+        "booktitle": "Proceedings of the 27th ACM Conference on Innovation and Technology in Computer Science Education",
+        "doi": "10.1145/3502718.3524739",
+        "title": "Simulation-Based Learning via {Cisco} Packet Tracer to Enhance the Teaching of Computer Networks",
+        "volume": "1",
+        "year": "2022"
+      },
+      "key": "Allison2022",
+      "line": 504,
+      "path": "biblio/external.bib",
+      "type": "inproceedings"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 515,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 517,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 520,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 516,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 518,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 519,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Diana, J. D. and Rajeswari, A.",
+        "journal": "Procedia Computer Science",
+        "pages": "2635--2644",
+        "title": "Simulation and Performance Analysis of {CIT} College Campus Network for Realistic Traffic Scenarios using {NETSIM}",
+        "volume": "171",
+        "year": "2020"
+      },
+      "key": "Diana2020",
+      "line": 514,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 525,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 532,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 527,
+          "path": "biblio/external.bib"
+        },
+        "number": {
+          "line": 529,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 531,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 526,
+          "path": "biblio/external.bib"
+        },
+        "volume": {
+          "line": 528,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 530,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Nedyalkov, I.",
+        "doi": "10.3390/computers12050101",
+        "journal": "Computers",
+        "number": "5",
+        "pages": "101",
+        "title": "Application of {GNS3} to study the security of data exchange between power electronic devices and control center",
+        "volume": "12",
+        "year": "2023"
+      },
+      "key": "Nedyalkov2023",
+      "line": 524,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 537,
+          "path": "biblio/external.bib"
+        },
+        "howpublished": {
+          "line": 539,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 538,
+          "path": "biblio/external.bib"
+        },
+        "url": {
+          "line": 541,
+          "path": "biblio/external.bib"
+        },
+        "urldate": {
+          "line": 542,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 540,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "{Xamarin}",
+        "howpublished": "GitHub repository",
+        "title": "Xamarin {MQTT}",
+        "url": "https://github.com/xamarin/mqtt",
+        "urldate": "2026-05-31",
+        "year": "2014"
+      },
+      "key": "Xamarin",
+      "line": 536,
+      "path": "biblio/external.bib",
+      "type": "misc"
+    },
+    {
+      "fieldLocations": {
+        "address": {
+          "line": 550,
+          "path": "biblio/external.bib"
+        },
+        "author": {
+          "line": 547,
+          "path": "biblio/external.bib"
+        },
+        "booktitle": {
+          "line": 549,
+          "path": "biblio/external.bib"
+        },
+        "doi": {
+          "line": 553,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 552,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 548,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 551,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "address": "Moscow",
+        "author": "Kozhin, A. S.",
+        "booktitle": "2016 International Conference on Engineering and Telecommunication (EnT)",
+        "doi": "10.1109/ent.2016.027",
+        "pages": "86--90",
+        "title": "The 5th Generation 28nm 8-Core {VLIW} {Elbrus-8C} Processor Architecture",
+        "year": "2016"
+      },
+      "key": "Kozhin2016",
+      "line": 546,
+      "path": "biblio/external.bib",
+      "type": "inproceedings"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 558,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 560,
+          "path": "biblio/external.bib"
+        },
+        "number": {
+          "line": 561,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 562,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 559,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Егоров, А.",
+        "journal": "Автоматизация и IT в нефтегазовой области",
+        "number": "4",
+        "pages": "48--59",
+        "title": "\"Baikal electronics\" Высокопроизводительные энерго-эффективные процессоры (обзор)"
+      },
+      "key": "Egorov",
+      "line": 557,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 567,
+          "path": "biblio/external.bib"
+        },
+        "howpublished": {
+          "line": 569,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 568,
+          "path": "biblio/external.bib"
+        },
+        "url": {
+          "line": 571,
+          "path": "biblio/external.bib"
+        },
+        "urldate": {
+          "line": 572,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 570,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Solopiy, A.",
+        "howpublished": "GitHub repository",
+        "title": "{EntityFX/mqtty}: {MQTT} network topology simulator",
+        "url": "https://github.com/entityfx/mqtty",
+        "urldate": "2026-05-31",
+        "year": "2025"
+      },
+      "key": "Solopiy2025",
+      "line": 566,
+      "path": "biblio/external.bib",
+      "type": "misc"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 577,
+          "path": "biblio/external.bib"
+        },
+        "journal": {
+          "line": 579,
+          "path": "biblio/external.bib"
+        },
+        "number": {
+          "line": 580,
+          "path": "biblio/external.bib"
+        },
+        "pages": {
+          "line": 582,
+          "path": "biblio/external.bib"
+        },
+        "title": {
+          "line": 578,
+          "path": "biblio/external.bib"
+        },
+        "year": {
+          "line": 581,
+          "path": "biblio/external.bib"
+        }
+      },
+      "fields": {
+        "author": "Ю., И. Т.",
+        "journal": "Новые информационные технологии в автоматизированных системах",
+        "number": "19",
+        "pages": "341--344",
+        "title": "Обзор алгоритмов поиска кратчайшего пути в графе",
+        "year": "2016"
+      },
+      "key": "Yu2016",
+      "line": 576,
+      "path": "biblio/external.bib",
+      "type": "article"
+    },
+    {
+      "fieldLocations": {
+        "author": {
+          "line": 3,
+          "path": "biblio/registered.bib"
+        },
+        "authorprogram": {
+          "line": 16,
+          "path": "biblio/registered.bib"
+        },
+        "date": {
+          "line": 12,
+          "path": "biblio/registered.bib"
+        },
+        "heading": {
+          "line": 2,
+          "path": "biblio/registered.bib"
+        },
+        "holder": {
+          "line": 6,
+          "path": "biblio/registered.bib"
+        },
+        "language": {
+          "line": 15,
+          "path": "biblio/registered.bib"
+        },
+        "media": {
+          "line": 5,
+          "path": "biblio/registered.bib"
+        },
+        "prcountry": {
+          "line": 14,
+          "path": "biblio/registered.bib"
+        },
+        "prnumber": {
+          "line": 13,
+          "path": "biblio/registered.bib"
+        },
+        "publdate": {
+          "line": 11,
+          "path": "biblio/registered.bib"
+        },
+        "reqnumber": {
+          "line": 10,
+          "path": "biblio/registered.bib"
+        },
+        "title": {
+          "line": 4,
+          "path": "biblio/registered.bib"
+        }
+      },
+      "fields": {
+        "author": "Солопий, А. В.",
+        "authorprogram": "yes",
+        "date": "2026-05-18",
+        "heading": "Свидетельство о гос. регистрации программы для {ЭВМ}",
+        "holder": "Федеральное государственное бюджетное\n  образовательное учреждение высшего образования\n  «Казанский национальный исследовательский\n  технический университет им. А.Н. Туполева-КАИ»",
+        "language": "russian",
+        "media": "text",
+        "prcountry": "countryru",
+        "prnumber": "2026664309",
+        "publdate": "2026-05-18",
+        "reqnumber": "2026664539",
+        "title": "Симулятор для моделирования больших сетей Интернета Вещей MqttY"
+      },
+      "key": "progbib1",
+      "line": 1,
+      "path": "biblio/registered.bib",
+      "type": "patent"
+    }
+  ],
+  "entrypoint": "dissertation.tex",
+  "includeCycles": [],
+  "includeGraph": [
+    {
+      "argument": "common/setup",
+      "command": "input",
+      "line": 6,
+      "path": "dissertation.tex",
+      "target": "common/setup.tex"
+    },
+    {
+      "argument": "common/packages",
+      "command": "input",
+      "line": 7,
+      "path": "dissertation.tex",
+      "target": "common/packages.tex"
+    },
+    {
+      "argument": "glyphtounicode.tex",
+      "command": "input",
+      "line": 78,
+      "path": "common/packages.tex",
+      "target": null
+    },
+    {
+      "argument": "glyphtounicode-cmr.tex",
+      "command": "input",
+      "line": 79,
+      "path": "common/packages.tex",
+      "target": null
+    },
+    {
+      "argument": "Dissertation/dispackages",
+      "command": "input",
+      "line": 9,
+      "path": "dissertation.tex",
+      "target": "Dissertation/dispackages.tex"
+    },
+    {
+      "argument": "Dissertation/userpackages",
+      "command": "input",
+      "line": 10,
+      "path": "dissertation.tex",
+      "target": "Dissertation/userpackages.tex"
+    },
+    {
+      "argument": "Dissertation/setup",
+      "command": "input",
+      "line": 12,
+      "path": "dissertation.tex",
+      "target": "Dissertation/setup.tex"
+    },
+    {
+      "argument": "common/newnames",
+      "command": "input",
+      "line": 14,
+      "path": "dissertation.tex",
+      "target": "common/newnames.tex"
+    },
+    {
+      "argument": "common/data",
+      "command": "input",
+      "line": 16,
+      "path": "dissertation.tex",
+      "target": "common/data.tex"
+    },
+    {
+      "argument": "common/fonts",
+      "command": "input",
+      "line": 17,
+      "path": "dissertation.tex",
+      "target": "common/fonts.tex"
+    },
+    {
+      "argument": "common/styles",
+      "command": "input",
+      "line": 18,
+      "path": "dissertation.tex",
+      "target": "common/styles.tex"
+    },
+    {
+      "argument": "Dissertation/disstyles",
+      "command": "input",
+      "line": 19,
+      "path": "dissertation.tex",
+      "target": "Dissertation/disstyles.tex"
+    },
+    {
+      "argument": "Dissertation/userstyles",
+      "command": "input",
+      "line": 20,
+      "path": "dissertation.tex",
+      "target": "Dissertation/userstyles.tex"
+    },
+    {
+      "argument": "biblio/predefined",
+      "command": "input",
+      "line": 26,
+      "path": "dissertation.tex",
+      "target": "biblio/predefined.tex"
+    },
+    {
+      "argument": "biblio/biblatex",
+      "command": "input",
+      "line": 28,
+      "path": "dissertation.tex",
+      "target": "biblio/biblatex.tex"
+    },
+    {
+      "argument": "common/renames",
+      "command": "input",
+      "line": 55,
+      "path": "dissertation.tex",
+      "target": "common/renames.tex"
+    },
+    {
+      "argument": "common/renames",
+      "command": "input",
+      "line": 56,
+      "path": "dissertation.tex",
+      "target": "common/renames.tex"
+    },
+    {
+      "argument": "Dissertation/renames",
+      "command": "input",
+      "line": 57,
+      "path": "dissertation.tex",
+      "target": "Dissertation/renames.tex"
+    },
+    {
+      "argument": "Dissertation/renames",
+      "command": "input",
+      "line": 58,
+      "path": "dissertation.tex",
+      "target": "Dissertation/renames.tex"
+    },
+    {
+      "argument": "Dissertation/title",
+      "command": "include",
+      "line": 61,
+      "path": "dissertation.tex",
+      "target": "Dissertation/title.tex"
+    },
+    {
+      "argument": "Dissertation/contents",
+      "command": "include",
+      "line": 62,
+      "path": "dissertation.tex",
+      "target": "Dissertation/contents.tex"
+    },
+    {
+      "argument": "Dissertation/introduction",
+      "command": "include",
+      "line": 65,
+      "path": "dissertation.tex",
+      "target": "Dissertation/introduction.tex"
+    },
+    {
+      "argument": "common/characteristic",
+      "command": "input",
+      "line": 19,
+      "path": "Dissertation/introduction.tex",
+      "target": "common/characteristic.tex"
+    },
+    {
+      "argument": "Dissertation/chapter1",
+      "command": "include",
+      "line": 70,
+      "path": "dissertation.tex",
+      "target": "Dissertation/chapter1.tex"
+    },
+    {
+      "argument": "Dissertation/chapter2",
+      "command": "include",
+      "line": 71,
+      "path": "dissertation.tex",
+      "target": "Dissertation/chapter2.tex"
+    },
+    {
+      "argument": "Dissertation/chapter3",
+      "command": "include",
+      "line": 72,
+      "path": "dissertation.tex",
+      "target": "Dissertation/chapter3.tex"
+    },
+    {
+      "argument": "Dissertation/chapter4",
+      "command": "include",
+      "line": 73,
+      "path": "dissertation.tex",
+      "target": "Dissertation/chapter4.tex"
+    },
+    {
+      "argument": "Dissertation/conclusion",
+      "command": "include",
+      "line": 74,
+      "path": "dissertation.tex",
+      "target": "Dissertation/conclusion.tex"
+    },
+    {
+      "argument": "common/concl",
+      "command": "input",
+      "line": 12,
+      "path": "Dissertation/conclusion.tex",
+      "target": "common/concl.tex"
+    },
+    {
+      "argument": "Dissertation/acronyms",
+      "command": "include",
+      "line": 75,
+      "path": "dissertation.tex",
+      "target": "Dissertation/acronyms.tex"
+    },
+    {
+      "argument": "Dissertation/dictionary",
+      "command": "include",
+      "line": 76,
+      "path": "dissertation.tex",
+      "target": "Dissertation/dictionary.tex"
+    },
+    {
+      "argument": "Dissertation/references",
+      "command": "include",
+      "line": 77,
+      "path": "dissertation.tex",
+      "target": "Dissertation/references.tex"
+    },
+    {
+      "argument": "Dissertation/lists",
+      "command": "include",
+      "line": 78,
+      "path": "dissertation.tex",
+      "target": "Dissertation/lists.tex"
+    },
+    {
+      "argument": "Dissertation/appendix",
+      "command": "include",
+      "line": 89,
+      "path": "dissertation.tex",
+      "target": "Dissertation/appendix.tex"
+    }
+  ],
+  "labels": [
+    {
+      "command": "label",
+      "key": "ch:ch1",
+      "line": 1,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "label",
+      "key": "sec:ch1/sec1",
+      "line": 6,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:distributed-iot",
+      "line": 55,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "label",
+      "key": "sec:ch1/sec2",
+      "line": 69,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "label",
+      "key": "tab:ProtoComapre",
+      "line": 188,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "label",
+      "key": "sec:ch1/sec3",
+      "line": 235,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "label",
+      "key": "sec:ch1/sec4",
+      "line": 279,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "label",
+      "key": "sec:ch1/sec5",
+      "line": 310,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "label",
+      "key": "tab:BrokersCompare",
+      "line": 323,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "label",
+      "key": "ch:ch2",
+      "line": 1,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "label",
+      "key": "sec:ch2/sec1",
+      "line": 7,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:bench-process",
+      "line": 86,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "label",
+      "key": "sec:ch2/sec2",
+      "line": 91,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:mqtt-stand",
+      "line": 128,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "label",
+      "key": "sec:ch2/sec3",
+      "line": 131,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "label",
+      "key": "tab:RPSCompare",
+      "line": 152,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "label",
+      "key": "sec:ch2/sec4",
+      "line": 179,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "label",
+      "key": "eq:est",
+      "line": 188,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "label",
+      "key": "tab:est-m16b",
+      "line": 217,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "label",
+      "key": "tab:est-m256b",
+      "line": 254,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "label",
+      "key": "sec:ch2/sec5",
+      "line": 288,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "label",
+      "key": "ch:ch3",
+      "line": 1,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "label",
+      "key": "sec:ch3/sec1",
+      "line": 10,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:LoadBalancer",
+      "line": 26,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:MultiLayer-IoT",
+      "line": 55,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:MultiLayer-Pub-IoT",
+      "line": 80,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:SDN-IoT",
+      "line": 93,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:MeshIotConfigure",
+      "line": 132,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:MeshIotConfigurePublish",
+      "line": 148,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "label",
+      "key": "tab:ArchCompare",
+      "line": 176,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "label",
+      "key": "sec:ch3/sec2",
+      "line": 226,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "label",
+      "key": "sec:ch3/sec3",
+      "line": 261,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:MqttRelay",
+      "line": 277,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "label",
+      "key": "sec:ch3/sec4",
+      "line": 311,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:MqttRelayGraph",
+      "line": 346,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "label",
+      "key": "sec:ch3/sec5",
+      "line": 349,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "label",
+      "key": "ch:ch4",
+      "line": 1,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "label",
+      "key": "sec:ch4/sec1",
+      "line": 6,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "label",
+      "key": "sec:ch4/sec2",
+      "line": 61,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:Components",
+      "line": 159,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:MqttY_Large",
+      "line": 168,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:MqttRelayExample",
+      "line": 177,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:MqttRelay_MqttY_steps",
+      "line": 204,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "label",
+      "key": "tab:Stands",
+      "line": 212,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:MqttY_Network",
+      "line": 291,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "label",
+      "key": "tab:MqttYInitial",
+      "line": 318,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "label",
+      "key": "sec:ch4/sec3",
+      "line": 372,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "label",
+      "key": "sec:ch4/sec4",
+      "line": 449,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "label",
+      "key": "eq:perf_series",
+      "line": 468,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:Brokers4_Clients3-relays2_lbl",
+      "line": 492,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:Brokers10_Clients10-relays2",
+      "line": 495,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:Brokers_Clients_relays",
+      "line": 501,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "label",
+      "key": "tab:AllCompare",
+      "line": 515,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:diagram_b4_by_n_c",
+      "line": 731,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:diagram_b15_by_n_c",
+      "line": 738,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "label",
+      "key": "tab:FinalCompare",
+      "line": 748,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "label",
+      "key": "eq:perf_series",
+      "line": 784,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "label",
+      "key": "sec:ch4/sec4",
+      "line": 788,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "label",
+      "key": "app:A",
+      "line": 1,
+      "path": "Dissertation/appendix.tex"
+    },
+    {
+      "command": "label",
+      "key": "app:A1",
+      "line": 3,
+      "path": "Dissertation/appendix.tex"
+    },
+    {
+      "command": "label",
+      "key": "tab:A1",
+      "line": 46,
+      "path": "Dissertation/appendix.tex"
+    },
+    {
+      "command": "label",
+      "key": "app:B",
+      "line": 102,
+      "path": "Dissertation/appendix.tex"
+    },
+    {
+      "command": "label",
+      "key": "app:B1",
+      "line": 104,
+      "path": "Dissertation/appendix.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:MqttRelay_SimulationSeries",
+      "line": 110,
+      "path": "Dissertation/appendix.tex"
+    },
+    {
+      "command": "label",
+      "key": "app:B2",
+      "line": 114,
+      "path": "Dissertation/appendix.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:MqttRelayAlgorithm",
+      "line": 120,
+      "path": "Dissertation/appendix.tex"
+    },
+    {
+      "command": "label",
+      "key": "app:B3",
+      "line": 125,
+      "path": "Dissertation/appendix.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:MqttRelay_Simulation_Part1",
+      "line": 131,
+      "path": "Dissertation/appendix.tex"
+    },
+    {
+      "command": "label",
+      "key": "app:B4",
+      "line": 134,
+      "path": "Dissertation/appendix.tex"
+    },
+    {
+      "command": "label",
+      "key": "fig:MqttRelay_Simulation_Part2",
+      "line": 140,
+      "path": "Dissertation/appendix.tex"
+    },
+    {
+      "command": "label",
+      "key": "app:C",
+      "line": 143,
+      "path": "Dissertation/appendix.tex"
+    },
+    {
+      "command": "label",
+      "key": "app:C1",
+      "line": 145,
+      "path": "Dissertation/appendix.tex"
+    },
+    {
+      "command": "label",
+      "key": "lst:simulationrefresh",
+      "line": 149,
+      "path": "Dissertation/appendix.tex"
+    },
+    {
+      "command": "label",
+      "key": "app:C2",
+      "line": 193,
+      "path": "Dissertation/appendix.tex"
+    },
+    {
+      "command": "label",
+      "key": "app:C3",
+      "line": 204,
+      "path": "Dissertation/appendix.tex"
+    }
+  ],
+  "metadataWarnings": [
+    {
+      "fields": [
+        "year/date"
+      ],
+      "issue": "Missing basic fields (local heuristic)",
+      "key": "Egorov",
+      "line": 557,
+      "path": "biblio/external.bib"
+    }
+  ],
+  "missingCitations": [
+    {
+      "command": "nocite",
+      "key": "vakbib2",
+      "line": 180,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "nocite",
+      "key": "patbib1",
+      "line": 181,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "nocite",
+      "key": "bib1",
+      "line": 183,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "nocite",
+      "key": "confbib1",
+      "line": 184,
+      "path": "common/characteristic.tex"
+    }
+  ],
+  "missingInheritance": [],
+  "missingInputs": [
+    {
+      "argument": "glyphtounicode.tex",
+      "command": "input",
+      "line": 78,
+      "path": "common/packages.tex",
+      "target": null
+    },
+    {
+      "argument": "glyphtounicode-cmr.tex",
+      "command": "input",
+      "line": 79,
+      "path": "common/packages.tex",
+      "target": null
+    }
+  ],
+  "missingReferences": [],
+  "nociteAll": true,
+  "nocites": [
+    {
+      "command": "nocite",
+      "key": "*",
+      "line": 139,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "nocite",
+      "key": "vakbib2",
+      "line": 180,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "nocite",
+      "key": "patbib1",
+      "line": 181,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "nocite",
+      "key": "progbib1",
+      "line": 182,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "nocite",
+      "key": "bib1",
+      "line": 183,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "nocite",
+      "key": "confbib1",
+      "line": 184,
+      "path": "common/characteristic.tex"
+    }
+  ],
+  "protectedSources": {
+    "scope": "all .tex and .bib under root, including unreachable drafts",
+    "sha256After": {
+      "Dissertation/acronyms.tex": "b2fb96cf2b01717c187c7f7c4fadd6f12757fb6beb557b35c95a3e2cb4667723",
+      "Dissertation/appendix.tex": "372b5c0df4756ce05c509b890468aa8862c6a1c15d4cf058be1a36582b58a8a3",
+      "Dissertation/chapter1.tex": "d589e69b33a6f1d7e1e2ee1a347a4a8900c1530642871bb6156f1437a014b0bd",
+      "Dissertation/chapter2.tex": "71e7896339fd997ad75615244540d4db1358383a32189d3c2ca774a5d91c9780",
+      "Dissertation/chapter3.tex": "b34eadafb2f5fb73d79cbedf13ea382eccb94cb8a3247a7209be74e9f0070998",
+      "Dissertation/chapter4.tex": "38acdeb5a0b164932713eb07e6c0dfce408e3714cadb7dbe1d3498ce327edbb8",
+      "Dissertation/conclusion.tex": "b9bb847386966ab08c852ef71a79cdc75048d4e2dfc1a59223141fab872c2116",
+      "Dissertation/contents.tex": "6c82e4215f5cfc30b2cf038cbce9c47837edea67d6ddbdc4dfae160127535997",
+      "Dissertation/dictionary.tex": "23e668701d4bb6927e25621ec7939100ed9cc205f6be7bd3e24185be62afacd2",
+      "Dissertation/dispackages.tex": "e3cdf5020876621efd4d1c5bf957136ac6fdd2492f23c1590214ec670c2aaef7",
+      "Dissertation/disstyles.tex": "8946057c922df022409425437a81f703d33a76c05544cef7554e02d361c36c21",
+      "Dissertation/introduction.tex": "2b4c961a8359371d9ccaeebba75d2cae17a264f6e08ac22d5e9aaf94a1c3c78b",
+      "Dissertation/lists.tex": "e991b1cb0de55e1609b93bf7be8e24f2c649cd729679a2d32d138e832830e99b",
+      "Dissertation/references.tex": "f9b04173771bebfe4f3e93c1565d8a81121a76b088d2d20afe6633a7cf182bde",
+      "Dissertation/renames.tex": "1f3ef570f7ea17be9d7ce8a282315e9e4a7986b141afd2a74ae3f40303ca5de3",
+      "Dissertation/setup.tex": "de152a9af5338abbb7f3a41793cdc5e2a3196208ddd510f7b56ba0abe9d3f78a",
+      "Dissertation/title.tex": "57c23611f555f73e7a6a0e1a0966fef376e12883b598ab36a878a5fd66d7ba02",
+      "Dissertation/userpackages.tex": "79f75a9224184deed7931e7b988aafe68532b25efbc61c143444ceff59f1b78f",
+      "Dissertation/userstyles.tex": "fcc7ed4a7e4d01523ee38a80421c2a25ad3f4f71f7c1d1b8ca88eab675f0e9b8",
+      "biblio/author.bib": "6e655e2370b5d74ee9c22dc148f838e42fd74d1373425a5ff9171f4d7a760c48",
+      "biblio/biblatex.tex": "5e6f8bf37225d113080135731f83eaa48c7c6dc70c67b651c34c72eb71a666ab",
+      "biblio/external.bib": "da4cb900549d581bda93ad9b8cedf7cebb97d41951accaea6e698cb3adef6581",
+      "biblio/predefined.tex": "ed6d5c5bc674cd4dd78ae9d1ba14edd230cd7cc978311d5a53fdf65fd1eecba5",
+      "biblio/registered.bib": "42994e3ef0f7e32835b0068bb79893354fe8b52776995d80a3425a93c271c550",
+      "book/template.tex": "3c34b3eaf68210882599d84563d4713bced3e27f76d11358424aeb1654e20aa3",
+      "common/characteristic.tex": "fca790613b1563bfa097f85f73b092db1578df2560b2f98116dc0dac82859c6c",
+      "common/concl.tex": "7b0d2299b4beb961d539b593f103546f6e5a512a68dcda744573d49662625d8e",
+      "common/data.tex": "d12c4eae738bfcf2f60643b6eb54782eba23eb0276f1e5eb22054193fe2c1e91",
+      "common/fonts.tex": "019367badbb357f2840626b8d6b1ce65618497300f4ba030280f4ef34a0306e0",
+      "common/newnames.tex": "cbc9b2e56c3f360fdc76afd9e9f043aae9da08cbb3785f6ca1ae521edfb2258a",
+      "common/packages.tex": "e942fe1f00ebf82ebb02d71dfe73fb1d52eb71087d0618b531653aa9ffb9bbdf",
+      "common/renames.tex": "c6881cb99d8d8e2b33a277e96b28d0f78c87a6360c922d1b114af97179d07bc3",
+      "common/setup.tex": "3951ac705bcaad759746c58176af38e2023caa6ad420a17123571990b43a2e87",
+      "common/styles.tex": "4300274d2d0b07227b8cf259aa34a4687df4f2404fa2784daac489f3a4584541",
+      "dissertation.tex": "a8d7650327fda0d8d7913d68a838a4f5352ffd7934ce76d8096ed4370417d444",
+      "latex/Bibliography.tex": "f6320e5440c24a5a7db6061573250e1640f0aced086048d6df9abe756c575326",
+      "latex/Dissertation.tex": "7afc932e5962fd249696cb1b93a0ba81b40df90186b705e9cf240c6ec9bece69",
+      "latex/Dissertation_generated.tex": "2bf340d57d9f6b0eaa51392d58dcb344338e307ddbc09a66d0d5d3af746367ae",
+      "latex/appendix/abbreviations.tex": "ef8b4fd89c0952b888ae895adc99638d313e5cc9ef182b16552f41b155353092",
+      "latex/appendix/appendixA.tex": "8ee2e6258c7eee056c39d60c460ba2dca74fece7475749ecca0e2e03cb9e8343",
+      "latex/appendix/appendixB.tex": "d72c96f9dcd707c9341172447b5e253564e1ee1c3088e883c4f97ae3886f1af2",
+      "latex/appendix/glossary.tex": "b591cfa2889437efb1041b0e5eced09f4c63c938b0093066895378a1d17fdfa8",
+      "latex/appendixA.tex": "fb83e95b8d17321d68085c3dbf982532c2bd8f4eb29f23f958240354eb3a3edb",
+      "latex/appendixB.tex": "48320ae62dc78057eb0e7b3f1dc6f179375e74ac5059137abf840286a9806287",
+      "latex/bibliography/references.bib": "2c5ebad748e0d36ed02460a3cf6f04eb4b1d56a32ba88ee30bf22fec104733f8",
+      "latex/chapter1.tex": "f090da6352ab6468ce64e8ecd02dd87c7d38d05effffacbb7a740dcf92fc8695",
+      "latex/chapter2.tex": "6edfe05969dbc37f3d0f58e1a9214353118ff38ef9696a2f424b51b25acf2ffd",
+      "latex/chapter3.tex": "ddec2f046708b7e5e9cbb81c0ab36806be47293a5e7507f16b7528253e008939",
+      "latex/chapter4.tex": "4375c17899466072286afee5ac2ddbb60eb100d1caf0819d90d432e464c1fcd4",
+      "latex/chapters/chapter2.tex": "71085aeb3a14d6d4a6d653e43995f1bf619842b6c4ece1d85b211478d7be5ef9",
+      "latex/chapters/chapter3.tex": "16d9f7da5077d02b04253f6ef4ac1f60d30114ad4429d3170383937266d2ff91",
+      "latex/chapters/chapter4.tex": "5a476d0ef388e5c15a0d18efea77837314043ea8d9eac446549300e5820a86a8",
+      "latex/chapters/conclusion.tex": "2e3f1824a7e2d318e4503b2ff9363c4be05f3e138cc51e2a0bf10b2efd4608d4",
+      "latex/chapters/introduction.tex": "afcb044a58996d9ca565060ad38d623db6de768d57b3621a7460bf5caed32c86",
+      "latex/conclusion.tex": "6462256a5480877e6bb97bdb2f807432a6dc611227fb17869bd15ee306e993e4",
+      "latex/dissertation_full_dump.tex": "3ffe292b9f9de3007a55ebbb41f54fd1f87529258c147b7f1a6042b55fdd5b26",
+      "latex/introduction.tex": "f7c0e8033f9c78d633a34d6ea715d62bc78119f8ef5ba8329fd187d2e2b5dc18",
+      "latex/preamble.tex": "85e0baffdad27e7c0dd9b5761e40f24464231ddf446dc073e553de2be6afbae2",
+      "latex/setup.tex": "b2041ede30a49cb3420b6966e35a390ed4e8938e2dbe0a31b3954b48d41b0f91",
+      "latex/tables_extracted.tex": "5056f5bc9b606130b35a1cef7c06071320ca0a52bbbe83c205f230abd2b5417a",
+      "latex/title.tex": "9ac61c6bf1d472db404292172973235fb6ceac0c38a92904e0f2ca66aa73e941"
+    },
+    "sha256Before": {
+      "Dissertation/acronyms.tex": "b2fb96cf2b01717c187c7f7c4fadd6f12757fb6beb557b35c95a3e2cb4667723",
+      "Dissertation/appendix.tex": "372b5c0df4756ce05c509b890468aa8862c6a1c15d4cf058be1a36582b58a8a3",
+      "Dissertation/chapter1.tex": "d589e69b33a6f1d7e1e2ee1a347a4a8900c1530642871bb6156f1437a014b0bd",
+      "Dissertation/chapter2.tex": "71e7896339fd997ad75615244540d4db1358383a32189d3c2ca774a5d91c9780",
+      "Dissertation/chapter3.tex": "b34eadafb2f5fb73d79cbedf13ea382eccb94cb8a3247a7209be74e9f0070998",
+      "Dissertation/chapter4.tex": "38acdeb5a0b164932713eb07e6c0dfce408e3714cadb7dbe1d3498ce327edbb8",
+      "Dissertation/conclusion.tex": "b9bb847386966ab08c852ef71a79cdc75048d4e2dfc1a59223141fab872c2116",
+      "Dissertation/contents.tex": "6c82e4215f5cfc30b2cf038cbce9c47837edea67d6ddbdc4dfae160127535997",
+      "Dissertation/dictionary.tex": "23e668701d4bb6927e25621ec7939100ed9cc205f6be7bd3e24185be62afacd2",
+      "Dissertation/dispackages.tex": "e3cdf5020876621efd4d1c5bf957136ac6fdd2492f23c1590214ec670c2aaef7",
+      "Dissertation/disstyles.tex": "8946057c922df022409425437a81f703d33a76c05544cef7554e02d361c36c21",
+      "Dissertation/introduction.tex": "2b4c961a8359371d9ccaeebba75d2cae17a264f6e08ac22d5e9aaf94a1c3c78b",
+      "Dissertation/lists.tex": "e991b1cb0de55e1609b93bf7be8e24f2c649cd729679a2d32d138e832830e99b",
+      "Dissertation/references.tex": "f9b04173771bebfe4f3e93c1565d8a81121a76b088d2d20afe6633a7cf182bde",
+      "Dissertation/renames.tex": "1f3ef570f7ea17be9d7ce8a282315e9e4a7986b141afd2a74ae3f40303ca5de3",
+      "Dissertation/setup.tex": "de152a9af5338abbb7f3a41793cdc5e2a3196208ddd510f7b56ba0abe9d3f78a",
+      "Dissertation/title.tex": "57c23611f555f73e7a6a0e1a0966fef376e12883b598ab36a878a5fd66d7ba02",
+      "Dissertation/userpackages.tex": "79f75a9224184deed7931e7b988aafe68532b25efbc61c143444ceff59f1b78f",
+      "Dissertation/userstyles.tex": "fcc7ed4a7e4d01523ee38a80421c2a25ad3f4f71f7c1d1b8ca88eab675f0e9b8",
+      "biblio/author.bib": "6e655e2370b5d74ee9c22dc148f838e42fd74d1373425a5ff9171f4d7a760c48",
+      "biblio/biblatex.tex": "5e6f8bf37225d113080135731f83eaa48c7c6dc70c67b651c34c72eb71a666ab",
+      "biblio/external.bib": "da4cb900549d581bda93ad9b8cedf7cebb97d41951accaea6e698cb3adef6581",
+      "biblio/predefined.tex": "ed6d5c5bc674cd4dd78ae9d1ba14edd230cd7cc978311d5a53fdf65fd1eecba5",
+      "biblio/registered.bib": "42994e3ef0f7e32835b0068bb79893354fe8b52776995d80a3425a93c271c550",
+      "book/template.tex": "3c34b3eaf68210882599d84563d4713bced3e27f76d11358424aeb1654e20aa3",
+      "common/characteristic.tex": "fca790613b1563bfa097f85f73b092db1578df2560b2f98116dc0dac82859c6c",
+      "common/concl.tex": "7b0d2299b4beb961d539b593f103546f6e5a512a68dcda744573d49662625d8e",
+      "common/data.tex": "d12c4eae738bfcf2f60643b6eb54782eba23eb0276f1e5eb22054193fe2c1e91",
+      "common/fonts.tex": "019367badbb357f2840626b8d6b1ce65618497300f4ba030280f4ef34a0306e0",
+      "common/newnames.tex": "cbc9b2e56c3f360fdc76afd9e9f043aae9da08cbb3785f6ca1ae521edfb2258a",
+      "common/packages.tex": "e942fe1f00ebf82ebb02d71dfe73fb1d52eb71087d0618b531653aa9ffb9bbdf",
+      "common/renames.tex": "c6881cb99d8d8e2b33a277e96b28d0f78c87a6360c922d1b114af97179d07bc3",
+      "common/setup.tex": "3951ac705bcaad759746c58176af38e2023caa6ad420a17123571990b43a2e87",
+      "common/styles.tex": "4300274d2d0b07227b8cf259aa34a4687df4f2404fa2784daac489f3a4584541",
+      "dissertation.tex": "a8d7650327fda0d8d7913d68a838a4f5352ffd7934ce76d8096ed4370417d444",
+      "latex/Bibliography.tex": "f6320e5440c24a5a7db6061573250e1640f0aced086048d6df9abe756c575326",
+      "latex/Dissertation.tex": "7afc932e5962fd249696cb1b93a0ba81b40df90186b705e9cf240c6ec9bece69",
+      "latex/Dissertation_generated.tex": "2bf340d57d9f6b0eaa51392d58dcb344338e307ddbc09a66d0d5d3af746367ae",
+      "latex/appendix/abbreviations.tex": "ef8b4fd89c0952b888ae895adc99638d313e5cc9ef182b16552f41b155353092",
+      "latex/appendix/appendixA.tex": "8ee2e6258c7eee056c39d60c460ba2dca74fece7475749ecca0e2e03cb9e8343",
+      "latex/appendix/appendixB.tex": "d72c96f9dcd707c9341172447b5e253564e1ee1c3088e883c4f97ae3886f1af2",
+      "latex/appendix/glossary.tex": "b591cfa2889437efb1041b0e5eced09f4c63c938b0093066895378a1d17fdfa8",
+      "latex/appendixA.tex": "fb83e95b8d17321d68085c3dbf982532c2bd8f4eb29f23f958240354eb3a3edb",
+      "latex/appendixB.tex": "48320ae62dc78057eb0e7b3f1dc6f179375e74ac5059137abf840286a9806287",
+      "latex/bibliography/references.bib": "2c5ebad748e0d36ed02460a3cf6f04eb4b1d56a32ba88ee30bf22fec104733f8",
+      "latex/chapter1.tex": "f090da6352ab6468ce64e8ecd02dd87c7d38d05effffacbb7a740dcf92fc8695",
+      "latex/chapter2.tex": "6edfe05969dbc37f3d0f58e1a9214353118ff38ef9696a2f424b51b25acf2ffd",
+      "latex/chapter3.tex": "ddec2f046708b7e5e9cbb81c0ab36806be47293a5e7507f16b7528253e008939",
+      "latex/chapter4.tex": "4375c17899466072286afee5ac2ddbb60eb100d1caf0819d90d432e464c1fcd4",
+      "latex/chapters/chapter2.tex": "71085aeb3a14d6d4a6d653e43995f1bf619842b6c4ece1d85b211478d7be5ef9",
+      "latex/chapters/chapter3.tex": "16d9f7da5077d02b04253f6ef4ac1f60d30114ad4429d3170383937266d2ff91",
+      "latex/chapters/chapter4.tex": "5a476d0ef388e5c15a0d18efea77837314043ea8d9eac446549300e5820a86a8",
+      "latex/chapters/conclusion.tex": "2e3f1824a7e2d318e4503b2ff9363c4be05f3e138cc51e2a0bf10b2efd4608d4",
+      "latex/chapters/introduction.tex": "afcb044a58996d9ca565060ad38d623db6de768d57b3621a7460bf5caed32c86",
+      "latex/conclusion.tex": "6462256a5480877e6bb97bdb2f807432a6dc611227fb17869bd15ee306e993e4",
+      "latex/dissertation_full_dump.tex": "3ffe292b9f9de3007a55ebbb41f54fd1f87529258c147b7f1a6042b55fdd5b26",
+      "latex/introduction.tex": "f7c0e8033f9c78d633a34d6ea715d62bc78119f8ef5ba8329fd187d2e2b5dc18",
+      "latex/preamble.tex": "85e0baffdad27e7c0dd9b5761e40f24464231ddf446dc073e553de2be6afbae2",
+      "latex/setup.tex": "b2041ede30a49cb3420b6966e35a390ed4e8938e2dbe0a31b3954b48d41b0f91",
+      "latex/tables_extracted.tex": "5056f5bc9b606130b35a1cef7c06071320ca0a52bbbe83c205f230abd2b5417a",
+      "latex/title.tex": "9ac61c6bf1d472db404292172973235fb6ceac0c38a92904e0f2ca66aa73e941"
+    },
+    "unchanged": true
+  },
+  "reachableSources": {
+    "sha256After": {
+      "Dissertation/acronyms.tex": "b2fb96cf2b01717c187c7f7c4fadd6f12757fb6beb557b35c95a3e2cb4667723",
+      "Dissertation/appendix.tex": "372b5c0df4756ce05c509b890468aa8862c6a1c15d4cf058be1a36582b58a8a3",
+      "Dissertation/chapter1.tex": "d589e69b33a6f1d7e1e2ee1a347a4a8900c1530642871bb6156f1437a014b0bd",
+      "Dissertation/chapter2.tex": "71e7896339fd997ad75615244540d4db1358383a32189d3c2ca774a5d91c9780",
+      "Dissertation/chapter3.tex": "b34eadafb2f5fb73d79cbedf13ea382eccb94cb8a3247a7209be74e9f0070998",
+      "Dissertation/chapter4.tex": "38acdeb5a0b164932713eb07e6c0dfce408e3714cadb7dbe1d3498ce327edbb8",
+      "Dissertation/conclusion.tex": "b9bb847386966ab08c852ef71a79cdc75048d4e2dfc1a59223141fab872c2116",
+      "Dissertation/contents.tex": "6c82e4215f5cfc30b2cf038cbce9c47837edea67d6ddbdc4dfae160127535997",
+      "Dissertation/dictionary.tex": "23e668701d4bb6927e25621ec7939100ed9cc205f6be7bd3e24185be62afacd2",
+      "Dissertation/dispackages.tex": "e3cdf5020876621efd4d1c5bf957136ac6fdd2492f23c1590214ec670c2aaef7",
+      "Dissertation/disstyles.tex": "8946057c922df022409425437a81f703d33a76c05544cef7554e02d361c36c21",
+      "Dissertation/introduction.tex": "2b4c961a8359371d9ccaeebba75d2cae17a264f6e08ac22d5e9aaf94a1c3c78b",
+      "Dissertation/lists.tex": "e991b1cb0de55e1609b93bf7be8e24f2c649cd729679a2d32d138e832830e99b",
+      "Dissertation/references.tex": "f9b04173771bebfe4f3e93c1565d8a81121a76b088d2d20afe6633a7cf182bde",
+      "Dissertation/renames.tex": "1f3ef570f7ea17be9d7ce8a282315e9e4a7986b141afd2a74ae3f40303ca5de3",
+      "Dissertation/setup.tex": "de152a9af5338abbb7f3a41793cdc5e2a3196208ddd510f7b56ba0abe9d3f78a",
+      "Dissertation/title.tex": "57c23611f555f73e7a6a0e1a0966fef376e12883b598ab36a878a5fd66d7ba02",
+      "Dissertation/userpackages.tex": "79f75a9224184deed7931e7b988aafe68532b25efbc61c143444ceff59f1b78f",
+      "Dissertation/userstyles.tex": "fcc7ed4a7e4d01523ee38a80421c2a25ad3f4f71f7c1d1b8ca88eab675f0e9b8",
+      "biblio/author.bib": "6e655e2370b5d74ee9c22dc148f838e42fd74d1373425a5ff9171f4d7a760c48",
+      "biblio/biblatex.tex": "5e6f8bf37225d113080135731f83eaa48c7c6dc70c67b651c34c72eb71a666ab",
+      "biblio/external.bib": "da4cb900549d581bda93ad9b8cedf7cebb97d41951accaea6e698cb3adef6581",
+      "biblio/predefined.tex": "ed6d5c5bc674cd4dd78ae9d1ba14edd230cd7cc978311d5a53fdf65fd1eecba5",
+      "biblio/registered.bib": "42994e3ef0f7e32835b0068bb79893354fe8b52776995d80a3425a93c271c550",
+      "common/characteristic.tex": "fca790613b1563bfa097f85f73b092db1578df2560b2f98116dc0dac82859c6c",
+      "common/concl.tex": "7b0d2299b4beb961d539b593f103546f6e5a512a68dcda744573d49662625d8e",
+      "common/data.tex": "d12c4eae738bfcf2f60643b6eb54782eba23eb0276f1e5eb22054193fe2c1e91",
+      "common/fonts.tex": "019367badbb357f2840626b8d6b1ce65618497300f4ba030280f4ef34a0306e0",
+      "common/newnames.tex": "cbc9b2e56c3f360fdc76afd9e9f043aae9da08cbb3785f6ca1ae521edfb2258a",
+      "common/packages.tex": "e942fe1f00ebf82ebb02d71dfe73fb1d52eb71087d0618b531653aa9ffb9bbdf",
+      "common/renames.tex": "c6881cb99d8d8e2b33a277e96b28d0f78c87a6360c922d1b114af97179d07bc3",
+      "common/setup.tex": "3951ac705bcaad759746c58176af38e2023caa6ad420a17123571990b43a2e87",
+      "common/styles.tex": "4300274d2d0b07227b8cf259aa34a4687df4f2404fa2784daac489f3a4584541",
+      "dissertation.tex": "a8d7650327fda0d8d7913d68a838a4f5352ffd7934ce76d8096ed4370417d444"
+    },
+    "sha256Before": {
+      "Dissertation/acronyms.tex": "b2fb96cf2b01717c187c7f7c4fadd6f12757fb6beb557b35c95a3e2cb4667723",
+      "Dissertation/appendix.tex": "372b5c0df4756ce05c509b890468aa8862c6a1c15d4cf058be1a36582b58a8a3",
+      "Dissertation/chapter1.tex": "d589e69b33a6f1d7e1e2ee1a347a4a8900c1530642871bb6156f1437a014b0bd",
+      "Dissertation/chapter2.tex": "71e7896339fd997ad75615244540d4db1358383a32189d3c2ca774a5d91c9780",
+      "Dissertation/chapter3.tex": "b34eadafb2f5fb73d79cbedf13ea382eccb94cb8a3247a7209be74e9f0070998",
+      "Dissertation/chapter4.tex": "38acdeb5a0b164932713eb07e6c0dfce408e3714cadb7dbe1d3498ce327edbb8",
+      "Dissertation/conclusion.tex": "b9bb847386966ab08c852ef71a79cdc75048d4e2dfc1a59223141fab872c2116",
+      "Dissertation/contents.tex": "6c82e4215f5cfc30b2cf038cbce9c47837edea67d6ddbdc4dfae160127535997",
+      "Dissertation/dictionary.tex": "23e668701d4bb6927e25621ec7939100ed9cc205f6be7bd3e24185be62afacd2",
+      "Dissertation/dispackages.tex": "e3cdf5020876621efd4d1c5bf957136ac6fdd2492f23c1590214ec670c2aaef7",
+      "Dissertation/disstyles.tex": "8946057c922df022409425437a81f703d33a76c05544cef7554e02d361c36c21",
+      "Dissertation/introduction.tex": "2b4c961a8359371d9ccaeebba75d2cae17a264f6e08ac22d5e9aaf94a1c3c78b",
+      "Dissertation/lists.tex": "e991b1cb0de55e1609b93bf7be8e24f2c649cd729679a2d32d138e832830e99b",
+      "Dissertation/references.tex": "f9b04173771bebfe4f3e93c1565d8a81121a76b088d2d20afe6633a7cf182bde",
+      "Dissertation/renames.tex": "1f3ef570f7ea17be9d7ce8a282315e9e4a7986b141afd2a74ae3f40303ca5de3",
+      "Dissertation/setup.tex": "de152a9af5338abbb7f3a41793cdc5e2a3196208ddd510f7b56ba0abe9d3f78a",
+      "Dissertation/title.tex": "57c23611f555f73e7a6a0e1a0966fef376e12883b598ab36a878a5fd66d7ba02",
+      "Dissertation/userpackages.tex": "79f75a9224184deed7931e7b988aafe68532b25efbc61c143444ceff59f1b78f",
+      "Dissertation/userstyles.tex": "fcc7ed4a7e4d01523ee38a80421c2a25ad3f4f71f7c1d1b8ca88eab675f0e9b8",
+      "biblio/author.bib": "6e655e2370b5d74ee9c22dc148f838e42fd74d1373425a5ff9171f4d7a760c48",
+      "biblio/biblatex.tex": "5e6f8bf37225d113080135731f83eaa48c7c6dc70c67b651c34c72eb71a666ab",
+      "biblio/external.bib": "da4cb900549d581bda93ad9b8cedf7cebb97d41951accaea6e698cb3adef6581",
+      "biblio/predefined.tex": "ed6d5c5bc674cd4dd78ae9d1ba14edd230cd7cc978311d5a53fdf65fd1eecba5",
+      "biblio/registered.bib": "42994e3ef0f7e32835b0068bb79893354fe8b52776995d80a3425a93c271c550",
+      "common/characteristic.tex": "fca790613b1563bfa097f85f73b092db1578df2560b2f98116dc0dac82859c6c",
+      "common/concl.tex": "7b0d2299b4beb961d539b593f103546f6e5a512a68dcda744573d49662625d8e",
+      "common/data.tex": "d12c4eae738bfcf2f60643b6eb54782eba23eb0276f1e5eb22054193fe2c1e91",
+      "common/fonts.tex": "019367badbb357f2840626b8d6b1ce65618497300f4ba030280f4ef34a0306e0",
+      "common/newnames.tex": "cbc9b2e56c3f360fdc76afd9e9f043aae9da08cbb3785f6ca1ae521edfb2258a",
+      "common/packages.tex": "e942fe1f00ebf82ebb02d71dfe73fb1d52eb71087d0618b531653aa9ffb9bbdf",
+      "common/renames.tex": "c6881cb99d8d8e2b33a277e96b28d0f78c87a6360c922d1b114af97179d07bc3",
+      "common/setup.tex": "3951ac705bcaad759746c58176af38e2023caa6ad420a17123571990b43a2e87",
+      "common/styles.tex": "4300274d2d0b07227b8cf259aa34a4687df4f2404fa2784daac489f3a4584541",
+      "dissertation.tex": "a8d7650327fda0d8d7913d68a838a4f5352ffd7934ce76d8096ed4370417d444"
+    },
+    "unchanged": true
+  },
+  "references": [
+    {
+      "command": "cref",
+      "key": "sec:ch1/sec1",
+      "line": 6,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "cref",
+      "key": "sec:ch1/sec3",
+      "line": 8,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "cref",
+      "key": "sec:ch1/sec2",
+      "line": 8,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "cref",
+      "key": "sec:ch1/sec4",
+      "line": 8,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "cref",
+      "key": "sec:ch1/sec2",
+      "line": 10,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "cref",
+      "key": "ch:ch1",
+      "line": 57,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "cref",
+      "key": "ch:ch2",
+      "line": 58,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "cref",
+      "key": "ch:ch3",
+      "line": 59,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "cref",
+      "key": "ch:ch4",
+      "line": 60,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "cref",
+      "key": "ch:ch4",
+      "line": 61,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "cref",
+      "key": "ch:ch4",
+      "line": 62,
+      "path": "common/characteristic.tex"
+    },
+    {
+      "command": "cref",
+      "key": "sec:ch1/sec2",
+      "line": 28,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cref",
+      "key": "fig:distributed-iot",
+      "line": 39,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cref",
+      "key": "tab:ProtoComapre",
+      "line": 181,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cref",
+      "key": "tab:BrokersCompare",
+      "line": 316,
+      "path": "Dissertation/chapter1.tex"
+    },
+    {
+      "command": "cref",
+      "key": "sec:ch2/sec2",
+      "line": 32,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cref",
+      "key": "fig:bench-process",
+      "line": 74,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cref",
+      "key": "fig:bench-process",
+      "line": 122,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cref",
+      "key": "tab:RPSCompare",
+      "line": 144,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cref",
+      "key": "eq:est",
+      "line": 185,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cref",
+      "key": "tab:est-m16b",
+      "line": 210,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cref",
+      "key": "tab:est-m256b",
+      "line": 210,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cref",
+      "key": "tab:est-m16b",
+      "line": 282,
+      "path": "Dissertation/chapter2.tex"
+    },
+    {
+      "command": "cref",
+      "key": "sec:ch3/sec1",
+      "line": 3,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "cref",
+      "key": "sec:ch3/sec2",
+      "line": 5,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "cref",
+      "key": "sec:ch3/sec3",
+      "line": 7,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "cref",
+      "key": "sec:ch3/sec4",
+      "line": 7,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "cref",
+      "key": "fig:LoadBalancer",
+      "line": 20,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "cref",
+      "key": "fig:MultiLayer-IoT",
+      "line": 45,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "cref",
+      "key": "fig:MultiLayer-Pub-IoT",
+      "line": 68,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "cref",
+      "key": "fig:SDN-IoT",
+      "line": 87,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "cref",
+      "key": "fig:MeshIotConfigure",
+      "line": 118,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "cref",
+      "key": "fig:MeshIotConfigurePublish",
+      "line": 135,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "cref",
+      "key": "tab:ArchCompare",
+      "line": 169,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "cref",
+      "key": "sec:ch3/sec1",
+      "line": 228,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "cref",
+      "key": "fig:MqttRelay",
+      "line": 263,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "cref",
+      "key": "fig:MqttRelay",
+      "line": 280,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "cref",
+      "key": "fig:MqttRelayGraph",
+      "line": 340,
+      "path": "Dissertation/chapter3.tex"
+    },
+    {
+      "command": "cref",
+      "key": "sec:ch4/sec1",
+      "line": 4,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "sec:ch4/sec2",
+      "line": 4,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "sec:ch4/sec3",
+      "line": 4,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "app:A1",
+      "line": 46,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "tab:A1",
+      "line": 46,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "fig:Components",
+      "line": 145,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "app:B1",
+      "line": 150,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "fig:MqttY_Large",
+      "line": 162,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "fig:MqttRelayExample",
+      "line": 171,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "fig:MqttRelay_MqttY_steps",
+      "line": 197,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "tab:Stands",
+      "line": 207,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "fig:MqttY_Network",
+      "line": 283,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "app:B3",
+      "line": 301,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "tab:MqttYInitial",
+      "line": 303,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "app:C2",
+      "line": 420,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "app:B3",
+      "line": 447,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "app:B4",
+      "line": 447,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "sec:ch3/sec3",
+      "line": 453,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "eq:perf_series",
+      "line": 465,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "fig:Brokers4_Clients3-relays2_lbl",
+      "line": 487,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "fig:Brokers10_Clients10-relays2",
+      "line": 487,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "tab:Stands",
+      "line": 506,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "tab:AllCompare",
+      "line": 508,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "fig:diagram_b4_by_n_c",
+      "line": 725,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "fig:diagram_b15_by_n_c",
+      "line": 725,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "tab:FinalCompare",
+      "line": 741,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "tab:FinalCompare",
+      "line": 781,
+      "path": "Dissertation/chapter4.tex"
+    },
+    {
+      "command": "cref",
+      "key": "ch:ch4",
+      "line": 788,
+      "path": "Dissertation/chapter4.tex"
+    }
+  ],
+  "schemaVersion": 1,
+  "scope": {
+    "bibliography": "union of literal resource declarations in reachable files",
+    "conditionalBranches": "both",
+    "engineBuildVerified": false,
+    "externalMetadataVerified": false,
+    "macroDefinitions": "not expanded; literal cite/ref templates excluded",
+    "method": "conservative lexical traversal, not TeX execution",
+    "uniqueFilesNotExpansionVisits": true
+  },
+  "texParseErrors": [],
+  "unresolvedLexicalConstructs": [],
+  "unusedKeys": [
+    "Yu2016",
+    "solopiy_mqty_2026"
+  ]
+}

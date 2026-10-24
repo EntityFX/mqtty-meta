@@ -1,13 +1,13 @@
 {
   "scope": "Active thread goal: evidence, two articles and dissertation",
-  "source": "Explicit user instruction to stop agent work after starting a long process",
+  "source": "Explicit user revision: continue independent useful work; stop only for waiting",
   "longProcessThresholdSeconds": 300,
   "longProcessThresholdKind": "working assumption",
   "afterLaunch": [
     "confirm live handle",
     "save progress and reproduction commands",
-    "pause goal",
-    "end agent turn"
+    "continue useful independent tasks",
+    "pause goal and end turn only when only waiting remains"
   ],
   "stopCalculation": false,
   "automaticPollingWhileWaiting": false,
@@ -26,10 +26,10 @@
     "improvement proposals",
     "article layouts, tables and figures"
   ],
-  "latestUserClarification": "Human writes articles; agent provides technical and experimental materials",
+  "latestUserClarification": "Продолжать независимые задачи, пока есть полезная работа; останавливаться только для ожидания",
   "objectiveDocument": "reports/status/Goal.md",
   "objectiveUpdatedByUser": true,
-  "platformStatusLastObserved": "active",
+  "platformStatusLastObserved": "usageLimited",
   "humanChoosesPublicationVenues": true,
   "explicitOneTimeContinuation": {
     "authorizedByUser": true,
@@ -37,5 +37,13 @@
     "taskName": "MqttY-Goal-Resume-20261024-0400",
     "recurring": false,
     "generalNoPollingRuleStillApplies": true
-  }
+  },
+  "pauseImmediatelyAfterLongLaunch": false,
+  "continueIndependentWork": true,
+  "goalAttachmentUpdated": true,
+  "goalAttachmentBeforeSha256": "371364ac142459fa806e4c7633a8586a44db81b857049612e9092cf73234fc57",
+  "goalAttachmentAfterSha256": "af080e814729be94583f2ea5f0d152c4372a4e9a83e3e342d2fdd8a20a6a16f1",
+  "oneTimeTimerConsumed": true,
+  "objectiveDocumentReformulated": true,
+  "webLinuxDeploymentInScope": true
 }

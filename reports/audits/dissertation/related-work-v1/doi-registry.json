@@ -1,0 +1,183 @@
+[
+  {
+    "requestedDoi": "10.1109/WSC.2011.6147750",
+    "registryUrl": "https://api.crossref.org/works/10.1109/WSC.2011.6147750",
+    "status": "verifiedAgainstRegistrationMetadata",
+    "DOI": "10.1109/wsc.2011.6147750",
+    "title": [
+      "Verification and validation of simulation models"
+    ],
+    "authors": [
+      {
+        "family": "Sargent",
+        "given": "Robert G."
+      }
+    ],
+    "publisher": "IEEE",
+    "containerTitle": [
+      "Proceedings of the 2011 Winter Simulation Conference (WSC)"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2011,
+          12
+        ]
+      ]
+    },
+    "type": "proceedings-article",
+    "URL": "https://doi.org/10.1109/wsc.2011.6147750",
+    "decodedResponseUtf8Sha256": "cc307c76ef97e9fbc950c426d245a9e5d5ab974b8b2c6ebe4df3ccab5297d74e"
+  },
+  {
+    "requestedDoi": "10.3390/en14185817",
+    "registryUrl": "https://api.crossref.org/works/10.3390/en14185817",
+    "status": "verifiedAgainstRegistrationMetadata",
+    "DOI": "10.3390/en14185817",
+    "title": [
+      "Stress-Testing MQTT Brokers: A Comparative Analysis of Performance Measurements"
+    ],
+    "authors": [
+      {
+        "family": "Mishra",
+        "given": "Biswajeeban"
+      },
+      {
+        "family": "Mishra",
+        "given": "Biswaranjan"
+      },
+      {
+        "family": "Kertesz",
+        "given": "Attila"
+      }
+    ],
+    "publisher": "MDPI AG",
+    "containerTitle": [
+      "Energies"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          9,
+          14
+        ]
+      ]
+    },
+    "type": "journal-article",
+    "URL": "https://doi.org/10.3390/en14185817",
+    "decodedResponseUtf8Sha256": "beeb93472ca4756c5ce169fe41960432546aca00dedb3263010922a987f1bb1a"
+  },
+  {
+    "requestedDoi": "10.1186/s43067-024-00181-x",
+    "registryUrl": "https://api.crossref.org/works/10.1186/s43067-024-00181-x",
+    "status": "verifiedAgainstRegistrationMetadata",
+    "DOI": "10.1186/s43067-024-00181-x",
+    "title": [
+      "A conceptual modeling approach of MQTT for IoT-based systems"
+    ],
+    "authors": [
+      {
+        "family": "Mohammad El-Basioni",
+        "given": "Basma M."
+      }
+    ],
+    "publisher": "Springer Science and Business Media LLC",
+    "containerTitle": [
+      "Journal of Electrical Systems and Information Technology"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          12,
+          18
+        ]
+      ]
+    },
+    "type": "journal-article",
+    "URL": "https://doi.org/10.1186/s43067-024-00181-x",
+    "decodedResponseUtf8Sha256": "9a82acde5e18e520045bf2e90850fb28eab889faa8787411de218a41c5d003bb"
+  },
+  {
+    "requestedDoi": "10.1109/JSAC.2020.3000405",
+    "registryUrl": "https://api.crossref.org/works/10.1109/JSAC.2020.3000405",
+    "status": "verifiedAgainstRegistrationMetadata",
+    "DOI": "10.1109/jsac.2020.3000405",
+    "title": [
+      "RouteNet: Leveraging Graph Neural Networks for Network Modeling and Optimization in SDN"
+    ],
+    "authors": [
+      {
+        "family": "Rusek",
+        "given": "Krzysztof"
+      },
+      {
+        "family": "Suarez-Varela",
+        "given": "Jose"
+      },
+      {
+        "family": "Almasan",
+        "given": "Paul"
+      },
+      {
+        "family": "Barlet-Ros",
+        "given": "Pere"
+      },
+      {
+        "family": "Cabellos-Aparicio",
+        "given": "Albert"
+      }
+    ],
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "containerTitle": [
+      "IEEE Journal on Selected Areas in Communications"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          10
+        ]
+      ]
+    },
+    "type": "journal-article",
+    "URL": "https://doi.org/10.1109/jsac.2020.3000405",
+    "decodedResponseUtf8Sha256": "fe0c8fbf9fb6ae8da17f469c025cafb0edd839c9f226ef6a9dc99f7f0f2fe9ef"
+  },
+  {
+    "requestedDoi": "10.3844/jcssp.2022.687.694",
+    "registryUrl": "https://api.crossref.org/works/10.3844/jcssp.2022.687.694",
+    "status": "verifiedAgainstRegistrationMetadata",
+    "DOI": "10.3844/jcssp.2022.687.694",
+    "title": [
+      "A New Approach to a Self-Organizing Federation of MQTT Brokers"
+    ],
+    "authors": [
+      {
+        "family": "Ribas",
+        "given": "Nicolas Kolling"
+      },
+      {
+        "family": "Spohn",
+        "given": "Marco Aurélio"
+      }
+    ],
+    "publisher": "Science Publications",
+    "containerTitle": [
+      "Journal of Computer Science"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          7,
+          1
+        ]
+      ]
+    },
+    "type": "journal-article",
+    "URL": "https://doi.org/10.3844/jcssp.2022.687.694",
+    "decodedResponseUtf8Sha256": "a257fd55ccc1019b2c6e53c73e72c36b59603867fa03d7f2b7baac35d5cdc440"
+  }
+]

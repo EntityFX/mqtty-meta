@@ -71,7 +71,14 @@ def execute(command, attempt, guard, timeout, rss_limit, byte_budget, on_state, 
                 peak = max(peak, memory)
                 elapsed = time.monotonic() - started
                 if memory == 0 and elapsed > 2 and process.poll() is None:
-                    raise RuntimeError("processRssUnavailable")
+                    # /proc can lose VmRSS while the child is exiting, before
+                    # waitpid reports its exit. Reap that bounded transition;
+                    # a live child without observable RSS still fails closed.
+                    try:
+                        process.wait(timeout=min(sample_seconds, 1))
+                    except subprocess.TimeoutExpired:
+                        raise RuntimeError("processRssUnavailable")
+                    continue
                 if elapsed > timeout:
                     raise TimeoutError("jobTimeout")
                 if peak > rss_limit:

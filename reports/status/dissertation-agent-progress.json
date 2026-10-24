@@ -13,13 +13,14 @@
     "06",
     "11",
     "12",
+    "13",
     "19",
     "20",
     "22"
   ],
-  "verifiedTechnicalWeightPersonDays": 10.5,
+  "verifiedTechnicalWeightPersonDays": 11.5,
   "localPercent": 80,
-  "globalPercent": 22.3,
+  "globalPercent": 24.5,
   "basis": "Plan effort weights; not scientific confidence or elapsed labour",
   "steps": {
     "03": {
@@ -106,8 +107,12 @@
       "causesNotFullyIdentified": true
     },
     "13": {
-      "status": "partialTablesAndMapsPrepared",
-      "remaining": "sensitivity results, intervals and final article figure set"
+      "status": "technicalChecksPassed",
+      "acceptedWeightPersonDays": 1.0,
+      "report": "reports/analysis/Article-figure-package.md",
+      "manifest": "reports/audits/dissertation/article-figures-v1/manifest.json",
+      "testsPassed": 6,
+      "scientificAuthorApproval": false
     },
     "11": {
       "status": "technicalChecksPassed",
@@ -255,13 +260,21 @@
       "testsPassed": 3,
       "controlledBenchmarkStarted": false,
       "machineIdentityConflict": true
+    },
+    "36": {
+      "status": "auditedProtectedTextUnchanged",
+      "report": "reports/analysis/Bibliography-review.md",
+      "testsPassed": 11,
+      "duplicateLabelNames": 2,
+      "missingOrdinaryCitations": 0,
+      "missingTemplateNocite": 4
     }
   },
   "humanAcceptanceNotReplaced": true,
   "progressDocument": "reports/status/Progress.md",
   "goalConstraints": "reports/status/goal-constraints.json",
-  "manualContinuationRequired": true,
-  "continuationCheckpoint": "Sensitivity complete and analyzed. Network pilots27success/2failed/1unattempted; matrix blocked. Streaming JSON/SHA fix tested locally only; frozen Linux runtime unchanged. Next separate diagnostics and author review; no timers.",
+  "manualContinuationRequired": false,
+  "continuationCheckpoint": "Continue independent figure package, bibliography audit and reproducible build while separate writer check runs; no cyclic polling. Pause only when independent useful tasks exhausted.",
   "articleWritingOwner": "human",
   "recommendedManualReviewAt": null,
   "parallelWork": {
@@ -291,20 +304,19 @@
   "progressChange": {
     "previous": {
       "localPercent": 80,
-      "globalPercent": 19.1,
-      "verifiedTechnicalWeightPersonDays": 9
-    },
-    "current": {
-      "localPercent": 80,
       "globalPercent": 22.3,
       "verifiedTechnicalWeightPersonDays": 10.5
     },
+    "current": {
+      "localPercent": 80,
+      "globalPercent": 24.5,
+      "verifiedTechnicalWeightPersonDays": 11.5
+    },
     "addedAcceptedTechnicalSteps": [
-      "12"
+      "13"
     ],
     "removedAcceptedSteps": [],
-    "denominatorPersonDaysUnchanged": 47,
-    "interpretation": "Full sensitivity coverage and six verified exact repeats; not scientific acceptance or article completion"
+    "denominatorPersonDaysUnchanged": 47
   },
   "linuxWorkQueue": "reports/status/Linux-work-queue.md",
   "parallelWorkMap": {
@@ -374,7 +386,7 @@
   "summaryPercentages": {
     "observation": "reports/status/manual-continuation-latest.json",
     "localPercent": 80,
-    "globalPercent": 22.3,
+    "globalPercent": 24.5,
     "sensitivityAllCompleted": 230,
     "sensitivityAllTotal": 230,
     "sensitivityAllPercent": 100,
@@ -416,12 +428,12 @@
     "manifestReview": "reports/audits/dissertation/control-history-v1/Manifest-review.md"
   },
   "platformGoal": {
-    "statusObserved": "paused",
+    "statusObserved": "active",
     "objectiveReadFromUserAttachment": true,
     "objectiveDocument": "reports/status/Goal.md",
     "oldPausedStateSupersededByUser": true,
     "pauseAfterLongLaunchRequestedByObjective": true,
-    "pauseTransition": "Already paused; standing user instruction stops agent after confirmed tail launch"
+    "pauseTransition": "Continue independent useful work; pause only for waiting per latest user instruction"
   },
   "networkStudy": {
     "status": "pilotsStoppedTwoFailuresMatrixBlocked",
@@ -475,12 +487,12 @@
   },
   "lastGoalTurn": {
     "previousClassification": "progress",
-    "currentClassification": "progress",
-    "liveHandleVerified": false,
-    "newExperimentsStarted": false,
-    "observation": "reports/status/manual-continuation-latest.json",
+    "currentClassification": "progressAndVerifiedLongRun",
+    "liveHandleVerified": true,
+    "newExperimentsStarted": true,
+    "observation": "reports/status/network-writer-check-v2-latest.json",
     "pauseSource": "Explicit goal objective: no automatic continuation while long calculations run",
-    "scope": "Retrieve completed sensitivity; verify27networkpilots; fix tested writer on separate source; audit acceleration; update weighted progress",
+    "scope": "Separate operational writer check1point; protocol mechanism probe; monitoring cohort fix; no matrix",
     "terminalHandlesVerified": true
   },
   "scheduledContinuation": {
@@ -530,12 +542,13 @@
     "longRunsStarted": false,
     "attempts": 3,
     "receipt": "reports/audits/dissertation/qos1-pending-probe-v1/repeat-verification.json",
-    "scientificModelChanged": false
+    "scientificModelChanged": false,
+    "report": "reports/analysis/QoS1-pending-diagnosis.md"
   },
   "writerDiagnostic": {
-    "status": "stagedPreflightPassedNotStarted",
-    "root": "/run/media/entityfx/hd250/mqtty-evidence/network-writer-check-v1",
-    "executionManifestSha256": "34b48c56e1b3a0520227ba40c93cff16f4377761a3829f43444cb40cf98da385",
+    "status": "modelCompletedRawVerifiedControllerFalseFailure",
+    "root": "/run/media/entityfx/hd250/mqtty-evidence/network-writer-check-v2",
+    "executionManifestSha256": "f316d2a9c8ae275c268428df1aebdf04623b1192acfd4c1c64d083be13ee5827",
     "originalConfigUnchanged": true,
     "parentAttemptRetained": true,
     "pilotReplacement": false,
@@ -543,12 +556,151 @@
     "stagingReceipt": "reports/status/network-writer-check-staging.json",
     "preflightReceipt": "reports/status/network-writer-check-preflight.json",
     "operationalPreflightAttempts": 2,
-    "priorOperationalFailureRetained": true
+    "priorOperationalFailureRetained": true,
+    "unit": "mqtty-network-writer-check-v2.service",
+    "mainPid": 0,
+    "childPid": null,
+    "observedAtUtc": "2026-10-24T08:21:01.751393+00:00",
+    "observation": "reports/status/network-writer-check-v2-result.json",
+    "launchReceipt": "reports/status/network-writer-check-v2-launch.json",
+    "admissionReceipt": "reports/status/network-writer-check-v2-admission.json",
+    "progress": {
+      "status": "running",
+      "phase": "pilot",
+      "executionManifestSha256": "f316d2a9c8ae275c268428df1aebdf04623b1192acfd4c1c64d083be13ee5827",
+      "verified": 0,
+      "technicalErrors": 0,
+      "counts": {
+        "pilot": {
+          "done": 0,
+          "unresolvedErrors": 0,
+          "warnings": 0,
+          "total": 1
+        },
+        "matrix": {
+          "done": 0,
+          "unresolvedErrors": 0,
+          "warnings": 0,
+          "total": 0
+        },
+        "replay": {
+          "done": 0,
+          "unresolvedErrors": 0,
+          "warnings": 0,
+          "total": 0
+        },
+        "diagnostic": {
+          "done": 0,
+          "unresolvedErrors": 0,
+          "warnings": 0,
+          "total": 0
+        }
+      },
+      "attempts": {
+        "pilot": {
+          "total": 0,
+          "failed": 0
+        },
+        "matrix": {
+          "total": 0,
+          "failed": 0
+        },
+        "replay": {
+          "total": 0,
+          "failed": 0
+        },
+        "diagnostic": {
+          "total": 0,
+          "failed": 0
+        }
+      },
+      "warnings": 0,
+      "active": {
+        "id": "pilot.writer.star.federation.q0.r5000.w10.s42",
+        "pid": 77075,
+        "elapsedSeconds": 14.044198588992003,
+        "rssBytes": 358342656,
+        "peakRssBytes": 422887424
+      },
+      "reason": null,
+      "observedAtUtc": "2026-10-24T08:21:00.971854+00:00"
+    },
+    "initialServiceFailureRetained": true,
+    "initialServiceFailureReason": "Transient sensitivity unit not loaded; dependency guard rejected before any model attempt",
+    "investigation": "reports/status/network-writer-check-v2-investigation.json",
+    "modelReturnCode": 0,
+    "controllerTechnicalError": "processRssUnavailable",
+    "scientificOutputVerified": true,
+    "originalAttemptRetainedAsFailed": true,
+    "processWallSeconds": 223.19955889199628,
+    "peakRssBytes": 744816640,
+    "uniqueDeliveries": 200000,
+    "expectedDeliveries": 200000
   },
   "textPreparation": {
-    "status": "awaitingUserHighSwitch",
-    "substantiveNarrativeWrittenThisTurn": false,
+    "status": "userConfirmedHigh",
+    "substantiveNarrativeWrittenThisTurn": true,
     "technicalWorkContinues": true,
-    "userWillSelectMode": true
+    "userWillSelectMode": true,
+    "userModeConfirmationReceived": true
+  },
+  "goalPolicyRevision": {
+    "acceptedUserChoice": "Continue independent useful tasks; stop only for waiting",
+    "immediatePauseSuperseded": true,
+    "goalAttachmentUpdated": true,
+    "platformStatusLastObserved": "usageLimited",
+    "reformulatedObjective": "reports/status/Goal.md"
+  },
+  "processRssRaceFix": {
+    "status": "localTestsPassed",
+    "networkTestsPassed": 25,
+    "frozenRunnerChanged": false,
+    "terminatingChildGraceBoundSeconds": 1,
+    "liveUnobservableProcessStillFails": true
+  },
+  "webApplication": {
+    "status": "linuxServiceRunningUiUpdateInProgress",
+    "testsPassed": 29,
+    "testEvidenceSource": "web_application_review agent final implementation report",
+    "realEngines": [
+      "federation",
+      "relay",
+      "loadBalancing"
+    ],
+    "executionModes": [
+      "InProcess",
+      "OutOfProcess"
+    ],
+    "linuxDeploymentVerified": true,
+    "includedInResearchReadinessPercent": false,
+    "remaining": [
+      "publish committed build",
+      "deploy monitored Linux service",
+      "verify browser and saved results"
+    ],
+    "boundedIntegrationTestsPassed": 166,
+    "linuxSmokeJobs": 9,
+    "scientificAccuracyClaim": false,
+    "uiCommit": "3327b118fb4d6683fe8e8f30a074175b2479c29b",
+    "receipt": "reports/audits/web-linux-v1/service-receipt.json"
+  },
+  "relatedWorkMap": {
+    "status": "technicalDraftAwaitingAuthor",
+    "document": "docs/dissertation/related-work-map.md",
+    "primarySources": 6,
+    "doiRegistryChecks": 5,
+    "steps08And18Accepted": false
+  },
+  "qos1LinuxDiagnostic": {
+    "status": "runningConfirmedOnce",
+    "unit": "mqtty-qos1-diagnostics-v1.service",
+    "mainPid": 88812,
+    "modelPid": 88819,
+    "sourceCommit": "12601f534f9da3673057b072f8bd6a0c67fd8aed",
+    "receipt": "reports/audits/dissertation/qos1-linux-diagnostics-v1/live-confirmation.json",
+    "recommendedCheckMsk": "16:00",
+    "processTimeoutSeconds": 1800,
+    "originalFailedEvidenceUnchanged": true,
+    "matrixAdmitted": false
   }
 }

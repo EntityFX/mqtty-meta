@@ -1,0 +1,31 @@
+{
+  "unit": "mqtty-qos1-diagnostics-v1.service",
+  "command": [
+    "systemd-run",
+    "--user",
+    "--unit=mqtty-qos1-diagnostics-v1.service",
+    "--description=One bounded QoS1 drain investigation; no matrix admission",
+    "--property=Type=exec",
+    "--property=MemoryMax=3G",
+    "--property=MemorySwapMax=0",
+    "--property=CPUWeight=10",
+    "--property=KillMode=control-group",
+    "--property=RuntimeMaxSec=35min",
+    "--property=TimeoutStopSec=30s",
+    "--property=StandardOutput=append:/run/media/entityfx/hd250/mqtty-evidence/qos1-linux-diagnostics-v1/service.stdout.log",
+    "--property=StandardError=append:/run/media/entityfx/hd250/mqtty-evidence/qos1-linux-diagnostics-v1/service.stderr.log",
+    "--setenv=PYTHONDONTWRITEBYTECODE=1",
+    "/usr/bin/python3",
+    "/run/media/entityfx/hd250/mqtty-evidence/qos1-linux-diagnostics-v1/tools/dissertation/qos1_linux_diagnostic.py",
+    "--root",
+    "/run/media/entityfx/hd250/mqtty-evidence/qos1-linux-diagnostics-v1"
+  ],
+  "returnCode": 0,
+  "output": "Running as unit: mqtty-qos1-diagnostics-v1.service; invocation ID: 13c0cd8a7c12403a9f4a309494a0597c\n",
+  "manifestSha256": "e497bb0a1865238c4022b324c8f866f4cc5ef7264188bbec02282b4ccbb5bed2",
+  "sourceCommit": "12601f534f9da3673057b072f8bd6a0c67fd8aed",
+  "configSha256": "9142e62d30a7f9a421a96eed6306377cd027d266f2728268b597b5240c8c68a4",
+  "runtimeSha256": "9022c231ab1a48db8bf80a76f64bab597deab1ba08267d7a3ea06ee1f5946aff",
+  "observedAtUtc": "2026-10-24T12:48:57.692690+00:00",
+  "matrixAdmitted": false
+}

@@ -1,0 +1,35 @@
+{
+  "files": {
+    "Article-figure-package.md": "0c09fb73c154d5cf4025ca5bd67f91b027bd9feb791934070af1d263619559a2",
+    "broker-summary.csv": "fe2fb07c1ebc00a596766a751866daa1d639efcde529cf52098a8f5c06078125",
+    "conditional-seed-spread.csv": "0e0f75c91916af0164ae7b9cd04f12c20ceb2a97c54291fda74e816624839810",
+    "criterion-error-map.svg": "43227893d56181e218ee98310ad9dc6c20fa3cd37279e210da9a1924355d81d9",
+    "figure-inventory.csv": "b368c3a7faa694ac38d64c6945907baa33ea1aac0d818f4a9dcf87ee53febf3a",
+    "holdout-points.csv": "bf1bcb042766e0198409822884264f210c9d1c31f563975511fdd1799dbec508",
+    "methodology.mmd": "e5a11cca3fe6cb32d6bc082a939856d451170b7dd4210a07f509838ea6e064c2",
+    "methodology.svg": "d0f38f04c8f279785597bd5f457d7a54b67d0d38f478da16b8f17024d3243582",
+    "native-rps-ci95.svg": "70019b0167d63804a89cf7959b8d5e801ce38dea127c2b0f7997f4aeddf70954",
+    "native-uncertainty.csv": "a09df95d687863b9e13a6aa2891063425ed0edafd89ce12b58d190b547fcb8b2",
+    "package.json": "2546a669fa1b3662f7437862e1de41e70d5bac81900ff81f306f5baa8e8336d9"
+  },
+  "generatorSha256": "18c2e71328acfbd9a4751f1bee35efc8fb7ddea0a7eeaab7331535516d2207e6",
+  "humanScientificApproval": "notProvidedByThisPackage",
+  "sources": {
+    "reports/audits/dissertation/accuracy-analysis-v1/analysis.json": "46f1bb81917c54e6dbe04756b5536ed3206879f6510eda8d9de18c50d5eaa8da",
+    "reports/audits/dissertation/accuracy-analysis-v1/criteria.csv": "4ab1d69e1d811dd82f1f2872dc6912523166f699da3c96886dffd2b70d8ca910",
+    "reports/audits/dissertation/accuracy-analysis-v1/manifest.json": "2d33d19e848ea8411ed9bb47b3916e980c19f9c6b0dae746e3d8f992fa0300e3",
+    "reports/audits/dissertation/accuracy-analysis-v1/points.csv": "6699ddd03e88fc22f1dd9272897dc870a3f462c71574a597c1d5ab69658e7458",
+    "reports/audits/dissertation/sensitivity-final-v1/analysis/analysis.json": "1498b3399219f9e18d1eff2a57d3ed30d8f41f549c3f1a3245da1776a5bb1de1",
+    "reports/audits/dissertation/sensitivity-final-v1/analysis/criteria.csv": "00929b114fb6d03d3388ee2c53e7be533f3712426373c35711ad47f64b948e5f",
+    "reports/audits/dissertation/sensitivity-final-v1/analysis/point-metrics.csv": "b974b067a543500ff8221a96ef9472b6101cbb9f7a00bc4a7861a725230e861b",
+    "reports/audits/dissertation/sensitivity-final-v1/artifact-sha256.json": "3f8e72869df2382d7813375a70c8886f911a1213bfb08fd5072b8741089e15c3",
+    "reports/audits/dissertation/sensitivity-final-v1/observation.json": "e1f303d4da889d618456333614e607c0ae9a37276205846590047464c0809acd",
+    "reports/data/native-evidence.json": "7010fc352b64125a44aa9d7dbe54c9df76cb224631f2971d2f1579c44e5450de"
+  },
+  "thresholdsUnchanged": {
+    "deliveryLossRate": 0.05,
+    "latencyP99Ms": 0.2,
+    "publishFailureRate": 0.05,
+    "rps": 0.15
+  }
+}
