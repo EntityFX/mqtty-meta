@@ -1,0 +1,9 @@
+broker,stage,conditions,allSeedsPassed,someSeedsPassed,noSeedPassed,passedSeedRuns,totalSeedRuns
+Aedes,fidelity,24,20,3,1,64,72
+Aedes,holdout,24,18,3,3,58,72
+Mosquitto,fidelity,24,22,2,0,70,72
+Mosquitto,holdout,24,18,2,4,58,72
+ActiveMQ,fidelity,24,22,2,0,70,72
+ActiveMQ,holdout,24,9,2,13,29,72
+EMQX,fidelity,24,24,0,0,72,72
+EMQX,holdout,24,19,1,4,58,72

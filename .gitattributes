@@ -28,3 +28,5 @@
 /docs/dissertation/broker-twin-method-map.md -text
 /docs/dissertation/articles/** -text
 /tools/dissertation/*review_twin_article.py -text
+/tools/dissertation/revise_article1_analysis.py -text
+/tools/dissertation/test_article1_revision.py -text

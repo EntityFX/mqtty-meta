@@ -1,6 +1,6 @@
 import json
 import unittest
-from review_twin_article import ROOT, ARTICLE, verify
+from review_twin_article import ROOT, ARTICLE, verify, verify_native_model
 
 
 class ArticleReviewChecks(unittest.TestCase):
@@ -25,6 +25,13 @@ class ArticleReviewChecks(unittest.TestCase):
     def test_loss_of_independence_caveat_is_detected(self):
         with self.assertRaisesRegex(ValueError, 'limitation'):
             verify(self.text.replace('не установила слепую независимость','установила независимость'), self.accuracy, self.sensitivity)
+
+    def test_native_model_table_uses_actual_native_repetitions(self):
+        models=json.loads((ROOT/'reports/data/model-evidence.json').read_bytes())
+        native=json.loads((ROOT/'reports/data/native-evidence.json').read_bytes())
+        self.assertEqual(verify_native_model(self.text,models,native),16)
+        with self.assertRaisesRegex(ValueError,'native/model'):
+            verify_native_model(self.text.replace('| 53228.383 | 53185.000 |','| 53228.383 | 53228.383 |'),models,native)
 
 
 if __name__ == '__main__':

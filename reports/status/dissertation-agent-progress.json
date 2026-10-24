@@ -186,15 +186,37 @@
       "acceptedWeightPersonDays": 1.5
     },
     "14": {
-      "status": "completeAgentDraftTechnicalReviewPassed",
+      "status": "agentDraftRevisedMajorExperimentalCommentsOpen",
       "acceptedWeightPersonDays": 2.0,
       "document": "docs/dissertation/articles/article-1-twin-validation.md",
-      "verification": "reports/audits/dissertation/article-1-draft-v1/verification.json",
-      "reviewTestsPassed": 4,
+      "verification": "reports/audits/dissertation/article-1-response-v2/verification.json",
+      "reviewTestsPassed": 9,
       "scientificAuthorApproval": false,
       "coauthorApproval": false,
       "submitted": false,
-      "acceptanceScope": "Full working manuscript with problem, related work, method, experiment, verified results, discussion, limitations, conclusion, sources and reproduction appendix. Final author revision remains pending."
+      "acceptanceScope": "Full working manuscript with problem, related work, method, experiment, verified results, discussion, limitations, conclusion, sources and reproduction appendix. Final author revision remains pending.",
+      "externalCritique": {
+        "response": "reports/analysis/Article-1-review-response.md",
+        "data": "reports/audits/dissertation/article-1-revision-v2/manifest.json",
+        "reviewAuthorIdentityVerified": false,
+        "independentHumanReviewClaimed": false,
+        "mainUnitConditions": 96,
+        "allSeedsPassedConditions": 64,
+        "partialSeedsPassedConditions": 8,
+        "noSeedPassedConditions": 24,
+        "calibrationAllSeedsConditions": 88,
+        "pairedNativeModelRows": 384,
+        "illustratedPairedRows": 16,
+        "scientificStatus": "retrospectiveConditionalOnly",
+        "openExperiments": [
+          "fresh frozen prospective control",
+          "aligned observable cohorts",
+          "client/server event separation and reconnect variant",
+          "reference-instrument validation",
+          "extended tick/window/binning/max-rule sensitivity"
+        ],
+        "percentageIncreased": false
+      }
     },
     "25": {
       "status": "partialAgentDraftAwaitingMainNetworkResults",
@@ -217,7 +239,8 @@
       "integratedText": "docs/dissertation/articles/article-1-twin-validation.md",
       "verification": "reports/audits/dissertation/article-1-draft-v1/verification.json",
       "scientificAuthorApproval": false,
-      "basis": "Method, roles, origins, formulas, phases and limitations reviewed and integrated under explicit authorization to prepare full texts before human revision."
+      "basis": "Method, roles, origins, formulas, phases and limitations reviewed and integrated under explicit authorization to prepare full texts before human revision.",
+      "scientificScope": "Retrospective conditional correspondence; closed-loop native policy and token-constrained closed-loop model explicitly distinguished; prospective validity not established."
     },
     "19": {
       "status": "technicalChecksPassed",
