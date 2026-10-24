@@ -692,16 +692,17 @@
     "steps08And18Accepted": false
   },
   "qos1LinuxDiagnostic": {
-    "status": "runningConfirmedOnce",
-    "unit": "mqtty-qos1-diagnostics-v1.service",
-    "mainPid": 88812,
-    "modelPid": 88819,
-    "sourceCommit": "12601f534f9da3673057b072f8bd6a0c67fd8aed",
-    "receipt": "reports/audits/dissertation/qos1-linux-diagnostics-v1/live-confirmation.json",
-    "recommendedCheckMsk": "16:00",
-    "processTimeoutSeconds": 1800,
-    "originalFailedEvidenceUnchanged": true,
-    "matrixAdmitted": false
+    "status": "drainExtensionV2RunningConfirmed",
+    "unit": "mqtty-qos1-diagnostics-v2.service",
+    "mainPid": 89684,
+    "modelPid": 89697,
+    "originalOutcome": "drainTimeout",
+    "originalOutputVerified": true,
+    "onlyInputChange": "drainTimeoutSeconds 5 to 10",
+    "runtimeUnchanged": true,
+    "matrixAdmitted": false,
+    "nextCheckMsk": "16:12-16:15",
+    "receipt": "reports/audits/dissertation/qos1-linux-diagnostics-v2/launch-confirmation.json"
   },
   "dissertationBuild": {
     "status": "portableAttempt003StorageLimit",

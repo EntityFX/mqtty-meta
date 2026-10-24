@@ -49,9 +49,27 @@ def validate_original(original, manifest):
     plan = read(original / "program/plan.json")
     job = next(j for j in plan["jobs"] if j["id"] == JOB)
     config = original / "program" / job["config"]
-    if sha(config) != manifest["configSha256"] or sha(config) != job["sha256"]:
+    if sha(config) != manifest.get("originalConfigSha256", manifest["configSha256"]) or sha(config) != job["sha256"]:
         raise ValueError("Original configuration differs from the diagnostic")
     return config
+
+
+def validate_diagnostic_config(original_config, config, manifest):
+    """Allow only an explicitly pinned drain extension in a separate study."""
+    if sha(config) != manifest["configSha256"]:
+        raise ValueError("Diagnostic configuration hash changed")
+    extension = manifest.get("drainExtensionSeconds")
+    if extension is None:
+        if config.read_bytes() != original_config.read_bytes():
+            raise ValueError("Configuration bytes changed")
+        return
+    baseline = read(original_config)
+    candidate = read(config)
+    if isinstance(extension, bool) or not isinstance(extension, (int, float)) or not baseline["drainTimeoutSeconds"] < extension <= 30:
+        raise ValueError("Invalid bounded drain extension")
+    expected = dict(baseline, drainTimeoutSeconds=extension)
+    if candidate != expected:
+        raise ValueError("Only the explicitly declared drain extension is allowed")
 
 
 def admission(root, original, manifest):
@@ -110,8 +128,7 @@ def main():
         guard.save(root / "admission.json", admitted)
         attempt = root / "attempt-001"; attempt.mkdir(exist_ok=False)
         config = root / "inputs/config.json"
-        if config.read_bytes() != original_config.read_bytes():
-            raise ValueError("Configuration bytes changed")
+        validate_diagnostic_config(original_config, config, manifest)
         command = [manifest["dotnet"], str(root / "runtime/EntityFX.MqttY.Federation.App.dll"),
                    "run", "--config", str(config), "--output", "output", "--diagnostics"]
         guard.save(attempt / "command.json", {"argv": command, "jobId": JOB,
@@ -122,7 +139,8 @@ def main():
                        "observedAtUtc": datetime.now(timezone.utc).isoformat(), "matrixAdmitted": False})
         result = execute(command, attempt, guard, 1800, 2 * 1024**3, 4 * 1024**3, live)
         result.update({"jobId": JOB, "sourceCommit": SOURCE, "configSha256": sha(config),
-                       "matrixAdmitted": False, "originalFailureRetained": True})
+                       "matrixAdmitted": False, "originalFailureRetained": True,
+                       "drainExtensionSeconds": manifest.get("drainExtensionSeconds")})
         try:
             output = attempt / "output"
             if (output / "summary.json").exists():

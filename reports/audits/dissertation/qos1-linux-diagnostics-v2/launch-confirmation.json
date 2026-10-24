@@ -1,0 +1,44 @@
+{
+  "observedAtUtc": "2026-10-24T13:02:50.733527+00:00",
+  "units": {
+    "mqtty-qos1-diagnostics-v2.service": "MainPID=89684\nResult=success\nExecMainStatus=0\nActiveState=active\nSubState=running\n",
+    "mqtty-web.service": "MainPID=88937\nResult=success\nExecMainStatus=0\nActiveState=active\nSubState=running\n"
+  },
+  "diagnosticProgress": {
+    "status": "running",
+    "jobId": "pilot.star.federation.q1.r5000.w10.s42",
+    "active": {
+      "pid": 89697,
+      "elapsedSeconds": 23.068481980008073,
+      "rssBytes": 374554624,
+      "peakRssBytes": 425082880
+    },
+    "observedAtUtc": "2026-10-24T13:02:50.369188+00:00",
+    "matrixAdmitted": false
+  },
+  "modelCmdline": "/usr/lib64/dotnet/dotnet /run/media/entityfx/hd250/mqtty-evidence/qos1-linux-diagnostics-v2/runtime/EntityFX.MqttY.Federation.App.dll run --config /run/media/entityfx/hd250/mqtty-evidence/qos1-linux-diagnostics-v2/inputs/config.json --output output --diagnostics ",
+  "webHealth": {
+    "status": "ok",
+    "processId": 88940,
+    "processWorkingSetBytes": 113455104,
+    "dataDirectoryAvailable": true,
+    "runningJobs": 0,
+    "queuedJobs": 0
+  },
+  "previous": {
+    "returnCode": 2,
+    "technicalError": null,
+    "outputVerified": true,
+    "processWallSeconds": 339.0735825429729,
+    "peakRssBytes": 545112064,
+    "diagnosticsSha256": "cbd5f5353095522b6487b69ba32b7ec7cd52c6dc03b4607d058d0667eddc071e",
+    "lastDrain": {
+      "tick": 196790,
+      "isIdle": false,
+      "networkQueued": 6,
+      "networkRefused": 0,
+      "federatorQueued": 270,
+      "pendingMessages": 8
+    }
+  }
+}
