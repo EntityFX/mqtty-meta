@@ -1,0 +1,364 @@
+{
+  "control": {
+    "fault": false,
+    "refused": 0,
+    "before": {
+      "tick": 23,
+      "idle": false,
+      "networkQueued": 0,
+      "nodes": [
+        {
+          "name": "broker0000",
+          "quiescent": false,
+          "outgoing": 2,
+          "incoming": 0,
+          "sessions": [
+            {
+              "id": "publisher0000",
+              "pending": []
+            },
+            {
+              "id": "receiver0000",
+              "pending": [
+                {
+                  "status": "PendingToAcknowledge",
+                  "packetId": 1,
+                  "topic": "federation/delivered/0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "publisher0000",
+          "quiescent": false,
+          "outgoing": 0,
+          "incoming": 0,
+          "sessions": [
+            {
+              "id": "publisher0000",
+              "pending": [
+                {
+                  "status": "PendingToAcknowledge",
+                  "packetId": 1,
+                  "topic": "federation/delivered/0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "receiver0000",
+          "quiescent": true,
+          "outgoing": 0,
+          "incoming": 0,
+          "sessions": [
+            {
+              "id": "receiver0000",
+              "pending": []
+            }
+          ]
+        }
+      ],
+      "unique": 0
+    },
+    "after": {
+      "tick": 1025,
+      "idle": true,
+      "networkQueued": 0,
+      "nodes": [
+        {
+          "name": "broker0000",
+          "quiescent": true,
+          "outgoing": 0,
+          "incoming": 0,
+          "sessions": [
+            {
+              "id": "publisher0000",
+              "pending": []
+            },
+            {
+              "id": "receiver0000",
+              "pending": []
+            }
+          ]
+        },
+        {
+          "name": "publisher0000",
+          "quiescent": true,
+          "outgoing": 0,
+          "incoming": 0,
+          "sessions": [
+            {
+              "id": "publisher0000",
+              "pending": []
+            }
+          ]
+        },
+        {
+          "name": "receiver0000",
+          "quiescent": true,
+          "outgoing": 0,
+          "incoming": 0,
+          "sessions": [
+            {
+              "id": "receiver0000",
+              "pending": []
+            }
+          ]
+        }
+      ],
+      "unique": 1
+    },
+    "final": {
+      "tick": 11025,
+      "idle": true,
+      "networkQueued": 0,
+      "nodes": [
+        {
+          "name": "broker0000",
+          "quiescent": true,
+          "outgoing": 0,
+          "incoming": 0,
+          "sessions": [
+            {
+              "id": "publisher0000",
+              "pending": []
+            },
+            {
+              "id": "receiver0000",
+              "pending": []
+            }
+          ]
+        },
+        {
+          "name": "publisher0000",
+          "quiescent": true,
+          "outgoing": 0,
+          "incoming": 0,
+          "sessions": [
+            {
+              "id": "publisher0000",
+              "pending": []
+            }
+          ]
+        },
+        {
+          "name": "receiver0000",
+          "quiescent": true,
+          "outgoing": 0,
+          "incoming": 0,
+          "sessions": [
+            {
+              "id": "receiver0000",
+              "pending": []
+            }
+          ]
+        }
+      ],
+      "unique": 1
+    }
+  },
+  "refusal": {
+    "fault": true,
+    "refused": 2,
+    "before": {
+      "tick": 23,
+      "idle": false,
+      "networkQueued": 0,
+      "nodes": [
+        {
+          "name": "broker0000",
+          "quiescent": false,
+          "outgoing": 2,
+          "incoming": 0,
+          "sessions": [
+            {
+              "id": "publisher0000",
+              "pending": []
+            },
+            {
+              "id": "receiver0000",
+              "pending": [
+                {
+                  "status": "PendingToAcknowledge",
+                  "packetId": 1,
+                  "topic": "federation/delivered/0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "publisher0000",
+          "quiescent": false,
+          "outgoing": 0,
+          "incoming": 0,
+          "sessions": [
+            {
+              "id": "publisher0000",
+              "pending": [
+                {
+                  "status": "PendingToAcknowledge",
+                  "packetId": 1,
+                  "topic": "federation/delivered/0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "receiver0000",
+          "quiescent": true,
+          "outgoing": 0,
+          "incoming": 0,
+          "sessions": [
+            {
+              "id": "receiver0000",
+              "pending": []
+            }
+          ]
+        }
+      ],
+      "unique": 0
+    },
+    "after": {
+      "tick": 1025,
+      "idle": false,
+      "networkQueued": 0,
+      "nodes": [
+        {
+          "name": "broker0000",
+          "quiescent": false,
+          "outgoing": 0,
+          "incoming": 0,
+          "sessions": [
+            {
+              "id": "publisher0000",
+              "pending": []
+            },
+            {
+              "id": "receiver0000",
+              "pending": [
+                {
+                  "status": "PendingToAcknowledge",
+                  "packetId": 1,
+                  "topic": "federation/delivered/0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "publisher0000",
+          "quiescent": false,
+          "outgoing": 0,
+          "incoming": 0,
+          "sessions": [
+            {
+              "id": "publisher0000",
+              "pending": [
+                {
+                  "status": "PendingToAcknowledge",
+                  "packetId": 1,
+                  "topic": "federation/delivered/0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "receiver0000",
+          "quiescent": true,
+          "outgoing": 0,
+          "incoming": 0,
+          "sessions": [
+            {
+              "id": "receiver0000",
+              "pending": []
+            }
+          ]
+        }
+      ],
+      "unique": 0
+    },
+    "final": {
+      "tick": 11025,
+      "idle": false,
+      "networkQueued": 0,
+      "nodes": [
+        {
+          "name": "broker0000",
+          "quiescent": false,
+          "outgoing": 0,
+          "incoming": 0,
+          "sessions": [
+            {
+              "id": "publisher0000",
+              "pending": []
+            },
+            {
+              "id": "receiver0000",
+              "pending": [
+                {
+                  "status": "PendingToAcknowledge",
+                  "packetId": 1,
+                  "topic": "federation/delivered/0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "publisher0000",
+          "quiescent": false,
+          "outgoing": 0,
+          "incoming": 0,
+          "sessions": [
+            {
+              "id": "publisher0000",
+              "pending": [
+                {
+                  "status": "PendingToAcknowledge",
+                  "packetId": 1,
+                  "topic": "federation/delivered/0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "receiver0000",
+          "quiescent": true,
+          "outgoing": 0,
+          "incoming": 0,
+          "sessions": [
+            {
+              "id": "receiver0000",
+              "pending": []
+            }
+          ]
+        }
+      ],
+      "unique": 0
+    }
+  },
+  "elapsedSeconds": 7.015999999945052,
+  "binarySha256": {
+    "EntityFX.MqttY.Contracts.dll": "31fc7c1388959b92cb932978f552fa370dbd95c96758b2e9624135532b1f4a3d",
+    "EntityFX.MqttY.Contracts.Mqtt.dll": "25001fcb88f7d1ba20fde3248f8fea06ebe1ac3040e7a23c8946096fc21d9116",
+    "EntityFX.MqttY.Contracts.Scenarios.dll": "35db945b1613646a23282ab162e6aa5ad59e81dc7ff928fe7624c96eb3bd868c",
+    "EntityFX.MqttY.dll": "2f8f0dc3147387fb492c4153d3d7d98d0f6c2d1d7cf850b3fc072f7afda23864",
+    "EntityFX.MqttY.Federation.App.dll": "32a4d138224957d11197a8cd782503ab3347f654d39af4e6279d9bd9946d2c9d",
+    "EntityFX.MqttY.Plugin.Mqtt.dll": "b320c6e2e26cd9cde06c72e627876aa26f1c07ea443e20751e24191d2c6c3d9a"
+  },
+  "sourceSha256": "acfa4881b8f6fcb34a3214b83a15217982b355575eb297eb6f31022a0a5fc7c3",
+  "modelSourceSha256": {
+    "EntityFX.MqttSimulator/Network/Node.cs": "d62f7397c14d2d4122e406ccd8dc680d7da5255ac07daf2c2e7a724c56099748",
+    "EntityFX.MqttSimulator/Network/Network.cs": "4f1b587c753acecb87846ca3e70a44897bdcf64681f0ad2ae499e428d82b0d60",
+    "EntityFX.MqttY.Plugin.Mqtt/MqttBroker.cs": "1b8eb3a66df2c13b62247db946f5f5be2e79872ebba21fd2fbbd413a319897a2",
+    "EntityFX.MqttY.Plugin.Mqtt/MqttClient.cs": "41b40de23224a4ca8d533cb38ffa351f9aec10c9ef061adf2198fd0f5a3fc74b",
+    "EntityFX.MqttY.Federation.App/Federation/StaticFederator.cs": "3e95a8222955b93388c4c6261a0520203c051beac4f458a1d5e89063b012293c"
+  },
+  "modelCommit": "2c0cb25cabde700e5aebe5fbe1393e5419c4b378"
+}

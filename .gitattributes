@@ -14,3 +14,5 @@
 /tools/dissertation/*control*.py -text
 /tools/dissertation/*acceleration*.py -text
 /tools/status/** -text
+
+/tools/dissertation/probe_qos1_pending.py -text

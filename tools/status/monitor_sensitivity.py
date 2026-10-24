@@ -204,38 +204,65 @@ def system_stats():
     }
 
 
-def group_stats(dim, active_ids):
+def read_rows():
+    rows = []
+    for path in glob.glob(os.path.join(ROWS_DIR, "*.json")):
+        try:
+            with open(path, encoding="utf-8") as f:
+                rows.append(json.load(f))
+        except (OSError, ValueError):
+            continue  # A row being atomically published may not yet be readable.
+    return rows
+
+
+def row_identity(row):
+    parts = row.get("id", "").split(".")
+    kind = row.get("kind") or (parts[0] if parts[0] in ("pilot", "replay") else "matrix")
+    if parts[0] in ("pilot", "replay"):
+        parts = parts[1:]
+    return kind, parts[0], parts[1:]
+
+
+def fidelity_failed(row):
+    return bool(row.get("fidelityFailed")) or any(
+        c.get("status") == "failed"
+        for c in row.get("summary", {}).get("acceptanceCriteria", []))
+
+
+def accumulate(stats, key, row):
+    st = stats.setdefault(key, {"runs": 0, "failed": 0, "technical": 0, "wall": 0.0})
+    st["runs"] += 1
+    st["failed"] += int(fidelity_failed(row))
+    st["technical"] += int(bool(row.get("technicalError")))
+    st["wall"] += float(row.get("wallSeconds", 0) or 0)
+
+
+def group_stats(dim, active_ids, rows=None, kind="matrix"):
     stats = {}
-    try:
-        for path in glob.glob(os.path.join(ROWS_DIR, "*.json")):
-            try:
-                with open(path, "r", encoding="utf-8") as f:
-                    d = json.load(f)
-            except Exception:
-                continue
-            rid = d.get("id", "")
-            if rid in active_ids:
-                continue
-            parts = rid.split(".")
-            if parts and parts[0] == "pilot":
-                rest = parts[2:]
-            else:
-                rest = parts[1:]
-            if len(rest) <= dim:
-                continue
-            key = rest[dim]
-            st = stats.setdefault(key, {"runs": 0, "failed": 0, "wall": 0.0})
-            st["runs"] += 1
-            failed = bool(d.get("fidelityFailed"))
-            for c in d.get("summary", {}).get("acceptanceCriteria", []):
-                if c.get("status") == "failed":
-                    failed = True
-            if failed:
-                st["failed"] += 1
-            st["wall"] += float(d.get("wallSeconds", 0) or 0)
-    except Exception:
-        pass
+    for row in read_rows() if rows is None else rows:
+        cohort, _, rest = row_identity(row)
+        if cohort != kind or row.get("id") in active_ids or len(rest) <= dim:
+            continue
+        accumulate(stats, rest[dim], row)
     return stats
+
+
+def replay_stats(rows):
+    result = {"equal": 0, "mismatched": 0, "unchecked": 0, "fidelityFailed": 0}
+    for row in rows:
+        if row_identity(row)[0] != "replay":
+            continue
+        value = row.get("replayEqual")
+        result["equal" if value is True else "mismatched" if value is False else "unchecked"] += 1
+        result["fidelityFailed"] += int(fidelity_failed(row))
+    return result
+
+
+def replay_detail(rows, total):
+    st = replay_stats(rows)
+    return (f"Replay identity: equal={st['equal']}/{total} "
+            f"mismatch={st['mismatched']} unchecked={st['unchecked']}; "
+            f"fidelity failed={st['fidelityFailed']} (separate test)")
 
 
 def fmt_stats_line(stats, order=None):
@@ -265,74 +292,47 @@ def side_by_side(left, right, gap=4, width=78):
     return out
 
 
-def broker_stats():
+def broker_stats(rows=None, kind="matrix", active_ids=()):
     stats = {}
-    try:
-        for path in glob.glob(os.path.join(ROWS_DIR, "*.json")):
-            name = os.path.basename(path)
-            parts = name.split(".")
-            if parts and parts[0] == "pilot":
-                broker = parts[1] if len(parts) > 1 else "?"
-            else:
-                broker = parts[0] if parts else "?"
-            try:
-                with open(path, "r", encoding="utf-8") as f:
-                    d = json.load(f)
-            except Exception:
-                continue
-            st = stats.setdefault(broker, {"runs": 0, "failed": 0, "wall": 0.0})
-            st["runs"] += 1
-            failed = bool(d.get("fidelityFailed"))
-            for c in d.get("summary", {}).get("acceptanceCriteria", []):
-                if c.get("status") == "failed":
-                    failed = True
-            if failed:
-                st["failed"] += 1
-            st["wall"] += float(d.get("wallSeconds", 0) or 0)
-    except Exception:
-        pass
+    for row in read_rows() if rows is None else rows:
+        cohort, broker, _ = row_identity(row)
+        if cohort == kind and row.get("id") not in active_ids:
+            accumulate(stats, broker, row)
     return stats
 
 
-def collect_runs(active_ids):
-    runs = {}  # kind -> broker -> dict[(qos,pub,seed,var)] = status
-    try:
-        for path in glob.glob(os.path.join(ROWS_DIR, "*.json")):
-            try:
-                with open(path, "r", encoding="utf-8") as f:
-                    d = json.load(f)
-            except Exception:
-                continue
-            rid = d.get("id", "")
-            kind = d.get("kind", "matrix")
-            parts = rid.split(".")
-            # broker may be after 'pilot.'
-            if parts and parts[0] == "pilot":
-                broker = parts[1] if len(parts) > 1 else "?"
-                rest = parts[2:]
-            else:
-                broker = parts[0] if parts else "?"
-                rest = parts[1:]
-            # rest: m16, qX, pY, sZ, variant
-            qos = rest[1] if len(rest) > 1 else "?"
-            pub = rest[2] if len(rest) > 2 else "?"
-            seed = rest[3] if len(rest) > 3 else "?"
-            variant = rest[4] if len(rest) > 4 else "?"
-            status = "passed"
-            if d.get("technicalError"):
-                status = "failed"
-            elif d.get("fidelityFailed"):
-                status = "failed"
-            else:
-                for c in d.get("summary", {}).get("acceptanceCriteria", []):
-                    if c.get("status") == "failed":
-                        status = "failed"
-                        break
-            if rid in active_ids:
-                status = "running"
-            runs.setdefault(kind, {}).setdefault(broker, {})[(qos, pub, seed, variant)] = status
-    except Exception:
-        pass
+def broker_lines(rows, counts, active_ids=()):
+    matrix = broker_stats(rows, "matrix", active_ids)
+    pilots = broker_stats(rows, "pilot", active_ids)
+    brokers = sorted(set(matrix) | set(pilots))
+    matrix_total = counts.get("matrix", {}).get("total", 216) // 4
+    pilot_total = counts.get("pilot", {}).get("total", 8) // 4
+    lines = [f"{BOLD}Brokers (matrix / pilot separately; f=criteria failures):{RESET}"]
+    for broker in brokers:
+        st = matrix.get(broker, {"runs": 0, "failed": 0, "wall": 0})
+        pilot = pilots.get(broker, {"runs": 0, "failed": 0})
+        avg = st["wall"] / st["runs"] if st["runs"] else 0
+        lines.append(f"  {broker:<10} {bar(st['runs'], matrix_total, width=12, color=BLUE)} "
+                     f"matrix {st['runs']}/{matrix_total} f{st['failed']} "
+                     f"pilot {pilot['runs']}/{pilot_total} f{pilot['failed']} "
+                     f"matrix avg {fmt(avg)}")
+    return lines
+
+
+def collect_runs(active_ids, rows=None):
+    runs = {}
+    for row in read_rows() if rows is None else rows:
+        kind, broker, rest = row_identity(row)
+        if len(rest) < 5:
+            continue
+        status = "passed"
+        if row.get("technicalError"):
+            status = "technical"
+        elif fidelity_failed(row):
+            status = "failed"
+        if row.get("id") in active_ids:
+            status = "running"
+        runs.setdefault(kind, {}).setdefault(broker, {})[tuple(rest[1:5])] = status
     return runs
 
 
@@ -370,185 +370,189 @@ def render_matrix_block(lines, title, kind, runs, active_ids):
                             cells.append(f"{GREEN}█{RESET}")
                         elif st == "failed":
                             cells.append(f"{RED}█{RESET}")
+                        elif st == "technical":
+                            cells.append(f"{MAGENTA}!{RESET}")
                         elif st == "running":
                             cells.append(f"{YELLOW}█{RESET}")
                         else:
                             cells.append(f"{DIM}░{RESET}")
                 lines.append(f"{label} " + " ".join(cells))
-    passed = failed = running = 0
+    passed = failed = running = technical = 0
     for bdata in data.values():
         for st in bdata.values():
             if st == "passed":
                 passed += 1
             elif st == "failed":
                 failed += 1
+            elif st == "technical":
+                technical += 1
             elif st == "running":
                 running += 1
-    lines.append(f"{DIM}legend: {GREEN}█ok{RESET}{DIM} {RED}█fail{RESET}{DIM} {YELLOW}█run{RESET}{DIM} {DIM}░todo{RESET}{DIM}  "
-                f"summary: ok={passed} fail={failed} run={running}{RESET}")
+    lines.append(f"{DIM}legend: {GREEN}█ok{RESET}{DIM} {RED}█criteria{RESET}{DIM} {MAGENTA}!technical{RESET}{DIM} {YELLOW}█run{RESET}{DIM} {DIM}░todo{RESET}{DIM}  "
+                f"summary: ok={passed} criteriaFail={failed} technical={technical} run={running}{RESET}")
     lines.append("")
 
 
-while True:
-    move_home()
-    clear_to_end()
+def main():
+    while True:
+        move_home()
+        clear_to_end()
 
-    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    lines = []
-    lines.append(f"{BOLD}{CYAN}Sensitivity v1{RESET}  {DIM}{now} MSK{RESET}")
-    lines.append(f"{DIM}File: {PROGRESS}{RESET}")
-    lines.append(f"Service: {service_status()}")
-    lines.append("")
+        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        lines = []
+        lines.append(f"{BOLD}{CYAN}Sensitivity v1{RESET}  {DIM}{now} MSK{RESET}")
+        lines.append(f"{DIM}File: {PROGRESS}{RESET}")
+        lines.append(f"Service: {service_status()}")
+        lines.append("")
 
-    try:
-        with open(PROGRESS, "r", encoding="utf-8") as f:
-            data = json.load(f)
-    except Exception as e:
-        lines.append(f"{RED}Cannot read progress.json: {e}{RESET}")
+        try:
+            with open(PROGRESS, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except Exception as e:
+            lines.append(f"{RED}Cannot read progress.json: {e}{RESET}")
+            sys.stdout.write("\n".join(lines) + "\n")
+            sys.stdout.flush()
+            time.sleep(INTERVAL)
+            continue
+
+        counts = data.get("counts", {})
+        pilots = counts.get("pilot", {})
+        matrix = counts.get("matrix", {})
+        replay = counts.get("replay", {})
+
+        pd = pilots.get("done", 0)
+        pt = pilots.get("total", 8)
+        md = matrix.get("done", 0)
+        mt = matrix.get("total", 216)
+        rd = replay.get("done", 0)
+        rt = replay.get("total", 6)
+
+        total = pt + mt + rt
+        done = pd + md + rd
+        elapsed = data.get("elapsedSeconds", 0)
+
+        lines.append(f"Technical errors: {GREEN}{data.get('technicalErrors', 0)}{RESET}    "
+                     f"Workers: {data.get('workers', '?')}    "
+                     f"Elapsed: {BOLD}{fmt(elapsed)}{RESET}")
+        lines.append("")
+        ss = system_stats()
+        cpu = f"{ss['cpu_percent']:.0f}%" if ss['cpu_percent'] is not None else "n/a"
+        mem = ss['mem']
+        mem_str = f"{mem[0]:.1f}/{mem[1]:.1f} GiB" if mem else "n/a"
+        temp = f"{ss['cpu_temp']:.0f}°C" if ss['cpu_temp'] is not None else "n/a"
+        cpu_e = f"{ss['cpu_energy_w']:.1f} W" if ss['cpu_energy_w'] is not None else "n/a (no perm)"
+        gpu_e = f"{ss['gpu_power_w']:.1f} W" if ss['gpu_power_w'] is not None else "n/a"
+        lines.append(f"System: CPU {cpu} ({temp})   Mem {mem_str}   CPU power {cpu_e}   GPU power {gpu_e}")
+        lines.append("")
+        TW = shutil.get_terminal_size(fallback=(120, 40)).columns
+        if TW >= 110:
+            lines.append(f"Pilots: {bar(pd, pt, width=18, color=BLUE)} {pd:>3}/{pt:<3} criteriaFail={YELLOW}{pilots.get('failedCriteria', 0)}{RESET}   "
+                         f"Matrix: {bar(md, mt, width=18, color=GREEN)} {md:>3}/{mt:<3} ({md / mt * 100:5.1f}%) criteriaFail={YELLOW}{matrix.get('failedCriteria', 0)}{RESET}")
+            lines.append(f"Replay: {bar(rd, rt, width=18, color=MAGENTA)} {rd:>3}/{rt:<3} criteriaFail={YELLOW}{replay.get('failedCriteria', 0)}{RESET}   "
+                         f"Overall: {bar(done, total, width=18, color=CYAN)} {done:>3}/{total:<3} ({done / total * 100:5.1f}%)")
+        else:
+            lines.append(f"Pilots:  {bar(pd, pt, width=18, color=BLUE)} {pd:>3}/{pt:<3}  criteriaFail={YELLOW}{pilots.get('failedCriteria', 0)}{RESET}")
+            lines.append(f"Matrix:  {bar(md, mt, width=18, color=GREEN)} {md:>3}/{mt:<3} ({md / mt * 100:5.1f}%)  criteriaFail={YELLOW}{matrix.get('failedCriteria', 0)}{RESET}")
+            lines.append(f"Replay:  {bar(rd, rt, width=18, color=MAGENTA)} {rd:>3}/{rt:<3}  criteriaFail={YELLOW}{replay.get('failedCriteria', 0)}{RESET}")
+            lines.append(f"Overall: {bar(done, total, width=18, color=CYAN)} {done:>3}/{total:<3} ({done / total * 100:5.1f}%)")
+        lines.append("")
+
+        eta_seconds, finish_time = forecast(done, total, elapsed)
+        if eta_seconds is not None:
+            plan = ""
+            est = data.get("estimatedFullMatrixWallHoursAfterPilot")
+            if isinstance(est, dict):
+                lower = est.get("lower")
+                upper = est.get("upper")
+                if lower is not None and upper is not None:
+                    plan = f"  (plan {lower:.1f}-{upper:.1f}h)"
+            lines.append(f"{BOLD}Forecast:{RESET} ETA {BOLD}{fmt(eta_seconds)}{RESET}  "
+                         f"finish ~ {finish_time.strftime('%Y-%m-%d %H:%M')} MSK{plan}")
+        else:
+            lines.append(f"{DIM}Forecast: complete{RESET}" if done >= total else f"{DIM}Forecast: not enough completed units yet{RESET}")
+
+        lines.append("")
+        active_ids = set(data.get("active", {}).keys())
+        rows = read_rows()
+        stats = broker_stats(rows, active_ids=active_ids)
+
+        left = []
+        right = []
+
+        left.extend(broker_lines(rows, counts, active_ids))
+        left.append(replay_detail(rows, rt))
+
+        v_stats = group_stats(4, active_ids, rows)
+        q_stats = group_stats(1, active_ids, rows)
+        p_stats = group_stats(2, active_ids, rows)
+        s_stats = group_stats(3, active_ids, rows)
+        right.append(f"{BOLD}Stats by dimension (matrix only):{RESET}")
+        right.append(f"  Variants: {fmt_stats_line(v_stats, ['baseline','doubleWindow','halfTick'])}")
+        right.append(f"  QoS:      {fmt_stats_line(q_stats, ['q0','q1','q2'])}")
+        right.append(f"  Pub:      {fmt_stats_line(p_stats, ['p1','p128'])}")
+        right.append(f"  Seeds:    {fmt_stats_line(s_stats, ['s42','s43','s44'])}")
+
+        right.append("")
+        right.append(f"{BOLD}Heuristics:{RESET}")
+        if elapsed and elapsed > 0:
+            thr = done / (elapsed / 3600.0)
+            right.append(f"  Throughput: {thr:.2f} units/h   Remaining matrix: {mt-md} units")
+            m_eta, m_finish = forecast(md, mt, elapsed)
+            if m_eta is not None:
+                right.append(f"  Matrix ETA (linear): {fmt(m_eta)}  finish ~ {m_finish.strftime('%H:%M')} MSK")
+        if stats:
+            slowest = max(stats.items(), key=lambda kv: (kv[1]['wall'] / kv[1]['runs']) if kv[1]['runs'] else 0)
+            fastest = min(stats.items(), key=lambda kv: (kv[1]['wall'] / kv[1]['runs']) if kv[1]['runs'] else 0)
+            total_failed = sum(st['failed'] for st in stats.values())
+            matrix_rows = sum(st["runs"] for st in stats.values())
+            fail_rate = (total_failed / matrix_rows * 100) if matrix_rows else 0
+            right.append(f"  Slowest: {slowest[0]} (avg {fmt(slowest[1]['wall']/slowest[1]['runs'])}, f{slowest[1]['failed']})   "
+                         f"Fastest: {fastest[0]} (avg {fmt(fastest[1]['wall']/fastest[1]['runs'])})")
+            right.append(f"  Matrix criteria failures: {total_failed}/{matrix_rows} ({fail_rate:.1f}%)")
+
+        TW = shutil.get_terminal_size(fallback=(120, 40)).columns
+        if TW >= 120:
+            colw = max(48, min(72, (TW - 6) // 2))
+            lines.extend(side_by_side(left, right, width=colw))
+        else:
+            lines.extend(left)
+            lines.append("")
+            lines.extend(right)
+        lines.append("")
+
+        runs = collect_runs(active_ids, rows)
+        pilot_tmp = []
+        render_matrix_block(pilot_tmp, "Pilot matrix (B/D/H variants, seeds 42-44):", "pilot", runs, active_ids)
+        matrix_tmp = []
+        render_matrix_block(matrix_tmp, "Experiment matrix (B/D/H variants, seeds 42-44):", "matrix", runs, active_ids)
+        TW = shutil.get_terminal_size(fallback=(120, 40)).columns
+        if TW >= 130:
+            colw = max(50, (TW - 6) // 2)
+            lines.extend(side_by_side(pilot_tmp, matrix_tmp, width=colw))
+        else:
+            lines.extend(pilot_tmp)
+            lines.append("")
+            lines.extend(matrix_tmp)
+        lines.append("")
+        active = data.get("active", {})
+        if active:
+            lines.append(f"{BOLD}Active:{RESET}")
+            for key, info in active.items():
+                rss = info.get("rssBytes", 0) / (1024 ** 3)
+                peak = info.get("peakRssBytes", 0) / (1024 ** 3)
+                lines.append(f"  {GREEN}●{RESET} {parse_active(key)}  "
+                             f"elapsed {fmt(info.get('elapsedSeconds', 0))}  "
+                             f"RSS {rss:.2f}/{peak:.2f} GiB")
+        else:
+            lines.append(f"{DIM}Active: none{RESET}")
+
+        lines.append("")
+        lines.append(f"{DIM}Press Ctrl+C to exit. Refresh every {INTERVAL}s.{RESET}")
+
         sys.stdout.write("\n".join(lines) + "\n")
         sys.stdout.flush()
         time.sleep(INTERVAL)
-        continue
 
-    counts = data.get("counts", {})
-    pilots = counts.get("pilot", {})
-    matrix = counts.get("matrix", {})
-    replay = counts.get("replay", {})
 
-    pd = pilots.get("done", 0)
-    pt = pilots.get("total", 8)
-    md = matrix.get("done", 0)
-    mt = matrix.get("total", 216)
-    rd = replay.get("done", 0)
-    rt = replay.get("total", 6)
-
-    total = pt + mt + rt
-    done = pd + md + rd
-    elapsed = data.get("elapsedSeconds", 0)
-
-    lines.append(f"Technical errors: {GREEN}{data.get('technicalErrors', 0)}{RESET}    "
-                 f"Workers: {data.get('workers', '?')}    "
-                 f"Elapsed: {BOLD}{fmt(elapsed)}{RESET}")
-    lines.append("")
-    ss = system_stats()
-    cpu = f"{ss['cpu_percent']:.0f}%" if ss['cpu_percent'] is not None else "n/a"
-    mem = ss['mem']
-    mem_str = f"{mem[0]:.1f}/{mem[1]:.1f} GiB" if mem else "n/a"
-    temp = f"{ss['cpu_temp']:.0f}°C" if ss['cpu_temp'] is not None else "n/a"
-    cpu_e = f"{ss['cpu_energy_w']:.1f} W" if ss['cpu_energy_w'] is not None else "n/a (no perm)"
-    gpu_e = f"{ss['gpu_power_w']:.1f} W" if ss['gpu_power_w'] is not None else "n/a"
-    lines.append(f"System: CPU {cpu} ({temp})   Mem {mem_str}   CPU power {cpu_e}   GPU power {gpu_e}")
-    lines.append("")
-    TW = shutil.get_terminal_size(fallback=(120, 40)).columns
-    if TW >= 110:
-        lines.append(f"Pilots: {bar(pd, pt, width=18, color=BLUE)} {pd:>3}/{pt:<3} f={YELLOW}{pilots.get('failedCriteria', 0)}{RESET}   "
-                     f"Matrix: {bar(md, mt, width=18, color=GREEN)} {md:>3}/{mt:<3} ({md / mt * 100:5.1f}%) f={YELLOW}{matrix.get('failedCriteria', 0)}{RESET}")
-        lines.append(f"Replay: {bar(rd, rt, width=18, color=MAGENTA)} {rd:>3}/{rt:<3} f={YELLOW}{replay.get('failedCriteria', 0)}{RESET}   "
-                     f"Overall: {bar(done, total, width=18, color=CYAN)} {done:>3}/{total:<3} ({done / total * 100:5.1f}%)")
-    else:
-        lines.append(f"Pilots:  {bar(pd, pt, width=18, color=BLUE)} {pd:>3}/{pt:<3}  failed={YELLOW}{pilots.get('failedCriteria', 0)}{RESET}")
-        lines.append(f"Matrix:  {bar(md, mt, width=18, color=GREEN)} {md:>3}/{mt:<3} ({md / mt * 100:5.1f}%)  failed={YELLOW}{matrix.get('failedCriteria', 0)}{RESET}")
-        lines.append(f"Replay:  {bar(rd, rt, width=18, color=MAGENTA)} {rd:>3}/{rt:<3}  failed={YELLOW}{replay.get('failedCriteria', 0)}{RESET}")
-        lines.append(f"Overall: {bar(done, total, width=18, color=CYAN)} {done:>3}/{total:<3} ({done / total * 100:5.1f}%)")
-    lines.append("")
-
-    eta_seconds, finish_time = forecast(done, total, elapsed)
-    if eta_seconds is not None:
-        plan = ""
-        est = data.get("estimatedFullMatrixWallHoursAfterPilot")
-        if isinstance(est, dict):
-            lower = est.get("lower")
-            upper = est.get("upper")
-            if lower is not None and upper is not None:
-                plan = f"  (plan {lower:.1f}-{upper:.1f}h)"
-        lines.append(f"{BOLD}Forecast:{RESET} ETA {BOLD}{fmt(eta_seconds)}{RESET}  "
-                     f"finish ~ {finish_time.strftime('%Y-%m-%d %H:%M')} MSK{plan}")
-    else:
-        lines.append(f"{DIM}Forecast: not enough completed units yet{RESET}")
-
-    lines.append("")
-    active_ids = set(data.get("active", {}).keys())
-    stats = broker_stats()
-
-    left = []
-    right = []
-
-    if stats:
-        left.append(f"{BOLD}Brokers (rows/56):{RESET}")
-        for broker in sorted(stats):
-            st = stats[broker]
-            avg = (st["wall"] / st["runs"]) if st["runs"] else 0
-            left.append(f"  {broker:<10} {bar(st['runs'], 56, width=12, color=BLUE)} "
-                        f"{st['runs']:>2}/56  f{st['failed']:<2}  avg {fmt(avg)}")
-    else:
-        left.append(f"{DIM}Brokers: no completed rows yet{RESET}")
-
-    v_stats = group_stats(4, active_ids)
-    q_stats = group_stats(1, active_ids)
-    p_stats = group_stats(2, active_ids)
-    s_stats = group_stats(3, active_ids)
-    right.append(f"{BOLD}Stats by dimension:{RESET}")
-    right.append(f"  Variants: {fmt_stats_line(v_stats, ['baseline','doubleWindow','halfTick'])}")
-    right.append(f"  QoS:      {fmt_stats_line(q_stats, ['q0','q1','q2'])}")
-    right.append(f"  Pub:      {fmt_stats_line(p_stats, ['p1','p128'])}")
-    right.append(f"  Seeds:    {fmt_stats_line(s_stats, ['s42','s43','s44'])}")
-
-    right.append("")
-    right.append(f"{BOLD}Heuristics:{RESET}")
-    if elapsed and elapsed > 0:
-        thr = done / (elapsed / 3600.0)
-        right.append(f"  Throughput: {thr:.2f} units/h   Remaining matrix: {mt-md} units")
-        m_eta, m_finish = forecast(md, mt, elapsed)
-        if m_eta is not None:
-            right.append(f"  Matrix ETA (linear): {fmt(m_eta)}  finish ~ {m_finish.strftime('%H:%M')} MSK")
-    if stats:
-        slowest = max(stats.items(), key=lambda kv: (kv[1]['wall'] / kv[1]['runs']) if kv[1]['runs'] else 0)
-        fastest = min(stats.items(), key=lambda kv: (kv[1]['wall'] / kv[1]['runs']) if kv[1]['runs'] else 0)
-        total_failed = sum(st['failed'] for st in stats.values())
-        fail_rate = (total_failed / done * 100) if done else 0
-        right.append(f"  Slowest: {slowest[0]} (avg {fmt(slowest[1]['wall']/slowest[1]['runs'])}, f{slowest[1]['failed']})   "
-                     f"Fastest: {fastest[0]} (avg {fmt(fastest[1]['wall']/fastest[1]['runs'])})")
-        right.append(f"  Failures: {total_failed}/{done} ({fail_rate:.1f}%)")
-
-    TW = shutil.get_terminal_size(fallback=(120, 40)).columns
-    if TW >= 120:
-        colw = max(48, min(72, (TW - 6) // 2))
-        lines.extend(side_by_side(left, right, width=colw))
-    else:
-        lines.extend(left)
-        lines.append("")
-        lines.extend(right)
-    lines.append("")
-
-    runs = collect_runs(active_ids)
-    pilot_tmp = []
-    render_matrix_block(pilot_tmp, "Pilot matrix (B/D/H variants, seeds 42-44):", "pilot", runs, active_ids)
-    matrix_tmp = []
-    render_matrix_block(matrix_tmp, "Experiment matrix (B/D/H variants, seeds 42-44):", "matrix", runs, active_ids)
-    TW = shutil.get_terminal_size(fallback=(120, 40)).columns
-    if TW >= 130:
-        colw = max(50, (TW - 6) // 2)
-        lines.extend(side_by_side(pilot_tmp, matrix_tmp, width=colw))
-    else:
-        lines.extend(pilot_tmp)
-        lines.append("")
-        lines.extend(matrix_tmp)
-    lines.append("")
-    active = data.get("active", {})
-    if active:
-        lines.append(f"{BOLD}Active:{RESET}")
-        for key, info in active.items():
-            rss = info.get("rssBytes", 0) / (1024 ** 3)
-            peak = info.get("peakRssBytes", 0) / (1024 ** 3)
-            lines.append(f"  {GREEN}●{RESET} {parse_active(key)}  "
-                         f"elapsed {fmt(info.get('elapsedSeconds', 0))}  "
-                         f"RSS {rss:.2f}/{peak:.2f} GiB")
-    else:
-        lines.append(f"{DIM}Active: none{RESET}")
-
-    lines.append("")
-    lines.append(f"{DIM}Press Ctrl+C to exit. Refresh every {INTERVAL}s.{RESET}")
-
-    sys.stdout.write("\n".join(lines) + "\n")
-    sys.stdout.flush()
-    time.sleep(INTERVAL)
+if __name__ == "__main__":
+    main()

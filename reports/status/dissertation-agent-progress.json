@@ -508,5 +508,47 @@
     "regressionPassed": 141,
     "frozenLinuxRuntimeChanged": false,
     "largeFailedPointReplayed": false
+  },
+  "monitorPhaseCounts": {
+    "status": "testedAndUploadedSeparateVersion",
+    "testsPassed": 27,
+    "matrixRows": 216,
+    "pilotRows": 8,
+    "replayRows": 6,
+    "matrixCriteriaFailed": 55,
+    "pilotCriteriaFailed": 4,
+    "replayCriteriaFailed": 2,
+    "replayEqual": 6,
+    "replayMismatch": 0,
+    "remotePath": "/tmp/monitor_sensitivity-v2.py",
+    "liveUserMonitorRestarted": false,
+    "receipt": "reports/audits/dissertation/monitor-phase-counts-v1/tests.json"
+  },
+  "qos1Probe": {
+    "status": "refusalMechanismReproduced",
+    "actualPilotCauseProven": false,
+    "longRunsStarted": false,
+    "attempts": 3,
+    "receipt": "reports/audits/dissertation/qos1-pending-probe-v1/repeat-verification.json",
+    "scientificModelChanged": false
+  },
+  "writerDiagnostic": {
+    "status": "stagedPreflightPassedNotStarted",
+    "root": "/run/media/entityfx/hd250/mqtty-evidence/network-writer-check-v1",
+    "executionManifestSha256": "34b48c56e1b3a0520227ba40c93cff16f4377761a3829f43444cb40cf98da385",
+    "originalConfigUnchanged": true,
+    "parentAttemptRetained": true,
+    "pilotReplacement": false,
+    "matrixAdmitted": false,
+    "stagingReceipt": "reports/status/network-writer-check-staging.json",
+    "preflightReceipt": "reports/status/network-writer-check-preflight.json",
+    "operationalPreflightAttempts": 2,
+    "priorOperationalFailureRetained": true
+  },
+  "textPreparation": {
+    "status": "awaitingUserHighSwitch",
+    "substantiveNarrativeWrittenThisTurn": false,
+    "technicalWorkContinues": true,
+    "userWillSelectMode": true
   }
 }
