@@ -1,0 +1,73 @@
+{
+  "scope": "absolute font reads observed in complete first TeX pass, not completed PDF embedding",
+  "fonts": {
+    "C:\\Windows\\fonts\\timesi.ttf": {
+      "sha256": "3a1c2bc8528bfa432e0414d4ec69bf5813563c474e16a9ad0f57ca262f8d24a2",
+      "bytes": 940288
+    },
+    "C:\\Windows\\fonts\\timesbd.ttf": {
+      "sha256": "621b4a765fef5d255d19530f4bf936104c6519f2e232a0eef1923474e5b9cf22",
+      "bytes": 1175904
+    },
+    "C:\\Windows\\fonts\\times.ttf": {
+      "sha256": "2cff2a03d8034801979dd6d16f09b9a825c3d710fcf068f2ebfbf0e1425c87cf",
+      "bytes": 1195688
+    },
+    "C:\\Windows\\fonts\\timesbi.ttf": {
+      "sha256": "2852329a38acf9252504669d9c23d5e88366cf77e8209d508f5e7198639648ea",
+      "bytes": 881860
+    },
+    "C:\\Windows\\fonts\\courbd.ttf": {
+      "sha256": "716c08d704f154870bd9fb78b185d0b644912301dfa9c9e6daf45bdb4832a299",
+      "bytes": 805244
+    },
+    "C:\\Windows\\fonts\\cour.ttf": {
+      "sha256": "93c3ff526c19d03496c01c6a1bfd1031f97af021a13e859a89dfc717a0b6b6ec",
+      "bytes": 806504
+    },
+    "C:\\Windows\\fonts\\couri.ttf": {
+      "sha256": "5861588608d3a3775d921a7e4acb8362b21630c6b63718bc68adb7137ce53beb",
+      "bytes": 667440
+    },
+    "C:\\Windows\\fonts\\courbi.ttf": {
+      "sha256": "8fdb188252a2db0f020c89831bddb61cadfe290c3616fe534479b4d3b10d09c1",
+      "bytes": 577488
+    },
+    "C:\\Windows\\fonts\\arialbd.ttf": {
+      "sha256": "766f06ac8761f82f25d032a220e89438f6064591af9915061f20b949efdedf69",
+      "bytes": 980756
+    },
+    "C:\\Windows\\fonts\\ARIALN.TTF": {
+      "sha256": "cad552553cf2a75afca01955751aaa115e2a64fd6c6eea42e1fbd236630b7e0a",
+      "bytes": 175956
+    },
+    "C:\\Windows\\fonts\\ARIALNI.TTF": {
+      "sha256": "faf73aa7ce40b77ad19c09507a2263fe3f3ce9fa5642e8a1cd54fb3c9f52d599",
+      "bytes": 181124
+    },
+    "C:\\Windows\\fonts\\ariblk.ttf": {
+      "sha256": "10df702864b1f89cb29ba0d6b97c04228338d16807e13e8d8c74b91aba5e5f23",
+      "bytes": 167592
+    },
+    "C:\\Windows\\fonts\\arialbi.ttf": {
+      "sha256": "e432c1b3568bd207e30e3d52d41e6431ea53a679eb52dd79b1a36aa6a4f3b994",
+      "bytes": 721144
+    },
+    "C:\\Windows\\fonts\\ARIALNBI.TTF": {
+      "sha256": "161b859efd20c69ddebb23012a49f4f2030d56a0c1b9bcfd4df753217ce3e358",
+      "bytes": 180084
+    },
+    "C:\\Windows\\fonts\\ariali.ttf": {
+      "sha256": "79a5742b865cf06891d4ae43e42cac0e5169c7b7b06b5b3c24ef8e0966d27b62",
+      "bytes": 717428
+    },
+    "C:\\Windows\\fonts\\arial.ttf": {
+      "sha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1",
+      "bytes": 1036584
+    },
+    "C:\\Windows\\fonts\\ARIALNB.TTF": {
+      "sha256": "6c4a4b643461def5411e0217b74a625dcf2fb681252ef5da1db0af4eae80aa7e",
+      "bytes": 180740
+    }
+  }
+}

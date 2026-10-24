@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "observedAtUtc": "2026-10-24T12:23:30.026201+00:00",
+  "preflight": {
+    "machine": "x86_64",
+    "kernel": "6.12.85-6.12-alt1-x86_64",
+    "evidenceMount": "/run/media/entityfx/hd250",
+    "actualMount": true,
+    "freeBytesAtPreflight": 157425455104,
+    "aspNetRuntime": "8.0.21",
+    "dotnetRuntime": "8.0.21",
+    "userSystemd": "degraded; manager accessible, unrelated units require separate inspection"
+  },
+  "tests": {
+    "windows": {
+      "discovered": 14,
+      "passed": 12,
+      "skippedLinuxSymlinkTests": 2,
+      "failed": 0
+    },
+    "linux": {
+      "discovered": 14,
+      "passed": 14,
+      "failed": 0,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/helper-tests"
+    }
+  },
+  "sourceHashes": {
+    "tools/web/linux_web_host.py": "2e99b3851c092aa432cbca4ef91f4245cb16c77a6dd2d49b1c0310862d695d70",
+    "tools/web/smoke_web.py": "763f4d3da860e4401024dd7ba077eee93c7298961e5fb3714bd5b2eeeb07fa6c",
+    "tools/web/test_linux_web_host.py": "ce0aa7f93098120676a0c3c79ca4d158e889147c9c37897326d044d9809fc17c",
+    "tools/web/test_smoke_web.py": "8148e2615dc5bb238e92347d800ad6cb356ce8b7c7c1c3d52adf617abbb282d9"
+  },
+  "applicationDeployed": false,
+  "reason": "Awaiting reviewed committed application payload; no live service restarted."
+}

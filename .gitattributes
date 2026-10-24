@@ -20,3 +20,5 @@
 /tools/dissertation/*bibliography.py -text
 /tools/dissertation/*dissertation_build.py -text
 /tools/web/** -text
+
+/tools/dissertation/qos1_linux_diagnostic.py -text

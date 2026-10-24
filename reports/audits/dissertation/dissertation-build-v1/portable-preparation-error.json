@@ -1,0 +1,8 @@
+{
+  "attempt": "portable-002 preparation before engine launch",
+  "errorType": "FileExistsError",
+  "message": "temporary directory already existed",
+  "corrected": "exist_ok=True only for shared temp directory; new isolated input snapshot",
+  "texEngineLaunched": false,
+  "sourceEdited": false
+}

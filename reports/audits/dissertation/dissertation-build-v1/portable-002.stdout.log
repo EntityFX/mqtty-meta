@@ -1,0 +1,3013 @@
+note: generating format "latex"
+(texputnote: downloading tectonic-format-latex.tex
+ (tectonic-format-latex.texnote: downloading xelatex.ini
+ (xelatex.ininote: downloading latex.ltx
+ (latex.ltxnote: downloading texsys.cfg
+ (texsys.cfg)
+./texsys.aux found
+
+
+\@currdir set to: ./.
+
+
+Assuming \openin and \input 
+have the same search path.
+
+
+Defining UNIX/DOS style filename parser.
+
+catcodes, registers, parameters,
+LaTeX2e <2021-11-15> patch level 1
+note: downloading expl3.ltx
+(expl3.ltxnote: downloading expl3-code.tex
+ (expl3-code.texnote: downloading cmr10.tfm
+note: downloading UnicodeData.txt
+note: downloading CaseFolding.txt
+note: downloading SpecialCasing.txt
+)) hacks, document commands, control, par, spacing,
+files, font encodings, lengths,note: downloading fonttext.cfg
+
+====================================
+
+Local config file fonttext.cfg used
+
+====================================
+(fonttext.cfgnote: downloading fonttext.ltx
+ (fonttext.ltx
+=== Don't modify this file, use a .cfg file instead ===
+
+note: downloading omlenc.def
+(omlenc.def)note: downloading omsenc.def
+ (omsenc.def)note: downloading ot1enc.def
+ (ot1enc.def)note: downloading t1enc.def
+ (t1enc.def)note: downloading ts1enc.def
+ (ts1enc.def)note: downloading tuenc.def
+ (tuenc.def)note: downloading tulmr.fd
+
+(tulmr.fd)note: downloading tulmss.fd
+ (tulmss.fd)note: downloading tulmtt.fd
+ (tulmtt.fd)note: downloading ts1lmr.fd
+ (ts1lmr.fd)note: downloading t1cmr.fd
+ (t1cmr.fd)note: downloading ot1cmr.fd
+ (ot1cmr.fd)note: downloading ot1cmss.fd
+
+(ot1cmss.fd)note: downloading ot1cmtt.fd
+ (ot1cmtt.fd)))note: downloading fontmath.cfg
+
+====================================
+
+Local config file fontmath.cfg used
+
+====================================
+(fontmath.cfgnote: downloading fontmath.ltx
+ (fontmath.ltx
+=== Don't modify this file, use a .cfg file instead ===
+
+note: downloading omlcmm.fd
+(omlcmm.fd)note: downloading omscmsy.fd
+ (omscmsy.fd)note: downloading omxcmex.fd
+ (omxcmex.fd)note: downloading ucmr.fd
+ (ucmr.fd)))note: downloading preload.cfg
+
+====================================
+
+Local config file preload.cfg used
+
+=====================================
+(preload.cfgnote: downloading preload.ltx
+ (preload.ltxnote: downloading cmex10.tfm
+note: downloading line10.tfm
+note: downloading linew10.tfm
+note: downloading lcircle10.tfm
+note: downloading lcirclew10.tfm
+note: downloading cmr5.tfm
+note: downloading cmr7.tfm
+note: downloading cmmi5.tfm
+note: downloading cmmi7.tfm
+note: downloading cmmi10.tfm
+note: downloading cmsy5.tfm
+note: downloading cmsy7.tfm
+note: downloading cmsy10.tfm
+)) page nos., x-ref, environments, center, verbatim,
+math definitions, boxes, title, sectioning, contents, floats, footnotes,
+index, bibliography,note: downloading atveryend.sty
+note: downloading atveryend-ltx.sty
+note: downloading atbegshi.sty
+note: downloading atbegshi-ltx.sty
+ output,  Unicode character data,note: downloading load-unicode-data.tex
+ (load-unicode-data 
+load-unicode-data.tex v1.15 (2021-09-15)
+Reading Unicode data
+# UnicodeData-14.0.0.txt
+# Modified 2021-09-15 11:00:00 GMT [JAW]
+)note: downloading hyphen.cfg
+
+===========================================
+Local configuration file hyphen.cfg used
+===========================================
+(hyphen.cfgnote: downloading xebabel.def
+ (xebabel.def)note: downloading language.dat
+note: downloading hyphen.tex
+ (hyphen.tex)note: downloading dumyhyph.tex
+ (dumyhyph.tex)note: downloading zerohyph.tex
+ (zerohyph.tex)note: downloading dehypht-x-2022-03-16.tex
+
+(dehypht-x-2022-03-16.tex
+dehyph-exptl: using a TeX engine with native UTF-8 support.note: downloading dehypht-x-2022-03-16.pat
+
+(dehypht-x-2022-03-16.pat
+German Hyphenation Patterns (Traditional Orthography) `dehypht-x' 2022-03-16 (W
+L)))note: downloading dehyphn-x-2022-03-16.tex
+ (dehyphn-x-2022-03-16.tex
+dehyph-exptl: using a TeX engine with native UTF-8 support.note: downloading dehyphn-x-2022-03-16.pat
+
+(dehyphn-x-2022-03-16.pat
+German Hyphenation Patterns (Reformed Orthography, 2006) `dehyphn-x' 2022-03-16
+ (WL)))note: downloading loadhyph-af.tex
+ (loadhyph-af.tex UTF-8 Afrikaans hyphenation patternsnote: downloading hyph-af.tex
+ (hyph-af.tex)note: downloading hyph-quote-af.tex
+
+(hyph-quote-af.tex))note: downloading loadhyph-grc.tex
+ (loadhyph-grc.tex
+UTF-8 Hyphenation patterns for Ancient Greeknote: downloading hyph-grc.tex
+ (hyph-grc.tex))note: downloading ibyhyph.tex
+ (ibyhyph.tex
+Greek hyphenation patterns for Ibycus encoding, v3.0) (zerohyph.tex)note: downloading loadhyph-hy.tex
+
+(loadhyph-hy.tex UTF-8 Armenian hyphenation patternsnote: downloading hyph-hy.tex
+ (hyph-hy.tex))note: downloading loadhyph-eu.tex
+
+(loadhyph-eu.tex UTF-8 Basque hyphenation patternsnote: downloading hyph-eu.tex
+ (hyph-eu.tex))note: downloading loadhyph-be.tex
+
+(loadhyph-be.tex UTF-8 Belarusian hyphenation patternsnote: downloading hyph-be.tex
+ (hyph-be.tex)note: downloading hyph-quote-be.tex
+
+(hyph-quote-be.tex))note: downloading loadhyph-bg.tex
+ (loadhyph-bg.tex UTF-8 Bulgarian hyphenation patternsnote: downloading hyph-bg.tex
+
+(hyph-bg.tex
+Bulgarian hyphenation patterns (options: --safe-morphology --standalone-tex, ve
+rsion 21 October 2017)))note: downloading loadhyph-ca.tex
+ (loadhyph-ca.tex UTF-8 Catalan hyphenation patternsnote: downloading hyph-ca.tex
+
+(hyph-ca.tex))note: downloading loadhyph-zh-latn-pinyin.tex
+ (loadhyph-zh-latn-pinyin.tex
+UTF-8 Pinyin Hyphenation Patterns (with tone markers) 2018-11-25 (WL)note: downloading hyph-zh-latn-pinyin.tex
+
+(hyph-zh-latn-pinyin.tex))note: downloading loadhyph-cu.tex
+ (loadhyph-cu.tex
+UTF-8 Church Slavonic hyphenation patternsnote: downloading hyph-cu.tex
+ (hyph-cu.tex))note: downloading loadhyph-cop.tex
+ (loadhyph-cop.tex
+UTF-8 Coptic hyphenation patternsnote: downloading hyph-cop.tex
+ (hyph-cop.tex))note: downloading loadhyph-hr.tex
+ (loadhyph-hr.tex
+UTF-8 Croatian hyphenation patternsnote: downloading hyph-hr.tex
+ (hyph-hr.tex))note: downloading loadhyph-cs.tex
+ (loadhyph-cs.tex
+UTF-8 Czech hyphenation patternsnote: downloading hyph-cs.tex
+ (hyph-cs.tex))note: downloading loadhyph-da.tex
+ (loadhyph-da.tex
+UTF-8 Danish hyphenation patternsnote: downloading hyph-da.tex
+ (hyph-da.tex))note: downloading loadhyph-nl.tex
+ (loadhyph-nl.tex
+UTF-8 Dutch hyphenation patternsnote: downloading hyph-nl.tex
+ (hyph-nl.tex))note: downloading loadhyph-en-gb.tex
+ (loadhyph-en-gb.tex
+ASCII Hyphenation patterns for British Englishnote: downloading hyph-en-gb.tex
+ (hyph-en-gb.tex))note: downloading loadhyph-en-us.tex
+
+(loadhyph-en-us.tex ASCII Hyphenation patterns for American Englishnote: downloading hyph-en-us.tex
+
+(hyph-en-us.tex))note: downloading loadhyph-eo.tex
+ (loadhyph-eo.tex UTF-8 Esperanto hyphenation patternsnote: downloading hyph-eo.tex
+
+(hyph-eo.tex))note: downloading loadhyph-et.tex
+ (loadhyph-et.tex UTF-8 Estonian hyphenation patternsnote: downloading hyph-et.tex
+
+(hyph-et.tex))note: downloading loadhyph-mul-ethi.tex
+ (loadhyph-mul-ethi.tex UTF-8 Pan-Ethiopic hyphenation patternsnote: downloading hyph-mul-ethi.tex
+
+(hyph-mul-ethi.tex)) (zerohyph.tex)note: downloading loadhyph-fi.tex
+ (loadhyph-fi.tex
+UTF-8 Finnish hyphenation patternsnote: downloading hyph-fi.tex
+ (hyph-fi.tex))note: downloading loadhyph-fi-x-school.tex
+ (loadhyph-fi-x-school.tex
+UTF-8 Finnish hyphenation patterns for schoolnote: downloading hyph-fi-x-school.tex
+ (hyph-fi-x-school.tex))note: downloading loadhyph-fr.tex
+
+(loadhyph-fr.tex UTF-8 French hyphenation patternsnote: downloading hyph-fr.tex
+ (hyph-fr.tex)note: downloading hyph-quote-fr.tex
+
+(hyph-quote-fr.tex))note: downloading loadhyph-fur.tex
+ (loadhyph-fur.tex UTF-8 Friulan hyphenation patternsnote: downloading hyph-fur.tex
+
+(hyph-fur.tex)note: downloading hyph-quote-fur.tex
+ (hyph-quote-fur.tex))note: downloading loadhyph-gl.tex
+ (loadhyph-gl.tex
+UTF-8 Galician hyphenation patternsnote: downloading hyph-gl.tex
+ (hyph-gl.tex))note: downloading loadhyph-ka.tex
+ (loadhyph-ka.tex
+UTF-8 Georgian hyphenation patternsnote: downloading hyph-ka.tex
+ (hyph-ka.tex))note: downloading loadhyph-de-1901.tex
+ (loadhyph-de-1901.tex
+UTF-8 German hyphenation patterns (traditional orthography)note: downloading hyph-de-1901.tex
+ (hyph-de-1901.tex
+German Hyphenation Patterns (Traditional Orthography) `dehypht-x' 2021-02-26 (W
+L)))note: downloading loadhyph-de-1996.tex
+ (loadhyph-de-1996.tex
+UTF-8 German hyphenation patterns (reformed orthography)note: downloading hyph-de-1996.tex
+ (hyph-de-1996.tex
+German Hyphenation Patterns (Reformed Orthography, 2006) `dehyphn-x' 2021-02-26
+ (WL)))note: downloading loadhyph-de-ch-1901.tex
+ (loadhyph-de-ch-1901.tex
+UTF-8 Swiss-German hyphenation patterns (traditional orthography)note: downloading hyph-de-ch-1901.tex
+
+(hyph-de-ch-1901.tex
+Swiss-German Hyphenation Patterns (Traditional Orthography) `dehyphts-x' 2021-0
+2-26 (WL)))note: downloading loadhyph-el-polyton.tex
+ (loadhyph-el-polyton.tex
+UTF-8 Hyphenation patterns for multi-accent (polytonic) Modern Greeknote: downloading hyph-el-polyton.tex
+
+(hyph-el-polyton.tex))note: downloading loadhyph-el-monoton.tex
+ (loadhyph-el-monoton.tex
+UTF-8 Hyphenation patterns for uni-accent (monotonic) Modern Greeknote: downloading hyph-el-monoton.tex
+
+(hyph-el-monoton.tex))note: downloading loadhyph-hu.tex
+ (loadhyph-hu.tex UTF-8 Hungarian hyphenation patternsnote: downloading hyph-hu.tex
+
+(hyph-hu.tex))note: downloading loadhyph-is.tex
+ (loadhyph-is.tex UTF-8 Icelandic hyphenation patternsnote: downloading hyph-is.tex
+
+(hyph-is.tex))note: downloading loadhyph-as.tex
+ (loadhyph-as.tex UTF-8 Assamese hyphenation patternsnote: downloading hyph-as.tex
+
+(hyph-as.tex))note: downloading loadhyph-bn.tex
+ (loadhyph-bn.tex UTF-8 Bengali hyphenation patternsnote: downloading hyph-bn.tex
+ (hyph-bn.tex
+))note: downloading loadhyph-gu.tex
+ (loadhyph-gu.tex UTF-8 Gujarati hyphenation patternsnote: downloading hyph-gu.tex
+ (hyph-gu.tex))note: downloading loadhyph-hi.tex
+
+(loadhyph-hi.tex UTF-8 Hindi hyphenation patternsnote: downloading hyph-hi.tex
+ (hyph-hi.tex))note: downloading loadhyph-kn.tex
+
+(loadhyph-kn.tex UTF-8 Kannada hyphenation patternsnote: downloading hyph-kn.tex
+ (hyph-kn.tex))note: downloading loadhyph-ml.tex
+
+(loadhyph-ml.tex UTF-8 Malayalam hyphenation patternsnote: downloading hyph-ml.tex
+ (hyph-ml.tex))note: downloading loadhyph-mr.tex
+
+(loadhyph-mr.tex UTF-8 Marathi hyphenation patternsnote: downloading hyph-mr.tex
+ (hyph-mr.tex))note: downloading loadhyph-or.tex
+
+(loadhyph-or.tex UTF-8 Oriya hyphenation patternsnote: downloading hyph-or.tex
+ (hyph-or.tex))note: downloading loadhyph-pi.tex
+
+(loadhyph-pi.tex UTF-8 Pali hyphenation patternsnote: downloading hyph-pi.tex
+ (hyph-pi.tex))note: downloading loadhyph-pa.tex
+
+(loadhyph-pa.tex UTF-8 Panjabi hyphenation patternsnote: downloading hyph-pa.tex
+ (hyph-pa.tex))note: downloading loadhyph-ta.tex
+
+(loadhyph-ta.tex UTF-8 Tamil hyphenation patternsnote: downloading hyph-ta.tex
+ (hyph-ta.tex))note: downloading loadhyph-te.tex
+
+(loadhyph-te.tex UTF-8 Telugu hyphenation patternsnote: downloading hyph-te.tex
+ (hyph-te.tex))note: downloading loadhyph-id.tex
+
+(loadhyph-id.tex ASCII Indonesian hyphenation patternsnote: downloading hyph-id.tex
+ (hyph-id.tex))note: downloading loadhyph-ia.tex
+
+(loadhyph-ia.tex ASCII Hyphenation patterns for Interlinguanote: downloading hyph-ia.tex
+ (hyph-ia.tex))note: downloading loadhyph-ga.tex
+
+(loadhyph-ga.tex UTF-8 Irish hyphenation patternsnote: downloading hyph-ga.tex
+ (hyph-ga.tex))note: downloading loadhyph-it.tex
+
+(loadhyph-it.tex UTF-8 Italian hyphenation patternsnote: downloading hyph-it.tex
+ (hyph-it.tex)note: downloading hyph-quote-it.tex
+
+(hyph-quote-it.tex))note: downloading loadhyph-kmr.tex
+ (loadhyph-kmr.tex UTF-8 Kurmanji hyphenation patternsnote: downloading hyph-kmr.tex
+
+(hyph-kmr.tex))note: downloading loadhyph-la-x-classic.tex
+ (loadhyph-la-x-classic.tex
+UTF-8 Classical Latin hyphenation patterns, v.2.0 2019-07-03note: downloading hyph-la-x-classic.tex
+
+(hyph-la-x-classic.tex))note: downloading loadhyph-la.tex
+ (loadhyph-la.tex UTF-8 Latin hyphenation patternsnote: downloading hyph-la.tex
+
+(hyph-la.tex))note: downloading loadhyph-la-x-liturgic.tex
+ (loadhyph-la-x-liturgic.tex
+UTF-8 Liturgical Latin hyphenation patternsnote: downloading hyph-la-x-liturgic.tex
+ (hyph-la-x-liturgic.tex))note: downloading loadhyph-lv.tex
+
+(loadhyph-lv.tex UTF-8 Latvian hyphenation patternsnote: downloading hyph-lv.tex
+ (hyph-lv.tex))note: downloading loadhyph-lt.tex
+
+(loadhyph-lt.tex UTF-8 Lithuanian hyphenation patternsnote: downloading hyph-lt.tex
+ (hyph-lt.tex))note: downloading loadhyph-mk.tex
+
+(loadhyph-mk.tex UTF-8 Macedonian hyphenation patternsnote: downloading hyph-mk.tex
+ (hyph-mk.tex))note: downloading loadhyph-mn-cyrl.tex
+
+(loadhyph-mn-cyrl.tex UTF-8 (New) Mongolian hyphenation patternsnote: downloading hyph-mn-cyrl.tex
+
+(hyph-mn-cyrl.tex))note: downloading loadhyph-mn-cyrl-x-lmc.tex
+ (loadhyph-mn-cyrl-x-lmc.tex
+UTF-8 Mongolian hyphenation patternsnote: downloading hyph-mn-cyrl-x-lmc.tex
+ (hyph-mn-cyrl-x-lmc.tex))note: downloading loadhyph-nb.tex
+ (loadhyph-nb.tex
+ UTF-8 Norwegian Bokmal hyphenation patternsnote: downloading hyph-nb.tex
+ (hyph-nb.texnote: downloading hyph-no.tex
+ (hyph-no.tex)))note: downloading loadhyph-nn.tex
+
+(loadhyph-nn.tex UTF-8 Norwegian Nynorsk hyphenation patternsnote: downloading hyph-nn.tex
+ (hyph-nn.tex
+(hyph-no.tex)))note: downloading loadhyph-oc.tex
+ (loadhyph-oc.tex UTF-8 Occitan hyphenation patternsnote: downloading hyph-oc.tex
+
+(hyph-oc.tex)note: downloading hyph-quote-oc.tex
+ (hyph-quote-oc.tex))note: downloading loadhyph-pms.tex
+ (loadhyph-pms.tex
+UTF-8 Piedmontese hyphenation patternsnote: downloading hyph-pms.tex
+ (hyph-pms.tex)note: downloading hyph-quote-pms.tex
+ (hyph-quote-pms.tex))note: downloading loadhyph-pl.tex
+
+(loadhyph-pl.tex UTF-8 Polish hyphenation patternsnote: downloading hyph-pl.tex
+ (hyph-pl.tex))note: downloading loadhyph-pt.tex
+
+(loadhyph-pt.tex UTF-8 Portuguese hyphenation patternsnote: downloading hyph-pt.tex
+ (hyph-pt.tex))note: downloading loadhyph-ro.tex
+
+(loadhyph-ro.tex UTF-8 Romanian hyphenation patternsnote: downloading hyph-ro.tex
+ (hyph-ro.tex))note: downloading loadhyph-rm.tex
+
+(loadhyph-rm.tex UTF-8 Romansh hyphenation patternsnote: downloading hyph-rm.tex
+ (hyph-rm.tex)note: downloading hyph-quote-rm.tex
+
+(hyph-quote-rm.tex))note: downloading loadhyph-ru.tex
+ (loadhyph-ru.tex UTF-8 Russian hyphenation patternsnote: downloading hyph-ru.tex
+
+(hyph-ru.tex))note: downloading loadhyph-sa.tex
+ (loadhyph-sa.tex UTF-8 Sanskrit hyphenation patternsnote: downloading hyph-sa.tex
+
+(hyph-sa.tex))note: downloading loadhyph-sr-latn.tex
+ (loadhyph-sr-latn.tex UTF-8 Serbian hyphenation patternsnote: downloading hyph-sh-latn.tex
+
+(hyph-sh-latn.tex)note: downloading hyph-sh-cyrl.tex
+ (hyph-sh-cyrl.tex))note: downloading loadhyph-sr-cyrl.tex
+ (loadhyph-sr-cyrl.tex
+UTF-8 Serbian hyphenation patterns (hyph-sh-latn.tex) (hyph-sh-cyrl.tex))note: downloading loadhyph-sk.tex
+
+(loadhyph-sk.tex UTF-8 Slovak hyphenation patternsnote: downloading hyph-sk.tex
+ (hyph-sk.tex))note: downloading loadhyph-sl.tex
+
+(loadhyph-sl.tex UTF-8 Slovenian hyphenation patternsnote: downloading hyph-sl.tex
+ (hyph-sl.tex))note: downloading loadhyph-es.tex
+
+(loadhyph-es.tex UTF-8 Spanish hyphenation patternsnote: downloading hyph-es.tex
+ (hyph-es.tex))note: downloading loadhyph-sv.tex
+
+(loadhyph-sv.tex UTF-8 Swedish hyphenation patternsnote: downloading hyph-sv.tex
+ (hyph-sv.tex))note: downloading loadhyph-th.tex
+
+(loadhyph-th.tex UTF-8 Thai hyphenation patternsnote: downloading hyph-th.tex
+ (hyph-th.tex))note: downloading loadhyph-tr.tex
+
+(loadhyph-tr.tex UTF-8 Turkish hyphenation patternsnote: downloading hyph-tr.tex
+ (hyph-tr.tex))note: downloading loadhyph-tk.tex
+
+(loadhyph-tk.tex UTF-8 Turkmen hyphenation patternsnote: downloading hyph-tk.tex
+ (hyph-tk.tex))note: downloading loadhyph-uk.tex
+
+(loadhyph-uk.tex UTF-8 Ukrainian hyphenation patternsnote: downloading hyph-uk.tex
+ (hyph-uk.tex)note: downloading hyph-quote-uk.tex
+
+(hyph-quote-uk.tex))note: downloading loadhyph-hsb.tex
+ (loadhyph-hsb.tex
+UTF-8 Upper Sorbian hyphenation patternsnote: downloading hyph-hsb.tex
+ (hyph-hsb.tex))note: downloading loadhyph-cy.tex
+ (loadhyph-cy.tex
+UTF-8 Welsh hyphenation patternsnote: downloading hyph-cy.tex
+ (hyph-cy.tex)))note: downloading latex2e-first-aid-for-external-files.ltx
+
+(latex2e-first-aid-for-external-files.ltx)
+ ) ) ) )
+Beginning to dump on file texput.fmt
+ (preloaded format=texput 0.0.0)
+88429 strings of total length 387256
+297567 memory locations dumped; current usage is 299&292789
+20858 multiletter control sequences
+\font\nullfont=nullfont
+\font\c__fp_exp_intarray=cmr10 at 0.00002pt
+\font\c__fp_trig_intarray=cmr10 at 0.00003pt
+\font\c_initex_cctab=cmr10 at 0.00005pt
+\font\c_other_cctab=cmr10 at 0.00006pt
+\font\c_str_cctab=cmr10 at 0.00008pt
+\font\g__regex_state_active_intarray=cmr10 at 0.00009pt
+\font\g__regex_thread_info_intarray=cmr10 at 0.0001pt
+\font\g__regex_submatch_prev_intarray=cmr10 at 0.00012pt
+\font\g__regex_submatch_begin_intarray=cmr10 at 0.00014pt
+\font\g__regex_submatch_end_intarray=cmr10 at 0.00015pt
+\font\g__regex_submatch_case_intarray=cmr10 at 0.00017pt
+\font\g__regex_balance_intarray=cmr10 at 0.00018pt
+\font\OMX/cmex/m/n/10=cmex10
+\font\tenln=line10
+\font\tenlnw=linew10
+\font\tencirc=lcircle10
+\font\tencircw=lcirclew10
+\font\OT1/cmr/m/n/5=cmr5
+\font\OT1/cmr/m/n/7=cmr7
+\font\OT1/cmr/m/n/10=cmr10
+\font\OML/cmm/m/it/5=cmmi5
+\font\OML/cmm/m/it/7=cmmi7
+\font\OML/cmm/m/it/10=cmmi10
+\font\OMS/cmsy/m/n/5=cmsy5
+\font\OMS/cmsy/m/n/7=cmsy7
+\font\OMS/cmsy/m/n/10=cmsy10
+\font\c_code_cctab=cmr10 at 0.0002pt
+\font\c_document_cctab=cmr10 at 0.00021pt
+469252 words of font info for 28 preloaded fonts
+1348 hyphenation exceptions
+Hyphenation trie of length 577275 has 9543 ops out of 35111
+  143 for language 86
+  110 for language 85
+  138 for language 84
+  7 for language 83
+  12 for language 82
+  53 for language 81
+  127 for language 80
+  195 for language 79
+  71 for language 78
+  248 for language 77
+  66 for language 76
+  66 for language 75
+  15 for language 74
+  119 for language 73
+  43 for language 72
+  58 for language 71
+  7 for language 70
+  194 for language 69
+  37 for language 68
+  23 for language 67
+  852 for language 66
+  852 for language 65
+  21 for language 64
+  38 for language 63
+  38 for language 62
+  77 for language 61
+  58 for language 60
+  206 for language 59
+  25 for language 58
+  316 for language 57
+  27 for language 56
+  37 for language 55
+  229 for language 54
+  38 for language 53
+  21 for language 52
+  6 for language 51
+  7 for language 50
+  6 for language 49
+  12 for language 48
+  6 for language 47
+  6 for language 46
+  8 for language 45
+  6 for language 44
+  6 for language 43
+  6 for language 42
+  6 for language 41
+  6 for language 40
+  147 for language 39
+  185 for language 38
+  20 for language 37
+  44 for language 36
+  420 for language 35
+  424 for language 34
+  432 for language 33
+  39 for language 32
+  76 for language 31
+  40 for language 30
+  89 for language 29
+  6 for language 28
+  31 for language 27
+  3 for language 25
+  113 for language 24
+  145 for language 23
+  377 for language 22
+  224 for language 21
+  265 for language 20
+  60 for language 19
+  63 for language 18
+  19 for language 17
+  15 for language 16
+  111 for language 15
+  3 for language 14
+  21 for language 13
+  54 for language 12
+  36 for language 11
+  5 for language 10
+  2 for language 9
+  148 for language 7
+  78 for language 6
+  137 for language 5
+  438 for language 4
+  442 for language 3
+  2 for language 1
+  181 for language 0
+No pages of output.
+Transcript written on texput.log.
+note: Running TeX ...
+(dissertation.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24>note: downloading nag.sty
+ (nag.stynote: downloading nag-l2tabu.cfg
+ (nag-l2tabu.cfg)note: downloading nag-orthodox.cfg
+ (nag-orthodox.cfg))
+note: downloading memoir.cls
+ (memoir.cls
+Document Class: memoir 2022/02/20 v3.7q configurable book, report, article docu
+ment class
+note: downloading etoolbox.sty
+(etoolbox.sty)note: downloading iftex.sty
+ (iftex.sty)note: downloading mem14.clo
+ (mem14.clonote: downloading lmroman12-regular.otf
+Fontconfig error: Cannot load default config file: No such file: (null)
+note: downloading tex-text.tec
+)note: downloading array.sty
+ (array.sty)note: downloading dcolumn.sty
+ (dcolumn.sty)note: downloading delarray.sty
+ (delarray.sty)
+note: downloading tabularx.sty
+ (tabularx.sty)note: downloading lmroman10-regular.otf
+note: downloading textcase.sty
+ (textcase.sty)) (common/setup) (common/packagesnote: downloading comment.sty
+ (comment.sty
+Excluding comment 'comment')note: downloading pdflscape.sty
+ (pdflscape.stynote: downloading lscape.sty
+ (lscape.stynote: downloading graphics.sty
+ (graphics.stynote: downloading trig.sty
+ (trig.sty
+)note: downloading graphics.cfg
+ (graphics.cfg)note: downloading xetex.def
+ (xetex.def))) (atbegshi-ltx.sty))note: downloading geometry.sty
+ (geometry.stynote: downloading keyval.sty
+ (keyval.sty)note: downloading ifvtex.sty
+
+(ifvtex.sty))note: downloading multicol.sty
+ (multicol.sty)note: downloading rotating.sty
+ (rotating.stynote: downloading graphicx.sty
+ (graphicx.sty)note: downloading ifthen.sty
+ (ifthen.sty))note: downloading amsthm.sty
+
+(amsthm.sty)note: downloading amsmath.sty
+ (amsmath.stynote: downloading amsopn.sty
+
+For additional information on amsmath, use the `?' option.
+note: downloading amstext.sty
+(amstext.stynote: downloading amsgen.sty
+ (amsgen.sty))note: downloading amsbsy.sty
+ (amsbsy.sty) (amsopn.sty))note: downloading amscd.sty
+ (amscd.sty)note: downloading amsfonts.sty
+ (amsfonts.sty
+)note: downloading amssymb.sty
+ (amssymb.sty)note: downloading mathtools.sty
+ (mathtools.stynote: downloading calc.sty
+ (calc.sty)note: downloading mhsetup.sty
+ (mhsetup.sty))note: downloading xfrac.sty
+ (xfrac.stynote: downloading expl3.sty
+ (expl3.stynote: downloading l3backend-xetex.def
+
+(l3backend-xetex.def))note: downloading l3keys2e.sty
+ (l3keys2e.sty)note: downloading textcomp.sty
+ (textcomp.sty)note: downloading xparse.sty
+ (xparse.sty)note: downloading xtemplate.sty
+
+(xtemplate.sty))note: downloading siunitx.sty
+ (siunitx.stynote: downloading siunitx-v2.sty
+ (siunitx-v2.stynote: downloading translator.sty
+ (translator.sty)))
+subequations patched
+note: downloading fontspec.sty
+note: downloading polyglossia.sty
+(polyglossia.stynote: downloading makecmds.sty
+ (makecmds.sty)note: downloading xkeyval.sty
+ (xkeyval.stynote: downloading xkeyval.tex
+ (xkeyvalnote: downloading xkvutils.tex
+ (xkvutils)))
+(fontspec.stynote: downloading fontspec-xetex.sty
+ (fontspec-xetex.stynote: downloading fontenc.sty
+ (fontenc.sty)note: downloading fontspec.cfg
+ (fontspec.cfg)note: downloading lmroman12-bold.otf
+))
+
+LaTeX hooks Warning: Generic hook 'file/after/tracklang.sty' is deprecated.
+(hooks)              Use hook 'file/tracklang.sty/after' instead.
+
+
+LaTeX hooks Warning: Generic hook 'package/after/bidi' is deprecated.
+(hooks)              Use hook 'package/bidi/after' instead.
+
+
+LaTeX hooks Warning: Generic hook 'package/after/luabidi' is deprecated.
+(hooks)              Use hook 'package/luabidi/after' instead.
+
+note: downloading gloss-latex.ldf
+(gloss-latex.ldf))note: downloading indentfirst.sty
+ (indentfirst.sty)note: downloading xcolor.sty
+ (xcolor.stynote: downloading color.cfg
+ (color.cfg)note: downloading colortbl.sty
+ (colortbl.stynote: downloading color.sty
+)note: downloading dvipsnam.def
+
+(dvipsnam.def))note: downloading xltabular.sty
+ (xltabular.stynote: downloading ltablex.sty
+ (ltablex.stynote: downloading longtable.sty
+ (longtable.sty)))note: downloading multirow.sty
+ (multirow.sty)note: downloading makecell.sty
+
+(makecell.sty)note: downloading tabulary.sty
+ (tabulary.sty)note: downloading tabularray.sty
+ (tabularray.sty)note: downloading booktabs.sty
+note: downloading threeparttable.sty
+ (threeparttable.sty)note: downloading icomma.sty
+ (icomma.sty
+)note: downloading impnattypo.sty
+ (impnattypo.stynote: downloading ifluatex.sty
+ (ifluatex.sty)note: downloading kvoptions.sty
+ (kvoptions.stynote: downloading ltxcmds.sty
+ (ltxcmds.sty)note: downloading kvsetkeys.sty
+ (kvsetkeys.sty)))
+note: downloading tikz.sty
+ (tikz.stynote: downloading pgf.sty
+ (pgf.stynote: downloading pgfrcs.sty
+ (pgfrcs.stynote: downloading pgfutil-common.tex
+ (pgfutil-common.texnote: downloading pgfutil-common-lists.tex
+ (pgfutil-common-lists.tex))
+note: downloading pgfutil-latex.def
+ (pgfutil-latex.def)note: downloading pgfrcs.code.tex
+ (pgfrcs.code.texnote: downloading pgf.revision.tex
+ (pgf.revision.tex)))note: downloading pgfcore.sty
+ (pgfcore.stynote: downloading pgfsys.sty
+
+(pgfsys.stynote: downloading pgfsys.code.tex
+ (pgfsys.code.texnote: downloading pgfkeys.code.tex
+ (pgfkeys.code.texnote: downloading pgfkeysfiltered.code.tex
+ (pgfkeysfiltered.code.tex))note: downloading pgf.cfg
+
+(pgf.cfg)note: downloading pgfsys-xetex.def
+ (pgfsys-xetex.defnote: downloading pgfsys-dvipdfmx.def
+ (pgfsys-dvipdfmx.defnote: downloading pgfsys-common-pdf.def
+ (pgfsys-common-pdf.def))))note: downloading pgfsyssoftpath.code.tex
+
+(pgfsyssoftpath.code.tex)note: downloading pgfsysprotocol.code.tex
+ (pgfsysprotocol.code.tex))note: downloading pgfcore.code.tex
+ (pgfcore.code.texnote: downloading pgfmath.code.tex
+
+(pgfmath.code.texnote: downloading pgfmathcalc.code.tex
+ (pgfmathcalc.code.texnote: downloading pgfmathutil.code.tex
+ (pgfmathutil.code.tex)note: downloading pgfmathparser.code.tex
+
+(pgfmathparser.code.tex)note: downloading pgfmathfunctions.code.tex
+ (pgfmathfunctions.code.texnote: downloading pgfmathfunctions.basic.code.tex
+
+(pgfmathfunctions.basic.code.tex)note: downloading pgfmathfunctions.trigonometric.code.tex
+ (pgfmathfunctions.trigonometric.code.tex)note: downloading pgfmathfunctions.random.code.tex
+
+(pgfmathfunctions.random.code.tex)note: downloading pgfmathfunctions.comparison.code.tex
+ (pgfmathfunctions.comparison.code.tex)note: downloading pgfmathfunctions.base.code.tex
+
+(pgfmathfunctions.base.code.tex)note: downloading pgfmathfunctions.round.code.tex
+ (pgfmathfunctions.round.code.tex)note: downloading pgfmathfunctions.misc.code.tex
+
+(pgfmathfunctions.misc.code.tex)note: downloading pgfmathfunctions.integerarithmetics.code.tex
+ (pgfmathfunctions.integerarithmetics.code.tex)
+))note: downloading pgfmathfloat.code.tex
+ (pgfmathfloat.code.tex))note: downloading pgfint.code.tex
+ (pgfint.code.tex)note: downloading pgfcorepoints.code.tex
+ (pgfcorepoints.code.tex)note: downloading pgfcorepathconstruct.code.tex
+
+(pgfcorepathconstruct.code.tex)note: downloading pgfcorepathusage.code.tex
+ (pgfcorepathusage.code.tex)note: downloading pgfcorescopes.code.tex
+
+(pgfcorescopes.code.tex)note: downloading pgfcoregraphicstate.code.tex
+ (pgfcoregraphicstate.code.tex)note: downloading pgfcoretransformations.code.tex
+
+(pgfcoretransformations.code.tex)note: downloading pgfcorequick.code.tex
+ (pgfcorequick.code.tex)note: downloading pgfcoreobjects.code.tex
+
+(pgfcoreobjects.code.tex)note: downloading pgfcorepathprocessing.code.tex
+ (pgfcorepathprocessing.code.tex)note: downloading pgfcorearrows.code.tex
+
+(pgfcorearrows.code.tex)note: downloading pgfcoreshade.code.tex
+ (pgfcoreshade.code.tex)note: downloading pgfcoreimage.code.tex
+ (pgfcoreimage.code.texnote: downloading pgfcoreexternal.code.tex
+
+(pgfcoreexternal.code.tex))note: downloading pgfcorelayers.code.tex
+ (pgfcorelayers.code.tex)note: downloading pgfcoretransparency.code.tex
+
+(pgfcoretransparency.code.tex)note: downloading pgfcorepatterns.code.tex
+ (pgfcorepatterns.code.tex)note: downloading pgfcorerdf.code.tex
+ (pgfcorerdf.code.tex)
+))note: downloading pgfmoduleshapes.code.tex
+ (pgfmoduleshapes.code.tex)note: downloading pgfmoduleplot.code.tex
+ (pgfmoduleplot.code.tex)note: downloading pgfcomp-version-0-65.sty
+
+(pgfcomp-version-0-65.sty)note: downloading pgfcomp-version-1-18.sty
+ (pgfcomp-version-1-18.sty))note: downloading pgffor.sty
+ (pgffor.stynote: downloading pgfkeys.sty
+ (pgfkeys.sty
+ (pgfkeys.code.tex))note: downloading pgfmath.sty
+ (pgfmath.sty (pgfmath.code.tex))note: downloading pgffor.code.tex
+ (pgffor.code.tex
+(pgfmath.code.tex)))note: downloading tikz.code.tex
+ (tikz.code.texnote: downloading pgflibraryplothandlers.code.tex
+ (pgflibraryplothandlers.code.tex)note: downloading pgfmodulematrix.code.tex
+
+(pgfmodulematrix.code.tex)note: downloading tikzlibrarytopaths.code.tex
+ (tikzlibrarytopaths.code.tex)))note: downloading tikzlibrarychains.code.tex
+
+(tikzlibrarychains.code.texnote: downloading tikzlibrarypositioning.code.tex
+ (tikzlibrarypositioning.code.tex))note: downloading tikzlibraryshapes.geometric.code.tex
+
+(tikzlibraryshapes.geometric.code.texnote: downloading pgflibraryshapes.geometric.code.tex
+ (pgflibraryshapes.geometric.code.tex))note: downloading tikzlibraryshapes.symbols.code.tex
+
+(tikzlibraryshapes.symbols.code.texnote: downloading pgflibraryshapes.symbols.code.tex
+ (pgflibraryshapes.symbols.code.tex))note: downloading tikzlibraryarrows.code.tex
+
+(tikzlibraryarrows.code.texnote: downloading pgflibraryarrows.code.tex
+ (pgflibraryarrows.code.tex))note: downloading circuitikz.sty
+ (circuitikz.stynote: downloading tikzlibrarycalc.code.tex
+
+(tikzlibrarycalc.code.tex)note: downloading pgflibraryarrows.meta.code.tex
+ (pgflibraryarrows.meta.code.tex)note: downloading tikzlibrarybending.code.tex
+
+(tikzlibrarybending.code.texnote: downloading pgfmodulebending.code.tex
+ (pgfmodulebending.code.texnote: downloading pgfmodulenonlineartransformations.code.tex
+
+(pgfmodulenonlineartransformations.code.tex)note: downloading pgflibrarycurvilinear.code.tex
+ (pgflibrarycurvilinear.code.tex)))
+note: downloading tikzlibraryfpu.code.tex
+ (tikzlibraryfpu.code.texnote: downloading pgflibraryfpu.code.tex
+ (pgflibraryfpu.code.tex))note: downloading pgfcirc.defines.tex
+ (pgfcirc.defines.tex)note: downloading pgfcircutils.tex
+
+(pgfcircutils.tex)note: downloading pgfcircpath.tex
+ (pgfcircpath.tex)note: downloading pgfcircshapes.tex
+ (pgfcircshapes.tex)note: downloading pgfcircmonopoles.tex
+ (pgfcircmonopoles.tex)
+note: downloading pgfcircbipoles.tex
+ (pgfcircbipoles.tex)note: downloading pgfcirctripoles.tex
+ (pgfcirctripoles.tex)note: downloading pgfcircquadpoles.tex
+ (pgfcircquadpoles.tex)note: downloading pgfcircmultipoles.tex
+
+(pgfcircmultipoles.tex)note: downloading pgfcirclabel.tex
+ (pgfcirclabel.tex)note: downloading pgfcircvoltage.tex
+ (pgfcircvoltage.tex)note: downloading pgfcirccurrent.tex
+
+(pgfcirccurrent.tex)note: downloading pgfcircflow.tex
+ (pgfcircflow.tex))note: downloading pgfplots.sty
+ (pgfplots.stynote: downloading pgfplots.revision.tex
+ (pgfplots.revision.tex)note: downloading pgfsys-luatex.def
+note: downloading pgfplots.code.tex
+
+(pgfplots.code.texnote: downloading pgfplotscore.code.tex
+ (pgfplotscore.code.texnote: downloading pgfplotssysgeneric.code.tex
+ (pgfplotssysgeneric.code.tex))note: downloading pgfplotslibrary.code.tex
+
+(pgfplotslibrary.code.tex)note: downloading pgfplotsoldpgfsupp_loader.code.tex
+ (pgfplotsoldpgfsupp_loader.code.tex)note: downloading pgfplotsutil.code.tex
+
+(pgfplotsutil.code.texnote: downloading pgfplotsliststructure.code.tex
+ (pgfplotsliststructure.code.tex)note: downloading pgfplotsliststructureext.code.tex
+
+(pgfplotsliststructureext.code.tex)note: downloading pgfplotsarray.code.tex
+ (pgfplotsarray.code.tex)note: downloading pgfplotsmatrix.code.tex
+
+(pgfplotsmatrix.code.tex)note: downloading pgfplotstableshared.code.tex
+ (pgfplotstableshared.code.tex)note: downloading pgfplotsdeque.code.tex
+
+(pgfplotsdeque.code.tex)note: downloading pgfplotsbinary.code.tex
+ (pgfplotsbinary.code.texnote: downloading pgfplotsbinary.data.code.tex
+ (pgfplotsbinary.data.code.tex
+))note: downloading pgfplotsutil.verb.code.tex
+ (pgfplotsutil.verb.code.tex)note: downloading pgflibrarypgfplots.surfshading.code.tex
+ (pgflibrarypgfplots.surfshading.code.texnote: downloading pgflibrarypgfplots.surfshading.pgfsys-xetex.def
+
+(pgflibrarypgfplots.surfshading.pgfsys-xetex.defnote: downloading pgflibrarypgfplots.surfshading.pgfsys-dvipdfmx.def
+
+(pgflibrarypgfplots.surfshading.pgfsys-dvipdfmx.def))))note: downloading pgfplotscolormap.code.tex
+
+(pgfplotscolormap.code.texnote: downloading pgfplotscolor.code.tex
+ (pgfplotscolor.code.tex))note: downloading pgfplotsstackedplots.code.tex
+
+(pgfplotsstackedplots.code.tex)note: downloading pgfplotsplothandlers.code.tex
+ (pgfplotsplothandlers.code.texnote: downloading pgfplotsmeshplothandler.code.tex
+
+(pgfplotsmeshplothandler.code.texnote: downloading pgfplotsmeshplotimage.code.tex
+ (pgfplotsmeshplotimage.code.tex)))note: downloading pgfplots.scaling.code.tex
+
+(pgfplots.scaling.code.tex)note: downloading pgfplotscoordprocessing.code.tex
+ (pgfplotscoordprocessing.code.tex)note: downloading pgfplots.errorbars.code.tex
+
+(pgfplots.errorbars.code.tex)note: downloading pgfplots.markers.code.tex
+ (pgfplots.markers.code.tex)note: downloading pgfplotsticks.code.tex
+
+(pgfplotsticks.code.tex)note: downloading pgfplots.paths.code.tex
+ (pgfplots.paths.code.tex)note: downloading tikzlibrarydecorations.code.tex
+
+(tikzlibrarydecorations.code.texnote: downloading pgfmoduledecorations.code.tex
+ (pgfmoduledecorations.code.tex))note: downloading tikzlibrarydecorations.pathmorphing.code.tex
+
+(tikzlibrarydecorations.pathmorphing.code.texnote: downloading pgflibrarydecorations.pathmorphing.code.tex
+
+(pgflibrarydecorations.pathmorphing.code.tex))note: downloading tikzlibrarydecorations.pathreplacing.code.tex
+
+(tikzlibrarydecorations.pathreplacing.code.texnote: downloading pgflibrarydecorations.pathreplacing.code.tex
+
+(pgflibrarydecorations.pathreplacing.code.tex))note: downloading tikzlibrarypgfplots.contourlua.code.tex
+
+(tikzlibrarypgfplots.contourlua.code.tex))note: downloading tikzlibraryplotmarks.code.tex
+ (tikzlibraryplotmarks.code.texnote: downloading pgflibraryplotmarks.code.tex
+
+(pgflibraryplotmarks.code.tex)))note: downloading tikzlibrarypgfplots.groupplots.code.tex
+ (tikzlibrarypgfplots.groupplots.code.tex)note: downloading tikzlibrarypgfplots.units.code.tex
+
+(tikzlibrarypgfplots.units.code.tex)note: downloading hyperref.sty
+ (hyperref.stynote: downloading pdftexcmds.sty
+ (pdftexcmds.stynote: downloading infwarerr.sty
+
+(infwarerr.sty))note: downloading kvdefinekeys.sty
+ (kvdefinekeys.sty)note: downloading pdfescape.sty
+ (pdfescape.sty)note: downloading hycolor.sty
+ (hycolor.sty)note: downloading letltxmacro.sty
+
+(letltxmacro.sty)note: downloading auxhook.sty
+ (auxhook.sty)note: downloading pd1enc.def
+ (pd1enc.def)note: downloading intcalc.sty
+ (intcalc.sty)note: downloading etexcmds.sty
+ (etexcmds.sty)note: downloading puenc.def
+
+(puenc.def)note: downloading url.sty
+ (url.sty)note: downloading pzdr.tfm
+note: downloading bitset.sty
+ (bitset.stynote: downloading bigintcalc.sty
+ (bigintcalc.sty)))note: downloading memhfixc.sty
+ (memhfixc.sty)note: downloading hxetex.def
+ (hxetex.def
+note: downloading stringenc.sty
+(stringenc.sty)note: downloading rerunfilecheck.sty
+ (rerunfilecheck.sty (atveryend-ltx.sty)note: downloading uniquecounter.sty
+ (uniquecounter.sty)))note: downloading caption.sty
+
+(caption.stynote: downloading caption3.sty
+ (caption3.stynote: downloading caption-memoir.sto
+ (caption-memoir.sto))note: downloading ltcaption.sty
+ (ltcaption.sty))note: downloading subcaption.sty
+
+(subcaption.sty)note: downloading pdfpages.sty
+ (pdfpages.stynote: downloading eso-pic.sty
+ (eso-pic.sty)note: downloading ppxetex.def
+ (ppxetex.def))note: downloading aliascnt.sty
+ (aliascnt.sty)note: downloading totalcount.sty
+
+(totalcount.sty)note: downloading totcount.sty
+ (totcount.sty)note: downloading totpages.sty
+ (totpages.stynote: downloading everyshi.sty
+ (everyshi.sty))note: downloading cleveref.sty
+ (cleveref.sty)note: downloading placeins.sty
+
+(placeins.sty)) (Dissertation/dispackagesnote: downloading afterpage.sty
+ (afterpage.sty)note: downloading enumitem.sty
+ (enumitem.sty)note: downloading nomencl.sty
+
+(nomencl.sty)) (Dissertation/userpackagesnote: downloading fancyvrb.sty
+ (fancyvrb.sty)note: downloading listings.sty
+ (listings.stynote: downloading lstmisc.sty
+
+(lstmisc.sty)note: downloading listings.cfg
+ (listings.cfg))note: downloading upgreek.sty
+ (upgreek.sty)note: downloading lstlang1.sty
+ (lstlang1.sty)) (Dissertation/setup
+) (common/newnames) (common/data) (common/fontsnote: downloading gloss-russian.ldf
+ (gloss-russian.ldfnote: downloading xpg-cyrillicnumbers.sty
+
+(xpg-cyrillicnumbers.sty)note: downloading babelsh.def
+ (babelsh.def))note: downloading gloss-english.ldf
+ (gloss-english.ldf)warning: accessing absolute path `C:/Windows/fonts\timesi.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/Windows/fonts\timesbd.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/Windows/fonts\times.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/Windows/fonts\timesbi.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/Windows/fonts\courbd.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/Windows/fonts\cour.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/Windows/fonts\couri.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/Windows/fonts\courbi.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/Windows/fonts\arialbd.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/Windows/fonts\ARIALN.TTF`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/Windows/fonts\ARIALNI.TTF`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/Windows/fonts\ariblk.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/Windows/fonts\arialbi.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/Windows/fonts\ARIALNBI.TTF`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/Windows/fonts\ariali.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/Windows/fonts\arial.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/Windows/fonts\ARIALNB.TTF`; build may not be reproducible in other environments
+) (common/styles
+Excluding comment 'commentbox') (Dissertation/disstyles)
+(Dissertation/userstyles) (biblio/biblatexnote: downloading csquotes.sty
+ (csquotes.stynote: downloading csquotes.def
+ (csquotes.def)note: downloading csquotes.cfg
+
+(csquotes.cfg))note: downloading biblatex.sty
+ (biblatex.stynote: downloading logreq.sty
+ (logreq.stynote: downloading logreq.def
+ (logreq.def))note: downloading blx-dm.def
+ (blx-dm.def)note: downloading gost-numeric.dbx
+
+(gost-numeric.dbxnote: downloading biblatex-gost.dbx
+ (biblatex-gost.dbx))note: downloading blx-unicode.def
+ (blx-unicode.def)note: downloading blx-compat.def
+ (blx-compat.def)note: downloading biblatex.def
+
+(biblatex.def)note: downloading gost-numeric.bbx
+ (gost-numeric.bbxnote: downloading gost-standard.bbx
+ (gost-standard.bbxnote: downloading biblatex-gost.def
+ (biblatex-gost.def)note: downloading french-gost.lbx
+))note: downloading gost-numeric.cbx
+
+(gost-numeric.cbxnote: downloading numeric-comp.cbx
+ (numeric-comp.cbx))note: downloading biblatex.cfg
+ (biblatex.cfg)note: downloading blx-case-expl3.sty
+ (blx-case-expl3.sty))note: downloading english-gost.lbx
+note: downloading russian-gost.lbx
+)
+Selected options:
+Draft mode: 0
+Font: 1
+AltFont: 1
+Bibliography backend: 1
+Precompile images: 0
+No file dissertation.aux.
+note: downloading ts1cmr.fd
+(ts1cmr.fd)
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+note: downloading siunitx-abbreviations.cfg
+(siunitx-abbreviations.cfg)note: downloading translator-basic-dictionary-English.dict
+ (translator-basic-dictionary-English.dict)note: downloading ninecolors.sty
+
+(ninecolors.sty)
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+note: downloading nameref.sty
+(nameref.stynote: downloading refcount.sty
+ (refcount.sty)note: downloading gettitlestring.sty
+ (gettitlestring.sty))
+Redoing nameref's sectioning
+Redoing nameref's label
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+note: downloading american-gost.lbx
+(american-gost.lbxnote: downloading american.lbx
+ (american.lbx (english-gost.lbxnote: downloading english.lbx
+ (english.lbx)))
+(american.lbx (english-gost.lbx (english.lbx)))) (russian-gost.lbxnote: downloading russian.lbx
+ (russian.lbx
+) (russian.lbx))
+No file dissertation.bbl.
+note: downloading cmr12.tfm
+note: downloading cmmi12.tfm
+note: downloading cmex7.tfm
+note: downloading umsa.fd
+(umsa.fd)note: downloading msam10.tfm
+note: downloading msam7.tfm
+note: downloading umsb.fd
+ (umsb.fd)note: downloading msbm10.tfm
+note: downloading msbm7.tfm
+note: downloading eurm10.tfm
+note: downloading eurm7.tfm
+note: downloading cmss12.tfm
+note: downloading cmss10.tfm
+note: downloading cmss8.tfm
+note: downloading cmtt12.tfm
+note: downloading cmtt10.tfm
+note: downloading cmtt8.tfm
+ (common/renames) (Dissertation/renames)
+(Dissertation/title.tex) [1.1] (Dissertation/contents.tex) [2.2]
+(Dissertation/introduction.tex (common/characteristic
+
+LaTeX Warning: Citation 'Sharma2018' on page 3 undefined on input line 2.
+
+
+LaTeX Warning: Citation 'Ashton2009' on page 3 undefined on input line 4.
+
+
+LaTeX Warning: Citation 'Foote' on page 3 undefined on input line 4.
+
+
+LaTeX Warning: Citation 'Gershenfeld1999' on page 3 undefined on input line 4.
+
+
+LaTeX Warning: Reference `sec:ch1/sec1' on page 1 undefined on input line 6.
+
+
+LaTeX Warning: Reference `sec:ch1/sec3' on page 1 undefined on input line 8.
+
+
+LaTeX Warning: Reference `sec:ch1/sec2' on page 1 undefined on input line 8.
+
+
+LaTeX Warning: Reference `sec:ch1/sec4' on page 1 undefined on input line 8.
+
+[3.3]
+
+LaTeX Warning: Citation 'MQTTv31' on page 4 undefined on input line 10.
+
+
+LaTeX Warning: Reference `sec:ch1/sec2' on page 1 undefined on input line 10.
+
+
+warning: common/characteristic:13: Underfull \hbox (badness 7030) in paragraph at lines 12--13
+Underfull \hbox (badness 7030) in paragraph at lines 12--13
+[]\TU/TimesNewRoman(1)/m/n/14.4 MQTT брокер сообщений является центральным элем
+ентом MQTT-
+
+warning: common/characteristic:13: Underfull \hbox (badness 4940) in paragraph at lines 12--13
+Underfull \hbox (badness 4940) in paragraph at lines 12--13
+\TU/TimesNewRoman(1)/m/n/14.4 инфраструктуры: серверное ПО, которое реализует п
+риём, фильтрацию и
+
+LaTeX Warning: Citation 'Sinha2025' on page 4 undefined on input line 14.
+
+[4.4]
+
+LaTeX Warning: Citation 'Dasari2022' on page 5 undefined on input line 18.
+
+
+warning: common/characteristic:19: Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+\TU/TimesNewRoman(1)/m/n/14.4 Интернета вещей (IIoT) и создания крупномасштабны
+х территориально-
+
+warning: common/characteristic:19: Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+\TU/TimesNewRoman(1)/m/n/14.4 распределённых систем. Такие системы должны облад
+ать следующими
+[5.5] [6.6]
+warning: common/characteristic:46: Underfull \hbox (badness 2961) in paragraph at lines 45--46
+Underfull \hbox (badness 2961) in paragraph at lines 45--46
+\TU/TimesNewRoman(1)/m/n/14.4 детерминированную пошаговую модель крупномасштабн
+ых MQTT-сетей на
+
+warning: common/characteristic:46: Underfull \hbox (badness 2197) in paragraph at lines 45--46
+Underfull \hbox (badness 2197) in paragraph at lines 45--46
+\TU/TimesNewRoman(1)/m/n/14.4 (включая работу на отечественных процессорах Эльб
+рус и Байкал) и гиб-
+
+LaTeX Warning: Reference `ch:ch1' on page 1 undefined on input line 57.
+
+
+LaTeX Warning: Reference `ch:ch2' on page 1 undefined on input line 58.
+
+
+warning: common/characteristic:59: Underfull \hbox (badness 2269) in paragraph at lines 58--59
+Underfull \hbox (badness 2269) in paragraph at lines 58--59
+\TU/TimesNewRoman(1)/m/n/14.4 но и задержки доставки, потребление вычислительны
+х ресурсов и
+
+warning: common/characteristic:59: Underfull \hbox (badness 1540) in paragraph at lines 58--59
+Underfull \hbox (badness 1540) in paragraph at lines 58--59
+\TU/TimesNewRoman(1)/m/n/14.4 служивания (QoS). Провести нагрузочное тестирован
+ие популярных
+[7.7]
+
+LaTeX Warning: Reference `ch:ch3' on page 1 undefined on input line 59.
+
+
+LaTeX Warning: Reference `ch:ch4' on page 1 undefined on input line 60.
+
+
+warning: common/characteristic:61: Underfull \hbox (badness 1776) in paragraph at lines 60--61
+Underfull \hbox (badness 1776) in paragraph at lines 60--61
+\TU/TimesNewRoman(1)/m/n/14.4 печить кроссплатформенность симулятора (включая п
+оддержку оте-
+
+LaTeX Warning: Reference `ch:ch4' on page 1 undefined on input line 61.
+
+
+LaTeX Warning: Reference `ch:ch4' on page 1 undefined on input line 62.
+
+[8.8]
+warning: common/characteristic:70: Underfull \hbox (badness 4001) in paragraph at lines 69--70
+Underfull \hbox (badness 4001) in paragraph at lines 69--70
+\TU/TimesNewRoman(1)/m/n/14.4 многоуровневых структур на основе туманных вычисл
+ений, SDN-
+
+warning: common/characteristic:70: Underfull \hbox (badness 1460) in paragraph at lines 69--70
+Underfull \hbox (badness 1460) in paragraph at lines 69--70
+\TU/TimesNewRoman(1)/m/n/14.4 протокола MQTT версий 3.1.1 и 5.0 посредством спе
+циализирован-
+
+warning: common/characteristic:70: Underfull \hbox (badness 6741) in paragraph at lines 69--70
+Underfull \hbox (badness 6741) in paragraph at lines 69--70
+\TU/TimesNewRoman(1)/m/n/14.4 ных приложений-ретрансляторов, функционирующих ка
+к обычные
+[9.9]
+warning: common/characteristic:79: Underfull \hbox (badness 2334) in paragraph at lines 78--79
+Underfull \hbox (badness 2334) in paragraph at lines 78--79
+[]\TU/TimesNewRoman(1)/m/n/14.4 Разработанные в диссертации программные средств
+а — симулятор
+[10.10]
+warning: common/characteristic:90: Underfull \hbox (badness 4792) in paragraph at lines 88--90
+Underfull \hbox (badness 4792) in paragraph at lines 88--90
+[]\TU/TimesNewRoman(1)/m/n/14.4 Инструментарий нагрузочного тестирования систем
+ Интернета ве-
+
+warning: common/characteristic:90: Underfull \hbox (badness 10000) in paragraph at lines 88--90
+Underfull \hbox (badness 10000) in paragraph at lines 88--90
+\TU/TimesNewRoman(1)/m/n/14.4 щей. Рассмотрены существующие инструментарии нагр
+узочного
+
+warning: common/characteristic:90: Underfull \hbox (badness 1796) in paragraph at lines 88--90
+Underfull \hbox (badness 1796) in paragraph at lines 88--90
+\TU/TimesNewRoman(1)/m/n/14.4 тестирования брокеров сообщений, затем разработан
+ специализиро-
+
+warning: common/characteristic:90: Underfull \hbox (badness 1590) in paragraph at lines 88--90
+Underfull \hbox (badness 1590) in paragraph at lines 88--90
+\TU/TimesNewRoman(1)/m/n/14.4 ванный инструментарий нагрузочного тестирования M
+QTT-брокеров
+[11.11]
+warning: common/characteristic:91: Underfull \hbox (badness 5756) in paragraph at lines 90--91
+Underfull \hbox (badness 5756) in paragraph at lines 90--91
+\TU/TimesNewRoman(1)/m/n/14.4 не требующая модификации брокеров сообщений и баз
+ирующая-
+
+warning: common/characteristic:91: Underfull \hbox (badness 10000) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+\TU/TimesNewRoman(1)/m/n/14.4 ся на введении специализированных приложений-ретр
+ансляторов,
+
+warning: common/characteristic:91: Underfull \hbox (badness 6910) in paragraph at lines 90--91
+Underfull \hbox (badness 6910) in paragraph at lines 90--91
+\TU/TimesNewRoman(1)/m/n/14.4 функционирующих как стандартные MQTT-клиенты. При
+ложения-
+
+warning: common/characteristic:91: Underfull \hbox (badness 2080) in paragraph at lines 90--91
+Underfull \hbox (badness 2080) in paragraph at lines 90--91
+\TU/TimesNewRoman(1)/m/n/14.4 связность территориально распределённых областей 
+без какой-либо
+
+warning: common/characteristic:92: Underfull \hbox (badness 5345) in paragraph at lines 91--92
+Underfull \hbox (badness 5345) in paragraph at lines 91--92
+[]\TU/TimesNewRoman(1)/m/n/14.4 Специализированный комплекс симуляции распредел
+ённых MQTT-
+
+warning: common/characteristic:92: Underfull \hbox (badness 1668) in paragraph at lines 91--92
+Underfull \hbox (badness 1668) in paragraph at lines 91--92
+\TU/TimesNewRoman(1)/m/it/14.4 MqttY \TU/TimesNewRoman(1)/m/n/14.4 реализует де
+терминированную пошаговую модель симуляции
+
+warning: common/characteristic:92: Underfull \hbox (badness 2393) in paragraph at lines 91--92
+Underfull \hbox (badness 2393) in paragraph at lines 91--92
+\TU/TimesNewRoman(1)/m/n/14.4 форменность, подтверждённая функционированием на 
+архитектурах
+
+warning: common/characteristic:92: Underfull \hbox (badness 4647) in paragraph at lines 91--92
+Underfull \hbox (badness 4647) in paragraph at lines 91--92
+\TU/TimesNewRoman(1)/m/n/14.4 подключаемые плагины. Симулятор позволяет моделир
+овать круп-
+
+warning: common/characteristic:95: Underfull \hbox (badness 2617) in paragraph at lines 94--95
+Underfull \hbox (badness 2617) in paragraph at lines 94--95
+[]\TU/TimesNewRoman(1)/b/n/14.4 Достоверность \TU/TimesNewRoman(1)/m/n/14.4 пол
+ученных результатов обеспечивается использовани-
+
+warning: common/characteristic:95: Underfull \hbox (badness 3138) in paragraph at lines 94--95
+Underfull \hbox (badness 3138) in paragraph at lines 94--95
+\TU/TimesNewRoman(1)/m/n/14.4 ем в процессе проведенных натурных экспериментов,
+ развитых элементов
+
+warning: common/characteristic:95: Underfull \hbox (badness 1997) in paragraph at lines 94--95
+Underfull \hbox (badness 1997) in paragraph at lines 94--95
+\TU/TimesNewRoman(1)/m/n/14.4 объектно-ориентированного программирования. Досто
+верность подтверждена
+[12.12]
+warning: common/characteristic:101: Underfull \hbox (badness 1496) in paragraph at lines 100--101
+Underfull \hbox (badness 1496) in paragraph at lines 100--101
+\TU/TimesNewRoman(1)/m/n/14.4 ки цифровых технологий сбора, хранения и передачи
+ информации в
+
+LaTeX Warning: Citation 'solopiy_simulation_2025' on page 13 undefined on input
+ line 106.
+
+
+warning: common/characteristic:107: Underfull \hbox (badness 4713) in paragraph at lines 105--107
+Underfull \hbox (badness 4713) in paragraph at lines 105--107
+\TU/TimesNewRoman(1)/m/n/14.4 суждались на Международной российской конференции
+ по автоматизации
+
+Package biblatex Warning: Keyword 'biblioauthorvak' not found on input line 192
+.
+
+
+LaTeX Warning: Empty bibliography on input line 192.
+
+
+Package biblatex Warning: Keyword 'biblioauthorwos' not found on input line 192
+.
+
+
+LaTeX Warning: Empty bibliography on input line 192.
+
+
+Package biblatex Warning: Keyword 'biblioauthorscopus' not found on input line 
+192.
+
+
+LaTeX Warning: Empty bibliography on input line 192.
+
+
+Package biblatex Warning: Keyword 'biblioauthorconf' not found on input line 19
+2.
+
+
+LaTeX Warning: Empty bibliography on input line 192.
+
+
+Package biblatex Warning: Keyword 'biblioauthorother' not found on input line 1
+92.
+
+
+LaTeX Warning: Empty bibliography on input line 192.
+
+
+Package biblatex Warning: Keyword 'biblioregistered' not found on input line 19
+2.
+
+
+LaTeX Warning: Empty bibliography on input line 192.
+
+
+Package biblatex Warning: Keyword 'biblioauthorpatent' not found on input line 
+192.
+
+
+LaTeX Warning: Empty bibliography on input line 192.
+
+
+Package biblatex Warning: Keyword 'biblioauthorprogram' not found on input line
+ 192.
+
+
+LaTeX Warning: Empty bibliography on input line 192.
+
+
+Package biblatex Warning: Keyword 'biblioauthor' not found on input line 192.
+
+
+LaTeX Warning: Empty bibliography on input line 192.
+
+
+LaTeX Warning: Empty bibliography on input line 192.
+
+
+LaTeX Warning: Empty bibliography on input line 192.
+
+
+LaTeX Warning: Citation 'vakbib2' undefined on input line 192.
+
+
+LaTeX Warning: Citation 'patbib1' undefined on input line 192.
+
+
+LaTeX Warning: Citation 'progbib1' undefined on input line 192.
+
+
+LaTeX Warning: Citation 'bib1' undefined on input line 192.
+
+
+LaTeX Warning: Citation 'confbib1' undefined on input line 192.
+
+)
+
+Package totcount Warning: Rerun to get correct total counts on input line 22.
+
+
+Package totcount Warning: Rerun to get correct total counts on input line 24.
+
+
+Package totcount Warning: Rerun to get correct total counts on input line 31.
+
+
+Package totcount Warning: Rerun to get correct total counts on input line 32.
+
+
+Package totcount Warning: Rerun to get correct total counts on input line 33.
+
+
+Package totcount Warning: Rerun to get correct total counts on input line 35.
+
+) [13.13] (Dissertation/chapter1.tex
+
+LaTeX Warning: Citation 'Alvarez2022' on page 14 undefined on input line 8.
+
+
+LaTeX Warning: Citation 'Kuteinikov2011' on page 14 undefined on input line 8.
+
+
+LaTeX Warning: Citation 'Want2015' on page 14 undefined on input line 10.
+
+
+LaTeX Warning: Citation 'Romkey2017' on page 14 undefined on input line 10.
+
+
+LaTeX Warning: Citation 'Ashton2009' on page 14 undefined on input line 10.
+
+[14.14]
+
+LaTeX Warning: Citation 'Wijesinghe2024' on page 15 undefined on input line 20.
+
+
+
+LaTeX Warning: Citation 'Dieguez2025' on page 15 undefined on input line 20.
+
+
+warning: Dissertation/chapter1.tex:21: Underfull \hbox (badness 1783) in paragraph at lines 20--21
+Underfull \hbox (badness 1783) in paragraph at lines 20--21
+[]\TU/TimesNewRoman(1)/m/n/14.4 интеграция с внешними системами (ERP  [[]] и ME
+S
+
+LaTeX Warning: Citation 'Yagoub2025' on page 15 undefined on input line 26.
+
+
+LaTeX Warning: Reference `sec:ch1/sec2' on page 1 undefined on input line 28.
+
+
+LaTeX Warning: Citation 'Nast2022' on page 15 undefined on input line 28.
+
+
+LaTeX Warning: Citation 'Just2024' on page 15 undefined on input line 28.
+
+
+LaTeX Warning: Citation 'Dritsas2025' on page 15 undefined on input line 28.
+
+
+LaTeX Warning: Citation 'Ghomi2017' on page 15 undefined on input line 28.
+
+
+LaTeX Warning: Citation 'Uyoata2021' on page 15 undefined on input line 28.
+
+[15.15]
+
+LaTeX Warning: Citation 'Dingorkar2024' on page 16 undefined on input line 30.
+
+[16.16]
+
+LaTeX Warning: Citation 'Farkas2025' on page 17 undefined on input line 36.
+
+
+LaTeX Warning: Citation 'Koprov2025' on page 17 undefined on input line 36.
+
+
+warning: Dissertation/chapter1.tex:37: Underfull \hbox (badness 1502) in paragraph at lines 36--37
+Underfull \hbox (badness 1502) in paragraph at lines 36--37
+[]\TU/TimesNewRoman(1)/m/n/14.4 Современные варианты использования Интернета ве
+щей предполагают
+
+LaTeX Warning: Reference `fig:distributed-iot' on page 1 undefined on input lin
+e 39.
+
+[17.17]
+
+LaTeX Warning: Citation 'Jennath2018' on page 18 undefined on input line 59.
+
+[18.18] [19.19] [20.20]
+warning: Dissertation/chapter1.tex:88: Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+[]\TU/TimesNewRoman(1)/m/n/14.4 Логический классификатор, по которому производи
+тся фильтрация
+
+warning: Dissertation/chapter1.tex:88: Underfull \hbox (badness 1527) in paragraph at lines 87--88
+Underfull \hbox (badness 1527) in paragraph at lines 87--88
+\TU/TimesNewRoman(1)/m/n/14.4 сообщений называется каналом (в рамках диссертаци
+и именуются как «то-
+
+warning: Dissertation/chapter1.tex:88: Underfull \hbox (badness 5519) in paragraph at lines 87--88
+Underfull \hbox (badness 5519) in paragraph at lines 87--88
+\TU/TimesNewRoman(1)/m/n/14.4 пики»). Каналы могут образовывать иерархическую с
+труктуру (например,
+
+warning: Dissertation/chapter1.tex:88: Underfull \hbox (badness 1609) in paragraph at lines 87--88
+Underfull \hbox (badness 1609) in paragraph at lines 87--88
+\TU/TimesNewRoman(1)/m/it/14.4 зданиеэтажкомнатадатчик\TU/TimesNewRoman(1)/m/n/
+14.4 ), поэтому возможно подписываться как на кон-
+[21.21]
+
+LaTeX Warning: Citation 'Naik2017' on page 22 undefined on input line 100.
+
+
+LaTeX Warning: Citation 'Bormann2012' on page 22 undefined on input line 102.
+
+
+LaTeX Warning: Citation 'Prajapati2021' on page 22 undefined on input line 104.
+
+
+
+LaTeX Warning: Citation 'BernersLee1996' on page 22 undefined on input line 106
+.
+
+
+LaTeX Warning: Citation 'Bziuk2018' on page 22 undefined on input line 106.
+
+[22.22]
+
+LaTeX Warning: Citation 'Soni2017' on page 23 undefined on input line 110.
+
+
+warning: Dissertation/chapter1.tex:111: Underfull \hbox (badness 3407) in paragraph at lines 110--111
+Underfull \hbox (badness 3407) in paragraph at lines 110--111
+[]\TU/TimesNewRoman(1)/b/it/14.4 Протокол MQTT как стандарт для IoT систем\TU/T
+imesNewRoman(1)/m/n/14.4 . Протокол MQTT
+
+LaTeX Warning: Citation 'MQTTv31' on page 23 undefined on input line 112.
+
+
+LaTeX Warning: Citation 'MQTTv50' on page 23 undefined on input line 112.
+
+[23.23] [24.24] [25.25]
+warning: Dissertation/chapter1.tex:170: Overfull \hbox (111.34496pt too wide) in paragraph at lines 169--170
+Overfull \hbox (111.34496pt too wide) in paragraph at lines 169--170
+\TU/TimesNewRoman(1)/b/it/14.4 factory/workshop2/temperature\TU/TimesNewRoman(1
+)/m/n/14.4 , но не соответствует factory/workshop1/machine3/temperature. 
+
+warning: Dissertation/chapter1.tex:171: Overfull \hbox (96.49146pt too wide) in paragraph at lines 170--171
+Overfull \hbox (96.49146pt too wide) in paragraph at lines 170--171
+\TU/TimesNewRoman(1)/b/it/14.4 factory/workshop1\TU/TimesNewRoman(1)/m/n/14.4 ,
+ \TU/TimesNewRoman(1)/b/it/14.4 factory/workshop1/machine3\TU/TimesNewRoman(1)/
+m/n/14.4 , \TU/TimesNewRoman(1)/b/it/14.4 factory/workshop2/machine3/temperatur
+e
+
+LaTeX Warning: Reference `tab:ProtoComapre' on page 1 undefined on input line 1
+81.
+
+note: downloading cmr9.tfm
+note: downloading cmr6.tfm
+note: downloading cmmi9.tfm
+note: downloading cmmi6.tfm
+note: downloading cmsy9.tfm
+note: downloading cmsy6.tfm
+note: downloading cmex9.tfm
+note: downloading cmss9.tfm
+note: downloading cmtt9.tfm
+note: downloading msam5.tfm
+note: downloading msbm5.tfm
+note: downloading eurm5.tfm
+[26.26] [27.27]
+
+LaTeX Warning: Citation 'MQTTv50' on page 28 undefined on input line 247.
+
+[28.28]
+
+LaTeX Warning: Citation 'Belaadel2024' on page 29 undefined on input line 252.
+
+[29.29]
+
+LaTeX Warning: Citation 'Wang2023' on page 30 undefined on input line 281.
+
+[30.30]
+
+LaTeX Warning: Citation 'Light2017' on page 31 undefined on input line 283.
+
+
+LaTeX Warning: Citation 'ActiveMQ' on page 31 undefined on input line 289.
+
+[31.31] [32.32]
+
+LaTeX Warning: Citation 'Kashyap2024' on page 33 undefined on input line 301.
+
+[33.33]
+
+LaTeX Warning: Reference `tab:BrokersCompare' on page 1 undefined on input line
+ 316.
+
+note: downloading cmr8.tfm
+note: downloading cmmi8.tfm
+note: downloading cmsy8.tfm
+note: downloading cmex8.tfm
+) [34.34] [35.35] (Dissertation/chapter2.tex
+warning: Dissertation/chapter2.tex:6: Underfull \hbox (badness 5847) in paragraph at lines 5--6
+Underfull \hbox (badness 5847) in paragraph at lines 5--6
+[]\TU/TimesNewRoman(1)/m/n/14.4 В данной главе представлено комплексное исследо
+вание производи-
+
+warning: Dissertation/chapter2.tex:6: Underfull \hbox (badness 1546) in paragraph at lines 5--6
+Underfull \hbox (badness 1546) in paragraph at lines 5--6
+\TU/TimesNewRoman(1)/m/n/14.4 тельности MQTT-брокеров, направленное на решение 
+задачи обоснованного
+
+warning: Dissertation/chapter2.tex:6: Underfull \hbox (badness 2173) in paragraph at lines 5--6
+Underfull \hbox (badness 2173) in paragraph at lines 5--6
+\TU/TimesNewRoman(1)/m/n/14.4 учитывающий пропускную способность, задержки, пот
+ребление ресурсов и
+
+LaTeX Warning: Citation 'krylovsk' on page 36 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'emqtt-bench' on page 36 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'XMETER' on page 36 undefined on input line 9.
+
+[36.36]
+
+LaTeX Warning: Citation 'Halili2008' on page 37 undefined on input line 11.
+
+
+LaTeX Warning: Citation 'Nbomber' on page 37 undefined on input line 11.
+
+
+LaTeX Warning: Reference `sec:ch2/sec2' on page 1 undefined on input line 32.
+
+[37.37]
+
+LaTeX Warning: Citation 'GheorghePop2020' on page 38 undefined on input line 34
+.
+
+[38.38]
+
+LaTeX Warning: Citation 'MQTTv31' on page 39 undefined on input line 64.
+
+
+LaTeX Warning: Citation 'Mishra2021' on page 39 undefined on input line 70.
+
+
+LaTeX Warning: Citation 'Piskun2025' on page 39 undefined on input line 72.
+
+
+LaTeX Warning: Reference `fig:bench-process' on page 1 undefined on input line 
+74.
+
+
+warning: Dissertation/chapter2.tex:94: Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+[]\TU/TimesNewRoman(1)/m/n/14.4 Для проведения сравнительного нагрузочного тест
+ирования MQTT–
+
+warning: Dissertation/chapter2.tex:94: Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+\TU/TimesNewRoman(1)/m/n/14.4 брокеров был разработан специализированный програ
+ммный комплекс
+[39.39]
+warning: Dissertation/chapter2.tex:96: Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+[]\TU/TimesNewRoman(1)/b/it/14.4 Генератор тестов производительности брокеров с
+ообщений
+[40.40]
+warning: Dissertation/chapter2.tex:101: Underfull \hbox (badness 1558) in paragraph at lines 100--101
+Underfull \hbox (badness 1558) in paragraph at lines 100--101
+[]\TU/TimesNewRoman(1)/m/n/14.4 В процессе запуска тестов создаётся и поддержив
+ается пул MQTT-
+
+warning: Dissertation/chapter2.tex:103: Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+[]\TU/TimesNewRoman(1)/m/n/14.4 По результатам выполнения тестов формируется от
+чёт, который
+
+warning: Dissertation/chapter2.tex:103: Underfull \hbox (badness 5862) in paragraph at lines 102--103
+Underfull \hbox (badness 5862) in paragraph at lines 102--103
+\TU/TimesNewRoman(1)/m/n/14.4 сохраняется в формате CSV. Каждая строка содержит
+ множество
+
+warning: Dissertation/chapter2.tex:103: Underfull \hbox (badness 1817) in paragraph at lines 102--103
+Underfull \hbox (badness 1817) in paragraph at lines 102--103
+\TU/TimesNewRoman(1)/m/n/14.4 метрик, рассмотрим самые значимые метрики: scenar
+io, params_qos,
+
+warning: Dissertation/chapter2.tex:103: Underfull \hbox (badness 1675) in paragraph at lines 102--103
+Underfull \hbox (badness 1675) in paragraph at lines 102--103
+\TU/TimesNewRoman(1)/m/n/14.4 params_clients_params_message_size, duration, req
+uest_count, ok, failed,
+[41.41]
+
+LaTeX Warning: Citation 'Mishra2021' on page 42 undefined on input line 122.
+
+
+LaTeX Warning: Reference `fig:bench-process' on page 1 undefined on input line 
+122.
+
+
+LaTeX Warning: Citation 'Solopiy2024a' on page 42 undefined on input line 133.
+
+
+LaTeX Warning: Citation 'Solopiy2024b' on page 42 undefined on input line 135.
+
+[42.42]
+
+LaTeX Warning: Citation 'Mishra2021' on page 43 undefined on input line 144.
+
+
+LaTeX Warning: Reference `tab:RPSCompare' on page 1 undefined on input line 144
+.
+
+
+LaTeX Warning: Citation 'GheorghePop2020' on page 43 undefined on input line 18
+1.
+
+[43.43]
+
+LaTeX Warning: Reference `eq:est' on page 1 undefined on input line 185.
+
+
+LaTeX Warning: Reference `tab:est-m16b' on page 1 undefined on input line 210.
+
+
+LaTeX Warning: Reference `tab:est-m256b' on page 1 undefined on input line 210.
+
+
+
+warning: Dissertation/chapter2.tex:247: Overfull \hbox (5.67667pt too wide) in paragraph at lines 216--247
+Overfull \hbox (5.67667pt too wide) in paragraph at lines 216--247
+ [] 
+
+warning: Dissertation/chapter2.tex:280: Overfull \hbox (5.67667pt too wide) in paragraph at lines 253--280
+Overfull \hbox (5.67667pt too wide) in paragraph at lines 253--280
+ [] 
+
+LaTeX Warning: Reference `tab:est-m16b' on page 1 undefined on input line 282.
+
+[44.44] [45.45]
+
+LaTeX Warning: Citation 'solopiy_choosing_2025' on page 46 undefined on input l
+ine 286.
+
+
+warning: Dissertation/chapter2.tex:291: Underfull \hbox (badness 1515) in paragraph at lines 290--291
+Underfull \hbox (badness 1515) in paragraph at lines 290--291
+[]\TU/TimesNewRoman(1)/m/n/14.4 Проведено экспериментальное исследование произв
+одительности четы-
+[46.46]) [47.47] (Dissertation/chapter3.tex
+
+LaTeX Warning: Reference `sec:ch3/sec1' on page 1 undefined on input line 3.
+
+
+LaTeX Warning: Reference `sec:ch3/sec2' on page 1 undefined on input line 5.
+
+
+LaTeX Warning: Reference `sec:ch3/sec3' on page 1 undefined on input line 7.
+
+
+LaTeX Warning: Reference `sec:ch3/sec4' on page 1 undefined on input line 7.
+
+
+LaTeX Warning: Citation 'Ghomi2017' on page 48 undefined on input line 18.
+
+
+warning: Dissertation/chapter3.tex:19: Underfull \hbox (badness 1616) in paragraph at lines 18--19
+Underfull \hbox (badness 1616) in paragraph at lines 18--19
+[]\TU/TimesNewRoman(1)/b/it/14.4 Архитектура с применением балансировщика нагру
+зки\TU/TimesNewRoman(1)/m/n/14.4 . Применение
+[48.48]
+
+LaTeX Warning: Reference `fig:LoadBalancer' on page 1 undefined on input line 2
+0.
+
+
+LaTeX Warning: Citation 'Kurdi2022' on page 49 undefined on input line 43.
+
+
+LaTeX Warning: Citation 'Gawali2019' on page 49 undefined on input line 43.
+
+[49.49]
+
+LaTeX Warning: Reference `fig:MultiLayer-IoT' on page 1 undefined on input line
+ 45.
+
+[50.50]
+warning: Dissertation/chapter3.tex:64: Underfull \hbox (badness 1424) in paragraph at lines 63--64
+Underfull \hbox (badness 1424) in paragraph at lines 63--64
+[]\TU/TimesNewRoman(1)/m/n/14.4 Каждый локальный брокер управляет взаимодействи
+ем между груп-
+[51.51]
+
+LaTeX Warning: Reference `fig:MultiLayer-Pub-IoT' on page 1 undefined on input 
+line 68.
+
+
+LaTeX Warning: Citation 'Sylla2023' on page 52 undefined on input line 83.
+
+[52.52]
+
+LaTeX Warning: Reference `fig:SDN-IoT' on page 1 undefined on input line 87.
+
+
+LaTeX Warning: Citation 'Lara2014' on page 53 undefined on input line 99.
+
+[53.53] [54.54]
+
+LaTeX Warning: Reference `fig:MeshIotConfigure' on page 1 undefined on input li
+ne 118.
+
+[55.55]
+
+LaTeX Warning: Citation 'Ribas2022' on page 56 undefined on input line 125.
+
+
+warning: Dissertation/chapter3.tex:126: Underfull \hbox (badness 1590) in paragraph at lines 125--126
+Underfull \hbox (badness 1590) in paragraph at lines 125--126
+\TU/TimesNewRoman(1)/m/n/14.4 истой структуре. В предложенной архитектуре механ
+изм извещений
+
+warning: Dissertation/chapter3.tex:126: Underfull \hbox (badness 3000) in paragraph at lines 125--126
+Underfull \hbox (badness 3000) in paragraph at lines 125--126
+\TU/TimesNewRoman(1)/m/n/14.4 технологические MQTT-топики. Необходим для органи
+зации броке-
+
+LaTeX Warning: Reference `fig:MeshIotConfigurePublish' on page 1 undefined on i
+nput line 135.
+
+[56.56] [57.57]
+
+LaTeX Warning: Reference `tab:ArchCompare' on page 1 undefined on input line 16
+9.
+
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\TU/TimesNewRoman(1)/m/n/12 Необходимость
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 модификации
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\TU/TimesNewRoman(1)/m/n/12 Балансировщик
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\TU/TimesNewRoman(1)/m/n/12 Центральный
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 6978) in paragraph at lines 219--219
+Underfull \hbox (badness 6978) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 – единая точка
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\TU/TimesNewRoman(1)/m/n/12 SDN-контроллер
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 – центральный
+
+warning: Dissertation/chapter3.tex:219: Overfull \hbox (1.1844pt too wide) in paragraph at lines 219--219
+Overfull \hbox (1.1844pt too wide) in paragraph at lines 219--219
+[]|\TU/TimesNewRoman(1)/m/n/12 Территориальная
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 распределён-
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\TU/TimesNewRoman(1)/m/n/12 Ограничена
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 (часто один
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\TU/TimesNewRoman(1)/m/n/12 Иерархию
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 брокеров (ло-
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 кальный →
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 агрегационный
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\TU/TimesNewRoman(1)/m/n/12 Поддерживается
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 через федера-
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 1735) in paragraph at lines 219--219
+Underfull \hbox (badness 1735) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 извещения меж-
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\TU/TimesNewRoman(1)/m/n/12 Сложность раз-
+
+warning: Dissertation/chapter3.tex:219: Overfull \hbox (13.6473pt too wide) in paragraph at lines 219--219
+Overfull \hbox (13.6473pt too wide) in paragraph at lines 219--219
+[]|\TU/TimesNewRoman(1)/m/n/12 Масштабируемость| 
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\TU/TimesNewRoman(1)/m/n/12 Средняя (за
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 счёт добавле-
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 ния локальных
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\TU/TimesNewRoman(1)/m/n/12 Высокая
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 (Управляется
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 SDN-
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\TU/TimesNewRoman(1)/m/n/12 Высокая (за
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 1484) in paragraph at lines 219--219
+Underfull \hbox (badness 1484) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 счёт добавления
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 4467) in paragraph at lines 219--219
+Underfull \hbox (badness 4467) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 новых брокеров
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\TU/TimesNewRoman(1)/m/n/12 Зависит от
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 реализации ба-
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 1748) in paragraph at lines 219--219
+Underfull \hbox (badness 1748) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 лансировщика и
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\TU/TimesNewRoman(1)/m/n/12 Встроенные
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 менеджеры
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 аутентифика-
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 5417) in paragraph at lines 219--219
+Underfull \hbox (badness 5417) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 ции на каждом
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\TU/TimesNewRoman(1)/m/n/12 Уровень броке-
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 ров; (федератор
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 не изменяет
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 механизмы
+
+warning: Dissertation/chapter3.tex:219: Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\TU/TimesNewRoman(1)/m/n/12 аутентифика-
+[58.58]
+
+LaTeX Warning: Reference `sec:ch3/sec1' on page 1 undefined on input line 228.
+
+[59.59]
+warning: Dissertation/chapter3.tex:246: Underfull \hbox (badness 10000) in paragraph at lines 245--246
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+[]\TU/TimesNewRoman(1)/b/it/14.4 Отсутствие необходимости модификации брокеров\
+TU/TimesNewRoman(1)/m/n/14.4 . Некоторые
+
+warning: Dissertation/chapter3.tex:246: Underfull \hbox (badness 3942) in paragraph at lines 245--246
+Underfull \hbox (badness 3942) in paragraph at lines 245--246
+\TU/TimesNewRoman(1)/m/n/14.4 ориентированные) требуют внесения изменений в исх
+одный код брокеров
+[60.60] [61.61]
+warning: Dissertation/chapter3.tex:256: Underfull \hbox (badness 2050) in paragraph at lines 255--256
+Underfull \hbox (badness 2050) in paragraph at lines 255--256
+\TU/TimesNewRoman(1)/m/n/14.4 возможностью переконфигурирования уже работающих 
+компонентов. Порог
+[62.62]
+
+LaTeX Warning: Reference `fig:MqttRelay' on page 1 undefined on input line 263.
+
+
+[63.63]
+
+LaTeX Warning: Reference `fig:MqttRelay' on page 1 undefined on input line 280.
+
+
+[64.64]
+warning: Dissertation/chapter3.tex:296: Underfull \hbox (badness 2600) in paragraph at lines 295--296
+Underfull \hbox (badness 2600) in paragraph at lines 295--296
+[]\TU/TimesNewRoman(1)/m/n/14.4 Все \TU/TimesNewRoman(1)/m/it/14.4 Mqtt Relay \
+TU/TimesNewRoman(1)/m/n/14.4 сервисы подписываются на топики локаль-
+
+warning: Dissertation/chapter3.tex:296: Underfull \hbox (badness 10000) in paragraph at lines 295--296
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
+\TU/TimesNewRoman(1)/m/n/14.4 ных брокеров. Например, для получения телеметрии 
+от
+
+warning: Dissertation/chapter3.tex:296: Underfull \hbox (badness 4832) in paragraph at lines 295--296
+Underfull \hbox (badness 4832) in paragraph at lines 295--296
+\TU/TimesNewRoman(1)/m/n/14.4 локальных брокеров используется топик \TU/TimesNe
+wRoman(1)/m/it/14.4 telemetry/+\TU/TimesNewRoman(1)/m/n/14.4 , топик
+
+warning: Dissertation/chapter3.tex:296: Underfull \hbox (badness 2088) in paragraph at lines 295--296
+Underfull \hbox (badness 2088) in paragraph at lines 295--296
+\TU/TimesNewRoman(1)/m/it/14.4 relayX/telemetry/+ \TU/TimesNewRoman(1)/m/n/14.4
+ используется для получения телеметрии с
+
+warning: Dissertation/chapter3.tex:303: Underfull \hbox (badness 10000) in paragraph at lines 302--303
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+[]\TU/TimesNewRoman(1)/m/it/14.4 Mqtt Relay\TU/TimesNewRoman(1)/m/n/14.4 , испо
+льзуя таблицу ретрансляции, публику-
+
+warning: Dissertation/chapter3.tex:303: Underfull \hbox (badness 10000) in paragraph at lines 302--303
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+\TU/TimesNewRoman(1)/m/n/14.4 ет входящие сообщения в брокеры отдалённых обла-
+
+warning: Dissertation/chapter3.tex:303: Underfull \hbox (badness 10000) in paragraph at lines 302--303
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+\TU/TimesNewRoman(1)/m/n/14.4 стей (используется маршрутизация), например, по т
+опику
+
+warning: Dissertation/chapter3.tex:305: Underfull \hbox (badness 10000) in paragraph at lines 304--305
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+[]\TU/TimesNewRoman(1)/m/n/14.4 Локальное приложение \TU/TimesNewRoman(1)/b/n/1
+4.4 Mqtt Relay \TU/TimesNewRoman(1)/m/n/14.4 получает телеметрию
+
+warning: Dissertation/chapter3.tex:305: Underfull \hbox (badness 10000) in paragraph at lines 304--305
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+\TU/TimesNewRoman(1)/m/n/14.4 от отдалённых отправителей и публикует в локальны
+й
+
+warning: Dissertation/chapter3.tex:305: Underfull \hbox (badness 10000) in paragraph at lines 304--305
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+\TU/TimesNewRoman(1)/m/n/14.4 MQTT брокер по локальной подписке топика, наприме
+р,
+[65.65] [66.66]
+
+LaTeX Warning: Reference `fig:MqttRelayGraph' on page 1 undefined on input line
+ 340.
+
+[67.67] [68.68]) [69.69] (Dissertation/chapter4.tex
+
+LaTeX Warning: Reference `sec:ch4/sec1' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Reference `sec:ch4/sec2' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Reference `sec:ch4/sec3' on page 1 undefined on input line 4.
+
+[70.70] [71.71]
+
+LaTeX Warning: Reference `app:A1' on page 1 undefined on input line 46.
+
+
+LaTeX Warning: Reference `tab:A1' on page 1 undefined on input line 46.
+
+[72.72]
+warning: Dissertation/chapter4.tex:56: Underfull \hbox (badness 1490) in paragraph at lines 55--56
+Underfull \hbox (badness 1490) in paragraph at lines 55--56
+[]\TU/TimesNewRoman(1)/m/it/14.4 AzureIotCenter \TU/TimesNewRoman(1)/m/n/14.4 —
+ отправка данных в Azure IoT Central через меха-
+
+warning: Dissertation/chapter4.tex:56: Underfull \hbox (badness 5203) in paragraph at lines 55--56
+Underfull \hbox (badness 5203) in paragraph at lines 55--56
+\TU/TimesNewRoman(1)/m/n/14.4 ProvisioningHost (по умолчанию global.azure-devic
+es-provisioning.net),
+
+warning: Dissertation/chapter4.tex:57: Underfull \hbox (badness 1629) in paragraph at lines 56--57
+Underfull \hbox (badness 1629) in paragraph at lines 56--57
+\TU/TimesNewRoman(1)/m/n/14.4 для дальнейшей рассылки подключённым клиентам (на
+пример, веб-
+
+warning: Dissertation/chapter4.tex:60: Underfull \hbox (badness 1565) in paragraph at lines 59--60
+Underfull \hbox (badness 1565) in paragraph at lines 59--60
+[]\TU/TimesNewRoman(1)/m/n/14.4 MqsSimulator использовался в рамках данной рабо
+ты для двух целей.
+
+warning: Dissertation/chapter4.tex:60: Underfull \hbox (badness 1502) in paragraph at lines 59--60
+Underfull \hbox (badness 1502) in paragraph at lines 59--60
+\TU/TimesNewRoman(1)/m/n/14.4 мулятор генерировал потоки сообщений с заданными 
+параметрами (размер,
+[73.73]
+
+LaTeX Warning: Citation 'Allison2022' on page 74 undefined on input line 66.
+
+
+LaTeX Warning: Citation 'Diana2020' on page 74 undefined on input line 67.
+
+
+LaTeX Warning: Citation 'Nedyalkov2023' on page 74 undefined on input line 68.
+
+[74.74]
+
+LaTeX Warning: Citation 'Xamarin' on page 75 undefined on input line 88.
+
+
+LaTeX Warning: Citation 'Kozhin2016' on page 75 undefined on input line 90.
+
+
+LaTeX Warning: Citation 'Egorov' on page 75 undefined on input line 90.
+
+
+LaTeX Warning: Citation 'Solopiy2025' on page 75 undefined on input line 90.
+
+
+LaTeX Warning: Citation 'progbib1' on page 75 undefined on input line 91.
+
+[75.75] [76.76]
+
+LaTeX Warning: Citation 'Xamarin' on page 77 undefined on input line 129.
+
+
+warning: Dissertation/chapter4.tex:130: Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+[]\TU/TimesNewRoman(1)/m/n/14.4 Реализация абстракции протокола MQTT (Большинст
+во команд)
+
+warning: Dissertation/chapter4.tex:141: Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
+[]\TU/TimesNewRoman(1)/m/n/14.4 Диаграмма последовательности (позволяет визуали
+зировать
+
+LaTeX Warning: Reference `fig:Components' on page 1 undefined on input line 145
+.
+
+[77.77]
+warning: Dissertation/chapter4.tex:150: Underfull \hbox (badness 3701) in paragraph at lines 149--150
+Underfull \hbox (badness 3701) in paragraph at lines 149--150
+\TU/TimesNewRoman(1)/m/n/14.4 уровне: CONNECT, CONNACK, PUBLISH, PUBACK, SUBSCR
+IBE,
+
+warning: Dissertation/chapter4.tex:150: Underfull \hbox (badness 3482) in paragraph at lines 149--150
+Underfull \hbox (badness 3482) in paragraph at lines 149--150
+\TU/TimesNewRoman(1)/m/n/14.4 SUBACK и др. Модуль изолирован от транспортного у
+ровня, что
+
+LaTeX Warning: Reference `app:B1' on page 1 undefined on input line 150.
+
+
+LaTeX Warning: Reference `fig:MqttY_Large' on page 1 undefined on input line 16
+2.
+
+
+warning: Dissertation/chapter4.tex:163: Underfull \hbox (badness 2012) in paragraph at lines 162--163
+Underfull \hbox (badness 2012) in paragraph at lines 162--163
+[]\TU/TimesNewRoman(1)/b/n/14.4 Визуализация результатов выполнения симулятором
+ MqttY\TU/TimesNewRoman(1)/m/n/14.4 . С по-
+[78.78]
+
+LaTeX Warning: Reference `fig:MqttRelayExample' on page 1 undefined on input li
+ne 171.
+
+[79.79] [80.80]
+
+LaTeX Warning: Reference `fig:MqttRelay_MqttY_steps' on page 1 undefined on inp
+ut line 197.
+
+
+LaTeX Warning: Reference `tab:Stands' on page 1 undefined on input line 207.
+
+[81.81]
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/b/n/12 Модель
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/b/n/12 Арх-а
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+\TU/TimesNewRoman(1)/m/n/12 (поко-
+
+warning: Dissertation/chapter4.tex:278: Overfull \hbox (1.37646pt too wide) in paragraph at lines 278--278
+Overfull \hbox (1.37646pt too wide) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/b/n/12 Тактовая
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+\TU/TimesNewRoman(1)/b/n/12 частота
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/b/n/12 Число
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+\TU/TimesNewRoman(1)/b/n/12 доступ-
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/b/n/12 Объём
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+\TU/TimesNewRoman(1)/b/n/12 ОЗУ
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/b/n/12 Операционная
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 Виртуальный
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 Intel Xeon
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 amd64
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+\TU/TimesNewRoman(1)/m/n/12 (x86–
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 Windows 10
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 3343) in paragraph at lines 278--278
+Underfull \hbox (badness 3343) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 Серверная ра-
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 Intel Xeon
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 amd64
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+\TU/TimesNewRoman(1)/m/n/12 (x86–
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 5832) in paragraph at lines 278--278
+Underfull \hbox (badness 5832) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 Alt Workstation
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 Системный
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 amd64
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+\TU/TimesNewRoman(1)/m/n/12 (x86–
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 Windows 10
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 Системный
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 Intel Dual
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 3568) in paragraph at lines 278--278
+Underfull \hbox (badness 3568) in paragraph at lines 278--278
+\TU/TimesNewRoman(1)/m/n/12 Core E5400
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 amd64
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+\TU/TimesNewRoman(1)/m/n/12 (x86-
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 Windows 10
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 Одноплатный
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+\TU/TimesNewRoman(1)/m/n/12 компьютер
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 Allwinner
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+\TU/TimesNewRoman(1)/m/n/12 A64
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+\TU/TimesNewRoman(1)/m/n/12 (Cortex-
+
+warning: Dissertation/chapter4.tex:278: Overfull \hbox (1.48077pt too wide) in paragraph at lines 278--278
+Overfull \hbox (1.48077pt too wide) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 Aarch64
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+\TU/TimesNewRoman(1)/m/n/12 (arm-
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 Ubuntu 20.04
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 Рабочая
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+\TU/TimesNewRoman(1)/m/n/12 станция
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 e2k
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+\TU/TimesNewRoman(1)/m/n/12 (e2k-
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 5832) in paragraph at lines 278--278
+Underfull \hbox (badness 5832) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 Alt Workstation
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 Рабочая
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+\TU/TimesNewRoman(1)/m/n/12 станция
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 Эльбрус
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 e2k
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+\TU/TimesNewRoman(1)/m/n/12 (e2k-
+
+warning: Dissertation/chapter4.tex:278: Underfull \hbox (badness 5832) in paragraph at lines 278--278
+Underfull \hbox (badness 5832) in paragraph at lines 278--278
+[]|\TU/TimesNewRoman(1)/m/n/12 Alt Workstation
+
+LaTeX Warning: Reference `fig:MqttY_Network' on page 1 undefined on input line 
+283.
+
+[82.82]
+
+LaTeX Warning: Reference `app:B3' on page 1 undefined on input line 301.
+
+[83.83]
+
+LaTeX Warning: Reference `tab:MqttYInitial' on page 1 undefined on input line 3
+03.
+
+
+warning: Dissertation/chapter4.tex:369: Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+[]|\TU/TimesNewRoman(1)/m/n/10.95 Модель про-
+
+warning: Dissertation/chapter4.tex:369: Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+[]|\TU/TimesNewRoman(1)/m/n/10.95 Virtual
+
+warning: Dissertation/chapter4.tex:369: Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+[]|\TU/TimesNewRoman(1)/m/n/10.95 Real
+
+warning: Dissertation/chapter4.tex:369: Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+[]|\TU/TimesNewRoman(1)/m/n/10.95 Total
+
+warning: Dissertation/chapter4.tex:369: Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+\TU/TimesNewRoman(1)/m/n/10.95 Per
+
+warning: Dissertation/chapter4.tex:369: Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+[]|\TU/TimesNewRoman(1)/m/n/10.95 Inbound
+
+warning: Dissertation/chapter4.tex:369: Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+\TU/TimesNewRoman(1)/m/n/10.95 Throughput
+
+warning: Dissertation/chapter4.tex:369: Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+[]|\TU/TimesNewRoman(1)/m/n/10.95 % за-
+
+warning: Dissertation/chapter4.tex:369: Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+\TU/TimesNewRoman(1)/m/n/10.95 грузки
+
+warning: Dissertation/chapter4.tex:369: Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+[]|\TU/TimesNewRoman(1)/m/n/10.95 Виртуальный
+
+warning: Dissertation/chapter4.tex:369: Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+[]|\TU/TimesNewRoman(1)/m/n/10.95 Intel Xeon
+
+warning: Dissertation/chapter4.tex:369: Overfull \hbox (4.48653pt too wide) in paragraph at lines 369--369
+Overfull \hbox (4.48653pt too wide) in paragraph at lines 369--369
+[]|\TU/TimesNewRoman(1)/m/n/10.95 00:00,69| 
+
+warning: Dissertation/chapter4.tex:369: Overfull \hbox (4.48653pt too wide) in paragraph at lines 369--369
+Overfull \hbox (4.48653pt too wide) in paragraph at lines 369--369
+[]|\TU/TimesNewRoman(1)/m/n/10.95 00:40,39| 
+
+warning: Dissertation/chapter4.tex:369: Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+[]|\TU/TimesNewRoman(1)/m/n/10.95 70%
+
+warning: Dissertation/chapter4.tex:369: Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+\TU/TimesNewRoman(1)/m/n/10.95 (на 6
+
+warning: Dissertation/chapter4.tex:369: Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+[]|\TU/TimesNewRoman(1)/m/n/10.95 Системный
+
+warning: Dissertation/chapter4.tex:369: Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+[]|\TU/TimesNewRoman(1)/m/n/10.95 Intel Celeron
+
+warning: Dissertation/chapter4.tex:369: Underfull \hbox (badness 4647) in paragraph at lines 369--369
+Underfull \hbox (badness 4647) in paragraph at lines 369--369
+\TU/TimesNewRoman(1)/m/n/10.95 440 (Conroe–
+
+warning: Dissertation/chapter4.tex:369: Overfull \hbox (4.48653pt too wide) in paragraph at lines 369--369
+Overfull \hbox (4.48653pt too wide) in paragraph at lines 369--369
+[]|\TU/TimesNewRoman(1)/m/n/10.95 00:00,14| 
+
+warning: Dissertation/chapter4.tex:369: Overfull \hbox (4.48653pt too wide) in paragraph at lines 369--369
+Overfull \hbox (4.48653pt too wide) in paragraph at lines 369--369
+[]|\TU/TimesNewRoman(1)/m/n/10.95 00:46,77| 
+
+warning: Dissertation/chapter4.tex:369: Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+[]|\TU/TimesNewRoman(1)/m/n/10.95 Одноплатный
+
+warning: Dissertation/chapter4.tex:369: Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+\TU/TimesNewRoman(1)/m/n/10.95 компьютер
+
+warning: Dissertation/chapter4.tex:369: Overfull \hbox (4.08018pt too wide) in paragraph at lines 369--369
+Overfull \hbox (4.08018pt too wide) in paragraph at lines 369--369
+[]|\TU/TimesNewRoman(1)/m/n/10.95 00:00,11| 
+
+warning: Dissertation/chapter4.tex:369: Overfull \hbox (4.48653pt too wide) in paragraph at lines 369--369
+Overfull \hbox (4.48653pt too wide) in paragraph at lines 369--369
+[]|\TU/TimesNewRoman(1)/m/n/10.95 00:44,19| 
+
+warning: Dissertation/chapter4.tex:369: Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+[]|\TU/TimesNewRoman(1)/m/n/10.95 рабочая
+
+warning: Dissertation/chapter4.tex:369: Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+\TU/TimesNewRoman(1)/m/n/10.95 станция
+
+warning: Dissertation/chapter4.tex:369: Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+\TU/TimesNewRoman(1)/m/n/10.95 Эльбрус–
+
+warning: Dissertation/chapter4.tex:369: Overfull \hbox (4.48653pt too wide) in paragraph at lines 369--369
+Overfull \hbox (4.48653pt too wide) in paragraph at lines 369--369
+[]|\TU/TimesNewRoman(1)/m/n/10.95 00:00,15| 
+
+warning: Dissertation/chapter4.tex:369: Overfull \hbox (4.48653pt too wide) in paragraph at lines 369--369
+Overfull \hbox (4.48653pt too wide) in paragraph at lines 369--369
+[]|\TU/TimesNewRoman(1)/m/n/10.95 00:44,14| 
+[84.84]
+warning: Dissertation/chapter4.tex:393: Underfull \hbox (badness 10000) in paragraph at lines 392--393
+Underfull \hbox (badness 10000) in paragraph at lines 392--393
+[]\TU/TimesNewRoman(1)/m/n/14.4 Фиксированный список $\OML/cmm/m/it/14.4 P$ \TU
+/TimesNewRoman(1)/m/n/14.4 c двумя элементами $\OML/cmm/m/it/14.4 P \OT1/cmr/m/
+n/14.4 =
+[85.85]
+warning: Dissertation/chapter4.tex:397: Underfull \hbox (badness 10000) in paragraph at lines 396--397
+Underfull \hbox (badness 10000) in paragraph at lines 396--397
+[]\TU/TimesNewRoman(1)/m/n/14.4 Однопоточная симуляция без сбора детальных счёт
+чиков
+
+warning: Dissertation/chapter4.tex:415: Underfull \hbox (badness 6559) in paragraph at lines 414--415
+Underfull \hbox (badness 6559) in paragraph at lines 414--415
+[]\TU/TimesNewRoman(1)/m/n/14.4 Создаются клиенты (виртуальные Mqtt устройства
+
+warning: Dissertation/chapter4.tex:416: Underfull \hbox (badness 4846) in paragraph at lines 415--416
+Underfull \hbox (badness 4846) in paragraph at lines 415--416
+[]\TU/TimesNewRoman(1)/m/n/14.4 Создаётся узел сервера (виртуальный Mqtt брокер
+
+[86.86]
+warning: Dissertation/chapter4.tex:420: Underfull \hbox (badness 1540) in paragraph at lines 419--420
+Underfull \hbox (badness 1540) in paragraph at lines 419--420
+[]\TU/TimesNewRoman(1)/m/n/14.4 Узел ресивера $\OML/cmm/m/it/14.4 V[]$ \TU/Time
+sNewRoman(1)/m/n/14.4 имеет конфигурацию из двух
+
+warning: Dissertation/chapter4.tex:420: Underfull \hbox (badness 2521) in paragraph at lines 419--420
+Underfull \hbox (badness 2521) in paragraph at lines 419--420
+\TU/TimesNewRoman(1)/m/n/14.4 для приёма телеметрии из локальных устройств, а
+
+LaTeX Warning: Reference `app:C2' on page 1 undefined on input line 420.
+
+
+warning: Dissertation/chapter4.tex:426: Underfull \hbox (badness 2591) in paragraph at lines 425--426
+Underfull \hbox (badness 2591) in paragraph at lines 425--426
+[]\TU/TimesNewRoman(1)/m/n/14.4 Соединяются узлы приложений—трансляторов $\OML/
+cmm/m/it/14.4 V[]$ \TU/TimesNewRoman(1)/m/n/14.4 и узлы
+
+warning: Dissertation/chapter4.tex:437: Underfull \hbox (badness 10000) in paragraph at lines 436--437
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
+[]\TU/TimesNewRoman(1)/m/n/14.4 Выполняется проверка того, что все узлы приложе
+ния—
+[87.87]
+
+LaTeX Warning: Reference `app:B3' on page 1 undefined on input line 447.
+
+
+LaTeX Warning: Reference `app:B4' on page 1 undefined on input line 447.
+
+
+LaTeX Warning: Reference `sec:ch3/sec3' on page 1 undefined on input line 453.
+
+
+LaTeX Warning: Citation 'solopiy_simulation_2025' on page 88 undefined on input
+ line 453.
+
+[88.88]
+
+LaTeX Warning: Reference `eq:perf_series' on page 1 undefined on input line 465
+.
+
+
+LaTeX Warning: Reference `fig:Brokers4_Clients3-relays2_lbl' on page 1 undefine
+d on input line 487.
+
+
+LaTeX Warning: Reference `fig:Brokers10_Clients10-relays2' on page 1 undefined 
+on input line 487.
+
+[89.89]
+
+LaTeX Warning: Reference `tab:Stands' on page 1 undefined on input line 506.
+
+
+LaTeX Warning: Citation 'Kozhin2016' on page 90 undefined on input line 506.
+
+
+LaTeX Warning: Reference `tab:AllCompare' on page 1 undefined on input line 508
+.
+
+
+LaTeX Warning: Reference `fig:diagram_b4_by_n_c' on page 1 undefined on input l
+ine 725.
+
+
+LaTeX Warning: Reference `fig:diagram_b15_by_n_c' on page 1 undefined on input 
+line 725.
+
+
+LaTeX Warning: Reference `tab:FinalCompare' on page 1 undefined on input line 7
+41.
+
+[90.90] [91.91] [92.92]
+
+LaTeX Warning: Reference `tab:FinalCompare' on page 1 undefined on input line 7
+81.
+
+
+LaTeX Warning: Reference `ch:ch4' on page 1 undefined on input line 788.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 788.
+
+
+warning: Dissertation/chapter4.tex:791: Underfull \hbox (badness 3428) in paragraph at lines 790--791
+Underfull \hbox (badness 3428) in paragraph at lines 790--791
+[]\TU/TimesNewRoman(1)/m/n/14.4 Разработаны специализированные инструменты: ген
+ератор телеметрии
+[93.93]) [94.94] (Dissertation/conclusion.tex (common/concl [95.95]
+warning: common/concl:15: Underfull \hbox (badness 6859) in paragraph at lines 13--15
+Underfull \hbox (badness 6859) in paragraph at lines 13--15
+[]\TU/TimesNewRoman(1)/m/n/14.4 Подтверждена работоспособность оригинальной арх
+итектуры Mqtt
+
+warning: common/concl:15: Underfull \hbox (badness 2334) in paragraph at lines 13--15
+Underfull \hbox (badness 2334) in paragraph at lines 13--15
+\TU/TimesNewRoman(1)/m/n/14.4 В рамках предложенной архитектуры введены специал
+изированные
+
+warning: common/concl:24: Underfull \hbox (badness 1694) in paragraph at lines 23--24
+Underfull \hbox (badness 1694) in paragraph at lines 23--24
+\TU/TimesNewRoman(1)/m/n/14.4 вую модель крупномасштабных MQTT-сетей на приклад
+ном
+[96.96])) [97.97] (Dissertation/acronyms.tex
+No file dissertation.nls.
+) (Dissertation/dictionary.tex) [98.98] (Dissertation/references.tex
+
+Package biblatex Warning: Keyword 'bibliofull' not found on input line 6.
+
+
+LaTeX Warning: Empty bibliography on input line 6.
+
+
+Package biblatex Warning: Keyword 'bibliofull' not found on input line 6.
+
+
+LaTeX Warning: Empty bibliography on input line 6.
+
+) (Dissertation/lists.tex [99.99] [100.100]) (Dissertation/appendix.tex
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 5288) in paragraph at lines 99--99
+Underfull \hbox (badness 5288) in paragraph at lines 99--99
+[]|\TU/TimesNewRoman(1)/m/n/12 Числовой тип. Может генерировать
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 константное значение (параметр
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 перечисления. Возможна генерация
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 целочисленных и вещественных
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 6559) in paragraph at lines 99--99
+Underfull \hbox (badness 6559) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 значений (параметр \TU/TimesNewRoman(1)/m/it/12 isD
+ouble: true\TU/TimesNewRoman(1)/m/n/12 ).
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 Допустимы \TU/TimesNewRoman(1)/m/it/12 NULL\TU/Time
+sNewRoman(1)/m/n/12 –значения. При
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 использовании последовательности
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 6526) in paragraph at lines 99--99
+Underfull \hbox (badness 6526) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 или диапазона возможна генерация
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+[]|\TU/TimesNewRoman(1)/m/n/12 Пример атрибута humidity, гене-
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 рируемого значения в диапазоне
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 3291) in paragraph at lines 99--99
+Underfull \hbox (badness 3291) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 от 0 до 100 в случайном порядке:
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+[]|\TU/TimesNewRoman(1)/m/n/12 Строковый тип. Обеспечивает
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 генерацию строк по константе,
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 Guid–значения. Допустимы NULL–
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 значения. Для последовательности
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+[]\TU/TimesNewRoman(1)/m/n/12 Пример генерации атрибута
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 telemetry в виде константы:
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+[]|\TU/TimesNewRoman(1)/m/n/12 Генерирует временную метку
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 1845) in paragraph at lines 99--99
+Underfull \hbox (badness 1845) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 (Unix‑время в миллисекундах). Под-
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 держиваются генерация текущего
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 7595) in paragraph at lines 99--99
+Underfull \hbox (badness 7595) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 времени (now, utcNow), последова-
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 случайные значения в диапазоне,
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+[]|\TU/TimesNewRoman(1)/m/n/12 Генерирует временную метку
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 1845) in paragraph at lines 99--99
+Underfull \hbox (badness 1845) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 (Unix‑время в миллисекундах). Под-
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 держиваются генерация текущего
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 7595) in paragraph at lines 99--99
+Underfull \hbox (badness 7595) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 времени (now, utcNow), последова-
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 случайные значения в диапазоне,
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+[]|\TU/TimesNewRoman(1)/m/n/12 Генерирует временную метку
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 1845) in paragraph at lines 99--99
+Underfull \hbox (badness 1845) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 (Unix‑время в миллисекундах). Под-
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 держиваются генерация текущего
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 7595) in paragraph at lines 99--99
+Underfull \hbox (badness 7595) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 времени (now, utcNow), последова-
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 случайные значения в диапазоне,
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+[]|\TU/TimesNewRoman(1)/m/n/12 Генерирует временную метку
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 1845) in paragraph at lines 99--99
+Underfull \hbox (badness 1845) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 (Unix‑время в миллисекундах). Под-
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 держиваются генерация текущего
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 7595) in paragraph at lines 99--99
+Underfull \hbox (badness 7595) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 времени (now, utcNow), последова-
+
+warning: Dissertation/appendix.tex:99: Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\TU/TimesNewRoman(1)/m/n/12 случайные значения в диапазоне,
+[101.101] [102.102] [103.103] [104.104] [105.105] [106.106] [107.107]
+(listings/mqtty.mqttrelay.conf.json [108.108] [109.109]) [110.110]
+warning: Dissertation/appendix.tex:210: Underfull \hbox (badness 7504) in paragraph at lines 210--210
+Underfull \hbox (badness 7504) in paragraph at lines 210--210
+\TU/TimesNewRoman(1)/m/n/14.4 муляции архитектуры Mqtt Relay в
+(listings/mqtty.mqttrelay.result.json [111.111] [112.112])) [113.113]
+No complaints by nag.
+
+Package totalcount Warning: Total counter(s) have changed.
+(totalcount)                Rerun to get them right.
+
+(dissertation.aux (Dissertation/title.aux) (common/renames)
+(Dissertation/renames) (Dissertation/contents.aux)
+(Dissertation/introduction.aux) (Dissertation/chapter1.aux)
+(Dissertation/chapter2.aux) (Dissertation/chapter3.aux)
+(Dissertation/chapter4.aux) (Dissertation/conclusion.aux)
+(Dissertation/acronyms.aux) (Dissertation/dictionary.aux)
+(Dissertation/references.aux) (Dissertation/lists.aux)
+(Dissertation/appendix.aux))
+
+ *File List*
+     nag.sty    2011/11/25 0.7 warning about old commands (ulmi)
+nag-l2tabu.cfg    2010/05/17 v2.11 l2tabu rules for nag.sty (ulmi)
+nag-orthodox.cfg    2006/04/19 v1.8 strict rules for nag.sty (ulmi)
+  memoir.cls    2022/02/20 v3.7q configurable book, report, article document cl
+ass
+etoolbox.sty    2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+   iftex.sty    2022/02/03 v1.0f TeX engine tests
+   mem14.clo    2008/01/30 v0.4 memoir class 14pt size option
+   array.sty    2021/10/04 v2.5f Tabular extension package (FMi)
+ dcolumn.sty    2014/10/28 v1.06 decimal alignment package (DPC)
+delarray.sty    2014/10/28 v1.01 array delimiter package (DPC)
+tabularx.sty    2020/01/15 v2.11c `tabularx' package (DPC)
+textcase.sty    2019/09/14 v1.00 Text only upper/lower case changing (DPC)
+common/setup.tex
+common/packages.tex
+ comment.sty    
+pdflscape.sty    2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+  lscape.sty    2020/05/28 v3.02 Landscape Pages (DPC)
+graphics.sty    2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+    trig.sty    2021/08/11 v1.11 sin cos tan (DPC)
+graphics.cfg    2016/06/04 v1.11 sample graphics configuration
+   xetex.def    2021/03/18 v5.0k Graphics/color driver for xetex
+atbegshi-ltx.sty    2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+geometry.sty    2020/01/02 v5.9 Page Geometry
+  keyval.sty    2014/10/28 v1.15 key=value parser (DPC)
+  ifvtex.sty    2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+multicol.sty    2021/10/28 v1.9b multicolumn formatting (FMi)
+rotating.sty    2016/08/11 v2.16d rotated objects in LaTeX
+graphicx.sty    2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+  ifthen.sty    2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+  amsthm.sty    2020/05/29 v2.20.6
+ amsmath.sty    2021/10/15 v2.17l AMS math features
+ amstext.sty    2021/08/26 v2.01 AMS text
+  amsgen.sty    1999/11/30 v2.0 generic functions
+  amsbsy.sty    1999/11/29 v1.2d Bold Symbols
+  amsopn.sty    2021/08/26 v2.02 operator names
+   amscd.sty    2017/04/14 v2.1 AMS Commutative Diagrams
+amsfonts.sty    2013/01/14 v3.01 Basic AMSFonts support
+ amssymb.sty    2013/01/14 v3.01 AMS font symbols
+mathtools.sty    2022/02/07 v1.28a mathematical typesetting tools
+    calc.sty    2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+ mhsetup.sty    2021/03/18 v1.4 programming setup (MH)
+   xfrac.sty    2022-01-12 L3 Experimental split-level fractions
+   expl3.sty    2022-02-24 L3 programming layer (loader) 
+l3backend-xetex.def    2022-02-07 L3 backend support: XeTeX
+l3keys2e.sty    2022-01-12 LaTeX2e option processing using LaTeX3 keys
+textcomp.sty    2020/02/02 v2.0n Standard LaTeX package
+  xparse.sty    2022-01-12 L3 Experimental document command parser
+xtemplate.sty    2022-01-12 L3 Experimental prototype document functions
+ siunitx.sty    2021-04-17 v2.8e A comprehensive (SI) units package
+translator.sty    2021-05-31 v1.12d Easy translation of strings in LaTeX
+polyglossia.sty    2021/04/12 v1.53 Modern multilingual typesetting with XeLaTe
+X and LuaLaTeX
+makecmds.sty    2009/09/03 v1.0a extra command making commands
+ xkeyval.sty    2020/11/20 v2.8 package option processing (HA)
+ xkeyval.tex    2014/12/03 v2.7a key=value parser (HA)
+fontspec.sty    2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+fontspec-xetex.sty    2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+ fontenc.sty
+fontspec.cfg
+gloss-latex.ldf    polyglossia: module for default language
+indentfirst.sty    1995/11/23 v1.03 Indent first paragraph (DPC)
+  xcolor.sty    2021/10/31 v2.13 LaTeX color extensions (UK)
+   color.cfg    2016/01/02 v1.6 sample color configuration
+colortbl.sty    2020/01/04 v1.0e Color table columns (DPC)
+dvipsnam.def    2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+xltabular.sty    2020/11/04 v0.2e `xltabular' package (hv,RN)
+ ltablex.sty    2014/08/13 v1.1 Modified tabularx
+longtable.sty    2021-09-01 v4.17 Multi-page Table package (DPC)
+multirow.sty    2021/03/15 v2.8 Span multiple rows of a table
+makecell.sty    2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+tabulary.sty    2014/06/11 v0.10 tabulary package (DPC)
+tabularray.sty    2022-03-01 v2022A Typeset tabulars and arrays with LaTeX3
+threeparttable.sty    2003/06/13  v 3.0
+  icomma.sty    2002/03/10 v2.0 (WaS)
+impnattypo.sty    
+ifluatex.sty    2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+kvoptions.sty    2020-10-07 v3.14 Key value format for package options (HO)
+ ltxcmds.sty    2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+kvsetkeys.sty    2019/12/15 v1.18 Key value parser (HO)
+    tikz.sty    2021/05/15 v3.1.9a (3.1.9a)
+     pgf.sty    2021/05/15 v3.1.9a (3.1.9a)
+  pgfrcs.sty    2021/05/15 v3.1.9a (3.1.9a)
+pgfrcs.code.tex
+ pgfcore.sty    2021/05/15 v3.1.9a (3.1.9a)
+  pgfsys.sty    2021/05/15 v3.1.9a (3.1.9a)
+pgfsys.code.tex
+pgfsyssoftpath.code.tex    2021/05/15 v3.1.9a (3.1.9a)
+pgfsysprotocol.code.tex    2021/05/15 v3.1.9a (3.1.9a)
+pgfcore.code.tex
+pgfcomp-version-0-65.sty    2021/05/15 v3.1.9a (3.1.9a)
+pgfcomp-version-1-18.sty    2021/05/15 v3.1.9a (3.1.9a)
+  pgffor.sty    2021/05/15 v3.1.9a (3.1.9a)
+ pgfkeys.sty    
+pgfkeys.code.tex
+ pgfmath.sty    
+pgfmath.code.tex
+pgffor.code.tex
+tikz.code.tex
+circuitikz.sty    2022/02/04{} The CircuiTikz circuit drawing package version 1
+.4.6
+pgfplots.sty    2021/05/15 v1.18.1 Data Visualization (1.18.1)
+hyperref.sty    2022-02-21 v7.00n Hypertext links for LaTeX
+pdftexcmds.sty    2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+infwarerr.sty    2019/12/03 v1.5 Providing info/warning/error messages (HO)
+kvdefinekeys.sty    2019-12-19 v1.6 Define keys (HO)
+pdfescape.sty    2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+ hycolor.sty    2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+letltxmacro.sty    2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+ auxhook.sty    2019-12-17 v1.6 Hooks for auxiliary files (HO)
+  pd1enc.def    2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
+ intcalc.sty    2019/12/15 v1.3 Expandable calculations with integers (HO)
+etexcmds.sty    2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+   puenc.def    2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
+     url.sty    2013/09/16  ver 3.4  Verb mode for urls, etc.
+  bitset.sty    2019/12/09 v1.3 Handle bit-vector datatype (HO)
+bigintcalc.sty    2019/12/15 v1.5 Expandable calculations on big integers (HO)
+memhfixc.sty    2021/06/16 v1.19 nameref/hyperref package fixes for memoir clas
+s
+  hxetex.def    2022-02-21 v7.00n Hyperref driver for XeTeX
+stringenc.sty    2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+rerunfilecheck.sty    2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+atveryend-ltx.sty    2020/08/19 v1.0a Emulation of the original atveryend packa
+ge
+with kernel methods
+uniquecounter.sty    2019/12/15 v1.4 Provide unlimited unique counter (HO)
+ caption.sty    2022/03/01 v3.6b Customizing captions (AR)
+caption3.sty    2022/03/17 v2.3b caption3 kernel (AR)
+caption-memoir.sto    2022/03/02 v2.2b Adaption of the caption package to the m
+emoir document class (AR)
+ltcaption.sty    2021/01/08 v1.4c longtable captions (AR)
+subcaption.sty    2022/01/07 v1.5 Sub-captions (AR)
+pdfpages.sty    2022/01/29 v0.5u Insert pages of external PDF documents (AM)
+ eso-pic.sty    2020/10/14 v3.0a eso-pic (RN)
+ ppxetex.def    2022/01/29 v0.5u Pdfpages driver for XeTeX (AM)
+aliascnt.sty    2018/09/07 v1.5 Alias counters (HO)
+totalcount.sty    2018/01/21 v1.0a Total values of counters (AR)
+totcount.sty    2011/01/25 v1.2 package for gettingthe total value of LaTeX cou
+nters
+totpages.sty    2005/09/19 v2.00 Totpages Package (muewi)
+everyshi.sty    2020/11/18 v4.00 EveryShipout Package
+cleveref.sty    2018/03/27 v0.21.4 Intelligent cross-referencing
+placeins.sty    2005/04/18  v 2.2
+Dissertation/dispackages.tex
+afterpage.sty    2014/10/28 v1.08 After-Page Package (DPC)
+enumitem.sty    2019/06/20 v3.9 Customized lists
+ nomencl.sty    2021/11/10 v5.6 Nomenclature package
+Dissertation/userpackages.tex
+fancyvrb.sty    2021/12/21 4.1b verbatim text (tvz,hv)
+listings.sty    2020/03/24 1.8d (Carsten Heinz)
+ lstmisc.sty    2020/03/24 1.8d (Carsten Heinz)
+listings.cfg    2020/03/24 1.8d listings configuration
+ upgreek.sty    2003/02/12 v2.0 (WaS)
+lstlang1.sty    2020/03/24 1.8d listings language file
+Dissertation/setup.tex
+common/newnames.tex
+common/data.tex
+common/fonts.tex
+gloss-russian.ldf    polyglossia: module for russian
+xpg-cyrillicnumbers.sty    2019/11/15 v0.2 Formatting of Cyrillic alphabetic nu
+mbers
+ babelsh.def    2019/09/30 Babel common definitions for shorthands
+ Taken verbatim from babel files (2019/09/27 v3.34)
+gloss-english.ldf    polyglossia: module for english
+common/styles.tex
+Dissertation/disstyles.tex
+Dissertation/userstyles.tex
+biblio/biblatex.tex
+csquotes.sty    2021-02-22 v5.2l context-sensitive quotations (JAW)
+csquotes.def    2021-02-22 v5.2l csquotes generic definitions (JAW)
+csquotes.cfg    
+biblatex.sty    2022/02/02 v3.17 programmable bibliographies (PK/MW)
+  logreq.sty    2010/08/04 v1.0 xml request logger
+  logreq.def    2010/08/04 v1.0 logreq spec v1.0
+  blx-dm.def    2022/02/02 v3.17 biblatex localization (PK/MW)
+biblatex-gost.dbx    2021/05/08 v1.22 biblatex-gost data model
+gost-numeric.dbx    2021/05/08 v1.22 biblatex-gost data model
+blx-unicode.def
+blx-compat.def    2022/02/02 v3.17 biblatex compatibility (PK/MW)
+biblatex.def    2022/02/02 v3.17 biblatex compatibility (PK/MW)
+biblatex-gost.def    2021/05/08 v1.22 biblatex-gost styles
+gost-standard.bbx    2021/05/08 v1.22 biblatex-gost styles
+gost-numeric.bbx    2021/05/08 v1.22 biblatex-gost styles
+numeric-comp.cbx    2022/02/02 v3.17 biblatex citation style (PK/MW)
+gost-numeric.cbx    2021/05/08 v1.22 biblatex-gost styles
+biblatex.cfg    
+blx-case-expl3.sty    2022/02/02 v3.17 expl3 case changing code for biblatex
+  ts1cmr.fd    2019/12/16 v2.5j Standard LaTeX font definitions
+siunitx-abbreviations.cfg    2021-04-17 v2.8e siunitx: Abbreviated units
+translator-basic-dictionary-English.dict    
+ninecolors.sty    2022-02-13 vv2022D Select colors with proper color contrast
+ nameref.sty    2021-04-02 v2.47 Cross-referencing by name of section
+refcount.sty    2019/12/15 v3.6 Data extraction from label references (HO)
+gettitlestring.sty    2019/12/15 v1.6 Cleanup title references (HO)
+ english.lbx    2022/02/02 v3.17 biblatex localization (PK/MW)
+english-gost.lbx    2021/05/08 v1.22 biblatex-gost styles
+american.lbx    2022/02/02 v3.17 biblatex localization (PK/MW)
+american-gost.lbx    2021/05/08 v1.22 biblatex-gost styles
+ russian.lbx    2022/02/02 v3.17 biblatex localization (PK/MW)
+russian-gost.lbx    2021/05/08 v1.22 biblatex-gost styles
+    umsa.fd    2013/01/14 v3.01 AMS symbols A
+    umsb.fd    2013/01/14 v3.01 AMS symbols B
+common/renames.tex
+Dissertation/renames.tex
+Dissertation/title.tex
+Dissertation/contents.tex
+Dissertation/introduction.tex
+common/characteristic.tex
+Dissertation/chapter1.tex
+images//distributed-iot.drawio.png
+Dissertation/chapter2.tex
+images//MqttBecnhProcess.png
+images//mqtt-stand.png
+Dissertation/chapter3.tex
+images//LoadBalancer.drawio.png
+images//MultiLayer-IoT.drawio.png
+images//MultiLayer.Pub-IoT.drawio.png
+images//SDN-IoT.drawio.png
+images//MeshIotConfigure.drawio.png
+images//MeshIotConfigurePublish.png
+images//MqttRelay.png
+images//MqttRelayGraph.drawio.png
+Dissertation/chapter4.tex
+images//Components.png
+images//MqttY_Large.png
+images//MqttRelayExample.png
+images//MqttRelay_MqttY_steps.png
+images//MqttY_Network.png
+images//Brokers4_Clients3-relays2_lbl.png
+images//Brokers10_Clients10-relays2.png
+images//diagram_b4_by_n_c.png
+images//diagram_b15_by_n_c.png
+Dissertation/conclusion.tex
+common/concl.tex
+Dissertation/acronyms.tex
+Dissertation/dictionary.tex
+Dissertation/references.tex
+Dissertation/lists.tex
+Dissertation/appendix.tex
+images//MqttRelay_SimulationSeries.png
+images//MqttRelay.Algorithm.png
+images//MqttRelay_Simulation_Part1.png
+images//MqttRelay_Simulation_Part2.png
+listings/mqtty.mqttrelay.conf.json
+listings/mqtty.mqttrelay.result.json
+common/renames.tex
+Dissertation/renames.tex
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `dissertation.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                dissertation
+(biblatex)                and rerun LaTeX afterwards.
+
+ )
+(see the transcript file for additional information)
+Output written on dissertation.xdv (113 pages, 2221808 bytes).
+Transcript written on dissertation.log.
+note: Running external tool biber ...
+note: Writing `dissertation.log` (150.1396484375 KiB)
+error: program not found

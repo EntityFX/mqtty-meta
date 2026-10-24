@@ -659,7 +659,7 @@
     "liveUnobservableProcessStillFails": true
   },
   "webApplication": {
-    "status": "linuxServiceRunningUiUpdateInProgress",
+    "status": "linuxDeployedAndBrowserVerified",
     "testsPassed": 29,
     "testEvidenceSource": "web_application_review agent final implementation report",
     "realEngines": [
@@ -673,16 +673,16 @@
     ],
     "linuxDeploymentVerified": true,
     "includedInResearchReadinessPercent": false,
-    "remaining": [
-      "publish committed build",
-      "deploy monitored Linux service",
-      "verify browser and saved results"
-    ],
+    "remaining": [],
     "boundedIntegrationTestsPassed": 166,
     "linuxSmokeJobs": 9,
     "scientificAccuracyClaim": false,
     "uiCommit": "3327b118fb4d6683fe8e8f30a074175b2479c29b",
-    "receipt": "reports/audits/web-linux-v1/service-receipt.json"
+    "receipt": "reports/audits/web-linux-v1/service-receipt.json",
+    "monitorPid": 88937,
+    "webPid": 88940,
+    "uiDeploymentReceipt": "reports/audits/web-linux-v1/ui-update-receipt.json",
+    "browserReceipt": "reports/audits/web-linux-v1/topology-ui-deployed-review.json"
   },
   "relatedWorkMap": {
     "status": "technicalDraftAwaitingAuthor",
@@ -702,5 +702,12 @@
     "processTimeoutSeconds": 1800,
     "originalFailedEvidenceUnchanged": true,
     "matrixAdmitted": false
+  },
+  "dissertationBuild": {
+    "status": "portableAttempt003StorageLimit",
+    "step37Accepted": false,
+    "freshPdfExists": false,
+    "sourceUnchanged": true,
+    "receipt": "reports/audits/dissertation/dissertation-build-v1/portable-003-verification.json"
   }
 }

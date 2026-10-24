@@ -1,0 +1,69 @@
+{
+  "previousHealth": {
+    "ok": true,
+    "statusCode": 200,
+    "body": {
+      "status": "ok",
+      "processId": 88336,
+      "processWorkingSetBytes": 494931968,
+      "dataDirectoryAvailable": true,
+      "runningJobs": 0,
+      "queuedJobs": 0
+    }
+  },
+  "previousUnit": "[Unit]\nDescription=MqttY.Web local simulation host with evidence-disk monitoring\nAfter=network.target\n\n[Service]\nType=simple\nExecStartPre=/usr/bin/mountpoint -q \"/run/media/entityfx/hd250\"\nExecStart=/usr/bin/python3 \"/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/releases/a797ee7c31d0a15f18301f8206625dae0d580bcdf5c8826a960b157b2869fdef/linux_web_host.py\" serve --release \"/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/releases/a797ee7c31d0a15f18301f8206625dae0d580bcdf5c8826a960b157b2869fdef\" --mount \"/run/media/entityfx/hd250\" --root \"/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host\"\nRestart=no\nKillMode=control-group\nTimeoutStopSec=20\nMemoryMax=2G\nMemorySwapMax=0\nCPUQuota=150%\nTasksMax=256\nUMask=0077\nNoNewPrivileges=yes\nStandardOutput=null\nStandardError=journal\nLogRateLimitIntervalSec=30s\nLogRateLimitBurst=20\n\n[Install]\nWantedBy=default.target\n",
+  "newRelease": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/releases/e29d860594f09e68f12026a3efc82629b01b546f5541e52761fe3d97fca2b2b9",
+  "newSourceCommit": "3327b118fb4d6683fe8e8f30a074175b2479c29b",
+  "scientificBinaryOriginCommit": "12601f534f9da3673057b072f8bd6a0c67fd8aed",
+  "reason": "Only four UI assets changed; scientific DLLs are byte-identical to verified deployment",
+  "startedEpoch": 1792846215.8383417,
+  "systemd": "MainPID=88937\nResult=success\nExecMainStartTimestamp=Sat 2026-10-24 15:50:16 MSK\nMemoryCurrent=2658304\nMemoryPeak=2658304\nActiveState=active\nSubState=running\nInvocationID=27568d7370c44912b8eb305062ecd45b\n",
+  "changedFiles": [
+    "wwwroot/css/app.css",
+    "wwwroot/js/designer.js",
+    "wwwroot/js/graph-renderer.js",
+    "wwwroot/js/topology-generator.js"
+  ],
+  "httpAssets": {
+    "wwwroot/css/app.css": {
+      "url": "http://127.0.0.1:5088/css/app.css",
+      "sha256": "0944596bc0f6a9c62625d0803b7e59be9a8e204c031eabfc4defb106ec00a65a",
+      "bytes": 1493,
+      "matched": true
+    },
+    "wwwroot/js/designer.js": {
+      "url": "http://127.0.0.1:5088/js/designer.js",
+      "sha256": "718a15a14ca8aa2c67441215f88e6e6f2a00a987325750aa006259c3f99b7fd9",
+      "bytes": 5377,
+      "matched": true
+    },
+    "wwwroot/js/graph-renderer.js": {
+      "url": "http://127.0.0.1:5088/js/graph-renderer.js",
+      "sha256": "b8eaaadcb909a6f4321cf0e3a8e76269b62aca85f5b5219bdb663a86fc11e459",
+      "bytes": 8746,
+      "matched": true
+    },
+    "wwwroot/js/topology-generator.js": {
+      "url": "http://127.0.0.1:5088/js/topology-generator.js",
+      "sha256": "03377b4000d8f230ac4f862e2e88b6703b9d708e4d9598ba270f732d2a4c9d55",
+      "bytes": 8366,
+      "matched": true
+    }
+  },
+  "scientificDllsByteIdentical": true,
+  "healthAfter": {
+    "ok": true,
+    "statusCode": 200,
+    "body": {
+      "status": "ok",
+      "processId": 88940,
+      "processWorkingSetBytes": 94138368,
+      "dataDirectoryAvailable": true,
+      "runningJobs": 0,
+      "queuedJobs": 0
+    }
+  },
+  "webPidLive": true,
+  "systemdAfter": "MainPID=88937\nResult=success\nMemoryCurrent=51040256\nMemoryPeak=51146752\nActiveState=active\nSubState=running\n",
+  "finishedEpoch": 1792846242.6902108
+}

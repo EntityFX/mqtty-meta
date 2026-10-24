@@ -1,0 +1,11 @@
+test_commented_includeonly_not_active (test_check_dissertation_build.DissertationBuildChecks.test_commented_includeonly_not_active) ... ok
+test_log_fails_on_unresolved_citation_reference_and_missing_glyph (test_check_dissertation_build.DissertationBuildChecks.test_log_fails_on_unresolved_citation_reference_and_missing_glyph) ... ok
+test_missing_tools_does_not_claim_compiled (test_check_dissertation_build.DissertationBuildChecks.test_missing_tools_does_not_claim_compiled) ... ok
+test_old_pdf_never_becomes_new_build_evidence (test_check_dissertation_build.DissertationBuildChecks.test_old_pdf_never_becomes_new_build_evidence) ... ok
+test_source_or_existing_output_rejected (test_check_dissertation_build.DissertationBuildChecks.test_source_or_existing_output_rejected) ... ok
+test_timeout_terminates_process_tree_before_returning_error (test_check_dissertation_build.DissertationBuildChecks.test_timeout_terminates_process_tree_before_returning_error) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.022s
+
+OK
