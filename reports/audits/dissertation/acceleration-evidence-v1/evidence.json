@@ -1,0 +1,62 @@
+{
+  "benchmarkLaunched": false,
+  "commits": {
+    "MqttBenchmark": "a7c3cf93c2aa302cc435310a7b408ce1703219fb",
+    "diss": "c7d4e82fbb5953b83910124d1d5fecd76d423a01",
+    "mqtty": "fafa37ee7932a96f0359a0de66eb4d8b3befe212"
+  },
+  "historicalFinalCompare": {
+    "currentParallelRatio": 1.877742946708464,
+    "newParallelSeconds": 3.19,
+    "newSingleSeconds": 5.99,
+    "newTicks": 6890,
+    "oldSeconds": 40.39,
+    "oldTicks": 6886,
+    "rawRatio": 12.661442006269592,
+    "tickNormalizedRatio": 12.654091386817477
+  },
+  "perMachine": {
+    "Core i7-2600": {
+      "arithmeticMeanRatio": 1.5376948135895578,
+      "comparisons": 8,
+      "maximumRatio": 1.948051948051948,
+      "minimumRatio": 1.1111111111111112,
+      "pooledTimeRatio": 1.5326128907757626
+    },
+    "Dual Core E5400": {
+      "arithmeticMeanRatio": 1.2150569826901563,
+      "comparisons": 8,
+      "maximumRatio": 1.4545454545454546,
+      "minimumRatio": 0.8905325443786983,
+      "pooledTimeRatio": 1.2060189485417057
+    },
+    "Elbrus 8C v4": {
+      "arithmeticMeanRatio": 2.316037861949954,
+      "comparisons": 8,
+      "maximumRatio": 2.8837288714358884,
+      "minimumRatio": 1.215686274509804,
+      "pooledTimeRatio": 2.668222374742622
+    },
+    "Xeon E5-2680v3": {
+      "arithmeticMeanRatio": 1.4467818085095852,
+      "comparisons": 8,
+      "maximumRatio": 1.8501440922190202,
+      "minimumRatio": 1.0,
+      "pooledTimeRatio": 1.7445121951219513
+    }
+  },
+  "scope": "Local checked-out repositories and accessible Git history; no external archive reconstruction",
+  "sourceFiles": {
+    "diss/Dissertation/chapter4.tex": "38acdeb5a0b164932713eb07e6c0dfce408e3714cadb7dbe1d3498ce327edbb8",
+    "diss/listings/mqtty.mqttrelay.result.json": "2393a04b267ebdc841e74a1c461ac2017caa1f510f0d3410056b6bf3964bfe36",
+    "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.MqttRelay.App/Program.cs": "20696b9eff87b77eea9442cd88527d083f05f0fd19077510f775c2f2a2222f97",
+    "mqtty/utils/parseResults.ipynb": "1209cd70bf42b97896276153484c31fa85fb8fd2f3674024e65bed69693efd65",
+    "mqtty/utils/parseResults.py": "ad4a77527e78cc214c57741d396ba28bfb8d7ffb3f8bf1b9195dec788c719f12",
+    "mqtty/utils/parseResultsNext.ipynb": "8660a2d8365deefce08b3a0f536c269736172ce6172a1de952028c78d5c4fc80",
+    "reports/audits/dissertation/publications.json": "c9a9e77f2ee5881c0dd956df843a388411bef30e126e1ff34c79af3cb120b875",
+    "tools/campaign/pilot-parallel-memory.py": "692ec750a054a4b0480a1766d3ff0a8cf8d4bbce29c30da4804c8c73a257c2c2",
+    "tools/dissertation/audit_acceleration.py": "f5e6bee3e6617ffa834d299e20a7a0a4532cc9f2e5acca4c26d8194833f4626a",
+    "tools/documentation/layout.json": "27029cf51d1026691254a0093a182388beefd8868a35b8c1c8901755593ef4b1"
+  },
+  "step33Accepted": false
+}

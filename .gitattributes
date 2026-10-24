@@ -12,4 +12,5 @@
 /tools/dissertation/analyse_sensitivity.py -text
 /tools/dissertation/test_analyse_sensitivity.py -text
 /tools/dissertation/*control*.py -text
+/tools/dissertation/*acceleration*.py -text
 /tools/status/** -text

@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "regressionCounts": {
+    "total": "141",
+    "executed": "141",
+    "passed": "141",
+    "failed": "0",
+    "error": "0",
+    "timeout": "0",
+    "aborted": "0",
+    "inconclusive": "0",
+    "passedButRunAborted": "0",
+    "notRunnable": "0",
+    "notExecuted": "0",
+    "disconnected": "0",
+    "warning": "0",
+    "completed": "0",
+    "inProgress": "0",
+    "pending": "0"
+  },
+  "memoryTestOutput": {
+    "LargeJson_DoesNotAllocateAWholeOutputString": "TestContext Messages:\nStreamed output: 10275003 bytes; managed allocation during write: 720 bytes.",
+    "Seal_HashesLargeEvidenceWithoutReadingItIntoAnArray": "TestContext Messages:\nEvidence file: 8388608 bytes; managed allocation during seal: 8112 bytes."
+  },
+  "scope": "Local Windows .NET6 integration; original failed pilot not rerun; frozen Linux runtime untouched",
+  "sourceSha256": {
+    "mqtty\\src\\EntityFX.MqttSimulator\\EntityFX.MqttY.Federation.App\\Results\\FederationResultWriter.cs": "a6905f72f6b27433cee42834dc33acd211a7c30b240f2ff5772c4a0d4615acb9",
+    "mqtty\\src\\EntityFX.MqttSimulator\\EntityFX.Tests.Integration\\Results\\FederationResultWriterTests.cs": "3bb32a5c0be984465b0166fc8120f338e6f7e71bb59c842e728ebcde0e10eaac"
+  },
+  "artifactSha256": {
+    "build-and-writer-tests.log": "b9f824371f3f2d78e4414d0816e237e7e43b19462a0b5f56a8fba05469beda50",
+    "federation-regression.trx": "7df3bdda3170c62a626582c4a3b58e08b255ba8347b84bdf89a6231e7a86e720",
+    "federation-writer.trx": "0b8b2eb5d16662b186a5810b4379ef625cce709bcfa2d1bf3f09920f58c4adb3",
+    "python-regression.log": "6d825e114e9657043ea6a247dd5b250ef951f0d4d3a5d1789069ddab202c5a50",
+    "regression.log": "4b50f03687cbfe299486b63632f822cd6c54bface162f82308624128cd472f32",
+    "Review.md": "833244814787650437b41f047a47cdd4ee14846b4c8e2cb19922be42c9f015dc"
+  },
+  "sourceCommit": "2c0cb25cabde700e5aebe5fbe1393e5419c4b378",
+  "pythonRegression": {
+    "tests": 125,
+    "passed": 123,
+    "skipped": 2,
+    "failed": 0
+  }
+}

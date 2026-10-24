@@ -1,7 +1,10 @@
 import copy
 import unittest
+import json
+from pathlib import Path
+import tempfile
 
-from analyse_sensitivity import analyse, identity, render
+from analyse_sensitivity import analyse, identity, render, verify_final, write_final_artifacts
 
 
 def row(job_id, values=None, failed=False, technical=None):
@@ -78,6 +81,64 @@ class SensitivityAnalysisTests(unittest.TestCase):
         a = analyse(snapshot(*rows))
         b = analyse(snapshot(*reversed(rows)))
         self.assertEqual(a, b)
+
+
+class FinalSensitivityAuditTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        path = Path(__file__).resolve().parents[2] / 'reports/audits/dissertation/sensitivity-final-v1/observation.json'
+        if not path.exists():
+            raise unittest.SkipTest('Final frozen evidence snapshot is not installed')
+        cls.source = json.loads(path.read_bytes())
+
+    def test_complete_real_snapshot_and_exact_replays(self):
+        result = verify_final(self.source)
+        self.assertEqual(result['pairedComparisons'], 144)
+        self.assertEqual(result['acceptanceFormulaChecks'], 920)
+        self.assertEqual(result['exactReplays'], 6)
+
+    def test_missing_row_rejected_even_when_progress_claims_completion(self):
+        source = copy.deepcopy(self.source)
+        source['rows'].pop()
+        with self.assertRaises(ValueError): verify_final(source)
+
+    def test_changed_threshold_rejected(self):
+        source = copy.deepcopy(self.source)
+        source['rows'][0]['summary']['acceptanceCriteria'][0]['limit'] = .5
+        with self.assertRaisesRegex(ValueError, 'limit'): verify_final(source)
+
+    def test_forged_rps_with_unchanged_counters_rejected(self):
+        source = copy.deepcopy(self.source)
+        source['rows'][0]['summary']['simulated']['completedRps'] += 1
+        with self.assertRaisesRegex(ValueError, 'RPS formula'): verify_final(source)
+
+    def test_changed_unrelated_variant_input_rejected(self):
+        source = copy.deepcopy(self.source)
+        key = 'Mosquitto.m16.q0.p1.s42.halfTick'
+        source['verifiedRuns'][key]['config']['network']['queueCapacity'] += 1
+        with self.assertRaisesRegex(ValueError, 'unrelated input'): verify_final(source)
+
+    def test_forged_exact_replay_flag_is_not_sufficient(self):
+        source = copy.deepcopy(self.source)
+        source['verifiedReplays'][0]['hashes']['summarySha256'] = '0' * 64
+        with self.assertRaisesRegex(ValueError, 'Replay bytes'): verify_final(source)
+
+    def test_counters_tampering_rejected(self):
+        source = copy.deepcopy(self.source)
+        key = next(iter(source['verifiedRuns']))
+        source['verifiedRuns'][key]['scientificCounters']['receivers'] = {}
+        with self.assertRaisesRegex(ValueError, 'counters modified'): verify_final(source)
+
+    def test_report_csv_plot_deterministic_and_all_failures_retained(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            a, b = [Path(temporary) / name for name in ('a', 'b')]
+            a.mkdir(); b.mkdir()
+            for output in (a, b): write_final_artifacts(self.source, output, 'same-snapshot-sha')
+            self.assertEqual({p.name: p.read_bytes() for p in a.iterdir()}, {p.name: p.read_bytes() for p in b.iterdir()})
+            result = json.loads((a / 'analysis.json').read_bytes())
+            self.assertEqual(result['coverage']['matrix']['scientificFailed'], 55)
+            self.assertEqual(len(result['matchedPairs']), 144)
+            self.assertIn('55/216', (a / 'Sensitivity-final.md').read_text(encoding='utf-8'))
 
 
 if __name__ == "__main__":

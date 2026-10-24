@@ -1,0 +1,20 @@
+{
+  "files": {
+    "analysis/Sensitivity-final.md": "383072e805c335bfd18217eecad08ddd30f64b08b152d015cc09d8dd6b18b560",
+    "analysis/analysis.json": "1498b3399219f9e18d1eff2a57d3ed30d8f41f549c3f1a3245da1776a5bb1de1",
+    "analysis/criteria.csv": "00929b114fb6d03d3388ee2c53e7be533f3712426373c35711ad47f64b948e5f",
+    "analysis/paired-metrics.csv": "5b803e3c66398b14fc5785d8f3a3e0534e1c996d59c043f10edebeb54683874d",
+    "analysis/pass-counts.svg": "f0fa937b9af6cdeb2a71cef434eda7e5f6c618ed345e71681e6df3ca090e4076",
+    "analysis/point-metrics.csv": "b974b067a543500ff8221a96ef9472b6101cbb9f7a00bc4a7861a725230e861b",
+    "analysis/verification.json": "00e1abb2a035fae7fa2eeebe544cfcff83afd8f03e61c779357d571f237521cc",
+    "collect_read_only.py": "5a5c7e238e7d1fef0dc9dabe19a03fe645d7e61339f208bf6fd2278e2ce75fbf",
+    "observation.json": "e1f303d4da889d618456333614e607c0ae9a37276205846590047464c0809acd",
+    "tests.json": "7c62abb9e8bf86c8d7c573a9d40d06b9b8fc1ebb4cab6e52c380bacfd3ff03d5",
+    "transfer.json": "35d55c9b9555c69378e86c44602338e19ad1be179d2a7ff849fd0f1dd3147664"
+  },
+  "report": {
+    "path": "reports/analysis/Sensitivity-final.md",
+    "sha256": "215611d8d22c393646e4433a74b16e59280c9075346531a407facd3f0d518aa7"
+  },
+  "scientificScope": "216 frozen matrix rows,8 pilots,6 replays; not native revalidation"
+}

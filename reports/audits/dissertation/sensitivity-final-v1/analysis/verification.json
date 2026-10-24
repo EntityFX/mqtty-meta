@@ -1,0 +1,11 @@
+{
+  "acceptanceFormulaChecks": 920,
+  "exactReplays": 6,
+  "immutableFiles": 27,
+  "limits": "Counters, histogram and formulas audited; no new raw native measurement or blind validation",
+  "matrix": 216,
+  "pairedComparisons": 144,
+  "pilots": 8,
+  "status": "verified",
+  "verifiedRuns": 230
+}
