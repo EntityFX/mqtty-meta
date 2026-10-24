@@ -1,0 +1,89 @@
+{
+  "observedAtUtc": "2026-10-24T18:06:01.008031+00:00",
+  "unit": "RuntimeMaxUSec=3h\nMainPID=103006\nResult=success\nExecMainStartTimestamp=Sat 2026-10-24 21:03:38 MSK\nExecMainStatus=0\nMemoryCurrent=2827603968\nActiveState=active\nSubState=running\n",
+  "progress": {
+    "status": "running",
+    "phase": "matrix",
+    "executionManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+    "verified": 0,
+    "technicalErrors": 0,
+    "counts": {
+      "pilot": {
+        "done": 0,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 30
+      },
+      "matrix": {
+        "done": 0,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 162
+      },
+      "replay": {
+        "done": 0,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 6
+      },
+      "diagnostic": {
+        "done": 0,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 54
+      }
+    },
+    "attempts": {
+      "pilot": {
+        "total": 0,
+        "failed": 0
+      },
+      "matrix": {
+        "total": 0,
+        "failed": 0
+      },
+      "replay": {
+        "total": 0,
+        "failed": 0
+      },
+      "diagnostic": {
+        "total": 0,
+        "failed": 0
+      }
+    },
+    "warnings": 0,
+    "active": {
+      "workers": 4,
+      "jobs": {
+        "matrix.line.single.q0.r1000.w10.s42": {
+          "pid": 103069,
+          "elapsedSeconds": 103.26045216299826,
+          "rssBytes": 638214144,
+          "peakRssBytes": 766722048
+        },
+        "matrix.line.single.q0.r1000.w10.s43": {
+          "pid": 103079,
+          "elapsedSeconds": 103.3101230209868,
+          "rssBytes": 779464704,
+          "peakRssBytes": 779464704
+        },
+        "matrix.line.single.q0.r1000.w10.s44": {
+          "pid": 103089,
+          "elapsedSeconds": 103.27584608798497,
+          "rssBytes": 761151488,
+          "peakRssBytes": 761151488
+        },
+        "matrix.line.single.q0.r5000.w10.s42": {
+          "pid": 103099,
+          "elapsedSeconds": 103.2647114249994,
+          "rssBytes": 691597312,
+          "peakRssBytes": 794066944
+        }
+      },
+      "remainingSeconds": 10538.698493531061
+    },
+    "reason": null,
+    "observedAtUtc": "2026-10-24T18:06:00.628746+00:00"
+  },
+  "stderrTail": ""
+}

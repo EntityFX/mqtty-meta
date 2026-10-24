@@ -1,0 +1,11 @@
+{
+  "observedAtUtc": "2026-10-24T18:03:55.064445+00:00",
+  "unit": "RuntimeMaxUSec=3h\nMainPID=103006\nResult=success\nExecMainStartTimestamp=Sat 2026-10-24 21:03:38 MSK\nExecMainStatus=0\nMemoryMax=10737418240\nActiveState=active\nSubState=running\n",
+  "progress": null,
+  "stderrTail": "",
+  "budget": {
+    "wallLimitSeconds": 10800,
+    "startedEpoch": 1792865019.3271925,
+    "deadlineEpoch": 1792875819.327193
+  }
+}

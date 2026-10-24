@@ -1,0 +1,84 @@
+{
+  "status": "running",
+  "phase": "matrix",
+  "executionManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+  "verified": 16,
+  "technicalErrors": 0,
+  "counts": {
+    "pilot": {
+      "done": 0,
+      "unresolvedErrors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    "matrix": {
+      "done": 16,
+      "unresolvedErrors": 0,
+      "warnings": 0,
+      "total": 162
+    },
+    "replay": {
+      "done": 0,
+      "unresolvedErrors": 0,
+      "warnings": 0,
+      "total": 6
+    },
+    "diagnostic": {
+      "done": 0,
+      "unresolvedErrors": 0,
+      "warnings": 0,
+      "total": 54
+    }
+  },
+  "attempts": {
+    "pilot": {
+      "total": 0,
+      "failed": 0
+    },
+    "matrix": {
+      "total": 16,
+      "failed": 0
+    },
+    "replay": {
+      "total": 0,
+      "failed": 0
+    },
+    "diagnostic": {
+      "total": 0,
+      "failed": 0
+    }
+  },
+  "warnings": 0,
+  "active": {
+    "workers": 4,
+    "jobs": {
+      "matrix.line.single.q2.r5000.w10.s43": {
+        "pid": 103824,
+        "elapsedSeconds": 108.7459766639804,
+        "rssBytes": 709619712,
+        "peakRssBytes": 824573952
+      },
+      "matrix.line.single.q2.r5000.w10.s44": {
+        "pid": 103886,
+        "elapsedSeconds": 84.52794003300369,
+        "rssBytes": 734150656,
+        "peakRssBytes": 802258944
+      },
+      "matrix.line.relay.q0.r1000.w10.s42": {
+        "pid": 103903,
+        "elapsedSeconds": 82.66284077501041,
+        "rssBytes": 751792128,
+        "peakRssBytes": 773341184
+      },
+      "matrix.line.relay.q0.r1000.w10.s43": {
+        "pid": 103945,
+        "elapsedSeconds": 59.152476477000164,
+        "rssBytes": 644567040,
+        "peakRssBytes": 770162688
+      }
+    },
+    "remainingSeconds": 10001.87262855607
+  },
+  "reason": null,
+  "observedAtUtc": "2026-10-24T18:14:57.454620+00:00"
+}

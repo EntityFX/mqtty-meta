@@ -747,7 +747,7 @@
   },
   "networkGlobalBudget": {
     "scope": "New global network campaign: 162 matrix jobs and 6 exact replays; completed native/sensitivity campaigns excluded",
-    "status": "budgetDefinedControllerAndPilotAdmissionRequired",
+    "status": "runningOnLinuxBoundedUnit",
     "wallLimitSeconds": 10800,
     "cleanupReserveSeconds": 120,
     "planningReserveSeconds": 1200,
@@ -771,9 +771,9 @@
     "fullCoverageGuaranteed": false,
     "scientificThresholdsChanged": false,
     "currentlyRunningSeparatePilot": "mqtty-network-qos2-final-pilot-v1.service",
-    "noGlobalCampaignLaunched": true,
-    "controllerStatus": "draftLocalTestsPassedNotDeployed",
-    "controllerLocalTestsPassed": 21
+    "noGlobalCampaignLaunched": false,
+    "controllerStatus": "deployedRunning",
+    "controllerLocalTestsPassed": 23
   },
   "qos2FinalPilot": {
     "status": "runningConfirmedOnce",
@@ -794,5 +794,37 @@
     "receipt": "reports/status/web-observation-10m-confirmation.json",
     "fullCampaignStarted": false,
     "scientificAccuracyClaim": false
+  },
+  "networkFull3h": {
+    "status": "running",
+    "unit": "mqtty-network-full-3h-v1.service",
+    "controllerPid": 103006,
+    "phase": "matrix",
+    "matrix": {
+      "done": 16,
+      "unresolvedErrors": 0,
+      "warnings": 0,
+      "total": 162
+    },
+    "replay": {
+      "done": 0,
+      "unresolvedErrors": 0,
+      "warnings": 0,
+      "total": 6
+    },
+    "workers": 4,
+    "pilotReview": "reports/audits/dissertation/network-pilot-reuse-v1/registry.json",
+    "technicalAdmission": "reports/audits/dissertation/network-full-3h-v1/pilot-technical-decision.json",
+    "pilotCohortsAreHeterogeneous": true,
+    "receipt": "reports/status/network-full-3h-progress.json",
+    "observedAtUtc": "2026-10-24T18:14:57.454620+00:00",
+    "hardStopMsk": "2026-10-25T00:03:38+03:00"
+  },
+  "networkConsoleMonitor": {
+    "status": "restartedForNetworkCampaign",
+    "remotePid": 103809,
+    "terminalPid": 5484,
+    "sshPid": 8936,
+    "receipt": "reports/status/network-monitor-restart.json"
   }
 }

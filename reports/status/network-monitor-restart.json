@@ -1,0 +1,20 @@
+{
+  "stoppedSshPids": [],
+  "terminalPid": 5484,
+  "script": "tools/status/monitor_sensitivity.py",
+  "remoteScript": "/tmp/monitor_sensitivity_network.py",
+  "service": "mqtty-network-full-3h-v1.service",
+  "progress": "/run/media/entityfx/hd250/mqtty-evidence/network-full-3h-v1/progress.json",
+  "observedAtUtc": "2026-10-24T18:13:02.7969039Z",
+  "newSshProcesses": [
+    {
+      "ProcessId": 8936,
+      "ParentProcessId": 5484,
+      "CommandLine": "\"C:\\Windows\\System32\\OpenSSH\\ssh.exe\" -i C:/Users/entityfx/.ssh/mqtty_two_machine -o BatchMode=yes -o ServerAliveInterval=30 -tt entityfx@192.168.5.1 \"python3 /tmp/monitor_sensitivity_network.py --campaign network --study /run/media/entityfx/hd250/mqtty-evidence/network-full-3h-v1 --service mqtty-network-full-3h-v1.service\""
+    }
+  ],
+  "remoteMonitorPid": 103809,
+  "testsPassed": 14,
+  "sourceSha256": "d06a285028890f8fb2fafe3f814ce69531735524d5b63793b8f7baa3deb870c2",
+  "campaignControllerPidUnchanged": 103006
+}

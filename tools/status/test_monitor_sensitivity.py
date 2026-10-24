@@ -127,5 +127,23 @@ class MonitorPhaseCountsTests(unittest.TestCase):
         self.assertNotIn("/56", text)
 
 
+class NetworkCampaignMonitorTests(unittest.TestCase):
+    def test_network_scope_and_nested_workers(self):
+        data={"status":"running","counts":{"matrix":{"done":12,"total":162,"warnings":2,"unresolvedErrors":1},
+             "replay":{"done":0,"total":6},"pilot":{"done":30,"total":30},"diagnostic":{"done":54,"total":54}},
+             "active":{"workers":4,"jobs":{"matrix.line.single.q0.r1000.w10.s42":{"pid":123,"elapsedSeconds":10,"rssBytes":1024**3}}}}
+        result="\n".join(monitor.network_lines(data,[],{"startedEpoch":0,"deadlineEpoch":10800},100))
+        self.assertIn("12/168",result);self.assertIn("Workers: 4",result);self.assertIn("PID 123",result)
+        self.assertIn("❌1",result);self.assertIn("⚠2",result);self.assertNotIn("/252",result)
+    def test_warning_not_a_technical_failure_and_old_retry_not_counted(self):
+        rows=[{"id":"matrix.star.federation.q1.r5000.w10.s42","attemptNumber":1,"technicalError":"old"},
+              {"id":"matrix.star.federation.q1.r5000.w10.s42","attemptNumber":2,"technicalError":None,"warnings":["queueDrops"]}]
+        result="\n".join(monitor.network_lines({},rows,{},100))
+        self.assertIn("✅  1/54 / ❌0 / ⚠1",result)
+    def test_budget_and_terminal_reason(self):
+        result="\n".join(monitor.network_lines({"status":"budgetExhausted","reason":"limit"},[],{"startedEpoch":0,"deadlineEpoch":100},110))
+        self.assertIn("Budget remaining: 0m 00s",result);self.assertIn("Stop reason: limit",result)
+
+
 if __name__ == "__main__":
     unittest.main()
