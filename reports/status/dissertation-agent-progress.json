@@ -16,11 +16,12 @@
     "13",
     "19",
     "20",
+    "21",
     "22"
   ],
-  "verifiedTechnicalWeightPersonDays": 11.5,
+  "verifiedTechnicalWeightPersonDays": 12.5,
   "localPercent": 80,
-  "globalPercent": 24.5,
+  "globalPercent": 26.6,
   "basis": "Plan effort weights; not scientific confidence or elapsed labour",
   "steps": {
     "03": {
@@ -206,24 +207,34 @@
       "exactReplaysVerified": 12
     },
     "21": {
-      "status": "pilotsIncompleteTwoTechnicalFailures",
-      "document": "docs/dissertation/network-study.md",
-      "plan": "reports/audits/dissertation/network-study-v1/plan.json",
-      "pilotJobs": 30,
-      "pilotJobsExecuted": 29,
-      "candidateIdealMatrix": 162,
-      "exactReplays": 6,
-      "optionalMosquittoDiagnostic": 54,
-      "localCliConfigurationsValidated": 252,
-      "unitTestsPassed": 4,
-      "remaining": "Diagnose QoS1 pending/drain; validate streaming writer in a separately pinned runtime; no matrix admission",
-      "unit": "mqtty-network-pilot-tail-v1.service",
-      "mainPid": 0,
-      "remoteRoot": "/run/media/entityfx/hd250/mqtty-evidence/network-long-v1",
-      "successfulPilots": 27,
-      "failedPilots": 2,
-      "unattemptedPilots": 1,
-      "warningPilots": 3
+      "status": "technicalChecksPassed",
+      "weightPersonDays": 1.0,
+      "originalPilotOutcome": {
+        "status": "pilotsIncompleteTwoTechnicalFailures",
+        "document": "docs/dissertation/network-study.md",
+        "plan": "reports/audits/dissertation/network-study-v1/plan.json",
+        "pilotJobs": 30,
+        "pilotJobsExecuted": 29,
+        "candidateIdealMatrix": 162,
+        "exactReplays": 6,
+        "optionalMosquittoDiagnostic": 54,
+        "localCliConfigurationsValidated": 252,
+        "unitTestsPassed": 4,
+        "remaining": "Diagnose QoS1 pending/drain; validate streaming writer in a separately pinned runtime; no matrix admission",
+        "unit": "mqtty-network-pilot-tail-v1.service",
+        "mainPid": 0,
+        "remoteRoot": "/run/media/entityfx/hd250/mqtty-evidence/network-long-v1",
+        "successfulPilots": 27,
+        "failedPilots": 2,
+        "unattemptedPilots": 1,
+        "warningPilots": 3
+      },
+      "pilotRegistry": "reports/audits/dissertation/network-pilot-reuse-v1/registry.json",
+      "technicalDecision": "reports/audits/dissertation/network-full-3h-v1/pilot-technical-decision.json",
+      "selectedVerifiedPilotPoints": 30,
+      "pilotCohortsAreHeterogeneous": true,
+      "scientificApproval": false,
+      "acceptance": "Fixed 162+6 finite-horizon mechanism program, observed phase costs and drain limits reviewed against 30 recounted preserved outputs. Three-hour bounded execution admitted explicitly; no stationary-tail or native-network-accuracy claim."
     },
     "22": {
       "status": "technicalChecksPassed",
@@ -386,7 +397,7 @@
   "summaryPercentages": {
     "observation": "reports/status/manual-continuation-latest.json",
     "localPercent": 80,
-    "globalPercent": 24.5,
+    "globalPercent": 26.6,
     "sensitivityAllCompleted": 230,
     "sensitivityAllTotal": 230,
     "sensitivityAllPercent": 100,
@@ -395,12 +406,19 @@
     "sensitivityMatrixPercent": 100,
     "scientificFailedIncludedInCompleted": true,
     "updateRule": "Experiment percentages from each confirmed snapshot; readiness from accepted effort-weighted steps only",
-    "networkPilotCompleted": 27,
+    "networkPilotCompleted": 30,
     "networkPilotTotal": 30,
-    "networkPilotPercent": 90,
-    "networkPilotFailed": 2,
-    "networkPilotAttempted": 29,
-    "networkPilotWarnings": 3
+    "networkPilotPercent": 100,
+    "networkPilotWarnings": 5,
+    "networkPilotOriginalOutcome": {
+      "networkPilotCompleted": 27,
+      "networkPilotTotal": 30,
+      "networkPilotPercent": 90,
+      "networkPilotFailed": 2,
+      "networkPilotAttempted": 29,
+      "networkPilotWarnings": 3
+    },
+    "networkPilotBasis": "Composite preserved outputs, not a new homogeneous pilot series"
   },
   "authorPreparation": {
     "document": "docs/dissertation/author-decisions.md",
@@ -826,5 +844,11 @@
     "terminalPid": 5484,
     "sshPid": 8936,
     "receipt": "reports/status/network-monitor-restart.json"
+  },
+  "claimsAndEvidence": {
+    "document": "reports/analysis/Claims-and-evidence.md",
+    "manifest": "reports/audits/dissertation/claims-and-evidence-v1/manifest.json",
+    "scientificApproval": false,
+    "remoteOperations": false
   }
 }
