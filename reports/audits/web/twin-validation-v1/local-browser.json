@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:5095",
+  "firstJob": "a2a6865aed054e03b936d851fdf64d89",
+  "repeatJob": "e6fb1d3fe4cc4c40a6025dd9983c0865",
+  "firstStatus": {
+    "id": "a2a6865aed054e03b936d851fdf64d89",
+    "topologyId": null,
+    "name": "Article 1 Web technical pilot",
+    "tickMilliseconds": 0.01,
+    "engine": "twinValidation",
+    "state": "Completed",
+    "totalTicks": 16014,
+    "step": 54201,
+    "errors": 0,
+    "startedAt": "2026-10-25T20:12:21.793855+00:00",
+    "finishedAt": "2026-10-25T20:12:25.2005294+00:00",
+    "outputDir": "C:\\temp\\mqtty-twin-browser-cb2cdc33a9dd4ea299cde5011f2679d6\\data\\simulations\\a2a6865aed054e03b936d851fdf64d89",
+    "error": null,
+    "processId": null,
+    "processWorkingSetBytes": 318648320,
+    "processCpuSeconds": 3.59375,
+    "lastObservedAt": "2026-10-25T20:12:24.9303797+00:00",
+    "phase": "drain"
+  },
+  "summarySha256": "d971dbec8451139ab4b282dc1abf61dc3cc46c0b1080f868c67c8cd9be2c812a",
+  "repeatSummaryByteIdentical": true,
+  "sealedFilesVerified": 14,
+  "browserErrors": [],
+  "elapsedSeconds": 14.125,
+  "scope": "Technical model pilot; no new native measurement or accuracy claim"
+}

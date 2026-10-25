@@ -1296,5 +1296,37 @@
     "nextPlan": "docs/plans/MqttY.Web.single-broker-validation.md",
     "pythonTestsPassed": 12,
     "pythonTestsSkipped": 2
+  },
+  "webTwinValidation": {
+    "status": "modelPathVerifiedNativeReferencePending",
+    "plan": "docs/plans/MqttY.Web.single-broker-validation.md",
+    "report": "reports/analysis/Article-1-web-validation.md",
+    "mqttyCommit": "b7537bd3a0772d303dfd7256f195d1189cf8be0b",
+    "linuxDeployed": true,
+    "linuxPidAtConfirmation": 236776,
+    "webTestsPassed": 38,
+    "integrationRegressionTestsPassed": 26,
+    "connectionOrderTestsPassed": 3,
+    "linuxJobs": [
+      "228d446bc4be410e91a0888fa5476343",
+      "48d11d6f8e87416fa8338abfa85bc723"
+    ],
+    "modelTicks": 16014,
+    "modelSteps": 54201,
+    "sealedFilesVerified": 14,
+    "webRepeatSummaryByteIdentical": true,
+    "browserErrors": 0,
+    "frozenProbeNumericalFilesByteIdentical": 6,
+    "strictFrozenProbeAllFilesPassed": false,
+    "strictFailureReason": "Connection snapshot client ordering differs",
+    "connectionEventsSemanticallyMatched": 68,
+    "frozenRuntimeFilesUnchanged": 30,
+    "crossHostSummaryValuesIdentical": true,
+    "crossHostSummaryBytesIdentical": false,
+    "crossHostByteDifference": "CRLF versus LF only",
+    "scientificAccuracyClaim": false,
+    "mainScientificCampaignStarted": false,
+    "nativeReferenceImportImplemented": false,
+    "checkedAt": "2026-10-25T23:22:56.434084+03:00"
   }
 }

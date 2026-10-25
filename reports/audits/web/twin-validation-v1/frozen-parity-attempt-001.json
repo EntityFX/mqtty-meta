@@ -1,0 +1,23 @@
+{
+  "passed": false,
+  "scope": "Model execution parity; not a new native accuracy result",
+  "probe": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-validation-v1/runtime/TwinValidationProbe.dll",
+  "webOutput": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/228d446bc4be410e91a0888fa5476343",
+  "profileSha256": "d9cf125fb8cb6ec3677fc3c596bafcdfced8be0502362e2b4ff03da1421d46eb",
+  "exitCode": 0,
+  "matches": {
+    "summary.json": true,
+    "latency-histogram.json": true,
+    "publishes.ndjson": true,
+    "deliveries.ndjson": true,
+    "connections.ndjson": false,
+    "subscriptions.ndjson": true,
+    "phases.json": true
+  },
+  "directRunDirectory": "/run/media/entityfx/hd250/mqtty-evidence/web-twin-validation-v1/frozen-parity-attempt-001/direct/20261025T201801591Z-973bb8b104aa43a0863a31f4dc4efb62",
+  "summarySha256": "7a683ccf53eb87132f0440b9c64ac77b9f5bcbb4ded6c0512bfa0b504399e566",
+  "error": "AssertionError: Direct/Web scientific files differ",
+  "frozenRuntimeUnchanged": true,
+  "runtimeFilesVerified": 30,
+  "elapsedSeconds": 2.189482040994335
+}
