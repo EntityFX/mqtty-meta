@@ -1,0 +1,14 @@
+{
+  "unit": "# /home/entityfx/.config/systemd/user/mqtty-web.service\n[Unit]\nDescription=MqttY.Web local simulation host with evidence-disk monitoring\nAfter=network.target\n\n[Service]\nType=simple\nExecStartPre=/usr/bin/mountpoint -q \"/run/media/entityfx/hd250\"\nExecStart=/usr/bin/python3 \"/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/releases/10587525c3a4f204948401b926ab1ec8d6f9fca944bf999c9ef9263d567963aa/linux_web_host.py\" serve --release \"/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/releases/10587525c3a4f204948401b926ab1ec8d6f9fca944bf999c9ef9263d567963aa\" --mount \"/run/media/entityfx/hd250\" --root \"/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host\"\nRestart=no\nKillMode=control-group\nTimeoutStopSec=20\nMemoryMax=2G\nMemorySwapMax=0\nCPUQuota=150%\nTasksMax=256\nUMask=0077\nNoNewPrivileges=yes\nStandardOutput=null\nStandardError=journal\nLogRateLimitIntervalSec=30s\nLogRateLimitBurst=20\n\n[Install]\nWantedBy=default.target\n\n",
+  "health": {
+    "status": "ok",
+    "processId": 164895,
+    "processWorkingSetBytes": 219619328,
+    "dataDirectoryAvailable": true,
+    "runningJobs": 0,
+    "queuedJobs": 0
+  },
+  "jobCount": 42,
+  "active": [],
+  "topologyCount": 7
+}

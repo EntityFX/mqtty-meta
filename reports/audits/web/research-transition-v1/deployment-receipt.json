@@ -1,0 +1,22 @@
+{
+  "release": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/releases/1e319c88594de1cd56d47003aef24a036aea65974ebe482dabce1f0154f7eb12",
+  "mqttyCommit": "922acf14139b59edecb9a24224f67b104cfefda9",
+  "oldUnitBackup": "/run/media/entityfx/hd250/mqtty-evidence/web-research-transition-v1/previous-web.service",
+  "activeJobsBefore": 0,
+  "jobCountBefore": 42,
+  "topologyCountBefore": 7,
+  "rolledBack": false,
+  "passed": true,
+  "health": {
+    "status": "ok",
+    "processId": 233710,
+    "processWorkingSetBytes": 97959936,
+    "dataDirectoryAvailable": true,
+    "runningJobs": 0,
+    "queuedJobs": 0
+  },
+  "jobCountAfter": 42,
+  "topologyCountAfter": 7,
+  "topologyFilesUnchanged": true,
+  "searchVerified": true
+}

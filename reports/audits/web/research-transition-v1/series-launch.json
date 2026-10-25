@@ -1,0 +1,20 @@
+{
+  "command": [
+    "systemd-run",
+    "--user",
+    "--unit=mqtty-web-research-acceptance-v1",
+    "--property=RuntimeMaxSec=200",
+    "--property=MemoryMax=256M",
+    "--property=MemorySwapMax=0",
+    "/usr/bin/python3",
+    "/run/media/entityfx/hd250/mqtty-evidence/web-research-transition-v1/incoming/check_experiment_series.py",
+    "--url",
+    "http://127.0.0.1:5088",
+    "--output",
+    "/run/media/entityfx/hd250/mqtty-evidence/web-research-transition-v1/series-attempt-001",
+    "--data-root",
+    "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data"
+  ],
+  "launchOutput": "Running as unit: mqtty-web-research-acceptance-v1.service; invocation ID: ed720e5fbdc347f585d1125d77fb559d\n",
+  "state": "MainPID=233833\nResult=success\nActiveState=active\nSubState=running\n"
+}

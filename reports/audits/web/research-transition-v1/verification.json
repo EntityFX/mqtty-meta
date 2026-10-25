@@ -1,0 +1,17 @@
+{
+  "webTests": {
+    "passed": 36,
+    "failed": 0
+  },
+  "pythonTests": {
+    "passed": 12,
+    "skipped": 2,
+    "failed": 0,
+    "invocation": "unittest discover"
+  },
+  "linuxLargeProfileForm": "linux-large-profile-form.json",
+  "linuxDeployment": "large-profile-deployment.json",
+  "acceptanceReleaseCommit": "922acf1",
+  "finalCommit": "de226d0",
+  "scientificAccuracyClaim": false
+}
