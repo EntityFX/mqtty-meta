@@ -29,13 +29,22 @@ def review_observations(phases, connections, subscriptions, *, scope, window, dr
     if len(identities) != 1 or not all(identities):
         issues.append('Missing or ambiguous subscriber MQTT client ID')
     confirmed = [s for s in subscriptions if s.get('state', 'subscribed') == 'subscribed']
-    expected = 2 if scope == 'native' else 1
+    # BrokerFidelity's receiver is configured with two filters by MqttNetworkBuilder.
+    # Check the exact contract, rather than infer expected coverage from observed rows.
+    expected = 2
     if len(confirmed) != expected or any(s.get('clientId') not in identities or
             s.get('requestedQos') != 1 or s.get('grantedQos') != 1 or
             not 0 <= s['elapsedSeconds'] <= start for s in confirmed):
         issues.append('Missing, mismatched or late subscriber SUBACK evidence')
     if scope == 'native' and sum(s['topic'].endswith('/warmup') for s in confirmed) != 1:
         issues.append('Warmup subscription not independently confirmed')
+    topics = {s.get('topic') for s in confirmed}
+    if scope == 'model' and topics != {'telemetry/+', 'local/telemetry/+'}:
+        issues.append('Confirmed model filters differ from configured BrokerFidelity filters')
+    if scope == 'native':
+        measured_topics = [topic for topic in topics if isinstance(topic, str) and not topic.endswith('/warmup')]
+        if len(measured_topics) != 1 or topics != {measured_topics[0], measured_topics[0] + '/warmup'}:
+            issues.append('Native warmup and measurement subscriptions do not form the configured topic pair')
     if scope == 'model' and phases.get('connectionObservation') != 'everyModelTick':
         issues.append('No evidence of connection sampling at every model tick')
     return dict(admitted=not issues, issues=issues, connection=connection,
@@ -43,7 +52,15 @@ def review_observations(phases, connections, subscriptions, *, scope, window, dr
                 else 'instrumentationObservation', scope='Technical pilot gate, not an accuracy claim')
 
 
-def run(base, root):
+def validate_pilot_selection(windows, attempt, budget_seconds):
+    if (tuple(windows) not in ((2,), (4,), (2, 4)) or type(attempt) is not int
+            or not 1 <= attempt <= 999 or type(budget_seconds) is not int or not 30 <= budget_seconds <= 575):
+        raise ValueError('Require planned windows in order, a positive attempt <=999 and budget 30..575s')
+    return f'pilot-attempt-{attempt:03d}'
+
+
+def run(base, root, windows=(2, 4), attempt=1, budget_seconds=575):
+    attempt_name = validate_pilot_selection(windows, attempt, budget_seconds)
     base, root = base.resolve(), root.resolve()
     mount = Path('/run/media/entityfx/hd250')
     if not mount.is_mount() or root.parent != mount/'mqtty-evidence' or root == base:
@@ -63,12 +80,13 @@ def run(base, root):
     metadata = json.loads(Path(program['standMetadata']['Mosquitto']).read_text())['brokers'][0]
     if file_digest(metadata['configFiles'][0]) != old['mosquittoConfigSha256']:
         raise ValueError('Historical Mosquitto configuration changed')
-    output = root/'pilot-attempt-001'
+    output = root/attempt_name
     output.mkdir(exist_ok=False)
     started, results = time.monotonic(), []
 
     def progress(status, active=None, error=None):
-        value = dict(status=status, active=active, completed=len(results), total=2,
+        value = dict(status=status, active=active, completed=len(results), total=len(windows),
+                     selectedWindows=list(windows), budgetSeconds=budget_seconds,
                      elapsedSeconds=time.monotonic()-started, error=error,
                      mainCampaignStarted=False, scope='Instrumentation pilot; historical profile only')
         temporary = output/'progress.tmp'
@@ -76,10 +94,10 @@ def run(base, root):
         temporary.replace(output/'progress.json')
 
     try:
-        for window in (2, 4):
+        for window in windows:
             case = output/('window-'+str(window)); case.mkdir()
             progress('running', 'native/window-'+str(window))
-            remaining = 575 - (time.monotonic()-started)
+            remaining = budget_seconds - (time.monotonic()-started)
             if remaining < 60:
                 raise TimeoutError('Pilot total budget reserve reached')
             port = 33103
@@ -102,7 +120,7 @@ def run(base, root):
                 if broker is not None: terminate(broker)
                 if log is not None: log.close()
             progress('running', 'model/window-'+str(window))
-            remaining = min(230, 575-(time.monotonic()-started))
+            remaining = min(230, budget_seconds-(time.monotonic()-started))
             model_process = execute(command+['model', str(config_path), str(case/'model')],
                                     case/'model.log', '2-3', remaining)
             model_trial = json.loads((case/'model/trial.json').read_text())
@@ -143,5 +161,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--base', required=True, type=Path)
     parser.add_argument('--root', required=True, type=Path)
+    parser.add_argument('--windows', nargs='+', type=int, choices=(2, 4), default=[2, 4])
+    parser.add_argument('--attempt', type=int, default=1)
+    parser.add_argument('--budget-seconds', type=int, default=575)
     args = parser.parse_args()
-    run(args.base, args.root)
+    run(args.base, args.root, tuple(args.windows), args.attempt, args.budget_seconds)

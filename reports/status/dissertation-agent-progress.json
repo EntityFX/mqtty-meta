@@ -1217,27 +1217,49 @@
     "localChecksPassed": 21
   },
   "article1MatchedValidation": {
-    "status": "pilotRunningAtLaunchConfirmation",
+    "status": "mosquittoPilotCompletedAndRecounted",
     "mainCampaignCompleted": 0,
     "mainCampaignPlanned": 40,
     "program": "docs/dissertation/article-1-matched-validation-plan.md",
     "pilotProtocol": "docs/dissertation/article-1-matched-pilot-protocol.md",
-    "unit": "mqtty-article1-matched-pilot-v1.service",
-    "pidAtConfirmation": 211006,
-    "progressPath": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-validation-v1/pilot-attempt-001/progress.json",
+    "unit": "mqtty-article1-matched-pilot-v1-part2.service",
+    "pidAtConfirmation": 0,
+    "progressPath": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-validation-v1/pilot-attempt-002/progress.json",
     "pilotBudgetSeconds": 600,
     "mainCampaignBudgetSeconds": 21600,
     "mainCampaignAdmitted": false,
     "tests": {
       "mqtty": 96,
       "native": 10,
-      "python": 28
+      "python": 35
     },
     "commits": {
       "MqttBenchmark": "0cabae3",
       "mqtty": "cf6a399"
     },
-    "confirmation": "reports/audits/dissertation/article-1-matched-pilot-v1/launch.json",
-    "agentStoppedForWaiting": true
+    "confirmation": "reports/audits/dissertation/article-1-matched-pilot-v1/continuation-result.json",
+    "agentStoppedForWaiting": false,
+    "pilotBudgetRemainingSeconds": 568,
+    "pilotInternalBudgetSeconds": 548,
+    "pilotWindowsVerified": 2,
+    "pilotWindowsPlanned": 2,
+    "pilotPercent": 100,
+    "rawFilesShaVerified": 20,
+    "metricsRecounted": true,
+    "deadlineReset": false,
+    "report": "reports/analysis/Article-1-matched-pilot.md",
+    "priorFailurePreserved": true,
+    "gateFailureCause": "Expected one model subscription instead of the two configured filters",
+    "reanalysis": "reports/audits/dissertation/article-1-matched-pilot-v1/local-reanalysis.json",
+    "localRawArchive": "C:/temp/mqtty-evidence/article1-matched-pilot-v1/raw-results.tar.gz",
+    "linuxGateTestsPassed": 12,
+    "pilotElapsedSeconds": 75.26863310101908,
+    "finalPilotSummary": "reports/audits/dissertation/article-1-matched-pilot-v1/final-pilot-summary.json",
+    "otherBrokerPilotsStarted": false,
+    "backgroundJobRunning": false,
+    "localRawArchives": [
+      "C:/temp/mqtty-evidence/article1-matched-pilot-v1/raw-results.tar.gz",
+      "C:/temp/mqtty-evidence/article1-matched-pilot-v1/raw-results-part2.tar.gz"
+    ]
   }
 }

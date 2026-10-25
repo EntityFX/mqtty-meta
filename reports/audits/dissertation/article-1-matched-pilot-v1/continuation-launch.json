@@ -1,0 +1,50 @@
+{
+  "command": [
+    "systemd-run",
+    "--user",
+    "--unit=mqtty-article1-matched-pilot-v1-part2",
+    "--property=RuntimeMaxSec=568",
+    "--property=TimeoutStopSec=10",
+    "--property=KillMode=control-group",
+    "--property=MemoryMax=2G",
+    "--property=MemorySwapMax=0",
+    "--property=CPUQuota=200%",
+    "--setenv=PYTHONPATH=/run/media/entityfx/hd250/mqtty-evidence/article1-matched-validation-v1/launcher",
+    "/usr/bin/python3",
+    "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-validation-v1/continuation-v1/run_matched_twin_pilot.py",
+    "--base",
+    "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1",
+    "--root",
+    "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-validation-v1",
+    "--windows",
+    "4",
+    "--attempt",
+    "2",
+    "--budget-seconds",
+    "548"
+  ],
+  "state": "RuntimeMaxUSec=9min 28s\nMainPID=217286\nResult=success\nActiveState=active\nSubState=running\n",
+  "progress": {
+    "status": "running",
+    "active": "native/window-4",
+    "completed": 0,
+    "total": 1,
+    "selectedWindows": [
+      4
+    ],
+    "budgetSeconds": 548,
+    "elapsedSeconds": 6.495401612482965e-05,
+    "error": null,
+    "mainCampaignStarted": false,
+    "scope": "Instrumentation pilot; historical profile only"
+  },
+  "priorConsumedSeconds": 31.138280968996696,
+  "remainingPilotBudgetSeconds": 568,
+  "deadlineReset": false,
+  "testOutput": "test_both_configured_model_filters_are_admitted (test_matched_twin_pilot.PilotGateTests.test_both_configured_model_filters_are_admitted) ... ok\ntest_continuation_can_select_only_the_missing_window (test_matched_twin_pilot.PilotGateTests.test_continuation_can_select_only_the_missing_window) ... ok\ntest_continuation_path_and_budget_are_bounded (test_matched_twin_pilot.PilotGateTests.test_continuation_path_and_budget_are_bounded) ... ok\ntest_correct_native_observation_is_admitted (test_matched_twin_pilot.PilotGateTests.test_correct_native_observation_is_admitted) ... ok\ntest_disconnect_is_retained_as_system_outcome_and_blocks_scaling (test_matched_twin_pilot.PilotGateTests.test_disconnect_is_retained_as_system_outcome_and_blocks_scaling) ... ok\ntest_duplicate_or_unplanned_windows_cannot_add_unplanned_repetitions (test_matched_twin_pilot.PilotGateTests.test_duplicate_or_unplanned_windows_cannot_add_unplanned_repetitions) ... ok\ntest_missing_model_tick_observation_is_rejected (test_matched_twin_pilot.PilotGateTests.test_missing_model_tick_observation_is_rejected) ... ok\ntest_native_warmup_topic_must_belong_to_measured_topic (test_matched_twin_pilot.PilotGateTests.test_native_warmup_topic_must_belong_to_measured_topic) ... ok\ntest_one_missing_configured_model_filter_is_rejected (test_matched_twin_pilot.PilotGateTests.test_one_missing_configured_model_filter_is_rejected) ... ok\ntest_short_observation_is_rejected (test_matched_twin_pilot.PilotGateTests.test_short_observation_is_rejected) ... ok\ntest_subscription_cannot_belong_to_a_different_client (test_matched_twin_pilot.PilotGateTests.test_subscription_cannot_belong_to_a_different_client) ... ok\ntest_wrong_model_filter_cannot_replace_required_filter (test_matched_twin_pilot.PilotGateTests.test_wrong_model_filter_cannot_replace_required_filter) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.001s\n\nOK\n",
+  "launcherSha256": {
+    "run_matched_twin_pilot.py": "ee54c28ad330d4f43990095a1acc2f3e1d540b1d89c2b13acfc392965ac10043",
+    "test_matched_twin_pilot.py": "60c95c67060ee870b524aebb24df13e099cff0d7590d9226eb0ecbf53f46c736"
+  },
+  "mainCampaignStarted": false
+}

@@ -1,0 +1,29 @@
+{
+  "status": "mosquittoPilotCompletedAndRecounted",
+  "pilotWindowsVerified": 2,
+  "pilotWindowsPlanned": 2,
+  "pilotPercent": 100,
+  "nativeRuns": 2,
+  "modelRuns": 2,
+  "rawFilesShaVerified": 20,
+  "elapsedAttemptSeconds": [
+    31.138280968996696,
+    44.13035213202238
+  ],
+  "elapsedTotalSeconds": 75.26863310101908,
+  "allTechnicalGatesAdmitted": true,
+  "originalFailurePreserved": true,
+  "gateBugFixed": true,
+  "missingWindowOnlyRerun": true,
+  "mainCampaignCompleted": 0,
+  "mainCampaignPlanned": 40,
+  "mainCampaignAdmitted": false,
+  "otherBrokerPilotsStarted": false,
+  "next": [
+    "Pilot remaining three brokers",
+    "Verify disconnect/reconnect and measurement overhead",
+    "New calibration and frozen profiles",
+    "Separate new holdout"
+  ],
+  "scope": "Technical pilot with old profiles; final article validation series unchanged"
+}

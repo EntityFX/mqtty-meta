@@ -1,0 +1,412 @@
+{
+  "service": "MainPID=0\nResult=success\nExecMainStatus=0\nActiveState=inactive\nSubState=dead\n",
+  "files": {
+    "pilot-attempt-002/progress.json": {
+      "sha256": "8508cd68de2c715095eb79f2a431c3adc95ba98ba67265c935102ddd32a46195",
+      "value": {
+        "status": "completed",
+        "active": null,
+        "completed": 1,
+        "total": 1,
+        "selectedWindows": [
+          4
+        ],
+        "budgetSeconds": 548,
+        "elapsedSeconds": 44.13035213202238,
+        "error": null,
+        "mainCampaignStarted": false,
+        "scope": "Instrumentation pilot; historical profile only"
+      }
+    },
+    "pilot-attempt-002/summary.json": {
+      "sha256": "a3d5ac7e8a8859c5294881ae73616af542f3cb56db0ee2d66c0efaac493d6597",
+      "value": {
+        "status": "completed",
+        "cases": [
+          {
+            "windowSeconds": 4,
+            "observations": {
+              "native": {
+                "gate": {
+                  "admitted": true,
+                  "issues": [],
+                  "connection": {
+                    "status": "continuousConnected",
+                    "stateAtStart": "connected",
+                    "changesInWindow": [],
+                    "subscriberEvents": [
+                      {
+                        "client": "subscriber",
+                        "clientId": "mb-6baf94167401423290ac703ce3552e95",
+                        "state": "connected",
+                        "elapsedSeconds": 0.1456504,
+                        "reason": null
+                      },
+                      {
+                        "client": "subscriber",
+                        "clientId": "mb-6baf94167401423290ac703ce3552e95",
+                        "state": "disconnected",
+                        "elapsedSeconds": 10.3190305,
+                        "reason": "NormalDisconnection"
+                      }
+                    ],
+                    "windowStart": 1.1874293,
+                    "windowEnd": 10.1874293,
+                    "scope": "Observed connection events only; subscription and packet-level correctness not established"
+                  },
+                  "classification": "instrumentationObservation",
+                  "scope": "Technical pilot gate, not an accuracy claim"
+                },
+                "metrics": {
+                  "scope": "One subscriber; attempts in [measurementStart, measurementEnd); observed through drainEnd",
+                  "attempted": 61131,
+                  "completed": 61131,
+                  "failed": 0,
+                  "pending": 0,
+                  "measurementSeconds": 4.0,
+                  "attemptedRps": 15282.75,
+                  "completedInWindow": 61115,
+                  "completedRpsInWindow": 15278.75,
+                  "completedDuringDrain": 16,
+                  "completedCohortPerSubmissionSecond": 15282.75,
+                  "uniqueDeliveries": 59075,
+                  "completedIdsDelivered": 59075,
+                  "deliveredAfterFailedPublish": 0,
+                  "firstDeliveriesDuringDrain": 33,
+                  "duplicates": 0,
+                  "outsideCohortDeliveryEvents": 10489,
+                  "publishFailureRate": 0.0,
+                  "deliveryLossRate": 0.03363269045165296,
+                  "p99PublishMs": 16.292699999999968,
+                  "latencyStatus": "observed",
+                  "outcomesSettled": true
+                },
+                "phases": {
+                  "timeOrigin": "sharedMonotonic",
+                  "qos": 1,
+                  "measurementStartSeconds": 1.1874293,
+                  "measurementEndSeconds": 5.1874293,
+                  "drainEndSeconds": 10.1874293,
+                  "observationStoppedSeconds": 10.1874643,
+                  "completed": true,
+                  "policy": "closedLoopPerPublisher; fixed submission deadline; outcomes observed through drain"
+                },
+                "rawSha256": {
+                  "publishes.ndjson": "30ed143ad4ae794a8237e72df5785ca89fa6984c959370cae32ba30085f81fa6",
+                  "deliveries.ndjson": "15bdfcbcae087ec06a48476f1fe1b685afc201a2d9394a0b6caee649bfe662e5",
+                  "connections.ndjson": "6fe2b1626176a89642e23da09bafb4bede7c3993c7cb4ecbc3abef96c0cf609c",
+                  "subscriptions.ndjson": "76d3236a60685410cc23fb5655ede125a245ebb2ec8aa7786992ed4111f9e7f0",
+                  "phases.json": "36db4b12e39e148e028fa47f30dd2f6f85acf3984b8b44b8a372228cee4c7d29"
+                }
+              },
+              "model": {
+                "gate": {
+                  "admitted": true,
+                  "issues": [],
+                  "connection": {
+                    "status": "continuousConnected",
+                    "stateAtStart": "connected",
+                    "changesInWindow": [],
+                    "subscriberEvents": [
+                      {
+                        "client": "mqrc18mqb18",
+                        "clientId": "mqrc18mqb18",
+                        "role": "subscriber",
+                        "connected": false,
+                        "state": "disconnected",
+                        "phase": "connectStarted",
+                        "elapsedSeconds": 0
+                      },
+                      {
+                        "client": "mqrc18mqb18",
+                        "clientId": "mqrc18mqb18",
+                        "role": "subscriber",
+                        "connected": true,
+                        "state": "connected",
+                        "phase": "stateChange",
+                        "elapsedSeconds": 7.000000000000001e-05
+                      },
+                      {
+                        "client": "mqrc18mqb18",
+                        "clientId": "mqrc18mqb18",
+                        "role": "subscriber",
+                        "connected": true,
+                        "state": "connected",
+                        "phase": "measurementStart",
+                        "elapsedSeconds": 1.00014
+                      },
+                      {
+                        "client": "mqrc18mqb18",
+                        "clientId": "mqrc18mqb18",
+                        "role": "subscriber",
+                        "connected": true,
+                        "state": "connected",
+                        "phase": "observationEnd",
+                        "elapsedSeconds": 10.00014
+                      }
+                    ],
+                    "windowStart": 1.00014,
+                    "windowEnd": 10.00014,
+                    "scope": "Observed connection events only; subscription and packet-level correctness not established"
+                  },
+                  "classification": "instrumentationObservation",
+                  "scope": "Technical pilot gate, not an accuracy claim"
+                },
+                "metrics": {
+                  "scope": "One subscriber; attempts in [measurementStart, measurementEnd); observed through drainEnd",
+                  "attempted": 222157,
+                  "completed": 222157,
+                  "failed": 0,
+                  "pending": 0,
+                  "measurementSeconds": 4.0,
+                  "attemptedRps": 55539.25,
+                  "completedInWindow": 222141,
+                  "completedRpsInWindow": 55535.25,
+                  "completedDuringDrain": 16,
+                  "completedCohortPerSubmissionSecond": 55539.25,
+                  "uniqueDeliveries": 19324,
+                  "completedIdsDelivered": 19324,
+                  "deliveredAfterFailedPublish": 0,
+                  "firstDeliveriesDuringDrain": 1,
+                  "duplicates": 0,
+                  "outsideCohortDeliveryEvents": 4965,
+                  "publishFailureRate": 0.0,
+                  "deliveryLossRate": 0.9130164703340431,
+                  "p99PublishMs": 0.42000000000000004,
+                  "latencyStatus": "observed",
+                  "outcomesSettled": true
+                },
+                "phases": {
+                  "timeOrigin": "sharedMonotonic",
+                  "qos": 1,
+                  "measurementStartSeconds": 1.00014,
+                  "measurementEndSeconds": 5.00014,
+                  "drainEndSeconds": 10.00014,
+                  "completed": true,
+                  "connectionObservation": "everyModelTick",
+                  "policy": "closedLoopPerPublisher; publication IDs; actual publisher ACK/failure"
+                },
+                "rawSha256": {
+                  "publishes.ndjson": "e25e8b82917afcacf86ea92437cb639ad6927ee96145f9fdbf9772df0df66247",
+                  "deliveries.ndjson": "1a4ca4e61e944898c0ab33bbfd5c824f127e0c031ba29b1d6c5b5f6d54dbbbb8",
+                  "connections.ndjson": "11cd2cccf27728ca6b5de735ae4e69363803e3ea670a5e0c0749138c18a2594f",
+                  "subscriptions.ndjson": "10df0b9f80e19ce6b780b1431ed6a6f7460820bad0c1f302e692f8145a6f617d",
+                  "phases.json": "c8addec679c77146d845f0a2fbed599cca61072f607df53a5a24bc1a146caa17"
+                }
+              }
+            },
+            "processes": {
+              "native": {
+                "pid": 217290,
+                "exitCode": 0,
+                "wallSeconds": 10.533006246987497
+              },
+              "model": {
+                "pid": 217321,
+                "exitCode": 0,
+                "wallSeconds": 28.568865914014168
+              }
+            }
+          }
+        ],
+        "historicalProfileUnchanged": true,
+        "elapsedSeconds": 44.12994559700019,
+        "mainCampaignAdmitted": false,
+        "next": "Check other brokers, logging overhead and frozen new calibration before the main series"
+      }
+    },
+    "pilot-attempt-002/window-4/review.json": {
+      "sha256": "15cf833eea5bb88b9766ec1b1cadcc4e87a7f2917aa3949570fa96bc1359f72f",
+      "value": {
+        "windowSeconds": 4,
+        "observations": {
+          "native": {
+            "gate": {
+              "admitted": true,
+              "issues": [],
+              "connection": {
+                "status": "continuousConnected",
+                "stateAtStart": "connected",
+                "changesInWindow": [],
+                "subscriberEvents": [
+                  {
+                    "client": "subscriber",
+                    "clientId": "mb-6baf94167401423290ac703ce3552e95",
+                    "state": "connected",
+                    "elapsedSeconds": 0.1456504,
+                    "reason": null
+                  },
+                  {
+                    "client": "subscriber",
+                    "clientId": "mb-6baf94167401423290ac703ce3552e95",
+                    "state": "disconnected",
+                    "elapsedSeconds": 10.3190305,
+                    "reason": "NormalDisconnection"
+                  }
+                ],
+                "windowStart": 1.1874293,
+                "windowEnd": 10.1874293,
+                "scope": "Observed connection events only; subscription and packet-level correctness not established"
+              },
+              "classification": "instrumentationObservation",
+              "scope": "Technical pilot gate, not an accuracy claim"
+            },
+            "metrics": {
+              "scope": "One subscriber; attempts in [measurementStart, measurementEnd); observed through drainEnd",
+              "attempted": 61131,
+              "completed": 61131,
+              "failed": 0,
+              "pending": 0,
+              "measurementSeconds": 4.0,
+              "attemptedRps": 15282.75,
+              "completedInWindow": 61115,
+              "completedRpsInWindow": 15278.75,
+              "completedDuringDrain": 16,
+              "completedCohortPerSubmissionSecond": 15282.75,
+              "uniqueDeliveries": 59075,
+              "completedIdsDelivered": 59075,
+              "deliveredAfterFailedPublish": 0,
+              "firstDeliveriesDuringDrain": 33,
+              "duplicates": 0,
+              "outsideCohortDeliveryEvents": 10489,
+              "publishFailureRate": 0.0,
+              "deliveryLossRate": 0.03363269045165296,
+              "p99PublishMs": 16.292699999999968,
+              "latencyStatus": "observed",
+              "outcomesSettled": true
+            },
+            "phases": {
+              "timeOrigin": "sharedMonotonic",
+              "qos": 1,
+              "measurementStartSeconds": 1.1874293,
+              "measurementEndSeconds": 5.1874293,
+              "drainEndSeconds": 10.1874293,
+              "observationStoppedSeconds": 10.1874643,
+              "completed": true,
+              "policy": "closedLoopPerPublisher; fixed submission deadline; outcomes observed through drain"
+            },
+            "rawSha256": {
+              "publishes.ndjson": "30ed143ad4ae794a8237e72df5785ca89fa6984c959370cae32ba30085f81fa6",
+              "deliveries.ndjson": "15bdfcbcae087ec06a48476f1fe1b685afc201a2d9394a0b6caee649bfe662e5",
+              "connections.ndjson": "6fe2b1626176a89642e23da09bafb4bede7c3993c7cb4ecbc3abef96c0cf609c",
+              "subscriptions.ndjson": "76d3236a60685410cc23fb5655ede125a245ebb2ec8aa7786992ed4111f9e7f0",
+              "phases.json": "36db4b12e39e148e028fa47f30dd2f6f85acf3984b8b44b8a372228cee4c7d29"
+            }
+          },
+          "model": {
+            "gate": {
+              "admitted": true,
+              "issues": [],
+              "connection": {
+                "status": "continuousConnected",
+                "stateAtStart": "connected",
+                "changesInWindow": [],
+                "subscriberEvents": [
+                  {
+                    "client": "mqrc18mqb18",
+                    "clientId": "mqrc18mqb18",
+                    "role": "subscriber",
+                    "connected": false,
+                    "state": "disconnected",
+                    "phase": "connectStarted",
+                    "elapsedSeconds": 0
+                  },
+                  {
+                    "client": "mqrc18mqb18",
+                    "clientId": "mqrc18mqb18",
+                    "role": "subscriber",
+                    "connected": true,
+                    "state": "connected",
+                    "phase": "stateChange",
+                    "elapsedSeconds": 7.000000000000001e-05
+                  },
+                  {
+                    "client": "mqrc18mqb18",
+                    "clientId": "mqrc18mqb18",
+                    "role": "subscriber",
+                    "connected": true,
+                    "state": "connected",
+                    "phase": "measurementStart",
+                    "elapsedSeconds": 1.00014
+                  },
+                  {
+                    "client": "mqrc18mqb18",
+                    "clientId": "mqrc18mqb18",
+                    "role": "subscriber",
+                    "connected": true,
+                    "state": "connected",
+                    "phase": "observationEnd",
+                    "elapsedSeconds": 10.00014
+                  }
+                ],
+                "windowStart": 1.00014,
+                "windowEnd": 10.00014,
+                "scope": "Observed connection events only; subscription and packet-level correctness not established"
+              },
+              "classification": "instrumentationObservation",
+              "scope": "Technical pilot gate, not an accuracy claim"
+            },
+            "metrics": {
+              "scope": "One subscriber; attempts in [measurementStart, measurementEnd); observed through drainEnd",
+              "attempted": 222157,
+              "completed": 222157,
+              "failed": 0,
+              "pending": 0,
+              "measurementSeconds": 4.0,
+              "attemptedRps": 55539.25,
+              "completedInWindow": 222141,
+              "completedRpsInWindow": 55535.25,
+              "completedDuringDrain": 16,
+              "completedCohortPerSubmissionSecond": 55539.25,
+              "uniqueDeliveries": 19324,
+              "completedIdsDelivered": 19324,
+              "deliveredAfterFailedPublish": 0,
+              "firstDeliveriesDuringDrain": 1,
+              "duplicates": 0,
+              "outsideCohortDeliveryEvents": 4965,
+              "publishFailureRate": 0.0,
+              "deliveryLossRate": 0.9130164703340431,
+              "p99PublishMs": 0.42000000000000004,
+              "latencyStatus": "observed",
+              "outcomesSettled": true
+            },
+            "phases": {
+              "timeOrigin": "sharedMonotonic",
+              "qos": 1,
+              "measurementStartSeconds": 1.00014,
+              "measurementEndSeconds": 5.00014,
+              "drainEndSeconds": 10.00014,
+              "completed": true,
+              "connectionObservation": "everyModelTick",
+              "policy": "closedLoopPerPublisher; publication IDs; actual publisher ACK/failure"
+            },
+            "rawSha256": {
+              "publishes.ndjson": "e25e8b82917afcacf86ea92437cb639ad6927ee96145f9fdbf9772df0df66247",
+              "deliveries.ndjson": "1a4ca4e61e944898c0ab33bbfd5c824f127e0c031ba29b1d6c5b5f6d54dbbbb8",
+              "connections.ndjson": "11cd2cccf27728ca6b5de735ae4e69363803e3ea670a5e0c0749138c18a2594f",
+              "subscriptions.ndjson": "10df0b9f80e19ce6b780b1431ed6a6f7460820bad0c1f302e692f8145a6f617d",
+              "phases.json": "c8addec679c77146d845f0a2fbed599cca61072f607df53a5a24bc1a146caa17"
+            }
+          }
+        },
+        "processes": {
+          "native": {
+            "pid": 217290,
+            "exitCode": 0,
+            "wallSeconds": 10.533006246987497
+          },
+          "model": {
+            "pid": 217321,
+            "exitCode": 0,
+            "wallSeconds": 28.568865914014168
+          }
+        }
+      }
+    }
+  },
+  "archive": {
+    "path": "/tmp/article1-matched-pilot-002-results.tar.gz",
+    "bytes": 13655472,
+    "sha256": "eaafab369c5ac565392fe090437429211ea480093fa01290c27372285f9430e5"
+  }
+}
