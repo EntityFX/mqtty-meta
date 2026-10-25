@@ -1,0 +1,14 @@
+{
+  "archiveSha256": "17387f436534b9b312b18f0617f775ef5658ea044974734bdd3faf8663e9852f",
+  "metaCommit": "6431e6047e79c67bcba43a0783dc154d7ac3320b",
+  "launcherFiles": {
+    "launcher/run_remaining_twin_pilots.py": "f24ac9b137e8a9cfe6f02e5e3e57acd0de6418bb8341e9d8d6a67fe1550ca51e",
+    "launcher/test_remaining_twin_pilots.py": "0a3836c0ba0c719af89b046c1fa98f9284d2e4b2a4fe24308db018313987c621",
+    "launcher/run_matched_twin_pilot.py": "ee54c28ad330d4f43990095a1acc2f3e1d540b1d89c2b13acfc392965ac10043",
+    "launcher/test_matched_twin_pilot.py": "60c95c67060ee870b524aebb24df13e099cff0d7590d9226eb0ecbf53f46c736",
+    "launcher/audit_twin_cohort.py": "6cbbd194af097791b06cd3621f6fd7d0c929dc11d196794d6d2bc48086558038",
+    "launcher/audit_twin_connections.py": "eb3096f509c9a15e6a1035bc14ed323f2ada46e3be828378d0c23ff2f238ee71",
+    "launcher/run_fresh_twin_pilot.py": "6715601ac8d451b7984f9d541a712abd7b261c63f708c9b81aa2ef522f829115",
+    "launcher/run_fresh_twin_series.py": "a4d3631b13ae67df912c765a6979752aa9fb61e4b53f2da707c09561076f7d59"
+  }
+}
