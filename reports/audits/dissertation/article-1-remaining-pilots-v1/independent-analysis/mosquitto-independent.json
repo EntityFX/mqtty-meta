@@ -1,0 +1,138 @@
+{
+  "status": "verified",
+  "pairs": 2,
+  "rawShaVerified": 20,
+  "metricValuesCompared": 84,
+  "newScientificRuns": 0,
+  "originalFailedGateReceiptPreserved": true,
+  "rows": [
+    {
+      "key": "Mosquitto.w2",
+      "windowSeconds": 2,
+      "native": {
+        "metrics": {
+          "attempted": 26137,
+          "completed": 26137,
+          "failed": 0,
+          "pending": 0,
+          "measurementSeconds": 2.0,
+          "attemptedRps": 13068.5,
+          "completedInWindow": 26121,
+          "completedRpsInWindow": 13060.5,
+          "completedDuringDrain": 16,
+          "completedCohortPerSubmissionSecond": 13068.5,
+          "uniqueDeliveries": 25213,
+          "completedIdsDelivered": 25213,
+          "deliveredAfterFailedPublish": 0,
+          "firstDeliveriesDuringDrain": 64,
+          "duplicates": 0,
+          "outsideCohortDeliveryEvents": 9509,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.03535218272946398,
+          "p99PublishMs": 22.674399999999878,
+          "latencyStatus": "observed",
+          "outcomesSettled": true
+        },
+        "connection": {
+          "continuous": true,
+          "subscriberIdentities": 1,
+          "confirmedSubscriptions": 2
+        }
+      },
+      "model": {
+        "metrics": {
+          "attempted": 111291,
+          "completed": 111291,
+          "failed": 0,
+          "pending": 0,
+          "measurementSeconds": 2.0,
+          "attemptedRps": 55645.5,
+          "completedInWindow": 111276,
+          "completedRpsInWindow": 55638.0,
+          "completedDuringDrain": 15,
+          "completedCohortPerSubmissionSecond": 55645.5,
+          "uniqueDeliveries": 9618,
+          "completedIdsDelivered": 9618,
+          "deliveredAfterFailedPublish": 0,
+          "firstDeliveriesDuringDrain": 1,
+          "duplicates": 0,
+          "outsideCohortDeliveryEvents": 4965,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.9135779173518074,
+          "p99PublishMs": 0.42000000000000004,
+          "latencyStatus": "observed",
+          "outcomesSettled": true
+        },
+        "connection": {
+          "continuous": true,
+          "subscriberIdentities": 1,
+          "confirmedSubscriptions": 2
+        }
+      }
+    },
+    {
+      "key": "Mosquitto.w4",
+      "windowSeconds": 4,
+      "native": {
+        "metrics": {
+          "attempted": 61131,
+          "completed": 61131,
+          "failed": 0,
+          "pending": 0,
+          "measurementSeconds": 4.0,
+          "attemptedRps": 15282.75,
+          "completedInWindow": 61115,
+          "completedRpsInWindow": 15278.75,
+          "completedDuringDrain": 16,
+          "completedCohortPerSubmissionSecond": 15282.75,
+          "uniqueDeliveries": 59075,
+          "completedIdsDelivered": 59075,
+          "deliveredAfterFailedPublish": 0,
+          "firstDeliveriesDuringDrain": 33,
+          "duplicates": 0,
+          "outsideCohortDeliveryEvents": 10489,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.033632690451653006,
+          "p99PublishMs": 16.292699999999968,
+          "latencyStatus": "observed",
+          "outcomesSettled": true
+        },
+        "connection": {
+          "continuous": true,
+          "subscriberIdentities": 1,
+          "confirmedSubscriptions": 2
+        }
+      },
+      "model": {
+        "metrics": {
+          "attempted": 222157,
+          "completed": 222157,
+          "failed": 0,
+          "pending": 0,
+          "measurementSeconds": 4.0,
+          "attemptedRps": 55539.25,
+          "completedInWindow": 222141,
+          "completedRpsInWindow": 55535.25,
+          "completedDuringDrain": 16,
+          "completedCohortPerSubmissionSecond": 55539.25,
+          "uniqueDeliveries": 19324,
+          "completedIdsDelivered": 19324,
+          "deliveredAfterFailedPublish": 0,
+          "firstDeliveriesDuringDrain": 1,
+          "duplicates": 0,
+          "outsideCohortDeliveryEvents": 4965,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.9130164703340431,
+          "p99PublishMs": 0.42000000000000004,
+          "latencyStatus": "observed",
+          "outcomesSettled": true
+        },
+        "connection": {
+          "continuous": true,
+          "subscriberIdentities": 1,
+          "confirmedSubscriptions": 2
+        }
+      }
+    }
+  ]
+}

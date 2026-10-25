@@ -1330,7 +1330,7 @@
     "checkedAt": "2026-10-25T23:22:56.434084+03:00"
   },
   "article1RemainingPilots": {
-    "status": "completedReportedByLauncher",
+    "status": "independentlyVerified",
     "protocol": "docs/dissertation/article-1-remaining-pilots-protocol.md",
     "brokers": [
       "Aedes",
@@ -1372,20 +1372,34 @@
     "serviceResult": "success",
     "exitCode": 0,
     "resultReceipt": "reports/audits/dissertation/article-1-remaining-pilots-v1/result.json",
-    "independentPostRunRecountPending": true
+    "independentPostRunRecountPending": false,
+    "archiveFilesVerified": 174,
+    "rawFilesVerifiedAcrossAllPilots": 80,
+    "newPairMetricValuesVerified": 252,
+    "mosquittoMetricValuesVerified": 84,
+    "report": "reports/analysis/Article-1-remaining-pilots.md",
+    "analysis": "reports/audits/dissertation/article-1-remaining-pilots-v1/independent-analysis/verification.json",
+    "oldProfileComparisonsPassed": 2,
+    "oldProfileComparisonsTotal": 6,
+    "nextPlan": "docs/dissertation/article-1-calibration-readiness-plan.md",
+    "independentTestsPassed": 5,
+    "existingRecountTestsPassed": 9,
+    "archivedOutsideGit": true
   },
   "localPercentScope": "Legacy foundation block steps 03–06; not current pilot execution",
   "currentStage": {
-    "name": "Article 1 remaining pilot execution",
-    "completed": 6,
-    "total": 6,
+    "name": "Independent pilot raw verification",
+    "completed": 8,
+    "total": 8,
     "percent": 100,
     "nativeCompleted": 6,
     "modelCompleted": 6,
     "allBrokerPilotWindowsCompleted": 8,
     "allBrokerPilotWindowsPlanned": 8,
-    "postRunIndependentRecountPending": true,
+    "postRunIndependentRecountPending": false,
     "mainCampaignCompleted": 0,
-    "mainCampaignPlanned": 40
+    "mainCampaignPlanned": 40,
+    "setsVerified": 16,
+    "metricValuesCompared": 336
   }
 }
