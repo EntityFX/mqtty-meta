@@ -1401,5 +1401,14 @@
     "mainCampaignPlanned": 40,
     "setsVerified": 16,
     "metricValuesCompared": 336
+  },
+  "modelConnectionTraceGate": {
+    "status": "passed",
+    "modelLifecycleTestPassed": true,
+    "relatedTestsPassed": 6,
+    "relatedTestsFailed": 0,
+    "productionCodeChanged": false,
+    "evidence": "reports/audits/dissertation/article-1-model-reconnect-v1/verification.json",
+    "nextAction": "Predeclare short logging-overhead and ActiveMQ repeat checks; add strict minimal-profile coverage; no main campaign admission"
   }
 }

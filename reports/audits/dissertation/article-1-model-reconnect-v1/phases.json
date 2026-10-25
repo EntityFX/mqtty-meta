@@ -1,0 +1,1 @@
+{"timeOrigin":"sharedMonotonic","qos":1,"measurementStartSeconds":0.0064,"measurementEndSeconds":0.056400000000000006,"drainEndSeconds":0.2564,"completed":true,"connectionObservation":"everyModelTick","policy":"closedLoopPerPublisher; publication IDs; actual publisher ACK/failure"}

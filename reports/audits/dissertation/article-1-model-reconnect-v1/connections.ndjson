@@ -1,0 +1,14 @@
+{"client":"mqrc4mqb4","clientId":"mqrc4mqb4","role":"subscriber","connected":false,"state":"disconnected","phase":"connectStarted","elapsedSeconds":0}
+{"client":"mqc3","clientId":"mqc3","role":"publisher","connected":false,"state":"disconnected","phase":"connectStarted","elapsedSeconds":0}
+{"client":"mqc2","clientId":"mqc2","role":"publisher","connected":false,"state":"disconnected","phase":"connectStarted","elapsedSeconds":0}
+{"client":"mqrc4mqb4","clientId":"mqrc4mqb4","role":"subscriber","connected":true,"state":"connected","phase":"stateChange","elapsedSeconds":0.0007}
+{"client":"mqc3","clientId":"mqc3","role":"publisher","connected":true,"state":"connected","phase":"stateChange","elapsedSeconds":0.0007}
+{"client":"mqc2","clientId":"mqc2","role":"publisher","connected":true,"state":"connected","phase":"stateChange","elapsedSeconds":0.0007}
+{"client":"mqrc4mqb4","clientId":"mqrc4mqb4","role":"subscriber","connected":false,"state":"disconnected","phase":"stateChange","elapsedSeconds":0.0015}
+{"client":"mqrc4mqb4","clientId":"mqrc4mqb4","role":"subscriber","connected":false,"state":"disconnected","phase":"measurementStart","elapsedSeconds":0.0064}
+{"client":"mqc3","clientId":"mqc3","role":"publisher","connected":true,"state":"connected","phase":"measurementStart","elapsedSeconds":0.0064}
+{"client":"mqc2","clientId":"mqc2","role":"publisher","connected":true,"state":"connected","phase":"measurementStart","elapsedSeconds":0.0064}
+{"client":"mqrc4mqb4","clientId":"mqrc4mqb4","role":"subscriber","connected":true,"state":"connected","phase":"stateChange","elapsedSeconds":0.057100000000000005}
+{"client":"mqrc4mqb4","clientId":"mqrc4mqb4","role":"subscriber","connected":true,"state":"connected","phase":"observationEnd","elapsedSeconds":0.2564}
+{"client":"mqc3","clientId":"mqc3","role":"publisher","connected":true,"state":"connected","phase":"observationEnd","elapsedSeconds":0.2564}
+{"client":"mqc2","clientId":"mqc2","role":"publisher","connected":true,"state":"connected","phase":"observationEnd","elapsedSeconds":0.2564}
