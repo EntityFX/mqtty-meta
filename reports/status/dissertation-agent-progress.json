@@ -1330,7 +1330,7 @@
     "checkedAt": "2026-10-25T23:22:56.434084+03:00"
   },
   "article1RemainingPilots": {
-    "status": "runningAtLaunchConfirmation",
+    "status": "completedReportedByLauncher",
     "protocol": "docs/dissertation/article-1-remaining-pilots-protocol.md",
     "brokers": [
       "Aedes",
@@ -1351,7 +1351,7 @@
     "testsPassed": 20,
     "preflight": "reports/audits/dissertation/article-1-remaining-pilots-v1/preflight.json",
     "unit": "mqtty-article1-remaining-pilots-v1.service",
-    "pidAtConfirmation": 238606,
+    "pidAtConfirmation": 0,
     "progressPath": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-remaining-pilots-v1/attempt-001/progress.json",
     "completedPairsAtConfirmation": 0,
     "totalPairs": 6,
@@ -1362,7 +1362,30 @@
     "deadlineEpoch": 1792961545.677363,
     "budgetReset": false,
     "launchReceipt": "reports/audits/dissertation/article-1-remaining-pilots-v1/launch.json",
-    "agentStoppedForWaiting": true,
-    "webSearch": "remaining-pilots"
+    "agentStoppedForWaiting": false,
+    "webSearch": "remaining-pilots",
+    "completedPairs": 6,
+    "nativeCompleted": 6,
+    "modelCompleted": 6,
+    "percent": 100,
+    "elapsedSeconds": 211.43743705749512,
+    "serviceResult": "success",
+    "exitCode": 0,
+    "resultReceipt": "reports/audits/dissertation/article-1-remaining-pilots-v1/result.json",
+    "independentPostRunRecountPending": true
+  },
+  "localPercentScope": "Legacy foundation block steps 03–06; not current pilot execution",
+  "currentStage": {
+    "name": "Article 1 remaining pilot execution",
+    "completed": 6,
+    "total": 6,
+    "percent": 100,
+    "nativeCompleted": 6,
+    "modelCompleted": 6,
+    "allBrokerPilotWindowsCompleted": 8,
+    "allBrokerPilotWindowsPlanned": 8,
+    "postRunIndependentRecountPending": true,
+    "mainCampaignCompleted": 0,
+    "mainCampaignPlanned": 40
   }
 }
