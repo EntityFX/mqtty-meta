@@ -1010,15 +1010,15 @@
     "readinessPercentUnchanged": true
   },
   "article1FreshSeries": {
-    "status": "retryMissingNativeRunningConfirmedAtLaunch",
+    "status": "completed",
     "unit": "mqtty-article1-emqx-retry-v1.service",
-    "mainPid": 176244,
+    "mainPid": 0,
     "startedAtMsk": "2026-10-25T02:32:32+03:00",
     "hardStopMsk": "2026-10-25T17:01:46.572895+03:00",
     "nativeTarget": 48,
     "modelTarget": 48,
     "workers": 1,
-    "technicalErrorsAtConfirmation": 12,
+    "technicalErrorsAtConfirmation": 0,
     "progressPath": "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/series-attempt-001/progress.json",
     "programSha256": "b9d8ca76e082dfe1d4d7f4882468f981441f53e6ed0e92579912d54b2ba83087",
     "accuracyClaim": false,
@@ -1040,47 +1040,50 @@
     "profilesChanged": false,
     "latestObservationMsk": "2026-10-25T11:19:29+03:00",
     "observedProgress": {
-      "status": "completedWithTechnicalErrors",
+      "status": "completed",
       "phase": "finished",
-      "controllerPid": 163732,
+      "controllerPid": 176244,
       "startedUtc": "2026-10-24T23:32:32.789784+00:00",
       "plannedNative": 48,
       "plannedModel": 48,
-      "nativeCompleted": 36,
+      "nativeCompleted": 48,
       "modelCompleted": 48,
       "completedPairs": 48,
-      "technicalErrors": 12,
+      "technicalErrors": 0,
       "programSha256": "b9d8ca76e082dfe1d4d7f4882468f981441f53e6ed0e92579912d54b2ba83087",
-      "continuationBudgetSeconds": 21497,
-      "budgetStartedUtc": "2026-10-25T08:03:39.844496+00:00",
+      "continuationBudgetSeconds": 19519,
+      "budgetStartedUtc": "2026-10-25T08:37:13.116539+00:00",
       "priorControllerFailure": "Port reservation errno98",
       "activeJob": null,
-      "elapsedSeconds": 1657.6209208670189,
-      "remainingBudgetSeconds": 19824.386326876993,
-      "finishedUtc": "2026-10-25T08:31:17.465410+00:00",
+      "elapsedSeconds": 291.2138017510006,
+      "remainingBudgetSeconds": 19212.78948254601,
+      "processedRows": 48,
+      "finishedUtc": "2026-10-25T08:42:04.330323+00:00",
       "comparison": {
         "metricRows": 192,
-        "failedMetrics": 91,
-        "passedMetrics": 53,
-        "notEvaluated": 48
-      }
+        "failedMetrics": 100,
+        "passedMetrics": 92,
+        "notEvaluated": 0
+      },
+      "analysisDirectory": "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/series-attempt-001/analysis-176244"
     },
-    "completedPairs": 30,
-    "lastCheckMsk": "11:28 МСК",
+    "completedPairs": 48,
+    "lastCheckMsk": "11:45 МСК",
     "successfulPairsUpperBound": 36,
     "counterWarning": "completedPairs counts processed result rows, including failed native jobs; not successful pairs",
     "confirmedFailure": "TCP listener opened before EMQX could accept MQTT CONNECT; 22 reset probes then successful CONNACK in pilot",
-    "systemdState": "active/running",
-    "finishedAtMsk": "2026-10-25T11:31:17+03:00",
+    "systemdState": "inactive/dead; Result=success",
+    "finishedAtMsk": "2026-10-25T11:42:04+03:00",
     "processedRows": 48,
-    "completeNativeModelPairs": 36,
+    "completeNativeModelPairs": 48,
     "scientificResultsAccepted": false,
     "retryLaunchReceipt": "reports/audits/dissertation/article-1-fresh-validation-v1/emqx-retry-launch-receipt.json",
     "completePairsReused": 36,
     "modelResultsReusedTarget": 12,
     "missingNativeTarget": 12,
     "deadlineUtc": "2026-10-25T14:01:46.572895+00:00",
-    "currentAttemptTechnicalErrorsAtLaunch": 0
+    "currentAttemptTechnicalErrorsAtLaunch": 0,
+    "retryNativeRecovered": 6
   },
   "webSavedTopologySelector": {
     "status": "deployedHealthConfirmed",
@@ -1095,7 +1098,7 @@
     "receiptPath": "reports/audits/web-selector-v4/receipt.json"
   },
   "article1Readiness": {
-    "status": "workingManuscriptAwaitingFreshSeriesAnalysis",
+    "status": "freshSeriesCompleteWithScientificDiscrepancies",
     "instrumentationCommitted": true,
     "mqttyCommit": "4e4aab3",
     "benchmarkCommit": "aff43d7",
@@ -1109,6 +1112,6 @@
       "update table, abstract and conclusions with discrepancies",
       "public reproducibility package and author approval"
     ],
-    "freshComparison": "Initial 36 pairs: 53 metrics passed, 91 failed; 48 EMQX metrics not evaluated. Arithmetic independently checked; full series pending."
+    "freshComparison": "48 complete pairs; independently checked 192 comparison rows: 92 metrics passed, 100 failed, 0 not evaluated"
   }
 }

@@ -1,0 +1,62 @@
+{
+  "checkDateUtc": "2026-10-24T15:55:00+00:00",
+  "environment": {
+    "platform": "win32",
+    "workingDirectory": "C:\\projects\\mqtty-meta",
+    "linuxHost": "192.168.5.1",
+    "linuxUser": "entityfx"
+  },
+  "mountStatus": {
+    "device": "/dev/sdb1",
+    "mountPoint": "/run/media/entityfx/hd250",
+    "type": "ext4",
+    "options": "rw,nosuid,nodev,relatime,errors=remount-ro,uhelper=udisks2",
+    "availableForWrite": true
+  },
+  "services": {
+    "mqtty-qos1-diagnostics-v1.service": {
+      "activeState": "inactive",
+      "subState": "dead",
+      "mainPid": 0,
+      "result": "success",
+      "execMainStatus": 0,
+      "startedAt": "2026-10-24T15:48:57+00:00",
+      "endedAt": "2026-10-24T15:54:39+00:00"
+    },
+    "mqtty-web.service": {
+      "activeState": "active",
+      "subState": "running",
+      "mainPid": 88937,
+      "result": "success",
+      "execMainStatus": 0
+    }
+  },
+  "webHealthCheck": {
+    "endpoint": "http://127.0.0.1:5088/healthz",
+    "status": "ok",
+    "processId": 88940,
+    "processWorkingSetBytes": 111026176,
+    "dataDirectoryAvailable": true,
+    "runningJobs": 0,
+    "queuedJobs": 0
+  },
+  "qos1DiagnosticProgressJson": {
+    "status": "diagnosticFinished",
+    "matrixAdmitted": false
+  },
+  "journalLogExcerpt": [
+    "Oct 24 15:48:57 entityfx-pc systemd[1434]: Starting mqtty-qos1-diagnostics-v1.service - One bounded QoS1 drain investigation; no matrix admission...",
+    "Oct 24 15:48:57 entityfx-pc systemd[1434]: Started mqtty-qos1-diagnostics-v1.service - One bounded QoS1 drain investigation; no matrix admission.",
+    "Oct 24 15:54:39 entityfx-pc systemd[1434]: mqtty-qos1-diagnostics-v1.service: Consumed 5min 40.257s CPU time, 562.9M memory peak.",
+    "Oct 24 15:55:16 entityfx-pc systemd[1434]: mqtty-qos1-diagnostics-v1.service: Failed to open /run/user/500/systemd/transient/mqtty-qos1-diagnostics-v1.service: No such file or directory"
+  ],
+  "conclusion": {
+    "summary": "Web service running normally with confirmed health check. QoS1 diagnostic service completed and is no longer running.",
+    "actionsTaken": [],
+    "recommendations": [
+      "Web service confirmed operational; no action required.",
+      "QoS1 diagnostics completed; await further instructions before re-running.",
+      "Network matrix remains unadmitted per policy."
+    ]
+  }
+}
