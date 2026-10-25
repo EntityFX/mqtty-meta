@@ -1,0 +1,320 @@
+{
+  "observedAtUtc": "2026-10-25T20:27:24.001524+00:00",
+  "readOnly": true,
+  "mount": "/run/media/entityfx/hd250",
+  "mountPresent": true,
+  "health": {
+    "status": "ok",
+    "processId": 236776,
+    "processWorkingSetBytes": 447844352,
+    "dataDirectoryAvailable": true,
+    "runningJobs": 0,
+    "queuedJobs": 0
+  },
+  "queue": {
+    "count": 57,
+    "active": []
+  },
+  "runtime": [
+    {
+      "path": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-validation-v1/runtime/TwinValidationProbe.dll",
+      "exists": true,
+      "bytes": 18432,
+      "sha256": "bef0daabb00b335232b94e5afb8667228bcf37faf803858f3b34c6cb7927f18f"
+    },
+    {
+      "path": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-validation-v1/runtime/runtime-manifest.json",
+      "exists": false
+    }
+  ],
+  "inputManifest": {
+    "path": "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/inputs/input-manifest.json",
+    "exists": true,
+    "bytes": 61149,
+    "sha256": "e96d97f228b9a405f884b5a9893619b854199b9d534c535b8c5ffeb1732110df"
+  },
+  "program": {
+    "path": "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/launcher-v2/program.json",
+    "exists": true,
+    "bytes": 18034,
+    "sha256": "b9d8ca76e082dfe1d4d7f4882468f981441f53e6ed0e92579912d54b2ba83087"
+  },
+  "programFacts": {
+    "budgetSeconds": 10780,
+    "jobTimeoutSeconds": 300,
+    "inputManifestSha256": "e96d97f228b9a405f884b5a9893619b854199b9d534c535b8c5ffeb1732110df",
+    "resources": {
+      "cpuQuotaPercent": 300,
+      "allowedCpus": [
+        0,
+        1,
+        2
+      ],
+      "nativeBrokerCpus": [
+        0
+      ],
+      "nativeGeneratorCpus": [
+        1,
+        2
+      ],
+      "modelCpus": [
+        1
+      ],
+      "memoryMaxGiB": 2,
+      "workers": 1
+    },
+    "scientificCaveats": [
+      "Old calibration used 5s warmup/20s measurement; this predeclared shortened study uses 1s/2s and evaluates transfer to those windows, not full equivalence to historical steady state.",
+      "The 2GiB resource budget differs from the historical 4GiB broker limit; record technical failures and do not interpret limit-induced failures as intrinsic broker faults.",
+      "Attempted API operations are not proof of PUBLISH accepted by broker; disconnects and failures retained.",
+      "Historical profiles and algorithms had been developed using historical results; new native observations are separate, not proof of universal accuracy.",
+      "No measured native RPS is supplied to model; OfferedRps = publishers/tickSeconds is fixed before observations.",
+      "CPU/RSS and EST are not simulated. The original thresholds remain 15% RPS,20% p99,0.05 absolute failure/loss."
+    ]
+  },
+  "inputManifestMatchesProgram": true,
+  "brokers": {
+    "Aedes": {
+      "name": "Aedes",
+      "executable": "/usr/bin/node",
+      "executableSha256": "0ca513fedb9eade5784c94bed30bc710d116ffd7a5405c54833d4f53e4115de4",
+      "launcherExecutable": null,
+      "launcherSha256": null,
+      "workingDirectory": null,
+      "args": [
+        "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/aedes/server.js",
+        "1883"
+      ],
+      "configFiles": [
+        "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/aedes/server.js",
+        "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/aedes/package-lock.json"
+      ],
+      "singleHostMqttPort": 1883,
+      "metadata": {
+        "path": "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/launcher-v2/Aedes-stand.json",
+        "exists": true,
+        "bytes": 1325,
+        "sha256": "c5eb957faacaca5179e88e1846db5b2f079778af74bd3c067f5ccd249b18692a"
+      },
+      "executables": [
+        {
+          "path": "/usr/bin/node",
+          "exists": true,
+          "bytes": 55440984,
+          "sha256": "0ca513fedb9eade5784c94bed30bc710d116ffd7a5405c54833d4f53e4115de4"
+        }
+      ],
+      "configurationFiles": [
+        {
+          "path": "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/aedes/server.js",
+          "exists": true,
+          "bytes": 1434,
+          "sha256": "067e26dd989e4d1cbfe715ab7629a030586e0121bc661573b672ed91ac866260"
+        },
+        {
+          "path": "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/aedes/package-lock.json",
+          "exists": true,
+          "bytes": 9093,
+          "sha256": "53f721cd2e135782d024a24f82e511ee4aef51541384f87de52f86b66b9c07dd"
+        }
+      ],
+      "environmentKeys": [],
+      "profile": {
+        "path": "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/inputs/profiles/Aedes.json",
+        "exists": true,
+        "bytes": 2803582,
+        "sha256": "e16c599ebf32dda761f84afa2e21c8d2fc29e95bbb31b987607d83906b347239"
+      },
+      "profileExpectedSha256": "e16c599ebf32dda761f84afa2e21c8d2fc29e95bbb31b987607d83906b347239",
+      "profileMatchesManifest": true,
+      "firstProgramJob": {
+        "id": "Aedes.q1.p16.r1",
+        "broker": "Aedes",
+        "qos": 1,
+        "publishers": 16,
+        "payloadBytes": 16,
+        "seed": 42,
+        "repeat": 1,
+        "warmupSeconds": 1,
+        "measurementSeconds": 2,
+        "drainSeconds": 5,
+        "tickSeconds": 1e-05
+      },
+      "executableMatchesMetadata": true
+    },
+    "ActiveMQ": {
+      "name": "ActiveMQ",
+      "executable": "/usr/lib/jvm/java-17-openjdk-17.0.19.0.10-alt1.x86_64/bin/java",
+      "executableSha256": "f8eaf4b8c99f45b7382347c86137bf65afa6779bca7f333f43ce282464704e5d",
+      "launcherExecutable": "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/activemq/apache-activemq-6.3.2/bin/activemq",
+      "launcherSha256": "cc815f36648e6470213f55b2f9b30f877d176445458d288d9b0ca179659e213e",
+      "workingDirectory": "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/activemq/apache-activemq-6.3.2",
+      "args": [
+        "console"
+      ],
+      "configFiles": [
+        "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/activemq/apache-activemq-6.3.2/conf/activemq.xml"
+      ],
+      "singleHostMqttPort": 3883,
+      "metadata": {
+        "path": "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/launcher-v2/ActiveMQ-stand.json",
+        "exists": true,
+        "bytes": 1695,
+        "sha256": "7feb115e9d54d96ed1195ea31a36ff5d9f74ca53fb6b85f429ea72a2dcf17eb7"
+      },
+      "executables": [
+        {
+          "path": "/usr/lib/jvm/java-17-openjdk-17.0.19.0.10-alt1.x86_64/bin/java",
+          "exists": true,
+          "bytes": 14616,
+          "sha256": "f8eaf4b8c99f45b7382347c86137bf65afa6779bca7f333f43ce282464704e5d"
+        },
+        {
+          "path": "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/activemq/apache-activemq-6.3.2/bin/activemq",
+          "exists": true,
+          "bytes": 25206,
+          "sha256": "cc815f36648e6470213f55b2f9b30f877d176445458d288d9b0ca179659e213e"
+        }
+      ],
+      "configurationFiles": [
+        {
+          "path": "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/activemq/apache-activemq-6.3.2/conf/activemq.xml",
+          "exists": true,
+          "bytes": 8930,
+          "sha256": "904ec768ef04e436cd0b3ce82decb0bf5b9bf17f929e2fb1a99d538f4ee63c94"
+        }
+      ],
+      "environmentKeys": [
+        "JAVA_HOME"
+      ],
+      "profile": {
+        "path": "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/inputs/profiles/ActiveMQ.json",
+        "exists": true,
+        "bytes": 11839603,
+        "sha256": "d66a0f64cb195e29565e03a5531bdde45ccd9aee7b5d39ca7b26102d45706b2a"
+      },
+      "profileExpectedSha256": "d66a0f64cb195e29565e03a5531bdde45ccd9aee7b5d39ca7b26102d45706b2a",
+      "profileMatchesManifest": true,
+      "firstProgramJob": {
+        "id": "ActiveMQ.q1.p16.r1",
+        "broker": "ActiveMQ",
+        "qos": 1,
+        "publishers": 16,
+        "payloadBytes": 16,
+        "seed": 42,
+        "repeat": 1,
+        "warmupSeconds": 1,
+        "measurementSeconds": 2,
+        "drainSeconds": 5,
+        "tickSeconds": 1e-05
+      },
+      "executableMatchesMetadata": true,
+      "launcherMatchesMetadata": true
+    },
+    "EMQX": {
+      "name": "EMQX",
+      "executable": "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/erts-16.3/bin/beam.smp",
+      "executableSha256": "4ee6e399590d9b46eb5149bc54e27797146ef1df21d2fc007e0ae1ce01867a3e",
+      "launcherExecutable": "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/bin/emqx",
+      "launcherSha256": "4c08242d5d53034a2177f2f3b57bfbe16649b35a0bf537c73c8511cc190c54c3",
+      "workingDirectory": "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx",
+      "args": [
+        "foreground"
+      ],
+      "configFiles": [
+        "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/etc/emqx.conf",
+        "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/etc/base.hocon",
+        "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/etc/vm.args"
+      ],
+      "singleHostMqttPort": 4883,
+      "metadata": {
+        "path": "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/launcher-v2/EMQX-stand.json",
+        "exists": true,
+        "bytes": 1853,
+        "sha256": "b28c14e6f6d26042564da5ffd2182057be011e4e3ad1d4edc03e75b26a50e691"
+      },
+      "executables": [
+        {
+          "path": "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/erts-16.3/bin/beam.smp",
+          "exists": true,
+          "bytes": 53809760,
+          "sha256": "4ee6e399590d9b46eb5149bc54e27797146ef1df21d2fc007e0ae1ce01867a3e"
+        },
+        {
+          "path": "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/bin/emqx",
+          "exists": true,
+          "bytes": 48054,
+          "sha256": "4c08242d5d53034a2177f2f3b57bfbe16649b35a0bf537c73c8511cc190c54c3"
+        }
+      ],
+      "configurationFiles": [
+        {
+          "path": "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/etc/emqx.conf",
+          "exists": true,
+          "bytes": 666,
+          "sha256": "141b842f4ad32603728f10a62baaebfb8de1aa6aa1044d73700f05ec84e4b274"
+        },
+        {
+          "path": "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/etc/base.hocon",
+          "exists": true,
+          "bytes": 1647,
+          "sha256": "f5bcfd5eca1d628c25c2bb3afd8585c005614964afa18c2544d940141289be4d"
+        },
+        {
+          "path": "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/etc/vm.args",
+          "exists": true,
+          "bytes": 6082,
+          "sha256": "b2823d3ae755ea9404d760e37daddeef8b1c424e64165eb02604cecd9c9bdd3a"
+        }
+      ],
+      "environmentKeys": [
+        "DEBUG"
+      ],
+      "profile": {
+        "path": "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/inputs/profiles/EMQX.json",
+        "exists": true,
+        "bytes": 2964578,
+        "sha256": "effe28c0fabf2d835579de8e6c40aa7d03a2865b7a23336d6f57189e79340b6f"
+      },
+      "profileExpectedSha256": "effe28c0fabf2d835579de8e6c40aa7d03a2865b7a23336d6f57189e79340b6f",
+      "profileMatchesManifest": true,
+      "firstProgramJob": {
+        "id": "EMQX.q1.p16.r1",
+        "broker": "EMQX",
+        "qos": 1,
+        "publishers": 16,
+        "payloadBytes": 16,
+        "seed": 42,
+        "repeat": 1,
+        "warmupSeconds": 1,
+        "measurementSeconds": 2,
+        "drainSeconds": 5,
+        "tickSeconds": 1e-05
+      },
+      "executableMatchesMetadata": true,
+      "launcherMatchesMetadata": true
+    }
+  },
+  "port33083Listening": "",
+  "brokerStartReview": {
+    "source": "tools/dissertation/run_fresh_twin_series.py",
+    "sourceSha256": "a4d3631b13ae67df912c765a6979752aa9fb61e4b53f2da707c09561076f7d59",
+    "appliesToAllThree": true,
+    "Aedes": "Copies server directory including dependencies into owned case; invokes node with copied server.js and explicit selected port. Original source is not modified.",
+    "ActiveMQ": "Copies broker installation excluding data/log/logs/tmp; verifies copied launcher SHA, rewrites mqtt connector in copied conf/activemq.xml, sets owned ACTIVEMQ paths. Original installation remains unchanged.",
+    "EMQX": "Copies broker installation excluding data/log/logs/tmp; verifies copied launcher SHA, rewrites original home references only in copied etc text files, uses unique EMQX node name and explicit loopback MQTT bind. Requires successful MQTT 3.1.1 CONNACK after TCP readiness, saves rejected readiness probes.",
+    "readinessBudgetSeconds": 70,
+    "readinessActualMaximum": "min(70, remaining supplied by caller)",
+    "notableCallerIssue": "run_matched_twin_pilot.py currently passes remaining=30 to broker_start. That can cut EMQX startup readiness to 30 seconds. New launcher should allocate an explicit startup budget within total deadline and retain rejectedProbes, never interpret TCP listen alone as ready.",
+    "readinessScope": "Successful CONNECT/CONNACK proves broker protocol readiness, not subscriptions, benchmark success, model accuracy or publication outcome completeness. Those remain per-pilot gates.",
+    "sourceIntegrityScope": "broker_start verifies executable and copied launcher, but not original configFiles hashes. New launcher must verify chosen configurations against a frozen receipt before copy.",
+    "copyScope": "shutil.copytree preserves symbolic links. The snapshot did not recursively inspect installations; check owned-copy path targets if runtime errors indicate escaped/wrong data paths."
+  },
+  "issues": [
+    {
+      "severity": "pathCorrectionRequired",
+      "detail": "Requested runtime/runtime-manifest.json is absent. Existing run_matched_twin_pilot.py reads runtime-manifest.json at study root (article1-matched-validation-v1/runtime-manifest.json), outside runtime/. That root manifest was not read in this single SSH snapshot; verify correct path before launch."
+    }
+  ],
+  "conclusion": "Ready for preparing bounded pilot launchers: Web is idle; selected original executable/config/profile files exist and profile/executable/launcher identities match. Launch remains conditional on verifying the correctly located matched runtime manifest and all selected copied configuration identities. No processes started/stopped and no remote file changed."
+}

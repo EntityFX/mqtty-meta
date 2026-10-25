@@ -1328,5 +1328,27 @@
     "mainScientificCampaignStarted": false,
     "nativeReferenceImportImplemented": false,
     "checkedAt": "2026-10-25T23:22:56.434084+03:00"
+  },
+  "article1RemainingPilots": {
+    "status": "preparingBoundedLauncher",
+    "protocol": "docs/dissertation/article-1-remaining-pilots-protocol.md",
+    "brokers": [
+      "Aedes",
+      "ActiveMQ",
+      "EMQX"
+    ],
+    "windowsSeconds": [
+      2,
+      4
+    ],
+    "plannedPairs": 6,
+    "plannedNative": 6,
+    "plannedModels": 6,
+    "budgetSeconds": 900,
+    "modelExecution": "Linux Web twinValidation",
+    "mosquittoRepeated": false,
+    "mainCampaignAdmitted": false,
+    "testsPassed": 20,
+    "preflight": "reports/audits/dissertation/article-1-remaining-pilots-v1/preflight.json"
   }
 }
