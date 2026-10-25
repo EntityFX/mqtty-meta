@@ -1,0 +1,144 @@
+{
+  "orcid": "0009-0001-2475-4996",
+  "orcidSource": "https://pub.orcid.org/v3.0/0009-0001-2475-4996/works",
+  "records": [
+    {
+      "DOI": "10.1109/rusautocon65989.2025.11177411",
+      "title": [
+        "Simulation of Distributed Networks of Internet of Things"
+      ],
+      "author": [
+        {
+          "given": "Artem",
+          "family": "Solopiy",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Kazan National Research Technical University Named After A. N. Tupolev - KAI,Computer Systems Department,Kazan,Russian Federation"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Roman",
+          "family": "Klassen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Kazan National Research Technical University Named After A. N. Tupolev - KAI,Computer Systems Department,Kazan,Russian Federation"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 International Russian Automation Conference (RusAutoCon)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "467-472",
+      "URL": "https://doi.org/10.1109/rusautocon65989.2025.11177411"
+    },
+    {
+      "DOI": "10.18127/j19997493-202503-04",
+      "title": [
+        "Choosing a message broker for Internet of things based on load testing"
+      ],
+      "author": [
+        {
+          "given": "A.V.",
+          "family": "Solopiy",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "R.K.",
+          "family": "Klassen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Dynamics of Complex Systems - XXI century"
+      ],
+      "volume": "19",
+      "issue": "3",
+      "page": "44-51",
+      "URL": "https://doi.org/10.18127/j19997493-202503-04"
+    },
+    {
+      "DOI": "10.33693/2313-223x-2026-13-1-212-221",
+      "title": [
+        "Industrial IoT monitoring networks simulator – MqttY: large networks simulation accelerating"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0001-2475-4996",
+          "authenticated-orcid": false,
+          "given": "Artem V.",
+          "family": "Solopiy",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Kazan National Research Technical University named after A.N. Tupolev – KAI"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2214-426X",
+          "authenticated-orcid": false,
+          "given": "Roman K.",
+          "family": "Klassen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Kazan National Research Technical University named after A.N. Tupolev – KAI"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Computational nanotechnology"
+      ],
+      "volume": "13",
+      "issue": "1",
+      "page": "212-221",
+      "URL": "https://doi.org/10.33693/2313-223x-2026-13-1-212-221"
+    }
+  ],
+  "fullTextsRead": false
+}

@@ -1098,7 +1098,7 @@
     "receiptPath": "reports/audits/web-selector-v4/receipt.json"
   },
   "article1Readiness": {
-    "status": "freshSeriesCompleteWithScientificDiscrepancies",
+    "status": "finalSeriesAuditedSubscriberDisconnectionFound",
     "instrumentationCommitted": true,
     "mqttyCommit": "4e4aab3",
     "benchmarkCommit": "aff43d7",
@@ -1107,11 +1107,113 @@
     "pythonTestsPassed": 28,
     "scientificAccuracyClaim": false,
     "remaining": [
-      "accept 48 native/model pairs",
-      "independently recount events and compare aligned cohorts",
-      "update table, abstract and conclusions with discrepancies",
+      "establish cause of EMQX mailbox growth and validity gates for subscriber connectivity",
+      "establish model subscriber continuity observability",
       "public reproducibility package and author approval"
     ],
     "freshComparison": "48 complete pairs; independently checked 192 comparison rows: 92 metrics passed, 100 failed, 0 not evaluated"
+  },
+  "researchSkills": {
+    "status": "installedFilesVerified",
+    "count": 8,
+    "receipt": "reports/status/research-skills-installation.json",
+    "pyYamlVersion": "6.0.3",
+    "scientificInputsChanged": false
+  },
+  "article1SkillsValidation": {
+    "status": "ANALYZED",
+    "report": "reports/analysis/Article-1-skills-validation.md",
+    "pairs": 48,
+    "conditionsPassed": 2,
+    "conditionsTotal": 16,
+    "metricChecksPassed": 92,
+    "metricChecksFailed": 100,
+    "nativeLossRangeOverFivePercentagePoints": 7,
+    "newSimulations": 0,
+    "rawEventsRecounted": true,
+    "existingReplayReceiptsChecked": 4,
+    "partialRawInspectionCases": 3,
+    "confirmedObservation": "EMQX QoS1 N128 subscriber disconnected before measurement in all three native repeats; no reconnect recorded",
+    "rootCauseOfDisconnection": "Broker logs record mailbox_overflow protection shutdown; client identity mapping limited; queue growth cause not established",
+    "articleClarificationAdded": true,
+    "auditedRawSets": 96,
+    "nativeContinuousSubscriberRuns": 45,
+    "nativeDisconnectedBeforeMeasurementRuns": 3,
+    "modelSubscriberContinuity": "notEstablishedFromSavedConnectionLog"
+  },
+  "article1RawAudit": {
+    "status": "completed",
+    "unit": "mqtty-article1-raw-audit-v1.service",
+    "elapsedSeconds": 52.15438565798104,
+    "rawSets": 96,
+    "hashesAndMetricsMatch": true,
+    "newExperiments": 0,
+    "receipt": "reports/audits/dissertation/article-1-skills-validation-v1/raw-audit-result.json"
+  },
+  "authorPublicationCitations": {
+    "orcid": "0009-0001-2475-4996",
+    "verifiedWorks": 3,
+    "article1References": [
+      5,
+      6,
+      7
+    ],
+    "evidence": "reports/audits/dissertation/author-publications-v1/sources.json",
+    "fullTextsRead": false
+  },
+  "linuxNetworkObservedNow": {
+    "status": "budgetExhausted",
+    "verified": 106,
+    "matrixTotal": 162,
+    "unresolvedErrors": 2,
+    "warnings": 16,
+    "replayCompleted": 0,
+    "replayTotal": 6,
+    "deadlineReset": false
+  },
+  "emqxMailboxDiagnostic": {
+    "status": "completed",
+    "unit": "mqtty-emqx-mailbox-probe-v1.service",
+    "completedArms": 2,
+    "elapsedSeconds": 53.21380053900066,
+    "limits": [
+      1000,
+      5000
+    ],
+    "observedMailboxAtShutdown": [
+      1389,
+      5482
+    ],
+    "deliveryLoss": [
+      1,
+      1
+    ],
+    "subscriberDisconnectedBeforeMeasurement": [
+      true,
+      true
+    ],
+    "frozenInputsUnchanged": true,
+    "scientificCriteriaChanged": false,
+    "causeOfQueueGrowth": "notEstablished",
+    "report": "reports/analysis/EMQX-subscriber-shutdown.md",
+    "receipt": "reports/audits/dissertation/article-1-skills-validation-v1/mailbox-probe-verification.json"
+  },
+  "article1MethodologyBrainstorm": {
+    "status": "proposalPrepared",
+    "document": "docs/dissertation/article-1-methodology-brainstorm.md",
+    "recommendation": "retain current applicability analysis, then verify matched-method calibration and new holdout on four conditions",
+    "minimalConditions": 4,
+    "proposedCalibrationNative": 12,
+    "proposedHoldoutNative": 12,
+    "proposedModelRuns": 12,
+    "proposedExactReplays": 4,
+    "proposedTotal": 40,
+    "expandedTotals": [
+      76,
+      148
+    ],
+    "authorAdoptionRecorded": false,
+    "newLinuxRuns": 0,
+    "localChecksPassed": 21
   }
 }

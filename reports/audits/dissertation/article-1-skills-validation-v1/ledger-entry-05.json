@@ -1,0 +1,5 @@
+{
+  "kind": "file_reference",
+  "path": "../status/research-skills-installation.json",
+  "role": "installation_receipt"
+}

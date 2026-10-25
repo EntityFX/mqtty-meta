@@ -1,0 +1,13 @@
+{
+  "kind": "tool_receipt",
+  "step": "emqx_raw_inspection",
+  "command": "SSH read-only Python inspection of existing EMQX.q1.p128.r1/r2/r3 native logs; local validation of hashes against final-summary.json and subscriber disconnect times against phase boundaries",
+  "status": "passed",
+  "exit_status": 0,
+  "retries_used": 0,
+  "input_paths": [
+    "../audits/dissertation/article-1-skills-validation-v1/emqx-raw-trace.json",
+    "../audits/dissertation/article-1-skills-validation-v1/emqx-connection-detail.json",
+    "../audits/dissertation/article-1-fresh-validation-v1/final-summary.json"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "kind": "tool_receipt",
+  "step": "author_citations",
+  "command": "ORCID works API, three Crossref records and publisher metadata checks; in-text citations and references checked locally",
+  "status": "passed",
+  "exit_status": 0,
+  "retries_used": 0,
+  "input_paths": [
+    "../audits/dissertation/author-publications-v1/sources.json",
+    "../../docs/dissertation/articles/article-1-twin-validation.md"
+  ]
+}

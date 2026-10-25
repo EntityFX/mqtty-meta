@@ -1,0 +1,13 @@
+{
+  "kind": "tool_receipt",
+  "step": "saved_diagnostics",
+  "command": "Local Python recount of condition groups, phase completion shares, input SHA-256 and existing replay receipt hashes; see diagnostics.json",
+  "status": "passed",
+  "exit_status": 0,
+  "retries_used": 0,
+  "input_paths": [
+    "../audits/dissertation/article-1-skills-validation-v1/diagnostics.json",
+    "../audits/dissertation/article-1-fresh-validation-v1/phase-evidence.json",
+    "../audits/dissertation/article-1-fresh-validation-v1/replay-summary.json"
+  ]
+}

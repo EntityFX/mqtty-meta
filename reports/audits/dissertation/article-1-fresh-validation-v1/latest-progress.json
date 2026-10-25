@@ -1,26 +1,28 @@
 {
-  "status": "completedWithTechnicalErrors",
+  "status": "completed",
   "phase": "finished",
-  "controllerPid": 163732,
+  "controllerPid": 176244,
   "startedUtc": "2026-10-24T23:32:32.789784+00:00",
   "plannedNative": 48,
   "plannedModel": 48,
-  "nativeCompleted": 36,
+  "nativeCompleted": 48,
   "modelCompleted": 48,
   "completedPairs": 48,
-  "technicalErrors": 12,
+  "technicalErrors": 0,
   "programSha256": "b9d8ca76e082dfe1d4d7f4882468f981441f53e6ed0e92579912d54b2ba83087",
-  "continuationBudgetSeconds": 21497,
-  "budgetStartedUtc": "2026-10-25T08:03:39.844496+00:00",
+  "continuationBudgetSeconds": 19519,
+  "budgetStartedUtc": "2026-10-25T08:37:13.116539+00:00",
   "priorControllerFailure": "Port reservation errno98",
   "activeJob": null,
-  "elapsedSeconds": 1657.6209208670189,
-  "remainingBudgetSeconds": 19824.386326876993,
-  "finishedUtc": "2026-10-25T08:31:17.465410+00:00",
+  "elapsedSeconds": 291.2138017510006,
+  "remainingBudgetSeconds": 19212.78948254601,
+  "processedRows": 48,
+  "finishedUtc": "2026-10-25T08:42:04.330323+00:00",
   "comparison": {
     "metricRows": 192,
-    "failedMetrics": 91,
-    "passedMetrics": 53,
-    "notEvaluated": 48
-  }
+    "failedMetrics": 100,
+    "passedMetrics": 92,
+    "notEvaluated": 0
+  },
+  "analysisDirectory": "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/series-attempt-001/analysis-176244"
 }
