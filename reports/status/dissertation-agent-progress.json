@@ -762,8 +762,8 @@
     "liveUnobservableProcessStillFails": true
   },
   "webApplication": {
-    "status": "linuxDeployedAndBrowserVerified",
-    "testsPassed": 29,
+    "status": "linuxDeployedBrowserAndSeriesVerified",
+    "testsPassed": 33,
     "testEvidenceSource": "web_application_review agent final implementation report",
     "realEngines": [
       "federation",
@@ -776,16 +776,26 @@
     ],
     "linuxDeploymentVerified": true,
     "includedInResearchReadinessPercent": false,
-    "remaining": [],
+    "remaining": [
+      "Multiple brokers per network and heterogeneous profiles/networks unsupported",
+      "Arbitrary load-balancer structure unsupported",
+      "Pause is in-memory suspension, not durable checkpoint"
+    ],
     "boundedIntegrationTestsPassed": 166,
     "linuxSmokeJobs": 9,
     "scientificAccuracyClaim": false,
-    "uiCommit": "3327b118fb4d6683fe8e8f30a074175b2479c29b",
+    "uiCommit": "dd36b4d",
     "receipt": "reports/audits/web-linux-v1/service-receipt.json",
     "monitorPid": 88937,
-    "webPid": 88940,
-    "uiDeploymentReceipt": "reports/audits/web-linux-v1/ui-update-receipt.json",
-    "browserReceipt": "reports/audits/web-linux-v1/topology-ui-deployed-review.json"
+    "webPid": 128575,
+    "uiDeploymentReceipt": "reports/audits/web-ux-v3/deployment-receipt.json",
+    "browserReceipt": "reports/audits/web-ux-v3/browser-receipt.json",
+    "currentWebTestsPassed": 33,
+    "currentFocusedIntegrationTestsPassed": 107,
+    "uiBrowserScenariosPassed": 12,
+    "seriesReceipt": "reports/audits/web-ux-v3/series-receipt.json",
+    "seriesExperimentsPassed": 9,
+    "exactSeriesReplaysPassed": 3
   },
   "relatedWorkMap": {
     "status": "technicalDraftAwaitingAuthor",
@@ -850,7 +860,7 @@
   },
   "networkGlobalBudget": {
     "scope": "New global network campaign: 162 matrix jobs and 6 exact replays; completed native/sensitivity campaigns excluded",
-    "status": "runningOnLinuxBoundedUnit",
+    "status": "budgetExhausted",
     "wallLimitSeconds": 10800,
     "cleanupReserveSeconds": 120,
     "planningReserveSeconds": 1200,
@@ -875,7 +885,7 @@
     "scientificThresholdsChanged": false,
     "currentlyRunningSeparatePilot": "mqtty-network-qos2-final-pilot-v1.service",
     "noGlobalCampaignLaunched": false,
-    "controllerStatus": "deployedRunning",
+    "controllerStatus": "stoppedAtPersistedDeadline",
     "controllerLocalTestsPassed": 23
   },
   "qos2FinalPilot": {
@@ -899,14 +909,14 @@
     "scientificAccuracyClaim": false
   },
   "networkFull3h": {
-    "status": "running",
+    "status": "budgetExhausted",
     "unit": "mqtty-network-full-3h-v1.service",
-    "controllerPid": 106810,
+    "controllerPid": 0,
     "phase": "matrix",
     "matrix": {
-      "done": 90,
-      "unresolvedErrors": 0,
-      "warnings": 9,
+      "done": 106,
+      "unresolvedErrors": 2,
+      "warnings": 16,
       "total": 162
     },
     "replay": {
@@ -915,14 +925,14 @@
       "warnings": 0,
       "total": 6
     },
-    "workers": 2,
+    "workers": 0,
     "pilotReview": "reports/audits/dissertation/network-pilot-reuse-v1/registry.json",
     "technicalAdmission": "reports/audits/dissertation/network-full-3h-v1/pilot-technical-decision.json",
     "pilotCohortsAreHeterogeneous": true,
     "receipt": "reports/status/network-full-3h-progress.json",
-    "observedAtUtc": "2026-10-24T20:26:23.916522+00:00",
+    "observedAtUtc": "2026-10-24T21:01:41.067005+00:00",
     "hardStopMsk": "2026-10-25T00:03:38+03:00",
-    "reason": null,
+    "reason": "executionBudgetExhausted",
     "failedAttempt": {
       "id": "matrix.line.relay.q2.r5000.w10.s43",
       "attemptNumber": 1,
@@ -931,8 +941,8 @@
       "processWallSeconds": 387.9845910540025,
       "reason": "RuntimeError: jobRssLimit"
     },
-    "serviceResult": "success",
-    "execMainStatus": 0,
+    "serviceResult": "exit-code",
+    "execMainStatus": 1,
     "diskFreeGiB": {
       "system": 60,
       "hd250": 139
@@ -954,7 +964,14 @@
       "deliveryLoss": 9
     },
     "statusReceipt": "reports/audits/dissertation/network-full-3h-recovery-v1/status.json",
-    "primaryArticleUse": "Article 2 network comparison; not new real-broker validation for Article 1"
+    "primaryArticleUse": "Article 2 network comparison; not new real-broker validation for Article 1",
+    "matrixPercent": 65.4,
+    "overallMatrixReplayPercent": 63.1,
+    "unfinishedAttempts": 2,
+    "attempts": {
+      "total": 109,
+      "failed": 3
+    }
   },
   "networkConsoleMonitor": {
     "status": "restartedForNetworkCampaign",
@@ -982,5 +999,72 @@
     "requiresCompletedVerifiedNetworkCoverage": true,
     "firstAction": "Verify completed network campaign and prepare comparison; article 2 final results depend on actual coverage."
   },
-  "preliminaryHumanReadingBlocksTechnicalPreparation": false
+  "preliminaryHumanReadingBlocksTechnicalPreparation": false,
+  "article1CompactValidation": {
+    "status": "protocolAndMicrotestsPrepared",
+    "document": "docs/dissertation/article-1-compact-validation-protocol.md",
+    "localChecksPassed": 23,
+    "newNativeRuns": 0,
+    "newModelRuns": 0,
+    "receipt": "reports/audits/dissertation/article-1-compact-readiness-v1/verification.json",
+    "readinessPercentUnchanged": true
+  },
+  "article1FreshSeries": {
+    "status": "continuationRunningConfirmedAtLaunch",
+    "unit": "mqtty-article1-fresh-series-recovery-v3.service",
+    "mainPid": 163732,
+    "startedAtMsk": "2026-10-25T02:32:32+03:00",
+    "hardStopMsk": "2026-10-25T17:01:46.572895+03:00",
+    "nativeTarget": 48,
+    "modelTarget": 48,
+    "workers": 1,
+    "technicalErrorsAtConfirmation": 0,
+    "progressPath": "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/series-attempt-001/progress.json",
+    "programSha256": "b9d8ca76e082dfe1d4d7f4882468f981441f53e6ed0e92579912d54b2ba83087",
+    "accuracyClaim": false,
+    "pollingStopped": true,
+    "previousLaunch": {
+      "unit": "mqtty-article1-fresh-series-v1.service",
+      "mainPid": 129190,
+      "status": "failed",
+      "cause": "OSError: [Errno 98] Address already in use; TCP port reservation preflight",
+      "originalHardStopMsk": "2026-10-25T05:32:32+03:00"
+    },
+    "userAuthorizedContinuationBudgetSeconds": 21600,
+    "remainingSecondsAtLaunch": 21497,
+    "completedPairsBeforeContinuation": 4,
+    "nativeCompletedBeforeContinuation": 4,
+    "modelCompletedBeforeContinuation": 4,
+    "receiptPath": "reports/audits/dissertation/article-1-fresh-validation-v1/six-hour-launch-receipt.json",
+    "programChanged": false,
+    "profilesChanged": false
+  },
+  "webSavedTopologySelector": {
+    "status": "deployedHealthConfirmed",
+    "commit": "d71b4fd",
+    "release": "10587525c3a4f204948401b926ab1ec8d6f9fca944bf999c9ef9263d567963aa",
+    "webPid": 164895,
+    "location": "always visible workspace commandbar",
+    "localBrowserChecksPassed": 12,
+    "scientificCampaignRestarted": false,
+    "linuxBrowserChecksPassed": 12,
+    "browserErrors": 0,
+    "receiptPath": "reports/audits/web-selector-v4/receipt.json"
+  },
+  "article1Readiness": {
+    "status": "workingManuscriptAwaitingFreshSeriesAnalysis",
+    "instrumentationCommitted": true,
+    "mqttyCommit": "4e4aab3",
+    "benchmarkCommit": "aff43d7",
+    "nativeTestsPassed": 2,
+    "modelTestsPassed": 4,
+    "pythonTestsPassed": 28,
+    "scientificAccuracyClaim": false,
+    "remaining": [
+      "accept 48 native/model pairs",
+      "independently recount events and compare aligned cohorts",
+      "update table, abstract and conclusions with discrepancies",
+      "public reproducibility package and author approval"
+    ]
+  }
 }

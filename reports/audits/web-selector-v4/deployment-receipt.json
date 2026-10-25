@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "release": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/releases/10587525c3a4f204948401b926ab1ec8d6f9fca944bf999c9ef9263d567963aa",
+  "before": {
+    "status": "ok",
+    "processId": 128575,
+    "processWorkingSetBytes": 251514880,
+    "dataDirectoryAvailable": true,
+    "runningJobs": 0,
+    "queuedJobs": 0
+  },
+  "after": {
+    "status": "ok",
+    "processId": 164895,
+    "processWorkingSetBytes": 96591872,
+    "dataDirectoryAvailable": true,
+    "runningJobs": 0,
+    "queuedJobs": 0
+  },
+  "scientificCampaignRestarted": false,
+  "existingDataRetained": true,
+  "epoch": 1792915938.9437444
+}

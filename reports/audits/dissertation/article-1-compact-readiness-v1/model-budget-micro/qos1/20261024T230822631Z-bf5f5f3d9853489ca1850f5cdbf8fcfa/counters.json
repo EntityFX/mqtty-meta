@@ -1,0 +1,62 @@
+{
+  "brokers": {
+    "mqb6": {
+      "measurementStartTick": 114,
+      "measurementEndTick": 2114,
+      "byQos": {
+        "atMostOnce": {
+          "attempted": 0,
+          "admitted": 0,
+          "completed": 0,
+          "expectedDeliveries": 0,
+          "delivered": 0,
+          "rateRejected": 0,
+          "publishFailed": 0,
+          "deliveryDropped": 0,
+          "rps": 0,
+          "latencyP50Ms": null,
+          "latencyP95Ms": null,
+          "latencyP99Ms": null,
+          "latencyHistogramTicks": {}
+        },
+        "atLeastOnce": {
+          "attempted": 1140,
+          "admitted": 1140,
+          "completed": 1140,
+          "expectedDeliveries": 1140,
+          "delivered": 1140,
+          "rateRejected": 0,
+          "publishFailed": 0,
+          "deliveryDropped": 0,
+          "rps": 5700,
+          "latencyP50Ms": 0.6000000000000001,
+          "latencyP95Ms": 0.6000000000000001,
+          "latencyP99Ms": 0.6000000000000001,
+          "latencyHistogramTicks": {
+            "6": 1140
+          }
+        },
+        "exactlyOnce": {
+          "attempted": 0,
+          "admitted": 0,
+          "completed": 0,
+          "expectedDeliveries": 0,
+          "delivered": 0,
+          "rateRejected": 0,
+          "publishFailed": 0,
+          "deliveryDropped": 0,
+          "rps": 0,
+          "latencyP50Ms": null,
+          "latencyP95Ms": null,
+          "latencyP99Ms": null,
+          "latencyHistogramTicks": {}
+        }
+      }
+    }
+  },
+  "receivers": {
+    "mqrc6": 1144
+  },
+  "receiverScope": "receipts after measurement reset through drain; warmup in-flight arrivals can cross the boundary",
+  "graph": "NetworkSimulator:\r\n    [{ Steps=18674,00, Steps.Avg=0 }, { Ticks=2116,00, Ticks.Avg=0 }, { VirtualTime=00:00:00.2117000, VirtualTime.Avg=0 }, { RealTime=00:00:00.6196936, RealTime.Avg=0 }, { RefreshTime=00:00:00, RefreshTime.Avg=0 }, ]\r\n    n0.global:\r\n        n0.global:\r\n        n0.global:\r\n        n0.global:\r\n        n0.global:\r\n    n1.net:\r\n        n1.net:\r\n            [{ InboundPackets=4814,00, InboundPackets.Avg=0 }, { Inbound=96,17 KB, Inbound.Avg=0 }, { InboundThroughput=3,64 Mb/s, InboundThroughput.Avg=0 }, { OutboundPackets=4814,00, OutboundPackets.Avg=0 }, { Outbound=96,17 KB, Outbound.Avg=0 }, { OutboundThroughput=3,64 Mb/s, OutboundThroughput.Avg=0 }, ]\r\n        n1.net:\r\n            mqb6:\r\n                [{ Send=2407,00, Send.Avg=0 }, { Receive=2407,00, Receive.Avg=0 }, ]\r\n                mqb6:\r\n                    [{ CONNECT=5,00, CONNECT.Avg=0 }, { CONNACK=5,00, CONNACK.Avg=0 }, { PUBLISH=2400,00, PUBLISH.Avg=0 }, { PUBACK=2400,00, PUBACK.Avg=0 }, { SUBSCRIBE=2,00, SUBSCRIBE.Avg=0 }, { SUBACK=2,00, SUBACK.Avg=0 }, { CONNECT_Rps=23,84 Rps, CONNECT_Rps.Avg=0 }, { CONNACK_Rps=23,84 Rps, CONNACK_Rps.Avg=0 }, { PUBLISH_Rps=11445,03 Rps, PUBLISH_Rps.Avg=0 }, { PUBACK_Rps=11425,83 Rps, PUBACK_Rps.Avg=0 }, { SUBSCRIBE_Rps=9,57 Rps, SUBSCRIBE_Rps.Avg=0 }, { SUBACK_Rps=9,57 Rps, SUBACK_Rps.Avg=0 }, { PublishQos1=1200,00, PublishQos1.Avg=1149,5 }, { PublishQos1_Rps=5691,46 Rps, PublishQos1_Rps.Avg=5691,462805791313 }, { BrokerLatencyMs=0,60 ms, BrokerLatencyMs.Avg=0,600000000000001 }, { BrokerLatencyP99=0,60 ms, BrokerLatencyP99.Avg=0,6000000000000001 }, ]\r\n        n1.net:\r\n            mqc2:\r\n                [{ Send=301,00, Send.Avg=0 }, { Receive=301,00, Receive.Avg=0 }, { ReceiveQueue=1,00, ReceiveQueue.Avg=0 }, ]\r\n                mqc2:\r\n                    [{ CONNECT=1,00, CONNECT.Avg=0 }, { CONNACK=1,00, CONNACK.Avg=0 }, { PUBLISH=300,00, PUBLISH.Avg=0 }, { CONNECT_Rps=4,76 Rps, CONNECT_Rps.Avg=0 }, { CONNACK_Rps=4,78 Rps, CONNACK_Rps.Avg=0 }, { PUBLISH_Rps=1432,68 Rps, PUBLISH_Rps.Avg=0 }, ]\r\n            mqc3:\r\n                [{ Send=301,00, Send.Avg=0 }, { Receive=301,00, Receive.Avg=0 }, { ReceiveQueue=1,00, ReceiveQueue.Avg=0 }, ]\r\n                mqc3:\r\n                    [{ CONNECT=1,00, CONNECT.Avg=0 }, { CONNACK=1,00, CONNACK.Avg=0 }, { PUBLISH=300,00, PUBLISH.Avg=0 }, { CONNECT_Rps=4,76 Rps, CONNECT_Rps.Avg=0 }, { CONNACK_Rps=4,78 Rps, CONNACK_Rps.Avg=0 }, { PUBLISH_Rps=1432,68 Rps, PUBLISH_Rps.Avg=0 }, ]\r\n            mqc4:\r\n                [{ Send=301,00, Send.Avg=0 }, { Receive=301,00, Receive.Avg=0 }, { ReceiveQueue=1,00, ReceiveQueue.Avg=0 }, ]\r\n                mqc4:\r\n                    [{ CONNECT=1,00, CONNECT.Avg=0 }, { CONNACK=1,00, CONNACK.Avg=0 }, { PUBLISH=300,00, PUBLISH.Avg=0 }, { CONNECT_Rps=4,76 Rps, CONNECT_Rps.Avg=0 }, { CONNACK_Rps=4,78 Rps, CONNACK_Rps.Avg=0 }, { PUBLISH_Rps=1432,68 Rps, PUBLISH_Rps.Avg=0 }, ]\r\n            mqc5:\r\n                [{ Send=301,00, Send.Avg=0 }, { Receive=301,00, Receive.Avg=0 }, { ReceiveQueue=1,00, ReceiveQueue.Avg=0 }, ]\r\n                mqc5:\r\n                    [{ CONNECT=1,00, CONNECT.Avg=0 }, { CONNACK=1,00, CONNACK.Avg=0 }, { PUBLISH=300,00, PUBLISH.Avg=0 }, { CONNECT_Rps=4,76 Rps, CONNECT_Rps.Avg=0 }, { CONNACK_Rps=4,78 Rps, CONNACK_Rps.Avg=0 }, { PUBLISH_Rps=1432,68 Rps, PUBLISH_Rps.Avg=0 }, ]\r\n            mqrc6mqb6:\r\n                [{ Send=1203,00, Send.Avg=0 }, { Receive=1203,00, Receive.Avg=0 }, { ReceiveQueue=3,00, ReceiveQueue.Avg=0 }, ]\r\n                mqrc6mqb6:\r\n                    [{ CONNECT=1,00, CONNECT.Avg=0 }, { CONNACK=1,00, CONNACK.Avg=0 }, { SUBSCRIBE=2,00, SUBSCRIBE.Avg=0 }, { SUBACK=2,00, SUBACK.Avg=0 }, { CONNECT_Rps=4,76 Rps, CONNECT_Rps.Avg=0 }, { CONNACK_Rps=4,78 Rps, CONNACK_Rps.Avg=0 }, { SUBSCRIBE_Rps=9,55 Rps, SUBSCRIBE_Rps.Avg=0 }, { SUBACK_Rps=9,58 Rps, SUBACK_Rps.Avg=0 }, ]\r\n        n1.net:\r\n            mqrc6:\r\n                Receiver:\r\n                    [Received=1200,00]\r\n"
+}

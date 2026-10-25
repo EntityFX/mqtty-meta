@@ -1,9 +1,9 @@
 {
-  "status": "running",
+  "status": "budgetExhausted",
   "phase": "matrix",
   "executionManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
-  "verified": 90,
-  "technicalErrors": 0,
+  "verified": 106,
+  "technicalErrors": 2,
   "counts": {
     "pilot": {
       "done": 0,
@@ -12,9 +12,9 @@
       "total": 30
     },
     "matrix": {
-      "done": 90,
-      "unresolvedErrors": 0,
-      "warnings": 9,
+      "done": 106,
+      "unresolvedErrors": 2,
+      "warnings": 16,
       "total": 162
     },
     "replay": {
@@ -36,8 +36,8 @@
       "failed": 0
     },
     "matrix": {
-      "total": 91,
-      "failed": 1
+      "total": 109,
+      "failed": 3
     },
     "replay": {
       "total": 0,
@@ -48,25 +48,12 @@
       "failed": 0
     }
   },
-  "warnings": 9,
+  "warnings": 16,
   "active": {
     "workers": 2,
-    "jobs": {
-      "matrix.ring.relay.q2.r5000.w10.s44": {
-        "pid": 114414,
-        "elapsedSeconds": 387.3684832069848,
-        "rssBytes": 1112334336,
-        "peakRssBytes": 1120567296
-      },
-      "matrix.ring.federation.q0.r1000.w10.s43": {
-        "pid": 114785,
-        "elapsedSeconds": 110.41063094499987,
-        "rssBytes": 792035328,
-        "peakRssBytes": 792035328
-      }
-    },
-    "remainingSeconds": 2115.411002859997
+    "jobs": {},
+    "remainingSeconds": 0
   },
-  "reason": null,
-  "observedAtUtc": "2026-10-24T20:26:23.916522+00:00"
+  "reason": "executionBudgetExhausted",
+  "observedAtUtc": "2026-10-24T21:01:41.067005+00:00"
 }

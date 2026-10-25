@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": [
+    "compact sidebar and visible saved topology chooser",
+    "node click, name edit, drag persisted",
+    "screen switching preserves full draft",
+    "network-to-network link creation and removal",
+    "second topology appended and connected without losing first",
+    "saved topology executes and summary/statistics available",
+    "monitoring node opens statistics modal",
+    "monitoring supports grid and topology-aware layout",
+    "results modal has timestamps, histogram charts and downloads",
+    "saved topology edited in place",
+    "broker preset create and edit",
+    "topology preset create and edit"
+  ],
+  "browserErrors": [],
+  "url": "http://127.0.0.1:5088"
+}

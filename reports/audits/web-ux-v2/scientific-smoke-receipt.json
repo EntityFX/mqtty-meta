@@ -1,0 +1,4000 @@
+{
+  "startedEpoch": 1792882539.3114655,
+  "profile": null,
+  "qos": 1,
+  "jobs": [
+    {
+      "engine": "relay",
+      "request": {
+        "engine": "relay",
+        "spec": {
+          "kind": "line",
+          "chainLength": 3,
+          "brokerPresetId": "ideal-demo",
+          "clientsPerBroker": 2,
+          "qos": 1,
+          "offeredRps": 100,
+          "warmupTicks": 100,
+          "measurementTicks": 2000,
+          "drainTimeoutTicks": 10000,
+          "payloadBytes": 16,
+          "seed": 42
+        },
+        "runSettings": {
+          "executionMode": "OutOfProcess",
+          "timeLimit": "00:01:00"
+        }
+      },
+      "submittedEpoch": 1792882539.3421059,
+      "observations": [
+        {
+          "id": "c3bc58e1d7e84f1a8632d5659104b821",
+          "topologyId": null,
+          "engine": "relay",
+          "state": "Running",
+          "totalTicks": 0,
+          "step": 0,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:39.3458487+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/c3bc58e1d7e84f1a8632d5659104b821",
+          "error": null,
+          "processId": 125806,
+          "processWorkingSetBytes": 557056,
+          "processCpuSeconds": 0,
+          "lastObservedAt": "2026-10-24T22:55:39.3487851+00:00",
+          "phase": "construct"
+        },
+        {
+          "id": "c3bc58e1d7e84f1a8632d5659104b821",
+          "topologyId": null,
+          "engine": "relay",
+          "state": "Running",
+          "totalTicks": 0,
+          "step": 0,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:39.3458487+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/c3bc58e1d7e84f1a8632d5659104b821",
+          "error": null,
+          "processId": 125806,
+          "processWorkingSetBytes": 57229312,
+          "processCpuSeconds": 0.25,
+          "lastObservedAt": "2026-10-24T22:55:39.6000511+00:00",
+          "phase": "construct"
+        },
+        {
+          "id": "c3bc58e1d7e84f1a8632d5659104b821",
+          "topologyId": null,
+          "engine": "relay",
+          "state": "Running",
+          "totalTicks": 1,
+          "step": 36,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:39.3458487+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/c3bc58e1d7e84f1a8632d5659104b821",
+          "error": null,
+          "processId": 125806,
+          "processWorkingSetBytes": 80318464,
+          "processCpuSeconds": 0.48,
+          "lastObservedAt": "2026-10-24T22:55:39.8512496+00:00",
+          "phase": "connect"
+        },
+        {
+          "id": "c3bc58e1d7e84f1a8632d5659104b821",
+          "topologyId": null,
+          "engine": "relay",
+          "state": "Running",
+          "totalTicks": 119,
+          "step": 629,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:39.3458487+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/c3bc58e1d7e84f1a8632d5659104b821",
+          "error": null,
+          "processId": 125806,
+          "processWorkingSetBytes": 128204800,
+          "processCpuSeconds": 0.73,
+          "lastObservedAt": "2026-10-24T22:55:40.1038412+00:00",
+          "phase": "warmupDrain"
+        },
+        {
+          "id": "c3bc58e1d7e84f1a8632d5659104b821",
+          "topologyId": null,
+          "engine": "relay",
+          "state": "Running",
+          "totalTicks": 119,
+          "step": 629,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:39.3458487+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/c3bc58e1d7e84f1a8632d5659104b821",
+          "error": null,
+          "processId": 125806,
+          "processWorkingSetBytes": 128204800,
+          "processCpuSeconds": 0.73,
+          "lastObservedAt": "2026-10-24T22:55:40.1038412+00:00",
+          "phase": "warmupDrain"
+        },
+        {
+          "id": "c3bc58e1d7e84f1a8632d5659104b821",
+          "topologyId": null,
+          "engine": "relay",
+          "state": "Running",
+          "totalTicks": 142,
+          "step": 768,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:39.3458487+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/c3bc58e1d7e84f1a8632d5659104b821",
+          "error": null,
+          "processId": 125806,
+          "processWorkingSetBytes": 188493824,
+          "processCpuSeconds": 0.99,
+          "lastObservedAt": "2026-10-24T22:55:40.3562894+00:00",
+          "phase": "measure"
+        },
+        {
+          "id": "c3bc58e1d7e84f1a8632d5659104b821",
+          "topologyId": null,
+          "engine": "relay",
+          "state": "Running",
+          "totalTicks": 142,
+          "step": 768,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:39.3458487+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/c3bc58e1d7e84f1a8632d5659104b821",
+          "error": null,
+          "processId": 125806,
+          "processWorkingSetBytes": 249270272,
+          "processCpuSeconds": 1.26,
+          "lastObservedAt": "2026-10-24T22:55:40.6075916+00:00",
+          "phase": "measure"
+        },
+        {
+          "id": "c3bc58e1d7e84f1a8632d5659104b821",
+          "topologyId": null,
+          "engine": "relay",
+          "state": "Running",
+          "totalTicks": 142,
+          "step": 768,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:39.3458487+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/c3bc58e1d7e84f1a8632d5659104b821",
+          "error": null,
+          "processId": 125806,
+          "processWorkingSetBytes": 218513408,
+          "processCpuSeconds": 1.52,
+          "lastObservedAt": "2026-10-24T22:55:40.8601075+00:00",
+          "phase": "measure"
+        },
+        {
+          "id": "c3bc58e1d7e84f1a8632d5659104b821",
+          "topologyId": null,
+          "engine": "relay",
+          "state": "Running",
+          "totalTicks": 142,
+          "step": 768,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:39.3458487+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/c3bc58e1d7e84f1a8632d5659104b821",
+          "error": null,
+          "processId": 125806,
+          "processWorkingSetBytes": 193945600,
+          "processCpuSeconds": 1.82,
+          "lastObservedAt": "2026-10-24T22:55:41.1134145+00:00",
+          "phase": "measure"
+        },
+        {
+          "id": "c3bc58e1d7e84f1a8632d5659104b821",
+          "topologyId": null,
+          "engine": "relay",
+          "state": "Running",
+          "totalTicks": 142,
+          "step": 768,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:39.3458487+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/c3bc58e1d7e84f1a8632d5659104b821",
+          "error": null,
+          "processId": 125806,
+          "processWorkingSetBytes": 193945600,
+          "processCpuSeconds": 1.82,
+          "lastObservedAt": "2026-10-24T22:55:41.1134145+00:00",
+          "phase": "measure"
+        },
+        {
+          "id": "c3bc58e1d7e84f1a8632d5659104b821",
+          "topologyId": null,
+          "engine": "relay",
+          "state": "Running",
+          "totalTicks": 715,
+          "step": 2847,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:39.3458487+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/c3bc58e1d7e84f1a8632d5659104b821",
+          "error": null,
+          "processId": 125806,
+          "processWorkingSetBytes": 177930240,
+          "processCpuSeconds": 2.16,
+          "lastObservedAt": "2026-10-24T22:55:41.3661028+00:00",
+          "phase": "measure"
+        },
+        {
+          "id": "c3bc58e1d7e84f1a8632d5659104b821",
+          "topologyId": null,
+          "engine": "relay",
+          "state": "Running",
+          "totalTicks": 715,
+          "step": 2847,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:39.3458487+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/c3bc58e1d7e84f1a8632d5659104b821",
+          "error": null,
+          "processId": 125806,
+          "processWorkingSetBytes": 161660928,
+          "processCpuSeconds": 2.46,
+          "lastObservedAt": "2026-10-24T22:55:41.6182923+00:00",
+          "phase": "measure"
+        }
+      ],
+      "id": "c3bc58e1d7e84f1a8632d5659104b821",
+      "status": {
+        "id": "c3bc58e1d7e84f1a8632d5659104b821",
+        "topologyId": null,
+        "engine": "relay",
+        "state": "Completed",
+        "totalTicks": 2163,
+        "step": 0,
+        "errors": 0,
+        "startedAt": "2026-10-24T22:55:39.3458487+00:00",
+        "finishedAt": "2026-10-24T22:55:42.3760053+00:00",
+        "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/c3bc58e1d7e84f1a8632d5659104b821",
+        "error": null,
+        "processId": null,
+        "processWorkingSetBytes": 154480640,
+        "processCpuSeconds": 3.05,
+        "lastObservedAt": "2026-10-24T22:55:42.1225599+00:00",
+        "phase": "drain"
+      },
+      "monitor": {
+        "simulationId": "c3bc58e1d7e84f1a8632d5659104b821",
+        "state": "Completed",
+        "totalTicks": 2142,
+        "step": 8138,
+        "errors": 0,
+        "phase": "drain",
+        "nodes": [
+          {
+            "id": "site1",
+            "name": "site1",
+            "type": "Network",
+            "specification": "ethernet",
+            "network": null,
+            "connected": true,
+            "queueLength": 1,
+            "counters": {}
+          },
+          {
+            "id": "site0",
+            "name": "site0",
+            "type": "Network",
+            "specification": "ethernet",
+            "network": null,
+            "connected": true,
+            "queueLength": 0,
+            "counters": {}
+          },
+          {
+            "id": "site2",
+            "name": "site2",
+            "type": "Network",
+            "specification": "ethernet",
+            "network": null,
+            "connected": true,
+            "queueLength": 0,
+            "counters": {}
+          },
+          {
+            "id": "broker0001",
+            "name": "broker0001",
+            "type": "Server",
+            "specification": "mqtt",
+            "network": "site1",
+            "connected": false,
+            "queueLength": 0,
+            "counters": {
+              "S": 95,
+              "R": 95,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 0
+            }
+          },
+          {
+            "id": "broker0000",
+            "name": "broker0000",
+            "type": "Server",
+            "specification": "mqtt",
+            "network": "site0",
+            "connected": false,
+            "queueLength": 0,
+            "counters": {
+              "S": 95,
+              "R": 95,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 0
+            }
+          },
+          {
+            "id": "broker0002",
+            "name": "broker0002",
+            "type": "Server",
+            "specification": "mqtt",
+            "network": "site2",
+            "connected": false,
+            "queueLength": 0,
+            "counters": {
+              "S": 95,
+              "R": 95,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 0
+            }
+          },
+          {
+            "id": "relay0relayfrom0to2",
+            "name": "relay0relayfrom0to2",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site0",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 9,
+              "R": 9,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "relay0listenfrom2",
+            "name": "relay0listenfrom2",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site0",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 8,
+              "R": 8,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 2
+            }
+          },
+          {
+            "id": "relay0listenfrom1",
+            "name": "relay0listenfrom1",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site0",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 8,
+              "R": 8,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 2
+            }
+          },
+          {
+            "id": "publisher0003",
+            "name": "publisher0003",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site0",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 4,
+              "R": 4,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "publisher0002",
+            "name": "publisher0002",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site2",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 4,
+              "R": 4,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "publisher0000",
+            "name": "publisher0000",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site0",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 6,
+              "R": 6,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "relay1listenfrom0",
+            "name": "relay1listenfrom0",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site1",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 10,
+              "R": 10,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 2
+            }
+          },
+          {
+            "id": "receiver0000",
+            "name": "receiver0000",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site0",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 22,
+              "R": 22,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 2
+            }
+          },
+          {
+            "id": "receiver0001",
+            "name": "receiver0001",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site1",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 22,
+              "R": 22,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 2
+            }
+          },
+          {
+            "id": "receiver0002",
+            "name": "receiver0002",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site2",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 22,
+              "R": 22,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 2
+            }
+          },
+          {
+            "id": "relay0listenfrom0",
+            "name": "relay0listenfrom0",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site0",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 10,
+              "R": 10,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 2
+            }
+          },
+          {
+            "id": "relay1relayfrom2to1",
+            "name": "relay1relayfrom2to1",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site1",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 7,
+              "R": 7,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "relay1relayfrom1to1",
+            "name": "relay1relayfrom1to1",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site1",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 7,
+              "R": 7,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "relay1relayfrom0to1",
+            "name": "relay1relayfrom0to1",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site1",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 9,
+              "R": 9,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "relay2listenfrom2",
+            "name": "relay2listenfrom2",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site2",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 8,
+              "R": 8,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 2
+            }
+          },
+          {
+            "id": "relay2listenfrom1",
+            "name": "relay2listenfrom1",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site2",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 8,
+              "R": 8,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 2
+            }
+          },
+          {
+            "id": "relay2relayfrom2to1",
+            "name": "relay2relayfrom2to1",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site2",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 7,
+              "R": 7,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "relay2relayfrom2to0",
+            "name": "relay2relayfrom2to0",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site2",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 7,
+              "R": 7,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "relay1relayfrom1to0",
+            "name": "relay1relayfrom1to0",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site1",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 7,
+              "R": 7,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "publisher0005",
+            "name": "publisher0005",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site2",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 4,
+              "R": 4,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "publisher0004",
+            "name": "publisher0004",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site1",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 4,
+              "R": 4,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "relay0relayfrom2to0",
+            "name": "relay0relayfrom2to0",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site0",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 7,
+              "R": 7,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "relay2listenfrom0",
+            "name": "relay2listenfrom0",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site2",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 10,
+              "R": 10,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 2
+            }
+          },
+          {
+            "id": "relay0relayfrom1to0",
+            "name": "relay0relayfrom1to0",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site0",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 7,
+              "R": 7,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "relay2relayfrom2to2",
+            "name": "relay2relayfrom2to2",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site2",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 7,
+              "R": 7,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "relay1relayfrom1to2",
+            "name": "relay1relayfrom1to2",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site1",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 7,
+              "R": 7,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "relay0relayfrom0to0",
+            "name": "relay0relayfrom0to0",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site0",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 9,
+              "R": 9,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "relay0relayfrom0to1",
+            "name": "relay0relayfrom0to1",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site0",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 9,
+              "R": 9,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "relay2relayfrom1to2",
+            "name": "relay2relayfrom1to2",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site2",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 7,
+              "R": 7,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "publisher0001",
+            "name": "publisher0001",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site1",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 5,
+              "R": 4,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "relay2relayfrom0to2",
+            "name": "relay2relayfrom0to2",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site2",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 9,
+              "R": 9,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "relay1listenfrom2",
+            "name": "relay1listenfrom2",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site1",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 8,
+              "R": 8,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 2
+            }
+          },
+          {
+            "id": "relay1listenfrom1",
+            "name": "relay1listenfrom1",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site1",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 8,
+              "R": 8,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 2
+            }
+          },
+          {
+            "id": "relay0",
+            "name": "relay0",
+            "type": "Application",
+            "specification": "mqtt-relay",
+            "network": "site0",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "IV": 0,
+              "EE": 0
+            }
+          },
+          {
+            "id": "relay1",
+            "name": "relay1",
+            "type": "Application",
+            "specification": "mqtt-relay",
+            "network": "site1",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "IV": 0,
+              "EE": 0
+            }
+          },
+          {
+            "id": "relay2",
+            "name": "relay2",
+            "type": "Application",
+            "specification": "mqtt-relay",
+            "network": "site2",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "IV": 0,
+              "EE": 0
+            }
+          }
+        ],
+        "links": [
+          {
+            "from": "site1",
+            "to": "site2",
+            "weight": null
+          },
+          {
+            "from": "site1",
+            "to": "site0",
+            "weight": null
+          },
+          {
+            "from": "site0",
+            "to": "site1",
+            "weight": null
+          },
+          {
+            "from": "site2",
+            "to": "site1",
+            "weight": null
+          }
+        ]
+      },
+      "verification": {
+        "verifiedFiles": 17,
+        "sha256FileSha256": "270f99b30e4b89cc9f6c2e807e2919fa25e0beff38c66eef5a8f3b9831797541",
+        "summary": {
+          "status": "completed",
+          "error": null,
+          "measurementSeconds": 0.2,
+          "tickMilliseconds": 0.1,
+          "scheduledPublishes": 20,
+          "apiAttempts": 20,
+          "sendRejected": 0,
+          "backpressureUnsent": 0,
+          "sourceCompleted": 20,
+          "sourceCompletedBeforeDrain": 19,
+          "sourceCompletedDuringDrain": 1,
+          "sourceCompletedRps": 100,
+          "expectedDeliveries": 60,
+          "uniqueDeliveries": 60,
+          "uniqueBeforeDrain": 57,
+          "uniqueDuringDrain": 3,
+          "fullyDeliveredPublications": 20,
+          "deliveryLoss": 0,
+          "uniqueGoodput": 300,
+          "duplicateDeliveries": 0,
+          "unexpectedDeliveries": 0,
+          "unknownDeliveries": 0,
+          "forwardAttempts": 40,
+          "forwardAccepted": 40,
+          "forwardRejected": 0,
+          "forwardTopicPayloadBytes": 1440,
+          "suppressedDuplicates": 0,
+          "queueDrops": 0,
+          "hopLimitDrops": 0,
+          "cacheEntries": 0,
+          "publishP50Ms": 0.6000000000000001,
+          "publishP95Ms": 0.6000000000000001,
+          "publishP99Ms": 0.6000000000000001,
+          "receiverP50Ms": 1.9000000000000001,
+          "receiverP95Ms": 2,
+          "receiverP99Ms": 2,
+          "sources": [
+            {
+              "publisher": 0,
+              "site": 0,
+              "broker": 0,
+              "metrics": {
+                "attempted": 4,
+                "admitted": 4,
+                "completed": 4,
+                "expectedDeliveries": 0,
+                "delivered": 0,
+                "rateRejected": 0,
+                "publishFailed": 0,
+                "deliveryDropped": 0,
+                "rps": 20,
+                "latencyP50Ms": 0.6000000000000001,
+                "latencyP95Ms": 0.6000000000000001,
+                "latencyP99Ms": 0.6000000000000001,
+                "latencyHistogramTicks": {
+                  "6": 4
+                }
+              }
+            },
+            {
+              "publisher": 1,
+              "site": 1,
+              "broker": 1,
+              "metrics": {
+                "attempted": 4,
+                "admitted": 4,
+                "completed": 4,
+                "expectedDeliveries": 0,
+                "delivered": 0,
+                "rateRejected": 0,
+                "publishFailed": 0,
+                "deliveryDropped": 0,
+                "rps": 20,
+                "latencyP50Ms": 0.6000000000000001,
+                "latencyP95Ms": 0.6000000000000001,
+                "latencyP99Ms": 0.6000000000000001,
+                "latencyHistogramTicks": {
+                  "6": 4
+                }
+              }
+            },
+            {
+              "publisher": 2,
+              "site": 2,
+              "broker": 2,
+              "metrics": {
+                "attempted": 3,
+                "admitted": 3,
+                "completed": 3,
+                "expectedDeliveries": 0,
+                "delivered": 0,
+                "rateRejected": 0,
+                "publishFailed": 0,
+                "deliveryDropped": 0,
+                "rps": 15,
+                "latencyP50Ms": 0.6000000000000001,
+                "latencyP95Ms": 0.6000000000000001,
+                "latencyP99Ms": 0.6000000000000001,
+                "latencyHistogramTicks": {
+                  "6": 3
+                }
+              }
+            },
+            {
+              "publisher": 3,
+              "site": 0,
+              "broker": 0,
+              "metrics": {
+                "attempted": 3,
+                "admitted": 3,
+                "completed": 3,
+                "expectedDeliveries": 0,
+                "delivered": 0,
+                "rateRejected": 0,
+                "publishFailed": 0,
+                "deliveryDropped": 0,
+                "rps": 15,
+                "latencyP50Ms": 0.6000000000000001,
+                "latencyP95Ms": 0.6000000000000001,
+                "latencyP99Ms": 0.6000000000000001,
+                "latencyHistogramTicks": {
+                  "6": 3
+                }
+              }
+            },
+            {
+              "publisher": 4,
+              "site": 1,
+              "broker": 1,
+              "metrics": {
+                "attempted": 3,
+                "admitted": 3,
+                "completed": 3,
+                "expectedDeliveries": 0,
+                "delivered": 0,
+                "rateRejected": 0,
+                "publishFailed": 0,
+                "deliveryDropped": 0,
+                "rps": 15,
+                "latencyP50Ms": 0.6000000000000001,
+                "latencyP95Ms": 0.6000000000000001,
+                "latencyP99Ms": 0.6000000000000001,
+                "latencyHistogramTicks": {
+                  "6": 3
+                }
+              }
+            },
+            {
+              "publisher": 5,
+              "site": 2,
+              "broker": 2,
+              "metrics": {
+                "attempted": 3,
+                "admitted": 3,
+                "completed": 3,
+                "expectedDeliveries": 0,
+                "delivered": 0,
+                "rateRejected": 0,
+                "publishFailed": 0,
+                "deliveryDropped": 0,
+                "rps": 15,
+                "latencyP50Ms": 0.6000000000000001,
+                "latencyP95Ms": 0.6000000000000001,
+                "latencyP99Ms": 0.6000000000000001,
+                "latencyHistogramTicks": {
+                  "6": 3
+                }
+              }
+            }
+          ],
+          "receivers": [
+            {
+              "site": 0,
+              "uniqueDeliveries": 20,
+              "duplicates": 0,
+              "latencyHistogramTicks": {
+                "12": 7,
+                "19": 7,
+                "20": 6
+              }
+            },
+            {
+              "site": 1,
+              "uniqueDeliveries": 20,
+              "duplicates": 0,
+              "latencyHistogramTicks": {
+                "12": 7,
+                "19": 13
+              }
+            },
+            {
+              "site": 2,
+              "uniqueDeliveries": 20,
+              "duplicates": 0,
+              "latencyHistogramTicks": {
+                "12": 6,
+                "19": 7,
+                "20": 7
+              }
+            }
+          ],
+          "publishHistogramTicks": {
+            "6": 20
+          },
+          "receiverHistogramTicks": {
+            "12": 20,
+            "19": 27,
+            "20": 13
+          },
+          "phases": [
+            {
+              "name": "construct",
+              "startTick": 0,
+              "endTick": 0,
+              "status": "completed"
+            },
+            {
+              "name": "connect",
+              "startTick": 0,
+              "endTick": 11,
+              "status": "completed"
+            },
+            {
+              "name": "subscribe",
+              "startTick": 11,
+              "endTick": 18,
+              "status": "completed"
+            },
+            {
+              "name": "warmup",
+              "startTick": 18,
+              "endTick": 118,
+              "status": "completed"
+            },
+            {
+              "name": "warmupDrain",
+              "startTick": 118,
+              "endTick": 141,
+              "status": "completed"
+            },
+            {
+              "name": "measure",
+              "startTick": 141,
+              "endTick": 2141,
+              "status": "completed"
+            },
+            {
+              "name": "drain",
+              "startTick": 2141,
+              "endTick": 2163,
+              "status": "completed"
+            }
+          ]
+        },
+        "manifest": {
+          "schemaVersion": 1,
+          "experiment": "static-federation-v1",
+          "resolvedOptions": {
+            "schemaVersion": 1,
+            "mode": "relay",
+            "brokers": 3,
+            "topology": "line",
+            "links": null,
+            "publishers": 6,
+            "receiverSites": null,
+            "payloadBytes": 16,
+            "qos": 1,
+            "offeredRps": 100,
+            "seed": 42,
+            "warmupSeconds": 0.01,
+            "measurementSeconds": 0.2,
+            "drainTimeoutSeconds": 1,
+            "tickPeriod": "00:00:00.0001000",
+            "queueCapacity": 1024,
+            "cacheCapacity": 100000,
+            "hopLimit": null,
+            "ideal": true,
+            "brokerType": "Mosquitto",
+            "brokerProfilePath": null,
+            "network": {
+              "capacityBytesPerSecond": 100000000,
+              "throughputWindowTicks": 100,
+              "queueCapacity": 100000,
+              "transferTicks": 1
+            }
+          },
+          "configurationSha256": "e4f906d298a8193d853eddbcffd08ab5bdc2289011ab0293be0c1546ef918ff9",
+          "profileSha256": null,
+          "profileProvenance": null,
+          "profileLookup": [
+            {
+              "broker": 0,
+              "publishers": 2,
+              "payloadBytes": 16,
+              "qos": 1
+            },
+            {
+              "broker": 1,
+              "publishers": 2,
+              "payloadBytes": 16,
+              "qos": 1
+            },
+            {
+              "broker": 2,
+              "publishers": 2,
+              "payloadBytes": 16,
+              "qos": 1
+            }
+          ],
+          "physicalEdges": [
+            {
+              "a": 0,
+              "b": 1
+            },
+            {
+              "a": 1,
+              "b": 2
+            }
+          ],
+          "networkEvidence": null,
+          "topologyVerified": true,
+          "relayImplementation": "MqttRelay full mesh, source-only export, imported messages delivered locally",
+          "assumptions": [
+            "Static topology; no discovery, election, beacons or failover",
+            "Separate ingress, routing and delivered topics; no No Local",
+            "Profile lookup uses original publishers; forwarding traffic and fanout are outside calibration conditions",
+            "TopicPayloadBytes excludes MQTT/network headers; actual model transports complete serialized packets",
+            "Warmup is drained before measurement; all model results are exploratory, not native federation fidelity"
+          ],
+          "runtime": {
+            "framework": ".NET 8.0.21",
+            "os": "Simply Linux 11.1 (Giuseppe)",
+            "architecture": "X64",
+            "mqttYCommit": null,
+            "sourceStatus": null,
+            "binaries": {
+              "EntityFX.MqttY.Contracts.Mqtt.dll": "290ff4462253754fec22f7ca3e62cc8ce46c33fdc68c475d39844cfe554cc407",
+              "EntityFX.MqttY.Contracts.Scenarios.dll": "d2cf10a2713f731f9cf84d14c1edb247a7b0c9de6fcfa7e69222667cc84d40f0",
+              "EntityFX.MqttY.Contracts.dll": "670df7ef5ef8966276ee2f89e47a07d72abc820b5a438ae844aa1cc1712a1777",
+              "EntityFX.MqttY.Engines.dll": "ad5185e413d976f594e12cbee162c4d5f1b6b13ba46cff0b47fe7e9bf6f23e77",
+              "EntityFX.MqttY.Federation.App.dll": "2c97d3b8b1437f6241881d33fc26c1e3a521326e6e3c9ef063dccfb9166145d8",
+              "EntityFX.MqttY.LoadBalancing.App.dll": "15cad75b3a7cbee8f3ef9456f812aade2475459b8c6f30584d5084eba179a402",
+              "EntityFX.MqttY.Plugin.Mqtt.dll": "9cf43a0600334971769650a119819c78195035aea122d9d5aec3f627577fdf35",
+              "EntityFX.MqttY.Web.App.dll": "8a6f672f14efa24f66e5d49c268e73eb61ba53a276c7472dc98ddfc80ab7a063",
+              "EntityFX.MqttY.dll": "f7c240cc76ab50ead4501a2cad9269e4c408bafc6226874fd6ccc23353979b62",
+              "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "67fa4325000db017dc0c35829b416f024f042d24efb868bcf17a895ee6500a93",
+              "Microsoft.Extensions.DependencyInjection.dll": "158761ce778e799949f3a3060c461b1055bb35f1f5a65eff0e42397849f09ecd",
+              "Microsoft.Extensions.Logging.Abstractions.dll": "45c22524218541717e4a0ade36847c1cda4921f5945b4975a1c78ddfe023d0b1",
+              "Microsoft.Extensions.Logging.dll": "b2cfba2e05ee89a91e9bc9cf112468a5f4fa05d1a77ea81c131ea656f3d133c2",
+              "Microsoft.Extensions.Options.dll": "5e01894cbc0661bacb8ca8f485a40d5ee4e02f28fef58007668a0276431b4693",
+              "Microsoft.OpenApi.dll": "aa0968baccfff6fe3b3069a22071a795da6090da587effccef58407a148d7356",
+              "Swashbuckle.AspNetCore.Swagger.dll": "23ce5113396f3516f389ccbc6eeb89d976df21cb9d79c31cc99d2c5003952206",
+              "Swashbuckle.AspNetCore.SwaggerGen.dll": "1cbec95c664c096d5c1c5ed1e6ad1fd54f6fbaf4ffb147ab9727861826a16efc",
+              "Swashbuckle.AspNetCore.SwaggerUI.dll": "d4f15e91cece13cfe5518f969cbb08619997ba87e998776bb67edfac7059ed0e"
+            }
+          }
+        }
+      },
+      "httpSummary": {
+        "status": "completed",
+        "error": null,
+        "measurementSeconds": 0.2,
+        "tickMilliseconds": 0.1,
+        "scheduledPublishes": 20,
+        "apiAttempts": 20,
+        "sendRejected": 0,
+        "backpressureUnsent": 0,
+        "sourceCompleted": 20,
+        "sourceCompletedBeforeDrain": 19,
+        "sourceCompletedDuringDrain": 1,
+        "sourceCompletedRps": 100,
+        "expectedDeliveries": 60,
+        "uniqueDeliveries": 60,
+        "uniqueBeforeDrain": 57,
+        "uniqueDuringDrain": 3,
+        "fullyDeliveredPublications": 20,
+        "deliveryLoss": 0,
+        "uniqueGoodput": 300,
+        "duplicateDeliveries": 0,
+        "unexpectedDeliveries": 0,
+        "unknownDeliveries": 0,
+        "forwardAttempts": 40,
+        "forwardAccepted": 40,
+        "forwardRejected": 0,
+        "forwardTopicPayloadBytes": 1440,
+        "suppressedDuplicates": 0,
+        "queueDrops": 0,
+        "hopLimitDrops": 0,
+        "cacheEntries": 0,
+        "publishP50Ms": 0.6000000000000001,
+        "publishP95Ms": 0.6000000000000001,
+        "publishP99Ms": 0.6000000000000001,
+        "receiverP50Ms": 1.9000000000000001,
+        "receiverP95Ms": 2,
+        "receiverP99Ms": 2,
+        "sources": [
+          {
+            "publisher": 0,
+            "site": 0,
+            "broker": 0,
+            "metrics": {
+              "attempted": 4,
+              "admitted": 4,
+              "completed": 4,
+              "expectedDeliveries": 0,
+              "delivered": 0,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 20,
+              "latencyP50Ms": 0.6000000000000001,
+              "latencyP95Ms": 0.6000000000000001,
+              "latencyP99Ms": 0.6000000000000001,
+              "latencyHistogramTicks": {
+                "6": 4
+              }
+            }
+          },
+          {
+            "publisher": 1,
+            "site": 1,
+            "broker": 1,
+            "metrics": {
+              "attempted": 4,
+              "admitted": 4,
+              "completed": 4,
+              "expectedDeliveries": 0,
+              "delivered": 0,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 20,
+              "latencyP50Ms": 0.6000000000000001,
+              "latencyP95Ms": 0.6000000000000001,
+              "latencyP99Ms": 0.6000000000000001,
+              "latencyHistogramTicks": {
+                "6": 4
+              }
+            }
+          },
+          {
+            "publisher": 2,
+            "site": 2,
+            "broker": 2,
+            "metrics": {
+              "attempted": 3,
+              "admitted": 3,
+              "completed": 3,
+              "expectedDeliveries": 0,
+              "delivered": 0,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 15,
+              "latencyP50Ms": 0.6000000000000001,
+              "latencyP95Ms": 0.6000000000000001,
+              "latencyP99Ms": 0.6000000000000001,
+              "latencyHistogramTicks": {
+                "6": 3
+              }
+            }
+          },
+          {
+            "publisher": 3,
+            "site": 0,
+            "broker": 0,
+            "metrics": {
+              "attempted": 3,
+              "admitted": 3,
+              "completed": 3,
+              "expectedDeliveries": 0,
+              "delivered": 0,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 15,
+              "latencyP50Ms": 0.6000000000000001,
+              "latencyP95Ms": 0.6000000000000001,
+              "latencyP99Ms": 0.6000000000000001,
+              "latencyHistogramTicks": {
+                "6": 3
+              }
+            }
+          },
+          {
+            "publisher": 4,
+            "site": 1,
+            "broker": 1,
+            "metrics": {
+              "attempted": 3,
+              "admitted": 3,
+              "completed": 3,
+              "expectedDeliveries": 0,
+              "delivered": 0,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 15,
+              "latencyP50Ms": 0.6000000000000001,
+              "latencyP95Ms": 0.6000000000000001,
+              "latencyP99Ms": 0.6000000000000001,
+              "latencyHistogramTicks": {
+                "6": 3
+              }
+            }
+          },
+          {
+            "publisher": 5,
+            "site": 2,
+            "broker": 2,
+            "metrics": {
+              "attempted": 3,
+              "admitted": 3,
+              "completed": 3,
+              "expectedDeliveries": 0,
+              "delivered": 0,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 15,
+              "latencyP50Ms": 0.6000000000000001,
+              "latencyP95Ms": 0.6000000000000001,
+              "latencyP99Ms": 0.6000000000000001,
+              "latencyHistogramTicks": {
+                "6": 3
+              }
+            }
+          }
+        ],
+        "receivers": [
+          {
+            "site": 0,
+            "uniqueDeliveries": 20,
+            "duplicates": 0,
+            "latencyHistogramTicks": {
+              "12": 7,
+              "19": 7,
+              "20": 6
+            }
+          },
+          {
+            "site": 1,
+            "uniqueDeliveries": 20,
+            "duplicates": 0,
+            "latencyHistogramTicks": {
+              "12": 7,
+              "19": 13
+            }
+          },
+          {
+            "site": 2,
+            "uniqueDeliveries": 20,
+            "duplicates": 0,
+            "latencyHistogramTicks": {
+              "12": 6,
+              "19": 7,
+              "20": 7
+            }
+          }
+        ],
+        "publishHistogramTicks": {
+          "6": 20
+        },
+        "receiverHistogramTicks": {
+          "12": 20,
+          "19": 27,
+          "20": 13
+        },
+        "phases": [
+          {
+            "name": "construct",
+            "startTick": 0,
+            "endTick": 0,
+            "status": "completed"
+          },
+          {
+            "name": "connect",
+            "startTick": 0,
+            "endTick": 11,
+            "status": "completed"
+          },
+          {
+            "name": "subscribe",
+            "startTick": 11,
+            "endTick": 18,
+            "status": "completed"
+          },
+          {
+            "name": "warmup",
+            "startTick": 18,
+            "endTick": 118,
+            "status": "completed"
+          },
+          {
+            "name": "warmupDrain",
+            "startTick": 118,
+            "endTick": 141,
+            "status": "completed"
+          },
+          {
+            "name": "measure",
+            "startTick": 141,
+            "endTick": 2141,
+            "status": "completed"
+          },
+          {
+            "name": "drain",
+            "startTick": 2141,
+            "endTick": 2163,
+            "status": "completed"
+          }
+        ]
+      }
+    },
+    {
+      "engine": "federation",
+      "request": {
+        "engine": "federation",
+        "spec": {
+          "kind": "line",
+          "chainLength": 3,
+          "brokerPresetId": "ideal-demo",
+          "clientsPerBroker": 2,
+          "qos": 1,
+          "offeredRps": 100,
+          "warmupTicks": 100,
+          "measurementTicks": 2000,
+          "drainTimeoutTicks": 10000,
+          "payloadBytes": 16,
+          "seed": 42
+        },
+        "runSettings": {
+          "executionMode": "OutOfProcess",
+          "timeLimit": "00:01:00"
+        }
+      },
+      "submittedEpoch": 1792882542.5861073,
+      "observations": [
+        {
+          "id": "58f2e48c46694f26b697d2ba1be8683b",
+          "topologyId": null,
+          "engine": "federation",
+          "state": "Running",
+          "totalTicks": 0,
+          "step": 0,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:42.5886565+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/58f2e48c46694f26b697d2ba1be8683b",
+          "error": null,
+          "processId": 125826,
+          "processWorkingSetBytes": 552960,
+          "processCpuSeconds": 0,
+          "lastObservedAt": "2026-10-24T22:55:42.5920716+00:00",
+          "phase": "construct"
+        },
+        {
+          "id": "58f2e48c46694f26b697d2ba1be8683b",
+          "topologyId": null,
+          "engine": "federation",
+          "state": "Running",
+          "totalTicks": 0,
+          "step": 0,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:42.5886565+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/58f2e48c46694f26b697d2ba1be8683b",
+          "error": null,
+          "processId": 125826,
+          "processWorkingSetBytes": 57348096,
+          "processCpuSeconds": 0.25,
+          "lastObservedAt": "2026-10-24T22:55:42.8434291+00:00",
+          "phase": "construct"
+        },
+        {
+          "id": "58f2e48c46694f26b697d2ba1be8683b",
+          "topologyId": null,
+          "engine": "federation",
+          "state": "Running",
+          "totalTicks": 10,
+          "step": 153,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:42.5886565+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/58f2e48c46694f26b697d2ba1be8683b",
+          "error": null,
+          "processId": 125826,
+          "processWorkingSetBytes": 80265216,
+          "processCpuSeconds": 0.5,
+          "lastObservedAt": "2026-10-24T22:55:43.0946579+00:00",
+          "phase": "subscribe"
+        },
+        {
+          "id": "58f2e48c46694f26b697d2ba1be8683b",
+          "topologyId": null,
+          "engine": "federation",
+          "state": "Running",
+          "totalTicks": 149,
+          "step": 687,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:42.5886565+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/58f2e48c46694f26b697d2ba1be8683b",
+          "error": null,
+          "processId": 125826,
+          "processWorkingSetBytes": 131567616,
+          "processCpuSeconds": 0.75,
+          "lastObservedAt": "2026-10-24T22:55:43.3472635+00:00",
+          "phase": "measure"
+        },
+        {
+          "id": "58f2e48c46694f26b697d2ba1be8683b",
+          "topologyId": null,
+          "engine": "federation",
+          "state": "Running",
+          "totalTicks": 149,
+          "step": 687,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:42.5886565+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/58f2e48c46694f26b697d2ba1be8683b",
+          "error": null,
+          "processId": 125826,
+          "processWorkingSetBytes": 198115328,
+          "processCpuSeconds": 1,
+          "lastObservedAt": "2026-10-24T22:55:43.5987103+00:00",
+          "phase": "measure"
+        },
+        {
+          "id": "58f2e48c46694f26b697d2ba1be8683b",
+          "topologyId": null,
+          "engine": "federation",
+          "state": "Running",
+          "totalTicks": 149,
+          "step": 687,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:42.5886565+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/58f2e48c46694f26b697d2ba1be8683b",
+          "error": null,
+          "processId": 125826,
+          "processWorkingSetBytes": 198115328,
+          "processCpuSeconds": 1,
+          "lastObservedAt": "2026-10-24T22:55:43.5987103+00:00",
+          "phase": "measure"
+        },
+        {
+          "id": "58f2e48c46694f26b697d2ba1be8683b",
+          "topologyId": null,
+          "engine": "federation",
+          "state": "Running",
+          "totalTicks": 149,
+          "step": 687,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:42.5886565+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/58f2e48c46694f26b697d2ba1be8683b",
+          "error": null,
+          "processId": 125826,
+          "processWorkingSetBytes": 168497152,
+          "processCpuSeconds": 1.28,
+          "lastObservedAt": "2026-10-24T22:55:43.8512999+00:00",
+          "phase": "measure"
+        },
+        {
+          "id": "58f2e48c46694f26b697d2ba1be8683b",
+          "topologyId": null,
+          "engine": "federation",
+          "state": "Running",
+          "totalTicks": 149,
+          "step": 687,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:42.5886565+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/58f2e48c46694f26b697d2ba1be8683b",
+          "error": null,
+          "processId": 125826,
+          "processWorkingSetBytes": 161267712,
+          "processCpuSeconds": 1.66,
+          "lastObservedAt": "2026-10-24T22:55:44.1029205+00:00",
+          "phase": "measure"
+        },
+        {
+          "id": "58f2e48c46694f26b697d2ba1be8683b",
+          "topologyId": null,
+          "engine": "federation",
+          "state": "Running",
+          "totalTicks": 1585,
+          "step": 6003,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:42.5886565+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/58f2e48c46694f26b697d2ba1be8683b",
+          "error": null,
+          "processId": 125826,
+          "processWorkingSetBytes": 144687104,
+          "processCpuSeconds": 1.95,
+          "lastObservedAt": "2026-10-24T22:55:44.3553823+00:00",
+          "phase": "measure"
+        },
+        {
+          "id": "58f2e48c46694f26b697d2ba1be8683b",
+          "topologyId": null,
+          "engine": "federation",
+          "state": "Running",
+          "totalTicks": 2149,
+          "step": 8057,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:42.5886565+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/58f2e48c46694f26b697d2ba1be8683b",
+          "error": null,
+          "processId": 125826,
+          "processWorkingSetBytes": 151666688,
+          "processCpuSeconds": 2.2,
+          "lastObservedAt": "2026-10-24T22:55:44.607426+00:00",
+          "phase": "drain"
+        },
+        {
+          "id": "58f2e48c46694f26b697d2ba1be8683b",
+          "topologyId": null,
+          "engine": "federation",
+          "state": "Running",
+          "totalTicks": 2149,
+          "step": 8057,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:42.5886565+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/58f2e48c46694f26b697d2ba1be8683b",
+          "error": null,
+          "processId": 125826,
+          "processWorkingSetBytes": 151666688,
+          "processCpuSeconds": 2.2,
+          "lastObservedAt": "2026-10-24T22:55:44.607426+00:00",
+          "phase": "drain"
+        },
+        {
+          "id": "58f2e48c46694f26b697d2ba1be8683b",
+          "topologyId": null,
+          "engine": "federation",
+          "state": "Completed",
+          "totalTicks": 2172,
+          "step": 0,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:42.5886565+00:00",
+          "finishedAt": "2026-10-24T22:55:44.8606422+00:00",
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/58f2e48c46694f26b697d2ba1be8683b",
+          "error": null,
+          "processId": null,
+          "processWorkingSetBytes": 151666688,
+          "processCpuSeconds": 2.2,
+          "lastObservedAt": "2026-10-24T22:55:44.607426+00:00",
+          "phase": "drain"
+        }
+      ],
+      "id": "58f2e48c46694f26b697d2ba1be8683b",
+      "status": {
+        "id": "58f2e48c46694f26b697d2ba1be8683b",
+        "topologyId": null,
+        "engine": "federation",
+        "state": "Completed",
+        "totalTicks": 2172,
+        "step": 0,
+        "errors": 0,
+        "startedAt": "2026-10-24T22:55:42.5886565+00:00",
+        "finishedAt": "2026-10-24T22:55:44.8606422+00:00",
+        "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/58f2e48c46694f26b697d2ba1be8683b",
+        "error": null,
+        "processId": null,
+        "processWorkingSetBytes": 151666688,
+        "processCpuSeconds": 2.2,
+        "lastObservedAt": "2026-10-24T22:55:44.607426+00:00",
+        "phase": "drain"
+      },
+      "monitor": {
+        "simulationId": "58f2e48c46694f26b697d2ba1be8683b",
+        "state": "Completed",
+        "totalTicks": 2149,
+        "step": 8057,
+        "errors": 0,
+        "phase": "drain",
+        "nodes": [
+          {
+            "id": "site1",
+            "name": "site1",
+            "type": "Network",
+            "specification": "ethernet",
+            "network": null,
+            "connected": true,
+            "queueLength": 1,
+            "counters": {}
+          },
+          {
+            "id": "site0",
+            "name": "site0",
+            "type": "Network",
+            "specification": "ethernet",
+            "network": null,
+            "connected": true,
+            "queueLength": 0,
+            "counters": {}
+          },
+          {
+            "id": "site2",
+            "name": "site2",
+            "type": "Network",
+            "specification": "ethernet",
+            "network": null,
+            "connected": true,
+            "queueLength": 0,
+            "counters": {}
+          },
+          {
+            "id": "broker0001",
+            "name": "broker0001",
+            "type": "Server",
+            "specification": "mqtt",
+            "network": "site1",
+            "connected": false,
+            "queueLength": 0,
+            "counters": {
+              "S": 90,
+              "R": 90,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 0
+            }
+          },
+          {
+            "id": "broker0000",
+            "name": "broker0000",
+            "type": "Server",
+            "specification": "mqtt",
+            "network": "site0",
+            "connected": false,
+            "queueLength": 0,
+            "counters": {
+              "S": 89,
+              "R": 89,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 0
+            }
+          },
+          {
+            "id": "broker0002",
+            "name": "broker0002",
+            "type": "Server",
+            "specification": "mqtt",
+            "network": "site2",
+            "connected": false,
+            "queueLength": 0,
+            "counters": {
+              "S": 89,
+              "R": 89,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 0
+            }
+          },
+          {
+            "id": "publisher0003",
+            "name": "publisher0003",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site0",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 4,
+              "R": 4,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "publisher0002",
+            "name": "publisher0002",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site2",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 4,
+              "R": 4,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "publisher0000",
+            "name": "publisher0000",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site0",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 6,
+              "R": 6,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "receiver0000",
+            "name": "receiver0000",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site0",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 22,
+              "R": 22,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 2
+            }
+          },
+          {
+            "id": "receiver0001",
+            "name": "receiver0001",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site1",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 22,
+              "R": 22,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 2
+            }
+          },
+          {
+            "id": "receiver0002",
+            "name": "receiver0002",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site2",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 22,
+              "R": 22,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 2
+            }
+          },
+          {
+            "id": "fed2to2",
+            "name": "fed2to2",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site2",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 21,
+              "R": 21,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "fed1to2",
+            "name": "fed1to2",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site1",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 15,
+              "R": 15,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "fed1to0",
+            "name": "fed1to0",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site1",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 13,
+              "R": 13,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "fed0to0",
+            "name": "fed0to0",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site0",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 21,
+              "R": 21,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "fed2to1",
+            "name": "fed2to1",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site2",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 7,
+              "R": 7,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "fed1to1",
+            "name": "fed1to1",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site1",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 21,
+              "R": 21,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "fed2in",
+            "name": "fed2in",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site2",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 23,
+              "R": 23,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 3
+            }
+          },
+          {
+            "id": "publisher0005",
+            "name": "publisher0005",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site2",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 4,
+              "R": 4,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "publisher0004",
+            "name": "publisher0004",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site1",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 4,
+              "R": 4,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "fed1in",
+            "name": "fed1in",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site1",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 23,
+              "R": 23,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 3
+            }
+          },
+          {
+            "id": "fed0to1",
+            "name": "fed0to1",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site0",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 9,
+              "R": 9,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "fed0in",
+            "name": "fed0in",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site0",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 23,
+              "R": 23,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 3
+            }
+          },
+          {
+            "id": "publisher0001",
+            "name": "publisher0001",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "site1",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 5,
+              "R": 4,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          }
+        ],
+        "links": [
+          {
+            "from": "site1",
+            "to": "site2",
+            "weight": null
+          },
+          {
+            "from": "site1",
+            "to": "site0",
+            "weight": null
+          },
+          {
+            "from": "site0",
+            "to": "site1",
+            "weight": null
+          },
+          {
+            "from": "site2",
+            "to": "site1",
+            "weight": null
+          }
+        ]
+      },
+      "verification": {
+        "verifiedFiles": 17,
+        "sha256FileSha256": "5959bffeb72d8dba3dbff29c913f9702b920f766f2cf2919cd7c1fb2dd4d67a4",
+        "summary": {
+          "status": "completed",
+          "error": null,
+          "measurementSeconds": 0.2,
+          "tickMilliseconds": 0.1,
+          "scheduledPublishes": 20,
+          "apiAttempts": 20,
+          "sendRejected": 0,
+          "backpressureUnsent": 0,
+          "sourceCompleted": 20,
+          "sourceCompletedBeforeDrain": 19,
+          "sourceCompletedDuringDrain": 1,
+          "sourceCompletedRps": 100,
+          "expectedDeliveries": 60,
+          "uniqueDeliveries": 60,
+          "uniqueBeforeDrain": 57,
+          "uniqueDuringDrain": 3,
+          "fullyDeliveredPublications": 20,
+          "deliveryLoss": 0,
+          "uniqueGoodput": 300,
+          "duplicateDeliveries": 0,
+          "unexpectedDeliveries": 0,
+          "unknownDeliveries": 0,
+          "forwardAttempts": 40,
+          "forwardAccepted": 40,
+          "forwardRejected": 0,
+          "forwardTopicPayloadBytes": 1680,
+          "suppressedDuplicates": 0,
+          "queueDrops": 0,
+          "hopLimitDrops": 0,
+          "cacheEntries": 63,
+          "publishP50Ms": 0.6000000000000001,
+          "publishP95Ms": 0.6000000000000001,
+          "publishP99Ms": 0.6000000000000001,
+          "receiverP50Ms": 2.1,
+          "receiverP95Ms": 2.9000000000000004,
+          "receiverP99Ms": 2.9000000000000004,
+          "sources": [
+            {
+              "publisher": 0,
+              "site": 0,
+              "broker": 0,
+              "metrics": {
+                "attempted": 4,
+                "admitted": 4,
+                "completed": 4,
+                "expectedDeliveries": 0,
+                "delivered": 0,
+                "rateRejected": 0,
+                "publishFailed": 0,
+                "deliveryDropped": 0,
+                "rps": 20,
+                "latencyP50Ms": 0.6000000000000001,
+                "latencyP95Ms": 0.6000000000000001,
+                "latencyP99Ms": 0.6000000000000001,
+                "latencyHistogramTicks": {
+                  "6": 4
+                }
+              }
+            },
+            {
+              "publisher": 1,
+              "site": 1,
+              "broker": 1,
+              "metrics": {
+                "attempted": 4,
+                "admitted": 4,
+                "completed": 4,
+                "expectedDeliveries": 0,
+                "delivered": 0,
+                "rateRejected": 0,
+                "publishFailed": 0,
+                "deliveryDropped": 0,
+                "rps": 20,
+                "latencyP50Ms": 0.6000000000000001,
+                "latencyP95Ms": 0.6000000000000001,
+                "latencyP99Ms": 0.6000000000000001,
+                "latencyHistogramTicks": {
+                  "6": 4
+                }
+              }
+            },
+            {
+              "publisher": 2,
+              "site": 2,
+              "broker": 2,
+              "metrics": {
+                "attempted": 3,
+                "admitted": 3,
+                "completed": 3,
+                "expectedDeliveries": 0,
+                "delivered": 0,
+                "rateRejected": 0,
+                "publishFailed": 0,
+                "deliveryDropped": 0,
+                "rps": 15,
+                "latencyP50Ms": 0.6000000000000001,
+                "latencyP95Ms": 0.6000000000000001,
+                "latencyP99Ms": 0.6000000000000001,
+                "latencyHistogramTicks": {
+                  "6": 3
+                }
+              }
+            },
+            {
+              "publisher": 3,
+              "site": 0,
+              "broker": 0,
+              "metrics": {
+                "attempted": 3,
+                "admitted": 3,
+                "completed": 3,
+                "expectedDeliveries": 0,
+                "delivered": 0,
+                "rateRejected": 0,
+                "publishFailed": 0,
+                "deliveryDropped": 0,
+                "rps": 15,
+                "latencyP50Ms": 0.6000000000000001,
+                "latencyP95Ms": 0.6000000000000001,
+                "latencyP99Ms": 0.6000000000000001,
+                "latencyHistogramTicks": {
+                  "6": 3
+                }
+              }
+            },
+            {
+              "publisher": 4,
+              "site": 1,
+              "broker": 1,
+              "metrics": {
+                "attempted": 3,
+                "admitted": 3,
+                "completed": 3,
+                "expectedDeliveries": 0,
+                "delivered": 0,
+                "rateRejected": 0,
+                "publishFailed": 0,
+                "deliveryDropped": 0,
+                "rps": 15,
+                "latencyP50Ms": 0.6000000000000001,
+                "latencyP95Ms": 0.6000000000000001,
+                "latencyP99Ms": 0.6000000000000001,
+                "latencyHistogramTicks": {
+                  "6": 3
+                }
+              }
+            },
+            {
+              "publisher": 5,
+              "site": 2,
+              "broker": 2,
+              "metrics": {
+                "attempted": 3,
+                "admitted": 3,
+                "completed": 3,
+                "expectedDeliveries": 0,
+                "delivered": 0,
+                "rateRejected": 0,
+                "publishFailed": 0,
+                "deliveryDropped": 0,
+                "rps": 15,
+                "latencyP50Ms": 0.6000000000000001,
+                "latencyP95Ms": 0.6000000000000001,
+                "latencyP99Ms": 0.6000000000000001,
+                "latencyHistogramTicks": {
+                  "6": 3
+                }
+              }
+            }
+          ],
+          "receivers": [
+            {
+              "site": 0,
+              "uniqueDeliveries": 20,
+              "duplicates": 0,
+              "latencyHistogramTicks": {
+                "13": 7,
+                "21": 7,
+                "29": 6
+              }
+            },
+            {
+              "site": 1,
+              "uniqueDeliveries": 20,
+              "duplicates": 0,
+              "latencyHistogramTicks": {
+                "13": 7,
+                "21": 13
+              }
+            },
+            {
+              "site": 2,
+              "uniqueDeliveries": 20,
+              "duplicates": 0,
+              "latencyHistogramTicks": {
+                "13": 6,
+                "21": 7,
+                "29": 7
+              }
+            }
+          ],
+          "publishHistogramTicks": {
+            "6": 20
+          },
+          "receiverHistogramTicks": {
+            "13": 20,
+            "21": 27,
+            "29": 13
+          },
+          "phases": [
+            {
+              "name": "construct",
+              "startTick": 0,
+              "endTick": 0,
+              "status": "completed"
+            },
+            {
+              "name": "connect",
+              "startTick": 0,
+              "endTick": 9,
+              "status": "completed"
+            },
+            {
+              "name": "subscribe",
+              "startTick": 9,
+              "endTick": 16,
+              "status": "completed"
+            },
+            {
+              "name": "warmup",
+              "startTick": 16,
+              "endTick": 116,
+              "status": "completed"
+            },
+            {
+              "name": "warmupDrain",
+              "startTick": 116,
+              "endTick": 148,
+              "status": "completed"
+            },
+            {
+              "name": "measure",
+              "startTick": 148,
+              "endTick": 2148,
+              "status": "completed"
+            },
+            {
+              "name": "drain",
+              "startTick": 2148,
+              "endTick": 2172,
+              "status": "completed"
+            }
+          ]
+        },
+        "manifest": {
+          "schemaVersion": 1,
+          "experiment": "static-federation-v1",
+          "resolvedOptions": {
+            "schemaVersion": 1,
+            "mode": "federation",
+            "brokers": 3,
+            "topology": "line",
+            "links": null,
+            "publishers": 6,
+            "receiverSites": null,
+            "payloadBytes": 16,
+            "qos": 1,
+            "offeredRps": 100,
+            "seed": 42,
+            "warmupSeconds": 0.01,
+            "measurementSeconds": 0.2,
+            "drainTimeoutSeconds": 1,
+            "tickPeriod": "00:00:00.0001000",
+            "queueCapacity": 1024,
+            "cacheCapacity": 100000,
+            "hopLimit": null,
+            "ideal": true,
+            "brokerType": "Mosquitto",
+            "brokerProfilePath": null,
+            "network": {
+              "capacityBytesPerSecond": 100000000,
+              "throughputWindowTicks": 100,
+              "queueCapacity": 100000,
+              "transferTicks": 1
+            }
+          },
+          "configurationSha256": "14bcceac1e2bf70432fe145dc45318117d8e6b5efec693a08e62cf1c642f484d",
+          "profileSha256": null,
+          "profileProvenance": null,
+          "profileLookup": [
+            {
+              "broker": 0,
+              "publishers": 2,
+              "payloadBytes": 16,
+              "qos": 1
+            },
+            {
+              "broker": 1,
+              "publishers": 2,
+              "payloadBytes": 16,
+              "qos": 1
+            },
+            {
+              "broker": 2,
+              "publishers": 2,
+              "payloadBytes": 16,
+              "qos": 1
+            }
+          ],
+          "physicalEdges": [
+            {
+              "a": 0,
+              "b": 1
+            },
+            {
+              "a": 1,
+              "b": 2
+            }
+          ],
+          "networkEvidence": null,
+          "topologyVerified": true,
+          "relayImplementation": "MqttRelay full mesh, source-only export, imported messages delivered locally",
+          "assumptions": [
+            "Static topology; no discovery, election, beacons or failover",
+            "Separate ingress, routing and delivered topics; no No Local",
+            "Profile lookup uses original publishers; forwarding traffic and fanout are outside calibration conditions",
+            "TopicPayloadBytes excludes MQTT/network headers; actual model transports complete serialized packets",
+            "Warmup is drained before measurement; all model results are exploratory, not native federation fidelity"
+          ],
+          "runtime": {
+            "framework": ".NET 8.0.21",
+            "os": "Simply Linux 11.1 (Giuseppe)",
+            "architecture": "X64",
+            "mqttYCommit": null,
+            "sourceStatus": null,
+            "binaries": {
+              "EntityFX.MqttY.Contracts.Mqtt.dll": "290ff4462253754fec22f7ca3e62cc8ce46c33fdc68c475d39844cfe554cc407",
+              "EntityFX.MqttY.Contracts.Scenarios.dll": "d2cf10a2713f731f9cf84d14c1edb247a7b0c9de6fcfa7e69222667cc84d40f0",
+              "EntityFX.MqttY.Contracts.dll": "670df7ef5ef8966276ee2f89e47a07d72abc820b5a438ae844aa1cc1712a1777",
+              "EntityFX.MqttY.Engines.dll": "ad5185e413d976f594e12cbee162c4d5f1b6b13ba46cff0b47fe7e9bf6f23e77",
+              "EntityFX.MqttY.Federation.App.dll": "2c97d3b8b1437f6241881d33fc26c1e3a521326e6e3c9ef063dccfb9166145d8",
+              "EntityFX.MqttY.LoadBalancing.App.dll": "15cad75b3a7cbee8f3ef9456f812aade2475459b8c6f30584d5084eba179a402",
+              "EntityFX.MqttY.Plugin.Mqtt.dll": "9cf43a0600334971769650a119819c78195035aea122d9d5aec3f627577fdf35",
+              "EntityFX.MqttY.Web.App.dll": "8a6f672f14efa24f66e5d49c268e73eb61ba53a276c7472dc98ddfc80ab7a063",
+              "EntityFX.MqttY.dll": "f7c240cc76ab50ead4501a2cad9269e4c408bafc6226874fd6ccc23353979b62",
+              "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "67fa4325000db017dc0c35829b416f024f042d24efb868bcf17a895ee6500a93",
+              "Microsoft.Extensions.DependencyInjection.dll": "158761ce778e799949f3a3060c461b1055bb35f1f5a65eff0e42397849f09ecd",
+              "Microsoft.Extensions.Logging.Abstractions.dll": "45c22524218541717e4a0ade36847c1cda4921f5945b4975a1c78ddfe023d0b1",
+              "Microsoft.Extensions.Logging.dll": "b2cfba2e05ee89a91e9bc9cf112468a5f4fa05d1a77ea81c131ea656f3d133c2",
+              "Microsoft.Extensions.Options.dll": "5e01894cbc0661bacb8ca8f485a40d5ee4e02f28fef58007668a0276431b4693",
+              "Microsoft.OpenApi.dll": "aa0968baccfff6fe3b3069a22071a795da6090da587effccef58407a148d7356",
+              "Swashbuckle.AspNetCore.Swagger.dll": "23ce5113396f3516f389ccbc6eeb89d976df21cb9d79c31cc99d2c5003952206",
+              "Swashbuckle.AspNetCore.SwaggerGen.dll": "1cbec95c664c096d5c1c5ed1e6ad1fd54f6fbaf4ffb147ab9727861826a16efc",
+              "Swashbuckle.AspNetCore.SwaggerUI.dll": "d4f15e91cece13cfe5518f969cbb08619997ba87e998776bb67edfac7059ed0e"
+            }
+          }
+        }
+      },
+      "httpSummary": {
+        "status": "completed",
+        "error": null,
+        "measurementSeconds": 0.2,
+        "tickMilliseconds": 0.1,
+        "scheduledPublishes": 20,
+        "apiAttempts": 20,
+        "sendRejected": 0,
+        "backpressureUnsent": 0,
+        "sourceCompleted": 20,
+        "sourceCompletedBeforeDrain": 19,
+        "sourceCompletedDuringDrain": 1,
+        "sourceCompletedRps": 100,
+        "expectedDeliveries": 60,
+        "uniqueDeliveries": 60,
+        "uniqueBeforeDrain": 57,
+        "uniqueDuringDrain": 3,
+        "fullyDeliveredPublications": 20,
+        "deliveryLoss": 0,
+        "uniqueGoodput": 300,
+        "duplicateDeliveries": 0,
+        "unexpectedDeliveries": 0,
+        "unknownDeliveries": 0,
+        "forwardAttempts": 40,
+        "forwardAccepted": 40,
+        "forwardRejected": 0,
+        "forwardTopicPayloadBytes": 1680,
+        "suppressedDuplicates": 0,
+        "queueDrops": 0,
+        "hopLimitDrops": 0,
+        "cacheEntries": 63,
+        "publishP50Ms": 0.6000000000000001,
+        "publishP95Ms": 0.6000000000000001,
+        "publishP99Ms": 0.6000000000000001,
+        "receiverP50Ms": 2.1,
+        "receiverP95Ms": 2.9000000000000004,
+        "receiverP99Ms": 2.9000000000000004,
+        "sources": [
+          {
+            "publisher": 0,
+            "site": 0,
+            "broker": 0,
+            "metrics": {
+              "attempted": 4,
+              "admitted": 4,
+              "completed": 4,
+              "expectedDeliveries": 0,
+              "delivered": 0,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 20,
+              "latencyP50Ms": 0.6000000000000001,
+              "latencyP95Ms": 0.6000000000000001,
+              "latencyP99Ms": 0.6000000000000001,
+              "latencyHistogramTicks": {
+                "6": 4
+              }
+            }
+          },
+          {
+            "publisher": 1,
+            "site": 1,
+            "broker": 1,
+            "metrics": {
+              "attempted": 4,
+              "admitted": 4,
+              "completed": 4,
+              "expectedDeliveries": 0,
+              "delivered": 0,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 20,
+              "latencyP50Ms": 0.6000000000000001,
+              "latencyP95Ms": 0.6000000000000001,
+              "latencyP99Ms": 0.6000000000000001,
+              "latencyHistogramTicks": {
+                "6": 4
+              }
+            }
+          },
+          {
+            "publisher": 2,
+            "site": 2,
+            "broker": 2,
+            "metrics": {
+              "attempted": 3,
+              "admitted": 3,
+              "completed": 3,
+              "expectedDeliveries": 0,
+              "delivered": 0,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 15,
+              "latencyP50Ms": 0.6000000000000001,
+              "latencyP95Ms": 0.6000000000000001,
+              "latencyP99Ms": 0.6000000000000001,
+              "latencyHistogramTicks": {
+                "6": 3
+              }
+            }
+          },
+          {
+            "publisher": 3,
+            "site": 0,
+            "broker": 0,
+            "metrics": {
+              "attempted": 3,
+              "admitted": 3,
+              "completed": 3,
+              "expectedDeliveries": 0,
+              "delivered": 0,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 15,
+              "latencyP50Ms": 0.6000000000000001,
+              "latencyP95Ms": 0.6000000000000001,
+              "latencyP99Ms": 0.6000000000000001,
+              "latencyHistogramTicks": {
+                "6": 3
+              }
+            }
+          },
+          {
+            "publisher": 4,
+            "site": 1,
+            "broker": 1,
+            "metrics": {
+              "attempted": 3,
+              "admitted": 3,
+              "completed": 3,
+              "expectedDeliveries": 0,
+              "delivered": 0,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 15,
+              "latencyP50Ms": 0.6000000000000001,
+              "latencyP95Ms": 0.6000000000000001,
+              "latencyP99Ms": 0.6000000000000001,
+              "latencyHistogramTicks": {
+                "6": 3
+              }
+            }
+          },
+          {
+            "publisher": 5,
+            "site": 2,
+            "broker": 2,
+            "metrics": {
+              "attempted": 3,
+              "admitted": 3,
+              "completed": 3,
+              "expectedDeliveries": 0,
+              "delivered": 0,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 15,
+              "latencyP50Ms": 0.6000000000000001,
+              "latencyP95Ms": 0.6000000000000001,
+              "latencyP99Ms": 0.6000000000000001,
+              "latencyHistogramTicks": {
+                "6": 3
+              }
+            }
+          }
+        ],
+        "receivers": [
+          {
+            "site": 0,
+            "uniqueDeliveries": 20,
+            "duplicates": 0,
+            "latencyHistogramTicks": {
+              "13": 7,
+              "21": 7,
+              "29": 6
+            }
+          },
+          {
+            "site": 1,
+            "uniqueDeliveries": 20,
+            "duplicates": 0,
+            "latencyHistogramTicks": {
+              "13": 7,
+              "21": 13
+            }
+          },
+          {
+            "site": 2,
+            "uniqueDeliveries": 20,
+            "duplicates": 0,
+            "latencyHistogramTicks": {
+              "13": 6,
+              "21": 7,
+              "29": 7
+            }
+          }
+        ],
+        "publishHistogramTicks": {
+          "6": 20
+        },
+        "receiverHistogramTicks": {
+          "13": 20,
+          "21": 27,
+          "29": 13
+        },
+        "phases": [
+          {
+            "name": "construct",
+            "startTick": 0,
+            "endTick": 0,
+            "status": "completed"
+          },
+          {
+            "name": "connect",
+            "startTick": 0,
+            "endTick": 9,
+            "status": "completed"
+          },
+          {
+            "name": "subscribe",
+            "startTick": 9,
+            "endTick": 16,
+            "status": "completed"
+          },
+          {
+            "name": "warmup",
+            "startTick": 16,
+            "endTick": 116,
+            "status": "completed"
+          },
+          {
+            "name": "warmupDrain",
+            "startTick": 116,
+            "endTick": 148,
+            "status": "completed"
+          },
+          {
+            "name": "measure",
+            "startTick": 148,
+            "endTick": 2148,
+            "status": "completed"
+          },
+          {
+            "name": "drain",
+            "startTick": 2148,
+            "endTick": 2172,
+            "status": "completed"
+          }
+        ]
+      }
+    },
+    {
+      "engine": "loadBalancing",
+      "request": {
+        "engine": "loadBalancing",
+        "spec": {
+          "kind": "line",
+          "chainLength": 3,
+          "brokerPresetId": "ideal-demo",
+          "clientsPerBroker": 2,
+          "qos": 1,
+          "offeredRps": 100,
+          "warmupTicks": 100,
+          "measurementTicks": 2000,
+          "drainTimeoutTicks": 10000,
+          "payloadBytes": 16,
+          "seed": 42
+        },
+        "runSettings": {
+          "executionMode": "OutOfProcess",
+          "timeLimit": "00:01:00"
+        }
+      },
+      "submittedEpoch": 1792882545.0241857,
+      "observations": [
+        {
+          "id": "428aa735f4634a9e88c7f569d7281f80",
+          "topologyId": null,
+          "engine": "loadBalancing",
+          "state": "Running",
+          "totalTicks": 0,
+          "step": 0,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:45.0689602+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/428aa735f4634a9e88c7f569d7281f80",
+          "error": null,
+          "processId": 125841,
+          "processWorkingSetBytes": 561152,
+          "processCpuSeconds": 0,
+          "lastObservedAt": "2026-10-24T22:55:45.0721266+00:00",
+          "phase": "construct"
+        },
+        {
+          "id": "428aa735f4634a9e88c7f569d7281f80",
+          "topologyId": null,
+          "engine": "loadBalancing",
+          "state": "Running",
+          "totalTicks": 0,
+          "step": 0,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:45.0689602+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/428aa735f4634a9e88c7f569d7281f80",
+          "error": null,
+          "processId": 125841,
+          "processWorkingSetBytes": 61157376,
+          "processCpuSeconds": 0.25,
+          "lastObservedAt": "2026-10-24T22:55:45.3224098+00:00",
+          "phase": "construct"
+        },
+        {
+          "id": "428aa735f4634a9e88c7f569d7281f80",
+          "topologyId": null,
+          "engine": "loadBalancing",
+          "state": "Running",
+          "totalTicks": 23,
+          "step": 233,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:45.0689602+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/428aa735f4634a9e88c7f569d7281f80",
+          "error": null,
+          "processId": 125841,
+          "processWorkingSetBytes": 88182784,
+          "processCpuSeconds": 0.5,
+          "lastObservedAt": "2026-10-24T22:55:45.5737316+00:00",
+          "phase": "warmup"
+        },
+        {
+          "id": "428aa735f4634a9e88c7f569d7281f80",
+          "topologyId": null,
+          "engine": "loadBalancing",
+          "state": "Running",
+          "totalTicks": 123,
+          "step": 935,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:45.0689602+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/428aa735f4634a9e88c7f569d7281f80",
+          "error": null,
+          "processId": 125841,
+          "processWorkingSetBytes": 122679296,
+          "processCpuSeconds": 0.76,
+          "lastObservedAt": "2026-10-24T22:55:45.8260721+00:00",
+          "phase": "measure"
+        },
+        {
+          "id": "428aa735f4634a9e88c7f569d7281f80",
+          "topologyId": null,
+          "engine": "loadBalancing",
+          "state": "Running",
+          "totalTicks": 123,
+          "step": 935,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:45.0689602+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/428aa735f4634a9e88c7f569d7281f80",
+          "error": null,
+          "processId": 125841,
+          "processWorkingSetBytes": 153321472,
+          "processCpuSeconds": 1,
+          "lastObservedAt": "2026-10-24T22:55:46.0775409+00:00",
+          "phase": "measure"
+        },
+        {
+          "id": "428aa735f4634a9e88c7f569d7281f80",
+          "topologyId": null,
+          "engine": "loadBalancing",
+          "state": "Running",
+          "totalTicks": 123,
+          "step": 935,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:45.0689602+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/428aa735f4634a9e88c7f569d7281f80",
+          "error": null,
+          "processId": 125841,
+          "processWorkingSetBytes": 153321472,
+          "processCpuSeconds": 1,
+          "lastObservedAt": "2026-10-24T22:55:46.0775409+00:00",
+          "phase": "measure"
+        },
+        {
+          "id": "428aa735f4634a9e88c7f569d7281f80",
+          "topologyId": null,
+          "engine": "loadBalancing",
+          "state": "Running",
+          "totalTicks": 123,
+          "step": 935,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:45.0689602+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/428aa735f4634a9e88c7f569d7281f80",
+          "error": null,
+          "processId": 125841,
+          "processWorkingSetBytes": 137936896,
+          "processCpuSeconds": 1.35,
+          "lastObservedAt": "2026-10-24T22:55:46.3539894+00:00",
+          "phase": "measure"
+        },
+        {
+          "id": "428aa735f4634a9e88c7f569d7281f80",
+          "topologyId": null,
+          "engine": "loadBalancing",
+          "state": "Running",
+          "totalTicks": 2123,
+          "step": 15175,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:45.0689602+00:00",
+          "finishedAt": null,
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/428aa735f4634a9e88c7f569d7281f80",
+          "error": null,
+          "processId": 125841,
+          "processWorkingSetBytes": 144318464,
+          "processCpuSeconds": 1.65,
+          "lastObservedAt": "2026-10-24T22:55:46.6059855+00:00",
+          "phase": "drain"
+        },
+        {
+          "id": "428aa735f4634a9e88c7f569d7281f80",
+          "topologyId": null,
+          "engine": "loadBalancing",
+          "state": "Completed",
+          "totalTicks": 2137,
+          "step": 0,
+          "errors": 0,
+          "startedAt": "2026-10-24T22:55:45.0689602+00:00",
+          "finishedAt": "2026-10-24T22:55:46.8584466+00:00",
+          "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/428aa735f4634a9e88c7f569d7281f80",
+          "error": null,
+          "processId": null,
+          "processWorkingSetBytes": 144318464,
+          "processCpuSeconds": 1.65,
+          "lastObservedAt": "2026-10-24T22:55:46.6059855+00:00",
+          "phase": "drain"
+        }
+      ],
+      "id": "428aa735f4634a9e88c7f569d7281f80",
+      "status": {
+        "id": "428aa735f4634a9e88c7f569d7281f80",
+        "topologyId": null,
+        "engine": "loadBalancing",
+        "state": "Completed",
+        "totalTicks": 2137,
+        "step": 0,
+        "errors": 0,
+        "startedAt": "2026-10-24T22:55:45.0689602+00:00",
+        "finishedAt": "2026-10-24T22:55:46.8584466+00:00",
+        "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/428aa735f4634a9e88c7f569d7281f80",
+        "error": null,
+        "processId": null,
+        "processWorkingSetBytes": 144318464,
+        "processCpuSeconds": 1.65,
+        "lastObservedAt": "2026-10-24T22:55:46.6059855+00:00",
+        "phase": "drain"
+      },
+      "monitor": {
+        "simulationId": "428aa735f4634a9e88c7f569d7281f80",
+        "state": "Completed",
+        "totalTicks": 2123,
+        "step": 15175,
+        "errors": 0,
+        "phase": "drain",
+        "nodes": [
+          {
+            "id": "backend1-hop1",
+            "name": "backend1-hop1",
+            "type": "Network",
+            "specification": "ethernet",
+            "network": null,
+            "connected": true,
+            "queueLength": 0,
+            "counters": {}
+          },
+          {
+            "id": "backend1-hop2",
+            "name": "backend1-hop2",
+            "type": "Network",
+            "specification": "ethernet",
+            "network": null,
+            "connected": true,
+            "queueLength": 0,
+            "counters": {}
+          },
+          {
+            "id": "backend0-hop2",
+            "name": "backend0-hop2",
+            "type": "Network",
+            "specification": "ethernet",
+            "network": null,
+            "connected": true,
+            "queueLength": 0,
+            "counters": {}
+          },
+          {
+            "id": "backend0-hop1",
+            "name": "backend0-hop1",
+            "type": "Network",
+            "specification": "ethernet",
+            "network": null,
+            "connected": true,
+            "queueLength": 0,
+            "counters": {}
+          },
+          {
+            "id": "backend2-hop1",
+            "name": "backend2-hop1",
+            "type": "Network",
+            "specification": "ethernet",
+            "network": null,
+            "connected": true,
+            "queueLength": 0,
+            "counters": {}
+          },
+          {
+            "id": "clients",
+            "name": "clients",
+            "type": "Network",
+            "specification": "ethernet",
+            "network": null,
+            "connected": true,
+            "queueLength": 1,
+            "counters": {}
+          },
+          {
+            "id": "backend2-hop2",
+            "name": "backend2-hop2",
+            "type": "Network",
+            "specification": "ethernet",
+            "network": null,
+            "connected": true,
+            "queueLength": 0,
+            "counters": {}
+          },
+          {
+            "id": "broker0001",
+            "name": "broker0001",
+            "type": "Server",
+            "specification": "mqtt",
+            "network": "backend1-hop2",
+            "connected": false,
+            "queueLength": 0,
+            "counters": {
+              "S": 16,
+              "R": 16,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 0
+            }
+          },
+          {
+            "id": "broker0000",
+            "name": "broker0000",
+            "type": "Server",
+            "specification": "mqtt",
+            "network": "backend0-hop2",
+            "connected": false,
+            "queueLength": 0,
+            "counters": {
+              "S": 20,
+              "R": 20,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 0
+            }
+          },
+          {
+            "id": "broker0002",
+            "name": "broker0002",
+            "type": "Server",
+            "specification": "mqtt",
+            "network": "backend2-hop2",
+            "connected": false,
+            "queueLength": 0,
+            "counters": {
+              "S": 16,
+              "R": 16,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 0
+            }
+          },
+          {
+            "id": "publisher0003",
+            "name": "publisher0003",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "clients",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 4,
+              "R": 4,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "publisher0002",
+            "name": "publisher0002",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "clients",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 4,
+              "R": 4,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "publisher0000",
+            "name": "publisher0000",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "clients",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 6,
+              "R": 6,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "receiver0000",
+            "name": "receiver0000",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "clients",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 10,
+              "R": 10,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 2
+            }
+          },
+          {
+            "id": "receiver0001",
+            "name": "receiver0001",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "clients",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 8,
+              "R": 8,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 2
+            }
+          },
+          {
+            "id": "receiver0002",
+            "name": "receiver0002",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "clients",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 8,
+              "R": 8,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 2
+            }
+          },
+          {
+            "id": "publisher0005",
+            "name": "publisher0005",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "clients",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 4,
+              "R": 4,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "publisher0004",
+            "name": "publisher0004",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "clients",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 4,
+              "R": 4,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          },
+          {
+            "id": "publisher0001",
+            "name": "publisher0001",
+            "type": "Client",
+            "specification": "mqtt-client",
+            "network": "clients",
+            "connected": true,
+            "queueLength": 0,
+            "counters": {
+              "S": 5,
+              "R": 4,
+              "E": 0,
+              "OQ": 0,
+              "IQ": 0,
+              "RQ": 1
+            }
+          }
+        ],
+        "links": [
+          {
+            "from": "backend1-hop1",
+            "to": "clients",
+            "weight": null
+          },
+          {
+            "from": "backend1-hop1",
+            "to": "backend1-hop2",
+            "weight": null
+          },
+          {
+            "from": "backend1-hop2",
+            "to": "backend1-hop1",
+            "weight": null
+          },
+          {
+            "from": "backend0-hop2",
+            "to": "backend0-hop1",
+            "weight": null
+          },
+          {
+            "from": "backend0-hop1",
+            "to": "clients",
+            "weight": null
+          },
+          {
+            "from": "backend0-hop1",
+            "to": "backend0-hop2",
+            "weight": null
+          },
+          {
+            "from": "backend2-hop1",
+            "to": "clients",
+            "weight": null
+          },
+          {
+            "from": "backend2-hop1",
+            "to": "backend2-hop2",
+            "weight": null
+          },
+          {
+            "from": "clients",
+            "to": "backend1-hop1",
+            "weight": null
+          },
+          {
+            "from": "clients",
+            "to": "backend2-hop1",
+            "weight": null
+          },
+          {
+            "from": "clients",
+            "to": "backend0-hop1",
+            "weight": null
+          },
+          {
+            "from": "backend2-hop2",
+            "to": "backend2-hop1",
+            "weight": null
+          }
+        ]
+      },
+      "verification": {
+        "verifiedFiles": 11,
+        "sha256FileSha256": "fe319b1be498b9220afe8217c28428cf0998773fe2286e28db7b3d8693982c0d",
+        "summary": {
+          "status": "completed",
+          "error": null,
+          "configuredOfferedRps": 100,
+          "scheduledPublishes": 20,
+          "apiAttempts": 20,
+          "sendRejected": 0,
+          "backpressureUnsent": 0,
+          "publisherPendingBeforeDrain": 1,
+          "publisherPendingAfterDrain": 0,
+          "measurementStartTick": 122,
+          "measurementEndTick": 2122,
+          "finalTick": 2137,
+          "graphErrors": 0,
+          "measurementSeconds": 0.2,
+          "tickMilliseconds": 0.1,
+          "backendCompletedRps": 100,
+          "uniqueGoodput": 100,
+          "attemptDeliveryLoss": 0,
+          "backendPublishFailureRate": 0,
+          "backendDeliveryLossRate": 0,
+          "publishP50Ms": 1,
+          "publishP95Ms": 1,
+          "publishP99Ms": 1,
+          "receiverP50Ms": 1,
+          "receiverP95Ms": 1,
+          "receiverP99Ms": 1,
+          "uniqueReceivedBeforeDrain": 19,
+          "uniqueReceivedDuringDrain": 1,
+          "delivery": {
+            "measurementCreated": 20,
+            "uniqueDelivered": 20,
+            "duplicateDeliveries": 0,
+            "unexpectedDeliveries": 0,
+            "warmupDeliveries": 1,
+            "unknownDeliveries": 0,
+            "backends": [
+              {
+                "backend": 0,
+                "measurementCreated": 7,
+                "uniqueDelivered": 7,
+                "duplicateDeliveries": 0,
+                "unexpectedDeliveries": 0,
+                "latencyHistogramTicks": {
+                  "10": 7
+                }
+              },
+              {
+                "backend": 1,
+                "measurementCreated": 7,
+                "uniqueDelivered": 7,
+                "duplicateDeliveries": 0,
+                "unexpectedDeliveries": 0,
+                "latencyHistogramTicks": {
+                  "10": 7
+                }
+              },
+              {
+                "backend": 2,
+                "measurementCreated": 6,
+                "uniqueDelivered": 6,
+                "duplicateDeliveries": 0,
+                "unexpectedDeliveries": 0,
+                "latencyHistogramTicks": {
+                  "10": 6
+                }
+              }
+            ],
+            "latencyHistogramTicks": {
+              "10": 20
+            },
+            "tickMilliseconds": 0.1
+          },
+          "backends": [
+            {
+              "backend": 0,
+              "publishers": 2,
+              "metrics": {
+                "attempted": 7,
+                "admitted": 7,
+                "completed": 7,
+                "expectedDeliveries": 7,
+                "delivered": 7,
+                "rateRejected": 0,
+                "publishFailed": 0,
+                "deliveryDropped": 0,
+                "rps": 35,
+                "latencyP50Ms": 1,
+                "latencyP95Ms": 1,
+                "latencyP99Ms": 1,
+                "latencyHistogramTicks": {
+                  "10": 7
+                }
+              },
+              "completedBeforeDrain": 7,
+              "uniqueReceived": 7,
+              "uniqueReceivedBeforeDrain": 7
+            },
+            {
+              "backend": 1,
+              "publishers": 2,
+              "metrics": {
+                "attempted": 7,
+                "admitted": 7,
+                "completed": 7,
+                "expectedDeliveries": 7,
+                "delivered": 7,
+                "rateRejected": 0,
+                "publishFailed": 0,
+                "deliveryDropped": 0,
+                "rps": 35,
+                "latencyP50Ms": 1,
+                "latencyP95Ms": 1,
+                "latencyP99Ms": 1,
+                "latencyHistogramTicks": {
+                  "10": 7
+                }
+              },
+              "completedBeforeDrain": 6,
+              "uniqueReceived": 7,
+              "uniqueReceivedBeforeDrain": 6
+            },
+            {
+              "backend": 2,
+              "publishers": 2,
+              "metrics": {
+                "attempted": 6,
+                "admitted": 6,
+                "completed": 6,
+                "expectedDeliveries": 6,
+                "delivered": 6,
+                "rateRejected": 0,
+                "publishFailed": 0,
+                "deliveryDropped": 0,
+                "rps": 30,
+                "latencyP50Ms": 1,
+                "latencyP95Ms": 1,
+                "latencyP99Ms": 1,
+                "latencyHistogramTicks": {
+                  "10": 6
+                }
+              },
+              "completedBeforeDrain": 6,
+              "uniqueReceived": 6,
+              "uniqueReceivedBeforeDrain": 6
+            }
+          ],
+          "publishLatencyHistogramTicks": {
+            "10": 20
+          },
+          "phases": [
+            {
+              "phase": "construct",
+              "startTick": 0,
+              "endTick": 0,
+              "status": "completed"
+            },
+            {
+              "phase": "connect",
+              "startTick": 0,
+              "endTick": 11,
+              "status": "completed"
+            },
+            {
+              "phase": "subscribe",
+              "startTick": 11,
+              "endTick": 22,
+              "status": "completed"
+            },
+            {
+              "phase": "warmup",
+              "startTick": 22,
+              "endTick": 122,
+              "status": "completed"
+            },
+            {
+              "phase": "measure",
+              "startTick": 122,
+              "endTick": 2122,
+              "status": "completed"
+            },
+            {
+              "phase": "drain",
+              "startTick": 2122,
+              "endTick": 2137,
+              "status": "completed"
+            }
+          ]
+        },
+        "manifest": {
+          "schemaVersion": 1,
+          "experiment": "connection-balancing-v1",
+          "transportTiming": "fixed",
+          "loadScheduling": "equal per-publisher slots; closed-loop QoS1/2; bounded per-publisher credit, no reassignment of blocked load",
+          "scope": "ideal mechanism check",
+          "assumptions": [
+            "No TCP proxy overhead, health checks or session migration",
+            "One direct receiver per independent backend",
+            "No inter-backend subscription sharing",
+            "CPU/RSS and native proxy resources are not modeled"
+          ],
+          "resolvedOptions": {
+            "schemaVersion": 1,
+            "mode": "roundRobin",
+            "brokerType": "Mosquitto",
+            "backendCount": 3,
+            "brokerProfilePath": null,
+            "brokerProfiles": null,
+            "ideal": true,
+            "totalPublishers": 6,
+            "payloadBytes": 16,
+            "publishQos": 1,
+            "subscribeQos": 1,
+            "offeredRps": 100,
+            "seed": 42,
+            "warmupSeconds": 0.01,
+            "measurementSeconds": 0.2,
+            "drainTimeoutSeconds": 1,
+            "tickPeriod": "00:00:00.0001000",
+            "networkLength": 2,
+            "network": {
+              "capacityBytesPerSecond": 100000000,
+              "throughputWindowTicks": 100,
+              "queueCapacity": 100000,
+              "transferTicks": 1
+            }
+          },
+          "configuration": {
+            "path": "web-native-config.json",
+            "sha256": "fb14cd33b92e0cee1d528149b5d6d2a54e423292015a2853c1fad30f15d256bc"
+          },
+          "profile": null,
+          "calibrationObservations": null,
+          "backendProfileLookup": [
+            {
+              "backend": 0,
+              "brokerType": "Mosquitto",
+              "payloadBytes": 16,
+              "publishQos": 1,
+              "publishers": 2,
+              "configuredOfferedRps": 33.333333333333336
+            },
+            {
+              "backend": 1,
+              "brokerType": "Mosquitto",
+              "payloadBytes": 16,
+              "publishQos": 1,
+              "publishers": 2,
+              "configuredOfferedRps": 33.333333333333336
+            },
+            {
+              "backend": 2,
+              "brokerType": "Mosquitto",
+              "payloadBytes": 16,
+              "publishQos": 1,
+              "publishers": 2,
+              "configuredOfferedRps": 33.333333333333336
+            }
+          ],
+          "assignments": [
+            0,
+            1,
+            2,
+            0,
+            1,
+            2
+          ],
+          "runtime": {
+            "framework": ".NET 8.0.21",
+            "os": "Simply Linux 11.1 (Giuseppe)",
+            "architecture": "X64",
+            "mqttYCommit": null,
+            "sourceStatus": null,
+            "binarySha256": {
+              "EntityFX.MqttY.Contracts.Mqtt.dll": "290ff4462253754fec22f7ca3e62cc8ce46c33fdc68c475d39844cfe554cc407",
+              "EntityFX.MqttY.Contracts.Scenarios.dll": "d2cf10a2713f731f9cf84d14c1edb247a7b0c9de6fcfa7e69222667cc84d40f0",
+              "EntityFX.MqttY.Contracts.dll": "670df7ef5ef8966276ee2f89e47a07d72abc820b5a438ae844aa1cc1712a1777",
+              "EntityFX.MqttY.Engines.dll": "ad5185e413d976f594e12cbee162c4d5f1b6b13ba46cff0b47fe7e9bf6f23e77",
+              "EntityFX.MqttY.Federation.App.dll": "2c97d3b8b1437f6241881d33fc26c1e3a521326e6e3c9ef063dccfb9166145d8",
+              "EntityFX.MqttY.LoadBalancing.App.dll": "15cad75b3a7cbee8f3ef9456f812aade2475459b8c6f30584d5084eba179a402",
+              "EntityFX.MqttY.Plugin.Mqtt.dll": "9cf43a0600334971769650a119819c78195035aea122d9d5aec3f627577fdf35",
+              "EntityFX.MqttY.Web.App.dll": "8a6f672f14efa24f66e5d49c268e73eb61ba53a276c7472dc98ddfc80ab7a063",
+              "EntityFX.MqttY.dll": "f7c240cc76ab50ead4501a2cad9269e4c408bafc6226874fd6ccc23353979b62",
+              "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "67fa4325000db017dc0c35829b416f024f042d24efb868bcf17a895ee6500a93",
+              "Microsoft.Extensions.DependencyInjection.dll": "158761ce778e799949f3a3060c461b1055bb35f1f5a65eff0e42397849f09ecd",
+              "Microsoft.Extensions.Logging.Abstractions.dll": "45c22524218541717e4a0ade36847c1cda4921f5945b4975a1c78ddfe023d0b1",
+              "Microsoft.Extensions.Logging.dll": "b2cfba2e05ee89a91e9bc9cf112468a5f4fa05d1a77ea81c131ea656f3d133c2",
+              "Microsoft.Extensions.Options.dll": "5e01894cbc0661bacb8ca8f485a40d5ee4e02f28fef58007668a0276431b4693",
+              "Microsoft.OpenApi.dll": "aa0968baccfff6fe3b3069a22071a795da6090da587effccef58407a148d7356",
+              "Swashbuckle.AspNetCore.Swagger.dll": "23ce5113396f3516f389ccbc6eeb89d976df21cb9d79c31cc99d2c5003952206",
+              "Swashbuckle.AspNetCore.SwaggerGen.dll": "1cbec95c664c096d5c1c5ed1e6ad1fd54f6fbaf4ffb147ab9727861826a16efc",
+              "Swashbuckle.AspNetCore.SwaggerUI.dll": "d4f15e91cece13cfe5518f969cbb08619997ba87e998776bb67edfac7059ed0e"
+            }
+          }
+        }
+      },
+      "httpSummary": {
+        "status": "completed",
+        "error": null,
+        "configuredOfferedRps": 100,
+        "scheduledPublishes": 20,
+        "apiAttempts": 20,
+        "sendRejected": 0,
+        "backpressureUnsent": 0,
+        "publisherPendingBeforeDrain": 1,
+        "publisherPendingAfterDrain": 0,
+        "measurementStartTick": 122,
+        "measurementEndTick": 2122,
+        "finalTick": 2137,
+        "graphErrors": 0,
+        "measurementSeconds": 0.2,
+        "tickMilliseconds": 0.1,
+        "backendCompletedRps": 100,
+        "uniqueGoodput": 100,
+        "attemptDeliveryLoss": 0,
+        "backendPublishFailureRate": 0,
+        "backendDeliveryLossRate": 0,
+        "publishP50Ms": 1,
+        "publishP95Ms": 1,
+        "publishP99Ms": 1,
+        "receiverP50Ms": 1,
+        "receiverP95Ms": 1,
+        "receiverP99Ms": 1,
+        "uniqueReceivedBeforeDrain": 19,
+        "uniqueReceivedDuringDrain": 1,
+        "delivery": {
+          "measurementCreated": 20,
+          "uniqueDelivered": 20,
+          "duplicateDeliveries": 0,
+          "unexpectedDeliveries": 0,
+          "warmupDeliveries": 1,
+          "unknownDeliveries": 0,
+          "backends": [
+            {
+              "backend": 0,
+              "measurementCreated": 7,
+              "uniqueDelivered": 7,
+              "duplicateDeliveries": 0,
+              "unexpectedDeliveries": 0,
+              "latencyHistogramTicks": {
+                "10": 7
+              }
+            },
+            {
+              "backend": 1,
+              "measurementCreated": 7,
+              "uniqueDelivered": 7,
+              "duplicateDeliveries": 0,
+              "unexpectedDeliveries": 0,
+              "latencyHistogramTicks": {
+                "10": 7
+              }
+            },
+            {
+              "backend": 2,
+              "measurementCreated": 6,
+              "uniqueDelivered": 6,
+              "duplicateDeliveries": 0,
+              "unexpectedDeliveries": 0,
+              "latencyHistogramTicks": {
+                "10": 6
+              }
+            }
+          ],
+          "latencyHistogramTicks": {
+            "10": 20
+          },
+          "tickMilliseconds": 0.1
+        },
+        "backends": [
+          {
+            "backend": 0,
+            "publishers": 2,
+            "metrics": {
+              "attempted": 7,
+              "admitted": 7,
+              "completed": 7,
+              "expectedDeliveries": 7,
+              "delivered": 7,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 35,
+              "latencyP50Ms": 1,
+              "latencyP95Ms": 1,
+              "latencyP99Ms": 1,
+              "latencyHistogramTicks": {
+                "10": 7
+              }
+            },
+            "completedBeforeDrain": 7,
+            "uniqueReceived": 7,
+            "uniqueReceivedBeforeDrain": 7
+          },
+          {
+            "backend": 1,
+            "publishers": 2,
+            "metrics": {
+              "attempted": 7,
+              "admitted": 7,
+              "completed": 7,
+              "expectedDeliveries": 7,
+              "delivered": 7,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 35,
+              "latencyP50Ms": 1,
+              "latencyP95Ms": 1,
+              "latencyP99Ms": 1,
+              "latencyHistogramTicks": {
+                "10": 7
+              }
+            },
+            "completedBeforeDrain": 6,
+            "uniqueReceived": 7,
+            "uniqueReceivedBeforeDrain": 6
+          },
+          {
+            "backend": 2,
+            "publishers": 2,
+            "metrics": {
+              "attempted": 6,
+              "admitted": 6,
+              "completed": 6,
+              "expectedDeliveries": 6,
+              "delivered": 6,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 30,
+              "latencyP50Ms": 1,
+              "latencyP95Ms": 1,
+              "latencyP99Ms": 1,
+              "latencyHistogramTicks": {
+                "10": 6
+              }
+            },
+            "completedBeforeDrain": 6,
+            "uniqueReceived": 6,
+            "uniqueReceivedBeforeDrain": 6
+          }
+        ],
+        "publishLatencyHistogramTicks": {
+          "10": 20
+        },
+        "phases": [
+          {
+            "phase": "construct",
+            "startTick": 0,
+            "endTick": 0,
+            "status": "completed"
+          },
+          {
+            "phase": "connect",
+            "startTick": 0,
+            "endTick": 11,
+            "status": "completed"
+          },
+          {
+            "phase": "subscribe",
+            "startTick": 11,
+            "endTick": 22,
+            "status": "completed"
+          },
+          {
+            "phase": "warmup",
+            "startTick": 22,
+            "endTick": 122,
+            "status": "completed"
+          },
+          {
+            "phase": "measure",
+            "startTick": 122,
+            "endTick": 2122,
+            "status": "completed"
+          },
+          {
+            "phase": "drain",
+            "startTick": 2122,
+            "endTick": 2137,
+            "status": "completed"
+          }
+        ]
+      }
+    }
+  ],
+  "passed": true,
+  "healthBefore": {
+    "status": "ok",
+    "processId": 125722,
+    "processWorkingSetBytes": 132648960,
+    "dataDirectoryAvailable": true,
+    "runningJobs": 0,
+    "queuedJobs": 0
+  },
+  "engines": [
+    {
+      "name": "federation",
+      "description": "Статическая федерация с подавлением повторов.",
+      "commands": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "name": "loadBalancing",
+      "description": "Балансировка постоянных MQTT-соединений.",
+      "commands": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "name": "relay",
+      "description": "Проверенный MqttRelay, каждый брокер со всеми остальными.",
+      "commands": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "healthAfter": {
+    "status": "ok",
+    "processId": 125722,
+    "processWorkingSetBytes": 142176256,
+    "dataDirectoryAvailable": true,
+    "runningJobs": 0,
+    "queuedJobs": 0
+  },
+  "finishedEpoch": 1792882546.9009604
+}

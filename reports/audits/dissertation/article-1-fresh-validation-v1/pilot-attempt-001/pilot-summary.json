@@ -1,0 +1,154 @@
+{
+  "status": "completed",
+  "scope": "Fresh MqttBenchmark/profiled MqttY pilot; not main validation",
+  "elapsedWallSeconds": 10.841610639996361,
+  "cases": [
+    {
+      "windowSeconds": 0.2,
+      "native": {
+        "scope": "One subscriber; attempts in [measurementStart, measurementEnd); observed through drainEnd",
+        "attempted": 886,
+        "completed": 886,
+        "failed": 0,
+        "pending": 0,
+        "measurementSeconds": 0.19999999999999998,
+        "attemptedRps": 4430.0,
+        "completedInWindow": 871,
+        "completedRpsInWindow": 4355.0,
+        "completedDuringDrain": 15,
+        "completedCohortPerSubmissionSecond": 4430.0,
+        "uniqueDeliveries": 886,
+        "completedIdsDelivered": 886,
+        "deliveredAfterFailedPublish": 0,
+        "firstDeliveriesDuringDrain": 36,
+        "duplicates": 0,
+        "outsideCohortDeliveryEvents": 2,
+        "publishFailureRate": 0.0,
+        "deliveryLossRate": 0.0,
+        "p99PublishMs": 43.5325,
+        "latencyStatus": "observed",
+        "outcomesSettled": true,
+        "rawSha256": {
+          "deliveries.ndjson": "dfeb43c848b77311ccd561dea79a82606dc19e114bb2e6e25009382c8d9cbca2",
+          "connections.ndjson": "edca4633b00f9e85ba6fe781cd648776af49a7aa64b4fcdc15baa51bdc97c545",
+          "phases.json": "88383f3cb6b9b124bdc76b00a33a188492ad655fbcb32926a4b221a8a262959b",
+          "publishes.ndjson": "4877615de080c615def1420a6710b3f1f41a76726036d0b1289209e9cffde41c"
+        }
+      },
+      "model": {
+        "scope": "One subscriber; attempts in [measurementStart, measurementEnd); observed through drainEnd",
+        "attempted": 11181,
+        "completed": 11181,
+        "failed": 0,
+        "pending": 0,
+        "measurementSeconds": 0.2,
+        "attemptedRps": 55905.0,
+        "completedInWindow": 11165,
+        "completedRpsInWindow": 55825.0,
+        "completedDuringDrain": 16,
+        "completedCohortPerSubmissionSecond": 55905.0,
+        "uniqueDeliveries": 1022,
+        "completedIdsDelivered": 1022,
+        "deliveredAfterFailedPublish": 0,
+        "firstDeliveriesDuringDrain": 2,
+        "duplicates": 0,
+        "outsideCohortDeliveryEvents": 62,
+        "publishFailureRate": 0.0,
+        "deliveryLossRate": 0.9085949378409802,
+        "p99PublishMs": 0.42000000000000004,
+        "latencyStatus": "observed",
+        "outcomesSettled": true,
+        "rawSha256": {
+          "deliveries.ndjson": "0c69d9fefcf40c7a9a0354b204606519fb35a87c64b6031044b08d02efea6583",
+          "connections.ndjson": "58a6897e59100c99015529286b0d6f756f0f5c327d12fd44989386f6403dc9fc",
+          "phases.json": "9cb9f767dba65a670aa4edc0824a28f1067180f51a038b5da1dece49906d6409",
+          "publishes.ndjson": "3250bfbd77156ceea5ee40e53902a7f423ff0f258ec299ea975a3659e01f4019"
+        }
+      },
+      "nativeProcess": {
+        "pid": 128106,
+        "exitCode": 0,
+        "elapsedWallSeconds": 0.7654605989810079
+      },
+      "modelProcess": {
+        "pid": 128127,
+        "exitCode": 0,
+        "elapsedWallSeconds": 3.97093770999345
+      }
+    },
+    {
+      "windowSeconds": 0.4,
+      "native": {
+        "scope": "One subscriber; attempts in [measurementStart, measurementEnd); observed through drainEnd",
+        "attempted": 1946,
+        "completed": 1946,
+        "failed": 0,
+        "pending": 0,
+        "measurementSeconds": 0.4,
+        "attemptedRps": 4865.0,
+        "completedInWindow": 1930,
+        "completedRpsInWindow": 4825.0,
+        "completedDuringDrain": 16,
+        "completedCohortPerSubmissionSecond": 4865.0,
+        "uniqueDeliveries": 1946,
+        "completedIdsDelivered": 1946,
+        "deliveredAfterFailedPublish": 0,
+        "firstDeliveriesDuringDrain": 14,
+        "duplicates": 0,
+        "outsideCohortDeliveryEvents": 2,
+        "publishFailureRate": 0.0,
+        "deliveryLossRate": 0.0,
+        "p99PublishMs": 64.72310000000004,
+        "latencyStatus": "observed",
+        "outcomesSettled": true,
+        "rawSha256": {
+          "deliveries.ndjson": "69b4958252142176b17ac94e17020d45b7261e6cc05ec3a3e44ca353598b06db",
+          "connections.ndjson": "3928034c4434f29d4108d9370dea60defa69b4256e9f52487425d4d3cba86591",
+          "phases.json": "5c25804407070524d3e1ffa5b0b9a5db27bc1175b5e202a67361586f46cfd152",
+          "publishes.ndjson": "0bf880faedf0a23ae5d6b6ec5e1b6c58ee929dce8b1050d77131c2fa7fa25807"
+        }
+      },
+      "model": {
+        "scope": "One subscriber; attempts in [measurementStart, measurementEnd); observed through drainEnd",
+        "attempted": 22367,
+        "completed": 22367,
+        "failed": 0,
+        "pending": 0,
+        "measurementSeconds": 0.4000000000000001,
+        "attemptedRps": 55917.49999999999,
+        "completedInWindow": 22351,
+        "completedRpsInWindow": 55877.49999999999,
+        "completedDuringDrain": 16,
+        "completedCohortPerSubmissionSecond": 55917.49999999999,
+        "uniqueDeliveries": 1990,
+        "completedIdsDelivered": 1990,
+        "deliveredAfterFailedPublish": 0,
+        "firstDeliveriesDuringDrain": 2,
+        "duplicates": 0,
+        "outsideCohortDeliveryEvents": 62,
+        "publishFailureRate": 0.0,
+        "deliveryLossRate": 0.9110296418831314,
+        "p99PublishMs": 0.42000000000000004,
+        "latencyStatus": "observed",
+        "outcomesSettled": true,
+        "rawSha256": {
+          "deliveries.ndjson": "c37ab9c4a9949b43429bf2dadc3ad492d246a91e5a4635f155a3df673b1aa018",
+          "connections.ndjson": "0711be037662b119b63e3c4c946735ba3b14c2afa9c97d73d447da34fb3c2673",
+          "phases.json": "40156f82d19222ea8546c0030c8aef0503c2a28035be6d7133a1ed5481ff5a5d",
+          "publishes.ndjson": "d721f4d90fd1b0c2138d3881b747001037c6325de078510e43349e86fda4193c"
+        }
+      },
+      "nativeProcess": {
+        "pid": 128139,
+        "exitCode": 0,
+        "elapsedWallSeconds": 0.8758682089974172
+      },
+      "modelProcess": {
+        "pid": 128160,
+        "exitCode": 0,
+        "elapsedWallSeconds": 4.571815411996795
+      }
+    }
+  ],
+  "originalBrokerConfigUnchanged": true
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "broker-stand.v1",
+  "deploymentMode": "singleHostSequential",
+  "cpuMode": "singleCorePinned",
+  "activeBroker": "ActiveMQ",
+  "dockerContext": "native-local",
+  "controlInterface": "127.0.0.1",
+  "networkMode": "host",
+  "brokers": [
+    {
+      "name": "ActiveMQ",
+      "mqttUri": "mqtt://127.0.0.1:3883",
+      "executable": "/usr/lib/jvm/java-17-openjdk-17.0.19.0.10-alt1.x86_64/bin/java",
+      "launcherExecutable": "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/activemq/apache-activemq-6.3.2/bin/activemq",
+      "args": [
+        "console"
+      ],
+      "workingDirectory": "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/activemq/apache-activemq-6.3.2",
+      "configFiles": [
+        "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/activemq/apache-activemq-6.3.2/conf/activemq.xml"
+      ],
+      "versionArgs": [
+        "-version"
+      ],
+      "brokerVersion": "6.3.2",
+      "environment": {
+        "JAVA_HOME": "/usr/lib/jvm/java-17-openjdk-17.0.19.0.10-alt1.x86_64"
+      },
+      "linuxLaunchMode": "systemdUser",
+      "runtime": "native",
+      "lifecycle": "managed",
+      "serviceName": "activemq",
+      "containerName": "activemq",
+      "loaded": true,
+      "executableSha256": "f8eaf4b8c99f45b7382347c86137bf65afa6779bca7f333f43ce282464704e5d",
+      "launcherSha256": "cc815f36648e6470213f55b2f9b30f877d176445458d288d9b0ca179659e213e",
+      "singleHostMqttPort": 3883,
+      "distributedMqttPort": 1883,
+      "managementUri": null,
+      "cpuset": "0",
+      "memoryLimit": 4294967296
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "mqb6": {
+    "atMostOnce": {},
+    "atLeastOnce": {},
+    "exactlyOnce": {
+      "12": 2
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "scope": "Confirmed background launch; no claim that scientific criteria passed",
+  "unit": "mqtty-article1-fresh-series-v1.service",
+  "controllerPid": 129190,
+  "state": "active/running",
+  "startedAtMsk": "2026-10-25 02:32:32",
+  "startedAtUtc": "2026-10-24T23:32:32.789980+00:00",
+  "invocationId": "4607d86b5da3429db475d3438cac7c98",
+  "remoteRoot": "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/series-attempt-001",
+  "progressPath": "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/series-attempt-001/progress.json",
+  "serviceLog": "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/series-service.log",
+  "programSha256": "b9d8ca76e082dfe1d4d7f4882468f981441f53e6ed0e92579912d54b2ba83087",
+  "inputManifestSha256": "e96d97f228b9a405f884b5a9893619b854199b9d534c535b8c5ffeb1732110df",
+  "plannedNative": 48,
+  "plannedModel": 48,
+  "workers": 1,
+  "initialPhase": "native",
+  "initialActiveJob": "Mosquitto.q1.p16.r1",
+  "initialTechnicalErrors": 0,
+  "hardStopApproxMsk": "2026-10-25 05:32:32",
+  "resources": {
+    "cpuQuotaPercent": 300,
+    "cpuAffinity": [
+      0,
+      1,
+      2
+    ],
+    "brokerCpus": [
+      0
+    ],
+    "nativeGeneratorCpus": [
+      1,
+      2
+    ],
+    "modelCpus": [
+      1
+    ],
+    "memoryMaxGiB": 2,
+    "runtimeMaxSeconds": 10800
+  },
+  "modelProfiles": "Historical snapshots unchanged; new native RPS is not fed to model",
+  "scientificCaveats": [
+    "Shortened 1s warmup/2s measurement/5s bounded drain differs from historical5s/20s.",
+    "Historical profiles can disagree with short-window native delivery and latency. All disagreements retained.",
+    "This launch does not establish independent universal accuracy, or completion of96jobs."
+  ],
+  "checks": [
+    {
+      "scope": "new native cohort tests",
+      "passed": 2
+    },
+    {
+      "scope": "native MQTT transport regression explicitly enabled",
+      "passed": 7
+    },
+    {
+      "scope": "empirical/relay/cohort/model budget regression",
+      "passed": 23
+    }
+  ],
+  "humanReview": "Not performed by the agent",
+  "commitPerformed": false
+}

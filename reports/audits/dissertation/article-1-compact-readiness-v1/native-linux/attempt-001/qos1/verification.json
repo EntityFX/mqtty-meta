@@ -1,0 +1,36 @@
+{
+  "scope": "One subscriber; attempts in [measurementStart, measurementEnd); observed through drainEnd",
+  "attempted": 100,
+  "completed": 100,
+  "failed": 0,
+  "pending": 0,
+  "measurementSeconds": 2.0,
+  "attemptedRps": 50.0,
+  "completedInWindow": 100,
+  "completedRpsInWindow": 50.0,
+  "completedDuringDrain": 0,
+  "completedCohortPerSubmissionSecond": 50.0,
+  "uniqueDeliveries": 100,
+  "completedIdsDelivered": 100,
+  "deliveredAfterFailedPublish": 0,
+  "firstDeliveriesDuringDrain": 0,
+  "duplicates": 0,
+  "outsideCohortDeliveryEvents": 0,
+  "publishFailureRate": 0.0,
+  "deliveryLossRate": 0.0,
+  "p99PublishMs": 0.3421079891268164,
+  "latencyStatus": "observed",
+  "outcomesSettled": true,
+  "expectedPublications": 100,
+  "subscriberErrors": [],
+  "pendingQos2Handshakes": 0,
+  "payloadSizes": [
+    16
+  ],
+  "inputsSha256": {
+    "publishes.ndjson": "e4a40f1c3b482e4b69320a88a2bf0361e6fa38226b8166997b12810bc0eeb217",
+    "deliveries.ndjson": "276e9ab54178cac434f7f6eb6767100bd4859d372ae7dfae7aa2e40acb9bca05",
+    "phases.json": "998b7643f49baa291febe006d602238a8392c786d1a5c67bd3185715952865df"
+  },
+  "knownAnswerPassed": true
+}
