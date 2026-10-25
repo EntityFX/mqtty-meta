@@ -24,6 +24,16 @@ class SubscriberCoverageTests(unittest.TestCase):
         result = subscriber_coverage([self.event('connected', .1, 'publisher-0')], 1, 3)
         self.assertEqual('unobserved', result['status'])
 
+    def test_explicit_model_role_is_used_without_guessing_node_names(self):
+        connected = dict(self.event('connected', .1, 'receiver1broker1'), role='subscriber', clientId='model-sub')
+        disconnected = dict(self.event('disconnected', 2, 'receiver1broker1'), role='subscriber', clientId='model-sub')
+        result = subscriber_coverage([connected, disconnected], 1, 3)
+        self.assertEqual('interrupted', result['status'])
+
+    def test_legacy_boolean_model_snapshots_do_not_prove_continuity(self):
+        result = subscriber_coverage([dict(client='receiver1broker1', connected=True, elapsedSeconds=.1)], 1, 3)
+        self.assertEqual('unobserved', result['status'])
+
     def test_disconnect_at_right_boundary_is_outside_window(self):
         result = subscriber_coverage([self.event('connected', .1), self.event('disconnected', 3)], 1, 3)
         self.assertEqual('continuousConnected', result['status'])

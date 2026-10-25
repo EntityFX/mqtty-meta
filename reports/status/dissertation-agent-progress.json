@@ -1199,7 +1199,7 @@
     "receipt": "reports/audits/dissertation/article-1-skills-validation-v1/mailbox-probe-verification.json"
   },
   "article1MethodologyBrainstorm": {
-    "status": "proposalPrepared",
+    "status": "minimalProgramSelected",
     "document": "docs/dissertation/article-1-methodology-brainstorm.md",
     "recommendation": "retain current applicability analysis, then verify matched-method calibration and new holdout on four conditions",
     "minimalConditions": 4,
@@ -1212,8 +1212,32 @@
       76,
       148
     ],
-    "authorAdoptionRecorded": false,
+    "authorAdoptionRecorded": true,
     "newLinuxRuns": 0,
     "localChecksPassed": 21
+  },
+  "article1MatchedValidation": {
+    "status": "pilotRunningAtLaunchConfirmation",
+    "mainCampaignCompleted": 0,
+    "mainCampaignPlanned": 40,
+    "program": "docs/dissertation/article-1-matched-validation-plan.md",
+    "pilotProtocol": "docs/dissertation/article-1-matched-pilot-protocol.md",
+    "unit": "mqtty-article1-matched-pilot-v1.service",
+    "pidAtConfirmation": 211006,
+    "progressPath": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-validation-v1/pilot-attempt-001/progress.json",
+    "pilotBudgetSeconds": 600,
+    "mainCampaignBudgetSeconds": 21600,
+    "mainCampaignAdmitted": false,
+    "tests": {
+      "mqtty": 96,
+      "native": 10,
+      "python": 28
+    },
+    "commits": {
+      "MqttBenchmark": "0cabae3",
+      "mqtty": "cf6a399"
+    },
+    "confirmation": "reports/audits/dissertation/article-1-matched-pilot-v1/launch.json",
+    "agentStoppedForWaiting": true
   }
 }

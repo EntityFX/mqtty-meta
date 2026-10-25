@@ -1,0 +1,9 @@
+{
+  "files": 363,
+  "archiveSha256": "2210655da34fc4f65f90359c7b2901531307df59fe8a625f88cac3f3e024968d",
+  "manifestSha256": "63752fb74ed0211715fded91e7a077f3eb8e39513f8a1bdbc766981deb425025",
+  "repositories": {
+    "MqttBenchmark": "0cabae3c051ff13aa7f4a2b63f18ef7df8de38c4",
+    "mqtty": "cf6a3999a2b8743460b24b6ea4978e6dcf1aa35b"
+  }
+}

@@ -26,6 +26,7 @@ public static class ModelTrial
         var network = new NetworkOptions { NetworkType = "eth", TransferTicks = 1,
             CapacityBytesPerSecond = 100_000_000, ThroughputWindowTicks = 1000, QueueCapacity = 100_000 };
         var options = new MqttRelayExperimentOptions { RecordPublicationCohort = true,
+            ObserveFullDrainWindow = config.ObserveFullDrainWindow,
             TopologyMode = ExperimentTopologyMode.BrokerFidelity, Brokers = 1, NetworkLength = 1,
             ClientsPerBroker = config.Publishers, ProfileClientCountMode = ProfileClientCountMode.Publishers,
             PublishQos = (MqttQos)config.Qos, SubscribeQos = (MqttQos)config.Qos, PayloadBytes = config.PayloadBytes,

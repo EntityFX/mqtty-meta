@@ -7,7 +7,7 @@ def subscriber_coverage(events, start, end):
         raise ValueError('Expected finite 0 <= start < end')
     selected = []
     for event in events:
-        if event.get('client') != 'subscriber':
+        if event.get('client') != 'subscriber' and event.get('role') != 'subscriber':
             continue
         stamp = event['elapsedSeconds']
         state = event['state']
