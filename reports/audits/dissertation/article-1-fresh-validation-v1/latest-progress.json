@@ -1,0 +1,26 @@
+{
+  "status": "completedWithTechnicalErrors",
+  "phase": "finished",
+  "controllerPid": 163732,
+  "startedUtc": "2026-10-24T23:32:32.789784+00:00",
+  "plannedNative": 48,
+  "plannedModel": 48,
+  "nativeCompleted": 36,
+  "modelCompleted": 48,
+  "completedPairs": 48,
+  "technicalErrors": 12,
+  "programSha256": "b9d8ca76e082dfe1d4d7f4882468f981441f53e6ed0e92579912d54b2ba83087",
+  "continuationBudgetSeconds": 21497,
+  "budgetStartedUtc": "2026-10-25T08:03:39.844496+00:00",
+  "priorControllerFailure": "Port reservation errno98",
+  "activeJob": null,
+  "elapsedSeconds": 1657.6209208670189,
+  "remainingBudgetSeconds": 19824.386326876993,
+  "finishedUtc": "2026-10-25T08:31:17.465410+00:00",
+  "comparison": {
+    "metricRows": 192,
+    "failedMetrics": 91,
+    "passedMetrics": 53,
+    "notEvaluated": 48
+  }
+}

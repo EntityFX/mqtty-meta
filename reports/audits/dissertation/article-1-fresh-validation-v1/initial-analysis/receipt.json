@@ -1,0 +1,26 @@
+{
+  "arithmeticVerified": true,
+  "sourceSummarySha256": "43078972da19c2c2563ab911cd1f6ff82d32aeaa3b5ad194fb7f655e64c48726",
+  "comparisonRows": 192,
+  "fullPairs": 36,
+  "nativeErrors": 12,
+  "countsByBroker": {
+    "ActiveMQ": {
+      "failed": 36,
+      "passed": 12
+    },
+    "Aedes": {
+      "failed": 22,
+      "passed": 26
+    },
+    "EMQX": {
+      "notEvaluated": 48
+    },
+    "Mosquitto": {
+      "failed": 33,
+      "passed": 15
+    }
+  },
+  "rawEventsRecountedByThisTool": false,
+  "criteriaChanged": false
+}

@@ -1,0 +1,134 @@
+{
+  "passed": true,
+  "native": {
+    "scope": "One subscriber; attempts in [measurementStart, measurementEnd); observed through drainEnd",
+    "attempted": 20153,
+    "completed": 20153,
+    "failed": 0,
+    "pending": 0,
+    "measurementSeconds": 2.0,
+    "attemptedRps": 10076.5,
+    "completedInWindow": 20137,
+    "completedRpsInWindow": 10068.5,
+    "completedDuringDrain": 16,
+    "completedCohortPerSubmissionSecond": 10076.5,
+    "uniqueDeliveries": 20153,
+    "completedIdsDelivered": 20153,
+    "deliveredAfterFailedPublish": 0,
+    "firstDeliveriesDuringDrain": 18,
+    "duplicates": 0,
+    "outsideCohortDeliveryEvents": 9612,
+    "publishFailureRate": 0.0,
+    "deliveryLossRate": 0.0,
+    "p99PublishMs": 3.120800000000145,
+    "latencyStatus": "observed",
+    "outcomesSettled": true,
+    "rawSha256": {
+      "deliveries.ndjson": "767906baa732b40a36e4e6581986a656120f61c955a88729d71376a1b9d91df2",
+      "connections.ndjson": "98fb5c2af16bdbb032f4ecfb6ecdc7d597b121d6d2f8cbd3ca3a000fc89e6442",
+      "phases.json": "89124b50335f5ee8a28f41177c258844b30782f06b32d0742f5a26824289a1c1",
+      "publishes.ndjson": "5a74caf7e7b42b18960850946caadb318e1924f1031f8428e766d5b865783d89"
+    }
+  },
+  "process": {
+    "pid": 176130,
+    "exitCode": 0,
+    "wallSeconds": 3.520496765995631
+  },
+  "elapsedSeconds": 24.615765163005562,
+  "scientificInputsChanged": false,
+  "readiness": {
+    "protocol": "MQTT 3.1.1 CONNACK",
+    "rejectedProbes": [
+      {
+        "observedAtUtc": "2026-10-25T08:35:32.223027+00:00",
+        "error": "[Errno 104] Connection reset by peer"
+      },
+      {
+        "observedAtUtc": "2026-10-25T08:35:32.423937+00:00",
+        "error": "[Errno 104] Connection reset by peer"
+      },
+      {
+        "observedAtUtc": "2026-10-25T08:35:32.624801+00:00",
+        "error": "[Errno 104] Connection reset by peer"
+      },
+      {
+        "observedAtUtc": "2026-10-25T08:35:32.826908+00:00",
+        "error": "[Errno 104] Connection reset by peer"
+      },
+      {
+        "observedAtUtc": "2026-10-25T08:35:33.027693+00:00",
+        "error": "[Errno 104] Connection reset by peer"
+      },
+      {
+        "observedAtUtc": "2026-10-25T08:35:33.228409+00:00",
+        "error": "[Errno 104] Connection reset by peer"
+      },
+      {
+        "observedAtUtc": "2026-10-25T08:35:33.429377+00:00",
+        "error": "[Errno 104] Connection reset by peer"
+      },
+      {
+        "observedAtUtc": "2026-10-25T08:35:33.630392+00:00",
+        "error": "[Errno 104] Connection reset by peer"
+      },
+      {
+        "observedAtUtc": "2026-10-25T08:35:33.831372+00:00",
+        "error": "[Errno 104] Connection reset by peer"
+      },
+      {
+        "observedAtUtc": "2026-10-25T08:35:34.032477+00:00",
+        "error": "[Errno 104] Connection reset by peer"
+      },
+      {
+        "observedAtUtc": "2026-10-25T08:35:34.235314+00:00",
+        "error": "[Errno 104] Connection reset by peer"
+      },
+      {
+        "observedAtUtc": "2026-10-25T08:35:34.436442+00:00",
+        "error": "[Errno 104] Connection reset by peer"
+      },
+      {
+        "observedAtUtc": "2026-10-25T08:35:34.637467+00:00",
+        "error": "[Errno 104] Connection reset by peer"
+      },
+      {
+        "observedAtUtc": "2026-10-25T08:35:34.838515+00:00",
+        "error": "[Errno 104] Connection reset by peer"
+      },
+      {
+        "observedAtUtc": "2026-10-25T08:35:35.039258+00:00",
+        "error": "[Errno 104] Connection reset by peer"
+      },
+      {
+        "observedAtUtc": "2026-10-25T08:35:35.240351+00:00",
+        "error": "[Errno 104] Connection reset by peer"
+      },
+      {
+        "observedAtUtc": "2026-10-25T08:35:35.441260+00:00",
+        "error": "[Errno 104] Connection reset by peer"
+      },
+      {
+        "observedAtUtc": "2026-10-25T08:35:35.642176+00:00",
+        "error": "[Errno 104] Connection reset by peer"
+      },
+      {
+        "observedAtUtc": "2026-10-25T08:35:35.843481+00:00",
+        "error": "[Errno 104] Connection reset by peer"
+      },
+      {
+        "observedAtUtc": "2026-10-25T08:35:36.044447+00:00",
+        "error": "[Errno 104] Connection reset by peer"
+      },
+      {
+        "observedAtUtc": "2026-10-25T08:35:36.245196+00:00",
+        "error": "[Errno 104] Connection reset by peer"
+      },
+      {
+        "observedAtUtc": "2026-10-25T08:35:36.445847+00:00",
+        "error": "[Errno 104] Connection reset by peer"
+      }
+    ],
+    "readyAtUtc": "2026-10-25T08:35:36.647840+00:00"
+  }
+}

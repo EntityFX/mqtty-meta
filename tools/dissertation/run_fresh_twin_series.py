@@ -109,13 +109,23 @@ def broker_start(metadata, case, port, remaining):
     process = subprocess.Popen(["taskset", "-c", "0"] + command, stdout=log, stderr=subprocess.STDOUT,
                                start_new_session=True, env=environment, cwd=cwd)
     deadline = time.monotonic() + min(70, remaining)
+    readiness = []
     try:
         while time.monotonic() < deadline:
             if process.poll() is not None:
                 raise RuntimeError(f"Owned {name} exited before ready: {process.returncode}; see {case / 'broker.log'}")
             try:
                 with socket.create_connection(("127.0.0.1", port), timeout=.2):
-                    return process, log
+                    pass
+                if name == "EMQX":
+                    try:
+                        mqtt_ready(port)
+                    except (OSError, ValueError) as error:
+                        readiness.append(dict(observedAtUtc=clock(), error=str(error)))
+                        time.sleep(.2)
+                        continue
+                    write_new(case / "broker-readiness.json", dict(protocol="MQTT 3.1.1 CONNACK", rejectedProbes=readiness, readyAtUtc=clock()))
+                return process, log
             except OSError:
                 time.sleep(.1)
         raise RuntimeError(f"Owned {name} readiness timeout; see {case / 'broker.log'}")
@@ -123,6 +133,39 @@ def broker_start(metadata, case, port, remaining):
         terminate(process)
         log.close()
         raise
+
+
+def mqtt_ready(port):
+    """TCP listen is insufficient while EMQX is still booting its applications."""
+    client_id = b"mqtty-readiness"
+    body = b"\x00\x04MQTT\x04\x02\x00\x0a" + len(client_id).to_bytes(2, "big") + client_id
+    with socket.create_connection(("127.0.0.1", port), timeout=1) as connection:
+        connection.settimeout(1)
+        connection.sendall(b"\x10" + bytes([len(body)]) + body)
+        reply = b""
+        while len(reply) < 4:
+            part = connection.recv(4 - len(reply))
+            if not part:
+                raise ValueError("TCP accepted but closed before MQTT CONNACK")
+            reply += part
+        if reply != b"\x20\x02\x00\x00":
+            raise ValueError("MQTT readiness rejected: " + reply.hex())
+        connection.sendall(b"\xe0\x00")
+
+
+def reusable_model(parent, job):
+    for result in sorted(parent.glob("attempt-*/result.json"), reverse=True):
+        row = json.loads(result.read_text())
+        if not row.get("model"):
+            continue
+        config = json.loads((result.parent / "config.json").read_text())
+        if any(config.get(key) != value for key, value in job.items()):
+            raise ValueError("Prior model configuration differs from program")
+        trial = json.loads((result.parent / "model/trial.json").read_text())
+        if reverify_events(trial["runDirectory"]) != row["model"]:
+            raise ValueError("Prior model events changed")
+        return row, trial, str(result)
+    return None
 
 
 def comparisons(output, rows):
@@ -271,7 +314,16 @@ def main():
         config_path = case / "config.json"
         write_new(config_path, config)
         row = dict(broker=job["broker"], qos=job["qos"], publishers=job["publishers"], seed=job["seed"], repeat=job["repeat"], id=job["id"])
+        prior_model = reusable_model(parent, job) if args.resume else None
         for mode in ("native", "model"):
+            if mode == "model" and prior_model:
+                prior, trial, source = prior_model
+                row["model"] = prior["model"]
+                row["modelReusedFrom"] = source
+                (case / "model").mkdir()
+                write_new(case / "model/trial.json", dict(trial, reusedFrom=source))
+                state["modelCompleted"] += 1
+                continue
             broker = broker_log = None
             state.update(phase=mode, activeJob=job["id"], elapsedSeconds=time.monotonic() - started,
                          remainingBudgetSeconds=max(0, deadline - time.monotonic()))
@@ -301,15 +353,19 @@ def main():
                     broker_log.close()
         write_new(case / "result.json", row)
         rows.append(row)
-        state.update(completedPairs=len(rows), elapsedSeconds=time.monotonic() - started,
+        state.update(completedPairs=sum(bool(r.get("native") and r.get("model")) for r in rows), processedRows=len(rows), elapsedSeconds=time.monotonic() - started,
                      remainingBudgetSeconds=max(0, deadline - time.monotonic()))
         progress(status_path, state)
     if state["status"] == "running":
         state["status"] = "completedWithTechnicalErrors" if state["technicalErrors"] else "completed"
-    evaluation = comparisons(output, rows)
+    analysis = output
+    if (output / "summary.json").exists() or (output / "native-vs-model.csv").exists():
+        analysis = output / ("analysis-" + str(os.getpid()))
+        analysis.mkdir(exist_ok=False)
+    evaluation = comparisons(analysis, rows)
     state.update(phase="finished", activeJob=None, elapsedSeconds=time.monotonic() - started,
-                 finishedUtc=clock(), comparison=evaluation)
-    write_new(output / "summary.json", state | dict(rows=rows))
+                 finishedUtc=clock(), comparison=evaluation, analysisDirectory=str(analysis))
+    write_new(analysis / "summary.json", state | dict(rows=rows))
     progress(status_path, state)
     print(json.dumps(state))
     return 0 if state["status"] == "completed" else 1

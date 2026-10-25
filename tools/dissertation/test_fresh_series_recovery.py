@@ -4,9 +4,37 @@ import tempfile
 import socket
 import unittest
 from unittest.mock import MagicMock, patch
-from run_fresh_twin_series import available_port, recovered_rows
+from run_fresh_twin_series import available_port, recovered_rows, mqtt_ready, reusable_model
 
 class PortRecoveryTests(unittest.TestCase):
+    def test_readiness_requires_full_success_connack(self):
+        with patch('run_fresh_twin_series.socket.create_connection') as connect:
+            connection=connect.return_value.__enter__.return_value
+            connection.recv.side_effect=[b'\x20',b'\x02\x00\x00']
+            mqtt_ready(33083)
+            sent=connection.sendall.call_args_list[0].args[0]
+            self.assertEqual(len(sent)-2,sent[1])
+            self.assertEqual(b'\xe0\x00',connection.sendall.call_args_list[-1].args[0])
+
+    def test_tcp_close_and_negative_connack_are_not_ready(self):
+        for reply in (b'',b'\x20\x02\x00\x03'):
+            with self.subTest(reply=reply),patch('run_fresh_twin_series.socket.create_connection') as connect:
+                connect.return_value.__enter__.return_value.recv.return_value=reply
+                with self.assertRaises(ValueError):mqtt_ready(33083)
+
+    def test_valid_model_from_failed_native_is_reused_read_only(self):
+        with tempfile.TemporaryDirectory() as directory:
+            parent=Path(directory);case=parent/'attempt-001';(case/'model').mkdir(parents=True)
+            job={'id':'case','qos':1};row={'model':{'verified':1},'nativeError':'connect closed'}
+            (case/'config.json').write_text(json.dumps(job))
+            (case/'result.json').write_text(json.dumps(row))
+            trial={'runDirectory':'old-frozen-model'}
+            (case/'model/trial.json').write_text(json.dumps(trial))
+            with patch('run_fresh_twin_series.reverify_events',return_value=row['model']):
+                result=reusable_model(parent,job)
+                self.assertEqual(row,result[0]);self.assertEqual(trial,result[1])
+            self.assertEqual(row,json.loads((case/'result.json').read_text()))
+
     def test_reuse_address_is_set_before_binding(self):
         with patch("run_fresh_twin_series.socket.socket") as factory:
             reservation = factory.return_value.__enter__.return_value

@@ -1010,15 +1010,15 @@
     "readinessPercentUnchanged": true
   },
   "article1FreshSeries": {
-    "status": "continuationRunningConfirmedAtLaunch",
-    "unit": "mqtty-article1-fresh-series-recovery-v3.service",
-    "mainPid": 163732,
+    "status": "retryMissingNativeRunningConfirmedAtLaunch",
+    "unit": "mqtty-article1-emqx-retry-v1.service",
+    "mainPid": 176244,
     "startedAtMsk": "2026-10-25T02:32:32+03:00",
     "hardStopMsk": "2026-10-25T17:01:46.572895+03:00",
     "nativeTarget": 48,
     "modelTarget": 48,
     "workers": 1,
-    "technicalErrorsAtConfirmation": 0,
+    "technicalErrorsAtConfirmation": 12,
     "progressPath": "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/series-attempt-001/progress.json",
     "programSha256": "b9d8ca76e082dfe1d4d7f4882468f981441f53e6ed0e92579912d54b2ba83087",
     "accuracyClaim": false,
@@ -1037,7 +1037,50 @@
     "modelCompletedBeforeContinuation": 4,
     "receiptPath": "reports/audits/dissertation/article-1-fresh-validation-v1/six-hour-launch-receipt.json",
     "programChanged": false,
-    "profilesChanged": false
+    "profilesChanged": false,
+    "latestObservationMsk": "2026-10-25T11:19:29+03:00",
+    "observedProgress": {
+      "status": "completedWithTechnicalErrors",
+      "phase": "finished",
+      "controllerPid": 163732,
+      "startedUtc": "2026-10-24T23:32:32.789784+00:00",
+      "plannedNative": 48,
+      "plannedModel": 48,
+      "nativeCompleted": 36,
+      "modelCompleted": 48,
+      "completedPairs": 48,
+      "technicalErrors": 12,
+      "programSha256": "b9d8ca76e082dfe1d4d7f4882468f981441f53e6ed0e92579912d54b2ba83087",
+      "continuationBudgetSeconds": 21497,
+      "budgetStartedUtc": "2026-10-25T08:03:39.844496+00:00",
+      "priorControllerFailure": "Port reservation errno98",
+      "activeJob": null,
+      "elapsedSeconds": 1657.6209208670189,
+      "remainingBudgetSeconds": 19824.386326876993,
+      "finishedUtc": "2026-10-25T08:31:17.465410+00:00",
+      "comparison": {
+        "metricRows": 192,
+        "failedMetrics": 91,
+        "passedMetrics": 53,
+        "notEvaluated": 48
+      }
+    },
+    "completedPairs": 30,
+    "lastCheckMsk": "11:28 МСК",
+    "successfulPairsUpperBound": 36,
+    "counterWarning": "completedPairs counts processed result rows, including failed native jobs; not successful pairs",
+    "confirmedFailure": "TCP listener opened before EMQX could accept MQTT CONNECT; 22 reset probes then successful CONNACK in pilot",
+    "systemdState": "active/running",
+    "finishedAtMsk": "2026-10-25T11:31:17+03:00",
+    "processedRows": 48,
+    "completeNativeModelPairs": 36,
+    "scientificResultsAccepted": false,
+    "retryLaunchReceipt": "reports/audits/dissertation/article-1-fresh-validation-v1/emqx-retry-launch-receipt.json",
+    "completePairsReused": 36,
+    "modelResultsReusedTarget": 12,
+    "missingNativeTarget": 12,
+    "deadlineUtc": "2026-10-25T14:01:46.572895+00:00",
+    "currentAttemptTechnicalErrorsAtLaunch": 0
   },
   "webSavedTopologySelector": {
     "status": "deployedHealthConfirmed",
@@ -1065,6 +1108,7 @@
       "independently recount events and compare aligned cohorts",
       "update table, abstract and conclusions with discrepancies",
       "public reproducibility package and author approval"
-    ]
+    ],
+    "freshComparison": "Initial 36 pairs: 53 metrics passed, 91 failed; 48 EMQX metrics not evaluated. Arithmetic independently checked; full series pending."
   }
 }
