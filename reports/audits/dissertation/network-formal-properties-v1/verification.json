@@ -1,0 +1,117 @@
+{
+  "status": "abstractPropertiesChecked",
+  "connectedGraphs": 44,
+  "graphOrigins": 167,
+  "exploredStates": 15005,
+  "terminalChecks": 401,
+  "maximumNodes": 4,
+  "counterexample": {
+    "nodes": 4,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "diameter": 2,
+    "hopLimit": 2,
+    "origin": 0,
+    "deliveredNodes": [
+      0,
+      1,
+      2
+    ],
+    "missingNodes": [
+      3
+    ],
+    "result": [
+      7,
+      3,
+      1,
+      2
+    ]
+  },
+  "verifiedSavedConditions": [
+    {
+      "topology": "line",
+      "qos": 0,
+      "offeredRps": 1000,
+      "matchedSeeds": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "topology": "line",
+      "qos": 0,
+      "offeredRps": 5000,
+      "matchedSeeds": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "topology": "line",
+      "qos": 1,
+      "offeredRps": 1000,
+      "matchedSeeds": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "topology": "ring",
+      "qos": 0,
+      "offeredRps": 1000,
+      "matchedSeeds": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "topology": "ring",
+      "qos": 0,
+      "offeredRps": 5000,
+      "matchedSeeds": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "topology": "ring",
+      "qos": 1,
+      "offeredRps": 1000,
+      "matchedSeeds": [
+        42,
+        43,
+        44
+      ]
+    }
+  ],
+  "sourceSha256": {
+    "C:\\projects\\mqtty-meta\\tools\\dissertation\\verify_forwarding_properties.py": "8fb934370abad3833842c2cb69ad19305be4d5263405a9a40704a14ef0546b2c",
+    "reports\\audits\\dissertation\\network-main-recount-v1\\condition-stats.json": "920fd17a22658c27831756ea60b417fdc5a2399b6f873d39da9c236426ed4ccd",
+    "mqtty\\src\\EntityFX.MqttSimulator\\EntityFX.MqttY.Federation.App\\Federation\\StaticFederator.cs": "3344d00773d110bc158fb6f4fcb119323b8f52212443ba5c5bdceb151ae9aa20",
+    "mqtty\\src\\EntityFX.MqttSimulator\\EntityFX.MqttY.Federation.App\\Federation\\FloodingPolicy.cs": "a185d70cd0101ae6cc9329becf74ac42a336c77ec4334697e24fa03c3cc8861f"
+  },
+  "scope": "All abstract event orders for connected labeled simple undirected graphs up to four nodes; no queues, faults or MQTT packets; not proof by testing for arbitrary graph size; analytic proof separate",
+  "newMqttSimulations": 0,
+  "linuxContacted": false
+}

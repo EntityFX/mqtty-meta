@@ -1581,11 +1581,11 @@
     }
   },
   "networkAdditionalSession": {
-    "status": "startedPreflightRevalidation",
+    "status": "runningMatrix",
     "service": "mqtty-network-remaining-v1.service",
     "observedMainPid": 325717,
     "observedActiveState": "active",
-    "observedAtEpoch": 1793032453.0062962,
+    "observedAtEpoch": 1793032960.1804857,
     "wallLimitSeconds": 21600,
     "deadlineEpoch": 1793054027.088146,
     "remainingMatrix": 56,
@@ -1594,7 +1594,28 @@
     "workers": 2,
     "originalBudgetUnchanged": true,
     "scientificInputsChanged": false,
-    "evidence": "reports/audits/dissertation/network-remaining-session-v1/start-status.json",
-    "currentResultsNotYetObserved": true
+    "evidence": "reports/audits/dissertation/network-remaining-session-v1/status-20261026-1942.json",
+    "currentResultsNotYetObserved": true,
+    "observedVerifiedMatrix": 106,
+    "observedReplays": 0,
+    "activeJobs": [
+      "matrix.ring.federation.q2.r5000.w10.s43",
+      "matrix.ring.federation.q2.r5000.w10.s44"
+    ]
+  },
+  "networkFormalReview": {
+    "status": "boundedFormalReviewPassed",
+    "connectedGraphs": 44,
+    "graphOrigins": 167,
+    "exploredStates": 15005,
+    "terminalChecks": 401,
+    "newTestsPassed": 4,
+    "existingReviewTestsPassed": 5,
+    "reportChecksPassed": 31,
+    "evidence": "reports/audits/dissertation/network-formal-properties-v1/report-verification.json",
+    "preparesStep": "32",
+    "step32Complete": false,
+    "newMqttSimulations": 0,
+    "latexChanged": false
   }
 }

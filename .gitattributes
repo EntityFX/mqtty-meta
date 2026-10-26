@@ -43,3 +43,8 @@
 /tools/dissertation/test_article2_evidence_package.py -text
 # Evidence-map bytes are recorded in the dissertation claims receipt.
 /docs/dissertation/claim-evidence-map.md -text
+# Formal review records these bytes in its source receipt.
+/docs/dissertation/network-forwarding-proofs.md -text
+/docs/dissertation/network-model-contract.md -text
+/tools/dissertation/verify_forwarding_properties.py -text
+/tools/dissertation/test_forwarding_properties.py -text

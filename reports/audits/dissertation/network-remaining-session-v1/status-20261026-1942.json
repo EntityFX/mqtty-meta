@@ -1,0 +1,97 @@
+{
+  "checkedEpoch": 1793032960.1804857,
+  "service": {
+    "RuntimeMaxUSec": "6h",
+    "MainPID": "325717",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "MemoryMax": "10737418240",
+    "MemorySwapMax": "0",
+    "ActiveState": "active",
+    "SubState": "running",
+    "ActiveEnterTimestamp": "Mon 2026-10-26 19:33:46 MSK"
+  },
+  "budget": {
+    "decisionSha256": "0436694c5812eca03e066cc22f4516f18dc344bd0cac359a2b0423f381c5dd27",
+    "startedEpoch": 1793032427.088146,
+    "deadlineEpoch": 1793054027.088146,
+    "wallLimitSeconds": 21600,
+    "originalBudgetSha256": "dbc66fafbb76078d783eda68a13d4b8e53ba55f37d79a1fa2cd947e5d14d3950"
+  },
+  "progress": {
+    "status": "running",
+    "phase": "matrix",
+    "executionManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+    "verified": 106,
+    "technicalErrors": 2,
+    "counts": {
+      "pilot": {
+        "done": 0,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 30
+      },
+      "matrix": {
+        "done": 106,
+        "unresolvedErrors": 2,
+        "warnings": 16,
+        "total": 162
+      },
+      "replay": {
+        "done": 0,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 6
+      },
+      "diagnostic": {
+        "done": 0,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 54
+      }
+    },
+    "attempts": {
+      "pilot": {
+        "total": 0,
+        "failed": 0
+      },
+      "matrix": {
+        "total": 109,
+        "failed": 3
+      },
+      "replay": {
+        "total": 0,
+        "failed": 0
+      },
+      "diagnostic": {
+        "total": 0,
+        "failed": 0
+      }
+    },
+    "warnings": 16,
+    "active": {
+      "workers": 2,
+      "jobs": {
+        "matrix.ring.federation.q2.r5000.w10.s43": {
+          "pid": 326062,
+          "elapsedSeconds": 220.7499533430091,
+          "rssBytes": 813498368,
+          "peakRssBytes": 813498368
+        },
+        "matrix.ring.federation.q2.r5000.w10.s44": {
+          "pid": 326063,
+          "elapsedSeconds": 220.78672607196495,
+          "rssBytes": 798474240,
+          "peakRssBytes": 807280640
+        }
+      },
+      "remainingSeconds": 20947.46187441371
+    },
+    "reason": null,
+    "observedAtUtc": "2026-10-26T16:42:39.626539+00:00"
+  },
+  "oldBudgetSha256": "dbc66fafbb76078d783eda68a13d4b8e53ba55f37d79a1fa2cd947e5d14d3950",
+  "originalBudgetUnchanged": true,
+  "stage": "running",
+  "stderr": ""
+}
