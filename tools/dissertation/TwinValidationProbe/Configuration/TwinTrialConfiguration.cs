@@ -15,6 +15,8 @@ public sealed class TwinTrialConfiguration
     public double DrainSeconds { get; set; } = 1;
     public double TickSeconds { get; set; } = .00001;
     public bool ObserveFullDrainWindow { get; set; }
+    public bool WriteMessageEventLogs { get; set; } = true;
+    public bool MeasureRttBaseline { get; set; }
     public string Endpoint { get; set; } = "mqtt://127.0.0.1:1883";
     public string ProfilePath { get; set; } = "";
     public string ProfileSha256 { get; set; } = "";
@@ -22,6 +24,8 @@ public sealed class TwinTrialConfiguration
 
     public void Validate()
     {
+        if (!WriteMessageEventLogs && !ObserveFullDrainWindow)
+            throw new InvalidDataException("The logging-only diagnostic requires full observation.");
         if (string.IsNullOrWhiteSpace(Id) || string.IsNullOrWhiteSpace(CampaignId) || string.IsNullOrWhiteSpace(RuntimeIdentity) ||
             Qos is not (1 or 2) || Publishers <= 0 || PayloadBytes != 16 ||
             new[] { MeasurementSeconds, DrainSeconds, TickSeconds }.Any(x => !double.IsFinite(x) || x <= 0) ||
