@@ -1,0 +1,62 @@
+[
+  {
+    "topology": "line",
+    "mode": "federation",
+    "status": "sealedSummaryAvailable",
+    "count": 18
+  },
+  {
+    "topology": "line",
+    "mode": "relay",
+    "status": "sealedSummaryAvailable",
+    "count": 18
+  },
+  {
+    "topology": "line",
+    "mode": "single",
+    "status": "sealedSummaryAvailable",
+    "count": 18
+  },
+  {
+    "topology": "ring",
+    "mode": "federation",
+    "status": "sealedSummaryAvailable",
+    "count": 16
+  },
+  {
+    "topology": "ring",
+    "mode": "federation",
+    "status": "technicalError",
+    "count": 2
+  },
+  {
+    "topology": "ring",
+    "mode": "relay",
+    "status": "sealedSummaryAvailable",
+    "count": 18
+  },
+  {
+    "topology": "ring",
+    "mode": "single",
+    "status": "sealedSummaryAvailable",
+    "count": 18
+  },
+  {
+    "topology": "star",
+    "mode": "federation",
+    "status": "notAttempted",
+    "count": 18
+  },
+  {
+    "topology": "star",
+    "mode": "relay",
+    "status": "notAttempted",
+    "count": 18
+  },
+  {
+    "topology": "star",
+    "mode": "single",
+    "status": "notAttempted",
+    "count": 18
+  }
+]

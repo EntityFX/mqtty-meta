@@ -1497,7 +1497,7 @@
     "verification": "reports/audits/dissertation/article-2-evidence-package-v2/verification.json",
     "revisionChecks": "reports/audits/dissertation/articles-offline-revision-v1/verification.json"
   },
-  "nextAction": "Author/independent human review of article 1; obtain already computed network raw when Linux is available, then audit coverage and compare complete matched groups. Do not rerun finished 40-run series.",
+  "nextAction": "Locally recount source IDs, deliveries, transmissions and phase metrics for 106 downloaded network results; compare complete matched groups. No Linux or new simulation needed for that audit; 56 missing matrix keys and 6 replays require a separate resource/program decision.",
   "article1BoundedReview": {
     "status": "selfReviewCompletedIndependentReviewUnavailable",
     "document": "reports/analysis/Article-1-bounded-review.md",
@@ -1520,5 +1520,27 @@
     "publishedPackageCommit": "6ff575f",
     "publicationVerified": true,
     "publicationReceipt": "reports/audits/dissertation/articles-offline-revision-v1/publication.json"
+  },
+  "networkMainTransfer": {
+    "status": "fullDirectoryTransferredAndMetadataVerified",
+    "fileCount": 2854,
+    "sourceBytes": 9618618314,
+    "archiveBytes": 1048642907,
+    "archiveSha256": "5adfa393a075b29ab0a0c8dba4263e97231ede6bb8445daf9c4793df913af90b",
+    "localRoot": "C:\\temp\\mqtty-evidence\\network-full-3h-v1\\raw-001",
+    "perCaseCoverageAvailableLocally": true,
+    "availableSealedSummaries": 106,
+    "plannedMatrix": 162,
+    "unresolvedErrorKeys": 2,
+    "notAttemptedKeys": 54,
+    "completeModeTripletsByMetadata": 34,
+    "plannedModeTriplets": 54,
+    "replaysCompleted": 0,
+    "replaysPlanned": 6,
+    "rawArithmeticRecountPerformed": false,
+    "linuxRequiredForNextAnalysis": false,
+    "report": "reports/analysis/Network-main-transfer.md",
+    "verification": "reports/audits/dissertation/network-main-transfer-v1/verification.json",
+    "coverage": "reports/audits/dissertation/network-main-transfer-v1/coverage.csv"
   }
 }

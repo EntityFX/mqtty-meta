@@ -1,0 +1,65 @@
+{
+  "sourceRoot": "/run/media/entityfx/hd250/mqtty-evidence/network-full-3h-v1",
+  "service": "mqtty-network-full-3h-v1.service",
+  "systemdShow": "MainPID=0\nResult=exit-code\nExecMainStatus=1\nActiveState=failed\nSubState=failed\n",
+  "progress": {
+    "status": "budgetExhausted",
+    "phase": "matrix",
+    "executionManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+    "verified": 106,
+    "technicalErrors": 2,
+    "counts": {
+      "pilot": {
+        "done": 0,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 30
+      },
+      "matrix": {
+        "done": 106,
+        "unresolvedErrors": 2,
+        "warnings": 16,
+        "total": 162
+      },
+      "replay": {
+        "done": 0,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 6
+      },
+      "diagnostic": {
+        "done": 0,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 54
+      }
+    },
+    "attempts": {
+      "pilot": {
+        "total": 0,
+        "failed": 0
+      },
+      "matrix": {
+        "total": 109,
+        "failed": 3
+      },
+      "replay": {
+        "total": 0,
+        "failed": 0
+      },
+      "diagnostic": {
+        "total": 0,
+        "failed": 0
+      }
+    },
+    "warnings": 16,
+    "active": {
+      "workers": 2,
+      "jobs": {},
+      "remainingSeconds": 0
+    },
+    "reason": "executionBudgetExhausted",
+    "observedAtUtc": "2026-10-24T21:01:41.067005+00:00"
+  },
+  "journal": "2026-10-24T21:03:38+03:00 entityfx-pc systemd[1434]: Starting mqtty-network-full-3h-v1.service - Full network matrix 162 plus six replays; shared three-hour cap...\n2026-10-24T21:03:38+03:00 entityfx-pc systemd[1434]: Started mqtty-network-full-3h-v1.service - Full network matrix 162 plus six replays; shared three-hour cap.\n2026-10-24T21:38:35+03:00 entityfx-pc systemd[1434]: mqtty-network-full-3h-v1.service: Main process exited, code=exited, status=1/FAILURE\n2026-10-24T21:38:35+03:00 entityfx-pc systemd[1434]: mqtty-network-full-3h-v1.service: Failed with result 'exit-code'.\n2026-10-24T21:38:35+03:00 entityfx-pc systemd[1434]: mqtty-network-full-3h-v1.service: Consumed 2h 16min 40.052s CPU time, 6.2G memory peak.\n2026-10-24T21:44:14+03:00 entityfx-pc systemd[1434]: Started mqtty-network-full-3h-v1.service - Resume verified network campaign with inspected 4GiB RSS allowance.\n2026-10-25T00:01:41+03:00 entityfx-pc systemd[1434]: mqtty-network-full-3h-v1.service: Main process exited, code=exited, status=1/FAILURE\n2026-10-25T00:01:41+03:00 entityfx-pc systemd[1434]: mqtty-network-full-3h-v1.service: Failed with result 'exit-code'.\n2026-10-25T00:01:41+03:00 entityfx-pc systemd[1434]: mqtty-network-full-3h-v1.service: Consumed 5h 5min 27.305s CPU time, 7.5G memory peak.\n"
+}
