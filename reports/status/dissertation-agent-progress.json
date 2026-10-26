@@ -1564,6 +1564,11 @@
     "newSimulationsExecuted": false,
     "linuxContacted": false,
     "next": "Document resource/program decision for 56 missing results and 6 replays; no automatic restart",
-    "globalPercentUnchangedReason": "Original full-network steps remain incomplete; local raw verification is complete"
+    "globalPercentUnchangedReason": "Original full-network steps remain incomplete; local raw verification is complete",
+    "publication": {
+      "commit": "e63b1576e89e58977c9a9ee07eb07bc56901dff0",
+      "remote": "origin/develop",
+      "status": "pushed"
+    }
   }
 }
