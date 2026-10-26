@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "fixedBeforeRuns": true,
+  "parentRuntimeGate": "RUNTIME READY",
+  "runtimeRoot": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-main-v1",
+  "runtimeManifestSha256": "06c1d88b5777befcb60385cc543207ade9c68017e7e4c4507afbe31c7f9e04fc",
+  "filesVerified": 54,
+  "benchmarkCommit": "ab513df",
+  "mqttyCommit": "4c65853",
+  "metaCommit": "43eef6b",
+  "testEvidence": {
+    "red": "ModuleNotFoundError before implementation",
+    "localPassed": 4,
+    "linuxPassed": 4,
+    "parentActualMqttTestsPassed": 25,
+    "parentTestsSkipped": 0
+  },
+  "launch": {
+    "service": "mqtty-article1-logging-overhead-v1.service",
+    "pid": 278115,
+    "invocation": "546f4cd8c52946de9f91484324399af2",
+    "runtimeMaxSeconds": 900,
+    "mainCampaignAdmitted": false
+  },
+  "diagnosticScope": "ABBA message event logs only; measured RTT enabled in every case",
+  "loggingOnlySourceSha256": "b5df1511c3a438de769c22968de3a7db09450ffc70dc2151d99bb2e66aefc8c0"
+}

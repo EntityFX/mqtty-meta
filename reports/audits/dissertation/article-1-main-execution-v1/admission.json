@@ -1,0 +1,39 @@
+{
+  "decision": "admitted",
+  "admitted": true,
+  "scope": "40 new matched runs of the observed client-broker-subscriber setup; not isolated broker internals or universal accuracy",
+  "authority": "User requested full Linux series; technical gate evaluated against predeclared observability and fixed-input requirements, no logging-negligibility threshold was declared",
+  "loggingVerification": "reports/audits/dissertation/article-1-logging-overhead-v1/verification.json",
+  "loggingVerificationSha256": "cc4b6ae454fa04bababc6d40bf1719d42627031cd50f3403f60d0db6e7456493",
+  "loggingProgramSha256": "16e49b09a9612944484526d6c9c0fb931cacde0c7d55b0b0cf329295ca27a893",
+  "loggingEffectNegligible": false,
+  "loggingEffectCauseEstablished": false,
+  "loggingScope": "Message-event construction, serialization, queue and file output; connections, subscription and phase files retained in both modes",
+  "mainNativeRecording": "on in every calibration and control run",
+  "phaseSeconds": {
+    "warmup": 1,
+    "measurement": 4,
+    "drain": 5,
+    "tick": 1e-05
+  },
+  "windowDecision": "Four-second submission chosen before new control for more observations than two seconds; not selected by old-profile accuracy. Five-second full observation retained; late outcomes and nondelivery preserved.",
+  "criteria": {
+    "relativeRps": 0.15,
+    "relativeP99": 0.2,
+    "absoluteFailure": 0.05,
+    "absoluteLoss": 0.05
+  },
+  "criteriaChanged": false,
+  "nativePreflight": "20 actual RTT samples, all QoS protocol checks, require positive finite measured RTT; snapshot saved",
+  "runtimeManifestSha256": "06c1d88b5777befcb60385cc543207ade9c68017e7e4c4507afbe31c7f9e04fc",
+  "runtimeFilesVerified": 54,
+  "mqttBenchmarkCommit": "ab513df3d2b65462abcfba8084f066ae4b1bd0a1",
+  "mqttyCommit": "4c658536586f88a89cd3ff5ab0915903640cf3c9",
+  "probeSourceCommit": "43eef6b",
+  "mainRuns": 40,
+  "budgetSeconds": 21600,
+  "modelExecution": "isolated direct Probe; live Web stays unchanged; local direct/Web parity already verified",
+  "freezeBeforeControl": true,
+  "recalibrateFromControl": false,
+  "technicalFailurePolicy": "Preserve attempt and exact cause, stop. Authorized continuation uses same deadline and only missing jobs; no automatic retry on scientific mismatch."
+}

@@ -1388,20 +1388,27 @@
   },
   "localPercentScope": "Legacy foundation block steps 03–06; not current pilot execution",
   "currentStage": {
-    "name": "Strict single-point profile code verification",
-    "completed": 28,
-    "total": 28,
-    "percent": 100,
-    "integrationTestsPassed": 96,
-    "webTestsPassed": 39,
-    "newNativeDiagnosticCompleted": 4,
-    "newNativeDiagnosticPlanned": 4,
-    "loggingOverheadIsolated": false,
-    "mainCampaignCompleted": 0,
-    "mainCampaignPlanned": 40,
-    "mainCampaignAdmitted": false,
-    "evidence": "reports/audits/dissertation/article-1-single-point-profile-v1/verification.json"
+    "name": "Article 1 matched main campaign",
+    "status": "running",
+    "completed": 0,
+    "total": 40,
+    "percent": 0,
+    "scope": "Initial launch observation, not a later result",
+    "mainCampaignAdmitted": true,
+    "calibrationPlanned": 12,
+    "controlPlanned": 12,
+    "modelPlanned": 12,
+    "replayPlanned": 4,
+    "service": "mqtty-article1-matched-main-v1.service",
+    "pidAtLaunch": 279321,
+    "startedEpoch": 1792992450.1227224,
+    "deadlineEpoch": 1793014050.1227224,
+    "budgetSeconds": 21600,
+    "forecastSeconds": 3600,
+    "launchReceipt": "reports/audits/dissertation/article-1-main-execution-v1/launch.json",
+    "agentStoppedForWaiting": true
   },
+
   "modelConnectionTraceGate": {
     "status": "passed",
     "modelLifecycleTestPassed": true,
@@ -1426,5 +1433,31 @@
     "serviceExitCode": 0,
     "report": "reports/analysis/Article-1-instrumentation-diagnostic.md",
     "nextAction": "Recording-only switch with unchanged workload; separate short overhead protocol; select common window and freeze runtime before calibration."
+  },
+  "loggingOnlyDiagnostic": {
+    "status": "completed",
+    "runs": 4,
+    "total": 4,
+    "elapsedSeconds": 59.135475873947144,
+    "testsPassed": 25,
+    "rawFilesVerified": 55,
+    "onMetricValuesRecounted": 42,
+    "offIdRecountAvailable": false,
+    "effectNegligible": false,
+    "causeEstablished": false,
+    "report": "reports/analysis/Article-1-logging-overhead.md"
+  },
+  "article2EvidencePackage": {
+    "status": "verifiedWithinDeclaredScope",
+    "runs": 54,
+    "groups": 18,
+    "aggregatesRecomputed": 378,
+    "testsPassed": 5,
+    "mainNetworkCompleted": 106,
+    "mainNetworkPlanned": 162,
+    "mainReplaysCompleted": 0,
+    "mainReplaysPlanned": 6,
+    "additionalBaselineWeightPersonDays": 0,
+    "report": "reports/analysis/Article-2-evidence-package.md"
   }
 }

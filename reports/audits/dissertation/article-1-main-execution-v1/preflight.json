@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "programSha256": "2312e7d9938d580b9ac8099a1d5dbfc4fef5074fb2a6024008d27e9cd3356dc7",
+  "planned": 40,
+  "alreadyComplete": 0,
+  "estimatedWallSeconds": 3600,
+  "budgetSeconds": 21600,
+  "modelExecution": "isolated-direct-probe; explicit exception: live Web remains unchanged and lacks new single-point format; local Web parity tested separately"
+}

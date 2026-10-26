@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "testsPassed": 25,
+  "testsSkipped": 0,
+  "initialRedFailed": 5,
+  "mqttBenchmarkCommit": "ab513df",
+  "probeSourceCommit": "43eef6b",
+  "coverage": "Actual MQTT against local test broker, message-event on/off, exact submission/full drain, warmup separation, IDs independently seen at server, subscriptions, default behaviour, real RTT preflight tests",
+  "trx": [
+    {
+      "file": "C:\\temp\\mqtty-evidence\\logging-only-v1\\logging-only-red.trx",
+      "sha256": "ee0b2328c1739b663cc4c8012c1533e8cb476809fd681658288d9dcb390e6e07",
+      "counters": {
+        "total": "5",
+        "executed": "5",
+        "passed": "0",
+        "failed": "5",
+        "error": "0",
+        "timeout": "0",
+        "aborted": "0",
+        "inconclusive": "0",
+        "passedButRunAborted": "0",
+        "notRunnable": "0",
+        "notExecuted": "0",
+        "disconnected": "0",
+        "warning": "0",
+        "completed": "0",
+        "inProgress": "0",
+        "pending": "0"
+      }
+    },
+    {
+      "file": "C:\\temp\\mqtty-evidence\\logging-only-v1\\logging-only-green.trx",
+      "sha256": "4d21ef8078337936e0122fe30a430c3c9feff28f928f9fb37a5e65f2bd39cf21",
+      "counters": {
+        "total": "25",
+        "executed": "18",
+        "passed": "18",
+        "failed": "0",
+        "error": "0",
+        "timeout": "0",
+        "aborted": "0",
+        "inconclusive": "0",
+        "passedButRunAborted": "0",
+        "notRunnable": "0",
+        "notExecuted": "0",
+        "disconnected": "0",
+        "warning": "0",
+        "completed": "0",
+        "inProgress": "0",
+        "pending": "0"
+      }
+    },
+    {
+      "file": "C:\\temp\\mqtty-evidence\\logging-only-v1\\logging-only-verified.trx",
+      "sha256": "3762827e5e4af442ddbb4d322686d26de06735ddf0b254533a715d0a90e9bab5",
+      "counters": {
+        "total": "25",
+        "executed": "25",
+        "passed": "25",
+        "failed": "0",
+        "error": "0",
+        "timeout": "0",
+        "aborted": "0",
+        "inconclusive": "0",
+        "passedButRunAborted": "0",
+        "notRunnable": "0",
+        "notExecuted": "0",
+        "disconnected": "0",
+        "warning": "0",
+        "completed": "0",
+        "inProgress": "0",
+        "pending": "0"
+      }
+    }
+  ]
+}
