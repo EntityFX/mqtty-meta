@@ -51,3 +51,6 @@
 # Catalog preserves byte-identical scientific diagram copies and its SHA index.
 /docs/topologies/** -text
 /docs/dissertation/next-delivery-block-plan.md -text
+# Related-work verification records these document bytes.
+/docs/dissertation/article-2-contribution-and-related-work.md -text
+/docs/dissertation/articles-and-work-plan.md -text
