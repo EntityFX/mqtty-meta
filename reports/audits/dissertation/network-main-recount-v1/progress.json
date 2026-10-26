@@ -1,0 +1,9 @@
+{
+  "status": "rawArithmeticVerifiedAvailableSubset",
+  "processed": 106,
+  "total": 106,
+  "passed": 106,
+  "failed": 0,
+  "elapsedSeconds": 311.094000000041,
+  "latest": "matrix.ring.single.q2.r5000.w10.s44"
+}

@@ -1542,5 +1542,28 @@
     "report": "reports/analysis/Network-main-transfer.md",
     "verification": "reports/audits/dissertation/network-main-transfer-v1/verification.json",
     "coverage": "reports/audits/dissertation/network-main-transfer-v1/coverage.csv"
+  },
+  "networkMainRecount": {
+    "status": "rawArithmeticVerifiedAvailableSubset",
+    "availableCases": 106,
+    "rawPassed": 106,
+    "rawFailed": 0,
+    "plannedMatrix": 162,
+    "completeModeTriplets": 34,
+    "plannedModeTriplets": 54,
+    "conditionsWithThreeCommonSeeds": 11,
+    "conditionsWithOneCommonSeed": 1,
+    "excludedUnmatchedAvailableCases": 4,
+    "originalWarningCases": 16,
+    "replaysCompleted": 0,
+    "replaysPlanned": 6,
+    "elapsedSeconds": 311.14099999994505,
+    "report": "reports/analysis/Network-main-recount.md",
+    "verification": "reports/audits/dissertation/network-main-recount-v1/verification.json",
+    "articleUpdated": "docs/dissertation/articles/article-2-relay-federation.md",
+    "newSimulationsExecuted": false,
+    "linuxContacted": false,
+    "next": "Document resource/program decision for 56 missing results and 6 replays; no automatic restart",
+    "globalPercentUnchangedReason": "Original full-network steps remain incomplete; local raw verification is complete"
   }
 }

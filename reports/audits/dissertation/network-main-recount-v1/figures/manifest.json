@@ -1,0 +1,34 @@
+{
+  "sourceStatsSha256": "920fd17a22658c27831756ea60b417fdc5a2399b6f873d39da9c236426ed4ccd",
+  "rendererSha256": "c7009c8d33560c15c0cca3d12451d41eed0313e2792b559329949590728e2e01",
+  "palette": "CS_PEER_PALETTE + CS_SUPPORT_COLORS",
+  "originalTopologies": {
+    "topology-physical.svg": {
+      "source": "C:\\temp\\mqtty-evidence\\network-full-3h-v1\\raw-001\\runs\\matrix.line.relay.q0.r1000.w10.s42\\attempt-001\\output\\topology-physical.svg",
+      "sha256": "da604c9333602e17ea05bd27eca558cb72e6f3e381a7783f178debf98ae4e631"
+    },
+    "topology-physical.mmd": {
+      "source": "C:\\temp\\mqtty-evidence\\network-full-3h-v1\\raw-001\\runs\\matrix.line.relay.q0.r1000.w10.s42\\attempt-001\\output\\topology-physical.mmd",
+      "sha256": "cf033cda39f55ac8adf9ef04c56f923aa4566484026b0be3bd1a9505915e6201"
+    },
+    "topology-logical.svg": {
+      "source": "C:\\temp\\mqtty-evidence\\network-full-3h-v1\\raw-001\\runs\\matrix.line.relay.q0.r1000.w10.s42\\attempt-001\\output\\topology-logical.svg",
+      "sha256": "9b4c393ea2657b4ca2406d674b12fdafc52a2de2aefb5e0e0617aa174fe3ca6e"
+    },
+    "topology-logical.mmd": {
+      "source": "C:\\temp\\mqtty-evidence\\network-full-3h-v1\\raw-001\\runs\\matrix.line.relay.q0.r1000.w10.s42\\attempt-001\\output\\topology-logical.mmd",
+      "sha256": "fc48da716782eb6850d97728e59a3373efbc2510559e04c94edb1c0ed1bf0efd"
+    }
+  },
+  "statistics": "Equally weighted common seeds; min-max, not confidence intervals",
+  "files": {
+    "comparison-5000.pdf": "37d086c7ccecb0126151544538b6989c3550bc01b12436d388f08a8e65c8b97b",
+    "comparison-5000.png": "3325041e6540940f881cdd11c924c2dd811954bd9548006712de0a9f0bff6062",
+    "comparison-5000.svg": "23ca5d8941bf714fb76da1c2d3ec50a8a9ca05f6af9e6b2b47e7fead9724b40d",
+    "Comparison.md": "a29ed4ab299a924377f4937dbda8cbac86d8eec711b9f5322a7aaa6ae7934754",
+    "topology-logical.mmd": "fc48da716782eb6850d97728e59a3373efbc2510559e04c94edb1c0ed1bf0efd",
+    "topology-logical.svg": "9b4c393ea2657b4ca2406d674b12fdafc52a2de2aefb5e0e0617aa174fe3ca6e",
+    "topology-physical.mmd": "cf033cda39f55ac8adf9ef04c56f923aa4566484026b0be3bd1a9505915e6201",
+    "topology-physical.svg": "da604c9333602e17ea05bd27eca558cb72e6f3e381a7783f178debf98ae4e631"
+  }
+}
