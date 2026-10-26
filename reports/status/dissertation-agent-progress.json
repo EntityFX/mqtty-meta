@@ -1589,7 +1589,7 @@
     }
   },
   "networkAdditionalSession": {
-    "status": "runningMatrix",
+    "status": "matrixCompleteControllerStillRunning",
     "service": "mqtty-network-remaining-v1.service",
     "observedMainPid": 325717,
     "observedActiveState": "active",
@@ -1602,19 +1602,26 @@
     "workers": 2,
     "originalBudgetUnchanged": true,
     "scientificInputsChanged": false,
-    "evidence": "reports/audits/dissertation/network-remaining-session-v1/status-20261026-2127.json",
+    "evidence": "reports/audits/dissertation/network-remaining-session-v1/status-20261026-2139.json",
     "currentResultsNotYetObserved": false,
-    "observedVerifiedMatrix": 160,
+    "observedVerifiedMatrix": 162,
     "observedReplays": 0,
-    "activeJobs": [
-      "matrix.star.federation.q2.r5000.w10.s43",
-      "matrix.star.federation.q2.r5000.w10.s44"
-    ],
+    "activeJobs": [],
     "observedUnresolvedErrors": 0,
-    "observedWarnings": 25,
-    "observedAtUtc": "2026-10-26T18:27:52.040787+00:00",
+    "observedWarnings": 27,
+    "observedAtUtc": "2026-10-26T18:39:00+00:00",
     "observedTechnicalErrors": 0,
-    "observedRemainingMatrix": 2
+    "observedRemainingMatrix": 0,
+    "progressObservedAtUtc": "2026-10-26T18:36:03.210049+00:00",
+    "warningAnalysis": {
+      "document": "reports/audits/dissertation/network-remaining-session-v1/warning-analysis.json",
+      "warningRuns": 27,
+      "queueDropsRuns": 27,
+      "deliveryLossRuns": 27,
+      "conditions": 9,
+      "mode": "federation",
+      "independentRawRecount": false
+    }
   },
   "networkFormalReview": {
     "status": "boundedFormalReviewPassed",

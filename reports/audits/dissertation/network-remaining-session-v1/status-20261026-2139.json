@@ -1,0 +1,69 @@
+{
+  "checkedAtMsk": "2026-10-26T21:39:00+03:00",
+  "service": "mqtty-network-remaining-v1.service",
+  "mainPid": 325717,
+  "activeState": "active",
+  "subState": "running",
+  "progress": {
+    "status": "completed",
+    "phase": "matrix",
+    "executionManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+    "verified": 162,
+    "technicalErrors": 0,
+    "counts": {
+      "pilot": {
+        "done": 0,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 30
+      },
+      "matrix": {
+        "done": 162,
+        "unresolvedErrors": 0,
+        "warnings": 27,
+        "total": 162
+      },
+      "replay": {
+        "done": 0,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 6
+      },
+      "diagnostic": {
+        "done": 0,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 54
+      }
+    },
+    "attempts": {
+      "pilot": {
+        "total": 0,
+        "failed": 0
+      },
+      "matrix": {
+        "total": 165,
+        "failed": 3
+      },
+      "replay": {
+        "total": 0,
+        "failed": 0
+      },
+      "diagnostic": {
+        "total": 0,
+        "failed": 0
+      }
+    },
+    "warnings": 27,
+    "active": {
+      "workers": 2,
+      "jobs": {},
+      "remainingSeconds": 14143.87842387869
+    },
+    "reason": null,
+    "observedAtUtc": "2026-10-26T18:36:03.210049+00:00"
+  },
+  "controllerObserved": "Rs; no child processes at follow-up; stderr empty; stdout confirms 162/162",
+  "processesRestarted": false,
+  "localIndependentRecount": 106
+}

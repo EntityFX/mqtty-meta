@@ -1,0 +1,32 @@
+{
+  "observedAtUtc": "2026-10-26T18:35:40.829073+00:00",
+  "service": "mqtty-network-remaining-v1.service",
+  "mainPid": 325717,
+  "activeState": "active",
+  "subState": "running",
+  "result": "success",
+  "progressPath": "/run/media/entityfx/hd250/mqtty-evidence/network-full-3h-v1/progress.json",
+  "status": "running",
+  "phase": "matrix",
+  "verifiedMatrix": 161,
+  "totalMatrix": 162,
+  "replayDone": 0,
+  "replayTotal": 6,
+  "technicalErrors": 0,
+  "warnings": 26,
+  "matrixAttemptsTotal": 164,
+  "historicalFailedAttempts": 3,
+  "activeJobs": {
+    "matrix.star.federation.q2.r5000.w10.s44": {
+      "pid": 334707,
+      "elapsedSeconds": 474.811327234027,
+      "rssBytes": 947896320,
+      "peakRssBytes": 951083008
+    }
+  },
+  "remainingBudgetSeconds": 14166.259742023714,
+  "reason": null,
+  "processesRestarted": false,
+  "localIndependentRecount": 106,
+  "captureNote": "Read-only service and campaign progress check; no restart or cyclic polling."
+}
