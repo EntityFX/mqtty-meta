@@ -1388,19 +1388,19 @@
   },
   "localPercentScope": "Legacy foundation block steps 03–06; not current pilot execution",
   "currentStage": {
-    "name": "Independent pilot raw verification",
-    "completed": 8,
-    "total": 8,
+    "name": "Strict single-point profile code verification",
+    "completed": 28,
+    "total": 28,
     "percent": 100,
-    "nativeCompleted": 6,
-    "modelCompleted": 6,
-    "allBrokerPilotWindowsCompleted": 8,
-    "allBrokerPilotWindowsPlanned": 8,
-    "postRunIndependentRecountPending": false,
+    "integrationTestsPassed": 96,
+    "webTestsPassed": 39,
+    "newNativeDiagnosticCompleted": 4,
+    "newNativeDiagnosticPlanned": 4,
+    "loggingOverheadIsolated": false,
     "mainCampaignCompleted": 0,
     "mainCampaignPlanned": 40,
-    "setsVerified": 16,
-    "metricValuesCompared": 336
+    "mainCampaignAdmitted": false,
+    "evidence": "reports/audits/dissertation/article-1-single-point-profile-v1/verification.json"
   },
   "modelConnectionTraceGate": {
     "status": "passed",
@@ -1409,6 +1409,22 @@
     "relatedTestsFailed": 0,
     "productionCodeChanged": false,
     "evidence": "reports/audits/dissertation/article-1-model-reconnect-v1/verification.json",
-    "nextAction": "Predeclare short logging-overhead and ActiveMQ repeat checks; add strict minimal-profile coverage; no main campaign admission"
+    "nextAction": "ActiveMQ diagnostic repeats complete; strict single-point profile verified. Recording-only switch and overhead checks remain; no main campaign admission"
+  },
+  "instrumentationDiagnostic": {
+    "status": "completed",
+    "nativeRuns": 4,
+    "totalNativeRuns": 4,
+    "elapsedSeconds": 62.74048376083374,
+    "budgetSeconds": 900,
+    "mainCampaignAdmitted": false,
+    "overheadIsolated": false,
+    "rawFilesVerified": 51,
+    "metricValuesCompared": 84,
+    "service": "mqtty-article1-instrumentation-diagnostic-v1.service",
+    "serviceResult": "success",
+    "serviceExitCode": 0,
+    "report": "reports/analysis/Article-1-instrumentation-diagnostic.md",
+    "nextAction": "Recording-only switch with unchanged workload; separate short overhead protocol; select common window and freeze runtime before calibration."
   }
 }

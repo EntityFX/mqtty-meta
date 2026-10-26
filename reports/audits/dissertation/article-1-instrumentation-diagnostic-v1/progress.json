@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "active": null,
+  "completed": 4,
+  "total": 4,
+  "startedEpoch": 1792973015.200656,
+  "deadlineEpoch": 1792973915.200656,
+  "elapsedSeconds": 62.74104452133179,
+  "error": null,
+  "mainCampaignAdmitted": false,
+  "overheadIsolated": false
+}

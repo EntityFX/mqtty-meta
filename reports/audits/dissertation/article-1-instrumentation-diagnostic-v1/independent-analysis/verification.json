@@ -1,0 +1,279 @@
+{
+  "status": "verified",
+  "cases": 4,
+  "rawFilesVerified": 51,
+  "metricValuesCompared": 84,
+  "archiveSha256": "961e4947d8b37fd0a85df5028070738215b47e7a870ce516639cb4ad592c3991",
+  "archiveBytes": 16381491,
+  "indexSha256": "5e51144d71320613a9c1f518043db16c1a011bbfb026a621c4e882080b89cf0b",
+  "calculatorSha256": "4b4781280ddc3e06825862c4f7c2f38d91f3a1aaeb0dfc24d23faf9fefe4c56a",
+  "elapsedSeconds": 62.74048376083374,
+  "rows": [
+    {
+      "repeat": 1,
+      "metrics": {
+        "attempted": 51684,
+        "completed": 51684,
+        "failed": 0,
+        "pending": 0,
+        "measurementSeconds": 4.0,
+        "attemptedRps": 12921.0,
+        "completedInWindow": 51668,
+        "completedRpsInWindow": 12917.0,
+        "completedDuringDrain": 16,
+        "completedCohortPerSubmissionSecond": 12921.0,
+        "uniqueDeliveries": 51488,
+        "completedIdsDelivered": 51488,
+        "deliveredAfterFailedPublish": 0,
+        "firstDeliveriesDuringDrain": 33198,
+        "duplicates": 0,
+        "outsideCohortDeliveryEvents": 5601,
+        "publishFailureRate": 0.0,
+        "deliveryLossRate": 0.0037922761396176766,
+        "p99PublishMs": 9.470899999999801,
+        "latencyStatus": "observed",
+        "outcomesSettled": true
+      },
+      "connections": {
+        "continuous": true,
+        "subscriberIdentities": 1,
+        "confirmedSubscriptions": 2
+      },
+      "process": {
+        "pid": 255105,
+        "exitCode": 0,
+        "wallSeconds": 10.636105561978184
+      },
+      "gate": {
+        "admitted": true,
+        "issues": [],
+        "connection": {
+          "status": "continuousConnected",
+          "stateAtStart": "connected",
+          "changesInWindow": [],
+          "subscriberEvents": [
+            {
+              "client": "subscriber",
+              "clientId": "mb-91394165c6384466997f09276992cb93",
+              "state": "connected",
+              "elapsedSeconds": 0.1288762,
+              "reason": null
+            },
+            {
+              "client": "subscriber",
+              "clientId": "mb-91394165c6384466997f09276992cb93",
+              "state": "disconnected",
+              "elapsedSeconds": 10.3810297,
+              "reason": "NormalDisconnection"
+            }
+          ],
+          "windowStart": 1.2485531,
+          "windowEnd": 10.2485531,
+          "scope": "Observed connection events only; subscription and packet-level correctness not established"
+        },
+        "classification": "instrumentationObservation",
+        "scope": "Technical pilot gate, not an accuracy claim"
+      }
+    },
+    {
+      "repeat": 2,
+      "metrics": {
+        "attempted": 51968,
+        "completed": 51968,
+        "failed": 0,
+        "pending": 0,
+        "measurementSeconds": 4.0,
+        "attemptedRps": 12992.0,
+        "completedInWindow": 51952,
+        "completedRpsInWindow": 12988.0,
+        "completedDuringDrain": 16,
+        "completedCohortPerSubmissionSecond": 12992.0,
+        "uniqueDeliveries": 51968,
+        "completedIdsDelivered": 51968,
+        "deliveredAfterFailedPublish": 0,
+        "firstDeliveriesDuringDrain": 29192,
+        "duplicates": 0,
+        "outsideCohortDeliveryEvents": 5588,
+        "publishFailureRate": 0.0,
+        "deliveryLossRate": 0.0,
+        "p99PublishMs": 7.312000000000808,
+        "latencyStatus": "observed",
+        "outcomesSettled": true
+      },
+      "connections": {
+        "continuous": true,
+        "subscriberIdentities": 1,
+        "confirmedSubscriptions": 2
+      },
+      "process": {
+        "pid": 255249,
+        "exitCode": 0,
+        "wallSeconds": 10.586186422035098
+      },
+      "gate": {
+        "admitted": true,
+        "issues": [],
+        "connection": {
+          "status": "continuousConnected",
+          "stateAtStart": "connected",
+          "changesInWindow": [],
+          "subscriberEvents": [
+            {
+              "client": "subscriber",
+              "clientId": "mb-9182f087b1044ce7b6ef8d5331c29405",
+              "state": "connected",
+              "elapsedSeconds": 0.1144952,
+              "reason": null
+            },
+            {
+              "client": "subscriber",
+              "clientId": "mb-9182f087b1044ce7b6ef8d5331c29405",
+              "state": "disconnected",
+              "elapsedSeconds": 10.3569295,
+              "reason": "NormalDisconnection"
+            }
+          ],
+          "windowStart": 1.2413228,
+          "windowEnd": 10.241322799999999,
+          "scope": "Observed connection events only; subscription and packet-level correctness not established"
+        },
+        "classification": "instrumentationObservation",
+        "scope": "Technical pilot gate, not an accuracy claim"
+      }
+    },
+    {
+      "repeat": 3,
+      "metrics": {
+        "attempted": 53145,
+        "completed": 53145,
+        "failed": 0,
+        "pending": 0,
+        "measurementSeconds": 4.0,
+        "attemptedRps": 13286.25,
+        "completedInWindow": 53129,
+        "completedRpsInWindow": 13282.25,
+        "completedDuringDrain": 16,
+        "completedCohortPerSubmissionSecond": 13286.25,
+        "uniqueDeliveries": 53094,
+        "completedIdsDelivered": 53094,
+        "deliveredAfterFailedPublish": 0,
+        "firstDeliveriesDuringDrain": 33205,
+        "duplicates": 0,
+        "outsideCohortDeliveryEvents": 5579,
+        "publishFailureRate": 0.0,
+        "deliveryLossRate": 0.0009596387242449901,
+        "p99PublishMs": 8.366399999999885,
+        "latencyStatus": "observed",
+        "outcomesSettled": true
+      },
+      "connections": {
+        "continuous": true,
+        "subscriberIdentities": 1,
+        "confirmedSubscriptions": 2
+      },
+      "process": {
+        "pid": 255391,
+        "exitCode": 0,
+        "wallSeconds": 10.63599909999175
+      },
+      "gate": {
+        "admitted": true,
+        "issues": [],
+        "connection": {
+          "status": "continuousConnected",
+          "stateAtStart": "connected",
+          "changesInWindow": [],
+          "subscriberEvents": [
+            {
+              "client": "subscriber",
+              "clientId": "mb-0f8b4ba2aee34f6ab8f6522645f16b48",
+              "state": "connected",
+              "elapsedSeconds": 0.1302595,
+              "reason": null
+            },
+            {
+              "client": "subscriber",
+              "clientId": "mb-0f8b4ba2aee34f6ab8f6522645f16b48",
+              "state": "disconnected",
+              "elapsedSeconds": 10.4218749,
+              "reason": "NormalDisconnection"
+            }
+          ],
+          "windowStart": 1.3004983,
+          "windowEnd": 10.300498300000001,
+          "scope": "Observed connection events only; subscription and packet-level correctness not established"
+        },
+        "classification": "instrumentationObservation",
+        "scope": "Technical pilot gate, not an accuracy claim"
+      }
+    },
+    {
+      "repeat": 4,
+      "metrics": {
+        "attempted": 53716,
+        "completed": 53716,
+        "failed": 0,
+        "pending": 0,
+        "measurementSeconds": 4.0,
+        "attemptedRps": 13429.0,
+        "completedInWindow": 53700,
+        "completedRpsInWindow": 13425.0,
+        "completedDuringDrain": 16,
+        "completedCohortPerSubmissionSecond": 13429.0,
+        "uniqueDeliveries": 53716,
+        "completedIdsDelivered": 53716,
+        "deliveredAfterFailedPublish": 0,
+        "firstDeliveriesDuringDrain": 26777,
+        "duplicates": 0,
+        "outsideCohortDeliveryEvents": 5571,
+        "publishFailureRate": 0.0,
+        "deliveryLossRate": 0.0,
+        "p99PublishMs": 8.44580000000019,
+        "latencyStatus": "observed",
+        "outcomesSettled": true
+      },
+      "connections": {
+        "continuous": true,
+        "subscriberIdentities": 1,
+        "confirmedSubscriptions": 2
+      },
+      "process": {
+        "pid": 255547,
+        "exitCode": 0,
+        "wallSeconds": 10.634120928996708
+      },
+      "gate": {
+        "admitted": true,
+        "issues": [],
+        "connection": {
+          "status": "continuousConnected",
+          "stateAtStart": "connected",
+          "changesInWindow": [],
+          "subscriberEvents": [
+            {
+              "client": "subscriber",
+              "clientId": "mb-51b63098c17540439a4cb0b37e357bd0",
+              "state": "connected",
+              "elapsedSeconds": 0.1144675,
+              "reason": null
+            },
+            {
+              "client": "subscriber",
+              "clientId": "mb-51b63098c17540439a4cb0b37e357bd0",
+              "state": "disconnected",
+              "elapsedSeconds": 10.4097201,
+              "reason": "NormalDisconnection"
+            }
+          ],
+          "windowStart": 1.2430388,
+          "windowEnd": 10.2430388,
+          "scope": "Observed connection events only; subscription and packet-level correctness not established"
+        },
+        "classification": "instrumentationObservation",
+        "scope": "Technical pilot gate, not an accuracy claim"
+      }
+    }
+  ],
+  "overheadIsolated": false,
+  "mainCampaignAdmitted": false
+}
