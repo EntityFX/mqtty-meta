@@ -1438,7 +1438,9 @@
     "article": "docs/dissertation/articles/article-1-twin-validation.md",
     "executionPath": "isolated direct Probe; not installed Linux Web",
     "baselineAlsoPassesAllConditions": true,
-    "articleVerification": "reports/audits/dissertation/article-1-matched-main-final-v1/article-verification.json"
+    "articleVerification": "reports/audits/dissertation/article-1-matched-main-final-v1/article-verification.json",
+    "publishedPackageCommit": "a2caa0a",
+    "publicationVerified": true
   },
   "modelConnectionTraceGate": {
     "status": "passed",
@@ -1491,5 +1493,5 @@
     "additionalBaselineWeightPersonDays": 0,
     "report": "reports/analysis/Article-2-evidence-package.md"
   },
-  "nextAction": "Publish verified package; independent human reading and author scientific decisions follow. Prepare article 2 locally within existing coverage; obtain missing network raw after Linux is available."
+  "nextAction": "Author and independent reviewer assess bounded article 1 result; prepare article 2 locally from existing coverage, retrieve missing network raw only after Linux is available. No rerun of completed 40-run series."
 }
