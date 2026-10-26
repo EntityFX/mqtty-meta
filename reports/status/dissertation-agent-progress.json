@@ -1585,7 +1585,7 @@
     "service": "mqtty-network-remaining-v1.service",
     "observedMainPid": 325717,
     "observedActiveState": "active",
-    "observedAtEpoch": 1793032960.1804857,
+    "observedAtEpoch": 1793033933.9911768,
     "wallLimitSeconds": 21600,
     "deadlineEpoch": 1793054027.088146,
     "remainingMatrix": 56,
@@ -1594,14 +1594,16 @@
     "workers": 2,
     "originalBudgetUnchanged": true,
     "scientificInputsChanged": false,
-    "evidence": "reports/audits/dissertation/network-remaining-session-v1/status-20261026-1942.json",
+    "evidence": "reports/audits/dissertation/network-remaining-session-v1/status-20261026-1958.json",
     "currentResultsNotYetObserved": true,
-    "observedVerifiedMatrix": 106,
+    "observedVerifiedMatrix": 118,
     "observedReplays": 0,
     "activeJobs": [
-      "matrix.ring.federation.q2.r5000.w10.s43",
-      "matrix.ring.federation.q2.r5000.w10.s44"
-    ]
+      "matrix.star.single.q1.r5000.w10.s43",
+      "matrix.star.single.q1.r5000.w10.s44"
+    ],
+    "observedUnresolvedErrors": 0,
+    "observedWarnings": 18
   },
   "networkFormalReview": {
     "status": "boundedFormalReviewPassed",
@@ -1617,5 +1619,35 @@
     "step32Complete": false,
     "newMqttSimulations": 0,
     "latexChanged": false
+  },
+  "nextDeliveryBlock": {
+    "plan": "docs/dissertation/next-delivery-block-plan.md",
+    "status": "plannedWithTopologyCatalogCompleted",
+    "currentGlobalPercent": 41.5,
+    "conditionalMilestones": [
+      {
+        "steps": [
+          "23",
+          "24",
+          "25"
+        ],
+        "globalPercent": 51.1
+      },
+      {
+        "steps": [
+          "18",
+          "23",
+          "24",
+          "25"
+        ],
+        "globalPercent": 53.2
+      }
+    ],
+    "milestonesCredited": false,
+    "nextIndependentWork": "Article 2 method comparison, then chapter drafts or local Web-profile verification",
+    "topologyCatalog": "docs/topologies/README.md",
+    "catalogTemplates": 7,
+    "catalogStudies": 5,
+    "checksPassed": 169
   }
 }

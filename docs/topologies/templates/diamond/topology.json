@@ -1,0 +1,59 @@
+{
+  "id": "diamond",
+  "title": "Ромб: два пути",
+  "kind": "template",
+  "runnable": false,
+  "graphSemantics": "Schematic bidirectional physical links; MQTT routes not specified",
+  "nodes": [
+    {
+      "id": "B0",
+      "label": "Брокер 0",
+      "role": "broker",
+      "x": 150,
+      "y": 320
+    },
+    {
+      "id": "B1",
+      "label": "Брокер 1",
+      "role": "broker",
+      "x": 500,
+      "y": 140
+    },
+    {
+      "id": "B2",
+      "label": "Брокер 2",
+      "role": "broker",
+      "x": 500,
+      "y": 500
+    },
+    {
+      "id": "B3",
+      "label": "Брокер 3",
+      "role": "broker",
+      "x": 850,
+      "y": 320
+    }
+  ],
+  "links": [
+    {
+      "source": "B0",
+      "target": "B1",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B0",
+      "target": "B2",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B1",
+      "target": "B3",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B2",
+      "target": "B3",
+      "direction": "bidirectional"
+    }
+  ]
+}

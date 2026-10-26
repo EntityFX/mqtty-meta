@@ -1,0 +1,247 @@
+{
+  "schema": "mqtty-documentation-topology-catalog-v1",
+  "purpose": "Documentation, not Web import presets",
+  "entries": [
+    {
+      "id": "line",
+      "title": "Линия",
+      "kind": "template",
+      "path": "templates/line",
+      "brokerCount": 5,
+      "networkOnlyNodeCount": 0,
+      "linkCount": 4
+    },
+    {
+      "id": "ring",
+      "title": "Кольцо",
+      "kind": "template",
+      "path": "templates/ring",
+      "brokerCount": 6,
+      "networkOnlyNodeCount": 0,
+      "linkCount": 6
+    },
+    {
+      "id": "star-transit",
+      "title": "Звезда с отдельным транзитом",
+      "kind": "template",
+      "path": "templates/star-transit",
+      "brokerCount": 4,
+      "networkOnlyNodeCount": 1,
+      "linkCount": 4
+    },
+    {
+      "id": "mesh",
+      "title": "Полный граф",
+      "kind": "template",
+      "path": "templates/mesh",
+      "brokerCount": 5,
+      "networkOnlyNodeCount": 0,
+      "linkCount": 10
+    },
+    {
+      "id": "diamond",
+      "title": "Ромб: два пути",
+      "kind": "template",
+      "path": "templates/diamond",
+      "brokerCount": 4,
+      "networkOnlyNodeCount": 0,
+      "linkCount": 4
+    },
+    {
+      "id": "tree",
+      "title": "Дерево",
+      "kind": "template",
+      "path": "templates/tree",
+      "brokerCount": 7,
+      "networkOnlyNodeCount": 0,
+      "linkCount": 6
+    },
+    {
+      "id": "hierarchical",
+      "title": "Три площадки через транзит",
+      "kind": "template",
+      "path": "templates/hierarchical",
+      "brokerCount": 9,
+      "networkOnlyNodeCount": 1,
+      "linkCount": 12
+    },
+    {
+      "id": "main-line4",
+      "title": "Четыре площадки: физическая линия, Relay каждый каждому",
+      "kind": "savedExperiment",
+      "path": "studies/main-line4",
+      "brokerCount": 4,
+      "networkOnlyNodeCount": 0,
+      "report": "reports/analysis/Network-main-recount.md",
+      "sourceFiles": {
+        "topology-physical.svg": {
+          "source": "reports\\audits\\dissertation\\network-main-recount-v1\\figures\\topology-physical.svg",
+          "sha256": "da604c9333602e17ea05bd27eca558cb72e6f3e381a7783f178debf98ae4e631"
+        },
+        "topology-physical.mmd": {
+          "source": "reports\\audits\\dissertation\\network-main-recount-v1\\figures\\topology-physical.mmd",
+          "sha256": "cf033cda39f55ac8adf9ef04c56f923aa4566484026b0be3bd1a9505915e6201"
+        },
+        "topology-logical.svg": {
+          "source": "reports\\audits\\dissertation\\network-main-recount-v1\\figures\\topology-logical.svg",
+          "sha256": "9b4c393ea2657b4ca2406d674b12fdafc52a2de2aefb5e0e0617aa174fe3ca6e"
+        },
+        "topology-logical.mmd": {
+          "source": "reports\\audits\\dissertation\\network-main-recount-v1\\figures\\topology-logical.mmd",
+          "sha256": "fc48da716782eb6850d97728e59a3373efbc2510559e04c94edb1c0ed1bf0efd"
+        }
+      },
+      "admission": "Specific saved run; full long campaign acceptance is separate",
+      "physicalEdgeCount": 3,
+      "logicalDirectedEdgeCount": 12
+    },
+    {
+      "id": "main-ring4",
+      "title": "Четыре площадки: физическое кольцо, Relay каждый каждому",
+      "kind": "savedExperiment",
+      "path": "studies/main-ring4",
+      "brokerCount": 4,
+      "networkOnlyNodeCount": 0,
+      "report": "reports/analysis/Network-main-recount.md",
+      "sourceFiles": {
+        "topology-physical.svg": {
+          "source": "C:\\temp\\mqtty-evidence\\network-full-3h-v1\\raw-001\\runs\\matrix.ring.relay.q0.r1000.w10.s42\\attempt-001\\output\\topology-physical.svg",
+          "sha256": "a2acd3d4b2077a695d9f25439468a0e5994218b0e43859ace8568720e04fc29d"
+        },
+        "topology-physical.mmd": {
+          "source": "C:\\temp\\mqtty-evidence\\network-full-3h-v1\\raw-001\\runs\\matrix.ring.relay.q0.r1000.w10.s42\\attempt-001\\output\\topology-physical.mmd",
+          "sha256": "b4b887d66749d6b2ca6c4b6a57f6c386b054aeddaf3969a82873b8ed394f5628"
+        },
+        "topology-logical.svg": {
+          "source": "C:\\temp\\mqtty-evidence\\network-full-3h-v1\\raw-001\\runs\\matrix.ring.relay.q0.r1000.w10.s42\\attempt-001\\output\\topology-logical.svg",
+          "sha256": "9b4c393ea2657b4ca2406d674b12fdafc52a2de2aefb5e0e0617aa174fe3ca6e"
+        },
+        "topology-logical.mmd": {
+          "source": "C:\\temp\\mqtty-evidence\\network-full-3h-v1\\raw-001\\runs\\matrix.ring.relay.q0.r1000.w10.s42\\attempt-001\\output\\topology-logical.mmd",
+          "sha256": "fc48da716782eb6850d97728e59a3373efbc2510559e04c94edb1c0ed1bf0efd"
+        }
+      },
+      "admission": "Specific saved run; full long campaign acceptance is separate",
+      "physicalEdgeCount": 4,
+      "logicalDirectedEdgeCount": 12
+    },
+    {
+      "id": "relay-transit10",
+      "title": "Десять брокеров через транзит",
+      "kind": "savedExperiment",
+      "path": "studies/relay-transit10",
+      "brokerCount": 10,
+      "networkOnlyNodeCount": 1,
+      "report": "reports/mqtty/federation/Federation-ten-brokers.md",
+      "sourceFiles": {
+        "topology-physical.svg": {
+          "source": "reports\\data\\federation-transit-10-v1\\topology-physical.svg",
+          "sha256": "e1baad2c2538f3768bc8c5bd1937d19a7ff4a7cfbd08799abbdbe762fcce8384"
+        },
+        "topology-physical.mmd": {
+          "source": "reports\\data\\federation-transit-10-v1\\topology-physical.mmd",
+          "sha256": "c788797db691d1ff72273106b3dbf68871c9d9e98cbb94ee2f4752379504209b"
+        },
+        "topology-logical.svg": {
+          "source": "reports\\data\\federation-transit-10-v1\\topology-logical.svg",
+          "sha256": "c14b23072131f66b5f4cc2632130c6bbe79158869cda817d21d0119a45711c88"
+        },
+        "topology-logical.mmd": {
+          "source": "reports\\data\\federation-transit-10-v1\\topology-logical.mmd",
+          "sha256": "2d4128c2b19f182560d87daa669539a14bea732a93bf5980c1c4190be478826a"
+        }
+      },
+      "admission": "Historical completed short transit study",
+      "physicalEdgeCount": 10,
+      "logicalDirectedEdgeCount": 90
+    },
+    {
+      "id": "load-pool3",
+      "title": "Балансировщик: три backend-брокера",
+      "kind": "savedExperiment",
+      "path": "studies/load-pool3",
+      "brokerCount": 3,
+      "sourceFiles": {
+        "topology.svg": {
+          "source": "reports\\data\\load-balancing-study-v1\\topology-demo-pool3.svg",
+          "sha256": "d5e231120caedfbdce4b16a0dc4fdfc1b8601f9b1abdfccf421663439df8745b"
+        },
+        "topology.mmd": {
+          "source": "reports\\data\\load-balancing-study-v1\\topology-demo-pool3.mmd",
+          "sha256": "7907306d9f51a99f03124225be6630cef81d0bfba0b48f7972d4e4cc295c1586"
+        }
+      },
+      "graphSemantics": "Original combined load-balancing diagram; not federation routing"
+    },
+    {
+      "id": "single64",
+      "title": "Один Mosquitto: 64 отправителя",
+      "kind": "savedExperiment",
+      "path": "studies/single64",
+      "brokerCount": 1,
+      "sourceFiles": {
+        "topology.svg": {
+          "source": "reports\\data\\load-balancing-study-v1\\topology-mosquitto-single64.svg",
+          "sha256": "640c06a65287bd2a02ed50a5af35d444a9595a4fa98687a84c7aadab270abf53"
+        },
+        "topology.mmd": {
+          "source": "reports\\data\\load-balancing-study-v1\\topology-mosquitto-single64.mmd",
+          "sha256": "b3b2cf7e47d3c3563d6ec04054020f5a9167e1b34d4ad06fb5f7f769b3a1bd66"
+        }
+      },
+      "graphSemantics": "Original combined load-balancing diagram; not federation routing"
+    }
+  ],
+  "files": {
+    "README.md": "5c61c341c715e0c01d57f5d8ce8038809cb978c63f0dbffdbedba8a6122f37da",
+    "studies/load-pool3/README.md": "1941137bfbfc486f9a305f3e311222b69082c73495cb765a528eb3ca0681a3c6",
+    "studies/load-pool3/topology.mmd": "7907306d9f51a99f03124225be6630cef81d0bfba0b48f7972d4e4cc295c1586",
+    "studies/load-pool3/topology.svg": "d5e231120caedfbdce4b16a0dc4fdfc1b8601f9b1abdfccf421663439df8745b",
+    "studies/main-line4/README.md": "21ae6aa3d03a110e4ff5de3076fb539ce441ea1b651a9ab957d856d9e7de89b7",
+    "studies/main-line4/topology-logical.mmd": "fc48da716782eb6850d97728e59a3373efbc2510559e04c94edb1c0ed1bf0efd",
+    "studies/main-line4/topology-logical.svg": "9b4c393ea2657b4ca2406d674b12fdafc52a2de2aefb5e0e0617aa174fe3ca6e",
+    "studies/main-line4/topology-physical.mmd": "cf033cda39f55ac8adf9ef04c56f923aa4566484026b0be3bd1a9505915e6201",
+    "studies/main-line4/topology-physical.svg": "da604c9333602e17ea05bd27eca558cb72e6f3e381a7783f178debf98ae4e631",
+    "studies/main-ring4/README.md": "9424f3fec8a395a460318c5ee695f08be0904995c3e9a421a8d87ef038f56b05",
+    "studies/main-ring4/topology-logical.mmd": "fc48da716782eb6850d97728e59a3373efbc2510559e04c94edb1c0ed1bf0efd",
+    "studies/main-ring4/topology-logical.svg": "9b4c393ea2657b4ca2406d674b12fdafc52a2de2aefb5e0e0617aa174fe3ca6e",
+    "studies/main-ring4/topology-physical.mmd": "b4b887d66749d6b2ca6c4b6a57f6c386b054aeddaf3969a82873b8ed394f5628",
+    "studies/main-ring4/topology-physical.svg": "a2acd3d4b2077a695d9f25439468a0e5994218b0e43859ace8568720e04fc29d",
+    "studies/relay-transit10/README.md": "0eb328cb07f400a8b48eda14896ef1515fd7a92ee97515a5e35db9c8de892c77",
+    "studies/relay-transit10/topology-logical.mmd": "2d4128c2b19f182560d87daa669539a14bea732a93bf5980c1c4190be478826a",
+    "studies/relay-transit10/topology-logical.svg": "c14b23072131f66b5f4cc2632130c6bbe79158869cda817d21d0119a45711c88",
+    "studies/relay-transit10/topology-physical.mmd": "c788797db691d1ff72273106b3dbf68871c9d9e98cbb94ee2f4752379504209b",
+    "studies/relay-transit10/topology-physical.svg": "e1baad2c2538f3768bc8c5bd1937d19a7ff4a7cfbd08799abbdbe762fcce8384",
+    "studies/single64/README.md": "40eaa6e11e2bee554799f160d8b55f5d68023514215ec81c2769066b48e238c0",
+    "studies/single64/topology.mmd": "b3b2cf7e47d3c3563d6ec04054020f5a9167e1b34d4ad06fb5f7f769b3a1bd66",
+    "studies/single64/topology.svg": "640c06a65287bd2a02ed50a5af35d444a9595a4fa98687a84c7aadab270abf53",
+    "templates/diamond/README.md": "def73808863e6dfb04797f1f1a152a2b17bcbe9124218ae08259057e37546bba",
+    "templates/diamond/topology.json": "4cab7d55f0893d8fbc397be4dc97e5b97c4bc211893bae2c09faa7d9150b0d57",
+    "templates/diamond/topology.mmd": "376c13531d4ce7422c917f71b259cbd917f8352a4444e2b0ecefcdaf11c365d1",
+    "templates/diamond/topology.svg": "ec62531ccef4ba210a46197fb5a06bc42e71af199d2853c6de3887d6400d8377",
+    "templates/hierarchical/README.md": "fc7ebf9e2b25d35d3d3960cece3fed4b3ed1edc1ab2ccfe8deaa929d23566bed",
+    "templates/hierarchical/topology.json": "c3e05f51f2f6577dad8a1f18bf40e263777efcf9ac7bb2442a3b45161ab037d1",
+    "templates/hierarchical/topology.mmd": "d634f24643c07a4b17305ba2d69de87595fa4f3b5397caade2c8372ab550efff",
+    "templates/hierarchical/topology.svg": "437ac1a5b9328d96b036a25a2b886f545cba70d3ebe6e39f83723307524f31e8",
+    "templates/line/README.md": "aa4c07bd439f655de797baf8564944c04e6ea77efb0cdb2d65cb229ec5809298",
+    "templates/line/topology.json": "764645ea6dc0c547cf8337d8017b0ffd1588222490a64b135fb36080432b8704",
+    "templates/line/topology.mmd": "59a5d5f80a9d894d36013aa3c98acafe235c0d3c4d99c2c365c3d9aa0e605d11",
+    "templates/line/topology.svg": "96a0f7a025340aeba7c18e8bbfc775a0a22f51e630ef813f679a00da8b92c806",
+    "templates/mesh/README.md": "a8595de316d69bb4f7f2be6a6a755c9e29c1673a76fc7136b26c326a8e4dba48",
+    "templates/mesh/topology.json": "a42a9635f04d25ba5159b18902232ef169b85c9b049d53c71d167dbc9aaad9d7",
+    "templates/mesh/topology.mmd": "9416b96cd6ffabec3b25eafa72e3ac18178882fbfe34ce88acf63f219169fffb",
+    "templates/mesh/topology.svg": "b7a2378845152ed20405d05508997f8060a23988600db162000961e35c1cc862",
+    "templates/ring/README.md": "c9c99471bb99a98e3ea2b80cedcadda939afc3c63b9981e2aba9078c58c31fcc",
+    "templates/ring/topology.json": "5d7d58c9f15fa44709f78721b8559a009f7fc0d75b0b839ce37c317311bbf1de",
+    "templates/ring/topology.mmd": "f2d2138b81b4c15e9aeccbe88e6d2b3e7692c9de51e4f6bb430d0679fd025fdc",
+    "templates/ring/topology.svg": "ce5d93b8a5392779cb13f8d0cc917c493ee5783f5b336cc79eb605d7fc00cb8d",
+    "templates/star-transit/README.md": "b1af6a3e18025099e8f656f73b76d9ad88f134596b584b0959964fc1bcb4d50f",
+    "templates/star-transit/topology.json": "eafd793d7476aeaf0d2aee6e73eec598fa9fd8a9333ae8a1bbc46153d0f88c8b",
+    "templates/star-transit/topology.mmd": "c31c482c4d055a2d04d7ef4f362a4ad008ea5772554415ae63d16c61b3c97309",
+    "templates/star-transit/topology.svg": "3b8e6f64869c421c71fb96272213479e0a4a6b1774ad037e07cefa973810a5e5",
+    "templates/tree/README.md": "1f00a38a01e23aa952bc3b5a974766ee615e8926a0e15892d4645161e663c0a2",
+    "templates/tree/topology.json": "a379ba759611819e47e93c807448657c8422c8b8f0102495c9c8c5533220275d",
+    "templates/tree/topology.mmd": "a696eef7a3314fdd65334f3de74ddc4530c8221b9f8b01d3ea524acae3634a4a",
+    "templates/tree/topology.svg": "18e79edb7b1c8f6e54bfe6691405a6763a2f437bb83197a0ff6d82fcfbe2e949"
+  }
+}

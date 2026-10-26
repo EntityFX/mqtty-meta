@@ -1,0 +1,96 @@
+{
+  "id": "mesh",
+  "title": "Полный граф",
+  "kind": "template",
+  "runnable": false,
+  "graphSemantics": "Schematic bidirectional physical links; MQTT routes not specified",
+  "nodes": [
+    {
+      "id": "B0",
+      "label": "Брокер 0",
+      "role": "broker",
+      "x": 500.0,
+      "y": 100.0
+    },
+    {
+      "id": "B1",
+      "label": "Брокер 1",
+      "role": "broker",
+      "x": 709.232,
+      "y": 252.016
+    },
+    {
+      "id": "B2",
+      "label": "Брокер 2",
+      "role": "broker",
+      "x": 629.313,
+      "y": 497.984
+    },
+    {
+      "id": "B3",
+      "label": "Брокер 3",
+      "role": "broker",
+      "x": 370.687,
+      "y": 497.984
+    },
+    {
+      "id": "B4",
+      "label": "Брокер 4",
+      "role": "broker",
+      "x": 290.768,
+      "y": 252.016
+    }
+  ],
+  "links": [
+    {
+      "source": "B0",
+      "target": "B1",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B0",
+      "target": "B2",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B0",
+      "target": "B3",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B0",
+      "target": "B4",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B1",
+      "target": "B2",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B1",
+      "target": "B3",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B1",
+      "target": "B4",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B2",
+      "target": "B3",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B2",
+      "target": "B4",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B3",
+      "target": "B4",
+      "direction": "bidirectional"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "star-transit",
+  "title": "Звезда с отдельным транзитом",
+  "kind": "template",
+  "runnable": false,
+  "graphSemantics": "Schematic bidirectional physical links; MQTT routes not specified",
+  "nodes": [
+    {
+      "id": "T0",
+      "label": "Транзит",
+      "role": "network",
+      "x": 500,
+      "y": 320
+    },
+    {
+      "id": "B1",
+      "label": "Брокер 1",
+      "role": "broker",
+      "x": 500,
+      "y": 120
+    },
+    {
+      "id": "B2",
+      "label": "Брокер 2",
+      "role": "broker",
+      "x": 800,
+      "y": 320
+    },
+    {
+      "id": "B3",
+      "label": "Брокер 3",
+      "role": "broker",
+      "x": 500,
+      "y": 520
+    },
+    {
+      "id": "B4",
+      "label": "Брокер 4",
+      "role": "broker",
+      "x": 200,
+      "y": 320
+    }
+  ],
+  "links": [
+    {
+      "source": "T0",
+      "target": "B1",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "T0",
+      "target": "B2",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "T0",
+      "target": "B3",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "T0",
+      "target": "B4",
+      "direction": "bidirectional"
+    }
+  ]
+}

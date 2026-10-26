@@ -48,3 +48,6 @@
 /docs/dissertation/network-model-contract.md -text
 /tools/dissertation/verify_forwarding_properties.py -text
 /tools/dissertation/test_forwarding_properties.py -text
+# Catalog preserves byte-identical scientific diagram copies and its SHA index.
+/docs/topologies/** -text
+/docs/dissertation/next-delivery-block-plan.md -text
