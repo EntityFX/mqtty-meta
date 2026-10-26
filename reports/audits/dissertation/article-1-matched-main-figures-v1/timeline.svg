@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="472.700781pt" height="172.479219pt" viewBox="0 0 472.700781 172.479219" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-26T08:58:17.366373</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 172.479219 
+L 472.700781 172.479219 
+L 472.700781 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 96.894531 136.858594 
+L 459.774531 136.858594 
+L 459.774531 20.038594 
+L 96.894531 20.038594 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 96.894531 107.767232 
+L 133.182531 107.767232 
+L 133.182531 82.31229 
+L 96.894531 82.31229 
+z
+" clip-path="url(#p4ae80a3f60)" style="fill: #0072b2; opacity: 0.86"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 133.182531 107.767232 
+L 278.334531 107.767232 
+L 278.334531 82.31229 
+L 133.182531 82.31229 
+z
+" clip-path="url(#p4ae80a3f60)" style="fill: #d55e00; opacity: 0.86"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 278.334531 107.767232 
+L 459.774531 107.767232 
+L 459.774531 82.31229 
+L 278.334531 82.31229 
+z
+" clip-path="url(#p4ae80a3f60)" style="fill: #009e73; opacity: 0.86"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 96.894531 62.311979 
+L 133.182531 62.311979 
+L 133.182531 36.857037 
+L 96.894531 36.857037 
+z
+" clip-path="url(#p4ae80a3f60)" style="fill: #0072b2; opacity: 0.86"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 133.182531 62.311979 
+L 278.334531 62.311979 
+L 278.334531 36.857037 
+L 133.182531 36.857037 
+z
+" clip-path="url(#p4ae80a3f60)" style="fill: #d55e00; opacity: 0.86"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 278.334531 62.311979 
+L 459.774531 62.311979 
+L 459.774531 36.857037 
+L 278.334531 36.857037 
+z
+" clip-path="url(#p4ae80a3f60)" style="fill: #009e73; opacity: 0.86"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m0cf08f8df1" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m0cf08f8df1" x="96.894531" y="136.858594" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="96.894531" y="150.697187" transform="rotate(-0 96.894531 150.697187)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m0cf08f8df1" x="133.182531" y="136.858594" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="133.182531" y="150.697187" transform="rotate(-0 133.182531 150.697187)">1</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m0cf08f8df1" x="278.334531" y="136.858594" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="278.334531" y="150.697187" transform="rotate(-0 278.334531 150.697187)">5</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m0cf08f8df1" x="459.774531" y="136.858594" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="459.774531" y="150.697187" transform="rotate(-0 459.774531 150.697187)">10</text>
+     </g>
+    </g>
+    <g id="text_5">
+     <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #333333" x="278.334531" y="163.4075" transform="rotate(-0 278.334531 163.4075)">Заданные фазы, с; начало — старт прогрева</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_5">
+      <defs>
+       <path id="mfbff003bef" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mfbff003bef" x="96.894531" y="95.039761" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end" x="89.894531" y="98.459058" transform="rotate(-0 89.894531 98.459058)">MqttY</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#mfbff003bef" x="96.894531" y="49.584508" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end" x="89.894531" y="53.080446" transform="rotate(-0 89.894531 53.080446)">Реальный брокер</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_9">
+    <path d="M 96.894531 136.858594 
+L 96.894531 20.038594 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 96.894531 136.858594 
+L 459.774531 136.858594 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(97.583531 92.768136)">Прогрев</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(109.022906 101.726386)">1 с</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #333333" transform="translate(98.497281 113.677552)">100 000</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #333333" transform="translate(102.887906 122.635802)">тиков</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(165.396656 92.768136)">Подача сообщений</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(199.742906 101.726386)">4 с</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #333333" transform="translate(189.217281 113.677552)">400 000</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #333333" transform="translate(193.607906 122.635802)">тиков</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(319.860781 92.768136)">Ожидание завершения</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(363.038906 101.726386)">5 с</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #333333" transform="translate(352.513281 113.677552)">500 000</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #333333" transform="translate(356.903906 122.635802)">тиков</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(97.583531 47.312883)">Прогрев</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(109.022906 56.271133)">1 с</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(165.396656 47.312883)">Подача сообщений</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(199.742906 56.271133)">4 с</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(319.860781 47.312883)">Ожидание завершения</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(363.038906 56.271133)">5 с</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #333333" x="278.334531" y="14.038594" transform="rotate(-0 278.334531 14.038594)">Соединения, подписки и натурный RTT проверяются до нагрузки</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p4ae80a3f60">
+   <rect x="96.894531" y="20.038594" width="362.88" height="116.82"/>
+  </clipPath>
+ </defs>
+</svg>

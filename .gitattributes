@@ -35,3 +35,7 @@
 /tools/dissertation/*fresh*.py -text
 /tools/dissertation/run_emqx_mailbox_probe.py -text
 /tools/dissertation/TwinValidationProbe/** -text
+# Final matched-series audit records the calculator's byte hash.
+/tools/dissertation/audit_matched_main_results.py -text
+/tools/dissertation/test_audit_matched_main_results.py -text
+/tools/dissertation/render_matched_main_figures.py -text
