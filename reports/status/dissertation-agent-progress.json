@@ -251,12 +251,13 @@
       }
     },
     "25": {
-      "status": "partialAgentDraftAwaitingMainNetworkResults",
+      "status": "partialDraftRevisedAwaitingMainNetworkRaw",
       "document": "docs/dissertation/articles/article-2-relay-federation.md",
-      "verification": "reports/audits/dissertation/article-2-draft-v1/verification.json",
+      "verification": "reports/audits/dissertation/articles-offline-revision-v1/verification.json",
       "scientificAuthorApproval": false,
       "submitted": false,
-      "acceptedWeightPersonDays": 0
+      "acceptedWeightPersonDays": 0,
+      "mainAcceptancePlan": "reports/analysis/Article-2-main-acceptance.md"
     },
     "01": {
       "status": "workingQuestionsAcceptedAwaitingNoveltyAndSupervisorAgreement",
@@ -1491,7 +1492,30 @@
     "mainReplaysCompleted": 0,
     "mainReplaysPlanned": 6,
     "additionalBaselineWeightPersonDays": 0,
-    "report": "reports/analysis/Article-2-evidence-package.md"
+    "report": "reports/analysis/Article-2-evidence-package.md",
+    "version": "v2",
+    "verification": "reports/audits/dissertation/article-2-evidence-package-v2/verification.json",
+    "revisionChecks": "reports/audits/dissertation/articles-offline-revision-v1/verification.json"
   },
-  "nextAction": "Author and independent reviewer assess bounded article 1 result; prepare article 2 locally from existing coverage, retrieve missing network raw only after Linux is available. No rerun of completed 40-run series."
+  "nextAction": "Author/independent human review of article 1; obtain already computed network raw when Linux is available, then audit coverage and compare complete matched groups. Do not rerun finished 40-run series.",
+  "article1BoundedReview": {
+    "status": "selfReviewCompletedIndependentReviewUnavailable",
+    "document": "reports/analysis/Article-1-bounded-review.md",
+    "independentAgentAttempts": 2,
+    "independentAgentError": "Selected model is at capacity",
+    "independentAgentReviewCompleted": false,
+    "humanReviewPerformed": false,
+    "submissionReady": false,
+    "additionalBaselineWeightPersonDays": 0
+  },
+  "currentEditorialBlock": {
+    "status": "localRevisionVerifiedAwaitingPublication",
+    "article1NumericalChecks": 55,
+    "article2NumericalArtifactChecks": 186,
+    "independentReviewAvailable": false,
+    "linuxContacted": false,
+    "newExperimentsExecuted": false,
+    "globalPercent": 40.4,
+    "additionalBaselineWeightPersonDays": 0
+  }
 }

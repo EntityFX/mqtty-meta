@@ -39,3 +39,5 @@
 /tools/dissertation/audit_matched_main_results.py -text
 /tools/dissertation/test_audit_matched_main_results.py -text
 /tools/dissertation/render_matched_main_figures.py -text
+/tools/dissertation/article2_evidence_package.py -text
+/tools/dissertation/test_article2_evidence_package.py -text
