@@ -1,0 +1,28 @@
+{
+  "observedAtUtc": "2026-10-26T18:27:52.040787+00:00",
+  "service": "mqtty-network-remaining-v1.service",
+  "mainPid": 325717,
+  "activeState": "active",
+  "subState": "running",
+  "result": "success",
+  "progressPath": "/run/media/entityfx/hd250/mqtty-evidence/network-full-3h-v1/progress.json",
+  "status": "running",
+  "phase": "matrix",
+  "verifiedMatrix": 160,
+  "totalMatrix": 162,
+  "replayDone": 0,
+  "replayTotal": 6,
+  "technicalErrors": 0,
+  "warnings": 25,
+  "matrixAttemptsTotal": 163,
+  "historicalFailedAttempts": 3,
+  "activeJobs": {
+    "matrix.star.federation.q2.r5000.w10.s43": {"pid": 334221, "elapsedSeconds": 414.19040286401287, "rssBytes": 807161856},
+    "matrix.star.federation.q2.r5000.w10.s44": {"pid": 334707, "elapsedSeconds": 6.022467163042165, "rssBytes": 758611968}
+  },
+  "remainingBudgetSeconds": 14635.047708002676,
+  "reason": null,
+  "processesRestarted": false,
+  "localIndependentRecount": 106,
+  "captureNote": "Read-only service query and progress summary. Initial read at controller/progress.json returned file-not-found; actual campaign progress read successfully. No process failure inferred from that path error. No cyclic polling."
+}

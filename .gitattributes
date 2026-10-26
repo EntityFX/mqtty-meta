@@ -54,3 +54,4 @@
 # Related-work verification records these document bytes.
 /docs/dissertation/article-2-contribution-and-related-work.md -text
 /docs/dissertation/articles-and-work-plan.md -text
+/docs/dissertation/drafts/** -text
