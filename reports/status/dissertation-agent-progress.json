@@ -21,11 +21,12 @@
     "19",
     "20",
     "21",
-    "22"
+    "22",
+    "29"
   ],
-  "verifiedTechnicalWeightPersonDays": 19.0,
+  "verifiedTechnicalWeightPersonDays": 19.5,
   "localPercent": 80,
-  "globalPercent": 40.4,
+  "globalPercent": 41.5,
   "basis": "Plan effort weights; not scientific confidence or elapsed labour",
   "steps": {
     "03": {
@@ -375,6 +376,14 @@
       "citationEvidence": "docs/dissertation/articles/citation-evidence.md",
       "exhaustiveNoveltySearch": false,
       "authorNoveltyApproval": false
+    },
+    "29": {
+      "status": "technicalMatrixPreparedAndChecked",
+      "weightPersonDays": 0.5,
+      "verification": "reports/audits/dissertation/dissertation-claims-refresh-v1/verification.json",
+      "scientificApproval": false,
+      "personalContributionConfirmed": false,
+      "latexChanged": false
     }
   },
   "humanAcceptanceNotReplaced": true,
@@ -1570,5 +1579,22 @@
       "remote": "origin/develop",
       "status": "pushed"
     }
+  },
+  "networkAdditionalSession": {
+    "status": "startedPreflightRevalidation",
+    "service": "mqtty-network-remaining-v1.service",
+    "observedMainPid": 325717,
+    "observedActiveState": "active",
+    "observedAtEpoch": 1793032453.0062962,
+    "wallLimitSeconds": 21600,
+    "deadlineEpoch": 1793054027.088146,
+    "remainingMatrix": 56,
+    "remainingReplay": 6,
+    "initialVerifiedMatrix": 106,
+    "workers": 2,
+    "originalBudgetUnchanged": true,
+    "scientificInputsChanged": false,
+    "evidence": "reports/audits/dissertation/network-remaining-session-v1/start-status.json",
+    "currentResultsNotYetObserved": true
   }
 }

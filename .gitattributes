@@ -41,3 +41,5 @@
 /tools/dissertation/render_matched_main_figures.py -text
 /tools/dissertation/article2_evidence_package.py -text
 /tools/dissertation/test_article2_evidence_package.py -text
+# Evidence-map bytes are recorded in the dissertation claims receipt.
+/docs/dissertation/claim-evidence-map.md -text
