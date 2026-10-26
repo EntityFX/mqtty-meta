@@ -1585,7 +1585,7 @@
     "service": "mqtty-network-remaining-v1.service",
     "observedMainPid": 325717,
     "observedActiveState": "active",
-    "observedAtEpoch": 1793033933.9911768,
+    "observedAtEpoch": 1793036670.3460217,
     "wallLimitSeconds": 21600,
     "deadlineEpoch": 1793054027.088146,
     "remainingMatrix": 56,
@@ -1594,13 +1594,13 @@
     "workers": 2,
     "originalBudgetUnchanged": true,
     "scientificInputsChanged": false,
-    "evidence": "reports/audits/dissertation/network-remaining-session-v1/status-20261026-1958.json",
+    "evidence": "reports/audits/dissertation/network-remaining-session-v1/status-20261026-2044.json",
     "currentResultsNotYetObserved": true,
-    "observedVerifiedMatrix": 118,
+    "observedVerifiedMatrix": 143,
     "observedReplays": 0,
     "activeJobs": [
-      "matrix.star.single.q1.r5000.w10.s43",
-      "matrix.star.single.q1.r5000.w10.s44"
+      "matrix.star.relay.q2.r5000.w10.s44",
+      "matrix.star.federation.q0.r1000.w10.s42"
     ],
     "observedUnresolvedErrors": 0,
     "observedWarnings": 18
