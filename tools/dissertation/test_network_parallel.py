@@ -109,4 +109,28 @@ class ParallelBudgetTests(unittest.TestCase):
         values='RuntimeMaxUSec=3h\nMemoryMax=10737418240\nMemorySwapMax=0\nControlGroup=/bounded/other\nMainPID=1\n'
         with patch.object(parallel.subprocess,'check_output',return_value=values), patch.object(Path,'read_text',return_value='0::/actual/controller'):
             with self.assertRaisesRegex(ValueError,'actually belong'):parallel.check_service('test.service')
+    def test_additional_session_keeps_expired_original_and_completed_attempts(self):
+        root=self.staged((42,))
+        parallel.run(root,'pilot',workers=1,wall_seconds=30,cleanup_seconds=1)
+        original=read(root/'wall-budget.json');original['deadlineEpoch']=0
+        write(root/'wall-budget.json',original)
+        before=(root/'wall-budget.json').read_bytes()
+        digest=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+        manifest_sha=digest(root/'execution-manifest.json')
+        resource=root/'resource.json'
+        write(resource,dict(executionManifestSha256=manifest_sha,controllerSha256=digest(Path(parallel.__file__)),
+                            workers=1,jobRssLimitBytes=1024**3,reason='Explicit continuation'))
+        policy=root/'session.json'
+        import network_additional_session
+        receipt=next((root/'rows').glob('*.json'))
+        write(policy,dict(sessionId='test-v1',executionManifestSha256=manifest_sha,
+                          sessionHelperSha256=digest(Path(network_additional_session.__file__)),
+                          controllerSha256=digest(Path(parallel.__file__)),workers=1,wallLimitSeconds=21600,
+                          originalBudgetSha256=digest(root/'wall-budget.json'),
+                          originalReceipts={receipt.relative_to(root).as_posix():digest(receipt)},
+                          allowedJobIds=['pilot.s42'],retryReasons={},reason='Inspected test continuation'))
+        result=parallel.run(root,'pilot',workers=1,resume=True,resource_decision=resource,session_decision=policy)
+        self.assertTrue(result['reverifiedOnly'])
+        self.assertEqual(before,(root/'wall-budget.json').read_bytes())
+        self.assertEqual(len(list((root/'runs').glob('*/attempt-*'))),1)
 if __name__=='__main__':unittest.main()

@@ -80,7 +80,7 @@ def resource_policy(path, manifest, manifest_sha, workers):
     return dict(manifest,jobRssLimitBytes=limit),raw
 
 
-def run(root, phase, *, workers=4, wall_seconds=10800, cleanup_seconds=120, decision_path=None, resume=False, pilot_registry=None, resource_decision=None, retry_job=None, retry_reason=None):
+def run(root, phase, *, workers=4, wall_seconds=10800, cleanup_seconds=120, decision_path=None, resume=False, pilot_registry=None, resource_decision=None, retry_job=None, retry_reason=None, session_decision=None):
     if not 1<=workers<=4 or not 0<=cleanup_seconds<wall_seconds: raise ValueError('Invalid worker or cleanup budget')
     root=Path(root).resolve();manifest=verify_snapshot(root);manifest_sha=sha(root/'execution-manifest.json')
     effective,resource_bytes=resource_policy(resource_decision,manifest,manifest_sha,workers)
@@ -96,11 +96,18 @@ def run(root, phase, *, workers=4, wall_seconds=10800, cleanup_seconds=120, deci
     if guard.device!=manifest['mountDevice']: raise ValueError('Evidence mount identity changed')
     plan=program_check(root/'program');indexed={j['id']:j for j in plan['jobs']}
     with lock(root/'run.lock'),lock(guard.mount/'.mqtty-network-study.lock'):
-        stop_at=deadline(root,guard,wall_seconds)-cleanup_seconds
+        session=None
+        if session_decision:
+            if not resource_bytes:raise ValueError('Additional controller requires a pinned resource decision')
+            from network_additional_session import admit
+            end,session=admit(root,guard,session_decision,manifest_sha,sha(Path(__file__)),workers)
+            stop_at=time.monotonic()+end-time.time()-cleanup_seconds
+        else:
+            stop_at=deadline(root,guard,wall_seconds)-cleanup_seconds
         runner.isolation(manifest['afterUnits'])
         rows=runner.load_rows(root,manifest_sha,indexed,guard)
         failures=[r for r in rows.values() if r['technicalError']]
-        if failures and (not resume or not retry_reason or len(failures)!=1 or failures[0]['id']!=retry_job or indexed[retry_job]['kind']!=phase):
+        if failures and not session and (not resume or not retry_reason or len(failures)!=1 or failures[0]['id']!=retry_job or indexed[retry_job]['kind']!=phase):
             raise ValueError('Inspect failed attempts before any retry')
         if retry_job and (not resume or not retry_reason):raise ValueError('Explicit retry requires resume and reason')
         if resource_bytes:
@@ -124,6 +131,9 @@ def run(root, phase, *, workers=4, wall_seconds=10800, cleanup_seconds=120, deci
                 with target.open('xb') as stream:stream.write(decision_bytes)
             elif sha(target)!=digest:raise ValueError('Saved decision differs')
         jobs=[j for j in plan['jobs'] if j['kind']==phase]
+        if session:
+            from network_additional_session import check_pending
+            check_pending(session,jobs,rows,resume)
         if not jobs:raise ValueError('Phase has no jobs')
         if phase=='replay' and any(j['replayOf'] not in rows for j in jobs):raise ValueError('Replay originals incomplete')
         if any(j['id'] in rows for j in jobs) and not resume:raise ValueError('Partial phase requires explicit resume')
@@ -144,7 +154,8 @@ def run(root, phase, *, workers=4, wall_seconds=10800, cleanup_seconds=120, deci
         def work(job):
             def on_state(state):
                 with mutex:active[job['id']]=state;publish()
-            return runner.attempt(root,job,effective,manifest_sha,guard,on_state,retry_reason if job['id']==retry_job else None,cancel_requested=cancelled,verification_lock=verification_mutex)
+            inspected_reason=session.get('retryReasons',{}).get(job['id']) if session else (retry_reason if job['id']==retry_job else None)
+            return runner.attempt(root,job,effective,manifest_sha,guard,on_state,inspected_reason,cancel_requested=cancelled,verification_lock=verification_mutex)
         pending={}
         with ThreadPoolExecutor(max_workers=workers) as pool:
             with mutex:publish()
@@ -197,13 +208,14 @@ def run(root, phase, *, workers=4, wall_seconds=10800, cleanup_seconds=120, deci
             return {'status':'completed','verified':len(jobs),'total':len(jobs)}
 
 
-def check_service(unit):
+def check_service(unit, wall_seconds=10800):
     values=dict(line.split('=',1) for line in subprocess.check_output(
         ['systemctl','--user','show',unit,'-p','RuntimeMaxUSec,MemoryMax,MemorySwapMax,ControlGroup,MainPID'],text=True).splitlines() if '=' in line)
     # Main is launched only inside a bounded unit; tests call run() with synthetic jobs.
     maximum=values.get('RuntimeMaxUSec','')
-    if maximum not in ('3h','180min','10800000000','10800s'):
-        raise ValueError('Unit must have RuntimeMaxSec=10800 as an outer hard limit')
+    accepted=('6h','360min','21600000000','21600s') if wall_seconds==21600 else ('3h','180min','10800000000','10800s')
+    if maximum not in accepted:
+        raise ValueError('Unit wall limit differs from the declared bounded session')
     if int(values.get('MemoryMax','0'))!=10*1024**3 or values.get('MemorySwapMax')!='0':
         raise ValueError('Unit requires MemoryMax=10G and MemorySwapMax=0')
     groups=[line.split(':',2)[-1] for line in Path('/proc/self/cgroup').read_text().splitlines()]
@@ -220,10 +232,11 @@ def main():
     p.add_argument('--resume',action='store_true');p.add_argument('--unit',required=True)
     p.add_argument('--resource-decision',type=Path)
     p.add_argument('--retry-job');p.add_argument('--retry-reason')
-    a=p.parse_args();check_service(a.unit)
+    p.add_argument('--session-decision',type=Path)
+    a=p.parse_args();check_service(a.unit,21600 if a.session_decision else 10800)
     phases=['matrix','replay'] if a.phase=='matrix-replay' else [a.phase]
     for phase in phases:
-        result=run(a.study,phase,workers=a.workers,decision_path=a.decision,resume=a.resume,pilot_registry=a.pilot_registry,resource_decision=a.resource_decision,retry_job=a.retry_job,retry_reason=a.retry_reason)
+        result=run(a.study,phase,workers=a.workers,decision_path=a.decision,resume=a.resume,pilot_registry=a.pilot_registry,resource_decision=a.resource_decision,retry_job=a.retry_job,retry_reason=a.retry_reason,session_decision=a.session_decision)
         print(result,flush=True)
         if result['status']!='completed':return 1
     return 0
