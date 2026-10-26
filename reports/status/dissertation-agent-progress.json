@@ -1509,13 +1509,16 @@
     "additionalBaselineWeightPersonDays": 0
   },
   "currentEditorialBlock": {
-    "status": "localRevisionVerifiedAwaitingPublication",
+    "status": "localRevisionVerifiedPublished",
     "article1NumericalChecks": 55,
     "article2NumericalArtifactChecks": 186,
     "independentReviewAvailable": false,
     "linuxContacted": false,
     "newExperimentsExecuted": false,
     "globalPercent": 40.4,
-    "additionalBaselineWeightPersonDays": 0
+    "additionalBaselineWeightPersonDays": 0,
+    "publishedPackageCommit": "6ff575f",
+    "publicationVerified": true,
+    "publicationReceipt": "reports/audits/dissertation/articles-offline-revision-v1/publication.json"
   }
 }

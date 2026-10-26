@@ -1,0 +1,28 @@
+{
+  "status": "published",
+  "repository": "EntityFX/mqtty-meta",
+  "branch": "develop",
+  "packageCommit": "6ff575f",
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "remoteRejected",
+      "reason": "Internal Server Error",
+      "requestId": "196E:214488:1650FE6A:1DDCBAAF:6ADF6380"
+    },
+    {
+      "attempt": 2,
+      "status": "remoteRejected",
+      "reason": "Internal Server Error",
+      "requestId": "A184:3F5EC7:161E3828:1D95EFAF:6ADF6393"
+    },
+    {
+      "attempt": 3,
+      "status": "success",
+      "transportOverride": "http.version=HTTP/1.1",
+      "oldHead": "ca5d4b0",
+      "newHead": "6ff575f"
+    }
+  ],
+  "scientificRerunsPerformed": false
+}
