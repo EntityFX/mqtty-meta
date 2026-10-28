@@ -1,0 +1,130 @@
+{
+  "status": "verified",
+  "zip": "C:\\temp\\mqtty-evidence\\article-portable-v2\\reproduction-examples.zip",
+  "zipBytes": 11198873,
+  "zipSha256": "b92e7e8311ec3ab6baa2eb78f075414576700166bc84360eb03c31446bff0855",
+  "sampleFilesVerifiedFromTwinArchive": 23,
+  "sourceMembers": [
+    {
+      "file": "twins/native/config.json",
+      "sha256": "99b63cd4097e3e3fd4c617bbb7189b708a4afa6d543e842332933ce587027f46",
+      "source": "attempt-001/jobs/control.Aedes.r1/config.json"
+    },
+    {
+      "file": "twins/native/raw/connections.ndjson",
+      "sha256": "2cb9a5fa0efe594b6554590c222416666a79faa451b0a36613e330b2bfb2b3ee",
+      "source": "attempt-001/jobs/control.Aedes.r1/raw/connections.ndjson"
+    },
+    {
+      "file": "twins/native/raw/deliveries.ndjson",
+      "sha256": "4246ebf52c743cb4b577bd43cd4d44060d5420e9e4a0dec67fd230d2f45b61bb",
+      "source": "attempt-001/jobs/control.Aedes.r1/raw/deliveries.ndjson"
+    },
+    {
+      "file": "twins/native/raw/phases.json",
+      "sha256": "d568aac93434e48efb87691d8c693f0186b39a3d4d90908c10298f0354fe1d2a",
+      "source": "attempt-001/jobs/control.Aedes.r1/raw/phases.json"
+    },
+    {
+      "file": "twins/native/raw/protocol-preflight.json",
+      "sha256": "368f391bc03b7ebebe3063c743b24e3cefea7ce5dee9617b97ceca7a4d605878",
+      "source": "attempt-001/jobs/control.Aedes.r1/raw/protocol-preflight.json"
+    },
+    {
+      "file": "twins/native/raw/publishes.ndjson",
+      "sha256": "3cd28c45aa994bee735fa4b0593f9e8daec765b9f3c37d4a2fe5db8f8046d788",
+      "source": "attempt-001/jobs/control.Aedes.r1/raw/publishes.ndjson"
+    },
+    {
+      "file": "twins/native/raw/subscriptions.ndjson",
+      "sha256": "676920fdfa9d6a62ce55e2fe34c5c939356903df92a07460017a86abb8ca88e2",
+      "source": "attempt-001/jobs/control.Aedes.r1/raw/subscriptions.ndjson"
+    },
+    {
+      "file": "twins/native/raw/trial.json",
+      "sha256": "3eb47f01b5f14c11b42448c5cb73841a2fee87b44207bec10ad779c64ac197a2",
+      "source": "attempt-001/jobs/control.Aedes.r1/raw/trial.json"
+    },
+    {
+      "file": "twins/native/review.json",
+      "sha256": "271629c34bb5f555f397c4115bce1e8e62f43ad540edbc073e9f84260019e321",
+      "source": "attempt-001/jobs/control.Aedes.r1/review.json"
+    },
+    {
+      "file": "twins/model/config.json",
+      "sha256": "4b0234a67ba952d2c6b4bfd89c3d66c181eefef5c93698a785fff0b0a30380b2",
+      "source": "attempt-001/jobs/model.Aedes.r1/config.json"
+    },
+    {
+      "file": "twins/model/raw/connections.ndjson",
+      "sha256": "25e82e2ac690558bbf00f69a5d1e9829f08e6993432b3f9f6483c90b29cee2f2",
+      "source": "attempt-001/jobs/model.Aedes.r1/raw/connections.ndjson"
+    },
+    {
+      "file": "twins/model/raw/counters.json",
+      "sha256": "f7ab5f9922886181ba5ee1e8c87bce99785fd9a970158bc7bd546dfd55618643",
+      "source": "attempt-001/jobs/model.Aedes.r1/raw/counters.json"
+    },
+    {
+      "file": "twins/model/raw/deliveries.ndjson",
+      "sha256": "e67e46ca60ae80f3ab43c32c31ce2918bd186bbab3055ae619211748cd237d37",
+      "source": "attempt-001/jobs/model.Aedes.r1/raw/deliveries.ndjson"
+    },
+    {
+      "file": "twins/model/raw/experiment-manifest.json",
+      "sha256": "4a4370d2bb0e6bc0566027e340363bc40392393dccb481c7267565b427fefd12",
+      "source": "attempt-001/jobs/model.Aedes.r1/raw/experiment-manifest.json"
+    },
+    {
+      "file": "twins/model/raw/latency-histogram.json",
+      "sha256": "821a52a84ebd10d97c68f2e4005adf2b5ba435a6270574fc3bb6043682aa303f",
+      "source": "attempt-001/jobs/model.Aedes.r1/raw/latency-histogram.json"
+    },
+    {
+      "file": "twins/model/raw/phases.json",
+      "sha256": "c8addec679c77146d845f0a2fbed599cca61072f607df53a5a24bc1a146caa17",
+      "source": "attempt-001/jobs/model.Aedes.r1/raw/phases.json"
+    },
+    {
+      "file": "twins/model/raw/publishes.ndjson",
+      "sha256": "421417fd0a98e00f616e1aae440969a940f6c41f4a18a62e8c6baee4a7f6ec23",
+      "source": "attempt-001/jobs/model.Aedes.r1/raw/publishes.ndjson"
+    },
+    {
+      "file": "twins/model/raw/subscriptions.ndjson",
+      "sha256": "10df0b9f80e19ce6b780b1431ed6a6f7460820bad0c1f302e692f8145a6f617d",
+      "source": "attempt-001/jobs/model.Aedes.r1/raw/subscriptions.ndjson"
+    },
+    {
+      "file": "twins/model/raw/summary.json",
+      "sha256": "a26b30caaa9af87bed44d558f634cd0b15ecdc4cf874adf87d495a1af82afb37",
+      "source": "attempt-001/jobs/model.Aedes.r1/raw/summary.json"
+    },
+    {
+      "file": "twins/model/raw/topology.graphml",
+      "sha256": "5b2558c1ab6cee83750143782110dfa2cf45c608716d6ddf9165194c87672a8f",
+      "source": "attempt-001/jobs/model.Aedes.r1/raw/topology.graphml"
+    },
+    {
+      "file": "twins/model/raw/topology.puml",
+      "sha256": "ae7c804556ab4bd19b1eb794a80700eaacf85a06799735df6dccf25c74dc1dbe",
+      "source": "attempt-001/jobs/model.Aedes.r1/raw/topology.puml"
+    },
+    {
+      "file": "twins/model/raw/transport-resolution.json",
+      "sha256": "43bb52923d13d77dede0bf9d47136a3968a0af212bc2491e4e16a2207c3af946",
+      "source": "attempt-001/jobs/model.Aedes.r1/raw/transport-resolution.json"
+    },
+    {
+      "file": "twins/model/review.json",
+      "sha256": "9daa4d9ef292f1c11b76d7fcdb40571b8c11d04ef1d06b2953828bae15366e42",
+      "source": "attempt-001/jobs/model.Aedes.r1/review.json"
+    }
+  ],
+  "freshRunPassed": true,
+  "changedRawFileRejected": true,
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "stdout": "{\"apiAttempts\": 10000, \"expectedDeliveries\": 40000, \"uniqueDeliveries\": 40000, \"deliveryLoss\": 0, \"sourceCompletedRps\": 1000, \"forwardAttempts\": 30000}\nPASS: sample raw events, histograms, payload and seals verified\n{\"scope\": \"native\", \"attempted\": 70395, \"completed\": 70395, \"uniqueDeliveries\": 70395, \"completedCohortPerSubmissionSecond\": 17598.750000000004, \"p99PublishMs\": 2.1367999999997664, \"deliveryLossRate\": 0.0}\n{\"scope\": \"model\", \"attempted\": 68492, \"completed\": 68492, \"uniqueDeliveries\": 68492, \"completedCohortPerSubmissionSecond\": 17123.0, \"p99PublishMs\": 2.19, \"deliveryLossRate\": 0.0}\nPASS: native and profiled model raw arithmetic and connections verified\n",
+  "externalHumanReproductionClaimed": false,
+  "fullPrimaryArchivePublic": false
+}

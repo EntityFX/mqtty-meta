@@ -1529,7 +1529,7 @@
     "verification": "reports/audits/dissertation/article-2-evidence-package-v2/verification.json",
     "revisionChecks": "reports/audits/dissertation/articles-offline-revision-v1/verification.json"
   },
-  "nextAction": "Accept queue micro pair after termination; independent manuscript review and external raw availability. No automatic rerun.",
+  "nextAction": "No automatic queue rerun: preregister cheaper equal work and per-phase observability first. Independent human review and public archive handoff remain open.",
   "article1BoundedReview": {
     "status": "selfReviewCompletedIndependentReviewUnavailable",
     "document": "reports/analysis/Article-1-bounded-review.md",
@@ -1659,7 +1659,7 @@
   "nextDeliveryBlock": {
     "plan": "docs/dissertation/next-delivery-block-plan.md",
     "status": "plannedWithTopologyCatalogCompleted",
-    "currentGlobalPercent": 48.9,
+    "currentGlobalPercent": 53.2,
     "conditionalMilestones": [
       {
         "steps": [
@@ -1678,7 +1678,8 @@
     "checksPassed": 169,
     "creditedSteps": [
       "23",
-      "24"
+      "24",
+      "25"
     ]
   },
   "chapterDrafts": {
@@ -1732,12 +1733,32 @@
     "publicRawArchiveAvailable": false
   },
   "queueCapacityMicro": {
-    "status": "launchedLastObservedRunning",
+    "status": "partialTechnicalFailureVerified",
     "service": "mqtty-queue-capacity-micro-v1.service",
-    "pid": 4686,
+    "pid": 0,
     "deadlineMsk": "2026-10-29T01:15:57+03:00",
     "lastObservedMsk": "2026-10-29T01:09:47+03:00",
     "report": "reports/analysis/Queue-capacity-micro.md",
-    "scienceResultsVerified": false
+    "scienceResultsVerified": false,
+    "serviceActiveState": "inactive",
+    "baselineRawPassed": true,
+    "baselineSixScientificFilesEqual": true,
+    "changedVariantError": "TimeoutError: jobTimeout",
+    "changedVariantReturnCode": -9,
+    "changedVariantWallSeconds": 450.1292608959993,
+    "pairAcceptedForScientificComparison": false,
+    "transferFilesVerified": 55,
+    "acceptance": "reports/audits/dissertation/queue-capacity-micro-v1/acceptance.json",
+    "automaticRetryPerformed": false
+  },
+  "reproductionV2": {
+    "status": "freshExtractionAndTamperCheckPassed",
+    "verification": "reports/audits/dissertation/article-reproduction-v2/verification.json",
+    "sampleKinds": [
+      "realControl",
+      "profiledModel",
+      "idealNetwork"
+    ],
+    "publiclyHosted": false
   }
 }

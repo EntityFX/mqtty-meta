@@ -1,0 +1,31 @@
+{
+  "status": "verified",
+  "checksPassed": 22,
+  "checks": [
+    "55 files transferred",
+    "6 baseline files equal",
+    "failed process timeout",
+    "no comparison admitted",
+    "correct loss",
+    "single factor",
+    "fresh run and tamper",
+    "archive current hash",
+    "link reports/analysis/Queue-capacity-micro.md../../docs/dissertation/queue-capacity-micro-protocol.md",
+    "link reports/analysis/Queue-capacity-micro.md../audits/dissertation/queue-capacity-micro-v1/launch.json",
+    "link reports/analysis/Queue-capacity-micro.md../audits/dissertation/queue-capacity-micro-v1/preflight.json",
+    "link reports/analysis/Queue-capacity-micro.md../audits/dissertation/queue-capacity-micro-v1/status-0109.json",
+    "link reports/analysis/Queue-capacity-micro.md../audits/dissertation/queue-capacity-micro-v1/acceptance.json",
+    "link docs/dissertation/reproduction-handoff.md../../reports/audits/dissertation/article-reproduction-v2/verification.json",
+    "link docs/dissertation/reproduction-handoff.md../../reports/analysis/Article-1-matched-main-final.md",
+    "link docs/dissertation/reproduction-handoff.md../../reports/audits/dissertation/network-main-final-v1/README.md",
+    "protected diss/common/characteristic.tex",
+    "protected diss/Dissertation/chapter2.tex",
+    "protected diss/Dissertation/chapter3.tex",
+    "protected diss/Dissertation/chapter4.tex",
+    "protected diss/dissertation.tex",
+    "readiness unchanged"
+  ],
+  "queuePairScientificallyAccepted": false,
+  "newRunStartedThisTurn": false,
+  "automaticRetryPerformed": false
+}
