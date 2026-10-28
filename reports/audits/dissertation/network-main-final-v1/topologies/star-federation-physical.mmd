@@ -1,0 +1,10 @@
+flowchart LR
+  S0["Площадка 0: publishers=16; subscribers=1; брокер=есть"]
+  S1["Площадка 1: publishers=16; subscribers=1; брокер=есть"]
+  S2["Площадка 2: publishers=16; subscribers=1; брокер=есть"]
+  S3["Площадка 3: publishers=16; subscribers=1; брокер=есть"]
+  S4["transit: сетевой узел; без брокера и клиентов"]
+  S0 <-->|"сеть ↔"| S4
+  S1 <-->|"сеть ↔"| S4
+  S2 <-->|"сеть ↔"| S4
+  S3 <-->|"сеть ↔"| S4

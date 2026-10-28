@@ -1,0 +1,95 @@
+{
+  "scope": "Indexed receipts compared; raw bytes and event recount pending",
+  "replays": [
+    {
+      "id": "replay.star.single.q2.r1000.w10.s42",
+      "replayOf": "matrix.star.single.q2.r1000.w10.s42",
+      "scientificFileHashesEqual": true,
+      "summaryEqual": true,
+      "files": [
+        "summary.json",
+        "histograms.json",
+        "publications.json",
+        "delivery-receipts.json",
+        "transmissions.json",
+        "network-evidence.json"
+      ]
+    },
+    {
+      "id": "replay.star.single.q2.r5000.w10.s42",
+      "replayOf": "matrix.star.single.q2.r5000.w10.s42",
+      "scientificFileHashesEqual": true,
+      "summaryEqual": true,
+      "files": [
+        "summary.json",
+        "histograms.json",
+        "publications.json",
+        "delivery-receipts.json",
+        "transmissions.json",
+        "network-evidence.json"
+      ]
+    },
+    {
+      "id": "replay.star.relay.q2.r1000.w10.s42",
+      "replayOf": "matrix.star.relay.q2.r1000.w10.s42",
+      "scientificFileHashesEqual": true,
+      "summaryEqual": true,
+      "files": [
+        "summary.json",
+        "histograms.json",
+        "publications.json",
+        "delivery-receipts.json",
+        "transmissions.json",
+        "network-evidence.json"
+      ]
+    },
+    {
+      "id": "replay.star.relay.q2.r5000.w10.s42",
+      "replayOf": "matrix.star.relay.q2.r5000.w10.s42",
+      "scientificFileHashesEqual": true,
+      "summaryEqual": true,
+      "files": [
+        "summary.json",
+        "histograms.json",
+        "publications.json",
+        "delivery-receipts.json",
+        "transmissions.json",
+        "network-evidence.json"
+      ]
+    },
+    {
+      "id": "replay.star.federation.q2.r1000.w10.s42",
+      "replayOf": "matrix.star.federation.q2.r1000.w10.s42",
+      "scientificFileHashesEqual": true,
+      "summaryEqual": true,
+      "files": [
+        "summary.json",
+        "histograms.json",
+        "publications.json",
+        "delivery-receipts.json",
+        "transmissions.json",
+        "network-evidence.json"
+      ]
+    },
+    {
+      "id": "replay.star.federation.q2.r5000.w10.s42",
+      "replayOf": "matrix.star.federation.q2.r5000.w10.s42",
+      "scientificFileHashesEqual": true,
+      "summaryEqual": true,
+      "files": [
+        "summary.json",
+        "histograms.json",
+        "publications.json",
+        "delivery-receipts.json",
+        "transmissions.json",
+        "network-evidence.json"
+      ]
+    }
+  ],
+  "uniqueMatrixKeys": 162,
+  "conditionModeRows": 54,
+  "matrixWarningLabels": {
+    "queueDrops": 27,
+    "deliveryLoss": 27
+  }
+}

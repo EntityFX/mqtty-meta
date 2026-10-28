@@ -1,0 +1,17 @@
+flowchart LR
+  S0["Площадка 0: publishers=16; subscribers=1; брокер=есть"]
+  S1["Площадка 1: publishers=16; subscribers=1; брокер=есть"]
+  S2["Площадка 2: publishers=16; subscribers=1; брокер=есть"]
+  S3["Площадка 3: publishers=16; subscribers=1; брокер=есть"]
+  S0 -->|"federator"| S1
+  S1 -->|"federator"| S0
+  S0 -->|"federator"| S2
+  S2 -->|"federator"| S0
+  S0 -->|"federator"| S3
+  S3 -->|"federator"| S0
+  S1 -->|"federator"| S2
+  S2 -->|"federator"| S1
+  S1 -->|"federator"| S3
+  S3 -->|"federator"| S1
+  S2 -->|"federator"| S3
+  S3 -->|"federator"| S2

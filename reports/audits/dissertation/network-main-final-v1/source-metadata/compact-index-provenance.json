@@ -1,0 +1,61 @@
+{
+  "scope": "Compact derived index; original full metadata remains in verified external archive",
+  "files": {
+    "matrix-index.json": {
+      "original": "results-matrix.json",
+      "originalSha256": "7270c025d70609ed5a30e6e66413a9fb1186cd7950c96a460d9b778bc4c7e4f2",
+      "compactSha256": "6c4c3373e9ac7d4181c09c6ccf500c75f8b41afde8164874ca172886cde594e8",
+      "rows": 162,
+      "metricFields": [
+        "sourceCompletedRps",
+        "uniqueGoodput",
+        "deliveryLoss",
+        "receiverP99Ms",
+        "publishP99Ms",
+        "forwardAttempts",
+        "forwardTopicPayloadBytes",
+        "uniqueDuringDrain",
+        "expectedDeliveries",
+        "uniqueDeliveries",
+        "fullyDeliveredPublications",
+        "sourceCompleted",
+        "sourceCompletedDuringDrain",
+        "apiAttempts",
+        "queueDrops",
+        "hopLimitDrops",
+        "forwardRejected",
+        "backpressureUnsent",
+        "duplicateDeliveries",
+        "suppressedDuplicates"
+      ]
+    },
+    "replay-index.json": {
+      "original": "results-replay.json",
+      "originalSha256": "e989f7a924280ab7ce64f342c4259e457bd164c4c2d58b9e6b267878ddb2210d",
+      "compactSha256": "0c775fe6c482aa61fc87e9b977c930f49383f2d3366ab87f870c57572a008832",
+      "rows": 6,
+      "metricFields": [
+        "sourceCompletedRps",
+        "uniqueGoodput",
+        "deliveryLoss",
+        "receiverP99Ms",
+        "publishP99Ms",
+        "forwardAttempts",
+        "forwardTopicPayloadBytes",
+        "uniqueDuringDrain",
+        "expectedDeliveries",
+        "uniqueDeliveries",
+        "fullyDeliveredPublications",
+        "sourceCompleted",
+        "sourceCompletedDuringDrain",
+        "apiAttempts",
+        "queueDrops",
+        "hopLimitDrops",
+        "forwardRejected",
+        "backpressureUnsent",
+        "duplicateDeliveries",
+        "suppressedDuplicates"
+      ]
+    }
+  }
+}

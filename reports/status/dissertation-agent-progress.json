@@ -23,11 +23,13 @@
     "20",
     "21",
     "22",
+    "23",
+    "24",
     "29"
   ],
-  "verifiedTechnicalWeightPersonDays": 20.5,
+  "verifiedTechnicalWeightPersonDays": 23,
   "localPercent": 80,
-  "globalPercent": 43.6,
+  "globalPercent": 48.9,
   "basis": "Plan effort weights; not scientific confidence or elapsed labour",
   "steps": {
     "03": {
@@ -392,6 +394,21 @@
       "verification": "reports/audits/dissertation/article-2-related-work-v1/verification.json",
       "scientificNoveltyApprovedByAuthor": false,
       "independentHumanReview": false
+    },
+    "23": {
+      "status": "fullRawAndReplayAcceptancePassed",
+      "weightPersonDays": 1.5,
+      "matrixRawPassed": 162,
+      "replaysRawPassed": 6,
+      "verification": "reports/audits/dissertation/network-main-final-v1/acceptance.json"
+    },
+    "24": {
+      "status": "comparisonsFiguresAndTransitVerified",
+      "weightPersonDays": 1,
+      "conditionModeRows": 54,
+      "figures": 4,
+      "transitCases": 54,
+      "report": "reports/analysis/Network-main-final.md"
     }
   },
   "humanAcceptanceNotReplaced": true,
@@ -1514,7 +1531,7 @@
     "verification": "reports/audits/dissertation/article-2-evidence-package-v2/verification.json",
     "revisionChecks": "reports/audits/dissertation/articles-offline-revision-v1/verification.json"
   },
-  "nextAction": "Accept complete Linux 162+6 after finish; independently edit chapter drafts and prepare bounded Web profile verification. No restart or automatic polling.",
+  "nextAction": "Update article 2 with accepted full 162+6 data, then address expert baseline/statistics/method comments. No automatic new experiments. Remaining cleanup was blocked by automatic approval.",
   "article1BoundedReview": {
     "status": "selfReviewCompletedIndependentReviewUnavailable",
     "document": "reports/analysis/Article-1-bounded-review.md",
@@ -1589,29 +1606,26 @@
     }
   },
   "networkAdditionalSession": {
-    "status": "runningReplay",
+    "status": "completedAcceptedLocally",
     "service": "mqtty-network-remaining-v1.service",
-    "observedMainPid": 325717,
-    "observedActiveState": "active",
+    "observedMainPid": 0,
+    "observedActiveState": "inactive",
     "observedAtEpoch": 1793036670.3460217,
     "wallLimitSeconds": 21600,
     "deadlineEpoch": 1793054027.088146,
-    "remainingMatrix": 56,
-    "remainingReplay": 6,
+    "remainingMatrix": 0,
+    "remainingReplay": 0,
     "initialVerifiedMatrix": 106,
     "workers": 2,
     "originalBudgetUnchanged": true,
     "scientificInputsChanged": false,
-    "evidence": "reports/audits/dissertation/network-remaining-session-v1/status-20261026-2153.json",
+    "evidence": "reports/audits/dissertation/network-main-final-v1/linux-inspection.json",
     "currentResultsNotYetObserved": false,
     "observedVerifiedMatrix": 162,
-    "observedReplays": 4,
-    "activeJobs": [
-      "replay.star.federation.q2.r1000.w10.s42",
-      "replay.star.federation.q2.r5000.w10.s42"
-    ],
+    "observedReplays": 6,
+    "activeJobs": [],
     "observedUnresolvedErrors": 0,
-    "observedWarnings": 27,
+    "observedWarnings": 29,
     "observedAtUtc": "2026-10-26T18:53:46.580936+00:00",
     "observedTechnicalErrors": 0,
     "observedRemainingMatrix": 0,
@@ -1624,7 +1638,10 @@
       "conditions": 9,
       "mode": "federation",
       "independentRawRecount": false
-    }
+    },
+    "warningMatrixRuns": 27,
+    "warningReplayRuns": 2,
+    "localAcceptanceDateMsk": "2026-10-29"
   },
   "networkFormalReview": {
     "status": "boundedFormalReviewPassed",
@@ -1644,7 +1661,7 @@
   "nextDeliveryBlock": {
     "plan": "docs/dissertation/next-delivery-block-plan.md",
     "status": "plannedWithTopologyCatalogCompleted",
-    "currentGlobalPercent": 43.6,
+    "currentGlobalPercent": 48.9,
     "conditionalMilestones": [
       {
         "steps": [
@@ -1655,12 +1672,16 @@
         "globalPercent": 53.2
       }
     ],
-    "milestonesCredited": false,
-    "nextIndependentWork": "Draft chapter sections from accepted evidence; accept complete Linux matrix and replays after finish",
+    "milestonesCredited": true,
+    "nextIndependentWork": "Update article 2 using full accepted data, then expert review follow-up. No new run without a separate protocol.",
     "topologyCatalog": "docs/topologies/README.md",
     "catalogTemplates": 7,
     "catalogStudies": 5,
-    "checksPassed": 169
+    "checksPassed": 169,
+    "creditedSteps": [
+      "23",
+      "24"
+    ]
   },
   "chapterDrafts": {
     "status": "preparedAndVerified",
@@ -1672,5 +1693,32 @@
     "globalPercent": 43.6,
     "mainChapterStepsComplete": false,
     "newExperiments": 0
+  },
+  "networkMainFinal": {
+    "status": "fullMatrixAndReplaysAccepted",
+    "transferFilesVerified": 4412,
+    "matrixRawPassed": 162,
+    "matrixRawFailed": 0,
+    "replaysRawPassed": 6,
+    "replayScientificByteComparisons": 36,
+    "transitCases": 54,
+    "figures": 4,
+    "report": "reports/analysis/Network-main-final.md",
+    "acceptance": "reports/audits/dissertation/network-main-final-v1/acceptance.json",
+    "archive": "C:/temp/mqtty-evidence/network-final-20261028/network-full-final.tar.gz",
+    "extractionRemovedAfterVerification": true
+  },
+  "tempCleanup": {
+    "receipt": "reports/audits/dissertation/temp-cleanup-20261029/receipt.json",
+    "bytesRemoved": 25418673062,
+    "freeBytesAfter": 36146683904,
+    "archiveShaVerified": 3,
+    "remainingArticleBytes": 1083929295,
+    "remainingBlockedByAutomaticApproval": true
+  },
+  "expertReview": {
+    "source": "docs/overview/ExpertReview.md",
+    "followUp": "docs/dissertation/expert-review-follow-up.md",
+    "allScientificIssuesClosed": false
   }
 }

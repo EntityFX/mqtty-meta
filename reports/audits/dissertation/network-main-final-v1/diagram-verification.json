@@ -1,0 +1,371 @@
+{
+  "status": "verified",
+  "diagrams": [
+    {
+      "file": "line-federation-logical.mmd",
+      "expectedEdges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "mermaidEdgesMatchFrozenTopology": true,
+      "svgEdgeCountMatches": true,
+      "caseGraphPreviouslyVerified": true
+    },
+    {
+      "file": "line-federation-physical.mmd",
+      "expectedEdges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "mermaidEdgesMatchFrozenTopology": true,
+      "svgEdgeCountMatches": true,
+      "caseGraphPreviouslyVerified": true
+    },
+    {
+      "file": "line-relay-logical.mmd",
+      "expectedEdges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "mermaidEdgesMatchFrozenTopology": true,
+      "svgEdgeCountMatches": true,
+      "caseGraphPreviouslyVerified": true
+    },
+    {
+      "file": "ring-federation-logical.mmd",
+      "expectedEdges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "mermaidEdgesMatchFrozenTopology": true,
+      "svgEdgeCountMatches": true,
+      "caseGraphPreviouslyVerified": true
+    },
+    {
+      "file": "ring-federation-physical.mmd",
+      "expectedEdges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "mermaidEdgesMatchFrozenTopology": true,
+      "svgEdgeCountMatches": true,
+      "caseGraphPreviouslyVerified": true
+    },
+    {
+      "file": "ring-relay-logical.mmd",
+      "expectedEdges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "mermaidEdgesMatchFrozenTopology": true,
+      "svgEdgeCountMatches": true,
+      "caseGraphPreviouslyVerified": true
+    },
+    {
+      "file": "star-federation-logical.mmd",
+      "expectedEdges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "mermaidEdgesMatchFrozenTopology": true,
+      "svgEdgeCountMatches": true,
+      "caseGraphPreviouslyVerified": true
+    },
+    {
+      "file": "star-federation-physical.mmd",
+      "expectedEdges": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "mermaidEdgesMatchFrozenTopology": true,
+      "svgEdgeCountMatches": true,
+      "caseGraphPreviouslyVerified": true
+    },
+    {
+      "file": "star-relay-logical.mmd",
+      "expectedEdges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "mermaidEdgesMatchFrozenTopology": true,
+      "svgEdgeCountMatches": true,
+      "caseGraphPreviouslyVerified": true
+    }
+  ],
+  "scope": "Mermaid edge sets and SVG path counts checked against frozen topologies; corresponding actual GraphML previously passed raw case validation",
+  "initialCheckCorrection": "SVG edges are path elements rather than line elements; no source diagrams changed"
+}

@@ -1,0 +1,95 @@
+{
+  "sourceFileIndexSha256": "b1a775d2f93921610db678f50104a674f67a1bf1cc04c22a74867c502305bee6",
+  "files": [
+    {
+      "file": "line-federation-physical.svg",
+      "source": "runs/matrix.line.federation.q0.r1000.w10.s42/attempt-001/output/topology-physical.svg",
+      "sha256": "4c71147fc521db069037e0604cbe6b5b9981d2ed67304fb45acca10d78707b97"
+    },
+    {
+      "file": "line-federation-physical.mmd",
+      "source": "runs/matrix.line.federation.q0.r1000.w10.s42/attempt-001/output/topology-physical.mmd",
+      "sha256": "cf033cda39f55ac8adf9ef04c56f923aa4566484026b0be3bd1a9505915e6201"
+    },
+    {
+      "file": "line-federation-logical.svg",
+      "source": "runs/matrix.line.federation.q0.r1000.w10.s42/attempt-001/output/topology-logical.svg",
+      "sha256": "71a8c627c4f4265a90e57e9386ae138f0143287d4ec02d8baaf49976ff372476"
+    },
+    {
+      "file": "line-federation-logical.mmd",
+      "source": "runs/matrix.line.federation.q0.r1000.w10.s42/attempt-001/output/topology-logical.mmd",
+      "sha256": "ef70996cc8ded1e11f014df4ea9ab6434309f1e0e09a35f942ab4136fb0bc69f"
+    },
+    {
+      "file": "ring-federation-physical.svg",
+      "source": "runs/matrix.ring.federation.q0.r1000.w10.s42/attempt-001/output/topology-physical.svg",
+      "sha256": "15f088f3c5871c35a6c15eb502ebc885a912feb55219e22d00b0a01dbf54cbb9"
+    },
+    {
+      "file": "ring-federation-physical.mmd",
+      "source": "runs/matrix.ring.federation.q0.r1000.w10.s42/attempt-001/output/topology-physical.mmd",
+      "sha256": "b4b887d66749d6b2ca6c4b6a57f6c386b054aeddaf3969a82873b8ed394f5628"
+    },
+    {
+      "file": "ring-federation-logical.svg",
+      "source": "runs/matrix.ring.federation.q0.r1000.w10.s42/attempt-001/output/topology-logical.svg",
+      "sha256": "f614965fba6108608aa31839cc400bfbe73acc439f9be065597c6df6598304bf"
+    },
+    {
+      "file": "ring-federation-logical.mmd",
+      "source": "runs/matrix.ring.federation.q0.r1000.w10.s42/attempt-001/output/topology-logical.mmd",
+      "sha256": "0417ec8464bb3d2b2fa4e9ce253147b17f38b0b672eebd261199851d9ccdc983"
+    },
+    {
+      "file": "star-federation-physical.svg",
+      "source": "runs/matrix.star.federation.q0.r1000.w10.s42/attempt-001/output/topology-physical.svg",
+      "sha256": "f0c604740be4663e1cb725b197afcb24a67697af684245b7153c5722a50b4057"
+    },
+    {
+      "file": "star-federation-physical.mmd",
+      "source": "runs/matrix.star.federation.q0.r1000.w10.s42/attempt-001/output/topology-physical.mmd",
+      "sha256": "3725f8eb15a1b63e023d7954e61b8565527130f669d129c42506595e2fb6e47c"
+    },
+    {
+      "file": "star-federation-logical.svg",
+      "source": "runs/matrix.star.federation.q0.r1000.w10.s42/attempt-001/output/topology-logical.svg",
+      "sha256": "44145f6480d22983386e561a867978d699ec5137abe4102c1d06203e23812940"
+    },
+    {
+      "file": "star-federation-logical.mmd",
+      "source": "runs/matrix.star.federation.q0.r1000.w10.s42/attempt-001/output/topology-logical.mmd",
+      "sha256": "4350b5902024fa6284bfdfd7ca75075d00259be430c0d1d31b06128d79f7e02e"
+    },
+    {
+      "file": "line-relay-logical.svg",
+      "source": "runs/matrix.line.relay.q0.r1000.w10.s42/attempt-001/output/topology-logical.svg",
+      "sha256": "9b4c393ea2657b4ca2406d674b12fdafc52a2de2aefb5e0e0617aa174fe3ca6e"
+    },
+    {
+      "file": "line-relay-logical.mmd",
+      "source": "runs/matrix.line.relay.q0.r1000.w10.s42/attempt-001/output/topology-logical.mmd",
+      "sha256": "fc48da716782eb6850d97728e59a3373efbc2510559e04c94edb1c0ed1bf0efd"
+    },
+    {
+      "file": "ring-relay-logical.svg",
+      "source": "runs/matrix.ring.relay.q0.r1000.w10.s42/attempt-001/output/topology-logical.svg",
+      "sha256": "9b4c393ea2657b4ca2406d674b12fdafc52a2de2aefb5e0e0617aa174fe3ca6e"
+    },
+    {
+      "file": "ring-relay-logical.mmd",
+      "source": "runs/matrix.ring.relay.q0.r1000.w10.s42/attempt-001/output/topology-logical.mmd",
+      "sha256": "fc48da716782eb6850d97728e59a3373efbc2510559e04c94edb1c0ed1bf0efd"
+    },
+    {
+      "file": "star-relay-logical.svg",
+      "source": "runs/matrix.star.relay.q0.r1000.w10.s42/attempt-001/output/topology-logical.svg",
+      "sha256": "9b4c393ea2657b4ca2406d674b12fdafc52a2de2aefb5e0e0617aa174fe3ca6e"
+    },
+    {
+      "file": "star-relay-logical.mmd",
+      "source": "runs/matrix.star.relay.q0.r1000.w10.s42/attempt-001/output/topology-logical.mmd",
+      "sha256": "fc48da716782eb6850d97728e59a3373efbc2510559e04c94edb1c0ed1bf0efd"
+    }
+  ]
+}
