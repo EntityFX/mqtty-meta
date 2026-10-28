@@ -1706,7 +1706,10 @@
     "report": "reports/analysis/Network-main-final.md",
     "acceptance": "reports/audits/dissertation/network-main-final-v1/acceptance.json",
     "archive": "C:/temp/mqtty-evidence/network-final-20261028/network-full-final.tar.gz",
-    "extractionRemovedAfterVerification": true
+    "extractionRemovedAfterVerification": true,
+    "publishedCommit": "a9e61529a2107aa3d443cfb93ec4d21b9859aec1",
+    "publicationVerified": true,
+    "publicationReceipt": "reports/audits/dissertation/network-main-final-v1/publication.json"
   },
   "tempCleanup": {
     "receipt": "reports/audits/dissertation/temp-cleanup-20261029/receipt.json",
