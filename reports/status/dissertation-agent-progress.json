@@ -25,11 +25,12 @@
     "22",
     "23",
     "24",
+    "25",
     "29"
   ],
-  "verifiedTechnicalWeightPersonDays": 23,
+  "verifiedTechnicalWeightPersonDays": 25,
   "localPercent": 80,
-  "globalPercent": 48.9,
+  "globalPercent": 53.2,
   "basis": "Plan effort weights; not scientific confidence or elapsed labour",
   "steps": {
     "03": {
@@ -255,13 +256,10 @@
       }
     },
     "25": {
-      "status": "partialDraftRevisedAwaitingMainNetworkRaw",
-      "document": "docs/dissertation/articles/article-2-relay-federation.md",
-      "verification": "reports/audits/dissertation/articles-offline-revision-v1/verification.json",
-      "scientificAuthorApproval": false,
-      "submitted": false,
-      "acceptedWeightPersonDays": 0,
-      "mainAcceptancePlan": "reports/analysis/Article-2-main-acceptance.md"
+      "status": "completeWorkingManuscriptVerified",
+      "weightPersonDays": 2,
+      "verification": "reports/audits/dissertation/article-revision-v3/article2-verification.json",
+      "independentHumanApproval": false
     },
     "01": {
       "status": "workingQuestionsAcceptedAwaitingNoveltyAndSupervisorAgreement",
@@ -1531,7 +1529,7 @@
     "verification": "reports/audits/dissertation/article-2-evidence-package-v2/verification.json",
     "revisionChecks": "reports/audits/dissertation/articles-offline-revision-v1/verification.json"
   },
-  "nextAction": "Update article 2 with accepted full 162+6 data, then address expert baseline/statistics/method comments. No automatic new experiments. Remaining cleanup was blocked by automatic approval.",
+  "nextAction": "Accept queue micro pair after termination; independent manuscript review and external raw availability. No automatic rerun.",
   "article1BoundedReview": {
     "status": "selfReviewCompletedIndependentReviewUnavailable",
     "document": "reports/analysis/Article-1-bounded-review.md",
@@ -1723,5 +1721,23 @@
     "source": "docs/overview/ExpertReview.md",
     "followUp": "docs/dissertation/expert-review-follow-up.md",
     "allScientificIssuesClosed": false
+  },
+  "articleRevisionV3": {
+    "status": "verified",
+    "verification": "reports/audits/dissertation/article-revision-v3/verification.json",
+    "checks": 121,
+    "article2Checks": 156,
+    "citationNewSourceAudit": "PASS 0errors 0warnings",
+    "portableExample": "reports/audits/dissertation/article-revision-v3/portable-example.json",
+    "publicRawArchiveAvailable": false
+  },
+  "queueCapacityMicro": {
+    "status": "launchedLastObservedRunning",
+    "service": "mqtty-queue-capacity-micro-v1.service",
+    "pid": 4686,
+    "deadlineMsk": "2026-10-29T01:15:57+03:00",
+    "lastObservedMsk": "2026-10-29T01:09:47+03:00",
+    "report": "reports/analysis/Queue-capacity-micro.md",
+    "scienceResultsVerified": false
   }
 }

@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "sourceManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+  "sourceBaseConfigSha256": "80960952685bdddbf1479ed7a1744ed35ee0effe6bd469fef507238707c84a0b",
+  "dotnetSha256": "86ec9896b9d07542995a2c7cf2ecb1622a7ed7e092b704a46926416f31bd4efc",
+  "pinnedFiles": {
+    "runtime/Microsoft.Extensions.Logging.Abstractions.dll": "ab36e8201d41dd751cbb712704dbe8492bdd0ab1bff6fb35371cf59bcd982181",
+    "runtime/Microsoft.Extensions.Options.dll": "fbb309a36bc91d90ec2984397bff4f75f35ac92909e0acd952c5264c5ac0a753",
+    "runtime/EntityFX.MqttY.Contracts.Mqtt.dll": "00bdc081d1d4f3cc49b872ac3eb7d894e82c714bfec79a8bc535385ed83fe478",
+    "runtime/EntityFX.MqttY.Federation.App.runtimeconfig.json": "ded3aeb5856a11db0b654a785574490cab55839ebfb17efe9e39b89618fc5b91",
+    "runtime/EntityFX.MqttY.dll": "e66776f56aef02e891d3ffe35e45303b03541a8f29902a1f5d5aecb980c08ed3",
+    "runtime/Microsoft.Extensions.DependencyInjection.Abstractions.dll": "ac9cd953b7eeb03cf48e343c5ace6fc9b48ac968b68d1cb30ad1d6111178bf4d",
+    "runtime/Microsoft.Extensions.Configuration.Abstractions.dll": "3124386219566a2c386e6999d83a7d507584de46cde4ae733a8af3c373c42b8c",
+    "runtime/EntityFX.MqttY.Plugin.Mqtt.dll": "c5f9712871abdb621473c3ed7862ee67d3d206ed11ceb8fc45affc165124cad0",
+    "runtime/Microsoft.Extensions.Primitives.dll": "f9f47907a041067d9bc1b9a9f516009b6ca0a9c6325ce83527883cc0d053dfa5",
+    "runtime/System.Diagnostics.DiagnosticSource.dll": "d6935e993b69f8abd934f01b0d7dd8ca9616a7ea94c7af59ed07b2fd3cf93a97",
+    "runtime/EntityFX.MqttY.Contracts.dll": "84290d5c994fd8e91d6c1017f8deb66ece23cc8698995c841c35d49e0b59569d",
+    "runtime/Microsoft.Extensions.DependencyInjection.dll": "df0ae00b1599acae93d9f4df2bcc6d0ba109221ccc44d2d1486183f84a5fec78",
+    "runtime/EntityFX.MqttY.Federation.App.deps.json": "377abf2a122a5713f2215176c7ff47fb4b365e1139927eeb1359c43ef989303e",
+    "runtime/EntityFX.MqttY.Federation.App.dll": "9022c231ab1a48db8bf80a76f64bab597deab1ba08267d7a3ea06ee1f5946aff",
+    "runtime/EntityFX.MqttY.Contracts.Scenarios.dll": "109b038d53e4423cd62a851e97a8d620e01e877262e7a7f7c6e4a28435f042ec",
+    "runtime/Microsoft.Extensions.Configuration.Binder.dll": "4449f40e0645a61067c5e206e956cc5bc3b4421593b3c27188d8c71ef45c64a6",
+    "runtime/Microsoft.Extensions.Logging.dll": "37b87b16ac688d5619168554a22cca2677e1115f21c2d5ebe2f39c024fee2b7f",
+    "configs/q4096.json": "8ab1ce510903e768294b1e668e73852a839c17df6f9ff996fcc0fca4d389cd5e",
+    "configs/q1024.json": "80960952685bdddbf1479ed7a1744ed35ee0effe6bd469fef507238707c84a0b"
+  },
+  "sourceSnapshotFilesVerified": 281,
+  "singleDifference": [
+    "queueCapacity"
+  ]
+}

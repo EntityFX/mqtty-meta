@@ -1,0 +1,20 @@
+{
+  "observedAtMsk": "2026-10-29T01:09:47+03:00",
+  "service": "mqtty-queue-capacity-micro-v1.service",
+  "mainPid": 4686,
+  "activeState": "active",
+  "subState": "running",
+  "result": "success",
+  "progress": {
+    "status": "running",
+    "phase": "models",
+    "startedEpoch": 1793225157.043537,
+    "deadlineEpoch": 1793225757.043537,
+    "completed": 0,
+    "total": 2
+  },
+  "resultJsonPresent": false,
+  "journalErrorsObserved": false,
+  "processesRestarted": false,
+  "cyclicPollingCreated": false
+}
