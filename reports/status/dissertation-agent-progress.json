@@ -1913,7 +1913,7 @@
     "remoteHeadConfirmed": true
   },
   "parallelResearchBlock20261030": {
-    "status": "preparedAndQueuePilotRunning",
+    "status": "queueCompletedOnLinuxAwaitingLocalAcceptance",
     "preparedResults": 5,
     "totalResults": 5,
     "preparedPercent": 100,
@@ -1929,13 +1929,19 @@
     "portableSealedFiles": 149,
     "queuePilot": {
       "unit": "mqtty-queue-causality-20261030.service",
-      "pid": 5613,
-      "observedFinishedModels": 0,
+      "pid": 0,
+      "observedFinishedModels": 2,
       "models": 2,
       "scientificAcceptance": 0,
       "deadlineMsk": "2026-10-30 01:40:00 MSK",
       "retryPerformed": false,
-      "launchReceipt": "reports/audits/dissertation/parallel-block-20261030/queue-launch.json"
+      "launchReceipt": "reports/audits/dissertation/parallel-block-20261030/queue-launch.json",
+      "status": "completedOnLinux",
+      "linuxRawArithmeticPassed": 2,
+      "localRawAcceptance": "pending",
+      "sharedWallSeconds": 92.73635185799867,
+      "classification": "queueCapacityContrast",
+      "statusReceipt": "reports/audits/dissertation/parallel-block-20261030/linux-status-latest.json"
     },
     "accelerationLaunchReady": false,
     "accelerationReason": "missing bounded CPU-aware matched launcher",
