@@ -1884,5 +1884,30 @@
     "report": "reports/analysis/Article-1-native-control-web.md",
     "verification": "reports/audits/web/native-control-v1/verification.json",
     "weightedStepsAdded": []
+  },
+  "articlesHandoffV4": {
+    "status": "technicalChecksPassed",
+    "date": "2026-10-30",
+    "currentBlockCompleted": 5,
+    "currentBlockTotal": 5,
+    "currentBlockPercent": 100,
+    "globalPercent": 53.2,
+    "generalPreparationPercent": 80,
+    "weightedStepsAdded": [],
+    "checksPassed": 226,
+    "regressionTestsPassed": 11,
+    "sealedFiles": 121,
+    "archiveSha256": "036e1d3aaab429f7d06e522080c3f3faa2ba90b0aa9a96642a33304a5956b502",
+    "archiveBytes": 11118809,
+    "freshExtractionPassed": true,
+    "tamperedShaRejected": true,
+    "newExperiments": 0,
+    "linuxPolled": false,
+    "primaryDissertationModified": false,
+    "independentAiReview": "reports/audits/dissertation/articles-reading-20261030/independent-ai-review.md",
+    "aiVerdict": "OPEN_DECISION",
+    "humanReviewPassed": false,
+    "verification": "reports/audits/dissertation/articles-handoff-v4/verification.json",
+    "report": "reports/analysis/Articles-review-handoff.md"
   }
 }
