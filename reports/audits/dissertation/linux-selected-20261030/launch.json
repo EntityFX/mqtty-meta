@@ -1,0 +1,58 @@
+{
+  "unit": "mqtty-linux-selected-20261030.service",
+  "argv": [
+    "systemd-run",
+    "--user",
+    "--unit=mqtty-linux-selected-20261030.service",
+    "--property=RuntimeMaxSec=2995",
+    "--property=TimeoutStopSec=5",
+    "--property=MemoryMax=6G",
+    "--property=MemorySwapMax=0",
+    "--property=CPUQuota=300%",
+    "--property=KillMode=control-group",
+    "/usr/bin/taskset",
+    "-c",
+    "0,2,3",
+    "/usr/bin/python3",
+    "-B",
+    "/run/media/entityfx/hd250/mqtty-evidence/linux-selected-20261030-inputs/run_linux_selected.py",
+    "--inputs",
+    "/run/media/entityfx/hd250/mqtty-evidence/linux-selected-20261030-inputs",
+    "--output",
+    "/run/media/entityfx/hd250/mqtty-evidence/linux-selected-20261030"
+  ],
+  "state": "TimeoutStopUSec=5s\nRuntimeMaxUSec=49min 55s\nMainPID=6146\nResult=success\nActiveState=active\nSubState=running\n",
+  "progress": {
+    "programIdentity": "linux-selected-2-4-5-20261030-v1",
+    "phase": "stage-2",
+    "active": "2",
+    "finishedStages": 0,
+    "totalStages": 3,
+    "deadlineEpoch": 1793318449.2671413,
+    "elapsedSeconds": 0.013592456998594571,
+    "outcomes": []
+  },
+  "sourceFilesVerified": 281,
+  "inputSealSha256": "715016847b71507bfd75f5a601b6375749d2af499b61120d077ab3a5febe086b",
+  "healthAtAdmission": {
+    "status": "ok",
+    "processId": 4261,
+    "processWorkingSetBytes": 214851584,
+    "dataDirectoryAvailable": true,
+    "runningJobs": 0,
+    "queuedJobs": 0
+  },
+  "previousAaState": "MainPID=0\nResult=success\nActiveState=inactive\n",
+  "output": "/run/media/entityfx/hd250/mqtty-evidence/linux-selected-20261030",
+  "automaticRetry": false,
+  "launchStderr": "Running as unit: mqtty-linux-selected-20261030.service; invocation ID: f765eced0103491094590f16599781db\n",
+  "allowedSelectedItems": [
+    2,
+    4,
+    5
+  ],
+  "otherItemsAutomaticallyLaunched": false,
+  "sourceCommit": "de3a19c",
+  "observedAtMsk": "2026-10-30T02:10:52.750523+03:00",
+  "admissionScriptSha256": "d7ab0584783cbae3f81740fa114c1c438a9f020a02240c89d6d13be59fa40c90"
+}

@@ -1960,7 +1960,7 @@
     "linuxRemainingQueue": "reports/status/Linux-work-queue.md"
   },
   "accelerationAa20261030": {
-    "status": "running",
+    "status": "completedOnLinux",
     "stage": "A/A measurement calibration, not speedup",
     "linuxTestsPassed": 7,
     "totalModels": 4,
@@ -1981,7 +1981,44 @@
       "note": "Per-child logs and RSS samples available in batch directory"
     },
     "deadlineMsk": "02:05:34",
-    "receipt": "reports/audits/dissertation/acceleration-aa-20261030/launch.json",
-    "agentStopsForWaiting": true
+    "receipt": "reports/audits/dissertation/acceleration-aa-20261030/linux-result.json",
+    "agentStopsForWaiting": true,
+    "finishedModels": 4,
+    "aaRelativeSpread": 0.012482615659906228,
+    "batchPrimaryWallSeconds": [
+      176.7991641439985,
+      179.0060801590007
+    ],
+    "wallSeconds": 356.06492990300103,
+    "scientificRawAcceptedLocally": false,
+    "speedupMeasured": false
+  },
+  "linuxSelected20261030": {
+    "status": "running",
+    "items": [
+      2,
+      4,
+      5
+    ],
+    "unit": "mqtty-linux-selected-20261030.service",
+    "pid": 6146,
+    "observedAtMsk": "2026-10-30T02:10:52.750523+03:00",
+    "observedProgress": {
+      "programIdentity": "linux-selected-2-4-5-20261030-v1",
+      "phase": "stage-2",
+      "active": "2",
+      "finishedStages": 0,
+      "totalStages": 3,
+      "deadlineEpoch": 1793318449.2671413,
+      "elapsedSeconds": 0.013592456998594571,
+      "outcomes": []
+    },
+    "deadlineMsk": "03:00:49",
+    "hardWallSeconds": 3000,
+    "receipt": "reports/audits/dissertation/linux-selected-20261030/launch.json",
+    "sourceCommit": "de3a19c",
+    "automaticRetry": false,
+    "agentStopsForWaiting": true,
+    "scientificResultsAccepted": false
   }
 }
