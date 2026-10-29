@@ -1780,6 +1780,8 @@
     "testsPassedLinux": 6,
     "launch": "reports/audits/dissertation/queue-capacity-short-v2/launch.json",
     "sourceSnapshotModified": false,
-    "resultsAccepted": false
+    "resultsAccepted": false,
+    "publishedCommit": "1e2e15f9ada6abb8ef98622e37ca8f4e5f088a89",
+    "agentStoppedForWaiting": true
   }
 }
