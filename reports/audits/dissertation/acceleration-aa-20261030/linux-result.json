@@ -1,0 +1,41 @@
+{
+  "programIdentity": "acceleration-aa-20261030-v1",
+  "status": "completed",
+  "phase": "completed",
+  "classification": "measurementReady",
+  "finishedModels": 4,
+  "total": 4,
+  "aaRelativeSpread": 0.012482615659906228,
+  "batchPrimaryWallSeconds": [
+    176.7991641439985,
+    179.0060801590007
+  ],
+  "scientificSha256": {
+    "summary.json": "5bff7ccca54314d5e7e0cdc93cd3e0936eef377533f1f842456ffdfa86fef73a",
+    "histograms.json": "a8c415b765ccceff0faeb2654736b8965d28a25e2bc8242a9afe7dc790719509",
+    "publications.json": "ce3ff5a4b941b9bc4d0c70e703df42bd87767bf9241c2e72fccb575204e649d7",
+    "delivery-receipts.json": "56ef22e245fa5697e67a01b20600b9233e496bb10cae5ec3c84cdf7cca5cd1aa",
+    "transmissions.json": "e9a14e7db1887a29d02fd79f4c527c3127c8b6cd7fa62218dc6ea22b67626bda",
+    "network-evidence.json": "4f42797638450cba9d8bfe1f7e2bac87d19e03e1030e9e24a6eb18e73d61a2a9"
+  },
+  "sourceUnchanged": true,
+  "pinnedInputsUnchanged": true,
+  "controllerCpuSeconds": 8.261448080000001,
+  "controllerMaxRssBytes": 80015360,
+  "cgroupBefore": {
+    "cpuUsec": 117246,
+    "memoryCurrentBytes": 14450688,
+    "memoryPeakBytes": 15273984,
+    "memoryEvents": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+  },
+  "cgroupAfter": {
+    "cpuUsec": 363158094,
+    "memoryCurrentBytes": 90988544,
+    "memoryPeakBytes": 824094720,
+    "memoryEvents": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+  },
+  "wallSeconds": 356.06492990300103,
+  "retryPerformed": false,
+  "speedupMeasured": false,
+  "automaticNextExperiment": false
+}
