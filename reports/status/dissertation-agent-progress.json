@@ -560,7 +560,8 @@
     "newLinuxJobsStarted": false,
     "humanWritesArticles": true,
     "acceptedStepsChanged": false,
-    "publicationVenueResearchAssignedToAgent": false
+    "publicationVenueResearchAssignedToAgent": false,
+    "dissertationEditedByAuthorOnly": true
   },
   "controlHistoryAudit": {
     "status": "historicalMetadataMatchedBinaryAndBlindingEvidenceIncomplete",
@@ -1529,7 +1530,7 @@
     "verification": "reports/audits/dissertation/article-2-evidence-package-v2/verification.json",
     "revisionChecks": "reports/audits/dissertation/articles-offline-revision-v1/verification.json"
   },
-  "nextAction": "Chapter drafts v2 published. Next: actual LaTeX integration subject to existing document-edit boundary and scientific approval; queue/Web acceptance remain separate. No new Linux run started.",
+  "nextAction": "Continue research, code, analysis and separate materials on user request. Author integrates results into the primary dissertation; agent must not edit diss or integrate drafts automatically.",
   "article1BoundedReview": {
     "status": "selfReviewCompletedIndependentReviewUnavailable",
     "document": "reports/analysis/Article-1-bounded-review.md",
@@ -1820,5 +1821,14 @@
     "commit": "2529dcec5aad844d37ff09644ba57265e2a18e4f",
     "remoteHeadConfirmed": true,
     "committedBytesVerified": true
+  },
+  "dissertationEditingPolicy": {
+    "editor": "authorOnly",
+    "agentMayEditPrimaryDissertation": false,
+    "agentMayReadForVerification": true,
+    "agentMayPrepareSeparateMaterials": true,
+    "agentMayRunResearchAndModifyCode": true,
+    "automaticIntegrationAllowed": false,
+    "document": "docs/dissertation/author-decisions.md"
   }
 }
