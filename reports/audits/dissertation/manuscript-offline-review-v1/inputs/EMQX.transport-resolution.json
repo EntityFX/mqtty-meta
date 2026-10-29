@@ -1,0 +1,14 @@
+{
+  "method": "empirical-service-budget-v1",
+  "calibrationRttMs": 0.22203333333333333,
+  "assumption": "MQTT echo RTT proxies a QoS1 ACK budget; protocol overhead measured on an unloaded ideal graph; no validation-data fitting",
+  "requestedTransferTicks": 1,
+  "resolvedTransferTicks": 2,
+  "protocolFloorAtTransferOneTicks": 6,
+  "protocolFloorTicks": 8,
+  "modeledNativeProtocolBudgetTicks": 8,
+  "clippedEmpiricalSamples": 0,
+  "observedMinimumPublishLatencyMs": 0.099,
+  "capacityPacing": true,
+  "clippingScope": "observed latencies below the model protocol floor cannot be reproduced; retained and reported, never removed from the profile"
+}

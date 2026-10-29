@@ -6,7 +6,7 @@
     "05",
     "06"
   ],
-  "localWeightPersonDays": 5,
+  "localWeightPersonDays": 5.0,
   "verifiedTechnicalSteps": [
     "03",
     "04",
@@ -28,8 +28,8 @@
     "25",
     "29"
   ],
-  "verifiedTechnicalWeightPersonDays": 25,
-  "localPercent": 80,
+  "verifiedTechnicalWeightPersonDays": 25.0,
+  "localPercent": 80.0,
   "globalPercent": 53.2,
   "basis": "Plan effort weights; not scientific confidence or elapsed labour",
   "steps": {
@@ -1529,7 +1529,7 @@
     "verification": "reports/audits/dissertation/article-2-evidence-package-v2/verification.json",
     "revisionChecks": "reports/audits/dissertation/articles-offline-revision-v1/verification.json"
   },
-  "nextAction": "After explicit continuation, accept short queue pair and classify baseline overflow. No polling or automatic matrix/retry.",
+  "nextAction": "Publish this intermediate offline review, then stop; continue on user request. Linux state not refreshed in this block.",
   "article1BoundedReview": {
     "status": "selfReviewCompletedIndependentReviewUnavailable",
     "document": "reports/analysis/Article-1-bounded-review.md",
@@ -1783,5 +1783,16 @@
     "resultsAccepted": false,
     "publishedCommit": "1e2e15f9ada6abb8ef98622e37ca8f4e5f088a89",
     "agentStoppedForWaiting": true
+  },
+  "manuscriptOfflineReviewV1": {
+    "status": "verifiedIntermediate",
+    "report": "reports/analysis/Manuscript-offline-review.md",
+    "recalculation": "reports/audits/dissertation/manuscript-offline-review-v1/progress-recalculation.json",
+    "floorTestsPassed": 4,
+    "newExperiments": 0,
+    "linuxPolled": false,
+    "humanReviewPassed": false,
+    "portableVersion": 3,
+    "next": "Stop after checked publication; resume only on user request"
   }
 }
