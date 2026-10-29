@@ -1,0 +1,246 @@
+0001 using EntityFX.MqttY.Contracts.Mqtt;
+0002 
+0003 namespace EntityFX.MqttY.Plugin.Mqtt.Counter
+0004 {
+0005     internal sealed class BrokerMeasurement
+0006     {
+0007         private sealed class Accumulator
+0008         {
+0009             public long Attempted;
+0010             public long Admitted;
+0011             public long Completed;
+0012             public long ExpectedDeliveries;
+0013             public long Delivered;
+0014             public long RateRejected;
+0015             public long PublishFailed;
+0016             public long DeliveryDropped;
+0017             public LatencyHistogram Latency { get; } = new();
+0018         }
+0019 
+0020         internal sealed class PublishTracker
+0021         {
+0022             public string Publisher { get; init; } = string.Empty;
+0023             public MqttQos Qos { get; init; }
+0024             public ushort? PacketId { get; init; }
+0025             public long NetworkPacketId { get; init; }
+0026             public long Generation { get; init; }
+0027             public long StartTick { get; init; }
+0028             public long LocalPublishSequence { get; init; }
+0029             public int MessageBytes { get; init; }
+0030             public double ConditionalDeliveryLossRate { get; set; }
+0031             public bool Admitted { get; set; }
+0032         }
+0033 
+0034         private readonly object _sync = new();
+0035         private readonly Dictionary<string, PublishTracker> _publishes = new();
+0036         private readonly Dictionary<long, (long Generation, MqttQos Qos)> _deliveries = new();
+0037         private Accumulator[] _accumulators = CreateAccumulators();
+0038         private readonly Dictionary<string, Accumulator[]> _publishers = new(StringComparer.Ordinal);
+0039 
+0040         public void TrackPublishers(IEnumerable<string> names)
+0041         {
+0042             lock (_sync)
+0043                 foreach (var name in names) _publishers.TryAdd(name, CreateAccumulators());
+0044         }
+0045 
+0046         public BrokerQosMetricsSnapshot PublisherSnapshot(string name, MqttQos qos, long endTick, TimeSpan tickPeriod)
+0047         {
+0048             lock (_sync)
+0049             {
+0050                 var a = _publishers[name][(int)qos];
+0051                 var seconds = Math.Max(0, endTick - _startTick) * tickPeriod.TotalSeconds;
+0052                 double? Ms(double q) => qos == MqttQos.AtMostOnce ? null : a.Latency.NearestRank(q) * tickPeriod.TotalMilliseconds;
+0053                 return new(a.Attempted, a.Admitted, a.Completed, 0, 0, a.RateRejected, a.PublishFailed, 0,
+0054                     seconds > 0 ? a.Completed / seconds : 0, Ms(.5), Ms(.95), Ms(.99))
+0055                 { LatencyHistogramTicks = a.Latency.Snapshot() };
+0056             }
+0057         }
+0058         private long _generation;
+0059         private long _startTick;
+0060 
+0061         public PublishTracker BeginAttempt(
+0062             string publisher, MqttQos qos, ushort? packetId, long networkPacketId, long startTick,
+0063             long localPublishSequence = 0, int messageBytes = 0)
+0064         {
+0065             lock (_sync)
+0066             {
+0067                 var key = Key(publisher, qos, packetId, networkPacketId);
+0068                 if (_publishes.TryGetValue(key, out var existing)) return existing;
+0069 
+0070                 var tracker = new PublishTracker
+0071                 {
+0072                     Publisher = publisher,
+0073                     Qos = qos,
+0074                     PacketId = packetId,
+0075                     NetworkPacketId = networkPacketId,
+0076                     Generation = startTick < _startTick ? _generation - 1 : _generation,
+0077                     StartTick = startTick,
+0078                     LocalPublishSequence = localPublishSequence,
+0079                     MessageBytes = messageBytes
+0080                 };
+0081                 _publishes[key] = tracker;
+0082                 if (tracker.Generation == _generation) _accumulators[(int)qos].Attempted++;
+0083                 if (tracker.Generation == _generation && _publishers.TryGetValue(publisher, out var sources)) sources[(int)qos].Attempted++;
+0084                 return tracker;
+0085             }
+0086         }
+0087 
+0088         public void Admit(PublishTracker tracker)
+0089         {
+0090             lock (_sync)
+0091             {
+0092                 if (tracker.Admitted) return;
+0093                 tracker.Admitted = true;
+0094                 if (tracker.Generation != _generation) return;
+0095                 var accumulator = _accumulators[(int)tracker.Qos];
+0096                 accumulator.Admitted++;
+0097                 if (tracker.Qos == MqttQos.AtMostOnce) accumulator.Completed++;
+0098                 if (_publishers.TryGetValue(tracker.Publisher, out var sources))
+0099                 {
+0100                     sources[(int)tracker.Qos].Admitted++;
+0101                     if (tracker.Qos == MqttQos.AtMostOnce) sources[(int)tracker.Qos].Completed++;
+0102                 }
+0103             }
+0104         }
+0105 
+0106         public void RejectByRate(PublishTracker tracker) => Reject(tracker, rate: true);
+0107 
+0108         public void FailPublish(PublishTracker tracker) => Reject(tracker, rate: false);
+0109 
+0110         private void Reject(PublishTracker tracker, bool rate)
+0111         {
+0112             lock (_sync)
+0113             {
+0114                 if (tracker.Generation == _generation)
+0115                 {
+0116                     if (rate) _accumulators[(int)tracker.Qos].RateRejected++;
+0117                     else _accumulators[(int)tracker.Qos].PublishFailed++;
+0118                     if (_publishers.TryGetValue(tracker.Publisher, out var sources))
+0119                     {
+0120                         if (rate) sources[(int)tracker.Qos].RateRejected++;
+0121                         else sources[(int)tracker.Qos].PublishFailed++;
+0122                     }
+0123                 }
+0124                 _publishes.Remove(Key(tracker.Publisher, tracker.Qos, tracker.PacketId, tracker.NetworkPacketId));
+0125             }
+0126         }
+0127 
+0128         public PublishTracker? Find(
+0129             string publisher, MqttQos qos, ushort? packetId, long networkPacketId)
+0130         {
+0131             lock (_sync)
+0132             {
+0133                 _publishes.TryGetValue(Key(publisher, qos, packetId, networkPacketId), out var tracker);
+0134                 return tracker;
+0135             }
+0136         }
+0137 
+0138         public void ExpectDelivery(PublishTracker? tracker, long outgoingPacketId)
+0139         {
+0140             if (tracker == null) return;
+0141             lock (_sync)
+0142             {
+0143                 _deliveries[outgoingPacketId] = (tracker.Generation, tracker.Qos);
+0144                 if (tracker.Generation == _generation && tracker.Admitted)
+0145                     _accumulators[(int)tracker.Qos].ExpectedDeliveries++;
+0146             }
+0147         }
+0148 
+0149         public void DeliveryCompleted(long outgoingPacketId)
+0150         {
+0151             lock (_sync)
+0152             {
+0153                 if (!_deliveries.Remove(outgoingPacketId, out var delivery)) return;
+0154                 if (delivery.Generation == _generation) _accumulators[(int)delivery.Qos].Delivered++;
+0155             }
+0156         }
+0157 
+0158         public void DeliveryDropped(long outgoingPacketId)
+0159         {
+0160             lock (_sync)
+0161             {
+0162                 if (!_deliveries.Remove(outgoingPacketId, out var delivery)) return;
+0163                 if (delivery.Generation == _generation) _accumulators[(int)delivery.Qos].DeliveryDropped++;
+0164             }
+0165         }
+0166 
+0167         public long? CompletePublisher(string publisher, MqttQos qos, ushort packetId, long endTick)
+0168         {
+0169             lock (_sync)
+0170             {
+0171                 var key = Key(publisher, qos, packetId, 0);
+0172                 if (!_publishes.Remove(key, out var tracker) || !tracker.Admitted ||
+0173                     tracker.Generation != _generation)
+0174                     return null;
+0175 
+0176                 var elapsedTicks = Math.Max(0, endTick - tracker.StartTick);
+0177                 var accumulator = _accumulators[(int)qos];
+0178                 accumulator.Completed++;
+0179                 accumulator.Latency.Record(elapsedTicks);
+0180                 if (_publishers.TryGetValue(publisher, out var sources))
+0181                 {
+0182                     sources[(int)qos].Completed++;
+0183                     sources[(int)qos].Latency.Record(elapsedTicks);
+0184                 }
+0185                 return elapsedTicks;
+0186             }
+0187         }
+0188 
+0189         public void CompleteFanOut(PublishTracker? tracker)
+0190         {
+0191             if (tracker?.Qos != MqttQos.AtMostOnce) return;
+0192             lock (_sync)
+0193                 _publishes.Remove(Key(tracker.Publisher, tracker.Qos, tracker.PacketId, tracker.NetworkPacketId));
+0194         }
+0195 
+0196         public void Reset(long startTick)
+0197         {
+0198             lock (_sync)
+0199             {
+0200                 _generation++;
+0201                 _startTick = startTick;
+0202                 _accumulators = CreateAccumulators();
+0203                 foreach (var name in _publishers.Keys.ToArray()) _publishers[name] = CreateAccumulators();
+0204             }
+0205         }
+0206 
+0207         public BrokerMetricsSnapshot Snapshot(long endTick, TimeSpan tickPeriod)
+0208         {
+0209             lock (_sync)
+0210             {
+0211                 var seconds = Math.Max(0, endTick - _startTick) * tickPeriod.TotalSeconds;
+0212                 var values = Enum.GetValues<MqttQos>().ToDictionary(qos => qos, qos =>
+0213                 {
+0214                     var accumulator = _accumulators[(int)qos];
+0215                     double? ToMs(long? ticks) => ticks * tickPeriod.TotalMilliseconds;
+0216                     return new BrokerQosMetricsSnapshot(
+0217                         accumulator.Attempted,
+0218                         accumulator.Admitted,
+0219                         accumulator.Completed,
+0220                         accumulator.ExpectedDeliveries,
+0221                         accumulator.Delivered,
+0222                         accumulator.RateRejected,
+0223                         accumulator.PublishFailed,
+0224                         accumulator.DeliveryDropped,
+0225                         seconds > 0 ? accumulator.Completed / seconds : 0,
+0226                         qos == MqttQos.AtMostOnce ? null : ToMs(accumulator.Latency.NearestRank(0.50)),
+0227                         qos == MqttQos.AtMostOnce ? null : ToMs(accumulator.Latency.NearestRank(0.95)),
+0228                         qos == MqttQos.AtMostOnce ? null : ToMs(accumulator.Latency.NearestRank(0.99)))
+0229                     {
+0230                         LatencyHistogramTicks = accumulator.Latency.Snapshot()
+0231                     };
+0232                 });
+0233 
+0234                 return new BrokerMetricsSnapshot(_startTick, endTick, BrokerMetricsSnapshot.ReadOnly(values));
+0235             }
+0236         }
+0237 
+0238         private static Accumulator[] CreateAccumulators() =>
+0239             Enum.GetValues<MqttQos>().Select(_ => new Accumulator()).ToArray();
+0240 
+0241         private static string Key(string publisher, MqttQos qos, ushort? packetId, long networkPacketId) =>
+0242             qos == MqttQos.AtMostOnce
+0243                 ? $"{publisher}|{(int)qos}|n{networkPacketId}"
+0244                 : $"{publisher}|{(int)qos}|p{packetId}";
+0245     }
+0246 }

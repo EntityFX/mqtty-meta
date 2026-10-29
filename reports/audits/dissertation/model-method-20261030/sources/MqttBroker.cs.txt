@@ -1,0 +1,729 @@
+0001 using EntityFX.MqttY.Contracts.Mqtt;
+0002 using EntityFX.MqttY.Contracts.Mqtt.BrokerProfile;
+0003 using EntityFX.MqttY.Contracts.Mqtt.Formatters;
+0004 using EntityFX.MqttY.Contracts.Mqtt.Packets;
+0005 using EntityFX.MqttY.Contracts.Network;
+0006 using EntityFX.MqttY.Contracts.NetworkLogger;
+0007 using EntityFX.MqttY.Contracts.Options;
+0008 using EntityFX.MqttY.Plugin.Mqtt.BrokerProfile;
+0009 using EntityFX.MqttY.Plugin.Mqtt.Counter;
+0010 using EntityFX.MqttY.Plugin.Mqtt.Internals;
+0011 using System.Collections.Concurrent;
+0012 using EntityFX.MqttY.Contracts.Mqtt.Diagnostics;
+0013 
+0014 namespace EntityFX.MqttY.Plugin.Mqtt
+0015 {
+0016     internal class MqttBroker : Server, IMqttBroker, IMeasurementSource, IMqttBrokerMetricsSink, IPublisherMeasurementSource, IMqttPendingDiagnostics
+0017     {
+0018         public MqttPendingSnapshot GetPendingSnapshot(int detailLimit = 32, int sessionLimit = 64) =>
+0019             Diagnostics.MqttPendingSnapshotBuilder.Capture(_sessionRepository.ReadAll(), _processingQueue.Count, detailLimit, sessionLimit);
+0020         protected override bool ShouldTrackResponse(INetworkPacket packet) => false;
+0021         private readonly IRepository<ClientSession> _sessionRepository = new InMemoryRepository<ClientSession>();
+0022 
+0023         private readonly MqttQos _maximumQualityOfService = MqttQos.ExactlyOnce;
+0024         private readonly IMqttPacketManager _packetManager;
+0025         private readonly IMqttTopicEvaluator _topicEvaluator;
+0026 
+0027         private readonly MqttBrokerProfile? _profile;
+0028         private readonly ConcurrentDictionary<(int MessageBytes, MqttQos Qos, int Clients), BrokerRateLimiter>
+0029             _rateLimiters = new();
+0030         private readonly BrokerProcessingQueue _processingQueue = new();
+0031         private readonly TimeSpan _tickPeriod;
+0032         private readonly int _randomSeed;
+0033         private readonly int? _profileClientCount;
+0034         private readonly BrokerMeasurement _measurement = new();
+0035 
+0036         public override NodeType NodeType => NodeType.Server;
+0037 
+0038         public override bool IsQuiescent => base.IsQuiescent && _processingQueue.IsEmpty &&
+0039             _sessionRepository.ReadAll().All(session =>
+0040                 !session.GetPendingMessages().Any() &&
+0041                 !session.GetPendingAcknowledgements().Any(ack => ack.Type != MqttPacketType.PublishComplete));
+0042 
+0043         private readonly PacketIdProvider _packetIdProvider = new();
+0044 
+0045         protected readonly MqttCounters MqttCounters;
+0046 
+0047         public BrokerMetricsSnapshot GetMetrics()
+0048         {
+0049             var snapshot = _measurement.Snapshot(NetworkSimulator?.TotalTicks ?? 0, _tickPeriod);
+0050             MqttCounters.ApplyMeasurement(snapshot);
+0051             return snapshot;
+0052         }
+0053 
+0054         public void ResetMeasurement(long startTick) => _measurement.Reset(startTick);
+0055 
+0056         public void TrackPublishers(IEnumerable<string> names) => _measurement.TrackPublishers(names);
+0057         public BrokerQosMetricsSnapshot GetPublisherMetrics(string name, MqttQos qos) =>
+0058             _measurement.PublisherSnapshot(name, qos, NetworkSimulator?.TotalTicks ?? 0, _tickPeriod);
+0059 
+0060         void IMqttBrokerMetricsSink.CompletePublisher(
+0061             string publisher, MqttQos qos, ushort packetId, long tick)
+0062         {
+0063             var elapsedTicks = _measurement.CompletePublisher(publisher, qos, packetId, tick);
+0064             if (elapsedTicks.HasValue)
+0065                 MqttCounters.ObserveLatency(elapsedTicks.Value * _tickPeriod.TotalMilliseconds);
+0066         }
+0067 
+0068         void IMqttBrokerMetricsSink.CompleteDelivery(long outgoingPublishPacketId) =>
+0069             _measurement.DeliveryCompleted(outgoingPublishPacketId);
+0070 
+0071         public MqttBroker(IMqttPacketManager packetManager,
+0072             IMqttTopicEvaluator mqttTopicEvaluator,
+0073             int index, string name, string address, string protocolType, 
+0074             string specification, TicksOptions ticksOptions, bool enableCounters,
+0075             MqttBrokerProfile? brokerProfile = null, int randomSeed = 0, int? profileClientCount = null
+0076            )
+0077             : base(index, name, address, protocolType, specification, 
+0078                   ticksOptions, enableCounters)
+0079         {
+0080             this.PacketReceived += MqttBroker_PacketReceived;
+0081             this.ClientConnected += (_, _) => UpdateProfileFromClients();
+0082             this.ClientDisconnected += (_, clientName) =>
+0083             {
+0084                 var session = _sessionRepository.Read(clientName);
+0085                 if (session?.Clean == true)
+0086                 {
+0087                     _sessionRepository.Delete(clientName);
+0088                 }
+0089 
+0090                 UpdateProfileFromClients();
+0091             };
+0092             this._packetManager = packetManager;
+0093             this._topicEvaluator = mqttTopicEvaluator;
+0094 
+0095             MqttCounters = new MqttCounters(Name, Name.Substring(0, 2), "MqttBroker", "MB", ticksOptions, enableCounters);
+0096             counters.AddCounter(MqttCounters);
+0097 
+0098             _profile = brokerProfile;
+0099             _tickPeriod = ticksOptions.TickPeriod;
+0100             _randomSeed = randomSeed;
+0101             if (profileClientCount is <= 0) throw new ArgumentOutOfRangeException(nameof(profileClientCount));
+0102             _profileClientCount = profileClientCount;
+0103 
+0104             if (brokerProfile != null)
+0105             {
+0106                 brokerProfile.Validate();
+0107             }
+0108         }
+0109 
+0110         protected override void OnReceived(INetworkPacket packet)
+0111         {
+0112             var payload = _packetManager.BytesToPacket<PacketBase>(packet.Payload);
+0113             if (payload == null)
+0114             {
+0115                 base.OnReceived(packet);
+0116             }
+0117             NetworkSimulator!.Monitoring.WithEndScope(NetworkSimulator.TotalTicks, ref packet);
+0118             switch (payload!.Type)
+0119             {
+0120                 case MqttPacketType.Publish:
+0121                     ProcessFromClientPublish(packet, _packetManager.BytesToPacket<PublishPacket>(packet.Payload));
+0122                     break;
+0123                 case MqttPacketType.PublishReceived:
+0124                     ProcessFromClientPublishReceived(packet,
+0125                         _packetManager.BytesToPacket<PublishReceivedPacket>(packet.Payload));
+0126                     break;
+0127                 case MqttPacketType.PublishRelease:
+0128                     ProcessFromClientPublishRelease(packet, _packetManager.BytesToPacket<PublishReleasePacket>(packet.Payload));
+0129                     break;
+0130                 case MqttPacketType.PublishComplete:
+0131                     ProcessFromClientPublishComplete(packet,
+0132                         _packetManager.BytesToPacket<PublishCompletePacket>(packet.Payload));
+0133                     break;
+0134                 case MqttPacketType.PingRequest:
+0135                     break;
+0136                 case MqttPacketType.PublishAck:
+0137                     ProcessToClientPublishAck(packet, _packetManager.BytesToPacket<PublishAckPacket>(packet.Payload));
+0138                     break;
+0139                 case MqttPacketType.Connect:
+0140                     var contextPacket = (NetworkPacket<(string Server, bool CleanSession)>)packet;
+0141                     ProcessConnect(packet, _packetManager.BytesToPacket<ConnectPacket>(packet.Payload), contextPacket.TypedContext);
+0142                     break;
+0143                 case MqttPacketType.Disconnect:
+0144                     break;
+0145                 case MqttPacketType.Subscribe:
+0146                     var subscribeContextPacket = (NetworkPacket<(string TopicFilter, MqttQos Qos)>)packet;
+0147                     ProcessSubscribe(packet, _packetManager.BytesToPacket<SubscribePacket>(packet.Payload), subscribeContextPacket.TypedContext);
+0148                     break;
+0149                 case MqttPacketType.Unsubscribe:
+0150                     break;
+0151                 default:
+0152                     return;
+0153             }
+0154 
+0155             MqttCounters.PacketTypeCounters[payload.Type].Increment();
+0156         }
+0157 
+0158         private void ProcessFromClientPublish(INetworkPacket packet, PublishPacket? publishPacket)
+0159         {
+0160             if (publishPacket == null)
+0161             {
+0162                 return;
+0163             }
+0164 
+0165             var identity = packet.Context as PublishIdentity;
+0166             var localPublishSequence = identity?.Sequence ?? (packet.Context is long sequence ? sequence : packet.Id);
+0167             var tracker = _measurement.BeginAttempt(packet.From, publishPacket.QualityOfService,
+0168                 publishPacket.PacketId, packet.Id, identity?.StartedTick ?? NetworkSimulator!.TotalTicks,
+0169                 localPublishSequence, publishPacket.Payload.Length);
+0170             if (tracker.Admitted)
+0171             {
+0172                 ProcessFromClientPublishCore(packet, publishPacket);
+0173                 return;
+0174             }
+0175 
+0176             // Обратная совместимость: без профиля брокер обрабатывает сообщения
+0177             // без ограничений по RPS, задержке и отказам.
+0178             if (_profile == null)
+0179             {
+0180                 _measurement.Admit(tracker);
+0181                 ProcessFromClientPublishCore(packet, publishPacket);
+0182                 return;
+0183             }
+0184 
+0185             var clients = _profileClientCount ?? Math.Max(1, GetServerClients().Count());
+0186             var sample = _profile.For(publishPacket.Payload.Length,
+0187                 publishPacket.QualityOfService, clients);
+0188 
+0189             // 1. Лимитер RPS (пропускная способность).
+0190             var limiterKey = (publishPacket.Payload.Length, publishPacket.QualityOfService, clients);
+0191             var limiter = _rateLimiters.GetOrAdd(limiterKey,
+0192                 _ => new BrokerRateLimiter(sample.CapacityRps, _tickPeriod));
+0193             var capacityWaitTicks = EmpiricalCapacityPacing ? limiter.Reserve(NetworkSimulator!.TotalTicks) : 0;
+0194             if (!EmpiricalCapacityPacing && !limiter.TryAcquire(NetworkSimulator!.TotalTicks))
+0195             {
+0196                 MqttCounters.RefuseByRateLimit(publishPacket.QualityOfService);
+0197                 _measurement.RejectByRate(tracker);
+0198                 FailClientPublish(packet.From, publishPacket.PacketId);
+0199                 return;
+0200             }
+0201 
+0202             // 2. Вероятностный отказ.
+0203             if (DeterministicMqttSampler.Uniform(_randomSeed, Name, packet.From,
+0204                     localPublishSequence, "publish-failure") < sample.PublishFailureRate)
+0205             {
+0206                 MqttCounters.RefuseByFailRate(publishPacket.QualityOfService);
+0207                 _measurement.FailPublish(tracker);
+0208                 FailClientPublish(packet.From, publishPacket.PacketId);
+0209                 return;
+0210             }
+0211 
+0212             // 3. Постановка в очередь обработки с задержкой.
+0213             tracker.ConditionalDeliveryLossRate = sample.ConditionalDeliveryLossRate;
+0214             _measurement.Admit(tracker);
+0215             var uniform = DeterministicMqttSampler.Uniform(_randomSeed, Name, packet.From,
+0216                 localPublishSequence, "processing-latency");
+0217             var processingTicks = sample.ObservedLatencyDistribution != null && EmpiricalProtocolFloorTicks.HasValue
+0218                 ? checked((int)Math.Max(0, EmpiricalTicksFromMs(sample.ObservedLatencyDistribution.Sample(uniform)) - EmpiricalProtocolFloorTicks.Value))
+0219                 : sample.ProcessingLatencyDistribution != null
+0220                 ? EmpiricalTicksFromMs(sample.ProcessingLatencyDistribution.Sample(uniform))
+0221                 : sample.ProcessingLatencyQuantiles == null
+0222                 ? 1
+0223                 : TicksFromMs(DeterministicMqttSampler.InverseCdf(
+0224                     uniform,
+0225                     sample.ProcessingLatencyQuantiles));
+0226             // The observed end-to-end CDF already includes native queueing. Capacity
+0227             // eligibility is an additional lower bound, not an independent delay to add twice.
+0228             _processingQueue.Enqueue(packet, Math.Max(processingTicks, capacityWaitTicks));
+0229         }
+0230 
+0231         private void FailClientPublish(string publisher, ushort? packetId)
+0232         {
+0233             if (packetId is ushort id &&
+0234                 NetworkSimulator!.GetNode(publisher, NodeType.Client) is IMqttClientPublishStateSink sink)
+0235                 sink.FailPublish(id);
+0236         }
+0237 
+0238         private void ProcessFromClientPublishCore(INetworkPacket packet, PublishPacket? publishPacket)
+0239         {
+0240             if (publishPacket == null)
+0241             {
+0242                 return;
+0243             }
+0244 
+0245             NetworkSimulator!.Monitoring.WithEndScope(NetworkSimulator.TotalTicks, ref packet);
+0246 
+0247             var clientId = packet.From;
+0248 
+0249             ValidatePublish(clientId, publishPacket);
+0250 
+0251             var qos = publishPacket.QualityOfService > _maximumQualityOfService
+0252                 ? _maximumQualityOfService
+0253                 : publishPacket.QualityOfService;
+0254 
+0255             var session = _sessionRepository.Read(clientId);
+0256 
+0257             if (session == null)
+0258             {
+0259                 throw new MqttException($"Client Session {clientId} Not Found");
+0260             }
+0261 
+0262             if (qos == MqttQos.ExactlyOnce)
+0263             {
+0264                 var packetId = publishPacket.PacketId!.Value;
+0265                 if (session.GetPendingMessages().Any(message =>
+0266                         message.Status == PendingMessageStatus.AwaitingPublishRelease &&
+0267                         message.PacketId == packetId))
+0268                 {
+0269                     SendPublishReceived(packet, publishPacket);
+0270                     return;
+0271                 }
+0272 
+0273                 var completed = session.GetPendingAcknowledgements().FirstOrDefault(ack =>
+0274                     ack.Type == MqttPacketType.PublishComplete && ack.PacketId == packetId);
+0275                 session.RemovePendingAcknowledgement(completed);
+0276 
+0277                 SaveMessage(publishPacket, clientId, PendingMessageStatus.AwaitingPublishRelease);
+0278                 SendPublishReceived(packet, publishPacket);
+0279                 return;
+0280             }
+0281 
+0282             if (qos == MqttQos.AtLeastOnce)
+0283             {
+0284                 SendPublishAck(packet, clientId, qos, publishPacket);
+0285             }
+0286 
+0287             FanOutAndCount(packet, publishPacket);
+0288         }
+0289 
+0290         private void FanOutAndCount(INetworkPacket packet, PublishPacket publishPacket)
+0291         {
+0292             var tracker = _measurement.Find(packet.From, publishPacket.QualityOfService,
+0293                 publishPacket.PacketId, packet.Id);
+0294             var subscriptions = _sessionRepository
+0295                 .ReadAll()
+0296                 .SelectMany(s => s.GetSubscriptions())
+0297                 .Where(x => _topicEvaluator.Matches(publishPacket.Topic, x.TopicFilter))
+0298                 .OrderBy(x => x.ClientId, StringComparer.Ordinal)
+0299                 .ThenBy(x => x.TopicFilter, StringComparer.Ordinal)
+0300                 .ToArray();
+0301 
+0302             foreach (var subscription in subscriptions)
+0303             {
+0304                 ProcessToClientPublish(packet, subscription, publishPacket, tracker);
+0305             }
+0306 
+0307             MqttCounters.IncrementPublish(publishPacket.QualityOfService);
+0308             _measurement.CompleteFanOut(tracker);
+0309         }
+0310 
+0311         private bool ProcessToClientPublish(
+0312             INetworkPacket packet, ClientSubscription subscription, PublishPacket? publishPacket,
+0313             BrokerMeasurement.PublishTracker? tracker)
+0314         {
+0315             if (publishPacket == null)
+0316             {
+0317                 return false;
+0318             }
+0319 
+0320             var supportedQos = publishPacket.QualityOfService > subscription.MaximumQualityOfService
+0321                 ? subscription.MaximumQualityOfService
+0322                 : publishPacket.QualityOfService;
+0323 
+0324             ushort? packetId = supportedQos == MqttQos.AtMostOnce ? null : (ushort?)_packetIdProvider.GetPacketId();
+0325             var retain = publishPacket.Retain;
+0326             var subscriptionPublish = new PublishPacket(publishPacket.Topic, supportedQos, retain, duplicated: false, packetId: packetId)
+0327             {
+0328                 Payload = publishPacket.Payload
+0329             };
+0330             var packetPayload = GetPacket(
+0331                 NetworkSimulator!.GetPacketId(), subscription.ClientId, NodeType.Client, packet.FromIndex,
+0332                     _packetManager.PacketToBytes(subscriptionPublish), ProtocolType, "MQTT Publish");
+0333             _measurement.ExpectDelivery(tracker, packetPayload.Id);
+0334 
+0335             if (tracker != null && DeterministicMqttSampler.Uniform(
+0336                     _randomSeed, Name, tracker.Publisher, tracker.LocalPublishSequence,
+0337                     $"delivery-loss:{subscription.ClientId}") < tracker.ConditionalDeliveryLossRate)
+0338             {
+0339                 _measurement.DeliveryDropped(packetPayload.Id);
+0340                 return true;
+0341             }
+0342 
+0343             if (subscriptionPublish.QualityOfService > MqttQos.AtMostOnce)
+0344             {
+0345                 var status = subscriptionPublish.QualityOfService == MqttQos.ExactlyOnce
+0346                     ? PendingMessageStatus.AwaitingPublishReceived
+0347                     : PendingMessageStatus.PendingToAcknowledge;
+0348                 SaveMessage(subscriptionPublish, subscription.ClientId, status);
+0349             }
+0350 
+0351             var scope = NetworkSimulator!.Monitoring.WithBeginScope(NetworkSimulator.TotalTicks, ref packetPayload, $"Publish {Name} to  Subscriber {packetPayload.To} with topic {publishPacket.Topic}");
+0352             MqttCounters.PacketTypeCounters[subscriptionPublish.Type].Increment();
+0353             
+0354             var sendResult = Send(packetPayload);
+0355             if (!sendResult)
+0356                 _measurement.DeliveryDropped(packetPayload.Id);
+0357             return sendResult;
+0358         }
+0359 
+0360         private void ProcessToClientPublishAck(INetworkPacket packet, PublishAckPacket? publishAckPacket)
+0361         {
+0362             if (publishAckPacket == null)
+0363             {
+0364                 return;
+0365             }
+0366 
+0367             var clientId = packet.From;
+0368 
+0369             var session = _sessionRepository.Read(clientId);
+0370 
+0371             if (session == null)
+0372             {
+0373                 throw new MqttException($"Client Session {clientId} Not Found");
+0374             }
+0375 
+0376             var pendingMessage = session
+0377                 .GetPendingMessages()
+0378                 .FirstOrDefault(p => p.PacketId.HasValue && p.PacketId.Value == publishAckPacket.PacketId);
+0379 
+0380             session.RemovePendingMessage(pendingMessage);
+0381 
+0382             _sessionRepository.Update(session);
+0383 
+0384             NetworkSimulator!.Monitoring.WithEndScope(NetworkSimulator.TotalTicks, ref packet);
+0385         }
+0386 
+0387         private void SaveMessage(PublishPacket message, string clientId, PendingMessageStatus status)
+0388         {
+0389             if (message.QualityOfService == MqttQos.AtMostOnce)
+0390             {
+0391                 return;
+0392             }
+0393 
+0394             var session = _sessionRepository.Read(clientId);
+0395 
+0396             if (session == null)
+0397             {
+0398                 throw new MqttException(string.Format($"Client Session {clientId} Not Found", clientId));
+0399             }
+0400 
+0401             var savedMessage = new PendingMessage
+0402             {
+0403                 Status = status,
+0404                 QualityOfService = message.QualityOfService,
+0405                 Duplicated = message.Duplicated,
+0406                 Retain = message.Retain,
+0407                 Topic = message.Topic,
+0408                 PacketId = message.PacketId,
+0409                 Payload = message.Payload
+0410             };
+0411 
+0412             session.AddPendingMessage(savedMessage);
+0413 
+0414             _sessionRepository.Update(session);
+0415         }
+0416 
+0417         private void SendPublishAck(INetworkPacket packet, string clientId, MqttQos qos, PublishPacket publishPacket)
+0418         {
+0419             var ack = new PublishAckPacket(publishPacket.PacketId ?? 0);
+0420             var ackPayload = _packetManager.PacketToBytes(ack) ?? Array.Empty<byte>();
+0421             var reversePacket = NetworkSimulator!.GetReversePacket(packet, ackPayload.ToArray(), "MQTT PubAck");
+0422             var scope = NetworkSimulator.Monitoring.WithBeginScope(NetworkSimulator.TotalTicks, ref reversePacket,
+0423                 $"Publish Ack {packet.From} to {packet.To} with topic {publishPacket.Topic}");
+0424             NetworkSimulator.Monitoring.Push(NetworkSimulator.TotalTicks, packet, NetworkLoggerType.Send, 
+0425                 $"Send MQTT publish ack {packet.From} to {packet.To} with {publishPacket.Topic} (QoS={publishPacket.QualityOfService})", ProtocolType, "MQTT PubAck");
+0426             Send(reversePacket);
+0427             NetworkSimulator.Monitoring.WithEndScope(NetworkSimulator.TotalTicks, ref reversePacket);
+0428             MqttCounters.PacketTypeCounters[ack.Type].Increment();
+0429         }
+0430 
+0431         private void SendPublishReceived(INetworkPacket packet, PublishPacket publishPacket)
+0432         {
+0433             var received = new PublishReceivedPacket(publishPacket.PacketId ?? 0);
+0434             var payload = _packetManager.PacketToBytes(received) ?? Array.Empty<byte>();
+0435             var reversePacket = NetworkSimulator!.GetReversePacket(packet, payload.ToArray(), "MQTT PubRec");
+0436 
+0437             Send(reversePacket);
+0438             MqttCounters.PacketTypeCounters[received.Type].Increment();
+0439         }
+0440 
+0441         private void ProcessFromClientPublishReceived(
+0442             INetworkPacket packet, PublishReceivedPacket? publishReceivedPacket)
+0443         {
+0444             if (publishReceivedPacket == null)
+0445             {
+0446                 return;
+0447             }
+0448 
+0449             var session = _sessionRepository.Read(packet.From);
+0450             if (session == null)
+0451             {
+0452                 throw new MqttException($"Client Session {packet.From} Not Found");
+0453             }
+0454 
+0455             var pendingMessage = session.GetPendingMessages().FirstOrDefault(message =>
+0456                 message.PacketId == publishReceivedPacket.PacketId &&
+0457                 (message.Status == PendingMessageStatus.AwaitingPublishReceived ||
+0458                  message.Status == PendingMessageStatus.AwaitingPublishComplete));
+0459             if (pendingMessage == null)
+0460             {
+0461                 return;
+0462             }
+0463 
+0464             pendingMessage.Status = PendingMessageStatus.AwaitingPublishComplete;
+0465             _sessionRepository.Update(session);
+0466             SendPublishRelease(packet, publishReceivedPacket.PacketId);
+0467         }
+0468 
+0469         private void ProcessFromClientPublishRelease(INetworkPacket packet, PublishReleasePacket? publishReleasePacket)
+0470         {
+0471             if (publishReleasePacket == null)
+0472             {
+0473                 return;
+0474             }
+0475 
+0476             var clientId = packet.From;
+0477             var session = _sessionRepository.Read(clientId);
+0478 
+0479             if (session == null)
+0480             {
+0481                 throw new MqttException($"Client Session {clientId} Not Found");
+0482             }
+0483 
+0484             var pendingMessage = session.GetPendingMessages().FirstOrDefault(message =>
+0485                 message.PacketId == publishReleasePacket.PacketId &&
+0486                 message.Status == PendingMessageStatus.AwaitingPublishRelease);
+0487 
+0488             PublishPacket? publishPacket = null;
+0489             if (pendingMessage != null)
+0490             {
+0491                 publishPacket = new PublishPacket(
+0492                     pendingMessage.Topic,
+0493                     pendingMessage.QualityOfService,
+0494                     pendingMessage.Retain,
+0495                     pendingMessage.Duplicated,
+0496                     pendingMessage.PacketId)
+0497                 {
+0498                     Payload = pendingMessage.Payload
+0499                 };
+0500 
+0501                 session.RemovePendingMessage(pendingMessage);
+0502                 session.AddPendingAcknowledgement(new PendingAcknowledgement
+0503                 {
+0504                     Type = MqttPacketType.PublishComplete,
+0505                     PacketId = publishReleasePacket.PacketId
+0506                 });
+0507                 _sessionRepository.Update(session);
+0508             }
+0509 
+0510             SendPublishComplete(packet, publishReleasePacket.PacketId);
+0511             if (publishPacket != null)
+0512                 FanOutAndCount(packet, publishPacket);
+0513         }
+0514 
+0515         private void ProcessFromClientPublishComplete(
+0516             INetworkPacket packet, PublishCompletePacket? publishCompletePacket)
+0517         {
+0518             if (publishCompletePacket == null)
+0519             {
+0520                 return;
+0521             }
+0522 
+0523             var session = _sessionRepository.Read(packet.From);
+0524             if (session == null)
+0525             {
+0526                 throw new MqttException($"Client Session {packet.From} Not Found");
+0527             }
+0528 
+0529             var pendingMessage = session.GetPendingMessages().FirstOrDefault(message =>
+0530                 message.PacketId == publishCompletePacket.PacketId &&
+0531                 message.Status == PendingMessageStatus.AwaitingPublishComplete);
+0532             session.RemovePendingMessage(pendingMessage);
+0533             _sessionRepository.Update(session);
+0534         }
+0535 
+0536         private void SendPublishRelease(INetworkPacket packet, ushort packetId)
+0537         {
+0538             var release = new PublishReleasePacket(packetId);
+0539             var payload = _packetManager.PacketToBytes(release) ?? Array.Empty<byte>();
+0540             var reversePacket = NetworkSimulator!.GetReversePacket(packet, payload, "MQTT PubRel");
+0541             Send(reversePacket);
+0542             MqttCounters.PacketTypeCounters[release.Type].Increment();
+0543         }
+0544 
+0545         private void SendPublishComplete(INetworkPacket packet, ushort packetId)
+0546         {
+0547             var complete = new PublishCompletePacket(packetId);
+0548             var payload = _packetManager.PacketToBytes(complete) ?? Array.Empty<byte>();
+0549             var reversePacket = NetworkSimulator!.GetReversePacket(packet, payload, "MQTT PubComp");
+0550             Send(reversePacket);
+0551             MqttCounters.PacketTypeCounters[complete.Type].Increment();
+0552         }
+0553 
+0554         private void ValidatePublish(string clientId, PublishPacket publishPacket)
+0555         {
+0556             if (publishPacket.QualityOfService != MqttQos.AtMostOnce && !publishPacket.PacketId.HasValue)
+0557             {
+0558                 throw new MqttException("NetworkMonitoringPacket Id Required");
+0559             }
+0560 
+0561             if (publishPacket.QualityOfService == MqttQos.AtMostOnce && publishPacket.PacketId.HasValue)
+0562             {
+0563                 throw new MqttException("NetworkMonitoringPacket Id Not Allowed");
+0564             }
+0565         }
+0566 
+0567         private bool ProcessSubscribe(INetworkPacket packet, SubscribePacket? subscribePacket, (string TopicFilter, MqttQos Qos)? context)
+0568         {
+0569             if (subscribePacket == null)
+0570             {
+0571                 return false;
+0572             }
+0573 
+0574             var clientId = packet.From;
+0575 
+0576             var session = _sessionRepository.Read(clientId);
+0577 
+0578             if (session == null)
+0579             {
+0580                 throw new MqttException($"Client Session {clientId} Not Found");
+0581             }
+0582 
+0583             var returnCodes = new List<SubscribeReturnCode>();
+0584 
+0585             foreach (var subscription in subscribePacket.Subscriptions)
+0586             {
+0587                 try
+0588                 {
+0589                     if (!_topicEvaluator.IsValidTopicFilter(subscription.TopicFilter))
+0590                     {
+0591                         returnCodes.Add(SubscribeReturnCode.Failure);
+0592                         continue;
+0593                     }
+0594 
+0595                     var clientSubscription = session
+0596                         .GetSubscriptions()
+0597                         .FirstOrDefault(s => s.TopicFilter == subscription.TopicFilter);
+0598 
+0599                     if (clientSubscription != null)
+0600                     {
+0601                         clientSubscription.MaximumQualityOfService = subscription.MaximumQualityOfService;
+0602                     }
+0603                     else
+0604                     {
+0605                         clientSubscription = new ClientSubscription
+0606                         {
+0607                             ClientId = clientId,
+0608                             TopicFilter = subscription.TopicFilter,
+0609                             MaximumQualityOfService = subscription.MaximumQualityOfService
+0610                         };
+0611 
+0612                         session.AddSubscription(clientSubscription);
+0613                     }
+0614 
+0615                     var supportedQos = subscription.MaximumQualityOfService > _maximumQualityOfService
+0616                         ? _maximumQualityOfService
+0617                         : subscription.MaximumQualityOfService;
+0618                     var returnCode = supportedQos.ToReturnCode();
+0619 
+0620                     returnCodes.Add(returnCode);
+0621                 }
+0622                 catch (Exception)
+0623                 {
+0624                     returnCodes.Add(SubscribeReturnCode.Failure);
+0625                 }
+0626             }
+0627 
+0628             _sessionRepository.Update(session);
+0629 
+0630             var subscribeAck = new SubscribeAckPacket(subscribePacket.PacketId, returnCodes.ToArray());
+0631 
+0632             var packetPayload = context != null ? GetContextPacket(NetworkSimulator!.GetPacketId(), clientId, NodeType.Client, packet.FromIndex,
+0633                 _packetManager.PacketToBytes(subscribeAck), ProtocolType, context.Value, "MQTT SubAck", packet.Id) :
+0634                 GetPacket(NetworkSimulator!.GetPacketId(), clientId, NodeType.Client, packet.FromIndex,
+0635                     _packetManager.PacketToBytes(subscribeAck), ProtocolType, "MQTT SubAck", packet.Id);
+0636 
+0637 
+0638             NetworkSimulator!.Monitoring.Push(NetworkSimulator.TotalTicks, packet, NetworkLoggerType.Send,
+0639                 $"Send MQTT subscribe ack {packet.From} to {packet.To}", ProtocolType, "MQTT SubAck");
+0640             Send(packetPayload);
+0641             MqttCounters.PacketTypeCounters[subscribeAck.Type].Increment();
+0642             return true;
+0643         }
+0644 
+0645         private bool ProcessConnect(INetworkPacket packet, ConnectPacket? connectPacket, (string Server, bool CleanSession)? context)
+0646         {
+0647             if (connectPacket == null) return false;
+0648 
+0649             var clientId = connectPacket.ClientId ?? string.Empty;
+0650 
+0651             var session = _sessionRepository.Read(packet.From);
+0652             var sessionPresent = !connectPacket.CleanSession && session != null;
+0653 
+0654             if (connectPacket.CleanSession && session != null)
+0655             {
+0656                 _sessionRepository.Delete(packet.From);
+0657                 session = null;
+0658             }
+0659 
+0660             if ( session == null)
+0661             {
+0662                 session = new ClientSession(packet.From, clientId, connectPacket.CleanSession);
+0663 
+0664                 _sessionRepository.Update(session);
+0665             }
+0666 
+0667             var clientName = packet.From;
+0668             var connecktAck = new ConnectAckPacket(MqttConnectionStatus.Accepted, sessionPresent);
+0669             var packetPayload = context != null ? GetContextPacket(NetworkSimulator!.GetPacketId(), clientName, NodeType.Client, packet.FromIndex,
+0670                 _packetManager.PacketToBytes(connecktAck), ProtocolType, context.Value, "MQTT ConnAck", packet.Id) : 
+0671                 GetPacket(NetworkSimulator!.GetPacketId(), clientName, NodeType.Client, packet.FromIndex,
+0672                     _packetManager.PacketToBytes(connecktAck), ProtocolType, "MQTT ConnAck", packet.Id);
+0673 
+0674             var sendResult = Send(packetPayload);
+0675             MqttCounters.PacketTypeCounters[connecktAck.Type].Increment();
+0676             return sendResult;
+0677         }
+0678 
+0679         private void MqttBroker_PacketReceived(object? sender, INetworkPacket e)
+0680         {
+0681 
+0682         }
+0683 
+0684         public override void Refresh()
+0685         {
+0686             base.Refresh();
+0687 
+0688             foreach (var packet in _processingQueue.DrainReady())
+0689             {
+0690                 var publishPacket = _packetManager.BytesToPacket<PublishPacket>(packet.Payload);
+0691                 ProcessFromClientPublishCore(packet, publishPacket);
+0692             }
+0693         }
+0694 
+0695         private void UpdateProfileFromClients()
+0696         {
+0697             _rateLimiters.Clear();
+0698         }
+0699 
+0700         private int TicksFromMs(double latencyMs)
+0701         {
+0702             if (_tickPeriod <= TimeSpan.Zero)
+0703             {
+0704                 return 1;
+0705             }
+0706 
+0707             return Math.Max(1, (int)Math.Ceiling(latencyMs / _tickPeriod.TotalMilliseconds));
+0708         }
+0709 
+0710         private int EmpiricalTicksFromMs(double latencyMs)
+0711         {
+0712             var ticks = Math.Ceiling(latencyMs / _tickPeriod.TotalMilliseconds);
+0713             if (!double.IsFinite(ticks) || ticks < 0 || ticks > int.MaxValue)
+0714                 throw new InvalidDataException("Empirical latency cannot be represented at the selected tick resolution.");
+0715             return (int)ticks;
+0716         }
+0717 
+0718         public long? EmpiricalProtocolFloorTicks { get; set; }
+0719         public bool EmpiricalCapacityPacing { get; set; }
+0720 
+0721         public override void Clear()
+0722         {
+0723             PacketReceived -= MqttBroker_PacketReceived;
+0724             _sessionRepository.Clear();
+0725             _processingQueue.Clear();
+0726             base.Clear();
+0727         }
+0728     }
+0729 }

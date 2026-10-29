@@ -1,0 +1,23 @@
+{
+  "scope": "Three historical article-check tests against untouched starting HEAD, not full current suite",
+  "baselineCommit": "471f7c60b9cb1ce0c7e55dddd704a6365a2820ae",
+  "baselineArticleSha256": "fc9dd679c7c1dcac645299258de9c2d2e1d4ce7c676a3080f7b8fb93b09927b7",
+  "testsRun": 3,
+  "failures": 1,
+  "errors": 2,
+  "details": [
+    {
+      "test": "test_loss_of_independence_caveat_is_detected (test_review_twin_article.ArticleReviewChecks.test_loss_of_independence_caveat_is_detected)",
+      "traceback": "ValueError: Incorrect or missing accuracy row: Aedes\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\projects\\mqtty-meta\\tools\\dissertation\\test_review_twin_article.py\", line 26, in test_loss_of_independence_caveat_is_detected\n    with self.assertRaisesRegex(ValueError, 'limitation'):\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: \"limitation\" does not match \"Incorrect or missing accuracy row: Aedes\"\n"
+    },
+    {
+      "test": "test_actual_tables_match_sources (test_review_twin_article.ArticleReviewChecks.test_actual_tables_match_sources)",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\projects\\mqtty-meta\\tools\\dissertation\\test_review_twin_article.py\", line 13, in test_actual_tables_match_sources\n    self.assertEqual(len(verify(self.text, self.accuracy, self.sensitivity)), 4)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\projects\\mqtty-meta\\tools\\dissertation\\review_twin_article.py\", line 25, in verify\n    raise ValueError(\"Incorrect or missing accuracy row: \" + name)\nValueError: Incorrect or missing accuracy row: Aedes\n"
+    },
+    {
+      "test": "test_native_model_table_uses_actual_native_repetitions (test_review_twin_article.ArticleReviewChecks.test_native_model_table_uses_actual_native_repetitions)",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\projects\\mqtty-meta\\tools\\dissertation\\test_review_twin_article.py\", line 32, in test_native_model_table_uses_actual_native_repetitions\n    self.assertEqual(verify_native_model(self.text,models,native),16)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\projects\\mqtty-meta\\tools\\dissertation\\review_twin_article.py\", line 61, in verify_native_model\n    if prefix not in text:raise ValueError('Incorrect native/model comparison: '+broker+'/'+metric)\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Incorrect native/model comparison: Aedes/rps\n"
+    }
+  ],
+  "conclusion": "Pre-existing mismatch: historical 576/288 checker targets current 40-run manuscript; not introduced by this parallel block"
+}

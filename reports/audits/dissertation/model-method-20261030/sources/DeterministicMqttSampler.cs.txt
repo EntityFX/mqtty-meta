@@ -1,0 +1,38 @@
+0001 using System.Buffers.Binary;
+0002 using System.Globalization;
+0003 using System.Security.Cryptography;
+0004 using System.Text;
+0005 using EntityFX.MqttY.Contracts.Mqtt.BrokerProfile;
+0006 
+0007 namespace EntityFX.MqttY.Plugin.Mqtt.BrokerProfile
+0008 {
+0009     internal static class DeterministicMqttSampler
+0010     {
+0011         public static double Uniform(
+0012             int seed, string brokerName, string clientId, long publishSequence, string purpose)
+0013         {
+0014             var key = string.Join("\n", seed.ToString(CultureInfo.InvariantCulture),
+0015                 brokerName, clientId, publishSequence.ToString(CultureInfo.InvariantCulture), purpose);
+0016             var hash = SHA256.HashData(Encoding.UTF8.GetBytes(key));
+0017             var value = BinaryPrimitives.ReadUInt64BigEndian(hash.AsSpan(0, sizeof(ulong)));
+0018             return value / (double)ulong.MaxValue;
+0019         }
+0020 
+0021         public static double InverseCdf(double uniform, LatencyQuantiles quantiles)
+0022         {
+0023             if (!double.IsFinite(uniform)) throw new ArgumentOutOfRangeException(nameof(uniform));
+0024             uniform = Math.Clamp(uniform, 0, 1);
+0025             var probabilities = new[] { 0.0, 0.50, 0.75, 0.95, 0.99, 1.0 };
+0026             var values = new[] { quantiles.MinMs, quantiles.P50Ms, quantiles.P75Ms,
+0027                 quantiles.P95Ms, quantiles.P99Ms, quantiles.MaxMs };
+0028             for (var index = 0; index < probabilities.Length - 1; index++)
+0029             {
+0030                 if (uniform > probabilities[index + 1]) continue;
+0031                 var ratio = (uniform - probabilities[index]) /
+0032                     (probabilities[index + 1] - probabilities[index]);
+0033                 return values[index] + ratio * (values[index + 1] - values[index]);
+0034             }
+0035             return values[^1];
+0036         }
+0037     }
+0038 }

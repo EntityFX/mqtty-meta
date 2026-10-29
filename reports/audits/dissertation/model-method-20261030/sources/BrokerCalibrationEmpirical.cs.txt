@@ -1,0 +1,150 @@
+0001 using System.Security.Cryptography;
+0002 using System.Text;
+0003 using System.Text.Json;
+0004 using System.Text.Json.Nodes;
+0005 using EntityFX.MqttY.Contracts.Mqtt;
+0006 using EntityFX.MqttY.Contracts.Mqtt.BrokerProfile;
+0007 
+0008 namespace EntityFX.MqttY.Plugin.Mqtt.BrokerProfile;
+0009 
+0010 /// <summary>Versioned empirical profile. The exact histogram snapshot and its raw archive provenance are retained.</summary>
+0011 public static class BrokerCalibrationEmpirical
+0012 {
+0013     private static readonly JsonSerializerOptions Json = new() { WriteIndented = true };
+0014 
+0015     public static byte[] Calibrate(byte[] observations, byte[] histograms, string commit,
+0016         double rateRejectionRate, string broker, string? coverage)
+0017     {
+0018         var calibration = JsonNode.Parse(BrokerCalibrationV3.Calibrate(observations, commit,
+0019             rateRejectionRate, broker, coverage))!;
+0020         var hash = Hash(histograms);
+0021         var provenance = JsonNode.Parse(calibration["provenance"]!.ToJsonString())!;
+0022         provenance["method"] = "empirical-histogram-rtt-v1";
+0023         provenance["latencyHistogramsSha256"] = hash;
+0024         var result = new JsonObject
+0025         {
+0026             ["schemaVersion"] = 4, ["artifactType"] = "broker-calibration-empirical-v1",
+0027             ["calibration"] = calibration, ["histogramsBase64"] = Convert.ToBase64String(histograms),
+0028             ["provenance"] = provenance
+0029         };
+0030         var bytes = JsonSerializer.SerializeToUtf8Bytes(result, Json);
+0031         _ = ReadProfiles(bytes);
+0032         return bytes;
+0033     }
+0034 
+0035     internal static IReadOnlyDictionary<string, MqttBrokerProfile> ReadProfiles(byte[] bytes)
+0036     {
+0037         using var document = JsonDocument.Parse(bytes);
+0038         var root = document.RootElement;
+0039         Fields(root, "schemaVersion", "artifactType", "calibration", "histogramsBase64", "provenance");
+0040         if (root.GetProperty("schemaVersion").GetInt32() != 4 || root.GetProperty("artifactType").GetString() != "broker-calibration-empirical-v1")
+0041             throw new InvalidDataException("Unsupported empirical profile.");
+0042         var calibration = root.GetProperty("calibration");
+0043         var profiles = BrokerCalibrationV3.ReadProfiles(Encoding.UTF8.GetBytes(calibration.GetRawText()));
+0044         if (profiles.Count != 1) throw new InvalidDataException("Empirical profiles must have one broker.");
+0045         byte[] histogramBytes;
+0046         try { histogramBytes = Convert.FromBase64String(root.GetProperty("histogramsBase64").GetString()!); }
+0047         catch (FormatException error) { throw new InvalidDataException("Invalid histogram snapshot.", error); }
+0048         var expected = JsonNode.Parse(calibration.GetProperty("provenance").GetRawText())!;
+0049         expected["method"] = "empirical-histogram-rtt-v1";
+0050         expected["latencyHistogramsSha256"] = Hash(histogramBytes);
+0051         // Compare structure, not input property ordering.
+0052         var actual = root.GetProperty("provenance");
+0053         Fields(actual, expected.AsObject().Select(pair => pair.Key).ToArray());
+0054         foreach (var pair in expected.AsObject())
+0055         {
+0056             using var expectedDocument = JsonDocument.Parse(pair.Value!.ToJsonString());
+0057             if (Canonical(actual.GetProperty(pair.Key)) != Canonical(expectedDocument.RootElement))
+0058                 throw new InvalidDataException("Empirical provenance mismatch.");
+0059         }
+0060         using var histogramDocument = JsonDocument.Parse(histogramBytes);
+0061         var source = histogramDocument.RootElement;
+0062         Fields(source, "schemaVersion", "artifactType", "observationsSha256", "campaignId", "points");
+0063         if (source.GetProperty("schemaVersion").GetInt32() != 1 || source.GetProperty("artifactType").GetString() != "broker-publish-latency-histograms" ||
+0064             source.GetProperty("observationsSha256").GetString() != calibration.GetProperty("provenance").GetProperty("observationsSha256").GetString() ||
+0065             source.GetProperty("campaignId").GetString() != calibration.GetProperty("provenance").GetProperty("observations").GetProperty("identity").GetProperty("campaignId").GetString())
+0066             throw new InvalidDataException("Histogram source differs from calibration observations.");
+0067         var nativePoints = calibration.GetProperty("points").EnumerateArray().Where(p => p.GetProperty("qos").GetInt32() != 0).ToArray();
+0068         var supplied = source.GetProperty("points").EnumerateArray().ToArray();
+0069         if (supplied.Length != nativePoints.Length) throw new InvalidDataException("Incomplete empirical point matrix.");
+0070         var seen = new HashSet<string>(StringComparer.Ordinal);
+0071         var archives = new HashSet<string>(StringComparer.Ordinal);
+0072         foreach (var point in supplied)
+0073         {
+0074             Fields(point, "broker", "messageBytes", "qos", "publishers", "repeats");
+0075             var name = point.GetProperty("broker").GetString()!;
+0076             var size = point.GetProperty("messageBytes").GetInt32();
+0077             var qos = point.GetProperty("qos").GetInt32();
+0078             var clients = point.GetProperty("publishers").GetInt32();
+0079             var key = $"{name}/{size}/{qos}/{clients}";
+0080             if (!seen.Add(key) || qos is not (1 or 2) || !profiles.ContainsKey(name)) throw new InvalidDataException("Duplicate or unknown empirical point.");
+0081             var native = nativePoints.SingleOrDefault(p => p.GetProperty("broker").GetString() == name &&
+0082                 p.GetProperty("messageBytes").GetInt32() == size && p.GetProperty("qos").GetInt32() == qos && p.GetProperty("publishers").GetInt32() == clients);
+0083             if (native.ValueKind == JsonValueKind.Undefined) throw new InvalidDataException("Unexpected empirical point.");
+0084             var repeats = point.GetProperty("repeats").EnumerateArray().ToArray();
+0085             if (repeats.Length != 3 || !repeats.Select(r => r.GetProperty("repeat").GetInt32()).OrderBy(n => n).SequenceEqual(new[] { 1, 2, 3 }))
+0086                 throw new InvalidDataException("Empirical point needs unique repeats 1/2/3.");
+0087             var bins = new SortedDictionary<long, long>();
+0088             double meanRps = 0;
+0089             var quantileNames = new[] { "minMs", "p50Ms", "p75Ms", "p95Ms", "p99Ms", "maxMs" };
+0090             var probabilities = new[] { 0d, .5, .75, .95, .99, 1d };
+0091             var meanQuantiles = new double[probabilities.Length];
+0092             foreach (var repeat in repeats)
+0093             {
+0094                 Fields(repeat, "repeat", "archiveSha256", "completedPublishes", "actualMeasurementSeconds", "bins");
+0095                 var archive = repeat.GetProperty("archiveSha256").GetString()!;
+0096                 if (archive.Length != 64 || archive.Any(c => !Uri.IsHexDigit(c)) || !archives.Add(archive)) throw new InvalidDataException("Invalid or reused raw archive hash.");
+0097                 var samples = repeat.GetProperty("completedPublishes").GetInt64();
+0098                 var seconds = repeat.GetProperty("actualMeasurementSeconds").GetDouble();
+0099                 if (samples <= 0 || !double.IsFinite(seconds) || seconds <= 0) throw new InvalidDataException("Invalid empirical sample count/duration.");
+0100                 var values = new List<LatencyBin>();
+0101                 foreach (var bin in repeat.GetProperty("bins").EnumerateArray())
+0102                 {
+0103                     if (bin.GetArrayLength() != 2) throw new InvalidDataException("Expected microseconds/count pairs.");
+0104                     var micros = bin[0].GetInt64(); var count = bin[1].GetInt64();
+0105                     if (micros < 0 || micros > 86_400_000_000L) throw new InvalidDataException("Empirical latency outside supported range.");
+0106                     values.Add(new LatencyBin(micros / 1000.0, count));
+0107                     bins[micros] = checked(bins.GetValueOrDefault(micros) + count);
+0108                 }
+0109                 var distribution = new EmpiricalLatencyDistribution(values);
+0110                 if (distribution.Count != samples) throw new InvalidDataException("Empirical count differs from raw completions.");
+0111                 meanRps += samples / seconds / 3;
+0112                 for (var q = 0; q < probabilities.Length; q++)
+0113                 {
+0114                     var rank = Math.Max(1, Math.Ceiling(probabilities[q] * samples));
+0115                     meanQuantiles[q] += distribution.Sample((rank - .5) / samples) / 3;
+0116                 }
+0117             }
+0118             var targetRps = native.GetProperty("targetCompletedRps").GetDouble();
+0119             if (Math.Abs(meanRps - targetRps) > Math.Max(1e-8, targetRps * 1e-10) ||
+0120                 meanQuantiles.Where((value, index) => Math.Abs(value - native.GetProperty("observedLatencyQuantiles").GetProperty(quantileNames[index]).GetDouble()) > .00101).Any())
+0121                 throw new InvalidDataException("Empirical statistics differ from observation targets.");
+0122             var offset = qos * native.GetProperty("rttBaselineMs").GetDouble();
+0123             var processing = bins.Select(pair => new LatencyBin(Math.Max(0, pair.Key / 1000.0 - offset), pair.Value))
+0124                 .GroupBy(bin => bin.Milliseconds).Select(group => new LatencyBin(group.Key, group.Sum(bin => bin.Count)));
+0125             var profile = profiles[name].MessageSizes[size].Qos[(MqttQos)qos];
+0126             profiles[name].MessageSizes[size].Qos[(MqttQos)qos] = new CalibratedMqttQosProfile(profile.Samples.Select(sample =>
+0127                 sample.Clients == clients ? sample with {
+0128                     ProcessingLatencyDistribution = new EmpiricalLatencyDistribution(processing),
+0129                     ObservedLatencyDistribution = new EmpiricalLatencyDistribution(bins.Select(pair => new LatencyBin(pair.Key / 1000.0, pair.Value)))
+0130                 } : sample).ToArray());
+0131         }
+0132         return profiles.ToDictionary(pair => pair.Key, pair => new MqttBrokerProfile {
+0133             BrokerType = pair.Value.BrokerType, MessageSizes = pair.Value.MessageSizes, RequireObservedPublisherCount = true,
+0134             CoverageProtocol = pair.Value.CoverageProtocol });
+0135     }
+0136 
+0137     private static string Hash(byte[] bytes) => Convert.ToHexString(SHA256.HashData(bytes)).ToLowerInvariant();
+0138     private static string Canonical(JsonElement value) => value.ValueKind switch
+0139     {
+0140         JsonValueKind.Object => "{" + string.Join(",", value.EnumerateObject().OrderBy(p => p.Name, StringComparer.Ordinal).Select(p => JsonSerializer.Serialize(p.Name) + ":" + Canonical(p.Value))) + "}",
+0141         JsonValueKind.Array => "[" + string.Join(",", value.EnumerateArray().Select(Canonical)) + "]",
+0142         _ => value.GetRawText()
+0143     };
+0144     private static void Fields(JsonElement value, params string[] names)
+0145     {
+0146         if (value.ValueKind != JsonValueKind.Object || !value.EnumerateObject().Select(p => p.Name).OrderBy(n => n, StringComparer.Ordinal)
+0147                 .SequenceEqual(names.OrderBy(n => n, StringComparer.Ordinal)))
+0148             throw new InvalidDataException("Unexpected empirical artifact fields.");
+0149     }
+0150 }

@@ -1,0 +1,18 @@
+{
+  "programIdentity": "queue-causality-pilot-20261030-v1",
+  "files": {
+    "run_queue_pilot.py": "7f253787c2a8d5dff33247530529017d5a0e39863c1d90c89c6c08958da19357",
+    "test_queue_pilot.py": "94a94fa58b3006d952f7c361208aaff3cb808772441ff00e27ea5e4b1fc6788b",
+    "configs/q1.json": "0a7fcf14772a91637170362bdacbd5ecc7c2e3d7c0e8cd98629633ebef78e1c4",
+    "configs/q1024.json": "f84cc6ba86e6ead5c423ca21d5862c30e652f9a48e352245eec9740337f58ce5",
+    "protocol.md": "1d651454ce402caac2b7d4d3b5edc5a224c4eb98cc6c5f35d21cb64afe735b12",
+    "acceleration-protocol.md": "8d8dfa909e28812312df2fa286a270d204f96cb828047cb0426685a5b7de01ff",
+    "acceleration-program.json": "8beaf4762140f97b1add01419a1509e74627ed40779aeb97610c7f46b827c37d",
+    "source-audit.json": "337e512b7a3d1d94889c371398e076d44b962825c9a62f807af8dc5be86308e2",
+    "launch-plan.json": "25ae2cc07292e1d6a7887e5e0ad098f9f26f41e3f03c9f712c3c535e1245ea37",
+    "verification.json": "04abe12fda31a8a44d8e5bada97f0f2c2f33a7a6a88a41cd59f54349372faf33"
+  },
+  "sourceManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+  "readOnlyInputs": true,
+  "scientificResultsAccepted": false
+}

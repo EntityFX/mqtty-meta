@@ -1,0 +1,572 @@
+0001 using System.Buffers.Binary;
+0002 using System.Runtime.InteropServices;
+0003 using System.Security.Cryptography;
+0004 using System.Text.Json;
+0005 using System.Text.Json.Serialization;
+0006 using EntityFX.MqttY.Contracts.Mqtt;
+0007 using EntityFX.MqttY.Contracts.Mqtt.BrokerProfile;
+0008 using EntityFX.MqttY.Contracts.Network;
+0009 using EntityFX.MqttY.Contracts.Options;
+0010 using EntityFX.MqttY.Helper;
+0011 using EntityFX.MqttY.Network;
+0012 using EntityFX.MqttY.Plugin.Mqtt.Application.Mqtt;
+0013 using EntityFX.MqttY.Plugin.Mqtt.BrokerProfile;
+0014 using EntityFX.MqttY.Plugin.Mqtt.Factories;
+0015 using EntityFX.MqttY.Plugin.Mqtt.Helper;
+0016 using EntityFX.MqttY.Utils;
+0017 
+0018 namespace EntityFX.MqttY.Plugin.Mqtt.Experiments;
+0019 
+0020 public sealed class MqttRelayExperimentRunner
+0021 {
+0022     private readonly TicksOptions _ticks;
+0023     private readonly NetworkOptions _network;
+0024     private readonly IBrokerBenchmarkRepository _profiles;
+0025     private readonly JsonSerializerOptions _json = new()
+0026     {
+0027         PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+0028         WriteIndented = true,
+0029         Converters = { new JsonStringEnumConverter(JsonNamingPolicy.CamelCase) }
+0030     };
+0031 
+0032     public MqttRelayExperimentRunner(
+0033         TicksOptions ticks, NetworkOptions network,
+0034         IBrokerBenchmarkRepository? profiles = null)
+0035     {
+0036         ticks.Validate();
+0037         network.Validate();
+0038         _ticks = ticks;
+0039         _network = network;
+0040         _profiles = profiles ?? new BrokerBenchmarkRepository();
+0041     }
+0042 
+0043     public MqttRelayExperimentResult Run(
+0044         MqttRelayExperimentOptions options, string outputRoot, ExperimentProvenance provenance,
+0045         ExperimentMetricSummary? independentReference = null, Action<INetworkSimulator, string>? onProgress = null)
+0046     {
+0047         var runId = $"{DateTimeOffset.UtcNow:yyyyMMddTHHmmssfffZ}-{Guid.NewGuid():N}";
+0048         var runDirectory = Path.Combine(Path.GetFullPath(outputRoot), runId);
+0049         Directory.CreateDirectory(runDirectory);
+0050         var phases = new List<ExperimentPhaseBoundary>();
+0051         var assignedTypes = Array.Empty<string?>();
+0052         INetworkSimulator? graph = null;
+0053         long measurementStart = 0;
+0054         long measurementEnd = 0;
+0055         ExperimentRunStatus status = ExperimentRunStatus.Failed;
+0056         string? error = null;
+0057         IReadOnlyDictionary<string, BrokerMetricsSnapshot> snapshots =
+0058             new Dictionary<string, BrokerMetricsSnapshot>();
+0059         var simulated = EmptyMetrics();
+0060         ExperimentMetricSummary? reference = null;
+0061         var receiverBaselines = new Dictionary<string, long>();
+0062         using var traceOwner = new TraceOwner();
+0063 
+0064         try
+0065         {
+0066             options.Validate();
+0067             assignedTypes = options.ResolveBrokerTypes().ToArray();
+0068             var assignedProfiles = ResolveProfiles(options, assignedTypes);
+0069 
+0070             var phaseStart = 0L;
+0071             NetworkOptions? resolvedNetwork = null;
+0072             long? protocolFloor = null;
+0073             if (options.TransportTiming != TransportTimingMode.Fixed)
+0074             {
+0075                 var sample = assignedProfiles.Single()!.For(options.PayloadBytes, options.PublishQos, options.ResolveProfileClientCount());
+0076                 if (sample.RttBaselineMs is not double rtt || !double.IsFinite(rtt) || rtt <= 0 || !assignedProfiles.Single()!.RequireObservedPublisherCount)
+0077                     throw new InvalidDataException("RTT budget calibration requires an empirical profile with a positive calibration RTT.");
+0078                 var probeQos = options.PublishQos == MqttQos.AtMostOnce ? MqttQos.AtLeastOnce : options.PublishQos;
+0079                 var legs = 2 * (int)probeQos;
+0080                 var atOne = ProbeProtocolFloor(options, probeQos, NetworkWithTransfer(1));
+0081                 var target = (int)probeQos * rtt / _ticks.TickPeriod.TotalMilliseconds;
+0082                 var serviceBudget = options.TransportTiming == TransportTimingMode.EmpiricalServiceBudget;
+0083                 // Echo RTT is only a proxy. It cannot impose a protocol floor above
+0084                 // the smallest observed publish completion at this calibration point.
+0085                 // Reserve one refresh tick for the causal empirical processing queue.
+0086                 var observedMinimum = sample.ObservedLatencyDistribution?.Bins[0].Milliseconds;
+0087                 var empiricalBound = observedMinimum.HasValue
+0088                     ? Math.Max(atOne, Math.Floor(observedMinimum.Value / _ticks.TickPeriod.TotalMilliseconds) - 1)
+0089                     : target;
+0090                 if (serviceBudget) target = Math.Min(target, empiricalBound);
+0091                 if (!double.IsFinite(target) || target / legs > int.MaxValue - 1)
+0092                     throw new InvalidDataException("Calibration RTT cannot be represented at this tick resolution.");
+0093                 var transfer = Math.Max(1, (int)(serviceBudget
+0094                     ? Math.Floor((target - atOne) / legs + 1)
+0095                     : Math.Round((target - atOne) / legs + 1)));
+0096                 resolvedNetwork = NetworkWithTransfer(transfer);
+0097                 protocolFloor = ProbeProtocolFloor(options, probeQos, resolvedNetwork);
+0098                 var clipped = sample.ObservedLatencyDistribution?.Bins.Where(bin => bin.Milliseconds < protocolFloor * _ticks.TickPeriod.TotalMilliseconds).Sum(bin => bin.Count) ?? 0;
+0099                 WriteJsonNew(Path.Combine(runDirectory, "transport-resolution.json"), new {
+0100                     method = serviceBudget ? "empirical-service-budget-v1" : "ideal-protocol-rtt-budget-v1", calibrationRttMs = rtt,
+0101                     assumption = "MQTT echo RTT proxies a QoS1 ACK budget; protocol overhead measured on an unloaded ideal graph; no validation-data fitting",
+0102                     requestedTransferTicks = _network.TransferTicks, resolvedTransferTicks = transfer,
+0103                     protocolFloorAtTransferOneTicks = atOne, protocolFloorTicks = protocolFloor,
+0104                     modeledNativeProtocolBudgetTicks = target, clippedEmpiricalSamples = clipped,
+0105                     observedMinimumPublishLatencyMs = observedMinimum,
+0106                     capacityPacing = serviceBudget,
+0107                     clippingScope = "observed latencies below the model protocol floor cannot be reproduced; retained and reported, never removed from the profile" });
+0108             }
+0109             graph = BuildGraph(options, assignedProfiles, resolvedNetwork);
+0110             if (protocolFloor.HasValue)
+0111                 foreach (var broker in graph.Servers.Values.OfType<MqttBroker>())
+0112                 {
+0113                     broker.EmpiricalProtocolFloorTicks = protocolFloor;
+0114                     broker.EmpiricalCapacityPacing = options.TransportTiming == TransportTimingMode.EmpiricalServiceBudget;
+0115                 }
+0116             phases.Add(new ExperimentPhaseBoundary("construct", phaseStart, graph.TotalTicks, "completed"));
+0117             onProgress?.Invoke(graph, "construct");
+0118 
+0119             phaseStart = graph.TotalTicks;
+0120             var (relays, receivers, publishers) = StartAndConnect(graph);
+0121             if (options.RecordPublicationCohort)
+0122             {
+0123                 traceOwner.Trace = new Tracing.PublicationCohortTrace(runDirectory, graph,
+0124                     _ticks.TickPeriod.TotalSeconds, options.PayloadBytes, options.PublishQos);
+0125                 traceOwner.Trace.Attach(publishers, receivers);
+0126             }
+0127             if (!RefreshUntil(graph, () => graph.Clients.Values.All(client => client.IsConnected),
+0128                     options.DrainTimeoutTicks, options, traceOwner.Trace))
+0129                 throw new ExperimentPhaseException(ExperimentRunStatus.ConnectionFailed,
+0130                     "Connection barrier timed out.");
+0131             phases.Add(new ExperimentPhaseBoundary("connect", phaseStart, graph.TotalTicks, "completed"));
+0132             onProgress?.Invoke(graph, "connect");
+0133 
+0134             phaseStart = graph.TotalTicks;
+0135             foreach (var relay in relays) relay.SubscribeAll();
+0136             foreach (var receiver in receivers) receiver.SubscribeAll();
+0137             if (!RefreshUntil(graph, () => AreSubscribed(relays, receivers),
+0138                     options.DrainTimeoutTicks, options, traceOwner.Trace))
+0139                 throw new ExperimentPhaseException(ExperimentRunStatus.SubscriptionFailed,
+0140                     "Subscription barrier timed out.");
+0141             phases.Add(new ExperimentPhaseBoundary("subscribe", phaseStart, graph.TotalTicks, "completed"));
+0142             onProgress?.Invoke(graph, "subscribe");
+0143 
+0144             var payload = CreatePayload(options.PayloadBytes, options.RandomSeed);
+0145             phaseStart = graph.TotalTicks;
+0146             DriveOfferedLoad(graph, publishers, options.WarmupTicks, payload, options, traceOwner.Trace, false);
+0147             phases.Add(new ExperimentPhaseBoundary("warmup", phaseStart, graph.TotalTicks, "completed"));
+0148             onProgress?.Invoke(graph, "warmup");
+0149 
+0150             graph.ResetMeasurement();
+0151             receiverBaselines = receivers.ToDictionary(receiver => receiver.Name, receiver => receiver.Received);
+0152             measurementStart = graph.TotalTicks;
+0153             traceOwner.Trace?.RecordConnections("measurementStart");
+0154             phases.Add(new ExperimentPhaseBoundary("resetMeasurement",
+0155                 measurementStart, measurementStart, "completed"));
+0156             DriveOfferedLoad(graph, publishers, options.MeasurementTicks, payload, options, traceOwner.Trace, true);
+0157             measurementEnd = graph.TotalTicks;
+0158             phases.Add(new ExperimentPhaseBoundary("measure",
+0159                 measurementStart, measurementEnd, "completed"));
+0160             onProgress?.Invoke(graph, "measure");
+0161 
+0162             phaseStart = graph.TotalTicks;
+0163             if (options.ObserveFullDrainWindow)
+0164             {
+0165                 for (long tick = 0; tick < options.DrainTimeoutTicks; tick++)
+0166                 {
+0167                     graph.RefreshWithCounters(options.Parallel, options.RefreshStrategy);
+0168                     traceOwner.Trace?.RecordConnectionChanges();
+0169                 }
+0170             }
+0171             else if (!RefreshUntil(graph, () => graph.IsQuiescent,
+0172                     options.DrainTimeoutTicks, options, traceOwner.Trace))
+0173                 throw new ExperimentPhaseException(ExperimentRunStatus.DrainTimedOut,
+0174                     $"Drain did not reach quiescence within {options.DrainTimeoutTicks} ticks.");
+0175             phases.Add(new ExperimentPhaseBoundary("drain", phaseStart, graph.TotalTicks, "completed"));
+0176             onProgress?.Invoke(graph, "drain");
+0177 
+0178             snapshots = NormalizeSnapshots(graph, measurementStart, measurementEnd);
+0179             simulated = AggregateSnapshots(snapshots);
+0180             reference = independentReference ?? BuildReference(options, assignedProfiles);
+0181             status = ExperimentRunStatus.Completed;
+0182         }
+0183         catch (ExperimentPhaseException exception)
+0184         {
+0185             status = exception.Status;
+0186             error = exception.Message;
+0187             phases.Add(new ExperimentPhaseBoundary(StatusPhase(status),
+0188                 graph?.TotalTicks ?? 0, graph?.TotalTicks ?? 0, "failed"));
+0189         }
+0190         catch (Exception exception)
+0191         {
+0192             status = ExperimentRunStatus.Failed;
+0193             error = exception.ToString();
+0194         }
+0195 
+0196         if (graph != null && snapshots.Count == 0 && measurementEnd > measurementStart)
+0197         {
+0198             snapshots = NormalizeSnapshots(graph, measurementStart, measurementEnd);
+0199             simulated = AggregateSnapshots(snapshots);
+0200         }
+0201         var criteria = Evaluate(options, options.TopologyMode == ExperimentTopologyMode.BrokerFidelity ? reference : null, simulated);
+0202         var summary = new MqttRelayExperimentSummary(status, measurementStart, measurementEnd,
+0203             simulated, reference, criteria, error);
+0204         traceOwner.Trace?.SavePhases(measurementStart, measurementEnd, status);
+0205         traceOwner.Dispose();
+0206         Export(runDirectory, runId, options, provenance, assignedTypes, phases,
+0207             graph, snapshots, summary, receiverBaselines);
+0208         graph?.Clear();
+0209         return new MqttRelayExperimentResult(runDirectory, summary);
+0210     }
+0211 
+0212     private IReadOnlyList<MqttBrokerProfile?> ResolveProfiles(
+0213         MqttRelayExperimentOptions options, IReadOnlyList<string?> assignedTypes)
+0214     {
+0215         return assignedTypes.Select(name =>
+0216         {
+0217             if (name == null) return null;
+0218             var profile = _profiles.Get(name);
+0219             profile.For(options.PayloadBytes, options.PublishQos, options.ResolveProfileClientCount());
+0220             return profile;
+0221         }).ToArray();
+0222     }
+0223 
+0224     private INetworkSimulator BuildGraph(
+0225         MqttRelayExperimentOptions options, IReadOnlyList<MqttBrokerProfile?> profiles, NetworkOptions? networkOverride = null)
+0226     {
+0227         var generic = new GenericBuilder();
+0228         var evaluator = generic.GetMqttTopicEvaluator();
+0229         var packetManager = generic.GetMqttPacketManager(evaluator);
+0230         var graph = new NetworkSimulator(generic.GetPathFinder(), generic.GetNullNetworkLogger(),
+0231             _ticks, options.EnableCounters);
+0232         var clientBuilder = generic.GetClientBuilder((index, name, protocolType, specification,
+0233             network, ticks, enableCounters, group, groupAmount, additional) =>
+0234         {
+0235             var client = new MqttClient(packetManager, index, name, $"mqtt://{name}",
+0236                 protocolType, specification, name.Replace(".", string.Empty), ticks, enableCounters)
+0237             {
+0238                 Group = group,
+0239                 GroupAmount = groupAmount
+0240             };
+0241             network.AddClient(client);
+0242             graph.AddClient(client);
+0243             return client;
+0244         });
+0245         var builder = new MqttNetworkBuilder(graph, packetManager, evaluator, clientBuilder,
+0246             ordinal => profiles[ordinal], options.RandomSeed, options.SubscribeQos,
+0247             options.ProfileClientCountMode == ProfileClientCountMode.Publishers ? options.ClientsPerBroker : null);
+0248         graph.Construction = true;
+0249         builder.BuildSimpleTree(options.Brokers, options.NetworkLength,
+0250             options.ClientsPerBroker, 1, null, true, _ticks, networkOverride ?? _network);
+0251         if (options.TopologyMode == ExperimentTopologyMode.BrokerFidelity)
+0252             builder.BuildBrokerFidelity(graph, _ticks);
+0253         else
+0254             builder.BuildMqttRelay(graph, _ticks);
+0255         graph.Construction = false;
+0256         graph.UpdateRoutes();
+0257         return graph;
+0258     }
+0259 
+0260     private NetworkOptions NetworkWithTransfer(int transfer) => new() {
+0261         TransferTicks = transfer, CapacityBytesPerSecond = _network.CapacityBytesPerSecond,
+0262         ThroughputWindowTicks = _network.ThroughputWindowTicks, QueueCapacity = _network.QueueCapacity, NetworkType = _network.NetworkType };
+0263 
+0264     private long ProbeProtocolFloor(MqttRelayExperimentOptions options, MqttQos qos, NetworkOptions network)
+0265     {
+0266         var probeOptions = JsonSerializer.Deserialize<MqttRelayExperimentOptions>(JsonSerializer.Serialize(options, _json), _json)!;
+0267         probeOptions.PublishQos = probeOptions.SubscribeQos = qos;
+0268         var graph = BuildGraph(probeOptions, new MqttBrokerProfile?[] { null }, network);
+0269         try
+0270         {
+0271             var (relays, receivers, publishers) = StartAndConnect(graph);
+0272             if (!RefreshUntil(graph, () => graph.Clients.Values.All(client => client.IsConnected), options.DrainTimeoutTicks, options))
+0273                 throw new InvalidDataException("Ideal protocol probe connection failed.");
+0274             foreach (var receiver in receivers) receiver.SubscribeAll();
+0275             if (!RefreshUntil(graph, () => AreSubscribed(relays, receivers), options.DrainTimeoutTicks, options))
+0276                 throw new InvalidDataException("Ideal protocol probe subscription failed.");
+0277             graph.ResetMeasurement();
+0278             publishers[0].Publish("telemetry/data", CreatePayload(options.PayloadBytes, options.RandomSeed), qos);
+0279             if (!RefreshUntil(graph, () => !publishers[0].HasPendingPublish, options.DrainTimeoutTicks, options))
+0280                 throw new InvalidDataException("Ideal protocol probe ACK failed.");
+0281             var latency = graph.Servers.Values.OfType<IMqttBroker>().Single().GetMetrics().ByQos[qos].LatencyP99Ms
+0282                 ?? throw new InvalidDataException("Ideal protocol probe did not record latency.");
+0283             return checked((long)Math.Round(latency / _ticks.TickPeriod.TotalMilliseconds));
+0284         }
+0285         finally { graph.Clear(); }
+0286     }
+0287 
+0288     private static (MqttRelay[] Relays, MqttReceiver[] Receivers, MqttClient[] Publishers)
+0289         StartAndConnect(INetworkSimulator graph)
+0290     {
+0291         var publishers = graph.Clients.Values.OfType<MqttClient>()
+0292             .Where(client => client.Group == null).OrderBy(client=>client.Name,StringComparer.Ordinal).ToArray();
+0293         var relays = graph.Applications.Values.OfType<MqttRelay>().OrderBy(relay=>relay.Name,StringComparer.Ordinal).ToArray();
+0294         var receivers = graph.Applications.Values.OfType<MqttReceiver>().OrderBy(receiver=>receiver.Name,StringComparer.Ordinal).ToArray();
+0295         foreach (var relay in relays) relay.Start();
+0296         foreach (var receiver in receivers) receiver.Start();
+0297         foreach (var publisher in publishers)
+0298         {
+0299             var broker = publisher.Network!.Servers.Values.Single();
+0300             publisher.BeginConnect(broker.Name);
+0301         }
+0302         return (relays, receivers, publishers);
+0303     }
+0304 
+0305     private static bool AreSubscribed(
+0306         IEnumerable<MqttRelay> relays, IEnumerable<MqttReceiver> receivers)
+0307     {
+0308         return relays.All(relay => relay.Options!.ListenTopics.All(listen =>
+0309                 listen.Value.Topics.All(topic =>
+0310                     relay.HasListenSubscription(listen.Key, listen.Value.Server, topic)))) &&
+0311             receivers.All(receiver => receiver.Options!.Topics.All(topic =>
+0312                 receiver.HasListenSubscription(receiver.Options.Server, topic)));
+0313     }
+0314 
+0315     private void DriveOfferedLoad(
+0316         INetworkSimulator graph, IReadOnlyList<MqttClient> publishers,
+0317         long ticks, byte[] payload, MqttRelayExperimentOptions options,
+0318         Tracing.PublicationCohortTrace? trace = null, bool measurement = false)
+0319     {
+0320         double tokens = 0;
+0321         var tokensPerTick = options.OfferedRps * _ticks.TickPeriod.TotalSeconds;
+0322         var publisherIndex = 0;
+0323         for (long tick = 0; tick < ticks; tick++)
+0324         {
+0325             tokens += tokensPerTick;
+0326             if (options.LoadMode == PublishLoadMode.ClosedLoopPerPublisher && options.PublishQos != MqttQos.AtMostOnce)
+0327             {
+0328                 // Preserve the fractional credit of the arrival tick. A cap of N
+0329                 // discards that remainder and rounds each publisher's offered
+0330                 // period up to a whole tick even when no ACK is outstanding.
+0331                 tokens = Math.Min(tokens, publishers.Count + tokensPerTick);
+0332                 for (var scanned = 0; scanned < publishers.Count && tokens >= 1; scanned++)
+0333                 {
+0334                     var index = publisherIndex++ % publishers.Count;
+0335                     var publisher = publishers[index];
+0336                     if (options.PublishQos != MqttQos.AtMostOnce && publisher.HasPendingPublish) continue;
+0337                     publisher.Publish("telemetry/data", trace?.CreateAndRecord(index, measurement) ?? payload, options.PublishQos);
+0338                     tokens -= 1;
+0339                 }
+0340                 graph.RefreshWithCounters(options.Parallel, options.RefreshStrategy);
+0341                 trace?.RecordConnectionChanges();
+0342                 continue;
+0343             }
+0344             var publishCount = (long)Math.Floor(tokens + 1e-12);
+0345             tokens -= publishCount;
+0346             for (long message = 0; message < publishCount; message++)
+0347             {
+0348                 var index = publisherIndex++ % publishers.Count;
+0349                 var publisher = publishers[index];
+0350                 publisher.Publish("telemetry/data", trace?.CreateAndRecord(index, measurement) ?? payload, options.PublishQos);
+0351             }
+0352             graph.RefreshWithCounters(options.Parallel, options.RefreshStrategy);
+0353             trace?.RecordConnectionChanges();
+0354         }
+0355     }
+0356 
+0357     private static bool RefreshUntil(
+0358         INetworkSimulator graph, Func<bool> condition, long timeoutTicks,
+0359         MqttRelayExperimentOptions options, Tracing.PublicationCohortTrace? trace = null)
+0360     {
+0361         for (long tick = 0; tick <= timeoutTicks; tick++)
+0362         {
+0363             trace?.RecordConnectionChanges();
+0364             if (condition()) return true;
+0365             if (tick < timeoutTicks)
+0366                 graph.RefreshWithCounters(options.Parallel, options.RefreshStrategy);
+0367         }
+0368         return false;
+0369     }
+0370 
+0371     private IReadOnlyDictionary<string, BrokerMetricsSnapshot> NormalizeSnapshots(
+0372         INetworkSimulator graph, long measurementStart, long measurementEnd)
+0373     {
+0374         var seconds = Math.Max(0, measurementEnd - measurementStart) * _ticks.TickPeriod.TotalSeconds;
+0375         return graph.Servers.Values.OfType<IMqttBroker>().ToDictionary(broker => broker.Name, broker =>
+0376         {
+0377             var source = broker.GetMetrics();
+0378             var byQos = source.ByQos.ToDictionary(item => item.Key, item =>
+0379             {
+0380                 var value = item.Value;
+0381                 return value with { Rps = seconds > 0 ? value.Completed / seconds : 0 };
+0382             });
+0383             return new BrokerMetricsSnapshot(measurementStart, measurementEnd,
+0384                 BrokerMetricsSnapshot.ReadOnly(byQos));
+0385         });
+0386     }
+0387 
+0388     private ExperimentMetricSummary AggregateSnapshots(
+0389         IReadOnlyDictionary<string, BrokerMetricsSnapshot> snapshots)
+0390     {
+0391         var metrics = snapshots.Values.SelectMany(snapshot => snapshot.ByQos.Values).ToArray();
+0392         if (metrics.Length == 0) return EmptyMetrics();
+0393         var attempted = metrics.Sum(metric => metric.Attempted);
+0394         var expected = metrics.Sum(metric => metric.ExpectedDeliveries);
+0395         var histogram = metrics.SelectMany(metric => metric.LatencyHistogramTicks)
+0396             .GroupBy(item => item.Key).OrderBy(group => group.Key)
+0397             .Select(group => (Ticks: group.Key, Count: group.Sum(item => item.Value))).ToArray();
+0398         var rank = (long)Math.Ceiling(histogram.Sum(item => item.Count) * 0.99);
+0399         long cumulative = 0;
+0400         long? p99Ticks = null;
+0401         foreach (var item in histogram)
+0402         {
+0403             cumulative += item.Count;
+0404             if (cumulative < rank) continue;
+0405             p99Ticks = item.Ticks;
+0406             break;
+0407         }
+0408         return new ExperimentMetricSummary(attempted,
+0409             metrics.Sum(metric => metric.Admitted), metrics.Sum(metric => metric.Completed),
+0410             expected, metrics.Sum(metric => metric.Delivered),
+0411             metrics.Sum(metric => metric.RateRejected), metrics.Sum(metric => metric.PublishFailed),
+0412             metrics.Sum(metric => metric.DeliveryDropped), metrics.Sum(metric => metric.Rps),
+0413             attempted == 0 ? 0 : metrics.Sum(metric => metric.RateRejected + metric.PublishFailed) / (double)attempted,
+0414             expected == 0 ? 0 : 1 - metrics.Sum(metric => metric.Delivered) / (double)expected,
+0415             p99Ticks * _ticks.TickPeriod.TotalMilliseconds);
+0416     }
+0417 
+0418     private static ExperimentMetricSummary? BuildReference(
+0419         MqttRelayExperimentOptions options, IReadOnlyList<MqttBrokerProfile?> profiles)
+0420     {
+0421         if (profiles.All(profile => profile == null)) return null;
+0422         var samples = profiles.Select(profile => profile!.For(
+0423             options.PayloadBytes, options.PublishQos, options.ResolveProfileClientCount())).ToArray();
+0424         double Throughput(CalibratedMqttQosSample sample) => sample.TargetCompletedRps ?? sample.CapacityRps;
+0425         var capacity = samples.Sum(Throughput);
+0426         var attempted = samples.Sum(sample => sample.AttemptedRps ?? sample.CapacityRps);
+0427         double? p99 = options.PublishQos == MqttQos.AtMostOnce ? null :
+0428             capacity == 0 ? null : samples.Sum(sample =>
+0429                 (sample.ObservedLatencyQuantiles ?? sample.ProcessingLatencyQuantiles)!.P99Ms * Throughput(sample)) / capacity;
+0430         return new ExperimentMetricSummary(0, 0, 0, 0, 0, 0, 0, 0, capacity,
+0431             samples.Sum(sample => (sample.TargetPublishFailureRate ?? sample.PublishFailureRate) *
+0432                 (sample.AttemptedRps ?? sample.CapacityRps)) / attempted,
+0433             capacity == 0 ? 0 : samples.Sum(sample => sample.ConditionalDeliveryLossRate * Throughput(sample)) / capacity,
+0434             p99);
+0435     }
+0436 
+0437     private static IReadOnlyList<AcceptanceCriterionResult> Evaluate(
+0438         MqttRelayExperimentOptions options, ExperimentMetricSummary? reference,
+0439         ExperimentMetricSummary simulated)
+0440     {
+0441         if (reference == null)
+0442             return new[]
+0443             {
+0444                 new AcceptanceCriterionResult("rps", null, simulated.CompletedRps, null, 0.15, "notApplicable"),
+0445                 new AcceptanceCriterionResult("publishFailureRate", null, simulated.PublishFailureRate, null, 0.05, "notApplicable"),
+0446                 new AcceptanceCriterionResult("deliveryLossRate", null, simulated.DeliveryLossRate, null, 0.05, "notApplicable"),
+0447                 new AcceptanceCriterionResult("latencyP99Ms", null, simulated.LatencyP99Ms, null,
+0448                     options.PublishQos == MqttQos.AtMostOnce ? null : 0.20, "notApplicable")
+0449             };
+0450 
+0451         AcceptanceCriterionResult Relative(string name, double? expected, double? actual, double limit)
+0452         {
+0453             if (expected is null || actual is null || expected == 0)
+0454                 return new AcceptanceCriterionResult(name, expected, actual, null, limit, "notApplicable");
+0455             var error = Math.Abs(actual.Value - expected.Value) / expected.Value;
+0456             return new AcceptanceCriterionResult(name, expected, actual, error, limit,
+0457                 error <= limit ? "passed" : "failed");
+0458         }
+0459         AcceptanceCriterionResult Absolute(string name, double expected, double actual, double limit)
+0460         {
+0461             var error = Math.Abs(actual - expected);
+0462             return new AcceptanceCriterionResult(name, expected, actual, error, limit,
+0463                 error <= limit ? "passed" : "failed");
+0464         }
+0465         return new[]
+0466         {
+0467             Relative("rps", reference.CompletedRps, simulated.CompletedRps, 0.15),
+0468             Absolute("publishFailureRate", reference.PublishFailureRate, simulated.PublishFailureRate, 0.05),
+0469             Absolute("deliveryLossRate", reference.DeliveryLossRate, simulated.DeliveryLossRate, 0.05),
+0470             options.PublishQos == MqttQos.AtMostOnce
+0471                 ? new AcceptanceCriterionResult("latencyP99Ms", null, simulated.LatencyP99Ms,
+0472                     null, null, "notApplicable")
+0473                 : Relative("latencyP99Ms", reference.LatencyP99Ms, simulated.LatencyP99Ms, 0.20)
+0474         };
+0475     }
+0476 
+0477     private void Export(
+0478         string directory, string runId, MqttRelayExperimentOptions options,
+0479         ExperimentProvenance provenance, IReadOnlyList<string?> assignedTypes,
+0480         IReadOnlyList<ExperimentPhaseBoundary> phases, INetworkSimulator? graph,
+0481         IReadOnlyDictionary<string, BrokerMetricsSnapshot> snapshots,
+0482         MqttRelayExperimentSummary summary, IReadOnlyDictionary<string, long> receiverBaselines)
+0483     {
+0484         var manifest = new ExperimentManifest(runId, DateTimeOffset.UtcNow, options,
+0485             assignedTypes, provenance, RuntimeInformation.OSDescription,
+0486             RuntimeInformation.FrameworkDescription, Environment.ProcessorCount,
+0487             _ticks.TickPeriod, phases, summary.MeasurementStartTick, summary.MeasurementEndTick,
+0488             graph?.Servers.Values.OfType<IMqttBroker>().Select(broker => new BrokerClientCount(
+0489                 broker.Name, broker.GetServerClients().Count(), options.ResolveProfileClientCount())).ToArray()
+0490                 ?? Array.Empty<BrokerClientCount>());
+0491         WriteJsonNew(Path.Combine(directory, "experiment-manifest.json"), manifest);
+0492         WriteJsonNew(Path.Combine(directory, "summary.json"), summary);
+0493         WriteJsonNew(Path.Combine(directory, "counters.json"), new
+0494         {
+0495             brokers = snapshots,
+0496             receivers = graph?.Applications.Values.OfType<MqttReceiver>()
+0497                 .ToDictionary(receiver => receiver.Name, receiver => receiver.Received - receiverBaselines.GetValueOrDefault(receiver.Name)),
+0498             receiverScope = "receipts after measurement reset through drain; warmup in-flight arrivals can cross the boundary",
+0499             graph = graph?.Counters.Dump() ?? string.Empty
+0500         });
+0501         WriteJsonNew(Path.Combine(directory, "latency-histogram.json"),
+0502             snapshots.ToDictionary(broker => broker.Key,
+0503                 broker => broker.Value.ByQos.ToDictionary(qos => qos.Key,
+0504                     qos => qos.Value.LatencyHistogramTicks)));
+0505         WriteTextNew(Path.Combine(directory, "topology.graphml"),
+0506             graph == null ? string.Empty : new SimpleGraphMlGenerator().SerializeNetworkGraph(graph));
+0507         WriteTextNew(Path.Combine(directory, "topology.puml"),
+0508             graph == null ? "@startuml\n@enduml\n" : new PlantUmlGraphGenerator().Generate(graph));
+0509     }
+0510 
+0511     private void WriteJsonNew<T>(string path, T value)
+0512     {
+0513         using var stream = new FileStream(path, FileMode.CreateNew, FileAccess.Write, FileShare.Read);
+0514         JsonSerializer.Serialize(stream, value, _json);
+0515     }
+0516 
+0517     private static void WriteTextNew(string path, string value)
+0518     {
+0519         using var stream = new FileStream(path, FileMode.CreateNew, FileAccess.Write, FileShare.Read);
+0520         using var writer = new StreamWriter(stream);
+0521         writer.Write(value);
+0522     }
+0523 
+0524     private static byte[] CreatePayload(int size, int seed)
+0525     {
+0526         var result = new byte[size];
+0527         Span<byte> input = stackalloc byte[8];
+0528         for (var index = 0; index < result.Length; index++)
+0529         {
+0530             BinaryPrimitives.WriteInt32BigEndian(input, seed);
+0531             BinaryPrimitives.WriteInt32BigEndian(input[4..], index);
+0532             result[index] = SHA256.HashData(input)[0];
+0533         }
+0534         return result;
+0535     }
+0536 
+0537     private static ExperimentMetricSummary EmptyMetrics() =>
+0538         new(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, null);
+0539 
+0540     private static string StatusPhase(ExperimentRunStatus status) => status switch
+0541     {
+0542         ExperimentRunStatus.ConnectionFailed => "connect",
+0543         ExperimentRunStatus.SubscriptionFailed => "subscribe",
+0544         ExperimentRunStatus.DrainTimedOut => "drain",
+0545         _ => "run"
+0546     };
+0547 
+0548     private sealed class ExperimentPhaseException : Exception
+0549     {
+0550         public ExperimentPhaseException(ExperimentRunStatus status, string message) : base(message) =>
+0551             Status = status;
+0552         public ExperimentRunStatus Status { get; }
+0553     }
+0554 
+0555     private sealed record ExperimentPhaseBoundary(string Name, long StartTick, long EndTick, string Status);
+0556     private sealed record BrokerClientCount(string Broker, int ConnectedClients, int ProfileClients);
+0557 
+0558     private sealed record ExperimentManifest(
+0559         string RunId,
+0560         DateTimeOffset CreatedAtUtc,
+0561         MqttRelayExperimentOptions Options,
+0562         IReadOnlyList<string?> AssignedBrokerTypes,
+0563         ExperimentProvenance Provenance,
+0564         string OperatingSystem,
+0565         string Runtime,
+0566         int ProcessorCount,
+0567         TimeSpan TickPeriod,
+0568         IReadOnlyList<ExperimentPhaseBoundary> Phases,
+0569         long MeasurementStartTick,
+0570         long MeasurementEndTick,
+0571         IReadOnlyList<BrokerClientCount> BrokerClientCounts);
+0572 }

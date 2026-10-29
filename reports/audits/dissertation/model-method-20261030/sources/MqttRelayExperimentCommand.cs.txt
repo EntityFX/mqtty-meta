@@ -1,0 +1,195 @@
+0001 using System.Diagnostics;
+0002 using System.Security.Cryptography;
+0003 using System.Text.Json;
+0004 using System.Text.Json.Serialization;
+0005 using System.Text;
+0006 using System.Globalization;
+0007 using EntityFX.MqttY.Contracts.Options;
+0008 using EntityFX.MqttY.Plugin.Mqtt.BrokerProfile;
+0009 using EntityFX.MqttY.Plugin.Mqtt.Experiments;
+0010 
+0011 namespace EntityFX.MqttY.MqttRelay.App;
+0012 
+0013 internal static class MqttRelayExperimentCommand
+0014 {
+0015     private static readonly JsonSerializerOptions JsonOptions = new()
+0016     {
+0017         PropertyNameCaseInsensitive = true,
+0018         Converters = { new JsonStringEnumConverter(JsonNamingPolicy.CamelCase) }
+0019     };
+0020 
+0021     public static int Run(string[] args)
+0022     {
+0023         try
+0024         {
+0025             var arguments = ParseArguments(args);
+0026             var configPath = Path.GetFullPath(Required(arguments, "config"));
+0027             var outputPath = Path.GetFullPath(Required(arguments, "output"));
+0028             var configuration = JsonSerializer.Deserialize<MqttRelayExperimentRunConfiguration>(
+0029                     File.ReadAllText(configPath), JsonOptions)
+0030                 ?? throw new InvalidDataException("Experiment configuration is empty.");
+0031             configuration.Validate();
+0032 
+0033             var profiles = new BrokerProfileSet(configuration.ProfilePaths());
+0034             var mqttYCommit = ResolveCleanCommit(configuration.MqttYRepository);
+0035             var provenance = new ExperimentProvenance(
+0036                 mqttYCommit,
+0037                 ResolveCleanCommit(configuration.MqttBenchmarkRepository),
+0038                 profiles.Sha256.ToUpperInvariant()) { BrokerProfiles = profiles.Artifacts };
+0039             ExperimentMetricSummary? reference = null;
+0040             if (!string.IsNullOrWhiteSpace(configuration.ReferenceObservationsPath))
+0041             {
+0042                 if (configuration.Experiment.TopologyMode != ExperimentTopologyMode.BrokerFidelity || configuration.Experiment.Brokers != 1)
+0043                     throw new InvalidDataException("Independent observations require one BrokerFidelity broker.");
+0044                 var bytes = File.ReadAllBytes(Path.GetFullPath(configuration.ReferenceObservationsPath));
+0045                 var broker = configuration.Experiment.ResolveBrokerTypes().Single()!;
+0046                 IndependentObservationReference.EnsureIndependent(bytes, profiles.Artifacts, configuration.ReferenceCoverageProtocol);
+0047                 reference = IndependentObservationReference.Read(bytes, broker, configuration.Experiment, mqttYCommit, configuration.ReferenceCoverageProtocol);
+0048                 provenance = provenance with { ReferenceObservationsSha256 = Convert.ToHexString(SHA256.HashData(bytes)).ToLowerInvariant() };
+0049             }
+0050             var result = new MqttRelayExperimentRunner(configuration.Ticks, configuration.Network, profiles)
+0051                 .Run(configuration.Experiment, outputPath, provenance, reference);
+0052 
+0053             Console.WriteLine($"Run directory: {result.RunDirectory}");
+0054             Console.WriteLine($"Status: {result.Summary.Status}");
+0055             if (result.Summary.Error != null) Console.Error.WriteLine(result.Summary.Error);
+0056             if (result.Summary.Status != ExperimentRunStatus.Completed) return 2;
+0057             return result.Summary.AcceptanceCriteria.Any(item => item.Status == "failed") ? 3 : 0;
+0058         }
+0059         catch (Exception exception)
+0060         {
+0061             Console.Error.WriteLine(exception.Message);
+0062             PrintUsage();
+0063             return 1;
+0064         }
+0065     }
+0066 
+0067     public static int RunCalibration(string[] args)
+0068     {
+0069         try
+0070         {
+0071             var arguments = ParseArguments(args);
+0072             if (arguments.Keys.Any(key => key is not ("observations" or "output" or "mqtty-repository" or "rate-rejection-rate" or "broker" or "coverage-protocol" or "latency-histograms")))
+0073                 throw new ArgumentException("Unknown calibration argument.");
+0074             var inputPath = Path.GetFullPath(Required(arguments, "observations"));
+0075             var outputPath = Path.GetFullPath(Required(arguments, "output"));
+0076             if (string.Equals(inputPath, outputPath, StringComparison.OrdinalIgnoreCase))
+0077                 throw new ArgumentException("Observations and calibration must be separate files.");
+0078             var rate = arguments.TryGetValue("rate-rejection-rate", out var text)
+0079                 ? double.Parse(text, CultureInfo.InvariantCulture) : 0;
+0080             var bytes = arguments.TryGetValue("latency-histograms", out var histogramPath)
+0081                 ? BrokerCalibrationEmpirical.Calibrate(File.ReadAllBytes(inputPath), File.ReadAllBytes(histogramPath!),
+0082                     ResolveCleanCommit(Required(arguments, "mqtty-repository")), rate, Required(arguments, "broker"),
+0083                     arguments.TryGetValue("coverage-protocol", out var empiricalCoverage) ? empiricalCoverage : null)
+0084                 : BrokerCalibrationV3.Calibrate(File.ReadAllBytes(inputPath),
+0085                 ResolveCleanCommit(Required(arguments, "mqtty-repository")), rate,
+0086                 arguments.TryGetValue("broker", out var broker) ? broker : null,
+0087                 arguments.TryGetValue("coverage-protocol", out var coverage) ? coverage : null);
+0088             Directory.CreateDirectory(Path.GetDirectoryName(outputPath)!);
+0089             using var stream = new FileStream(outputPath, FileMode.CreateNew, FileAccess.Write, FileShare.None);
+0090             stream.Write(bytes);
+0091             stream.Flush(true);
+0092             Console.WriteLine($"Calibration: {outputPath}");
+0093             return 0;
+0094         }
+0095         catch (Exception error)
+0096         {
+0097             Console.Error.WriteLine(error.Message);
+0098             Console.Error.WriteLine("Usage: EntityFX.MqttY.MqttRelay.App calibrate --observations <broker-observations.v3.json> --output <broker-calibration.json> --mqtty-repository <clean-repository> [--rate-rejection-rate <0..1>] [--broker <name>] [--coverage-protocol compact-v1|single-point-v1] [--latency-histograms <sealed-raw-histograms.json>]");
+0099             return 1;
+0100         }
+0101     }
+0102 
+0103     private static Dictionary<string, string> ParseArguments(IReadOnlyList<string> args)
+0104     {
+0105         var result = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+0106         for (var index = 0; index < args.Count; index += 2)
+0107         {
+0108             if (index + 1 >= args.Count || !args[index].StartsWith("--", StringComparison.Ordinal))
+0109                 throw new ArgumentException("Arguments must be supplied as --name value pairs.");
+0110             var name = args[index][2..];
+0111             if (!result.TryAdd(name, args[index + 1]))
+0112                 throw new ArgumentException($"Duplicate argument --{name}.");
+0113         }
+0114         return result;
+0115     }
+0116 
+0117     private static string Required(IReadOnlyDictionary<string, string> arguments, string name) =>
+0118         arguments.TryGetValue(name, out var value) && !string.IsNullOrWhiteSpace(value)
+0119             ? value
+0120             : throw new ArgumentException($"Missing required argument --{name}.");
+0121 
+0122     private static string ResolveCleanCommit(string repository)
+0123     {
+0124         var fullPath = Path.GetFullPath(repository);
+0125         if (!Directory.Exists(fullPath))
+0126             throw new DirectoryNotFoundException($"Git repository does not exist: {fullPath}");
+0127         var dirty = RunGit(fullPath, "status", "--porcelain", "--untracked-files=no");
+0128         if (!string.IsNullOrWhiteSpace(dirty))
+0129             throw new InvalidOperationException(
+0130                 $"Git repository has tracked changes and cannot produce a reproducible manifest: {fullPath}");
+0131         return RunGit(fullPath, "rev-parse", "HEAD").Trim();
+0132     }
+0133 
+0134     private static string RunGit(string repository, params string[] arguments)
+0135     {
+0136         var startInfo = new ProcessStartInfo("git")
+0137         {
+0138             RedirectStandardOutput = true,
+0139             RedirectStandardError = true,
+0140             UseShellExecute = false,
+0141             CreateNoWindow = true
+0142         };
+0143         startInfo.ArgumentList.Add("-C");
+0144         startInfo.ArgumentList.Add(repository);
+0145         foreach (var argument in arguments) startInfo.ArgumentList.Add(argument);
+0146         using var process = Process.Start(startInfo)
+0147             ?? throw new InvalidOperationException("Unable to start git.");
+0148         var output = process.StandardOutput.ReadToEnd();
+0149         var error = process.StandardError.ReadToEnd();
+0150         process.WaitForExit();
+0151         if (process.ExitCode != 0)
+0152             throw new InvalidOperationException($"git failed for {repository}: {error.Trim()}");
+0153         return output;
+0154     }
+0155 
+0156     private static void PrintUsage() => Console.Error.WriteLine(
+0157         "Usage: EntityFX.MqttY.MqttRelay.App experiment --config <json> --output <directory>");
+0158 }
+0159 
+0160 internal sealed class MqttRelayExperimentRunConfiguration
+0161 {
+0162     public MqttRelayExperimentOptions Experiment { get; set; } = new();
+0163     public TicksOptions Ticks { get; set; } = new();
+0164     public NetworkOptions Network { get; set; } = new();
+0165     public string MqttYRepository { get; set; } = ".";
+0166     public string MqttBenchmarkRepository { get; set; } = string.Empty;
+0167     public string BrokerProfilePath { get; set; } = string.Empty;
+0168     public string[] BrokerProfilePaths { get; set; } = Array.Empty<string>();
+0169     public string? ReferenceObservationsPath { get; set; }
+0170     public string? ReferenceCoverageProtocol { get; set; }
+0171 
+0172     public string[] ProfilePaths()
+0173     {
+0174         if (!string.IsNullOrWhiteSpace(BrokerProfilePath) == (BrokerProfilePaths.Length > 0))
+0175             throw new InvalidDataException("Specify exactly one of brokerProfilePath and brokerProfilePaths.");
+0176         return string.IsNullOrWhiteSpace(BrokerProfilePath) ? BrokerProfilePaths : new[] { BrokerProfilePath };
+0177     }
+0178 
+0179     public void Validate()
+0180     {
+0181         if (ReferenceCoverageProtocol != null &&
+0182             (ReferenceCoverageProtocol is not ("compact-v1" or "single-point-v1") || string.IsNullOrWhiteSpace(ReferenceObservationsPath)))
+0183             throw new InvalidDataException("Reference coverage requires compact-v1 or single-point-v1 and an observations path.");
+0184         Experiment.Validate();
+0185         Ticks.Validate();
+0186         Network.Validate();
+0187         if (string.IsNullOrWhiteSpace(MqttYRepository) ||
+0188             string.IsNullOrWhiteSpace(MqttBenchmarkRepository))
+0189             throw new InvalidDataException(
+0190                 "MqttYRepository, MqttBenchmarkRepository and BrokerProfilePath are required.");
+0191         foreach (var path in ProfilePaths())
+0192             if (string.IsNullOrWhiteSpace(path) || !File.Exists(Path.GetFullPath(path)))
+0193                 throw new FileNotFoundException("Broker profile was not found.", path);
+0194     }
+0195 }

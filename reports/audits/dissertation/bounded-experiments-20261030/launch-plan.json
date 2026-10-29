@@ -1,0 +1,44 @@
+{
+  "programIdentity": "queue-causality-pilot-20261030-v1",
+  "inputRoot": "/run/media/entityfx/hd250/mqtty-evidence/bounded-experiments-20261030-inputs",
+  "source": "/run/media/entityfx/hd250/mqtty-evidence/network-full-3h-v1",
+  "output": "/run/media/entityfx/hd250/mqtty-evidence/queue-causality-pilot-20261030",
+  "unit": "mqtty-queue-causality-20261030.service",
+  "properties": {
+    "RuntimeMaxSec": 595,
+    "TimeoutStopSec": 5,
+    "MemoryMax": "6G",
+    "MemorySwapMax": 0,
+    "CPUQuota": "200%",
+    "KillMode": "control-group"
+  },
+  "globalBudgetSecondsIncludingKillGrace": 600,
+  "modelTimeoutSeconds": 240,
+  "modelRssBytes": 2147483648,
+  "workers": 2,
+  "automaticRetry": false,
+  "resume": false,
+  "automaticAccelerationBenchmark": false,
+  "rootAdmissionRequired": [
+    "No active research jobs and no queued/running Web job",
+    "Dedicated mounted evidence disk, reserve10GiB",
+    "At least6GiB available RAM",
+    "Frozen CLI validates both configs",
+    "Program seal and all281source files pass"
+  ],
+  "localCheck": [
+    "python3",
+    "-B",
+    "run_queue_pilot.py",
+    "--check-inputs"
+  ],
+  "runArgv": [
+    "/usr/bin/python3",
+    "-B",
+    "/run/media/entityfx/hd250/mqtty-evidence/bounded-experiments-20261030-inputs/run_queue_pilot.py",
+    "--source",
+    "/run/media/entityfx/hd250/mqtty-evidence/network-full-3h-v1",
+    "--output",
+    "/run/media/entityfx/hd250/mqtty-evidence/queue-causality-pilot-20261030"
+  ]
+}

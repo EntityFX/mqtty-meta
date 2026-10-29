@@ -1,0 +1,24 @@
+{
+  "programIdentity": "acceleration-campaign-feasibility-20261030-v1",
+  "status": "blockedMissingBoundedCpuAwareLauncher",
+  "launched": false,
+  "comparison": "Same two independent q1024 jobs, one frozen runtime; workers1 versus workers2",
+  "fixture": "configs/q1024.json",
+  "fixtureSha256": "f84cc6ba86e6ead5c423ca21d5862c30e652f9a48e352245eec9740337f58ce5",
+  "jobIds": [
+    "copy-1",
+    "copy-2"
+  ],
+  "changesScientificInput": false,
+  "claimedGraphParallelSpeedup": false,
+  "claimedHistoricalReproduction": false,
+  "sharedDiagnosticBudgetSeconds": 600,
+  "budgetReservedByQueuePilot": true,
+  "automaticLaunchAfterQueue": false,
+  "missing": [
+    "CPU accounting",
+    "matched schedules with primary completion boundary",
+    "whole-budget no-reset orchestration",
+    "per-job scientific equality and aggregated RSS"
+  ]
+}
