@@ -1,0 +1,20 @@
+{
+  "programIdentity": "acceleration-aa-20261030-v1",
+  "files": {
+    "run_acceleration_pilot.py": "086ed09774e972b6c801bf7e55e639e580a7d533de74296d36a7b909c9a087eb",
+    "test_acceleration_pilot.py": "10a65155e89bf95bd18e624a09b5d3f06ee318d5f3729208cab4eceeb8610ab9",
+    "fixture.json": "f84cc6ba86e6ead5c423ca21d5862c30e652f9a48e352245eec9740337f58ce5",
+    "plan.md": "eb9cfc4ac9bf467725e4f9c091a9dd9242a4b3ad0489946dc52743822869f31b",
+    "original-protocol.md": "8d8dfa909e28812312df2fa286a270d204f96cb828047cb0426685a5b7de01ff"
+  },
+  "schedule": [
+    "A1: workers1, two jobs",
+    "A2: workers1, same two jobs"
+  ],
+  "hardWallSeconds": 600,
+  "cpuAffinity": [
+    4,
+    6
+  ],
+  "retryAllowed": false
+}

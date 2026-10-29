@@ -1958,5 +1958,15 @@
     "report": "reports/analysis/Research-parallel-block-20261030.md",
     "preparedCommit": "a084c51",
     "linuxRemainingQueue": "reports/status/Linux-work-queue.md"
+  },
+  "accelerationAa20261030": {
+    "status": "readyToLaunch",
+    "stage": "A/A measurement calibration, not speedup",
+    "linuxTestsPassed": 7,
+    "totalModels": 4,
+    "hardWallSeconds": 600,
+    "sourceSeriesUnchanged": true,
+    "automaticNextExperiment": false,
+    "plan": "docs/plans/Acceleration-aa-20261030.md"
   }
 }

@@ -10,7 +10,7 @@
 
 **Spec:** [параллельный блок](../plans/Research-parallel-block-20261030.md), [аудит исторических доказательств](../../reports/audits/dissertation/acceleration-evidence-v1/Review.md), [evidence.json](../../reports/audits/dissertation/acceleration-evidence-v1/evidence.json).
 
-**Состояние:** программа подготовки, benchmark не запускался. Готового bounded CPU-aware launcher нет; шаг33 не закрыт.
+**Состояние на новом этапе:** [отдельный A/A-блок](../plans/Acceleration-aa-20261030.md) разрешён пользователем. CPU-aware supervisor реализован; 7/7 проверок прошли на Linux, включая настоящее измерение CPU и остановку дерева по deadline. Сначала запускаются два одинаковых последовательных набора, без сравнения workers1/2. Исторический текст ниже описывает исходный пробел; его закрытие измерителем не означает измеренного ускорения. Шаг33 не закрыт.
 
 ## Global Constraints
 

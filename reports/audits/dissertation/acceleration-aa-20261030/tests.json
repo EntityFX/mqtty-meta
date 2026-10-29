@@ -1,0 +1,7 @@
+{
+  "returnCode": 0,
+  "stdout": "",
+  "stderr": "test_aa_spread_gate (test_acceleration_pilot.ContractTests.test_aa_spread_gate) ... ok\ntest_changed_input_rejected (test_acceleration_pilot.ContractTests.test_changed_input_rejected) ... ok\ntest_existing_output_not_reused (test_acceleration_pilot.ContractTests.test_existing_output_not_reused) ... ok\ntest_path_escape_rejected (test_acceleration_pilot.ContractTests.test_path_escape_rejected) ... ok\ntest_scientific_mismatch_rejected (test_acceleration_pilot.ContractTests.test_scientific_mismatch_rejected) ... ok\ntest_cpu_and_memory_measured_and_nonzero_preserved (test_acceleration_pilot.LinuxProcessTests.test_cpu_and_memory_measured_and_nonzero_preserved) ... ok\ntest_deadline_kills_and_reaps_grandchild (test_acceleration_pilot.LinuxProcessTests.test_deadline_kills_and_reaps_grandchild) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.874s\n\nOK\n",
+  "inputSealSha256": "02864c31b5217d5be58965f19b7703359ef935f85ec5a66d3c2486e680fcfc2c",
+  "localPortableTests": "5 passed, 2 Linux-only skipped; initial red was missing implementation"
+}
