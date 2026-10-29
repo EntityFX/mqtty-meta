@@ -1,0 +1,52 @@
+{
+  "status": "verified",
+  "metrics": {
+    "attempted": 1714,
+    "completed": 1714,
+    "failed": 0,
+    "pending": 0,
+    "measurementSeconds": 0.10000000000000002,
+    "attemptedRps": 17139.999999999996,
+    "completedInWindow": 1698,
+    "completedRpsInWindow": 16979.999999999996,
+    "completedDuringDrain": 16,
+    "completedCohortPerSubmissionSecond": 17139.999999999996,
+    "uniqueDeliveries": 1714,
+    "completedIdsDelivered": 1714,
+    "deliveredAfterFailedPublish": 0,
+    "firstDeliveriesDuringDrain": 16,
+    "duplicates": 0,
+    "outsideCohortDeliveryEvents": 188,
+    "publishFailureRate": 0.0,
+    "deliveryLossRate": 0.0,
+    "p99PublishMs": 2.31,
+    "latencyStatus": "observed",
+    "outcomesSettled": true
+  },
+  "filesVerified": 37,
+  "profilesValidated": 4,
+  "missingPointCasesRejected": 4,
+  "byteEqualScientificFiles": [
+    "summary.json",
+    "latency-histogram.json",
+    "publishes.ndjson",
+    "deliveries.ndjson",
+    "subscriptions.ndjson",
+    "phases.json"
+  ],
+  "counterFieldsEqual": [
+    "brokers",
+    "receivers",
+    "receiverScope"
+  ],
+  "subscriberContinuouslyConnected": true,
+  "ticks": 21014,
+  "steps": 64966,
+  "archiveSha256": "5440731c9a6938d0a6b60f608627e2b560d8dcc1874dc6da5c0fb8345c391b79",
+  "adapterTestsPassed": 3,
+  "fullBrowserFlowVerified": false,
+  "newNativeReferenceAttached": false,
+  "newNativeMeasurements": 0,
+  "accuracyBeyondHistoricalSeriesEstablished": false,
+  "originalDissertationModified": false
+}

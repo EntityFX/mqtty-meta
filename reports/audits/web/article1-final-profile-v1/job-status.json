@@ -1,0 +1,20 @@
+{
+  "id": "da613d0b932d42739fb62e8b1fa5e52e",
+  "topologyId": null,
+  "name": "Final profile API check Aedes",
+  "tickMilliseconds": 0.01,
+  "engine": "twinValidation",
+  "state": "Completed",
+  "totalTicks": 21014,
+  "step": 64966,
+  "errors": 0,
+  "startedAt": "2026-10-29T18:18:22.6739319+00:00",
+  "finishedAt": "2026-10-29T18:18:25.0199979+00:00",
+  "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/da613d0b932d42739fb62e8b1fa5e52e",
+  "error": null,
+  "processId": null,
+  "processWorkingSetBytes": 134131712,
+  "processCpuSeconds": 2.08,
+  "lastObservedAt": "2026-10-29T18:18:24.759605+00:00",
+  "phase": "drain"
+}

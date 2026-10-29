@@ -1,0 +1,22 @@
+{
+  "status": "verified",
+  "jobId": "da613d0b932d42739fb62e8b1fa5e52e",
+  "totalTicks": 21014,
+  "totalSteps": 64966,
+  "profilesValidated": 4,
+  "missingPointsRejected": 4,
+  "byteEqualScientificFiles": 6,
+  "counterFieldsEqual": [
+    "brokers",
+    "receivers",
+    "receiverScope"
+  ],
+  "runtimeFilesRechecked": 54,
+  "elapsedSeconds": 6.123902522000208,
+  "directDirectory": "/run/media/entityfx/hd250/mqtty-evidence/web-final-profile-check-v1-20261029/direct/20261029T181825663Z-22ee4b00fa454988a4a588c5f7975df6",
+  "historicalInputsChanged": false,
+  "newNativeMeasurements": 0,
+  "fullBrowserFlowVerified": false,
+  "nativeReferenceScope": "No new independent native reference attached; API reports calibration only",
+  "newCalibrationAccuracyClaim": false
+}

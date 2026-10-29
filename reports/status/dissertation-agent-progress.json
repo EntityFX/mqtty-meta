@@ -29,7 +29,7 @@
     "29"
   ],
   "verifiedTechnicalWeightPersonDays": 25.0,
-  "localPercent": 80.0,
+  "localPercent": 80,
   "globalPercent": 53.2,
   "basis": "Plan effort weights; not scientific confidence or elapsed labour",
   "steps": {
@@ -1530,7 +1530,7 @@
     "verification": "reports/audits/dissertation/article-2-evidence-package-v2/verification.json",
     "revisionChecks": "reports/audits/dissertation/articles-offline-revision-v1/verification.json"
   },
-  "nextAction": "Continue research, code, analysis and separate materials on user request. Author integrates results into the primary dissertation; agent must not edit diss or integrate drafts automatically.",
+  "nextAction": "Prepare independent native-reference binding in Web and bounded browser acceptance. Queue-overload causality and acceleration need separate protocols; no automatic campaign. Author alone edits primary dissertation.",
   "article1BoundedReview": {
     "status": "selfReviewCompletedIndependentReviewUnavailable",
     "document": "reports/analysis/Article-1-bounded-review.md",
@@ -1659,7 +1659,7 @@
   },
   "nextDeliveryBlock": {
     "plan": "docs/dissertation/next-delivery-block-plan.md",
-    "status": "plannedWithTopologyCatalogCompleted",
+    "status": "technicalManuscriptsAndDraftsPrepared",
     "currentGlobalPercent": 53.2,
     "conditionalMilestones": [
       {
@@ -1672,7 +1672,7 @@
       }
     ],
     "milestonesCredited": true,
-    "nextIndependentWork": "Update article 2 using full accepted data, then expert review follow-up. No new run without a separate protocol.",
+    "nextIndependentWork": "Bind saved independent native reference in Web and verify bounded browser flow; overload causality remains open after uninformative short pair.",
     "topologyCatalog": "docs/topologies/README.md",
     "catalogTemplates": 7,
     "catalogStudies": 5,
@@ -1764,14 +1764,14 @@
     "publishedCommit": "d1923e699f5456f4157fb1b6de8a016f3b5f5939"
   },
   "queueCapacityShortV2": {
-    "status": "launchedLastObservedRunning",
+    "status": "acceptedWithoutBaselineOverflow",
     "service": "mqtty-queue-short-v2.service",
     "pid": 6823,
     "observedAtMsk": "2026-10-29T08:48:19.454126+03:00",
     "deadlineMsk": "2026-10-29T08:57:49.744575+03:00",
     "root": "/run/media/entityfx/hd250/mqtty-evidence/queue-capacity-short-v2-20261029",
     "modelTimeoutSeconds": 240,
-    "sharedWallSeconds": 600,
+    "sharedWallSeconds": 94.97972917556763,
     "commonWindows": {
       "warmup": 0.25,
       "submission": 2,
@@ -1781,9 +1781,17 @@
     "testsPassedLinux": 6,
     "launch": "reports/audits/dissertation/queue-capacity-short-v2/launch.json",
     "sourceSnapshotModified": false,
-    "resultsAccepted": false,
+    "resultsAccepted": true,
     "publishedCommit": "1e2e15f9ada6abb8ef98622e37ca8f4e5f088a89",
-    "agentStoppedForWaiting": true
+    "agentStoppedForWaiting": true,
+    "rawRunsPassed": 2,
+    "filesVerified": 77,
+    "classification": "completedWithoutBaselineOverflow",
+    "scientificOverloadContrastInformative": false,
+    "acceptance": "reports/audits/dissertation/queue-capacity-short-v2/acceptance.json",
+    "report": "reports/analysis/Queue-capacity-short.md",
+    "serviceCurrentlyRunning": false,
+    "automaticRetryPerformed": false
   },
   "manuscriptOfflineReviewV1": {
     "status": "publishedIntermediate",
@@ -1830,5 +1838,24 @@
     "agentMayRunResearchAndModifyCode": true,
     "automaticIntegrationAllowed": false,
     "document": "docs/dissertation/author-decisions.md"
+  },
+  "webFinalProfileV1": {
+    "status": "apiPathVerified",
+    "sourceCommit": "4c658536586f88a89cd3ff5ab0915903640cf3c9",
+    "hostPid": 3780,
+    "appPid": 3783,
+    "lastHealth": "ok",
+    "profilesValidated": 4,
+    "missingPointCasesRejected": 4,
+    "scientificByteEqualFiles": 6,
+    "jobId": "da613d0b932d42739fb62e8b1fa5e52e",
+    "ticks": 21014,
+    "steps": 64966,
+    "filesTransferred": 37,
+    "nativeReferenceAttached": false,
+    "fullBrowserFlowVerified": false,
+    "newNativeMeasurements": 0,
+    "report": "reports/analysis/Article-1-final-profile-web.md",
+    "verification": "reports/audits/web/article1-final-profile-v1/verification.json"
   }
 }

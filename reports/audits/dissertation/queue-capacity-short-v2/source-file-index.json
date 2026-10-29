@@ -1,0 +1,315 @@
+{
+  "root": "/run/media/entityfx/hd250/mqtty-evidence/queue-capacity-short-v2-20261029",
+  "files": {
+    "configs/q1024.json": {
+      "bytes": 638,
+      "sha256": "37eaa2ec86eb59a7c8b7a76a56bd5d0af71b85e8015242eefbe49cf70377ae0b"
+    },
+    "configs/q4096.json": {
+      "bytes": 638,
+      "sha256": "b5ff56167d61e5c2d7ff17bd63bb84de6f60443a25ac46376cdc702d6feb7455"
+    },
+    "preflight.json": {
+      "bytes": 3276,
+      "sha256": "fa5067abf1cd59c046e2ce004f12c40b27b8930430d2e07c4a2a14e7ea4f63b2"
+    },
+    "progress.json": {
+      "bytes": 395,
+      "sha256": "53a22c026eb1a83d7678edca0dea1f5f31167be8887012c48fc9ce3e7c7deee5"
+    },
+    "protocol.md": {
+      "bytes": 4920,
+      "sha256": "ff1303b77d0f2121ba5807fc6aea4c663760b7294099de35017da5a11f7d2917"
+    },
+    "q1024/attempt-001/command.json": {
+      "bytes": 356,
+      "sha256": "f1d30a86b3a2aca6632fb3c812b557cae73c19ae6cadb5b29085dddf002ce805"
+    },
+    "q1024/attempt-001/output/.experiment": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "q1024/attempt-001/output/delivery-receipts.json": {
+      "bytes": 1802508,
+      "sha256": "56ef22e245fa5697e67a01b20600b9233e496bb10cae5ec3c84cdf7cca5cd1aa"
+    },
+    "q1024/attempt-001/output/histograms.json": {
+      "bytes": 79054,
+      "sha256": "a8c415b765ccceff0faeb2654736b8965d28a25e2bc8242a9afe7dc790719509"
+    },
+    "q1024/attempt-001/output/inputs/config.json": {
+      "bytes": 638,
+      "sha256": "37eaa2ec86eb59a7c8b7a76a56bd5d0af71b85e8015242eefbe49cf70377ae0b"
+    },
+    "q1024/attempt-001/output/manifest.json": {
+      "bytes": 4193,
+      "sha256": "d2a4b3ba13dc95d45cfb122de6affac2bb6c5e0610197555ec9875d620989dc0"
+    },
+    "q1024/attempt-001/output/network-evidence.json": {
+      "bytes": 2400,
+      "sha256": "4f42797638450cba9d8bfe1f7e2bac87d19e03e1030e9e24a6eb18e73d61a2a9"
+    },
+    "q1024/attempt-001/output/phases.json": {
+      "bytes": 707,
+      "sha256": "1198ac8911631f4c9a2a2e39aba03ef7ad9b4846e1bef19a314969fb2cbf4243"
+    },
+    "q1024/attempt-001/output/publications.json": {
+      "bytes": 380130,
+      "sha256": "ce3ff5a4b941b9bc4d0c70e703df42bd87767bf9241c2e72fccb575204e649d7"
+    },
+    "q1024/attempt-001/output/receivers.csv": {
+      "bytes": 69,
+      "sha256": "16e1bf3625582d78a5c45cbb868c7a4eefbbed1b3edae657d6fa6e0ad7d4ae38"
+    },
+    "q1024/attempt-001/output/report.md": {
+      "bytes": 3483,
+      "sha256": "7f57221eed19ae35af13b8653f43eee873e01a0b25e74246a22eff9ad21a8836"
+    },
+    "q1024/attempt-001/output/run-config.json": {
+      "bytes": 654,
+      "sha256": "8b5e4d63ebf5373a0ba7d0e102876d58576558f0c85e82802e30c0a8fe856fe8"
+    },
+    "q1024/attempt-001/output/sha256.json": {
+      "bytes": 1627,
+      "sha256": "3e2f0c95af02bc1a40b6ee0fe5b590dbc87199af7d122f4702c834e198735f68"
+    },
+    "q1024/attempt-001/output/sources.csv": {
+      "bytes": 1348,
+      "sha256": "40d7dd476a4e4b11cc06600606581d10de5c7fc9163ee29f7192c9026eae0570"
+    },
+    "q1024/attempt-001/output/summary.json": {
+      "bytes": 262803,
+      "sha256": "5bff7ccca54314d5e7e0cdc93cd3e0936eef377533f1f842456ffdfa86fef73a"
+    },
+    "q1024/attempt-001/output/topology-logical.mmd": {
+      "bytes": 633,
+      "sha256": "4350b5902024fa6284bfdfd7ca75075d00259be430c0d1d31b06128d79f7e02e"
+    },
+    "q1024/attempt-001/output/topology-logical.svg": {
+      "bytes": 3862,
+      "sha256": "44145f6480d22983386e561a867978d699ec5137abe4102c1d06203e23812940"
+    },
+    "q1024/attempt-001/output/topology-physical.mmd": {
+      "bytes": 533,
+      "sha256": "3725f8eb15a1b63e023d7954e61b8565527130f669d129c42506595e2fb6e47c"
+    },
+    "q1024/attempt-001/output/topology-physical.svg": {
+      "bytes": 3277,
+      "sha256": "f0c604740be4663e1cb725b197afcb24a67697af684245b7153c5722a50b4057"
+    },
+    "q1024/attempt-001/output/topology.graphml": {
+      "bytes": 39800,
+      "sha256": "12b4eeddf4de11718dfcd136976ef876ce89254f0db2d692a8f12d61d7c065fd"
+    },
+    "q1024/attempt-001/output/transmissions.json": {
+      "bytes": 11558125,
+      "sha256": "e9a14e7db1887a29d02fd79f4c527c3127c8b6cd7fa62218dc6ea22b67626bda"
+    },
+    "q1024/attempt-001/process-state.json": {
+      "bytes": 111,
+      "sha256": "351bb2ff8460de594bd6e1bd1965ebdac79aa271b4ec5d46ae0916f801361ba4"
+    },
+    "q1024/attempt-001/process.log": {
+      "bytes": 924,
+      "sha256": "1313245dd80def47007865319ced2bff1378e1a9bd2dc7ec12c7ceae685c5f30"
+    },
+    "q1024/attempt-001/result.json": {
+      "bytes": 292663,
+      "sha256": "37bcc4d7ccc48cc5478cdce50ede04a910ac25a12abbcd2e51e4e649df7c2f76"
+    },
+    "q4096/attempt-001/command.json": {
+      "bytes": 356,
+      "sha256": "dda70da3d5c4d54a4e422e35f8d396bc1364db77e9c3e858626679b312b32fa5"
+    },
+    "q4096/attempt-001/output/.experiment": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "q4096/attempt-001/output/delivery-receipts.json": {
+      "bytes": 1802508,
+      "sha256": "56ef22e245fa5697e67a01b20600b9233e496bb10cae5ec3c84cdf7cca5cd1aa"
+    },
+    "q4096/attempt-001/output/histograms.json": {
+      "bytes": 79054,
+      "sha256": "a8c415b765ccceff0faeb2654736b8965d28a25e2bc8242a9afe7dc790719509"
+    },
+    "q4096/attempt-001/output/inputs/config.json": {
+      "bytes": 638,
+      "sha256": "b5ff56167d61e5c2d7ff17bd63bb84de6f60443a25ac46376cdc702d6feb7455"
+    },
+    "q4096/attempt-001/output/manifest.json": {
+      "bytes": 4193,
+      "sha256": "1e2dcd80002da868392dd18ea41ade3aa81849ea2453b6b56eee2241a7af715b"
+    },
+    "q4096/attempt-001/output/network-evidence.json": {
+      "bytes": 2400,
+      "sha256": "4f42797638450cba9d8bfe1f7e2bac87d19e03e1030e9e24a6eb18e73d61a2a9"
+    },
+    "q4096/attempt-001/output/phases.json": {
+      "bytes": 707,
+      "sha256": "1198ac8911631f4c9a2a2e39aba03ef7ad9b4846e1bef19a314969fb2cbf4243"
+    },
+    "q4096/attempt-001/output/publications.json": {
+      "bytes": 380130,
+      "sha256": "ce3ff5a4b941b9bc4d0c70e703df42bd87767bf9241c2e72fccb575204e649d7"
+    },
+    "q4096/attempt-001/output/receivers.csv": {
+      "bytes": 69,
+      "sha256": "16e1bf3625582d78a5c45cbb868c7a4eefbbed1b3edae657d6fa6e0ad7d4ae38"
+    },
+    "q4096/attempt-001/output/report.md": {
+      "bytes": 3483,
+      "sha256": "7f57221eed19ae35af13b8653f43eee873e01a0b25e74246a22eff9ad21a8836"
+    },
+    "q4096/attempt-001/output/run-config.json": {
+      "bytes": 654,
+      "sha256": "7ab35bffee572bff6ee8eb1252ea15227db6ec07d8d9f1ab412464b2da040a70"
+    },
+    "q4096/attempt-001/output/sha256.json": {
+      "bytes": 1627,
+      "sha256": "b84d3b25855ab4a543d50755ac5e77329413be11e48e944d6a2287ea786f4756"
+    },
+    "q4096/attempt-001/output/sources.csv": {
+      "bytes": 1348,
+      "sha256": "40d7dd476a4e4b11cc06600606581d10de5c7fc9163ee29f7192c9026eae0570"
+    },
+    "q4096/attempt-001/output/summary.json": {
+      "bytes": 262803,
+      "sha256": "5bff7ccca54314d5e7e0cdc93cd3e0936eef377533f1f842456ffdfa86fef73a"
+    },
+    "q4096/attempt-001/output/topology-logical.mmd": {
+      "bytes": 633,
+      "sha256": "4350b5902024fa6284bfdfd7ca75075d00259be430c0d1d31b06128d79f7e02e"
+    },
+    "q4096/attempt-001/output/topology-logical.svg": {
+      "bytes": 3862,
+      "sha256": "44145f6480d22983386e561a867978d699ec5137abe4102c1d06203e23812940"
+    },
+    "q4096/attempt-001/output/topology-physical.mmd": {
+      "bytes": 533,
+      "sha256": "3725f8eb15a1b63e023d7954e61b8565527130f669d129c42506595e2fb6e47c"
+    },
+    "q4096/attempt-001/output/topology-physical.svg": {
+      "bytes": 3277,
+      "sha256": "f0c604740be4663e1cb725b197afcb24a67697af684245b7153c5722a50b4057"
+    },
+    "q4096/attempt-001/output/topology.graphml": {
+      "bytes": 39800,
+      "sha256": "7041cc25ad645b52b3aaa2b9df750358f0d9560b900c674f9fc6e4d5afadd9fe"
+    },
+    "q4096/attempt-001/output/transmissions.json": {
+      "bytes": 11558125,
+      "sha256": "e9a14e7db1887a29d02fd79f4c527c3127c8b6cd7fa62218dc6ea22b67626bda"
+    },
+    "q4096/attempt-001/process-state.json": {
+      "bytes": 111,
+      "sha256": "ed9547081a25cf6d76de1b3653f8a6bab36d5e1a0394b076c7da9bb5da9f7c3e"
+    },
+    "q4096/attempt-001/process.log": {
+      "bytes": 924,
+      "sha256": "1313245dd80def47007865319ced2bff1378e1a9bd2dc7ec12c7ceae685c5f30"
+    },
+    "q4096/attempt-001/result.json": {
+      "bytes": 292663,
+      "sha256": "23ed717a4614b8ed65f5173419bba476bca08c94129b37026a95efa2d8a0653b"
+    },
+    "result.json": {
+      "bytes": 701870,
+      "sha256": "9eb598da0802c53361936586f387ce448a0f6534c0b06433667d2fb15c4ebac6"
+    },
+    "run-identity.json": {
+      "bytes": 484,
+      "sha256": "faf3c32ec8e717a9f3100be70c02e37ce0935ae92d9348d6d168bb599a8baf69"
+    },
+    "run_short.py": {
+      "bytes": 6106,
+      "sha256": "5dbff231db11765e3b061a48d6a8cb5b717d656b7f6d9292bbaef6b73721ffd8"
+    },
+    "runtime/EntityFX.MqttY.Contracts.Mqtt.dll": {
+      "bytes": 61440,
+      "sha256": "00bdc081d1d4f3cc49b872ac3eb7d894e82c714bfec79a8bc535385ed83fe478"
+    },
+    "runtime/EntityFX.MqttY.Contracts.Scenarios.dll": {
+      "bytes": 9728,
+      "sha256": "109b038d53e4423cd62a851e97a8d620e01e877262e7a7f7c6e4a28435f042ec"
+    },
+    "runtime/EntityFX.MqttY.Contracts.dll": {
+      "bytes": 57344,
+      "sha256": "84290d5c994fd8e91d6c1017f8deb66ece23cc8698995c841c35d49e0b59569d"
+    },
+    "runtime/EntityFX.MqttY.Federation.App.deps.json": {
+      "bytes": 9705,
+      "sha256": "377abf2a122a5713f2215176c7ff47fb4b365e1139927eeb1359c43ef989303e"
+    },
+    "runtime/EntityFX.MqttY.Federation.App.dll": {
+      "bytes": 175616,
+      "sha256": "9022c231ab1a48db8bf80a76f64bab597deab1ba08267d7a3ea06ee1f5946aff"
+    },
+    "runtime/EntityFX.MqttY.Federation.App.runtimeconfig.json": {
+      "bytes": 253,
+      "sha256": "ded3aeb5856a11db0b654a785574490cab55839ebfb17efe9e39b89618fc5b91"
+    },
+    "runtime/EntityFX.MqttY.Plugin.Mqtt.dll": {
+      "bytes": 332288,
+      "sha256": "c5f9712871abdb621473c3ed7862ee67d3d206ed11ceb8fc45affc165124cad0"
+    },
+    "runtime/EntityFX.MqttY.dll": {
+      "bytes": 135168,
+      "sha256": "e66776f56aef02e891d3ffe35e45303b03541a8f29902a1f5d5aecb980c08ed3"
+    },
+    "runtime/Microsoft.Extensions.Configuration.Abstractions.dll": {
+      "bytes": 29448,
+      "sha256": "3124386219566a2c386e6999d83a7d507584de46cde4ae733a8af3c373c42b8c"
+    },
+    "runtime/Microsoft.Extensions.Configuration.Binder.dll": {
+      "bytes": 44704,
+      "sha256": "4449f40e0645a61067c5e206e956cc5bc3b4421593b3c27188d8c71ef45c64a6"
+    },
+    "runtime/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+      "bytes": 62640,
+      "sha256": "ac9cd953b7eeb03cf48e343c5ace6fc9b48ac968b68d1cb30ad1d6111178bf4d"
+    },
+    "runtime/Microsoft.Extensions.DependencyInjection.dll": {
+      "bytes": 94512,
+      "sha256": "df0ae00b1599acae93d9f4df2bcc6d0ba109221ccc44d2d1486183f84a5fec78"
+    },
+    "runtime/Microsoft.Extensions.Logging.Abstractions.dll": {
+      "bytes": 66224,
+      "sha256": "ab36e8201d41dd751cbb712704dbe8492bdd0ab1bff6fb35371cf59bcd982181"
+    },
+    "runtime/Microsoft.Extensions.Logging.dll": {
+      "bytes": 52520,
+      "sha256": "37b87b16ac688d5619168554a22cca2677e1115f21c2d5ebe2f39c024fee2b7f"
+    },
+    "runtime/Microsoft.Extensions.Options.dll": {
+      "bytes": 66312,
+      "sha256": "fbb309a36bc91d90ec2984397bff4f75f35ac92909e0acd952c5264c5ac0a753"
+    },
+    "runtime/Microsoft.Extensions.Primitives.dll": {
+      "bytes": 45336,
+      "sha256": "f9f47907a041067d9bc1b9a9f516009b6ca0a9c6325ce83527883cc0d053dfa5"
+    },
+    "runtime/System.Diagnostics.DiagnosticSource.dll": {
+      "bytes": 164512,
+      "sha256": "d6935e993b69f8abd934f01b0d7dd8ca9616a7ea94c7af59ed07b2fd3cf93a97"
+    },
+    "service.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "service.stdout.log": {
+      "bytes": 64,
+      "sha256": "4345a2238056216a931e61bb8b33c686373b68c650045c7295702b077202c818"
+    },
+    "short_gate.py": {
+      "bytes": 993,
+      "sha256": "dd916ecbef5e147c4cdb246aa4c017d555d122f4acc2cb085ecc06a5e0bcf499"
+    },
+    "test_short_gate.py": {
+      "bytes": 1578,
+      "sha256": "7cc5a1c3194cfbd971bd181d95bac2ac4723535870d766b71802be26d8ac0a53"
+    }
+  },
+  "collectedMetadataSha256": "37022e3b9a73a1d23a4ab7395ec30828b18e8d98c191ea3ab72aa0df93f40783",
+  "scope": "File SHA/size index; complete result/progress/preflight metadata retained in external raw archive and collection snapshot"
+}

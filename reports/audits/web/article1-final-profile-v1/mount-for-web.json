@@ -1,0 +1,29 @@
+{
+  "purpose": "Web writes its own data/new release; source experiments retained",
+  "attempts": [
+    {
+      "argv": [
+        "udisksctl",
+        "unmount",
+        "--block-device",
+        "/dev/disk/by-uuid/c1ca2de7-c618-4a3d-8ffc-59d37f42ccec",
+        "--no-user-interaction"
+      ],
+      "returnCode": 0,
+      "stdout": "Unmounted /dev/sdb1.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "udisksctl",
+        "mount",
+        "--block-device",
+        "/dev/disk/by-uuid/c1ca2de7-c618-4a3d-8ffc-59d37f42ccec",
+        "--no-user-interaction"
+      ],
+      "returnCode": 0,
+      "stdout": "Mounted /dev/sdb1 at /run/media/entityfx/hd250\n",
+      "stderr": ""
+    }
+  ]
+}
