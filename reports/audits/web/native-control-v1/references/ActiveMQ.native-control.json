@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "mqtt-native-control-v1",
+  "name": "Статья 1: ActiveMQ, отдельный натурный контроль",
+  "broker": "ActiveMQ",
+  "profileSha256": "26964895f2aa9c7975e569331ef1f89a469a7d8752f61cecae70c2eb04d873db",
+  "calibrationCampaignId": "article1-matched-main-v1-calibration",
+  "controlCampaignId": "article1-matched-main-v1-control",
+  "profileFrozenUtc": "2026-10-26T05:31:45.388487+00:00",
+  "programSha256": "2312e7d9938d580b9ac8099a1d5dbfc4fef5074fb2a6024008d27e9cd3356dc7",
+  "auditSha256": "1198d8fe28c3995228e99cc23d1aae85b5cbae853c01594c5734d3852d6d2cd4",
+  "workload": {
+    "payloadBytes": 16,
+    "qos": 1,
+    "publishers": 16,
+    "subscribers": 1,
+    "warmupSeconds": 1,
+    "measurementSeconds": 4,
+    "drainSeconds": 5,
+    "loadPolicy": "closedLoopPerPublisher"
+  },
+  "runs": [
+    {
+      "id": "control.ActiveMQ.r1",
+      "stage": "control",
+      "measurementStartedUtc": "2026-10-26T05:33:11.4967382+00:00",
+      "publicationsSha256": "41664deb83c9e20146d926a189ac28077a7abd4356b38162864169c97eb2d6cd",
+      "deliveriesSha256": "76087c7bbaf25817cd47fa473794fe63d188ba546b3c755e0a21cef3ed54199e",
+      "phasesSha256": "6587fe391d359999c67c2a22babfcf112a9971f5581639986bbd942a4d95777d",
+      "attempted": 47429,
+      "completed": 47429,
+      "failed": 0,
+      "completedIdsDelivered": 47192,
+      "pending": 0,
+      "measurementSeconds": 4.0,
+      "p99PublishMs": 10.458399999999983
+    },
+    {
+      "id": "control.ActiveMQ.r2",
+      "stage": "control",
+      "measurementStartedUtc": "2026-10-26T05:33:27.5208459+00:00",
+      "publicationsSha256": "641f792e830f496ff839093a6ec07996f2c3924c108ebd2fc5275c5037d9ba6c",
+      "deliveriesSha256": "1b2dfce3cb7a200d95b0da8ed72f1c1da95fcf8e72b89eeeae5134b30f5a0ffb",
+      "phasesSha256": "60f62d6ab7dd59924f48225bf5dc947350fe7e45f303ea2d2ac368acd4827d8b",
+      "attempted": 50438,
+      "completed": 50438,
+      "failed": 0,
+      "completedIdsDelivered": 49982,
+      "pending": 0,
+      "measurementSeconds": 4.0,
+      "p99PublishMs": 11.64619999999968
+    },
+    {
+      "id": "control.ActiveMQ.r3",
+      "stage": "control",
+      "measurementStartedUtc": "2026-10-26T05:33:43.5722399+00:00",
+      "publicationsSha256": "23107538e03fe20fa8ad0d06fcf26d724fa96b57f9101c3820a36a5c09fdd9c8",
+      "deliveriesSha256": "243b0b46db508bf38d7e86e2fc918ffa99de0acc64ef67fe45bdef11dcd7fcd7",
+      "phasesSha256": "58d34e213a7f06e1bc6c128b4bcf1aa9ef7461fca0001b6a65a590f8b5fb85a5",
+      "attempted": 50043,
+      "completed": 50043,
+      "failed": 0,
+      "completedIdsDelivered": 49764,
+      "pending": 0,
+      "measurementSeconds": 3.9999999999999996,
+      "p99PublishMs": 11.547700000000077
+    }
+  ]
+}

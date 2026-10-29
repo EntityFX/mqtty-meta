@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "mqtt-native-control-v1",
+  "name": "Статья 1: Aedes, отдельный натурный контроль",
+  "broker": "Aedes",
+  "profileSha256": "5172f9409dda3ca497eb9b4a47db8717957e2aeecc7487a618278747e171e503",
+  "calibrationCampaignId": "article1-matched-main-v1-calibration",
+  "controlCampaignId": "article1-matched-main-v1-control",
+  "profileFrozenUtc": "2026-10-26T05:31:45.388487+00:00",
+  "programSha256": "2312e7d9938d580b9ac8099a1d5dbfc4fef5074fb2a6024008d27e9cd3356dc7",
+  "auditSha256": "1198d8fe28c3995228e99cc23d1aae85b5cbae853c01594c5734d3852d6d2cd4",
+  "workload": {
+    "payloadBytes": 16,
+    "qos": 1,
+    "publishers": 16,
+    "subscribers": 1,
+    "warmupSeconds": 1,
+    "measurementSeconds": 4,
+    "drainSeconds": 5,
+    "loadPolicy": "closedLoopPerPublisher"
+  },
+  "runs": [
+    {
+      "id": "control.Aedes.r1",
+      "stage": "control",
+      "measurementStartedUtc": "2026-10-26T05:31:47.5740811+00:00",
+      "publicationsSha256": "3cd28c45aa994bee735fa4b0593f9e8daec765b9f3c37d4a2fe5db8f8046d788",
+      "deliveriesSha256": "4246ebf52c743cb4b577bd43cd4d44060d5420e9e4a0dec67fd230d2f45b61bb",
+      "phasesSha256": "d568aac93434e48efb87691d8c693f0186b39a3d4d90908c10298f0354fe1d2a",
+      "attempted": 70395,
+      "completed": 70395,
+      "failed": 0,
+      "completedIdsDelivered": 70395,
+      "pending": 0,
+      "measurementSeconds": 3.9999999999999996,
+      "p99PublishMs": 2.1367999999997664
+    },
+    {
+      "id": "control.Aedes.r2",
+      "stage": "control",
+      "measurementStartedUtc": "2026-10-26T05:32:01.2264121+00:00",
+      "publicationsSha256": "df8ce808bdf166eb3c47e69a1b43def089c4cb92c15dd69a41e71f633caee4d7",
+      "deliveriesSha256": "0e428fb8f208050a0271654944ff9920b1d678dce1ab3f01c29f1e3d3088a004",
+      "phasesSha256": "fc2227beee011026311d09837f6f475990126ab757fad6165b132e3599b33ebf",
+      "attempted": 66184,
+      "completed": 66184,
+      "failed": 0,
+      "completedIdsDelivered": 66184,
+      "pending": 0,
+      "measurementSeconds": 4.0,
+      "p99PublishMs": 2.485099999999875
+    },
+    {
+      "id": "control.Aedes.r3",
+      "stage": "control",
+      "measurementStartedUtc": "2026-10-26T05:32:14.615824+00:00",
+      "publicationsSha256": "db1b583049964b2c1c28d2813c25c6448d01d80ea87d3a2f8e2c895f9e9e65b9",
+      "deliveriesSha256": "27d686e1e118023db27be3e4a5bf35c3cde774cf860309ff5d899703a08ec099",
+      "phasesSha256": "fe03a6959973210d9f54d7d521e32ca2d0f20fd4624c63c93eb3ad07dbca75ec",
+      "attempted": 68773,
+      "completed": 68773,
+      "failed": 0,
+      "completedIdsDelivered": 68773,
+      "pending": 0,
+      "measurementSeconds": 4.0,
+      "p99PublishMs": 1.9127000000000862
+    }
+  ]
+}

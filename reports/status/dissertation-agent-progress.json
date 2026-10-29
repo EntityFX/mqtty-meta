@@ -1860,5 +1860,29 @@
     "verification": "reports/audits/web/article1-final-profile-v1/verification.json",
     "publishedCommit": "ea3884ff39868e7d9ce84968419e7ef05f6ca7f4",
     "remoteHeadConfirmed": true
+  },
+  "webNativeControlV1": {
+    "status": "browserPathVerified",
+    "sourceCommit": "f5c0a4715b555c4348d2a2843177251f62c640ff",
+    "testsPassed": 51,
+    "nativeRunsRecounted": 12,
+    "controlsImported": 4,
+    "modelsExecuted": 1,
+    "newNativeMeasurements": 0,
+    "jobId": "56ae367e9f7d4483b0ae1852ac21977d",
+    "ticks": 1000014,
+    "steps": 3027330,
+    "allCriteriaPassed": true,
+    "hostPid": 4259,
+    "appPid": 4261,
+    "lastHealth": "ok",
+    "runningJobs": 0,
+    "queuedJobs": 0,
+    "scientificAccuracyScope": "one Aedes model against three saved controls after profile freeze",
+    "frozenRuntimeFilesVerified": 54,
+    "primaryDissertationModified": false,
+    "report": "reports/analysis/Article-1-native-control-web.md",
+    "verification": "reports/audits/web/native-control-v1/verification.json",
+    "weightedStepsAdded": []
   }
 }

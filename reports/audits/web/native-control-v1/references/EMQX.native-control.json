@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "mqtt-native-control-v1",
+  "name": "Статья 1: EMQX, отдельный натурный контроль",
+  "broker": "EMQX",
+  "profileSha256": "b4350c2db84389de9c5d4ac8b8934bbd3a26f2cdd9d0b1a7e3b6d7d9ff6500d3",
+  "calibrationCampaignId": "article1-matched-main-v1-calibration",
+  "controlCampaignId": "article1-matched-main-v1-control",
+  "profileFrozenUtc": "2026-10-26T05:31:45.388487+00:00",
+  "programSha256": "2312e7d9938d580b9ac8099a1d5dbfc4fef5074fb2a6024008d27e9cd3356dc7",
+  "auditSha256": "1198d8fe28c3995228e99cc23d1aae85b5cbae853c01594c5734d3852d6d2cd4",
+  "workload": {
+    "payloadBytes": 16,
+    "qos": 1,
+    "publishers": 16,
+    "subscribers": 1,
+    "warmupSeconds": 1,
+    "measurementSeconds": 4,
+    "drainSeconds": 5,
+    "loadPolicy": "closedLoopPerPublisher"
+  },
+  "runs": [
+    {
+      "id": "control.EMQX.r1",
+      "stage": "control",
+      "measurementStartedUtc": "2026-10-26T05:34:13.8461481+00:00",
+      "publicationsSha256": "4a3f58b32e7548c0ab69a18f091afc0d3a7730e3c47e89653bfbae7b9662f657",
+      "deliveriesSha256": "6b66772d15d8aabc366881c7ee43eeff7d167f92b708e402b2da20bf81d668c3",
+      "phasesSha256": "d82c4ad4cc869ded33fb310350cfb50616be74ac9e2c5caaad246f288f23f650",
+      "attempted": 40063,
+      "completed": 40063,
+      "failed": 0,
+      "completedIdsDelivered": 40063,
+      "pending": 0,
+      "measurementSeconds": 4.0,
+      "p99PublishMs": 3.100600000000668
+    },
+    {
+      "id": "control.EMQX.r2",
+      "stage": "control",
+      "measurementStartedUtc": "2026-10-26T05:34:52.0711875+00:00",
+      "publicationsSha256": "3e19bd35e590f01899d1ab79117810173c42a27b311bd3ccb2143ca686879675",
+      "deliveriesSha256": "6d85bf71df546c14d3ab4601578cf9d44c5f01a90b133ada0fa15f83db022ee1",
+      "phasesSha256": "935d802d5445d37fea53328ed2a3200b9e766f0751dc1c831690c3b0dcc5e383",
+      "attempted": 41286,
+      "completed": 41286,
+      "failed": 0,
+      "completedIdsDelivered": 41286,
+      "pending": 0,
+      "measurementSeconds": 4.0,
+      "p99PublishMs": 3.011600000000726
+    },
+    {
+      "id": "control.EMQX.r3",
+      "stage": "control",
+      "measurementStartedUtc": "2026-10-26T05:35:29.1627264+00:00",
+      "publicationsSha256": "d91289014950e4b1263ed349b8ba721e3a5f6c1d950bc0832f0f15bb63332192",
+      "deliveriesSha256": "2382aa71ba705e1324d2f5fa8c75f0d76a9cca1e51d1b42902da7f78602201d5",
+      "phasesSha256": "505e817d188b64837f40bff71068aa2b58450fc3d18cc624c365b1fa00dd4bcb",
+      "attempted": 40137,
+      "completed": 40137,
+      "failed": 0,
+      "completedIdsDelivered": 40137,
+      "pending": 0,
+      "measurementSeconds": 4.0,
+      "p99PublishMs": 3.0997999999999593
+    }
+  ]
+}

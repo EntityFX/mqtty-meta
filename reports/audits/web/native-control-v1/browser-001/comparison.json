@@ -1,0 +1,60 @@
+{
+  "referenceKind": "nativeControl",
+  "referenceName": "Статья 1: Aedes, отдельный натурный контроль",
+  "referenceSha256": "3e4336d1817fbb9c027441df7eb0c8bdc2de0060d163f1711666ea8987e2c172",
+  "profileSha256": "5172f9409dda3ca497eb9b4a47db8717957e2aeecc7487a618278747e171e503",
+  "referenceRuns": 3,
+  "calibrationCampaignId": "article1-matched-main-v1-calibration",
+  "controlCampaignId": "article1-matched-main-v1-control",
+  "metrics": {
+    "rps": {
+      "name": "rps",
+      "reference": 17112.666666666668,
+      "simulated": 17123,
+      "error": 0.0006038412092406475,
+      "limit": 0.15,
+      "status": "passed"
+    },
+    "p99": {
+      "name": "p99",
+      "reference": 2.1781999999999093,
+      "simulated": 2.19,
+      "error": 0.005417317050817702,
+      "limit": 0.2,
+      "status": "passed"
+    },
+    "failure": {
+      "name": "failure",
+      "reference": 0,
+      "simulated": 0,
+      "error": 0,
+      "limit": 0.05,
+      "status": "passed"
+    },
+    "loss": {
+      "name": "loss",
+      "reference": 0,
+      "simulated": 0,
+      "error": 0,
+      "limit": 0.05,
+      "status": "passed"
+    }
+  },
+  "cohort": {
+    "attempted": 68492,
+    "completed": 68492,
+    "failed": 0,
+    "pending": 0,
+    "completedIdsDelivered": 68492,
+    "outcomesSettled": true,
+    "metrics": {
+      "rps": 17123,
+      "p99": 2.19,
+      "failure": 0,
+      "loss": 0
+    }
+  },
+  "allCriteriaPassed": true,
+  "scope": "Отдельный натурный контроль после фиксации профиля; не доказательство слепой независимости всей разработки.",
+  "sourceVerification": "Проверены формат, SHA и связность метаданных; первичные натурные журналы пересчитываются вне Web."
+}

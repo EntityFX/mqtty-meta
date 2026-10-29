@@ -1,0 +1,36 @@
+{
+  "health": {
+    "status": "ok",
+    "processId": 4261,
+    "processWorkingSetBytes": 199180288,
+    "dataDirectoryAvailable": true,
+    "runningJobs": 0,
+    "queuedJobs": 0
+  },
+  "service": "MainPID=4259\nActiveState=active\nSubState=running\n",
+  "monitoring": {
+    "releaseId": "9ca028f4dc567b97c0ab636024eb9e9c69f7a49886aa2eb9d0209a9ccae5f690",
+    "mqttyCommit": "f5c0a4715b555c4348d2a2843177251f62c640ff",
+    "pid": 4261,
+    "hostPid": 4259,
+    "startedEpoch": 1793300859.841128,
+    "observedEpoch": 1793300930.1756444,
+    "state": "running",
+    "rssBytes": 198950912,
+    "dataBytes": 567516626,
+    "diskFreeBytes": 123783811072,
+    "http": {
+      "ok": true,
+      "statusCode": 200,
+      "body": {
+        "status": "ok",
+        "processId": 4261,
+        "processWorkingSetBytes": 198950912,
+        "dataDirectoryAvailable": true,
+        "runningJobs": 0,
+        "queuedJobs": 0
+      }
+    },
+    "httpConsecutiveFailures": 0
+  }
+}
