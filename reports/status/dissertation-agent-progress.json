@@ -1529,7 +1529,7 @@
     "verification": "reports/audits/dissertation/article-2-evidence-package-v2/verification.json",
     "revisionChecks": "reports/audits/dissertation/articles-offline-revision-v1/verification.json"
   },
-  "nextAction": "Publish this intermediate offline review, then stop; continue on user request. Linux state not refreshed in this block.",
+  "nextAction": "Stopped after checked publication at user request; resume on next user request. Linux not polled in this block.",
   "article1BoundedReview": {
     "status": "selfReviewCompletedIndependentReviewUnavailable",
     "document": "reports/analysis/Article-1-bounded-review.md",
@@ -1785,7 +1785,7 @@
     "agentStoppedForWaiting": true
   },
   "manuscriptOfflineReviewV1": {
-    "status": "verifiedIntermediate",
+    "status": "publishedIntermediate",
     "report": "reports/analysis/Manuscript-offline-review.md",
     "recalculation": "reports/audits/dissertation/manuscript-offline-review-v1/progress-recalculation.json",
     "floorTestsPassed": 4,
@@ -1793,6 +1793,8 @@
     "linuxPolled": false,
     "humanReviewPassed": false,
     "portableVersion": 3,
-    "next": "Stop after checked publication; resume only on user request"
+    "next": "Stop after checked publication; resume only on user request",
+    "commit": "d2b4eec9efd1bba702a236c0a6358e251f544c73",
+    "remoteHeadConfirmed": true
   }
 }
