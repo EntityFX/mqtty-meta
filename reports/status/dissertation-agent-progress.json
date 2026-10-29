@@ -1529,7 +1529,7 @@
     "verification": "reports/audits/dissertation/article-2-evidence-package-v2/verification.json",
     "revisionChecks": "reports/audits/dissertation/articles-offline-revision-v1/verification.json"
   },
-  "nextAction": "Publish verified chapter drafts v2; actual LaTeX integration, scientific review and Web/queue acceptance remain separate. No new Linux run started.",
+  "nextAction": "Chapter drafts v2 published. Next: actual LaTeX integration subject to existing document-edit boundary and scientific approval; queue/Web acceptance remain separate. No new Linux run started.",
   "article1BoundedReview": {
     "status": "selfReviewCompletedIndependentReviewUnavailable",
     "document": "reports/analysis/Article-1-bounded-review.md",
@@ -1798,7 +1798,7 @@
     "remoteHeadConfirmed": true
   },
   "chapterDraftsV2": {
-    "status": "verifiedReadyForPublication",
+    "status": "publishedVerified",
     "plan": "docs/dissertation/chapter-refresh-plan.md",
     "index": "docs/dissertation/drafts/README.md",
     "integrationMap": "docs/dissertation/drafts/integration-map.md",
@@ -1816,6 +1816,9 @@
     "linuxPolled": false,
     "newExperiments": 0,
     "weightedStepsAdded": [],
-    "scientificHumanApproval": false
+    "scientificHumanApproval": false,
+    "commit": "2529dcec5aad844d37ff09644ba57265e2a18e4f",
+    "remoteHeadConfirmed": true,
+    "committedBytesVerified": true
   }
 }
