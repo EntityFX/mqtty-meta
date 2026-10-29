@@ -1886,7 +1886,7 @@
     "weightedStepsAdded": []
   },
   "articlesHandoffV4": {
-    "status": "technicalChecksPassed",
+    "status": "publishedVerified",
     "date": "2026-10-30",
     "currentBlockCompleted": 5,
     "currentBlockTotal": 5,
@@ -1908,6 +1908,8 @@
     "aiVerdict": "OPEN_DECISION",
     "humanReviewPassed": false,
     "verification": "reports/audits/dissertation/articles-handoff-v4/verification.json",
-    "report": "reports/analysis/Articles-review-handoff.md"
+    "report": "reports/analysis/Articles-review-handoff.md",
+    "publishedCommit": "b270ccdca7162f21e9b4b804812f9cc3df0aa55e",
+    "remoteHeadConfirmed": true
   }
 }
