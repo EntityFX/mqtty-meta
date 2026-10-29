@@ -1960,13 +1960,28 @@
     "linuxRemainingQueue": "reports/status/Linux-work-queue.md"
   },
   "accelerationAa20261030": {
-    "status": "readyToLaunch",
+    "status": "running",
     "stage": "A/A measurement calibration, not speedup",
     "linuxTestsPassed": 7,
     "totalModels": 4,
     "hardWallSeconds": 600,
     "sourceSeriesUnchanged": true,
     "automaticNextExperiment": false,
-    "plan": "docs/plans/Acceleration-aa-20261030.md"
+    "plan": "docs/plans/Acceleration-aa-20261030.md",
+    "unit": "mqtty-acceleration-aa-20261030.service",
+    "pid": 5878,
+    "observedAtMsk": "2026-10-30T01:55:38.508842+03:00",
+    "observedProgress": {
+      "programIdentity": "acceleration-aa-20261030-v1",
+      "phase": "aa-1",
+      "finishedModels": 0,
+      "total": 4,
+      "deadlineEpoch": 1793315134.5045168,
+      "activeBatchPath": "/run/media/entityfx/hd250/mqtty-evidence/acceleration-aa-20261030/aa-1",
+      "note": "Per-child logs and RSS samples available in batch directory"
+    },
+    "deadlineMsk": "02:05:34",
+    "receipt": "reports/audits/dissertation/acceleration-aa-20261030/launch.json",
+    "agentStopsForWaiting": true
   }
 }
