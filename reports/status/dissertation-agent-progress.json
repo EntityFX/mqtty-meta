@@ -1913,7 +1913,7 @@
     "remoteHeadConfirmed": true
   },
   "parallelResearchBlock20261030": {
-    "status": "queueCompletedOnLinuxAwaitingLocalAcceptance",
+    "status": "queuePilotLocallyAccepted",
     "preparedResults": 5,
     "totalResults": 5,
     "preparedPercent": 100,
@@ -1932,16 +1932,23 @@
       "pid": 0,
       "observedFinishedModels": 2,
       "models": 2,
-      "scientificAcceptance": 0,
+      "scientificAcceptance": 2,
       "deadlineMsk": "2026-10-30 01:40:00 MSK",
       "retryPerformed": false,
       "launchReceipt": "reports/audits/dissertation/parallel-block-20261030/queue-launch.json",
-      "status": "completedOnLinux",
+      "status": "accepted",
       "linuxRawArithmeticPassed": 2,
-      "localRawAcceptance": "pending",
+      "localRawAcceptance": "accepted",
       "sharedWallSeconds": 92.73635185799867,
       "classification": "queueCapacityContrast",
-      "statusReceipt": "reports/audits/dissertation/parallel-block-20261030/linux-status-latest.json"
+      "statusReceipt": "reports/audits/dissertation/parallel-block-20261030/linux-status-latest.json",
+      "localRawRunsPassed": 2,
+      "filesVerified": 83,
+      "sourceIdentityAndRelativeScheduleEqual": true,
+      "sourcePayloadBytesEqual": false,
+      "absoluteTimePayloadFieldDiffers": true,
+      "mainSeriesLossCauseEstablished": false,
+      "acceptanceReceipt": "reports/audits/dissertation/queue-causality-pilot-20261030/acceptance.json"
     },
     "accelerationLaunchReady": false,
     "accelerationReason": "missing bounded CPU-aware matched launcher",
@@ -1949,6 +1956,7 @@
     "newNativeMeasurements": 0,
     "primaryDissertationModified": false,
     "report": "reports/analysis/Research-parallel-block-20261030.md",
-    "preparedCommit": "a084c51"
+    "preparedCommit": "a084c51",
+    "linuxRemainingQueue": "reports/status/Linux-work-queue.md"
   }
 }

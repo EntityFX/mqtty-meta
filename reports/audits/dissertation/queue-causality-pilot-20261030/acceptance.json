@@ -1,0 +1,116 @@
+{
+  "status": "accepted",
+  "rawRunsPassed": 2,
+  "filesVerified": 83,
+  "pinnedFilesVerified": 19,
+  "sealedProgramFilesVerified": 10,
+  "sourceSnapshotFilesVerified": 281,
+  "classification": "queueCapacityContrast",
+  "sharedWallSeconds": 92.73635185799867,
+  "singleChangedConfigFactor": "queueCapacity",
+  "results": [
+    {
+      "queueCapacity": 1,
+      "metrics": {
+        "apiAttempts": 2000,
+        "sourceCompleted": 2000,
+        "expectedDeliveries": 8000,
+        "uniqueDeliveries": 4277,
+        "uniqueDuringDrain": 32,
+        "fullyDeliveredPublications": 337,
+        "deliveryLoss": 0.465375,
+        "receiverP99Ms": 21.8,
+        "publishP99Ms": 1.6,
+        "queueDrops": 8915,
+        "duplicateDeliveries": 0,
+        "forwardAttempts": 7288,
+        "suppressedDuplicates": 3128,
+        "hopLimitDrops": 0,
+        "backpressureUnsent": 0
+      },
+      "processWallSeconds": 39.1119602339968,
+      "peakRssBytes": 777465856,
+      "phaseTicks": {
+        "construct": 0,
+        "connect": 17,
+        "subscribe": 9,
+        "warmup": 2500,
+        "warmupDrain": 189,
+        "measure": 20000,
+        "drain": 201
+      }
+    },
+    {
+      "queueCapacity": 1024,
+      "metrics": {
+        "apiAttempts": 2000,
+        "sourceCompleted": 2000,
+        "expectedDeliveries": 8000,
+        "uniqueDeliveries": 8000,
+        "uniqueDuringDrain": 3312,
+        "fullyDeliveredPublications": 2000,
+        "deliveryLoss": 0,
+        "receiverP99Ms": 1510.3000000000002,
+        "publishP99Ms": 1.6,
+        "queueDrops": 0,
+        "duplicateDeliveries": 0,
+        "forwardAttempts": 18000,
+        "suppressedDuplicates": 12000,
+        "hopLimitDrops": 0,
+        "backpressureUnsent": 0
+      },
+      "processWallSeconds": 92.23385876499742,
+      "peakRssBytes": 785108992,
+      "phaseTicks": {
+        "construct": 0,
+        "connect": 17,
+        "subscribe": 9,
+        "warmup": 2500,
+        "warmupDrain": 3776,
+        "measure": 20000,
+        "drain": 29572
+      }
+    }
+  ],
+  "separateReceiptRecounts": [
+    {
+      "apiAttempts": 2000,
+      "expectedDeliveries": 8000,
+      "uniqueDeliveries": 4277,
+      "deliveryLoss": 0.465375,
+      "receiverP99Ms": 21.8,
+      "duplicateDeliveries": 0,
+      "fullyDeliveredPublications": 337
+    },
+    {
+      "apiAttempts": 2000,
+      "expectedDeliveries": 8000,
+      "uniqueDeliveries": 8000,
+      "deliveryLoss": 0.0,
+      "receiverP99Ms": 1510.3000000000002,
+      "duplicateDeliveries": 0,
+      "fullyDeliveredPublications": 2000
+    }
+  ],
+  "sourceIdentityEqual": true,
+  "sourceScheduleRelativeToMeasurementEqual": true,
+  "sourcePayloadBytesEqual": false,
+  "payloadDifferenceIsAbsoluteTickFieldOnly": true,
+  "measurementStartTicks": [
+    2715,
+    6302
+  ],
+  "measurementStartShiftTicks": 3587,
+  "supportsQueueCapacityEffectInDeclaredEpisode": true,
+  "mainSeriesLossCauseEstablished": false,
+  "scope": "One seed; queue capacity changes the whole episode including warmup drain. Separate local verifier execution plus separate receipt/ID arithmetic; not a human replication.",
+  "archiveSha256": "4bba01109808dace6e28c1c0180884a02a3a16dada8c4c20337885c21bcc78fb",
+  "newExperimentsDuringAcceptance": 0,
+  "humanReviewPassed": false,
+  "protectedLaTexFilesVerified": 6,
+  "localVerifierSha256": {
+    "tools/dissertation/network_study_verification.py": "ebdbfa8481f5dd81467f0423154bd52d3c6100e9103244d9e7e54f87b52a1504",
+    "tools/dissertation/network_review.py": "b914cc1c266ed91e8b3902fe49757ed3d20ffee8fee319c2777c74159119a939"
+  },
+  "acceptanceProcedureSha256": "50bf58d35e045cf2541cf1afa0cdda68b1ed6cf1236260a8a9d2b29020d0314b"
+}

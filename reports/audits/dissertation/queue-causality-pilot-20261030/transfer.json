@@ -1,0 +1,20 @@
+{
+  "remoteArchive": "/run/media/entityfx/hd250/mqtty-evidence/queue-causality-pilot-20261030-transfer-001/raw.tar.gz",
+  "archiveSha256": "4bba01109808dace6e28c1c0180884a02a3a16dada8c4c20337885c21bcc78fb",
+  "archiveBytes": 2192717,
+  "sourceIndexSha256": "0ec4df390816b3b7354d9797b1692b6eb1fca0d61516b1b58f7b9809af3e522d",
+  "files": 83,
+  "bytes": 23437351,
+  "sourcePostflight": {
+    "sourceFilesVerified": 281,
+    "sourceManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+    "programSealSha256": "4904ac04b647301426e3bc5b8ecafa40000926c27e5c6e0acb9bf015d33c9eba",
+    "unitState": "MainPID=0\nResult=success\nExecMainStatus=0\nActiveState=inactive\n",
+    "sourcePostflightPassed": true
+  },
+  "localArchive": "C:\\temp\\mqtty-evidence\\queue-causality-pilot-20261030\\transfer-001\\raw.tar.gz",
+  "localRaw": "C:\\temp\\mqtty-evidence\\queue-causality-pilot-20261030\\transfer-001\\contents\\raw",
+  "localProgram": "C:\\temp\\mqtty-evidence\\queue-causality-pilot-20261030\\transfer-001\\contents\\program",
+  "status": "transferredVerified",
+  "newModelsExecuted": 0
+}
