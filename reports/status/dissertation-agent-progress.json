@@ -1791,7 +1791,8 @@
     "acceptance": "reports/audits/dissertation/queue-capacity-short-v2/acceptance.json",
     "report": "reports/analysis/Queue-capacity-short.md",
     "serviceCurrentlyRunning": false,
-    "automaticRetryPerformed": false
+    "automaticRetryPerformed": false,
+    "acceptancePublishedCommit": "ea3884ff39868e7d9ce84968419e7ef05f6ca7f4"
   },
   "manuscriptOfflineReviewV1": {
     "status": "publishedIntermediate",
@@ -1856,6 +1857,8 @@
     "fullBrowserFlowVerified": false,
     "newNativeMeasurements": 0,
     "report": "reports/analysis/Article-1-final-profile-web.md",
-    "verification": "reports/audits/web/article1-final-profile-v1/verification.json"
+    "verification": "reports/audits/web/article1-final-profile-v1/verification.json",
+    "publishedCommit": "ea3884ff39868e7d9ce84968419e7ef05f6ca7f4",
+    "remoteHeadConfirmed": true
   }
 }
