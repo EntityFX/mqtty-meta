@@ -1529,7 +1529,7 @@
     "verification": "reports/audits/dissertation/article-2-evidence-package-v2/verification.json",
     "revisionChecks": "reports/audits/dissertation/articles-offline-revision-v1/verification.json"
   },
-  "nextAction": "No automatic queue rerun: preregister cheaper equal work and per-phase observability first. Independent human review and public archive handoff remain open.",
+  "nextAction": "After explicit continuation, accept short queue pair and classify baseline overflow. No polling or automatic matrix/retry.",
   "article1BoundedReview": {
     "status": "selfReviewCompletedIndependentReviewUnavailable",
     "document": "reports/analysis/Article-1-bounded-review.md",
@@ -1761,5 +1761,25 @@
     ],
     "publiclyHosted": false,
     "publishedCommit": "d1923e699f5456f4157fb1b6de8a016f3b5f5939"
+  },
+  "queueCapacityShortV2": {
+    "status": "launchedLastObservedRunning",
+    "service": "mqtty-queue-short-v2.service",
+    "pid": 6823,
+    "observedAtMsk": "2026-10-29T08:48:19.454126+03:00",
+    "deadlineMsk": "2026-10-29T08:57:49.744575+03:00",
+    "root": "/run/media/entityfx/hd250/mqtty-evidence/queue-capacity-short-v2-20261029",
+    "modelTimeoutSeconds": 240,
+    "sharedWallSeconds": 600,
+    "commonWindows": {
+      "warmup": 0.25,
+      "submission": 2,
+      "drainLimit": 10
+    },
+    "testsPassedLocal": 6,
+    "testsPassedLinux": 6,
+    "launch": "reports/audits/dissertation/queue-capacity-short-v2/launch.json",
+    "sourceSnapshotModified": false,
+    "resultsAccepted": false
   }
 }
