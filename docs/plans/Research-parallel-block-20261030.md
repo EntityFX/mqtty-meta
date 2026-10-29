@@ -1,6 +1,6 @@
 # Параллельный блок исследования и материалов
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** выполнить пять согласованных задач агента: актуальный алгоритм, словарь метрик, две ограниченные экспериментальные программы и основу доклада.
 
@@ -29,9 +29,13 @@
 
 ## Потоки
 
-- [ ] A — методика статьи 1: docs/dissertation/article-1-current-model-method.md, адресное дополнение статьи, квитанция исходников.
-- [ ] B — метрики: docs/dissertation/metrics-contract.md и отдельная сверка источников; без изменения статусов согласования.
-- [ ] C — очереди и ускорение: отдельные короткие протоколы, критерии допуска, существующие инструменты и подтверждённые пробелы; без самостоятельного запуска Linux.
-- [ ] D — основной агент: docs/dissertation/presentation/overview.md, проверка статей и независимая приёмка потоков.
-- [ ] E — основной агент: технический допуск короткой диагностики, запуск при выполнении условий; сохранение всех исходов.
-- [ ] Свести результаты и Progress/Goal/JSON, проверить ссылки/числа/защищённые файлы и залить.
+- [x] A — методика статьи 1: docs/dissertation/article-1-current-model-method.md, адресное дополнение статьи, квитанция исходников.
+- [x] B — метрики: docs/dissertation/metrics-contract.md и отдельная сверка источников; без изменения статусов согласования.
+- [x] C — очереди и ускорение: отдельные короткие протоколы, критерии допуска, существующие инструменты и подтверждённые пробелы; без самостоятельного запуска Linux.
+- [x] D — основной агент: docs/dissertation/presentation/overview.md, проверка статей и независимая приёмка потоков.
+- [x] E — основной агент: технический допуск короткой диагностики, запуск при выполнении условий; сохранение всех исходов.
+- [x] Свести результаты и Progress/Goal/JSON, проверить ссылки/числа/защищённые файлы и залить.
+
+## Передача
+
+Пять подготовительных результатов завершены; пилот запущен, его научная приёмка ещё0/2. Benchmark ускорения не исполнялся: отсутствует bounded CPU-aware launcher. [Квитанция](../../reports/audits/dissertation/parallel-block-20261030/queue-launch.json). Основные серии и LaTeX сохранены; после публикации остановиться для ожидания.
