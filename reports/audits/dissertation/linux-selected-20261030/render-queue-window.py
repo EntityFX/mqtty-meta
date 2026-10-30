@@ -43,6 +43,10 @@ def main():
     fig.tight_layout(rect=(0,.10,1,1))
     for extension in ('svg','pdf','png'):
         fig.savefig(HERE/f'delivery-window.{extension}',dpi=180,bbox_inches='tight',metadata={'Creator':'MqttY evidence analysis'})
+    # Matplotlib leaves separators at SVG path line ends; normalise only this generated asset.
+    svg=HERE/'delivery-window.svg'
+    svg.write_text('\n'.join(line.rstrip() for line in svg.read_text(encoding='utf-8').splitlines())+'\n',
+                   encoding='utf-8',newline='\n')
     plt.close(fig)
 
 
