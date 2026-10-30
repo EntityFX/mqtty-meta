@@ -1960,7 +1960,7 @@
     "linuxRemainingQueue": "reports/status/Linux-work-queue.md"
   },
   "accelerationAa20261030": {
-    "status": "completedOnLinux",
+    "status": "rawAcceptedLocally",
     "stage": "A/A measurement calibration, not speedup",
     "linuxTestsPassed": 7,
     "totalModels": 4,
@@ -1982,7 +1982,7 @@
     },
     "deadlineMsk": "02:05:34",
     "receipt": "reports/audits/dissertation/acceleration-aa-20261030/linux-result.json",
-    "agentStopsForWaiting": true,
+    "agentStopsForWaiting": false,
     "finishedModels": 4,
     "aaRelativeSpread": 0.012482615659906228,
     "batchPrimaryWallSeconds": [
@@ -1990,18 +1990,18 @@
       179.0060801590007
     ],
     "wallSeconds": 356.06492990300103,
-    "scientificRawAcceptedLocally": false,
+    "scientificRawAcceptedLocally": true,
     "speedupMeasured": false
   },
   "linuxSelected20261030": {
-    "status": "running",
+    "status": "acceptedWithRecordedFailures",
     "items": [
       2,
       4,
       5
     ],
     "unit": "mqtty-linux-selected-20261030.service",
-    "pid": 6146,
+    "pid": 0,
     "observedAtMsk": "2026-10-30T02:10:52.750523+03:00",
     "observedProgress": {
       "programIdentity": "linux-selected-2-4-5-20261030-v1",
@@ -2015,10 +2015,29 @@
     },
     "deadlineMsk": "03:00:49",
     "hardWallSeconds": 3000,
-    "receipt": "reports/audits/dissertation/linux-selected-20261030/launch.json",
+    "receipt": "reports/audits/dissertation/linux-selected-20261030/acceptance.json",
     "sourceCommit": "de3a19c",
     "automaticRetry": false,
-    "agentStopsForWaiting": true,
-    "scientificResultsAccepted": false
+    "agentStopsForWaiting": false,
+    "scientificResultsAccepted": true,
+    "finishedStages": 3,
+    "localFilesVerified": 897,
+    "nativeRawAccepted": 12,
+    "modelRawAccepted": 19,
+    "temporalModelPassed": 10,
+    "temporalModelTotal": 12,
+    "coreClassification": "receiptOrderWithinSameTickOnly",
+    "coreOriginalStrictGatePassed": false,
+    "queueClassification": "baselineWallTimeout"
+  },
+  "queueMainRemaining20261030": {
+    "status": "admittedNotLaunched",
+    "capacity": 4096,
+    "baselineReused": true,
+    "baselineKnownWallSeconds": 526.5441919779987,
+    "hardWallSeconds": 1860,
+    "modelTimeoutSeconds": 1800,
+    "automaticRetry": false,
+    "plan": "docs/plans/Queue-main-remaining-20261030.md"
   }
 }

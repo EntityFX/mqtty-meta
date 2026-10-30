@@ -1,0 +1,445 @@
+{
+  "status": "acceptedWithRecordedFailures",
+  "filesVerified": 897,
+  "sealedProgramFilesVerified": 51,
+  "core": {
+    "localRawPassed": 3,
+    "originalAndSerialByteEqual": true,
+    "parallelDifferentFiles": [
+      "delivery-receipts.json"
+    ],
+    "fullReceiptMultisetEqual": true,
+    "receiptTickSequenceEqual": true,
+    "classification": "receiptOrderWithinSameTickOnly",
+    "originalStrictGatePassed": false,
+    "scientificEquivalenceContractChanged": false,
+    "stableSpeedupEstablished": false,
+    "runs": [
+      {
+        "name": "core-original",
+        "hashes": {
+          "summary.json": "0c0bc34a48f6d4bc41bef8de2e96c1dedb6cfe9709b97350a6a630cbad190dfc",
+          "histograms.json": "a131a9da7225a0687bacf298e1956fbd2d84a913f6757b7fe82dea96dcbb7180",
+          "publications.json": "4aa5bd4222cf58d80127d0beb718b3049e968b6d5cdb01a7e876127c6cefcc73",
+          "delivery-receipts.json": "c4b32015c9f17712e4911fc36d75bff56817c75ef1527e6567f866fd6d731b6c",
+          "transmissions.json": "33eff0d9c28a78226dc629aac2c64f99074538d25fc3e23c9e87f3978ad85b7f",
+          "network-evidence.json": "e37e68b408e4dcb275cfe6a66f0c16ad6eb5d2f4763b69245a743da65d4d498d"
+        },
+        "summary": {
+          "apiAttempts": 50,
+          "sourceCompleted": 50,
+          "expectedDeliveries": 200,
+          "uniqueDeliveries": 200,
+          "deliveryLoss": 0,
+          "receiverP99Ms": 45.2
+        },
+        "process": {
+          "workers": 1,
+          "jobs": [
+            {
+              "job": 1,
+              "pid": 6149,
+              "returnCode": 0,
+              "wallSeconds": 4.084635497001727,
+              "sampledTreeRssPeakBytes": 771399680,
+              "userSeconds": 4.0,
+              "systemSeconds": 0.34,
+              "maxRssBytes": 769634304
+            }
+          ],
+          "error": null,
+          "modelMakespanSeconds": 4.086105389000295,
+          "simultaneousSampledRssPeakBytes": 771399680,
+          "sumIndividualMaxRssBytes": 769634304,
+          "cpuUserSeconds": 4.0,
+          "cpuSystemSeconds": 0.34,
+          "attemptedJobs": 1,
+          "expectedJobs": 1
+        }
+      },
+      {
+        "name": "core-serial",
+        "hashes": {
+          "summary.json": "0c0bc34a48f6d4bc41bef8de2e96c1dedb6cfe9709b97350a6a630cbad190dfc",
+          "histograms.json": "a131a9da7225a0687bacf298e1956fbd2d84a913f6757b7fe82dea96dcbb7180",
+          "publications.json": "4aa5bd4222cf58d80127d0beb718b3049e968b6d5cdb01a7e876127c6cefcc73",
+          "delivery-receipts.json": "c4b32015c9f17712e4911fc36d75bff56817c75ef1527e6567f866fd6d731b6c",
+          "transmissions.json": "33eff0d9c28a78226dc629aac2c64f99074538d25fc3e23c9e87f3978ad85b7f",
+          "network-evidence.json": "e37e68b408e4dcb275cfe6a66f0c16ad6eb5d2f4763b69245a743da65d4d498d"
+        },
+        "summary": {
+          "apiAttempts": 50,
+          "sourceCompleted": 50,
+          "expectedDeliveries": 200,
+          "uniqueDeliveries": 200,
+          "deliveryLoss": 0,
+          "receiverP99Ms": 45.2
+        },
+        "process": {
+          "workers": 1,
+          "jobs": [
+            {
+              "job": 1,
+              "pid": 6163,
+              "returnCode": 0,
+              "wallSeconds": 4.085453714000323,
+              "sampledTreeRssPeakBytes": 770781184,
+              "userSeconds": 4.04,
+              "systemSeconds": 0.35,
+              "maxRssBytes": 769036288
+            }
+          ],
+          "error": null,
+          "modelMakespanSeconds": 4.0869490089971805,
+          "simultaneousSampledRssPeakBytes": 770781184,
+          "sumIndividualMaxRssBytes": 769036288,
+          "cpuUserSeconds": 4.04,
+          "cpuSystemSeconds": 0.35,
+          "attemptedJobs": 1,
+          "expectedJobs": 1
+        }
+      },
+      {
+        "name": "core-parallel",
+        "hashes": {
+          "summary.json": "0c0bc34a48f6d4bc41bef8de2e96c1dedb6cfe9709b97350a6a630cbad190dfc",
+          "histograms.json": "a131a9da7225a0687bacf298e1956fbd2d84a913f6757b7fe82dea96dcbb7180",
+          "publications.json": "4aa5bd4222cf58d80127d0beb718b3049e968b6d5cdb01a7e876127c6cefcc73",
+          "delivery-receipts.json": "6531dd43c5d4826d18d1de00970c67b28ac19a139d6d182d84509402991da84d",
+          "transmissions.json": "33eff0d9c28a78226dc629aac2c64f99074538d25fc3e23c9e87f3978ad85b7f",
+          "network-evidence.json": "e37e68b408e4dcb275cfe6a66f0c16ad6eb5d2f4763b69245a743da65d4d498d"
+        },
+        "summary": {
+          "apiAttempts": 50,
+          "sourceCompleted": 50,
+          "expectedDeliveries": 200,
+          "uniqueDeliveries": 200,
+          "deliveryLoss": 0,
+          "receiverP99Ms": 45.2
+        },
+        "process": {
+          "workers": 1,
+          "jobs": [
+            {
+              "job": 1,
+              "pid": 6173,
+              "returnCode": 0,
+              "wallSeconds": 3.7299891889997525,
+              "sampledTreeRssPeakBytes": 772440064,
+              "userSeconds": 4.87,
+              "systemSeconds": 0.69,
+              "maxRssBytes": 770535424
+            }
+          ],
+          "error": null,
+          "modelMakespanSeconds": 3.7314074739988428,
+          "simultaneousSampledRssPeakBytes": 772440064,
+          "sumIndividualMaxRssBytes": 770535424,
+          "cpuUserSeconds": 4.87,
+          "cpuSystemSeconds": 0.69,
+          "attemptedJobs": 1,
+          "expectedJobs": 1
+        }
+      }
+    ]
+  },
+  "queue": {
+    "classification": "baselineWallTimeout",
+    "attempts": 1,
+    "referenceIncomplete": true,
+    "secondVariantStarted": false,
+    "process": {
+      "workers": 1,
+      "jobs": [
+        {
+          "job": 1,
+          "pid": 6188,
+          "returnCode": -9,
+          "wallSeconds": 240.0086319639995,
+          "sampledTreeRssPeakBytes": 831991808,
+          "userSeconds": null,
+          "systemSeconds": null,
+          "maxRssBytes": null
+        }
+      ],
+      "error": "childTimeout",
+      "modelMakespanSeconds": 240.01000675199975,
+      "simultaneousSampledRssPeakBytes": 831991808,
+      "sumIndividualMaxRssBytes": 0,
+      "cpuUserSeconds": 0,
+      "cpuSystemSeconds": 0,
+      "attemptedJobs": 1,
+      "expectedJobs": 1
+    },
+    "scientificPairAccepted": false,
+    "missingCpuAccountingMustNotBeInterpretedAsZero": true,
+    "reasonOfWallExhaustion": "Not established; no final phase snapshot or summary"
+  },
+  "temporal": {
+    "rawAccepted": 24,
+    "modelComparisonsPassed": 10,
+    "totalModelComparisons": 12,
+    "perBroker": [
+      {
+        "broker": "Aedes",
+        "passed": 3,
+        "total": 3,
+        "oldNative": {
+          "completedCohortPerSubmissionSecond": 17112.666666666668,
+          "p99PublishMs": 2.1781999999999093,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.0
+        },
+        "newNative": {
+          "completedCohortPerSubmissionSecond": 17514.25,
+          "p99PublishMs": 2.3433333333332484,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.0
+        },
+        "modelMean": {
+          "completedCohortPerSubmissionSecond": 17119.0,
+          "p99PublishMs": 2.2100000000000004,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.0
+        },
+        "maxErrors": {
+          "completedCohortPerSubmissionSecond": 0.024865466691408426,
+          "p99PublishMs": 0.06543385490750529,
+          "publishFailureRate": 0,
+          "deliveryLossRate": 0
+        }
+      },
+      {
+        "broker": "Mosquitto",
+        "passed": 3,
+        "total": 3,
+        "oldNative": {
+          "completedCohortPerSubmissionSecond": 20961.916666666668,
+          "p99PublishMs": 3.2374000000000556,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.03386308997918785
+        },
+        "newNative": {
+          "completedCohortPerSubmissionSecond": 21517.583333333332,
+          "p99PublishMs": 3.0801666666664764,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.02209367056303582
+        },
+        "modelMean": {
+          "completedCohortPerSubmissionSecond": 21093.666666666668,
+          "p99PublishMs": 3.1133333333333337,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.045048417959709305
+        },
+        "maxErrors": {
+          "completedCohortPerSubmissionSecond": 0.021242317329625716,
+          "p99PublishMs": 0.02267193333700392,
+          "publishFailureRate": 0,
+          "deliveryLossRate": 0.02338880527181399
+        }
+      },
+      {
+        "broker": "ActiveMQ",
+        "passed": 1,
+        "total": 3,
+        "oldNative": {
+          "completedCohortPerSubmissionSecond": 12325.833333333334,
+          "p99PublishMs": 11.217433333333247,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.006537650230540921
+        },
+        "newNative": {
+          "completedCohortPerSubmissionSecond": 13957.333333333334,
+          "p99PublishMs": 7.854166666666667,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.002030507739810336
+        },
+        "modelMean": {
+          "completedCohortPerSubmissionSecond": 12597.5,
+          "p99PublishMs": 9.790000000000001,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.004252462648256785
+        },
+        "maxErrors": {
+          "completedCohortPerSubmissionSecond": 0.1014759266335499,
+          "p99PublishMs": 0.3139522546419098,
+          "publishFailureRate": 0,
+          "deliveryLossRate": 0.00258487687557428
+        }
+      },
+      {
+        "broker": "EMQX",
+        "passed": 3,
+        "total": 3,
+        "oldNative": {
+          "completedCohortPerSubmissionSecond": 10123.833333333334,
+          "p99PublishMs": 3.0706666666671176,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.0
+        },
+        "newNative": {
+          "completedCohortPerSubmissionSecond": 10174.333333333334,
+          "p99PublishMs": 3.0786333333332245,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.0
+        },
+        "modelMean": {
+          "completedCohortPerSubmissionSecond": 9902.5,
+          "p99PublishMs": 3.116666666666667,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.0
+        },
+        "maxErrors": {
+          "completedCohortPerSubmissionSecond": 0.02804442551518533,
+          "p99PublishMs": 0.01343669810200765,
+          "publishFailureRate": 0,
+          "deliveryLossRate": 0
+        }
+      }
+    ],
+    "comparisons": [
+      {
+        "broker": "Aedes",
+        "repeat": 1,
+        "passed": true,
+        "errors": {
+          "completedCohortPerSubmissionSecond": 0.022338952567195283,
+          "p99PublishMs": 0.06543385490750529,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.0
+        }
+      },
+      {
+        "broker": "Aedes",
+        "repeat": 2,
+        "passed": true,
+        "errors": {
+          "completedCohortPerSubmissionSecond": 0.020497594815650114,
+          "p99PublishMs": 0.056899004267391175,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.0
+        }
+      },
+      {
+        "broker": "Aedes",
+        "repeat": 3,
+        "passed": true,
+        "errors": {
+          "completedCohortPerSubmissionSecond": 0.024865466691408426,
+          "p99PublishMs": 0.04836415362727687,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.0
+        }
+      },
+      {
+        "broker": "Mosquitto",
+        "repeat": 1,
+        "passed": true,
+        "errors": {
+          "completedCohortPerSubmissionSecond": 0.021079659658186468,
+          "p99PublishMs": 0.006547264758339144,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.022781471860055715
+        }
+      },
+      {
+        "broker": "Mosquitto",
+        "repeat": 2,
+        "passed": true,
+        "errors": {
+          "completedCohortPerSubmissionSecond": 0.016780849770149164,
+          "p99PublishMs": 0.02267193333700392,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.02338880527181399
+        }
+      },
+      {
+        "broker": "Mosquitto",
+        "repeat": 3,
+        "passed": true,
+        "errors": {
+          "completedCohortPerSubmissionSecond": 0.021242317329625716,
+          "p99PublishMs": 0.016178778204705476,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.022693965058150762
+        }
+      },
+      {
+        "broker": "ActiveMQ",
+        "repeat": 1,
+        "passed": false,
+        "errors": {
+          "completedCohortPerSubmissionSecond": 0.09893246083301495,
+          "p99PublishMs": 0.24392572944297095,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.001945161166483148
+        }
+      },
+      {
+        "broker": "ActiveMQ",
+        "repeat": 2,
+        "passed": true,
+        "errors": {
+          "completedCohortPerSubmissionSecond": 0.09187523882307991,
+          "p99PublishMs": 0.1815384615384614,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.00258487687557428
+        }
+      },
+      {
+        "broker": "ActiveMQ",
+        "repeat": 3,
+        "passed": false,
+        "errors": {
+          "completedCohortPerSubmissionSecond": 0.1014759266335499,
+          "p99PublishMs": 0.3139522546419098,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.0021358266832819215
+        }
+      },
+      {
+        "broker": "EMQX",
+        "repeat": 1,
+        "passed": true,
+        "errors": {
+          "completedCohortPerSubmissionSecond": 0.026570127444877693,
+          "p99PublishMs": 0.01343669810200765,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.0
+        }
+      },
+      {
+        "broker": "EMQX",
+        "repeat": 2,
+        "passed": true,
+        "errors": {
+          "completedCohortPerSubmissionSecond": 0.02804442551518533,
+          "p99PublishMs": 0.010188503556808831,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.0
+        }
+      },
+      {
+        "broker": "EMQX",
+        "repeat": 3,
+        "passed": true,
+        "errors": {
+          "completedCohortPerSubmissionSecond": 0.025538118795662347,
+          "p99PublishMs": 0.01343669810200765,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.0
+        }
+      }
+    ],
+    "profilesUnchanged": true
+  },
+  "aa": {
+    "rawAccepted": 4,
+    "relativeSpread": 0.012482615659906228
+  },
+  "rawModelRunsRecounted": 19,
+  "nativeRunsRecounted": 12,
+  "newSimulationsExecuted": 0,
+  "scientificThresholdsChanged": false,
+  "protectedLaTexFilesVerified": 6
+}
