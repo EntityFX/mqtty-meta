@@ -2031,7 +2031,7 @@
     "queueClassification": "baselineWallTimeout"
   },
   "queueMainRemaining20261030": {
-    "status": "running",
+    "status": "partialEvidenceAccepted",
     "capacity": 4096,
     "baselineReused": true,
     "baselineKnownWallSeconds": 526.5441919779987,
@@ -2040,7 +2040,7 @@
     "automaticRetry": false,
     "plan": "docs/plans/Queue-main-remaining-20261030.md",
     "unit": "mqtty-queue-main-remaining-20261030.service",
-    "pid": 11073,
+    "pid": 0,
     "observedAtMsk": "2026-10-30T08:35:08.990269+03:00",
     "observedProgress": {
       "programIdentity": "queue-main-remaining-20261030-v1",
@@ -2053,9 +2053,26 @@
     },
     "deadlineMsk": "09:06:05",
     "sourceCommit": "85ab55e",
-    "receipt": "reports/audits/dissertation/linux-selected-20261030/remaining-launch.json",
+    "receipt": "reports/audits/dissertation/linux-selected-20261030/remaining-result/acceptance.json",
     "baselineRecountPassed": true,
     "baselineRecomputed": false,
-    "agentStopsForWaiting": true
+    "agentStopsForWaiting": false,
+    "partialRawAccepted": true,
+    "completedPairAccepted": false,
+    "executedNewJobs": 1,
+    "completedNewJobs": 0,
+    "termination": "modelDrainDeadline30Seconds",
+    "wallDeadlineReached": false,
+    "modelReturnCode": 2,
+    "modelWallSeconds": 1000.5425936419997,
+    "filesVerified": 56,
+    "deliveredPairs1024": 38609,
+    "deliveredPairs4096": 76513,
+    "expectedPairs": 200000,
+    "observationSeconds": 40,
+    "newUniquePairsLastModelSecond": 177,
+    "forwardingEventsLastModelSecond": 2431,
+    "additionalRunsLaunched": false,
+    "lastAcceptedAtMsk": "2026-10-30T09:14:26.201293+03:00"
   }
 }

@@ -1,0 +1,12 @@
+{
+  "scope": "Standalone report figure, not full manuscript submission review",
+  "paletteAudit": "PASS via runpy with skill scripts on sys.path; direct invocation initially lacked cs_palette import path",
+  "pngInspected": true,
+  "labelsNotClipped": true,
+  "censoredEndpointExplicit": true,
+  "denominator": 200000,
+  "noRepeatIntervalsInvented": true,
+  "svgPdfPngGenerated": true,
+  "source": "delivery-curve.csv",
+  "family": "CS_PEER_PALETTE"
+}
