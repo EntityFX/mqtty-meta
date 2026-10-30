@@ -2031,13 +2031,31 @@
     "queueClassification": "baselineWallTimeout"
   },
   "queueMainRemaining20261030": {
-    "status": "admittedNotLaunched",
+    "status": "running",
     "capacity": 4096,
     "baselineReused": true,
     "baselineKnownWallSeconds": 526.5441919779987,
     "hardWallSeconds": 1860,
     "modelTimeoutSeconds": 1800,
     "automaticRetry": false,
-    "plan": "docs/plans/Queue-main-remaining-20261030.md"
+    "plan": "docs/plans/Queue-main-remaining-20261030.md",
+    "unit": "mqtty-queue-main-remaining-20261030.service",
+    "pid": 11073,
+    "observedAtMsk": "2026-10-30T08:35:08.990269+03:00",
+    "observedProgress": {
+      "programIdentity": "queue-main-remaining-20261030-v1",
+      "phase": "model4096",
+      "totalNewJobs": 1,
+      "completedNewJobs": 0,
+      "baselineReused": true,
+      "baselineRecountPassed": true,
+      "deadlineEpoch": 1793340365.0527833
+    },
+    "deadlineMsk": "09:06:05",
+    "sourceCommit": "85ab55e",
+    "receipt": "reports/audits/dissertation/linux-selected-20261030/remaining-launch.json",
+    "baselineRecountPassed": true,
+    "baselineRecomputed": false,
+    "agentStopsForWaiting": true
   }
 }
