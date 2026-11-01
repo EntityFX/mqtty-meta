@@ -2074,5 +2074,28 @@
     "forwardingEventsLastModelSecond": 2431,
     "additionalRunsLaunched": false,
     "lastAcceptedAtMsk": "2026-10-30T09:14:26.201293+03:00"
+  },
+  "articlesFinalReview20261101": {
+    "status": "manuscriptsRevisedAndVerified",
+    "dateMsk": "2026-11-01",
+    "report": "reports/analysis/Articles-final-review-20261101.md",
+    "verification": "reports/audits/dissertation/articles-final-review-20261101/verification.json",
+    "compactEvidenceChecksPassed": 425,
+    "localLinksChecked": 41,
+    "separateAiReviewFindingsAddressed": 5,
+    "article1MainComparisonsPassed": 12,
+    "article1MainComparisonsTotal": 12,
+    "article1AdditionalComparisonsPassed": 10,
+    "article1AdditionalComparisonsTotal": 12,
+    "article2MainMatrixAccepted": 162,
+    "article2ReplaysAccepted": 6,
+    "queue4096Completed": false,
+    "newLinuxRuns": 0,
+    "primaryDissertationEdited": false,
+    "humanReadingCredited": false,
+    "submissionReady": null,
+    "globalPercent": 53.2,
+    "localPercent": 80,
+    "gitPublication": "pending"
   }
 }

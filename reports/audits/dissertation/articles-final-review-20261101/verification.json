@@ -1,0 +1,1721 @@
+{
+  "status": "compactEvidenceAndMarkdownChecksPassed",
+  "date": "2026-11-01",
+  "scope": "Current manuscript tables vs accepted compact evidence and local links; no new raw recount, experiments, or submission-readiness verdict.",
+  "checksPassed": 425,
+  "localLinksChecked": 41,
+  "inputsSha256": {
+    "docs/dissertation/articles/article-1-twin-validation.md": "2b13e42c2f7ae3a237fd268d4cd256432d1209053bc9e7d0fa8a54323a0e3be6",
+    "docs/dissertation/articles/article-2-relay-federation.md": "d3d687bd438ba68ebe45bb3a85f0a56af3a19299af7272b7e3549c7dda687ebf",
+    "reports/audits/dissertation/article-1-matched-main-final-v1/verification.json": "1198d8fe28c3995228e99cc23d1aae85b5cbae853c01594c5734d3852d6d2cd4",
+    "reports/audits/dissertation/linux-selected-20261030/temporal-comparison.csv": "50c2a8c07eaa3fc5f758db2ccbdd7ec0debc5d78f777deaf4ed3d45c9455b605",
+    "reports/audits/dissertation/network-main-final-v1/raw-recount/comparison.csv": "cc194dd7bb7241f7db4fd9a06aa803a872c3e489954795fe87a421d892faa884",
+    "reports/audits/dissertation/network-main-final-v1/transit.csv": "834ba018d5d3447a701f20af86dc048bb8a704c0a92b1e04c3e6b1d213c8d575",
+    "reports/audits/dissertation/network-main-final-v1/acceptance.json": "df9feb3df3fada8c564505606abe474fa34659eed3c5b133209c6972fa169edc",
+    "reports/audits/dissertation/linux-selected-20261030/remaining-result/acceptance.json": "24fa183c060dcc2b498779df65491a39bf1032a0031cd1aa635b709229a7318d",
+    "reports/audits/dissertation/linux-selected-20261030/acceptance.json": "0256fd95905461878c6acfa224c713b7989c2100910a0f5df591dcf700652e8a"
+  },
+  "checks": [
+    {
+      "check": "article1 accepted jobs",
+      "passed": true
+    },
+    {
+      "check": "article1 model comparisons",
+      "passed": true
+    },
+    {
+      "check": "article1 replays",
+      "passed": true
+    },
+    {
+      "check": "article1 comparison row count",
+      "passed": true
+    },
+    {
+      "check": "Aedes/rps/control",
+      "passed": true
+    },
+    {
+      "check": "Aedes/rps/calibration",
+      "passed": true
+    },
+    {
+      "check": "Aedes/rps/model",
+      "passed": true
+    },
+    {
+      "check": "Aedes/rps/calibration error",
+      "passed": true
+    },
+    {
+      "check": "Aedes/rps/model error",
+      "passed": true
+    },
+    {
+      "check": "Aedes/p99/control",
+      "passed": true
+    },
+    {
+      "check": "Aedes/p99/calibration",
+      "passed": true
+    },
+    {
+      "check": "Aedes/p99/model",
+      "passed": true
+    },
+    {
+      "check": "Aedes/p99/calibration error",
+      "passed": true
+    },
+    {
+      "check": "Aedes/p99/model error",
+      "passed": true
+    },
+    {
+      "check": "Aedes/failure/control",
+      "passed": true
+    },
+    {
+      "check": "Aedes/failure/calibration",
+      "passed": true
+    },
+    {
+      "check": "Aedes/failure/model",
+      "passed": true
+    },
+    {
+      "check": "Aedes/failure/calibration error",
+      "passed": true
+    },
+    {
+      "check": "Aedes/failure/model error",
+      "passed": true
+    },
+    {
+      "check": "Aedes/loss/control",
+      "passed": true
+    },
+    {
+      "check": "Aedes/loss/calibration",
+      "passed": true
+    },
+    {
+      "check": "Aedes/loss/model",
+      "passed": true
+    },
+    {
+      "check": "Aedes/loss/calibration error",
+      "passed": true
+    },
+    {
+      "check": "Aedes/loss/model error",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/rps/control",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/rps/calibration",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/rps/model",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/rps/calibration error",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/rps/model error",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/p99/control",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/p99/calibration",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/p99/model",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/p99/calibration error",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/p99/model error",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/failure/control",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/failure/calibration",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/failure/model",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/failure/calibration error",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/failure/model error",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/loss/control",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/loss/calibration",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/loss/model",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/loss/calibration error",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/loss/model error",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/rps/control",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/rps/calibration",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/rps/model",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/rps/calibration error",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/rps/model error",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/p99/control",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/p99/calibration",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/p99/model",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/p99/calibration error",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/p99/model error",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/failure/control",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/failure/calibration",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/failure/model",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/failure/calibration error",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/failure/model error",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/loss/control",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/loss/calibration",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/loss/model",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/loss/calibration error",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/loss/model error",
+      "passed": true
+    },
+    {
+      "check": "EMQX/rps/control",
+      "passed": true
+    },
+    {
+      "check": "EMQX/rps/calibration",
+      "passed": true
+    },
+    {
+      "check": "EMQX/rps/model",
+      "passed": true
+    },
+    {
+      "check": "EMQX/rps/calibration error",
+      "passed": true
+    },
+    {
+      "check": "EMQX/rps/model error",
+      "passed": true
+    },
+    {
+      "check": "EMQX/p99/control",
+      "passed": true
+    },
+    {
+      "check": "EMQX/p99/calibration",
+      "passed": true
+    },
+    {
+      "check": "EMQX/p99/model",
+      "passed": true
+    },
+    {
+      "check": "EMQX/p99/calibration error",
+      "passed": true
+    },
+    {
+      "check": "EMQX/p99/model error",
+      "passed": true
+    },
+    {
+      "check": "EMQX/failure/control",
+      "passed": true
+    },
+    {
+      "check": "EMQX/failure/calibration",
+      "passed": true
+    },
+    {
+      "check": "EMQX/failure/model",
+      "passed": true
+    },
+    {
+      "check": "EMQX/failure/calibration error",
+      "passed": true
+    },
+    {
+      "check": "EMQX/failure/model error",
+      "passed": true
+    },
+    {
+      "check": "EMQX/loss/control",
+      "passed": true
+    },
+    {
+      "check": "EMQX/loss/calibration",
+      "passed": true
+    },
+    {
+      "check": "EMQX/loss/model",
+      "passed": true
+    },
+    {
+      "check": "EMQX/loss/calibration error",
+      "passed": true
+    },
+    {
+      "check": "EMQX/loss/model error",
+      "passed": true
+    },
+    {
+      "check": "seed Aedes/42/rps",
+      "passed": true
+    },
+    {
+      "check": "threshold Aedes/42/rps",
+      "passed": true
+    },
+    {
+      "check": "seed Aedes/42/p99",
+      "passed": true
+    },
+    {
+      "check": "threshold Aedes/42/p99",
+      "passed": true
+    },
+    {
+      "check": "seed Aedes/42/failure",
+      "passed": true
+    },
+    {
+      "check": "threshold Aedes/42/failure",
+      "passed": true
+    },
+    {
+      "check": "seed Aedes/42/loss",
+      "passed": true
+    },
+    {
+      "check": "threshold Aedes/42/loss",
+      "passed": true
+    },
+    {
+      "check": "seed Aedes/43/rps",
+      "passed": true
+    },
+    {
+      "check": "threshold Aedes/43/rps",
+      "passed": true
+    },
+    {
+      "check": "seed Aedes/43/p99",
+      "passed": true
+    },
+    {
+      "check": "threshold Aedes/43/p99",
+      "passed": true
+    },
+    {
+      "check": "seed Aedes/43/failure",
+      "passed": true
+    },
+    {
+      "check": "threshold Aedes/43/failure",
+      "passed": true
+    },
+    {
+      "check": "seed Aedes/43/loss",
+      "passed": true
+    },
+    {
+      "check": "threshold Aedes/43/loss",
+      "passed": true
+    },
+    {
+      "check": "seed Aedes/44/rps",
+      "passed": true
+    },
+    {
+      "check": "threshold Aedes/44/rps",
+      "passed": true
+    },
+    {
+      "check": "seed Aedes/44/p99",
+      "passed": true
+    },
+    {
+      "check": "threshold Aedes/44/p99",
+      "passed": true
+    },
+    {
+      "check": "seed Aedes/44/failure",
+      "passed": true
+    },
+    {
+      "check": "threshold Aedes/44/failure",
+      "passed": true
+    },
+    {
+      "check": "seed Aedes/44/loss",
+      "passed": true
+    },
+    {
+      "check": "threshold Aedes/44/loss",
+      "passed": true
+    },
+    {
+      "check": "seed Mosquitto/42/rps",
+      "passed": true
+    },
+    {
+      "check": "threshold Mosquitto/42/rps",
+      "passed": true
+    },
+    {
+      "check": "seed Mosquitto/42/p99",
+      "passed": true
+    },
+    {
+      "check": "threshold Mosquitto/42/p99",
+      "passed": true
+    },
+    {
+      "check": "seed Mosquitto/42/failure",
+      "passed": true
+    },
+    {
+      "check": "threshold Mosquitto/42/failure",
+      "passed": true
+    },
+    {
+      "check": "seed Mosquitto/42/loss",
+      "passed": true
+    },
+    {
+      "check": "threshold Mosquitto/42/loss",
+      "passed": true
+    },
+    {
+      "check": "seed Mosquitto/43/rps",
+      "passed": true
+    },
+    {
+      "check": "threshold Mosquitto/43/rps",
+      "passed": true
+    },
+    {
+      "check": "seed Mosquitto/43/p99",
+      "passed": true
+    },
+    {
+      "check": "threshold Mosquitto/43/p99",
+      "passed": true
+    },
+    {
+      "check": "seed Mosquitto/43/failure",
+      "passed": true
+    },
+    {
+      "check": "threshold Mosquitto/43/failure",
+      "passed": true
+    },
+    {
+      "check": "seed Mosquitto/43/loss",
+      "passed": true
+    },
+    {
+      "check": "threshold Mosquitto/43/loss",
+      "passed": true
+    },
+    {
+      "check": "seed Mosquitto/44/rps",
+      "passed": true
+    },
+    {
+      "check": "threshold Mosquitto/44/rps",
+      "passed": true
+    },
+    {
+      "check": "seed Mosquitto/44/p99",
+      "passed": true
+    },
+    {
+      "check": "threshold Mosquitto/44/p99",
+      "passed": true
+    },
+    {
+      "check": "seed Mosquitto/44/failure",
+      "passed": true
+    },
+    {
+      "check": "threshold Mosquitto/44/failure",
+      "passed": true
+    },
+    {
+      "check": "seed Mosquitto/44/loss",
+      "passed": true
+    },
+    {
+      "check": "threshold Mosquitto/44/loss",
+      "passed": true
+    },
+    {
+      "check": "seed ActiveMQ/42/rps",
+      "passed": true
+    },
+    {
+      "check": "threshold ActiveMQ/42/rps",
+      "passed": true
+    },
+    {
+      "check": "seed ActiveMQ/42/p99",
+      "passed": true
+    },
+    {
+      "check": "threshold ActiveMQ/42/p99",
+      "passed": true
+    },
+    {
+      "check": "seed ActiveMQ/42/failure",
+      "passed": true
+    },
+    {
+      "check": "threshold ActiveMQ/42/failure",
+      "passed": true
+    },
+    {
+      "check": "seed ActiveMQ/42/loss",
+      "passed": true
+    },
+    {
+      "check": "threshold ActiveMQ/42/loss",
+      "passed": true
+    },
+    {
+      "check": "seed ActiveMQ/43/rps",
+      "passed": true
+    },
+    {
+      "check": "threshold ActiveMQ/43/rps",
+      "passed": true
+    },
+    {
+      "check": "seed ActiveMQ/43/p99",
+      "passed": true
+    },
+    {
+      "check": "threshold ActiveMQ/43/p99",
+      "passed": true
+    },
+    {
+      "check": "seed ActiveMQ/43/failure",
+      "passed": true
+    },
+    {
+      "check": "threshold ActiveMQ/43/failure",
+      "passed": true
+    },
+    {
+      "check": "seed ActiveMQ/43/loss",
+      "passed": true
+    },
+    {
+      "check": "threshold ActiveMQ/43/loss",
+      "passed": true
+    },
+    {
+      "check": "seed ActiveMQ/44/rps",
+      "passed": true
+    },
+    {
+      "check": "threshold ActiveMQ/44/rps",
+      "passed": true
+    },
+    {
+      "check": "seed ActiveMQ/44/p99",
+      "passed": true
+    },
+    {
+      "check": "threshold ActiveMQ/44/p99",
+      "passed": true
+    },
+    {
+      "check": "seed ActiveMQ/44/failure",
+      "passed": true
+    },
+    {
+      "check": "threshold ActiveMQ/44/failure",
+      "passed": true
+    },
+    {
+      "check": "seed ActiveMQ/44/loss",
+      "passed": true
+    },
+    {
+      "check": "threshold ActiveMQ/44/loss",
+      "passed": true
+    },
+    {
+      "check": "seed EMQX/42/rps",
+      "passed": true
+    },
+    {
+      "check": "threshold EMQX/42/rps",
+      "passed": true
+    },
+    {
+      "check": "seed EMQX/42/p99",
+      "passed": true
+    },
+    {
+      "check": "threshold EMQX/42/p99",
+      "passed": true
+    },
+    {
+      "check": "seed EMQX/42/failure",
+      "passed": true
+    },
+    {
+      "check": "threshold EMQX/42/failure",
+      "passed": true
+    },
+    {
+      "check": "seed EMQX/42/loss",
+      "passed": true
+    },
+    {
+      "check": "threshold EMQX/42/loss",
+      "passed": true
+    },
+    {
+      "check": "seed EMQX/43/rps",
+      "passed": true
+    },
+    {
+      "check": "threshold EMQX/43/rps",
+      "passed": true
+    },
+    {
+      "check": "seed EMQX/43/p99",
+      "passed": true
+    },
+    {
+      "check": "threshold EMQX/43/p99",
+      "passed": true
+    },
+    {
+      "check": "seed EMQX/43/failure",
+      "passed": true
+    },
+    {
+      "check": "threshold EMQX/43/failure",
+      "passed": true
+    },
+    {
+      "check": "seed EMQX/43/loss",
+      "passed": true
+    },
+    {
+      "check": "threshold EMQX/43/loss",
+      "passed": true
+    },
+    {
+      "check": "seed EMQX/44/rps",
+      "passed": true
+    },
+    {
+      "check": "threshold EMQX/44/rps",
+      "passed": true
+    },
+    {
+      "check": "seed EMQX/44/p99",
+      "passed": true
+    },
+    {
+      "check": "threshold EMQX/44/p99",
+      "passed": true
+    },
+    {
+      "check": "seed EMQX/44/failure",
+      "passed": true
+    },
+    {
+      "check": "threshold EMQX/44/failure",
+      "passed": true
+    },
+    {
+      "check": "seed EMQX/44/loss",
+      "passed": true
+    },
+    {
+      "check": "threshold EMQX/44/loss",
+      "passed": true
+    },
+    {
+      "check": "article1 maximum rows",
+      "passed": true
+    },
+    {
+      "check": "Aedes/rps/maximum table",
+      "passed": true
+    },
+    {
+      "check": "Aedes/p99/maximum table",
+      "passed": true
+    },
+    {
+      "check": "Aedes/loss/maximum table",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/rps/maximum table",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/p99/maximum table",
+      "passed": true
+    },
+    {
+      "check": "Mosquitto/loss/maximum table",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/rps/maximum table",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/p99/maximum table",
+      "passed": true
+    },
+    {
+      "check": "ActiveMQ/loss/maximum table",
+      "passed": true
+    },
+    {
+      "check": "EMQX/rps/maximum table",
+      "passed": true
+    },
+    {
+      "check": "EMQX/p99/maximum table",
+      "passed": true
+    },
+    {
+      "check": "EMQX/loss/maximum table",
+      "passed": true
+    },
+    {
+      "check": "temporal rows",
+      "passed": true
+    },
+    {
+      "check": "temporal Aedes/oldNativeMean",
+      "passed": true
+    },
+    {
+      "check": "temporal Aedes/newNativeMean",
+      "passed": true
+    },
+    {
+      "check": "temporal Aedes/modelMean",
+      "passed": true
+    },
+    {
+      "check": "temporal pass count Aedes",
+      "passed": true
+    },
+    {
+      "check": "temporal Mosquitto/oldNativeMean",
+      "passed": true
+    },
+    {
+      "check": "temporal Mosquitto/newNativeMean",
+      "passed": true
+    },
+    {
+      "check": "temporal Mosquitto/modelMean",
+      "passed": true
+    },
+    {
+      "check": "temporal pass count Mosquitto",
+      "passed": true
+    },
+    {
+      "check": "temporal ActiveMQ/oldNativeMean",
+      "passed": true
+    },
+    {
+      "check": "temporal ActiveMQ/newNativeMean",
+      "passed": true
+    },
+    {
+      "check": "temporal ActiveMQ/modelMean",
+      "passed": true
+    },
+    {
+      "check": "temporal pass count ActiveMQ",
+      "passed": true
+    },
+    {
+      "check": "temporal EMQX/oldNativeMean",
+      "passed": true
+    },
+    {
+      "check": "temporal EMQX/newNativeMean",
+      "passed": true
+    },
+    {
+      "check": "temporal EMQX/modelMean",
+      "passed": true
+    },
+    {
+      "check": "temporal pass count EMQX",
+      "passed": true
+    },
+    {
+      "check": "temporal accepted comparisons",
+      "passed": true
+    },
+    {
+      "check": "Aedes interval lower",
+      "passed": true
+    },
+    {
+      "check": "Aedes interval upper",
+      "passed": true
+    },
+    {
+      "check": "network full matrix and repeats",
+      "passed": true
+    },
+    {
+      "check": "network repeated files",
+      "passed": true
+    },
+    {
+      "check": "network table conditions",
+      "passed": true
+    },
+    {
+      "check": "network match ['Линия', '0', '1000']",
+      "passed": true
+    },
+    {
+      "check": "complete ['Линия', '0', '1000']/single",
+      "passed": true
+    },
+    {
+      "check": "complete ['Линия', '0', '1000']/relay",
+      "passed": true
+    },
+    {
+      "check": "fullness ['Линия', '0', '1000']",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Линия', '0', '1000']/single",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Линия', '0', '1000']/relay",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Линия', '0', '1000']/federation",
+      "passed": true
+    },
+    {
+      "check": "seeds ['Линия', '0', '1000']",
+      "passed": true
+    },
+    {
+      "check": "network match ['Линия', '0', '5000']",
+      "passed": true
+    },
+    {
+      "check": "complete ['Линия', '0', '5000']/single",
+      "passed": true
+    },
+    {
+      "check": "complete ['Линия', '0', '5000']/relay",
+      "passed": true
+    },
+    {
+      "check": "fullness ['Линия', '0', '5000']",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Линия', '0', '5000']/single",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Линия', '0', '5000']/relay",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Линия', '0', '5000']/federation",
+      "passed": true
+    },
+    {
+      "check": "seeds ['Линия', '0', '5000']",
+      "passed": true
+    },
+    {
+      "check": "network match ['Линия', '1', '1000']",
+      "passed": true
+    },
+    {
+      "check": "complete ['Линия', '1', '1000']/single",
+      "passed": true
+    },
+    {
+      "check": "complete ['Линия', '1', '1000']/relay",
+      "passed": true
+    },
+    {
+      "check": "fullness ['Линия', '1', '1000']",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Линия', '1', '1000']/single",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Линия', '1', '1000']/relay",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Линия', '1', '1000']/federation",
+      "passed": true
+    },
+    {
+      "check": "seeds ['Линия', '1', '1000']",
+      "passed": true
+    },
+    {
+      "check": "network match ['Линия', '1', '5000']",
+      "passed": true
+    },
+    {
+      "check": "complete ['Линия', '1', '5000']/single",
+      "passed": true
+    },
+    {
+      "check": "complete ['Линия', '1', '5000']/relay",
+      "passed": true
+    },
+    {
+      "check": "fullness ['Линия', '1', '5000']",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Линия', '1', '5000']/single",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Линия', '1', '5000']/relay",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Линия', '1', '5000']/federation",
+      "passed": true
+    },
+    {
+      "check": "seeds ['Линия', '1', '5000']",
+      "passed": true
+    },
+    {
+      "check": "network match ['Линия', '2', '1000']",
+      "passed": true
+    },
+    {
+      "check": "complete ['Линия', '2', '1000']/single",
+      "passed": true
+    },
+    {
+      "check": "complete ['Линия', '2', '1000']/relay",
+      "passed": true
+    },
+    {
+      "check": "fullness ['Линия', '2', '1000']",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Линия', '2', '1000']/single",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Линия', '2', '1000']/relay",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Линия', '2', '1000']/federation",
+      "passed": true
+    },
+    {
+      "check": "seeds ['Линия', '2', '1000']",
+      "passed": true
+    },
+    {
+      "check": "network match ['Линия', '2', '5000']",
+      "passed": true
+    },
+    {
+      "check": "complete ['Линия', '2', '5000']/single",
+      "passed": true
+    },
+    {
+      "check": "complete ['Линия', '2', '5000']/relay",
+      "passed": true
+    },
+    {
+      "check": "fullness ['Линия', '2', '5000']",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Линия', '2', '5000']/single",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Линия', '2', '5000']/relay",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Линия', '2', '5000']/federation",
+      "passed": true
+    },
+    {
+      "check": "seeds ['Линия', '2', '5000']",
+      "passed": true
+    },
+    {
+      "check": "network match ['Кольцо', '0', '1000']",
+      "passed": true
+    },
+    {
+      "check": "complete ['Кольцо', '0', '1000']/single",
+      "passed": true
+    },
+    {
+      "check": "complete ['Кольцо', '0', '1000']/relay",
+      "passed": true
+    },
+    {
+      "check": "fullness ['Кольцо', '0', '1000']",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Кольцо', '0', '1000']/single",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Кольцо', '0', '1000']/relay",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Кольцо', '0', '1000']/federation",
+      "passed": true
+    },
+    {
+      "check": "seeds ['Кольцо', '0', '1000']",
+      "passed": true
+    },
+    {
+      "check": "network match ['Кольцо', '0', '5000']",
+      "passed": true
+    },
+    {
+      "check": "complete ['Кольцо', '0', '5000']/single",
+      "passed": true
+    },
+    {
+      "check": "complete ['Кольцо', '0', '5000']/relay",
+      "passed": true
+    },
+    {
+      "check": "fullness ['Кольцо', '0', '5000']",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Кольцо', '0', '5000']/single",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Кольцо', '0', '5000']/relay",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Кольцо', '0', '5000']/federation",
+      "passed": true
+    },
+    {
+      "check": "seeds ['Кольцо', '0', '5000']",
+      "passed": true
+    },
+    {
+      "check": "network match ['Кольцо', '1', '1000']",
+      "passed": true
+    },
+    {
+      "check": "complete ['Кольцо', '1', '1000']/single",
+      "passed": true
+    },
+    {
+      "check": "complete ['Кольцо', '1', '1000']/relay",
+      "passed": true
+    },
+    {
+      "check": "fullness ['Кольцо', '1', '1000']",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Кольцо', '1', '1000']/single",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Кольцо', '1', '1000']/relay",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Кольцо', '1', '1000']/federation",
+      "passed": true
+    },
+    {
+      "check": "seeds ['Кольцо', '1', '1000']",
+      "passed": true
+    },
+    {
+      "check": "network match ['Кольцо', '1', '5000']",
+      "passed": true
+    },
+    {
+      "check": "complete ['Кольцо', '1', '5000']/single",
+      "passed": true
+    },
+    {
+      "check": "complete ['Кольцо', '1', '5000']/relay",
+      "passed": true
+    },
+    {
+      "check": "fullness ['Кольцо', '1', '5000']",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Кольцо', '1', '5000']/single",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Кольцо', '1', '5000']/relay",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Кольцо', '1', '5000']/federation",
+      "passed": true
+    },
+    {
+      "check": "seeds ['Кольцо', '1', '5000']",
+      "passed": true
+    },
+    {
+      "check": "network match ['Кольцо', '2', '1000']",
+      "passed": true
+    },
+    {
+      "check": "complete ['Кольцо', '2', '1000']/single",
+      "passed": true
+    },
+    {
+      "check": "complete ['Кольцо', '2', '1000']/relay",
+      "passed": true
+    },
+    {
+      "check": "fullness ['Кольцо', '2', '1000']",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Кольцо', '2', '1000']/single",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Кольцо', '2', '1000']/relay",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Кольцо', '2', '1000']/federation",
+      "passed": true
+    },
+    {
+      "check": "seeds ['Кольцо', '2', '1000']",
+      "passed": true
+    },
+    {
+      "check": "network match ['Кольцо', '2', '5000']",
+      "passed": true
+    },
+    {
+      "check": "complete ['Кольцо', '2', '5000']/single",
+      "passed": true
+    },
+    {
+      "check": "complete ['Кольцо', '2', '5000']/relay",
+      "passed": true
+    },
+    {
+      "check": "fullness ['Кольцо', '2', '5000']",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Кольцо', '2', '5000']/single",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Кольцо', '2', '5000']/relay",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Кольцо', '2', '5000']/federation",
+      "passed": true
+    },
+    {
+      "check": "seeds ['Кольцо', '2', '5000']",
+      "passed": true
+    },
+    {
+      "check": "network match ['Звезда с транзитом', '0', '1000']",
+      "passed": true
+    },
+    {
+      "check": "complete ['Звезда с транзитом', '0', '1000']/single",
+      "passed": true
+    },
+    {
+      "check": "complete ['Звезда с транзитом', '0', '1000']/relay",
+      "passed": true
+    },
+    {
+      "check": "fullness ['Звезда с транзитом', '0', '1000']",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Звезда с транзитом', '0', '1000']/single",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Звезда с транзитом', '0', '1000']/relay",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Звезда с транзитом', '0', '1000']/federation",
+      "passed": true
+    },
+    {
+      "check": "seeds ['Звезда с транзитом', '0', '1000']",
+      "passed": true
+    },
+    {
+      "check": "network match ['Звезда с транзитом', '0', '5000']",
+      "passed": true
+    },
+    {
+      "check": "complete ['Звезда с транзитом', '0', '5000']/single",
+      "passed": true
+    },
+    {
+      "check": "complete ['Звезда с транзитом', '0', '5000']/relay",
+      "passed": true
+    },
+    {
+      "check": "fullness ['Звезда с транзитом', '0', '5000']",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Звезда с транзитом', '0', '5000']/single",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Звезда с транзитом', '0', '5000']/relay",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Звезда с транзитом', '0', '5000']/federation",
+      "passed": true
+    },
+    {
+      "check": "seeds ['Звезда с транзитом', '0', '5000']",
+      "passed": true
+    },
+    {
+      "check": "network match ['Звезда с транзитом', '1', '1000']",
+      "passed": true
+    },
+    {
+      "check": "complete ['Звезда с транзитом', '1', '1000']/single",
+      "passed": true
+    },
+    {
+      "check": "complete ['Звезда с транзитом', '1', '1000']/relay",
+      "passed": true
+    },
+    {
+      "check": "fullness ['Звезда с транзитом', '1', '1000']",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Звезда с транзитом', '1', '1000']/single",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Звезда с транзитом', '1', '1000']/relay",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Звезда с транзитом', '1', '1000']/federation",
+      "passed": true
+    },
+    {
+      "check": "seeds ['Звезда с транзитом', '1', '1000']",
+      "passed": true
+    },
+    {
+      "check": "network match ['Звезда с транзитом', '1', '5000']",
+      "passed": true
+    },
+    {
+      "check": "complete ['Звезда с транзитом', '1', '5000']/single",
+      "passed": true
+    },
+    {
+      "check": "complete ['Звезда с транзитом', '1', '5000']/relay",
+      "passed": true
+    },
+    {
+      "check": "fullness ['Звезда с транзитом', '1', '5000']",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Звезда с транзитом', '1', '5000']/single",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Звезда с транзитом', '1', '5000']/relay",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Звезда с транзитом', '1', '5000']/federation",
+      "passed": true
+    },
+    {
+      "check": "seeds ['Звезда с транзитом', '1', '5000']",
+      "passed": true
+    },
+    {
+      "check": "network match ['Звезда с транзитом', '2', '1000']",
+      "passed": true
+    },
+    {
+      "check": "complete ['Звезда с транзитом', '2', '1000']/single",
+      "passed": true
+    },
+    {
+      "check": "complete ['Звезда с транзитом', '2', '1000']/relay",
+      "passed": true
+    },
+    {
+      "check": "fullness ['Звезда с транзитом', '2', '1000']",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Звезда с транзитом', '2', '1000']/single",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Звезда с транзитом', '2', '1000']/relay",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Звезда с транзитом', '2', '1000']/federation",
+      "passed": true
+    },
+    {
+      "check": "seeds ['Звезда с транзитом', '2', '1000']",
+      "passed": true
+    },
+    {
+      "check": "network match ['Звезда с транзитом', '2', '5000']",
+      "passed": true
+    },
+    {
+      "check": "complete ['Звезда с транзитом', '2', '5000']/single",
+      "passed": true
+    },
+    {
+      "check": "complete ['Звезда с транзитом', '2', '5000']/relay",
+      "passed": true
+    },
+    {
+      "check": "fullness ['Звезда с транзитом', '2', '5000']",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Звезда с транзитом', '2', '5000']/single",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Звезда с транзитом', '2', '5000']/relay",
+      "passed": true
+    },
+    {
+      "check": "delivery p99 ['Звезда с транзитом', '2', '5000']/federation",
+      "passed": true
+    },
+    {
+      "check": "seeds ['Звезда с транзитом', '2', '5000']",
+      "passed": true
+    },
+    {
+      "check": "transit triplet single",
+      "passed": true
+    },
+    {
+      "check": "transit single/inboundBytes",
+      "passed": true
+    },
+    {
+      "check": "transit single/transferredPackets",
+      "passed": true
+    },
+    {
+      "check": "transit single/refused",
+      "passed": true
+    },
+    {
+      "check": "transit triplet relay",
+      "passed": true
+    },
+    {
+      "check": "transit relay/inboundBytes",
+      "passed": true
+    },
+    {
+      "check": "transit relay/transferredPackets",
+      "passed": true
+    },
+    {
+      "check": "transit relay/refused",
+      "passed": true
+    },
+    {
+      "check": "transit triplet federation",
+      "passed": true
+    },
+    {
+      "check": "transit federation/inboundBytes",
+      "passed": true
+    },
+    {
+      "check": "transit federation/transferredPackets",
+      "passed": true
+    },
+    {
+      "check": "transit federation/refused",
+      "passed": true
+    },
+    {
+      "check": "queue 1024 completeness",
+      "passed": true
+    },
+    {
+      "check": "queue 1024 common denominator",
+      "passed": true
+    },
+    {
+      "check": "queue 4096 completeness",
+      "passed": true
+    },
+    {
+      "check": "queue 4096 common denominator",
+      "passed": true
+    },
+    {
+      "check": "partial result not promoted",
+      "passed": true
+    },
+    {
+      "check": "parallel original byte gate failed",
+      "passed": true
+    },
+    {
+      "check": "parallel receipt multiset equal",
+      "passed": true
+    },
+    {
+      "check": "no measured stable speedup",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-1-twin-validation.md ../article-1-current-model-method.md",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-1-twin-validation.md ../../../reports/audits/dissertation/manuscript-offline-review-v1/floor-analysis.json",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-1-twin-validation.md ../../../reports/audits/dissertation/article-1-matched-main-figures-v1/timeline.svg",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-1-twin-validation.md ../../../reports/audits/dissertation/article-1-matched-main-figures-v1/comparison.svg",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-1-twin-validation.md ../../../reports/analysis/Article-1-micro-experiments.md",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-1-twin-validation.md ../../../reports/analysis/Linux-selected-20261030.md",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-1-twin-validation.md ../../../reports/audits/dissertation/linux-selected-20261030/temporal-comparison.csv",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-1-twin-validation.md ../../../reports/analysis/Article-1-web-validation.md",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-1-twin-validation.md ../../../reports/analysis/Article-1-matched-main-final.md",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-1-twin-validation.md ../../../reports/analysis/Linux-selected-20261030.md",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-1-twin-validation.md ../../../reports/analysis/Article-1-remaining-pilots.md",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-1-twin-validation.md ../../../reports/analysis/Article-1-logging-overhead.md",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-1-twin-validation.md ../reproduction-handoff.md",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-1-twin-validation.md ../../../reports/analysis/Article-1-technical-notes.md",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-1-twin-validation.md ../../../reports/analysis/Article-1-native-control-web.md",
+      "passed": true
+    },
+    {
+      "check": "citation numbering docs/dissertation/articles/article-1-twin-validation.md",
+      "passed": true
+    },
+    {
+      "check": "no unfinished support markers docs/dissertation/articles/article-1-twin-validation.md",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../../../reports/audits/dissertation/network-main-final-v1/topologies/star-federation-physical.svg",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../../../reports/audits/dissertation/network-main-final-v1/topologies/star-relay-logical.svg",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../../../reports/audits/dissertation/network-main-final-v1/topologies/star-federation-logical.svg",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../../../reports/audits/dissertation/network-main-final-v1/topologies/line-relay-logical.svg",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../../../reports/audits/dissertation/network-main-final-v1/topologies/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../network-forwarding-proofs.md",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../../../reports/audits/dissertation/article-2-evidence-package-v2/Comparison.md",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../../../reports/audits/dissertation/manuscript-offline-review-v1/resources.json",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../network-model-contract.md",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../../../reports/audits/dissertation/network-main-final-v1/acceptance.json",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../../../reports/audits/dissertation/network-main-final-v1/raw-recount/comparison.csv",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../../../reports/audits/dissertation/network-main-final-v1/figures/comparison-1000.svg",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../../../reports/audits/dissertation/network-main-final-v1/figures/comparison-5000.svg",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../../../reports/audits/dissertation/network-main-final-v1/cost-figures/forwarding-5000.svg",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../../../reports/audits/dissertation/network-main-final-v1/cost-figures/transit-5000.svg",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../../../reports/audits/dissertation/network-main-final-v1/transit.csv",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../../../reports/analysis/Network-main-final.md",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../../../reports/audits/dissertation/network-main-final-v1/README.md",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../../../reports/analysis/Queue-main-window-20261030.md",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../../../reports/audits/dissertation/linux-selected-20261030/remaining-result/delivery-window.svg",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../../../reports/analysis/Linux-selected-20261030.md",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../../../reports/data/federation-full-mesh-v1/aggregates.json",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../../../reports/audits/dissertation/network-main-final-v1/README.md",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../../../reports/analysis/Queue-main-window-20261030.md",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../network-model-contract.md",
+      "passed": true
+    },
+    {
+      "check": "local link docs/dissertation/articles/article-2-relay-federation.md ../reproduction-handoff.md",
+      "passed": true
+    },
+    {
+      "check": "citation numbering docs/dissertation/articles/article-2-relay-federation.md",
+      "passed": true
+    },
+    {
+      "check": "no unfinished support markers docs/dissertation/articles/article-2-relay-federation.md",
+      "passed": true
+    }
+  ],
+  "submissionReady": null
+}
