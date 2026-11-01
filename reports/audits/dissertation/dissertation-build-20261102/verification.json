@@ -1,0 +1,51 @@
+{
+  "dateMsk": "2026-11-02",
+  "status": "environmentNotReadyForMainBuild",
+  "attempts": 2,
+  "commands": {
+    "latexmk": "C:\\Program Files\\MiKTeX\\miktex\\bin\\x64\\latexmk.EXE",
+    "xelatex": "C:\\Program Files\\MiKTeX\\miktex\\bin\\x64\\xelatex.EXE",
+    "biber": "C:\\Program Files\\MiKTeX\\miktex\\bin\\x64\\biber.EXE",
+    "kpsewhich": "C:\\Program Files\\MiKTeX\\miktex\\bin\\x64\\kpsewhich.EXE",
+    "makeindex": "C:\\Program Files\\MiKTeX\\miktex\\bin\\x64\\makeindex.EXE",
+    "pdfinfo": "C:\\Program Files\\MiKTeX\\miktex\\bin\\x64\\pdfinfo.EXE",
+    "pdftotext": "C:\\Program Files\\MiKTeX\\miktex\\bin\\x64\\pdftotext.EXE",
+    "perl": null
+  },
+  "entrypoint": "diss/dissertation.tex",
+  "buildCommand": [
+    "python",
+    "tools/dissertation/check_dissertation_build.py",
+    "--build",
+    "--output",
+    "<new-directory-outside-diss>",
+    "--timeout",
+    "300"
+  ],
+  "blockingCommand": [
+    "C:\\Program Files\\MiKTeX\\miktex\\bin\\x64\\latexmk.EXE",
+    "--version"
+  ],
+  "commandTimeoutSeconds": 15,
+  "compilationStarted": false,
+  "freshPdfProduced": false,
+  "confirmedCause": "latexmk wrapper performs MiKTeX maintenance/package installation instead of completing version query within the bound",
+  "perlFound": false,
+  "perlFailureObserved": false,
+  "checkerReceiptNotWrittenReason": "Tool version collection at check_dissertation_build.py:142 occurs before its try/finally; these separate receipts preserve both failures",
+  "sourceFilesChecked": 260,
+  "sourceUnchanged": true,
+  "step37Accepted": false,
+  "visualReviewPerformed": false,
+  "additionalAttemptsPlanned": false,
+  "newLinuxExperiments": 0,
+  "evidence": [
+    "attempt-001.json",
+    "attempt-001.latexmk.log",
+    "attempt-001.miktex.log",
+    "attempt-001.miktex-fc-cache.log",
+    "attempt-002.json",
+    "attempt-002.latexmk.log"
+  ],
+  "procedureSha256": "e652d4b2b2a48cc6855aaa423a475586b74a500361cf27e1e9b7dc660f2cd000"
+}

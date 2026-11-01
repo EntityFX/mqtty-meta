@@ -2101,5 +2101,33 @@
     "blockCompletedActions": 4,
     "blockTotalActions": 4,
     "blockPercent": 100
+  },
+  "synthesisPreparation20261102": {
+    "status": "preparationCompletedBuildBlocked",
+    "dateMsk": "2026-11-02",
+    "completedPreparationTasks": 4,
+    "totalPreparationTasks": 4,
+    "preparationBlockPercent": 100,
+    "portableVersion": 6,
+    "portableVerification": "reports/audits/dissertation/articles-handoff-v6/verification.json",
+    "filesSealed": 114,
+    "zipBytes": 11026110,
+    "articleChecksPassed": 425,
+    "rawExamplesChecked": 3,
+    "changedFileRejected": true,
+    "changedManifestDigestRejected": true,
+    "chapterIntegrationMap": "reports/analysis/Dissertation-evidence-integration.md",
+    "buildVerification": "reports/audits/dissertation/dissertation-build-20261102/verification.json",
+    "buildAttempts": 2,
+    "compilationStarted": false,
+    "buildBlocker": "latexmk version query timed out during MiKTeX maintenance or missing package installation",
+    "step37Accepted": false,
+    "mainDissertationEdited": false,
+    "articleManuscriptsEdited": false,
+    "newLinuxExperiments": 0,
+    "humanReadingCredited": false,
+    "globalPercent": 53.2,
+    "localPercent": 80,
+    "gitPublication": "trackedWithPreparationChanges"
   }
 }

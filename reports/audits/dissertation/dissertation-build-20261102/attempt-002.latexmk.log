@@ -1,0 +1,23 @@
+2026-11-02 00:12:48,627+0300 INFO  latexmk - this process (9928) started by python in directory C:\projects\mqtty-meta with command line: "C:\Program Files\MiKTeX\miktex\bin\x64\latexmk.EXE" --version
+2026-11-02 00:12:48,627+0300 INFO  latexmk - running on Windows 10.0.17763
+2026-11-02 00:12:48,645+0300 INFO  latexmk - running One MiKTeX Utility to refresh the file name database
+2026-11-02 00:12:48,650+0300 INFO  latexmk.core - start process: miktex --quiet fndb refresh
+2026-11-02 00:12:55,767+0300 INFO  latexmk - running One MiKTeX Utility to create font map files
+2026-11-02 00:12:55,768+0300 INFO  latexmk.core - start process: miktex --quiet fontmaps configure
+2026-11-02 00:17:31,783+0300 INFO  latexmk - this process (3044) started by python in directory C:\projects\mqtty-meta with command line: "C:\Program Files\MiKTeX\miktex\bin\x64\latexmk.EXE" --version
+2026-11-02 00:17:31,784+0300 INFO  latexmk - running on Windows 10.0.17763
+2026-11-02 00:17:34,775+0300 WARN  latexmk.packagemanager - dependency problem: ms is required by _miktex-latex-packages
+2026-11-02 00:17:34,775+0300 WARN  latexmk.packagemanager - dependency problem: showframe is required by _miktex-latex-packages
+2026-11-02 00:17:34,776+0300 WARN  latexmk.packagemanager - dependency problem: sttools is required by _miktex-latex-packages
+2026-11-02 00:17:34,776+0300 WARN  latexmk.packagemanager - dependency problem: thailatex is required by _miktex-latex-packages
+2026-11-02 00:17:34,778+0300 WARN  latexmk.packagemanager - dependency problem: luxi is required by _miktex-fonts-type1
+2026-11-02 00:17:39,975+0300 INFO  latexmk - installing package latexmk triggered by scripts/latexmk\latexmk.pl
+2026-11-02 00:17:39,976+0300 INFO  latexmk.core - turning on administrator mode
+2026-11-02 00:17:43,449+0300 INFO  latexmk - mpm: mpmsvc: starting package maintenance...
+2026-11-02 00:17:43,449+0300 INFO  latexmk - mpm: mpmsvc: installation directory: "C:\Program Files\MiKTeX"
+2026-11-02 00:17:43,450+0300 INFO  latexmk - mpm: mpmsvc: package repository: https://mirror.truenetwork.ru/CTAN/systems/win32/miktex/tm/packages/
+2026-11-02 00:17:44,841+0300 INFO  latexmk - mpm: mpmsvc: visiting repository https://mirror.truenetwork.ru/CTAN/systems/win32/miktex/tm/packages/...
+2026-11-02 00:17:44,841+0300 INFO  latexmk - mpm: mpmsvc: repository type: remote package repository
+2026-11-02 00:17:44,843+0300 INFO  latexmk - mpm: mpmsvc: loading package repository manifest...
+2026-11-02 00:17:44,844+0300 INFO  latexmk - mpm: mpmsvc: downloading https://mirror.truenetwork.ru/CTAN/systems/win32/miktex/tm/packages/miktex-zzdb1-2.9.tar.lzma...
+2026-11-02 00:17:46,015+0300 INFO  latexmk - mpm: mpmsvc: 0.44 MB, 3.02 Mbit/s

@@ -1,0 +1,21 @@
+{
+  "dateMsk": "2026-11-02",
+  "attempt": 2,
+  "status": "blockedToolVersionTimeout",
+  "errorType": "subprocess.TimeoutExpired",
+  "errorCommand": [
+    "C:\\Program Files\\MiKTeX\\miktex\\bin\\x64\\latexmk.EXE",
+    "--version"
+  ],
+  "timeoutSeconds": 15,
+  "execSessionId": 90557,
+  "execExitCode": 1,
+  "buildStarted": false,
+  "freshPdfProduced": false,
+  "sourceUnchangedAgainstPriorSnapshot": true,
+  "sourceFilesChecked": 260,
+  "observedStage": "MiKTeX wrapper initiated missing latexmk package installation and repository metadata download",
+  "packageInstallationCompletionConfirmed": false,
+  "step37Accepted": false,
+  "logSha256": "3f3d00e96cb1459150ee28dae145ba62844e27245686480b289c8c0d6fce54d8"
+}

@@ -1,0 +1,3 @@
+2026-11-02 00:12:57,381+0300 INFO  miktex-fc-cache - this process (10296) started by miktex in directory C:\projects\mqtty-meta with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2026-11-02 00:12:57,382+0300 INFO  miktex-fc-cache - running on Windows 10.0.17763
+2026-11-02 00:13:04,840+0300 INFO  miktex-fc-cache - this process (10296) finishes with exit code 0
