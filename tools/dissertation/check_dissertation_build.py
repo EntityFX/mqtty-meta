@@ -1,7 +1,8 @@
 """Audit and optionally build only the main dissertation in a fresh isolated snapshot.
 
-No source rewrite, package installation or automatic download is performed. A successful
-exit is a technical compilation check, never acceptance of scientific content/layout.
+No source rewrite or explicit package installation is performed. A TeX runtime may
+perform its configured maintenance, so prepare the environment before this audit.
+A successful exit is a technical check, never acceptance of scientific content/layout.
 """
 import argparse
 import hashlib
@@ -137,12 +138,12 @@ def run(source, output, build=False, timeout=300):
     missing = [name for name, value in commands.items() if not value]
     record['missingTools'] = missing
     record['toolVersions'] = {}
-    for name, command in commands.items():
-        if command:
-            result = subprocess.run([command, '-v' if name in {'pdfinfo', 'pdftotext'} else '--version'],
-                                    capture_output=True, timeout=15)
-            record['toolVersions'][name] = (result.stdout + result.stderr).decode('utf-8', errors='replace')
     try:
+        for name, command in commands.items():
+            if command:
+                result = subprocess.run([command, '-v' if name in {'pdfinfo', 'pdftotext'} else '--version'],
+                                        capture_output=True, timeout=15)
+                record['toolVersions'][name] = (result.stdout + result.stderr).decode('utf-8', errors='replace')
         if build and missing:
             record['status'] = 'blockedMissingTools'
         elif build:

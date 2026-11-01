@@ -3,6 +3,7 @@ from pathlib import Path
 import unittest
 from unittest.mock import Mock, patch
 import subprocess
+import json
 
 import check_dissertation_build as build
 
@@ -51,6 +52,31 @@ class DissertationBuildChecks(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             with self.assertRaisesRegex(ValueError, 'Fresh main PDF missing'):
                 build.validate_fresh_pdf(Path(directory), [], {})
+
+    def test_version_timeout_saves_failure_receipt_before_compilation(self):
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / 'source'
+            source.mkdir()
+            main = source / 'dissertation.tex'
+            main.write_text('unchanged source', encoding='utf-8')
+            output = Path(directory) / 'evidence'
+            with patch.object(build, 'tracked_inputs', return_value=[main]), \
+                    patch.object(build, 'source_audit', return_value={}), \
+                    patch.object(build.shutil, 'which', return_value='fake-tool'), \
+                    patch.object(build.subprocess, 'check_output', return_value=b'abc123'), \
+                    patch.object(build.subprocess, 'run', side_effect=subprocess.TimeoutExpired(['fake-tool', '--version'], 15)):
+                try:
+                    result = build.run(source, output, build=True)
+                except subprocess.TimeoutExpired:
+                    self.fail('Version timeout escaped without preserving its failure receipt')
+            self.assertEqual(result['status'], 'technicalError')
+            self.assertEqual(result['errorType'], 'TimeoutExpired')
+            self.assertTrue(result['sourceUnchanged'])
+            self.assertFalse(result['step37Accepted'])
+            self.assertFalse((output / 'snapshot').exists())
+            saved = json.loads((output / 'verification.json').read_text(encoding='utf-8'))
+            self.assertEqual(saved['errorType'], 'TimeoutExpired')
+            self.assertEqual(main.read_text(encoding='utf-8'), 'unchanged source')
 
     def test_timeout_terminates_process_tree_before_returning_error(self):
         process = Mock(pid=12345)

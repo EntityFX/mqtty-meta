@@ -2129,5 +2129,28 @@
     "globalPercent": 53.2,
     "localPercent": 80,
     "gitPublication": "trackedWithPreparationChanges"
+  },
+  "dissertationBuildSourceReview20261102": {
+    "status": "authorCorrectionsRequired",
+    "userDecision": "Do not modify diss; prepare instructions only",
+    "instructions": "reports/analysis/Dissertation-build-review.md",
+    "verification": "reports/audits/dissertation/dissertation-build-closure-v1/verification.json",
+    "environmentPrepared": true,
+    "diagnosticPdfPages": 121,
+    "unknownOrEmptyCitations": 6,
+    "multiplyDefinedBaseLabels": 3,
+    "clippedTablePdfPage": 44,
+    "sourceFilesChecked": 260,
+    "primarySourceChanged": false,
+    "proposalApplied": false,
+    "step37Accepted": false,
+    "buildTestsPassed": 7,
+    "fullPythonSuiteRun": 313,
+    "fullPythonSuiteFailures": 1,
+    "fullPythonSuiteErrors": 2,
+    "fullPythonSuiteSkipped": 4,
+    "globalPercent": 53.2,
+    "localPercent": 80,
+    "newLinuxExperiments": 0
   }
 }

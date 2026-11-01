@@ -1,0 +1,136 @@
+{
+  "dateMsk": "2026-11-02",
+  "status": "authorSourceCorrectionsRequired",
+  "userDecision": "Do not change diss; prepare instructions only",
+  "instructions": "reports/analysis/Dissertation-build-review.md",
+  "instructionsSha256": "dea00746d47703d4302a94b2503605a1a6a1628a0f0178c6e87be912ab568e16",
+  "step37Accepted": false,
+  "globalPercent": 53.2,
+  "weightedStepsAdded": [],
+  "mainDissertationEdited": false,
+  "articlesEdited": false,
+  "sourceCommit": "c7d4e82fbb5953b83910124d1d5fecd76d423a01",
+  "sourceInputsReference": "reports/audits/dissertation/dissertation-build-v1/native-attempt-001/verification.json",
+  "sourceInputsReferenceSha256": "54c05eda980875f629e77fad843db657fa542aa73b90ebed44a485aeea247551",
+  "sourceFilesChecked": 260,
+  "sourceFilesChanged": [],
+  "environmentPrepared": true,
+  "configurationRestored": {
+    "MPM.AutoInstall": 2
+  },
+  "executables": {
+    "latexmk": {
+      "path": "C:\\Program Files\\MiKTeX\\miktex\\bin\\x64\\latexmk.EXE",
+      "sha256": "85a166631fecc56b37cdf87d4e4e238372007178046327dc2d780b455caad3fa"
+    },
+    "xelatex": {
+      "path": "C:\\Program Files\\MiKTeX\\miktex\\bin\\x64\\xelatex.EXE",
+      "sha256": "ef2397c0f8638ccb79a46a693be196e64ce90b361fde5cbcd7397a72e13e8ff4"
+    },
+    "biber": {
+      "path": "C:\\Program Files\\MiKTeX\\miktex\\bin\\x64\\biber.EXE",
+      "sha256": "e38abd420f3ad59f34b105392061ee6f099ed1d119e24f623625a5189a5f60f2"
+    },
+    "pdfinfo": {
+      "path": "C:\\Program Files\\MiKTeX\\miktex\\bin\\x64\\pdfinfo.EXE",
+      "sha256": "7e9b3511ea416d98440dd58b33695a69505128b8cd785b39008a66fc14f2ba53"
+    },
+    "pdftotext": {
+      "path": "C:\\Program Files\\MiKTeX\\miktex\\bin\\x64\\pdftotext.EXE",
+      "sha256": "640b9a93fa31fc093860c635cd410a3e30f7d1e6166cb1130993fb1985f474ff"
+    },
+    "perl": {
+      "path": "C:/Program Files/Git/usr/bin/perl.exe",
+      "sha256": "7c4c60e1cad4f308a7a58ea220f219f4d903e0be97af758e82c902a830c57baa"
+    }
+  },
+  "mainAttempt": {
+    "externalDirectory": "C:\\temp\\mqtty-evidence\\dissertation-build-closure-20261102\\attempt-003",
+    "status": "technicalError",
+    "errorType": "TimeoutExpired",
+    "error": "Command '['latexmk', '-norc', '-r', 'latexmkrc', '-pdfxe', '-interaction=nonstopmode', '-halt-on-error', '-file-line-error', 'dissertation.tex']' timed out after 300 seconds",
+    "sourceUnchanged": true,
+    "latexmkTimeoutSeconds": 300,
+    "xdvConversionSucceeded": true
+  },
+  "diagnosticPdf": {
+    "path": "C:\\temp\\mqtty-evidence\\dissertation-build-closure-20261102\\attempt-003\\snapshot\\dissertation.pdf",
+    "bytes": 3145027,
+    "sha256": "b2f95a3af541183199791719d6164eea2c9bc6458f31b3a6ba07c7411e0668b1",
+    "pages": 121,
+    "technicalChecksPassed": false,
+    "unknownCitationKeys": [
+      "vakbib2",
+      "patbib1",
+      "bib1",
+      "confbib1",
+      "",
+      ""
+    ],
+    "multiplyDefinedBaseLabels": [
+      "eq:perf_series",
+      "lst:mqttyconf",
+      "sec:ch4/sec4"
+    ],
+    "overfullHboxWarnings": 18,
+    "missingGlyphWarnings": 0,
+    "visualSamplePages": [
+      1,
+      14,
+      44,
+      79,
+      121
+    ],
+    "allPagesVisuallyReviewed": false,
+    "visualFinding": "Page 44 RPS table clipped; empty citation placeholder occupies excessive width"
+  },
+  "temporaryProposalPreview": {
+    "outsidePrimarySource": true,
+    "appliedToDiss": false,
+    "directory": "C:\\temp\\mqtty-evidence\\dissertation-build-closure-20261102\\proposed-preview",
+    "exitCode": 0,
+    "elapsedSeconds": 131.96900000004098,
+    "pdfSha256": "ea31ff5856c32cdd24d710c50aa06bf1d581d2c24705da60d04778578b522cc2",
+    "unknownCitationsRemaining": 0,
+    "multiplyDefinedBaseLabelsRemaining": [
+      "eq:perf_series",
+      "lst:mqttyconf"
+    ],
+    "visualFinding": "Page 44 table fits after restoring existing Mishra2021 citation",
+    "notAcceptedAsFinalDissertation": true
+  },
+  "tests": {
+    "buildTestsPassed": 7,
+    "fullSuiteRun": 313,
+    "fullSuiteFailures": 1,
+    "fullSuiteErrors": 2,
+    "fullSuiteSkipped": 4,
+    "unrelatedLegacyArticleChecks": [
+      "test_actual_tables_match_sources",
+      "test_native_model_table_uses_actual_native_repetitions",
+      "test_loss_of_independence_caveat_is_detected"
+    ]
+  },
+  "newLinuxExperiments": 0,
+  "sources": [
+    {
+      "key": "Dijkstra1959",
+      "publisher": "https://link.springer.com/article/10.1007/BF01386390",
+      "content": "https://www.cs.yale.edu/homes/lans/readings/routing/dijkstra-routing-1959.pdf",
+      "metadataVerified": true,
+      "scope": "Shortest-path algorithm; not evidence of MqttY performance"
+    },
+    {
+      "key": "Mishra2021",
+      "source": "https://publicatio.bibl.u-szeged.hu/22708/1/MQTT_Perf_Mishra_MDPI_202109_revised_v2.pdf",
+      "scope": "Existing source cited before table; original numeric attribution still requires final-version comparison"
+    }
+  ],
+  "articleChecksPassed": 425,
+  "documentationNewBrokenLinks": 0,
+  "buildToolSha256": "fb9227921fb8caef6315ddc11679e8bececb84d24760f26c41641265688d145b",
+  "testLogsSha256": {
+    "build-tests.log": "bed960d69fae1d27dc0b3a49a429e74e727dd7b257a7db88a29e258f17b6738a",
+    "python-suite.log": "64e29bc744306ba5d76c1cabc2e1ca833dd97a1625c0309f12a718207259479e"
+  }
+}
