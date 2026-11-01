@@ -1,0 +1,129 @@
+{
+  "dateMsk": "2026-11-02",
+  "purpose": "Reduce duplicate documentation; preserve code, manuscripts and scientific evidence",
+  "status": "verified",
+  "baseCommit": "395d60a3fe86b33cce48f94ab9de6e2d6c6e8508",
+  "archiveBaseUrl": "https://github.com/EntityFX/mqtty-meta/blob/395d60a3fe86b33cce48f94ab9de6e2d6c6e8508/",
+  "deleted": [
+    {
+      "path": "docs/dissertation/article-1-logging-only-plan.md",
+      "sha256": "f13429f22bc18f6fa5e6dd777e3ee40963861c27e2b741d53114560a6dcde679",
+      "reason": "Superseded working plan or intermediate implementation note; prior text retained at base commit"
+    },
+    {
+      "path": "docs/dissertation/article-1-main-execution-protocol.md",
+      "sha256": "6605d2e282b7b500f08fcbdaecc98b65b80a5670b2bf7e9afb260cceb6c8c7ae",
+      "reason": "Superseded working plan or intermediate implementation note; prior text retained at base commit"
+    },
+    {
+      "path": "docs/dissertation/article-1-raw-audit-plan.md",
+      "sha256": "221e03cc2344a92d5f98c4df3e0ae26cf5a6e1781b26d71320173d97c76c9ce0",
+      "reason": "Superseded working plan or intermediate implementation note; prior text retained at base commit"
+    },
+    {
+      "path": "docs/dissertation/article-1-single-point-profile-plan.md",
+      "sha256": "c036365e33f8c1a6fd080be1eaeeab10df89601fbeee5229f7c377628333d94a",
+      "reason": "Superseded working plan or intermediate implementation note; prior text retained at base commit"
+    },
+    {
+      "path": "docs/dissertation/article-layouts.md",
+      "sha256": "58b6443ea24c8def78d12374fd840e81aa55923ed1f7a4c9cc36f8dd3bfac4f8",
+      "reason": "Superseded working plan or intermediate implementation note; prior text retained at base commit"
+    },
+    {
+      "path": "docs/dissertation/claims-refresh-plan.md",
+      "sha256": "c9ad7a4c214af476ecf449b3b67ecff3caec39287b660959ac73544f8c940c25",
+      "reason": "Superseded working plan or intermediate implementation note; prior text retained at base commit"
+    },
+    {
+      "path": "docs/dissertation/experiment-execution-budget.md",
+      "sha256": "f0edd4d2b251de313628fa3d28fd05df3c95e3085471388d0ffde96b40d1b8cd",
+      "reason": "Superseded working plan or intermediate implementation note; prior text retained at base commit"
+    },
+    {
+      "path": "docs/dissertation/network-additional-session-plan.md",
+      "sha256": "5078b206d5380d1907e40ba7586fffc39e06093cbd0bc94a1e2daf234e2e21a6",
+      "reason": "Superseded working plan or intermediate implementation note; prior text retained at base commit"
+    },
+    {
+      "path": "docs/dissertation/network-formal-review-plan.md",
+      "sha256": "b793908fa6e266469f3240b4cfc98e59818f1a17210ba92d9f3bacd1ef407d2d",
+      "reason": "Superseded working plan or intermediate implementation note; prior text retained at base commit"
+    },
+    {
+      "path": "docs/dissertation/network-main-recount-plan.md",
+      "sha256": "22b2ac1fd36689638b14e13226af3a36e770c2fad6bf7196294c2677f33b62c9",
+      "reason": "Superseded working plan or intermediate implementation note; prior text retained at base commit"
+    },
+    {
+      "path": "docs/dissertation/network-three-hour-budget.md",
+      "sha256": "d65e315d4447f9a350ce681a68ba2a0b9162d03b7bd2719b7829578718491b94",
+      "reason": "Superseded working plan or intermediate implementation note; prior text retained at base commit"
+    },
+    {
+      "path": "docs/plans/Articles-review-handoff-20261030.md",
+      "sha256": "40c58b9365c1921f31fd4ebc844c6b3ddd45c5764409b2c5368714d888bbedc8",
+      "reason": "Superseded working plan or intermediate implementation note; prior text retained at base commit"
+    },
+    {
+      "path": "docs/plans/MqttY.Web.native-control.md",
+      "sha256": "266747992e3c3f201f153b70503546b95d8ca75a0747613f23397afdbbfd3a57",
+      "reason": "Superseded working plan or intermediate implementation note; prior text retained at base commit"
+    },
+    {
+      "path": "reports/analysis/Article-1-single-point-profile.md",
+      "sha256": "062607d4f43c4877e9ef189ad872f5e11771d1c25e65ca8c28819133f054f114",
+      "reason": "Superseded working plan or intermediate implementation note; prior text retained at base commit"
+    }
+  ],
+  "rewritten": [
+    "README.md",
+    "docs/dissertation/README.md",
+    "docs/dissertation/agent-work-policy.md",
+    "docs/dissertation/author-decisions.md",
+    "docs/overview/README.md",
+    "docs/overview/project-guide.md",
+    "docs/overview/questions-and-answers.md",
+    "reports/README.md",
+    "reports/status/Goal.md",
+    "reports/status/Linux-work-queue.md",
+    "reports/status/Progress.md"
+  ],
+  "scope": {
+    "markdownFilesBefore": 270,
+    "markdownFilesAfter": 256,
+    "utf8BytesBefore": 3753830,
+    "utf8BytesAfter": 2766420,
+    "utf8BytesRemoved": 987410,
+    "textReductionPercent": 26.3,
+    "protectedTrackedFilesChecked": 3024,
+    "protectedFilesChanged": []
+  },
+  "globalProgressPercent": 53.2,
+  "localPreparationPercent": 80,
+  "linuxChecked": false,
+  "newExperiments": 0,
+  "verification": {
+    "articleChecksPassed": 425,
+    "articleLinksChecked": 41,
+    "documentationLinksChecked": 1719,
+    "preexistingBrokenLinks": 29,
+    "brokenLinksAfter": 29,
+    "newBrokenLinks": 0,
+    "documentationCheckerExitCode": 1,
+    "documentationCheckerExplanation": "Existing broken links in the unchanged ExpertReview, Web SDD and frozen audit protocols; no new broken links",
+    "immutableBoundaries": {
+      "protectedDissertationFilesSha256": {
+        "checked": 265,
+        "changed": []
+      },
+      "unchangedScientificFilesSha256": {
+        "checked": 1131,
+        "changed": []
+      }
+    },
+    "protectedTrackedFilesUnchanged": 3024,
+    "deletedDocumentsHaveNoCodeOrMachineReferences": true,
+    "existingFaqAnchorPreserved": true
+  }
+}
