@@ -2152,5 +2152,21 @@
     "globalPercent": 53.2,
     "localPercent": 80,
     "newLinuxExperiments": 0
+  },
+  "scheduledStep33_20261102_0500": {
+    "taskName": "MqttY-Acceleration-Step33-20261102-0500",
+    "state": "Ready",
+    "scheduledForMsk": "2026-11-02T05:00:00.0000000+03:00",
+    "nextRunTimeMsk": "2026-11-02T05:00:00.0000000+03:00",
+    "threadId": "01a1396c-38e4-7e83-8ced-2984171e286a",
+    "recurring": false,
+    "triggerCount": 1,
+    "requiresLoggedOnUser": true,
+    "wakeToRun": true,
+    "startWhenAvailable": true,
+    "prompt": "reports/status/scheduled-step33-20261102-0500.md",
+    "promptSha256": "8ab608255145b2a9f64badf40e3654f1325304c4619a4ca4990fb97757c46e96",
+    "dispatchReceipt": "C:\\temp\\mqtty-evidence\\scheduled-step33-20261102-0500\\dispatch.json",
+    "validatedOnlyNoImmediateDispatch": true
   }
 }
