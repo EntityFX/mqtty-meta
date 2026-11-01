@@ -2076,7 +2076,7 @@
     "lastAcceptedAtMsk": "2026-10-30T09:14:26.201293+03:00"
   },
   "articlesFinalReview20261101": {
-    "status": "manuscriptsRevisedAndVerified",
+    "status": "completedAndPublished",
     "dateMsk": "2026-11-01",
     "report": "reports/analysis/Articles-final-review-20261101.md",
     "verification": "reports/audits/dissertation/articles-final-review-20261101/verification.json",
@@ -2096,6 +2096,10 @@
     "submissionReady": null,
     "globalPercent": 53.2,
     "localPercent": 80,
-    "gitPublication": "pending"
+    "gitPublication": "pushed",
+    "publicationCommit": "afa00f4",
+    "blockCompletedActions": 4,
+    "blockTotalActions": 4,
+    "blockPercent": 100
   }
 }
