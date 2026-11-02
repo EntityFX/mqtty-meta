@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "identity": {
-    "mqttyCommit": "c7be868fb841245dfcd889abebe3c7f82afb5daf",
-    "mqttBenchmarkCommit": "ae121a6bf06ba003a43eeaff03d9f633f6915dd5",
-    "profileSha256": "10bf00adc9f04c8caddf13611709337bebcbcdeffd8ca19a99856bfa54e69d8e",
+    "mqttyCommit": "f5c0a4715b555c4348d2a2843177251f62c640ff",
+    "mqttBenchmarkCommit": "ab513df3d2b65462abcfba8084f066ae4b1bd0a1",
+    "profileSha256": "b09938696ead7c7a77548fd4b3fe2134a20c303cebfd3aced592186bd2e6ab6a",
     "harnessSha256": "1d7a32c2f97a6b2b9a95d45f96b992f839d8bf4ee6f507a9b2264816bd75a4a3",
     "suite": "smoke"
   },
@@ -25,8 +25,8 @@
         {
           "configSha256": "fbc6d3d51e4388e88feea495ad1501b380ab4a1847a4423a877b2e8121276223",
           "runtime": ".NET 6.0.10",
-          "summarySha256": "44da28be3b694a827dbce25bad8238c99bf2b7e1a5ce8cb0aabd9a5d30f2443d",
-          "brokerCountersSha256": "649a728c4d4e05f8da7533ee2df12b38cab7f553fc16c50ea20b3ed22a07d863",
+          "summarySha256": "fd783b2db3e341c61022d38bfe65074479b6582dadfb05029c2b8c90abb5256c",
+          "brokerCountersSha256": "653d49c5d9d5811d5769f1e757d362e56d99bca91fec0f1a53e0a53becc73d85",
           "histogramSha256": "2cab265e9778b981de78af7d901b031bd46fbd10a0e542ad59a161f239e723ac",
           "phasesSha256": "adac9f1830a2b20a4ba029fd4402d66d98674a3275561d2fd46fae9a7e74b14a",
           "connectionsSha256": "809f15c0f1c3af02353ef78d365b445ff4ec5811c6ae37bca2d382aac67c04fc",
@@ -35,8 +35,8 @@
         {
           "configSha256": "fbc6d3d51e4388e88feea495ad1501b380ab4a1847a4423a877b2e8121276223",
           "runtime": ".NET 6.0.10",
-          "summarySha256": "44da28be3b694a827dbce25bad8238c99bf2b7e1a5ce8cb0aabd9a5d30f2443d",
-          "brokerCountersSha256": "649a728c4d4e05f8da7533ee2df12b38cab7f553fc16c50ea20b3ed22a07d863",
+          "summarySha256": "fd783b2db3e341c61022d38bfe65074479b6582dadfb05029c2b8c90abb5256c",
+          "brokerCountersSha256": "653d49c5d9d5811d5769f1e757d362e56d99bca91fec0f1a53e0a53becc73d85",
           "histogramSha256": "2cab265e9778b981de78af7d901b031bd46fbd10a0e542ad59a161f239e723ac",
           "phasesSha256": "adac9f1830a2b20a4ba029fd4402d66d98674a3275561d2fd46fae9a7e74b14a",
           "connectionsSha256": "809f15c0f1c3af02353ef78d365b445ff4ec5811c6ae37bca2d382aac67c04fc",
@@ -56,9 +56,9 @@
         {
           "configSha256": "3ac5261c40dd16762684516faf692c19b7f3d536bcf8fb2048e90bff2a396037",
           "runtime": ".NET 6.0.10",
-          "summarySha256": "d5323c4bd49ac660345d780de0a646ac413b6bd821579bdec84386635b50eb1f",
-          "brokerCountersSha256": "babda388299d666ea9dbd4a4c2ecaf5321ea9e5e878fc903b639a28bcce7027d",
-          "histogramSha256": "13fb46a39f0bc15ea3eb61569600a66f99ec940be801dce20bc23778f10862f4",
+          "summarySha256": "3e2296e2e2b3724da83296df245f104cfbbc2c5a85b6bc6c0c2c6890a5fe5193",
+          "brokerCountersSha256": "363241fc6e22ac599915aa76b9ee4f5353ac9001b9f3f15957cebd2f5c56ea41",
+          "histogramSha256": "5df833e609045c27decf6f99ec4369a5a236ec5ce1f3536eaf99aec835b72c61",
           "phasesSha256": "e1b0d8fcde0f989f3292ba77b756d9f5d761a501c9d10fa89352ded80fe39039",
           "connectionsSha256": "809f15c0f1c3af02353ef78d365b445ff4ec5811c6ae37bca2d382aac67c04fc",
           "cliExitCode": 0
@@ -66,9 +66,9 @@
         {
           "configSha256": "3ac5261c40dd16762684516faf692c19b7f3d536bcf8fb2048e90bff2a396037",
           "runtime": ".NET 6.0.10",
-          "summarySha256": "d5323c4bd49ac660345d780de0a646ac413b6bd821579bdec84386635b50eb1f",
-          "brokerCountersSha256": "babda388299d666ea9dbd4a4c2ecaf5321ea9e5e878fc903b639a28bcce7027d",
-          "histogramSha256": "13fb46a39f0bc15ea3eb61569600a66f99ec940be801dce20bc23778f10862f4",
+          "summarySha256": "3e2296e2e2b3724da83296df245f104cfbbc2c5a85b6bc6c0c2c6890a5fe5193",
+          "brokerCountersSha256": "363241fc6e22ac599915aa76b9ee4f5353ac9001b9f3f15957cebd2f5c56ea41",
+          "histogramSha256": "5df833e609045c27decf6f99ec4369a5a236ec5ce1f3536eaf99aec835b72c61",
           "phasesSha256": "e1b0d8fcde0f989f3292ba77b756d9f5d761a501c9d10fa89352ded80fe39039",
           "connectionsSha256": "809f15c0f1c3af02353ef78d365b445ff4ec5811c6ae37bca2d382aac67c04fc",
           "cliExitCode": 0
@@ -87,9 +87,9 @@
         {
           "configSha256": "8a8df72292c8198bc53e8e9084b6a22532cc396727fa79d55a67e18951c7fa1f",
           "runtime": ".NET 6.0.10",
-          "summarySha256": "039a6083cfa8231a0a5363c0371f89b3113ed0849c8ec3cae3722fa7fa12b9d6",
-          "brokerCountersSha256": "f6c5df69a450390e34de583fe9ca9ff991947bac56a09b154e9ac96f084657fd",
-          "histogramSha256": "e0543e8a641c91a74d88132f1df0acea746076371debf5c48bb2f9ade57764db",
+          "summarySha256": "64f9f707e066b686de342ee82e0891e10aa1565cd4c55de45ca27266a259c8b5",
+          "brokerCountersSha256": "adb9f1e8aae35b4da3501a0fef9c7feed4746049b1ed02d4ebae623c084b4008",
+          "histogramSha256": "63a936cad81efb31bf4d18a7f9c0feb412a785faeadb3b5d69628487fd7cdca5",
           "phasesSha256": "8c77eaddcc1020faf5689171ec66959d478e0665dd097277b6beafd66d2621c2",
           "connectionsSha256": "809f15c0f1c3af02353ef78d365b445ff4ec5811c6ae37bca2d382aac67c04fc",
           "cliExitCode": 0
@@ -97,9 +97,9 @@
         {
           "configSha256": "8a8df72292c8198bc53e8e9084b6a22532cc396727fa79d55a67e18951c7fa1f",
           "runtime": ".NET 6.0.10",
-          "summarySha256": "039a6083cfa8231a0a5363c0371f89b3113ed0849c8ec3cae3722fa7fa12b9d6",
-          "brokerCountersSha256": "f6c5df69a450390e34de583fe9ca9ff991947bac56a09b154e9ac96f084657fd",
-          "histogramSha256": "e0543e8a641c91a74d88132f1df0acea746076371debf5c48bb2f9ade57764db",
+          "summarySha256": "64f9f707e066b686de342ee82e0891e10aa1565cd4c55de45ca27266a259c8b5",
+          "brokerCountersSha256": "adb9f1e8aae35b4da3501a0fef9c7feed4746049b1ed02d4ebae623c084b4008",
+          "histogramSha256": "63a936cad81efb31bf4d18a7f9c0feb412a785faeadb3b5d69628487fd7cdca5",
           "phasesSha256": "8c77eaddcc1020faf5689171ec66959d478e0665dd097277b6beafd66d2621c2",
           "connectionsSha256": "809f15c0f1c3af02353ef78d365b445ff4ec5811c6ae37bca2d382aac67c04fc",
           "cliExitCode": 0
@@ -118,8 +118,8 @@
         {
           "configSha256": "56f2c5294c1792fc64221f6b1a8df96cfba1641ad0cb1007039765b78b9d6f80",
           "runtime": ".NET 6.0.10",
-          "summarySha256": "7b97440d732db140928966bf64a829630bbbc520350a0bd38ff2532dd1b974b7",
-          "brokerCountersSha256": "3dda0f5e5bbb05c45e078cb5eb284788c7efd1b9e4dbf1a7991788216060f4a2",
+          "summarySha256": "839e36336079a5c6e0c5680b6b95545eb9dd6331a525ae780f6ef5accf5d6929",
+          "brokerCountersSha256": "27797269c7bbc075138ec5ba7964c022a92b8951acba0e326715a0546c24f114",
           "histogramSha256": "2cab265e9778b981de78af7d901b031bd46fbd10a0e542ad59a161f239e723ac",
           "phasesSha256": "adac9f1830a2b20a4ba029fd4402d66d98674a3275561d2fd46fae9a7e74b14a",
           "connectionsSha256": "809f15c0f1c3af02353ef78d365b445ff4ec5811c6ae37bca2d382aac67c04fc",
@@ -128,8 +128,8 @@
         {
           "configSha256": "56f2c5294c1792fc64221f6b1a8df96cfba1641ad0cb1007039765b78b9d6f80",
           "runtime": ".NET 6.0.10",
-          "summarySha256": "7b97440d732db140928966bf64a829630bbbc520350a0bd38ff2532dd1b974b7",
-          "brokerCountersSha256": "3dda0f5e5bbb05c45e078cb5eb284788c7efd1b9e4dbf1a7991788216060f4a2",
+          "summarySha256": "839e36336079a5c6e0c5680b6b95545eb9dd6331a525ae780f6ef5accf5d6929",
+          "brokerCountersSha256": "27797269c7bbc075138ec5ba7964c022a92b8951acba0e326715a0546c24f114",
           "histogramSha256": "2cab265e9778b981de78af7d901b031bd46fbd10a0e542ad59a161f239e723ac",
           "phasesSha256": "adac9f1830a2b20a4ba029fd4402d66d98674a3275561d2fd46fae9a7e74b14a",
           "connectionsSha256": "809f15c0f1c3af02353ef78d365b445ff4ec5811c6ae37bca2d382aac67c04fc",
@@ -149,9 +149,9 @@
         {
           "configSha256": "5624ee36db95621c1591170c4b3a29ab67c0a017ec5a96ed7c02de3424906844",
           "runtime": ".NET 6.0.10",
-          "summarySha256": "3540ae318e27627c40516f30fe50382f374af743ba193cdbdbe9a104921568e7",
-          "brokerCountersSha256": "ea0c260803a00d4b4b8b9c4b790812a1a697bf5a29ca4b58c01e50478569eea8",
-          "histogramSha256": "cd2f18c00f996e77931c22567181e1417b90e5022aaad106ed1949edcc4b5dbe",
+          "summarySha256": "e87f0e6a63a38ac0812ef79a56a980ba295ddcfd8a7fff131d6aaac478723668",
+          "brokerCountersSha256": "5a1747f256eb3d86db4506f2072eb3f7522c4de7ad92b2f5308c4559ffcc19cc",
+          "histogramSha256": "e7a8219d2ba8690ed8c1e8868f5e10e96275c1e64fb57cb007f80cdf87805838",
           "phasesSha256": "3fa6ea6e9ba0e95f6079de9d248316700903d9fa359a4c9d7e6b10fe894948c1",
           "connectionsSha256": "809f15c0f1c3af02353ef78d365b445ff4ec5811c6ae37bca2d382aac67c04fc",
           "cliExitCode": 3
@@ -159,9 +159,9 @@
         {
           "configSha256": "5624ee36db95621c1591170c4b3a29ab67c0a017ec5a96ed7c02de3424906844",
           "runtime": ".NET 6.0.10",
-          "summarySha256": "3540ae318e27627c40516f30fe50382f374af743ba193cdbdbe9a104921568e7",
-          "brokerCountersSha256": "ea0c260803a00d4b4b8b9c4b790812a1a697bf5a29ca4b58c01e50478569eea8",
-          "histogramSha256": "cd2f18c00f996e77931c22567181e1417b90e5022aaad106ed1949edcc4b5dbe",
+          "summarySha256": "e87f0e6a63a38ac0812ef79a56a980ba295ddcfd8a7fff131d6aaac478723668",
+          "brokerCountersSha256": "5a1747f256eb3d86db4506f2072eb3f7522c4de7ad92b2f5308c4559ffcc19cc",
+          "histogramSha256": "e7a8219d2ba8690ed8c1e8868f5e10e96275c1e64fb57cb007f80cdf87805838",
           "phasesSha256": "3fa6ea6e9ba0e95f6079de9d248316700903d9fa359a4c9d7e6b10fe894948c1",
           "connectionsSha256": "809f15c0f1c3af02353ef78d365b445ff4ec5811c6ae37bca2d382aac67c04fc",
           "cliExitCode": 3
@@ -180,9 +180,9 @@
         {
           "configSha256": "181e3aa18c015362b9222bde61ea5079bcc644fa51211be4088752033c7f3d1d",
           "runtime": ".NET 6.0.10",
-          "summarySha256": "f3bc7841eeb9d671d2d2e20447a483350f008c696db44fa4b903852b8902ab76",
-          "brokerCountersSha256": "a36731862db8ccffbc0a1dc580eae81570dd0708f287d7ead472858385132b1f",
-          "histogramSha256": "67f8da4e967b7a32996ed319a1ae483a90f55e46008eb9f4e46e3881f2b097ee",
+          "summarySha256": "10f822a6b6a7bfa53262000427e14e58774283e4e55a561eee2ec4ee436272f9",
+          "brokerCountersSha256": "0e2895c9a548e53e02409219245f872e758ebe8e406fd73ac2e6513eb679f733",
+          "histogramSha256": "bd92d51b1fed952866d80421174dd9e1f889a2f7f101b5ac28a235649b953053",
           "phasesSha256": "8cef2eebe015f2a3dcbfb16e16727183933afe513b8b5734b6099a2fd64b3052",
           "connectionsSha256": "809f15c0f1c3af02353ef78d365b445ff4ec5811c6ae37bca2d382aac67c04fc",
           "cliExitCode": 3
@@ -190,9 +190,9 @@
         {
           "configSha256": "181e3aa18c015362b9222bde61ea5079bcc644fa51211be4088752033c7f3d1d",
           "runtime": ".NET 6.0.10",
-          "summarySha256": "f3bc7841eeb9d671d2d2e20447a483350f008c696db44fa4b903852b8902ab76",
-          "brokerCountersSha256": "a36731862db8ccffbc0a1dc580eae81570dd0708f287d7ead472858385132b1f",
-          "histogramSha256": "67f8da4e967b7a32996ed319a1ae483a90f55e46008eb9f4e46e3881f2b097ee",
+          "summarySha256": "10f822a6b6a7bfa53262000427e14e58774283e4e55a561eee2ec4ee436272f9",
+          "brokerCountersSha256": "0e2895c9a548e53e02409219245f872e758ebe8e406fd73ac2e6513eb679f733",
+          "histogramSha256": "bd92d51b1fed952866d80421174dd9e1f889a2f7f101b5ac28a235649b953053",
           "phasesSha256": "8cef2eebe015f2a3dcbfb16e16727183933afe513b8b5734b6099a2fd64b3052",
           "connectionsSha256": "809f15c0f1c3af02353ef78d365b445ff4ec5811c6ae37bca2d382aac67c04fc",
           "cliExitCode": 3

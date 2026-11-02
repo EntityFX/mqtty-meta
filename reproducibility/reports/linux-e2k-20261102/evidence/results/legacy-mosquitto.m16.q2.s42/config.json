@@ -32,7 +32,7 @@
     "transferTicks": 1,
     "networkType": "ethernet"
   },
-  "mqttYRepository": "/home/user/mqtty-repro-20261102-e2k-a20f9531/mqtty",
-  "mqttBenchmarkRepository": "/home/user/mqtty-repro-20261102-e2k-a20f9531/MqttBenchmark",
-  "brokerProfilePath": "/home/user/mqtty-repro-20261102-e2k-a20f9531/profiles/broker-benchmark.v2.json"
+  "mqttYRepository": "/home/user/mqtty-develop-20261102-4801633c/mqtty",
+  "mqttBenchmarkRepository": "/home/user/mqtty-develop-20261102-4801633c/MqttBenchmark",
+  "brokerProfilePath": "/home/user/mqtty-develop-20261102-4801633c/profiles/broker-benchmark.v2.json"
 }

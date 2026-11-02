@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-16"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+  <key attr.name="label" attr.type="string" for="node" id="label" />
+  <key attr.name="weight" attr.type="double" for="edge" id="weight" />
+  <key attr.name="r" attr.type="int" for="node" id="r" />
+  <key attr.name="g" attr.type="int" for="node" id="g" />
+  <key attr.name="b" attr.type="int" for="node" id="b" />
+  <key attr.name="size" attr.type="float" for="node" id="size" />
+  <key attr.name="type" attr.type="string" for="node" id="type" />
+  <key attr.name="address" attr.type="string" for="node" id="address" />
+  <key attr.name="statistics" attr.type="string" for="node" id="statistics" />
+  <key attr.name="connectsTo" attr.type="string" for="node" id="connectsTo" />
+  <key attr.name="connectsId" attr.type="string" for="node" id="connectsId" />
+  <key attr.name="s:Network.NetworkCounters.InboundPackets" attr.type="int" for="node" id="s:Network.NetworkCounters.InboundPackets" />
+  <key attr.name="s:Network.NetworkCounters.Inbound" attr.type="int" for="node" id="s:Network.NetworkCounters.Inbound" />
+  <key attr.name="s:Network.NetworkCounters.OutboundPackets" attr.type="int" for="node" id="s:Network.NetworkCounters.OutboundPackets" />
+  <key attr.name="s:Network.NetworkCounters.Outbound" attr.type="int" for="node" id="s:Network.NetworkCounters.Outbound" />
+  <key attr.name="s:Network.Servers.Node.Send" attr.type="int" for="node" id="s:Network.Servers.Node.Send" />
+  <key attr.name="s:Network.Servers.Node.Receive" attr.type="int" for="node" id="s:Network.Servers.Node.Receive" />
+  <key attr.name="s:Network.Servers.Node.MqttBroker.CONNECT" attr.type="int" for="node" id="s:Network.Servers.Node.MqttBroker.CONNECT" />
+  <key attr.name="s:Network.Servers.Node.MqttBroker.CONNACK" attr.type="int" for="node" id="s:Network.Servers.Node.MqttBroker.CONNACK" />
+  <key attr.name="s:Network.Servers.Node.MqttBroker.PUBLISH" attr.type="int" for="node" id="s:Network.Servers.Node.MqttBroker.PUBLISH" />
+  <key attr.name="s:Network.Servers.Node.MqttBroker.SUBSCRIBE" attr.type="int" for="node" id="s:Network.Servers.Node.MqttBroker.SUBSCRIBE" />
+  <key attr.name="s:Network.Servers.Node.MqttBroker.SUBACK" attr.type="int" for="node" id="s:Network.Servers.Node.MqttBroker.SUBACK" />
+  <key attr.name="s:Network.Servers.Node.MqttBroker.PublishQos0" attr.type="int" for="node" id="s:Network.Servers.Node.MqttBroker.PublishQos0" />
+  <key attr.name="s:Network.Clients.Node.Send" attr.type="int" for="node" id="s:Network.Clients.Node.Send" />
+  <key attr.name="s:Network.Clients.Node.Receive" attr.type="int" for="node" id="s:Network.Clients.Node.Receive" />
+  <key attr.name="s:Network.Clients.Node.MqttClient.CONNECT" attr.type="int" for="node" id="s:Network.Clients.Node.MqttClient.CONNECT" />
+  <key attr.name="s:Network.Clients.Node.MqttClient.CONNACK" attr.type="int" for="node" id="s:Network.Clients.Node.MqttClient.CONNACK" />
+  <key attr.name="s:Network.Clients.Node.MqttClient.PUBLISH" attr.type="int" for="node" id="s:Network.Clients.Node.MqttClient.PUBLISH" />
+  <key attr.name="s:Network.Clients.Node.MqttClient.SUBSCRIBE" attr.type="int" for="node" id="s:Network.Clients.Node.MqttClient.SUBSCRIBE" />
+  <key attr.name="s:Network.Clients.Node.MqttClient.SUBACK" attr.type="int" for="node" id="s:Network.Clients.Node.MqttClient.SUBACK" />
+  <key attr.name="s:Network.Applications.Application.MqttReceiver.Received" attr.type="int" for="node" id="s:Network.Applications.Application.MqttReceiver.Received" />
+  <key attr.name="s:Node.Send" attr.type="int" for="node" id="s:Node.Send" />
+  <key attr.name="s:Node.Receive" attr.type="int" for="node" id="s:Node.Receive" />
+  <key attr.name="s:Node.MqttClient.CONNECT" attr.type="int" for="node" id="s:Node.MqttClient.CONNECT" />
+  <key attr.name="s:Node.MqttClient.CONNACK" attr.type="int" for="node" id="s:Node.MqttClient.CONNACK" />
+  <key attr.name="s:Node.MqttClient.SUBSCRIBE" attr.type="int" for="node" id="s:Node.MqttClient.SUBSCRIBE" />
+  <key attr.name="s:Node.MqttClient.SUBACK" attr.type="int" for="node" id="s:Node.MqttClient.SUBACK" />
+  <key attr.name="s:Node.MqttClient.PUBLISH" attr.type="int" for="node" id="s:Node.MqttClient.PUBLISH" />
+  <key attr.name="s:Node.MqttBroker.CONNECT" attr.type="int" for="node" id="s:Node.MqttBroker.CONNECT" />
+  <key attr.name="s:Node.MqttBroker.CONNACK" attr.type="int" for="node" id="s:Node.MqttBroker.CONNACK" />
+  <key attr.name="s:Node.MqttBroker.PUBLISH" attr.type="int" for="node" id="s:Node.MqttBroker.PUBLISH" />
+  <key attr.name="s:Node.MqttBroker.SUBSCRIBE" attr.type="int" for="node" id="s:Node.MqttBroker.SUBSCRIBE" />
+  <key attr.name="s:Node.MqttBroker.SUBACK" attr.type="int" for="node" id="s:Node.MqttBroker.SUBACK" />
+  <key attr.name="s:Node.MqttBroker.PublishQos0" attr.type="int" for="node" id="s:Node.MqttBroker.PublishQos0" />
+  <graph id="G">
+    <node id="n1">
+      <data key="label">n1.net</data>
+      <data key="address">n1.net</data>
+      <data key="type">Network</data>
+      <data key="size">100.0</data>
+      <data key="r">154</data>
+      <data key="g">150</data>
+      <data key="b">229</data>
+      <data key="statistics">NG#NC#IP:2208,IB:74901,OP:2208,OB:74901,;SG#NG#S:1104,R:1104,MB#CN:2,CA:2,PB:2200,SB:2,SA:2,PQ0:1100,;;;CG#NG#S:1101,R:1,MC#CN:1,CA:1,PB:1100,;;NG#S:3,R:1103,MC#CN:1,CA:1,SB:2,SA:2,;;;AG#AP#MC#MI:1100,;;;;</data>
+      <data key="s:Network.NetworkCounters.InboundPackets">2208</data>
+      <data key="s:Network.NetworkCounters.Inbound">74901</data>
+      <data key="s:Network.NetworkCounters.OutboundPackets">2208</data>
+      <data key="s:Network.NetworkCounters.Outbound">74901</data>
+      <data key="s:Network.Servers.Node.Send">1104</data>
+      <data key="s:Network.Servers.Node.Receive">1104</data>
+      <data key="s:Network.Servers.Node.MqttBroker.CONNECT">2</data>
+      <data key="s:Network.Servers.Node.MqttBroker.CONNACK">2</data>
+      <data key="s:Network.Servers.Node.MqttBroker.PUBLISH">2200</data>
+      <data key="s:Network.Servers.Node.MqttBroker.SUBSCRIBE">2</data>
+      <data key="s:Network.Servers.Node.MqttBroker.SUBACK">2</data>
+      <data key="s:Network.Servers.Node.MqttBroker.PublishQos0">1100</data>
+      <data key="s:Network.Clients.Node.Send">3</data>
+      <data key="s:Network.Clients.Node.Receive">1103</data>
+      <data key="s:Network.Clients.Node.MqttClient.CONNECT">1</data>
+      <data key="s:Network.Clients.Node.MqttClient.CONNACK">1</data>
+      <data key="s:Network.Clients.Node.MqttClient.PUBLISH">1100</data>
+      <data key="s:Network.Clients.Node.MqttClient.SUBSCRIBE">2</data>
+      <data key="s:Network.Clients.Node.MqttClient.SUBACK">2</data>
+      <data key="s:Network.Applications.Application.MqttReceiver.Received">1100</data>
+    </node>
+    <node id="n0">
+      <data key="label">n0.global</data>
+      <data key="address">n0.global</data>
+      <data key="type">Network</data>
+      <data key="size">100.0</data>
+      <data key="r">154</data>
+      <data key="g">150</data>
+      <data key="b">229</data>
+      <data key="statistics">NG#NC#;SG#;CG#;AG#;;</data>
+    </node>
+    <node id="c6">
+      <data key="label">mqrc3mqb3</data>
+      <data key="address">mqtt://mqrc3mqb3</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+      <data key="connectsTo">mqb3</data>
+      <data key="connectsId">s3</data>
+      <data key="statistics">NG#S:3,R:1103,MC#CN:1,CA:1,SB:2,SA:2,;;</data>
+      <data key="s:Node.Send">3</data>
+      <data key="s:Node.Receive">1103</data>
+      <data key="s:Node.MqttClient.CONNECT">1</data>
+      <data key="s:Node.MqttClient.CONNACK">1</data>
+      <data key="s:Node.MqttClient.SUBSCRIBE">2</data>
+      <data key="s:Node.MqttClient.SUBACK">2</data>
+    </node>
+    <node id="c2">
+      <data key="label">mqc2</data>
+      <data key="address">mqtt://mqc2</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+      <data key="connectsTo">mqb3</data>
+      <data key="connectsId">s3</data>
+      <data key="statistics">NG#S:1101,R:1,MC#CN:1,CA:1,PB:1100,;;</data>
+      <data key="s:Node.Send">1101</data>
+      <data key="s:Node.Receive">1</data>
+      <data key="s:Node.MqttClient.CONNECT">1</data>
+      <data key="s:Node.MqttClient.CONNACK">1</data>
+      <data key="s:Node.MqttClient.PUBLISH">1100</data>
+    </node>
+    <node id="s3">
+      <data key="label">mqb3</data>
+      <data key="address">mqtt://mqb3</data>
+      <data key="type">Server</data>
+      <data key="size">70.0</data>
+      <data key="r">249</data>
+      <data key="g">119</data>
+      <data key="b">67</data>
+      <data key="statistics">NG#S:1104,R:1104,MB#CN:2,CA:2,PB:2200,SB:2,SA:2,PQ0:1100,;;</data>
+      <data key="s:Node.Send">1104</data>
+      <data key="s:Node.Receive">1104</data>
+      <data key="s:Node.MqttBroker.CONNECT">2</data>
+      <data key="s:Node.MqttBroker.CONNACK">2</data>
+      <data key="s:Node.MqttBroker.PUBLISH">2200</data>
+      <data key="s:Node.MqttBroker.SUBSCRIBE">2</data>
+      <data key="s:Node.MqttBroker.SUBACK">2</data>
+      <data key="s:Node.MqttBroker.PublishQos0">1100</data>
+    </node>
+    <node id="a5">
+      <data key="label">mqrc3</data>
+      <data key="address">mqtt://mqrc3</data>
+      <data key="type">Application</data>
+      <data key="size">50.0</data>
+      <data key="r">67</data>
+      <data key="g">119</data>
+      <data key="b">249</data>
+      <data key="statistics">AP#MC#MI:1100,;;</data>
+      <data key="a:Application.MqttReceiver.Received">1100</data>
+    </node>
+    <edge id="e1_0" source="n1" target="n0">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e6_1" source="c6" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e2_1" source="c2" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e3_1" source="s3" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e5_1" source="a5" target="n1">
+      <data key="weight">1</data>
+    </edge>
+  </graph>
+</graphml>

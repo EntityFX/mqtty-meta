@@ -4,13 +4,13 @@
   "python": "3.12.13",
   "dotnetInfo": ".NET SDK (reflecting any global.json):\n Version:   6.0.10.11\n Commit:    ff35e7336f\n\nRuntime Environment:\n OS Name:     altlinux\n OS Version:  11.2\n OS Platform: Linux\n RID:         elbrus.8.0-e2k-v4\n Base Path:   /home/user/runtimes/dotnet6-6.0.10.11/dotnet/sdk/6.0.110/\n\nglobal.json file:\n  Not found\n\nHost:\n  Version:      6.0.10\n  Architecture: e2k\n  Commit:       N/A\n\n.NET SDKs installed:\n  6.0.110 [/home/user/runtimes/dotnet6-6.0.10.11/dotnet/sdk]\n\n.NET runtimes installed:\n  Microsoft.AspNetCore.App 6.0.10 [/home/user/runtimes/dotnet6-6.0.10.11/dotnet/shared/Microsoft.AspNetCore.App]\n  Microsoft.NETCore.App 6.0.10 [/home/user/runtimes/dotnet6-6.0.10.11/dotnet/shared/Microsoft.NETCore.App]\n\nDownload .NET:\n  https://aka.ms/dotnet-download\n\nLearn about .NET Runtimes and SDKs:\n  https://aka.ms/dotnet/runtimes-sdk-info",
   "identity": {
-    "mqttyCommit": "c7be868fb841245dfcd889abebe3c7f82afb5daf",
-    "mqttBenchmarkCommit": "ae121a6bf06ba003a43eeaff03d9f633f6915dd5",
-    "profileSha256": "10bf00adc9f04c8caddf13611709337bebcbcdeffd8ca19a99856bfa54e69d8e",
+    "mqttyCommit": "f5c0a4715b555c4348d2a2843177251f62c640ff",
+    "mqttBenchmarkCommit": "ab513df3d2b65462abcfba8084f066ae4b1bd0a1",
+    "profileSha256": "b09938696ead7c7a77548fd4b3fe2134a20c303cebfd3aced592186bd2e6ab6a",
     "harnessSha256": "1d7a32c2f97a6b2b9a95d45f96b992f839d8bf4ee6f507a9b2264816bd75a4a3",
     "suite": "smoke"
   },
   "buildOnThisMachine": false,
-  "appSha256": "0c05114d13a28dae38c7680d9419e831b973a2dc8e2563fac100b4df8f9d9075",
-  "runnerSha256": "ad4c3800b59eeb12457e31baf0a31320ffb263eae98190ae28f5e8a3ddc022f2"
+  "appSha256": "bc8757a1b7e065566603c94aa26ca1e9379a194bb4a96aa1fc9951e9bac63605",
+  "runnerSha256": "840eb64b6d412b6eadb7818f1ccc1716096698984020d8d6fb1af6cbfdc45162"
 }

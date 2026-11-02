@@ -26,6 +26,12 @@ def main():
     assert report["identity"] == baseline["identity"] == environment["identity"]
     assert environment["buildOnThisMachine"] is False
     assert environment["appSha256"] == package["files"]["app/EntityFX.MqttY.MqttRelay.App.dll"]
+    source = suite.read_json(root / "build-source.json")
+    assert source == package["source"] and package["metaBranch"] == "develop"
+    assert source["sourceCommits"]["mqtty"] == report["identity"]["mqttyCommit"]
+    assert source["sourceCommits"]["MqttBenchmark"] == report["identity"]["mqttBenchmarkCommit"]
+    assert hashlib.sha256((root / "inputs/run.py").read_bytes().replace(b"\r\n", b"\n")).hexdigest() == report["identity"]["harnessSha256"]
+    assert hashlib.sha256((root / "inputs/run_prebuilt.py").read_bytes()).hexdigest() == environment["runnerSha256"]
     assert hashlib.sha256((root / "inputs/broker-benchmark.v2.json").read_bytes()).hexdigest() == report["identity"]["profileSha256"]
     assert report["cases"].keys() == baseline["cases"].keys()
     bundles_verified = 0

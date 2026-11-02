@@ -1,0 +1,60 @@
+{
+  "brokers": {
+    "mqb3": {
+      "measurementStartTick": 1014,
+      "measurementEndTick": 11014,
+      "byQos": {
+        "atMostOnce": {
+          "attempted": 1000,
+          "admitted": 1000,
+          "completed": 1000,
+          "expectedDeliveries": 1000,
+          "delivered": 1000,
+          "rateRejected": 0,
+          "publishFailed": 0,
+          "deliveryDropped": 0,
+          "rps": 1000,
+          "latencyP50Ms": null,
+          "latencyP95Ms": null,
+          "latencyP99Ms": null,
+          "latencyHistogramTicks": {}
+        },
+        "atLeastOnce": {
+          "attempted": 0,
+          "admitted": 0,
+          "completed": 0,
+          "expectedDeliveries": 0,
+          "delivered": 0,
+          "rateRejected": 0,
+          "publishFailed": 0,
+          "deliveryDropped": 0,
+          "rps": 0,
+          "latencyP50Ms": null,
+          "latencyP95Ms": null,
+          "latencyP99Ms": null,
+          "latencyHistogramTicks": {}
+        },
+        "exactlyOnce": {
+          "attempted": 0,
+          "admitted": 0,
+          "completed": 0,
+          "expectedDeliveries": 0,
+          "delivered": 0,
+          "rateRejected": 0,
+          "publishFailed": 0,
+          "deliveryDropped": 0,
+          "rps": 0,
+          "latencyP50Ms": null,
+          "latencyP95Ms": null,
+          "latencyP99Ms": null,
+          "latencyHistogramTicks": {}
+        }
+      }
+    }
+  },
+  "receivers": {
+    "mqrc3": 1001
+  },
+  "receiverScope": "receipts after measurement reset through drain; warmup in-flight arrivals can cross the boundary",
+  "graph": "NetworkSimulator:\n    [{ Steps=28662.00, Steps.Avg=0 }, { Ticks=11019.00, Ticks.Avg=0 }, { VirtualTime=00:00:01.1020000, VirtualTime.Avg=0 }, { RealTime=00:00:14.1488284, RealTime.Avg=0 }, { RefreshTime=00:00:00, RefreshTime.Avg=0 }, ]\n    n0.global:\n        n0.global:\n        n0.global:\n        n0.global:\n        n0.global:\n    n1.net:\n        n1.net:\n            [{ InboundPackets=2208.00, InboundPackets.Avg=0 }, { Inbound=74.9 KB, Inbound.Avg=0 }, { InboundThroughput=543.79 Kb/s, InboundThroughput.Avg=0 }, { OutboundPackets=2208.00, OutboundPackets.Avg=0 }, { Outbound=74.9 KB, Outbound.Avg=0 }, { OutboundThroughput=543.79 Kb/s, OutboundThroughput.Avg=0 }, ]\n        n1.net:\n            mqb3:\n                [{ Send=1104.00, Send.Avg=0 }, { Receive=1104.00, Receive.Avg=0 }, ]\n                mqb3:\n                    [{ CONNECT=2.00, CONNECT.Avg=0 }, { CONNACK=2.00, CONNACK.Avg=0 }, { PUBLISH=2200.00, PUBLISH.Avg=0 }, { SUBSCRIBE=2.00, SUBSCRIBE.Avg=0 }, { SUBACK=2.00, SUBACK.Avg=0 }, { CONNECT_Rps=1.82 Rps, CONNECT_Rps.Avg=0 }, { CONNACK_Rps=1.82 Rps, CONNACK_Rps.Avg=0 }, { PUBLISH_Rps=2001.09 Rps, PUBLISH_Rps.Avg=0 }, { SUBSCRIBE_Rps=1.82 Rps, SUBSCRIBE_Rps.Avg=0 }, { SUBACK_Rps=1.82 Rps, SUBACK_Rps.Avg=0 }, { PublishQos0=1100.00, PublishQos0.Avg=1049.5 }, { PublishQos0_Rps=999.40 Rps, PublishQos0_Rps.Avg=999.4003597841294 }, ]\n        n1.net:\n            mqc2:\n                [{ Send=1101.00, Send.Avg=0 }, { Receive=1.00, Receive.Avg=0 }, { ReceiveQueue=1.00, ReceiveQueue.Avg=0 }, ]\n                mqc2:\n                    [{ CONNECT=1.00, CONNECT.Avg=0 }, { CONNACK=1.00, CONNACK.Avg=0 }, { PUBLISH=1100.00, PUBLISH.Avg=0 }, { CONNECT_Rps=0.91 Rps, CONNECT_Rps.Avg=0 }, { CONNACK_Rps=0.91 Rps, CONNACK_Rps.Avg=0 }, { PUBLISH_Rps=1000.18 Rps, PUBLISH_Rps.Avg=0 }, ]\n            mqrc3mqb3:\n                [{ Send=3.00, Send.Avg=0 }, { Receive=1103.00, Receive.Avg=0 }, { ReceiveQueue=3.00, ReceiveQueue.Avg=0 }, ]\n                mqrc3mqb3:\n                    [{ CONNECT=1.00, CONNECT.Avg=0 }, { CONNACK=1.00, CONNACK.Avg=0 }, { SUBSCRIBE=2.00, SUBSCRIBE.Avg=0 }, { SUBACK=2.00, SUBACK.Avg=0 }, { CONNECT_Rps=0.91 Rps, CONNECT_Rps.Avg=0 }, { CONNACK_Rps=0.91 Rps, CONNACK_Rps.Avg=0 }, { SUBSCRIBE_Rps=1.82 Rps, SUBSCRIBE_Rps.Avg=0 }, { SUBACK_Rps=1.82 Rps, SUBACK_Rps.Avg=0 }, ]\n        n1.net:\n            mqrc3:\n                Receiver:\n                    [Received=1100.00]\n"
+}

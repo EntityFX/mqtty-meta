@@ -1,24 +1,31 @@
 {
   "schemaVersion": 1,
   "buildHost": "Windows",
-  "publishCommand": "dotnet publish -c Release --self-contained false -p:UseAppHost=false",
   "sdk": "9.0.202",
-  "createdUtc": "2026-11-02T16:29:46.321096+00:00",
+  "publishCommand": "dotnet publish -c Release --self-contained false -p:UseAppHost=false",
+  "metaBranch": "develop",
+  "source": {
+    "metaCommit": "487b23c9269229a54246cf0013e9df40817ebbd1",
+    "sourceCommits": {
+      "mqtty": "f5c0a4715b555c4348d2a2843177251f62c640ff",
+      "MqttBenchmark": "ab513df3d2b65462abcfba8084f066ae4b1bd0a1"
+    }
+  },
   "files": {
-    "app/EntityFX.MqttY.Contracts.dll": "5a096de16fb961b912d6aec7a45152f17a5bc5bcd8b35a39fdf2944a9602cb56",
-    "app/EntityFX.MqttY.Contracts.Mqtt.dll": "c1da06584d9accab6ba8e1effbdd17dd666ef387932c5fc917d84814e8728383",
-    "app/EntityFX.MqttY.Contracts.Mqtt.pdb": "7566e40b0d158af2495863568b99b6f1137fc7753d75ce6ae299523fcf39e3f9",
-    "app/EntityFX.MqttY.Contracts.pdb": "7c2d5cb2013043100f7f85d179df5f842421082e7f43cd0ca06ddf70a08f4b7e",
-    "app/EntityFX.MqttY.Contracts.Scenarios.dll": "7e25b2b987535fb1da621ea6342c4e4d8555479b519038e65c349abe85db9b19",
-    "app/EntityFX.MqttY.Contracts.Scenarios.pdb": "9f73db95040280e16cdae10f8f6c72ac45cb40777f4c81919f1e423d8061cf8f",
-    "app/EntityFX.MqttY.dll": "b7fb885570da022c40719e88c030c899f0a344a786f1a414d14b376405b6b364",
+    "app/EntityFX.MqttY.Contracts.dll": "8446a2b78e164825eaa2ec8759521b957063f4347bf1334e5ed5a6466dfb0e77",
+    "app/EntityFX.MqttY.Contracts.Mqtt.dll": "365b70b25917c886a2b35bc97bc53a7c5419786b7d5f3d823a51705d1875e087",
+    "app/EntityFX.MqttY.Contracts.Mqtt.pdb": "f3cf0257ed2e4a52da0735702b739ec41c9fbff77a6727822947b65e6ec56478",
+    "app/EntityFX.MqttY.Contracts.pdb": "a1404696cf5525b125953ad9e6206797865a2b5c09255e6dfbe0560b45491233",
+    "app/EntityFX.MqttY.Contracts.Scenarios.dll": "bcadcea8c0fb6fc82cc8aefe998c7070f8c3be9461482e058d47f9f404880f74",
+    "app/EntityFX.MqttY.Contracts.Scenarios.pdb": "15951afc18f69f7d86be689e71a62ca357e4f4517bb8009086963f833d3c2377",
+    "app/EntityFX.MqttY.dll": "79444b89fddf039e8dc9d1596917380cffa7389beb5e47d4ef2b180f9ee217d3",
     "app/EntityFX.MqttY.MqttRelay.App.deps.json": "8fb13c49b922d481e53b7c049f6a7adf2aa3fdf1d33fbdc54410a679793a664b",
-    "app/EntityFX.MqttY.MqttRelay.App.dll": "0c05114d13a28dae38c7680d9419e831b973a2dc8e2563fac100b4df8f9d9075",
-    "app/EntityFX.MqttY.MqttRelay.App.pdb": "1914a2fdaaaf908305492eef76a38ccbe6c951d8acd6fa3f95359e61d57ae5ea",
+    "app/EntityFX.MqttY.MqttRelay.App.dll": "bc8757a1b7e065566603c94aa26ca1e9379a194bb4a96aa1fc9951e9bac63605",
+    "app/EntityFX.MqttY.MqttRelay.App.pdb": "6beda4fd4904c906968b659e8748df05f9120c49448a7ae0e39d2c6c4394cc55",
     "app/EntityFX.MqttY.MqttRelay.App.runtimeconfig.json": "ded3aeb5856a11db0b654a785574490cab55839ebfb17efe9e39b89618fc5b91",
-    "app/EntityFX.MqttY.pdb": "95b3f45cea47dceb3f60bb0070cf9b8275f6e15f9c6610addd4731a9ad487ee3",
-    "app/EntityFX.MqttY.Plugin.Mqtt.dll": "c5161712d93007b3e60984c62dc65583b59f8264db52c2ad798cfa3eee682c75",
-    "app/EntityFX.MqttY.Plugin.Mqtt.pdb": "80346a47e760c9488a7d950edf00f1544a7d315aef52a4d269af78d19295309e",
+    "app/EntityFX.MqttY.pdb": "a1d26d346f329765e2bb94a261baba257038b3eb253fa67fd61715bf78459a2d",
+    "app/EntityFX.MqttY.Plugin.Mqtt.dll": "c0fc9b7a5216ded5b65ae3e66c2cef2d0ad96c339ceda51acea7bb3e068e86db",
+    "app/EntityFX.MqttY.Plugin.Mqtt.pdb": "e17366d293ec5763a46d7b28273ccc1b699da15d845550adad124596b277991c",
     "app/Microsoft.Extensions.Configuration.Abstractions.dll": "3124386219566a2c386e6999d83a7d507584de46cde4ae733a8af3c373c42b8c",
     "app/Microsoft.Extensions.Configuration.Binder.dll": "4449f40e0645a61067c5e206e956cc5bc3b4421593b3c27188d8c71ef45c64a6",
     "app/Microsoft.Extensions.DependencyInjection.Abstractions.dll": "ac9cd953b7eeb03cf48e343c5ace6fc9b48ac968b68d1cb30ad1d6111178bf4d",
@@ -28,11 +35,14 @@
     "app/Microsoft.Extensions.Options.dll": "fbb309a36bc91d90ec2984397bff4f75f35ac92909e0acd952c5264c5ac0a753",
     "app/Microsoft.Extensions.Primitives.dll": "f9f47907a041067d9bc1b9a9f516009b6ca0a9c6325ce83527883cc0d053dfa5",
     "app/System.Diagnostics.DiagnosticSource.dll": "d6935e993b69f8abd934f01b0d7dd8ca9616a7ea94c7af59ed07b2fd3cf93a97",
-    "MqttBenchmark.bundle": "b0ce5c16c377b76e800e88ce5b817b0637dfad6926d27096c0f634bda4a0f076",
-    "mqtty.bundle": "d5c67d0d945a31fa20b5ac2021f726a121b85a5be2f853b03209cf5800f2ee76",
-    "profiles/broker-benchmark.v2.json": "10bf00adc9f04c8caddf13611709337bebcbcdeffd8ca19a99856bfa54e69d8e",
-    "reproducibility/baseline-windows-smoke.json": "dc122e74f198d8619089d30302c9b869a9b114ac4c888e86be5c8a84c733cd82",
-    "reproducibility/run.py": "1d7a32c2f97a6b2b9a95d45f96b992f839d8bf4ee6f507a9b2264816bd75a4a3",
-    "reproducibility/run_prebuilt.py": "ad4c3800b59eeb12457e31baf0a31320ffb263eae98190ae28f5e8a3ddc022f2"
-  }
+    "build-source.json": "01e677771b4dc93b9db7ead37cae5430d2be14aeab6cd983187179f5b3c29b94",
+    "MqttBenchmark.bundle": "b2ffdb4559c4fbf8f06dfc6db2b6fcd744aaee3f668a340bed50ea3cfbf8eb64",
+    "mqtty.bundle": "97e7a35e838dc6fb9ae4558dae7ccffcf7c34035eef7d35c7fc27b1b71927e86",
+    "profiles/broker-benchmark.v2.json": "b09938696ead7c7a77548fd4b3fe2134a20c303cebfd3aced592186bd2e6ab6a",
+    "reproducibility/baseline-windows-smoke.json": "5fdc9fbdf8fe815b1aaa2c15b838b6e1ab7cafca5240fe21d30d329365afe845",
+    "reproducibility/run.py": "a8e6568ac992ca54fec776b088cd49546aa8902ea841657efeee9fe52207f6b4",
+    "reproducibility/run_prebuilt.py": "840eb64b6d412b6eadb7818f1ccc1716096698984020d8d6fb1af6cbfdc45162",
+    "windows-baseline-environment.json": "07b0d09d2d9c7238e959f46631f014b73f4f6d46671536080285da50bbede6cd"
+  },
+  "createdUtc": "2026-11-02T17:54:59.982560+00:00"
 }
