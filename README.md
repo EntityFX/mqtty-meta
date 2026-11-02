@@ -10,6 +10,7 @@
 | Выбрать схему сети | [Топологии](docs/topologies/README.md) |
 | Прочитать статьи | [Статья 1](docs/dissertation/articles/article-1-twin-validation.md), [статья 2](docs/dissertation/articles/article-2-relay-federation.md) |
 | Найти принятые результаты | [Отчёты](reports/README.md) |
+| Проверить перенос Windows → Эльбрус | [Smoke-отчёт от 02.11.2026](reproducibility/reports/linux-e2k-20261102/README.md) |
 | Узнать состояние и следующие шаги | [Progress.md](reports/status/Progress.md) |
 | Найти остальные руководства | [Каталог документов](docs/README.md) |
 

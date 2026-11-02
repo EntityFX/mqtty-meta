@@ -1,0 +1,56 @@
+{
+  "brokers": {
+    "mqb3": {
+      "measurementStartTick": 1014,
+      "measurementEndTick": 11014,
+      "byQos": {
+        "atMostOnce": {
+          "attempted": 1001,
+          "admitted": 951,
+          "completed": 951,
+          "expectedDeliveries": 951,
+          "delivered": 951,
+          "rateRejected": 0,
+          "publishFailed": 50,
+          "deliveryDropped": 0,
+          "rps": 951,
+          "latencyP50Ms": null,
+          "latencyP95Ms": null,
+          "latencyP99Ms": null,
+          "latencyHistogramTicks": {}
+        },
+        "atLeastOnce": {
+          "attempted": 0,
+          "admitted": 0,
+          "completed": 0,
+          "expectedDeliveries": 0,
+          "delivered": 0,
+          "rateRejected": 0,
+          "publishFailed": 0,
+          "deliveryDropped": 0,
+          "rps": 0,
+          "latencyP50Ms": null,
+          "latencyP95Ms": null,
+          "latencyP99Ms": null,
+          "latencyHistogramTicks": {}
+        },
+        "exactlyOnce": {
+          "attempted": 0,
+          "admitted": 0,
+          "completed": 0,
+          "expectedDeliveries": 0,
+          "delivered": 0,
+          "rateRejected": 0,
+          "publishFailed": 0,
+          "deliveryDropped": 0,
+          "rps": 0,
+          "latencyP50Ms": null,
+          "latencyP95Ms": null,
+          "latencyP99Ms": null,
+          "latencyHistogramTicks": {}
+        }
+      }
+    }
+  },
+  "graph": "NetworkSimulator:\n    [{ Steps=28500.00, Steps.Avg=0 }, { Ticks=11019.00, Ticks.Avg=0 }, { VirtualTime=00:00:01.1020000, VirtualTime.Avg=0 }, { RealTime=00:00:38.8098563, RealTime.Avg=0 }, { RefreshTime=00:00:00, RefreshTime.Avg=0 }, ]\n    n0.global:\n        n0.global:\n        n0.global:\n        n0.global:\n        n0.global:\n    n1.net:\n        n1.net:\n            [{ InboundPackets=2154.00, InboundPackets.Avg=0 }, { Inbound=73.06 KB, Inbound.Avg=0 }, { InboundThroughput=530.44 Kb/s, InboundThroughput.Avg=0 }, { OutboundPackets=2154.00, OutboundPackets.Avg=0 }, { Outbound=73.06 KB, Outbound.Avg=0 }, { OutboundThroughput=530.44 Kb/s, OutboundThroughput.Avg=0 }, ]\n        n1.net:\n            mqb3:\n                [{ Send=1050.00, Send.Avg=0 }, { Receive=1104.00, Receive.Avg=0 }, { ReceiveQueue=1050.00, ReceiveQueue.Avg=0 }, ]\n                mqb3:\n                    [{ CONNECT=2.00, CONNECT.Avg=0 }, { CONNACK=2.00, CONNACK.Avg=0 }, { PUBLISH=2146.00, PUBLISH.Avg=0 }, { SUBSCRIBE=2.00, SUBSCRIBE.Avg=0 }, { SUBACK=2.00, SUBACK.Avg=0 }, { CONNECT_Rps=1.82 Rps, CONNECT_Rps.Avg=0 }, { CONNACK_Rps=1.82 Rps, CONNACK_Rps.Avg=0 }, { PUBLISH_Rps=1951.89 Rps, PUBLISH_Rps.Avg=0 }, { SUBSCRIBE_Rps=1.82 Rps, SUBSCRIBE_Rps.Avg=0 }, { SUBACK_Rps=1.82 Rps, SUBACK_Rps.Avg=0 }, { PublishQos0=1046.00, PublishQos0.Avg=995.5 }, { PublishQos0_Rps=950.43 Rps, PublishQos0_Rps.Avg=950.429742154707 }, { PublishQos0_RefusedByFailRate=54.00, PublishQos0_RefusedByFailRate.Avg=26.5 }, ]\n        n1.net:\n            mqc2:\n                [{ Send=1101.00, Send.Avg=0 }, { Receive=1.00, Receive.Avg=0 }, { ReceiveQueue=1101.00, ReceiveQueue.Avg=0 }, ]\n                mqc2:\n                    [{ CONNECT=1.00, CONNECT.Avg=0 }, { CONNACK=1.00, CONNACK.Avg=0 }, { PUBLISH=1100.00, PUBLISH.Avg=0 }, { CONNECT_Rps=0.91 Rps, CONNECT_Rps.Avg=0 }, { CONNACK_Rps=0.91 Rps, CONNACK_Rps.Avg=0 }, { PUBLISH_Rps=1000.18 Rps, PUBLISH_Rps.Avg=0 }, ]\n            mqrc3mqb3:\n                [{ Send=3.00, Send.Avg=0 }, { Receive=1049.00, Receive.Avg=0 }, { ReceiveQueue=3.00, ReceiveQueue.Avg=0 }, ]\n                mqrc3mqb3:\n                    [{ CONNECT=1.00, CONNECT.Avg=0 }, { CONNACK=1.00, CONNACK.Avg=0 }, { SUBSCRIBE=2.00, SUBSCRIBE.Avg=0 }, { SUBACK=2.00, SUBACK.Avg=0 }, { CONNECT_Rps=0.91 Rps, CONNECT_Rps.Avg=0 }, { CONNACK_Rps=0.91 Rps, CONNACK_Rps.Avg=0 }, { SUBSCRIBE_Rps=1.82 Rps, SUBSCRIBE_Rps.Avg=0 }, { SUBACK_Rps=1.82 Rps, SUBACK_Rps.Avg=0 }, ]\n        n1.net:\n            mqrc3:\n                Receiver:\n                    [Received=1046.00]\n"
+}

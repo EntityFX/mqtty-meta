@@ -1,0 +1,21 @@
+@startuml
+rectangle  <<network>> {
+cloud n0.global  #A9DCDF
+cloud n1.net  #A9DCDF
+}
+
+n0.global <--> n1.net
+rectangle "Nodes of n1.net network" <<nodes>> {
+circle mqc2 <<mqtt>> #ADD1B2
+rectangle mqb3 <<mqtt>> #E3664A
+component "mqrc3" <<mqtt>> #4AE366 {
+circle mqrc3mqb3 <<mqtt>> #ADD1B2
+}
+
+}
+
+mqc2 --> n1.net
+mqrc3mqb3 ..> n1.net
+mqb3 --> n1.net
+mqrc3 --> n1.net
+@enduml

@@ -1,0 +1,38 @@
+{
+  "experiment": {
+    "topologyMode": "brokerFidelity",
+    "profileClientCountMode": "connectedClients",
+    "brokers": 1,
+    "networkLength": 1,
+    "clientsPerBroker": 1,
+    "publishQos": "exactlyOnce",
+    "subscribeQos": "exactlyOnce",
+    "payloadBytes": 16,
+    "brokerAssignmentMode": "Mosquitto",
+    "warmupTicks": 1000,
+    "measurementTicks": 10000,
+    "drainTimeoutTicks": 20000,
+    "offeredRps": 1000,
+    "randomSeed": 42,
+    "parallel": false,
+    "refreshStrategy": 0,
+    "enableCounters": true,
+    "fidelityMode": true
+  },
+  "ticks": {
+    "tickPeriod": "00:00:00.0001000",
+    "receiveWaitPeriod": "00:00:01",
+    "outgoingWaitTicks": 1,
+    "counterHistoryDepth": 100
+  },
+  "network": {
+    "capacityBytesPerSecond": 100000000,
+    "throughputWindowTicks": 100,
+    "queueCapacity": 100000,
+    "transferTicks": 1,
+    "networkType": "ethernet"
+  },
+  "mqttYRepository": "/home/user/mqtty-repro-20261102-e2k-a20f9531/mqtty",
+  "mqttBenchmarkRepository": "/home/user/mqtty-repro-20261102-e2k-a20f9531/MqttBenchmark",
+  "brokerProfilePath": "/home/user/mqtty-repro-20261102-e2k-a20f9531/profiles/broker-benchmark.v2.json"
+}

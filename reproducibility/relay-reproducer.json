@@ -1,0 +1,38 @@
+{
+  "experiment": {
+    "topologyMode": "mqttRelay",
+    "profileClientCountMode": "connectedClients",
+    "brokers": 2,
+    "networkLength": 1,
+    "clientsPerBroker": 2,
+    "publishQos": "atLeastOnce",
+    "subscribeQos": "atLeastOnce",
+    "payloadBytes": 16,
+    "brokerAssignmentMode": "ideal",
+    "warmupTicks": 1000,
+    "measurementTicks": 10000,
+    "drainTimeoutTicks": 20000,
+    "offeredRps": 1000,
+    "randomSeed": 42,
+    "parallel": false,
+    "refreshStrategy": 0,
+    "enableCounters": true,
+    "fidelityMode": true
+  },
+  "ticks": {
+    "tickPeriod": "00:00:00.0001000",
+    "receiveWaitPeriod": "00:00:01",
+    "outgoingWaitTicks": 1,
+    "counterHistoryDepth": 100
+  },
+  "network": {
+    "capacityBytesPerSecond": 100000000,
+    "throughputWindowTicks": 100,
+    "queueCapacity": 100000,
+    "transferTicks": 1,
+    "networkType": "ethernet"
+  },
+  "mqttYRepository": ".",
+  "mqttBenchmarkRepository": "../MqttBenchmark",
+  "brokerProfilePath": "src/EntityFX.MqttSimulator/EntityFX.MqttY.Plugin.Mqtt/Data/broker-benchmark.v2.json"
+}
