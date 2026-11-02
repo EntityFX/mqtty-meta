@@ -1,7 +1,0 @@
-ideal-broker.m16.q0.s42: localMatch=True, differing baseline fields=['runtime']
-ideal-broker.m16.q1.s42: localMatch=True, differing baseline fields=['runtime']
-ideal-broker.m16.q2.s42: localMatch=True, differing baseline fields=['runtime']
-legacy-mosquitto.m16.q0.s42: localMatch=True, differing baseline fields=['runtime']
-legacy-mosquitto.m16.q1.s42: localMatch=True, differing baseline fields=['runtime']
-legacy-mosquitto.m16.q2.s42: localMatch=True, differing baseline fields=['runtime']
-PASS scientific replay: 6 cases / 12 runs; runtimeMatch=False

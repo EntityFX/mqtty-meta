@@ -1,9 +1,0 @@
-{
-  "mqb3": {
-    "atMostOnce": {},
-    "atLeastOnce": {},
-    "exactlyOnce": {
-      "22": 1001
-    }
-  }
-}
