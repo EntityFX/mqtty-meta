@@ -1,0 +1,31 @@
+{
+  "programIdentity": "acceleration-workers-20261102-v1",
+  "pilotResult": "/run/media/entityfx/hd250/mqtty-evidence/acceleration-workers-20261102-pilot/result.json",
+  "pilotSha256": "8429278e794562405c50fd0237a729517269e5e96ad1e6796ec071d97fd3abfe",
+  "hardWallSeconds": 1961,
+  "pilotPrimaryWallSeconds": 93.66104176399676,
+  "expectedWallSeconds": 1363.340208819984,
+  "inputSealSha256": "b5d542719f9e4c1b66e4396be0a70157dff471bb86295e6b510137b9efccf40a",
+  "sourceManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+  "schedule": [
+    1,
+    2,
+    2,
+    1,
+    1,
+    2,
+    2,
+    1,
+    1,
+    2
+  ],
+  "createdEpoch": 1793585312.7227445,
+  "localRawVerification": {
+    "models": 2,
+    "scientificFiles": 12,
+    "passed": true
+  },
+  "controllerCommit": "6f2df53",
+  "retryAllowed": false,
+  "automaticNextExperiment": false
+}
