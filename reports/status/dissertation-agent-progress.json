@@ -1483,7 +1483,7 @@
     "relatedTestsFailed": 0,
     "productionCodeChanged": false,
     "evidence": "reports/audits/dissertation/article-1-model-reconnect-v1/verification.json",
-    "nextAction": "Main campaign completed and audited; finish article evidence checks and author handoff. Do not rerun pilots."
+    "nextAction": "Await workers comparison; one outcome check and all five-pair raw acceptance on user continuation. No retry, polling or new timers. Do not edit diss or articles."
   },
   "instrumentationDiagnostic": {
     "status": "completed",
@@ -2168,5 +2168,43 @@
     "promptSha256": "8ab608255145b2a9f64badf40e3654f1325304c4619a4ca4990fb97757c46e96",
     "dispatchReceipt": "C:\\temp\\mqtty-evidence\\scheduled-step33-20261102-0500\\dispatch.json",
     "validatedOnlyNoImmediateDispatch": true
+  },
+  "accelerationWorkers20261102": {
+    "status": "mainRunningAwaitingResults",
+    "pilotModelsAccepted": 2,
+    "pilotWallSeconds": 93.95740109100007,
+    "linuxTestsPassed": 10,
+    "localPilotRawVerified": true,
+    "mainModels": 20,
+    "pairs": 5,
+    "unit": "mqtty-acceleration-workers-main-20261102.service",
+    "pid": 5260,
+    "observedAtMsk": "2026-11-02T05:09:13.972639+03:00",
+    "observedProgress": {
+      "programIdentity": "acceleration-workers-20261102-v1",
+      "mode": "main",
+      "phase": "running",
+      "finishedModels": 0,
+      "total": 20,
+      "deadlineEpoch": 1793587313.0435436,
+      "hardWallSeconds": 1961,
+      "inputSealSha256": "b5d542719f9e4c1b66e4396be0a70157dff471bb86295e6b510137b9efccf40a",
+      "sourceManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+      "activeBatchPath": "/run/media/entityfx/hd250/mqtty-evidence/acceleration-workers-20261102-main/batch-01-w1"
+    },
+    "expectedFinishMsk": "2026-11-02T05:31:55.383752+03:00",
+    "hardDeadlineMsk": "2026-11-02T05:41:53.043544+03:00",
+    "hardWallSeconds": 1961,
+    "receipt": "reports/audits/dissertation/acceleration-workers-20261102/main-launch.json",
+    "review": "reports/audits/dissertation/acceleration-workers-20261102/Review.md",
+    "historicalSpeedupProven": false,
+    "step33Accepted": false,
+    "globalPercent": 53.2,
+    "localPercent": 80,
+    "webLaunch": false,
+    "agentStopsForWaiting": true,
+    "automaticNextExperiment": false,
+    "retryPerformed": false,
+    "timerConsumed": true
   }
 }
