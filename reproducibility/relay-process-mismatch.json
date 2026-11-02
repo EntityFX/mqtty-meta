@@ -1,0 +1,378 @@
+{
+  "description": "Two separate Windows processes, same configuration and source commits. Aggregate summaries match but per-broker counters and histograms differ.",
+  "mqttyCommit": "c7be868fb841245dfcd889abebe3c7f82afb5daf",
+  "mqttBenchmarkCommit": "ae121a6bf06ba003a43eeaff03d9f633f6915dd5",
+  "configuration": "relay-reproducer.json",
+  "runs": [
+    {
+      "summary": {
+        "status": "completed",
+        "measurementStartTick": 1018,
+        "measurementEndTick": 11018,
+        "simulated": {
+          "attempted": 3005,
+          "admitted": 3005,
+          "completed": 3005,
+          "expectedDeliveries": 4006,
+          "delivered": 4006,
+          "rateRejected": 0,
+          "publishFailed": 0,
+          "deliveryDropped": 0,
+          "completedRps": 3005,
+          "publishFailureRate": 0,
+          "deliveryLossRate": 0,
+          "latencyP99Ms": 0.5
+        },
+        "reference": null,
+        "acceptanceCriteria": [
+          {
+            "name": "rps",
+            "reference": null,
+            "simulated": 3005,
+            "error": null,
+            "limit": 0.15,
+            "status": "notApplicable"
+          },
+          {
+            "name": "publishFailureRate",
+            "reference": null,
+            "simulated": 0,
+            "error": null,
+            "limit": 0.05,
+            "status": "notApplicable"
+          },
+          {
+            "name": "deliveryLossRate",
+            "reference": null,
+            "simulated": 0,
+            "error": null,
+            "limit": 0.05,
+            "status": "notApplicable"
+          },
+          {
+            "name": "latencyP99Ms",
+            "reference": null,
+            "simulated": 0.5,
+            "error": null,
+            "limit": 0.2,
+            "status": "notApplicable"
+          }
+        ],
+        "error": null
+      },
+      "brokers": {
+        "mqb8": {
+          "measurementStartTick": 1018,
+          "measurementEndTick": 11018,
+          "byQos": {
+            "atMostOnce": {
+              "attempted": 0,
+              "admitted": 0,
+              "completed": 0,
+              "expectedDeliveries": 0,
+              "delivered": 0,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 0,
+              "latencyP50Ms": null,
+              "latencyP95Ms": null,
+              "latencyP99Ms": null,
+              "latencyHistogramTicks": {}
+            },
+            "atLeastOnce": {
+              "attempted": 1502,
+              "admitted": 1502,
+              "completed": 1502,
+              "expectedDeliveries": 2002,
+              "delivered": 2002,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 1502,
+              "latencyP50Ms": 0.30000000000000004,
+              "latencyP95Ms": 0.5,
+              "latencyP99Ms": 0.5,
+              "latencyHistogramTicks": {
+                "3": 1001,
+                "5": 501
+              }
+            },
+            "exactlyOnce": {
+              "attempted": 0,
+              "admitted": 0,
+              "completed": 0,
+              "expectedDeliveries": 0,
+              "delivered": 0,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 0,
+              "latencyP50Ms": null,
+              "latencyP95Ms": null,
+              "latencyP99Ms": null,
+              "latencyHistogramTicks": {}
+            }
+          }
+        },
+        "mqb4": {
+          "measurementStartTick": 1018,
+          "measurementEndTick": 11018,
+          "byQos": {
+            "atMostOnce": {
+              "attempted": 0,
+              "admitted": 0,
+              "completed": 0,
+              "expectedDeliveries": 0,
+              "delivered": 0,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 0,
+              "latencyP50Ms": null,
+              "latencyP95Ms": null,
+              "latencyP99Ms": null,
+              "latencyHistogramTicks": {}
+            },
+            "atLeastOnce": {
+              "attempted": 1503,
+              "admitted": 1503,
+              "completed": 1503,
+              "expectedDeliveries": 2004,
+              "delivered": 2004,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 1503,
+              "latencyP50Ms": 0.30000000000000004,
+              "latencyP95Ms": 0.5,
+              "latencyP99Ms": 0.5,
+              "latencyHistogramTicks": {
+                "3": 1002,
+                "5": 501
+              }
+            },
+            "exactlyOnce": {
+              "attempted": 0,
+              "admitted": 0,
+              "completed": 0,
+              "expectedDeliveries": 0,
+              "delivered": 0,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 0,
+              "latencyP50Ms": null,
+              "latencyP95Ms": null,
+              "latencyP99Ms": null,
+              "latencyHistogramTicks": {}
+            }
+          }
+        }
+      },
+      "histogram": {
+        "mqb8": {
+          "atMostOnce": {},
+          "atLeastOnce": {
+            "3": 1001,
+            "5": 501
+          },
+          "exactlyOnce": {}
+        },
+        "mqb4": {
+          "atMostOnce": {},
+          "atLeastOnce": {
+            "3": 1002,
+            "5": 501
+          },
+          "exactlyOnce": {}
+        }
+      }
+    },
+    {
+      "summary": {
+        "status": "completed",
+        "measurementStartTick": 1018,
+        "measurementEndTick": 11018,
+        "simulated": {
+          "attempted": 3005,
+          "admitted": 3005,
+          "completed": 3005,
+          "expectedDeliveries": 4006,
+          "delivered": 4006,
+          "rateRejected": 0,
+          "publishFailed": 0,
+          "deliveryDropped": 0,
+          "completedRps": 3005,
+          "publishFailureRate": 0,
+          "deliveryLossRate": 0,
+          "latencyP99Ms": 0.5
+        },
+        "reference": null,
+        "acceptanceCriteria": [
+          {
+            "name": "rps",
+            "reference": null,
+            "simulated": 3005,
+            "error": null,
+            "limit": 0.15,
+            "status": "notApplicable"
+          },
+          {
+            "name": "publishFailureRate",
+            "reference": null,
+            "simulated": 0,
+            "error": null,
+            "limit": 0.05,
+            "status": "notApplicable"
+          },
+          {
+            "name": "deliveryLossRate",
+            "reference": null,
+            "simulated": 0,
+            "error": null,
+            "limit": 0.05,
+            "status": "notApplicable"
+          },
+          {
+            "name": "latencyP99Ms",
+            "reference": null,
+            "simulated": 0.5,
+            "error": null,
+            "limit": 0.2,
+            "status": "notApplicable"
+          }
+        ],
+        "error": null
+      },
+      "brokers": {
+        "mqb8": {
+          "measurementStartTick": 1018,
+          "measurementEndTick": 11018,
+          "byQos": {
+            "atMostOnce": {
+              "attempted": 0,
+              "admitted": 0,
+              "completed": 0,
+              "expectedDeliveries": 0,
+              "delivered": 0,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 0,
+              "latencyP50Ms": null,
+              "latencyP95Ms": null,
+              "latencyP99Ms": null,
+              "latencyHistogramTicks": {}
+            },
+            "atLeastOnce": {
+              "attempted": 1503,
+              "admitted": 1503,
+              "completed": 1503,
+              "expectedDeliveries": 2004,
+              "delivered": 2004,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 1503,
+              "latencyP50Ms": 0.30000000000000004,
+              "latencyP95Ms": 0.5,
+              "latencyP99Ms": 0.5,
+              "latencyHistogramTicks": {
+                "3": 1002,
+                "5": 501
+              }
+            },
+            "exactlyOnce": {
+              "attempted": 0,
+              "admitted": 0,
+              "completed": 0,
+              "expectedDeliveries": 0,
+              "delivered": 0,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 0,
+              "latencyP50Ms": null,
+              "latencyP95Ms": null,
+              "latencyP99Ms": null,
+              "latencyHistogramTicks": {}
+            }
+          }
+        },
+        "mqb4": {
+          "measurementStartTick": 1018,
+          "measurementEndTick": 11018,
+          "byQos": {
+            "atMostOnce": {
+              "attempted": 0,
+              "admitted": 0,
+              "completed": 0,
+              "expectedDeliveries": 0,
+              "delivered": 0,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 0,
+              "latencyP50Ms": null,
+              "latencyP95Ms": null,
+              "latencyP99Ms": null,
+              "latencyHistogramTicks": {}
+            },
+            "atLeastOnce": {
+              "attempted": 1502,
+              "admitted": 1502,
+              "completed": 1502,
+              "expectedDeliveries": 2002,
+              "delivered": 2002,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 1502,
+              "latencyP50Ms": 0.30000000000000004,
+              "latencyP95Ms": 0.5,
+              "latencyP99Ms": 0.5,
+              "latencyHistogramTicks": {
+                "3": 1001,
+                "5": 501
+              }
+            },
+            "exactlyOnce": {
+              "attempted": 0,
+              "admitted": 0,
+              "completed": 0,
+              "expectedDeliveries": 0,
+              "delivered": 0,
+              "rateRejected": 0,
+              "publishFailed": 0,
+              "deliveryDropped": 0,
+              "rps": 0,
+              "latencyP50Ms": null,
+              "latencyP95Ms": null,
+              "latencyP99Ms": null,
+              "latencyHistogramTicks": {}
+            }
+          }
+        }
+      },
+      "histogram": {
+        "mqb8": {
+          "atMostOnce": {},
+          "atLeastOnce": {
+            "3": 1002,
+            "5": 501
+          },
+          "exactlyOnce": {}
+        },
+        "mqb4": {
+          "atMostOnce": {},
+          "atLeastOnce": {
+            "3": 1001,
+            "5": 501
+          },
+          "exactlyOnce": {}
+        }
+      }
+    }
+  ]
+}
