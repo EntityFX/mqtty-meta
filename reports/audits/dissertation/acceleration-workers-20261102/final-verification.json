@@ -1,0 +1,45 @@
+{
+  "status": "acceptedLocally",
+  "rawModelsRecalculated": 20,
+  "scientificFilesCompared": 120,
+  "allMatchAcceptedAa": true,
+  "analysisRecalculated": true,
+  "runtimeFinishedWithinLimit": true,
+  "wallSeconds": 1355.2762125020017,
+  "analysis": {
+    "pairedSpeedups": [
+      1.8732702774614993,
+      1.9006204416928933,
+      1.8078510953150553,
+      1.9171826498487012,
+      1.900139558643437
+    ],
+    "geometricMean": 1.879409842427776,
+    "ci95StudentLogPairs": [
+      1.82595857588112,
+      1.9344257873483997
+    ],
+    "pairs": 5,
+    "practicalGainThreshold": 1.1,
+    "practicalGainConfirmed": true,
+    "scope": "Two fixed independent q1024 jobs on this host; not kernel speedup"
+  },
+  "resultSha256": "f165420f48f1dda4fe350af01b802a886242604bb2ba1775328c04ca03b0e4c1",
+  "rawLocalRoot": "C:\\temp\\mqtty-evidence\\acceleration-workers-20261102-main",
+  "sourceManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+  "inputSealSha256": "b5d542719f9e4c1b66e4396be0a70157dff471bb86295e6b510137b9efccf40a",
+  "step33Acceptance": "Limited controlled benchmark with versions, same work, five pairs; historical engine claims remain unsupported and narrowed in report",
+  "historical125xProven": false,
+  "mainDissertationEdited": false,
+  "articleManuscriptsEdited": false,
+  "workers1": {
+    "meanWallSeconds": 176.87169322619883,
+    "meanCpuSeconds": 176.422,
+    "maxSampledRssBytes": 785379328
+  },
+  "workers2": {
+    "meanWallSeconds": 94.13192509840083,
+    "meanCpuSeconds": 182.722,
+    "maxSampledRssBytes": 1557757952
+  }
+}
