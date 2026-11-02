@@ -4,9 +4,9 @@
 
 Проверяются **Aedes, Mosquitto, ActiveMQ Classic и EMQX**. Для каждого сохраняются профиль двойника, исходные данные и отдельный отчёт с таблицами и графиками.
 
-Отдельные пояснения: [состав проекта и ключевые классы](../overview/architecture.md), [этапы, исполнители и результаты](stages.md), [как работает MqttRelay](../mqtty/mqtt-relay.md), [показатели и формулы](metrics.md).
+Отдельные пояснения: [состав проекта и ключевые классы](../overview/architecture.md), [этапы, исполнители и результаты](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/stages.md), [как работает MqttRelay](../mqtty/mqtt-relay.md), [показатели и формулы](metrics.md).
 
-О каждом брокере: [Aedes](brokers/Aedes.md), [Mosquitto](brokers/Mosquitto.md), [ActiveMQ Classic](brokers/ActiveMQ.md), [EMQX](brokers/EMQX.md). [Опубликованные отчёты](../../reports/README.md).
+О каждом брокере: [Aedes](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/brokers/Aedes.md), [Mosquitto](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/brokers/Mosquitto.md), [ActiveMQ Classic](brokers/ActiveMQ.md), [EMQX](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/brokers/EMQX.md). [Опубликованные отчёты](../../reports/README.md).
 
 ## 1. Как устроен эксперимент
 
@@ -69,7 +69,7 @@ Python-контроллер вызывает приложения по этап�
 
 ## 4. Что подготовить на новой машине
 
-Готовый сценарий рассчитан на **Linux с systemd, пользовательским D-Bus и cgroup v2**. Контроллер и брокеры работают на одном хосте без Docker. На Windows или macOS можно использовать отдельный Linux-хост либо подходящую виртуальную машину. Для двух физических машин есть [отдельное руководство](two-machine-stand.md).
+Готовый сценарий рассчитан на **Linux с systemd, пользовательским D-Bus и cgroup v2**. Контроллер и брокеры работают на одном хосте без Docker. На Windows или macOS можно использовать отдельный Linux-хост либо подходящую виртуальную машину. Для двух физических машин есть [отдельное руководство](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/two-machine-stand.md).
 
 Переносимость означает настройку путей, программ и ресурсов на новой машине. Она не означает поддержку любой ОС без подготовки или одинаковые натурные результаты на разном оборудовании. Виртуализацию и совместное размещение обязательно указывают в отчёте.
 
@@ -82,7 +82,7 @@ Python-контроллер вызывает приложения по этап�
 - Отдельный смонтированный раздел ext4 для исходных данных, архивов, сборок и временных файлов.
 - Достаточно CPU и памяти. Готовый сценарий задаёт пределы 4 GiB брокеру и 8 GiB контроллеру; машине нужен запас для ОС. Меньшее число симуляций не меняет эти пределы.
 
-Команды установки для ОС: [подготовка машины](machine-preparation.md). Установка и проверка брокеров: [быстрый старт](quick-start.md). Выбирайте пакеты под свою ОС и архитектуру; значения путей из примеров заменяйте своими.
+Команды установки для ОС: [подготовка машины](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/machine-preparation.md). Установка и проверка брокеров: [быстрый старт](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/quick-start.md). Выбирайте пакеты под свою ОС и архитектуру; значения путей из примеров заменяйте своими.
 
 ## 5. Получить исходники и собрать программы
 
@@ -144,7 +144,7 @@ dotnet publish "$MQTTY_ROOT/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Mqtt
 
 ## 6. Описать брокеры и выбрать ресурсы
 
-Установите брокеры по [инструкции](quick-start.md). Отдельные конфигурации и дистрибутивы этой серии размещайте в `$SERIES/brokers-native`, а не поверх файлов работающих служб. Скопируйте [пример описания четырёх брокеров](../../MqttBenchmark/docs/examples/four-brokers.linux.spec.json) в файл `$SERIES/brokers.spec.json` и замените пути и версии своими.
+Установите брокеры по [инструкции](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/quick-start.md). Отдельные конфигурации и дистрибутивы этой серии размещайте в `$SERIES/brokers-native`, а не поверх файлов работающих служб. Скопируйте [пример описания четырёх брокеров](../../MqttBenchmark/docs/examples/four-brokers.linux.spec.json) в файл `$SERIES/brokers.spec.json` и замените пути и версии своими.
 
 | Поле | Что указать |
 | --- | --- |
@@ -211,7 +211,7 @@ export CONTROLLER="$SERIES/controller"
 | Новый `compact-v1` из этого полного описания | 10 / 2 с | 12 точек, профиль v3; эмпирический режим автоматически не включается |
 | Опубликованная серия от 19 октября 2026 года | 20 / 2 с | Профиль v4 с гистограммами; одиночные модели — `closedLoopPerPublisher` и `empiricalServiceBudget`, Relay — `openLoopRate` и `fixed` |
 
-Для повторения опубликованной модели нужны её сохранённые профиль, config и runtime. Для новой эмпирической серии до старта требуется отдельная согласованная программа: экспорт гистограмм, вызов `calibrate --latency-histograms` и совместимые настройки симуляции. Одной замены `--simulation-seconds` недостаточно. Порядок отдельной калибровки описан в [ответе 9](../overview/questions-and-answers.md#вопрос-9-как-применить-результаты-mqttbenchmark-в-mqtty).
+Для повторения опубликованной модели нужны её сохранённые профиль, config и runtime. Для новой эмпирической серии до старта требуется отдельная согласованная программа: экспорт гистограмм, вызов `calibrate --latency-histograms` и совместимые настройки симуляции. Одной замены `--simulation-seconds` недостаточно. Порядок отдельной калибровки описан в [ответе 9](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/overview/questions-and-answers.md#вопрос-9-как-применить-результаты-mqttbenchmark-в-mqtty).
 
 Запуск работает как пользовательская служба systemd. Для работы после выхода из SSH заранее включите `loginctl enable-linger "$USER"` и проверьте `Linger=yes`. Это не обеспечивает автозапуск после перезагрузки или продолжение при выключенной виртуальной машине.
 
@@ -246,7 +246,7 @@ export MQB_GUARD_SAMPLER_CLI="$SERIES/tools/benchmark/EntityFX.MqttBenchmark.Cli
 
 Время ограничено шестью часами, запуск новой нагрузки прекращается раньше для сохранения результатов. Обычный запуск не сбрасывает этот срок. Изменение срока должно быть отдельно записано; молча превращать шестичасовую проверку в более длинную нельзя.
 
-Для поддерживаемых ограниченных серий есть `extend-campaign-deadline.py`: он ждёт границы без активных заданий, сохраняет прежние входы и продолжает серию с новым сроком. Простая правка `series.json` не обновляет уже работающий процесс. Порядок и ограничения — в [описании сценария](automation.md).
+Для поддерживаемых ограниченных серий есть `extend-campaign-deadline.py`: он ждёт границы без активных заданий, сохраняет прежние входы и продолжает серию с новым сроком. Простая правка `series.json` не обновляет уже работающий процесс. Порядок и ограничения — в [описании сценария](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/automation.md).
 
 ## 9. Как смотреть прогресс и продолжить работу
 

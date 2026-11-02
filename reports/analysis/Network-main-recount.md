@@ -4,7 +4,7 @@
 
 Локально пересчитаны первичные данные **106 из 106 доступных результатов**: ошибок проверяемой арифметики нет. Пересчёт занял **311,14 с**. Он проверяет сохранённые ID публикаций, payload, ожидаемые пары «сообщение — получатель», доставки, пересылки, гистограммы и фазы существующим независимым счётчиком. Это проверка результата модели; она не является натурным опытом, повтором симуляции или независимым человеческим рецензированием.
 
-**Паспорт материалов (Material Passport):** кампания основной идеальной сети; программа 162 точки и шесть повторов. Источник — полный архив вне Git, `C:/temp/mqtty-evidence/network-full-3h-v1/raw-001`. SHA manifest исполнения `24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7`. Перенос и все 2 854 исходных файла проверены [отдельно](Network-main-transfer.md). Текущие материалы: [квитанция](../audits/dissertation/network-main-recount-v1/verification.json), [CSV](../audits/dissertation/network-main-recount-v1/comparison.csv), [средние и диапазоны](../audits/dissertation/network-main-recount-v1/condition-stats.json), 106 отдельных квитанций в `cases`. Хэши кода пересчёта сохранены в квитанции; входы и runtime не менялись.
+**Паспорт материалов (Material Passport):** кампания основной идеальной сети; программа 162 точки и шесть повторов. Источник — полный архив вне Git, `C:/temp/mqtty-evidence/network-full-3h-v1/raw-001`. SHA manifest исполнения `24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7`. Перенос и все 2 854 исходных файла проверены [отдельно](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Network-main-transfer.md). Текущие материалы: [квитанция](../audits/dissertation/network-main-recount-v1/verification.json), [CSV](../audits/dissertation/network-main-recount-v1/comparison.csv), [средние и диапазоны](../audits/dissertation/network-main-recount-v1/condition-stats.json), 106 отдельных квитанций в `cases`. Хэши кода пересчёта сохранены в квитанции; входы и runtime не менялись.
 
 Состояние арифметики — **VERIFIED для доступного поднабора**. Состояние всей программы — **не завершена**. Линия 54/54, кольцо 52/54, звезда 0/54. Точные повторы основной сети — **0/6**; шесть повторов короткой серии сюда не засчитываются.
 
@@ -20,7 +20,7 @@
 
 Во всех сравнимых условиях **single и Relay имеют полноту 100%**. Федерация доставляет всё при QoS 0 и при QoS 1 / 1000 сообщ./с. При большей нагрузке QoS 1 и при QoS 2 наблюдаются потери. Полная таблица 12 условий непосредственно построена из проверенных данных:
 
-[Таблица полноты и задержек](../audits/dissertation/network-main-recount-v1/figures/Comparison.md).
+[Таблица полноты и задержек](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/network-main-recount-v1/figures/Comparison.md).
 
 ![Полнота и задержка при 5000 сообщ./с](../audits/dissertation/network-main-recount-v1/figures/comparison-5000.svg)
 

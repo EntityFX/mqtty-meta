@@ -1,6 +1,6 @@
 # Перенос измерений в MqttY: raw → observations → calibration
 
-Нужны завершённая кампания MqttBenchmark v3, .NET 6 runtime/SDK и чистые tracked исходники MqttY. Команды одинаковы в Linux/Windows; ниже PowerShell 7. Рабочий каталог — корень mqtty, sibling MqttBenchmark расположен в ../MqttBenchmark. [Установка инструментов](../mqtt-benchmark/machine-preparation.md).
+Нужны завершённая кампания MqttBenchmark v3, .NET 6 runtime/SDK и чистые tracked исходники MqttY. Команды одинаковы в Linux/Windows; ниже PowerShell 7. Рабочий каталог — корень mqtty, sibling MqttBenchmark расположен в ../MqttBenchmark. [Установка инструментов](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/machine-preparation.md).
 
 ## 1. Проверить и перенести исходные измерения
 
@@ -48,7 +48,7 @@ Get-FileHash results/broker-calibration.v3.json -Algorithm SHA256
 dotnet publish src/EntityFX.MqttSimulator/EntityFX.MqttY.MqttRelay.App -c Release -o ../simulator-portable/bin
 ```
 
-Перенесите **весь** каталог `simulator-portable/bin`, входные JSON и чистые Git checkout обоих проектов. На целевой Linux/Windows-машине нужны .NET6 runtime, Git и PowerShell7. Добавьте к вызову скрипта `-SimulatorCliPath ../simulator-portable/bin/EntityFX.MqttY.MqttRelay.App.dll`; сборка исходников на целевой машине тогда не выполняется. Без этого параметра скрипт использует `dotnet run` и требует SDK. Ручной эквивалент каждого вызова — `dotnet ../simulator-portable/bin/EntityFX.MqttY.MqttRelay.App.dll calibrate ...` или `experiment ...` с теми же аргументами ниже/в [руководстве сетей](network-experiments.md). Ожидаются тот же calibration artifact и новый run bundle; остановка длительного experiment — Ctrl+C, после неё неполный bundle не считается успешным результатом.
+Перенесите **весь** каталог `simulator-portable/bin`, входные JSON и чистые Git checkout обоих проектов. На целевой Linux/Windows-машине нужны .NET6 runtime, Git и PowerShell7. Добавьте к вызову скрипта `-SimulatorCliPath ../simulator-portable/bin/EntityFX.MqttY.MqttRelay.App.dll`; сборка исходников на целевой машине тогда не выполняется. Без этого параметра скрипт использует `dotnet run` и требует SDK. Ручной эквивалент каждого вызова — `dotnet ../simulator-portable/bin/EntityFX.MqttY.MqttRelay.App.dll calibrate ...` или `experiment ...` с теми же аргументами ниже/в [руководстве сетей](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtty/network-experiments.md). Ожидаются тот же calibration artifact и новый run bundle; остановка длительного experiment — Ctrl+C, после неё неполный bundle не считается успешным результатом.
 
 ## 3. Что преобразуется
 
@@ -78,4 +78,4 @@ Rate rejection отдельно не измеряется. Default r=0 озна�
 
 Calibration сохраняет полную observation provenance, SHA-256 **точных bytes observations**, clean MqttY commit и method conditional-failure-rtt-v1. Wall-clock timestamp отсутствует: одинаковые bytes/commit/r воспроизводят одинаковые bytes calibration. Runtime повторно проверяет формулы и RTT-поправки. Hash обнаруживает изменение относительно registry, но не удостоверяет независимую подлинность измерений.
 
-Не заменяйте embedded профиль и working configs. Новый внешний путь задаётся через brokerProfilePath в отдельном экспериментальном JSON. Дальнейшие команды: [сети](network-experiments.md); критерии приемлемости: [валидация](validation.md).
+Не заменяйте embedded профиль и working configs. Новый внешний путь задаётся через brokerProfilePath в отдельном экспериментальном JSON. Дальнейшие команды: [сети](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtty/network-experiments.md); критерии приемлемости: [валидация](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtty/validation.md).

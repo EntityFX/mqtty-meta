@@ -1,22 +1,15 @@
-# MqttY: симуляция брокеров и сетей
+# MqttY: модель и интерфейсы
 
-MqttY исполняет модель времени, сетей и MQTT-обмена. Профиль реального брокера поступает из натурных наблюдений MqttBenchmark. Идеальные демонстрации работают без такого профиля; их успешность не доказывает натурную точность двойника.
+MqttY рассчитывает модель брокеров, клиентов и сети. Реальные MQTT-измерения выполняет [MqttBenchmark](../mqtt-benchmark/README.md). Профиль задаёт наблюдаемые ограничения модели и не воспроизводит все внутренние механизмы исходного брокера.
 
 | Задача | Документ |
 | --- | --- |
-| Понять ядро, контракты и модель MQTT | [Архитектура MqttY](architecture.md) |
-| Построить профиль по observations | [Калибровка](calibration-v3.md) |
-| Разобраться в эмпирических распределениях v4 | [Эмпирическая модель](empirical-fidelity.md) |
-| Разобраться в бюджете обслуживания | [EmpiricalServiceBudget](empirical-service-budget.md) |
-| Выполнить BrokerFidelity или сеть | [Сетевые эксперименты](network-experiments.md) |
-| Проверить точность и повторяемость | [Валидация](validation.md) |
-| Создать собственный граф через API | [Своя топология](custom-topology.md) |
-| Понять устройство ретрансляции | [MqttRelay](mqtt-relay.md) |
-| Исследовать назначение MQTT-соединений | [Балансировка](load-balancing/README.md) и [план развития](load-balancing/design.md) |
-| Сравнить single, Relay и статическую федерацию | [Федерация](federation/README.md) и [границы реализации](federation/design.md) |
-| Работать с графическим редактором | [Designer](designer.md) |
-| Разобраться в происхождении тестового fixture | [Тестовые данные](testing-fixtures.md) |
+| Построить и проверить профиль | [Калибровка v3](calibration-v3.md) |
+| Настроить пересылку | [MqttRelay](mqtt-relay.md), [федерация](federation/README.md) |
+| Распределить клиентские соединения | [Балансировка](load-balancing/README.md) |
+| Редактировать и просматривать граф | [Designer](designer.md), [каталог топологий](../topologies/README.md) |
+| Развернуть Web на Linux | [Руководство](web-deployment.md) |
+| Проверить готовность Web | [Сохранённые результаты](../../reports/web/README.md), [критерии W1–W5](../plans/completion.md) |
+| Повторить переносимую симуляцию | [Windows → Linux/e2k](../../reproducibility/README.md) |
 
-Сценарии серий: [балансировка](load-balancing/automation.md), [федерация](federation/automation.md). Результаты и ограничения находятся в [отчётах MqttY](../../reports/mqtty/README.md).
-
-Основной solution находится в `mqtty/src/EntityFX.MqttSimulator`. Исполняемые примеры и сценарии, привязанные к структуре исходников, остаются в `mqtty/doc/examples`; их перемещение изменило бы пути сборки. Дополнительные конфигурации мета-репозитория находятся в [examples](examples/).
+Научные границы модели зафиксированы в [контракте сети](../dissertation/network-model-contract.md) и [карте метода](../dissertation/broker-twin-method-map.md). Итоги экспериментов находятся в [отчётах](../../reports/README.md), а не в нескольких параллельных планах новых запусков.

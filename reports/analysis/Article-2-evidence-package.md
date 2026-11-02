@@ -1,6 +1,6 @@
 # Пакет проверенных чисел второй статьи
 
-Актуальная локальная редакция статьи сопровождается [пакетом v2](../audits/dissertation/article-2-evidence-package-v2/verification.json). Числа короткой серии и сводка покрытия не изменились; обновлены статья, схемы и подписи. Пакет v1 ниже сохраняет прежний снимок. Отдельно оформлена [приёмка основной сети](Article-2-main-acceptance.md); новых измерений и обращения к Linux в этом продолжении не было.
+Актуальная локальная редакция статьи сопровождается [пакетом v2](../audits/dissertation/article-2-evidence-package-v2/verification.json). Числа короткой серии и сводка покрытия не изменились; обновлены статья, схемы и подписи. Пакет v1 ниже сохраняет прежний снимок. Отдельно оформлена [приёмка основной сети](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Article-2-main-acceptance.md); новых измерений и обращения к Linux в этом продолжении не было.
 
 Подготовлен самостоятельный блок для шагов 23–24 исходного [плана](../../docs/dissertation/articles-and-work-plan.md). Он позволяет использовать завершённую короткую серию и явно показывает границы основной. Новых расчётов на Linux не было; исторические данные и критерии не изменены.
 
@@ -12,7 +12,7 @@
 - Сохранённая квитанция сообщает о шести совпавших повторах короткой серии. Заново эти повторы и первичные журналы ID здесь не исполнялись и не проверялись.
 - Для основной кампании независимо проверена арифметика покрытия: 106/162, неподтверждены 56 точек, из них две с нерешённой технической ошибкой. 109 попыток минус три отказа дают 106 подтверждённых результатов; повторов 0/6. Предупреждений 16.
 
-[Сравнительная таблица](../audits/dissertation/article-2-evidence-package-v1/Comparison.md), [CSV](../audits/dissertation/article-2-evidence-package-v1/comparison.csv), [машинная проверка](../audits/dissertation/article-2-evidence-package-v1/verification.json), [SHA входов и результатов](../audits/dissertation/article-2-evidence-package-v1/manifest.json).
+[Сравнительная таблица](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/article-2-evidence-package-v1/Comparison.md), [CSV](../audits/dissertation/article-2-evidence-package-v1/comparison.csv), [машинная проверка](../audits/dissertation/article-2-evidence-package-v1/verification.json), [SHA входов и результатов](../audits/dissertation/article-2-evidence-package-v1/manifest.json).
 
 ## Что можно написать в статье
 

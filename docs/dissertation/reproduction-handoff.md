@@ -2,7 +2,7 @@
 
 Актуальный пакет — **v6 от 2 ноября 2026 года**. Он включает обе текущие рукописи после внешнего обзора, основные результаты 40/40 и 162+6, дополнительную сессию 24/24 с точностью 10/12 и частичное наблюдение очередей до 40 модельных секунд.
 
-ZIP хранится вне Git: `C:/temp/mqtty-evidence/article-portable-v6/reproduction-examples.zip`. [Квитанция с размером и SHA-256](../../reports/audits/dissertation/articles-handoff-v6/verification.json), [памятка проверяющему](../../reports/audits/dissertation/articles-handoff-v6/Reader-guide.md). Архив не опубликован вовне. Предыдущие ZIP v3–v5 не перезаписаны.
+ZIP хранится вне Git: `C:/temp/mqtty-evidence/article-portable-v6/reproduction-examples.zip`. [Квитанция с размером и SHA-256](../../reports/audits/dissertation/articles-handoff-v6/verification.json), [памятка проверяющему](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/articles-handoff-v6/Reader-guide.md). Архив не опубликован вовне. Предыдущие ZIP v3–v5 не перезаписаны.
 
 ## Как проверить
 

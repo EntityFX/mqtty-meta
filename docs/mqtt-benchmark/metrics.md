@@ -4,7 +4,7 @@
 
 Порядок установки и запуска приведён в [руководстве](runbook.md). Примеры измерений и выводов — в [отчётах](../../reports/README.md).
 
-Подробности: [кто выполняет каждый этап и что сохраняет](stages.md), [устройство MqttRelay](../mqtty/mqtt-relay.md), [модули и классы, которые собирают показатели](../overview/architecture.md).
+Подробности: [кто выполняет каждый этап и что сохраняет](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/stages.md), [устройство MqttRelay](../mqtty/mqtt-relay.md), [модули и классы, которые собирают показатели](../overview/architecture.md).
 
 ## Что делает каждый этап
 

@@ -2,7 +2,7 @@
 
 ## Material Passport
 
-ARS experiment-agent, run; диагностические измерения Linux-стенда. [Протокол](../../docs/dissertation/article-1-logging-overhead-protocol.md) оформлен до запуска. Все четыре попытки завершены успешно за **59,14 с** общего времени.
+ARS experiment-agent, run; диагностические измерения Linux-стенда. [Протокол](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/article-1-logging-overhead-protocol.md) оформлен до запуска. Все четыре попытки завершены успешно за **59,14 с** общего времени.
 
 Предусмотрены четыре **новые** попытки ActiveMQ в порядке on/off/off/on. В обоих вариантах одинаковы подписки, учёт ID, границы подачи и срок наблюдения; меняется только формирование и запись событий публикаций и получений. Условия: 16 байт, QoS 1, 16 отправителей и один подписчик, прогрев 1 с, подача 4 с, наблюдение ещё 5 с. Старые результаты не заменяются.
 
@@ -31,7 +31,7 @@ RPS ниже рассчитан как число завершений, делё
 
 Raw вне Git: `C:/temp/mqtty-evidence/article1-logging-overhead-v1/`. Архив `article1-logging-overhead-v1-raw-001.tar.gz`, **8 261 658 байт**, SHA-256 `5773f8c4c2bb5c9b16f51c8ba5089a193a33b8bf431aa9f2facfa6d8a26a3bda`. Проверены **55 SHA файлов**. В архив включены программа, исходный протокол, фактически исполненный launcher, конфигурации, фазы, счётчики и доступные первичные сообщения; неизменённые копии дистрибутива брокера исключены, эффективный `activemq.xml` сохранён.
 
-Независимый пересчёт двух запусков on подтвердил **42 значения**. Для off журналов публикаций и получений нет: независимый пересчёт ID **недоступен**, выводы по ним опираются на итоговые счётчики runner. [Все строки и арифметика](../audits/dissertation/article-1-logging-overhead-v1/verification.json), [подтверждение второго пересчёта](../audits/dissertation/article-1-logging-overhead-v1/recount-verification.json), [план до запуска](../audits/dissertation/article-1-logging-overhead-v1/protocol-before-run.md).
+Независимый пересчёт двух запусков on подтвердил **42 значения**. Для off журналов публикаций и получений нет: независимый пересчёт ID **недоступен**, выводы по ним опираются на итоговые счётчики runner. [Все строки и арифметика](../audits/dissertation/article-1-logging-overhead-v1/verification.json), [подтверждение второго пересчёта](../audits/dissertation/article-1-logging-overhead-v1/recount-verification.json), [план до запуска](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/article-1-logging-overhead-v1/protocol-before-run.md).
 
 Воспроизведение пересчёта не запускает новые измерения:
 

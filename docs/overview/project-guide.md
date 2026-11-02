@@ -27,9 +27,9 @@
 
 | Задача | Где искать |
 | --- | --- |
-| Установить стенд и выполнить натурную серию | [MqttBenchmark: запуск](../mqtt-benchmark/runbook.md), [этапы](../mqtt-benchmark/stages.md), [метрики](../mqtt-benchmark/metrics.md) |
-| Настроить MqttY | [Руководства симулятора](../mqtty/README.md), [архитектура](../mqtty/architecture.md) |
-| Работать через Web | [Развёртывание](../mqtty/web-deployment.md), [собственная топология](../mqtty/custom-topology.md) |
+| Установить стенд и выполнить натурную серию | [MqttBenchmark: запуск](../mqtt-benchmark/runbook.md), [этапы](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/stages.md), [метрики](../mqtt-benchmark/metrics.md) |
+| Настроить MqttY | [Руководства симулятора](../mqtty/README.md), [архитектура](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtty/architecture.md) |
+| Работать через Web | [Развёртывание](../mqtty/web-deployment.md), [собственная топология](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtty/custom-topology.md) |
 | Найти схему сети | [Каталог топологий](../topologies/README.md) |
 | Понять текущий метод профиля | [Метод статьи 1](../dissertation/article-1-current-model-method.md) |
 | Проверить сетевые допущения | [Контракт сети](../dissertation/network-model-contract.md), [свойства пересылки](../dissertation/network-forwarding-proofs.md) |

@@ -107,7 +107,7 @@ MqttY двигает модельное время шагами. При одно
 
 **Результат этапа — показатели и схема модельной сети.** Повторяемость проверяется отдельным повторением тех же настроек и seed; само завершение сетевых запусков с разными seed её не доказывает. Допуски одиночного BrokerFidelity здесь имеют статус `notApplicable`. Чтобы подтвердить точность для настоящей сети, нужно собрать такую сеть, измерить её отдельно и сравнить результаты.
 
-Связанные документы: [показатели](../mqtt-benchmark/metrics.md), [этапы и исполнители](../mqtt-benchmark/stages.md), [руководство запуска](../mqtt-benchmark/runbook.md).
+Связанные документы: [показатели](../mqtt-benchmark/metrics.md), [этапы и исполнители](https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/stages.md), [руководство запуска](../mqtt-benchmark/runbook.md).
 
 Описание сверено с кодом: [пересылка сообщений](../../mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Plugin.Mqtt/Application/Mqtt/MqttRelay.cs), [построение маршрутов](../../mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Plugin.Mqtt/Helper/MqttNetworkBuilder.cs), [выполнение эксперимента](../../mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Plugin.Mqtt/Experiments/MqttRelayExperimentRunner.cs).
 
