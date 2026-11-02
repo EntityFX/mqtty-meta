@@ -1,0 +1,29 @@
+{
+  "programIdentity": "acceleration-workers-20261102-v1",
+  "files": {
+    "aa-result.json": "07c840bfb2f242621cb36be3ba361058b58c1571ce377a6a849f349d893859f2",
+    "fixture.json": "f84cc6ba86e6ead5c423ca21d5862c30e652f9a48e352245eec9740337f58ce5",
+    "plan.md": "a97a07f6b4defbe0d16abe2982643f7c1288995e99d1faa4961c39510a516bf9",
+    "run_acceleration_comparison.py": "d4d33bdff0ae2590768aa27a517a1ee8d1d479141db5f0f73b4274742a84029f",
+    "run_acceleration_pilot.py": "086ed09774e972b6c801bf7e55e639e580a7d533de74296d36a7b909c9a087eb",
+    "test_acceleration_comparison.py": "b0eefeada1ef7e26bf6cb6ba47a0426249eb88a068b6a011aa3afea49b01ead0",
+    "test_acceleration_pilot.py": "10a65155e89bf95bd18e624a09b5d3f06ee318d5f3729208cab4eceeb8610ab9"
+  },
+  "pilotSchedule": [
+    2
+  ],
+  "mainSchedule": [
+    1,
+    2,
+    2,
+    1,
+    1,
+    2,
+    2,
+    1,
+    1,
+    2
+  ],
+  "pilotHardWallSeconds": 600,
+  "retryAllowed": false
+}
