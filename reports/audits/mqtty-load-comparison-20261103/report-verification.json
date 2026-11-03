@@ -1,0 +1,35 @@
+{
+  "status": "SHARE_WITH_CAVEATS",
+  "articlePandocBuild": "PASS, pandoc 2.10.1 HTML and JSON AST",
+  "articlePreview": "C:\\projects\\mqtty-meta\\reproducibility\\artifacts\\load-remote-collected-20261103-001\\article-preview\\article-2.html",
+  "localLinksChecked": 69,
+  "missingLinks": [],
+  "protectedAuthorFilesChecked": 129,
+  "authorFilesChanged": [
+    "docs\\dissertation\\articles\\article-2-relay-federation.md"
+  ],
+  "firstArticleAndDissertationUnchanged": true,
+  "newChartVisuallyInspected": true,
+  "scienceComparison": {
+    "totalAttempts": 422,
+    "successfulScienceComparedAcrossHosts": 420,
+    "mainAttempts": 336,
+    "controls": 36,
+    "successfulPilots": 48,
+    "excludedLocalPilots": 2,
+    "sealedFiles": 4620,
+    "timerSidecars": 402,
+    "sharedCells": 8,
+    "identicalApplicationFiles": true
+  },
+  "remainingLimits": [
+    "Large Elbrus timing outliers retained; no universal speedup or isolated CPU effect",
+    "Engine optimization decision and chapter 5 text deferred",
+    "Not a journal submission or independent human scientific acceptance"
+  ],
+  "articleSha256": "e108fff73b319a073a6bdc875617132c6986bdee154de6e6769041e937d5bac4",
+  "articlePreviewSha256": "145604fb96b58738ffca1caff2f93aac05a029612fc7233365d89c8c533e1ae8",
+  "articleFiguresEmbeddedInHtml": 8,
+  "articleFigureVisuallyInspected": true,
+  "articleTableRowsRecomputed": 8
+}

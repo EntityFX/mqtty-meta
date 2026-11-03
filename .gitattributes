@@ -67,3 +67,4 @@
 /reports/audits/mqtty-scaling-20261103/** -text whitespace=cr-at-eol
 /reports/audits/mqtty-load-20261103/** -text whitespace=cr-at-eol
 /reports/audits/mqtty-load-remote-20261103/** -text whitespace=cr-at-eol
+/reports/audits/mqtty-load-comparison-20261103/** -text whitespace=cr-at-eol

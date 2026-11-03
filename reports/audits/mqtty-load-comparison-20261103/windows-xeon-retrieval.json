@@ -1,0 +1,12 @@
+{
+  "host": "10.10.144.66",
+  "retrievedEpoch": 1793722181.3558285,
+  "archive": "C:\\projects\\mqtty-meta\\reproducibility\\artifacts\\load-remote-collected-20261103-001\\windows-xeon\\load-benchmark-results.tar.gz",
+  "archiveSha256": "8b0a9d57f3c993f29d9ba76520f4767f180d57743782c2bcc5632f3b673e0196",
+  "archiveBytes": 5278506,
+  "outerFilesVerified": 2427,
+  "protocolSha256": "dc7d48e04e9a803960139d7829d6f51c21a346b92551134d806bc5818e6952eb",
+  "remoteStatus": "completed",
+  "remoteVerification": "PASS",
+  "elbrusContacted": false
+}

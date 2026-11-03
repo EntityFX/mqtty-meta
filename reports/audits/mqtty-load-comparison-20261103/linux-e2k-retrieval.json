@@ -1,0 +1,11 @@
+{
+  "host": "10.100.101.14",
+  "retrievedEpoch": 1793725811.0868628,
+  "archive": "C:\\projects\\mqtty-meta\\reproducibility\\artifacts\\load-remote-collected-20261103-001\\linux-e2k\\load-benchmark-results.tar.gz",
+  "archiveSha256": "b4ba9188c0dda8d9d28e2fb7aa85f7e83b82549d697fbb6171f6ab74254d19e6",
+  "archiveBytes": 5348404,
+  "outerFilesVerified": 2567,
+  "protocolSha256": "a80c5791ff476a0edaaea7b0db1fb72fec40414b63f88818fdebc08f001907d5",
+  "remoteStatus": "completed",
+  "remoteVerification": "PASS"
+}
