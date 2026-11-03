@@ -1,8 +1,33 @@
 # Воспроизводимый MqttY: develop, Windows → Linux
 
+## Исправление параллельного исполнения, 03.11.2026
+
+Текущая версия MqttY — `40640a3` из `develop`, закреплённая в метарепозитории.
+Она включает существующее исправление кэша маршрутов, защиту журналов и гистограмм
+доставок от конкурентной записи и детерминированный экспорт всех событий, включая дубли.
+У балансировщика появились явные параметры serial/parallel с сохранением прежних
+сигнатур и настроек по умолчанию; исходное исключение Refresh сохраняется в отчёте.
+Оболочка бенчмарка вызывает штатный API без копирования runners.
+
+Проверка исправления: **98 регрессионных тестов**, в том числе 8 новых проверок
+конкурентного доступа и экспорта. До защиты журналов 3 проверки воспроизводили
+повреждение коллекций и потерю записей. После исправления локально прошли **6/6**
+коротких прогонов relay/federation/load-balancer: полные научные JSON/CSV строго
+совпали между serial и parallel. Это проверка исправления, не новая оценка ускорения.
+[Квитанции проверки](../reports/audits/mqtty-parallel-fix-20261103/verification.json).
+
+Повторные удалённые серии выполняются новым пакетом в отдельных каталогах
+`mqtty-benchmark-fixed-20261103-001`; старые данные сохранены. На каждой машине
+предусмотрены 6 пилотных и 30 учётных попыток. [Состояние запуска](../reports/audits/mqtty-parallel-fix-20261103/remote-launch.json).
+При подтверждении после разрыва SSH Эльбрус работал; Windows/Xeon уже завершила
+**36/36** попыток без ошибок, все fingerprints совпали с локальным эталоном по
+[сводке контроллера](../reports/audits/mqtty-parallel-fix-20261103/windows-result.json).
+Полные удалённые архивы ещё не скачаны; итоговые времена будут пересчитаны после сбора.
+
 ## Бенчмарк трёх сетей: serial / parallel, 03.11.2026
 
-Локально выполнены **30 учётных попыток**, по пять на каждую пару сеть/режим.
+Историческая серия до исправления, MqttY `f5c0a47`. Локально выполнены
+**30 учётных попыток**, по пять на каждую пару сеть/режим.
 Время — медиана завершённых процессов в секундах, включая .NET/JIT и запись результата.
 Пилоты, сборка, передача и проверка файлов в эти значения не входят.
 
@@ -26,8 +51,8 @@
 до подачи нагрузки. Полный диагностический runner воспроизвёл одно и то же
 внутреннее исключение для relay, federation и load-balancer; отдельная облегчённая
 проверка подключения его не воспроизвела. [Журнал и точная причина](../reports/audits/mqtty-benchmark-20261103/xeon-diagnosis.json).
-Исправление модели и повтор бенчмарка не выполнялись. Исправление кэша само по себе
-ещё не подтвердит корректность параллельной записи первичных событий.
+На этапе этой диагностики исправление ещё не применялось. Текущее исправление
+и отдельная повторная серия описаны выше; старые цифры не заменяются новыми.
 
 Исполняются **копии** двух runners с переключением `Refresh(false/true, 0)` внутри
 одного графа. Relay и federation используют тот же движок, что соответствующие
@@ -59,8 +84,7 @@ drain до 1 с. Сети имеют разную полезную работу/
 ```powershell
 python reproducibility/prepare_benchmark.py --output reproducibility/artifacts/benchmark-new
 python reproducibility/artifacts/benchmark-new/package/benchmark.py --mode preflight --output reproducibility/artifacts/benchmark-new/preflight
-python reproducibility/artifacts/benchmark-new/package/benchmark.py --mode native --output reproducibility/artifacts/benchmark-new/native
-python reproducibility/artifacts/benchmark-new/package/benchmark.py --mode pilot --baseline reproducibility/artifacts/benchmark-new/native/result.json --output reproducibility/artifacts/benchmark-new/pilot
+python reproducibility/artifacts/benchmark-new/package/benchmark.py --mode pilot --output reproducibility/artifacts/benchmark-new/pilot
 ```
 
 Для `--mode main` нужны `--baseline` завершённого native/pilot и `--admission`:

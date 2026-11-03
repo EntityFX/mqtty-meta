@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="f5163495-5c0b-4f72-9b70-8df383c748c2" name="SolopiyA@RU1202197828 2026-11-03 10:41:40" runUser="RUSSIA\SolopiyA" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-03T10:41:40.3637156+03:00" queuing="2026-11-03T10:41:40.3637161+03:00" start="2026-11-03T10:41:34.7286380+03:00" finish="2026-11-03T10:41:40.3781430+03:00" />
+  <TestSettings name="default" id="3ecb5189-cc74-4c6a-bb01-64d2b830ab6f">
+    <Deployment runDeploymentRoot="SolopiyA_RU1202197828_2026-11-03_10_41_40" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="66bbdca2-96e1-4e2b-a444-416a5b80d1ad" testId="a928721b-07b2-5bd5-310e-b08618de9cd9" testName="BalancingLedger_ConcurrentBackendsKeepGlobalCountsAndHistogram" computerName="RU1202197828" duration="00:00:00.0274756" startTime="2026-11-03T10:41:40.1965727+03:00" endTime="2026-11-03T10:41:40.2246239+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="66bbdca2-96e1-4e2b-a444-416a5b80d1ad">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method EntityFX.Tests.Integration.ParallelModelSafetyTests.BalancingLedger_ConcurrentBackendsKeepGlobalCountsAndHistogram threw exception: &#xD;
+System.AggregateException: One or more errors occurred. (An item with the same key has already been added. Key: [5, 1]) (Operations that change non-concurrent collections must have exclusive access. A concurrent update was performed on this collection and corrupted its state. The collection's state is no longer correct.) (Operations that change non-concurrent collections must have exclusive access. A concurrent update was performed on this collection and corrupted its state. The collection's state is no longer correct.) (Operations that change non-concurrent collections must have exclusive access. A concurrent update was performed on this collection and corrupted its state. The collection's state is no longer correct.) ---&gt; System.ArgumentException: An item with the same key has already been added. Key: [5, 1]</Message>
+          <StackTrace>    at System.Collections.Generic.TreeSet`1.AddIfNotPresent(T item)&#xD;
+   at System.Collections.Generic.SortedSet`1.Add(T item)&#xD;
+   at System.Collections.Generic.SortedDictionary`2.set_Item(TKey key, TValue value)&#xD;
+   at EntityFX.MqttY.LoadBalancing.DeliveryLedger.Increment(IDictionary`2 histogram, Int64 ticks) in C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.MqttY.LoadBalancing.App\Delivery\DeliveryLedger.cs:line 115&#xD;
+   at EntityFX.MqttY.LoadBalancing.DeliveryLedger.Receive(Int32 backend, Byte[] payload, Int64 tick) in C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.MqttY.LoadBalancing.App\Delivery\DeliveryLedger.cs:line 92&#xD;
+   at EntityFX.Tests.Integration.ParallelModelSafetyTests.&lt;&gt;c__DisplayClass5_0.&lt;BalancingLedger_ConcurrentBackendsKeepGlobalCountsAndHistogram&gt;b__1(Int32 i) in C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\ParallelModelSafetyTests.cs:line 106&#xD;
+   at System.Threading.Tasks.Parallel.&lt;&gt;c__DisplayClass19_0`1.&lt;ForWorker&gt;b__1(RangeWorker&amp; currentWorker, Int32 timeout, Boolean&amp; replicationDelegateYieldedBeforeCompletion)&#xD;
+--- End of stack trace from previous location ---&#xD;
+   at System.Threading.Tasks.Parallel.&lt;&gt;c__DisplayClass19_0`1.&lt;ForWorker&gt;b__1(RangeWorker&amp; currentWorker, Int32 timeout, Boolean&amp; replicationDelegateYieldedBeforeCompletion)&#xD;
+   at System.Threading.Tasks.TaskReplicator.Replica.Execute()&#xD;
+--- End of inner exception stack trace ---&#xD;
+    at System.Threading.Tasks.TaskReplicator.Run[TState](ReplicatableUserAction`1 action, ParallelOptions options, Boolean stopOnFirstFailure)&#xD;
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)&#xD;
+--- End of stack trace from previous location ---&#xD;
+   at System.Threading.Tasks.Parallel.ThrowSingleCancellationExceptionOrOtherException(ICollection exceptions, CancellationToken cancelToken, Exception otherException)&#xD;
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)&#xD;
+   at System.Threading.Tasks.Parallel.For(Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body)&#xD;
+   at EntityFX.Tests.Integration.ParallelModelSafetyTests.BalancingLedger_ConcurrentBackendsKeepGlobalCountsAndHistogram() in C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\ParallelModelSafetyTests.cs:line 105&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2b86dccb-8709-4828-81a1-a2bcc34d66d1" testId="8e54ab1e-58e0-1658-39a8-8239cb8bb4a5" testName="FederationLedger_ConcurrentReceiversKeepEveryReceiptAndHistogramEntry" computerName="RU1202197828" duration="00:00:00.0967022" startTime="2026-11-03T10:41:40.0812605+03:00" endTime="2026-11-03T10:41:40.1824295+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2b86dccb-8709-4828-81a1-a2bcc34d66d1">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method EntityFX.Tests.Integration.ParallelModelSafetyTests.FederationLedger_ConcurrentReceiversKeepEveryReceiptAndHistogramEntry threw exception: &#xD;
+System.AggregateException: One or more errors occurred. (An item with the same key has already been added. Key: [5, 1]) (An item with the same key has already been added. Key: [5, 1]) (An item with the same key has already been added. Key: [5, 1]) (An item with the same key has already been added. Key: [5, 1]) (An item with the same key has already been added. Key: [5, 1]) (An item with the same key has already been added. Key: [5, 1]) (An item with the same key has already been added. Key: [5, 1]) ---&gt; System.ArgumentException: An item with the same key has already been added. Key: [5, 1]</Message>
+          <StackTrace>    at System.Collections.Generic.TreeSet`1.AddIfNotPresent(T item)&#xD;
+   at System.Collections.Generic.SortedSet`1.Add(T item)&#xD;
+   at System.Collections.Generic.SortedDictionary`2.set_Item(TKey key, TValue value)&#xD;
+   at EntityFX.MqttY.Federation.FederationDeliveryLedger.Receive(Int32 receiver, String topic, Byte[] payload, Int64 tick) in C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.MqttY.Federation.App\Delivery\FederationDeliveryLedger.cs:line 55&#xD;
+   at EntityFX.Tests.Integration.ParallelModelSafetyTests.&lt;&gt;c__DisplayClass3_0.&lt;FederationLedger_ConcurrentReceiversKeepEveryReceiptAndHistogramEntry&gt;b__1(Int32 i) in C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\ParallelModelSafetyTests.cs:line 79&#xD;
+   at System.Threading.Tasks.Parallel.&lt;&gt;c__DisplayClass19_0`1.&lt;ForWorker&gt;b__1(RangeWorker&amp; currentWorker, Int32 timeout, Boolean&amp; replicationDelegateYieldedBeforeCompletion)&#xD;
+--- End of stack trace from previous location ---&#xD;
+   at System.Threading.Tasks.Parallel.&lt;&gt;c__DisplayClass19_0`1.&lt;ForWorker&gt;b__1(RangeWorker&amp; currentWorker, Int32 timeout, Boolean&amp; replicationDelegateYieldedBeforeCompletion)&#xD;
+   at System.Threading.Tasks.TaskReplicator.Replica.Execute()&#xD;
+--- End of inner exception stack trace ---&#xD;
+    at System.Threading.Tasks.TaskReplicator.Run[TState](ReplicatableUserAction`1 action, ParallelOptions options, Boolean stopOnFirstFailure)&#xD;
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)&#xD;
+--- End of stack trace from previous location ---&#xD;
+   at System.Threading.Tasks.Parallel.ThrowSingleCancellationExceptionOrOtherException(ICollection exceptions, CancellationToken cancelToken, Exception otherException)&#xD;
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)&#xD;
+   at System.Threading.Tasks.Parallel.For(Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body)&#xD;
+   at EntityFX.Tests.Integration.ParallelModelSafetyTests.FederationLedger_ConcurrentReceiversKeepEveryReceiptAndHistogramEntry() in C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\ParallelModelSafetyTests.cs:line 76&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7adb5bc3-6ecb-4077-b464-91f826208d72" testId="5e1656dd-deda-7078-0d57-e0aed786eae6" testName="RouteRebuild_InvalidatesCachedRouteAndKeepsReturnedSnapshot (True)" computerName="RU1202197828" duration="00:00:00.0002256" startTime="2026-11-03T10:41:40.0808055+03:00" endTime="2026-11-03T10:41:40.0812167+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7adb5bc3-6ecb-4077-b464-91f826208d72" />
+    <UnitTestResult executionId="3a19b395-f57f-4cf4-9fa0-cb081f7491a4" testId="deeff11a-22b7-4feb-fd57-e8e4c8361ae0" testName="ColdRouteCache_ConcurrentMissesPreserveEveryRoute (True)" computerName="RU1202197828" duration="00:00:00.1089531" startTime="2026-11-03T10:41:39.9694067+03:00" endTime="2026-11-03T10:41:40.0787084+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3a19b395-f57f-4cf4-9fa0-cb081f7491a4" />
+    <UnitTestResult executionId="a06863ee-5c3a-4573-81a9-3a7845e41de0" testId="ad9f3067-4a29-422d-2b2f-af3704cb335b" testName="ColdRouteCache_ConcurrentMissesPreserveEveryRoute (False)" computerName="RU1202197828" duration="00:00:00.1464227" startTime="2026-11-03T10:41:39.7634367+03:00" endTime="2026-11-03T10:41:39.9610593+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a06863ee-5c3a-4573-81a9-3a7845e41de0" />
+    <UnitTestResult executionId="d03a8c2c-5e45-47d2-88b8-28b42662c6e1" testId="6c3f295a-d352-723b-8319-c60cae5546c4" testName="TransmissionLedger_ConcurrentPublishersRetainEveryEvent" computerName="RU1202197828" duration="00:00:00.0136764" startTime="2026-11-03T10:41:40.1825447+03:00" endTime="2026-11-03T10:41:40.1964530+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d03a8c2c-5e45-47d2-88b8-28b42662c6e1">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;4000&gt;. Actual:&lt;2052&gt;. </Message>
+          <StackTrace>   at EntityFX.Tests.Integration.ParallelModelSafetyTests.TransmissionLedger_ConcurrentPublishersRetainEveryEvent() in C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\ParallelModelSafetyTests.cs:line 96&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4640d36b-e203-4d47-8f84-a71688874144" testId="653c6d67-714c-b7b1-fa66-d8ada2c14c71" testName="RouteRebuild_InvalidatesCachedRouteAndKeepsReturnedSnapshot (False)" computerName="RU1202197828" duration="00:00:00.0014631" startTime="2026-11-03T10:41:40.0789812+03:00" endTime="2026-11-03T10:41:40.0807051+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4640d36b-e203-4d47-8f84-a71688874144" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="TransmissionLedger_ConcurrentPublishersRetainEveryEvent" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="6c3f295a-d352-723b-8319-c60cae5546c4">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="d03a8c2c-5e45-47d2-88b8-28b42662c6e1" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.ParallelModelSafetyTests" name="TransmissionLedger_ConcurrentPublishersRetainEveryEvent" />
+    </UnitTest>
+    <UnitTest name="ColdRouteCache_ConcurrentMissesPreserveEveryRoute (False)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="ad9f3067-4a29-422d-2b2f-af3704cb335b">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="a06863ee-5c3a-4573-81a9-3a7845e41de0" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.ParallelModelSafetyTests" name="ColdRouteCache_ConcurrentMissesPreserveEveryRoute" />
+    </UnitTest>
+    <UnitTest name="FederationLedger_ConcurrentReceiversKeepEveryReceiptAndHistogramEntry" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="8e54ab1e-58e0-1658-39a8-8239cb8bb4a5">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="2b86dccb-8709-4828-81a1-a2bcc34d66d1" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.ParallelModelSafetyTests" name="FederationLedger_ConcurrentReceiversKeepEveryReceiptAndHistogramEntry" />
+    </UnitTest>
+    <UnitTest name="RouteRebuild_InvalidatesCachedRouteAndKeepsReturnedSnapshot (True)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="5e1656dd-deda-7078-0d57-e0aed786eae6">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="7adb5bc3-6ecb-4077-b464-91f826208d72" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.ParallelModelSafetyTests" name="RouteRebuild_InvalidatesCachedRouteAndKeepsReturnedSnapshot" />
+    </UnitTest>
+    <UnitTest name="BalancingLedger_ConcurrentBackendsKeepGlobalCountsAndHistogram" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="a928721b-07b2-5bd5-310e-b08618de9cd9">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="66bbdca2-96e1-4e2b-a444-416a5b80d1ad" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.ParallelModelSafetyTests" name="BalancingLedger_ConcurrentBackendsKeepGlobalCountsAndHistogram" />
+    </UnitTest>
+    <UnitTest name="ColdRouteCache_ConcurrentMissesPreserveEveryRoute (True)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="deeff11a-22b7-4feb-fd57-e8e4c8361ae0">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="3a19b395-f57f-4cf4-9fa0-cb081f7491a4" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.ParallelModelSafetyTests" name="ColdRouteCache_ConcurrentMissesPreserveEveryRoute" />
+    </UnitTest>
+    <UnitTest name="RouteRebuild_InvalidatesCachedRouteAndKeepsReturnedSnapshot (False)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="653c6d67-714c-b7b1-fa66-d8ada2c14c71">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="4640d36b-e203-4d47-8f84-a71688874144" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.ParallelModelSafetyTests" name="RouteRebuild_InvalidatesCachedRouteAndKeepsReturnedSnapshot" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="a928721b-07b2-5bd5-310e-b08618de9cd9" executionId="66bbdca2-96e1-4e2b-a444-416a5b80d1ad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8e54ab1e-58e0-1658-39a8-8239cb8bb4a5" executionId="2b86dccb-8709-4828-81a1-a2bcc34d66d1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5e1656dd-deda-7078-0d57-e0aed786eae6" executionId="7adb5bc3-6ecb-4077-b464-91f826208d72" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="deeff11a-22b7-4feb-fd57-e8e4c8361ae0" executionId="3a19b395-f57f-4cf4-9fa0-cb081f7491a4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ad9f3067-4a29-422d-2b2f-af3704cb335b" executionId="a06863ee-5c3a-4573-81a9-3a7845e41de0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6c3f295a-d352-723b-8319-c60cae5546c4" executionId="d03a8c2c-5e45-47d2-88b8-28b42662c6e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="653c6d67-714c-b7b1-fa66-d8ada2c14c71" executionId="4640d36b-e203-4d47-8f84-a71688874144" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="7" executed="7" passed="4" failed="3" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>
