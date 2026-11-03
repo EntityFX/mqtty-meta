@@ -15,13 +15,22 @@ def execute(argv):
 
 
 def generate_probe(package):
-    """Add a switch to copies of the two runners, never mutate model sources."""
+    """Use native execution switches when available; retain the legacy adapter."""
     base = package / 'mqtty/src/EntityFX.MqttSimulator'
     probe = package / 'probe'; probe.mkdir()
     records = []
-    for engine, name in [('Federation', 'FederationRunner'), ('LoadBalancing', 'LoadBalancingExperimentRunner')]:
+    runners = [('Federation', 'FederationRunner'), ('LoadBalancing', 'LoadBalancingExperimentRunner')]
+    native = all('bool parallel' in (base / ('EntityFX.MqttY.%s.App/Execution/%s.cs' % pair)).read_text(encoding='utf-8-sig')
+                 and 'int refreshStrategy' in (base / ('EntityFX.MqttY.%s.App/Execution/%s.cs' % pair)).read_text(encoding='utf-8-sig')
+                 for pair in runners)
+    for engine, name in runners:
         source = base / ('EntityFX.MqttY.%s.App/Execution/%s.cs' % (engine, name))
         original = source.read_text(encoding='utf-8-sig')
+        if native:
+            records.append({'source': source.relative_to(package).as_posix(),
+                'sourceSha256': hashlib.sha256(source.read_bytes()).hexdigest(),
+                'binding': 'native-api', 'changes': []})
+            continue
         declaration = 'public sealed class ' + name
         assert original.count(declaration) == 1 and original.count('Refresh(false, 0)') == 1
         generated = original.replace(declaration, 'public sealed class Benchmark' + name)
@@ -35,7 +44,7 @@ def generate_probe(package):
             'generated': 'probe/' + name + '.cs',
             'generatedSha256': hashlib.sha256((probe / (name + '.cs')).read_bytes()).hexdigest(),
             'changes': ['class name', 'ParallelExecution bool property', 'Refresh bool only']})
-    (probe / 'Program.cs').write_text('''using EntityFX.MqttY.Federation;
+    program = '''using EntityFX.MqttY.Federation;
 using EntityFX.MqttY.LoadBalancing;
 if (args.Length != 4 || args[1] is not ("serial" or "parallel")) return 1;
 var parallel = args[1] == "parallel";
@@ -49,7 +58,13 @@ var federation = FederationInput.Load(args[2]);
 if (federation.Options.Mode.ToString().ToLowerInvariant() != args[0]) return 1;
 var summary = new BenchmarkFederationRunner { ParallelExecution = parallel }.Run(federation, args[3]);
 Console.WriteLine(summary.Status); return summary.Status == "completed" ? 0 : 2;
-''', encoding='utf-8')
+'''
+    if native:
+        program = program.replace('new BenchmarkLoadBalancingExperimentRunner { ParallelExecution = parallel }.Run(input, args[3])',
+                                  'new LoadBalancingExperimentRunner().Run(input, args[3], parallel: parallel, refreshStrategy: 0)')
+        program = program.replace('new BenchmarkFederationRunner { ParallelExecution = parallel }.Run(federation, args[3])',
+                                  'new FederationRunner().Run(federation, args[3], parallel: parallel, refreshStrategy: 0)')
+    (probe / 'Program.cs').write_text(program, encoding='utf-8', newline='\n')
     (probe / 'BenchmarkProbe.csproj').write_text('''<Project Sdk="Microsoft.NET.Sdk">
 <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net6.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup>
 <ItemGroup>
@@ -98,6 +113,7 @@ def prepare(output):
     manifest = {'schemaVersion': 1, 'metaCommit': suite.command(['git', 'rev-parse', 'HEAD']),
                 'builderSha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
                 'sourceCommits': commits, 'buildMode': 'Release managed framework-dependent without RID/apphost',
+                'nativeCliDefaultIsParallel': all(r.get('binding') == 'native-api' for r in suite.read_json(package / 'adapter.json')),
                 'casesStatus': 'Candidate; freeze after pilots on every target',
                 'files': {p.relative_to(package).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(files)}}
     suite.write_json(package / 'manifest.json', manifest)

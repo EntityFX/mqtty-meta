@@ -142,6 +142,8 @@ def main():
     args = parser.parse_args()
     package = Path(__file__).resolve().parent
     manifest = verify(package)
+    if args.mode == 'native' and manifest.get('nativeCliDefaultIsParallel'):
+        raise ValueError('This CLI defaults to parallel strategy 1. Use pilot to explicitly select native serial/parallel strategy 0.')
     manifest_sha = digest(package / 'manifest.json')
     cases = read(package / 'cases.json')
     baseline = read(args.baseline) if args.baseline else None
