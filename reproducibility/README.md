@@ -1,5 +1,72 @@
 # Воспроизводимый MqttY: develop, Windows → Linux
 
+## Бенчмарк трёх сетей: serial / parallel, 03.11.2026
+
+Локально выполнены **30 учётных попыток**, по пять на каждую пару сеть/режим.
+Время — медиана завершённых процессов в секундах, включая .NET/JIT и запись результата.
+Пилоты, сборка, передача и проверка файлов в эти значения не входят.
+
+| Сеть | Последовательно, с | Параллельно, с | Завершено parallel | Научные данные serial/parallel |
+| --- | ---: | ---: | ---: | --- |
+| relay | 5,810 | 5,852 | 5/5 | Не совпали; время parallel диагностическое |
+| federation | 4,701 | 4,424 | 4/5 | Не совпали; одна ошибка Refresh; время parallel диагностическое |
+| load-balancer | 3,480 | 3,486 | 5/5 | Совпали во всех пяти повторах; ускорения не наблюдается |
+
+Машина: Windows 10 x64, Core i7-2600, 32 GiB, .NET 6.0.36.
+Все 15 последовательных результатов совпали с эталоном исходных CLI.
+Для relay/federation параллельность дала пропуски событий первичных журналов;
+совпадение агрегированного summary не закрыло эту ошибку. Неудачная попытка federation
+не заменялась новой. Ошибка запрещает трактовать отношение времени как ускорение.
+
+Исполняются **копии** двух runners с переключением `Refresh(false/true, 0)` внутри
+одного графа. Relay и federation используют тот же движок, что соответствующие
+режимы Web; load-balancer — round-robin с четырьмя backend. Исходные классы модели
+не меняются. Это отдельный тестовый режим: штатные runners используют serial.
+Входы общие: четыре брокера/backend, 16 publishers, ideal, payload 256, QoS 1,
+seed 42, tick 0,1 мс, прогрев 0,01 с, измерение 0,2 с при 1000 публикаций/с,
+drain до 1 с. Сети имеют разную полезную работу/fanout, поэтому таблица не ранжирует алгоритмы.
+
+На `10.100.101.14` (Эльбрус, Linux/e2k, .NET 6.0.10) и `10.10.144.66`
+(Windows x64, Xeon E3-1230 v6, .NET 6.0.2) запущен **тот же пакет**:
+6 пилотных + 30 учётных попыток, предел 600 с на попытку, 6 ч 10 мин на задание.
+Старт контроллеров подтверждён после разрыва SSH. Завершение и окончательные
+удалённые секунды пока не проверялись. Детали: [текущие задания](../reports/status/Linux-work-queue.md).
+
+Квитанции: [все локальные попытки](../reports/audits/mqtty-benchmark-20261103/local-result.json),
+[секунды и сравнения](../reports/audits/mqtty-benchmark-20261103/local-summary.json),
+[окружение](../reports/audits/mqtty-benchmark-20261103/local-environment.json),
+[точные входы](../reports/audits/mqtty-benchmark-20261103/cases.json),
+[изменения тестовых runners](../reports/audits/mqtty-benchmark-20261103/adapter.json),
+[SHA пакета](../reports/audits/mqtty-benchmark-20261103/package-receipt.json),
+[запуск удалённо](../reports/audits/mqtty-benchmark-20261103/remote-launch.json),
+[хэши локального архива и квитанций](../reports/audits/mqtty-benchmark-20261103/evidence-receipt.json).
+Исходные архивы остаются вне Git. При сборе удалённых результатов проверить seals,
+сохранить ошибки, добавить их в эту таблицу; не перезапускать ради успешного результата.
+
+Подготовка нового отдельного пакета из gitlink-версий текущей `develop`:
+
+```powershell
+python reproducibility/prepare_benchmark.py --output reproducibility/artifacts/benchmark-new
+python reproducibility/artifacts/benchmark-new/package/benchmark.py --mode preflight --output reproducibility/artifacts/benchmark-new/preflight
+python reproducibility/artifacts/benchmark-new/package/benchmark.py --mode native --output reproducibility/artifacts/benchmark-new/native
+python reproducibility/artifacts/benchmark-new/package/benchmark.py --mode pilot --baseline reproducibility/artifacts/benchmark-new/native/result.json --output reproducibility/artifacts/benchmark-new/pilot
+```
+
+Для `--mode main` нужны `--baseline` завершённого native/pilot и `--admission`:
+JSON с `packageSha256` (SHA байтов `package/manifest.json`) и `timeoutSeconds`
+(целое 1–600), зафиксированными до серии. `--mode campaign` добавляет перед main
+шесть пилотных попыток; каждый процесс новый, порядок serial/parallel чередуется.
+`--output` всегда новый. Serial с ошибкой или расхождением останавливает серию;
+parallel с ошибкой сохраняется как диагностическая попытка и входит в пять попыток.
+Запуск не делает автоматических повторов. Сводка:
+
+```powershell
+python reproducibility/summarize_benchmark.py <result-directory> --output <new-summary.json>
+python -m unittest discover -s reproducibility -p test_benchmark.py -v
+```
+
+## Принятая проверка воспроизводимости Windows → Эльбрус
+
 [Актуальный отчёт ALT Linux / Эльбрус от 02.11.2026](reports/linux-e2k-20261102/README.md):
 **6/6 сценариев, 12/12 удалённых запусков**, все научные fingerprints совпали
 с заново полученным Windows baseline. Различается только runtime: 6.0.10 / 6.0.36.

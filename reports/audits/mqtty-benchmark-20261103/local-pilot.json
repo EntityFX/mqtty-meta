@@ -1,0 +1,185 @@
+{
+  "mode": "pilot",
+  "status": "completed",
+  "startedEpoch": 1793686653.1869648,
+  "packageSha256": "292dd92f7ec3fc87e418593cf874bfaf95d87b1a5f47465371595077db7d5313",
+  "timeoutSeconds": 600,
+  "rows": [
+    {
+      "userSeconds": 8.375,
+      "systemSeconds": 0.265625,
+      "peakMemoryBytes": 56860672,
+      "memoryMethod": "Windows GetProcessMemoryInfo PeakWorkingSetSize",
+      "wallSeconds": 10.716160400072113,
+      "returnCode": 0,
+      "timedOut": false,
+      "case": "relay",
+      "execution": "serial",
+      "phase": "pilot",
+      "repeat": 1,
+      "technicalSuccess": true,
+      "matchesLocalRepeat": true,
+      "matchesSerialScience": true,
+      "matchesBaseline": true,
+      "outputBytes": 997001
+    },
+    {
+      "userSeconds": 0.75,
+      "systemSeconds": 0.1875,
+      "peakMemoryBytes": 60588032,
+      "memoryMethod": "Windows GetProcessMemoryInfo PeakWorkingSetSize",
+      "wallSeconds": 1.7239248000551015,
+      "returnCode": 2,
+      "timedOut": false,
+      "case": "relay",
+      "execution": "parallel",
+      "phase": "pilot",
+      "repeat": 1,
+      "technicalSuccess": false,
+      "matchesLocalRepeat": false,
+      "matchesSerialScience": false,
+      "matchesBaseline": false
+    },
+    {
+      "userSeconds": 4.203125,
+      "systemSeconds": 0.25,
+      "peakMemoryBytes": 51826688,
+      "memoryMethod": "Windows GetProcessMemoryInfo PeakWorkingSetSize",
+      "wallSeconds": 4.873511599958874,
+      "returnCode": 0,
+      "timedOut": false,
+      "case": "federation",
+      "execution": "serial",
+      "phase": "pilot",
+      "repeat": 1,
+      "technicalSuccess": true,
+      "matchesLocalRepeat": true,
+      "matchesSerialScience": true,
+      "matchesBaseline": true,
+      "outputBytes": 964665
+    },
+    {
+      "userSeconds": 0.8125,
+      "systemSeconds": 0.1875,
+      "peakMemoryBytes": 51113984,
+      "memoryMethod": "Windows GetProcessMemoryInfo PeakWorkingSetSize",
+      "wallSeconds": 4.927311299950816,
+      "returnCode": 2,
+      "timedOut": false,
+      "case": "federation",
+      "execution": "parallel",
+      "phase": "pilot",
+      "repeat": 1,
+      "technicalSuccess": false,
+      "matchesLocalRepeat": false,
+      "matchesSerialScience": false,
+      "matchesBaseline": false
+    },
+    {
+      "userSeconds": 2.25,
+      "systemSeconds": 0.140625,
+      "peakMemoryBytes": 46624768,
+      "memoryMethod": "Windows GetProcessMemoryInfo PeakWorkingSetSize",
+      "wallSeconds": 2.927605999982916,
+      "returnCode": 0,
+      "timedOut": false,
+      "case": "load-balancer",
+      "execution": "serial",
+      "phase": "pilot",
+      "repeat": 1,
+      "technicalSuccess": true,
+      "matchesLocalRepeat": true,
+      "matchesSerialScience": true,
+      "matchesBaseline": true,
+      "outputBytes": 34124
+    },
+    {
+      "userSeconds": 4.828125,
+      "systemSeconds": 0.75,
+      "peakMemoryBytes": 48852992,
+      "memoryMethod": "Windows GetProcessMemoryInfo PeakWorkingSetSize",
+      "wallSeconds": 3.8012728999601677,
+      "returnCode": 0,
+      "timedOut": false,
+      "case": "load-balancer",
+      "execution": "parallel",
+      "phase": "pilot",
+      "repeat": 1,
+      "technicalSuccess": true,
+      "matchesLocalRepeat": true,
+      "matchesSerialScience": true,
+      "matchesBaseline": null,
+      "outputBytes": 34129
+    }
+  ],
+  "fingerprints": {
+    "relay:serial": {
+      "delivery-receipts.json": "e2e48b1fbc3b89cf7e5c2b39c9c77f7a0757943a793126033476a30788bc9d6e",
+      "histograms.json": "19011fe42c1ef1d226b956552a22b7df0a71db016449993ccbb78c541f8c63a4",
+      "phases.json": "a87f3184467bd2d22c4d794a1e7ebe98af117e74cfb577f667db53cb8b98fac7",
+      "publications.json": "492a6c7bb1c95fcdaa4e18cbe0c16f709831f98c9a2fdde83a8a6ea1e35a4d7d",
+      "receivers.csv": "a24b59f02162cac959cc045eb15eb915605266cef77e27b8424a56762cf54b7d",
+      "run-config.json": "394f19a73cd48fd41828f0f7c7e369eb073a2d4650813ea3383130f095163f31",
+      "sources.csv": "6c6adf1e6fe1d8e4bd2c9500c26b798b225da6dbd395627189416028e062ba2e",
+      "summary.json": "fdded8d186dba3cc93396d489772c5f5fb7b81dc197fbda48a8efe21170d80d7",
+      "transmissions.json": "4fa505140046c63e3846a548309d406540e6be5d453994a796ad91e71c27e602"
+    },
+    "federation:serial": {
+      "delivery-receipts.json": "12e9af4dd2026ee0bf7d0ca3d81a68d4307386cc8687e5bcd976f7776cd9bda7",
+      "histograms.json": "228d40affa8bb9ee5d112b91f66756bb1d896c0f413462affafa3ed87b6fc983",
+      "phases.json": "ffb8255c936e084eb425a7cc4a4417d9f460c6b1ebc69bae56954c1fa7395eef",
+      "publications.json": "95c817aa59cc245d084746760a507095dad1f875d5777f90d4ca8ee76713c3f5",
+      "receivers.csv": "a24b59f02162cac959cc045eb15eb915605266cef77e27b8424a56762cf54b7d",
+      "run-config.json": "e97a77d6a26e4dcb95f401c85332fc16e718a47cdd02ca0e7644d94b091a750c",
+      "sources.csv": "6c6adf1e6fe1d8e4bd2c9500c26b798b225da6dbd395627189416028e062ba2e",
+      "summary.json": "3f7072c19d195f9651bedb50bbb64cb97c0a4fe46c7b352e47c026294d83a854",
+      "transmissions.json": "165e208a181a5d88c2878bd83ce97dc314ff647cad3f2defb04a4d6eb7be5600"
+    },
+    "load-balancer:serial": {
+      "assignments.csv": "aa6231c0e5be0573bbd0f1f16436c83dce1a52a1c3162e4811af7bd58aa13969",
+      "backend-metrics.csv": "afbb38ca24320cc2085ebe625b53eed7677ef163601b3a325b3a3f5df51429f1",
+      "histograms.json": "9674ee782eb093697b04deb01f203cd697a0c196c256bf420318783eee8f12d4",
+      "phases.json": "be93e9b25969d55156374f561dd8c3d69570ac2aa36af879339548e2aac47421",
+      "run-config.json": "f65fdbdda3925aeeec17f60b1efdc110a389ebd537bb3381a86e393fb8486a94",
+      "summary.json": "d4e3394aca05606ad90e5fbb73a572b5a51a00a42a4c5fcdaad5379f345a9f8b"
+    },
+    "load-balancer:parallel": {
+      "assignments.csv": "aa6231c0e5be0573bbd0f1f16436c83dce1a52a1c3162e4811af7bd58aa13969",
+      "backend-metrics.csv": "afbb38ca24320cc2085ebe625b53eed7677ef163601b3a325b3a3f5df51429f1",
+      "histograms.json": "9674ee782eb093697b04deb01f203cd697a0c196c256bf420318783eee8f12d4",
+      "phases.json": "be93e9b25969d55156374f561dd8c3d69570ac2aa36af879339548e2aac47421",
+      "run-config.json": "f65fdbdda3925aeeec17f60b1efdc110a389ebd537bb3381a86e393fb8486a94",
+      "summary.json": "d4e3394aca05606ad90e5fbb73a572b5a51a00a42a4c5fcdaad5379f345a9f8b"
+    }
+  },
+  "baselineProvided": true,
+  "activeAttempt": "pilot-r1-load-balancer-parallel",
+  "wallStatistics": {
+    "relay:serial": {
+      "median": 10.716160400072113,
+      "min": 10.716160400072113,
+      "max": 10.716160400072113,
+      "unit": "seconds"
+    },
+    "federation:serial": {
+      "median": 4.873511599958874,
+      "min": 4.873511599958874,
+      "max": 4.873511599958874,
+      "unit": "seconds"
+    },
+    "load-balancer:serial": {
+      "median": 2.927605999982916,
+      "min": 2.927605999982916,
+      "max": 2.927605999982916,
+      "unit": "seconds"
+    },
+    "load-balancer:parallel": {
+      "median": 3.8012728999601677,
+      "min": 3.8012728999601677,
+      "max": 3.8012728999601677,
+      "unit": "seconds"
+    }
+  },
+  "parallelScienceEquivalent": false,
+  "finishedEpoch": 1793686693.046404
+}

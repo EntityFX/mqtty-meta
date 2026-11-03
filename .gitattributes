@@ -58,3 +58,6 @@
 /docs/overview/ExpertReview.md -text
 /docs/dissertation/queue-capacity-short-protocol.md -text
 /docs/dissertation/chapter-refresh-plan.md -text
+# Benchmark provenance and retrieved receipts retain the bytes recorded in manifests.
+/reproducibility/*benchmark*.py -text
+/reports/audits/mqtty-benchmark-20261103/** -text whitespace=cr-at-eol

@@ -1,0 +1,20 @@
+{
+  "localRawArchive": "C:\\projects\\mqtty-meta\\reproducibility\\artifacts\\benchmark-20261103-004\\local-raw-evidence.tar.gz",
+  "archiveSha256": "b4d9ae70a4b69c0aef0c28387ff9f74e780a101335fea8e7165aec1e2cf55b22",
+  "archiveBytes": 1289892,
+  "trackedReceiptFiles": {
+    "adapter.json": "d4ec6001992e1ebb2f02116f95c0bdf01322d34634990f25a46854d935d89aba",
+    "admission.json": "a97ff4180ceee9bd062a97ec49ed3f0562e433ebabe24bbfaa7e454b704cb002",
+    "cases.json": "3c447176dd3c163047cf28b22b03e088966037c0de63f8bf382d617cc514f0df",
+    "local-environment.json": "5e8126e8c2632dc230e5948d5f8751d70ac74a22f0f149a59fcef2753f75e40d",
+    "local-pilot.json": "0f54c06b926af44e9087036c03f796e4633fd66231715586e5be7fd6184ac991",
+    "local-result.json": "8df0a613dd732cb249bd5af7f7cde9e6563176f54d63f0dfc9e3753a606688c9",
+    "local-summary.json": "29ddb79cc583e4ddf54932e0a5baf6b40ba890ef2068933797b3d3831996d2d3",
+    "native-reference.json": "1bbde265033a87ecba29b434d7f00b0f887131752c5300a319b61a277ecdaf5e",
+    "package-manifest.json": "292dd92f7ec3fc87e418593cf874bfaf95d87b1a5f47465371595077db7d5313",
+    "package-receipt.json": "1d65a88eb0df3aa5b4a997476a30878684783a19e8b039ff6873ea27e58c78ab",
+    "remote-launch.json": "85d12d6b7c05f6021d3c4160d850a817eaba96a5b22f76091262015659d5d473",
+    "windows-python-runtime.json": "bf0d5748f8d713e61bcd5ce733df5749220c3910cb3593171441333822c3dbe7"
+  },
+  "note": "Raw archives stay outside Git; every completed raw result was seal-verified by the harness. This receipt records local verification and dispatch, not final remote results."
+}
