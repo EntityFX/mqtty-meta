@@ -1,0 +1,14 @@
+{
+  "protocolSha256": "d65c9a56d496a2f854b9347754362fcf071645c5911ffac0189fd81ddbe08968",
+  "cells": {
+    "b4-r250": true,
+    "b4-r1000": true,
+    "b4-r4000": true,
+    "b16-r250": true,
+    "b16-r1000": true,
+    "b16-r4000": true,
+    "b64-r250": true,
+    "b64-r1000": true,
+    "b64-r4000": false
+  }
+}

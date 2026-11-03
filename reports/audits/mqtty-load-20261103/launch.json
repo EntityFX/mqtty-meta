@@ -1,0 +1,37 @@
+{
+  "status": "running",
+  "launchConfirmedEpoch": 1793711978.8157923,
+  "workerPid": 415960,
+  "workingDirectory": "C:\\Users\\SolopiyA\\AppData\\Local\\Temp\\mqtty-load-20261103-001",
+  "protocolSha256": "d65c9a56d496a2f854b9347754362fcf071645c5911ffac0189fd81ddbe08968",
+  "mqttyCommit": "24e15dce2a2839456e32627ddf02b90dd96cbd60",
+  "admittedCells": 8,
+  "excludedCells": [
+    "b64-r4000"
+  ],
+  "plannedCountedAttempts": 112,
+  "plannedControls": 12,
+  "perAttemptTimeoutSeconds": 180,
+  "mainWallLimitSeconds": 7200,
+  "automaticExperimentRetries": false,
+  "remoteRunsStarted": 0,
+  "manuscriptsEdited": false,
+  "durableDelivery": "C:/projects/mqtty-meta/reproducibility/artifacts/load-benchmark-20261103-001",
+  "commands": {
+    "status": "C:\\Users\\SolopiyA\\AppData\\Local\\Temp\\mqtty-load-20261103-001\\campaign-status.json",
+    "stdout": "C:\\Users\\SolopiyA\\AppData\\Local\\Temp\\mqtty-load-20261103-001\\campaign-stdout.log",
+    "stderr": "C:\\Users\\SolopiyA\\AppData\\Local\\Temp\\mqtty-load-20261103-001\\campaign-stderr.log"
+  },
+  "controllerSha256": {
+    "benchmark.py": "4837509e2583d802a504b6d5db845c96410a5ddde6e75f256aa46a67e0820df7",
+    "load_benchmark.py": "c6306547d83a3f92a557d2aac00ba950423dff9ba6acebd8d34d857c8b845e4a",
+    "run_load_campaign.py": "c9213f2264b337c1b9fbff5acd2321a6ac94a6f9de26fa7987498406c9cdb579",
+    "verify_benchmark_results.py": "523cb05dddde23825af5f6ab5c44658b5ff71a778df128a5c3797c17ec497c32",
+    "verify_load_benchmark.py": "3cb77fbc58e66b391568ae439ea39370a1365f61a8e5514809559770d01ff4c2"
+  },
+  "tests": {
+    "selectedCSharpPassed": 42,
+    "pythonPassed": 8
+  },
+  "futureEngineIntegration": "Conditional on confirmed common bottleneck and regression checks across all three network types; no Engine optimization applied"
+}

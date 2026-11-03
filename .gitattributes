@@ -60,6 +60,8 @@
 /docs/dissertation/chapter-refresh-plan.md -text
 # Benchmark provenance and retrieved receipts retain the bytes recorded in manifests.
 /reproducibility/*benchmark*.py -text
+/reproducibility/run_load_campaign.py -text
 /reports/audits/mqtty-benchmark-20261103/** -text whitespace=cr-at-eol
 /reports/audits/mqtty-parallel-fix-20261103/** -text whitespace=cr-at-eol
 /reports/audits/mqtty-scaling-20261103/** -text whitespace=cr-at-eol
+/reports/audits/mqtty-load-20261103/** -text whitespace=cr-at-eol
