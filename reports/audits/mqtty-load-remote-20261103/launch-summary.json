@@ -1,0 +1,80 @@
+{
+  "status": "remote-jobs-running-confirmed",
+  "mqttyCommit": "24e15dce2a2839456e32627ddf02b90dd96cbd60",
+  "scope": "Launch only; collection, reports and Engine decision explicitly deferred",
+  "hosts": {
+    "linux-e2k": {
+      "host": "10.100.101.14",
+      "root": "/home/user/mqtty-load-benchmark-20261103-001",
+      "job": "mqtty-load-benchmark-20261103.service",
+      "hardJobLimitSeconds": 36000,
+      "pilotWallLimitSeconds": 5400,
+      "mainWallLimitSeconds": 28800,
+      "timeoutSecondsPerAttempt": 900,
+      "memoryMaxBytes": 4294967296
+    },
+    "windows-xeon": {
+      "host": "10.10.144.66",
+      "root": "C:/Users/sysadm/mqtty-load-benchmark-20261103-001",
+      "job": "MqttY-Load-Benchmark-20261103",
+      "hardJobLimitSeconds": 12600,
+      "pilotWallLimitSeconds": 1800,
+      "mainWallLimitSeconds": 7200,
+      "timeoutSecondsPerAttempt": 180,
+      "privateEmbeddedPython": true
+    }
+  },
+  "plannedPerHost": {
+    "pilotAttempts": 16,
+    "countedAttempts": 112,
+    "timerControls": 12,
+    "replicatesPerModePerCell": 7,
+    "acceptedLocalCells": 8
+  },
+  "gate": "All remote pilot fingerprints must equal local accepted serial fingerprints; any mismatch aborts main for that host",
+  "commonApplicationFilesSha256": {
+    "EntityFX.MqttY.Contracts.dll": "32df30e234405938905243101ce7c441564aa96886e495f49bffa775cb007a46",
+    "EntityFX.MqttY.Contracts.Mqtt.dll": "1f0af23fcaa6df7a6666648e96007148f76efb6d4b1d3d4c2f4fc12449703489",
+    "EntityFX.MqttY.Contracts.Mqtt.pdb": "035d386d63057288c7a6bb5b64335beb7e635bb1df3814eb1ecb15ce489b61e8",
+    "EntityFX.MqttY.Contracts.pdb": "66bdfb62535c8401dc8bae4ef858285060cf38571d5594705002b3459ae84250",
+    "EntityFX.MqttY.Contracts.Scenarios.dll": "bd47d77a1ffa5a1e8769aff6e44003d75bda57ee259c7baa3745492c01fe3558",
+    "EntityFX.MqttY.Contracts.Scenarios.pdb": "49550c1c0b15e445028b21fa98c70648a907e5db8bb74f53cea151bda1f1806d",
+    "EntityFX.MqttY.dll": "631d6ca2001756802be4ff3e3cf2f7955c9a540e6125ead05493364c5053a56a",
+    "EntityFX.MqttY.LoadBalancing.App.deps.json": "3a1151a5d2f6893f7609b10c39c1bc319858cfe5aac71a08565bd5271fc1be71",
+    "EntityFX.MqttY.LoadBalancing.App.dll": "5f707060515c756846d86cdcd1f354f72af1bed0e379ee3e94eb7b13b0d236ba",
+    "EntityFX.MqttY.LoadBalancing.App.pdb": "31bd60397a86ad9faffd2f0e157ff3089da4c8fe25c8b8418d7bb98cdc7b87dd",
+    "EntityFX.MqttY.LoadBalancing.App.runtimeconfig.json": "ded3aeb5856a11db0b654a785574490cab55839ebfb17efe9e39b89618fc5b91",
+    "EntityFX.MqttY.pdb": "e78e42c95e3c2a869162224f33b00c8bc3509ed225ca82212eba32c0c85d1f42",
+    "EntityFX.MqttY.Plugin.Mqtt.dll": "eacdddbe6fdd1532efd6643858d3f7d33ff0bc31925ee877b2c7e858498f3a41",
+    "EntityFX.MqttY.Plugin.Mqtt.pdb": "ec8e733b6aab59d632686827c4836f9c59f98035a31506d93c984aef7c6854f1",
+    "LoadProbe.deps.json": "37978ebfc1e196bc0ba4b14de50e9eafe7485ec4446f54aae56f959aa7c1835f",
+    "LoadProbe.dll": "48d49e3919cdcf9d3541c4f6faf2f6b511e9c954e26b21d32c3ad63160e7d70c",
+    "LoadProbe.pdb": "7571447e5e3c21d2440e51bbeb1c4c2b5184f9d618872b029f0d38198e90a663",
+    "LoadProbe.runtimeconfig.json": "ded3aeb5856a11db0b654a785574490cab55839ebfb17efe9e39b89618fc5b91",
+    "Microsoft.Extensions.Configuration.Abstractions.dll": "3124386219566a2c386e6999d83a7d507584de46cde4ae733a8af3c373c42b8c",
+    "Microsoft.Extensions.Configuration.Binder.dll": "4449f40e0645a61067c5e206e956cc5bc3b4421593b3c27188d8c71ef45c64a6",
+    "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "ac9cd953b7eeb03cf48e343c5ace6fc9b48ac968b68d1cb30ad1d6111178bf4d",
+    "Microsoft.Extensions.DependencyInjection.dll": "df0ae00b1599acae93d9f4df2bcc6d0ba109221ccc44d2d1486183f84a5fec78",
+    "Microsoft.Extensions.Logging.Abstractions.dll": "ab36e8201d41dd751cbb712704dbe8492bdd0ab1bff6fb35371cf59bcd982181",
+    "Microsoft.Extensions.Logging.dll": "37b87b16ac688d5619168554a22cca2677e1115f21c2d5ebe2f39c024fee2b7f",
+    "Microsoft.Extensions.Options.dll": "fbb309a36bc91d90ec2984397bff4f75f35ac92909e0acd952c5264c5ac0a753",
+    "Microsoft.Extensions.Primitives.dll": "f9f47907a041067d9bc1b9a9f516009b6ca0a9c6325ce83527883cc0d053dfa5",
+    "System.Diagnostics.DiagnosticSource.dll": "d6935e993b69f8abd934f01b0d7dd8ca9616a7ea94c7af59ed07b2fd3cf93a97"
+  },
+  "controllerSha256": {
+    "benchmark.py": "4837509e2583d802a504b6d5db845c96410a5ddde6e75f256aa46a67e0820df7",
+    "load_benchmark.py": "c6306547d83a3f92a557d2aac00ba950423dff9ba6acebd8d34d857c8b845e4a",
+    "remote_load_campaign.py": "1c2a3dcd5d6039a48ff91b61f34b0f32245f2112bf4386b851397fc71368bb85",
+    "run_load_campaign.py": "3d33e06efd04fa7bd9c5fff35415dcaa2b16cce06699909e22638f73f6e07f53",
+    "verify_benchmark_results.py": "523cb05dddde23825af5f6ab5c44658b5ff71a778df128a5c3797c17ec497c32",
+    "verify_load_benchmark.py": "3cb77fbc58e66b391568ae439ea39370a1365f61a8e5514809559770d01ff4c2"
+  },
+  "clockPolicy": "Host wall-clock timestamps may differ; compare only independently measured monotonic per-process and Stopwatch durations, not SSH or cross-host epochs",
+  "nextSteps": [
+    "Collect completed archives and verify outer seals and local/remote fingerprints",
+    "Analyze and publish reports, then stop",
+    "Decide whether general Engine changes are justified; no such change applied now"
+  ],
+  "reportsCollected": false,
+  "engineOptimizationApplied": false
+}

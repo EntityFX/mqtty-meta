@@ -1,0 +1,14 @@
+{
+  "archive": "linux-e2k.tar.gz",
+  "archiveSha256": "3a9dbf74c1aed51d76b15035aeff78228800d17d211b1a7b5687efd848c0af2e",
+  "bytes": 6559080,
+  "protocolSha256": "a80c5791ff476a0edaaea7b0db1fb72fec40414b63f88818fdebc08f001907d5",
+  "parentLocalProtocolSha256": "d65c9a56d496a2f854b9347754362fcf071645c5911ffac0189fd81ddbe08968",
+  "mqttyCommit": "24e15dce2a2839456e32627ddf02b90dd96cbd60",
+  "mainAttempts": 112,
+  "controls": 12,
+  "pilotAttempts": 16,
+  "timeoutSeconds": 900,
+  "mainWallLimitSeconds": 28800,
+  "pilotWallLimitSeconds": 5400
+}

@@ -53,9 +53,12 @@ def main():
     parser.add_argument('--root',type=Path,required=True)
     parser.add_argument('--plot-packages',type=Path)
     parser.add_argument('--deliver',type=Path,help='Durable local destination for completed archive and derived files')
+    parser.add_argument('--skip-plot',action='store_true',help='Remote hosts: defer plotting until collection')
+    parser.add_argument('--main-wall-limit',type=int,default=7200)
     args=parser.parse_args();root=args.root.resolve()
+    if not 1 <= args.main_wall_limit <= 28800:raise ValueError('Main limit must be 1..28800 seconds')
     status=dict(status='running',pid=os.getpid(),startedEpoch=time.time(),
-                protocolSha256=b.digest(root/'protocol.json'),stage='main',mainWallLimitSeconds=7200)
+                protocolSha256=b.digest(root/'protocol.json'),stage='main',mainWallLimitSeconds=args.main_wall_limit)
     b.save(root/'campaign-status.json',status)
     scripts=Path(__file__).resolve().parent
     try:
@@ -65,7 +68,7 @@ def main():
             status['stage']=stage;b.save(root/'campaign-status.json',status)
             process=subprocess.Popen([sys.executable]+argv,start_new_session=os.name!='nt')
             try:
-                code=process.wait(timeout=7200 if stage=='main' else 600)
+                code=process.wait(timeout=args.main_wall_limit if stage=='main' else 600)
             except subprocess.TimeoutExpired:
                 if os.name=='nt':subprocess.run(['taskkill','/PID',str(process.pid),'/T','/F'],capture_output=True)
                 else:os.killpg(process.pid,signal.SIGKILL)
@@ -82,8 +85,11 @@ def main():
                 writer.writerow([r['backends'],r['rpsPerBackend'],r['offeredRps'],r['validated'],med('serial','measureRefreshSeconds'),med('parallel','measureRefreshSeconds'),r['refreshSpeedup'],med('serial','wallSeconds'),med('parallel','wallSeconds'),r['processSpeedup']])
         status['stage']='plot-and-archive';b.save(root/'campaign-status.json',status)
         if args.plot_packages:sys.path.insert(0,str(args.plot_packages.resolve()))
-        plot(root)
-        names=['protocol.json','admission.json','attempts.json','analysis.json','verification.json','environment.json','summary.csv','load-scaling.png','configs','attempts','controller','source.tar','package/app','package/probe']
+        if not args.skip_plot:plot(root)
+        names=['protocol.json','admission.json','attempts.json','analysis.json','verification.json','environment.json','summary.csv','configs','attempts','controller','source.tar','package/app','package/probe']
+        if not args.skip_plot:names.append('load-scaling.png')
+        for name in ('local-reference.json','remote-job-status.json'):
+            if (root/name).exists():names.append(name)
         files=[p for name in names for p in ([root/name] if (root/name).is_file() else (root/name).rglob('*')) if p.is_file() and '__pycache__' not in p.parts and 'obj' not in p.parts and 'bin' not in p.parts]
         b.save(root/'export-sha256.json',{p.relative_to(root).as_posix():b.digest(p) for p in files})
         archive=root/'load-benchmark-results.tar.gz'
@@ -92,11 +98,11 @@ def main():
             output.add(root/'export-sha256.json',arcname='export-sha256.json')
         b.save(root/'collection-receipt.json',dict(archive=archive.name,archiveSha256=b.digest(archive),archiveBytes=archive.stat().st_size,
                 verificationStatus=b.read(root/'verification.json')['status'],scientificallyValidCells=sum(r['validated'] for r in analysis['rows']),
-                chartVisualQA='Pending human/agent collection; chart generated but not yet visually inspected',
+                chartVisualQA='Deferred until collection; no remote chart generated' if args.skip_plot else 'Pending human/agent collection; chart generated but not yet visually inspected',
                 manuscriptsEdited=False,remoteRunsStarted=0))
         if args.deliver:
             delivery=args.deliver.resolve();delivery.mkdir(parents=True,exist_ok=True)
-            for name in ('load-benchmark-results.tar.gz','collection-receipt.json','protocol.json','admission.json','analysis.json','verification.json','summary.csv','load-scaling.png'):
+            for name in ['load-benchmark-results.tar.gz','collection-receipt.json','protocol.json','admission.json','analysis.json','verification.json','summary.csv']+([] if args.skip_plot else ['load-scaling.png']):
                 with (root/name).open('rb') as source,(delivery/name).open('xb') as target:shutil.copyfileobj(source,target)
                 if b.digest(delivery/name)!=b.digest(root/name):raise ValueError('Delivery checksum: '+name)
             status['delivery']=str(delivery)

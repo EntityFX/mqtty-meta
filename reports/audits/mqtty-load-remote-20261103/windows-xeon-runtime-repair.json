@@ -1,0 +1,9 @@
+{
+  "host": "10.10.144.66",
+  "repair": "Private embedded Python copy with ../controller on python312._pth; original shared runtime unchanged",
+  "simulationsBeforeRepair": 0,
+  "importTest": "C:\\Users\\sysadm\\mqtty-load-benchmark-20261103-001\\controller\\benchmark.py\r\n",
+  "startStdout": "{\"State\":4}\r\n",
+  "startStderr": "",
+  "exitCode": 0
+}

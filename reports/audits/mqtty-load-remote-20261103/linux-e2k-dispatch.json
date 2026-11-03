@@ -1,0 +1,7 @@
+{
+  "host": "10.100.101.14",
+  "exitCode": 0,
+  "stdout": "",
+  "stderr": "Running as unit: mqtty-load-benchmark-20261103.service; invocation ID: 5dc39b9cb2b54af198a884073a17b85e\n",
+  "job": "mqtty-load-benchmark-20261103.service"
+}
