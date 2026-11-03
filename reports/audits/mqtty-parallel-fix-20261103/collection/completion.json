@@ -1,0 +1,14 @@
+[
+  {
+    "host": "10.100.101.14",
+    "checkedEpoch": 1793695086.8494704,
+    "state": "MainPID=0\nResult=success\nExecMainStatus=0\nActiveState=inactive\nSubState=dead",
+    "stderr": ""
+  },
+  {
+    "host": "10.10.144.66",
+    "checkedEpoch": 1793695086.6414738,
+    "state": "{\"State\":3}\r\n{\"LastTaskResult\":0}",
+    "stderr": ""
+  }
+]

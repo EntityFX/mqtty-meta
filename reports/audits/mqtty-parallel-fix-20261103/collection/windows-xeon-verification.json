@@ -1,0 +1,238 @@
+{
+  "packageSha256": "ea565089f36b98774f8d6863aea6fac94cb8a14417dc2e8baa0ad6f9203bec19",
+  "sourceCommits": {
+    "mqtty": "40640a3f5a8d394c6bad6f51d5bbba4a853fff48",
+    "MqttBenchmark": "ab513df3d2b65462abcfba8084f066ae4b1bd0a1"
+  },
+  "attemptsChecked": 36,
+  "sealedFilesChecked": 540,
+  "primaryEventRecounts": 24,
+  "balancingReconciliations": 12,
+  "runtimeFrameworks": [
+    ".NET 6.0.2"
+  ],
+  "runtimeGitLabels": [
+    "None"
+  ],
+  "attempts": [
+    {
+      "attempt": "pilot-r1-relay-serial",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "pilot-r1-relay-parallel",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "pilot-r1-federation-serial",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "pilot-r1-federation-parallel",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "pilot-r1-load-balancer-serial",
+      "sealedFiles": 11,
+      "scientificMatch": true,
+      "arithmeticCheck": "backend-csv-and-histogram-reconciliation-no-per-message-raw-ledger"
+    },
+    {
+      "attempt": "pilot-r1-load-balancer-parallel",
+      "sealedFiles": 11,
+      "scientificMatch": true,
+      "arithmeticCheck": "backend-csv-and-histogram-reconciliation-no-per-message-raw-ledger"
+    },
+    {
+      "attempt": "main-r1-relay-serial",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "main-r1-relay-parallel",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "main-r1-federation-serial",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "main-r1-federation-parallel",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "main-r1-load-balancer-serial",
+      "sealedFiles": 11,
+      "scientificMatch": true,
+      "arithmeticCheck": "backend-csv-and-histogram-reconciliation-no-per-message-raw-ledger"
+    },
+    {
+      "attempt": "main-r1-load-balancer-parallel",
+      "sealedFiles": 11,
+      "scientificMatch": true,
+      "arithmeticCheck": "backend-csv-and-histogram-reconciliation-no-per-message-raw-ledger"
+    },
+    {
+      "attempt": "main-r2-relay-parallel",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "main-r2-relay-serial",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "main-r2-federation-parallel",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "main-r2-federation-serial",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "main-r2-load-balancer-parallel",
+      "sealedFiles": 11,
+      "scientificMatch": true,
+      "arithmeticCheck": "backend-csv-and-histogram-reconciliation-no-per-message-raw-ledger"
+    },
+    {
+      "attempt": "main-r2-load-balancer-serial",
+      "sealedFiles": 11,
+      "scientificMatch": true,
+      "arithmeticCheck": "backend-csv-and-histogram-reconciliation-no-per-message-raw-ledger"
+    },
+    {
+      "attempt": "main-r3-relay-serial",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "main-r3-relay-parallel",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "main-r3-federation-serial",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "main-r3-federation-parallel",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "main-r3-load-balancer-serial",
+      "sealedFiles": 11,
+      "scientificMatch": true,
+      "arithmeticCheck": "backend-csv-and-histogram-reconciliation-no-per-message-raw-ledger"
+    },
+    {
+      "attempt": "main-r3-load-balancer-parallel",
+      "sealedFiles": 11,
+      "scientificMatch": true,
+      "arithmeticCheck": "backend-csv-and-histogram-reconciliation-no-per-message-raw-ledger"
+    },
+    {
+      "attempt": "main-r4-relay-parallel",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "main-r4-relay-serial",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "main-r4-federation-parallel",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "main-r4-federation-serial",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "main-r4-load-balancer-parallel",
+      "sealedFiles": 11,
+      "scientificMatch": true,
+      "arithmeticCheck": "backend-csv-and-histogram-reconciliation-no-per-message-raw-ledger"
+    },
+    {
+      "attempt": "main-r4-load-balancer-serial",
+      "sealedFiles": 11,
+      "scientificMatch": true,
+      "arithmeticCheck": "backend-csv-and-histogram-reconciliation-no-per-message-raw-ledger"
+    },
+    {
+      "attempt": "main-r5-relay-serial",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "main-r5-relay-parallel",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "main-r5-federation-serial",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "main-r5-federation-parallel",
+      "sealedFiles": 17,
+      "scientificMatch": true,
+      "arithmeticCheck": "primary-publications-deliveries-transmissions"
+    },
+    {
+      "attempt": "main-r5-load-balancer-serial",
+      "sealedFiles": 11,
+      "scientificMatch": true,
+      "arithmeticCheck": "backend-csv-and-histogram-reconciliation-no-per-message-raw-ledger"
+    },
+    {
+      "attempt": "main-r5-load-balancer-parallel",
+      "sealedFiles": 11,
+      "scientificMatch": true,
+      "arithmeticCheck": "backend-csv-and-histogram-reconciliation-no-per-message-raw-ledger"
+    }
+  ],
+  "provenanceNote": "Source identity is taken from the verified package sourceCommits and executed DLL hashes. Runtime Git labels scan parent directories and may be null or describe the surrounding meta-repository.",
+  "scopeNote": "Forwarding engines have independent per-message event recounts. Load balancing is reconciled against backend CSV and histograms; no per-message ledger is exported by that engine.",
+  "status": "PASS"
+}

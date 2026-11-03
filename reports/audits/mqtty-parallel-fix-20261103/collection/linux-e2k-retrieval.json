@@ -1,0 +1,15 @@
+{
+  "archive": "/home/user/mqtty-benchmark-fixed-20261103-001/collected-results-20261103-001.tar.gz",
+  "archiveSha256": "399b7db11e6891a5fe0587995f27178b5666ef2be07e1b4a8133cd9a3eff8da7",
+  "archiveBytes": 1478862,
+  "status": "completed",
+  "attempts": 36,
+  "resultSha256": "3680cb832090be01616f5bd9fd6692b95dd0a06d8e89bedc6c40bee4cd83b249",
+  "packageSha256": "ea565089f36b98774f8d6863aea6fac94cb8a14417dc2e8baa0ad6f9203bec19",
+  "host": "10.100.101.14",
+  "alias": "linux-e2k",
+  "remoteDirectory": "/home/user/mqtty-benchmark-fixed-20261103-001",
+  "retrievedEpoch": 1793693936.1259043,
+  "localArchive": "C:\\projects\\mqtty-meta\\reproducibility\\artifacts\\benchmark-collected-20261103-001\\linux-e2k.tar.gz",
+  "archiveVerified": true
+}

@@ -1,104 +1,111 @@
-# Воспроизводимый MqttY: develop, Windows → Linux
+# MqttY: производительность и воспроизводимость
 
-## Исправление параллельного исполнения, 03.11.2026
+## Итог исправленной серии, 03.11.2026
 
-Текущая версия MqttY — `40640a3` из `develop`, закреплённая в метарепозитории.
-Она включает существующее исправление кэша маршрутов, защиту журналов и гистограмм
-доставок от конкурентной записи и детерминированный экспорт всех событий, включая дубли.
-У балансировщика появились явные параметры serial/parallel с сохранением прежних
-сигнатур и настроек по умолчанию; исходное исключение Refresh сохраняется в отчёте.
-Оболочка бенчмарка вызывает штатный API без копирования runners.
+**Обе удалённые серии завершены: 72/72 попытки корректны и эквивалентны по научным данным.**
+Проверены 1080 файлов по seals и одинаковые SHA всех исполняемых DLL.
+Время ниже — медиана **пяти учётных повторов** на ячейку; 12 пилотных запусков
+проверены, но исключены из временной статистики. Сборка: MqttY `40640a3` из `develop`.
 
-Проверка исправления: **98 регрессионных тестов**, в том числе 8 новых проверок
-конкурентного доступа и экспорта. До защиты журналов 3 проверки воспроизводили
-повреждение коллекций и потерю записей. После исправления локально прошли **6/6**
-коротких прогонов relay/federation/load-balancer: полные научные JSON/CSV строго
-совпали между serial и parallel. Это проверка исправления, не новая оценка ускорения.
-[Квитанции проверки](../reports/audits/mqtty-parallel-fix-20261103/verification.json).
+| Среда | Сеть | Serial, с | Parallel, с | Serial / parallel |
+| --- | --- | ---: | ---: | ---: |
+| Windows / Xeon E3-1230 v6 | relay | 1,211 | 1,222 | 0,991× |
+| Windows / Xeon E3-1230 v6 | federation | 0,979 | 1,092 | 0,897× |
+| Windows / Xeon E3-1230 v6 | load-balancer | 0,677 | 0,768 | 0,881× |
+| Linux / Эльбрус E8C | relay | 22,085 | 18,336 | 1,204× |
+| Linux / Эльбрус E8C | federation | 17,782 | 16,133 | 1,102× |
+| Linux / Эльбрус E8C | load-balancer | 12,977 | 12,879 | 1,008× |
 
-Повторные удалённые серии выполняются новым пакетом в отдельных каталогах
-`mqtty-benchmark-fixed-20261103-001`; старые данные сохранены. На каждой машине
-предусмотрены 6 пилотных и 30 учётных попыток. [Состояние запуска](../reports/audits/mqtty-parallel-fix-20261103/remote-launch.json).
-При подтверждении после разрыва SSH Эльбрус работал; Windows/Xeon уже завершила
-**36/36** попыток без ошибок, все fingerprints совпали с локальным эталоном по
-[сводке контроллера](../reports/audits/mqtty-parallel-fix-20261103/windows-result.json).
-Полные удалённые архивы ещё не скачаны; итоговые времена будут пересчитаны после сбора.
+![Пять пар повторов и отношение медиан](../reports/audits/mqtty-parallel-fix-20261103/collection/paired-performance.png)
 
-## Бенчмарк трёх сетей: serial / parallel, 03.11.2026
+### Что следует из измерений
 
-Историческая серия до исправления, MqttY `f5c0a47`. Локально выполнены
-**30 учётных попыток**, по пять на каждую пару сеть/режим.
-Время — медиана завершённых процессов в секундах, включая .NET/JIT и запись результата.
-Пилоты, сборка, передача и проверка файлов в эти значения не входят.
+- **На Xeon параллелизм для этих задач невыгоден.** Relay практически равен serial;
+  federation медленнее на 11,5%, load-balancer — на 13,4%. Последние два режима
+  медленнее во всех пяти парах. Суммарное CPU-время parallel выше в 2,15–2,77 раза.
+- **На Эльбрусе federation даёт наиболее устойчивый выигрыш:** 1,102× по медианам,
+  parallel быстрее во всех пяти парах. Для relay отношение медиан 1,204×,
+  но первая parallel-попытка заняла **31,354 с**, остальные — 17,936–18,536 с.
+  Выброс сохранён; быстрее только 4 из 5 пар, причина выброса не изолирована.
+- **Load-balancer на Эльбрусе почти не выигрывает:** разница медиан менее 1%,
+  быстрее 3 из 5 пар. При этом parallel увеличивает CPU-время примерно на 36%.
+  Во всех трёх сетях Эльбруса CPU-время parallel выше на 35–36%, медианный peak RSS
+  выше на 33–55%.
 
-| Сеть | Последовательно, с | Параллельно, с | Завершено parallel | Научные данные serial/parallel |
-| --- | ---: | ---: | ---: | --- |
-| relay | 5,810 | 5,852 | 5/5 | Не совпали; время parallel диагностическое |
-| federation | 4,701 | 4,424 | 4/5 | Не совпали; одна ошибка Refresh; время parallel диагностическое |
-| load-balancer | 3,480 | 3,486 | 5/5 | Совпали во всех пяти повторах; ускорения не наблюдается |
+Разница времени между этими машинами — примерно 15–19 раз для одинаковой задачи.
+Это сравнение **всей среды**, а не отдельного процессора: Windows/.NET 6.0.2 и
+Linux/e2k/.NET 6.0.10 различаются ОС, runtime, CPU и хранилищем. Windows peak working set
+и Linux maximum RSS учитываются по-разному; их нельзя считать одной мерой памяти.
 
-Машина: Windows 10 x64, Core i7-2600, 32 GiB, .NET 6.0.36.
-Все 15 последовательных результатов совпали с эталоном исходных CLI.
-Для relay/federation параллельность дала пропуски событий первичных журналов;
-совпадение агрегированного summary не закрыло эту ошибку. Неудачная попытка federation
-не заменялась новой. Ошибка запрещает трактовать отношение времени как ускорение.
+### Область вывода
 
-Причина ранних падений на Windows/Xeon подтверждена отдельной короткой диагностикой:
-`DijkstraPathFinder.GetPath`, строка 58, одновременно записывает маршруты из
-`Parallel.ForEach` в обычный `Dictionary`. .NET обнаруживает повреждение коллекции
-в `Dictionary.TryInsert`; наружу runner выдавал только `Simulator refresh failed`.
-В исходных неудачных попытках сбой происходил на connect, обычно на первом тике,
-до подачи нагрузки. Полный диагностический runner воспроизвёл одно и то же
-внутреннее исключение для relay, federation и load-balancer; отдельная облегчённая
-проверка подключения его не воспроизвела. [Журнал и точная причина](../reports/audits/mqtty-benchmark-20261103/xeon-diagnosis.json).
-На этапе этой диагностики исправление ещё не применялось. Текущее исправление
-и отдельная повторная серия описаны выше; старые цифры не заменяются новыми.
+Три небольших идеальных модели: четыре брокера/backend, 16 publishers, payload 256,
+QoS 1, seed 42, tick 0,1 мс, прогрев 0,01 с, нагрузка 0,2 с при 1000 публикаций/с
+(**200 измерительных публикаций**), drain до 1 с. Relay/federation имеют другую
+задачу доставки и fanout, чем load-balancer; времена не ранжируют три алгоритма.
+Реальные MQTT-брокеры не запускались.
 
-Исполняются **копии** двух runners с переключением `Refresh(false/true, 0)` внутри
-одного графа. Relay и federation используют тот же движок, что соответствующие
-режимы Web; load-balancer — round-robin с четырьмя backend. Исходные классы модели
-не меняются. Это отдельный тестовый режим: штатные runners используют serial.
-Входы общие: четыре брокера/backend, 16 publishers, ideal, payload 256, QoS 1,
-seed 42, tick 0,1 мс, прогрев 0,01 с, измерение 0,2 с при 1000 публикаций/с,
-drain до 1 с. Сети имеют разную полезную работу/fanout, поэтому таблица не ранжирует алгоритмы.
+Проверяется `Refresh(false/true, 0)` внутри одного графа. **Скорость стратегии 1,
+используемой API по умолчанию, этой серией не измерена.** Каждый повтор — новый
+процесс; время включает .NET/JIT и запись артефактов, исключает сборку, SSH и проверку
+файлов. Это не оценка установившейся скорости ядра на крупных графах.
 
-На `10.100.101.14` (Эльбрус, Linux/e2k, .NET 6.0.10) и `10.10.144.66`
-(Windows x64, Xeon E3-1230 v6, .NET 6.0.2) запущен **тот же пакет**:
-6 пилотных + 30 учётных попыток, предел 600 с на попытку, 6 ч 10 мин на задание.
-Старт контроллеров подтверждён после разрыва SSH. Завершение и окончательные
-удалённые секунды пока не проверялись. Детали: [текущие задания](../reports/status/Linux-work-queue.md).
+Для исправленной версии локальная i7-машина имеет только 6 пилотных прогонов.
+Её прежняя серия из пяти повторов использовала старую версию и не включена в
+текущее сравнение. Новых запусков для этого анализа не выполнялось.
 
-Квитанции: [все локальные попытки](../reports/audits/mqtty-benchmark-20261103/local-result.json),
-[секунды и сравнения](../reports/audits/mqtty-benchmark-20261103/local-summary.json),
-[окружение](../reports/audits/mqtty-benchmark-20261103/local-environment.json),
-[точные входы](../reports/audits/mqtty-benchmark-20261103/cases.json),
-[изменения тестовых runners](../reports/audits/mqtty-benchmark-20261103/adapter.json),
-[SHA пакета](../reports/audits/mqtty-benchmark-20261103/package-receipt.json),
-[запуск удалённо](../reports/audits/mqtty-benchmark-20261103/remote-launch.json),
-[хэши локального архива и квитанций](../reports/audits/mqtty-benchmark-20261103/evidence-receipt.json).
-Исходные архивы остаются вне Git. При сборе удалённых результатов проверить seals,
-сохранить ошибки, добавить их в эту таблицу; не перезапускать ради успешного результата.
+### Проверяемость и данные
 
-Подготовка нового отдельного пакета из gitlink-версий текущей `develop`:
+[Таблица, разброс, CPU и память](../reports/audits/mqtty-parallel-fix-20261103/collection/comparison.csv),
+[расчёты и границы вывода](../reports/audits/mqtty-parallel-fix-20261103/collection/analysis.json).
+Все пять исходных времён, парные коэффициенты и ресурсы доступны в
+[сводке Xeon](../reports/audits/mqtty-parallel-fix-20261103/collection/windows-xeon-summary.json) и
+[сводке Эльбруса](../reports/audits/mqtty-parallel-fix-20261103/collection/linux-e2k-summary.json).
 
-```powershell
-python reproducibility/prepare_benchmark.py --output reproducibility/artifacts/benchmark-new
-python reproducibility/artifacts/benchmark-new/package/benchmark.py --mode preflight --output reproducibility/artifacts/benchmark-new/preflight
-python reproducibility/artifacts/benchmark-new/package/benchmark.py --mode pilot --output reproducibility/artifacts/benchmark-new/pilot
-```
+Независимый verifier заново проверил coverage 36 попыток на машину, входы,
+процесс/режим, измерения, seals, fingerprints и SHA DLL. Для **48** результатов
+relay/federation пересчитаны первичные публикации, пары доставки, пересылки и p99;
+для **24** результатов load-balancer согласованы backend CSV и гистограммы.
+У балансировщика нет экспортированного per-message ledger — проверка не выдаётся
+за пересчёт отсутствующих событий.
+[Проверка Xeon](../reports/audits/mqtty-parallel-fix-20261103/collection/windows-xeon-verification.json),
+[проверка Эльбруса](../reports/audits/mqtty-parallel-fix-20261103/collection/linux-e2k-verification.json).
 
-Для `--mode main` нужны `--baseline` завершённого native/pilot и `--admission`:
-JSON с `packageSha256` (SHA байтов `package/manifest.json`) и `timeoutSeconds`
-(целое 1–600), зафиксированными до серии. `--mode campaign` добавляет перед main
-шесть пилотных попыток; каждый процесс новый, порядок serial/parallel чередуется.
-`--output` всегда новый. Serial с ошибкой или расхождением останавливает серию;
-parallel с ошибкой сохраняется как диагностическая попытка и входит в пять попыток.
-Запуск не делает автоматических повторов. Сводка:
+Источник версии — manifest пакета и SHA реально загруженных DLL. Runtime Git-label
+на удалённых машинах пуст, поскольку поиск Git идёт по родительским каталогам DLL;
+он не используется как подтверждение исходников. Архивы скачаны в
+`reproducibility/artifacts/benchmark-collected-20261103-001/` и остаются вне Git.
+[Квитанция скачивания Xeon](../reports/audits/mqtty-parallel-fix-20261103/collection/windows-xeon-retrieval.json),
+[квитанция скачивания Эльбруса](../reports/audits/mqtty-parallel-fix-20261103/collection/linux-e2k-retrieval.json).
+
+Проверка скачанной распаковки не требует SSH или .NET, только Python 3.9+:
 
 ```powershell
-python reproducibility/summarize_benchmark.py <result-directory> --output <new-summary.json>
-python -m unittest discover -s reproducibility -p test_benchmark.py -v
+python reproducibility/verify_benchmark_results.py <export-directory> --manifest reports/audits/mqtty-parallel-fix-20261103/package-manifest.json --output <verification.json>
+python reproducibility/summarize_benchmark.py <export-directory>/results --output <summary.json>
+python -m unittest discover -s reproducibility -p "test_*benchmark*.py" -v
 ```
+
+Новый пакет готовится `python reproducibility/prepare_benchmark.py --output <new-directory>`.
+У исправленной версии pilot вызывает штатный API с явными serial/parallel,
+без копирования runners. Старый `--mode native` предназначен для CLI с serial по
+умолчанию; для текущей версии используется `--mode pilot`. Для main нужны
+завершённый pilot-baseline и admission JSON с SHA manifest и лимитом 1–600 с.
+Все output-каталоги новые, автоматических повторов нет.
+
+### Исправление и исторические результаты
+
+Старая версия `f5c0a47` падала на конкурентной записи в `Dictionary` кэша маршрутов
+и теряла записи журналов. Текущая `40640a3` включает потокобезопасный кэш из актуальной
+`develop`, синхронизацию журналов и гистограмм, полный детерминированный экспорт
+с сохранением дублей и исходного исключения. Прошли **98 регрессионных тестов**.
+[Диагноз до исправления](../reports/audits/mqtty-benchmark-20261103/xeon-diagnosis.json),
+[приёмка исправления](../reports/audits/mqtty-parallel-fix-20261103/verification.json),
+[первоначальные времена](../reports/audits/mqtty-benchmark-20261103/local-summary.json).
+
+Результаты старой версии не заменяются текущими. Разницу времени до/после нельзя
+приписывать только кэшу: новая версия также содержит ранее внесённые оптимизации.
+Тексты двух статей, проекты глав и диссертация не изменялись.
 
 ## Принятая проверка воспроизводимости Windows → Эльбрус
 

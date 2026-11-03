@@ -18,16 +18,29 @@ def summarize(root):
             attempts = [r for r in report['rows'] if r['case'] == engine and r['execution'] == execution and r['phase'] == 'main']
             successful = [r for r in attempts if r['technicalSuccess']]
             seconds = [r['wallSeconds'] for r in successful]
+            cpu = [r['userSeconds'] + r['systemSeconds'] for r in successful
+                   if r.get('userSeconds') is not None and r.get('systemSeconds') is not None]
+            memory = [r['peakMemoryBytes'] / 1024**2 for r in successful if r.get('peakMemoryBytes') is not None]
             item[execution] = {'attempts': len(attempts), 'completed': len(successful),
                 'secondsAllAttempts': [r['wallSeconds'] for r in attempts],
                 'secondsCompleted': seconds,
                 'medianCompletedSeconds': statistics.median(seconds) if seconds else None,
                 'minCompletedSeconds': min(seconds) if seconds else None,
                 'maxCompletedSeconds': max(seconds) if seconds else None,
+                'cpuSecondsAllCompleted': cpu,
+                'medianCpuSeconds': statistics.median(cpu) if cpu else None,
+                'peakMemoryMiBAllCompleted': memory,
+                'medianPeakMemoryMiB': statistics.median(memory) if memory else None,
                 'allScientificResultsMatchSerial': len(attempts) == 5 and all(r['technicalSuccess'] and r['matchesSerialScience'] and r['matchesLocalRepeat'] for r in attempts)}
         equivalent = all(item[m]['allScientificResultsMatchSerial'] for m in ('serial', 'parallel'))
         item['parallelComparisonValid'] = equivalent
         item['validatedSpeedup'] = item['serial']['medianCompletedSeconds'] / item['parallel']['medianCompletedSeconds'] if equivalent else None
+        serial = {r['repeat']: r['wallSeconds'] for r in report['rows']
+                  if r['case'] == engine and r['execution'] == 'serial' and r['phase'] == 'main' and r['technicalSuccess']}
+        parallel = {r['repeat']: r['wallSeconds'] for r in report['rows']
+                    if r['case'] == engine and r['execution'] == 'parallel' and r['phase'] == 'main' and r['technicalSuccess']}
+        item['pairedSpeedups'] = [serial[n] / parallel[n] for n in sorted(serial.keys() & parallel.keys())] if equivalent else []
+        item['pairsParallelFaster'] = sum(value > 1 for value in item['pairedSpeedups'])
         result['rows'].append(item)
     return result
 
