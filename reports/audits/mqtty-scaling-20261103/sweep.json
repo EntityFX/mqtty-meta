@@ -1,0 +1,35 @@
+{
+  "sourcePackageSha256": "ea565089f36b98774f8d6863aea6fac94cb8a14417dc2e8baa0ad6f9203bec19",
+  "policy": "Fixed total offeredRps; publishers=4*brokers/backend; strategy 0; fresh processes",
+  "sizes": [
+    4,
+    8,
+    16
+  ],
+  "status": "completed-with-scientific-mismatch",
+  "scales": [
+    {
+      "brokersOrBackends": 4,
+      "publishers": 16,
+      "packageSha256": "80c6c956d1605dc0bb4a176eda4b1dd026928aaef6680f9de7dc64d3cf477618",
+      "pilotStatus": "completed",
+      "pilotReused": true,
+      "verification": "PASS"
+    },
+    {
+      "brokersOrBackends": 8,
+      "publishers": 32,
+      "packageSha256": "d9037c56a64805d534bbdaec3afc1cf6beae54c64e2fd97eeaee03babefb7541",
+      "pilotStatus": "completed",
+      "verification": "PASS"
+    },
+    {
+      "brokersOrBackends": 16,
+      "publishers": 64,
+      "packageSha256": "f9854659ce6e99db88e501c51adaa6940e771fd00e1f7e142ca6daab3f0f4b58",
+      "pilotStatus": "completed",
+      "pilotReused": true,
+      "verification": "SCIENTIFIC_MISMATCH"
+    }
+  ]
+}

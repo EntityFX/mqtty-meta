@@ -1,0 +1,78 @@
+{
+  "unsupported64BrokerPilot": {
+    "mode": "pilot",
+    "status": "failed",
+    "startedEpoch": 1793709853.7920482,
+    "packageSha256": "7d173f38a9a89a43a70dfeb06287c39adbeabae3e4ecb48820b967f01741b44d",
+    "timeoutSeconds": 600,
+    "rows": [
+      {
+        "userSeconds": 0.109375,
+        "systemSeconds": 0.125,
+        "peakMemoryBytes": 30564352,
+        "memoryMethod": "Windows GetProcessMemoryInfo PeakWorkingSetSize",
+        "wallSeconds": 2.336521700024605,
+        "returnCode": 3762504530,
+        "timedOut": false,
+        "case": "relay",
+        "execution": "serial",
+        "phase": "pilot",
+        "repeat": 1,
+        "technicalSuccess": false,
+        "matchesLocalRepeat": false,
+        "matchesSerialScience": false,
+        "matchesBaseline": false
+      }
+    ],
+    "fingerprints": {},
+    "baselineProvided": false,
+    "activeAttempt": "pilot-r1-relay-serial",
+    "error": "Failed serial attempt: pilot-r1-relay-serial",
+    "finishedEpoch": 1793709859.9153705
+  },
+  "firstControllerFailure": {
+    "mode": "pilot",
+    "status": "failed",
+    "startedEpoch": 1793709674.079142,
+    "packageSha256": "dd56e351443d239d89a2986976ce06cd45bd9b81b606951686dd07ccc3c7836f",
+    "timeoutSeconds": 600,
+    "rows": [
+      {
+        "userSeconds": 40.78125,
+        "systemSeconds": 0.71875,
+        "peakMemoryBytes": 255397888,
+        "memoryMethod": "Windows GetProcessMemoryInfo PeakWorkingSetSize",
+        "wallSeconds": 50.09578460000921,
+        "returnCode": 0,
+        "timedOut": false,
+        "case": "relay",
+        "execution": "serial",
+        "phase": "pilot",
+        "repeat": 1,
+        "technicalSuccess": true,
+        "matchesLocalRepeat": true,
+        "matchesSerialScience": true,
+        "matchesBaseline": null,
+        "outputBytes": 3924793
+      }
+    ],
+    "fingerprints": {
+      "relay:serial": {
+        "delivery-receipts.json": "f478bc2ce191b66626a6cf38eb6e793bacd253b6273a05e3cf500b7a99933406",
+        "histograms.json": "1a40f8260e2a1a90a55e98213c74e1d96aa0f62b7764f5648baae1dd0eca70cb",
+        "phases.json": "e7d14130713476dc4eab91df7991386269443229eac4aadaf3d91207a56c23f3",
+        "publications.json": "3fe18bb40aceb43eeba6d70955962bf5ef4f115c19e50b8f7f99189289328804",
+        "receivers.csv": "969c9948c7de51d71ec48406bf82ccee3ad0b8ba7c78a5a2d78ac7655fae69c2",
+        "run-config.json": "76f42bc1ff8d30d8d41cae1c08592af001ea16c75bf7ad58e5c027393226b4a9",
+        "sources.csv": "e763f539241717190e3dcc06a1eef77ac4b3cd5e7cea93c73d441ec8a0dfa8fd",
+        "summary.json": "3a13ae4c97023c6ed6de77fe1fb58cc62c0d71878ddb62eb70c7f086a0abcb20",
+        "transmissions.json": "a9970e9fc77bc67d4190e9b174dfac1fc34aaa746eb93eeb5ff85c3868b14591"
+      }
+    },
+    "baselineProvided": false,
+    "activeAttempt": "pilot-r1-relay-parallel",
+    "error": "[WinError 5] Access is denied: 'C:\\\\projects\\\\mqtty-meta\\\\reproducibility\\\\artifacts\\\\benchmark-scaling-20261103-001\\\\nodes-16\\\\pilot\\\\result.json.tmp' -> 'C:\\\\projects\\\\mqtty-meta\\\\reproducibility\\\\artifacts\\\\benchmark-scaling-20261103-001\\\\nodes-16\\\\pilot\\\\result.json'",
+    "finishedEpoch": 1793709732.8607333
+  },
+  "treatment": "Excluded from performance statistics; no automatic benchmark retries. Completed pilots at 4/16 reused only after package/input/seal validation."
+}

@@ -1,0 +1,66 @@
+{
+  "relay": {
+    "ideal": true,
+    "payloadBytes": 256,
+    "offeredRps": 1000,
+    "seed": 42,
+    "warmupSeconds": 0.01,
+    "measurementSeconds": 0.2,
+    "drainTimeoutSeconds": 1,
+    "tickPeriod": "00:00:00.0001000",
+    "network": {
+      "capacityBytesPerSecond": 100000000,
+      "queueCapacity": 100000,
+      "transferTicks": 1,
+      "throughputWindowTicks": 100
+    },
+    "mode": "relay",
+    "brokers": 16,
+    "publishers": 64,
+    "qos": 1,
+    "topology": "line"
+  },
+  "federation": {
+    "ideal": true,
+    "payloadBytes": 256,
+    "offeredRps": 1000,
+    "seed": 42,
+    "warmupSeconds": 0.01,
+    "measurementSeconds": 0.2,
+    "drainTimeoutSeconds": 1,
+    "tickPeriod": "00:00:00.0001000",
+    "network": {
+      "capacityBytesPerSecond": 100000000,
+      "queueCapacity": 100000,
+      "transferTicks": 1,
+      "throughputWindowTicks": 100
+    },
+    "mode": "federation",
+    "brokers": 16,
+    "publishers": 64,
+    "qos": 1,
+    "topology": "line"
+  },
+  "load-balancer": {
+    "ideal": true,
+    "payloadBytes": 256,
+    "offeredRps": 1000,
+    "seed": 42,
+    "warmupSeconds": 0.01,
+    "measurementSeconds": 0.2,
+    "drainTimeoutSeconds": 1,
+    "tickPeriod": "00:00:00.0001000",
+    "network": {
+      "capacityBytesPerSecond": 100000000,
+      "queueCapacity": 100000,
+      "transferTicks": 1,
+      "throughputWindowTicks": 100
+    },
+    "mode": "roundRobin",
+    "backendCount": 16,
+    "totalPublishers": 64,
+    "publishQos": 1,
+    "subscribeQos": 1,
+    "networkLength": 2
+  }
+}

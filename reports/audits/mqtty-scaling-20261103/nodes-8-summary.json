@@ -1,0 +1,277 @@
+{
+  "status": "completed",
+  "packageSha256": "d9037c56a64805d534bbdaec3afc1cf6beae54c64e2fd97eeaee03babefb7541",
+  "resultSha256": "addf8a870eaf0c005b46b322a3eb3630395a38d6208aa2aa90ba2063cb212c79",
+  "timeUnit": "seconds",
+  "measurement": "Process launch through completion, including JIT and artifact writing; validation excluded",
+  "rows": [
+    {
+      "engine": "relay",
+      "serial": {
+        "attempts": 5,
+        "completed": 5,
+        "secondsAllAttempts": [
+          4.457597500062548,
+          4.992579100071453,
+          4.841338000027463,
+          4.186947499983944,
+          4.367997599998489
+        ],
+        "secondsCompleted": [
+          4.457597500062548,
+          4.992579100071453,
+          4.841338000027463,
+          4.186947499983944,
+          4.367997599998489
+        ],
+        "medianCompletedSeconds": 4.457597500062548,
+        "minCompletedSeconds": 4.186947499983944,
+        "maxCompletedSeconds": 4.992579100071453,
+        "cpuSecondsAllCompleted": [
+          4.890625,
+          5.421875,
+          4.734375,
+          4.625,
+          4.828125
+        ],
+        "medianCpuSeconds": 4.828125,
+        "peakMemoryMiBAllCompleted": [
+          90.34765625,
+          91.796875,
+          90.45703125,
+          90.05078125,
+          90.08984375
+        ],
+        "medianPeakMemoryMiB": 90.34765625,
+        "allScientificResultsMatchSerial": true
+      },
+      "parallel": {
+        "attempts": 5,
+        "completed": 5,
+        "secondsAllAttempts": [
+          3.4074668999528512,
+          3.192719299928285,
+          3.375021099927835,
+          3.098405099939555,
+          3.2164728000061586
+        ],
+        "secondsCompleted": [
+          3.4074668999528512,
+          3.192719299928285,
+          3.375021099927835,
+          3.098405099939555,
+          3.2164728000061586
+        ],
+        "medianCompletedSeconds": 3.2164728000061586,
+        "minCompletedSeconds": 3.098405099939555,
+        "maxCompletedSeconds": 3.4074668999528512,
+        "cpuSecondsAllCompleted": [
+          7.8125,
+          7.859375,
+          8.0625,
+          8.171875,
+          8.65625
+        ],
+        "medianCpuSeconds": 8.0625,
+        "peakMemoryMiBAllCompleted": [
+          94.203125,
+          93.30078125,
+          93.2734375,
+          93.359375,
+          92.96484375
+        ],
+        "medianPeakMemoryMiB": 93.30078125,
+        "allScientificResultsMatchSerial": true
+      },
+      "parallelComparisonValid": true,
+      "validatedSpeedup": 1.3858651315360144,
+      "pairedSpeedups": [
+        1.3081851213651488,
+        1.563738816683194,
+        1.4344615505162266,
+        1.3513234599522266,
+        1.3580085614248396
+      ],
+      "pairsParallelFaster": 5
+    },
+    {
+      "engine": "federation",
+      "serial": {
+        "attempts": 5,
+        "completed": 5,
+        "secondsAllAttempts": [
+          2.425291599938646,
+          2.9675090999808162,
+          2.143634199979715,
+          2.3432881000917405,
+          2.507992499973625
+        ],
+        "secondsCompleted": [
+          2.425291599938646,
+          2.9675090999808162,
+          2.143634199979715,
+          2.3432881000917405,
+          2.507992499973625
+        ],
+        "medianCompletedSeconds": 2.425291599938646,
+        "minCompletedSeconds": 2.143634199979715,
+        "maxCompletedSeconds": 2.9675090999808162,
+        "cpuSecondsAllCompleted": [
+          2.53125,
+          3.171875,
+          2.34375,
+          2.546875,
+          2.734375
+        ],
+        "medianCpuSeconds": 2.546875,
+        "peakMemoryMiBAllCompleted": [
+          59.05859375,
+          59.20703125,
+          58.4453125,
+          57.8515625,
+          59.75390625
+        ],
+        "medianPeakMemoryMiB": 59.05859375,
+        "allScientificResultsMatchSerial": true
+      },
+      "parallel": {
+        "attempts": 5,
+        "completed": 5,
+        "secondsAllAttempts": [
+          2.380729499971494,
+          2.6181041999952868,
+          2.1833107999991626,
+          2.517642299993895,
+          2.183014600072056
+        ],
+        "secondsCompleted": [
+          2.380729499971494,
+          2.6181041999952868,
+          2.1833107999991626,
+          2.517642299993895,
+          2.183014600072056
+        ],
+        "medianCompletedSeconds": 2.380729499971494,
+        "minCompletedSeconds": 2.183014600072056,
+        "maxCompletedSeconds": 2.6181041999952868,
+        "cpuSecondsAllCompleted": [
+          6.015625,
+          6.90625,
+          5.546875,
+          6.171875,
+          5.421875
+        ],
+        "medianCpuSeconds": 6.015625,
+        "peakMemoryMiBAllCompleted": [
+          61.015625,
+          61.875,
+          61.4921875,
+          62.1015625,
+          62.3203125
+        ],
+        "medianPeakMemoryMiB": 61.875,
+        "allScientificResultsMatchSerial": true
+      },
+      "parallelComparisonValid": true,
+      "validatedSpeedup": 1.018717834162884,
+      "pairedSpeedups": [
+        1.018717834162884,
+        1.1334572168617882,
+        0.9818273238883521,
+        0.9307470326890451,
+        1.1488665718913846
+      ],
+      "pairsParallelFaster": 3
+    },
+    {
+      "engine": "load-balancer",
+      "serial": {
+        "attempts": 5,
+        "completed": 5,
+        "secondsAllAttempts": [
+          1.3605221000034362,
+          1.2736534998985007,
+          1.3300309999613091,
+          1.3654683000640944,
+          1.3487034999998286
+        ],
+        "secondsCompleted": [
+          1.3605221000034362,
+          1.2736534998985007,
+          1.3300309999613091,
+          1.3654683000640944,
+          1.3487034999998286
+        ],
+        "medianCompletedSeconds": 1.3487034999998286,
+        "minCompletedSeconds": 1.2736534998985007,
+        "maxCompletedSeconds": 1.3654683000640944,
+        "cpuSecondsAllCompleted": [
+          1.53125,
+          1.40625,
+          1.453125,
+          1.5,
+          1.5625
+        ],
+        "medianCpuSeconds": 1.5,
+        "peakMemoryMiBAllCompleted": [
+          46.5625,
+          46.6796875,
+          46.4453125,
+          46.54296875,
+          46.69921875
+        ],
+        "medianPeakMemoryMiB": 46.5625,
+        "allScientificResultsMatchSerial": true
+      },
+      "parallel": {
+        "attempts": 5,
+        "completed": 5,
+        "secondsAllAttempts": [
+          1.405561099993065,
+          1.6843241000315174,
+          1.5029977000085637,
+          1.617454000050202,
+          1.6220846000360325
+        ],
+        "secondsCompleted": [
+          1.405561099993065,
+          1.6843241000315174,
+          1.5029977000085637,
+          1.617454000050202,
+          1.6220846000360325
+        ],
+        "medianCompletedSeconds": 1.617454000050202,
+        "minCompletedSeconds": 1.405561099993065,
+        "maxCompletedSeconds": 1.6843241000315174,
+        "cpuSecondsAllCompleted": [
+          3.265625,
+          4.09375,
+          3.09375,
+          3.40625,
+          4.03125
+        ],
+        "medianCpuSeconds": 3.40625,
+        "peakMemoryMiBAllCompleted": [
+          48.1953125,
+          46.953125,
+          46.921875,
+          47.23046875,
+          46.83984375
+        ],
+        "medianPeakMemoryMiB": 46.953125,
+        "allScientificResultsMatchSerial": true
+      },
+      "parallelComparisonValid": true,
+      "validatedSpeedup": 0.8338434972233943,
+      "pairedSpeedups": [
+        0.967956569095537,
+        0.7561807729727716,
+        0.8849188524731149,
+        0.8442084288157273,
+        0.8314631061597335
+      ],
+      "pairsParallelFaster": 0
+    }
+  ],
+  "scope": "Parallel means Refresh(true, 0) within one graph; no concurrent independent jobs"
+}

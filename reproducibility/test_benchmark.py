@@ -3,11 +3,29 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+import threading
+import os
 
 import benchmark
 
 
 class BenchmarkTests(unittest.TestCase):
+    @unittest.skipUnless(os.name == 'nt', 'Windows destination sharing semantics')
+    def test_atomic_save_survives_temporary_reader_lock(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / 'result.json'
+            benchmark.save(path, {'status': 'running'})
+            reader = path.open('rb')
+            unlock = threading.Timer(.15, reader.close)
+            unlock.start()
+            try:
+                benchmark.save(path, {'status': 'completed'})
+                self.assertEqual(benchmark.read(path), {'status': 'completed'})
+                self.assertFalse(path.with_suffix('.json.tmp').exists())
+            finally:
+                unlock.join()
+                reader.close()
+
     def test_measure_captures_completed_process_resources(self):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)

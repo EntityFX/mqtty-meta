@@ -1,0 +1,300 @@
+{
+  "mqttyCommit": "40640a3f5a8d394c6bad6f51d5bbba4a853fff48",
+  "host": "Windows / Intel Core i7-2600, 4 cores / 8 threads, .NET 6.0.36",
+  "timeUnit": "seconds",
+  "sizes": [
+    4,
+    8,
+    16
+  ],
+  "publishers": [
+    16,
+    32,
+    64
+  ],
+  "offeredRps": 1000,
+  "measuredPublications": 200,
+  "refreshStrategy": 0,
+  "countedRepeatsPerCell": 5,
+  "timingScope": "Whole fresh process including startup/JIT, graph initialization and artifact export. Validation excluded.",
+  "rows": [
+    {
+      "brokersOrBackends": 4,
+      "publishers": 16,
+      "engine": "relay",
+      "serialSeconds": 1.7952494999626651,
+      "parallelSeconds": 1.8363285000668839,
+      "scientificallyEquivalentAndRepeatable": true,
+      "validatedSpeedup": 0.9776298194453102,
+      "pairsParallelFaster": 2,
+      "parallelMainMatchesSerial": 5,
+      "parallelMainMatchesLocalRepeat": 5,
+      "cpuRatioParallelToSerial": 2.248062015503876
+    },
+    {
+      "brokersOrBackends": 4,
+      "publishers": 16,
+      "engine": "federation",
+      "serialSeconds": 1.5268617999972776,
+      "parallelSeconds": 1.7156070000492036,
+      "scientificallyEquivalentAndRepeatable": true,
+      "validatedSpeedup": 0.8899834285786239,
+      "pairsParallelFaster": 1,
+      "parallelMainMatchesSerial": 5,
+      "parallelMainMatchesLocalRepeat": 5,
+      "cpuRatioParallelToSerial": 2.2162162162162162
+    },
+    {
+      "brokersOrBackends": 4,
+      "publishers": 16,
+      "engine": "load-balancer",
+      "serialSeconds": 1.0066912999609485,
+      "parallelSeconds": 1.2951598000945523,
+      "scientificallyEquivalentAndRepeatable": true,
+      "validatedSpeedup": 0.7772718855908404,
+      "pairsParallelFaster": 0,
+      "parallelMainMatchesSerial": 5,
+      "parallelMainMatchesLocalRepeat": 5,
+      "cpuRatioParallelToSerial": 2.3484848484848486
+    },
+    {
+      "brokersOrBackends": 8,
+      "publishers": 32,
+      "engine": "relay",
+      "serialSeconds": 4.457597500062548,
+      "parallelSeconds": 3.2164728000061586,
+      "scientificallyEquivalentAndRepeatable": true,
+      "validatedSpeedup": 1.3858651315360144,
+      "pairsParallelFaster": 5,
+      "parallelMainMatchesSerial": 5,
+      "parallelMainMatchesLocalRepeat": 5,
+      "cpuRatioParallelToSerial": 1.6699029126213591
+    },
+    {
+      "brokersOrBackends": 8,
+      "publishers": 32,
+      "engine": "federation",
+      "serialSeconds": 2.425291599938646,
+      "parallelSeconds": 2.380729499971494,
+      "scientificallyEquivalentAndRepeatable": true,
+      "validatedSpeedup": 1.018717834162884,
+      "pairsParallelFaster": 3,
+      "parallelMainMatchesSerial": 5,
+      "parallelMainMatchesLocalRepeat": 5,
+      "cpuRatioParallelToSerial": 2.361963190184049
+    },
+    {
+      "brokersOrBackends": 8,
+      "publishers": 32,
+      "engine": "load-balancer",
+      "serialSeconds": 1.3487034999998286,
+      "parallelSeconds": 1.617454000050202,
+      "scientificallyEquivalentAndRepeatable": true,
+      "validatedSpeedup": 0.8338434972233943,
+      "pairsParallelFaster": 0,
+      "parallelMainMatchesSerial": 5,
+      "parallelMainMatchesLocalRepeat": 5,
+      "cpuRatioParallelToSerial": 2.2708333333333335
+    },
+    {
+      "brokersOrBackends": 16,
+      "publishers": 64,
+      "engine": "relay",
+      "serialSeconds": 24.447711499989964,
+      "parallelSeconds": 15.35858110000845,
+      "scientificallyEquivalentAndRepeatable": true,
+      "validatedSpeedup": 1.5917949282422001,
+      "pairsParallelFaster": 5,
+      "parallelMainMatchesSerial": 5,
+      "parallelMainMatchesLocalRepeat": 5,
+      "cpuRatioParallelToSerial": 1.63596214511041
+    },
+    {
+      "brokersOrBackends": 16,
+      "publishers": 64,
+      "engine": "federation",
+      "serialSeconds": 4.053522699978203,
+      "parallelSeconds": 3.2954279999248683,
+      "scientificallyEquivalentAndRepeatable": false,
+      "validatedSpeedup": null,
+      "pairsParallelFaster": 0,
+      "parallelMainMatchesSerial": 2,
+      "parallelMainMatchesLocalRepeat": 2,
+      "cpuRatioParallelToSerial": 1.870503597122302
+    },
+    {
+      "brokersOrBackends": 16,
+      "publishers": 64,
+      "engine": "load-balancer",
+      "serialSeconds": 1.970396500080824,
+      "parallelSeconds": 2.2564515999983996,
+      "scientificallyEquivalentAndRepeatable": true,
+      "validatedSpeedup": 0.8732279035288066,
+      "pairsParallelFaster": 2,
+      "parallelMainMatchesSerial": 5,
+      "parallelMainMatchesLocalRepeat": 5,
+      "cpuRatioParallelToSerial": 2.204225352112676
+    }
+  ],
+  "strictVerificationFailures": [
+    {
+      "size": 16,
+      "error": "Independent baseline mismatch: pilot-r1-federation-parallel"
+    }
+  ],
+  "federationTimingDifferences": [
+    {
+      "phase": "pilot",
+      "repeat": 1,
+      "deliveryPairs": 3200,
+      "pairsWithDifferentTicks": 72,
+      "examples": [
+        {
+          "publicationId": 21,
+          "receiver": 9,
+          "serialTick": 376,
+          "parallelTick": 383
+        },
+        {
+          "publicationId": 17,
+          "receiver": 9,
+          "serialTick": 383,
+          "parallelTick": 376
+        },
+        {
+          "publicationId": 22,
+          "receiver": 9,
+          "serialTick": 397,
+          "parallelTick": 404
+        }
+      ],
+      "serialP99Ms": 23,
+      "parallelP99Ms": 23
+    },
+    {
+      "phase": "main",
+      "repeat": 1,
+      "deliveryPairs": 3200,
+      "pairsWithDifferentTicks": 70,
+      "examples": [
+        {
+          "publicationId": 21,
+          "receiver": 9,
+          "serialTick": 376,
+          "parallelTick": 383
+        },
+        {
+          "publicationId": 17,
+          "receiver": 9,
+          "serialTick": 383,
+          "parallelTick": 376
+        },
+        {
+          "publicationId": 22,
+          "receiver": 9,
+          "serialTick": 397,
+          "parallelTick": 404
+        }
+      ],
+      "serialP99Ms": 23,
+      "parallelP99Ms": 23
+    },
+    {
+      "phase": "main",
+      "repeat": 2,
+      "deliveryPairs": 3200,
+      "pairsWithDifferentTicks": 72,
+      "examples": [
+        {
+          "publicationId": 21,
+          "receiver": 9,
+          "serialTick": 376,
+          "parallelTick": 383
+        },
+        {
+          "publicationId": 17,
+          "receiver": 9,
+          "serialTick": 383,
+          "parallelTick": 376
+        },
+        {
+          "publicationId": 22,
+          "receiver": 9,
+          "serialTick": 397,
+          "parallelTick": 404
+        }
+      ],
+      "serialP99Ms": 23,
+      "parallelP99Ms": 23
+    },
+    {
+      "phase": "main",
+      "repeat": 3,
+      "deliveryPairs": 3200,
+      "pairsWithDifferentTicks": 72,
+      "examples": [
+        {
+          "publicationId": 21,
+          "receiver": 9,
+          "serialTick": 376,
+          "parallelTick": 383
+        },
+        {
+          "publicationId": 17,
+          "receiver": 9,
+          "serialTick": 383,
+          "parallelTick": 376
+        },
+        {
+          "publicationId": 22,
+          "receiver": 9,
+          "serialTick": 397,
+          "parallelTick": 404
+        }
+      ],
+      "serialP99Ms": 23,
+      "parallelP99Ms": 23
+    },
+    {
+      "phase": "main",
+      "repeat": 4,
+      "deliveryPairs": 3200,
+      "pairsWithDifferentTicks": 0,
+      "examples": [],
+      "serialP99Ms": 23,
+      "parallelP99Ms": 23
+    },
+    {
+      "phase": "main",
+      "repeat": 5,
+      "deliveryPairs": 3200,
+      "pairsWithDifferentTicks": 0,
+      "examples": [],
+      "serialP99Ms": 23,
+      "parallelP99Ms": 23
+    }
+  ],
+  "fourBrokerCrossHostScienceMatches": {
+    "windows-xeon": true,
+    "linux-e2k": true
+  },
+  "independentVerification": {
+    "attempts": 108,
+    "sealedFiles": 1620,
+    "countedAttempts": 90,
+    "campaignPilots": 18,
+    "preliminaryAdmissionPilots": 18,
+    "primaryEventRecounts": 72,
+    "balancingReconciliations": 36,
+    "allProcessesCompleted": true,
+    "scienceEquivalentAcrossAllAttempts": false
+  },
+  "limits": [
+    "Shared workstation, no exclusive CPU reservation; five pairs do not establish a universal speedup.",
+    "Broker count and publishers scale together; total offered traffic fixed. Relay/federation fanout grows, load-balancer total deliveries stay 200.",
+    "Federation at 16 has variable delivery ticks; its timing ratio is diagnostic and excluded from validated speedup.",
+    "64 brokers rejected by the existing federation input bound of 16; this is not a runtime performance failure.",
+    "No remote hosts contacted or new remote jobs started.",
+    "Underlying simulator binaries unchanged; only the benchmark controller atomic metadata write gains a bounded Windows sharing-lock retry."
+  ]
+}

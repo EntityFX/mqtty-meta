@@ -130,7 +130,7 @@ def recount(raw, engine, config):
     return kind
 
 
-def verify(export, expected_manifest):
+def verify(export, expected_manifest, diagnostic=False):
     export = export.resolve()
     package_sha = sha(expected_manifest)
     manifest = read(expected_manifest)
@@ -169,11 +169,18 @@ def verify(export, expected_manifest):
         require(read(attempt / 'raw/inputs/config.json') == cases[engine], 'Changed executed config')
         count, fingerprints = seal(attempt / 'raw')
         key = engine + ':' + mode
-        require(fingerprints == baseline['fingerprints'][key], 'Independent baseline mismatch: ' + name)
+        baseline_match = fingerprints == baseline['fingerprints'][key]
         if mode == 'serial':
             first_serial.setdefault(engine, fingerprints)
-        require(fingerprints == first_serial[engine], 'Independent serial/parallel mismatch: ' + name)
-        require(report['fingerprints'][key] == fingerprints, 'Controller fingerprint mismatch')
+        serial_match = fingerprints == first_serial[engine]
+        repeat_match = report['fingerprints'][key] == fingerprints
+        if not diagnostic:
+            require(baseline_match, 'Independent baseline mismatch: ' + name)
+            require(serial_match, 'Independent serial/parallel mismatch: ' + name)
+            require(repeat_match, 'Controller fingerprint mismatch')
+        require(row['matchesBaseline'] == baseline_match, 'Controller baseline flag changed')
+        require(row['matchesSerialScience'] == (fingerprints == baseline['fingerprints'][engine + ':serial']), 'Controller serial flag changed')
+        require(row['matchesLocalRepeat'] == repeat_match, 'Controller repeat flag changed')
         runtime = read(attempt / 'raw/manifest.json')['runtime']
         require(runtime.get('binaries', runtime.get('binarySha256')) == binaries, 'Executed binary hash mismatch')
         seen_runtime.add(runtime['framework']); git_labels.add(str(runtime.get('mqttYCommit')))
@@ -181,12 +188,18 @@ def verify(export, expected_manifest):
         result['primaryEventRecounts'] += kind.startswith('primary-')
         result['balancingReconciliations'] += kind.startswith('backend-')
         result['attemptsChecked'] += 1; result['sealedFilesChecked'] += count
-        result['attempts'].append({'attempt': name, 'sealedFiles': count, 'scientificMatch': True, 'arithmeticCheck': kind})
+        differing = [key for key in fingerprints.keys() | first_serial[engine].keys()
+                     if fingerprints.get(key) != first_serial[engine].get(key)]
+        result['attempts'].append({'attempt': name, 'sealedFiles': count,
+                                   'scientificMatch': baseline_match and serial_match and repeat_match,
+                                   'matchesBaseline': baseline_match, 'matchesSerial': serial_match,
+                                   'matchesLocalRepeat': repeat_match, 'differsFromSerialFiles': sorted(differing),
+                                   'arithmeticCheck': kind})
     result['runtimeFrameworks'] = sorted(seen_runtime)
     result['runtimeGitLabels'] = sorted(git_labels)
     result['provenanceNote'] = 'Source identity is taken from the verified package sourceCommits and executed DLL hashes. Runtime Git labels scan parent directories and may be null or describe the surrounding meta-repository.'
     result['scopeNote'] = 'Forwarding engines have independent per-message event recounts. Load balancing is reconciled against backend CSV and histograms; no per-message ledger is exported by that engine.'
-    result['status'] = 'PASS'
+    result['status'] = 'PASS' if all(a['scientificMatch'] for a in result['attempts']) else 'SCIENTIFIC_MISMATCH'
     return result
 
 
@@ -195,8 +208,9 @@ if __name__ == '__main__':
     parser.add_argument('export', type=Path)
     parser.add_argument('--manifest', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--diagnostic', action='store_true', help='Record scientific mismatches; seals, inputs, DLLs and arithmetic remain strict')
     args = parser.parse_args()
-    value = verify(args.export, args.manifest)
+    value = verify(args.export, args.manifest, diagnostic=args.diagnostic)
     args.output.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
-    print('PASS:', value['attemptsChecked'], 'attempts,', value['sealedFilesChecked'], 'sealed files,',
+    print(value['status'] + ':', value['attemptsChecked'], 'attempts,', value['sealedFilesChecked'], 'sealed files,',
           value['primaryEventRecounts'], 'primary-event recounts,', value['balancingReconciliations'], 'balancing reconciliations')

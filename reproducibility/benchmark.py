@@ -26,7 +26,16 @@ def save(path, value):
     path = Path(path)
     temp = path.with_suffix(path.suffix + '.tmp')
     temp.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False) + '\n', encoding='utf-8')
-    temp.replace(path)
+    # Windows readers may briefly open the destination without FILE_SHARE_DELETE.
+    # Retry only this atomic metadata write, never an experiment.
+    for attempt in range(41):
+        try:
+            temp.replace(path)
+            break
+        except PermissionError:
+            if attempt == 40:
+                raise
+            time.sleep(0.05)
 
 
 def command(argv):

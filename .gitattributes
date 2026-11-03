@@ -62,3 +62,4 @@
 /reproducibility/*benchmark*.py -text
 /reports/audits/mqtty-benchmark-20261103/** -text whitespace=cr-at-eol
 /reports/audits/mqtty-parallel-fix-20261103/** -text whitespace=cr-at-eol
+/reports/audits/mqtty-scaling-20261103/** -text whitespace=cr-at-eol
