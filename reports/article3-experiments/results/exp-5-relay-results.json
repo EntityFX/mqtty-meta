@@ -1,0 +1,25 @@
+{
+  "experiment": "Exp-5 Relay Federation",
+  "task": "Сельское IoT - поля и оросительные установки",
+  "engine": "relay",
+  "topology": "star",
+  "brokers": 4,
+  "publishers": 48,
+  "qos": 1,
+  "rps": 1000,
+  "duration_seconds": 10,
+  "results": {
+    "publish_attempts": 10000,
+    "publish_completed": 10000,
+    "source_rps": 1000,
+    "delivery_goodput": 4000.0,
+    "loss": 0.0,
+    "p99_ack_ms": 0.8,
+    "p99_delivery_ms": 2.8,
+    "transfers": 30000,
+    "duplicate_suppressed": 0,
+    "queue_drops": 0,
+    "status": "completed"
+  },
+  "conclusion": "Relay показывает лучшую задержку (p99 2.8 мс) и 0% потерь для сельского IoT"
+}

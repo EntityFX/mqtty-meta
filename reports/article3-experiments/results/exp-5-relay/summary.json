@@ -1,0 +1,1185 @@
+{
+  "status": "completed",
+  "error": null,
+  "measurementSeconds": 10,
+  "tickMilliseconds": 0.1,
+  "scheduledPublishes": 10000,
+  "apiAttempts": 10000,
+  "sendRejected": 0,
+  "backpressureUnsent": 0,
+  "sourceCompleted": 10000,
+  "sourceCompletedBeforeDrain": 9999,
+  "sourceCompletedDuringDrain": 1,
+  "sourceCompletedRps": 1000,
+  "expectedDeliveries": 40000,
+  "uniqueDeliveries": 40000,
+  "uniqueBeforeDrain": 39989,
+  "uniqueDuringDrain": 11,
+  "fullyDeliveredPublications": 10000,
+  "deliveryLoss": 0,
+  "uniqueGoodput": 4000,
+  "duplicateDeliveries": 0,
+  "unexpectedDeliveries": 0,
+  "unknownDeliveries": 0,
+  "forwardAttempts": 30000,
+  "forwardAccepted": 30000,
+  "forwardRejected": 0,
+  "forwardTopicPayloadBytes": 1080000,
+  "suppressedDuplicates": 0,
+  "queueDrops": 0,
+  "hopLimitDrops": 0,
+  "cacheEntries": 0,
+  "publishP50Ms": 0.8,
+  "publishP95Ms": 0.8,
+  "publishP99Ms": 0.8,
+  "receiverP50Ms": 2.8000000000000003,
+  "receiverP95Ms": 2.8000000000000003,
+  "receiverP99Ms": 2.8000000000000003,
+  "sources": [
+    {
+      "publisher": 0,
+      "site": 0,
+      "broker": 0,
+      "metrics": {
+        "attempted": 209,
+        "admitted": 209,
+        "completed": 209,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.9,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 209
+        }
+      }
+    },
+    {
+      "publisher": 1,
+      "site": 1,
+      "broker": 1,
+      "metrics": {
+        "attempted": 209,
+        "admitted": 209,
+        "completed": 209,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.9,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 209
+        }
+      }
+    },
+    {
+      "publisher": 2,
+      "site": 2,
+      "broker": 2,
+      "metrics": {
+        "attempted": 209,
+        "admitted": 209,
+        "completed": 209,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.9,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 209
+        }
+      }
+    },
+    {
+      "publisher": 3,
+      "site": 3,
+      "broker": 3,
+      "metrics": {
+        "attempted": 209,
+        "admitted": 209,
+        "completed": 209,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.9,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 209
+        }
+      }
+    },
+    {
+      "publisher": 4,
+      "site": 0,
+      "broker": 0,
+      "metrics": {
+        "attempted": 209,
+        "admitted": 209,
+        "completed": 209,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.9,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 209
+        }
+      }
+    },
+    {
+      "publisher": 5,
+      "site": 1,
+      "broker": 1,
+      "metrics": {
+        "attempted": 209,
+        "admitted": 209,
+        "completed": 209,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.9,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 209
+        }
+      }
+    },
+    {
+      "publisher": 6,
+      "site": 2,
+      "broker": 2,
+      "metrics": {
+        "attempted": 209,
+        "admitted": 209,
+        "completed": 209,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.9,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 209
+        }
+      }
+    },
+    {
+      "publisher": 7,
+      "site": 3,
+      "broker": 3,
+      "metrics": {
+        "attempted": 209,
+        "admitted": 209,
+        "completed": 209,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.9,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 209
+        }
+      }
+    },
+    {
+      "publisher": 8,
+      "site": 0,
+      "broker": 0,
+      "metrics": {
+        "attempted": 209,
+        "admitted": 209,
+        "completed": 209,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.9,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 209
+        }
+      }
+    },
+    {
+      "publisher": 9,
+      "site": 1,
+      "broker": 1,
+      "metrics": {
+        "attempted": 209,
+        "admitted": 209,
+        "completed": 209,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.9,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 209
+        }
+      }
+    },
+    {
+      "publisher": 10,
+      "site": 2,
+      "broker": 2,
+      "metrics": {
+        "attempted": 209,
+        "admitted": 209,
+        "completed": 209,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.9,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 209
+        }
+      }
+    },
+    {
+      "publisher": 11,
+      "site": 3,
+      "broker": 3,
+      "metrics": {
+        "attempted": 209,
+        "admitted": 209,
+        "completed": 209,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.9,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 209
+        }
+      }
+    },
+    {
+      "publisher": 12,
+      "site": 0,
+      "broker": 0,
+      "metrics": {
+        "attempted": 209,
+        "admitted": 209,
+        "completed": 209,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.9,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 209
+        }
+      }
+    },
+    {
+      "publisher": 13,
+      "site": 1,
+      "broker": 1,
+      "metrics": {
+        "attempted": 209,
+        "admitted": 209,
+        "completed": 209,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.9,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 209
+        }
+      }
+    },
+    {
+      "publisher": 14,
+      "site": 2,
+      "broker": 2,
+      "metrics": {
+        "attempted": 209,
+        "admitted": 209,
+        "completed": 209,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.9,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 209
+        }
+      }
+    },
+    {
+      "publisher": 15,
+      "site": 3,
+      "broker": 3,
+      "metrics": {
+        "attempted": 209,
+        "admitted": 209,
+        "completed": 209,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.9,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 209
+        }
+      }
+    },
+    {
+      "publisher": 16,
+      "site": 0,
+      "broker": 0,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 17,
+      "site": 1,
+      "broker": 1,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 18,
+      "site": 2,
+      "broker": 2,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 19,
+      "site": 3,
+      "broker": 3,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 20,
+      "site": 0,
+      "broker": 0,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 21,
+      "site": 1,
+      "broker": 1,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 22,
+      "site": 2,
+      "broker": 2,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 23,
+      "site": 3,
+      "broker": 3,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 24,
+      "site": 0,
+      "broker": 0,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 25,
+      "site": 1,
+      "broker": 1,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 26,
+      "site": 2,
+      "broker": 2,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 27,
+      "site": 3,
+      "broker": 3,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 28,
+      "site": 0,
+      "broker": 0,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 29,
+      "site": 1,
+      "broker": 1,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 30,
+      "site": 2,
+      "broker": 2,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 31,
+      "site": 3,
+      "broker": 3,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 32,
+      "site": 0,
+      "broker": 0,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 33,
+      "site": 1,
+      "broker": 1,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 34,
+      "site": 2,
+      "broker": 2,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 35,
+      "site": 3,
+      "broker": 3,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 36,
+      "site": 0,
+      "broker": 0,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 37,
+      "site": 1,
+      "broker": 1,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 38,
+      "site": 2,
+      "broker": 2,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 39,
+      "site": 3,
+      "broker": 3,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 40,
+      "site": 0,
+      "broker": 0,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 41,
+      "site": 1,
+      "broker": 1,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 42,
+      "site": 2,
+      "broker": 2,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 43,
+      "site": 3,
+      "broker": 3,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 44,
+      "site": 0,
+      "broker": 0,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 45,
+      "site": 1,
+      "broker": 1,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 46,
+      "site": 2,
+      "broker": 2,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    },
+    {
+      "publisher": 47,
+      "site": 3,
+      "broker": 3,
+      "metrics": {
+        "attempted": 208,
+        "admitted": 208,
+        "completed": 208,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 20.8,
+        "latencyP50Ms": 0.8,
+        "latencyP95Ms": 0.8,
+        "latencyP99Ms": 0.8,
+        "latencyHistogramTicks": {
+          "8": 208
+        }
+      }
+    }
+  ],
+  "receivers": [
+    {
+      "site": 0,
+      "uniqueDeliveries": 10000,
+      "duplicates": 0,
+      "latencyHistogramTicks": {
+        "16": 2500,
+        "28": 7500
+      }
+    },
+    {
+      "site": 1,
+      "uniqueDeliveries": 10000,
+      "duplicates": 0,
+      "latencyHistogramTicks": {
+        "16": 2500,
+        "28": 7500
+      }
+    },
+    {
+      "site": 2,
+      "uniqueDeliveries": 10000,
+      "duplicates": 0,
+      "latencyHistogramTicks": {
+        "16": 2500,
+        "28": 7500
+      }
+    },
+    {
+      "site": 3,
+      "uniqueDeliveries": 10000,
+      "duplicates": 0,
+      "latencyHistogramTicks": {
+        "16": 2500,
+        "28": 7500
+      }
+    }
+  ],
+  "publishHistogramTicks": {
+    "8": 10000
+  },
+  "receiverHistogramTicks": {
+    "16": 10000,
+    "28": 30000
+  },
+  "phases": [
+    {
+      "name": "construct",
+      "startTick": 0,
+      "endTick": 0,
+      "status": "completed"
+    },
+    {
+      "name": "connect",
+      "startTick": 0,
+      "endTick": 17,
+      "status": "completed"
+    },
+    {
+      "name": "subscribe",
+      "startTick": 17,
+      "endTick": 26,
+      "status": "completed"
+    },
+    {
+      "name": "warmup",
+      "startTick": 26,
+      "endTick": 126,
+      "status": "completed"
+    },
+    {
+      "name": "warmupDrain",
+      "startTick": 126,
+      "endTick": 158,
+      "status": "completed"
+    },
+    {
+      "name": "measure",
+      "startTick": 158,
+      "endTick": 100158,
+      "status": "completed"
+    },
+    {
+      "name": "drain",
+      "startTick": 100158,
+      "endTick": 100190,
+      "status": "completed"
+    }
+  ]
+}

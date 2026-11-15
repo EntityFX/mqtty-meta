@@ -1,0 +1,25 @@
+{
+  "experiment": "Exp-2 Ring Federation",
+  "task": "Сельское IoT - поля и оросительные установки",
+  "engine": "federation",
+  "topology": "ring",
+  "brokers": 4,
+  "publishers": 48,
+  "qos": 1,
+  "rps": 1000,
+  "duration_seconds": 10,
+  "results": {
+    "publish_attempts": 10000,
+    "publish_completed": 10000,
+    "source_rps": 1000,
+    "delivery_goodput": 4000.0,
+    "loss": 0.0,
+    "p99_ack_ms": 0.8,
+    "p99_delivery_ms": 5.5,
+    "transfers": 50000,
+    "duplicate_suppressed": 20000,
+    "queue_drops": 0,
+    "status": "completed"
+  },
+  "conclusion": "Ring топология показывает наилучшие результаты для сельского IoT: 0% потерь, p99 доставки 5.5 мс"
+}

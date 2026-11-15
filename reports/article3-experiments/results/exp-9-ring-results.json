@@ -1,0 +1,25 @@
+{
+  "experiment": "Exp-9 Ring Federation",
+  "task": "Городское IoT - здания и климатические датчики",
+  "engine": "federation",
+  "topology": "ring",
+  "brokers": 4,
+  "publishers": 80,
+  "qos": 1,
+  "rps": 2000,
+  "duration_seconds": 10,
+  "results": {
+    "publish_attempts": 20000,
+    "publish_completed": 20000,
+    "source_rps": 2000,
+    "delivery_goodput": 4887.8,
+    "loss": 0.389025,
+    "p99_ack_ms": 0.8,
+    "p99_delivery_ms": 4163.3,
+    "transfers": 67682,
+    "duplicate_suppressed": 19824,
+    "queue_drops": 28535,
+    "status": "failed (drain timeout, partial evidence)"
+  },
+  "conclusion": "Ring топология для городского IoT показывает высокие потери (38.9%) из-за переполнения очереди"
+}

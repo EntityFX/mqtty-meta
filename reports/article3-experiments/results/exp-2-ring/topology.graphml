@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="utf-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+  <key attr.name="label" attr.type="string" for="node" id="label" />
+  <key attr.name="weight" attr.type="double" for="edge" id="weight" />
+  <key attr.name="r" attr.type="int" for="node" id="r" />
+  <key attr.name="g" attr.type="int" for="node" id="g" />
+  <key attr.name="b" attr.type="int" for="node" id="b" />
+  <key attr.name="size" attr.type="float" for="node" id="size" />
+  <key attr.name="type" attr.type="string" for="node" id="type" />
+  <key attr.name="address" attr.type="string" for="node" id="address" />
+  <key attr.name="statistics" attr.type="string" for="node" id="statistics" />
+  <key attr.name="connectsTo" attr.type="string" for="node" id="connectsTo" />
+  <key attr.name="connectsId" attr.type="string" for="node" id="connectsId" />
+  <graph id="G">
+    <node id="n3">
+      <data key="label">site3</data>
+      <data key="address">site3.local</data>
+      <data key="type">Network</data>
+      <data key="size">100.0</data>
+      <data key="r">154</data>
+      <data key="g">150</data>
+      <data key="b">229</data>
+      <data key="statistics">NG#NC#;SG#NG#MB#;;;CG#NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;;AG#;;</data>
+    </node>
+    <node id="n0">
+      <data key="label">site0</data>
+      <data key="address">site0.local</data>
+      <data key="type">Network</data>
+      <data key="size">100.0</data>
+      <data key="r">154</data>
+      <data key="g">150</data>
+      <data key="b">229</data>
+      <data key="statistics">NG#NC#;SG#NG#MB#;;;CG#NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;;AG#;;</data>
+    </node>
+    <node id="n1">
+      <data key="label">site1</data>
+      <data key="address">site1.local</data>
+      <data key="type">Network</data>
+      <data key="size">100.0</data>
+      <data key="r">154</data>
+      <data key="g">150</data>
+      <data key="b">229</data>
+      <data key="statistics">NG#NC#;SG#NG#MB#;;;CG#NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;;AG#;;</data>
+    </node>
+    <node id="n2">
+      <data key="label">site2</data>
+      <data key="address">site2.local</data>
+      <data key="type">Network</data>
+      <data key="size">100.0</data>
+      <data key="r">154</data>
+      <data key="g">150</data>
+      <data key="b">229</data>
+      <data key="statistics">NG#NC#;SG#NG#MB#;;;CG#NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;NG#MC#;;;AG#;;</data>
+    </node>
+    <node id="c6">
+      <data key="label">publisher0001</data>
+      <data key="address">mqtt://publisher0001.site1</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c49">
+      <data key="label">publisher0044</data>
+      <data key="address">mqtt://publisher0044.site0</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c44">
+      <data key="label">publisher0039</data>
+      <data key="address">mqtt://publisher0039.site3</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c40">
+      <data key="label">publisher0035</data>
+      <data key="address">mqtt://publisher0035.site3</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c28">
+      <data key="label">publisher0023</data>
+      <data key="address">mqtt://publisher0023.site3</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c10">
+      <data key="label">publisher0005</data>
+      <data key="address">mqtt://publisher0005.site1</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c55">
+      <data key="label">receiver0002</data>
+      <data key="address">mqtt://receiver0002.site2</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c51">
+      <data key="label">publisher0046</data>
+      <data key="address">mqtt://publisher0046.site2</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c42">
+      <data key="label">publisher0037</data>
+      <data key="address">mqtt://publisher0037.site1</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c30">
+      <data key="label">publisher0025</data>
+      <data key="address">mqtt://publisher0025.site1</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c17">
+      <data key="label">publisher0012</data>
+      <data key="address">mqtt://publisher0012.site0</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c66">
+      <data key="label">fed2to1</data>
+      <data key="address">mqtt://fed2to1.site2</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c12">
+      <data key="label">publisher0007</data>
+      <data key="address">mqtt://publisher0007.site3</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c31">
+      <data key="label">publisher0026</data>
+      <data key="address">mqtt://publisher0026.site2</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c35">
+      <data key="label">publisher0030</data>
+      <data key="address">mqtt://publisher0030.site2</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c48">
+      <data key="label">publisher0043</data>
+      <data key="address">mqtt://publisher0043.site3</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c32">
+      <data key="label">publisher0027</data>
+      <data key="address">mqtt://publisher0027.site3</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c72">
+      <data key="label">fed3to3</data>
+      <data key="address">mqtt://fed3to3.site3</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c14">
+      <data key="label">publisher0009</data>
+      <data key="address">mqtt://publisher0009.site1</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c56">
+      <data key="label">receiver0003</data>
+      <data key="address">mqtt://receiver0003.site3</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c37">
+      <data key="label">publisher0032</data>
+      <data key="address">mqtt://publisher0032.site0</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c19">
+      <data key="label">publisher0014</data>
+      <data key="address">mqtt://publisher0014.site2</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c13">
+      <data key="label">publisher0008</data>
+      <data key="address">mqtt://publisher0008.site0</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c5">
+      <data key="label">publisher0000</data>
+      <data key="address">mqtt://publisher0000.site0</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c59">
+      <data key="label">fed0to3</data>
+      <data key="address">mqtt://fed0to3.site0</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c21">
+      <data key="label">publisher0016</data>
+      <data key="address">mqtt://publisher0016.site0</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c63">
+      <data key="label">fed1to2</data>
+      <data key="address">mqtt://fed1to2.site1</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c57">
+      <data key="label">fed0in</data>
+      <data key="address">mqtt://fed0in.site0</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c70">
+      <data key="label">fed3to0</data>
+      <data key="address">mqtt://fed3to0.site3</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c62">
+      <data key="label">fed1to0</data>
+      <data key="address">mqtt://fed1to0.site1</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c58">
+      <data key="label">fed0to1</data>
+      <data key="address">mqtt://fed0to1.site0</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c38">
+      <data key="label">publisher0033</data>
+      <data key="address">mqtt://publisher0033.site1</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c45">
+      <data key="label">publisher0040</data>
+      <data key="address">mqtt://publisher0040.site0</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c29">
+      <data key="label">publisher0024</data>
+      <data key="address">mqtt://publisher0024.site0</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c27">
+      <data key="label">publisher0022</data>
+      <data key="address">mqtt://publisher0022.site2</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c39">
+      <data key="label">publisher0034</data>
+      <data key="address">mqtt://publisher0034.site2</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c71">
+      <data key="label">fed3to2</data>
+      <data key="address">mqtt://fed3to2.site3</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c24">
+      <data key="label">publisher0019</data>
+      <data key="address">mqtt://publisher0019.site3</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c26">
+      <data key="label">publisher0021</data>
+      <data key="address">mqtt://publisher0021.site1</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c34">
+      <data key="label">publisher0029</data>
+      <data key="address">mqtt://publisher0029.site1</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c61">
+      <data key="label">fed1in</data>
+      <data key="address">mqtt://fed1in.site1</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c47">
+      <data key="label">publisher0042</data>
+      <data key="address">mqtt://publisher0042.site2</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c53">
+      <data key="label">receiver0000</data>
+      <data key="address">mqtt://receiver0000.site0</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c25">
+      <data key="label">publisher0020</data>
+      <data key="address">mqtt://publisher0020.site0</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c36">
+      <data key="label">publisher0031</data>
+      <data key="address">mqtt://publisher0031.site3</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c64">
+      <data key="label">fed1to1</data>
+      <data key="address">mqtt://fed1to1.site1</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c22">
+      <data key="label">publisher0017</data>
+      <data key="address">mqtt://publisher0017.site1</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c54">
+      <data key="label">receiver0001</data>
+      <data key="address">mqtt://receiver0001.site1</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c67">
+      <data key="label">fed2to3</data>
+      <data key="address">mqtt://fed2to3.site2</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c16">
+      <data key="label">publisher0011</data>
+      <data key="address">mqtt://publisher0011.site3</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c15">
+      <data key="label">publisher0010</data>
+      <data key="address">mqtt://publisher0010.site2</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c69">
+      <data key="label">fed3in</data>
+      <data key="address">mqtt://fed3in.site3</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c8">
+      <data key="label">publisher0003</data>
+      <data key="address">mqtt://publisher0003.site3</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c23">
+      <data key="label">publisher0018</data>
+      <data key="address">mqtt://publisher0018.site2</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c20">
+      <data key="label">publisher0015</data>
+      <data key="address">mqtt://publisher0015.site3</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c33">
+      <data key="label">publisher0028</data>
+      <data key="address">mqtt://publisher0028.site0</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c65">
+      <data key="label">fed2in</data>
+      <data key="address">mqtt://fed2in.site2</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c68">
+      <data key="label">fed2to2</data>
+      <data key="address">mqtt://fed2to2.site2</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c41">
+      <data key="label">publisher0036</data>
+      <data key="address">mqtt://publisher0036.site0</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c11">
+      <data key="label">publisher0006</data>
+      <data key="address">mqtt://publisher0006.site2</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c46">
+      <data key="label">publisher0041</data>
+      <data key="address">mqtt://publisher0041.site1</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c7">
+      <data key="label">publisher0002</data>
+      <data key="address">mqtt://publisher0002.site2</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c9">
+      <data key="label">publisher0004</data>
+      <data key="address">mqtt://publisher0004.site0</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c60">
+      <data key="label">fed0to0</data>
+      <data key="address">mqtt://fed0to0.site0</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c18">
+      <data key="label">publisher0013</data>
+      <data key="address">mqtt://publisher0013.site1</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c52">
+      <data key="label">publisher0047</data>
+      <data key="address">mqtt://publisher0047.site3</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c43">
+      <data key="label">publisher0038</data>
+      <data key="address">mqtt://publisher0038.site2</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="c50">
+      <data key="label">publisher0045</data>
+      <data key="address">mqtt://publisher0045.site1</data>
+      <data key="type">Client</data>
+      <data key="size">50.0</data>
+      <data key="r">40</data>
+      <data key="g">179</data>
+      <data key="b">106</data>
+    </node>
+    <node id="s0">
+      <data key="label">broker0000</data>
+      <data key="address">mqtt://broker0000.site0</data>
+      <data key="type">Server</data>
+      <data key="size">70.0</data>
+      <data key="r">249</data>
+      <data key="g">119</data>
+      <data key="b">67</data>
+      <data key="statistics">NG#MB#;;</data>
+    </node>
+    <node id="s1">
+      <data key="label">broker0001</data>
+      <data key="address">mqtt://broker0001.site1</data>
+      <data key="type">Server</data>
+      <data key="size">70.0</data>
+      <data key="r">249</data>
+      <data key="g">119</data>
+      <data key="b">67</data>
+      <data key="statistics">NG#MB#;;</data>
+    </node>
+    <node id="s3">
+      <data key="label">broker0003</data>
+      <data key="address">mqtt://broker0003.site3</data>
+      <data key="type">Server</data>
+      <data key="size">70.0</data>
+      <data key="r">249</data>
+      <data key="g">119</data>
+      <data key="b">67</data>
+      <data key="statistics">NG#MB#;;</data>
+    </node>
+    <node id="s2">
+      <data key="label">broker0002</data>
+      <data key="address">mqtt://broker0002.site2</data>
+      <data key="type">Server</data>
+      <data key="size">70.0</data>
+      <data key="r">249</data>
+      <data key="g">119</data>
+      <data key="b">67</data>
+      <data key="statistics">NG#MB#;;</data>
+    </node>
+    <edge id="e3_2" source="n3" target="n2">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e3_0" source="n3" target="n0">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e0_1" source="n0" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e1_2" source="n1" target="n2">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e6_1" source="c6" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e49_0" source="c49" target="n0">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e44_3" source="c44" target="n3">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e40_3" source="c40" target="n3">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e28_3" source="c28" target="n3">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e10_1" source="c10" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e55_2" source="c55" target="n2">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e51_2" source="c51" target="n2">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e42_1" source="c42" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e30_1" source="c30" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e17_0" source="c17" target="n0">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e66_2" source="c66" target="n2">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e12_3" source="c12" target="n3">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e31_2" source="c31" target="n2">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e35_2" source="c35" target="n2">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e48_3" source="c48" target="n3">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e32_3" source="c32" target="n3">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e72_3" source="c72" target="n3">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e14_1" source="c14" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e56_3" source="c56" target="n3">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e37_0" source="c37" target="n0">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e19_2" source="c19" target="n2">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e13_0" source="c13" target="n0">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e5_0" source="c5" target="n0">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e59_0" source="c59" target="n0">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e21_0" source="c21" target="n0">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e63_1" source="c63" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e57_0" source="c57" target="n0">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e70_3" source="c70" target="n3">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e62_1" source="c62" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e58_0" source="c58" target="n0">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e38_1" source="c38" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e45_0" source="c45" target="n0">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e29_0" source="c29" target="n0">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e27_2" source="c27" target="n2">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e39_2" source="c39" target="n2">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e71_3" source="c71" target="n3">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e24_3" source="c24" target="n3">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e26_1" source="c26" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e34_1" source="c34" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e61_1" source="c61" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e47_2" source="c47" target="n2">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e53_0" source="c53" target="n0">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e25_0" source="c25" target="n0">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e36_3" source="c36" target="n3">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e64_1" source="c64" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e22_1" source="c22" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e54_1" source="c54" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e67_2" source="c67" target="n2">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e16_3" source="c16" target="n3">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e15_2" source="c15" target="n2">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e69_3" source="c69" target="n3">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e8_3" source="c8" target="n3">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e23_2" source="c23" target="n2">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e20_3" source="c20" target="n3">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e33_0" source="c33" target="n0">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e65_2" source="c65" target="n2">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e68_2" source="c68" target="n2">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e41_0" source="c41" target="n0">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e11_2" source="c11" target="n2">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e46_1" source="c46" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e7_2" source="c7" target="n2">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e9_0" source="c9" target="n0">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e60_0" source="c60" target="n0">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e18_1" source="c18" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e52_3" source="c52" target="n3">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e43_2" source="c43" target="n2">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e50_1" source="c50" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e0_0" source="s0" target="n0">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e1_1" source="s1" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e3_3" source="s3" target="n3">
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e2_2" source="s2" target="n2">
+      <data key="weight">1</data>
+    </edge>
+  </graph>
+</graphml>

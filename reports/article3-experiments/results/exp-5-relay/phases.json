@@ -1,0 +1,44 @@
+[
+  {
+    "name": "construct",
+    "startTick": 0,
+    "endTick": 0,
+    "status": "completed"
+  },
+  {
+    "name": "connect",
+    "startTick": 0,
+    "endTick": 17,
+    "status": "completed"
+  },
+  {
+    "name": "subscribe",
+    "startTick": 17,
+    "endTick": 26,
+    "status": "completed"
+  },
+  {
+    "name": "warmup",
+    "startTick": 26,
+    "endTick": 126,
+    "status": "completed"
+  },
+  {
+    "name": "warmupDrain",
+    "startTick": 126,
+    "endTick": 158,
+    "status": "completed"
+  },
+  {
+    "name": "measure",
+    "startTick": 158,
+    "endTick": 100158,
+    "status": "completed"
+  },
+  {
+    "name": "drain",
+    "startTick": 100158,
+    "endTick": 100190,
+    "status": "completed"
+  }
+]

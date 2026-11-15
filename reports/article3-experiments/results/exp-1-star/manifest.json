@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "experiment": "static-federation-v1",
+  "resolvedOptions": {
+    "schemaVersion": 1,
+    "mode": "federation",
+    "brokers": 4,
+    "topology": "star",
+    "links": null,
+    "physicalLayout": null,
+    "publisherSites": null,
+    "publishers": 48,
+    "receiverSites": null,
+    "payloadBytes": 16,
+    "qos": 1,
+    "offeredRps": 1000,
+    "seed": 42,
+    "warmupSeconds": 0.01,
+    "measurementSeconds": 10,
+    "drainTimeoutSeconds": 1,
+    "tickPeriod": "00:00:00.0001000",
+    "queueCapacity": 1024,
+    "cacheCapacity": 100000,
+    "hopLimit": null,
+    "ideal": true,
+    "brokerType": "Mosquitto",
+    "brokerProfilePath": null,
+    "network": {
+      "capacityBytesPerSecond": 125000000,
+      "throughputWindowTicks": 100,
+      "queueCapacity": 100000,
+      "transferTicks": 2
+    }
+  },
+  "configurationSha256": "87eb6fcd94b51aa4773b20fae12ae6c9362f638573ee95bcb08f1decc97460f5",
+  "profileSha256": null,
+  "profileProvenance": null,
+  "profileLookup": [
+    {
+      "broker": 0,
+      "publishers": 12,
+      "payloadBytes": 16,
+      "qos": 1
+    },
+    {
+      "broker": 1,
+      "publishers": 12,
+      "payloadBytes": 16,
+      "qos": 1
+    },
+    {
+      "broker": 2,
+      "publishers": 12,
+      "payloadBytes": 16,
+      "qos": 1
+    },
+    {
+      "broker": 3,
+      "publishers": 12,
+      "payloadBytes": 16,
+      "qos": 1
+    }
+  ],
+  "physicalEdges": [
+    {
+      "a": 0,
+      "b": 4
+    },
+    {
+      "a": 1,
+      "b": 4
+    },
+    {
+      "a": 2,
+      "b": 4
+    },
+    {
+      "a": 3,
+      "b": 4
+    }
+  ],
+  "networkEvidence": "network-evidence.json",
+  "topologyVerified": true,
+  "relayImplementation": "MqttRelay full mesh, source-only export, imported messages delivered locally",
+  "assumptions": [
+    "Static topology; no discovery, election, beacons or failover",
+    "Separate ingress, routing and delivered topics; no No Local",
+    "Profile lookup uses original publishers; forwarding traffic and fanout are outside calibration conditions",
+    "TopicPayloadBytes excludes MQTT/network headers; actual model transports complete serialized packets",
+    "Warmup is drained before measurement; all model results are exploratory, not native federation fidelity"
+  ],
+  "runtime": {
+    "framework": ".NET 6.0.36",
+    "os": "Linux 6.12.85-6.12-alt1 #1 SMP PREEMPT_DYNAMIC Fri May  8 17:43:26 UTC 2026",
+    "architecture": "X64",
+    "mqttYCommit": "bd077430b021f199bc5c67284c610016398ddf76",
+    "sourceStatus": "?? results/article3/",
+    "binaries": {
+      "EntityFX.MqttY.Contracts.Mqtt.dll": "060bbe74b07bb012c5d8564cc882b43d97f1efd083b8257b8522c228f896f66a",
+      "EntityFX.MqttY.Contracts.Scenarios.dll": "d40e50ca9520afaa4ebc6f3b5c655fcc3a06e81c6ea0c597113b082bf8295664",
+      "EntityFX.MqttY.Contracts.dll": "80c7d27604f5968f5b5b25130a0fde21562c45c19d184ab907b53803d9e688f5",
+      "EntityFX.MqttY.Engines.dll": "c43c10a0052be3cd5db60aeadf4802be21749ecff60fc0fcf46cc13730a865c0",
+      "EntityFX.MqttY.Federation.App.dll": "b3749d8c670b68c95d58a782880fe4a0e4d0510a4825644a1da583ba86f98603",
+      "EntityFX.MqttY.Plugin.Mqtt.dll": "55a01554253416dbef11c2d08245c643ff4b68e75f61784a704be26e21a7a69e",
+      "EntityFX.MqttY.dll": "ed92a2db292ee5e92ab0098a9697358f118c01403f0a324a1dbce34d2071925c",
+      "Microsoft.Extensions.Configuration.Abstractions.dll": "3124386219566a2c386e6999d83a7d507584de46cde4ae733a8af3c373c42b8c",
+      "Microsoft.Extensions.Configuration.Binder.dll": "4449f40e0645a61067c5e206e956cc5bc3b4421593b3c27188d8c71ef45c64a6",
+      "Microsoft.Extensions.Configuration.FileExtensions.dll": "d1e96b86808eea6134b78d74de4e0210bcbadbdb8dd20cd30da502e714a2ae2e",
+      "Microsoft.Extensions.Configuration.Json.dll": "53739a4200f9df41bcdce063bdca8bd9e55b250dab2f7cbe9868a4437e7f9887",
+      "Microsoft.Extensions.Configuration.dll": "fe2d21b21531163640ff17970dbebc95584bd3019ffe8465105674d8703e8cfa",
+      "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "ac9cd953b7eeb03cf48e343c5ace6fc9b48ac968b68d1cb30ad1d6111178bf4d",
+      "Microsoft.Extensions.DependencyInjection.dll": "df0ae00b1599acae93d9f4df2bcc6d0ba109221ccc44d2d1486183f84a5fec78",
+      "Microsoft.Extensions.FileProviders.Abstractions.dll": "b1af0a075ebdf1cb84a48d229500f3c270709257fc1a0ddcca0036e70f984bf6",
+      "Microsoft.Extensions.FileProviders.Physical.dll": "ca6efac2b457a07ff094fa0825e1cb27a1b3f0f7cace91faf75c8f94e4c86307",
+      "Microsoft.Extensions.FileSystemGlobbing.dll": "9c6e537ff2258acaba96a25ad79ae3becb172dcac7c9b9ed7a5775a25a947fca",
+      "Microsoft.Extensions.Logging.Abstractions.dll": "ab36e8201d41dd751cbb712704dbe8492bdd0ab1bff6fb35371cf59bcd982181",
+      "Microsoft.Extensions.Logging.dll": "37b87b16ac688d5619168554a22cca2677e1115f21c2d5ebe2f39c024fee2b7f",
+      "Microsoft.Extensions.Options.dll": "fbb309a36bc91d90ec2984397bff4f75f35ac92909e0acd952c5264c5ac0a753",
+      "Microsoft.Extensions.Primitives.dll": "f9f47907a041067d9bc1b9a9f516009b6ca0a9c6325ce83527883cc0d053dfa5",
+      "System.Diagnostics.DiagnosticSource.dll": "d6935e993b69f8abd934f01b0d7dd8ca9616a7ea94c7af59ed07b2fd3cf93a97",
+      "System.Text.Encodings.Web.dll": "9b422eb98889f81d8ab10cbbacd2aa33a5db88f40e8aa2a1066e11a65d6473dd",
+      "System.Text.Json.dll": "f1ce29f392deb3f2cb4e4a59fb2433f2a0e1ddd4c51cfd65890d36745a12919d"
+    }
+  }
+}

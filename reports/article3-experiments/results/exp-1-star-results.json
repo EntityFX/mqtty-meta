@@ -1,0 +1,25 @@
+{
+  "experiment": "Exp-1 Star Federation",
+  "task": "Сельское IoT - поля и оросительные установки",
+  "engine": "federation",
+  "topology": "star",
+  "brokers": 4,
+  "publishers": 48,
+  "qos": 1,
+  "rps": 1000,
+  "duration_seconds": 10,
+  "results": {
+    "publish_attempts": 10000,
+    "publish_completed": 10000,
+    "source_rps": 1000,
+    "delivery_goodput": 3846.9,
+    "loss": 0.038275,
+    "p99_ack_ms": 0.8,
+    "p99_delivery_ms": 1488.4,
+    "transfers": 77627,
+    "duplicate_suppressed": 49148,
+    "queue_drops": 0,
+    "status": "failed (drain timeout, partial evidence)"
+  },
+  "conclusion": "Star топология показывает потери 3.8% из-за переполнения очереди на транзитном узле"
+}

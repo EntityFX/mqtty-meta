@@ -1,0 +1,148 @@
+{
+  "name": "transit",
+  "networkCount": 5,
+  "brokerCount": 4,
+  "hasAttachedEndpoints": false,
+  "beforeMeasurement": {
+    "tick": 158,
+    "queuedPackets": 0,
+    "counters": {
+      "Inbound": 1824,
+      "InboundPackets": 84,
+      "Outbound": 1824,
+      "OutboundPackets": 84,
+      "Refused": 0,
+      "TransferPackets": 84
+    }
+  },
+  "final": {
+    "tick": 100190,
+    "queuedPackets": 0,
+    "counters": {
+      "Inbound": 1381824,
+      "InboundPackets": 60084,
+      "Outbound": 1381824,
+      "OutboundPackets": 60084,
+      "Refused": 0,
+      "TransferPackets": 60084
+    }
+  },
+  "measurementAndDrainCounters": {
+    "Inbound": 1380000,
+    "InboundPackets": 60000,
+    "Outbound": 1380000,
+    "OutboundPackets": 60000,
+    "Refused": 0,
+    "TransferPackets": 60000
+  },
+  "availablePaths": [
+    {
+      "source": 0,
+      "target": 1,
+      "networks": [
+        "site0",
+        "transit",
+        "site1"
+      ]
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "networks": [
+        "site0",
+        "transit",
+        "site2"
+      ]
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "networks": [
+        "site0",
+        "transit",
+        "site3"
+      ]
+    },
+    {
+      "source": 1,
+      "target": 0,
+      "networks": [
+        "site1",
+        "transit",
+        "site0"
+      ]
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "networks": [
+        "site1",
+        "transit",
+        "site2"
+      ]
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "networks": [
+        "site1",
+        "transit",
+        "site3"
+      ]
+    },
+    {
+      "source": 2,
+      "target": 0,
+      "networks": [
+        "site2",
+        "transit",
+        "site0"
+      ]
+    },
+    {
+      "source": 2,
+      "target": 1,
+      "networks": [
+        "site2",
+        "transit",
+        "site1"
+      ]
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "networks": [
+        "site2",
+        "transit",
+        "site3"
+      ]
+    },
+    {
+      "source": 3,
+      "target": 0,
+      "networks": [
+        "site3",
+        "transit",
+        "site0"
+      ]
+    },
+    {
+      "source": 3,
+      "target": 1,
+      "networks": [
+        "site3",
+        "transit",
+        "site1"
+      ]
+    },
+    {
+      "source": 3,
+      "target": 2,
+      "networks": [
+        "site3",
+        "transit",
+        "site2"
+      ]
+    }
+  ]
+}

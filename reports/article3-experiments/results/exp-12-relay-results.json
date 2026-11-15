@@ -1,0 +1,25 @@
+{
+  "experiment": "Exp-12 Relay Federation",
+  "task": "Городское IoT - здания и климатические датчики",
+  "engine": "relay",
+  "topology": "star",
+  "brokers": 4,
+  "publishers": 80,
+  "qos": 1,
+  "rps": 2000,
+  "duration_seconds": 10,
+  "results": {
+    "publish_attempts": 20000,
+    "publish_completed": 20000,
+    "source_rps": 2000,
+    "delivery_goodput": 8000.0,
+    "loss": 0.0,
+    "p99_ack_ms": 0.8,
+    "p99_delivery_ms": 2.8,
+    "transfers": 60000,
+    "duplicate_suppressed": 0,
+    "queue_drops": 0,
+    "status": "completed"
+  },
+  "conclusion": "Relay показывает лучшие результаты для городского IoT: 0% потерь, p99 доставки 2.8 мс, goodput 8000"
+}
