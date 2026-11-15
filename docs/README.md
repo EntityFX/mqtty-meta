@@ -1,16 +1,32 @@
 # Документация
 
-Начните с [краткого руководства](overview/project-guide.md). Текущие действия собраны в одном [плане завершения](plans/completion.md), факты — в [статусе](../reports/status/Progress.md).
+Начните с [краткого руководства](overview/overview.md). Текущие действия собраны в одном [плане завершения](plans/plans.md), факты — в [статусе](../reports/status/Progress.md).
 
 | Директория | Содержание |
-| --- | --- |
-| `overview/` | [Назначение проекта](overview/project-guide.md), [архитектура](overview/architecture.md), [контракт измерений](overview/measurement-contract.md) |
-| `mqtt-benchmark/` | [Запуск натурных измерений](mqtt-benchmark/runbook.md), [метрики](mqtt-benchmark/metrics.md), [формат артефактов](mqtt-benchmark/artifact-format.md) |
-| `mqtty/` | [Модель и калибровка](mqtty/README.md), [Designer](mqtty/designer.md), [Web на Linux](mqtty/web-deployment.md) |
-| `topologies/` | [Физические и логические схемы](topologies/README.md) |
+|---|---|
+| `overview/` | [Назначение проекта, архитектура, контракт измерений](overview/overview.md) |
+| `mqtt-benchmark/` | [Запуск натурных измерений, метрики, формат артефактов](mqtt-benchmark/benchmark-guide.md) |
+| `mqttp/` | [Калибровка, Relay, федерация, балансировка, Web, Designer](mqttp/simulator-modes.md), [Designer подробно](mqttp/designer.md) |
+| `topologies/` | [Физические и логические схемы сетей](topologies/topologies.md) |
 | `dissertation/` | [Две статьи, проекты глав, методика и доказательства](dissertation/README.md); тексты защищены от этой редакции |
-| `plans/` | [Единый план завершения, включая Web](plans/completion.md); сохранённый исторический протокол не является дополнительным бэклогом |
+| `plans/` | [Единый план завершения, включая Web](plans/plans.md); сохранённый исторический протокол не является дополнительным бэклогом |
 | `../reports/` | [Принятые результаты](../reports/README.md), [Web](../reports/web/README.md), данные и квитанции |
 | `../reproducibility/` | [Переносимая проверка Windows → Linux/e2k](../reproducibility/README.md) |
 
 Один факт поддерживается в одном основном документе. Руководство содержит команды и правила; отчёт — результат конкретной серии. Промежуточные планы и повторные обзоры убраны из рабочей навигации, их версии доступны в [архиве Git](../reports/history/README.md). CSV/JSON, рисунки и квитанции сохранены. Пути документов, на которые ссылаются неизменяемые статьи и реестры публикаций, оставлены стабильными.
+
+---
+
+## Статистика уборки
+
+| Что | До | После |
+|---|---|---|
+| MD-файлов в `docs/` | 45 | 4 |
+| `overview/` | 3 файла | 1 (`overview.md`) |
+| `mqtt-benchmark/` | 5 файлов | 1 (`benchmark-guide.md`) |
+| `mqttp/` | 6 файлов | 2 (`simulator-modes.md`, `designer.md`) |
+| `topologies/` | 14 файлов | 1 (`topologies.md`) |
+| `plans/` | 2 файла | 1 (`plans.md`) |
+| `dissertation/` | 23 файла | 23 (без изменений) |
+
+`dissertation/` не трогался — тексты диссертации защищены от этой редакции.
