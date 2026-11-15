@@ -1,0 +1,21 @@
+{
+  "ledger": "C:\\projects\\mqtty-meta\\reports\\analysis\\Article-1-skills-validation_run_ledger.yaml",
+  "ledger_status": "ok",
+  "detail": null,
+  "untrusted_from_seq": null,
+  "entries": 18,
+  "awaiting_answer": [],
+  "cannot_confirm": [],
+  "not_run": [],
+  "missing": [],
+  "backed": 10,
+  "step_outcomes": {
+    "author_citations": "passed",
+    "comparison_arithmetic": "passed",
+    "emqx_raw_inspection": "passed",
+    "full_raw_audit": "passed",
+    "mailbox_probe": "passed",
+    "saved_diagnostics": "passed"
+  },
+  "counters": {}
+}

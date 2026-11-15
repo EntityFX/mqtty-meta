@@ -1,0 +1,20 @@
+{
+  "status": "preparedChecksPassed",
+  "modelSourceSnapshots": 12,
+  "metricsSources": 47,
+  "metricsFrozenBlobPairs": 16,
+  "targetedQueueTests": 7,
+  "v5Checks": 229,
+  "v5SealedFiles": 149,
+  "protectedLaTexFiles": 6,
+  "localLinksChecked": 64,
+  "programSealSha256": "4904ac04b647301426e3bc5b8ecafa40000926c27e5c6e0acb9bf015d33c9eba",
+  "accelerationLaunchReady": false,
+  "accelerationReason": "missing bounded CPU-aware matched launcher",
+  "queueLaunchStatus": "awaiting Linux CLI validation and root preflight",
+  "newNativeMeasurements": 0,
+  "weightedStepsAdded": [],
+  "globalPercent": 53.2,
+  "generalPreparationPercent": 80,
+  "historicalReviewTests": "three existing mismatches independently reproduced on starting HEAD471f7c6"
+}

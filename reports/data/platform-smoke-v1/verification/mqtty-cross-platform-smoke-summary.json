@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "kind": "synthetic-cross-platform-workflow-check-not-scientific-fidelity",
+  "date": "2026-10-13",
+  "platforms": [
+    "Simply Linux11.1 p11 x86_64; .NET6.0.36",
+    "Windows LTSC2019 build17763.9245 x64; .NET6.0.36; PowerShell7.6.6"
+  ],
+  "script": "mqtty/doc/examples/RunSimulation.ps1 with SimulatorCliPath",
+  "calibration": {
+    "runCount": 288,
+    "pointCount": 96,
+    "observationsSha256": "8a5f48aaea2df6a823ee592c9d639cf610658dcec11d48cfc27caea7ed54253e"
+  },
+  "scriptAndManualWindowsSummariesEqual": true,
+  "linuxAndWindowsSummariesEqual": true,
+  "windowsSummarySha256": "1f18b3246eef8494b419da3d7d9e8ef027f94eccdd127500685635069e72f4d0",
+  "acceptanceCriteria": [
+    {
+      "name": "rps",
+      "reference": 80,
+      "simulated": 78.86666666666666,
+      "error": 0.01416666666666675,
+      "limit": 0.15,
+      "status": "passed"
+    },
+    {
+      "name": "publishFailureRate",
+      "reference": 0.2,
+      "simulated": 0.21159613462179275,
+      "error": 0.011596134621792736,
+      "limit": 0.05,
+      "status": "passed"
+    },
+    {
+      "name": "deliveryLossRate",
+      "reference": 0.1,
+      "simulated": 0.10228233305156387,
+      "error": 0.002282333051563862,
+      "limit": 0.05,
+      "status": "passed"
+    },
+    {
+      "name": "latencyP99Ms",
+      "reference": 9,
+      "simulated": 7.300000000000001,
+      "error": 0.1888888888888888,
+      "limit": 0.2,
+      "status": "passed"
+    }
+  ],
+  "customIdealNetwork": {
+    "mode": "ideal-mechanism-smoke",
+    "seed": 42,
+    "profileClientCount": 1,
+    "connectedClients": 2,
+    "profileSha256": null,
+    "delivered": 1,
+    "ticks": 31,
+    "errors": 0,
+    "metrics": {
+      "MeasurementStartTick": 18,
+      "MeasurementEndTick": 31,
+      "ByQos": {
+        "AtMostOnce": {
+          "Attempted": 0,
+          "Admitted": 0,
+          "Completed": 0,
+          "ExpectedDeliveries": 0,
+          "Delivered": 0,
+          "RateRejected": 0,
+          "PublishFailed": 0,
+          "DeliveryDropped": 0,
+          "Rps": 0,
+          "LatencyP50Ms": null,
+          "LatencyP95Ms": null,
+          "LatencyP99Ms": null,
+          "LatencyHistogramTicks": {}
+        },
+        "AtLeastOnce": {
+          "Attempted": 1,
+          "Admitted": 1,
+          "Completed": 1,
+          "ExpectedDeliveries": 1,
+          "Delivered": 1,
+          "RateRejected": 0,
+          "PublishFailed": 0,
+          "DeliveryDropped": 0,
+          "Rps": 769.2307692307692,
+          "LatencyP50Ms": 0.4,
+          "LatencyP95Ms": 0.4,
+          "LatencyP99Ms": 0.4,
+          "LatencyHistogramTicks": {
+            "4": 1
+          }
+        },
+        "ExactlyOnce": {
+          "Attempted": 0,
+          "Admitted": 0,
+          "Completed": 0,
+          "ExpectedDeliveries": 0,
+          "Delivered": 0,
+          "RateRejected": 0,
+          "PublishFailed": 0,
+          "DeliveryDropped": 0,
+          "Rps": 0,
+          "LatencyP50Ms": null,
+          "LatencyP95Ms": null,
+          "LatencyP99Ms": null,
+          "LatencyHistogramTicks": {}
+        }
+      }
+    }
+  },
+  "rawLocations": [
+    "/tmp/mqtty-doc-tools/synthetic-windows-fidelity-run/20261013T104313359Z-e22efb2d6a97468fa33c827054a5ef0e",
+    "/tmp/mqtty-doc-tools/synthetic-windows-manual-run/20261013T104800938Z-0e9bc44255944557900c8659d08ca019",
+    "/tmp/mqtty-doc-tools/synthetic-linux-portable-run/20261013T104330789Z-a744cfde0f1243a19408d9813f362bb2"
+  ],
+  "limitations": [
+    "Observations and references are synthetic fixtures, not measurements from physical brokers.",
+    "The 288/96 dimensions validate the artifact contract; no new full physical calibration campaign was conducted.",
+    "Passing these synthetic criteria is not evidence of real-broker or network fidelity."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "inputs": {
+    "reports/data/federation-full-mesh-v1/runs.json": "80e5e5bac2c16ca8f5462f8b427d1376ac0db2f88c07af04dd3f878b512c9a77",
+    "reports/data/federation-full-mesh-v1/aggregates.json": "a046f9b7defcaf6aaaf0f7b157a14d3b1e510a33e743a9daa154b7d18a8789b3",
+    "reports/data/federation-full-mesh-v1/study-plan.json": "f500787413e4f75aa0e3eca5d67b2d4f8d3a1c650287e5ec546a47f32443ab78",
+    "reports/data/federation-full-mesh-v1/verification.json": "10e8b67efb73f99ca2f76b702d4948889653fd224224a6459a4d5a7ba074f913",
+    "reports/status/network-full-3h-progress.json": "65adeefd5f5338c3928f5afc18315b18b02e72c525ec1a76ac48201ce9df2748",
+    "docs/dissertation/articles/article-2-relay-federation.md": "eab450ed294bcad5ee46bbd94a4ae46717eafaed79af8c837184c4218ad6b9bc",
+    "reports/analysis/Article-2-evidence-package.md": "19ff1936d03286262382e80a084e927962c11da2881c4f7f069d889bfa2a5341",
+    "tools/dissertation/test_article2_evidence_package.py": "9e457acd5537131695fcee013705a889e806fceead14ccc9ea35173a17e56cf2",
+    "tools/dissertation/article2_evidence_package.py": "cc3b71f9492c1a26d0b78333c9063c0d023bbaa995280bc558c86a1d819f6b41"
+  },
+  "outputs": {
+    "comparison.csv": "db4df7f951f2938be2a15d906c93a86632fcdae05dcbfc03f1e6b109d45b0853",
+    "Comparison.md": "3ebfd79d742c3b65a8f0669a0fdda8e64ea9c03c3e257caca32624bcd57c8654",
+    "verification.json": "9b2fb5de7fda9d0f9e9b76ea5e83a73568f592dde0e3d4da99d522a05693c96b"
+  }
+}

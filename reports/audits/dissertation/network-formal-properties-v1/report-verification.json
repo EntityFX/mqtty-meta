@@ -1,0 +1,51 @@
+{
+  "status": "boundedFormalReviewPassed",
+  "checksPassed": 31,
+  "checks": [
+    "Source hash C:\\projects\\mqtty-meta\\tools\\dissertation\\verify_forwarding_properties.py",
+    "Source hash reports\\audits\\dissertation\\network-main-recount-v1\\condition-stats.json",
+    "Source hash mqtty\\src\\EntityFX.MqttSimulator\\EntityFX.MqttY.Federation.App\\Federation\\StaticFederator.cs",
+    "Source hash mqtty\\src\\EntityFX.MqttSimulator\\EntityFX.MqttY.Federation.App\\Federation\\FloodingPolicy.cs",
+    "Finite enumeration coverage",
+    "Six saved condition groups checked",
+    "18 balanced saved model cases represented",
+    "Counterexample graph diameter independently computed",
+    "Link ../../mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Federation/StaticFederator.cs",
+    "Link ../../mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Federation/FloodingPolicy.cs",
+    "Link ../../mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Federation/FederationTopics.cs",
+    "Link ../../mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Plugin.Mqtt/Application/Mqtt/MqttRelay.cs",
+    "Link ../../tools/dissertation/verify_forwarding_properties.py",
+    "Link ../../reports/audits/dissertation/network-formal-properties-v1/verification.json",
+    "Link network-forwarding-proofs.md",
+    "Link ../../reports/audits/dissertation/network-model-review-v1/verification.json",
+    "Link ../../../reports/data/federation-full-mesh-v1/ideal-relay-physical.svg",
+    "Link ../../../reports/data/federation-full-mesh-v1/ideal-relay-logical.svg",
+    "Link ../../../reports/data/federation-full-mesh-v1/ideal-relay-physical.mmd",
+    "Link ../../../reports/data/federation-full-mesh-v1/ideal-relay-logical.mmd",
+    "Link ../../../reports/data/federation-full-mesh-v1/mosquitto-federation-physical.svg",
+    "Link ../network-forwarding-proofs.md",
+    "Link ../../../reports/data/federation-full-mesh-v1/ideal-comparison.svg",
+    "Link ../../../reports/audits/dissertation/article-2-evidence-package-v2/Comparison.md",
+    "Link ../../../reports/audits/dissertation/network-main-recount-v1/figures/comparison-5000.svg",
+    "Link ../../../reports/audits/dissertation/network-main-recount-v1/figures/topology-physical.svg",
+    "Link ../../../reports/audits/dissertation/network-main-recount-v1/figures/topology-logical.svg",
+    "Link ../../../reports/analysis/Network-main-recount.md",
+    "Article empirical metrics, results and bibliography unchanged",
+    "Protected dissertation unchanged common/characteristic.tex",
+    "Protected dissertation unchanged Dissertation/chapter3.tex"
+  ],
+  "files": {
+    "docs/dissertation/network-forwarding-proofs.md": "ea29fe78db51dbb3e91957bfed5b77a068c1e78a65982061a26c7c9d2d9d116b",
+    "docs/dissertation/network-model-contract.md": "57207502df089208d58c559824e1711ba3ec891d25dbd8f6b7e27af4a94bfefa",
+    "docs/dissertation/articles/article-2-relay-federation.md": "3dbb7582e17d2a4c27c574066d4da82d8f7f229471ef669df03e4ee498896fd0"
+  },
+  "newUnitTestsPassed": 4,
+  "generalProof": "Analytic argument in network-forwarding-proofs.md; small enumeration is supporting check, not proof for arbitrary N",
+  "limitations": [
+    "No independent human proof review",
+    "No new MQTT or physical experiments",
+    "No graph-size claim from enumeration beyond N=4",
+    "Chapter 3 itself not edited; step 32 remains open"
+  ],
+  "linuxStatus": "One service/progress observation, saved separately; not polled during local formal work"
+}

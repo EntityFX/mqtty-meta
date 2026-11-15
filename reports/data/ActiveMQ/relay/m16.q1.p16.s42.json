@@ -1,0 +1,68 @@
+{
+  "status": "completed",
+  "measurementStartTick": 10046,
+  "measurementEndTick": 30046,
+  "simulated": {
+    "attempted": 83566,
+    "admitted": 35983,
+    "completed": 35983,
+    "expectedDeliveries": 51747,
+    "delivered": 25074,
+    "rateRejected": 47583,
+    "publishFailed": 0,
+    "deliveryDropped": 26673,
+    "completedRps": 17991.5,
+    "publishFailureRate": 0.5694062178397913,
+    "deliveryLossRate": 0.5154501710244073,
+    "latencyP99Ms": 24.200000000000003
+  },
+  "reference": {
+    "attempted": 0,
+    "admitted": 0,
+    "completed": 0,
+    "expectedDeliveries": 0,
+    "delivered": 0,
+    "rateRejected": 0,
+    "publishFailed": 0,
+    "deliveryDropped": 0,
+    "completedRps": 26180.900245994464,
+    "publishFailureRate": 0,
+    "deliveryLossRate": 0.5165701931238628,
+    "latencyP99Ms": 22.8145333333329
+  },
+  "acceptanceCriteria": [
+    {
+      "name": "rps",
+      "reference": null,
+      "simulated": 17991.5,
+      "error": null,
+      "limit": 0.15,
+      "status": "notApplicable"
+    },
+    {
+      "name": "publishFailureRate",
+      "reference": null,
+      "simulated": 0.5694062178397913,
+      "error": null,
+      "limit": 0.05,
+      "status": "notApplicable"
+    },
+    {
+      "name": "deliveryLossRate",
+      "reference": null,
+      "simulated": 0.5154501710244073,
+      "error": null,
+      "limit": 0.05,
+      "status": "notApplicable"
+    },
+    {
+      "name": "latencyP99Ms",
+      "reference": null,
+      "simulated": 24.200000000000003,
+      "error": null,
+      "limit": 0.2,
+      "status": "notApplicable"
+    }
+  ],
+  "error": null
+}

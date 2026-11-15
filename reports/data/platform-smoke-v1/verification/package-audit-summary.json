@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-13",
+  "kind": "documentation-scope-and-cleanup-audit",
+  "scopeAudit": {
+    "protectedTrackedFilesChecked": 938,
+    "unexpectedChanges": [],
+    "authorizedChangedFiles": 70
+  },
+  "windowsCleanup": {
+    "standLeaseRemaining": false,
+    "brokerProcessesStopped": [],
+    "emptyAuthorizedFileRemoved": true,
+    "mqttListenerRemaining": false,
+    "portableToolsAndEvidencePreserved": true,
+    "firewallRulesRemoved": 1,
+    "ownedAuthorizedKeysRemoved": 1,
+    "copiedControllerPrivateKeyRemoved": true
+  },
+  "linuxCleanup": {
+    "ownedProcessesSignalled": [
+      35554,
+      78908,
+      36051
+    ],
+    "systemSshdPreserved": true,
+    "evidenceAndPortableToolsPreserved": true
+  },
+  "publication": "Local develop commits; GitHub push requires authentication.",
+  "limits": [
+    "Protected files verified against the initial workspace SHA256 snapshot.",
+    "Clean Ubuntu installation, newer Windows WSL2 and three separate physical hosts were not exercised; platform guides label these limits."
+  ]
+}

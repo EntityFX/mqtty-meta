@@ -1,0 +1,68 @@
+{
+  "preparedOn": "2026-10-30",
+  "linuxAccessByThisPreparation": false,
+  "newModelRuns": 0,
+  "sourceManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+  "sourceSnapshotFiles": 281,
+  "runtimeSourceCommit": "12601f534f9da3673057b072f8bd6a0c67fd8aed",
+  "sourceRevisions": {
+    "/run/media/entityfx/hd250/mqtty-evidence/tools/network-source-8882aad": "8882aada0eb677f101d03fac9387cf32224affad",
+    "/run/media/entityfx/hd250/mqtty-evidence/tools/network-source-8882aad/mqtty": "3327b118fb4d6683fe8e8f30a074175b2479c29b"
+  },
+  "sourceBaseConfigSha256": "80960952685bdddbf1479ed7a1744ed35ee0effe6bd469fef507238707c84a0b",
+  "dotnetSha256": "86ec9896b9d07542995a2c7cf2ecb1622a7ed7e092b704a46926416f31bd4efc",
+  "sourceFiles": {
+    "docs/plans/Research-parallel-block-20261030.md": "0dba3bf56af0b1679364d188e3e3c217a0ad7bd1cd469483beecf1ae0d1f08ee",
+    "reports/status/Linux-work-queue.md": "9db9a56120e94813133c8307089827031886500fc009a68c4882f92b9950c0e1",
+    "docs/dissertation/queue-capacity-short-protocol.md": "ff1303b77d0f2121ba5807fc6aea4c663760b7294099de35017da5a11f7d2917",
+    "reports/analysis/Queue-capacity-short.md": "180058a70ee33177ab267e43d76f1579573529c86433c497d15f60d29edd6220",
+    "reports/audits/dissertation/queue-capacity-short-v2/acceptance.json": "54457abba6d5d6cc5c67037ecc7db318d675c2865a3106ab06e6e6acd9517e9e",
+    "reports/audits/dissertation/queue-capacity-short-v2/run_short.py": "5dbff231db11765e3b061a48d6a8cb5b717d656b7f6d9292bbaef6b73721ffd8",
+    "reports/audits/dissertation/queue-capacity-short-v2/short_gate.py": "dd916ecbef5e147c4cdb246aa4c017d555d122f4acc2cb085ecc06a5e0bcf499",
+    "reports/audits/dissertation/queue-capacity-short-v2/test_short_gate.py": "7cc5a1c3194cfbd971bd181d95bac2ac4723535870d766b71802be26d8ac0a53",
+    "tools/dissertation/audit_acceleration.py": "f5e6bee3e6617ffa834d299e20a7a0a4532cc9f2e5acca4c26d8194833f4626a",
+    "reports/audits/dissertation/acceleration-evidence-v1/Review.md": "537b9a72aa81368b635594c9a6d551e4d829dae162ff53775982855b61ce94f2",
+    "reports/audits/dissertation/acceleration-evidence-v1/evidence.json": "1320f0fa8af378d1ad5f9fb111db6bb07c8bb6697915d1c5c169e2dfb89fd270",
+    "tools/campaign/pilot-parallel-memory.py": "692ec750a054a4b0480a1766d3ff0a8cf8d4bbce29c30da4804c8c73a257c2c2",
+    "tools/dissertation/run_network_parallel.py": "e4a6dffab3895b1f51e85aca2aa1689e1b1dcfc497976ada8f7e89e836766fb2",
+    "tools/dissertation/network_study_process.py": "6daadaf36fb7226538c3202f10efab0c0831ea14bea72933a8af01e817a63096",
+    "tools/dissertation/network_study_inputs.py": "72ded9a957df2915f5b499ffce2d7aa8ceb959f23245b3c76b6f9356536aaf21",
+    "tools/dissertation/network_study_verification.py": "ebdbfa8481f5dd81467f0423154bd52d3c6100e9103244d9e7e54f87b52a1504",
+    "reports/audits/dissertation/network-main-final-v1/source-metadata/execution-manifest.json": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7"
+  },
+  "codeAudit": {
+    "src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Federation/StaticFederator.cs": {
+      "frozenCommit": "12601f534f9da3673057b072f8bd6a0c67fd8aed",
+      "frozenGitBlobSha256": "a84a38554c8c85ae23c1271c51ead2e52e7af18317fbf100866093eb3a078556",
+      "checkedOutFileSha256": "3344d00773d110bc158fb6f4fcb119323b8f52212443ba5c5bdceb151ae9aa20",
+      "lfTextEqual": true
+    },
+    "src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Execution/FederationRunner.cs": {
+      "frozenCommit": "12601f534f9da3673057b072f8bd6a0c67fd8aed",
+      "frozenGitBlobSha256": "c417ff6358313095054970b016673ae802c269b017d35672de5f8110942fc1e7",
+      "checkedOutFileSha256": "a1bea8330fa5becf6e994af34ac48a39dd6e07424ea434ca7939ca98c5fa95b6",
+      "lfTextEqual": true
+    },
+    "src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Configuration/FederationOptions.cs": {
+      "frozenCommit": "12601f534f9da3673057b072f8bd6a0c67fd8aed",
+      "frozenGitBlobSha256": "91ca95cca74e131d84d07e2777e6ae8de295406f3596b68f262b41f2f832b252",
+      "checkedOutFileSha256": "3e2b9f218f8086344b509d2b443ba5db4fc46b91ef34e6e9c2cf01b2694fddc6",
+      "lfTextEqual": false
+    },
+    "src/EntityFX.MqttSimulator/EntityFX.Tests.Integration/FederationTests.cs": {
+      "frozenCommit": "12601f534f9da3673057b072f8bd6a0c67fd8aed",
+      "frozenGitBlobSha256": "5ea29ca4ffb8fe00c9b413ded79766ecc66bf0bcbc2f7b44cf1db65125903942",
+      "checkedOutFileSha256": "5ea29ca4ffb8fe00c9b413ded79766ecc66bf0bcbc2f7b44cf1db65125903942",
+      "lfTextEqual": true
+    },
+    "src/EntityFX.MqttSimulator/EntityFX.MqttY.MqttRelay.App/Program.cs": {
+      "frozenCommit": "12601f534f9da3673057b072f8bd6a0c67fd8aed",
+      "frozenGitBlobSha256": "29fcecd83572308033baf6712f0c8eecb955744a4bb5e9b585c56a484fd2a80d",
+      "checkedOutFileSha256": "20696b9eff87b77eea9442cd88527d083f05f0fd19077510f775c2f2a2222f97",
+      "lfTextEqual": true
+    }
+  },
+  "distinction": "Accepted 281-file manifest; early network-runner-v1 metadata is not substituted",
+  "historicalAccelerationAccepted": false,
+  "frozenQueueValidationVerified": "QueueCapacity is <1 or >100000 is rejected in runtimeSourceCommit12601; q1 is permitted. FederationOptions differs elsewhere in current checkout, therefore no current rebuild is substituted."
+}

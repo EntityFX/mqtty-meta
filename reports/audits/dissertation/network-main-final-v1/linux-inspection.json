@@ -1,0 +1,21 @@
+{
+  "checkedOnMsk": "2026-10-28",
+  "campaignService": "mqtty-network-remaining-v1.service",
+  "mainPid": 0,
+  "activeState": "inactive",
+  "subState": "dead",
+  "result": "success",
+  "source": "/run/media/entityfx/hd250/mqtty-evidence/network-full-3h-v1",
+  "diskInitiallyMounted": false,
+  "diskLabel": "hd250",
+  "diskUuid": "c1ca2de7-c618-4a3d-8ffc-59d37f42ccec",
+  "mountAction": "udisksctl mount -b /dev/sdb1",
+  "exportService": "mqtty-evidence-export-20261028.service",
+  "exportPidObserved": 3756,
+  "exportFinalActiveState": "inactive",
+  "exportResult": "success",
+  "priorInterruptedExport": "Initial SSH-bound export ended before file index was written; nohup attempt also did not persist. Separate systemd export completed. No research process restarted.",
+  "frozenScientificInputsModified": false,
+  "sourceFilesDeleted": false,
+  "newSimulationsExecuted": false
+}

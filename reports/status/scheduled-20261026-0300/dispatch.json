@@ -1,0 +1,11 @@
+{
+  "status": "queued",
+  "threadId": "01a1396c-38e4-7e83-8ced-2984171e286a",
+  "workspace": "C:\\projects\\mqtty-meta",
+  "promptSha256": "0978d60607a4b3aeea36c02e62438138d77c661fa38db701698bb9b5d6cc2916",
+  "observedAtUtc": "2026-10-26T00:00:00.9382108+00:00",
+  "exitCode": 0,
+  "stdout": "Queued message 01a17581-c65e-76e0-8a60-bea0cafac3fd for thread 01a1396c-38e4-7e83-8ced-2984171e286a.\n",
+  "stderr": "",
+  "completedAtUtc": "2026-10-26T00:00:01.6805862+00:00"
+}

@@ -1,0 +1,47 @@
+{
+  "status": "partialTechnicalFailureVerified",
+  "archive": {
+    "archiveBytes": 9005571,
+    "archiveSha256": "77f8b99bf6c0316a26dea7c6072568e04a109e73b81fea62cc9a56f5493c3560",
+    "fileCount": 55,
+    "rawBytes": 61299585
+  },
+  "allFilesVerified": 55,
+  "rawRoot": "C:\\temp\\mqtty-evidence\\queue-capacity-micro-v1-export-001\\raw",
+  "baselineArithmeticPassed": true,
+  "baselineScientificFilesEqual": {
+    "summary.json": true,
+    "histograms.json": true,
+    "publications.json": true,
+    "delivery-receipts.json": true,
+    "transmissions.json": true,
+    "network-evidence.json": true
+  },
+  "baselineMetrics": {
+    "apiAttempts": 10000,
+    "sourceCompleted": 10000,
+    "expectedDeliveries": 40000,
+    "uniqueDeliveries": 35940,
+    "fullyDeliveredPublications": 8546,
+    "uniqueDuringDrain": 12428,
+    "deliveryLoss": 0.10150000000000003,
+    "receiverP99Ms": 8164.900000000001,
+    "queueDrops": 17196,
+    "forwardAttempts": 64768
+  },
+  "failedVariant": {
+    "queueCapacity": 4096,
+    "technicalError": "TimeoutError: jobTimeout",
+    "returnCode": -9,
+    "processWallSeconds": 450.1292608959993,
+    "peakRssBytes": 858107904
+  },
+  "failedVariantSummaryAvailable": false,
+  "singleFactorConfirmed": [
+    "queueCapacity"
+  ],
+  "pinnedFilesVerified": 19,
+  "sourceSnapshotUnchangedReported": true,
+  "pairAcceptedForScientificComparison": false,
+  "automaticRetryPerformed": false
+}

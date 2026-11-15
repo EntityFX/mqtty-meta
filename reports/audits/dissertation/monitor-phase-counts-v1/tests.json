@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "tests": 11,
+  "command": "C:/Users/entityfx/.mqtty-tools/python/python.exe tools/status/test_monitor_sensitivity.py -v",
+  "platform": "Windows",
+  "linuxDeployed": false,
+  "snapshotSha256": "e1f303d4da889d618456333614e607c0ae9a37276205846590047464c0809acd",
+  "verified": {
+    "matrix": 216,
+    "pilot": 8,
+    "replay": 6,
+    "perBrokerMatrix": 54,
+    "perBrokerPilot": 2,
+    "matrixCriteriaFailed": 55,
+    "pilotCriteriaFailed": 4,
+    "replayCriteriaFailed": 2,
+    "replayIdentical": 6,
+    "replayMismatch": 0,
+    "technicalErrors": 0
+  },
+  "scientificInputsChanged": false,
+  "files": {
+    "tools/status/monitor_sensitivity.py": "025433d7fd3f1d5f5fb3c2c844fded16f278ce88509f5cbe512abe0d44f9925a",
+    "tools/status/test_monitor_sensitivity.py": "7adfd206a5311471a1975dd523ce84e7c95a50b3ea2badff4d059bcbdfaa15a0"
+  }
+}

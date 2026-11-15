@@ -1,0 +1,890 @@
+[
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p1.r1/attempt-01.zip",
+    "sha256": "9be51d0b2cb60bd5597bd581797fda0bd18a2cf402df545c780fce75ecd383a9",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q0.p1.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p1.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p1.r2/attempt-01.zip",
+    "sha256": "1188e31c5a218283095b0b2a3a1bf678d14b3599d2d76241892f00a2839415ba",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q0.p1.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p1.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p1.r3/attempt-01.zip",
+    "sha256": "51c24163acc580a06eff7105b895ba8d98807001c7f0d29850160a5b211289ca",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q0.p1.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p1.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p128.r1/attempt-01.zip",
+    "sha256": "521ad657cdb6f7ef65a7b4729daa7c7aebc81da0a02225b9af49e04977dcdc48",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q0.p128.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p128.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p128.r2/attempt-01.zip",
+    "sha256": "9fbe1748f3a861f176a838ed9497f68cb9a205f56c673315a2ded1dcf0d55738",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q0.p128.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p128.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p128.r3/attempt-01.zip",
+    "sha256": "f73b1ec6473f510b0d46f0f84837d037d33dd0b5687cce2dd572976fb048b04e",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q0.p128.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p128.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p16.r1/attempt-01.zip",
+    "sha256": "ced3232b8071c1e9101aa73bcaf087a0c39274dea15acfaa2e024cfe6a33a89e",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q0.p16.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p16.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p16.r2/attempt-01.zip",
+    "sha256": "f5b5073662bba1bb90c91e938a9744eb90e4ecade5de8c346b67a76d32b14761",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q0.p16.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p16.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p16.r3/attempt-01.zip",
+    "sha256": "5b82402c657ae1e824b3472ae6f5e25f34e24faa6f2e70d88911c9d0148dae68",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q0.p16.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p16.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p64.r1/attempt-01.zip",
+    "sha256": "23d264cafe21b1ea5bdb8f7cc562ce6a20b1c259af1660714710453b4c2ad592",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q0.p64.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p64.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p64.r2/attempt-01.zip",
+    "sha256": "93e90f3c0adbd189e8cba730977e68091d513834defd4b9b5f382df00a368024",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q0.p64.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p64.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p64.r3/attempt-01.zip",
+    "sha256": "fce3d700040fc20d0d2c29033989cd1da8dc8259fc545dbfc35005609ba9ea43",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q0.p64.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q0.p64.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p1.r1/attempt-01.zip",
+    "sha256": "b9c03b5a336c958b80bad6aa0d774accd23271682638ab14c2828329caf105bd",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q1.p1.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p1.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p1.r2/attempt-01.zip",
+    "sha256": "20440784dd85016f83d38f8b8d5f420bcc2e5241910870a912bb81849c5026be",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q1.p1.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p1.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p1.r3/attempt-01.zip",
+    "sha256": "22256507e0664a0afc8712109726cb53653c1c71eb475f8f99a3361cb838a6d3",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q1.p1.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p1.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p128.r1/attempt-01.zip",
+    "sha256": "58551a9ed14527c254f71cf273bf727a014c447b4a3de2dd43277a20796d5b60",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q1.p128.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p128.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p128.r2/attempt-01.zip",
+    "sha256": "72fe4b5dbf32f9ffe91ba4d3ed4739f9fd0d3d73d1b6ff883f067175a54a78a1",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q1.p128.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p128.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p128.r3/attempt-01.zip",
+    "sha256": "d95e67064ee96bad81de6d4e9932006b24952bd3bacf62e4a73e6a3bfe8aec53",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q1.p128.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p128.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p16.r1/attempt-01.zip",
+    "sha256": "17b3faf8a40f2780090e0694683cbd3e0ace0112f9ac040e5b09c93e07c4ddaf",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q1.p16.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p16.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p16.r2/attempt-01.zip",
+    "sha256": "9a6bf3f87610cf83a9de8f38d1efb57a7db287a87b2de34500ea4e36b68d6e84",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q1.p16.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p16.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p16.r3/attempt-01.zip",
+    "sha256": "4a6f628f0bb25d49e8d14459ec08c4737412564cfa902c65d3c75fe91e8da59f",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q1.p16.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p16.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p64.r1/attempt-01.zip",
+    "sha256": "d0a06baa2d742976f587e3d4481df527ecba909efc589c154cfc072ae5b81bcd",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q1.p64.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p64.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p64.r2/attempt-01.zip",
+    "sha256": "fc1692ed96393c9a0d1631fff3eca37d230cabc93a2f6a93a1a4b9e0bce4fbd0",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q1.p64.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p64.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p64.r3/attempt-01.zip",
+    "sha256": "63411088a5faa8258963af62d64754876b636fe2797080d81690f1116aaf7b05",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q1.p64.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q1.p64.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p1.r1/attempt-01.zip",
+    "sha256": "b1550453626ac3e91735febd62ce18ef9751de2e624c4e67adcad84859bb5daf",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q2.p1.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p1.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p1.r2/attempt-01.zip",
+    "sha256": "22e2522cfe248d03e130664afd46ecc916bafce1dda6ab363d2c10bd175c74b9",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q2.p1.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p1.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p1.r3/attempt-01.zip",
+    "sha256": "9f2d94bd1b785349485752ab32df6b198565677caa6ac0cd71833a7c3fe1ad37",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q2.p1.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p1.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p128.r1/attempt-01.zip",
+    "sha256": "d966c3183402242e6fc1c151c3a2d4b234fb9ef8de7f943e041a007a1fd6feb9",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q2.p128.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p128.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p128.r2/attempt-01.zip",
+    "sha256": "454a19a40962691473311cf08028308007c27b49434edd4af5c72012b6e366c4",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q2.p128.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p128.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p128.r3/attempt-01.zip",
+    "sha256": "5d4827027de914e710e0c301bef61e640dab333f4aae732bc2a2019561d05185",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q2.p128.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p128.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p16.r1/attempt-01.zip",
+    "sha256": "c86fa15ae7f385d1fa37bc303c342f01b1a72c9b342135f6cc8aeeb36e3640f9",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q2.p16.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p16.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p16.r2/attempt-01.zip",
+    "sha256": "da48ac86e6c382c18d39f1222de59a2ffb53677b0ee95a3fd80417a6bc69af6f",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q2.p16.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p16.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p16.r3/attempt-01.zip",
+    "sha256": "2f90643b457673dd826c7e85166ef79445c0938f7b8a4dad7c8f6673483d1c3a",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q2.p16.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p16.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p64.r1/attempt-01.zip",
+    "sha256": "126b5a32209ad18e801597b76f9c927628cb6d389dce2a798a098d86941d2934",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q2.p64.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p64.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p64.r2/attempt-01.zip",
+    "sha256": "a0ea7e906d11e0c9afdc522cc84a2f5b9ba4b5a45a955d3917a0b1e487f068b7",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q2.p64.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p64.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p64.r3/attempt-01.zip",
+    "sha256": "8aeb9f7a336d3e455978317959bfecfd8f77c0afd537e4b43e201864110d3bc5",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m16.q2.p64.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m16.q2.p64.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p1.r1/attempt-01.zip",
+    "sha256": "ea060867dd47f8a88895309b41d54c1b54bc534bea97fcf3a5b842c9265211a4",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q0.p1.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p1.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p1.r2/attempt-01.zip",
+    "sha256": "d867ef0051786205124f25221e69967ea7c449feee389679a78a57b7c8e86f6f",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q0.p1.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p1.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p1.r3/attempt-01.zip",
+    "sha256": "fdbfd09aca7ec2a0472db06ed753d2152829da58e6f54a72a7bd9de1e59dd5c6",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q0.p1.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p1.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p128.r1/attempt-01.zip",
+    "sha256": "e48ec63ae5663ec9954095028605c237cfa6fc1fa968eea1913d277bafa1d670",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q0.p128.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p128.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p128.r1/attempt-02.zip",
+    "sha256": "ccc0a9efa9b0e413aef3a2fda3498152b65d28d64863558e51c3a52e31d1ba64",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q0.p128.r1/attempt-02/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p128.r1/attempt-02.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p128.r2/attempt-01.zip",
+    "sha256": "f6480a8ddfd9360c1769042d642feb1ba60f680985b22d372cf28ef5ac873fc2",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q0.p128.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p128.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p128.r3/attempt-01.zip",
+    "sha256": "1c07193d1de39032dafaa80df1a10559b44aad2d3b970c9d9d6c6e7408417bae",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q0.p128.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p128.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p16.r1/attempt-01.zip",
+    "sha256": "cd88bca67990c8014690fbef323b6b15561063f32cd7620ac9faa95023be2b5e",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q0.p16.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p16.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p16.r2/attempt-01.zip",
+    "sha256": "b57abf42aa636c546399328511d8feb33d31ca271d54b894b4db8423250a9575",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q0.p16.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p16.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p16.r3/attempt-01.zip",
+    "sha256": "1dd0bf901d7a6e72cd4ea858f24c315b7b33d2509a03689fe464d22b1c352791",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q0.p16.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p16.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p64.r1/attempt-01.zip",
+    "sha256": "bb8698dd555ee723fa42f2df0e8c9b6c7a2a86f7f39ebb9c68f289d944df5ee0",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q0.p64.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p64.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p64.r2/attempt-01.zip",
+    "sha256": "25a21664845f611e266aabad7bd76043e3d7c75511e4853af1794215f270a6a6",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q0.p64.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p64.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p64.r3/attempt-01.zip",
+    "sha256": "a91ed935b7cb224f17c34f059e87921ad5978145058ce108a6920532245f5423",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q0.p64.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q0.p64.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p1.r1/attempt-01.zip",
+    "sha256": "d74036b49abde769236da7a9b2899090c97c67a14592875bc312b9396fa885af",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q1.p1.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p1.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p1.r2/attempt-01.zip",
+    "sha256": "86ef247da7ab785dfca71a13c72fe659c0dd7fd6d78c7d30bb1607e508beb5fd",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q1.p1.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p1.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p1.r3/attempt-01.zip",
+    "sha256": "5d20dc2fb59d9aefcb934200f6cb49414416b41bb084c7acae3dc8742ff7445d",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q1.p1.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p1.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p128.r1/attempt-01.zip",
+    "sha256": "3ce7e958b39ba92adab596ae395c3a78a589fbf12a75283030fecedd8bbfdec4",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q1.p128.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p128.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p128.r2/attempt-01.zip",
+    "sha256": "423a3550cd00d450ee1952f28358fffdf7135c4cf680c6e50b3da7ab5706730d",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q1.p128.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p128.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p128.r3/attempt-01.zip",
+    "sha256": "6be6d3317a006e3f0b8640198f83b5fa2b44794903bbdea28f8233e2d28ea15e",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q1.p128.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p128.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p16.r1/attempt-01.zip",
+    "sha256": "09a8b8c05dcb942a7355f2b41514e28365ae11243ed642a4df3dbef3f44cd1d8",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q1.p16.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p16.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p16.r2/attempt-01.zip",
+    "sha256": "44a181a431bb9ddb11219b3ef5feb91e3b5324bd35893b884c719166d086f650",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q1.p16.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p16.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p16.r3/attempt-01.zip",
+    "sha256": "c42cd10f33061c56078b46e2fe66ac750e51bc1b863ae0af6776fd069cf3d8b2",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q1.p16.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p16.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p64.r1/attempt-01.zip",
+    "sha256": "7fc44ff06bc6a7640f82074a21d21c3f562d3fdc46c4ec22da0a82e5e9b5500d",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q1.p64.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p64.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p64.r2/attempt-01.zip",
+    "sha256": "f62cb794ba96e47e35ca2aeccc31a3c3293f60be5daeb07436b0ef4d4eed62c0",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q1.p64.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p64.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p64.r3/attempt-01.zip",
+    "sha256": "0174d56669ffa344bdf0f29dafe7b2cf9ba718f47b5b022a545d16e34e38e39b",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q1.p64.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q1.p64.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p1.r1/attempt-01.zip",
+    "sha256": "02d7bf1109b1951dd02c1284ef6720de254931bcd03ba9d191f64beacb4eec8f",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q2.p1.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p1.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p1.r2/attempt-01.zip",
+    "sha256": "56d0c6e730e14a4d7da236888a1691846b8148d241e7e2baa843bbf00f27f992",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q2.p1.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p1.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p1.r3/attempt-01.zip",
+    "sha256": "4e1970bc7a3025a1584ed427b8edcc98992d569b61c60e4e39aa4355cfeb0bc8",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q2.p1.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p1.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p128.r1/attempt-01.zip",
+    "sha256": "a263be4b81c70c23a3e07f10c0c007668b58958c2433ad0aef1d227126ebcf6e",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q2.p128.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p128.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p128.r2/attempt-01.zip",
+    "sha256": "c39506873f8eebc409ebf7db91000c72166d81916b7ea4fb4533a49019cbbbb6",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q2.p128.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p128.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p128.r3/attempt-01.zip",
+    "sha256": "d1ada4c6f121b9002b33b37cf8725886cb18c7ea1ff65956ad562ec8a92dfb88",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q2.p128.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p128.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p16.r1/attempt-01.zip",
+    "sha256": "903be3b1ff5b1bf8b93bd0f6edfaf45328864f507fa5ff549ee811f300d0e3ef",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q2.p16.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p16.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p16.r2/attempt-01.zip",
+    "sha256": "d93aad407df90c697ff2469bc5ccba82565d1242f68602458c20820c3ba54397",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q2.p16.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p16.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p16.r3/attempt-01.zip",
+    "sha256": "9223905a3a78a9f810a5d2028392c6fe6f6c55fd6da75b34f3e7877be8c31889",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q2.p16.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p16.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p64.r1/attempt-01.zip",
+    "sha256": "d8e6e3fa555cc486043ca045a80086b1a2aec6a2586c0b2f5e4296d26639ae18",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q2.p64.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p64.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p64.r2/attempt-01.zip",
+    "sha256": "a41a504c26ac65ca776a7d3666faca187c7243bc2af59ed335ba487fd204388d",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q2.p64.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p64.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p64.r3/attempt-01.zip",
+    "sha256": "0db6215e416850fcfd229cb00538807dd8c39ca0a39992d703d869086b6c55bf",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-calibration/attempts/Aedes.m256.q2.p64.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-calibration/Aedes.m256.q2.p64.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-pilot/Aedes.m16.q0.p1.r1/attempt-01.zip",
+    "sha256": "fdda262e55094825009332b97822afd82efff311223553ad365e93cebf19c218",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-pilot/attempts/Aedes.m16.q0.p1.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-pilot/Aedes.m16.q0.p1.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-pilot/Aedes.m16.q1.p1.r1/attempt-01.zip",
+    "sha256": "1b557edd4074508fbf4bdb18da429efdd524c85aab3f2eed8d31d40d2b4fbdab",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-pilot/attempts/Aedes.m16.q1.p1.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-pilot/Aedes.m16.q1.p1.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-pilot/Aedes.m16.q2.p1.r1/attempt-01.zip",
+    "sha256": "2d2e2588cf7f4d47fdcce7f865319bd9ac65bafbb8d83c5c6707fc584fe9f644",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-pilot/attempts/Aedes.m16.q2.p1.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/evidence/attempts/Aedes-pilot/Aedes.m16.q2.p1.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p1.r1/attempt-01.zip",
+    "sha256": "8342ec97b90a2879fc1e9e158c73bab4c2142e60a35751630aa9ebdbc18cc5ad",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q0.p1.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p1.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p1.r2/attempt-01.zip",
+    "sha256": "c99bd3b9c104efcc42706aa51e807547f657f69b77229afc9d542400fda6c423",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q0.p1.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p1.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p1.r3/attempt-01.zip",
+    "sha256": "14057d9ce654f682d50d0070ffaf4dde2dc8d16b59ea9cd70c81afd9860ec542",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q0.p1.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p1.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p128.r1/attempt-01.zip",
+    "sha256": "26d265766b8dbb593f36fb13eeacbe82fc6356803e4aff430ce401b15de56dc1",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q0.p128.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p128.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p128.r2/attempt-01.zip",
+    "sha256": "f131c342a164d3cc06f17065b74c8fb6243872bbe772baf88f9fcc83ddaff582",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q0.p128.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p128.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p128.r3/attempt-01.zip",
+    "sha256": "e9b4459843ae155ecdc2d40aec68067bdca0ea7a113ebdb65c840a49473ffc62",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q0.p128.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p128.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p16.r1/attempt-01.zip",
+    "sha256": "54c544b4a75df88d37a7991632e60fc1ebb01e296c8e5e5a75561e039e5d9505",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q0.p16.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p16.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p16.r2/attempt-01.zip",
+    "sha256": "f0f0e4a26918ac2acacc496aa8b6321f02561ffc265ff0f867eb1825071bd323",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q0.p16.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p16.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p16.r3/attempt-01.zip",
+    "sha256": "28a24e3880889a60fd3fb4db59eb207554d28f000b70d3a191c5fda98d17edc3",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q0.p16.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p16.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p64.r1/attempt-01.zip",
+    "sha256": "3d9f3f98e4a7f3f7114cf07ece39305ac4a846fd4b61e973853ff252fe672068",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q0.p64.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p64.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p64.r2/attempt-01.zip",
+    "sha256": "5d5766a0190797ead24abbe4169779857880095291600a59d5c3eca539c24895",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q0.p64.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p64.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p64.r3/attempt-01.zip",
+    "sha256": "8c89762872a6378a0c5c7f290cc6671676a95291d43843d3b1945c0a2e6c9fb0",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q0.p64.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q0.p64.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p1.r1/attempt-01.zip",
+    "sha256": "596d50fa9821ea49ea207e3c31ff7147e61bd36dbea5ddd1800d918160b88688",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q1.p1.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p1.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p1.r2/attempt-01.zip",
+    "sha256": "7c858fe9d773c82ea5b4c711cbeb1a8a634c2216f7b04d85f59b8967efe80972",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q1.p1.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p1.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p1.r3/attempt-01.zip",
+    "sha256": "0fdda6ef9ff940a7e2247c9b8b53e53c2f95de45581eefb6556ff4e4784b6118",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q1.p1.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p1.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p128.r1/attempt-01.zip",
+    "sha256": "afff75840ba13e0abe64af605bae00b3faf2b1faabf1e730c560f64140cb008b",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q1.p128.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p128.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p128.r2/attempt-01.zip",
+    "sha256": "633ba1deae6a756428fc3ad6c975c39487b27e4646f6ae2ff6f9114d071bcc5f",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q1.p128.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p128.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p128.r3/attempt-01.zip",
+    "sha256": "c3291ef9890268fe29b8789829279a619e3e5c5910cc16f449cadde2f8fe1488",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q1.p128.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p128.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p16.r1/attempt-01.zip",
+    "sha256": "25b5ab6e5debdd7b174f9ee55d7f6069b1bbc30dffc9b7ec2c0ed6b0e4602107",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q1.p16.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p16.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p16.r2/attempt-01.zip",
+    "sha256": "c494b46e3fb8281b9dcaf222afa507a08abd34b7cd1a6a1f4d8c9d3f3d946a13",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q1.p16.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p16.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p16.r3/attempt-01.zip",
+    "sha256": "7b4e00453353db7d7bb5a830778b6cb80a3f0ddcd83bbb070b3a6ddfeea70441",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q1.p16.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p16.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p64.r1/attempt-01.zip",
+    "sha256": "98959543567546daa048be86d1f35c11fda11e2dac32cbdb59656d684fb54603",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q1.p64.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p64.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p64.r2/attempt-01.zip",
+    "sha256": "ddbd58697a9f9c72b2e032ade148a337f49a352e7611a6feec5589a91beb8c7a",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q1.p64.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p64.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p64.r3/attempt-01.zip",
+    "sha256": "20dc5b7e7cb2bcaa77ab8df9279616a20b59c18c6effaa2fd8710b4425699b70",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q1.p64.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q1.p64.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p1.r1/attempt-01.zip",
+    "sha256": "13d44b4577929d13ad4381807227c103de134363f6821aa04320d3c7ea0e9d88",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q2.p1.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p1.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p1.r2/attempt-01.zip",
+    "sha256": "c2c2f4d05cd65550fad52694bc8e24eea59f7737baffbd0a953681693034e6e1",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q2.p1.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p1.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p1.r3/attempt-01.zip",
+    "sha256": "aa2b7c2da9b6be3f15df37d6ffa9bef2e08af24322fddbee2cbc25849aa26767",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q2.p1.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p1.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p128.r1/attempt-01.zip",
+    "sha256": "87acd116242d24511419f69bcd39bdde947c3275b95a9b3881e57134d790f367",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q2.p128.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p128.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p128.r2/attempt-01.zip",
+    "sha256": "f2c321f01c33069383a232a9d3689dad9ef7aba983e4910ee79497191bdbc22f",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q2.p128.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p128.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p128.r3/attempt-01.zip",
+    "sha256": "979bda55af9c016717c1f2614bb0adc253e2c77ca96ed352c61db8bd7de7046f",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q2.p128.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p128.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p16.r1/attempt-01.zip",
+    "sha256": "375de8a04e232d083e5ea5306b01f2ae2d42d9d8ac6a455f942bfc7150f3f680",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q2.p16.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p16.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p16.r2/attempt-01.zip",
+    "sha256": "e41dbd043726a0bb9f01207e199540fd96977ee645039824833695c67920ceb6",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q2.p16.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p16.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p16.r3/attempt-01.zip",
+    "sha256": "b87ae1afce651e57e847d23567d15923d02aa840bd1f805c2a99c256d82c9777",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q2.p16.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p16.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p64.r1/attempt-01.zip",
+    "sha256": "f63c15a537c01c2423acbe760f03fc79c49248687eeb8d40ace86df443e40824",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q2.p64.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p64.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p64.r2/attempt-01.zip",
+    "sha256": "96d1b2bb9751d196b23ffa147d96dcda7fb6996e768b3f64364a28560e6525b3",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q2.p64.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p64.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p64.r3/attempt-01.zip",
+    "sha256": "eac5f8bdc2556c325d06242c8ea2646137d56a8d22c6e8ce0e2e2680a2bf15ad",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m16.q2.p64.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m16.q2.p64.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p1.r1/attempt-01.zip",
+    "sha256": "1a879656f5eca4b9572dc39d91877e763702961a42dbc3c6710ca577bde5341e",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q0.p1.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p1.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p1.r2/attempt-01.zip",
+    "sha256": "c31025714610bbd6e83818924abeb7ccc45f374645f530cba8a412f150daa424",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q0.p1.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p1.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p1.r3/attempt-01.zip",
+    "sha256": "c594462ded0fb3c6769467a0b853f1b9dbbf84cbe2cf5c134b789b009341131e",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q0.p1.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p1.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p128.r1/attempt-01.zip",
+    "sha256": "d2ff401fd44607254e48040fc51babfb9a31e29c4cfcf2203856204045907d71",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q0.p128.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p128.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p128.r2/attempt-01.zip",
+    "sha256": "bb780e98a2c92f54c4b2efb59adc41894884cfe6f8ba845df41cb7c00a526209",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q0.p128.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p128.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p128.r3/attempt-01.zip",
+    "sha256": "e1fd111ffe1350fd3123d7b77b7dd9377dcca10274e99c1bb405bb266e0f815a",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q0.p128.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p128.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p16.r1/attempt-01.zip",
+    "sha256": "30b702954602a1abe705633592f008b16d96fcd9b11df308b85baa7b7ba378a4",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q0.p16.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p16.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p16.r2/attempt-01.zip",
+    "sha256": "6f475c5f98971e6cd73f9bcc3a4cc2706cb667f040cf7a0ccd9e213ac2350190",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q0.p16.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p16.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p16.r3/attempt-01.zip",
+    "sha256": "f32bbc85ca1240e781f097e34fe5f4fb287ce4f2c869a80ad6c33ee6aa513df0",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q0.p16.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p16.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p64.r1/attempt-01.zip",
+    "sha256": "36644bd86da5a4759e048e92352b5bc1dad11c700e5a78a182e704f298646b34",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q0.p64.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p64.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p64.r2/attempt-01.zip",
+    "sha256": "2bb120c1bf979e0e04ab667402ebdc445484c3fcd7694615b676b1deec300074",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q0.p64.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p64.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p64.r3/attempt-01.zip",
+    "sha256": "296be7544084e593f5e175d6b8204411ed918a6b3d5063d516e2c9c77b5e8311",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q0.p64.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q0.p64.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p1.r1/attempt-01.zip",
+    "sha256": "efcde3f4ff6657a0f24ebb22be89e9d81e62539d81af0000b62fc6e242d88f47",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q1.p1.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p1.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p1.r2/attempt-01.zip",
+    "sha256": "4cda294bfe966e1905cff4dffcaa6a1c94c74fd0c642c896ac16ab8e8eb5d154",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q1.p1.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p1.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p1.r3/attempt-01.zip",
+    "sha256": "9c0a21d43a5e5e5cda640e18b409e4817f937d69e04ef4ef4c6b09e9fceef5f9",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q1.p1.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p1.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p128.r1/attempt-01.zip",
+    "sha256": "20a02cfbd558ac0db8ba298a485e29ea1964d321fbf635485bb5a6daf9941e1f",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q1.p128.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p128.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p128.r2/attempt-01.zip",
+    "sha256": "331b69870ba067c5b5858588bee231958364b6cddbbf3152b1fa7a2b0473c170",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q1.p128.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p128.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p128.r3/attempt-01.zip",
+    "sha256": "4aafd727228ab8fd7fd37c5ab5244f5baf8405f3d002c6cb9b7094b41f7d5d0c",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q1.p128.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p128.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p16.r1/attempt-01.zip",
+    "sha256": "5756c4bbada87fae92e2d92317e0cafd98471b6cc6f3dad205e280fd4b1fa014",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q1.p16.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p16.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p16.r2/attempt-01.zip",
+    "sha256": "303a0aecd2d635301cfba04376347a4e7d867611787378e696e170ee08dfad59",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q1.p16.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p16.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p16.r3/attempt-01.zip",
+    "sha256": "6a14ba950bfab7a8277a2e771dc039a33da4ce8db4afba53d83557152d589331",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q1.p16.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p16.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p64.r1/attempt-01.zip",
+    "sha256": "1b1b251a52ece8c96adf013ec13672c4f5b82c5024d586c3fdb6487cd6bef8c7",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q1.p64.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p64.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p64.r2/attempt-01.zip",
+    "sha256": "4d35ffd78dba5846a84e5e6d65cf3dbc29bfa24637015609a831f5a5d98d75ac",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q1.p64.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p64.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p64.r3/attempt-01.zip",
+    "sha256": "c3dc96940948d0b176283a2f83645033bead37b41cc4e9b04b264591906c5648",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q1.p64.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q1.p64.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p1.r1/attempt-01.zip",
+    "sha256": "835bc6ef327d7fdaf91fd2fffd25a1b50c06f690828c7d8c6e9c921c91e91e49",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q2.p1.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p1.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p1.r2/attempt-01.zip",
+    "sha256": "4bfa72cac91409c19d8e7f29116d32d6c14ff5e541bf754394ee6fcef3220099",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q2.p1.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p1.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p1.r3/attempt-01.zip",
+    "sha256": "192f854ab1acb51a6c7e3834ca965ec51a5c2b0d87bc202bfe0a67e975244c73",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q2.p1.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p1.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p128.r1/attempt-01.zip",
+    "sha256": "d48143b1c7158a9d6147bfa75bbb60dd312c73e5e1d0ec95431235a68755634d",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q2.p128.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p128.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p128.r2/attempt-01.zip",
+    "sha256": "04eda5fab3e130863a1a3ca3aa11efead4f593eeabd1451222587a9188999a81",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q2.p128.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p128.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p128.r3/attempt-01.zip",
+    "sha256": "662d749ab5f1f7112c7d51a3ea734cf4af709c64c11cf787a1454d98b8984250",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q2.p128.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p128.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p16.r1/attempt-01.zip",
+    "sha256": "a320cd9d07fd27cd33dee63741257015c3b49961d9742edd69a221c29089a4b1",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q2.p16.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p16.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p16.r2/attempt-01.zip",
+    "sha256": "973d1ed58681b07c2b64657cdb3a235ee2bb3b521385f4e5f26a87b321ce9d5f",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q2.p16.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p16.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p16.r3/attempt-01.zip",
+    "sha256": "f865c0562d064b791f25df2d6f1711ae2d098bd1ec64a15e0e6979528ef20a71",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q2.p16.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p16.r3/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p64.r1/attempt-01.zip",
+    "sha256": "7101d762b13b4f8ab3b531683b28d1119cf0d6db35838c35ccc8cd8c399592f5",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q2.p64.r1/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p64.r1/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p64.r2/attempt-01.zip",
+    "sha256": "f96bd79245951bbd61cc98b26f281a57a4d1ea8d6d06815b955d541406adc464",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q2.p64.r2/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p64.r2/attempt-01.zip"
+  },
+  {
+    "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p64.r3/attempt-01.zip",
+    "sha256": "891f98f1cc90b4fe419c901333147766bb4b5693ba46de80f762b158b743a49d",
+    "receipt": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/raw/Aedes-validation/attempts/Aedes.m256.q2.p64.r3/attempt-01/archive.json",
+    "linuxArchivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Aedes-validation/Aedes.m256.q2.p64.r3/attempt-01.zip"
+  }
+]

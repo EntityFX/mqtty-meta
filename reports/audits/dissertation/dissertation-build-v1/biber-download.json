@@ -1,0 +1,29 @@
+{
+  "version": "2.17",
+  "url": "https://downloads.sourceforge.net/project/biblatex-biber/biblatex-biber/2.17/binaries/Windows/biber-MSWIN64.zip",
+  "redirectUrl": "https://deac-riga.dl.sourceforge.net/project/biblatex-biber/biblatex-biber/2.17/binaries/Windows/biber-MSWIN64.zip?viasf=1&fid=765649b2ef95badd&e=1792917507&st=v3ROG7TKcp0aQjvL8lSHAw",
+  "zipSha256": "c103bffc5ae0a7f513e7c26b6d394e9be6cf41952959c5d604ee2e6581b5dea2",
+  "archiveBytes": 25624323,
+  "members": [
+    {
+      "name": "biber.exe",
+      "bytes": 31734307,
+      "compressedBytes": 25624155
+    }
+  ],
+  "totalBeforeExtract": 223921186,
+  "estimatedTotalAfterExtract": 255655493,
+  "signatureVerified": false,
+  "binarySha256": "3970605b4d59eee63932e7afe3ebdfbab31ca5edaa30bd3405c56f63372f34eb",
+  "status": "extracted",
+  "downloadArchivesRemovedAfterVerifiedExtraction": [
+    "tectonic.zip",
+    "biber-2.17-MSWIN64.zip"
+  ],
+  "sourceSnapshotsAndAllReceiptsRetained": true,
+  "compatibilitySource": "https://mirrors.ctan.org/biblio/biber/base/documentation/biber.pdf",
+  "compatibilityTableRow": {
+    "biber": "2.17",
+    "biblatex": "3.17"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "downloadedAndHashesVerified",
+  "archiveBytes": 243006645,
+  "archiveSha256": "ee12f39ce4992518f03fd3b921d8b0ff325664045a1aea2b56b11e665f3a1347",
+  "indexSha256": "b43fea8606ff43492db182992d010e88e43297ab75d3d20737ff144dfb0887d1",
+  "filesVerified": 658,
+  "localRoot": "C:\\temp\\mqtty-evidence\\article1-matched-main-v1\\raw-001",
+  "fullArchivesOutsideGit": true,
+  "linuxNoLongerRequiredForAudit": true,
+  "excludedDuplicateAndRuntimeFiles": "Runtime binaries and duplicate nested original trial directories; unchanged broker distributions and git clone. Full job seals were already verified remotely. Raw of all 40 jobs, profiles, 12 native calibration archives, effective ActiveMQ config and all essential metadata retained."
+}

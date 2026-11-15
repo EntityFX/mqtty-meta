@@ -1,0 +1,8 @@
+{
+  "deviceUuid": "c1ca2de7-c618-4a3d-8ffc-59d37f42ccec",
+  "label": "hd250",
+  "requestedOptions": "ro",
+  "returnCode": 0,
+  "stdout": "Mounted /dev/sdb1 at /run/media/entityfx/hd250\n",
+  "stderr": ""
+}

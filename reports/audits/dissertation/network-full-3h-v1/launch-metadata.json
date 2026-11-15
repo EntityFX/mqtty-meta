@@ -1,0 +1,14 @@
+{
+  "sourceCommit": "8882aada0eb677f101d03fac9387cf32224affad",
+  "modelSourceCommit": "12601f534f9da3673057b072f8bd6a0c67fd8aed",
+  "modelDllSha256": "9022c231ab1a48db8bf80a76f64bab597deab1ba08267d7a3ea06ee1f5946aff",
+  "executionManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+  "counts": {
+    "matrix": 162,
+    "replay": 6
+  },
+  "workers": 4,
+  "wallLimitSeconds": 10800,
+  "phase": "matrix-replay",
+  "parentPilotRegistrySha256": "2d7c52517d357cdd5ad2b8637878a2af68184c21f41d2bb7a75f5f6c8f9e6bf6"
+}

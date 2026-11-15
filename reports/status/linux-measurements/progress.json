@@ -1,0 +1,59 @@
+{
+  "status": "completed",
+  "phase": "replay",
+  "executionManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+  "verified": 168,
+  "technicalErrors": 0,
+  "counts": {
+    "pilot": {
+      "done": 0,
+      "unresolvedErrors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    "matrix": {
+      "done": 162,
+      "unresolvedErrors": 0,
+      "warnings": 27,
+      "total": 162
+    },
+    "replay": {
+      "done": 6,
+      "unresolvedErrors": 0,
+      "warnings": 2,
+      "total": 6
+    },
+    "diagnostic": {
+      "done": 0,
+      "unresolvedErrors": 0,
+      "warnings": 0,
+      "total": 54
+    }
+  },
+  "attempts": {
+    "pilot": {
+      "total": 0,
+      "failed": 0
+    },
+    "matrix": {
+      "total": 165,
+      "failed": 3
+    },
+    "replay": {
+      "total": 6,
+      "failed": 0
+    },
+    "diagnostic": {
+      "total": 0,
+      "failed": 0
+    }
+  },
+  "warnings": 29,
+  "active": {
+    "workers": 2,
+    "jobs": {},
+    "remainingSeconds": 12690.649656301539
+  },
+  "reason": null,
+  "observedAtUtc": "2026-10-26T19:00:16.438880+00:00"
+}

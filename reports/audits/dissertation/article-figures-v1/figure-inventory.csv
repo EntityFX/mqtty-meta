@@ -1,0 +1,5 @@
+file,meaning,denominator,source
+criterion-error-map.svg,failed seeds per criterion,3 seeds per point; QoS0 ACK excluded,accuracy-analysis-v1/analysis.json
+native-rps-ci95.svg,native repeat mean with Student CI95,3 native validation runs per point,reports/data/native-evidence.json
+methodology.svg,concise sequential method,not a metric,generator SHA in manifest
+methodology.mmd,method dependencies,not a metric,generator SHA in manifest

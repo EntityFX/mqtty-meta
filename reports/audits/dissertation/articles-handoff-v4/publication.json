@@ -1,0 +1,14 @@
+{
+  "status": "publishedVerified",
+  "commit": "b270ccdca7162f21e9b4b804812f9cc3df0aa55e",
+  "remoteHeadConfirmed": true,
+  "committedBytesSha256": {
+    "docs/dissertation/articles/article-1-twin-validation.md": "fc9dd679c7c1dcac645299258de9c2d2e1d4ce7c676a3080f7b8fb93b09927b7",
+    "docs/dissertation/articles/article-2-relay-federation.md": "75b79d344ee0855ec7eb1696077b21b3355ac55c7f4765c5b71d70a29b40fa15",
+    "reports/audits/dissertation/articles-handoff-v4/verification.json": "718c7201ff4b6498322c4e959ebece16162ed6ffb5426e46c6c83cec7b5439fd",
+    "reports/audits/dissertation/articles-reading-20261030/independent-ai-review.md": "a17310ac2303858fe8bc073063e40a9cec33111939870e88482092fd452fee47",
+    "reports/audits/dissertation/articles-reading-20261030/response.md": "f171c8359ddf4372d28ecccd3fa2fd17e0be1d113bfe0569f4d8b861cccb6e58"
+  },
+  "primaryDissertationModified": false,
+  "archiveOutsideGit": true
+}

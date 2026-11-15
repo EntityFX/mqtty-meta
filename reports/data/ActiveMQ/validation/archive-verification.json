@@ -1,0 +1,515 @@
+{
+  "broker": "ActiveMQ",
+  "stage": "validation",
+  "verified": true,
+  "originalSha256": "74336cb03f1bb3de721e639e89c78b66b9d153d5a662d3b437aac1e74c15548d",
+  "restoredAggregateSha256": "a71d2052dc7ddd39066ee4c48aa7c59b912f2d4e511b8d0519814542d54ecc8e",
+  "attemptRestorations": [
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q0.p1.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q0.p1.r1/attempt-01.zip",
+      "archiveSha256": "c1ecbd0ac9bb48e237d63d1856b1180fe55d1180326bd4678765c1a5fc746cef"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q0.p1.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q0.p1.r2/attempt-01.zip",
+      "archiveSha256": "04c98994eaecee4524863fff40eec853e231445db463ce977388d72d2af991cd"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q0.p1.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q0.p1.r3/attempt-01.zip",
+      "archiveSha256": "9549438464566b1ca195ae9a42edcf1ca051125ad2183c203e666b9968401103"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q0.p128.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q0.p128.r1/attempt-01.zip",
+      "archiveSha256": "12e0148762c45eb79b914b212da8ee880369316a91a41e8fcd4b745b551793f6"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q0.p128.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q0.p128.r2/attempt-01.zip",
+      "archiveSha256": "133a42ce23a77d457a20340751fb781ed53d105cff816553de6059e8435267aa"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q0.p128.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q0.p128.r3/attempt-01.zip",
+      "archiveSha256": "cdee55ec833981db3d85529abb2f9850168b29da54ece361798df546ee1b1fdb"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q0.p16.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q0.p16.r1/attempt-01.zip",
+      "archiveSha256": "86e9a0233c87f22b0dd435c18b557ece405856de922bf94d74005e091afd4959"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q0.p16.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q0.p16.r2/attempt-01.zip",
+      "archiveSha256": "86f514732b531cbe4a2286ffb23b10be047c061fc9d9ddfd0c299ebcdd6eb5ea"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q0.p16.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q0.p16.r3/attempt-01.zip",
+      "archiveSha256": "b0a75ff2e84ae67e81673068fc31694c8753c01a5cc1c0ce430124355327a2bb"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q0.p64.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q0.p64.r1/attempt-01.zip",
+      "archiveSha256": "5e8d44ba3f827fccc63754191fb19b1993d6cedb3a3a6a3566c9e4e6f7408930"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q0.p64.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q0.p64.r2/attempt-01.zip",
+      "archiveSha256": "a8634880290aa5d4b7deeae55a2911648d344fd739923102383f7af4961f5194"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q0.p64.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q0.p64.r3/attempt-01.zip",
+      "archiveSha256": "e6f91a4d7f2644d6889d4c14ed341ddb94d195f8df09ae641edb17c082708ce4"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q1.p1.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q1.p1.r1/attempt-01.zip",
+      "archiveSha256": "4943fa987e528df8fe85100846da487b2683d430929dc57443ce9136d5bff45e"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q1.p1.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q1.p1.r2/attempt-01.zip",
+      "archiveSha256": "43145b6480fd79cfd8fbdb57e8252b06680634c14db8f159c7a511ead4e455d9"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q1.p1.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q1.p1.r3/attempt-01.zip",
+      "archiveSha256": "f39c5b13847b06b6e12a916c601813752cd997eddd824ad123d063dda7f2cfaa"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q1.p128.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q1.p128.r1/attempt-01.zip",
+      "archiveSha256": "4f0a7a14d625ca8b20afb8377300e17360bdd53c0b4cfbc278298cd9d014e752"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q1.p128.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q1.p128.r2/attempt-01.zip",
+      "archiveSha256": "7dfbd0c93a997ab9bc5593ed3fab2f62cd9a90852709ab39f96946407b155128"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q1.p128.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q1.p128.r3/attempt-01.zip",
+      "archiveSha256": "04f3c3ee86f99b10b39dc6f6d5faf6d33262632151fda77b1b6009c8645a3daa"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q1.p16.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q1.p16.r1/attempt-01.zip",
+      "archiveSha256": "d96ceb5f192e9c4c3c4119c208bb6e66b062c0e14e59ecd41291eb165d7e86c4"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q1.p16.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q1.p16.r2/attempt-01.zip",
+      "archiveSha256": "675847cb2898ecd2d39e35c26b4681afa1a77ab297c42ef468769035614be874"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q1.p16.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q1.p16.r3/attempt-01.zip",
+      "archiveSha256": "72014d23b1f8f428321641cdb8ac6ee4a66d780ad6865a5564900dbb3658921d"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q1.p64.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q1.p64.r1/attempt-01.zip",
+      "archiveSha256": "8777420fc36c14998390e43e06c66029fc382b1cd59a78fd551e6e69c6ba0bc7"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q1.p64.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q1.p64.r2/attempt-01.zip",
+      "archiveSha256": "973d21675ccd1dcd617e44f673b52bd29806b569a6ec7a4503e79f0c57d452b8"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q1.p64.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q1.p64.r3/attempt-01.zip",
+      "archiveSha256": "65c557ee7f7ecdd65277c0469a851909f007ce126f9fc8d06815a799b43b1526"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q2.p1.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q2.p1.r1/attempt-01.zip",
+      "archiveSha256": "c7a66c4b16ae0c2584873ba121829e9b817997d539104d2b10d244968653faaa"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q2.p1.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q2.p1.r2/attempt-01.zip",
+      "archiveSha256": "552c79be2dc7b4529bd7d4c2c6a978242013cc5dbb2344030c52156b2cf27d27"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q2.p1.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q2.p1.r3/attempt-01.zip",
+      "archiveSha256": "3dc4bf5cd92b60a6a8337469f23d98f4c48341d6dc409aabf79631bf0fedbf1a"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q2.p128.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q2.p128.r1/attempt-01.zip",
+      "archiveSha256": "982b2e5d305deae3c309ec668e6790f3f356192201b744d2d4abb2419fb494cd"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q2.p128.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q2.p128.r2/attempt-01.zip",
+      "archiveSha256": "76fa9da4566c736cd1c3c18c01274ddb01d5fcd2b6db95cba85c7c82644764d0"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q2.p128.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q2.p128.r3/attempt-01.zip",
+      "archiveSha256": "1a3c696cfaa51cbc3f6677667e6e8d290389b6d09e6cf462f8af1cd8cfd7b587"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q2.p16.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q2.p16.r1/attempt-01.zip",
+      "archiveSha256": "80b5e4651d3395d749730b172dc8bc27a61c6d1a61c9d114676b7bda42939377"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q2.p16.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q2.p16.r2/attempt-01.zip",
+      "archiveSha256": "ea15841b20873b245edf1555470484d6082f96dee37cbdfb2e9aeacdfbfcb614"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q2.p16.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q2.p16.r3/attempt-01.zip",
+      "archiveSha256": "a7f7622c288f4c4169ffcb4c611f48db8f26b7b1d176be6e259dd77b1904ab52"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q2.p64.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q2.p64.r1/attempt-01.zip",
+      "archiveSha256": "663136c894fa4900b2d89b7b446b75824a804a8444acd800f9d388ae29fe7627"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q2.p64.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q2.p64.r2/attempt-01.zip",
+      "archiveSha256": "4fdd3077ebb71a10c96d9ef138666fc7ca83fbff7d35ed1bb620b0f61802a74a"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m16.q2.p64.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m16.q2.p64.r3/attempt-01.zip",
+      "archiveSha256": "52ff79f886defd80034732d6c0e2e4270318261d43ec3729d91181d408d340a8"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q0.p1.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q0.p1.r1/attempt-01.zip",
+      "archiveSha256": "4cc99be07ee3c557dea99de13de6bd3c4fef07f3de8290e7db9f73b7648583f1"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q0.p1.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q0.p1.r2/attempt-01.zip",
+      "archiveSha256": "924ea608fb69fa831edfc8154fb041507cad049a1f25d97ebab094b8d94221c4"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q0.p1.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q0.p1.r3/attempt-01.zip",
+      "archiveSha256": "01cabc956ee272acd948726795d9fefdaa6bd5d2696aa169cab5da1c61c4469e"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q0.p128.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q0.p128.r1/attempt-01.zip",
+      "archiveSha256": "6899d6da346091a033cc2a9d9c82bd51157dd422ad313cb6150f4ebe9a29640b"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q0.p128.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q0.p128.r2/attempt-01.zip",
+      "archiveSha256": "695fe52bf32cd95be4691ac9a8d675c3a4fe5718fed2e0330e7523b31fee77a4"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q0.p128.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q0.p128.r3/attempt-01.zip",
+      "archiveSha256": "9aca4cc425faca37b454d7dc0a97c944a84aa2ff502d1534a0c111fa7aead472"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q0.p16.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q0.p16.r1/attempt-01.zip",
+      "archiveSha256": "e2868d8269081646198d3bc7c4898fbcacc938126dd9cee65119c11ea0372dd7"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q0.p16.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q0.p16.r2/attempt-01.zip",
+      "archiveSha256": "1c762c359e4ee2e6234326d7e3bbc445efcabe1997e56d980cb26d40b7049322"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q0.p16.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q0.p16.r3/attempt-01.zip",
+      "archiveSha256": "47a0e344d65ee4e7cb78f2a4aac48c94a105157512438c6e51e6af3cb69d3750"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q0.p64.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q0.p64.r1/attempt-01.zip",
+      "archiveSha256": "09b2a3622f4406f9a7758ae984ab034ccb775585d4c51ab3deea144a975ec83c"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q0.p64.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q0.p64.r2/attempt-01.zip",
+      "archiveSha256": "d668192e7f41854a3650435a6c97b3876438147a6d7d726ae019a646b056009c"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q0.p64.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q0.p64.r3/attempt-01.zip",
+      "archiveSha256": "909ac3927bbe621353f08131b9bf580ee712520eecb0cc49839a924c7b1365f5"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q1.p1.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q1.p1.r1/attempt-01.zip",
+      "archiveSha256": "79cae313c280f7dfe51dd232d8c05b7ab2271183ca06b8a18116ee1f4b2dbd0e"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q1.p1.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q1.p1.r2/attempt-01.zip",
+      "archiveSha256": "cff2bbc52f465aa2fa89e993a92e912f76d7cdc2e21a0f81b0c376fe8ceae68b"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q1.p1.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q1.p1.r3/attempt-01.zip",
+      "archiveSha256": "2b29cc0b3b0edc5659d31d0dad1384a7ecfa93e5f8636c71ded898a666dcde66"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q1.p128.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q1.p128.r1/attempt-01.zip",
+      "archiveSha256": "63c287f35f48093831fc3efab3773e0d493c5216e9d8a26713ed650444762f51"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q1.p128.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q1.p128.r2/attempt-01.zip",
+      "archiveSha256": "b63cbf21e9024fb368559b1e61c2dfe71fe98018976f173379b270e4163ff3a9"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q1.p128.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q1.p128.r3/attempt-01.zip",
+      "archiveSha256": "cffdf7190315b032d18f6f55db95ff8447a7f089ea399732eac5af63482a4d0a"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q1.p16.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q1.p16.r1/attempt-01.zip",
+      "archiveSha256": "ed19f7dfa42dcf8b5886c22009779f6fdecfdca5207efa26f090d2648ccf96fe"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q1.p16.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q1.p16.r2/attempt-01.zip",
+      "archiveSha256": "434773f560a6197ed4ca560990f13602a054083284ddb996a72f3240e37b061b"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q1.p16.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q1.p16.r3/attempt-01.zip",
+      "archiveSha256": "560aef4b54e851a648613feb8e76f6932a958ab7ce8d7525d6f472d78f7b47f6"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q1.p64.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q1.p64.r1/attempt-01.zip",
+      "archiveSha256": "8da6405ba47c7f84581d6f664db2083ad574fcd4518f007463e485c2bcda1c75"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q1.p64.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q1.p64.r2/attempt-01.zip",
+      "archiveSha256": "42354798053ea260bab59554494b72ed0cba80c886e8b1c426667fbd3b47ebe6"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q1.p64.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q1.p64.r3/attempt-01.zip",
+      "archiveSha256": "2df9e4b09d8b6f4dba45d82cdfcb4c61d88288cdf7f47390241a5fabc7fbe47b"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q2.p1.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q2.p1.r1/attempt-01.zip",
+      "archiveSha256": "8e83033217e7f128428d979c2f260e67b3cad1c4d3f0f393d1de5aa72392ffcf"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q2.p1.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q2.p1.r2/attempt-01.zip",
+      "archiveSha256": "faa6aac0faf6c71cb9950516e24490c6f238903a2ba5f02bb91bcc1d72d93768"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q2.p1.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q2.p1.r3/attempt-01.zip",
+      "archiveSha256": "9e756f82772db61e86d710e355f2e9e2f9983ee042ab2a0dbae27d0b1b56305c"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q2.p128.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q2.p128.r1/attempt-01.zip",
+      "archiveSha256": "864cb27d4270ae642ce9f58d888b9489a9fd43124fc4b7174a10e9d2860a79f9"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q2.p128.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q2.p128.r2/attempt-01.zip",
+      "archiveSha256": "e6797aeef8280544e17b1ac37bbb8036eeaa2c05bda4d3fd3f922cc7d543b23c"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q2.p128.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q2.p128.r3/attempt-01.zip",
+      "archiveSha256": "f30168419bcb7042d6554e7097545d110595a52dad91e09d9ea9a39440fc251a"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q2.p16.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q2.p16.r1/attempt-01.zip",
+      "archiveSha256": "bf855f81b5c8d4f0fd3bb8c487237d63f040daf29ef1c5bc8894267a6794aee6"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q2.p16.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q2.p16.r2/attempt-01.zip",
+      "archiveSha256": "3fa0c33db0c816af44756c06b9416aa5826d5954c65b9b7c9f03aab57ebd99b6"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q2.p16.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q2.p16.r3/attempt-01.zip",
+      "archiveSha256": "15a7bfd938adf852a51809fa76c1d5944798d85c0e2d2ce71345eb78c5d44aef"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q2.p64.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q2.p64.r1/attempt-01.zip",
+      "archiveSha256": "cc7624759868947763724a862076f591a5ef659eb067bca3874c920667822091"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q2.p64.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q2.p64.r2/attempt-01.zip",
+      "archiveSha256": "011ec5be35f8b44d8886f22e7f7ea05cfd7c865b6e32aa9c3aa4b1ec50b2db36"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/ActiveMQ-validation/attempts/ActiveMQ.m256.q2.p64.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/ActiveMQ-validation/ActiveMQ.m256.q2.p64.r3/attempt-01.zip",
+      "archiveSha256": "d40ebe14ab676f575af7f9537d46c26a3792261e1d733de5b23283fd7e9ddab8"
+    }
+  ],
+  "interruptedAttemptCount": 0,
+  "note": "Scientific points and campaign identity match; sealed archives verified; unsealed interruptions copied byte-for-byte and retained at source, not declared archived. Input hashes may differ between compact and restored representation."
+}

@@ -1,0 +1,21 @@
+/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/series-attempt-001/runs/EMQX.q1.p16.r1/attempt-001/broker-home/bin/nodetool: /lib64/libtinfo.so.6: no version information available (required by /run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/series-attempt-001/runs/EMQX.q1.p16.r1/attempt-001/broker-home/bin/nodetool)
+Starting EMQX Enterprise 6.3.0
+WARNING: Default (insecure) Erlang cookie is in use.
+WARNING: Configure node.cookie in /run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/series-attempt-001/runs/EMQX.q1.p16.r1/attempt-001/broker-home/etc/emqx.conf or override from environment variable EMQX_NODE__COOKIE
+WARNING: NOTE: Use the same cookie for all nodes in the cluster.
+/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/series-attempt-001/runs/EMQX.q1.p16.r1/attempt-001/broker-home/bin/nodetool: /lib64/libtinfo.so.6: no version information available (required by /run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/series-attempt-001/runs/EMQX.q1.p16.r1/attempt-001/broker-home/bin/nodetool)
+EMQX_NODE__NAME [node.name]: article1_163732@127.0.0.1
+/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/series-attempt-001/runs/EMQX.q1.p16.r1/attempt-001/broker-home/bin/nodetool: /lib64/libtinfo.so.6: no version information available (required by /run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/series-attempt-001/runs/EMQX.q1.p16.r1/attempt-001/broker-home/bin/nodetool)
+article1_163732: /lib64/libtinfo.so.6: no version information available (required by article1_163732)
+2026-10-25T11:23:16.320877+03:00 [warning] msg: still_waiting_for_emqx_app_to_be_ready, pid: <0.4261.0>
+2026-10-25T11:23:16.413934+03:00 [warning] msg: alarm_is_activated, pid: <0.4544.0>, message: <<"99.82% mem usage">>, name: high_system_memory_usage
+Listener tcp:default on 127.0.0.1:33083 started.
+Listener ssl:default on :8883 started.
+Listener ws:default on :8083 started.
+Listener wss:default on :8084 started.
+2026-10-25T11:23:16+03:00 received_terminate_signal, shutting down now.
+2026-10-25T11:23:16.907057+03:00 [critical] msg: received_terminate_signal, pid: <0.3997.0>
+Listener tcp:default on 127.0.0.1:33083 stopped.
+Listener ssl:default on :8883 stopped.
+Listener ws:default on :8083 stopped.
+Listener wss:default on :8084 stopped.

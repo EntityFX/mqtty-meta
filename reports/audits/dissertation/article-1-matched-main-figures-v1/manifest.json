@@ -1,0 +1,24 @@
+{
+  "status": "renderedAwaitingVisualInspection",
+  "inputs": {
+    "program.json": "2312e7d9938d580b9ac8099a1d5dbfc4fef5074fb2a6024008d27e9cd3356dc7",
+    "attempt-001/summary.json": "02da150f0d6cd744ffc77ea285a1879854d693ff127fdd18b2e095644f851f55"
+  },
+  "phaseTicks": {
+    "warmup": 100000,
+    "measurement": 400000,
+    "drain": 500000
+  },
+  "nativeReplicates": 3,
+  "modelSeeds": 3,
+  "errorBars": "min-max; not CI",
+  "palette": "CS_PEER_PALETTE / CS_SUPPORT_COLORS",
+  "files": {
+    "comparison.pdf": "3d56f1a79b9670272998ef8a33a2c84b32c16964e265555f4450fed82ce8416a",
+    "comparison.png": "4fe22849dd6920b870cc2c0c1b73ed29595e716cdfabcb269c4d9ceb0a42a5fe",
+    "comparison.svg": "57364bab9dc2eccf8cb5d1331dfa3fbf9fcfb482fee16b8e976d776ab82a058c",
+    "timeline.pdf": "1d0dd3b2b29e1f3b612bb63fa3d8a7a96bbd2520776bdd6c9ce1e65bdb6212b9",
+    "timeline.png": "0e0413fa21615f9b64a37138799c979f568ebcf5f5a82906c63468ad04ac2b58",
+    "timeline.svg": "a87371b7f6c6d606e8878f574de482b24a653a29a0444b7d94bff489d79d5876"
+  }
+}

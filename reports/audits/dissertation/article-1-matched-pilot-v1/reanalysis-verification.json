@@ -1,0 +1,24 @@
+{
+  "checkedAtUtc": "2026-10-25T16:52:43.755294+00:00",
+  "pythonTestsPassed": 35,
+  "rawFilesShaVerified": 20,
+  "revisedGateCasesAccepted": 4,
+  "localLinksChecked": 8,
+  "validatorSha256": "ee54c28ad330d4f43990095a1acc2f3e1d540b1d89c2b13acfc392965ac10043",
+  "receiptsSha256": {
+    "continuation-launch.json": "09e193f97d07705893688ce72d50f8d1514dc7e0404b8bd666f2b4d2b6b2555a",
+    "continuation-result.json": "5f4df6fa1c3f24e1d4f5d2e6c352cb7f33464d3c0b30540855675d1282a68a7b",
+    "download-receipt.json": "ff9cd90320b221effd0666e0d26b4d63cbd584c4695d02ddb583a1e0a620df31",
+    "final-pilot-summary.json": "0f1e8eeee0923837ddb8f20b334a4683e96375f53ca0f8d9c969db359dbda516",
+    "launch.json": "7136d6b7e614d6536645c54ecd3e8ce70cb6e77e9334842f3550812fd2a7dbd1",
+    "linux-result-snapshot.json": "c0dc8cc1271cc19b072e89f1f2f990a8c076838af8680c5dea5a5e0bbc8c049e",
+    "local-reanalysis-window-4.json": "88b540227b9b416598f60bc16ac09af1be29b38bd503b8376416b950af2ad531",
+    "local-reanalysis.json": "781f40181d8b3ba277f4660678eba05fc4d080e22c5080b9324c650615315a6e",
+    "runtime-snapshot.json": "63ee65c08a369f99ef9c2e871e153b20d42e6cbf3f7a475ba44656947398c6aa",
+    "subscription-investigation.json": "f2e75a654dfcd062d43899315a71e47626f0d4e05471893a1fd87a0019951012",
+    "verification.json": "c21f3e3df97c89228afb1b1b8dd0a202ee026fa697367a9bdce0a6d669fe6fb5"
+  },
+  "sourceRuntimeChanged": false,
+  "originalFailurePreserved": true,
+  "mainCampaignAdmitted": false
+}

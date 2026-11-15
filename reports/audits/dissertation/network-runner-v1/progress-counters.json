@@ -1,0 +1,55 @@
+{
+  "status": "completed",
+  "phase": "replay",
+  "executionManifestSha256": "97c78275fec60dd7da5fef09c2377c57cc3fd112330a0870dfab562893e8a0d1",
+  "verified": 15,
+  "technicalErrors": 0,
+  "counts": {
+    "pilot": {
+      "done": 9,
+      "unresolvedErrors": 0,
+      "warnings": 0,
+      "total": 9
+    },
+    "matrix": {
+      "done": 3,
+      "unresolvedErrors": 0,
+      "warnings": 0,
+      "total": 3
+    },
+    "replay": {
+      "done": 3,
+      "unresolvedErrors": 0,
+      "warnings": 0,
+      "total": 3
+    },
+    "diagnostic": {
+      "done": 0,
+      "unresolvedErrors": 0,
+      "warnings": 0,
+      "total": 0
+    }
+  },
+  "attempts": {
+    "pilot": {
+      "total": 9,
+      "failed": 0
+    },
+    "matrix": {
+      "total": 3,
+      "failed": 0
+    },
+    "replay": {
+      "total": 3,
+      "failed": 0
+    },
+    "diagnostic": {
+      "total": 0,
+      "failed": 0
+    }
+  },
+  "warnings": 0,
+  "active": null,
+  "reason": null,
+  "observedAtUtc": "2026-10-23T21:21:38.650545+00:00"
+}

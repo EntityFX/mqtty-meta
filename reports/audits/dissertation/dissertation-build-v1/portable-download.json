@@ -1,0 +1,11 @@
+{
+  "version": "0.17.0",
+  "url": "https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.17.0/tectonic-0.17.0-x86_64-pc-windows-msvc.zip",
+  "archiveBytes": 21060223,
+  "archiveSha256": "f61ce51f0b0ade1015b7de7ef368541c5424e9756ecbd0d7af97d6d48030845f",
+  "binarySha256": "99ffcfdbf1ebf8bdda9e791942e3d06aedb12463fddc33f07de6f5211c8bf08d",
+  "signatureVerified": false,
+  "officialApiAssetId": 490851968,
+  "officialApiDigest": "sha256:f61ce51f0b0ade1015b7de7ef368541c5424e9756ecbd0d7af97d6d48030845f",
+  "officialDigestMatches": true
+}

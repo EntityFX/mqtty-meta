@@ -1,0 +1,25 @@
+{
+  "sources": {
+    "reports/data/inputs/Aedes-calibration.json": "3bcf2008ff0b70fcc5db7f14500b851650be7cfac934fc0fda0f62d96edf494f",
+    "reports/data/model-evidence.json": "778b25feee8272e7d97deba5fae19086da2ba2a91a3b0a7b3a0c077e4cbdb015",
+    "reports/audits/dissertation/sensitivity-v1/plan.json": "dfda8401e9e3f96aebece1b4baa116b58437c94752ecc0324b6e8c909243ae3c"
+  },
+  "phasesSeconds": {
+    "Натурный запуск": [
+      5,
+      20,
+      10
+    ],
+    "Запуск MqttY": [
+      1.0,
+      2.0,
+      5.0
+    ]
+  },
+  "modelTickSeconds": 1e-05,
+  "generatorSha256": "a49bf95bac74f244eb69d7f0ef6b5a2a08b601c6071a8e2b4a13a4f8fcf5f870",
+  "files": {
+    "timeline.svg": "bfc22618da84deae59c0bb01a5bf294903b7791aca6431b2131431302ede0e67",
+    "timeline.png": "cc14eb61d69a4e35365b927977c709869226ef282c545b3947a964d9430b33a8"
+  }
+}

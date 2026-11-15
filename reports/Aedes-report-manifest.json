@@ -1,0 +1,25 @@
+{
+  "generatorSha256": "136f75c9c8236be806f14da34fbc284cd6f26fed31d1c5173fe9671ca6f86419",
+  "files": {
+    "Aedes.md": "f6840df14bbc285600c69235051f535063f343038128e9a0e2342e7c344604c3",
+    "Aedes.html": "e08320d91000e0f19ffe3a3824e78d3e30ce0c58aa512a7c66d88d470839e4c7",
+    "Aedes-summary.json": "52609209483466fc267ab2c9dddda2ccb3ce5be0b9a96c725c71ea00be7627df",
+    "Aedes-native-results.csv": "7e25774ff410a8486b885921a8d79fba5380bc483f884b4c30874dc1548c7324",
+    "Aedes-relay-results.csv": "d017fdd25ab9db25a2569f9bdb5e43902a3bc3c5e36aff30902ef76e78b3d986",
+    "Aedes-archives.json": "ea7db7819b65dbba983e05864c7e6c2f6b5f08943ac66a018b577cb6dc8caacc",
+    "Aedes-simulations.json": "9bb3e50c6570223f6148173d22fd9567aefc39555021cf7dc0b62d17b952c4f5",
+    "Aedes-attempts.json": "4c940cc5a37e622a0f84e97d8a049051760093c2fefeee5ac8b8d807781ad621",
+    "Aedes-calibration-completedRps.png": "1c09f785064453af6e668c73b290fcd90b3424a2b625eac071e48545d14a3d62",
+    "Aedes-calibration-deliveryLossRate.png": "97fdd56059e5c789f870bcef62845180ef622dddc05fd89f0c2ffb7ccd75e137",
+    "Aedes-calibration-latency.png": "b0b96261acf4f5e9e13421a77e28e3e5642c0aefa390d1fbed40c025d0f13098",
+    "Aedes-calibration-publishFailureRate.png": "172f903b2815d7a9f1e51f7e0d400f3ff43712495a04c71e1166c20e8e40c9ff",
+    "Aedes-fidelity-errors.png": "34735eeb441007e58a98be1b41b4bfe236e57defa96f87e758d2defe2df702b8",
+    "Aedes-measured-vs-simulated.png": "ed2c2ebecb8b7c96b2198768480bb399a81cb75924fc5b38143c38b8f7bc6b14",
+    "Aedes-resources.png": "832ad325db8a4c715393253293e5eddd6d8693b333a698ca02424658fcfa39b8",
+    "Aedes-topology.png": "82a300c7eee5f9f056b46efd8520547f6fb0220315a6cc8644415219f57b1802",
+    "Aedes-validation-completedRps.png": "7d9a9887ce936e3af01c8159554040c282cb0dd7d0d535394600bdab51bac6b2",
+    "Aedes-validation-deliveryLossRate.png": "308639ba1bcf4c821b4fe5aa2e0a9140f0b19e545c3cb5829c73111225c0ecec",
+    "Aedes-validation-latency.png": "b86161eb14f48878d8dbb8df8f69a79fc08e9bf29dd19d0d18c944b892a3ad9a",
+    "Aedes-validation-publishFailureRate.png": "f990b047222fe039afa65827f6d22abc8a8fdb85ad59ed2db53f922d42f38dbf"
+  }
+}

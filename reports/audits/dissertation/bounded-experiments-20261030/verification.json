@@ -1,0 +1,44 @@
+{
+  "preparedOn": "2026-10-30",
+  "newModelsExecuted": 0,
+  "linuxExecutedByPreparation": false,
+  "queueAdmission": "locallyVerifiedAwaitingRootLinuxPreflight",
+  "accelerationAdmission": "notReadyMissingBoundedCpuAwareLauncher",
+  "targetedTests": {
+    "command": "python -X utf8 -B -m unittest discover -s reports/audits/dissertation/bounded-experiments-20261030 -p test_queue_pilot.py -v",
+    "tests": 7,
+    "failures": 0,
+    "errors": 0,
+    "tdd": "6 admission failures with missing launcher before implementation; new unit budget test failed with missing API before implementation; 7 green after implementation",
+    "smoke": "--check-inputs returns inputsValid without executing a model"
+  },
+  "broaderObservation": {
+    "command": "python -X utf8 -B -m unittest discover -s tools/dissertation -p test_*.py",
+    "tests": 294,
+    "seconds": 38.386,
+    "failures": 1,
+    "errors": 2,
+    "skipped": 2,
+    "failingNames": [
+      "test_review_twin_article.ArticleReviewChecks.test_actual_tables_match_sources",
+      "test_review_twin_article.ArticleReviewChecks.test_native_model_table_uses_actual_native_repetitions",
+      "test_review_twin_article.ArticleReviewChecks.test_loss_of_independence_caveat_is_detected"
+    ],
+    "observedMessages": [
+      "Incorrect or missing accuracy row: Aedes",
+      "Incorrect native/model comparison: Aedes/rps",
+      "limitation regex received Incorrect or missing accuracy row: Aedes"
+    ],
+    "causationClaim": "Not attributed to this change or concurrent editing. Root separately investigates existing legacy article contract. No thresholds/article/tests changed by this preparation."
+  },
+  "relativeDocumentLinksChecked": 13,
+  "ownFilesTrailingWhitespace": 0,
+  "runtimeNotChanged": true,
+  "oldRunnersNotChanged": true,
+  "linuxPreflightPending": [
+    "Frozen CLI validate q1 and q1024",
+    "Actual mount/free RAM/disk/isolation",
+    "Real systemd cgroup and unit properties",
+    "Complete source281file verification"
+  ]
+}

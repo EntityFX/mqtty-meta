@@ -1,0 +1,32 @@
+{
+  "command": [
+    "systemd-run",
+    "--user",
+    "--unit=mqtty-article1-matched-pilot-v1",
+    "--property=RuntimeMaxSec=600",
+    "--property=TimeoutStopSec=10",
+    "--property=KillMode=control-group",
+    "--property=MemoryMax=2G",
+    "--property=MemorySwapMax=0",
+    "--property=CPUQuota=200%",
+    "/usr/bin/python3",
+    "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-validation-v1/launcher/run_matched_twin_pilot.py",
+    "--base",
+    "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1",
+    "--root",
+    "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-validation-v1"
+  ],
+  "state": "RuntimeMaxUSec=10min\nMainPID=211006\nResult=success\nActiveState=active\nSubState=running\n",
+  "progress": {
+    "status": "running",
+    "active": "native/window-2",
+    "completed": 0,
+    "total": 2,
+    "elapsedSeconds": 5.458699888549745e-05,
+    "error": null,
+    "mainCampaignStarted": false,
+    "scope": "Instrumentation pilot; historical profile only"
+  },
+  "launchStderr": "Running as unit: mqtty-article1-matched-pilot-v1.service; invocation ID: cb44a1e93760479abe9aa770ee3fbe91\n",
+  "mainCampaignStarted": false
+}

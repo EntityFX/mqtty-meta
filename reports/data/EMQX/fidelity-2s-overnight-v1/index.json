@@ -1,0 +1,654 @@
+{
+  "stage": "fidelity",
+  "measurementSeconds": 2,
+  "runs": [
+    {
+      "key": "m16.q0.p1.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 29985.483494411917,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q0.p1.s42/20261018T190205588Z-316b5998d2cb403ab0a552768725f398"
+    },
+    {
+      "key": "m16.q0.p1.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 29985.483494411917,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q0.p1.s43/20261018T190205591Z-4e59399d7e1a4e279383194bdb13a658"
+    },
+    {
+      "key": "m16.q0.p1.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 29985.483494411917,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q0.p1.s44/20261018T190205590Z-b7e1eae5b7ce4d1084736da6a68ff36d"
+    },
+    {
+      "key": "m16.q0.p16.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 50741.14250760525,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q0.p16.s42/20261018T190205591Z-2fcc986fde254dca949d37ce7c78f81d"
+    },
+    {
+      "key": "m16.q0.p16.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 50741.14250760525,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q0.p16.s43/20261018T190227865Z-9b939f43260344968333bfbce2c6b52f"
+    },
+    {
+      "key": "m16.q0.p16.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 50741.14250760525,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q0.p16.s44/20261018T190227871Z-fbd29dc964cf48e19c48e6db14409df9"
+    },
+    {
+      "key": "m16.q0.p64.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 50538.8333255009,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q0.p64.s42/20261018T190227870Z-8ff2bb7614284961b8a65937b9424f81"
+    },
+    {
+      "key": "m16.q0.p64.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 50538.8333255009,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q0.p64.s43/20261018T190342089Z-38dcfcc9da6c437ea189c1666b5d27a8"
+    },
+    {
+      "key": "m16.q0.p64.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 50538.8333255009,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q0.p64.s44/20261018T190404135Z-580b41657ada42d79629d7228066f8f8"
+    },
+    {
+      "key": "m16.q0.p128.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 60434.11592694805,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q0.p128.s42/20261018T190404193Z-2cd78ad228e34abaadf767de69c8db1e"
+    },
+    {
+      "key": "m16.q0.p128.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 60434.11592694805,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q0.p128.s43/20261018T190756878Z-1975ccc479824811a184b65b5d64833c"
+    },
+    {
+      "key": "m16.q0.p128.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 60434.11592694805,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q0.p128.s44/20261018T190917132Z-0ebedf0bb89a485a82da87fb9a5a50e6"
+    },
+    {
+      "key": "m16.q1.p1.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 6568.8849053143085,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q1.p1.s42/20261018T190929198Z-62a573ed500c4c45ab1dfcc0843e63c0"
+    },
+    {
+      "key": "m16.q1.p1.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 6568.8849053143085,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q1.p1.s43/20261018T190949242Z-a03b979be32343f0b064451845d933fd"
+    },
+    {
+      "key": "m16.q1.p1.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 6568.8849053143085,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q1.p1.s44/20261018T191009353Z-c6f92e75d9064dfd91200a49c1d29cb7"
+    },
+    {
+      "key": "m16.q1.p16.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 10355.503688966384,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q1.p16.s42/20261018T191029381Z-1ded073cf1074f37a9b0125f1ae8399d"
+    },
+    {
+      "key": "m16.q1.p16.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 10355.503688966384,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q1.p16.s43/20261018T191203763Z-4e55ed5180514182ac8db6b40946bd33"
+    },
+    {
+      "key": "m16.q1.p16.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 10355.503688966384,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q1.p16.s44/20261018T191342075Z-bfe3693d3984426e9ff2807f3dfc8024"
+    },
+    {
+      "key": "m16.q1.p64.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 8976.295746450041,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q1.p64.s42/20261018T191430238Z-63cd906da1a8407694479ac1bbda2055"
+    },
+    {
+      "key": "m16.q1.p64.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 8976.295746450041,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q1.p64.s43/20261018T191516395Z-54cf20d25d5446fb9c999f3ba66fe7a5"
+    },
+    {
+      "key": "m16.q1.p64.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 8976.295746450041,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q1.p64.s44/20261018T191828962Z-0512bf70a60f4e1b9ceb0b8febc34583"
+    },
+    {
+      "key": "m16.q1.p128.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 9443.457550455929,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q1.p128.s42/20261018T191947304Z-c6a1f3eea9fe44a1bcb528774c853e65"
+    },
+    {
+      "key": "m16.q1.p128.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 9443.457550455929,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q1.p128.s43/20261018T192003385Z-fe3bbf5066314761b544ae6685bf1793"
+    },
+    {
+      "key": "m16.q1.p128.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 9443.457550455929,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q1.p128.s44/20261018T192119757Z-074ac5ae0ca348c68e9416223a6e770c"
+    },
+    {
+      "key": "m16.q2.p1.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 4054.844016685067,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q2.p1.s42/20261018T192406350Z-1e4c445f85884ec78c40087bf60f4aed"
+    },
+    {
+      "key": "m16.q2.p1.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 4054.844016685067,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q2.p1.s43/20261018T192428440Z-5d4bbfd76d62489b866172b88bc36605"
+    },
+    {
+      "key": "m16.q2.p1.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 4054.844016685067,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q2.p1.s44/20261018T192450585Z-24d070eb794a437c9828b3c74b0b9517"
+    },
+    {
+      "key": "m16.q2.p16.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 6603.271120692932,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q2.p16.s42/20261018T192512637Z-904ac4065b724427bb3e082d8844e738"
+    },
+    {
+      "key": "m16.q2.p16.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 6603.271120692932,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q2.p16.s43/20261018T192650921Z-346bc0ffd3ae4673a71f52102aaf9be9"
+    },
+    {
+      "key": "m16.q2.p16.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 6603.271120692932,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q2.p16.s44/20261018T192827273Z-d8b669ba3ceb4581b476ef03bbf74fc0"
+    },
+    {
+      "key": "m16.q2.p64.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 6402.6778592659475,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q2.p64.s42/20261018T193007551Z-ee34f9bf00cf4542ae2830df9fd62dfe"
+    },
+    {
+      "key": "m16.q2.p64.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 6402.6778592659475,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q2.p64.s43/20261018T193212012Z-ca0b78581074452da08accdc771a0b1b"
+    },
+    {
+      "key": "m16.q2.p64.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 6402.6778592659475,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q2.p64.s44/20261018T193224080Z-16dfb27b925b4e1989350715b4a0b6ad"
+    },
+    {
+      "key": "m16.q2.p128.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 6005.312088604728,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q2.p128.s42/20261018T193324241Z-4dd68c5a076f47758d023502c5670c87"
+    },
+    {
+      "key": "m16.q2.p128.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 6005.312088604728,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q2.p128.s43/20261018T193546735Z-245924e4809549959e22ec875cc3ff9c"
+    },
+    {
+      "key": "m16.q2.p128.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 6005.312088604728,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m16.q2.p128.s44/20261018T193759092Z-8d6f2a31716d4e898bae7801a82022c3"
+    },
+    {
+      "key": "m256.q0.p1.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 20774.769755077366,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q0.p1.s42/20261018T193837286Z-b055e4db0938441286c225d5d299266e"
+    },
+    {
+      "key": "m256.q0.p1.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 20774.769755077366,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q0.p1.s43/20261018T193859361Z-86e1a588cc7948099e4a3ab8195813f7"
+    },
+    {
+      "key": "m256.q0.p1.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 20774.769755077366,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q0.p1.s44/20261018T193921448Z-6d50b1c5f04944f7bc4a559cbc7659c1"
+    },
+    {
+      "key": "m256.q0.p16.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 48281.74150690579,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q0.p16.s42/20261018T193943565Z-829c2907679a4fb98b21d2015601cd71"
+    },
+    {
+      "key": "m256.q0.p16.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 48281.74150690579,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q0.p16.s43/20261018T194121897Z-be32e901af2b432e947bc4e74ac78d84"
+    },
+    {
+      "key": "m256.q0.p16.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 48281.74150690579,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q0.p16.s44/20261018T194304272Z-8b61948858234adbba3b828c823c31a3"
+    },
+    {
+      "key": "m256.q0.p64.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 55475.66545777194,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q0.p64.s42/20261018T194442589Z-5125cb007eff4e608fde9cc25f1114cc"
+    },
+    {
+      "key": "m256.q0.p64.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 55475.66545777194,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q0.p64.s43/20261018T194500668Z-a8d0220743b44d3bb0f0c73d2c0c08cc"
+    },
+    {
+      "key": "m256.q0.p64.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 55475.66545777194,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q0.p64.s44/20261018T194656989Z-200d5a247d0b4977b6d17b0a17625fcd"
+    },
+    {
+      "key": "m256.q0.p128.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 53571.84051899857,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q0.p128.s42/20261018T194911381Z-df1bb312a5264a63a9daab6f3c265c3a"
+    },
+    {
+      "key": "m256.q0.p128.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 53571.84051899857,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q0.p128.s43/20261018T195013638Z-8f16b7d019df4d34a7872d1df6b41df9"
+    },
+    {
+      "key": "m256.q0.p128.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 53571.84051899857,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q0.p128.s44/20261018T195101836Z-e41ee3cf9fec424a8c0d4de608d51663"
+    },
+    {
+      "key": "m256.q1.p1.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 6528.23608752826,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q1.p1.s42/20261018T195230145Z-86c77e08b4324a0ab579a555d12cf9e0"
+    },
+    {
+      "key": "m256.q1.p1.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 6528.23608752826,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q1.p1.s43/20261018T195250235Z-c32040fa5bbc4fa1a8a897ca7d7c86cc"
+    },
+    {
+      "key": "m256.q1.p1.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 6528.23608752826,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q1.p1.s44/20261018T195310264Z-75c5125d2e904adfaf08489cacc31b5a"
+    },
+    {
+      "key": "m256.q1.p16.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 10610.255113620331,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q1.p16.s42/20261018T195330380Z-646e7e0fd43a44f9a80bc168cce2f6d1"
+    },
+    {
+      "key": "m256.q1.p16.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 10610.255113620331,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q1.p16.s43/20261018T195510701Z-0c6c4cf11d054711af0d3ab3482b2c2d"
+    },
+    {
+      "key": "m256.q1.p16.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 10610.255113620331,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q1.p16.s44/20261018T195647033Z-4bee0370d0624e66b2e593e21d2a2144"
+    },
+    {
+      "key": "m256.q1.p64.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 8759.05587240462,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q1.p64.s42/20261018T195823334Z-4cd7c4e7db8242a496523eba20f53a1c"
+    },
+    {
+      "key": "m256.q1.p64.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 8759.05587240462,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q1.p64.s43/20261018T200017781Z-f449c5474cd84a8faeadaa12e761af52"
+    },
+    {
+      "key": "m256.q1.p64.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 8759.05587240462,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q1.p64.s44/20261018T200047867Z-8f07e9d2d5244d748538a296195cb208"
+    },
+    {
+      "key": "m256.q1.p128.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 9134.82202479981,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q1.p128.s42/20261018T200222162Z-0a9c54f8cbf44c1ebb454bab84191593"
+    },
+    {
+      "key": "m256.q1.p128.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 9134.82202479981,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q1.p128.s43/20261018T200402577Z-10e49a013c23473cb29bd563f84e4f4d"
+    },
+    {
+      "key": "m256.q1.p128.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 9134.82202479981,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q1.p128.s44/20261018T200556961Z-b28f02f82dd8411087ba4c6320a81e1e"
+    },
+    {
+      "key": "m256.q2.p1.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 4038.6441413665616,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q2.p1.s42/20261018T200621083Z-fa69523d911a4b3c9cd336d74dbf3ecc"
+    },
+    {
+      "key": "m256.q2.p1.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 4038.6441413665616,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q2.p1.s43/20261018T200643094Z-0b5e1d5bb6204a17a4b1b4460fea35f1"
+    },
+    {
+      "key": "m256.q2.p1.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 4038.6441413665616,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q2.p1.s44/20261018T200705234Z-030245510f0a4e5da10acf6537321cab"
+    },
+    {
+      "key": "m256.q2.p16.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 6428.320621153708,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q2.p16.s42/20261018T200727311Z-e0964dbc6e484d2abf95142b2fcdb3b7"
+    },
+    {
+      "key": "m256.q2.p16.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 6428.320621153708,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q2.p16.s43/20261018T200923718Z-2ab00f5e77c54ef5ac9a4a9b7f8a420d"
+    },
+    {
+      "key": "m256.q2.p16.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 6428.320621153708,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q2.p16.s44/20261018T201100087Z-955f9808aef045d699334daf8ce0d836"
+    },
+    {
+      "key": "m256.q2.p64.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 6385.5651389340155,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q2.p64.s42/20261018T201240392Z-b4fee753597e4a6b9055dd0066381f71"
+    },
+    {
+      "key": "m256.q2.p64.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 6385.5651389340155,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q2.p64.s43/20261018T201426798Z-3f81a176295e4101b91b880e21e3aa07"
+    },
+    {
+      "key": "m256.q2.p64.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 6385.5651389340155,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q2.p64.s44/20261018T201456908Z-ba6f19e4de2d4ed39273e1edc28ae006"
+    },
+    {
+      "key": "m256.q2.p128.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 6053.662170053124,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q2.p128.s42/20261018T201751525Z-f37226a5337d461e942dd32c84187ca5"
+    },
+    {
+      "key": "m256.q2.p128.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 6053.662170053124,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q2.p128.s43/20261018T201823683Z-47fa9553f8a343339d30da1bf1430021"
+    },
+    {
+      "key": "m256.q2.p128.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 6053.662170053124,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/EMQX/simulations/fidelity-2s-overnight-v1/m256.q2.p128.s44/20261018T202028044Z-73613fb9e76749c597d4dd805950267b"
+    }
+  ]
+}

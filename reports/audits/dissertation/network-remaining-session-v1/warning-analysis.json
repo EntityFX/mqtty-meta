@@ -1,0 +1,429 @@
+{
+  "observedSource": "rows/*.json",
+  "warningRuns": 27,
+  "reasons": {
+    "queueDrops": 27,
+    "deliveryLoss": 27
+  },
+  "runs": [
+    {
+      "id": "matrix.line.federation.q1.r5000.w10.s42",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 102222,
+        "deliveryLoss": 0.70155
+      },
+      "sourceCompleted": 50000,
+      "apiAttempts": 50000
+    },
+    {
+      "id": "matrix.line.federation.q1.r5000.w10.s43",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 102222,
+        "deliveryLoss": 0.70155
+      },
+      "sourceCompleted": 50000,
+      "apiAttempts": 50000
+    },
+    {
+      "id": "matrix.line.federation.q1.r5000.w10.s44",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 102222,
+        "deliveryLoss": 0.70155
+      },
+      "sourceCompleted": 50000,
+      "apiAttempts": 50000
+    },
+    {
+      "id": "matrix.line.federation.q2.r1000.w10.s42",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 7137,
+        "deliveryLoss": 0.17842499999999994
+      },
+      "sourceCompleted": 10000,
+      "apiAttempts": 10000
+    },
+    {
+      "id": "matrix.line.federation.q2.r1000.w10.s43",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 7137,
+        "deliveryLoss": 0.17842499999999994
+      },
+      "sourceCompleted": 10000,
+      "apiAttempts": 10000
+    },
+    {
+      "id": "matrix.line.federation.q2.r1000.w10.s44",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 7137,
+        "deliveryLoss": 0.17842499999999994
+      },
+      "sourceCompleted": 10000,
+      "apiAttempts": 10000
+    },
+    {
+      "id": "matrix.line.federation.q2.r5000.w10.s42",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 108308,
+        "deliveryLoss": 0.80581
+      },
+      "sourceCompleted": 50000,
+      "apiAttempts": 50000
+    },
+    {
+      "id": "matrix.line.federation.q2.r5000.w10.s43",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 108308,
+        "deliveryLoss": 0.80581
+      },
+      "sourceCompleted": 50000,
+      "apiAttempts": 50000
+    },
+    {
+      "id": "matrix.line.federation.q2.r5000.w10.s44",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 108308,
+        "deliveryLoss": 0.80581
+      },
+      "sourceCompleted": 50000,
+      "apiAttempts": 50000
+    },
+    {
+      "id": "matrix.ring.federation.q1.r5000.w10.s42",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 151674,
+        "deliveryLoss": 0.6985600000000001
+      },
+      "sourceCompleted": 50000,
+      "apiAttempts": 50000
+    },
+    {
+      "id": "matrix.ring.federation.q1.r5000.w10.s43",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 151674,
+        "deliveryLoss": 0.6985600000000001
+      },
+      "sourceCompleted": 50000,
+      "apiAttempts": 50000
+    },
+    {
+      "id": "matrix.ring.federation.q1.r5000.w10.s44",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 151674,
+        "deliveryLoss": 0.6985600000000001
+      },
+      "sourceCompleted": 50000,
+      "apiAttempts": 50000
+    },
+    {
+      "id": "matrix.ring.federation.q2.r1000.w10.s42",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 7864,
+        "deliveryLoss": 0.13067499999999999
+      },
+      "sourceCompleted": 10000,
+      "apiAttempts": 10000
+    },
+    {
+      "id": "matrix.ring.federation.q2.r1000.w10.s43",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 7864,
+        "deliveryLoss": 0.13067499999999999
+      },
+      "sourceCompleted": 10000,
+      "apiAttempts": 10000
+    },
+    {
+      "id": "matrix.ring.federation.q2.r1000.w10.s44",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 7864,
+        "deliveryLoss": 0.13067499999999999
+      },
+      "sourceCompleted": 10000,
+      "apiAttempts": 10000
+    },
+    {
+      "id": "matrix.ring.federation.q2.r5000.w10.s42",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 141190,
+        "deliveryLoss": 0.80495
+      },
+      "sourceCompleted": 50000,
+      "apiAttempts": 50000
+    },
+    {
+      "id": "matrix.ring.federation.q2.r5000.w10.s43",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 141190,
+        "deliveryLoss": 0.80495
+      },
+      "sourceCompleted": 50000,
+      "apiAttempts": 50000
+    },
+    {
+      "id": "matrix.ring.federation.q2.r5000.w10.s44",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 141190,
+        "deliveryLoss": 0.80495
+      },
+      "sourceCompleted": 50000,
+      "apiAttempts": 50000
+    },
+    {
+      "id": "matrix.star.federation.q1.r5000.w10.s42",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 255912,
+        "deliveryLoss": 0.707095
+      },
+      "sourceCompleted": 50000,
+      "apiAttempts": 50000
+    },
+    {
+      "id": "matrix.star.federation.q1.r5000.w10.s43",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 255912,
+        "deliveryLoss": 0.707095
+      },
+      "sourceCompleted": 50000,
+      "apiAttempts": 50000
+    },
+    {
+      "id": "matrix.star.federation.q1.r5000.w10.s44",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 255912,
+        "deliveryLoss": 0.707095
+      },
+      "sourceCompleted": 50000,
+      "apiAttempts": 50000
+    },
+    {
+      "id": "matrix.star.federation.q2.r1000.w10.s42",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 17196,
+        "deliveryLoss": 0.10150000000000003
+      },
+      "sourceCompleted": 10000,
+      "apiAttempts": 10000
+    },
+    {
+      "id": "matrix.star.federation.q2.r1000.w10.s43",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 17196,
+        "deliveryLoss": 0.10150000000000003
+      },
+      "sourceCompleted": 10000,
+      "apiAttempts": 10000
+    },
+    {
+      "id": "matrix.star.federation.q2.r1000.w10.s44",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 17196,
+        "deliveryLoss": 0.10150000000000003
+      },
+      "sourceCompleted": 10000,
+      "apiAttempts": 10000
+    },
+    {
+      "id": "matrix.star.federation.q2.r5000.w10.s42",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 203360,
+        "deliveryLoss": 0.806955
+      },
+      "sourceCompleted": 50000,
+      "apiAttempts": 50000
+    },
+    {
+      "id": "matrix.star.federation.q2.r5000.w10.s43",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 203360,
+        "deliveryLoss": 0.806955
+      },
+      "sourceCompleted": 50000,
+      "apiAttempts": 50000
+    },
+    {
+      "id": "matrix.star.federation.q2.r5000.w10.s44",
+      "warnings": [
+        "queueDrops",
+        "deliveryLoss"
+      ],
+      "metrics": {
+        "queueDrops": 203360,
+        "deliveryLoss": 0.806955
+      },
+      "sourceCompleted": 50000,
+      "apiAttempts": 50000
+    }
+  ],
+  "indexedMatrixAttempts": 165,
+  "warningUniqueIds": 27,
+  "scope": "Read-only indexed receipts; 165 attempts include 3 historical technical failures. Warning metrics not a new independent raw recount.",
+  "grouped": [
+    {
+      "id": "matrix.line.federation.q1.r5000.w10",
+      "n": 3,
+      "queueDrops": 102222,
+      "deliveryLoss": 0.70155,
+      "allSeedsEqual": true
+    },
+    {
+      "id": "matrix.line.federation.q2.r1000.w10",
+      "n": 3,
+      "queueDrops": 7137,
+      "deliveryLoss": 0.17842499999999994,
+      "allSeedsEqual": true
+    },
+    {
+      "id": "matrix.line.federation.q2.r5000.w10",
+      "n": 3,
+      "queueDrops": 108308,
+      "deliveryLoss": 0.80581,
+      "allSeedsEqual": true
+    },
+    {
+      "id": "matrix.ring.federation.q1.r5000.w10",
+      "n": 3,
+      "queueDrops": 151674,
+      "deliveryLoss": 0.6985600000000001,
+      "allSeedsEqual": true
+    },
+    {
+      "id": "matrix.ring.federation.q2.r1000.w10",
+      "n": 3,
+      "queueDrops": 7864,
+      "deliveryLoss": 0.13067499999999999,
+      "allSeedsEqual": true
+    },
+    {
+      "id": "matrix.ring.federation.q2.r5000.w10",
+      "n": 3,
+      "queueDrops": 141190,
+      "deliveryLoss": 0.80495,
+      "allSeedsEqual": true
+    },
+    {
+      "id": "matrix.star.federation.q1.r5000.w10",
+      "n": 3,
+      "queueDrops": 255912,
+      "deliveryLoss": 0.707095,
+      "allSeedsEqual": true
+    },
+    {
+      "id": "matrix.star.federation.q2.r1000.w10",
+      "n": 3,
+      "queueDrops": 17196,
+      "deliveryLoss": 0.10150000000000003,
+      "allSeedsEqual": true
+    },
+    {
+      "id": "matrix.star.federation.q2.r5000.w10",
+      "n": 3,
+      "queueDrops": 203360,
+      "deliveryLoss": 0.806955,
+      "allSeedsEqual": true
+    }
+  ]
+}

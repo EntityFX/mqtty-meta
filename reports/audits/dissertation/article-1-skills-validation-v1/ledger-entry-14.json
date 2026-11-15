@@ -1,0 +1,13 @@
+{
+  "kind": "tool_receipt",
+  "step": "mailbox_probe",
+  "command": "Two separate frozen-runtime native diagnostic arms with effective EMQX max_mailbox_size 1000 and 5000; systemd unit bounded to 600 seconds; final results and arithmetic verified",
+  "status": "passed",
+  "exit_status": 0,
+  "retries_used": 0,
+  "input_paths": [
+    "../audits/dissertation/article-1-skills-validation-v1/mailbox-probe-status.json",
+    "../audits/dissertation/article-1-skills-validation-v1/mailbox-probe-verification.json",
+    "../audits/dissertation/article-1-skills-validation-v1/emqx-broker-investigation.json"
+  ]
+}

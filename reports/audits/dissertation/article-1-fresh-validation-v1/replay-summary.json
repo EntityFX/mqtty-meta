@@ -1,0 +1,134 @@
+{
+  "cases": [
+    {
+      "id": "Mosquitto.q1.p16.r1",
+      "sameCohortMetrics": true,
+      "hashes": {
+        "summary.json": {
+          "original": "5ccd7d5ea105f9639c9e9caa8d562e6474a7369ce3cbd9a51b7d521b681ddf28",
+          "replay": "5ccd7d5ea105f9639c9e9caa8d562e6474a7369ce3cbd9a51b7d521b681ddf28"
+        },
+        "latency-histogram.json": {
+          "original": "da0e473b4e7bef7e481db4b2096b127b48c74e8e2f19491502515c75544ae774",
+          "replay": "da0e473b4e7bef7e481db4b2096b127b48c74e8e2f19491502515c75544ae774"
+        },
+        "publishes.ndjson": {
+          "original": "0ac0b9ea2851c0bf1f09594ac696ecf996a5fae415e55506aa7944b6b9532e61",
+          "replay": "0ac0b9ea2851c0bf1f09594ac696ecf996a5fae415e55506aa7944b6b9532e61"
+        },
+        "deliveries.ndjson": {
+          "original": "fcd309d6f7fc5077727e93cd4534eca7b6641cc1daaa6803ab1ae24969167ef1",
+          "replay": "fcd309d6f7fc5077727e93cd4534eca7b6641cc1daaa6803ab1ae24969167ef1"
+        },
+        "phases.json": {
+          "original": "c856096c5f706ed7c328758f70ef97835f0605fb3658344f11e21bf8238f8b28",
+          "replay": "c856096c5f706ed7c328758f70ef97835f0605fb3658344f11e21bf8238f8b28"
+        }
+      },
+      "allSelectedFilesIdentical": true,
+      "process": {
+        "pid": 182652,
+        "exitCode": 0,
+        "wallSeconds": 15.392341611994198
+      }
+    },
+    {
+      "id": "Aedes.q1.p16.r1",
+      "sameCohortMetrics": true,
+      "hashes": {
+        "summary.json": {
+          "original": "cbe74727ac49391afe8287bd419b2d424d7e8ae0d16627dc45a95831242a8dac",
+          "replay": "cbe74727ac49391afe8287bd419b2d424d7e8ae0d16627dc45a95831242a8dac"
+        },
+        "latency-histogram.json": {
+          "original": "d895ea99e75db14f79c4331d2943cc9582723087bfb29c321f757e4bc63d5976",
+          "replay": "d895ea99e75db14f79c4331d2943cc9582723087bfb29c321f757e4bc63d5976"
+        },
+        "publishes.ndjson": {
+          "original": "2d549fc4ff06c1ec55f3e71efa95478358b0361c453a7e67ef9c9069716ce5cc",
+          "replay": "2d549fc4ff06c1ec55f3e71efa95478358b0361c453a7e67ef9c9069716ce5cc"
+        },
+        "deliveries.ndjson": {
+          "original": "f7f950779446dd4cc4d4a11112697e63fabf25228a8c3cecc755b6207e4639a1",
+          "replay": "f7f950779446dd4cc4d4a11112697e63fabf25228a8c3cecc755b6207e4639a1"
+        },
+        "phases.json": {
+          "original": "dc7c35a45facfe5dc266563a8342fea2cdb114ea66ddad3d631a3bb158f5d083",
+          "replay": "dc7c35a45facfe5dc266563a8342fea2cdb114ea66ddad3d631a3bb158f5d083"
+        }
+      },
+      "allSelectedFilesIdentical": true,
+      "process": {
+        "pid": 182683,
+        "exitCode": 0,
+        "wallSeconds": 11.284539829008281
+      }
+    },
+    {
+      "id": "ActiveMQ.q1.p16.r1",
+      "sameCohortMetrics": true,
+      "hashes": {
+        "summary.json": {
+          "original": "32dab1f22a758ece558e68f41f61c58a4830ef993f7b01c04c7e4eee51279a01",
+          "replay": "32dab1f22a758ece558e68f41f61c58a4830ef993f7b01c04c7e4eee51279a01"
+        },
+        "latency-histogram.json": {
+          "original": "870f0651ab19fa31d878a4e2b7ae5bd655d7fef578c5bd0f3f38aaddb9d56a71",
+          "replay": "870f0651ab19fa31d878a4e2b7ae5bd655d7fef578c5bd0f3f38aaddb9d56a71"
+        },
+        "publishes.ndjson": {
+          "original": "76c6b32f2d34f6120cad2a8130f6d9bccd0c3afca4a1310b1c0ff6b4381482c7",
+          "replay": "76c6b32f2d34f6120cad2a8130f6d9bccd0c3afca4a1310b1c0ff6b4381482c7"
+        },
+        "deliveries.ndjson": {
+          "original": "3113a417de35679379b011f2e3d58b45ec5cafdf4e0fbb563858569ee57e8801",
+          "replay": "3113a417de35679379b011f2e3d58b45ec5cafdf4e0fbb563858569ee57e8801"
+        },
+        "phases.json": {
+          "original": "dd7a1730039bc21f248438748885ded6e2203aa010aa364d13444465127f14dc",
+          "replay": "dd7a1730039bc21f248438748885ded6e2203aa010aa364d13444465127f14dc"
+        }
+      },
+      "allSelectedFilesIdentical": true,
+      "process": {
+        "pid": 182709,
+        "exitCode": 0,
+        "wallSeconds": 9.78299675200833
+      }
+    },
+    {
+      "id": "EMQX.q1.p16.r1",
+      "sameCohortMetrics": true,
+      "hashes": {
+        "summary.json": {
+          "original": "a4d6ec4e2921a063f5f280474cd07a609045f9aeea48f80df15b46ec79ee4c14",
+          "replay": "a4d6ec4e2921a063f5f280474cd07a609045f9aeea48f80df15b46ec79ee4c14"
+        },
+        "latency-histogram.json": {
+          "original": "62500cd6793e033f0356c65fe229cce6ccf9a28b9fa49b4dd6a6e38acc9c0044",
+          "replay": "62500cd6793e033f0356c65fe229cce6ccf9a28b9fa49b4dd6a6e38acc9c0044"
+        },
+        "publishes.ndjson": {
+          "original": "c7dbb7589b8e9cea886c8032169c50eeff5784881ee403e2448a13c287a95c1e",
+          "replay": "c7dbb7589b8e9cea886c8032169c50eeff5784881ee403e2448a13c287a95c1e"
+        },
+        "deliveries.ndjson": {
+          "original": "11d52964b989b751622d3df2c4526039264b05baed50dc1b28fd78df7f2cab6e",
+          "replay": "11d52964b989b751622d3df2c4526039264b05baed50dc1b28fd78df7f2cab6e"
+        },
+        "phases.json": {
+          "original": "26642c8e9129119a64f1e23a004556a1d439f3dcfb53777ad1c90f746e8878d2",
+          "replay": "26642c8e9129119a64f1e23a004556a1d439f3dcfb53777ad1c90f746e8878d2"
+        }
+      },
+      "allSelectedFilesIdentical": true,
+      "process": {
+        "pid": 182731,
+        "exitCode": 0,
+        "wallSeconds": 9.281515167007456
+      }
+    }
+  ],
+  "passed": true,
+  "scope": "Four chosen model points, not independent physical replication"
+}

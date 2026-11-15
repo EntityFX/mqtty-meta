@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "scientificApproval": false,
+  "sources": {
+    "reports/status/linux-native-audit-summary.json": "0fa83d7b2ea71bebc4be3d0304455acf0ed813959ab11da71ea06d9838fd3db7",
+    "reports/audits/dissertation/accuracy-analysis-v1/analysis.json": "46f1bb81917c54e6dbe04756b5536ed3206879f6510eda8d9de18c50d5eaa8da",
+    "reports/audits/dissertation/sensitivity-final-v1/analysis/analysis.json": "1498b3399219f9e18d1eff2a57d3ed30d8f41f549c3f1a3245da1776a5bb1de1",
+    "reports/audits/dissertation/network-pilot-reuse-v1/registry.json": "2d7c52517d357cdd5ad2b8637878a2af68184c21f41d2bb7a75f5f6c8f9e6bf6",
+    "reports/audits/dissertation/network-full-3h-v1/pilot-technical-decision.json": "cc2c2bed3e160b40a6d162a1ade2b7f5d1f56387d5dbfe7506ab59e2c91bca3a",
+    "reports/audits/web-linux-v1/user-observed-10m-verification.json": "b59bfc81d510e66876fe4344e447132fcbd16fecf052bf6218bb58c10cc963ea"
+  },
+  "generatorSha256": "e60cd009ba48d81dfbcbfdcae4cc6fcda49d3c58957df84f61e1eddba784ac96",
+  "document": "reports/analysis/Claims-and-evidence.md",
+  "documentSha256": "47d331bb0352eadff4f289ecc95259d37f22d8b5145cc552318052eaecfce5c7"
+}

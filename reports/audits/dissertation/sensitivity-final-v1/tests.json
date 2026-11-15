@@ -1,0 +1,22 @@
+{
+  "checks": [
+    "complete real frozen 230 rows",
+    "missing result denied",
+    "threshold mutation denied",
+    "RPS formula mutation denied",
+    "variant unrelated input denied",
+    "forged replay receipt denied",
+    "counters mutation denied",
+    "two independent artifact generations byte-identical with all55 scientific failures retained",
+    "summary numeric counts and interval equal independently summed broker counters"
+  ],
+  "command": "python -m unittest discover -s tools/dissertation -p test_analyse_sensitivity.py",
+  "errors": 0,
+  "failures": 0,
+  "result": "passed",
+  "sourceSha256": {
+    "tools\\dissertation\\analyse_sensitivity.py": "60ff3a5c2fd44a6287961b10d7249f5395445e35865841fec9b6fc8fcd595566",
+    "tools\\dissertation\\test_analyse_sensitivity.py": "89b8b188dd57b32756e6af0efa80de48803bbfe0f0e565077d271b54a448cd10"
+  },
+  "tests": 16
+}

@@ -1,0 +1,37 @@
+{
+  "previousReceipt": "reports/audits/dissertation/manuscript-offline-review-v1/progress-recalculation.json",
+  "plan": "docs/dissertation/articles-and-work-plan.md",
+  "addedAcceptedTechnicalSteps": [
+    "33"
+  ],
+  "personDaysAdded": 1.5,
+  "verifiedTechnicalSteps": [
+    "03",
+    "04",
+    "06",
+    "08",
+    "09",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "29",
+    "33"
+  ],
+  "verifiedTechnicalWeightPersonDays": 26.5,
+  "denominatorPersonDays": 47,
+  "globalPercent": 56.4,
+  "localPercent": 80,
+  "humanAcceptanceCredited": false,
+  "step37Accepted": false,
+  "evidence": "reports\\audits\\dissertation\\acceleration-workers-20261102\\final-verification.json"
+}

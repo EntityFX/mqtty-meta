@@ -1,0 +1,11 @@
+{
+  "status": "verified",
+  "zip": "C:\\temp\\mqtty-evidence\\article-portable-v3\\reproduction-examples.zip",
+  "zipBytes": 11381828,
+  "zipSha256": "2ab59939c5f9f374b9c09ccbcf1799df66c15070cdf6cd5a62ba9fdbc35a716e",
+  "freshExtractionPassed": true,
+  "currentManuscriptBytesMatch": true,
+  "stdout": "{\"apiAttempts\": 10000, \"expectedDeliveries\": 40000, \"uniqueDeliveries\": 40000, \"deliveryLoss\": 0, \"sourceCompletedRps\": 1000, \"forwardAttempts\": 30000}\nPASS: sample raw events, histograms, payload and seals verified\n{\"scope\": \"native\", \"attempted\": 70395, \"completed\": 70395, \"uniqueDeliveries\": 70395, \"completedCohortPerSubmissionSecond\": 17598.750000000004, \"p99PublishMs\": 2.1367999999997664, \"deliveryLossRate\": 0.0}\n{\"scope\": \"model\", \"attempted\": 68492, \"completed\": 68492, \"uniqueDeliveries\": 68492, \"completedCohortPerSubmissionSecond\": 17123.0, \"p99PublishMs\": 2.19, \"deliveryLossRate\": 0.0}\nPASS: native and profiled model raw arithmetic and connections verified\n{\"broker\": \"Aedes\", \"total\": 207314, \"floorMicroseconds\": 60, \"belowFloor\": 0, \"atFloor\": 0, \"zeroResidual\": 0, \"belowFraction\": 0.0, \"zeroResidualFraction\": 0.0}\n{\"broker\": \"Mosquitto\", \"total\": 257092, \"floorMicroseconds\": 60, \"belowFloor\": 2002, \"atFloor\": 295, \"zeroResidual\": 2297, \"belowFraction\": 0.007787095670032517, \"zeroResidualFraction\": 0.008934544832200146}\n{\"broker\": \"ActiveMQ\", \"total\": 158284, \"floorMicroseconds\": 60, \"belowFloor\": 0, \"atFloor\": 0, \"zeroResidual\": 0, \"belowFraction\": 0.0, \"zeroResidualFraction\": 0.0}\n{\"broker\": \"EMQX\", \"total\": 119857, \"floorMicroseconds\": 80, \"belowFloor\": 0, \"atFloor\": 0, \"zeroResidual\": 0, \"belowFraction\": 0.0, \"zeroResidualFraction\": 0.0}\nPASS: weighted calibration bins and protocol floor table recomputed\n",
+  "rawScope": "Three individual examples; floor table recomputed from included binned observations, not all original calibration events",
+  "publiclyHosted": false
+}

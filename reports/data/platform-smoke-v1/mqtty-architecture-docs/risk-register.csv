@@ -1,0 +1,11 @@
+ID,Priority,Status,Area,Finding,RequiredAction
+R1,P0,Open,MQTT,"QoS0 returns before fan-out/counter in current broker core","Fix control flow and add QoS0 delivery regression test"
+R2,P0,Open,Metrics,"QoS-specific RPS and latency counters declared but not computed by MqttCounters.Refresh","Wire measurement and add metrics tests"
+R3,P0,Open,BrokerProfile,"Raw FailRate is applied after rate-limit refusal","Introduce calibration so total failure matches benchmark"
+R4,P0,Open,BrokerProfile,"Message size M is absent from profile key","Add MessageBytes dimension or explicitly pin one payload size"
+R5,P0,Open,Latency,"Benchmark p99 measurement boundary not reconciled with internal processing delay","Define measurement boundary and calibrate broker-only latency"
+R6,P1,Open,Kernel,"Parallel execution order is not inherently deterministic","Reference fidelity tests in sequential mode; differential-test parallel mode"
+R7,P1,Open,Network,"Overload thresholds include implementation constants without explicit physical semantics","Parameterize and document units/window"
+R8,P1,Open,MqttRelay,"Current specialized app publishes QoS1 only","Parameterize QoS and payload size for broker-profile matrix"
+R9,P1,Open,EST,"CPU component is absent from broker model","Scope EST claim or add validated resource model"
+R10,P2,Open,Reproducibility,"Documentation references moving main branch","Pin commit SHA/profile hash in experiment manifest"

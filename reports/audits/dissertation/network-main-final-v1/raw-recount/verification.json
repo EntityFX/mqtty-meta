@@ -1,0 +1,33 @@
+{
+  "status": "rawArithmeticVerifiedAvailableSubset",
+  "sourceRoot": "C:\\temp\\mqtty-evidence\\network-final-20261028\\raw-002",
+  "executionManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+  "availableCases": 162,
+  "rawPassed": 162,
+  "rawFailed": 0,
+  "plannedMatrix": 162,
+  "missingResultKeys": [],
+  "completeModeTriplets": 54,
+  "plannedModeTriplets": 54,
+  "excludedAvailableCaseIds": [],
+  "conditionModeRows": 54,
+  "originalWarningCases": 27,
+  "warningLabels": {
+    "queueDrops": 27,
+    "deliveryLoss": 27
+  },
+  "replaysCompleted": 6,
+  "replaysPlanned": 6,
+  "mainCampaignComplete": false,
+  "failures": [],
+  "elapsedSeconds": 882.7349999998696,
+  "checkerSourceSha256": {
+    "audit_network_main_results.py": "e06d65668186f927e236304e6227715d9e650f713e3fdcc4dd4da2c5bf337bc3",
+    "network_study_verification.py": "ebdbfa8481f5dd81467f0423154bd52d3c6100e9103244d9e7e54f87b52a1504",
+    "network_review.py": "b914cc1c266ed91e8b3902fe49757ed3d20ffee8fee319c2777c74159119a939",
+    "study.py": "8070dd31bc3028373b6e1b6ffbd62639b93e46c5c2db07a7ac9d6465510546b1"
+  },
+  "scientificInputsChanged": false,
+  "newSimulationsExecuted": false,
+  "scope": "Existing independent checker rerun on available raw; matched means across common seeds, not validation of all planned scenarios or new exact simulation replays"
+}

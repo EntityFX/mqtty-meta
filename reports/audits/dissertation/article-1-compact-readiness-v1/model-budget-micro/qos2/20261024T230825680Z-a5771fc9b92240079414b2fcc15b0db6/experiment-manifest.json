@@ -1,0 +1,94 @@
+{
+  "runId": "20261024T230825680Z-a5771fc9b92240079414b2fcc15b0db6",
+  "createdAtUtc": "2026-10-24T23:08:26.1407897+00:00",
+  "options": {
+    "topologyMode": "brokerFidelity",
+    "profileClientCountMode": "publishers",
+    "brokers": 1,
+    "networkLength": 1,
+    "clientsPerBroker": 4,
+    "publishQos": "exactlyOnce",
+    "subscribeQos": "exactlyOnce",
+    "payloadBytes": 16,
+    "brokerAssignmentMode": "ideal",
+    "mixedBrokerTypes": [],
+    "warmupTicks": 100,
+    "measurementTicks": 2000,
+    "drainTimeoutTicks": 10000,
+    "offeredRps": 80000,
+    "randomSeed": 42,
+    "parallel": false,
+    "refreshStrategy": 0,
+    "enableCounters": true,
+    "fidelityMode": true,
+    "loadMode": "closedLoopPerPublisher",
+    "transportTiming": "fixed"
+  },
+  "assignedBrokerTypes": [
+    null
+  ],
+  "provenance": {
+    "mqttYCommitSha": "technical-working-tree",
+    "mqttBenchmarkCommitSha": "not-native",
+    "brokerProfileSha256": "ideal",
+    "brokerProfiles": [],
+    "referenceObservationsSha256": null
+  },
+  "operatingSystem": "Microsoft Windows 10.0.17763",
+  "runtime": ".NET 6.0.36",
+  "processorCount": 4,
+  "tickPeriod": "00:00:00.0001000",
+  "phases": [
+    {
+      "name": "construct",
+      "startTick": 0,
+      "endTick": 0,
+      "status": "completed"
+    },
+    {
+      "name": "connect",
+      "startTick": 0,
+      "endTick": 7,
+      "status": "completed"
+    },
+    {
+      "name": "subscribe",
+      "startTick": 7,
+      "endTick": 14,
+      "status": "completed"
+    },
+    {
+      "name": "warmup",
+      "startTick": 14,
+      "endTick": 114,
+      "status": "completed"
+    },
+    {
+      "name": "resetMeasurement",
+      "startTick": 114,
+      "endTick": 114,
+      "status": "completed"
+    },
+    {
+      "name": "measure",
+      "startTick": 114,
+      "endTick": 2114,
+      "status": "completed"
+    },
+    {
+      "name": "drain",
+      "startTick": 2114,
+      "endTick": 2129,
+      "status": "completed"
+    }
+  ],
+  "measurementStartTick": 114,
+  "measurementEndTick": 2114,
+  "brokerClientCounts": [
+    {
+      "broker": "mqb6",
+      "connectedClients": 5,
+      "profileClients": 4
+    }
+  ]
+}

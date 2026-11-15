@@ -1,0 +1,31 @@
+{
+  "id": "matrix.line.relay.q0.r5000.w10.s43",
+  "attempt": "runs/matrix.line.relay.q0.r5000.w10.s43/attempt-001",
+  "inputConfigSha256": "91f80a930c2b8aa41225e313eb7125d32937df098483ffbf0aa3c0d0a3bd77e4",
+  "status": "rawArithmeticPassed",
+  "summarySha256": "bf0e2cea618a1df311ae0f78b5bf3d29bbcf80aa25df81927e5945d8dc2f296b",
+  "metrics": {
+    "sourceCompletedRps": 5000,
+    "uniqueGoodput": 20000,
+    "deliveryLoss": 0,
+    "receiverP99Ms": 3,
+    "publishP99Ms": null,
+    "forwardAttempts": 150000,
+    "forwardTopicPayloadBytes": 5400000,
+    "uniqueDuringDrain": 48,
+    "expectedDeliveries": 200000,
+    "uniqueDeliveries": 200000,
+    "fullyDeliveredPublications": 50000,
+    "sourceCompleted": 50000,
+    "sourceCompletedDuringDrain": 2,
+    "apiAttempts": 50000,
+    "queueDrops": 0,
+    "hopLimitDrops": 0,
+    "forwardRejected": 0,
+    "backpressureUnsent": 0,
+    "duplicateDeliveries": 0,
+    "suppressedDuplicates": 0
+  },
+  "originalWarnings": [],
+  "verificationSeconds": 6.469000000040978
+}

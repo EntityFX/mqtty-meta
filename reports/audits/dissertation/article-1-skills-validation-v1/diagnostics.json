@@ -1,0 +1,388 @@
+{
+  "verificationStatus": "ANALYZED",
+  "rawEventsRecounted": false,
+  "newSimulationsRun": 0,
+  "inputHashesMatchArticleEvidence": true,
+  "completePairs": 48,
+  "metricStatuses": {
+    "failed": 100,
+    "passed": 92
+  },
+  "fullConditions": 2,
+  "totalConditions": 16,
+  "passedRuns": 6,
+  "checkedExistingReplayReceipts": 4,
+  "conditions": [
+    {
+      "broker": "ActiveMQ",
+      "qos": 1,
+      "publishers": 16,
+      "passedSeeds": 0,
+      "native": {
+        "lossMin": 0.0,
+        "lossMax": 0.3329145250333143,
+        "maxCompletionDrainShare": 0.0006570841889117043,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      },
+      "model": {
+        "lossMin": 0.5173480478220884,
+        "lossMax": 0.5194085027726433,
+        "maxCompletionDrainShare": 0.0013443118803562427,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      }
+    },
+    {
+      "broker": "ActiveMQ",
+      "qos": 1,
+      "publishers": 128,
+      "passedSeeds": 0,
+      "native": {
+        "lossMin": 0.0,
+        "lossMax": 0.3887454646943902,
+        "maxCompletionDrainShare": 0.004465531677365337,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      },
+      "model": {
+        "lossMin": 0.5984573924356472,
+        "lossMax": 0.6015137180700094,
+        "maxCompletionDrainShare": 0.01224177505738332,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      }
+    },
+    {
+      "broker": "ActiveMQ",
+      "qos": 2,
+      "publishers": 16,
+      "passedSeeds": 0,
+      "native": {
+        "lossMin": 0.0,
+        "lossMax": 0.31473863200043883,
+        "maxCompletionDrainShare": 0.0010252466999871844,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      },
+      "model": {
+        "lossMin": 0.2974368603886959,
+        "lossMax": 0.3037757437070938,
+        "maxCompletionDrainShare": 0.0015255530129672007,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      }
+    },
+    {
+      "broker": "ActiveMQ",
+      "qos": 2,
+      "publishers": 128,
+      "passedSeeds": 0,
+      "native": {
+        "lossMin": 0.9936283879821595,
+        "lossMax": 1.0,
+        "maxCompletionDrainShare": 0.006427638847042282,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      },
+      "model": {
+        "lossMin": 0.30683529057512793,
+        "lossMax": 0.3173939031679618,
+        "maxCompletionDrainShare": 0.012847535882766235,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      }
+    },
+    {
+      "broker": "Aedes",
+      "qos": 1,
+      "publishers": 16,
+      "passedSeeds": 0,
+      "native": {
+        "lossMin": 0.0,
+        "lossMax": 0.0,
+        "maxCompletionDrainShare": 0.000532499084767198,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      },
+      "model": {
+        "lossMin": 0.0,
+        "lossMax": 0.0,
+        "maxCompletionDrainShare": 0.00044018928139099813,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      }
+    },
+    {
+      "broker": "Aedes",
+      "qos": 1,
+      "publishers": 128,
+      "passedSeeds": 0,
+      "native": {
+        "lossMin": 0.0,
+        "lossMax": 0.7136780019312576,
+        "maxCompletionDrainShare": 0.0038049940546967895,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      },
+      "model": {
+        "lossMin": 0.273032814223773,
+        "lossMax": 0.2764300765791232,
+        "maxCompletionDrainShare": 0.0032839879929189007,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      }
+    },
+    {
+      "broker": "Aedes",
+      "qos": 2,
+      "publishers": 16,
+      "passedSeeds": 0,
+      "native": {
+        "lossMin": 0.0,
+        "lossMax": 0.0,
+        "maxCompletionDrainShare": 0.001277241159096352,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      },
+      "model": {
+        "lossMin": 0.0,
+        "lossMax": 0.0,
+        "maxCompletionDrainShare": 0.0010808619874349795,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      }
+    },
+    {
+      "broker": "Aedes",
+      "qos": 2,
+      "publishers": 128,
+      "passedSeeds": 0,
+      "native": {
+        "lossMin": 0.0,
+        "lossMax": 1.0,
+        "maxCompletionDrainShare": 0.00746529802869474,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      },
+      "model": {
+        "lossMin": 0.0,
+        "lossMax": 0.0,
+        "maxCompletionDrainShare": 0.009159212880143113,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      }
+    },
+    {
+      "broker": "EMQX",
+      "qos": 1,
+      "publishers": 16,
+      "passedSeeds": 3,
+      "native": {
+        "lossMin": 0.0,
+        "lossMax": 0.0,
+        "maxCompletionDrainShare": 0.0007768875940762321,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      },
+      "model": {
+        "lossMin": 0.0,
+        "lossMax": 0.0,
+        "maxCompletionDrainShare": 0.0007796511061300068,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      }
+    },
+    {
+      "broker": "EMQX",
+      "qos": 1,
+      "publishers": 128,
+      "passedSeeds": 0,
+      "native": {
+        "lossMin": 1.0,
+        "lossMax": 1.0,
+        "maxCompletionDrainShare": 0.004958933829226716,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      },
+      "model": {
+        "lossMin": 0.07962579067665976,
+        "lossMax": 0.08152784464772911,
+        "maxCompletionDrainShare": 0.006847483015032365,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      }
+    },
+    {
+      "broker": "EMQX",
+      "qos": 2,
+      "publishers": 16,
+      "passedSeeds": 3,
+      "native": {
+        "lossMin": 0.0,
+        "lossMax": 0.0,
+        "maxCompletionDrainShare": 0.0013523793424055448,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      },
+      "model": {
+        "lossMin": 0.0,
+        "lossMax": 0.0,
+        "maxCompletionDrainShare": 0.0012268997776244152,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      }
+    },
+    {
+      "broker": "EMQX",
+      "qos": 2,
+      "publishers": 128,
+      "passedSeeds": 0,
+      "native": {
+        "lossMin": 0.0,
+        "lossMax": 0.0,
+        "maxCompletionDrainShare": 0.01189127972819932,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      },
+      "model": {
+        "lossMin": 0.0,
+        "lossMax": 0.0,
+        "maxCompletionDrainShare": 0.010729253981559096,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      }
+    },
+    {
+      "broker": "Mosquitto",
+      "qos": 1,
+      "publishers": 16,
+      "passedSeeds": 0,
+      "native": {
+        "lossMin": 0.0,
+        "lossMax": 0.062407397946150356,
+        "maxCompletionDrainShare": 0.0004087263066469116,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      },
+      "model": {
+        "lossMin": 0.9108601310008356,
+        "lossMax": 0.9135779173518074,
+        "maxCompletionDrainShare": 0.00013478178828476697,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      }
+    },
+    {
+      "broker": "Mosquitto",
+      "qos": 1,
+      "publishers": 128,
+      "passedSeeds": 0,
+      "native": {
+        "lossMin": 0.8524381748519679,
+        "lossMax": 0.8732105253844384,
+        "maxCompletionDrainShare": 0.002229654403567447,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      },
+      "model": {
+        "lossMin": 0.8823442026294288,
+        "lossMax": 0.8846659876071641,
+        "maxCompletionDrainShare": 0.0013583207759407432,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      }
+    },
+    {
+      "broker": "Mosquitto",
+      "qos": 2,
+      "publishers": 16,
+      "passedSeeds": 0,
+      "native": {
+        "lossMin": 0.0,
+        "lossMax": 0.025244618395303342,
+        "maxCompletionDrainShare": 0.0006766472130592912,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      },
+      "model": {
+        "lossMin": 0.9184475558830754,
+        "lossMax": 0.9214921108021324,
+        "maxCompletionDrainShare": 0.0002458172655901919,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      }
+    },
+    {
+      "broker": "Mosquitto",
+      "qos": 2,
+      "publishers": 128,
+      "passedSeeds": 0,
+      "native": {
+        "lossMin": 0.6133321487799099,
+        "lossMax": 0.7351520086862107,
+        "maxCompletionDrainShare": 0.0037905709547500594,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      },
+      "model": {
+        "lossMin": 0.9896553204275229,
+        "lossMax": 0.9901124688778868,
+        "maxCompletionDrainShare": 0.0018332593345841508,
+        "pending": 0,
+        "failed": 0,
+        "duplicates": 0
+      }
+    }
+  ],
+  "sourceSha256": {
+    "final-summary.json": "22feba662dfeb4e79478140d601432a20f35947eb4b2bc682ee7d10f846ac75d",
+    "final-native-vs-model.csv": "66d10a7b477f6a86eda1713da06b982689b6d512c75ddff3e10c665f0895d5e2",
+    "phase-evidence.json": "5dc47600cb66605cdbd1ca2921d2e1df13f04c4d3955547da2d75c13ba05e78e",
+    "replay-summary.json": "f3c73503c5460b82ceb142fbdec9c201fb1f243f4b6d4087f5046141db7ce0fc"
+  },
+  "causalAttribution": "notEstablished",
+  "partialRawInspection": {
+    "cases": 3,
+    "scope": "EMQX QoS1 N128 only",
+    "subscriberDisconnectedBeforeMeasurement": 3,
+    "rawHashesComparedWithLocalFinalSummary": true,
+    "firstDisconnectSeconds": [
+      0.4424166,
+      0.4633935,
+      0.4990941
+    ],
+    "rootCauseOfDisconnection": "notEstablished"
+  }
+}

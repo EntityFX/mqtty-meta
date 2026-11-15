@@ -1,0 +1,58 @@
+{
+  "observedAtUtc": "2026-10-26T05:27:31.728764+00:00",
+  "service": "mqtty-article1-matched-main-v1.service",
+  "command": [
+    "systemd-run",
+    "--user",
+    "--unit=mqtty-article1-matched-main-v1",
+    "--property=RuntimeMaxSec=21600",
+    "--property=MemoryMax=4G",
+    "--property=MemorySwapMax=0",
+    "--property=CPUQuota=300%",
+    "--property=AllowedCPUs=0,2,3",
+    "--property=KillMode=control-group",
+    "/usr/bin/python3",
+    "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-main-v1/launcher/run_matched_main_campaign.py",
+    "--program",
+    "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-main-v1/program.json",
+    "--root",
+    "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-main-v1"
+  ],
+  "launchStdout": "",
+  "launchStderr": "Running as unit: mqtty-article1-matched-main-v1.service; invocation ID: 135ea2043f8e431db92900bf8bd2b099\n",
+  "systemdShow": "MainPID=279321\nResult=success\nExecMainStatus=0\nCPUQuotaPerSecUSec=3s\nAllowedCPUs=0 2-3\nMemoryMax=4294967296\nActiveState=active\nSubState=running\nInvocationID=135ea2043f8e431db92900bf8bd2b099\n",
+  "progress": {
+    "status": "running",
+    "active": "calibration.Aedes.r1",
+    "completed": 0,
+    "total": 40,
+    "percent": 0.0,
+    "byStage": {
+      "calibration": 0,
+      "control": 0,
+      "model": 0,
+      "replay": 0
+    },
+    "elapsedSeconds": 0.30896854400634766,
+    "budget": {
+      "programSha256": "2312e7d9938d580b9ac8099a1d5dbfc4fef5074fb2a6024008d27e9cd3356dc7",
+      "startedEpoch": 1792992450.1227224,
+      "deadlineEpoch": 1793014050.1227224,
+      "budgetSeconds": 21600
+    },
+    "error": null,
+    "attempt": 1,
+    "modelExecution": "isolated-direct-probe; explicit exception: live Web remains unchanged and lacks new single-point format; local Web parity tested separately",
+    "scientificAccuracySeparate": true
+  },
+  "budget": {
+    "programSha256": "2312e7d9938d580b9ac8099a1d5dbfc4fef5074fb2a6024008d27e9cd3356dc7",
+    "startedEpoch": 1792992450.1227224,
+    "deadlineEpoch": 1793014050.1227224,
+    "budgetSeconds": 21600
+  },
+  "programSha256": "2312e7d9938d580b9ac8099a1d5dbfc4fef5074fb2a6024008d27e9cd3356dc7",
+  "root": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-main-v1",
+  "singleConfirmation": true,
+  "restartPerformed": false
+}

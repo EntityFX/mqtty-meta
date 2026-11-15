@@ -1,0 +1,66 @@
+{
+  "id": "line",
+  "title": "Линия",
+  "kind": "template",
+  "runnable": false,
+  "graphSemantics": "Schematic bidirectional physical links; MQTT routes not specified",
+  "nodes": [
+    {
+      "id": "B0",
+      "label": "Брокер 0",
+      "role": "broker",
+      "x": 120,
+      "y": 320
+    },
+    {
+      "id": "B1",
+      "label": "Брокер 1",
+      "role": "broker",
+      "x": 310,
+      "y": 320
+    },
+    {
+      "id": "B2",
+      "label": "Брокер 2",
+      "role": "broker",
+      "x": 500,
+      "y": 320
+    },
+    {
+      "id": "B3",
+      "label": "Брокер 3",
+      "role": "broker",
+      "x": 690,
+      "y": 320
+    },
+    {
+      "id": "B4",
+      "label": "Брокер 4",
+      "role": "broker",
+      "x": 880,
+      "y": 320
+    }
+  ],
+  "links": [
+    {
+      "source": "B0",
+      "target": "B1",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B1",
+      "target": "B2",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B2",
+      "target": "B3",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B3",
+      "target": "B4",
+      "direction": "bidirectional"
+    }
+  ]
+}

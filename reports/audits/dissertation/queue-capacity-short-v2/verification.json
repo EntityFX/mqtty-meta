@@ -1,0 +1,17 @@
+{
+  "status": "launchVerified",
+  "matchedRemoteHashes": {
+    "run_short.py": "5dbff231db11765e3b061a48d6a8cb5b717d656b7f6d9292bbaef6b73721ffd8",
+    "short_gate.py": "dd916ecbef5e147c4cdb246aa4c017d555d122f4acc2cb085ecc06a5e0bcf499",
+    "test_short_gate.py": "7cc5a1c3194cfbd971bd181d95bac2ac4723535870d766b71802be26d8ac0a53",
+    "configs/q1024.json": "37eaa2ec86eb59a7c8b7a76a56bd5d0af71b85e8015242eefbe49cf70377ae0b",
+    "configs/q4096.json": "b5ff56167d61e5c2d7ff17bd63bb84de6f60443a25ac46376cdc702d6feb7455"
+  },
+  "protocolShaMatches": true,
+  "singleFactorValidated": true,
+  "testsPassedLocal": 6,
+  "testsPassedLinux": 6,
+  "newScientificResultsAccepted": false,
+  "deadlineMsk": "2026-10-29T08:57:49.744575+03:00",
+  "sourceFilesPreflightVerified": 281
+}

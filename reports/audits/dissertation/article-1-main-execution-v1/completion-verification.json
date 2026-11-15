@@ -1,0 +1,72 @@
+{
+  "status": "sealedResultsVerified",
+  "programSha256": "2312e7d9938d580b9ac8099a1d5dbfc4fef5074fb2a6024008d27e9cd3356dc7",
+  "sealedSuccessfulJobs": 40,
+  "sealedFilesChecked": 924,
+  "profilesFrozenBeforeEveryControl": true,
+  "profileFreezeUtc": "2026-10-26T05:31:45.388487+00:00",
+  "replaysVerified": [
+    {
+      "broker": "ActiveMQ",
+      "comparisons": 7
+    },
+    {
+      "broker": "Aedes",
+      "comparisons": 7
+    },
+    {
+      "broker": "EMQX",
+      "comparisons": 7
+    },
+    {
+      "broker": "Mosquitto",
+      "comparisons": 7
+    }
+  ],
+  "modelComparisonsPassed": 12,
+  "modelComparisonsTotal": 12,
+  "rows": [
+    {
+      "broker": "Aedes",
+      "modelsPassed": 3,
+      "nativeRpsMean": 17112.666666666668,
+      "modelRpsMin": 17078.75,
+      "modelRpsMax": 17155.25,
+      "maxRpsErrorPercent": 0.24884101445322443,
+      "maxP99ErrorPercent": 2.3781103663618244,
+      "maxLossDifferencePercentagePoints": 0.0
+    },
+    {
+      "broker": "Mosquitto",
+      "modelsPassed": 3,
+      "nativeRpsMean": 20961.916666666668,
+      "modelRpsMin": 21060.5,
+      "modelRpsMax": 21156.5,
+      "maxRpsErrorPercent": 0.9282707131583806,
+      "maxP99ErrorPercent": 5.479705936864535,
+      "maxLossDifferencePercentagePoints": 1.1619385855661961
+    },
+    {
+      "broker": "ActiveMQ",
+      "modelsPassed": 3,
+      "nativeRpsMean": 12325.833333333334,
+      "modelRpsMin": 12541.0,
+      "modelRpsMax": 12675.0,
+      "maxRpsErrorPercent": 2.8328037319991837,
+      "maxP99ErrorPercent": 17.271627793642004,
+      "maxLossDifferencePercentagePoints": 0.25619813242474376
+    },
+    {
+      "broker": "EMQX",
+      "modelsPassed": 3,
+      "nativeRpsMean": 10123.833333333334,
+      "modelRpsMin": 9889.0,
+      "modelRpsMax": 9914.5,
+      "maxRpsErrorPercent": 2.3196088438174005,
+      "maxP99ErrorPercent": 1.6066000868283439,
+      "maxLossDifferencePercentagePoints": 0.0
+    }
+  ],
+  "scope": "SHA seals, profile-freeze ordering, saved replay comparisons and saved arithmetic summary; full independent raw re-audit not performed in this status check",
+  "noExperimentRerun": true
+}

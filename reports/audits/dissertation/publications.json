@@ -1,0 +1,191 @@
+[
+  {
+    "file": "1. Статья. Выбор_брокера_сообщений_для_Интернета_вещей_на_основе_нагрузочного_тестирования_FINAL.docx",
+    "sha256": "5f96becc7077f3350363811e1f55c743100bec3f5bea97bca938a477a1ef27f2",
+    "paragraphs": 473,
+    "excerpts": [
+      {
+        "paragraph": 65,
+        "text": "Платформа для эксперимента: вычислительный кластер, состоящий из семи узлов. Параметры узлов: 2 six-core E5-2640 CPU/ 2,5GHz/DDR3 128GB. Дисковая подсистема узла – RAID 10 из 4 WD1000DHTZ/1TB суммарным объемом (за вычетом «зеркала») 2 TB. Операционная система – Windows Server 2012 R2. Интерконнект между узлами – GigabitEthernet c 24-портовым коммутатором SSE G24-TG4."
+      },
+      {
+        "paragraph": 73,
+        "text": "RPS (requests per second) – количество сообщений в секунду;"
+      },
+      {
+        "paragraph": 78,
+        "text": "Таблица 1. Оценка EST для M=256B"
+      },
+      {
+        "paragraph": 131,
+        "text": "Таблица 1. Оценка EST для M=16B"
+      },
+      {
+        "paragraph": 267,
+        "text": "Таблица 2. Оценка EST для M=256B"
+      },
+      {
+        "paragraph": 404,
+        "text": "Полученные результаты по выбору наилучших брокеров сопоставимы с данными, на которых строится оценка EST. Например, если брокер EMQX больше остальных потребляет ресурсов CPU и показывает множество сбоев (вплоть до полного отказа) для большого количества клиентов. В то же время, брокер Aedes обладает самой высокой надежностью (минимальным показателем сбоев) и минимальной загрузкой CPU, но очень ограничен в производительности, т.к. использует только одно ядро CPU."
+      },
+      {
+        "paragraph": 407,
+        "text": "Предложенная оценка брокера сообщений (EST) позволяет выбрать лучший брокер сообщений по четырем критериям. Влияние каждого критерия определяется “умозрительно” в зависимости от того, для какой задачи применяется брокер сообщений. В нашем случае, когда все критерии равнозначны, с помощью EST выбраны наиболее подходящие брокеры: Mosquitto – для малого количества клиентов, ActiveMQ – для всех остальных случаев, особенно для QoS 2."
+      },
+      {
+        "paragraph": 425,
+        "text": "Getting Started with MQTT Performance Testing: A Primer on Scenarios and Metrics // emqx.com URL: https://www.emqx.com/en/blog/getting-started-with-mqtt-performance-testing-a-primer-on-scenarios-and-metrics (дата обращения: 11.08.2024)."
+      },
+      {
+        "paragraph": 426,
+        "text": "Mishra B., Mishra B., Kertesz A. Stress-testing MQTT brokers: A comparative analysis of performance measurements //Energies. – 2021. – Т. 14. – №. 18. – С. 5817."
+      },
+      {
+        "paragraph": 437,
+        "text": "Choosing a message broker for Internet of things based on load testing"
+      },
+      {
+        "paragraph": 443,
+        "text": "This article describes load testing common IoT message brokers under various configurations. The list of message brokers is represented by Mosquitto, EMQX, Active MQ, and Aedes. The NBomber library was chosen as the main tool for load testing. Based on this library, scenarios for stress testing brokers were developed. Each scenario was applied to the corresponding number of connections, message size, and QoS level. A custom client (called \"message listener\") was developed to handle errors. The collected data included the number of requests processed per second, the latency of sending messages, the number of errors, and the CPU utilization. Based on the obtained data, a normalized broker rating was proposed and applied. The best message broker can be selected by calculating the normalized broker score for each load scenario and merging all the calculated results into a pivot table. The best message broker is selected from the result table.."
+      },
+      {
+        "paragraph": 445,
+        "text": "Internet of Things (IoT), Message Queue Transmission Transport (MQTT), message broker, load testing."
+      },
+      {
+        "paragraph": 458,
+        "text": "EMQ. (2023). XMETER: Fully managed Mqtt Load Testing Service. www.emqx.com. https://www.emqx.com/en/products/xmeter (Accessed: 30 April 2024)."
+      },
+      {
+        "paragraph": 462,
+        "text": "Getting Started with MQTT Performance Testing: A Primer on Scenarios and Metrics // emqx.com URL: https://www.emqx.com/en/blog/getting-started-with-mqtt-performance-testing-a-primer-on-scenarios-and-metrics (дата обращения: 11.08.2024)."
+      },
+      {
+        "paragraph": 463,
+        "text": "Mishra B., Mishra B., Kertesz A. Stress-testing MQTT brokers: A comparative analysis of performance measurements //Energies. – 2021. – Т. 14. – №. 18. – С. 5817."
+      }
+    ]
+  },
+  {
+    "file": "2. Статья. Статья_2025_СолопийАВ_Руставтокон.docx",
+    "sha256": "4fff32b1988abd1d85fad0324011450f8c4430d211ae7df031842692b8a7af8d",
+    "paragraphs": 263,
+    "excerpts": [
+      {
+        "paragraph": 3,
+        "text": "Организация распределённых сетей Интернета вещей может быть достаточно сложной и дорогой, т. к. нужно обеспечивать коммуникацию тысяч и десятков тысяч устройств, а также обеспечить достаточную надёжность. Натурный эксперимент на базе таких сетей невозможен. Проверить работоспособность такой сети возможно с помощью компьютерного моделирования."
+      },
+      {
+        "paragraph": 8,
+        "text": "Организовать распределённые сети Интернета вещей достаточно сложно и дорого. Для этого нужно обеспечить коммуникацию сотни тысяч и даже миллионов устройств, обеспечить высокую надёжность, так же потребуется построить физическую сеть и подключить реальные устройства Интернета Вещей. Провести такой натурный эксперимент крайне сложно, но данную проблему можно решить с помощью компьютерного моделирования и разработки симулятора, что и является основной задачей данной статьи."
+      },
+      {
+        "paragraph": 15,
+        "text": "Кроссплатформенность для запуска на различных аппаратных платформах, например, на компьютерах с Российскими процессорами Эльбрус (МЦСТ) и Байкал (Байкал Электроникс)."
+      },
+      {
+        "paragraph": 68,
+        "text": "Обеспечение избыточности ячеистой структуры – в конфигурации может быть множество маршрутов между брокерами для обеспечения её надёжности и устойчивости. Она может задаваться различной топологией, например, в виде сетки: брокеры можно представить как матрицу (рис. 5), где брокер подключается к соседнему верхнему, нижнему, левому и правому брокеру."
+      },
+      {
+        "paragraph": 138,
+        "text": "Разработан на C# .NET 6 [15] (может быть запущен на компьютерах Эльбрус [16] и Байкал [17]) и распространяется как программное обеспечение с открытым исходным кодом."
+      },
+      {
+        "paragraph": 172,
+        "text": "Рабочая станция Эльбрус-16С"
+      },
+      {
+        "paragraph": 173,
+        "text": "Эльбрус 16С"
+      },
+      {
+        "paragraph": 221,
+        "text": "00:00:40,39"
+      },
+      {
+        "paragraph": 247,
+        "text": "Эльбрус-16С"
+      },
+      {
+        "paragraph": 248,
+        "text": "Эльбрус 16С"
+      },
+      {
+        "paragraph": 260,
+        "text": "MQTTy разработан для выполнения на платформе. Net 6, что обеспечивает переносимость решения на различные платформы. Проверка работоспособности на платформе с процессором Эльбрус-16С (архитектура e2k) и на одноплатном компьютере с процессором на архитектуре ARM (aarch64) увенчались успехом.  "
+      }
+    ]
+  },
+  {
+    "file": "3. Статья. Статья_СолопийАВ_КлассенРК__УскорениеСимуляцииMqttY.docx",
+    "sha256": "8d23f3af3b02473e3ec1c64a7cc0519cb23f81ecf600b25baf00bbccca293808",
+    "paragraphs": 458,
+    "excerpts": [
+      {
+        "paragraph": 46,
+        "text": "Abstract: This paper presents an enhanced version of the MqttY simulator, designed for modeling Industrial Internet of Things (IIoT) networks based on the MQTT protocol. The key modification involved abandoning the asynchronous model in favor of a deterministic step-by-step simulation controlled by a single scheduler. This solution eliminates execution non-determinism, reduces overhead, and provides full control over the modeling process. To improve efficiency, the logic for network and device simulation separated, allowing for their parallel computation. The functionality and performance of the updated simulator tested on a previously developed Mqtt Relay reference architecture. The paper provides a comparative analysis of the new and previous versions based on a series of experiments, demonstrating a significant performance gain. The enhanced simulator enables fast and accurate modeling of complex scenarios with thousands of nodes, facilitating reliable testing and optimization of IoT systems prior to their industrial deployment."
+      },
+      {
+        "paragraph": 51,
+        "text": "Применение единственного брокера сообщений для обработки большого числа сообщений от огромного числа устройств может быть недостаточно, поэтому применяют множество брокеров, объединённых в сеть. Данные брокеры могут быть территориально распределёнными и масштабироваться с увеличением числа устройств. При проектировании промышленных сетей важно анализировать и контролировать ключевые сетевые параметры (например, задержки и характеристики трафика), поскольку они напрямую влияют на качество обмена телеметрией и надёжность работы системы. Подходы к анализу параметров промышленных сетей, включая методы нейросетевой обработки, рассматриваются в [4]."
+      },
+      {
+        "paragraph": 132,
+        "text": "Проверка работоспособности MqttY произведена на множестве тестовых стендов (табл. 1). Каждый из тестовых стендов отличаются типом машины, архитектурой центрального процессора, объемом ОЗУ, а также ОС. В качестве одного из стендов был выбран компьютер на базе процессора Эльбрус 8С [13]. Для запуска симулятора MqttY на всех стендах установлена среда исполнения .NET 6."
+      },
+      {
+        "paragraph": 165,
+        "text": "Рабочая станция Эльбрус-801"
+      },
+      {
+        "paragraph": 166,
+        "text": "МЦСТ Эльбрус 8С"
+      },
+      {
+        "paragraph": 172,
+        "text": "Таблица 1 – Описание характеристик тестовых стендовTable 1 – Description of the characteristics of the testbeds"
+      },
+      {
+        "paragraph": 280,
+        "text": "МЦСТ Эльбрус 8C v4@1.3"
+      },
+      {
+        "paragraph": 406,
+        "text": "40,39"
+      },
+      {
+        "paragraph": 408,
+        "text": "5,99"
+      },
+      {
+        "paragraph": 410,
+        "text": "3,19"
+      },
+      {
+        "paragraph": 413,
+        "text": "По результатам сравнения видно, что ускорение составило (6886 / 6890) * (40, 39 / 3,19) ≈ 12,5 раз."
+      },
+      {
+        "paragraph": 415,
+        "text": " Для ускорения симуляции промышленных сетей мониторинга Интернета вещей была разработана обновлённая версия симулятора MqttY, который получил следующие изменения: детерминированную пошаговую симуляцию, единый планировщик, механизм распараллеливания подсчёта узлов сетей и узлов приложений. По результатам разработки произведено сравнение обновлённой и предыдущей реализации симулятора на серии экспериментов с ранее разработанной архитектурой Mqtt Relay с различным числом брокеров B, клиентов C, заданной длиной цепочки сети N. По результатам экспериментов на различных тестовых стендах установлено, что в параллельном режиме среднее ускорение составило от 2,5 до 3 раз. Кроме того, получено ускорение в 12,5 раз на эксперименте с первоначальной реализацией MqttY. Были устранены ошибки симуляции, повышена точность симулятора за счёт применения пошаговой симуляции (избавились от асинхронного варианта)."
+      },
+      {
+        "paragraph": 421,
+        "text": "На машине Эльбрус получено максимальное ускорение распараллеливания, которое составило 3 раза. Большая степень параллелизма на машине Эльбрус достигается по причине существенно переработанного JIT-компилятора (англ. Just-In-Time Compilation) среды исполнения CLR платформы dotnet6 и отключенных счётчиков профилирования."
+      },
+      {
+        "paragraph": 437,
+        "text": "Golightly L., Modesti P., Chang V. Deploying secure distributed systems: Comparative analysis of GNS3 and SEED internet emulator //Journal of Cybersecurity and Privacy. – 2023. – Т. 3. – №. 3. – С. 464-492. – DOI: 10.3390/jcp3030024."
+      },
+      {
+        "paragraph": 453,
+        "text": "L. Golightly, P. Modesti, V. Chang “Deploying secure distributed systems: Comparative analysis of GNS3 and SEED internet emulator”, Journal of Cybersecurity and Privacy, vol. 3, no. 3, pp. 464-49, 2023. doi: 10.3390/jcp3030024."
+      },
+      {
+        "paragraph": 458,
+        "text": "A. V. Solopiy and R. K. Klassen, “Selection of a message broker for the Internet of Things based on load testing,” [Vybor brokera soobshcheniy dlya Interneta veshchey na osnove nagruzochnogo testirovaniya], Dynamics of Complex Systems, vol. 19, no. 3, pp. 44–51, 2025. doi: 10.18127/j19997493-202503-04."
+      }
+    ]
+  }
+]

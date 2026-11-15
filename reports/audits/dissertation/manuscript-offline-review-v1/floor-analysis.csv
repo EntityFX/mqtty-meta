@@ -1,0 +1,5 @@
+broker,total,floorMicroseconds,belowFloor,atFloor,zeroResidual,belowFraction,zeroResidualFraction,modelResolutionsCompared,sampleScope
+Aedes,207314,60,0,0,0,0.0,0.0,3,"Pooled calibration histogram weights, not realized model draws"
+Mosquitto,257092,60,2002,295,2297,0.007787095670032517,0.008934544832200146,3,"Pooled calibration histogram weights, not realized model draws"
+ActiveMQ,158284,60,0,0,0,0.0,0.0,3,"Pooled calibration histogram weights, not realized model draws"
+EMQX,119857,80,0,0,0,0.0,0.0,3,"Pooled calibration histogram weights, not realized model draws"

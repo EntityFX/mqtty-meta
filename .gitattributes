@@ -1,0 +1,70 @@
+# Published evidence and its manifests must retain their exact bytes on checkout.
+# In particular, CRLF conversion would invalidate SHA-256 on Windows.
+/reports/** -text
+# Study provenance records hashes of these source files as well.
+/tools/load-balancing/** -text
+/tools/federation/** -text
+# Runner/source hashes in research verification must also survive checkout.
+/tools/dissertation/*network*.py -text
+/tools/dissertation/estimate_sensitivity.py -text
+/tools/dissertation/sensitivity_scheduler_v2.py -text
+/tools/dissertation/test_sensitivity_scheduler_v2.py -text
+/tools/dissertation/analyse_sensitivity.py -text
+/tools/dissertation/test_analyse_sensitivity.py -text
+/tools/dissertation/*control*.py -text
+/tools/dissertation/*acceleration*.py -text
+/tools/status/** -text
+
+/tools/dissertation/probe_qos1_pending.py -text
+/tools/dissertation/*article_figures.py -text
+/tools/dissertation/*bibliography.py -text
+/tools/dissertation/*dissertation_build.py -text
+/tools/web/** -text
+
+/tools/dissertation/qos1_linux_diagnostic.py -text
+# These generators and method input are hashed by the consolidated twin package.
+/tools/dissertation/prepare_twin_package.py -text
+/tools/dissertation/test_prepare_twin_package.py -text
+/docs/dissertation/broker-twin-method-map.md -text
+/docs/dissertation/articles/** -text
+/tools/dissertation/*review_twin_article.py -text
+/tools/dissertation/revise_article1_analysis.py -text
+/tools/dissertation/test_article1_revision.py -text
+/tools/dissertation/render_article1_timeline.py -text
+/tools/dissertation/*twin*.py -text
+/tools/dissertation/*fresh*.py -text
+/tools/dissertation/run_emqx_mailbox_probe.py -text
+/tools/dissertation/TwinValidationProbe/** -text
+# Final matched-series audit records the calculator's byte hash.
+/tools/dissertation/audit_matched_main_results.py -text
+/tools/dissertation/test_audit_matched_main_results.py -text
+/tools/dissertation/render_matched_main_figures.py -text
+/tools/dissertation/article2_evidence_package.py -text
+/tools/dissertation/test_article2_evidence_package.py -text
+# Evidence-map bytes are recorded in the dissertation claims receipt.
+/docs/dissertation/claim-evidence-map.md -text
+# Formal review records these bytes in its source receipt.
+/docs/dissertation/network-forwarding-proofs.md -text
+/docs/dissertation/network-model-contract.md -text
+/tools/dissertation/verify_forwarding_properties.py -text
+/tools/dissertation/test_forwarding_properties.py -text
+# Catalog preserves byte-identical scientific diagram copies and its SHA index.
+/docs/topologies/** -text
+/docs/dissertation/next-delivery-block-plan.md -text
+# Related-work verification records these document bytes.
+/docs/dissertation/article-2-contribution-and-related-work.md -text
+/docs/dissertation/articles-and-work-plan.md -text
+/docs/dissertation/drafts/** -text
+/docs/overview/ExpertReview.md -text
+/docs/dissertation/queue-capacity-short-protocol.md -text
+/docs/dissertation/chapter-refresh-plan.md -text
+# Benchmark provenance and retrieved receipts retain the bytes recorded in manifests.
+/reproducibility/*benchmark*.py -text
+/reproducibility/run_load_campaign.py -text
+/reproducibility/remote_load_campaign.py -text
+/reports/audits/mqtty-benchmark-20261103/** -text whitespace=cr-at-eol
+/reports/audits/mqtty-parallel-fix-20261103/** -text whitespace=cr-at-eol
+/reports/audits/mqtty-scaling-20261103/** -text whitespace=cr-at-eol
+/reports/audits/mqtty-load-20261103/** -text whitespace=cr-at-eol
+/reports/audits/mqtty-load-remote-20261103/** -text whitespace=cr-at-eol
+/reports/audits/mqtty-load-comparison-20261103/** -text whitespace=cr-at-eol

@@ -1,0 +1,6 @@
+2026-11-02 00:12:48,627+0300 INFO  latexmk - this process (9928) started by python in directory C:\projects\mqtty-meta with command line: "C:\Program Files\MiKTeX\miktex\bin\x64\latexmk.EXE" --version
+2026-11-02 00:12:48,627+0300 INFO  latexmk - running on Windows 10.0.17763
+2026-11-02 00:12:48,645+0300 INFO  latexmk - running One MiKTeX Utility to refresh the file name database
+2026-11-02 00:12:48,650+0300 INFO  latexmk.core - start process: miktex --quiet fndb refresh
+2026-11-02 00:12:55,767+0300 INFO  latexmk - running One MiKTeX Utility to create font map files
+2026-11-02 00:12:55,768+0300 INFO  latexmk.core - start process: miktex --quiet fontmaps configure

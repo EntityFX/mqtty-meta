@@ -1,0 +1,41 @@
+0001 namespace EntityFX.MqttY.Contracts.Mqtt.BrokerProfile;
+0002 
+0003 public sealed record LatencyBin(double Milliseconds, long Count);
+0004 
+0005 /// <summary>A weighted empirical CDF. Rare maxima retain their observed frequency.</summary>
+0006 public sealed class EmpiricalLatencyDistribution
+0007 {
+0008     private readonly LatencyBin[] bins;
+0009     private readonly long[] cumulative;
+0010     public IReadOnlyList<LatencyBin> Bins => Array.AsReadOnly(bins);
+0011     public long Count { get; }
+0012 
+0013     public EmpiricalLatencyDistribution(IEnumerable<LatencyBin> source)
+0014     {
+0015         bins = source.ToArray();
+0016         if (bins.Length == 0 || bins.Length > 1000000) throw new InvalidDataException("Invalid empirical latency bin count.");
+0017         cumulative = new long[bins.Length];
+0018         double previous = -1;
+0019         long count = 0;
+0020         for (var index = 0; index < bins.Length; index++)
+0021         {
+0022             var bin = bins[index];
+0023             if (!double.IsFinite(bin.Milliseconds) || bin.Milliseconds < 0 || bin.Milliseconds <= previous || bin.Count <= 0)
+0024                 throw new InvalidDataException("Latency bins must be finite, nonnegative, strictly increasing with positive counts.");
+0025             previous = bin.Milliseconds;
+0026             try { count = checked(count + bin.Count); }
+0027             catch (OverflowException error) { throw new InvalidDataException("Latency sample count overflow.", error); }
+0028             cumulative[index] = count;
+0029         }
+0030         Count = count;
+0031     }
+0032 
+0033     public double Sample(double uniform)
+0034     {
+0035         if (!double.IsFinite(uniform) || uniform < 0 || uniform > 1) throw new ArgumentOutOfRangeException(nameof(uniform));
+0036         var rank = uniform == 1 ? Count : Math.Min(Count, (long)Math.Floor(uniform * Count) + 1);
+0037         var index = Array.BinarySearch(cumulative, rank);
+0038         if (index < 0) index = ~index;
+0039         return bins[index].Milliseconds;
+0040     }
+0041 }

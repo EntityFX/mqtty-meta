@@ -1,0 +1,2074 @@
+{
+  "analyserSha256": "58d139baa06ae4e64fb0b7a36df014ceb5865a910781474b7b05c1b2e9ada2a2",
+  "coverage": {
+    "matrix": {
+      "completed": 48,
+      "failedCriteria": {
+        "deliveryLossRate": 9,
+        "rps": 4
+      },
+      "medianWallSeconds": 37.04099399099505,
+      "peakRssBytes": 914350080,
+      "planned": 216,
+      "recorded": 48,
+      "scientificFailed": 13,
+      "technicalErrors": 0,
+      "totalWorkerWallSeconds": 23511.57259780499
+    },
+    "pilot": {
+      "completed": 8,
+      "failedCriteria": {
+        "deliveryLossRate": 3,
+        "latencyP99Ms": 1
+      },
+      "medianWallSeconds": 360.24780484000075,
+      "peakRssBytes": 1161539584,
+      "planned": 8,
+      "recorded": 8,
+      "scientificFailed": 4,
+      "technicalErrors": 0,
+      "totalWorkerWallSeconds": 2928.1191346230044
+    },
+    "replay": {
+      "completed": 0,
+      "failedCriteria": {},
+      "medianWallSeconds": null,
+      "peakRssBytes": null,
+      "planned": 6,
+      "recorded": 0,
+      "scientificFailed": 0,
+      "technicalErrors": 0,
+      "totalWorkerWallSeconds": 0
+    }
+  },
+  "limitations": [
+    "Only saved completed results; no new server observation or archive verification",
+    "Scientific criterion failures do not establish broker or simulator defect causes",
+    "Variant comparisons use identical broker, payload, QoS, publishers and seed, matrix phase only",
+    "Relative deltas with zero baseline and QoS0 ACK latency are not applicable",
+    "Wall times describe this execution; ratios alone do not prove hardware-independent acceleration",
+    "Worker wall-time sum is not elapsed campaign time; partial, ordered coverage cannot represent all brokers"
+  ],
+  "matchedPairs": [
+    {
+      "baselineFailedCriteria": [],
+      "baselineId": "Aedes.m16.q0.p1.s42.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 0,
+          "baseline": 28858,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 28858
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": null,
+          "baseline": null,
+          "relativeDelta": null,
+          "status": "notApplicable",
+          "variant": null
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 1,
+      "qos": 0,
+      "seed": 42,
+      "variant": "doubleWindow",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q0.p1.s42.doubleWindow",
+      "wallTimeRatio": 1.636479356889683
+    },
+    {
+      "baselineFailedCriteria": [],
+      "baselineId": "Aedes.m16.q0.p1.s42.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 0,
+          "baseline": 28858,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 28858
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": null,
+          "baseline": null,
+          "relativeDelta": null,
+          "status": "notApplicable",
+          "variant": null
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 1,
+      "qos": 0,
+      "seed": 42,
+      "variant": "halfTick",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q0.p1.s42.halfTick",
+      "wallTimeRatio": 1.7273196064570695
+    },
+    {
+      "baselineFailedCriteria": [],
+      "baselineId": "Aedes.m16.q0.p1.s43.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 0,
+          "baseline": 28858,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 28858
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": null,
+          "baseline": null,
+          "relativeDelta": null,
+          "status": "notApplicable",
+          "variant": null
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 1,
+      "qos": 0,
+      "seed": 43,
+      "variant": "doubleWindow",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q0.p1.s43.doubleWindow",
+      "wallTimeRatio": 1.6361543077379486
+    },
+    {
+      "baselineFailedCriteria": [],
+      "baselineId": "Aedes.m16.q0.p1.s43.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 0,
+          "baseline": 28858,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 28858
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": null,
+          "baseline": null,
+          "relativeDelta": null,
+          "status": "notApplicable",
+          "variant": null
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 1,
+      "qos": 0,
+      "seed": 43,
+      "variant": "halfTick",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q0.p1.s43.halfTick",
+      "wallTimeRatio": 1.7283750490604095
+    },
+    {
+      "baselineFailedCriteria": [],
+      "baselineId": "Aedes.m16.q0.p1.s44.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 0,
+          "baseline": 28858,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 28858
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": null,
+          "baseline": null,
+          "relativeDelta": null,
+          "status": "notApplicable",
+          "variant": null
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 1,
+      "qos": 0,
+      "seed": 44,
+      "variant": "doubleWindow",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q0.p1.s44.doubleWindow",
+      "wallTimeRatio": 1.5464796107050833
+    },
+    {
+      "baselineFailedCriteria": [],
+      "baselineId": "Aedes.m16.q0.p1.s44.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 0,
+          "baseline": 28858,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 28858
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": null,
+          "baseline": null,
+          "relativeDelta": null,
+          "status": "notApplicable",
+          "variant": null
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 1,
+      "qos": 0,
+      "seed": 44,
+      "variant": "halfTick",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q0.p1.s44.halfTick",
+      "wallTimeRatio": 1.728354586504677
+    },
+    {
+      "baselineFailedCriteria": [],
+      "baselineId": "Aedes.m16.q0.p128.s42.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 0.0,
+          "baseline": 53696.5,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 53696.5
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": null,
+          "baseline": null,
+          "relativeDelta": null,
+          "status": "notApplicable",
+          "variant": null
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 128,
+      "qos": 0,
+      "seed": 42,
+      "variant": "doubleWindow",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q0.p128.s42.doubleWindow",
+      "wallTimeRatio": 1.704615676384811
+    },
+    {
+      "baselineFailedCriteria": [],
+      "baselineId": "Aedes.m16.q0.p128.s42.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 0.0,
+          "baseline": 53696.5,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 53696.5
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": null,
+          "baseline": null,
+          "relativeDelta": null,
+          "status": "notApplicable",
+          "variant": null
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 128,
+      "qos": 0,
+      "seed": 42,
+      "variant": "halfTick",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q0.p128.s42.halfTick",
+      "wallTimeRatio": 2.003116947943696
+    },
+    {
+      "baselineFailedCriteria": [],
+      "baselineId": "Aedes.m16.q0.p128.s43.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 0.0,
+          "baseline": 53696.5,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 53696.5
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": null,
+          "baseline": null,
+          "relativeDelta": null,
+          "status": "notApplicable",
+          "variant": null
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 128,
+      "qos": 0,
+      "seed": 43,
+      "variant": "doubleWindow",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q0.p128.s43.doubleWindow",
+      "wallTimeRatio": 1.680215914279993
+    },
+    {
+      "baselineFailedCriteria": [],
+      "baselineId": "Aedes.m16.q0.p128.s43.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 0.0,
+          "baseline": 53696.5,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 53696.5
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": null,
+          "baseline": null,
+          "relativeDelta": null,
+          "status": "notApplicable",
+          "variant": null
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 128,
+      "qos": 0,
+      "seed": 43,
+      "variant": "halfTick",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q0.p128.s43.halfTick",
+      "wallTimeRatio": 1.9721250527304774
+    },
+    {
+      "baselineFailedCriteria": [],
+      "baselineId": "Aedes.m16.q0.p128.s44.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 0.0,
+          "baseline": 53696.5,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 53696.5
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": null,
+          "baseline": null,
+          "relativeDelta": null,
+          "status": "notApplicable",
+          "variant": null
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 128,
+      "qos": 0,
+      "seed": 44,
+      "variant": "doubleWindow",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q0.p128.s44.doubleWindow",
+      "wallTimeRatio": 1.679082348649332
+    },
+    {
+      "baselineFailedCriteria": [],
+      "baselineId": "Aedes.m16.q0.p128.s44.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 0.0,
+          "baseline": 53696.5,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 53696.5
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": null,
+          "baseline": null,
+          "relativeDelta": null,
+          "status": "notApplicable",
+          "variant": null
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 128,
+      "qos": 0,
+      "seed": 44,
+      "variant": "halfTick",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q0.p128.s44.halfTick",
+      "wallTimeRatio": 2.02182129419232
+    },
+    {
+      "baselineFailedCriteria": [],
+      "baselineId": "Aedes.m16.q1.p1.s42.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 6.25,
+          "baseline": 8759,
+          "relativeDelta": 0.000713551775316817,
+          "status": "compared",
+          "variant": 8765.25
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": 0.0,
+          "baseline": 0.13,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 0.13
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 1,
+      "qos": 1,
+      "seed": 42,
+      "variant": "doubleWindow",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q1.p1.s42.doubleWindow",
+      "wallTimeRatio": 1.6000235764291624
+    },
+    {
+      "baselineFailedCriteria": [],
+      "baselineId": "Aedes.m16.q1.p1.s42.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 4,
+          "baseline": 8759,
+          "relativeDelta": 0.0004566731362027629,
+          "status": "compared",
+          "variant": 8763
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": 0.0050000000000000044,
+          "baseline": 0.13,
+          "relativeDelta": 0.03846153846153849,
+          "status": "compared",
+          "variant": 0.135
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 1,
+      "qos": 1,
+      "seed": 42,
+      "variant": "halfTick",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q1.p1.s42.halfTick",
+      "wallTimeRatio": 1.8001169597398154
+    },
+    {
+      "baselineFailedCriteria": [],
+      "baselineId": "Aedes.m16.q1.p1.s43.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": -44.25,
+          "baseline": 8771.5,
+          "relativeDelta": -0.005044747192612438,
+          "status": "compared",
+          "variant": 8727.25
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": 0.010000000000000009,
+          "baseline": 0.13,
+          "relativeDelta": 0.07692307692307698,
+          "status": "compared",
+          "variant": 0.14
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 1,
+      "qos": 1,
+      "seed": 43,
+      "variant": "doubleWindow",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q1.p1.s43.doubleWindow",
+      "wallTimeRatio": 1.599464998660998
+    },
+    {
+      "baselineFailedCriteria": [],
+      "baselineId": "Aedes.m16.q1.p1.s43.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 3.5,
+          "baseline": 8771.5,
+          "relativeDelta": 0.00039901955195804597,
+          "status": "compared",
+          "variant": 8775
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": 0.0050000000000000044,
+          "baseline": 0.13,
+          "relativeDelta": 0.03846153846153849,
+          "status": "compared",
+          "variant": 0.135
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 1,
+      "qos": 1,
+      "seed": 43,
+      "variant": "halfTick",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q1.p1.s43.halfTick",
+      "wallTimeRatio": 1.7980407343390408
+    },
+    {
+      "baselineFailedCriteria": [],
+      "baselineId": "Aedes.m16.q1.p1.s44.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 479.75,
+          "baseline": 7808,
+          "relativeDelta": 0.061443391393442626,
+          "status": "compared",
+          "variant": 8287.75
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": 0.0,
+          "baseline": 0.14,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 0.14
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 1,
+      "qos": 1,
+      "seed": 44,
+      "variant": "doubleWindow",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q1.p1.s44.doubleWindow",
+      "wallTimeRatio": 1.5981822994561141
+    },
+    {
+      "baselineFailedCriteria": [],
+      "baselineId": "Aedes.m16.q1.p1.s44.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 4.5,
+          "baseline": 7808,
+          "relativeDelta": 0.0005763319672131147,
+          "status": "compared",
+          "variant": 7812.5
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": 0.0,
+          "baseline": 0.14,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 0.14
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 1,
+      "qos": 1,
+      "seed": 44,
+      "variant": "halfTick",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q1.p1.s44.halfTick",
+      "wallTimeRatio": 1.7978056317506927
+    },
+    {
+      "baselineFailedCriteria": [
+        "deliveryLossRate"
+      ],
+      "baselineId": "Aedes.m16.q1.p128.s42.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": -9.75,
+          "baseline": 19454,
+          "relativeDelta": -0.0005011822761385833,
+          "status": "compared",
+          "variant": 19444.25
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0.000664633825471439,
+          "baseline": 0.274185257530585,
+          "relativeDelta": 0.0024240319536410525,
+          "status": "compared",
+          "variant": 0.2748498913560564
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": 0.05000000000000071,
+          "baseline": 11.49,
+          "relativeDelta": 0.0043516100957354835,
+          "status": "compared",
+          "variant": 11.540000000000001
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 128,
+      "qos": 1,
+      "seed": 42,
+      "variant": "doubleWindow",
+      "variantFailedCriteria": [
+        "deliveryLossRate"
+      ],
+      "variantId": "Aedes.m16.q1.p128.s42.doubleWindow",
+      "wallTimeRatio": 1.6496230103563783
+    },
+    {
+      "baselineFailedCriteria": [
+        "deliveryLossRate"
+      ],
+      "baselineId": "Aedes.m16.q1.p128.s42.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 3.5,
+          "baseline": 19454,
+          "relativeDelta": 0.00017991158630615813,
+          "status": "compared",
+          "variant": 19457.5
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": -0.00017780539130707318,
+          "baseline": 0.274185257530585,
+          "relativeDelta": -0.0006484863296752533,
+          "status": "compared",
+          "variant": 0.2740074521392779
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": 0.0,
+          "baseline": 11.49,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 11.49
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 128,
+      "qos": 1,
+      "seed": 42,
+      "variant": "halfTick",
+      "variantFailedCriteria": [
+        "deliveryLossRate"
+      ],
+      "variantId": "Aedes.m16.q1.p128.s42.halfTick",
+      "wallTimeRatio": 2.016922424580554
+    },
+    {
+      "baselineFailedCriteria": [
+        "deliveryLossRate"
+      ],
+      "baselineId": "Aedes.m16.q1.p128.s43.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": -8.25,
+          "baseline": 19490,
+          "relativeDelta": -0.0004232939969214982,
+          "status": "compared",
+          "variant": 19481.75
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0.0014116871282416898,
+          "baseline": 0.2729861467419189,
+          "relativeDelta": 0.005171277535838838,
+          "status": "compared",
+          "variant": 0.2743978338701606
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": 0.009999999999999787,
+          "baseline": 11.38,
+          "relativeDelta": 0.0008787346221440937,
+          "status": "compared",
+          "variant": 11.39
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 128,
+      "qos": 1,
+      "seed": 43,
+      "variant": "doubleWindow",
+      "variantFailedCriteria": [
+        "deliveryLossRate"
+      ],
+      "variantId": "Aedes.m16.q1.p128.s43.doubleWindow",
+      "wallTimeRatio": 1.6083328914139994
+    },
+    {
+      "baselineFailedCriteria": [
+        "deliveryLossRate"
+      ],
+      "baselineId": "Aedes.m16.q1.p128.s43.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": -4,
+          "baseline": 19490,
+          "relativeDelta": -0.0002052334530528476,
+          "status": "compared",
+          "variant": 19486
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": -9.791929657354537e-05,
+          "baseline": 0.2729861467419189,
+          "relativeDelta": -0.000358696943937299,
+          "status": "compared",
+          "variant": 0.27288822744534535
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": 0.004999999999999005,
+          "baseline": 11.38,
+          "relativeDelta": 0.00043936731107196877,
+          "status": "compared",
+          "variant": 11.385
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 128,
+      "qos": 1,
+      "seed": 43,
+      "variant": "halfTick",
+      "variantFailedCriteria": [
+        "deliveryLossRate"
+      ],
+      "variantId": "Aedes.m16.q1.p128.s43.halfTick",
+      "wallTimeRatio": 2.041704144245321
+    },
+    {
+      "baselineFailedCriteria": [
+        "deliveryLossRate"
+      ],
+      "baselineId": "Aedes.m16.q1.p128.s44.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 28.75,
+          "baseline": 19459,
+          "relativeDelta": 0.001477465440156226,
+          "status": "compared",
+          "variant": 19487.75
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": -0.0013570099372395283,
+          "baseline": 0.2763502749370471,
+          "relativeDelta": -0.004910470733378704,
+          "status": "compared",
+          "variant": 0.2749932649998076
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": -0.019999999999999574,
+          "baseline": 11.34,
+          "relativeDelta": -0.0017636684303350594,
+          "status": "compared",
+          "variant": 11.32
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 128,
+      "qos": 1,
+      "seed": 44,
+      "variant": "doubleWindow",
+      "variantFailedCriteria": [
+        "deliveryLossRate"
+      ],
+      "variantId": "Aedes.m16.q1.p128.s44.doubleWindow",
+      "wallTimeRatio": 1.589578061488017
+    },
+    {
+      "baselineFailedCriteria": [
+        "deliveryLossRate"
+      ],
+      "baselineId": "Aedes.m16.q1.p128.s44.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": -3.5,
+          "baseline": 19459,
+          "relativeDelta": -0.00017986535793206227,
+          "status": "compared",
+          "variant": 19455.5
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": -1.6845641448437476e-06,
+          "baseline": 0.2763502749370471,
+          "relativeDelta": -6.095757079407622e-06,
+          "status": "compared",
+          "variant": 0.27634859037290227
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": 0.005000000000000782,
+          "baseline": 11.34,
+          "relativeDelta": 0.0004409171075838432,
+          "status": "compared",
+          "variant": 11.345
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 128,
+      "qos": 1,
+      "seed": 44,
+      "variant": "halfTick",
+      "variantFailedCriteria": [
+        "deliveryLossRate"
+      ],
+      "variantId": "Aedes.m16.q1.p128.s44.halfTick",
+      "wallTimeRatio": 2.0661089318673094
+    },
+    {
+      "baselineFailedCriteria": [
+        "rps"
+      ],
+      "baselineId": "Aedes.m16.q2.p1.s42.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 207,
+          "baseline": 2664,
+          "relativeDelta": 0.0777027027027027,
+          "status": "compared",
+          "variant": 2871
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": 0.0,
+          "baseline": 0.37,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 0.37
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 1,
+      "qos": 2,
+      "seed": 42,
+      "variant": "doubleWindow",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q2.p1.s42.doubleWindow",
+      "wallTimeRatio": 1.699594049801056
+    },
+    {
+      "baselineFailedCriteria": [
+        "rps"
+      ],
+      "baselineId": "Aedes.m16.q2.p1.s42.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 0.5,
+          "baseline": 2664,
+          "relativeDelta": 0.00018768768768768769,
+          "status": "compared",
+          "variant": 2664.5
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": 0.0,
+          "baseline": 0.37,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 0.37
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 1,
+      "qos": 2,
+      "seed": 42,
+      "variant": "halfTick",
+      "variantFailedCriteria": [
+        "rps"
+      ],
+      "variantId": "Aedes.m16.q2.p1.s42.halfTick",
+      "wallTimeRatio": 1.7985671352619463
+    },
+    {
+      "baselineFailedCriteria": [],
+      "baselineId": "Aedes.m16.q2.p1.s43.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 3.0,
+          "baseline": 3081.5,
+          "relativeDelta": 0.0009735518416355671,
+          "status": "compared",
+          "variant": 3084.5
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": 0.0,
+          "baseline": 0.36,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 0.36
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 1,
+      "qos": 2,
+      "seed": 43,
+      "variant": "doubleWindow",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q2.p1.s43.doubleWindow",
+      "wallTimeRatio": 1.5452633656234396
+    },
+    {
+      "baselineFailedCriteria": [],
+      "baselineId": "Aedes.m16.q2.p1.s43.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 0.0,
+          "baseline": 3081.5,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 3081.5
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": 0.0050000000000000044,
+          "baseline": 0.36,
+          "relativeDelta": 0.013888888888888902,
+          "status": "compared",
+          "variant": 0.365
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 1,
+      "qos": 2,
+      "seed": 43,
+      "variant": "halfTick",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q2.p1.s43.halfTick",
+      "wallTimeRatio": 1.6373010582880605
+    },
+    {
+      "baselineFailedCriteria": [
+        "rps"
+      ],
+      "baselineId": "Aedes.m16.q2.p1.s44.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 227.25,
+          "baseline": 2641.5,
+          "relativeDelta": 0.08603066439522998,
+          "status": "compared",
+          "variant": 2868.75
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": 0.0,
+          "baseline": 0.37,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 0.37
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 1,
+      "qos": 2,
+      "seed": 44,
+      "variant": "doubleWindow",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q2.p1.s44.doubleWindow",
+      "wallTimeRatio": 1.699811074992167
+    },
+    {
+      "baselineFailedCriteria": [
+        "rps"
+      ],
+      "baselineId": "Aedes.m16.q2.p1.s44.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 0.0,
+          "baseline": 2641.5,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 2641.5
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": 0.0,
+          "baseline": 0.37,
+          "relativeDelta": 0.0,
+          "status": "compared",
+          "variant": 0.37
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 1,
+      "qos": 2,
+      "seed": 44,
+      "variant": "halfTick",
+      "variantFailedCriteria": [
+        "rps"
+      ],
+      "variantId": "Aedes.m16.q2.p1.s44.halfTick",
+      "wallTimeRatio": 1.7998952528524033
+    },
+    {
+      "baselineFailedCriteria": [],
+      "baselineId": "Aedes.m16.q2.p128.s42.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 163.75,
+          "baseline": 6985.5,
+          "relativeDelta": 0.02344141435831365,
+          "status": "compared",
+          "variant": 7149.25
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": -1.4299999999999997,
+          "baseline": 32.96,
+          "relativeDelta": -0.043385922330097075,
+          "status": "compared",
+          "variant": 31.53
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 128,
+      "qos": 2,
+      "seed": 42,
+      "variant": "doubleWindow",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q2.p128.s42.doubleWindow",
+      "wallTimeRatio": 1.652938818589851
+    },
+    {
+      "baselineFailedCriteria": [],
+      "baselineId": "Aedes.m16.q2.p128.s42.baseline",
+      "broker": "Aedes",
+      "kind": "matrix",
+      "metrics": {
+        "completedRps": {
+          "absoluteDelta": 2.5,
+          "baseline": 6985.5,
+          "relativeDelta": 0.00035788418867654427,
+          "status": "compared",
+          "variant": 6988
+        },
+        "deliveryLossRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        },
+        "latencyP99Ms": {
+          "absoluteDelta": 0.005000000000002558,
+          "baseline": 32.96,
+          "relativeDelta": 0.0001516990291262912,
+          "status": "compared",
+          "variant": 32.965
+        },
+        "publishFailureRate": {
+          "absoluteDelta": 0,
+          "baseline": 0,
+          "relativeDelta": null,
+          "status": "compared",
+          "variant": 0
+        }
+      },
+      "payload": 16,
+      "publishers": 128,
+      "qos": 2,
+      "seed": 42,
+      "variant": "halfTick",
+      "variantFailedCriteria": [],
+      "variantId": "Aedes.m16.q2.p128.s42.halfTick",
+      "wallTimeRatio": 1.9305338359162587
+    }
+  ],
+  "matrixDimensions": {
+    "broker": {
+      "ActiveMQ": {
+        "completed": 0,
+        "failedCriteria": {},
+        "medianWallSeconds": null,
+        "peakRssBytes": null,
+        "planned": 54,
+        "recorded": 0,
+        "scientificFailed": 0,
+        "technicalErrors": 0,
+        "totalWorkerWallSeconds": 0
+      },
+      "Aedes": {
+        "completed": 48,
+        "failedCriteria": {
+          "deliveryLossRate": 9,
+          "rps": 4
+        },
+        "medianWallSeconds": 37.04099399099505,
+        "peakRssBytes": 914350080,
+        "planned": 54,
+        "recorded": 48,
+        "scientificFailed": 13,
+        "technicalErrors": 0,
+        "totalWorkerWallSeconds": 23511.57259780499
+      },
+      "EMQX": {
+        "completed": 0,
+        "failedCriteria": {},
+        "medianWallSeconds": null,
+        "peakRssBytes": null,
+        "planned": 54,
+        "recorded": 0,
+        "scientificFailed": 0,
+        "technicalErrors": 0,
+        "totalWorkerWallSeconds": 0
+      },
+      "Mosquitto": {
+        "completed": 0,
+        "failedCriteria": {},
+        "medianWallSeconds": null,
+        "peakRssBytes": null,
+        "planned": 54,
+        "recorded": 0,
+        "scientificFailed": 0,
+        "technicalErrors": 0,
+        "totalWorkerWallSeconds": 0
+      }
+    },
+    "publishers": {
+      "1": {
+        "completed": 27,
+        "failedCriteria": {
+          "rps": 4
+        },
+        "medianWallSeconds": 34.02584454600583,
+        "peakRssBytes": 914350080,
+        "planned": 108,
+        "recorded": 27,
+        "scientificFailed": 4,
+        "technicalErrors": 0,
+        "totalWorkerWallSeconds": 822.8494352420239
+      },
+      "128": {
+        "completed": 21,
+        "failedCriteria": {
+          "deliveryLossRate": 9
+        },
+        "medianWallSeconds": 1154.9116873319872,
+        "peakRssBytes": 871333888,
+        "planned": 108,
+        "recorded": 21,
+        "scientificFailed": 9,
+        "technicalErrors": 0,
+        "totalWorkerWallSeconds": 22688.723162562965
+      }
+    },
+    "qos": {
+      "0": {
+        "completed": 18,
+        "failedCriteria": {},
+        "medianWallSeconds": 340.2612809009952,
+        "peakRssBytes": 853508096,
+        "planned": 72,
+        "recorded": 18,
+        "scientificFailed": 0,
+        "technicalErrors": 0,
+        "totalWorkerWallSeconds": 9366.883153250994
+      },
+      "1": {
+        "completed": 18,
+        "failedCriteria": {
+          "deliveryLossRate": 9
+        },
+        "medianWallSeconds": 372.283364172501,
+        "peakRssBytes": 853602304,
+        "planned": 72,
+        "recorded": 18,
+        "scientificFailed": 9,
+        "technicalErrors": 0,
+        "totalWorkerWallSeconds": 10303.691837477978
+      },
+      "2": {
+        "completed": 12,
+        "failedCriteria": {
+          "rps": 4
+        },
+        "medianWallSeconds": 35.03791124100826,
+        "peakRssBytes": 914350080,
+        "planned": 72,
+        "recorded": 12,
+        "scientificFailed": 4,
+        "technicalErrors": 0,
+        "totalWorkerWallSeconds": 3840.9976070760167
+      }
+    },
+    "variant": {
+      "baseline": {
+        "completed": 16,
+        "failedCriteria": {
+          "deliveryLossRate": 3,
+          "rps": 2
+        },
+        "medianWallSeconds": 22.019093802497082,
+        "peakRssBytes": 853336064,
+        "planned": 72,
+        "recorded": 16,
+        "scientificFailed": 5,
+        "technicalErrors": 0,
+        "totalWorkerWallSeconds": 5059.798760076999
+      },
+      "doubleWindow": {
+        "completed": 16,
+        "failedCriteria": {
+          "deliveryLossRate": 3
+        },
+        "medianWallSeconds": 36.02823211449868,
+        "peakRssBytes": 914350080,
+        "planned": 72,
+        "recorded": 16,
+        "scientificFailed": 3,
+        "technicalErrors": 0,
+        "totalWorkerWallSeconds": 8344.201704260005
+      },
+      "halfTick": {
+        "completed": 16,
+        "failedCriteria": {
+          "deliveryLossRate": 3,
+          "rps": 2
+        },
+        "medianWallSeconds": 38.0550216595002,
+        "peakRssBytes": 871333888,
+        "planned": 72,
+        "recorded": 16,
+        "scientificFailed": 5,
+        "technicalErrors": 0,
+        "totalWorkerWallSeconds": 10107.572133467984
+      }
+    }
+  },
+  "observationFile": "reports/status/sensitivity-overnight-observation.json",
+  "observationSha256": "8897f1e981b43c189725caa4018b33358c5649dceaa280230431c438df6da191",
+  "observedAtUtc": "2026-10-23T22:56:39.818601+00:00",
+  "pairedSummary": {
+    "doubleWindow": {
+      "metrics": {
+        "completedRps": {
+          "absoluteDeltaPairs": 16,
+          "maxAbsoluteDelta": 479.75,
+          "maxAbsoluteRelativeDelta": 0.08603066439522998,
+          "meanAbsoluteRelativeDelta": 0.01610949783577938,
+          "relativeDeltaPairs": 16
+        },
+        "deliveryLossRate": {
+          "absoluteDeltaPairs": 16,
+          "maxAbsoluteDelta": 0.0014116871282416898,
+          "maxAbsoluteRelativeDelta": 0.005171277535838838,
+          "meanAbsoluteRelativeDelta": 0.004168593407619532,
+          "relativeDeltaPairs": 3
+        },
+        "latencyP99Ms": {
+          "absoluteDeltaPairs": 10,
+          "maxAbsoluteDelta": 1.4299999999999997,
+          "maxAbsoluteRelativeDelta": 0.07692307692307698,
+          "meanAbsoluteRelativeDelta": 0.01273030124013887,
+          "relativeDeltaPairs": 10
+        },
+        "publishFailureRate": {
+          "absoluteDeltaPairs": 16,
+          "maxAbsoluteDelta": 0,
+          "maxAbsoluteRelativeDelta": null,
+          "meanAbsoluteRelativeDelta": null,
+          "relativeDeltaPairs": 0
+        }
+      },
+      "pairs": 16
+    },
+    "halfTick": {
+      "metrics": {
+        "completedRps": {
+          "absoluteDeltaPairs": 16,
+          "maxAbsoluteDelta": 4.5,
+          "maxAbsoluteRelativeDelta": 0.0005763319672131147,
+          "meanAbsoluteRelativeDelta": 0.00015891293306432647,
+          "relativeDeltaPairs": 16
+        },
+        "deliveryLossRate": {
+          "absoluteDeltaPairs": 16,
+          "maxAbsoluteDelta": 0.00017780539130707318,
+          "maxAbsoluteRelativeDelta": 0.0006484863296752533,
+          "meanAbsoluteRelativeDelta": 0.00033775967689732,
+          "relativeDeltaPairs": 3
+        },
+        "latencyP99Ms": {
+          "absoluteDeltaPairs": 10,
+          "maxAbsoluteDelta": 0.005000000000002558,
+          "maxAbsoluteRelativeDelta": 0.03846153846153849,
+          "meanAbsoluteRelativeDelta": 0.009184394925974799,
+          "relativeDeltaPairs": 10
+        },
+        "publishFailureRate": {
+          "absoluteDeltaPairs": 16,
+          "maxAbsoluteDelta": 0,
+          "maxAbsoluteRelativeDelta": null,
+          "meanAbsoluteRelativeDelta": null,
+          "relativeDeltaPairs": 0
+        }
+      },
+      "pairs": 16
+    }
+  },
+  "planSha256": "dfda8401e9e3f96aebece1b4baa116b58437c94752ecc0324b6e8c909243ae3c",
+  "scientificFailures": [
+    {
+      "broker": "Aedes",
+      "criteria": [
+        {
+          "error": 0.07950192028130809,
+          "limit": 0.05,
+          "name": "deliveryLossRate",
+          "reference": 0.35368717781189307,
+          "simulated": 0.274185257530585,
+          "status": "failed"
+        }
+      ],
+      "id": "Aedes.m16.q1.p128.s42.baseline",
+      "kind": "matrix",
+      "payload": 16,
+      "publishers": 128,
+      "qos": 1,
+      "seed": 42,
+      "variant": "baseline"
+    },
+    {
+      "broker": "Aedes",
+      "criteria": [
+        {
+          "error": 0.07883728645583665,
+          "limit": 0.05,
+          "name": "deliveryLossRate",
+          "reference": 0.35368717781189307,
+          "simulated": 0.2748498913560564,
+          "status": "failed"
+        }
+      ],
+      "id": "Aedes.m16.q1.p128.s42.doubleWindow",
+      "kind": "matrix",
+      "payload": 16,
+      "publishers": 128,
+      "qos": 1,
+      "seed": 42,
+      "variant": "doubleWindow"
+    },
+    {
+      "broker": "Aedes",
+      "criteria": [
+        {
+          "error": 0.07967972567261516,
+          "limit": 0.05,
+          "name": "deliveryLossRate",
+          "reference": 0.35368717781189307,
+          "simulated": 0.2740074521392779,
+          "status": "failed"
+        }
+      ],
+      "id": "Aedes.m16.q1.p128.s42.halfTick",
+      "kind": "matrix",
+      "payload": 16,
+      "publishers": 128,
+      "qos": 1,
+      "seed": 42,
+      "variant": "halfTick"
+    },
+    {
+      "broker": "Aedes",
+      "criteria": [
+        {
+          "error": 0.08070103106997417,
+          "limit": 0.05,
+          "name": "deliveryLossRate",
+          "reference": 0.35368717781189307,
+          "simulated": 0.2729861467419189,
+          "status": "failed"
+        }
+      ],
+      "id": "Aedes.m16.q1.p128.s43.baseline",
+      "kind": "matrix",
+      "payload": 16,
+      "publishers": 128,
+      "qos": 1,
+      "seed": 43,
+      "variant": "baseline"
+    },
+    {
+      "broker": "Aedes",
+      "criteria": [
+        {
+          "error": 0.07928934394173248,
+          "limit": 0.05,
+          "name": "deliveryLossRate",
+          "reference": 0.35368717781189307,
+          "simulated": 0.2743978338701606,
+          "status": "failed"
+        }
+      ],
+      "id": "Aedes.m16.q1.p128.s43.doubleWindow",
+      "kind": "matrix",
+      "payload": 16,
+      "publishers": 128,
+      "qos": 1,
+      "seed": 43,
+      "variant": "doubleWindow"
+    },
+    {
+      "broker": "Aedes",
+      "criteria": [
+        {
+          "error": 0.08079895036654772,
+          "limit": 0.05,
+          "name": "deliveryLossRate",
+          "reference": 0.35368717781189307,
+          "simulated": 0.27288822744534535,
+          "status": "failed"
+        }
+      ],
+      "id": "Aedes.m16.q1.p128.s43.halfTick",
+      "kind": "matrix",
+      "payload": 16,
+      "publishers": 128,
+      "qos": 1,
+      "seed": 43,
+      "variant": "halfTick"
+    },
+    {
+      "broker": "Aedes",
+      "criteria": [
+        {
+          "error": 0.07733690287484596,
+          "limit": 0.05,
+          "name": "deliveryLossRate",
+          "reference": 0.35368717781189307,
+          "simulated": 0.2763502749370471,
+          "status": "failed"
+        }
+      ],
+      "id": "Aedes.m16.q1.p128.s44.baseline",
+      "kind": "matrix",
+      "payload": 16,
+      "publishers": 128,
+      "qos": 1,
+      "seed": 44,
+      "variant": "baseline"
+    },
+    {
+      "broker": "Aedes",
+      "criteria": [
+        {
+          "error": 0.07869391281208549,
+          "limit": 0.05,
+          "name": "deliveryLossRate",
+          "reference": 0.35368717781189307,
+          "simulated": 0.2749932649998076,
+          "status": "failed"
+        }
+      ],
+      "id": "Aedes.m16.q1.p128.s44.doubleWindow",
+      "kind": "matrix",
+      "payload": 16,
+      "publishers": 128,
+      "qos": 1,
+      "seed": 44,
+      "variant": "doubleWindow"
+    },
+    {
+      "broker": "Aedes",
+      "criteria": [
+        {
+          "error": 0.0773385874389908,
+          "limit": 0.05,
+          "name": "deliveryLossRate",
+          "reference": 0.35368717781189307,
+          "simulated": 0.27634859037290227,
+          "status": "failed"
+        }
+      ],
+      "id": "Aedes.m16.q1.p128.s44.halfTick",
+      "kind": "matrix",
+      "payload": 16,
+      "publishers": 128,
+      "qos": 1,
+      "seed": 44,
+      "variant": "halfTick"
+    },
+    {
+      "broker": "Aedes",
+      "criteria": [
+        {
+          "error": 0.1537887373752406,
+          "limit": 0.15,
+          "name": "rps",
+          "reference": 3148.15001603366,
+          "simulated": 2664,
+          "status": "failed"
+        }
+      ],
+      "id": "Aedes.m16.q2.p1.s42.baseline",
+      "kind": "matrix",
+      "payload": 16,
+      "publishers": 1,
+      "qos": 2,
+      "seed": 42,
+      "variant": "baseline"
+    },
+    {
+      "broker": "Aedes",
+      "criteria": [
+        {
+          "error": 0.15362991394006328,
+          "limit": 0.15,
+          "name": "rps",
+          "reference": 3148.15001603366,
+          "simulated": 2664.5,
+          "status": "failed"
+        }
+      ],
+      "id": "Aedes.m16.q2.p1.s42.halfTick",
+      "kind": "matrix",
+      "payload": 16,
+      "publishers": 1,
+      "qos": 2,
+      "seed": 42,
+      "variant": "halfTick"
+    },
+    {
+      "broker": "Aedes",
+      "criteria": [
+        {
+          "error": 0.16093579195821997,
+          "limit": 0.15,
+          "name": "rps",
+          "reference": 3148.15001603366,
+          "simulated": 2641.5,
+          "status": "failed"
+        }
+      ],
+      "id": "Aedes.m16.q2.p1.s44.baseline",
+      "kind": "matrix",
+      "payload": 16,
+      "publishers": 1,
+      "qos": 2,
+      "seed": 44,
+      "variant": "baseline"
+    },
+    {
+      "broker": "Aedes",
+      "criteria": [
+        {
+          "error": 0.16093579195821997,
+          "limit": 0.15,
+          "name": "rps",
+          "reference": 3148.15001603366,
+          "simulated": 2641.5,
+          "status": "failed"
+        }
+      ],
+      "id": "Aedes.m16.q2.p1.s44.halfTick",
+      "kind": "matrix",
+      "payload": 16,
+      "publishers": 1,
+      "qos": 2,
+      "seed": 44,
+      "variant": "halfTick"
+    },
+    {
+      "broker": "ActiveMQ",
+      "criteria": [
+        {
+          "error": 0.08789879339172713,
+          "limit": 0.05,
+          "name": "deliveryLossRate",
+          "reference": 0.6912246907756249,
+          "simulated": 0.6033258973838977,
+          "status": "failed"
+        }
+      ],
+      "id": "pilot.ActiveMQ.m16.q1.p128.s42.baseline",
+      "kind": "pilot",
+      "payload": 16,
+      "publishers": 128,
+      "qos": 1,
+      "seed": 42,
+      "variant": "baseline"
+    },
+    {
+      "broker": "Aedes",
+      "criteria": [
+        {
+          "error": 0.07950192028130809,
+          "limit": 0.05,
+          "name": "deliveryLossRate",
+          "reference": 0.35368717781189307,
+          "simulated": 0.274185257530585,
+          "status": "failed"
+        }
+      ],
+      "id": "pilot.Aedes.m16.q1.p128.s42.baseline",
+      "kind": "pilot",
+      "payload": 16,
+      "publishers": 128,
+      "qos": 1,
+      "seed": 42,
+      "variant": "baseline"
+    },
+    {
+      "broker": "EMQX",
+      "criteria": [
+        {
+          "error": 0.20236336779873662,
+          "limit": 0.2,
+          "name": "latencyP99Ms",
+          "reference": 0.22566666666655996,
+          "simulated": 0.18,
+          "status": "failed"
+        }
+      ],
+      "id": "pilot.EMQX.m16.q1.p1.s42.baseline",
+      "kind": "pilot",
+      "payload": 16,
+      "publishers": 1,
+      "qos": 1,
+      "seed": 42,
+      "variant": "baseline"
+    },
+    {
+      "broker": "EMQX",
+      "criteria": [
+        {
+          "error": 0.08238636363636365,
+          "limit": 0.05,
+          "name": "deliveryLossRate",
+          "reference": 0,
+          "simulated": 0.08238636363636365,
+          "status": "failed"
+        }
+      ],
+      "id": "pilot.EMQX.m16.q1.p128.s42.baseline",
+      "kind": "pilot",
+      "payload": 16,
+      "publishers": 128,
+      "qos": 1,
+      "seed": 42,
+      "variant": "baseline"
+    }
+  ],
+  "technicalFailures": []
+}

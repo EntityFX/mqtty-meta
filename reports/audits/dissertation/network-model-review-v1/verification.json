@@ -1,0 +1,750 @@
+{
+  "status": "verified",
+  "scope": "Technical mechanism review; not steady-state performance or physical network fidelity",
+  "currentMqttYCommit": "fafa37ee7932a96f0359a0de66eb4d8b3befe212",
+  "targetedDotnetTests": {
+    "total": "39",
+    "executed": "39",
+    "passed": "39",
+    "failed": "0",
+    "error": "0",
+    "timeout": "0",
+    "aborted": "0",
+    "inconclusive": "0",
+    "passedButRunAborted": "0",
+    "notRunnable": "0",
+    "notExecuted": "0",
+    "disconnected": "0",
+    "warning": "0",
+    "completed": "0",
+    "inProgress": "0",
+    "pending": "0"
+  },
+  "trxSha256": "4e2c580106fc7114ece4897e02c5e3b003913f998afe25b2074002071ba36aa4",
+  "mesh": {
+    "mainRunsVerified": 54,
+    "idealRunsVerified": 27,
+    "comparisonGroupsVerified": 18,
+    "exactSummaryReplaysVerified": [
+      "ideal-federation-q2-s42",
+      "ideal-relay-q2-s42",
+      "ideal-single-q2-s42",
+      "mosquitto-federation-q2-s42",
+      "mosquitto-relay-q2-s42",
+      "mosquitto-single-q2-s42"
+    ],
+    "studyPlanSha256": "f500787413e4f75aa0e3eca5d67b2d4f8d3a1c650287e5ec546a47f32443ab78",
+    "publishedRunsSha256": "80e5e5bac2c16ca8f5462f8b427d1376ac0db2f88c07af04dd3f878b512c9a77",
+    "historicalMqttYCommit": "36fbec481d9dc3e1744bf96da5a9ff298f74ed2e",
+    "rows": [
+      {
+        "id": "ideal-single-q0-s42",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "a77e244dea2abd0fd3b02b5117350399cfc8075450e4cf3c719b95b46b36227d",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 0,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-single-q0-s43",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "a77e244dea2abd0fd3b02b5117350399cfc8075450e4cf3c719b95b46b36227d",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 0,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-single-q0-s44",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "a77e244dea2abd0fd3b02b5117350399cfc8075450e4cf3c719b95b46b36227d",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 0,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-single-q1-s42",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "3a1bbd10108c0e6cd30272123df2d49dcf965a4aaf59217f114d46ae5444cf2c",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 0,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-single-q1-s43",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "3a1bbd10108c0e6cd30272123df2d49dcf965a4aaf59217f114d46ae5444cf2c",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 0,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-single-q1-s44",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "3a1bbd10108c0e6cd30272123df2d49dcf965a4aaf59217f114d46ae5444cf2c",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 0,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-single-q2-s42",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "fb63f60434c9232396758af137a2577a3867073f8bc1adf9831098b28081c1e1",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 0,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-single-q2-s43",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "fb63f60434c9232396758af137a2577a3867073f8bc1adf9831098b28081c1e1",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 0,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-single-q2-s44",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "fb63f60434c9232396758af137a2577a3867073f8bc1adf9831098b28081c1e1",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 0,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-relay-q0-s42",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "48ad4b2df95810519c4aff4ca2fc090d263fb0ebef67f3b0c873a5b2fc1a0842",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 400,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-relay-q0-s43",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "48ad4b2df95810519c4aff4ca2fc090d263fb0ebef67f3b0c873a5b2fc1a0842",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 400,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-relay-q0-s44",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "48ad4b2df95810519c4aff4ca2fc090d263fb0ebef67f3b0c873a5b2fc1a0842",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 400,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-relay-q1-s42",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "045dc29e7fde9741fcbbd90554fa6bbf1330dce27866e4cf846426394e8eae8e",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 400,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-relay-q1-s43",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "045dc29e7fde9741fcbbd90554fa6bbf1330dce27866e4cf846426394e8eae8e",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 400,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-relay-q1-s44",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "045dc29e7fde9741fcbbd90554fa6bbf1330dce27866e4cf846426394e8eae8e",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 400,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-relay-q2-s42",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "5823ebec9dde5b095b62577558d4195fefe48887bb3dc0f8583c39b056246461",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 400,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-relay-q2-s43",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "5823ebec9dde5b095b62577558d4195fefe48887bb3dc0f8583c39b056246461",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 400,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-relay-q2-s44",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "5823ebec9dde5b095b62577558d4195fefe48887bb3dc0f8583c39b056246461",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 400,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-federation-q0-s42",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "0900f1809795d70e4ef9df48183c3741ffda9972838d00be0810f8b6e4f7b003",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 800,
+          "suppressedDuplicates": 400
+        }
+      },
+      {
+        "id": "ideal-federation-q0-s43",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "0900f1809795d70e4ef9df48183c3741ffda9972838d00be0810f8b6e4f7b003",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 800,
+          "suppressedDuplicates": 400
+        }
+      },
+      {
+        "id": "ideal-federation-q0-s44",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "0900f1809795d70e4ef9df48183c3741ffda9972838d00be0810f8b6e4f7b003",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 800,
+          "suppressedDuplicates": 400
+        }
+      },
+      {
+        "id": "ideal-federation-q1-s42",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "05d1ce0d186349cc95153fad943fd57fc1691215cd6c215091bce4e611c5d7f8",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 800,
+          "suppressedDuplicates": 400
+        }
+      },
+      {
+        "id": "ideal-federation-q1-s43",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "05d1ce0d186349cc95153fad943fd57fc1691215cd6c215091bce4e611c5d7f8",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 800,
+          "suppressedDuplicates": 400
+        }
+      },
+      {
+        "id": "ideal-federation-q1-s44",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "05d1ce0d186349cc95153fad943fd57fc1691215cd6c215091bce4e611c5d7f8",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 800,
+          "suppressedDuplicates": 400
+        }
+      },
+      {
+        "id": "ideal-federation-q2-s42",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "c3d4afa66de9cdab0415a3361447e7c1907a07772ed7c152be08417fdb9ce5bc",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 800,
+          "suppressedDuplicates": 400
+        }
+      },
+      {
+        "id": "ideal-federation-q2-s43",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "c3d4afa66de9cdab0415a3361447e7c1907a07772ed7c152be08417fdb9ce5bc",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 800,
+          "suppressedDuplicates": 400
+        }
+      },
+      {
+        "id": "ideal-federation-q2-s44",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "c3d4afa66de9cdab0415a3361447e7c1907a07772ed7c152be08417fdb9ce5bc",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 600,
+          "forwardAttempts": 800,
+          "suppressedDuplicates": 400
+        }
+      },
+      {
+        "id": "mosquitto-single-q0-s42",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "1eaea8bb8bd1685abe985d6b42d9789d234297e51423af520e972805ca893fb8",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-single-q0-s43",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "9b57134d9766b35bc73ed09efc74b53081cbe7ba4f0c912762d7422b9f2f46e1",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-single-q0-s44",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "c1c5d36e8f94b5c978d42948dc86d67f907f2dd39a75578304f847f4618f5b99",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-single-q1-s42",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "3735d384f376ae8c6bd1077ad75934085929078fc8d182af046afe36c0f85a8d",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-single-q1-s43",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "0dbd7d8f3d348a0538af734b965745550a6c81fd201dd476e445078d19328c3b",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-single-q1-s44",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "3682c945af9bdc335db5fca05efc249ac3871e0f470fc70c5fd8c9967584444e",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-single-q2-s42",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "dcec54f9a0b7341fa0237cccdf80d28480514be0f00a9a6a260f39134d1c7bc3",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-single-q2-s43",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "cd9a05aeda584ac665a269608e82869184f6db4079f360ff97610dd4c6720c12",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-single-q2-s44",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "7ff3eb789a8644046252a8ccdcce28fa6c3cf593cf26cb1498de9985159265b0",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-relay-q0-s42",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "25a6ed499f9063c0f6f8ef375477083991b37d4815b76d505dff59b822f8e48c",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-relay-q0-s43",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "25a6ed499f9063c0f6f8ef375477083991b37d4815b76d505dff59b822f8e48c",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-relay-q0-s44",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "25a6ed499f9063c0f6f8ef375477083991b37d4815b76d505dff59b822f8e48c",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-relay-q1-s42",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "7d97d523324e658b24b7a89eb601a0cf6e53ada8c4744ec66540355a396e0f2f",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-relay-q1-s43",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "3792f21d7ec9ae070402d7303c08fa15eb9f527fd62062d73cdcc657071f26f8",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-relay-q1-s44",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "08129f3607f6d2257a6f46e4c125be430553ca7c47c73bfda4e4bace25f3a4bc",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-relay-q2-s42",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "354da38a9c3e7516a242b7636b5b4bb96991f99201d1984880115adfdfb5f866",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-relay-q2-s43",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "9485b9c8d62b839a83c1e1f66c8534a6aef824928a91b64dfc254bf43c378327",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-relay-q2-s44",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "322fb383fbfb0b6ebafc27c90ba3f0dace6f35c02b7d029cf47acedf158c9d29",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-federation-q0-s42",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "1577bff309f620d6261504c0f3098c13b658fe67b7c8c072d3c389ec58e1f187",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-federation-q0-s43",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "1577bff309f620d6261504c0f3098c13b658fe67b7c8c072d3c389ec58e1f187",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-federation-q0-s44",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "1577bff309f620d6261504c0f3098c13b658fe67b7c8c072d3c389ec58e1f187",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-federation-q1-s42",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "ce6fa9752a50699663378c3bc055da8dba21584a05c81f2efc4dcb9acc358d9a",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-federation-q1-s43",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "2ece56e9bdcdcbc22cc51367fdd40dbdbe1cfc8b7742693aaa04ffcd147a63bc",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-federation-q1-s44",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "5a9fcc5835b548b2a8093f1150801a03cf79d3aefaada28a3809841356d5af5e",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-federation-q2-s42",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "9439203992dfa6e6ac301375cb33cd0b1c90d19fc70698eb3b3713b845a7153c",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-federation-q2-s43",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "23046d4a8538775ccc78df29617afd89b1a22d1af446ae00d994b486d981d2f6",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-federation-q2-s44",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "bc9d974f4d6852791d2e3c307a9f32d86a67e17edff01f728ad25b8ad0daaf2c",
+        "counts": null
+      }
+    ]
+  },
+  "transit": {
+    "mainRunsVerified": 18,
+    "idealRunsVerified": 9,
+    "comparisonGroupsVerified": 0,
+    "exactSummaryReplaysVerified": [
+      "ideal-relay-q0-s42",
+      "ideal-relay-q1-s42",
+      "ideal-relay-q2-s42",
+      "mosquitto-relay-q0-s42",
+      "mosquitto-relay-q1-s42",
+      "mosquitto-relay-q2-s42"
+    ],
+    "studyPlanSha256": "f23a80a4a394ce69378e31541826b5ed923f05888051e6a2e122db4e186a8e5e",
+    "publishedRunsSha256": "7a0a2b7105835a7342a98ae65e6c444cf186040b80de0a80cb60673eac33662b",
+    "historicalMqttYCommit": "2eae11a197f49ad8d962f5a98aa6ecf2c496fa9e",
+    "rows": [
+      {
+        "id": "ideal-relay-q0-s42",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "acb93803540acf98c2dddacd59120dc30ec0e70ab82683cd1d0e9cf3baab70bd",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 2000,
+          "forwardAttempts": 1800,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-relay-q0-s43",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "acb93803540acf98c2dddacd59120dc30ec0e70ab82683cd1d0e9cf3baab70bd",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 2000,
+          "forwardAttempts": 1800,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-relay-q0-s44",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "acb93803540acf98c2dddacd59120dc30ec0e70ab82683cd1d0e9cf3baab70bd",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 2000,
+          "forwardAttempts": 1800,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-relay-q1-s42",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "83af668d62c90bce57d57b8bd96dcea9141608d7a1c3a7e8a33bccf074a0fe1f",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 2000,
+          "forwardAttempts": 1800,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-relay-q1-s43",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "83af668d62c90bce57d57b8bd96dcea9141608d7a1c3a7e8a33bccf074a0fe1f",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 2000,
+          "forwardAttempts": 1800,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-relay-q1-s44",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "83af668d62c90bce57d57b8bd96dcea9141608d7a1c3a7e8a33bccf074a0fe1f",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 2000,
+          "forwardAttempts": 1800,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-relay-q2-s42",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "d096c458721603e2a1ee39ebd817c9a46770fb7c1768973fe696e1137b9d8a5c",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 2000,
+          "forwardAttempts": 1800,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-relay-q2-s43",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "d096c458721603e2a1ee39ebd817c9a46770fb7c1768973fe696e1137b9d8a5c",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 2000,
+          "forwardAttempts": 1800,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "ideal-relay-q2-s44",
+        "ideal": true,
+        "status": "completed",
+        "summarySha256": "d096c458721603e2a1ee39ebd817c9a46770fb7c1768973fe696e1137b9d8a5c",
+        "counts": {
+          "sourcePublications": 200,
+          "expectedPairs": 2000,
+          "forwardAttempts": 1800,
+          "suppressedDuplicates": 0
+        }
+      },
+      {
+        "id": "mosquitto-relay-q0-s42",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "acb93803540acf98c2dddacd59120dc30ec0e70ab82683cd1d0e9cf3baab70bd",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-relay-q0-s43",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "acb93803540acf98c2dddacd59120dc30ec0e70ab82683cd1d0e9cf3baab70bd",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-relay-q0-s44",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "acb93803540acf98c2dddacd59120dc30ec0e70ab82683cd1d0e9cf3baab70bd",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-relay-q1-s42",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "927dffa73955bc70e1b18819f8afe1c6763b636780e473bc17ebb0ca2b29b986",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-relay-q1-s43",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "03e2a8573f5cb1aebc87620f4f3a36084a3b38e6750f4acf47564b65a61314e1",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-relay-q1-s44",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "6eb35d3023983ac9595de2c44e92276da919190134671e59557e6b6e5545e1c9",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-relay-q2-s42",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "fbc8c5c1a60b147f5efcbbd71c2d51f55c706d437a3ceb0e18496d5165eb7714",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-relay-q2-s43",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "1edb3b93137c3f3d248480871b45269f7521673db2cded77dcc687d46c57626f",
+        "counts": null
+      },
+      {
+        "id": "mosquitto-relay-q2-s44",
+        "ideal": false,
+        "status": "completed",
+        "summarySha256": "5202518f6d1240a4191db18e9c9b46bbf2835f229a5cf0bee34569251c36d6a1",
+        "counts": null
+      }
+    ]
+  },
+  "sourceSha256": {
+    "tools\\dissertation\\network_review.py": "b914cc1c266ed91e8b3902fe49757ed3d20ffee8fee319c2777c74159119a939",
+    "tools\\federation\\study.py": "8070dd31bc3028373b6e1b6ffbd62639b93e46c5c2db07a7ac9d6465510546b1",
+    "tools\\federation\\transit_study.py": "2db2df3cdecec19726fbbe2d1e619dd8a6996e3712f65de9e2f02ab9833b59bf",
+    "mqtty\\src\\EntityFX.MqttSimulator\\EntityFX.Tests.Integration\\FederationTests.cs": "5ea29ca4ffb8fe00c9b413ded79766ecc66bf0bcbc2f7b44cf1db65125903942"
+  }
+}

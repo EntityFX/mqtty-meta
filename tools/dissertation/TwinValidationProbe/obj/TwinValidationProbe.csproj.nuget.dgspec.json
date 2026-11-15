@@ -1,0 +1,539 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/entityfx/projects/mqtty-meta/tools/dissertation/TwinValidationProbe/TwinValidationProbe.csproj": {}
+  },
+  "projects": {
+    "/home/entityfx/projects/mqtty-meta/MqttBenchmark/src/EntityFX.MqttBenchmark.Campaign/EntityFX.MqttBenchmark.Campaign.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/entityfx/projects/mqtty-meta/MqttBenchmark/src/EntityFX.MqttBenchmark.Campaign/EntityFX.MqttBenchmark.Campaign.csproj",
+        "projectName": "EntityFX.MqttBenchmark.Campaign",
+        "projectPath": "/home/entityfx/projects/mqtty-meta/MqttBenchmark/src/EntityFX.MqttBenchmark.Campaign/EntityFX.MqttBenchmark.Campaign.csproj",
+        "packagesPath": "/home/entityfx/.nuget/packages/",
+        "outputPath": "/home/entityfx/projects/mqtty-meta/MqttBenchmark/src/EntityFX.MqttBenchmark.Campaign/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/entityfx/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/entityfx/projects/mqtty-meta/MqttBenchmark/src/EntityFX.MqttBenchmark/EntityFX.MqttBenchmark.csproj": {
+                "projectPath": "/home/entityfx/projects/mqtty-meta/MqttBenchmark/src/EntityFX.MqttBenchmark/EntityFX.MqttBenchmark.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MQTTnet.Extensions.ManagedClient": {
+              "target": "Package",
+              "version": "[4.3.3.952, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/10.0.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/entityfx/projects/mqtty-meta/MqttBenchmark/src/EntityFX.MqttBenchmark/EntityFX.MqttBenchmark.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/entityfx/projects/mqtty-meta/MqttBenchmark/src/EntityFX.MqttBenchmark/EntityFX.MqttBenchmark.csproj",
+        "projectName": "EntityFX.MqttBenchmark",
+        "projectPath": "/home/entityfx/projects/mqtty-meta/MqttBenchmark/src/EntityFX.MqttBenchmark/EntityFX.MqttBenchmark.csproj",
+        "packagesPath": "/home/entityfx/.nuget/packages/",
+        "outputPath": "/home/entityfx/projects/mqtty-meta/MqttBenchmark/src/EntityFX.MqttBenchmark/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/entityfx/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MQTTnet.Extensions.ManagedClient": {
+              "target": "Package",
+              "version": "[4.3.3.952, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/10.0.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttSimulator.Contracts/EntityFX.MqttY.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttSimulator.Contracts/EntityFX.MqttY.Contracts.csproj",
+        "projectName": "EntityFX.MqttY.Contracts",
+        "projectPath": "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttSimulator.Contracts/EntityFX.MqttY.Contracts.csproj",
+        "packagesPath": "/home/entityfx/.nuget/packages/",
+        "outputPath": "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttSimulator.Contracts/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/entityfx/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/10.0.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttSimulator/EntityFX.MqttY.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttSimulator/EntityFX.MqttY.csproj",
+        "projectName": "EntityFX.MqttY",
+        "projectPath": "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttSimulator/EntityFX.MqttY.csproj",
+        "packagesPath": "/home/entityfx/.nuget/packages/",
+        "outputPath": "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttSimulator/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/entityfx/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttSimulator.Contracts/EntityFX.MqttY.Contracts.csproj": {
+                "projectPath": "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttSimulator.Contracts/EntityFX.MqttY.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/10.0.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Contracts.Mqtt/EntityFX.MqttY.Contracts.Mqtt.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Contracts.Mqtt/EntityFX.MqttY.Contracts.Mqtt.csproj",
+        "projectName": "EntityFX.MqttY.Contracts.Mqtt",
+        "projectPath": "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Contracts.Mqtt/EntityFX.MqttY.Contracts.Mqtt.csproj",
+        "packagesPath": "/home/entityfx/.nuget/packages/",
+        "outputPath": "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Contracts.Mqtt/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/entityfx/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttSimulator.Contracts/EntityFX.MqttY.Contracts.csproj": {
+                "projectPath": "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttSimulator.Contracts/EntityFX.MqttY.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/10.0.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Contracts.Scenarios/EntityFX.MqttY.Contracts.Scenarios.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Contracts.Scenarios/EntityFX.MqttY.Contracts.Scenarios.csproj",
+        "projectName": "EntityFX.MqttY.Contracts.Scenarios",
+        "projectPath": "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Contracts.Scenarios/EntityFX.MqttY.Contracts.Scenarios.csproj",
+        "packagesPath": "/home/entityfx/.nuget/packages/",
+        "outputPath": "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Contracts.Scenarios/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/entityfx/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttSimulator.Contracts/EntityFX.MqttY.Contracts.csproj": {
+                "projectPath": "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttSimulator.Contracts/EntityFX.MqttY.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/10.0.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Plugin.Mqtt/EntityFX.MqttY.Plugin.Mqtt.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Plugin.Mqtt/EntityFX.MqttY.Plugin.Mqtt.csproj",
+        "projectName": "EntityFX.MqttY.Plugin.Mqtt",
+        "projectPath": "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Plugin.Mqtt/EntityFX.MqttY.Plugin.Mqtt.csproj",
+        "packagesPath": "/home/entityfx/.nuget/packages/",
+        "outputPath": "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Plugin.Mqtt/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/entityfx/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttSimulator/EntityFX.MqttY.csproj": {
+                "projectPath": "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttSimulator/EntityFX.MqttY.csproj"
+              },
+              "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Contracts.Mqtt/EntityFX.MqttY.Contracts.Mqtt.csproj": {
+                "projectPath": "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Contracts.Mqtt/EntityFX.MqttY.Contracts.Mqtt.csproj"
+              },
+              "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Contracts.Scenarios/EntityFX.MqttY.Contracts.Scenarios.csproj": {
+                "projectPath": "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Contracts.Scenarios/EntityFX.MqttY.Contracts.Scenarios.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/10.0.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/entityfx/projects/mqtty-meta/tools/dissertation/TwinValidationProbe/TwinValidationProbe.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/entityfx/projects/mqtty-meta/tools/dissertation/TwinValidationProbe/TwinValidationProbe.csproj",
+        "projectName": "TwinValidationProbe",
+        "projectPath": "/home/entityfx/projects/mqtty-meta/tools/dissertation/TwinValidationProbe/TwinValidationProbe.csproj",
+        "packagesPath": "/home/entityfx/.nuget/packages/",
+        "outputPath": "/home/entityfx/projects/mqtty-meta/tools/dissertation/TwinValidationProbe/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/entityfx/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/entityfx/projects/mqtty-meta/MqttBenchmark/src/EntityFX.MqttBenchmark.Campaign/EntityFX.MqttBenchmark.Campaign.csproj": {
+                "projectPath": "/home/entityfx/projects/mqtty-meta/MqttBenchmark/src/EntityFX.MqttBenchmark.Campaign/EntityFX.MqttBenchmark.Campaign.csproj"
+              },
+              "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Plugin.Mqtt/EntityFX.MqttY.Plugin.Mqtt.csproj": {
+                "projectPath": "/home/entityfx/projects/mqtty-meta/mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Plugin.Mqtt/EntityFX.MqttY.Plugin.Mqtt.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/10.0.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

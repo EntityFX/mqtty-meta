@@ -1,0 +1,18 @@
+{
+  "status": "verified",
+  "filesVerified": 37,
+  "uncompressedBytes": 2231924,
+  "archive": "C:\\temp\\mqtty-evidence\\web-final-profile-v1\\raw-001.tar.gz",
+  "archiveBytes": 172751,
+  "archiveSha256": "5440731c9a6938d0a6b60f608627e2b560d8dcc1874dc6da5c0fb8345c391b79",
+  "localRaw": "C:\\temp\\mqtty-evidence\\web-final-profile-v1\\raw-001",
+  "health": {
+    "status": "ok",
+    "processId": 3783,
+    "processWorkingSetBytes": 168599552,
+    "dataDirectoryAvailable": true,
+    "runningJobs": 0,
+    "queuedJobs": 0
+  },
+  "service": "MainPID=3780\nMemoryCurrent=187584512\nCPUUsageNSec=8152032000\nActiveState=active\nSubState=running\n"
+}

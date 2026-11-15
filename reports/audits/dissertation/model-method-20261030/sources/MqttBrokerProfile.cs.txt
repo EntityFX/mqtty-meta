@@ -1,0 +1,113 @@
+0001 namespace EntityFX.MqttY.Contracts.Mqtt.BrokerProfile
+0002 {
+0003     /// <summary>
+0004     /// Полный эталонный профиль одного MQTT-брокера для трёх уровней QoS.
+0005     /// </summary>
+0006     public sealed class MqttBrokerProfile
+0007     {
+0008         public const string SinglePointCoverage = "single-point-v1";
+0009         /// <summary>Null retains the legacy complete-QoS contract.</summary>
+0010         public string? CoverageProtocol { get; init; }
+0011         public string BrokerType { get; init; } = string.Empty;
+0012 
+0013         public IDictionary<int, MqttMessageSizeProfile> MessageSizes { get; init; }
+0014             = new Dictionary<int, MqttMessageSizeProfile>();
+0015         public bool RequireObservedPublisherCount { get; init; }
+0016 
+0017         public CalibratedMqttQosSample For(int messageBytes, MqttQos qos, int clients)
+0018         {
+0019             if (messageBytes <= 0) throw new ArgumentOutOfRangeException(nameof(messageBytes));
+0020             if (clients <= 0) throw new ArgumentOutOfRangeException(nameof(clients));
+0021             if (!Enum.IsDefined(typeof(MqttQos), qos)) throw new ArgumentOutOfRangeException(nameof(qos));
+0022             if (!MessageSizes.TryGetValue(messageBytes, out var messageProfile))
+0023                 throw new KeyNotFoundException(
+0024                     $"Broker '{BrokerType}' has no calibration for MessageBytes={messageBytes}.");
+0025             if (!messageProfile.Qos.TryGetValue(qos, out var qosProfile))
+0026                 throw new KeyNotFoundException(
+0027                     $"Broker '{BrokerType}' has no calibration for MessageBytes={messageBytes}, QoS={(int)qos}.");
+0028             if (RequireObservedPublisherCount && !qosProfile.Samples.Any(sample => sample.Clients == clients))
+0029                 throw new InvalidDataException("Empirical profile requires an observed publisher-count point.");
+0030             return qosProfile.Interpolate(clients);
+0031         }
+0032 
+0033         public void Validate()
+0034         {
+0035             if (CoverageProtocol != null && CoverageProtocol != SinglePointCoverage)
+0036                 throw new InvalidDataException("Unknown profile coverage protocol.");
+0037             var singlePoint = CoverageProtocol == SinglePointCoverage;
+0038             if (string.IsNullOrWhiteSpace(BrokerType))
+0039                 throw new InvalidDataException("Broker name is required.");
+0040             if (MessageSizes == null || MessageSizes.Count == 0)
+0041                 throw new InvalidDataException($"Broker '{BrokerType}' has no message-size calibrations.");
+0042             if (singlePoint && (!RequireObservedPublisherCount || MessageSizes.Count != 1 || !MessageSizes.ContainsKey(16)))
+0043                 throw new InvalidDataException("Single-point coverage requires exact 16-byte calibration without interpolation.");
+0044 
+0045             foreach (var (messageBytes, messageProfile) in MessageSizes)
+0046             {
+0047                 if (messageProfile == null || messageBytes <= 0 || messageProfile.MessageBytes != messageBytes)
+0048                     throw new InvalidDataException($"Broker '{BrokerType}' has invalid MessageBytes={messageBytes}.");
+0049                 if (messageProfile.Qos == null)
+0050                     throw new InvalidDataException(
+0051                         $"Broker '{BrokerType}', MessageBytes={messageBytes} has no QoS calibrations.");
+0052                 if (singlePoint && (messageProfile.Qos.Count != 1 || !messageProfile.Qos.ContainsKey(MqttQos.AtLeastOnce)))
+0053                     throw new InvalidDataException("Single-point coverage requires only QoS 1.");
+0054                 foreach (var qos in singlePoint ? new[] { MqttQos.AtLeastOnce } : Enum.GetValues<MqttQos>())
+0055                 {
+0056                     if (!messageProfile.Qos.TryGetValue(qos, out var profile))
+0057                         throw new InvalidDataException(
+0058                             $"Broker '{BrokerType}', MessageBytes={messageBytes} is missing QoS={(int)qos}.");
+0059                     ValidateSamples(messageBytes, qos, profile.Samples);
+0060                     if (singlePoint && (profile.Samples.Count != 1 || profile.Samples[0].Clients != 16))
+0061                         throw new InvalidDataException("Single-point coverage requires only 16 publishers.");
+0062                 }
+0063                 if (messageProfile.Qos.Keys.Any(qos => !Enum.IsDefined(typeof(MqttQos), qos)))
+0064                     throw new InvalidDataException($"Broker '{BrokerType}' contains an unknown QoS.");
+0065             }
+0066         }
+0067 
+0068         private void ValidateSamples(
+0069             int messageBytes, MqttQos qos, IReadOnlyList<CalibratedMqttQosSample> samples)
+0070         {
+0071             if (samples.Count == 0)
+0072                 throw new InvalidDataException(
+0073                     $"Broker '{BrokerType}', MessageBytes={messageBytes}, QoS={(int)qos} has no samples.");
+0074             var previousClients = 0;
+0075             foreach (var sample in samples)
+0076             {
+0077                 if (sample.Clients <= previousClients)
+0078                     throw new InvalidDataException("Client counts must be unique, positive and strictly increasing.");
+0079                 previousClients = sample.Clients;
+0080                 if (!double.IsFinite(sample.CapacityRps) || sample.CapacityRps <= 0)
+0081                     throw new InvalidDataException("CapacityRps must be finite and positive.");
+0082                 ValidateRate(sample.PublishFailureRate, nameof(sample.PublishFailureRate));
+0083                 ValidateRate(sample.ConditionalDeliveryLossRate, nameof(sample.ConditionalDeliveryLossRate));
+0084                 if (qos == MqttQos.AtMostOnce)
+0085                 {
+0086                     if (sample.ProcessingLatencyQuantiles != null)
+0087                         throw new InvalidDataException("QoS 0 processing latency must be null/notApplicable.");
+0088                 }
+0089                 else
+0090                 {
+0091                     ValidateQuantiles(sample.ProcessingLatencyQuantiles);
+0092                 }
+0093             }
+0094         }
+0095 
+0096         private static void ValidateRate(double rate, string name)
+0097         {
+0098             if (!double.IsFinite(rate) || rate < 0 || rate > 1)
+0099                 throw new InvalidDataException($"{name} must be finite and in [0, 1].");
+0100         }
+0101 
+0102         private static void ValidateQuantiles(LatencyQuantiles? quantiles)
+0103         {
+0104             if (quantiles == null) throw new InvalidDataException("QoS 1/2 latency quantiles are required.");
+0105             var values = new[] { quantiles.MinMs, quantiles.P50Ms, quantiles.P75Ms,
+0106                 quantiles.P95Ms, quantiles.P99Ms, quantiles.MaxMs };
+0107             if (values.Any(value => !double.IsFinite(value) || value < 0) ||
+0108                 !values.SequenceEqual(values.OrderBy(value => value)))
+0109                 throw new InvalidDataException(
+0110                     "Latency quantiles must be finite and ordered min <= p50 <= p75 <= p95 <= p99 <= max.");
+0111         }
+0112     }
+0113 }

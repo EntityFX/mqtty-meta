@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "unitTests": 7,
+  "mqttRelayBuild": "Release net6.0 succeeded",
+  "schemaFixture": {
+    "calibratorExitCode": 0,
+    "input": "Saved Aedes.w4 raw duplicated only as a schema fixture; synthetic RTT .01ms; not new scientific measurements",
+    "coverage": "single-point-v1",
+    "empiricalBinCountMatched": true
+  },
+  "scope": "Local launcher preparation only; main campaign not admitted or started by this receipt",
+  "files": {
+    "tools/dissertation/run_matched_main_campaign.py": "1732c4a7861b6708b3ece084ba749ab70c65d97fcc806f88d9b05c972c8fd280",
+    "tools/dissertation/test_matched_main_campaign.py": "da6c9d230247982756b89ee954e4db723614489b5bb83a2821a440583cf5c829"
+  },
+  "referencePolicy": "Each model seed against arithmetic mean of three control runs; native min/max and calibration-mean baseline retained",
+  "budgetPolicy": "21600s immutable original deadline; technical failure stops; manual resume scans SHA-sealed successful points only; scientific mismatch never retried automatically",
+  "linuxUnitTests": 7,
+  "linuxMainPreflight": "passed; 0/40 already completed",
+  "programSha256": "2312e7d9938d580b9ac8099a1d5dbfc4fef5074fb2a6024008d27e9cd3356dc7"
+}

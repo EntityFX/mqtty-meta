@@ -1,0 +1,13 @@
+{
+  "collectorSha256": "5a5c7e238e7d1fef0dc9dabe19a03fe645d7e61339f208bf6fd2278e2ce75fbf",
+  "identical": true,
+  "localSha256": "e1f303d4da889d618456333614e607c0ae9a37276205846590047464c0809acd",
+  "remoteFile": "/tmp/mqtty-sensitivity-final-snapshot-v1.json",
+  "remoteSha256": "e1f303d4da889d618456333614e607c0ae9a37276205846590047464c0809acd",
+  "sourceFiles": {
+    "plan.json": "dfda8401e9e3f96aebece1b4baa116b58437c94752ecc0324b6e8c909243ae3c",
+    "progress.json": "bc07f47e2029ffd4df8c84da25b9d05eaa9883879e13e1a43c5f6cbf5f4fcad0",
+    "results.json": "9f651e0596297ed699b5512d2f79962e6009925ebe97836ac93747c45b371352"
+  },
+  "transport": "SSH key authentication / scp, no scientific input mutation"
+}

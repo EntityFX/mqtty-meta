@@ -1,0 +1,74 @@
+0001 namespace EntityFX.MqttY.Plugin.Mqtt.BrokerProfile
+0002 {
+0003     /// <summary>A fractional token bucket with an initially empty balance and a bounded burst.
+0004     /// One tick of capacity plus one token preserves fractional credit across tick batches.
+0005     /// </summary>
+0006     internal sealed class BrokerRateLimiter
+0007     {
+0008         private double _tokensPerTick;
+0009         private long _lastRefillTick;
+0010         private double _tokens;
+0011         private double _nextReservationTick;
+0012         private long _lastReservationTick;
+0013         public double BurstTokens { get; private set; }
+0014 
+0015         public BrokerRateLimiter(double maxRps, TimeSpan tickPeriod)
+0016         {
+0017             Update(maxRps, tickPeriod);
+0018         }
+0019 
+0020         public void Update(double maxRps, TimeSpan tickPeriod)
+0021         {
+0022             lock (this)
+0023             {
+0024                 if (!double.IsFinite(maxRps) || maxRps <= 0) throw new ArgumentOutOfRangeException(nameof(maxRps));
+0025                 if (tickPeriod <= TimeSpan.Zero) throw new ArgumentOutOfRangeException(nameof(tickPeriod));
+0026                 _tokensPerTick = maxRps * tickPeriod.TotalSeconds;
+0027                 if (!double.IsFinite(_tokensPerTick)) throw new ArgumentOutOfRangeException(nameof(maxRps));
+0028                 // A fractional remainder can be just below one token when the next
+0029                 // tick's budget arrives. Capping at one tick alone discards that
+0030                 // remainder and rounds sustained throughput down to whole tokens/tick.
+0031                 BurstTokens = _tokensPerTick + 1.0;
+0032                 _lastRefillTick = 0;
+0033                 _tokens = 0;
+0034                 _nextReservationTick = 0;
+0035                 _lastReservationTick = 0;
+0036             }
+0037         }
+0038 
+0039         public bool TryAcquire(long currentTick)
+0040         {
+0041             lock (this)
+0042             {
+0043                 if (currentTick < 0 || currentTick < _lastRefillTick)
+0044                     throw new ArgumentOutOfRangeException(nameof(currentTick));
+0045                 _tokens = Math.Min(BurstTokens, _tokens + (currentTick - _lastRefillTick) * _tokensPerTick);
+0046                 _lastRefillTick = currentTick;
+0047                 // Repeated fractional refills accumulate binary rounding error.
+0048                 // One billionth of a token avoids rejecting a whole-token boundary
+0049                 // after long runs without granting a meaningful extra rate budget.
+0050                 if (_tokens + 1e-9 < 1.0) return false;
+0051                 _tokens = Math.Max(0, _tokens - 1.0);
+0052                 return true;
+0053             }
+0054         }
+0055 
+0056         /// <summary>FIFO capacity pacing: defer work instead of inventing a failed publish.
+0057         /// Fractional eligibility is retained, so sub-tick rates do not round down.</summary>
+0058         public int Reserve(long currentTick)
+0059         {
+0060             lock (this)
+0061             {
+0062                 if (currentTick < 0 || currentTick < _lastReservationTick)
+0063                     throw new ArgumentOutOfRangeException(nameof(currentTick));
+0064                 _lastReservationTick = currentTick;
+0065                 var eligible = Math.Max(currentTick, _nextReservationTick);
+0066                 var wait = Math.Ceiling(Math.Max(0, eligible - currentTick) - 1e-9);
+0067                 if (!double.IsFinite(wait) || wait > int.MaxValue)
+0068                     throw new InvalidDataException("Capacity backlog cannot be represented in ticks.");
+0069                 _nextReservationTick = eligible + 1 / _tokensPerTick;
+0070                 return checked((int)Math.Max(0, wait));
+0071             }
+0072         }
+0073     }
+0074 }

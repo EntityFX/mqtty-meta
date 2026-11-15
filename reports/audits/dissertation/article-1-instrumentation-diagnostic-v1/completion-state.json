@@ -1,0 +1,24 @@
+{
+  "observedAtUtc": "2026-10-26T00:09:54.214701+00:00",
+  "services": {
+    "mqtty-article1-instrumentation-diagnostic-v1.service": {
+      "exitCode": 0,
+      "show": "MainPID=0\nResult=success\nExecMainStatus=0\nActiveState=inactive\nSubState=dead\n",
+      "stderr": ""
+    },
+    "mqtty-web.service": {
+      "exitCode": 0,
+      "show": "MainPID=236775\nResult=success\nExecMainStatus=0\nActiveState=active\nSubState=running\n",
+      "stderr": ""
+    }
+  },
+  "webHealth": {
+    "status": "ok",
+    "processId": 236776,
+    "processWorkingSetBytes": 370614272,
+    "dataDirectoryAvailable": true,
+    "runningJobs": 0,
+    "queuedJobs": 0
+  },
+  "initialHealth404": "Used /health instead of actual /healthz; no restart needed"
+}

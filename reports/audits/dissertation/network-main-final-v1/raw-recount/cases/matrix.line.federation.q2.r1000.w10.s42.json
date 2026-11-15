@@ -1,0 +1,34 @@
+{
+  "id": "matrix.line.federation.q2.r1000.w10.s42",
+  "attempt": "runs/matrix.line.federation.q2.r1000.w10.s42/attempt-001",
+  "inputConfigSha256": "e24d5f77e81362d8ada8d11fc2c96026d1683cf8abb7b630ca5a8567cd8ab7b7",
+  "status": "rawArithmeticPassed",
+  "summarySha256": "c331fdb75026beeede74809cf0585187aa494f6a22a31cb354b8222ffe88edf2",
+  "metrics": {
+    "sourceCompletedRps": 1000,
+    "uniqueGoodput": 3286.3,
+    "deliveryLoss": 0.17842499999999994,
+    "receiverP99Ms": 5056,
+    "publishP99Ms": 1.6,
+    "forwardAttempts": 27049,
+    "forwardTopicPayloadBytes": 1208217,
+    "uniqueDuringDrain": 9352,
+    "expectedDeliveries": 40000,
+    "uniqueDeliveries": 32863,
+    "fullyDeliveredPublications": 5276,
+    "sourceCompleted": 10000,
+    "sourceCompletedDuringDrain": 2,
+    "apiAttempts": 10000,
+    "queueDrops": 7137,
+    "hopLimitDrops": 0,
+    "forwardRejected": 0,
+    "backpressureUnsent": 0,
+    "duplicateDeliveries": 0,
+    "suppressedDuplicates": 0
+  },
+  "originalWarnings": [
+    "queueDrops",
+    "deliveryLoss"
+  ],
+  "verificationSeconds": 2.515000000130385
+}

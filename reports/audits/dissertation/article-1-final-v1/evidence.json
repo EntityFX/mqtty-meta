@@ -1,0 +1,37 @@
+{
+  "fullConditions": 2,
+  "totalConditions": 16,
+  "passedRuns": 6,
+  "totalRuns": 48,
+  "passedMetricChecks": 92,
+  "totalMetricChecks": 192,
+  "phaseTickRanges": {
+    "connect": [
+      7,
+      31
+    ],
+    "subscribe": [
+      7,
+      31
+    ],
+    "warmup": [
+      100000,
+      100000
+    ],
+    "measure": [
+      200000,
+      200000
+    ],
+    "drain": [
+      53,
+      61926
+    ]
+  },
+  "replays": 4,
+  "inputSha256": {
+    "final-summary.json": "22feba662dfeb4e79478140d601432a20f35947eb4b2bc682ee7d10f846ac75d",
+    "final-native-vs-model.csv": "66d10a7b477f6a86eda1713da06b982689b6d512c75ddff3e10c665f0895d5e2",
+    "phase-evidence.json": "5dc47600cb66605cdbd1ca2921d2e1df13f04c4d3955547da2d75c13ba05e78e",
+    "replay-summary.json": "f3c73503c5460b82ceb142fbdec9c201fb1f243f4b6d4087f5046141db7ce0fc"
+  }
+}

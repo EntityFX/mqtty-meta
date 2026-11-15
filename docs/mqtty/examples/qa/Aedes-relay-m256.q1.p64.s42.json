@@ -1,0 +1,41 @@
+{
+  "experiment": {
+    "topologyMode": "mqttRelay",
+    "profileClientCountMode": "publishers",
+    "brokers": 4,
+    "networkLength": 2,
+    "clientsPerBroker": 64,
+    "publishQos": "atLeastOnce",
+    "subscribeQos": "atLeastOnce",
+    "payloadBytes": 256,
+    "brokerAssignmentMode": "aedes",
+    "mixedBrokerTypes": [],
+    "warmupTicks": 10000,
+    "measurementTicks": 20000,
+    "drainTimeoutTicks": 50000,
+    "offeredRps": 75596.68399574545,
+    "randomSeed": 42,
+    "parallel": false,
+    "refreshStrategy": 0,
+    "enableCounters": true,
+    "fidelityMode": true,
+    "loadMode": "openLoopRate",
+    "transportTiming": "fixed"
+  },
+  "ticks": {
+    "tickPeriod": "00:00:00.0001000",
+    "receiveWaitPeriod": "00:00:01",
+    "outgoingWaitTicks": 1,
+    "counterHistoryDepth": 100
+  },
+  "network": {
+    "capacityBytesPerSecond": 125000000,
+    "throughputWindowTicks": 100,
+    "queueCapacity": 100000,
+    "transferTicks": 2,
+    "networkType": "ethernet"
+  },
+  "mqttYRepository": "mqtty",
+  "mqttBenchmarkRepository": "MqttBenchmark",
+  "brokerProfilePath": "reports/data/Aedes/profile/broker-calibration.v3.json"
+}

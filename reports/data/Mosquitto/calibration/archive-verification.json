@@ -1,0 +1,8 @@
+{
+  "broker": "Mosquitto",
+  "stage": "calibration",
+  "verified": true,
+  "originalSha256": "6ae7dd7ebf4d089ce75bc1b61545a95dac8b96349cd4aa9ee9746406869a02a9",
+  "restoredAggregateSha256": "3f03f1c74967f5798e73447e3fd7f611f9a9d7fe741ac3d7b3978a0dc728e320",
+  "note": "Scientific points and campaign identity match; inputSha256 differs between compact and restored representation."
+}

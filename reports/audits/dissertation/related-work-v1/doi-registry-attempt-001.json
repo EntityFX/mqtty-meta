@@ -1,0 +1,32 @@
+[
+  {
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
+    "registryUrl": "https://api.crossref.org/works/10.1109/WSC.2011.6147750",
+    "requestedDoi": "10.1109/WSC.2011.6147750",
+    "status": "unavailable"
+  },
+  {
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
+    "registryUrl": "https://api.crossref.org/works/10.3390/en14185817",
+    "requestedDoi": "10.3390/en14185817",
+    "status": "unavailable"
+  },
+  {
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
+    "registryUrl": "https://api.crossref.org/works/10.1186/s43067-024-00181-x",
+    "requestedDoi": "10.1186/s43067-024-00181-x",
+    "status": "unavailable"
+  },
+  {
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
+    "registryUrl": "https://api.crossref.org/works/10.1109/JSAC.2020.3000405",
+    "requestedDoi": "10.1109/JSAC.2020.3000405",
+    "status": "unavailable"
+  },
+  {
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
+    "registryUrl": "https://api.crossref.org/works/10.3844/jcssp.2022.687.694",
+    "requestedDoi": "10.3844/jcssp.2022.687.694",
+    "status": "unavailable"
+  }
+]

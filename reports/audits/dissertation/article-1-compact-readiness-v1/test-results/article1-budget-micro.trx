@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="4ec1838c-21fc-4b29-aec4-2c5d23de378d" name="entityfx@ENTITYFX-FWIN 2026-10-25 02:08:24" runUser="ENTITYFX-FWIN\entityfx" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-10-25T02:08:24.3414407+03:00" queuing="2026-10-25T02:08:24.3414411+03:00" start="2026-10-25T02:08:18.9132891+03:00" finish="2026-10-25T02:08:26.2771484+03:00" />
+  <TestSettings name="default" id="e097f034-4f02-4836-9cc4-041dfb5b64da">
+    <Deployment runDeploymentRoot="entityfx_ENTITYFX-FWIN_2026-10-25_02_08_24" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="16ec91fe-d293-4a63-be56-5d609c01dc8f" testId="51fdef8b-07a0-a9d6-5a9b-df339d71956e" testName="NonbindingCeiling_DoesNotChangeIdealClosedLoopResults (2)" computerName="ENTITYFX-FWIN" duration="00:00:01.8640628" startTime="2026-10-25T02:08:24.2979955+03:00" endTime="2026-10-25T02:08:26.1628928+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="16ec91fe-d293-4a63-be56-5d609c01dc8f">
+      <Output>
+        <StdOut>C:\projects\mqtty-meta\reports\audits\dissertation\article-1-compact-readiness-v1\model-budget-micro\qos2</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7b3158b1-e885-4431-9c59-b63b17f5156b" testId="6bd177d8-b4d4-286d-d155-480144d01936" testName="NonbindingCeiling_DoesNotChangeIdealClosedLoopResults (1)" computerName="ENTITYFX-FWIN" duration="00:00:02.8066291" startTime="2026-10-25T02:08:21.3986861+03:00" endTime="2026-10-25T02:08:24.2599601+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7b3158b1-e885-4431-9c59-b63b17f5156b">
+      <Output>
+        <StdOut>C:\projects\mqtty-meta\reports\audits\dissertation\article-1-compact-readiness-v1\model-budget-micro\qos1</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="NonbindingCeiling_DoesNotChangeIdealClosedLoopResults (2)" storage="c:\projects\mqtty-meta\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\debug\net6.0\entityfx.tests.integration.dll" id="51fdef8b-07a0-a9d6-5a9b-df339d71956e">
+      <Execution id="16ec91fe-d293-4a63-be56-5d609c01dc8f" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Debug\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.ClosedLoopBudgetMicroTests" name="NonbindingCeiling_DoesNotChangeIdealClosedLoopResults" />
+    </UnitTest>
+    <UnitTest name="NonbindingCeiling_DoesNotChangeIdealClosedLoopResults (1)" storage="c:\projects\mqtty-meta\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\debug\net6.0\entityfx.tests.integration.dll" id="6bd177d8-b4d4-286d-d155-480144d01936">
+      <Execution id="7b3158b1-e885-4431-9c59-b63b17f5156b" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Debug\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.ClosedLoopBudgetMicroTests" name="NonbindingCeiling_DoesNotChangeIdealClosedLoopResults" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="51fdef8b-07a0-a9d6-5a9b-df339d71956e" executionId="16ec91fe-d293-4a63-be56-5d609c01dc8f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6bd177d8-b4d4-286d-d155-480144d01936" executionId="7b3158b1-e885-4431-9c59-b63b17f5156b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>

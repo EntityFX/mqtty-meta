@@ -1,0 +1,15 @@
+{
+  "archive": "C:\\Users\\sysadm\\mqtty-benchmark-fixed-20261103-001\\collected-results-20261103-001.tar.gz",
+  "archiveSha256": "ceae209953ee429d2db22a6523c85f1d99fc55b34518ce435a2bbc376103923f",
+  "archiveBytes": 1473381,
+  "status": "completed",
+  "attempts": 36,
+  "resultSha256": "d9c8cba5adb527bc034ff418e4a0ebf3e03eb1b40f2c747526263e8f5af3b4cb",
+  "packageSha256": "ea565089f36b98774f8d6863aea6fac94cb8a14417dc2e8baa0ad6f9203bec19",
+  "host": "10.10.144.66",
+  "alias": "windows-xeon",
+  "remoteDirectory": "/C:/Users/sysadm/mqtty-benchmark-fixed-20261103-001",
+  "retrievedEpoch": 1793693936.4877388,
+  "localArchive": "C:\\projects\\mqtty-meta\\reproducibility\\artifacts\\benchmark-collected-20261103-001\\windows-xeon.tar.gz",
+  "archiveVerified": true
+}

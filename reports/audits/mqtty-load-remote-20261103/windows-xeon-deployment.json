@@ -1,0 +1,6 @@
+{
+  "host": "10.10.144.66",
+  "exitCode": 0,
+  "stdout": "{\"status\": \"deployed-and-hash-verified\", \"root\": \"C:\\\\Users\\\\sysadm\\\\mqtty-load-benchmark-20261103-001\", \"filesVerified\": 48, \"mqttyCommit\": \"24e15dce2a2839456e32627ddf02b90dd96cbd60\", \"protocolSha256\": \"dc7d48e04e9a803960139d7829d6f51c21a346b92551134d806bc5818e6952eb\"}\r\n",
+  "stderr": ""
+}

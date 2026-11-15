@@ -1,0 +1,7 @@
+{
+  "packageSha256": "ea565089f36b98774f8d6863aea6fac94cb8a14417dc2e8baa0ad6f9203bec19",
+  "timeoutSeconds": 600,
+  "countedAttemptsPerEngineAndMode": 5,
+  "localPilotResultSha256": "6e64d5586880d9f0a17770e2a16c0dd909ca120e99478ad54fabb39bc9e7f8dd",
+  "scope": "Fixed MqttY 40640a3: three network modes, explicit native serial/parallel refresh strategy 0; no automatic retries"
+}

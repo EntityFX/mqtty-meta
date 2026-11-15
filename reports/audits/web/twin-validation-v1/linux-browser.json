@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:5088",
+  "firstJob": "228d446bc4be410e91a0888fa5476343",
+  "repeatJob": "48d11d6f8e87416fa8338abfa85bc723",
+  "firstStatus": {
+    "id": "228d446bc4be410e91a0888fa5476343",
+    "topologyId": null,
+    "name": "Article 1 Web technical pilot",
+    "tickMilliseconds": 0.01,
+    "engine": "twinValidation",
+    "state": "Completed",
+    "totalTicks": 16014,
+    "step": 54201,
+    "errors": 0,
+    "startedAt": "2026-10-25T20:16:52.0850952+00:00",
+    "finishedAt": "2026-10-25T20:16:54.932145+00:00",
+    "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/228d446bc4be410e91a0888fa5476343",
+    "error": null,
+    "processId": null,
+    "processWorkingSetBytes": 334614528,
+    "processCpuSeconds": 2.85,
+    "lastObservedAt": "2026-10-25T20:16:54.6679465+00:00",
+    "phase": "drain"
+  },
+  "summarySha256": "7a683ccf53eb87132f0440b9c64ac77b9f5bcbb4ded6c0512bfa0b504399e566",
+  "repeatSummaryByteIdentical": true,
+  "sealedFilesVerified": 14,
+  "browserErrors": [],
+  "elapsedSeconds": 10.702999999979511,
+  "scope": "Technical model pilot; no new native measurement or accuracy claim"
+}

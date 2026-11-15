@@ -1,0 +1,5 @@
+metric,native,model,error,limit,status,scope
+Completed cohort RPS,13068.5,55645.5,3.2579867620614453,0.15,failed,Old profile vs new pilot; diagnostic only
+Publish p99 ms,22.674399999999878,0.42000000000000004,0.9814769078784883,0.2,failed,Old profile vs new pilot; diagnostic only
+API failure fraction,0.0,0.0,0.0,0.05,passed,Old profile vs new pilot; diagnostic only
+Delivery loss fraction,0.03535218272946394,0.9135779173518074,0.8782257346223434,0.05,failed,Old profile vs new pilot; diagnostic only

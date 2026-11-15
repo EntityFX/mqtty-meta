@@ -1,0 +1,22 @@
+{
+  "host": "10.10.144.66",
+  "confirmationEpoch": 1793713681.8455198,
+  "reconnected": true,
+  "stdout": "{\"TaskName\":\"MqttY-Load-Benchmark-20261103\",\"State\":4}\r\n",
+  "stderr": "",
+  "exitCode": 0,
+  "observed": {
+    "remote-job-status.json": {
+      "status": "running",
+      "stage": "pilot",
+      "pid": 12384,
+      "startedEpoch": 1793713815.513644,
+      "protocolSha256": "dc7d48e04e9a803960139d7829d6f51c21a346b92551134d806bc5818e6952eb"
+    },
+    "attempts.json": {
+      "rows": 8,
+      "verified": 8
+    },
+    "remote-stderr.log": ""
+  }
+}

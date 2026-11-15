@@ -1,0 +1,18 @@
+{
+  "sourceCommit": "b7537bd3a0772d303dfd7256f195d1189cf8be0b",
+  "webTestsPassed": 38,
+  "integrationTestsPassed": 26,
+  "connectionAuditTestsPassed": 3,
+  "redTests": {
+    "unknownEngine": true,
+    "missingEndpoint404": true,
+    "htmlStepMismatch": true
+  },
+  "directAdapterParityPassed": true,
+  "linuxWebBrowserPassed": true,
+  "strictFrozenParityPassed": false,
+  "strictReceiptPreserved": true,
+  "connectionSnapshotAuditPassed": true,
+  "scientificAccuracyClaim": false,
+  "nativeMeasurementsAdded": 0
+}

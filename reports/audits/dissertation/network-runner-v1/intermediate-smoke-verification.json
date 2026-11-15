@@ -1,0 +1,228 @@
+{
+  "status": "passed",
+  "observedAtUtc": "2026-10-23T21:13:20.179530+00:00",
+  "scope": "Local Windows runner test with actual MqttY CLI; not dissertation study coverage",
+  "mountPredicateSimulated": true,
+  "sourceCleanCheckReal": true,
+  "linuxExecutionTested": false,
+  "hardCgroupLimitTested": false,
+  "linuxPolled": false,
+  "simulationsExecuted": 15,
+  "pilot": {
+    "status": "completed",
+    "phase": "pilot",
+    "verified": 9
+  },
+  "matrix": {
+    "status": "completed",
+    "phase": "matrix",
+    "verified": 3
+  },
+  "replay": {
+    "status": "completed",
+    "phase": "replay",
+    "verified": 3
+  },
+  "exactReplays": 3,
+  "resumeDidNotRerunCompletedJobs": true,
+  "sourceRevisions": {
+    "C:\\projects\\mqtty-meta": "d6b35bcbb573a3a789b7d579403dab8992993e66",
+    "C:\\projects\\mqtty-meta\\mqtty": "fafa37ee7932a96f0359a0de66eb4d8b3befe212"
+  },
+  "executionManifestSha256": "1a045c1d3dfec2f6a2b157451956a77fc83390aa720f5689906cf8a9b9aaaff0",
+  "sourceSha256": {
+    "tools/dissertation/run_network_study.py": "05936cc72db788b1263149b7043314c41b6a2282e8804f364abd87ac4cc9247b",
+    "tools/dissertation/network_study_inputs.py": "fe00f7dcf32411ba97dfbfb8e13e7df0dac8938aba949630779bbaa9e479feeb",
+    "tools/dissertation/network_study_process.py": "eb91d20d5feace120c4dbb4826c62f2c96323f886c5384f3c0a1251b207766ec",
+    "tools/dissertation/network_study_verification.py": "ebdbfa8481f5dd81467f0423154bd52d3c6100e9103244d9e7e54f87b52a1504",
+    "tools/dissertation/network_review.py": "b914cc1c266ed91e8b3902fe49757ed3d20ffee8fee319c2777c74159119a939",
+    "tools/federation/study.py": "8070dd31bc3028373b6e1b6ffbd62639b93e46c5c2db07a7ac9d6465510546b1",
+    "tools/federation/transit_study.py": "2db2df3cdecec19726fbbe2d1e619dd8a6996e3712f65de9e2f02ab9833b59bf"
+  },
+  "runtimeSha256": {
+    "runtime/EntityFX.MqttY.Contracts.dll": "873b05ba1ee199fd5b0cc95ee15dfe45599de74750b55d3386244277919f5dac",
+    "runtime/EntityFX.MqttY.Contracts.Mqtt.dll": "e9018291678948bf118be5c5e855dd6c80689fb58277f8dd43670fabbf17a345",
+    "runtime/EntityFX.MqttY.Contracts.Scenarios.dll": "ebd7d9aed0019969a104597c094ea904d866091ffaf3441fea9dd67daff45744",
+    "runtime/EntityFX.MqttY.dll": "20a762a574590c1e3f3435a71b52ac1ddd1451817112333537ea6221684b3cbe",
+    "runtime/EntityFX.MqttY.Federation.App.deps.json": "377abf2a122a5713f2215176c7ff47fb4b365e1139927eeb1359c43ef989303e",
+    "runtime/EntityFX.MqttY.Federation.App.dll": "4300c5bbef3d819e72ec18d9f0c1c3df13540ec18d0367f0be3bcda6998a0845",
+    "runtime/EntityFX.MqttY.Federation.App.runtimeconfig.json": "ded3aeb5856a11db0b654a785574490cab55839ebfb17efe9e39b89618fc5b91",
+    "runtime/EntityFX.MqttY.Plugin.Mqtt.dll": "8c89a970874570a410e7540df9a993f974855e03cc92e32cca07d63a814ac293",
+    "runtime/Microsoft.Extensions.Configuration.Abstractions.dll": "3124386219566a2c386e6999d83a7d507584de46cde4ae733a8af3c373c42b8c",
+    "runtime/Microsoft.Extensions.Configuration.Binder.dll": "4449f40e0645a61067c5e206e956cc5bc3b4421593b3c27188d8c71ef45c64a6",
+    "runtime/Microsoft.Extensions.DependencyInjection.Abstractions.dll": "ac9cd953b7eeb03cf48e343c5ace6fc9b48ac968b68d1cb30ad1d6111178bf4d",
+    "runtime/Microsoft.Extensions.DependencyInjection.dll": "df0ae00b1599acae93d9f4df2bcc6d0ba109221ccc44d2d1486183f84a5fec78",
+    "runtime/Microsoft.Extensions.Logging.Abstractions.dll": "ab36e8201d41dd751cbb712704dbe8492bdd0ab1bff6fb35371cf59bcd982181",
+    "runtime/Microsoft.Extensions.Logging.dll": "37b87b16ac688d5619168554a22cca2677e1115f21c2d5ebe2f39c024fee2b7f",
+    "runtime/Microsoft.Extensions.Options.dll": "fbb309a36bc91d90ec2984397bff4f75f35ac92909e0acd952c5264c5ac0a753",
+    "runtime/Microsoft.Extensions.Primitives.dll": "f9f47907a041067d9bc1b9a9f516009b6ca0a9c6325ce83527883cc0d053dfa5",
+    "runtime/System.Diagnostics.DiagnosticSource.dll": "d6935e993b69f8abd934f01b0d7dd8ca9616a7ea94c7af59ed07b2fd3cf93a97"
+  },
+  "scientificResults": [
+    {
+      "id": "matrix.federation.q2",
+      "sha256": {
+        "summary.json": "acaf41466c0daabc045b68507d27578bdf7acc31fd96a3d738efbf64989b6e28",
+        "histograms.json": "652c1ec43124ba6e562ef50bf6bc3076e70bc31d243e9fa128c71e2c19bbc693",
+        "publications.json": "d8917d9cbaf555238dba87d840f1a9807d8a03a581a6ce41f1134afd3f9c7be9",
+        "delivery-receipts.json": "591134f7bbea34f9ef7753cc7c99c77755c2d0d37bdd96a7ed152150a5aae0fb",
+        "transmissions.json": "416e6be7cc4debf10e0f31611265b3d6651c196d72b2188365a3cf50074b2c53"
+      },
+      "warnings": []
+    },
+    {
+      "id": "matrix.relay.q2",
+      "sha256": {
+        "summary.json": "50314e72b0bd83c3b18e9af38d6a01e08cad4908fd3527c916a51dd16cb05899",
+        "histograms.json": "cea08efbd4d071345579af673a271f37120436dbeb95728001b5f1e6ecab60ab",
+        "publications.json": "bb9bd9485da2314120c99b1fe7d1339bd7d1c7aefe246a25da7af6b131a4f347",
+        "delivery-receipts.json": "39c49da90984da62f167c3f5f0cb33919b13c1f8e1df1e3b9f928556a63aaac2",
+        "transmissions.json": "e4da3452f65603751ffc2d71979ef2ed262f2da2fe3efd170f4724d825734444"
+      },
+      "warnings": []
+    },
+    {
+      "id": "matrix.single.q2",
+      "sha256": {
+        "summary.json": "1925fd326efa786d847b867512f0b7f2e1eea840a94ce4cf64523c61e6b07882",
+        "histograms.json": "42aa906c1390de4ac4580d640608762ab3bf01717cd7759ba6cbb2cac2af656d",
+        "publications.json": "327717205549120598b0cfe79caa849199c9073d6e5f6b2919f3ea14ef64883e",
+        "delivery-receipts.json": "64dcf6b258b577d9485b373e95e13c2c6e7adbbaab2f27b7a44f829a2b3eb840",
+        "transmissions.json": "9ed68fb8f929fa954c296429db199637353e4db010df77c22b99411a5917902d"
+      },
+      "warnings": []
+    },
+    {
+      "id": "pilot.federation.q0",
+      "sha256": {
+        "summary.json": "22ce7233657a18b292a4fcc6ea75dda2c10050c2b3b8988876b1b96f26ec159f",
+        "histograms.json": "828c05a30fd648211ca53361546daae717ae39ed9ba590bb7892d1ac81b9866c",
+        "publications.json": "e54bb1518565510ba195f7de40052a39416faea9f2f235f6a26f9c7524a2607c",
+        "delivery-receipts.json": "c4580a2e8287a037fff0026636cff8c6ab1702bbe4280475a9264e9c805973c9",
+        "transmissions.json": "e1fa6d32ad3944a8a871d300933d3b7e343651ee5fde42f499217b73385e4873"
+      },
+      "warnings": []
+    },
+    {
+      "id": "pilot.federation.q1",
+      "sha256": {
+        "summary.json": "d58fb6dd6433e65f841f27823259ef9bb99e3f31a3cfedfce5831c845b68e5f4",
+        "histograms.json": "1e1287cebf74f0ed273d8a7120d2ead5753465c7960fb86571a102c5b786a290",
+        "publications.json": "6d8bcaa06582d339fe0c0c2cb8c7656734e33e87cb2f5cea3053102352eb3d52",
+        "delivery-receipts.json": "cef2d3302f9ab1802bd6b1fcb7b8080f4dcff0c95b504b1c3c1c19f45dbe8da4",
+        "transmissions.json": "f0e0bb45edf5170744774c6688d6e5dd9a80090adf0ae3666a630de4c418952b"
+      },
+      "warnings": []
+    },
+    {
+      "id": "pilot.federation.q2",
+      "sha256": {
+        "summary.json": "acaf41466c0daabc045b68507d27578bdf7acc31fd96a3d738efbf64989b6e28",
+        "histograms.json": "652c1ec43124ba6e562ef50bf6bc3076e70bc31d243e9fa128c71e2c19bbc693",
+        "publications.json": "d8917d9cbaf555238dba87d840f1a9807d8a03a581a6ce41f1134afd3f9c7be9",
+        "delivery-receipts.json": "591134f7bbea34f9ef7753cc7c99c77755c2d0d37bdd96a7ed152150a5aae0fb",
+        "transmissions.json": "416e6be7cc4debf10e0f31611265b3d6651c196d72b2188365a3cf50074b2c53"
+      },
+      "warnings": []
+    },
+    {
+      "id": "pilot.relay.q0",
+      "sha256": {
+        "summary.json": "64a6e0e85dc382c5420a28fa40750160759a68a03176fe9201bd1215642e7324",
+        "histograms.json": "dd84f79edd3c1b92a2da1fa2fb955669254f98bed604bc6c0c4157db52d6a3dc",
+        "publications.json": "f2410eaf0a8acf0f579f879b857745a9ddce5d97d890aed70f0f9284b6f83dd1",
+        "delivery-receipts.json": "398256153dd8bad623e8c51c7523168ff41e097cdfe868820fd9d24e239c4a51",
+        "transmissions.json": "f5fef4dafe37de6837fbb0e8d9230cd3bd828e2d351c451af41f5005f40bc662"
+      },
+      "warnings": []
+    },
+    {
+      "id": "pilot.relay.q1",
+      "sha256": {
+        "summary.json": "dc9f8dd9ba5ebfd77e3969cefaeb4b0686e00371adf7d2ad9ea39aa9e0521232",
+        "histograms.json": "1c5f42c060b09e4e2d49998ce32ca1e4a1e6fb98f0e3963c09e4470b31656c17",
+        "publications.json": "e54bb1518565510ba195f7de40052a39416faea9f2f235f6a26f9c7524a2607c",
+        "delivery-receipts.json": "3d71da0df90c9382f12546cc9e360d0b4fd056d8cfbaa7e2389efe7347f277bf",
+        "transmissions.json": "63da84cffacbd450ad3b27fadd36af61ff13ec76007e31b78d257b1a6ee1db5b"
+      },
+      "warnings": []
+    },
+    {
+      "id": "pilot.relay.q2",
+      "sha256": {
+        "summary.json": "50314e72b0bd83c3b18e9af38d6a01e08cad4908fd3527c916a51dd16cb05899",
+        "histograms.json": "cea08efbd4d071345579af673a271f37120436dbeb95728001b5f1e6ecab60ab",
+        "publications.json": "bb9bd9485da2314120c99b1fe7d1339bd7d1c7aefe246a25da7af6b131a4f347",
+        "delivery-receipts.json": "39c49da90984da62f167c3f5f0cb33919b13c1f8e1df1e3b9f928556a63aaac2",
+        "transmissions.json": "e4da3452f65603751ffc2d71979ef2ed262f2da2fe3efd170f4724d825734444"
+      },
+      "warnings": []
+    },
+    {
+      "id": "pilot.single.q0",
+      "sha256": {
+        "summary.json": "24ae0e8e4f2f75e4782777cf73b0671718b4c3b160431e874d1653a4fddc46f1",
+        "histograms.json": "4fe23b50ee35b7b461acbc0f8c7a9b577f3c6782753d145ab3f95688ed18887f",
+        "publications.json": "9934806da8748ce5320b951b4ecfdf7f79989e885a67e1b149f4040f1ed1a9a4",
+        "delivery-receipts.json": "7cc66e86cf1a86f25ef8cfdb7a74f02f91c8c6fef4f5c661a7fb9e359a8db303",
+        "transmissions.json": "44161e9719191d5814cc0d38ed4107917e1571c74dc6a2b46b29fbd2c3505b7a"
+      },
+      "warnings": []
+    },
+    {
+      "id": "pilot.single.q1",
+      "sha256": {
+        "summary.json": "11a7ec68a93fd5d93f256f4fbf8f15b2917609e424db92261d827bc9650b52c7",
+        "histograms.json": "0ce589df80162ccfc4da93b20cadc9f0c3b64b39324acc812700aff92160427d",
+        "publications.json": "51dab052a35bee253e68a238b36a93c80394e1e5835699056cfcdbfbf46fcc6f",
+        "delivery-receipts.json": "ec69fcdd1fa76f35f9b607d8bba9f5d82383fdf71067bd5fbdf16e6dfa662d55",
+        "transmissions.json": "264f5f14dae7b2dcbd132857752c2ea3a31646d318aff830e7a482e7e32f41e0"
+      },
+      "warnings": []
+    },
+    {
+      "id": "pilot.single.q2",
+      "sha256": {
+        "summary.json": "1925fd326efa786d847b867512f0b7f2e1eea840a94ce4cf64523c61e6b07882",
+        "histograms.json": "42aa906c1390de4ac4580d640608762ab3bf01717cd7759ba6cbb2cac2af656d",
+        "publications.json": "327717205549120598b0cfe79caa849199c9073d6e5f6b2919f3ea14ef64883e",
+        "delivery-receipts.json": "64dcf6b258b577d9485b373e95e13c2c6e7adbbaab2f27b7a44f829a2b3eb840",
+        "transmissions.json": "9ed68fb8f929fa954c296429db199637353e4db010df77c22b99411a5917902d"
+      },
+      "warnings": []
+    },
+    {
+      "id": "replay.federation.q2",
+      "sha256": {
+        "summary.json": "acaf41466c0daabc045b68507d27578bdf7acc31fd96a3d738efbf64989b6e28",
+        "histograms.json": "652c1ec43124ba6e562ef50bf6bc3076e70bc31d243e9fa128c71e2c19bbc693",
+        "publications.json": "d8917d9cbaf555238dba87d840f1a9807d8a03a581a6ce41f1134afd3f9c7be9",
+        "delivery-receipts.json": "591134f7bbea34f9ef7753cc7c99c77755c2d0d37bdd96a7ed152150a5aae0fb",
+        "transmissions.json": "416e6be7cc4debf10e0f31611265b3d6651c196d72b2188365a3cf50074b2c53"
+      },
+      "warnings": []
+    },
+    {
+      "id": "replay.relay.q2",
+      "sha256": {
+        "summary.json": "50314e72b0bd83c3b18e9af38d6a01e08cad4908fd3527c916a51dd16cb05899",
+        "histograms.json": "cea08efbd4d071345579af673a271f37120436dbeb95728001b5f1e6ecab60ab",
+        "publications.json": "bb9bd9485da2314120c99b1fe7d1339bd7d1c7aefe246a25da7af6b131a4f347",
+        "delivery-receipts.json": "39c49da90984da62f167c3f5f0cb33919b13c1f8e1df1e3b9f928556a63aaac2",
+        "transmissions.json": "e4da3452f65603751ffc2d71979ef2ed262f2da2fe3efd170f4724d825734444"
+      },
+      "warnings": []
+    },
+    {
+      "id": "replay.single.q2",
+      "sha256": {
+        "summary.json": "1925fd326efa786d847b867512f0b7f2e1eea840a94ce4cf64523c61e6b07882",
+        "histograms.json": "42aa906c1390de4ac4580d640608762ab3bf01717cd7759ba6cbb2cac2af656d",
+        "publications.json": "327717205549120598b0cfe79caa849199c9073d6e5f6b2919f3ea14ef64883e",
+        "delivery-receipts.json": "64dcf6b258b577d9485b373e95e13c2c6e7adbbaab2f27b7a44f829a2b3eb840",
+        "transmissions.json": "9ed68fb8f929fa954c296429db199637353e4db010df77c22b99411a5917902d"
+      },
+      "warnings": []
+    }
+  ]
+}

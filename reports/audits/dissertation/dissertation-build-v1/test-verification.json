@@ -1,0 +1,9 @@
+{
+  "exitCode": 0,
+  "testCount": 6,
+  "scope": "build procedure protections only; no TeX success claim",
+  "sourceSha256": {
+    "tools\\dissertation\\check_dissertation_build.py": "e652d4b2b2a48cc6855aaa423a475586b74a500361cf27e1e9b7dc660f2cd000",
+    "tools\\dissertation\\test_check_dissertation_build.py": "401ef092fda31e4fda6ba257e07266b0341b733ae74570cfce575f4043594b44"
+  }
+}

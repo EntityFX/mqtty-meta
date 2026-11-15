@@ -1,0 +1,49 @@
+{
+  "unit": "mqtty-queue-main-remaining-20261030.service",
+  "state": "MainPID=11073\nResult=success\nActiveState=active\nSubState=running\n",
+  "progress": {
+    "programIdentity": "queue-main-remaining-20261030-v1",
+    "phase": "model4096",
+    "totalNewJobs": 1,
+    "completedNewJobs": 0,
+    "baselineReused": true,
+    "baselineRecountPassed": true,
+    "deadlineEpoch": 1793340365.0527833
+  },
+  "argv": [
+    "systemd-run",
+    "--user",
+    "--unit=mqtty-queue-main-remaining-20261030.service",
+    "--property=RuntimeMaxSec=1855",
+    "--property=TimeoutStopSec=5",
+    "--property=MemoryMax=6G",
+    "--property=MemorySwapMax=0",
+    "--property=CPUQuota=200%",
+    "--property=KillMode=control-group",
+    "/usr/bin/taskset",
+    "-c",
+    "2,3",
+    "/usr/bin/python3",
+    "-B",
+    "/run/media/entityfx/hd250/mqtty-evidence/queue-main-remaining-20261030-inputs/run_queue_remaining.py",
+    "--inputs",
+    "/run/media/entityfx/hd250/mqtty-evidence/queue-main-remaining-20261030-inputs",
+    "--output",
+    "/run/media/entityfx/hd250/mqtty-evidence/queue-main-remaining-20261030"
+  ],
+  "sealSha256": "25f5aa4e747e979a68131b25e127717388714478d1ac475347539b2e49f90def",
+  "newJobs": 1,
+  "baselineRecomputed": false,
+  "output": "/run/media/entityfx/hd250/mqtty-evidence/queue-main-remaining-20261030",
+  "healthAtAdmission": {
+    "status": "ok",
+    "processId": 4261,
+    "processWorkingSetBytes": 216821760,
+    "dataDirectoryAvailable": true,
+    "runningJobs": 0,
+    "queuedJobs": 0
+  },
+  "observedAtMsk": "2026-10-30T08:35:08.990269+03:00",
+  "sourceCommit": "85ab55e",
+  "launchProcedureSha256": "c1f334da4ee632e88b94135ac0f67a57fbee2faa17a4791e6f689f0f08017fef"
+}

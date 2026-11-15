@@ -1,0 +1,91 @@
+{
+  "passed": false,
+  "scientificAccuracyClaim": false,
+  "jobs": [
+    {
+      "id": "6aee740ecc4c4ac0ba1e6cba8037589a",
+      "state": "Completed",
+      "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/6aee740ecc4c4ac0ba1e6cba8037589a",
+      "summarySha256": "cf5c6f2f329d44096604276029d22b701f6ccdc48020eeff17e72449261cbe23",
+      "sealedFilesVerified": 17,
+      "apiAttempts": 20,
+      "engine": "relay",
+      "qos": 0
+    },
+    {
+      "id": "b6d6ad157bdc4cabb563fd2d44ed965e",
+      "state": "Completed",
+      "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/b6d6ad157bdc4cabb563fd2d44ed965e",
+      "summarySha256": "761c4c01b15019060e9daa881deb0ce59054cb782b270cab43764b66d10a3705",
+      "sealedFilesVerified": 17,
+      "apiAttempts": 20,
+      "engine": "relay",
+      "qos": 1
+    },
+    {
+      "id": "01d97b5250d34d5aa56c7a281a136fb9",
+      "state": "Completed",
+      "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/01d97b5250d34d5aa56c7a281a136fb9",
+      "summarySha256": "b1d568df975d47fa2164e9854c8e047efed98a6313a61ef76c5e925a8a5daf22",
+      "sealedFilesVerified": 17,
+      "apiAttempts": 20,
+      "engine": "relay",
+      "qos": 2
+    },
+    {
+      "id": "d921417a4704401ba007e9a1b5b4ab0f",
+      "state": "Completed",
+      "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/d921417a4704401ba007e9a1b5b4ab0f",
+      "summarySha256": "f6a6a605bcad4957197a49c9704d8fdab038f167fd117c6301a1a18e6fa15fba",
+      "sealedFilesVerified": 17,
+      "apiAttempts": 20,
+      "engine": "federation",
+      "qos": 0
+    },
+    {
+      "id": "ec79bf3c4f5b4469a4ff7d53c5a271ef",
+      "state": "Completed",
+      "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/ec79bf3c4f5b4469a4ff7d53c5a271ef",
+      "summarySha256": "c06675cc77b7fe77dc7630fca10f6243a3ceb9c820ccae8b0098a14194ce885a",
+      "sealedFilesVerified": 17,
+      "apiAttempts": 20,
+      "engine": "federation",
+      "qos": 1
+    },
+    {
+      "id": "3523a8d0ee5b427880f98b13127c01c7",
+      "state": "Completed",
+      "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/3523a8d0ee5b427880f98b13127c01c7",
+      "summarySha256": "4f7cc6d20b00ae2e4722219cc4a5813a30dfd812c2c8caf0ad23c2e5fa19f20e",
+      "sealedFilesVerified": 17,
+      "apiAttempts": 20,
+      "engine": "federation",
+      "qos": 2
+    },
+    {
+      "id": "5348ebccae5048808843b5c6841264ff",
+      "state": "Completed",
+      "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/5348ebccae5048808843b5c6841264ff",
+      "summarySha256": "447500dcd421376e2ed76ca4d16777a28e8135ecfaba4af17f9fe2b3f53ce9ae",
+      "sealedFilesVerified": 11,
+      "apiAttempts": 20,
+      "engine": "loadBalancing",
+      "qos": 0
+    },
+    {
+      "id": "677e172924ba44618ab960a5af272c0f",
+      "state": "Completed",
+      "outputDir": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/data/simulations/677e172924ba44618ab960a5af272c0f",
+      "summarySha256": "82d3f671de5ebefa34aac2507d1a43337f3fd1e6bf5c1d6755f9f02544ee7e02",
+      "sealedFilesVerified": 11,
+      "apiAttempts": 20,
+      "engine": "loadBalancing",
+      "qos": 1
+    }
+  ],
+  "replays": [],
+  "startedEpoch": 1792884608.383672,
+  "allPointsValidatedBeforeQueueing": true,
+  "error": "AssertionError: {'status': 'completed', 'error': None, 'configuredOfferedRps': 1000, 'scheduledPublishes': 20, 'apiAttempts': 18, 'sendRejected': 0, 'backpressureUnsent': 2, 'publisherPendingBeforeDrain': 2, 'publisherPendingAfterDrain': 0, 'measurementStartTick': 32, 'measurementEndTick': 232, 'finalTick': 256, 'graphErrors': 0, 'measurementSeconds': 0.02, 'tickMilliseconds': 0.1, 'backendCompletedRps': 900, 'uniqueGoodput': 900, 'attemptDeliveryLoss': 0, 'backendPublishFailureRate': 0, 'backendDeliveryLossRate': 0, 'publishP50Ms': 2, 'publishP95Ms': 2, 'publishP99Ms': 2, 'receiverP50Ms': 3, 'receiverP95Ms': 3, 'receiverP99Ms': 3, 'uniqueReceivedBeforeDrain': 16, 'uniqueReceivedDuringDrain': 2, 'delivery': {'measurementCreated': 18, 'uniqueDelivered': 18, 'duplicateDeliveries': 0, 'unexpectedDeliveries': 0, 'warmupDeliveries': 1, 'unknownDeliveries': 0, 'backends': [{'backend': 0, 'measurementCreated': 9, 'uniqueDelivered': 9, 'duplicateDeliveries': 0, 'unexpectedDeliveries': 0, 'latencyHistogramTicks': {'30': 9}}, {'backend': 1, 'measurementCreated': 9, 'uniqueDelivered': 9, 'duplicateDeliveries': 0, 'unexpectedDeliveries': 0, 'latencyHistogramTicks': {'30': 9}}], 'latencyHistogramTicks': {'30': 18}, 'tickMilliseconds': 0.1}, 'backends': [{'backend': 0, 'publishers': 1, 'metrics': {'attempted': 9, 'admitted': 9, 'completed': 9, 'expectedDeliveries': 9, 'delivered': 9, 'rateRejected': 0, 'publishFailed': 0, 'deliveryDropped': 0, 'rps': 450, 'latencyP50Ms': 2, 'latencyP95Ms': 2, 'latencyP99Ms': 2, 'latencyHistogramTicks': {'20': 9}}, 'completedBeforeDrain': 8, 'uniqueReceived': 9, 'uniqueReceivedBeforeDrain': 8}, {'backend': 1, 'publishers': 1, 'metrics': {'attempted': 9, 'admitted': 9, 'completed': 9, 'expectedDeliveries': 9, 'delivered': 9, 'rateRejected': 0, 'publishFailed': 0, 'deliveryDropped': 0, 'rps': 450, 'latencyP50Ms': 2, 'latencyP95Ms': 2, 'latencyP99Ms': 2, 'latencyHistogramTicks': {'20': 9}}, 'completedBeforeDrain': 8, 'uniqueReceived': 9, 'uniqueReceivedBeforeDrain': 8}], 'publishLatencyHistogramTicks': {'20': 18}, 'phases': [{'phase': 'construct', 'startTick': 0, 'endTick': 0, 'status': 'completed'}, {'phase': 'connect', 'startTick': 0, 'endTick': 11, 'status': 'completed'}, {'phase': 'subscribe', 'startTick': 11, 'endTick': 22, 'status': 'completed'}, {'phase': 'warmup', 'startTick': 22, 'endTick': 32, 'status': 'completed'}, {'phase': 'measure', 'startTick': 32, 'endTick': 232, 'status': 'completed'}, {'phase': 'drain', 'startTick': 232, 'endTick': 256, 'status': 'completed'}]}",
+  "finishedEpoch": 1792884618.567558
+}

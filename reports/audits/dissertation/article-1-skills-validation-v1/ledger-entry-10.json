@@ -1,0 +1,12 @@
+{
+  "kind": "tool_receipt",
+  "step": "full_raw_audit",
+  "command": "systemd-run --user --unit=mqtty-article1-raw-audit-v1 --property=RuntimeMaxSec=1800 --property=MemoryMax=2G --property=CPUQuota=100% /usr/bin/python3 run_final_twin_raw_audit.py; see raw-audit-launch.json for full argv; verified completed 96/96, Result=success",
+  "status": "passed",
+  "exit_status": 0,
+  "retries_used": 0,
+  "input_paths": [
+    "../audits/dissertation/article-1-skills-validation-v1/raw-audit-result.json",
+    "../audits/dissertation/article-1-fresh-validation-v1/final-summary.json"
+  ]
+}

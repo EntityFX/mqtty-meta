@@ -1,0 +1,118 @@
+{
+  "unit": "mqtty-acceleration-aa-20261030.service",
+  "argv": [
+    "systemd-run",
+    "--user",
+    "--unit=mqtty-acceleration-aa-20261030.service",
+    "--property=RuntimeMaxSec=595",
+    "--property=TimeoutStopSec=5",
+    "--property=MemoryMax=6G",
+    "--property=MemorySwapMax=0",
+    "--property=CPUQuota=200%",
+    "--property=KillMode=control-group",
+    "/usr/bin/taskset",
+    "-c",
+    "4,6",
+    "/usr/bin/python3",
+    "-B",
+    "/run/media/entityfx/hd250/mqtty-evidence/acceleration-aa-20261030-inputs/run_acceleration_pilot.py",
+    "--source",
+    "/run/media/entityfx/hd250/mqtty-evidence/network-full-3h-v1",
+    "--inputs",
+    "/run/media/entityfx/hd250/mqtty-evidence/acceleration-aa-20261030-inputs",
+    "--output",
+    "/run/media/entityfx/hd250/mqtty-evidence/acceleration-aa-20261030"
+  ],
+  "state": "TimeoutStopUSec=5s\nRuntimeMaxUSec=9min 55s\nMainPID=5878\nResult=success\nActiveState=active\nSubState=running\n",
+  "progress": {
+    "programIdentity": "acceleration-aa-20261030-v1",
+    "phase": "aa-1",
+    "finishedModels": 0,
+    "total": 4,
+    "deadlineEpoch": 1793315134.5045168,
+    "activeBatchPath": "/run/media/entityfx/hd250/mqtty-evidence/acceleration-aa-20261030/aa-1",
+    "note": "Per-child logs and RSS samples available in batch directory"
+  },
+  "sourceFilesVerified": 281,
+  "fixtureCliValidation": {
+    "options": {
+      "schemaVersion": 1,
+      "mode": "federation",
+      "brokers": 4,
+      "topology": "star",
+      "links": null,
+      "publishers": 64,
+      "receiverSites": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "payloadBytes": 16,
+      "qos": 2,
+      "offeredRps": 1000,
+      "seed": 42,
+      "warmupSeconds": 0.25,
+      "measurementSeconds": 2,
+      "drainTimeoutSeconds": 10,
+      "tickPeriod": "00:00:00.0001000",
+      "queueCapacity": 1024,
+      "cacheCapacity": 100000,
+      "hopLimit": 4,
+      "ideal": true,
+      "brokerType": "Mosquitto",
+      "brokerProfilePath": null,
+      "network": {
+        "capacityBytesPerSecond": 125000000,
+        "throughputWindowTicks": 100,
+        "queueCapacity": 100000,
+        "transferTicks": 2
+      }
+    },
+    "profileSha256": null,
+    "edges": [
+      {
+        "a": 0,
+        "b": 4
+      },
+      {
+        "a": 1,
+        "b": 4
+      },
+      {
+        "a": 2,
+        "b": 4
+      },
+      {
+        "a": 3,
+        "b": 4
+      }
+    ]
+  },
+  "inputSealSha256": "02864c31b5217d5be58965f19b7703359ef935f85ec5a66d3c2486e680fcfc2c",
+  "healthAtAdmission": {
+    "status": "ok",
+    "processId": 4261,
+    "processWorkingSetBytes": 214851584,
+    "dataDirectoryAvailable": true,
+    "runningJobs": 0,
+    "queuedJobs": 0
+  },
+  "physicalCores": {
+    "4": [
+      "4",
+      "0"
+    ],
+    "6": [
+      "6",
+      "0"
+    ]
+  },
+  "output": "/run/media/entityfx/hd250/mqtty-evidence/acceleration-aa-20261030",
+  "launchStderr": "Running as unit: mqtty-acceleration-aa-20261030.service; invocation ID: dbe8de91ebd6438e83662ff0e28f88b0\n",
+  "retriesAllowed": false,
+  "automaticNextExperiment": false,
+  "sourceCommit": "534793f",
+  "admissionScriptSha256": "d7139e7b5c2311efbf84bb4bf43ccf49637d5efa0ebfa448f55eff20b2cf8d0b",
+  "observedAtMsk": "2026-10-30T01:55:38.508842+03:00"
+}

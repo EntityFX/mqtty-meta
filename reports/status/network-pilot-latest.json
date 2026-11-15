@@ -1,0 +1,181 @@
+{
+  "observedAtUtc": "2026-10-23T23:30:35.779805+00:00",
+  "network": {
+    "root": "/run/media/entityfx/hd250/mqtty-evidence/network-long-v1",
+    "service": "MainPID=51204\nResult=success\nExecMainStatus=0\nMemoryCurrent=391020544\nCPUWeight=10\nMemoryMax=3221225472\nMemorySwapMax=0\nActiveState=active\nSubState=running\n",
+    "progress": {
+      "status": "running",
+      "phase": "pilot",
+      "executionManifestSha256": "c5eb7c63eebbba98908086976c5e45a2a2ed3ccac638f834e59faf3b7b2a25a6",
+      "verified": 0,
+      "technicalErrors": 0,
+      "counts": {
+        "pilot": {
+          "done": 0,
+          "unresolvedErrors": 0,
+          "warnings": 0,
+          "total": 30
+        },
+        "matrix": {
+          "done": 0,
+          "unresolvedErrors": 0,
+          "warnings": 0,
+          "total": 162
+        },
+        "replay": {
+          "done": 0,
+          "unresolvedErrors": 0,
+          "warnings": 0,
+          "total": 6
+        },
+        "diagnostic": {
+          "done": 0,
+          "unresolvedErrors": 0,
+          "warnings": 0,
+          "total": 54
+        }
+      },
+      "attempts": {
+        "pilot": {
+          "total": 0,
+          "failed": 0
+        },
+        "matrix": {
+          "total": 0,
+          "failed": 0
+        },
+        "replay": {
+          "total": 0,
+          "failed": 0
+        },
+        "diagnostic": {
+          "total": 0,
+          "failed": 0
+        }
+      },
+      "warnings": 0,
+      "active": {
+        "id": "pilot.line.single.q1.r1000.w2.s42",
+        "pid": 51206,
+        "elapsedSeconds": 26.07570266199764,
+        "rssBytes": 409227264,
+        "peakRssBytes": 409227264
+      },
+      "reason": null,
+      "observedAtUtc": "2026-10-23T23:30:35.223894+00:00"
+    },
+    "modelProcesses": [
+      {
+        "pid": 51206,
+        "arguments": [
+          "/usr/lib64/dotnet/dotnet",
+          "/run/media/entityfx/hd250/mqtty-evidence/network-long-v1/runtime/EntityFX.MqttY.Federation.App.dll",
+          "run",
+          "--config",
+          "/run/media/entityfx/hd250/mqtty-evidence/network-long-v1/program/configs/pilot/pilot.line.single.q1.r1000.w2.s42.json",
+          "--output",
+          "output"
+        ]
+      }
+    ]
+  },
+  "sensitivity": {
+    "observedAtUtc": "2026-10-23T23:30:35.780186+00:00",
+    "root": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1",
+    "progress": {
+      "active": {
+        "Aedes.m16.q2.p128.s44.doubleWindow": {
+          "elapsedSeconds": 895.2003110570076,
+          "peakRssBytes": 851439616,
+          "pid": 49987,
+          "rssBytes": 687472640
+        },
+        "Aedes.m16.q2.p128.s44.halfTick": {
+          "elapsedSeconds": 959.2900548369944,
+          "peakRssBytes": 853143552,
+          "pid": 49927,
+          "rssBytes": 820150272
+        },
+        "Mosquitto.m16.q0.p128.s42.baseline": {
+          "elapsedSeconds": 122.22628918000555,
+          "peakRssBytes": 846479360,
+          "pid": 51083,
+          "rssBytes": 690335744
+        },
+        "Mosquitto.m16.q0.p128.s42.halfTick": {
+          "elapsedSeconds": 103.19894821300113,
+          "peakRssBytes": 846110720,
+          "pid": 51114,
+          "rssBytes": 844926976
+        }
+      },
+      "counts": {
+        "matrix": {
+          "done": 61,
+          "failedCriteria": 13,
+          "total": 216
+        },
+        "pilot": {
+          "done": 8,
+          "failedCriteria": 4,
+          "total": 8
+        },
+        "replay": {
+          "done": 0,
+          "failedCriteria": 0,
+          "total": 6
+        }
+      },
+      "elapsedSeconds": 19574.784714488997,
+      "planSha256": "dfda8401e9e3f96aebece1b4baa116b58437c94752ecc0324b6e8c909243ae3c",
+      "reason": null,
+      "schedulerVersion": 2,
+      "status": "running",
+      "technicalErrors": 0,
+      "workers": 4
+    },
+    "progressMtimeUtc": "2026-10-23T23:30:35.373969+00:00",
+    "mountAvailable": true,
+    "processes": {
+      "49987": {
+        "alive": true,
+        "state": "R",
+        "startTicks": 11028001
+      },
+      "49927": {
+        "alive": true,
+        "state": "R",
+        "startTicks": 11021589
+      },
+      "51083": {
+        "alive": true,
+        "state": "R",
+        "startTicks": 11105289
+      },
+      "51114": {
+        "alive": true,
+        "state": "R",
+        "startTicks": 11107213
+      }
+    },
+    "limits": {
+      "timeoutSeconds": 1800,
+      "maxRssBytes": 3221225472,
+      "minFreeBytes": 5368709120
+    },
+    "limitsSource": "Frozen plan limits; v1 storage reserve is 5 GiB. Operational amendments must be supplied separately.",
+    "disk": {
+      "total": 244995190784,
+      "used": 72576135168,
+      "free": 159899373568
+    },
+    "service": {
+      "MainPID": "49274",
+      "Result": "success",
+      "ActiveState": "active",
+      "SubState": "running"
+    },
+    "collectionErrors": []
+  },
+  "systemDiskFreeBytes": 64354021376
+}

@@ -1,0 +1,68 @@
+0001 using EntityFX.MqttY.Contracts.Network;
+0002 
+0003 namespace EntityFX.MqttY.Plugin.Mqtt.BrokerProfile
+0004 {
+0005     /// <summary>
+0006     /// Очередь обработки пакетов брокера, моделирующая задержку обработки (p99)
+0007     /// через декремент остаточного времени в тиках.
+0008     /// </summary>
+0009     internal sealed class BrokerProcessingQueue
+0010     {
+0011         private readonly Queue<PendingItem> _items = new();
+0012 
+0013         public int Count => _items.Count;
+0014 
+0015         public bool IsEmpty => _items.Count == 0;
+0016 
+0017         public void Enqueue(INetworkPacket packet, int processingTicks)
+0018         {
+0019             if (processingTicks < 0) throw new ArgumentOutOfRangeException(nameof(processingTicks));
+0020             _items.Enqueue(new PendingItem(packet, processingTicks));
+0021         }
+0022 
+0023         /// <summary>
+0024         /// Уменьшает остаточное время всех пакетов на один тик и возвращает
+0025         /// пакеты, готовые к обработке.
+0026         /// </summary>
+0027         public List<INetworkPacket> DrainReady()
+0028         {
+0029             var ready = new List<INetworkPacket>();
+0030             var count = _items.Count;
+0031 
+0032             for (var i = 0; i < count; i++)
+0033             {
+0034                 var item = _items.Dequeue();
+0035                 item.RemainingTicks--;
+0036 
+0037                 if (item.RemainingTicks <= 0)
+0038                 {
+0039                     ready.Add(item.Packet);
+0040                 }
+0041                 else
+0042                 {
+0043                     _items.Enqueue(item);
+0044                 }
+0045             }
+0046 
+0047             return ready;
+0048         }
+0049 
+0050         public void Clear()
+0051         {
+0052             _items.Clear();
+0053         }
+0054 
+0055         private sealed class PendingItem
+0056         {
+0057             public PendingItem(INetworkPacket packet, int remainingTicks)
+0058             {
+0059                 Packet = packet;
+0060                 RemainingTicks = remainingTicks;
+0061             }
+0062 
+0063             public INetworkPacket Packet { get; }
+0064 
+0065             public int RemainingTicks { get; set; }
+0066         }
+0067     }
+0068 }

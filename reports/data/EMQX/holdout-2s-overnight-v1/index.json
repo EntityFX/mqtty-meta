@@ -1,0 +1,654 @@
+{
+  "stage": "holdout",
+  "measurementSeconds": 2,
+  "runs": [
+    {
+      "key": "m16.q0.p1.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 26148.34580698056,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q0.p1.s42/20261019T101128696Z-555f10e256414b548e98f7f46e4b5f8e"
+    },
+    {
+      "key": "m16.q0.p1.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 26148.34580698056,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q0.p1.s43/20261019T101128697Z-7ec376e286724065a3d75b6d9102ab6f"
+    },
+    {
+      "key": "m16.q0.p1.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 26148.34580698056,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q0.p1.s44/20261019T101128611Z-f5cdc79a20404098afb39b195980d787"
+    },
+    {
+      "key": "m16.q0.p16.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 47701.21296356106,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q0.p16.s42/20261019T101128611Z-69e31ba2d37a41729402d4d36d64b184"
+    },
+    {
+      "key": "m16.q0.p16.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 47701.21296356106,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q0.p16.s43/20261019T101152788Z-a24e8afce57d44f2b9d4958fbb0cf9ed"
+    },
+    {
+      "key": "m16.q0.p16.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 47701.21296356106,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q0.p16.s44/20261019T101152811Z-435dc89ce6c34d4b92327d23236cd070"
+    },
+    {
+      "key": "m16.q0.p64.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 49906.47697095317,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q0.p64.s42/20261019T101152911Z-9a559210e32c4777a818ac8c15923cd0"
+    },
+    {
+      "key": "m16.q0.p64.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 49906.47697095317,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q0.p64.s43/20261019T101313113Z-eda51f404e5d4af1a7f0ea50727215be"
+    },
+    {
+      "key": "m16.q0.p64.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 49906.47697095317,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q0.p64.s44/20261019T101335174Z-5da207235118476ea19c5b2467e54536"
+    },
+    {
+      "key": "m16.q0.p128.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 51684.13177768532,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q0.p128.s42/20261019T101337213Z-3648ed74d29d4c01b833e79688c07f18"
+    },
+    {
+      "key": "m16.q0.p128.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 51684.13177768532,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q0.p128.s43/20261019T101746191Z-be38ae63bdb641348bee3a88fb794f26"
+    },
+    {
+      "key": "m16.q0.p128.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 51684.13177768532,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q0.p128.s44/20261019T101906409Z-2736127de79445dda23eb8639c85b1a2"
+    },
+    {
+      "key": "m16.q1.p1.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 5954.6974664509735,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q1.p1.s42/20261019T101926498Z-0d12f8c6c3ad49f881b1a1f0db6fb3c1"
+    },
+    {
+      "key": "m16.q1.p1.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 5954.6974664509735,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q1.p1.s43/20261019T101948757Z-73d5d8c3225c456283b542cdcec571ac"
+    },
+    {
+      "key": "m16.q1.p1.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 5954.6974664509735,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q1.p1.s44/20261019T102010642Z-57b857b2810c4c62b98b6851e8ea4226"
+    },
+    {
+      "key": "m16.q1.p16.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 10144.392899136752,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q1.p16.s42/20261019T102032820Z-35ca60e408b84e0c9dd3edcbae11e009"
+    },
+    {
+      "key": "m16.q1.p16.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 10144.392899136752,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q1.p16.s43/20261019T102215152Z-2312f281a5b9442292fe1152bb422f3e"
+    },
+    {
+      "key": "m16.q1.p16.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 10144.392899136752,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q1.p16.s44/20261019T102359510Z-cbab1112b7b54b36aaa138549180366a"
+    },
+    {
+      "key": "m16.q1.p64.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 8826.15567778974,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q1.p64.s42/20261019T102523778Z-c25af010b12f446eb6ba83b6d5342dbc"
+    },
+    {
+      "key": "m16.q1.p64.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 8826.15567778974,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q1.p64.s43/20261019T102541866Z-8165e5e0854c4842805d5d72bbc92930"
+    },
+    {
+      "key": "m16.q1.p64.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 8826.15567778974,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q1.p64.s44/20261019T102912559Z-f4859b177f304c8f84fc506d048cf607"
+    },
+    {
+      "key": "m16.q1.p128.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 8624.4248024963,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q1.p128.s42/20261019T103038948Z-d67000aaa1c84e1ab89d6e1f4bb9b6e1"
+    },
+    {
+      "key": "m16.q1.p128.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 8624.4248024963,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q1.p128.s43/20261019T103117010Z-8aae0de1cba1484f991f575d093e4f73"
+    },
+    {
+      "key": "m16.q1.p128.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 8624.4248024963,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q1.p128.s44/20261019T103207282Z-c6a6f4fc49e748f6839d640ed71a3f02"
+    },
+    {
+      "key": "m16.q2.p1.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 3808.291671229786,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q2.p1.s42/20261019T103459848Z-47200e2a0b3d4687b79c270d0547e79f"
+    },
+    {
+      "key": "m16.q2.p1.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 3808.291671229786,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q2.p1.s43/20261019T103521953Z-bb475d2e22544e7f9ce506d62dd4d29f"
+    },
+    {
+      "key": "m16.q2.p1.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 3808.291671229786,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q2.p1.s44/20261019T103541988Z-e702de159ec249ca934e11a219b7c7ae"
+    },
+    {
+      "key": "m16.q2.p16.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 6182.792739400323,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q2.p16.s42/20261019T103604126Z-e82584e435f0485d8a451d3150eb1e14"
+    },
+    {
+      "key": "m16.q2.p16.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 6182.792739400323,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q2.p16.s43/20261019T103746491Z-af014f39982048fb912bd062e72ab5e6"
+    },
+    {
+      "key": "m16.q2.p16.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 6182.792739400323,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q2.p16.s44/20261019T103920850Z-a229e98287164979a375fa995caf10d1"
+    },
+    {
+      "key": "m16.q2.p64.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 5966.06102876209,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q2.p64.s42/20261019T104105190Z-45ff963b0ab84028a8e0ec9fe45f346d"
+    },
+    {
+      "key": "m16.q2.p64.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 5966.06102876209,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q2.p64.s43/20261019T104245625Z-4fed023a31fb47929571f7c368e9e414"
+    },
+    {
+      "key": "m16.q2.p64.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 5966.06102876209,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q2.p64.s44/20261019T104315742Z-de9f4824f82d460fa43edb138fd61ce8"
+    },
+    {
+      "key": "m16.q2.p128.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 5801.5814267414635,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q2.p128.s42/20261019T104341872Z-9415891b508a4bbb8f1edda3d4c927a4"
+    },
+    {
+      "key": "m16.q2.p128.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 5801.5814267414635,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q2.p128.s43/20261019T104656595Z-f2318aa1b74649369b42fdd862652475"
+    },
+    {
+      "key": "m16.q2.p128.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 5801.5814267414635,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m16.q2.p128.s44/20261019T104824900Z-888d16f39c0f40fdb54cac2cd62f392e"
+    },
+    {
+      "key": "m256.q0.p1.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 20477.87382385547,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q0.p1.s42/20261019T104840964Z-dd2720688b9b4bfa9966ccf1f20273b2"
+    },
+    {
+      "key": "m256.q0.p1.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 20477.87382385547,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q0.p1.s43/20261019T104903047Z-d645a53df24c4eb785e82f57763f10d1"
+    },
+    {
+      "key": "m256.q0.p1.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 20477.87382385547,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q0.p1.s44/20261019T104925179Z-2c668b3cc20e45bba153cee6dfd4631a"
+    },
+    {
+      "key": "m256.q0.p16.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 45891.08910461583,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q0.p16.s42/20261019T104947243Z-8f8c4a7593914c1ebfc830d34095f94d"
+    },
+    {
+      "key": "m256.q0.p16.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 45891.08910461583,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q0.p16.s43/20261019T105123549Z-9849197e55c346e2bc39b33787dd8fa4"
+    },
+    {
+      "key": "m256.q0.p16.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 45891.08910461583,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q0.p16.s44/20261019T105259860Z-37f1d721e14a43fc80656cc336654764"
+    },
+    {
+      "key": "m256.q0.p64.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 51476.71831303922,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q0.p64.s42/20261019T105436229Z-25d0df7cd8f142c493082185768f7a7c"
+    },
+    {
+      "key": "m256.q0.p64.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 51476.71831303922,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q0.p64.s43/20261019T105510340Z-5895d91d1e8b48c58f4bc19b26a85805"
+    },
+    {
+      "key": "m256.q0.p64.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 51476.71831303922,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q0.p64.s44/20261019T105921088Z-d86037d0f2784ad0b1b3acfe4f0abf06"
+    },
+    {
+      "key": "m256.q0.p128.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 50921.9101993356,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q0.p128.s42/20261019T105933225Z-5a26822971354fdf90570f01769c9c98"
+    },
+    {
+      "key": "m256.q0.p128.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 50921.9101993356,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q0.p128.s43/20261019T110003256Z-828bcba276344ee894f63e7d26168f38"
+    },
+    {
+      "key": "m256.q0.p128.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 50921.9101993356,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q0.p128.s44/20261019T110045480Z-dcdf1020c1184a04a65f9879a0ba99a3"
+    },
+    {
+      "key": "m256.q1.p1.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 6128.638249088425,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q1.p1.s42/20261019T110450362Z-c6c2ac1ee97a486fb3e0a8862e9bf041"
+    },
+    {
+      "key": "m256.q1.p1.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 6128.638249088425,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q1.p1.s43/20261019T110510475Z-8319ea1475074634942666da017fd7b9"
+    },
+    {
+      "key": "m256.q1.p1.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 6128.638249088425,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q1.p1.s44/20261019T110530545Z-9513db6837514266b4e6cc132f0e6821"
+    },
+    {
+      "key": "m256.q1.p16.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 9873.766329442042,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q1.p16.s42/20261019T110550614Z-063fc2e1b44b483184f1580616e0d472"
+    },
+    {
+      "key": "m256.q1.p16.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 9873.766329442042,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q1.p16.s43/20261019T110722981Z-82018bbbae644f01ab9e141a67674381"
+    },
+    {
+      "key": "m256.q1.p16.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 9873.766329442042,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q1.p16.s44/20261019T110901323Z-0fe0aaa4c61743f48327bf6b091c9d58"
+    },
+    {
+      "key": "m256.q1.p64.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 8657.706869732987,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q1.p64.s42/20261019T111003496Z-424db8d68bef4361993a49d47fbc5b41"
+    },
+    {
+      "key": "m256.q1.p64.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 8657.706869732987,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q1.p64.s43/20261019T111035684Z-a755f42103084afaae6197795ba0c0d8"
+    },
+    {
+      "key": "m256.q1.p64.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 8657.706869732987,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q1.p64.s44/20261019T111043734Z-38e7ed41e6234762995fd07f1dbab10e"
+    },
+    {
+      "key": "m256.q1.p128.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 11344.444799482046,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q1.p128.s42/20261019T111127912Z-aff6670b054241c8a63fb0126d390cc9"
+    },
+    {
+      "key": "m256.q1.p128.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 11344.444799482046,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q1.p128.s43/20261019T111542833Z-cada09fb37ba482bafc86315830bcf6a"
+    },
+    {
+      "key": "m256.q1.p128.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 11344.444799482046,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q1.p128.s44/20261019T111616963Z-cbd406c8efbd4a7e88e572adb88e8e24"
+    },
+    {
+      "key": "m256.q2.p1.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 3669.085588085017,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q2.p1.s42/20261019T111621013Z-9936573e6c1942c383c0fca8deee6ff3"
+    },
+    {
+      "key": "m256.q2.p1.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 3669.085588085017,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q2.p1.s43/20261019T111641065Z-ba4130d5e9f24c14af57ec456a58d6dc"
+    },
+    {
+      "key": "m256.q2.p1.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 3669.085588085017,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q2.p1.s44/20261019T111703176Z-971c8ef8d77a475ca48ee0c2edffd4cb"
+    },
+    {
+      "key": "m256.q2.p16.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 6093.183511259972,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q2.p16.s42/20261019T111723229Z-4e5767ea53c547439f9d25db66f6925e"
+    },
+    {
+      "key": "m256.q2.p16.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 6093.183511259972,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q2.p16.s43/20261019T111859713Z-4e83b4c3172e4485a30c69427a12e99e"
+    },
+    {
+      "key": "m256.q2.p16.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 6093.183511259972,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q2.p16.s44/20261019T112034034Z-95afe3a4a56842a49bf273cd6d90cc13"
+    },
+    {
+      "key": "m256.q2.p64.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 5970.083574892699,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q2.p64.s42/20261019T112214439Z-219d59cd93824c3e81630f543892fb02"
+    },
+    {
+      "key": "m256.q2.p64.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 5970.083574892699,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q2.p64.s43/20261019T112324737Z-3a5fea0221294973b193a5dc9dee9f77"
+    },
+    {
+      "key": "m256.q2.p64.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 5970.083574892699,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q2.p64.s44/20261019T112629443Z-2393baa0e20a4d148c4db17e04b80d81"
+    },
+    {
+      "key": "m256.q2.p128.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 5520.238341895053,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q2.p128.s42/20261019T112801820Z-7de39377ce864ed1949f85819a4137b1"
+    },
+    {
+      "key": "m256.q2.p128.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 5520.238341895053,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q2.p128.s43/20261019T112817914Z-be9bf65736b74ed99423d89e2d6a2490"
+    },
+    {
+      "key": "m256.q2.p128.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 5520.238341895053,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/EMQX/simulations/holdout-2s-overnight-v1/m256.q2.p128.s44/20261019T112908148Z-1ee180dc89ce4de2ae61eacd502523da"
+    }
+  ]
+}

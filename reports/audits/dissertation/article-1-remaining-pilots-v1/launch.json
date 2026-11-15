@@ -1,0 +1,30 @@
+{
+  "unit": "mqtty-article1-remaining-pilots-v1.service",
+  "launchExitCode": 0,
+  "launchStdout": "",
+  "launchStderr": "Running as unit: mqtty-article1-remaining-pilots-v1.service; invocation ID: 44040919305e418282e1a8f0d3e5eb7d\n",
+  "service": "MainPID=238606\nResult=success\nExecMainStatus=0\nActiveState=active\nSubState=running\n",
+  "progressPath": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-remaining-pilots-v1/attempt-001/progress.json",
+  "progress": {
+    "status": "running",
+    "active": "Aedes.w2/native",
+    "completed": 0,
+    "total": 6,
+    "budget": {
+      "programSha256": "1dea0e15dc11c761f1d9eb8a2900f289a8c580a8bf1fd135250191c22100b9b0",
+      "startedEpoch": 1792960645.677363,
+      "deadlineEpoch": 1792961545.677363,
+      "budgetSeconds": 900
+    },
+    "elapsedSeconds": 0.3774087429046631,
+    "error": null,
+    "webJobId": null,
+    "nativeCompleted": 0,
+    "modelCompleted": 0,
+    "admittedPairsPercent": 0.0,
+    "mainCampaignAdmitted": false,
+    "scientificAccuracyClaim": false,
+    "scope": "Instrumentation pilots; historical profiles; model via Web"
+  },
+  "mainCampaignStarted": false
+}

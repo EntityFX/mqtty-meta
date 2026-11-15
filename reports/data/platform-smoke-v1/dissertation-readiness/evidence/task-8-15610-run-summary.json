@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "controller": {
+    "host": "DESKTOP-PJ09U97",
+    "address": "10.10.156.10",
+    "cpu": "Intel Xeon E3-1230 v6",
+    "physicalCores": 4,
+    "logicalProcessors": 8,
+    "artifactVolume": "C:",
+    "networkInterface": "Onboard LAN 2",
+    "networkInterfaceIndex": 10,
+    "linkSpeedBitsPerSecond": 100000000,
+    "hardwareInterface": true,
+    "virtualInterface": false
+  },
+  "identity": {
+    "mqttBenchmarkCommitSha": "726e65b43032769aae532a58872d8b921a0aea84",
+    "deploymentMode": "singleHostSequential",
+    "cpuMode": "singleCorePinned",
+    "standSha256": "40c2ecd332bcf5958c9599dddc99aa48c450e0a33fc52aa0c7740a0a79cf1276",
+    "baselineConfigSha256": "de986dc07cd2a524f66ad5ff57846371455639cc7a5fc243d30a4225e09db974",
+    "pilotConfigSha256": "a19fea2d7f4a3bb9ff653aaeb3a7309e211c6bd4891a40c9645d870c881180b0"
+  },
+  "trustedBuildManifests": {
+    "aedesSha256": "791f14ad3b2d76a8dba9a176cdcffd0b255e383e8336255eca6cc58696fcf33f",
+    "activeMqSha256": "5ce5831c5373be1ef689b9f22d6254deb79dd9efb2eac13b46b989fb0f449e72"
+  },
+  "roots": [
+    {
+      "path": "C:\\MqttBenchmark-artifacts\\task4-preflight-15610-004",
+      "kind": "preflight",
+      "fileCount": 129,
+      "byteCount": 210538,
+      "treeSha256": "11c4290234446e63878d8936b6c913356b7b51eeba0d42cbd917ca05a64b7af0",
+      "successfulBrokers": 4,
+      "totalBrokers": 4
+    },
+    {
+      "path": "C:\\MqttBenchmark-artifacts\\task4-guarded-pilot-15610-aedes-001",
+      "kind": "pilot",
+      "broker": "Aedes",
+      "fileCount": 123,
+      "byteCount": 33152866,
+      "treeSha256": "739486440061deb5dbdede0b968236bc357de52cc76a28dfdc8d5e481c1e8c0e",
+      "successfulAttempts": 0,
+      "failedAttempts": 3,
+      "maximumCpuPercent": 23.78,
+      "maximumNetworkPercent": 76.98
+    },
+    {
+      "path": "C:\\MqttBenchmark-artifacts\\task4-guarded-pilot-15610-mosquitto-001",
+      "kind": "pilot",
+      "broker": "Mosquitto",
+      "fileCount": 182,
+      "byteCount": 17507914,
+      "treeSha256": "752cb64f633c950cdc01dcc97bd72cc566869e3d71a1355df3fd5d0ae31af2e9",
+      "successfulAttempts": 4,
+      "failedAttempts": 0,
+      "maximumCpuPercent": 14.65,
+      "maximumNetworkPercent": 66.98
+    },
+    {
+      "path": "C:\\MqttBenchmark-artifacts\\task4-guarded-pilot-15610-emqx-001",
+      "kind": "pilot",
+      "broker": "EMQX",
+      "fileCount": 137,
+      "byteCount": 11092936,
+      "treeSha256": "efa50ce8b0a83a075b5708719c4b7f54c7b72ef751aa5a7660833d67befd6392",
+      "successfulAttempts": 3,
+      "failedAttempts": 0,
+      "maximumCpuPercent": 23.05,
+      "maximumNetworkPercent": 35.17
+    },
+    {
+      "path": "C:\\MqttBenchmark-artifacts\\task4-guarded-pilot-15610-activemq-001",
+      "kind": "pilot",
+      "broker": "ActiveMQ",
+      "fileCount": 366,
+      "byteCount": 10606388,
+      "treeSha256": "a5d97abfe3d6b2a985440412d656dd60623b1ec8e5ff76762c9c307593fdb2c0",
+      "successfulAttempts": 7,
+      "failedAttempts": 0,
+      "maximumCpuPercent": 12.5,
+      "maximumNetworkPercent": 18.0
+    }
+  ],
+  "sealVerification": {
+    "sealedAttempts": 18,
+    "verifiedReferences": 911,
+    "mismatches": 0
+  },
+  "baselineAcceptedKeys": 0,
+  "baselineRequiredKeys": 288,
+  "fidelityCompletedRuns": 0,
+  "fidelityRequiredRuns": 312,
+  "blocker": "Aedes.m16.q0.p128.r3 exhausted three attempts; two attempts exceeded the unchanged 70% network gate on the physical 100 Mbps link and one capture exited with Docker code 137."
+}

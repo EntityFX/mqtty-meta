@@ -1,0 +1,207 @@
+{
+  "status": "verified",
+  "rawFilesVerified": 55,
+  "messageLogsOnValuesIndependentlyRecounted": 42,
+  "messageLogsOffIdRecount": "notAvailable",
+  "archiveSha256": "5773f8c4c2bb5c9b16f51c8ba5089a193a33b8bf431aa9f2facfa6d8a26a3bda",
+  "archiveBytes": 8261658,
+  "elapsedSeconds": 59.135475873947144,
+  "rows": [
+    {
+      "repeat": 1,
+      "writeMessageEventLogs": true,
+      "metrics": {
+        "attempted": 52830,
+        "completed": 52830,
+        "failed": 0,
+        "actualMeasurementSeconds": 4.006525693,
+        "completedRps": 13185.988072484324,
+        "p99Ms": 9.625600000000304,
+        "deliveryLossRate": 0.002290365322733301,
+        "duplicateDeliveries": 0
+      },
+      "connections": {
+        "continuous": true,
+        "subscriberIdentities": 1,
+        "confirmedSubscriptions": 2
+      },
+      "process": {
+        "pid": 278174,
+        "exitCode": 0,
+        "wallSeconds": 10.785059237969108
+      },
+      "rawOnRecount": {
+        "scope": "One subscriber; attempts in [measurementStart, measurementEnd); observed through drainEnd",
+        "attempted": 52830,
+        "completed": 52830,
+        "failed": 0,
+        "pending": 0,
+        "measurementSeconds": 4.0,
+        "attemptedRps": 13207.5,
+        "completedInWindow": 52814,
+        "completedRpsInWindow": 13203.5,
+        "completedDuringDrain": 16,
+        "completedCohortPerSubmissionSecond": 13207.5,
+        "uniqueDeliveries": 52709,
+        "completedIdsDelivered": 52709,
+        "deliveredAfterFailedPublish": 0,
+        "firstDeliveriesDuringDrain": 32089,
+        "duplicates": 0,
+        "outsideCohortDeliveryEvents": 6511,
+        "publishFailureRate": 0.0,
+        "deliveryLossRate": 0.002290365322733301,
+        "p99PublishMs": 9.625600000000304,
+        "latencyStatus": "observed",
+        "outcomesSettled": true
+      },
+      "rttBaselineMs": 0.5689,
+      "rawOffRecount": "notApplicable",
+      "filesSha256": {
+        "deliveries.ndjson": "3e7160a0b4abddd1ffe53d4350244ed4bad728d67a548b8fdcb3633da3530f3e",
+        "connections.ndjson": "75d913bb1562abf3c66de07964c2ef6882205fdf62301413ac12d38bb71efc75",
+        "phases.json": "edeb666b5a240e9db9ccb7a6b9a6a8fc2d059991bac96c093edbc73f5b7d5207",
+        "trial.json": "510535c11915776a96f31a7dc290930c81ac77124993dcb1918bdc978a3b663b",
+        "protocol-preflight.json": "8e83f152da6a0931db7992b9c0b3860b889f69403af9f0de5155743af470b60b",
+        "subscriptions.ndjson": "1b2c1482b8e534d7fa429f5a868215a6d220cedc62156d69f486bf027ae3e5d1",
+        "publishes.ndjson": "bfae15abf01147bf410a3f0bfc05c26490e59b4c04e7ebe1fc562c15f319beab"
+      }
+    },
+    {
+      "repeat": 2,
+      "writeMessageEventLogs": false,
+      "metrics": {
+        "attempted": 48163,
+        "completed": 48163,
+        "failed": 0,
+        "actualMeasurementSeconds": 4.007011996,
+        "completedRps": 12019.679513831932,
+        "p99Ms": 15.001399999999649,
+        "deliveryLossRate": 0.012935240744970211,
+        "duplicateDeliveries": 0
+      },
+      "connections": {
+        "continuous": true,
+        "subscriberIdentities": 1,
+        "confirmedSubscriptions": 2
+      },
+      "process": {
+        "pid": 278338,
+        "exitCode": 0,
+        "wallSeconds": 10.78486440796405
+      },
+      "rawOnRecount": null,
+      "rttBaselineMs": 0.7881,
+      "rawOffRecount": "notAvailable",
+      "filesSha256": {
+        "connections.ndjson": "047dc2bc8580efecfc834b0ea3f26b7643b76d1c24daf0569a390572d9c2ac5d",
+        "phases.json": "b1bdd172372be4358f67896a4a4064088714efc9d4548e38d4ec979db3d83074",
+        "trial.json": "dc91a6f18254cfe04078713351226967f7bae7ecaa3b3d9dd52804495da428fb",
+        "protocol-preflight.json": "73aea56e0c8fffecfbb3c5d19dd0fc1d5ec793b6de9b23b02183038948b9c9c7",
+        "subscriptions.ndjson": "8bf899d63451f0f04cae1cebc3f3dde54fc080961ce352d3ee6f103eea918940"
+      }
+    },
+    {
+      "repeat": 3,
+      "writeMessageEventLogs": false,
+      "metrics": {
+        "attempted": 44586,
+        "completed": 44586,
+        "failed": 0,
+        "actualMeasurementSeconds": 4.000810107,
+        "completedRps": 11144.24299268548,
+        "p99Ms": 15.962499999999636,
+        "deliveryLossRate": 0.01343471044722555,
+        "duplicateDeliveries": 0
+      },
+      "connections": {
+        "continuous": true,
+        "subscriberIdentities": 1,
+        "confirmedSubscriptions": 2
+      },
+      "process": {
+        "pid": 278495,
+        "exitCode": 0,
+        "wallSeconds": 10.73686829599319
+      },
+      "rawOnRecount": null,
+      "rttBaselineMs": 0.6294,
+      "rawOffRecount": "notAvailable",
+      "filesSha256": {
+        "connections.ndjson": "4153652c16971c0f8d765807240d71514ee3edc00cb15bbaf296cda3c6c48a5d",
+        "phases.json": "9b849667a2428f2d9e1adb15bf0f85ea6fccd8588f4abb57d49fed1eaf3593ff",
+        "trial.json": "71e0b82816bbe9c7bde84d9992fe8e31e2ff0d969b5f37f35d298518f23c1f7d",
+        "protocol-preflight.json": "470ec7bf1a163af94ca04942114dcd31ac7d9438245fb66344e65046640c4b41",
+        "subscriptions.ndjson": "113c0d790e1a35c5f232c2e76edf740d18449e6515340a5901ce65c0a9f49eb3"
+      }
+    },
+    {
+      "repeat": 4,
+      "writeMessageEventLogs": true,
+      "metrics": {
+        "attempted": 51782,
+        "completed": 51782,
+        "failed": 0,
+        "actualMeasurementSeconds": 4.011649216,
+        "completedRps": 12907.908247180103,
+        "p99Ms": 8.427099999999882,
+        "deliveryLossRate": 0.0020856668340349938,
+        "duplicateDeliveries": 0
+      },
+      "connections": {
+        "continuous": true,
+        "subscriberIdentities": 1,
+        "confirmedSubscriptions": 2
+      },
+      "process": {
+        "pid": 278652,
+        "exitCode": 0,
+        "wallSeconds": 10.787191090988927
+      },
+      "rawOnRecount": {
+        "scope": "One subscriber; attempts in [measurementStart, measurementEnd); observed through drainEnd",
+        "attempted": 51782,
+        "completed": 51782,
+        "failed": 0,
+        "pending": 0,
+        "measurementSeconds": 4.0,
+        "attemptedRps": 12945.5,
+        "completedInWindow": 51766,
+        "completedRpsInWindow": 12941.5,
+        "completedDuringDrain": 16,
+        "completedCohortPerSubmissionSecond": 12945.5,
+        "uniqueDeliveries": 51674,
+        "completedIdsDelivered": 51674,
+        "deliveredAfterFailedPublish": 0,
+        "firstDeliveriesDuringDrain": 33468,
+        "duplicates": 0,
+        "outsideCohortDeliveryEvents": 6343,
+        "publishFailureRate": 0.0,
+        "deliveryLossRate": 0.0020856668340349938,
+        "p99PublishMs": 8.427099999999882,
+        "latencyStatus": "observed",
+        "outcomesSettled": true
+      },
+      "rttBaselineMs": 0.8602,
+      "rawOffRecount": "notApplicable",
+      "filesSha256": {
+        "deliveries.ndjson": "febe30bae2ebed73d4d6d03781c22905989bb8f37af7ec9746a7bad87ca81c68",
+        "connections.ndjson": "16783a955fc1eafce2e7a4246d3b6bbb84c3e26b8f93c2db60f18fe51b3bf927",
+        "phases.json": "a9202bc9fdcc3e848af43f32d683ac1d49520000919240f5c20ebb6518ff3484",
+        "trial.json": "021808162772c119e332c06e12f37e49a009a57769b8492a30ee42814acec029",
+        "protocol-preflight.json": "59d4f88f94b8d3db71e0ab23d37600fc3e56193b2c3627d452daf3f6499c4e2d",
+        "subscriptions.ndjson": "39b75114e5033ee5ff303bf1869ccc1deb21afd7392d7da084f91619af43b6cd",
+        "publishes.ndjson": "4808e5141451fc78c172391813b8c7c7095d076a2e86c1ab0ac640328dc29ae4"
+      }
+    }
+  ],
+  "comparison": {
+    "onMeanRps": 13046.948159832213,
+    "offMeanRps": 11581.961253258705,
+    "rpsRelativeDifference": -0.12648867273332642,
+    "onMeanP99Ms": 9.026350000000093,
+    "offMeanP99Ms": 15.481949999999642,
+    "p99RelativeDifference": -0.41697589773896043
+  },
+  "mainCampaignAdmitted": false,
+  "statisticalEquivalenceEstablished": false
+}

@@ -1,0 +1,672 @@
+{
+  "sourceSha256": {
+    "summary-matrix.csv": "16fb593c6eb4f439011ee2cd033d5ed3954d6d679f77c2f7b9f31e97e34bb9e2",
+    "transit.csv": "834ba018d5d3447a701f20af86dc048bb8a704c0a92b1e04c3e6b1d213c8d575"
+  },
+  "rendererSha256": "9ad36ef40c5476270e28d991aecb9e3bdc8ffddd13c728c232843bca408575db",
+  "palette": "CS_PEER_PALETTE + CS_SUPPORT_COLORS",
+  "contract": {
+    "layout": "Report multi-panel figures, SVG/PDF/PNG",
+    "statistic": "Equal seed weights, min-max; 3 per group",
+    "bytes": "Forwarded topic+payload separate from physical-model transit counters",
+    "claim": "Observed exchange cost; losses preclude interpreting lower traffic as efficiency"
+  },
+  "plotted": [
+    {
+      "panel": "line exports/attempt",
+      "mode": "single",
+      "qos": 0,
+      "n": 3,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "panel": "line exports/attempt",
+      "mode": "single",
+      "qos": 1,
+      "n": 3,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "panel": "line exports/attempt",
+      "mode": "single",
+      "qos": 2,
+      "n": 3,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "panel": "line forwarded MiB",
+      "mode": "single",
+      "qos": 0,
+      "n": 3,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "panel": "line forwarded MiB",
+      "mode": "single",
+      "qos": 1,
+      "n": 3,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "panel": "line forwarded MiB",
+      "mode": "single",
+      "qos": 2,
+      "n": 3,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "panel": "line exports/attempt",
+      "mode": "relay",
+      "qos": 0,
+      "n": 3,
+      "mean": 3.0,
+      "min": 3.0,
+      "max": 3.0
+    },
+    {
+      "panel": "line exports/attempt",
+      "mode": "relay",
+      "qos": 1,
+      "n": 3,
+      "mean": 3.0,
+      "min": 3.0,
+      "max": 3.0
+    },
+    {
+      "panel": "line exports/attempt",
+      "mode": "relay",
+      "qos": 2,
+      "n": 3,
+      "mean": 3.0,
+      "min": 3.0,
+      "max": 3.0
+    },
+    {
+      "panel": "line forwarded MiB",
+      "mode": "relay",
+      "qos": 0,
+      "n": 3,
+      "mean": 5.14984130859375,
+      "min": 5.14984130859375,
+      "max": 5.14984130859375
+    },
+    {
+      "panel": "line forwarded MiB",
+      "mode": "relay",
+      "qos": 1,
+      "n": 3,
+      "mean": 5.14984130859375,
+      "min": 5.14984130859375,
+      "max": 5.14984130859375
+    },
+    {
+      "panel": "line forwarded MiB",
+      "mode": "relay",
+      "qos": 2,
+      "n": 3,
+      "mean": 5.14984130859375,
+      "min": 5.14984130859375,
+      "max": 5.14984130859375
+    },
+    {
+      "panel": "line exports/attempt",
+      "mode": "federation",
+      "qos": 0,
+      "n": 3,
+      "mean": 3.0,
+      "min": 3.0,
+      "max": 3.0
+    },
+    {
+      "panel": "line exports/attempt",
+      "mode": "federation",
+      "qos": 1,
+      "n": 3,
+      "mean": 1.1688,
+      "min": 1.1688,
+      "max": 1.1688
+    },
+    {
+      "panel": "line exports/attempt",
+      "mode": "federation",
+      "qos": 2,
+      "n": 3,
+      "mean": 0.72588,
+      "min": 0.72588,
+      "max": 0.72588
+    },
+    {
+      "panel": "line forwarded MiB",
+      "mode": "federation",
+      "qos": 0,
+      "n": 3,
+      "mean": 6.480228424072266,
+      "min": 6.480228424072266,
+      "max": 6.480228424072266
+    },
+    {
+      "panel": "line forwarded MiB",
+      "mode": "federation",
+      "qos": 1,
+      "n": 3,
+      "mean": 2.52703857421875,
+      "min": 2.52703857421875,
+      "max": 2.52703857421875
+    },
+    {
+      "panel": "line forwarded MiB",
+      "mode": "federation",
+      "qos": 2,
+      "n": 3,
+      "mean": 1.5681400299072266,
+      "min": 1.5681400299072266,
+      "max": 1.5681400299072266
+    },
+    {
+      "panel": "ring exports/attempt",
+      "mode": "single",
+      "qos": 0,
+      "n": 3,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "panel": "ring exports/attempt",
+      "mode": "single",
+      "qos": 1,
+      "n": 3,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "panel": "ring exports/attempt",
+      "mode": "single",
+      "qos": 2,
+      "n": 3,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "panel": "ring forwarded MiB",
+      "mode": "single",
+      "qos": 0,
+      "n": 3,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "panel": "ring forwarded MiB",
+      "mode": "single",
+      "qos": 1,
+      "n": 3,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "panel": "ring forwarded MiB",
+      "mode": "single",
+      "qos": 2,
+      "n": 3,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "panel": "ring exports/attempt",
+      "mode": "relay",
+      "qos": 0,
+      "n": 3,
+      "mean": 3.0,
+      "min": 3.0,
+      "max": 3.0
+    },
+    {
+      "panel": "ring exports/attempt",
+      "mode": "relay",
+      "qos": 1,
+      "n": 3,
+      "mean": 3.0,
+      "min": 3.0,
+      "max": 3.0
+    },
+    {
+      "panel": "ring exports/attempt",
+      "mode": "relay",
+      "qos": 2,
+      "n": 3,
+      "mean": 3.0,
+      "min": 3.0,
+      "max": 3.0
+    },
+    {
+      "panel": "ring forwarded MiB",
+      "mode": "relay",
+      "qos": 0,
+      "n": 3,
+      "mean": 5.14984130859375,
+      "min": 5.14984130859375,
+      "max": 5.14984130859375
+    },
+    {
+      "panel": "ring forwarded MiB",
+      "mode": "relay",
+      "qos": 1,
+      "n": 3,
+      "mean": 5.14984130859375,
+      "min": 5.14984130859375,
+      "max": 5.14984130859375
+    },
+    {
+      "panel": "ring forwarded MiB",
+      "mode": "relay",
+      "qos": 2,
+      "n": 3,
+      "mean": 5.14984130859375,
+      "min": 5.14984130859375,
+      "max": 5.14984130859375
+    },
+    {
+      "panel": "ring exports/attempt",
+      "mode": "federation",
+      "qos": 0,
+      "n": 3,
+      "mean": 5.0,
+      "min": 5.0,
+      "max": 5.0
+    },
+    {
+      "panel": "ring exports/attempt",
+      "mode": "federation",
+      "qos": 1,
+      "n": 3,
+      "mean": 1.6762,
+      "min": 1.6762,
+      "max": 1.6762
+    },
+    {
+      "panel": "ring exports/attempt",
+      "mode": "federation",
+      "qos": 2,
+      "n": 3,
+      "mean": 1.06056,
+      "min": 1.06056,
+      "max": 1.06056
+    },
+    {
+      "panel": "ring forwarded MiB",
+      "mode": "federation",
+      "qos": 0,
+      "n": 3,
+      "mean": 10.80038070678711,
+      "min": 10.80038070678711,
+      "max": 10.80038070678711
+    },
+    {
+      "panel": "ring forwarded MiB",
+      "mode": "federation",
+      "qos": 1,
+      "n": 3,
+      "mean": 3.626673698425293,
+      "min": 3.626673698425293,
+      "max": 3.626673698425293
+    },
+    {
+      "panel": "ring forwarded MiB",
+      "mode": "federation",
+      "qos": 2,
+      "n": 3,
+      "mean": 2.294137954711914,
+      "min": 2.294137954711914,
+      "max": 2.294137954711914
+    },
+    {
+      "panel": "star exports/attempt",
+      "mode": "single",
+      "qos": 0,
+      "n": 3,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "panel": "star exports/attempt",
+      "mode": "single",
+      "qos": 1,
+      "n": 3,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "panel": "star exports/attempt",
+      "mode": "single",
+      "qos": 2,
+      "n": 3,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "panel": "star forwarded MiB",
+      "mode": "single",
+      "qos": 0,
+      "n": 3,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "panel": "star forwarded MiB",
+      "mode": "single",
+      "qos": 1,
+      "n": 3,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "panel": "star forwarded MiB",
+      "mode": "single",
+      "qos": 2,
+      "n": 3,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    {
+      "panel": "star exports/attempt",
+      "mode": "relay",
+      "qos": 0,
+      "n": 3,
+      "mean": 3.0,
+      "min": 3.0,
+      "max": 3.0
+    },
+    {
+      "panel": "star exports/attempt",
+      "mode": "relay",
+      "qos": 1,
+      "n": 3,
+      "mean": 3.0,
+      "min": 3.0,
+      "max": 3.0
+    },
+    {
+      "panel": "star exports/attempt",
+      "mode": "relay",
+      "qos": 2,
+      "n": 3,
+      "mean": 3.0,
+      "min": 3.0,
+      "max": 3.0
+    },
+    {
+      "panel": "star forwarded MiB",
+      "mode": "relay",
+      "qos": 0,
+      "n": 3,
+      "mean": 5.14984130859375,
+      "min": 5.14984130859375,
+      "max": 5.14984130859375
+    },
+    {
+      "panel": "star forwarded MiB",
+      "mode": "relay",
+      "qos": 1,
+      "n": 3,
+      "mean": 5.14984130859375,
+      "min": 5.14984130859375,
+      "max": 5.14984130859375
+    },
+    {
+      "panel": "star forwarded MiB",
+      "mode": "relay",
+      "qos": 2,
+      "n": 3,
+      "mean": 5.14984130859375,
+      "min": 5.14984130859375,
+      "max": 5.14984130859375
+    },
+    {
+      "panel": "star exports/attempt",
+      "mode": "federation",
+      "qos": 0,
+      "n": 3,
+      "mean": 9.0,
+      "min": 9.0,
+      "max": 9.0
+    },
+    {
+      "panel": "star exports/attempt",
+      "mode": "federation",
+      "qos": 1,
+      "n": 3,
+      "mean": 1.99036,
+      "min": 1.99036,
+      "max": 1.99036
+    },
+    {
+      "panel": "star exports/attempt",
+      "mode": "federation",
+      "qos": 2,
+      "n": 3,
+      "mean": 1.34702,
+      "min": 1.34702,
+      "max": 1.34702
+    },
+    {
+      "panel": "star forwarded MiB",
+      "mode": "federation",
+      "qos": 0,
+      "n": 3,
+      "mean": 19.440685272216797,
+      "min": 19.440685272216797,
+      "max": 19.440685272216797
+    },
+    {
+      "panel": "star forwarded MiB",
+      "mode": "federation",
+      "qos": 1,
+      "n": 3,
+      "mean": 4.304386138916016,
+      "min": 4.304386138916016,
+      "max": 4.304386138916016
+    },
+    {
+      "panel": "star forwarded MiB",
+      "mode": "federation",
+      "qos": 2,
+      "n": 3,
+      "mean": 2.9113903045654297,
+      "min": 2.9113903045654297,
+      "max": 2.9113903045654297
+    },
+    {
+      "panel": "transit inbound MiB",
+      "mode": "single",
+      "qos": 0,
+      "n": 3,
+      "mean": 7.510185241699219,
+      "min": 7.510185241699219,
+      "max": 7.510185241699219
+    },
+    {
+      "panel": "transit inbound MiB",
+      "mode": "single",
+      "qos": 1,
+      "n": 3,
+      "mean": 8.58306884765625,
+      "min": 8.58306884765625,
+      "max": 8.58306884765625
+    },
+    {
+      "panel": "transit inbound MiB",
+      "mode": "single",
+      "qos": 2,
+      "n": 3,
+      "mean": 10.013580322265625,
+      "min": 10.013580322265625,
+      "max": 10.013580322265625
+    },
+    {
+      "panel": "transit packets",
+      "mode": "single",
+      "qos": 0,
+      "n": 3,
+      "mean": 187500,
+      "min": 187500,
+      "max": 187500
+    },
+    {
+      "panel": "transit packets",
+      "mode": "single",
+      "qos": 1,
+      "n": 3,
+      "mean": 375000,
+      "min": 375000,
+      "max": 375000
+    },
+    {
+      "panel": "transit packets",
+      "mode": "single",
+      "qos": 2,
+      "n": 3,
+      "mean": 750000,
+      "min": 750000,
+      "max": 750000
+    },
+    {
+      "panel": "transit inbound MiB",
+      "mode": "relay",
+      "qos": 0,
+      "n": 3,
+      "mean": 5.7220458984375,
+      "min": 5.7220458984375,
+      "max": 5.7220458984375
+    },
+    {
+      "panel": "transit inbound MiB",
+      "mode": "relay",
+      "qos": 1,
+      "n": 3,
+      "mean": 6.580352783203125,
+      "min": 6.580352783203125,
+      "max": 6.580352783203125
+    },
+    {
+      "panel": "transit inbound MiB",
+      "mode": "relay",
+      "qos": 2,
+      "n": 3,
+      "mean": 7.724761962890625,
+      "min": 7.724761962890625,
+      "max": 7.724761962890625
+    },
+    {
+      "panel": "transit packets",
+      "mode": "relay",
+      "qos": 0,
+      "n": 3,
+      "mean": 150000,
+      "min": 150000,
+      "max": 150000
+    },
+    {
+      "panel": "transit packets",
+      "mode": "relay",
+      "qos": 1,
+      "n": 3,
+      "mean": 300000,
+      "min": 300000,
+      "max": 300000
+    },
+    {
+      "panel": "transit packets",
+      "mode": "relay",
+      "qos": 2,
+      "n": 3,
+      "mean": 600000,
+      "min": 600000,
+      "max": 600000
+    },
+    {
+      "panel": "transit inbound MiB",
+      "mode": "federation",
+      "qos": 0,
+      "n": 3,
+      "mean": 21.157299041748047,
+      "min": 21.157299041748047,
+      "max": 21.157299041748047
+    },
+    {
+      "panel": "transit inbound MiB",
+      "mode": "federation",
+      "qos": 1,
+      "n": 3,
+      "mean": 5.2534637451171875,
+      "min": 5.2534637451171875,
+      "max": 5.2534637451171875
+    },
+    {
+      "panel": "transit inbound MiB",
+      "mode": "federation",
+      "qos": 2,
+      "n": 3,
+      "mean": 4.067546844482422,
+      "min": 4.067546844482422,
+      "max": 4.067546844482422
+    },
+    {
+      "panel": "transit packets",
+      "mode": "federation",
+      "qos": 0,
+      "n": 3,
+      "mean": 450000,
+      "min": 450000,
+      "max": 450000
+    },
+    {
+      "panel": "transit packets",
+      "mode": "federation",
+      "qos": 1,
+      "n": 3,
+      "mean": 199036,
+      "min": 199036,
+      "max": 199036
+    },
+    {
+      "panel": "transit packets",
+      "mode": "federation",
+      "qos": 2,
+      "n": 3,
+      "mean": 269404,
+      "min": 269404,
+      "max": 269404
+    }
+  ],
+  "files": {
+    "forwarding-5000.pdf": "d1cc94c0c0b7894958d6908f512a95c80e9422a83aeb3a36b2f8bbe42bb766e7",
+    "forwarding-5000.png": "9c51749ec4892a1b8d1adec10fee01be7571dcddf44c8070fc29d82942206d5f",
+    "forwarding-5000.svg": "3d54b1644e4df23b937d5ad696a6a4e6e3448e60aa576ec7744fed1e54277715",
+    "transit-5000.pdf": "09073224fc92c4ef004d657e874d29ba7cf1bd60146a6802747bbfbe49824421",
+    "transit-5000.png": "199a78e8947d21d64b48e3957a078663303968d117b4a1327d9afbcee3a3af0c",
+    "transit-5000.svg": "821afacbd44c276ff7f607a4b61d0b6c4034282304450c7be36e7d0e1e03dfa4"
+  }
+}

@@ -1,0 +1,1067 @@
+{
+  "status": "verified",
+  "jobs": 40,
+  "rawSets": 40,
+  "metricValuesCompared": 1680,
+  "jobFilesShaVerified": 520,
+  "profileFilesShaVerified": 28,
+  "profiles": {
+    "Aedes": {
+      "profileSha256": "5172f9409dda3ca497eb9b4a47db8717957e2aeecc7487a618278747e171e503",
+      "observationsSha256": "5d525a51503316bdd950e8561880d2da1a166d92948a0d8737b6b897783d2340",
+      "histogramSha256": "56ee780b866d863d11e92aba64a80cced24801296fbb5fc95fd5ff9d3e16076e",
+      "realArchiveFilesCompared": 21,
+      "mergedLatencySamples": 207314,
+      "mergedBins": 3424,
+      "repeatCount": 3,
+      "exactPoint": [
+        16,
+        1,
+        16
+      ]
+    },
+    "Mosquitto": {
+      "profileSha256": "59e75155ca04b3448df9db59c4233b3c58ce003d53b7a1e655d427708d32255b",
+      "observationsSha256": "071d661040f880bdaa203ec587012707fdc37e135a0c02769907eb093dcc6225",
+      "histogramSha256": "1099c34f2a1c1aa027ed8831a2854895b3584c0ba868e7c47b54ef8429b22992",
+      "realArchiveFilesCompared": 21,
+      "mergedLatencySamples": 257092,
+      "mergedBins": 4826,
+      "repeatCount": 3,
+      "exactPoint": [
+        16,
+        1,
+        16
+      ]
+    },
+    "ActiveMQ": {
+      "profileSha256": "26964895f2aa9c7975e569331ef1f89a469a7d8752f61cecae70c2eb04d873db",
+      "observationsSha256": "367b769107268a8bce1d453cd7d907c9d6a1f48ba639fa59026b42e10bd03000",
+      "histogramSha256": "5084d3a01387845f30e695df3f215f73052d688c2f19468fe9c0991d9c0093cc",
+      "realArchiveFilesCompared": 21,
+      "mergedLatencySamples": 158284,
+      "mergedBins": 7557,
+      "repeatCount": 3,
+      "exactPoint": [
+        16,
+        1,
+        16
+      ]
+    },
+    "EMQX": {
+      "profileSha256": "b4350c2db84389de9c5d4ac8b8934bbd3a26f2cdd9d0b1a7e3b6d7d9ff6500d3",
+      "observationsSha256": "1fbebac571debf14266456b210c6b85573076e9898aa97f8ce987ba0e8d06687",
+      "histogramSha256": "5286b587383b25e852a3730047edd75780c92bd49f1329d8b5bc0ac92d712d65",
+      "realArchiveFilesCompared": 21,
+      "mergedLatencySamples": 119857,
+      "mergedBins": 2842,
+      "repeatCount": 3,
+      "exactPoint": [
+        16,
+        1,
+        16
+      ]
+    }
+  },
+  "replays": {
+    "Aedes": {
+      "summary.json": "a26b30caaa9af87bed44d558f634cd0b15ecdc4cf874adf87d495a1af82afb37",
+      "latency-histogram.json": "821a52a84ebd10d97c68f2e4005adf2b5ba435a6270574fc3bb6043682aa303f",
+      "publishes.ndjson": "421417fd0a98e00f616e1aae440969a940f6c41f4a18a62e8c6baee4a7f6ec23",
+      "deliveries.ndjson": "e67e46ca60ae80f3ab43c32c31ce2918bd186bbab3055ae619211748cd237d37",
+      "subscriptions.ndjson": "10df0b9f80e19ce6b780b1431ed6a6f7460820bad0c1f302e692f8145a6f617d",
+      "phases.json": "c8addec679c77146d845f0a2fbed599cca61072f607df53a5a24bc1a146caa17",
+      "counters-scientific.json": "13221b3054933abdc83f6740d620a3003af70700076b4e7730d398291653b42f"
+    },
+    "Mosquitto": {
+      "summary.json": "a76f2315307c8ddb269ac14d8020117c89aa8caea4decc9267c0514ad3ed2140",
+      "latency-histogram.json": "c757c18eee204e411c1ce50985b94b3bad9288cbd189912be6d06d3ab5b576b5",
+      "publishes.ndjson": "84ddc7aee475180290c5fa8e560a65dc12b7ff2ad31a91e7364205ee057553bd",
+      "deliveries.ndjson": "b45eff90b5c34c4de84c1f7ab1dfb5bc13736c69566555fc6976f91df10b6d0c",
+      "subscriptions.ndjson": "10df0b9f80e19ce6b780b1431ed6a6f7460820bad0c1f302e692f8145a6f617d",
+      "phases.json": "c8addec679c77146d845f0a2fbed599cca61072f607df53a5a24bc1a146caa17",
+      "counters-scientific.json": "8797216752cc0ab8e3c6994f7af49a10cef7d3e66195b56cc558cf10ffa7b8bf"
+    },
+    "ActiveMQ": {
+      "summary.json": "719265f4b20fc991a7dd1acb477270f4620ceeeb1270aae45e85278ddabba7ed",
+      "latency-histogram.json": "a1b9dc250c553209c7d7a4cd6fbab72d8c079159af1c5552a88c90f3aac0034e",
+      "publishes.ndjson": "9f659c406e976b400ce6ca25c1b4f180787a1a8d7b8af36cefd5f03bd864bf7b",
+      "deliveries.ndjson": "08fde310ac94f8a9e34eaa12cf605ab1ff82cfe565c886b87994cd280cb1393c",
+      "subscriptions.ndjson": "10df0b9f80e19ce6b780b1431ed6a6f7460820bad0c1f302e692f8145a6f617d",
+      "phases.json": "c8addec679c77146d845f0a2fbed599cca61072f607df53a5a24bc1a146caa17",
+      "counters-scientific.json": "e7e64b828aa4489cae3877efc265cdaff7b0de3622e66e56418aea2b51d07246"
+    },
+    "EMQX": {
+      "summary.json": "fb5e5a2d0c3179807919e6ace9ec01e3a19b430cbbb6f85d7cfc14efd591c012",
+      "latency-histogram.json": "21837acbf37cf16f2db42a3c141f380e7cdf24d387ee3b756a6cbc9af774b45b",
+      "publishes.ndjson": "22f14af371db031f21c0c9ebc78d6a557674257f8f96891da722661c214a45fa",
+      "deliveries.ndjson": "ded18d815101a4df9678268b9d72636a257d54a71ea5265f3acaa10ec51de4a9",
+      "subscriptions.ndjson": "49de6373d29966564add8462a2ceabae0c1db5fef5c88c009edc5243885e3768",
+      "phases.json": "a8e35c2e75f07968cb0f2c03612e994e69cbddcd96fa76c0584827f382d1a04a",
+      "counters-scientific.json": "7decad45b687c6be29cc33fe4adb4bbf76c9dc5640548e50ee4edbf4b380c037"
+    }
+  },
+  "modelComparisons": [
+    {
+      "broker": "Aedes",
+      "repeat": 1,
+      "seed": 42,
+      "native": {
+        "rps": 17112.666666666668,
+        "p99": 2.1781999999999093,
+        "failure": 0.0,
+        "loss": 0.0
+      },
+      "model": {
+        "rps": 17123.0,
+        "p99": 2.19,
+        "failure": 0.0,
+        "loss": 0.0
+      },
+      "errors": {
+        "rps": 0.0006038412092406475,
+        "p99": 0.005417317050817702,
+        "failure": 0.0,
+        "loss": 0.0
+      },
+      "allCriteriaPassed": true
+    },
+    {
+      "broker": "Aedes",
+      "repeat": 2,
+      "seed": 43,
+      "native": {
+        "rps": 17112.666666666668,
+        "p99": 2.1781999999999093,
+        "failure": 0.0,
+        "loss": 0.0
+      },
+      "model": {
+        "rps": 17155.25,
+        "p99": 2.21,
+        "failure": 0.0,
+        "loss": 0.0
+      },
+      "errors": {
+        "rps": 0.002488410144532244,
+        "p99": 0.014599210357217871,
+        "failure": 0.0,
+        "loss": 0.0
+      },
+      "allCriteriaPassed": true
+    },
+    {
+      "broker": "Aedes",
+      "repeat": 3,
+      "seed": 44,
+      "native": {
+        "rps": 17112.666666666668,
+        "p99": 2.1781999999999093,
+        "failure": 0.0,
+        "loss": 0.0
+      },
+      "model": {
+        "rps": 17078.75,
+        "p99": 2.2300000000000004,
+        "failure": 0.0,
+        "loss": 0.0
+      },
+      "errors": {
+        "rps": 0.00198196267871759,
+        "p99": 0.023781103663618245,
+        "failure": 0.0,
+        "loss": 0.0
+      },
+      "allCriteriaPassed": true
+    },
+    {
+      "broker": "Mosquitto",
+      "repeat": 1,
+      "seed": 42,
+      "native": {
+        "rps": 20961.916666666668,
+        "p99": 3.2374000000000556,
+        "failure": 0.0,
+        "loss": 0.03386308997918785
+      },
+      "model": {
+        "rps": 21064.0,
+        "p99": 3.06,
+        "failure": 0.0,
+        "loss": 0.044875142423091534
+      },
+      "errors": {
+        "rps": 0.004869942713571777,
+        "p99": 0.05479705936864535,
+        "failure": 0.0,
+        "loss": 0.011012052443903686
+      },
+      "allCriteriaPassed": true
+    },
+    {
+      "broker": "Mosquitto",
+      "repeat": 2,
+      "seed": 43,
+      "native": {
+        "rps": 20961.916666666668,
+        "p99": 3.2374000000000556,
+        "failure": 0.0,
+        "loss": 0.03386308997918785
+      },
+      "model": {
+        "rps": 21156.5,
+        "p99": 3.1500000000000004,
+        "failure": 0.0,
+        "loss": 0.04548247583484981
+      },
+      "errors": {
+        "rps": 0.009282707131583806,
+        "p99": 0.026996972879487772,
+        "failure": 0.0,
+        "loss": 0.01161938585566196
+      },
+      "allCriteriaPassed": true
+    },
+    {
+      "broker": "Mosquitto",
+      "repeat": 3,
+      "seed": 44,
+      "native": {
+        "rps": 20961.916666666668,
+        "p99": 3.2374000000000556,
+        "failure": 0.0,
+        "loss": 0.03386308997918785
+      },
+      "model": {
+        "rps": 21060.5,
+        "p99": 3.1300000000000003,
+        "failure": 0.0,
+        "loss": 0.04478763562118658
+      },
+      "errors": {
+        "rps": 0.004702973249106457,
+        "p99": 0.03317476987707833,
+        "failure": 0.0,
+        "loss": 0.010924545641998733
+      },
+      "allCriteriaPassed": true
+    },
+    {
+      "broker": "ActiveMQ",
+      "repeat": 1,
+      "seed": 42,
+      "native": {
+        "rps": 12325.833333333334,
+        "p99": 11.217433333333247,
+        "failure": 0.0,
+        "loss": 0.006537650230540921
+      },
+      "model": {
+        "rps": 12576.5,
+        "p99": 9.770000000000001,
+        "failure": 0.0,
+        "loss": 0.003975668906293484
+      },
+      "errors": {
+        "rps": 0.02033669123115403,
+        "p99": 0.1290342710602179,
+        "failure": 0.0,
+        "loss": 0.0025619813242474376
+      },
+      "allCriteriaPassed": true
+    },
+    {
+      "broker": "ActiveMQ",
+      "repeat": 2,
+      "seed": 43,
+      "native": {
+        "rps": 12325.833333333334,
+        "p99": 11.217433333333247,
+        "failure": 0.0,
+        "loss": 0.006537650230540921
+      },
+      "model": {
+        "rps": 12675.0,
+        "p99": 9.28,
+        "failure": 0.0,
+        "loss": 0.004615384615384616
+      },
+      "errors": {
+        "rps": 0.028328037319991835,
+        "p99": 0.17271627793642003,
+        "failure": 0.0,
+        "loss": 0.0019222656151563055
+      },
+      "allCriteriaPassed": true
+    },
+    {
+      "broker": "ActiveMQ",
+      "repeat": 3,
+      "seed": 44,
+      "native": {
+        "rps": 12325.833333333334,
+        "p99": 11.217433333333247,
+        "failure": 0.0,
+        "loss": 0.006537650230540921
+      },
+      "model": {
+        "rps": 12541.0,
+        "p99": 10.32,
+        "failure": 0.0,
+        "loss": 0.004166334423092257
+      },
+      "errors": {
+        "rps": 0.017456561422486597,
+        "p99": 0.0800034470155015,
+        "failure": 0.0,
+        "loss": 0.002371315807448664
+      },
+      "allCriteriaPassed": true
+    },
+    {
+      "broker": "EMQX",
+      "repeat": 1,
+      "seed": 42,
+      "native": {
+        "rps": 10123.833333333334,
+        "p99": 3.0706666666671176,
+        "failure": 0.0,
+        "loss": 0.0
+      },
+      "model": {
+        "rps": 9904.0,
+        "p99": 3.1200000000000006,
+        "failure": 0.0,
+        "loss": 0.0
+      },
+      "errors": {
+        "rps": 0.021714436231335357,
+        "p99": 0.01606600086828344,
+        "failure": 0.0,
+        "loss": 0.0
+      },
+      "allCriteriaPassed": true
+    },
+    {
+      "broker": "EMQX",
+      "repeat": 2,
+      "seed": 43,
+      "native": {
+        "rps": 10123.833333333334,
+        "p99": 3.0706666666671176,
+        "failure": 0.0,
+        "loss": 0.0
+      },
+      "model": {
+        "rps": 9889.0,
+        "p99": 3.1100000000000003,
+        "failure": 0.0,
+        "loss": 0.0
+      },
+      "errors": {
+        "rps": 0.023196088438174004,
+        "p99": 0.01280937907062861,
+        "failure": 0.0,
+        "loss": 0.0
+      },
+      "allCriteriaPassed": true
+    },
+    {
+      "broker": "EMQX",
+      "repeat": 3,
+      "seed": 44,
+      "native": {
+        "rps": 10123.833333333334,
+        "p99": 3.0706666666671176,
+        "failure": 0.0,
+        "loss": 0.0
+      },
+      "model": {
+        "rps": 9914.5,
+        "p99": 3.1200000000000006,
+        "failure": 0.0,
+        "loss": 0.0
+      },
+      "errors": {
+        "rps": 0.020677279686548304,
+        "p99": 0.01606600086828344,
+        "failure": 0.0,
+        "loss": 0.0
+      },
+      "allCriteriaPassed": true
+    }
+  ],
+  "conditions": [
+    {
+      "broker": "Aedes",
+      "statistics": {
+        "calibration": {
+          "rps": {
+            "mean": 17276.166666666668,
+            "min": 16716.25,
+            "max": 17683.75,
+            "standardDeviation": 501.4161403797587,
+            "ci95HalfWidth": 1245.5867435978118,
+            "ci95Lower": 16030.579923068855,
+            "ci95Upper": 18521.75341026448,
+            "count": 3
+          },
+          "p99": {
+            "mean": 2.1899000000000037,
+            "min": 2.063000000000102,
+            "max": 2.38130000000001,
+            "standardDeviation": 0.1686680467664089,
+            "ci95HalfWidth": 0.4189946557397571,
+            "ci95Lower": 1.7709053442602467,
+            "ci95Upper": 2.608894655739761,
+            "count": 3
+          },
+          "failure": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "standardDeviation": 0.0,
+            "ci95HalfWidth": 0.0,
+            "ci95Lower": 0.0,
+            "ci95Upper": 0.0,
+            "count": 3
+          },
+          "loss": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "standardDeviation": 0.0,
+            "ci95HalfWidth": 0.0,
+            "ci95Lower": 0.0,
+            "ci95Upper": 0.0,
+            "count": 3
+          }
+        },
+        "control": {
+          "rps": {
+            "mean": 17112.666666666668,
+            "min": 16546.0,
+            "max": 17598.750000000004,
+            "standardDeviation": 530.9810691854608,
+            "ci95HalfWidth": 1319.0300981892794,
+            "ci95Lower": 15793.636568477388,
+            "ci95Upper": 18431.696764855948,
+            "count": 3
+          },
+          "p99": {
+            "mean": 2.1781999999999093,
+            "min": 1.9127000000000862,
+            "max": 2.485099999999875,
+            "standardDeviation": 0.2884370121880137,
+            "ci95HalfWidth": 0.7165172594409241,
+            "ci95Lower": 1.4616827405589852,
+            "ci95Upper": 2.8947172594408332,
+            "count": 3
+          },
+          "failure": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "standardDeviation": 0.0,
+            "ci95HalfWidth": 0.0,
+            "ci95Lower": 0.0,
+            "ci95Upper": 0.0,
+            "count": 3
+          },
+          "loss": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "standardDeviation": 0.0,
+            "ci95HalfWidth": 0.0,
+            "ci95Lower": 0.0,
+            "ci95Upper": 0.0,
+            "count": 3
+          }
+        },
+        "model": {
+          "rps": {
+            "mean": 17119.0,
+            "min": 17078.75,
+            "max": 17155.25,
+            "standardDeviation": 38.406542411417355,
+            "ci95HalfWidth": 95.40714038215225,
+            "ci95Lower": 17023.59285961785,
+            "ci95Upper": 17214.40714038215,
+            "count": 3
+          },
+          "p99": {
+            "mean": 2.21,
+            "min": 2.19,
+            "max": 2.2300000000000004,
+            "standardDeviation": 0.02000000000000024,
+            "ci95HalfWidth": 0.049682754235013414,
+            "ci95Lower": 2.1603172457649866,
+            "ci95Upper": 2.2596827542350133,
+            "count": 3
+          },
+          "failure": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "standardDeviation": 0.0,
+            "ci95HalfWidth": 0.0,
+            "ci95Lower": 0.0,
+            "ci95Upper": 0.0,
+            "count": 3
+          },
+          "loss": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "standardDeviation": 0.0,
+            "ci95HalfWidth": 0.0,
+            "ci95Lower": 0.0,
+            "ci95Upper": 0.0,
+            "count": 3
+          }
+        }
+      },
+      "baselineComparison": {
+        "errors": {
+          "rps": 0.009554326230082979,
+          "p99": 0.005371407584287439,
+          "failure": 0.0,
+          "loss": 0.0
+        },
+        "allCriteriaPassed": true
+      },
+      "meanModelComparison": {
+        "errors": {
+          "rps": 0.00037009622501843394,
+          "p99": 0.014599210357217871,
+          "failure": 0.0,
+          "loss": 0.0
+        },
+        "allCriteriaPassed": true
+      },
+      "allThreeSeedsPassed": true
+    },
+    {
+      "broker": "Mosquitto",
+      "statistics": {
+        "calibration": {
+          "rps": {
+            "mean": 21424.333333333332,
+            "min": 21320.25,
+            "max": 21556.5,
+            "standardDeviation": 120.60273974223526,
+            "ci95HalfWidth": 299.59381393413435,
+            "ci95Lower": 21124.739519399198,
+            "ci95Upper": 21723.927147267466,
+            "count": 3
+          },
+          "p99": {
+            "mean": 3.107033333333144,
+            "min": 3.040899999999965,
+            "max": 3.2385999999996784,
+            "standardDeviation": 0.11394061318646269,
+            "ci95HalfWidth": 0.2830441741164843,
+            "ci95Lower": 2.82398915921666,
+            "ci95Upper": 3.3900775074496283,
+            "count": 3
+          },
+          "failure": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "standardDeviation": 0.0,
+            "ci95HalfWidth": 0.0,
+            "ci95Lower": 0.0,
+            "ci95Upper": 0.0,
+            "count": 3
+          },
+          "loss": {
+            "mean": 0.04513680596322406,
+            "min": 0.02429163989016767,
+            "max": 0.06278068971986726,
+            "standardDeviation": 0.019443196639192573,
+            "ci95HalfWidth": 0.048299578008401595,
+            "ci95Lower": -0.0031627720451775365,
+            "ci95Upper": 0.09343638397162565,
+            "count": 3
+          }
+        },
+        "control": {
+          "rps": {
+            "mean": 20961.916666666668,
+            "min": 20310.75,
+            "max": 21603.25,
+            "standardDeviation": 646.3061065264147,
+            "ci95HalfWidth": 1605.5133725569938,
+            "ci95Lower": 19356.403294109674,
+            "ci95Upper": 22567.430039223662,
+            "count": 3
+          },
+          "p99": {
+            "mean": 3.2374000000000556,
+            "min": 3.105299999999943,
+            "max": 3.304099999999835,
+            "standardDeviation": 0.11440380238445721,
+            "ci95HalfWidth": 0.2841947998708981,
+            "ci95Lower": 2.9532052001291573,
+            "ci95Upper": 3.521594799870954,
+            "count": 3
+          },
+          "failure": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "standardDeviation": 0.0,
+            "ci95HalfWidth": 0.0,
+            "ci95Lower": 0.0,
+            "ci95Upper": 0.0,
+            "count": 3
+          },
+          "loss": {
+            "mean": 0.03386308997918785,
+            "min": 0.021517040781050698,
+            "max": 0.04926342101304202,
+            "standardDeviation": 0.014123097469873702,
+            "ci95HalfWidth": 0.03508371903164332,
+            "ci95Lower": -0.0012206290524554714,
+            "ci95Upper": 0.06894680901083117,
+            "count": 3
+          }
+        },
+        "model": {
+          "rps": {
+            "mean": 21093.666666666668,
+            "min": 21060.5,
+            "max": 21156.5,
+            "standardDeviation": 54.44339568150882,
+            "ci95HalfWidth": 135.24489236819804,
+            "ci95Lower": 20958.42177429847,
+            "ci95Upper": 21228.911559034867,
+            "count": 3
+          },
+          "p99": {
+            "mean": 3.1133333333333337,
+            "min": 3.06,
+            "max": 3.1500000000000004,
+            "standardDeviation": 0.04725815626252625,
+            "ci95HalfWidth": 0.11739576815954618,
+            "ci95Lower": 2.9959375651737874,
+            "ci95Upper": 3.23072910149288,
+            "count": 3
+          },
+          "failure": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "standardDeviation": 0.0,
+            "ci95HalfWidth": 0.0,
+            "ci95Lower": 0.0,
+            "ci95Upper": 0.0,
+            "count": 3
+          },
+          "loss": {
+            "mean": 0.045048417959709305,
+            "min": 0.04478763562118658,
+            "max": 0.04548247583484981,
+            "standardDeviation": 0.00037844291422026025,
+            "ci95HalfWidth": 0.0009401043149593614,
+            "ci95Lower": 0.044108313644749944,
+            "ci95Upper": 0.04598852227466867,
+            "count": 3
+          }
+        }
+      },
+      "baselineComparison": {
+        "errors": {
+          "rps": 0.02205984662662038,
+          "p99": 0.040268940096036696,
+          "failure": 0.0,
+          "loss": 0.01127371598403621
+        },
+        "allCriteriaPassed": true
+      },
+      "meanModelComparison": {
+        "errors": {
+          "rps": 0.006285207698087404,
+          "p99": 0.0383229340417371,
+          "failure": 0.0,
+          "loss": 0.011185327980521458
+        },
+        "allCriteriaPassed": true
+      },
+      "allThreeSeedsPassed": true
+    },
+    {
+      "broker": "ActiveMQ",
+      "statistics": {
+        "calibration": {
+          "rps": {
+            "mean": 13190.333333333334,
+            "min": 12363.5,
+            "max": 13707.0,
+            "standardDeviation": 723.4642930603648,
+            "ci95HalfWidth": 1797.1849334962694,
+            "ci95Lower": 11393.148399837064,
+            "ci95Upper": 14987.518266829604,
+            "count": 3
+          },
+          "p99": {
+            "mean": 10.685300000000325,
+            "min": 8.156099999999924,
+            "max": 14.622000000000298,
+            "standardDeviation": 3.4551060606007895,
+            "ci95HalfWidth": 8.582959263236617,
+            "ci95Lower": 2.1023407367637077,
+            "ci95Upper": 19.268259263236942,
+            "count": 3
+          },
+          "failure": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "standardDeviation": 0.0,
+            "ci95HalfWidth": 0.0,
+            "ci95Lower": 0.0,
+            "ci95Upper": 0.0,
+            "count": 3
+          },
+          "loss": {
+            "mean": 0.004406714252690621,
+            "min": 0.0,
+            "max": 0.009645326970518057,
+            "standardDeviation": 0.004876179281391682,
+            "ci95HalfWidth": 0.012113100842162218,
+            "ci95Lower": -0.007706386589471597,
+            "ci95Upper": 0.01651981509485284,
+            "count": 3
+          }
+        },
+        "control": {
+          "rps": {
+            "mean": 12325.833333333334,
+            "min": 11857.25,
+            "max": 12609.5,
+            "standardDeviation": 408.797805563256,
+            "ci95HalfWidth": 1015.5100452805902,
+            "ci95Lower": 11310.323288052743,
+            "ci95Upper": 13341.343378613925,
+            "count": 3
+          },
+          "p99": {
+            "mean": 11.217433333333247,
+            "min": 10.458399999999983,
+            "max": 11.64619999999968,
+            "standardDeviation": 0.6591845442159839,
+            "ci95HalfWidth": 1.6375051852900835,
+            "ci95Lower": 9.579928148043164,
+            "ci95Upper": 12.85493851862333,
+            "count": 3
+          },
+          "failure": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "standardDeviation": 0.0,
+            "ci95HalfWidth": 0.0,
+            "ci95Lower": 0.0,
+            "ci95Upper": 0.0,
+            "count": 3
+          },
+          "loss": {
+            "mean": 0.006537650230540921,
+            "min": 0.00499694279870965,
+            "max": 0.009040802569491257,
+            "standardDeviation": 0.002186990080193789,
+            "ci95HalfWidth": 0.0054327845334339485,
+            "ci95Lower": 0.0011048656971069729,
+            "ci95Upper": 0.01197043476397487,
+            "count": 3
+          }
+        },
+        "model": {
+          "rps": {
+            "mean": 12597.5,
+            "min": 12541.0,
+            "max": 12675.0,
+            "standardDeviation": 69.42441933498615,
+            "ci95HalfWidth": 172.45981818642946,
+            "ci95Lower": 12425.04018181357,
+            "ci95Upper": 12769.95981818643,
+            "count": 3
+          },
+          "p99": {
+            "mean": 9.790000000000001,
+            "min": 9.28,
+            "max": 10.32,
+            "standardDeviation": 0.520288381573143,
+            "ci95HalfWidth": 1.2924679896515519,
+            "ci95Lower": 8.497532010348449,
+            "ci95Upper": 11.082467989651553,
+            "count": 3
+          },
+          "failure": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "standardDeviation": 0.0,
+            "ci95HalfWidth": 0.0,
+            "ci95Lower": 0.0,
+            "ci95Upper": 0.0,
+            "count": 3
+          },
+          "loss": {
+            "mean": 0.004252462648256785,
+            "min": 0.003975668906293484,
+            "max": 0.004615384615384616,
+            "standardDeviation": 0.00032843964512827353,
+            "ci95HalfWidth": 0.0008158893084971419,
+            "ci95Lower": 0.0034365733397596432,
+            "ci95Upper": 0.005068351956753927,
+            "count": 3
+          }
+        }
+      },
+      "baselineComparison": {
+        "errors": {
+          "rps": 0.0701372456223379,
+          "p99": 0.04743806515449995,
+          "failure": 0.0,
+          "loss": 0.0021309359778503003
+        },
+        "allCriteriaPassed": true
+      },
+      "meanModelComparison": {
+        "errors": {
+          "rps": 0.022040429991210822,
+          "p99": 0.12725133200404642,
+          "failure": 0.0,
+          "loss": 0.002285187582284136
+        },
+        "allCriteriaPassed": true
+      },
+      "allThreeSeedsPassed": true
+    },
+    {
+      "broker": "EMQX",
+      "statistics": {
+        "calibration": {
+          "rps": {
+            "mean": 9988.083333333334,
+            "min": 9895.25,
+            "max": 10170.75,
+            "standardDeviation": 158.2010851205937,
+            "ci95HalfWidth": 392.99328158794,
+            "ci95Lower": 9595.090051745394,
+            "ci95Upper": 10381.076614921274,
+            "count": 3
+          },
+          "p99": {
+            "mean": 3.1243666666665226,
+            "min": 3.076799999999821,
+            "max": 3.1534999999998945,
+            "standardDeviation": 0.0415399004974259,
+            "ci95HalfWidth": 0.10319083336802487,
+            "ci95Lower": 3.0211758332984977,
+            "ci95Upper": 3.2275575000345476,
+            "count": 3
+          },
+          "failure": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "standardDeviation": 0.0,
+            "ci95HalfWidth": 0.0,
+            "ci95Lower": 0.0,
+            "ci95Upper": 0.0,
+            "count": 3
+          },
+          "loss": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "standardDeviation": 0.0,
+            "ci95HalfWidth": 0.0,
+            "ci95Lower": 0.0,
+            "ci95Upper": 0.0,
+            "count": 3
+          }
+        },
+        "control": {
+          "rps": {
+            "mean": 10123.833333333334,
+            "min": 10015.75,
+            "max": 10321.5,
+            "standardDeviation": 171.43408597281152,
+            "ci95HalfWidth": 425.86587804456263,
+            "ci95Lower": 9697.967455288772,
+            "ci95Upper": 10549.699211377896,
+            "count": 3
+          },
+          "p99": {
+            "mean": 3.0706666666671176,
+            "min": 3.011600000000726,
+            "max": 3.100600000000668,
+            "standardDeviation": 0.051154797754553276,
+            "ci95HalfWidth": 0.1270755622390628,
+            "ci95Lower": 2.9435911044280547,
+            "ci95Upper": 3.1977422289061805,
+            "count": 3
+          },
+          "failure": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "standardDeviation": 0.0,
+            "ci95HalfWidth": 0.0,
+            "ci95Lower": 0.0,
+            "ci95Upper": 0.0,
+            "count": 3
+          },
+          "loss": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "standardDeviation": 0.0,
+            "ci95HalfWidth": 0.0,
+            "ci95Lower": 0.0,
+            "ci95Upper": 0.0,
+            "count": 3
+          }
+        },
+        "model": {
+          "rps": {
+            "mean": 9902.5,
+            "min": 9889.0,
+            "max": 9914.5,
+            "standardDeviation": 12.816005617976296,
+            "ci95HalfWidth": 31.836722869622996,
+            "ci95Lower": 9870.663277130378,
+            "ci95Upper": 9934.336722869622,
+            "count": 3
+          },
+          "p99": {
+            "mean": 3.116666666666667,
+            "min": 3.1100000000000003,
+            "max": 3.1200000000000006,
+            "standardDeviation": 0.005773502691896391,
+            "ci95HalfWidth": 0.014342175765833664,
+            "ci95Lower": 3.1023244909008336,
+            "ci95Upper": 3.1310088424325007,
+            "count": 3
+          },
+          "failure": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "standardDeviation": 0.0,
+            "ci95HalfWidth": 0.0,
+            "ci95Lower": 0.0,
+            "ci95Upper": 0.0,
+            "count": 3
+          },
+          "loss": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "standardDeviation": 0.0,
+            "ci95HalfWidth": 0.0,
+            "ci95Lower": 0.0,
+            "ci95Upper": 0.0,
+            "count": 3
+          }
+        }
+      },
+      "baselineComparison": {
+        "errors": {
+          "rps": 0.013408952471889765,
+          "p99": 0.01748805905321226,
+          "failure": 0.0,
+          "loss": 0.0
+        },
+        "allCriteriaPassed": true
+      },
+      "meanModelComparison": {
+        "errors": {
+          "rps": 0.021862601452019223,
+          "p99": 0.014980460269065162,
+          "failure": 0.0,
+          "loss": 0.0
+        },
+        "allCriteriaPassed": true
+      },
+      "allThreeSeedsPassed": true
+    }
+  ],
+  "allCriteriaPassedRuns": 12,
+  "allThreeSeedsPassedConditions": 4,
+  "profileFreezeBeforeAllControlMeasurements": [
+    {
+      "job": "control.ActiveMQ.r1",
+      "measurementStartedUtc": "2026-10-26T05:33:11.4967382+00:00",
+      "secondsAfterFreeze": 86.10825109481812
+    },
+    {
+      "job": "control.ActiveMQ.r2",
+      "measurementStartedUtc": "2026-10-26T05:33:27.5208459+00:00",
+      "secondsAfterFreeze": 102.13235807418823
+    },
+    {
+      "job": "control.ActiveMQ.r3",
+      "measurementStartedUtc": "2026-10-26T05:33:43.5722399+00:00",
+      "secondsAfterFreeze": 118.18375205993652
+    },
+    {
+      "job": "control.Aedes.r1",
+      "measurementStartedUtc": "2026-10-26T05:31:47.5740811+00:00",
+      "secondsAfterFreeze": 2.185594081878662
+    },
+    {
+      "job": "control.Aedes.r2",
+      "measurementStartedUtc": "2026-10-26T05:32:01.2264121+00:00",
+      "secondsAfterFreeze": 15.83792519569397
+    },
+    {
+      "job": "control.Aedes.r3",
+      "measurementStartedUtc": "2026-10-26T05:32:14.615824+00:00",
+      "secondsAfterFreeze": 29.2273371219635
+    },
+    {
+      "job": "control.EMQX.r1",
+      "measurementStartedUtc": "2026-10-26T05:34:13.8461481+00:00",
+      "secondsAfterFreeze": 148.457661151886
+    },
+    {
+      "job": "control.EMQX.r2",
+      "measurementStartedUtc": "2026-10-26T05:34:52.0711875+00:00",
+      "secondsAfterFreeze": 186.68270015716553
+    },
+    {
+      "job": "control.EMQX.r3",
+      "measurementStartedUtc": "2026-10-26T05:35:29.1627264+00:00",
+      "secondsAfterFreeze": 223.77423906326294
+    },
+    {
+      "job": "control.Mosquitto.r1",
+      "measurementStartedUtc": "2026-10-26T05:32:27.7107756+00:00",
+      "secondsAfterFreeze": 42.322288036346436
+    },
+    {
+      "job": "control.Mosquitto.r2",
+      "measurementStartedUtc": "2026-10-26T05:32:41.3419408+00:00",
+      "secondsAfterFreeze": 55.953453063964844
+    },
+    {
+      "job": "control.Mosquitto.r3",
+      "measurementStartedUtc": "2026-10-26T05:32:54.9373817+00:00",
+      "secondsAfterFreeze": 69.54889416694641
+    }
+  ],
+  "programSha256": "2312e7d9938d580b9ac8099a1d5dbfc4fef5074fb2a6024008d27e9cd3356dc7",
+  "calculatorSha256": "86c57e295c546dfbd2746b1334d210aac7fb0aea46490f80e2e13635b5ff8958",
+  "arithmeticTolerance": {
+    "relative": 1e-12,
+    "absolute": 1e-12
+  },
+  "scope": "Independent local arithmetic implementation and integrity audit; not independent human review or cross-machine validation"
+}

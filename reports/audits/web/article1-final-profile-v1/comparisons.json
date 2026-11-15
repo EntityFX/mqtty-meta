@@ -1,0 +1,32 @@
+{
+  "summary.json": {
+    "webSha256": "8e788db92b2a9ce97eabb1877a070532efcbfdec3581cde98ea3b7c851919271",
+    "directSha256": "8e788db92b2a9ce97eabb1877a070532efcbfdec3581cde98ea3b7c851919271",
+    "byteEqual": true
+  },
+  "latency-histogram.json": {
+    "webSha256": "892a7dc8660f87227daa5c73578b1eb37ddbad8333a3763572d0b8f57b5e9125",
+    "directSha256": "892a7dc8660f87227daa5c73578b1eb37ddbad8333a3763572d0b8f57b5e9125",
+    "byteEqual": true
+  },
+  "publishes.ndjson": {
+    "webSha256": "bf0432d899bae71bf4dda61df3cf5188199f83b95180dd3a40a9d613e1610280",
+    "directSha256": "bf0432d899bae71bf4dda61df3cf5188199f83b95180dd3a40a9d613e1610280",
+    "byteEqual": true
+  },
+  "deliveries.ndjson": {
+    "webSha256": "ff81ac73908c7b1511257b98fff21e2b7cb9b1cc76f20637741770fcde1a1347",
+    "directSha256": "ff81ac73908c7b1511257b98fff21e2b7cb9b1cc76f20637741770fcde1a1347",
+    "byteEqual": true
+  },
+  "subscriptions.ndjson": {
+    "webSha256": "10df0b9f80e19ce6b780b1431ed6a6f7460820bad0c1f302e692f8145a6f617d",
+    "directSha256": "10df0b9f80e19ce6b780b1431ed6a6f7460820bad0c1f302e692f8145a6f617d",
+    "byteEqual": true
+  },
+  "phases.json": {
+    "webSha256": "23af40db9c0fc074f444d9a851c617e244c5d4ac733476d860da5e10f5a98c5a",
+    "directSha256": "23af40db9c0fc074f444d9a851c617e244c5d4ac733476d860da5e10f5a98c5a",
+    "byteEqual": true
+  }
+}

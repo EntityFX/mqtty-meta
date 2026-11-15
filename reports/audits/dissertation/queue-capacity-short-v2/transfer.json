@@ -1,0 +1,13 @@
+{
+  "status": "verified",
+  "filesVerified": 77,
+  "uncompressedBytes": 31008508,
+  "archivePath": "C:\\temp\\mqtty-evidence\\queue-capacity-short-v2-20261029\\raw-001.tar.gz",
+  "archiveBytes": 3074496,
+  "archiveSha256": "2dbabbb350ed110d8adc22595c91a338a3f17e70b62035df9c20ab270adb582b",
+  "sourceIndexSha256": "c93cccdc11e04d8022ab69af48b171769e1d218509ff2ccbd43d253e5d58f419",
+  "localRaw": "C:\\temp\\mqtty-evidence\\queue-capacity-short-v2-20261029\\raw-001",
+  "sourceDiskMountedReadOnly": true,
+  "collectedMetadataSha256": "37022e3b9a73a1d23a4ab7395ec30828b18e8d98c191ea3ab72aa0df93f40783",
+  "fullCollectionSnapshot": "C:\\temp\\mqtty-evidence\\queue-capacity-short-v2-20261029\\collection-snapshot.json"
+}

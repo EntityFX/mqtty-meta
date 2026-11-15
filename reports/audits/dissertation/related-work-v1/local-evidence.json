@@ -1,0 +1,270 @@
+{
+  "files": [
+    {
+      "locations": [
+        {
+          "lines": [
+            15,
+            28,
+            32
+          ],
+          "needle": "| Aedes |"
+        },
+        {
+          "lines": [
+            16,
+            29
+          ],
+          "needle": "| Mosquitto |"
+        },
+        {
+          "lines": [
+            17,
+            30
+          ],
+          "needle": "| ActiveMQ |"
+        },
+        {
+          "lines": [
+            18,
+            31
+          ],
+          "needle": "| EMQX |"
+        }
+      ],
+      "path": "reports/mqtty/validation/Model-validation.md",
+      "sha256": "3c698fe88dafce0508aca036e4e4f63557c0efe8918b3f51e7c7f5fd1e04764d"
+    },
+    {
+      "locations": [
+        {
+          "lines": [
+            3
+          ],
+          "needle": "55/216"
+        },
+        {
+          "lines": [
+            3
+          ],
+          "needle": "161/216"
+        }
+      ],
+      "path": "reports/analysis/Sensitivity-final.md",
+      "sha256": "215611d8d22c393646e4433a74b16e59280c9075346531a407facd3f0d518aa7"
+    },
+    {
+      "locations": [
+        {
+          "lines": [
+            3
+          ],
+          "needle": "27/30"
+        },
+        {
+          "lines": [
+            16,
+            29
+          ],
+          "needle": "drain"
+        }
+      ],
+      "path": "reports/analysis/Network-pilot-review.md",
+      "sha256": "30a6c0506bcf235b3590c26f8420e49a026c12f8be378ee41eb3b16688d2cdb9"
+    },
+    {
+      "locations": [
+        {
+          "lines": [
+            9,
+            20
+          ],
+          "needle": "85"
+        },
+        {
+          "lines": [
+            11,
+            20
+          ],
+          "needle": "288"
+        },
+        {
+          "lines": [
+            8,
+            9,
+            10,
+            12,
+            20,
+            31
+          ],
+          "needle": "864"
+        }
+      ],
+      "path": "reports/audits/dissertation/control-history-v1/Manifest-review.md",
+      "sha256": "0d73c6609759f6ec9ddb6d945f37cb155e48593235763301241cb0ed075cba0d"
+    },
+    {
+      "locations": [
+        {
+          "lines": [
+            63
+          ],
+          "needle": "Imported publications"
+        },
+        {
+          "lines": [
+            76
+          ],
+          "needle": "origin == site"
+        },
+        {
+          "lines": [
+            57
+          ],
+          "needle": "Mode == FederationMode.Relay"
+        }
+      ],
+      "path": "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Topology/FederationTopologyBuilder.cs",
+      "sha256": "00187c23833b750049ed025e6156773419b0483c822113f71a7fe81452475a4c"
+    },
+    {
+      "locations": [
+        {
+          "lines": [
+            41
+          ],
+          "needle": "seen.Add"
+        },
+        {
+          "lines": [
+            42
+          ],
+          "needle": "CacheCapacity"
+        },
+        {
+          "lines": [
+            53
+          ],
+          "needle": "QueueCapacity"
+        }
+      ],
+      "path": "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Federation/StaticFederator.cs",
+      "sha256": "3344d00773d110bc158fb6f4fcb119323b8f52212443ba5c5bdceb151ae9aa20"
+    },
+    {
+      "locations": [
+        {
+          "lines": [
+            7
+          ],
+          "needle": "n != sender"
+        }
+      ],
+      "path": "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Federation/FloodingPolicy.cs",
+      "sha256": "a185d70cd0101ae6cc9329becf74ac42a336c77ec4334697e24fa03c3cc8861f"
+    },
+    {
+      "locations": [
+        {
+          "lines": [
+            18
+          ],
+          "needle": "Expected =>"
+        },
+        {
+          "lines": [
+            19
+          ],
+          "needle": "Unique =>"
+        },
+        {
+          "lines": [
+            50
+          ],
+          "needle": "WarmupDeliveries++"
+        }
+      ],
+      "path": "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Delivery/FederationDeliveryLedger.cs",
+      "sha256": "579e6b7f54f87380f8052b571259e126da4b5df5c577a6c2746c6e3711dccc96"
+    },
+    {
+      "locations": [
+        {
+          "lines": [
+            17
+          ],
+          "needle": "GetByteCount(topic)"
+        },
+        {
+          "lines": [
+            14
+          ],
+          "needle": "forward"
+        }
+      ],
+      "path": "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Delivery/TransmissionLedger.cs",
+      "sha256": "385fda06af12e8a3bfd5a3e08ba73abc5f8e76b23e50f8ba57870c484d3752ef"
+    },
+    {
+      "locations": [
+        {
+          "lines": [
+            43
+          ],
+          "needle": "profile.For"
+        },
+        {
+          "lines": [
+            68
+          ],
+          "needle": "Missing exact profile point"
+        }
+      ],
+      "path": "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Inputs/FederationInput.cs",
+      "sha256": "9beecf6ca2bf59f1ec9270e3575c7508619080e72ab51d1c5bd683d9c5fde916"
+    },
+    {
+      "locations": [
+        {
+          "lines": [
+            22,
+            49
+          ],
+          "needle": "empirical-histogram-rtt-v1"
+        },
+        {
+          "lines": [
+            27,
+            39,
+            46
+          ],
+          "needle": "histogramsBase64"
+        }
+      ],
+      "path": "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Plugin.Mqtt/BrokerProfile/BrokerCalibrationEmpirical.cs",
+      "sha256": "3d0f4a9a81ebb7391782bce3129b4d07ff445d7df57be914c530460afbb711b2"
+    },
+    {
+      "locations": [
+        {
+          "lines": [
+            22
+          ],
+          "needle": "File.ReadAllBytes"
+        },
+        {
+          "lines": [
+            54
+          ],
+          "needle": "SHA256.HashData(bytes)"
+        }
+      ],
+      "path": "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Plugin.Mqtt/BrokerProfile/BrokerProfileSet.cs",
+      "sha256": "3d9456018a3f622ea3c0143c932f1d3a380446c73c8ceda676d4bba75ef1a5bd"
+    }
+  ],
+  "mqttYCommitAtReview": "2c0cb25cabde700e5aebe5fbe1393e5419c4b378",
+  "rootCommitAtReview": "471e57875130f1c90750484e47eb5e9e40dae690",
+  "schemaVersion": 1,
+  "scope": "read-only working-tree source locations and existing reports; not executable attestation"
+}

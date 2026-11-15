@@ -1,0 +1,66 @@
+{
+  "tests": [
+    {
+      "suite": "MqttBenchmark",
+      "counters": {
+        "total": "163",
+        "executed": "88",
+        "passed": "88",
+        "failed": "0",
+        "error": "0",
+        "timeout": "0",
+        "aborted": "0",
+        "inconclusive": "0",
+        "passedButRunAborted": "0",
+        "notRunnable": "0",
+        "notExecuted": "0",
+        "disconnected": "0",
+        "warning": "0",
+        "completed": "0",
+        "inProgress": "0",
+        "pending": "0"
+      },
+      "trxSha256": "52f298b2e62f67eac431760d980e73d36bce905a358515f1971b7d57cb3890a5",
+      "longRunningExcluded": false,
+      "newNativeCampaign": false,
+      "skippedByRunner": 75,
+      "scopeNote": "TRX total-executed=75; console reports skipped=75; platform/external stand coverage excluded"
+    },
+    {
+      "suite": "MqttY",
+      "counters": {
+        "total": "316",
+        "executed": "316",
+        "passed": "316",
+        "failed": "0",
+        "error": "0",
+        "timeout": "0",
+        "aborted": "0",
+        "inconclusive": "0",
+        "passedButRunAborted": "0",
+        "notRunnable": "0",
+        "notExecuted": "0",
+        "disconnected": "0",
+        "warning": "0",
+        "completed": "0",
+        "inProgress": "0",
+        "pending": "0"
+      },
+      "trxSha256": "b9c2fdc64fe9c491bc6c96e2d403a2c322275f36870b10f55a4d4fdadf89778d",
+      "longRunningExcluded": true,
+      "newNativeCampaign": false
+    },
+    {
+      "suite": "evidence-assessment Python tests",
+      "passed": 6,
+      "failed": 0
+    },
+    {
+      "suite": "source-auditor Python tests",
+      "passed": 3,
+      "failed": 0
+    }
+  ],
+  "latexCompiled": false,
+  "newExperimentsExecuted": false
+}

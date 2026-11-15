@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-26",
+  "status": "passed",
+  "testsPassed": 6,
+  "testsFailed": 0,
+  "command": "dotnet test mqtty/src/EntityFX.MqttSimulator/EntityFX.Tests.Integration/EntityFX.Tests.Integration.csproj -c Release --filter FullyQualifiedName~PublicationCohortModelTests --logger \"trx;LogFileName=cohort-reconnect.trx\" --results-directory C:/temp/mqtty-evidence/cohort-reconnect-v1",
+  "trx": "C:\\temp\\mqtty-evidence\\cohort-reconnect-v1\\cohort-reconnect.trx",
+  "trxSha256": "166c6d564ef9aee992cfe4d3d2e0205cfd30d384a93939e062619b01f06d74f5",
+  "modelRunDirectory": "C:\\Users\\entityfx\\AppData\\Local\\Temp\\cohort-reconnect-08559d16bea546b580260e55bfe17191\\20261025T212141409Z-9ec83df7107d4bafaa2d14aeb4b7a2ec",
+  "files": {
+    "connections.ndjson": "4e47c121be38012039570eb4fbca477b49b8941957279af9732a235c5d15e8b9",
+    "phases.json": "f57338adc188cc4425cc0cb4d2ba0b8cd8911bf1917235e375f54cfe24f6e01f"
+  },
+  "subscriberTransitions": [
+    {
+      "client": "mqrc4mqb4",
+      "clientId": "mqrc4mqb4",
+      "role": "subscriber",
+      "connected": true,
+      "state": "connected",
+      "phase": "stateChange",
+      "elapsedSeconds": 0.0007
+    },
+    {
+      "client": "mqrc4mqb4",
+      "clientId": "mqrc4mqb4",
+      "role": "subscriber",
+      "connected": false,
+      "state": "disconnected",
+      "phase": "stateChange",
+      "elapsedSeconds": 0.0015
+    },
+    {
+      "client": "mqrc4mqb4",
+      "clientId": "mqrc4mqb4",
+      "role": "subscriber",
+      "connected": true,
+      "state": "connected",
+      "phase": "stateChange",
+      "elapsedSeconds": 0.057100000000000005
+    }
+  ],
+  "productionCodeChanged": false,
+  "limitations": [
+    "Ideal model lifecycle observation, not real broker fault tolerance",
+    "Disconnect after subscribe; reconnect begins after measurement and completes during drain",
+    "Does not prove restoration of subscriptions or complete delivery during interruption"
+  ],
+  "mainCampaignAdmitted": false
+}

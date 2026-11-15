@@ -1,0 +1,206 @@
+[
+  {
+    "caseId": "demo-r60000-q1-single48-s42",
+    "diagram": "topology-demo-single48.svg",
+    "checked": {
+      "networks": [
+        "backend0-hop1",
+        "backend0-hop2",
+        "clients"
+      ],
+      "networkLinks": [
+        [
+          "backend0-hop1",
+          "backend0-hop2"
+        ],
+        [
+          "backend0-hop1",
+          "clients"
+        ]
+      ],
+      "publishers": 48,
+      "receivers": 1,
+      "brokers": 1,
+      "allClientAttachmentsVerified": true
+    },
+    "manifestSha256": "8d6ff4d35d73b7539c6068453bad1ee195a05d842184780ffd4c4ef6586ea86c",
+    "graphmlSha256": "dc0cee53e636122e22fda0533b85e2582fb0f2907e7a89fe486c72545abbc4cb",
+    "publishersByBackend": [
+      48
+    ],
+    "physicalSource": "exported GraphML",
+    "assignmentSource": "resolved manifest"
+  },
+  {
+    "caseId": "demo-r60000-q1-roundRobin-s42",
+    "diagram": "topology-demo-pool3.svg",
+    "checked": {
+      "networks": [
+        "backend0-hop1",
+        "backend0-hop2",
+        "backend1-hop1",
+        "backend1-hop2",
+        "backend2-hop1",
+        "backend2-hop2",
+        "clients"
+      ],
+      "networkLinks": [
+        [
+          "backend0-hop1",
+          "backend0-hop2"
+        ],
+        [
+          "backend0-hop1",
+          "clients"
+        ],
+        [
+          "backend1-hop1",
+          "backend1-hop2"
+        ],
+        [
+          "backend1-hop1",
+          "clients"
+        ],
+        [
+          "backend2-hop1",
+          "backend2-hop2"
+        ],
+        [
+          "backend2-hop1",
+          "clients"
+        ]
+      ],
+      "publishers": 48,
+      "receivers": 3,
+      "brokers": 3,
+      "allClientAttachmentsVerified": true
+    },
+    "manifestSha256": "d64cbfdac6224634476a9ccce42efa6eaff6d44dd4762421ea0aec7a008898f4",
+    "graphmlSha256": "5671c0a8e5b20e58703286490a3c3fb9111a8343d9ac6e3d904e36d279d789eb",
+    "publishersByBackend": [
+      16,
+      16,
+      16
+    ],
+    "physicalSource": "exported GraphML",
+    "assignmentSource": "resolved manifest"
+  },
+  {
+    "caseId": "mosquitto-r60000-q1-single16-s42",
+    "diagram": "topology-mosquitto-single16.svg",
+    "checked": {
+      "networks": [
+        "backend0-hop1",
+        "backend0-hop2",
+        "clients"
+      ],
+      "networkLinks": [
+        [
+          "backend0-hop1",
+          "backend0-hop2"
+        ],
+        [
+          "backend0-hop1",
+          "clients"
+        ]
+      ],
+      "publishers": 16,
+      "receivers": 1,
+      "brokers": 1,
+      "allClientAttachmentsVerified": true
+    },
+    "manifestSha256": "c7256dc432f73f71b2373471c189abb880b67d5cc8d9853380fb88e7f623ff48",
+    "graphmlSha256": "89735678413b95a3097ef06e7a5206664c5c06a853f84324b4836914d96fc942",
+    "publishersByBackend": [
+      16
+    ],
+    "physicalSource": "exported GraphML",
+    "assignmentSource": "resolved manifest"
+  },
+  {
+    "caseId": "mosquitto-r60000-q1-single64-s42",
+    "diagram": "topology-mosquitto-single64.svg",
+    "checked": {
+      "networks": [
+        "backend0-hop1",
+        "backend0-hop2",
+        "clients"
+      ],
+      "networkLinks": [
+        [
+          "backend0-hop1",
+          "backend0-hop2"
+        ],
+        [
+          "backend0-hop1",
+          "clients"
+        ]
+      ],
+      "publishers": 64,
+      "receivers": 1,
+      "brokers": 1,
+      "allClientAttachmentsVerified": true
+    },
+    "manifestSha256": "878b7f6bfe1f01651efea471dc0a41345981520eb54fef781fd71f50231beb92",
+    "graphmlSha256": "3a878bb8aa5e807291bdbbdee57606fa15b3e24565031e75afe991004e1f6e65",
+    "publishersByBackend": [
+      64
+    ],
+    "physicalSource": "exported GraphML",
+    "assignmentSource": "resolved manifest"
+  },
+  {
+    "caseId": "mosquitto-r60000-q1-roundRobin-s42",
+    "diagram": "topology-mosquitto-pool3.svg",
+    "checked": {
+      "networks": [
+        "backend0-hop1",
+        "backend0-hop2",
+        "backend1-hop1",
+        "backend1-hop2",
+        "backend2-hop1",
+        "backend2-hop2",
+        "clients"
+      ],
+      "networkLinks": [
+        [
+          "backend0-hop1",
+          "backend0-hop2"
+        ],
+        [
+          "backend0-hop1",
+          "clients"
+        ],
+        [
+          "backend1-hop1",
+          "backend1-hop2"
+        ],
+        [
+          "backend1-hop1",
+          "clients"
+        ],
+        [
+          "backend2-hop1",
+          "backend2-hop2"
+        ],
+        [
+          "backend2-hop1",
+          "clients"
+        ]
+      ],
+      "publishers": 48,
+      "receivers": 3,
+      "brokers": 3,
+      "allClientAttachmentsVerified": true
+    },
+    "manifestSha256": "8d88087430682af276881ccca2ba4c17c524d4f51d7b8deb3b286b216077ec33",
+    "graphmlSha256": "1c014c882616d5b81eb3190ff2cac5010d7baf1d0ed96f6786de5e8248ed3d61",
+    "publishersByBackend": [
+      16,
+      16,
+      16
+    ],
+    "physicalSource": "exported GraphML",
+    "assignmentSource": "resolved manifest"
+  }
+]

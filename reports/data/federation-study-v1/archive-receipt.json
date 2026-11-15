@@ -1,0 +1,22 @@
+{
+  "role": "final acceptance dataset; 54 main runs, 6 replays, 2 separately retained pilots",
+  "remoteHost": "192.168.5.1",
+  "remotePath": "/run/media/entityfx/hd250/mqtty-evidence/federation-study-v1/federation-study.tar.gz",
+  "sha256": "ec6396818b09699462e27426c1e36b817947b64fbeb5ed9d31447f6bdfbaadc4",
+  "bytes": 36844971,
+  "allLocalMembersVerified": true,
+  "remoteArchiveHashVerified": true,
+  "remoteRunRegistriesVerified": 62,
+  "mainRuns": 54,
+  "replays": 6,
+  "pilots": 2,
+  "remoteRegisteredFilesVerified": 1085,
+  "archiveFileMembers": 1508,
+  "mount": {
+    "target": "/run/media/entityfx/hd250",
+    "source": "/dev/sdb1",
+    "fstype": "ext4",
+    "uuid": "c1ca2de7-c618-4a3d-8ffc-59d37f42ccec"
+  },
+  "sourceCopiesRetained": true
+}

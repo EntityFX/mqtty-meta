@@ -1,0 +1,33 @@
+machine,workload,singleSeconds,parallelSeconds,ratio,evidence
+Xeon E5-2680v3,B=4; N=2; C=3,0.5,0.5,1.0,published-table-only
+Core i7-2600,B=4; N=2; C=3,1.0,0.9,1.1111111111111112,published-table-only
+Xeon E5-2680v3,B=4; N=2; C=50,7.2,4.9,1.4693877551020407,published-table-only
+Core i7-2600,B=4; N=2; C=50,15.9,10.3,1.5436893203883495,published-table-only
+Xeon E5-2680v3,B=4; N=50; C=3,0.9,0.8,1.125,published-table-only
+Core i7-2600,B=4; N=50; C=3,1.5,1.2,1.25,published-table-only
+Xeon E5-2680v3,B=4; N=50; C=50,7.7,5.1,1.5098039215686276,published-table-only
+Core i7-2600,B=4; N=50; C=50,16.0,9.5,1.6842105263157894,published-table-only
+Xeon E5-2680v3,"B=15, N=2; C=3",4.9,3.6,1.3611111111111112,published-table-only
+Core i7-2600,"B=15, N=2; C=3",12.4,7.2,1.7222222222222223,published-table-only
+Xeon E5-2680v3,"B=15, N=2; C=50",130.2,75.6,1.722222222222222,published-table-only
+Core i7-2600,"B=15, N=2; C=50",184.3,128.2,1.4375975039001563,published-table-only
+Xeon E5-2680v3,"B=15, N=50; C=3",6.3,4.1,1.5365853658536586,published-table-only
+Core i7-2600,"B=15, N=50; C=3",15.0,7.7,1.948051948051948,published-table-only
+Xeon E5-2680v3,"B=15, N=50; C=50",128.4,69.4,1.8501440922190202,published-table-only
+Core i7-2600,"B=15, N=50; C=50",151.0,94.1,1.6046758767268865,published-table-only
+Elbrus 8C v4,B=4; N=2; C=3,7.4,3.9,1.8974358974358976,published-table-only
+Dual Core E5400,B=4; N=2; C=3,1.6,1.1,1.4545454545454546,published-table-only
+Elbrus 8C v4,B=4; N=2; C=50,131.2,53.1,2.4708097928436907,published-table-only
+Dual Core E5400,B=4; N=2; C=50,25.9,20.4,1.2696078431372548,published-table-only
+Elbrus 8C v4,"B=4, N=50, C=3",12.4,10.2,1.215686274509804,published-table-only
+Dual Core E5400,"B=4, N=50, C=3",2.4,2.1,1.1428571428571428,published-table-only
+Elbrus 8C v4,"B=4, N=50, C=50",139.3,52.4,2.658396946564886,published-table-only
+Dual Core E5400,"B=4, N=50, C=50",26.3,20.5,1.2829268292682927,published-table-only
+Elbrus 8C v4,"B=15, N=2, C=3",83.4,32.0,2.60625,published-table-only
+Dual Core E5400,"B=15, N=2, C=3",18.9,15.3,1.2352941176470587,published-table-only
+Elbrus 8C v4,"B=15, N=2, C=50",1720.3,673.0,2.5561664190193163,published-table-only
+Dual Core E5400,"B=15, N=2, C=50",276.1,227.2,1.2152288732394367,published-table-only
+Elbrus 8C v4,"B=15, N=50, C=3",104.6,46.7,2.2398286937901495,published-table-only
+Dual Core E5400,"B=15, N=50, C=3",30.1,33.8,0.8905325443786983,published-table-only
+Elbrus 8C v4,"B=15, N=50, C=50",1689.0,585.7,2.8837288714358884,published-table-only
+Dual Core E5400,"B=15, N=50, C=50",267.9,217.9,1.2294630564479117,published-table-only

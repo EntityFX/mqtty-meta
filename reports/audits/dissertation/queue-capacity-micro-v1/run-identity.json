@@ -1,0 +1,9 @@
+{
+  "startedEpoch": 1793225157.043537,
+  "deadlineEpoch": 1793225757.043537,
+  "hardWallSeconds": 600,
+  "modelTimeoutSeconds": 450,
+  "workers": 2,
+  "rssPerModelBytes": 2147483648,
+  "serviceMemoryMaxBytes": 6442450944
+}

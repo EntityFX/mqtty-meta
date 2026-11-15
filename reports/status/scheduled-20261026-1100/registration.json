@@ -1,0 +1,14 @@
+{
+  "taskName": "MqttY-Article1-Check-20261026-1100",
+  "state": "Ready",
+  "scheduledFor": "2026-10-26T11:00:00+03:00",
+  "nextRunTime": "2026-10-26T11:00:00.0000000+03:00",
+  "threadId": "01a1396c-38e4-7e83-8ced-2984171e286a",
+  "promptSha256": "ff47c6acbbb8b7e618c257a41b276e2fd346a2b6c5b7eee238fc4b77dd76bbe7",
+  "requiresLoggedOnUser": true,
+  "wakeToRun": true,
+  "startWhenAvailable": true,
+  "recurring": false,
+  "dispatchReceipt": "C:\\projects\\mqtty-meta\\reports\\status\\scheduled-20261026-1100\\dispatch.json",
+  "mainCampaignPolledNow": false
+}

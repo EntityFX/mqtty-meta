@@ -1,0 +1,24 @@
+[
+  {
+    "source": "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Execution/FederationRunner.cs",
+    "sourceSha256": "c417ff6358313095054970b016673ae802c269b017d35672de5f8110942fc1e7",
+    "generated": "probe/FederationRunner.cs",
+    "generatedSha256": "228dd8a4f4ed04da4e0050a2ea9c1cfb523a4b777292467a25b355826cad04f0",
+    "changes": [
+      "class name",
+      "ParallelExecution bool property",
+      "Refresh bool only"
+    ]
+  },
+  {
+    "source": "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.LoadBalancing.App/Execution/LoadBalancingExperimentRunner.cs",
+    "sourceSha256": "bb635f32202f4784e7940de42a5b39c24c5efa7accf8579cff1d303ac472b7e4",
+    "generated": "probe/LoadBalancingExperimentRunner.cs",
+    "generatedSha256": "6ac0cb4e8b1b009ff114434c7a535f04e76ac9234ccdbb8e164c2ffed3ef00d1",
+    "changes": [
+      "class name",
+      "ParallelExecution bool property",
+      "Refresh bool only"
+    ]
+  }
+]

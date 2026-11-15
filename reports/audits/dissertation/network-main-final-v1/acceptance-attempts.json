@@ -1,0 +1,24 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "failedBeforeReplayRecount",
+      "reason": "ValueError: Scientific file set differs: matrix.line.single.q0.r1000.w10.s42",
+      "cause": "New registry gate incorrectly required transit-only network-evidence.json for line and ring",
+      "confirmedActualFormat": {
+        "line": 5,
+        "ring": 5,
+        "star": 6
+      },
+      "scientificInputsChanged": false
+    },
+    {
+      "attempt": 2,
+      "status": "accepted",
+      "fix": "Five common scientific files mandatory; transit file mandatory for star; exact replay file set and hashes equal original",
+      "tddRegressionRed": "1 of 7 tests failed on valid line without transit evidence",
+      "tddRegressionGreen": "7 of 7 passed",
+      "replaysRawPassed": 6
+    }
+  ]
+}

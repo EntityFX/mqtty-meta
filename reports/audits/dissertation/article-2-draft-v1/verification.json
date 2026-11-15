@@ -1,0 +1,18 @@
+{
+  "status": "partialDraftTechnicalReviewPassed",
+  "longCampaignResultsIncluded": false,
+  "scientificAuthorApproval": false,
+  "step25Accepted": false,
+  "completedShortRuns": 54,
+  "idealRowsVerified": 3,
+  "mosquittoLossValuesVerified": 3,
+  "sources": {
+    "docs\\dissertation\\articles\\article-2-relay-federation.md": "2162e2e0f1eaeb6406a3b5652c8a02b181608d878d3af5c89b32aba4a14e627c",
+    "reports\\data\\federation-full-mesh-v1\\aggregates.json": "a046f9b7defcaf6aaaf0f7b157a14d3b1e510a33e743a9daa154b7d18a8789b3",
+    "docs\\dissertation\\network-model-contract.md": "2da0e6f924265f64a65e430ba54700ebe71e29c2c4892b3fdf6c043e802ea180"
+  },
+  "primarySources": [
+    "https://thescipub.com/pdf/jcssp.2022.687.694.pdf",
+    "https://mosquitto.org/man/mosquitto-conf-5.html"
+  ]
+}

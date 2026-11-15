@@ -1,0 +1,9 @@
+{
+  "decision": "accept",
+  "reviewer": "Codex root: explicit technical review under user authorization",
+  "reason": "All thirty preserved pilot outputs independently recounted with zero discrepancies; mixed runtime provenance retained. Only upper drain bound changes to thirty seconds; all observed phases finish before thirty. Five overload warning points retained, not passed as fidelity. No native network accuracy or scientific novelty approval claimed. Web operational test and bounded controller tests passed.",
+  "executionManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+  "pilotRegistrySha256": "2d7c52517d357cdd5ad2b8637878a2af68184c21f41d2bb7a75f5f6c8f9e6bf6",
+  "scientificApproval": false,
+  "pilotResultsAreNewHomogeneousRuns": false
+}

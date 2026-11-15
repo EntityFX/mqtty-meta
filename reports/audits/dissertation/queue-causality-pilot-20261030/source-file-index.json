@@ -1,0 +1,336 @@
+{
+  "files": {
+    "metadata/source-postflight.json": {
+      "bytes": 338,
+      "sha256": "7506b25d4529cb93145a71646043f98a12fec5240ba2f4dc2db7ff3b042576df"
+    },
+    "program/acceleration-program.json": {
+      "bytes": 865,
+      "sha256": "8beaf4762140f97b1add01419a1509e74627ed40779aeb97610c7f46b827c37d"
+    },
+    "program/acceleration-protocol.md": {
+      "bytes": 14264,
+      "sha256": "8d8dfa909e28812312df2fa286a270d204f96cb828047cb0426685a5b7de01ff"
+    },
+    "program/configs/q1.json": {
+      "bytes": 668,
+      "sha256": "0a7fcf14772a91637170362bdacbd5ecc7c2e3d7c0e8cd98629633ebef78e1c4"
+    },
+    "program/configs/q1024.json": {
+      "bytes": 671,
+      "sha256": "f84cc6ba86e6ead5c423ca21d5862c30e652f9a48e352245eec9740337f58ce5"
+    },
+    "program/launch-plan.json": {
+      "bytes": 1504,
+      "sha256": "25ae2cc07292e1d6a7887e5e0ad098f9f26f41e3f03c9f712c3c535e1245ea37"
+    },
+    "program/program-seal.json": {
+      "bytes": 1194,
+      "sha256": "4904ac04b647301426e3bc5b8ecafa40000926c27e5c6e0acb9bf015d33c9eba"
+    },
+    "program/protocol.md": {
+      "bytes": 14214,
+      "sha256": "1d651454ce402caac2b7d4d3b5edc5a224c4eb98cc6c5f35d21cb64afe735b12"
+    },
+    "program/run_queue_pilot.py": {
+      "bytes": 12769,
+      "sha256": "7f253787c2a8d5dff33247530529017d5a0e39863c1d90c89c6c08958da19357"
+    },
+    "program/source-audit.json": {
+      "bytes": 5350,
+      "sha256": "337e512b7a3d1d94889c371398e076d44b962825c9a62f807af8dc5be86308e2"
+    },
+    "program/test_queue_pilot.py": {
+      "bytes": 3106,
+      "sha256": "94a94fa58b3006d952f7c361208aaff3cb808772441ff00e27ea5e4b1fc6788b"
+    },
+    "program/verification.json": {
+      "bytes": 2041,
+      "sha256": "04abe12fda31a8a44d8e5bada97f0f2c2f33a7a6a88a41cd59f54349372faf33"
+    },
+    "raw/configs/q1.json": {
+      "bytes": 668,
+      "sha256": "0a7fcf14772a91637170362bdacbd5ecc7c2e3d7c0e8cd98629633ebef78e1c4"
+    },
+    "raw/configs/q1024.json": {
+      "bytes": 671,
+      "sha256": "f84cc6ba86e6ead5c423ca21d5862c30e652f9a48e352245eec9740337f58ce5"
+    },
+    "raw/preflight.json": {
+      "bytes": 3002,
+      "sha256": "80501a3b17055c001fc0a7f8da36b1653eaaad5c3e5324f23649dd258388b01b"
+    },
+    "raw/progress.json": {
+      "bytes": 210,
+      "sha256": "470714c7e9f07f79fbc63bba6e7b9b7eaae2fcf6e7887cdadc74e212fe5b4024"
+    },
+    "raw/q1/attempt-001/command.json": {
+      "bytes": 346,
+      "sha256": "bbc97be79ce129e894f49a9293b95d4251994bc140a700a911f31ae858355b4a"
+    },
+    "raw/q1/attempt-001/output/.experiment": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "raw/q1/attempt-001/output/delivery-receipts.json": {
+      "bytes": 966716,
+      "sha256": "c2bf2099f374d351f0c6de0d924a79100946a4a46c77f18f3fe2a1debb7ad884"
+    },
+    "raw/q1/attempt-001/output/histograms.json": {
+      "bytes": 2475,
+      "sha256": "3b29b384fc84853e3bccaee47ea90817d55f885e010335cd0fb3aee0768b7fde"
+    },
+    "raw/q1/attempt-001/output/inputs/config.json": {
+      "bytes": 668,
+      "sha256": "0a7fcf14772a91637170362bdacbd5ecc7c2e3d7c0e8cd98629633ebef78e1c4"
+    },
+    "raw/q1/attempt-001/output/manifest.json": {
+      "bytes": 4190,
+      "sha256": "19566ecf7af1e6589ee2397f44dce9e12b83489ddb95de4726de51ba9e12b512"
+    },
+    "raw/q1/attempt-001/output/network-evidence.json": {
+      "bytes": 2394,
+      "sha256": "4521e631b9845131721b05c62b93b3022a0482b7b08b974bb691b2f107e88183"
+    },
+    "raw/q1/attempt-001/output/phases.json": {
+      "bytes": 707,
+      "sha256": "fc8c7d538c5860b0cbc268aef86e771bed45bfdfada6d78ffc3e64c21d52cb71"
+    },
+    "raw/q1/attempt-001/output/publications.json": {
+      "bytes": 379771,
+      "sha256": "dd5646f352fc66c9a161a5cdfd64fdab22e95687452b4ff2125d34dfd3037224"
+    },
+    "raw/q1/attempt-001/output/receivers.csv": {
+      "bytes": 69,
+      "sha256": "8bb369b1c184931292cc2c2631d26b443b3c59c19ad7be324688145acc9578f1"
+    },
+    "raw/q1/attempt-001/output/report.md": {
+      "bytes": 3488,
+      "sha256": "df7503c96b7934c134eee4f0bc060d006fe6a0009d4d1e2b58dcaa87c8db7d00"
+    },
+    "raw/q1/attempt-001/output/run-config.json": {
+      "bytes": 651,
+      "sha256": "bd8c9ec084478a01abbb4a1e508c1c0ec4de06bebebe00be5e94e8e2b3a3069f"
+    },
+    "raw/q1/attempt-001/output/sha256.json": {
+      "bytes": 1627,
+      "sha256": "815855bc9620cbf3f2bc2a8bcfa3162a320f1450fe84cfe57607651f066cd393"
+    },
+    "raw/q1/attempt-001/output/sources.csv": {
+      "bytes": 1348,
+      "sha256": "40d7dd476a4e4b11cc06600606581d10de5c7fc9163ee29f7192c9026eae0570"
+    },
+    "raw/q1/attempt-001/output/summary.json": {
+      "bytes": 45342,
+      "sha256": "45ebbbefc3196ce8e83743c0d0ba9d6c28f7c82a6df4623aeaf4e846f93b6085"
+    },
+    "raw/q1/attempt-001/output/topology-logical.mmd": {
+      "bytes": 633,
+      "sha256": "4350b5902024fa6284bfdfd7ca75075d00259be430c0d1d31b06128d79f7e02e"
+    },
+    "raw/q1/attempt-001/output/topology-logical.svg": {
+      "bytes": 3862,
+      "sha256": "44145f6480d22983386e561a867978d699ec5137abe4102c1d06203e23812940"
+    },
+    "raw/q1/attempt-001/output/topology-physical.mmd": {
+      "bytes": 533,
+      "sha256": "3725f8eb15a1b63e023d7954e61b8565527130f669d129c42506595e2fb6e47c"
+    },
+    "raw/q1/attempt-001/output/topology-physical.svg": {
+      "bytes": 3277,
+      "sha256": "f0c604740be4663e1cb725b197afcb24a67697af684245b7153c5722a50b4057"
+    },
+    "raw/q1/attempt-001/output/topology.graphml": {
+      "bytes": 39800,
+      "sha256": "2814d31127f1aae151ce817b5a279d511c5547a2ed1d79f94bc0ff6f0977be4b"
+    },
+    "raw/q1/attempt-001/output/transmissions.json": {
+      "bytes": 5607983,
+      "sha256": "1638104d272754e1325a7aade89691ec88630433dd4cb04367ed279f97c6521b"
+    },
+    "raw/q1/attempt-001/process-state.json": {
+      "bytes": 112,
+      "sha256": "f549f8d1d88ce24d019042b618360f00f14e98acd924ff7dbba459a17c9bc217"
+    },
+    "raw/q1/attempt-001/process.log": {
+      "bytes": 929,
+      "sha256": "90864c1adc7c5237f719d78cd548920e9102a44d72dbfe0f6d70453da0e819a9"
+    },
+    "raw/q1/attempt-001/result.json": {
+      "bytes": 50590,
+      "sha256": "2d78f741eb145d5461b8d76b1df402c605a9da69499dc2e0d038a3bf4fab6f61"
+    },
+    "raw/q1024/attempt-001/command.json": {
+      "bytes": 352,
+      "sha256": "92342980611f59dca28c434ec25b5921fc748744524728a8937d8551ff150180"
+    },
+    "raw/q1024/attempt-001/output/.experiment": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "raw/q1024/attempt-001/output/delivery-receipts.json": {
+      "bytes": 1802508,
+      "sha256": "56ef22e245fa5697e67a01b20600b9233e496bb10cae5ec3c84cdf7cca5cd1aa"
+    },
+    "raw/q1024/attempt-001/output/histograms.json": {
+      "bytes": 79054,
+      "sha256": "a8c415b765ccceff0faeb2654736b8965d28a25e2bc8242a9afe7dc790719509"
+    },
+    "raw/q1024/attempt-001/output/inputs/config.json": {
+      "bytes": 671,
+      "sha256": "f84cc6ba86e6ead5c423ca21d5862c30e652f9a48e352245eec9740337f58ce5"
+    },
+    "raw/q1024/attempt-001/output/manifest.json": {
+      "bytes": 4193,
+      "sha256": "a5a5be5219a975cf9af0cb0d35768ded955dc800ba3a179a57a008922d90eb1e"
+    },
+    "raw/q1024/attempt-001/output/network-evidence.json": {
+      "bytes": 2400,
+      "sha256": "4f42797638450cba9d8bfe1f7e2bac87d19e03e1030e9e24a6eb18e73d61a2a9"
+    },
+    "raw/q1024/attempt-001/output/phases.json": {
+      "bytes": 707,
+      "sha256": "1198ac8911631f4c9a2a2e39aba03ef7ad9b4846e1bef19a314969fb2cbf4243"
+    },
+    "raw/q1024/attempt-001/output/publications.json": {
+      "bytes": 380130,
+      "sha256": "ce3ff5a4b941b9bc4d0c70e703df42bd87767bf9241c2e72fccb575204e649d7"
+    },
+    "raw/q1024/attempt-001/output/receivers.csv": {
+      "bytes": 69,
+      "sha256": "16e1bf3625582d78a5c45cbb868c7a4eefbbed1b3edae657d6fa6e0ad7d4ae38"
+    },
+    "raw/q1024/attempt-001/output/report.md": {
+      "bytes": 3483,
+      "sha256": "7f57221eed19ae35af13b8653f43eee873e01a0b25e74246a22eff9ad21a8836"
+    },
+    "raw/q1024/attempt-001/output/run-config.json": {
+      "bytes": 654,
+      "sha256": "8b5e4d63ebf5373a0ba7d0e102876d58576558f0c85e82802e30c0a8fe856fe8"
+    },
+    "raw/q1024/attempt-001/output/sha256.json": {
+      "bytes": 1627,
+      "sha256": "cf0de8a2a31aaf8638d6a20db0ca5cc5686ee6a4dc2088b67a22f098f0d9ffac"
+    },
+    "raw/q1024/attempt-001/output/sources.csv": {
+      "bytes": 1348,
+      "sha256": "40d7dd476a4e4b11cc06600606581d10de5c7fc9163ee29f7192c9026eae0570"
+    },
+    "raw/q1024/attempt-001/output/summary.json": {
+      "bytes": 262803,
+      "sha256": "5bff7ccca54314d5e7e0cdc93cd3e0936eef377533f1f842456ffdfa86fef73a"
+    },
+    "raw/q1024/attempt-001/output/topology-logical.mmd": {
+      "bytes": 633,
+      "sha256": "4350b5902024fa6284bfdfd7ca75075d00259be430c0d1d31b06128d79f7e02e"
+    },
+    "raw/q1024/attempt-001/output/topology-logical.svg": {
+      "bytes": 3862,
+      "sha256": "44145f6480d22983386e561a867978d699ec5137abe4102c1d06203e23812940"
+    },
+    "raw/q1024/attempt-001/output/topology-physical.mmd": {
+      "bytes": 533,
+      "sha256": "3725f8eb15a1b63e023d7954e61b8565527130f669d129c42506595e2fb6e47c"
+    },
+    "raw/q1024/attempt-001/output/topology-physical.svg": {
+      "bytes": 3277,
+      "sha256": "f0c604740be4663e1cb725b197afcb24a67697af684245b7153c5722a50b4057"
+    },
+    "raw/q1024/attempt-001/output/topology.graphml": {
+      "bytes": 39800,
+      "sha256": "bb27fb7236367dc827d06b3d89081ea01de1759957d139e2fe2fed2c99d929f9"
+    },
+    "raw/q1024/attempt-001/output/transmissions.json": {
+      "bytes": 11558125,
+      "sha256": "e9a14e7db1887a29d02fd79f4c527c3127c8b6cd7fa62218dc6ea22b67626bda"
+    },
+    "raw/q1024/attempt-001/process-state.json": {
+      "bytes": 111,
+      "sha256": "e7eadd5dadf07ef65680a3f6b3585368d1ed0b2c11c64c9c4fdf9b3fc54d1b8e"
+    },
+    "raw/q1024/attempt-001/process.log": {
+      "bytes": 924,
+      "sha256": "1313245dd80def47007865319ced2bff1378e1a9bd2dc7ec12c7ceae685c5f30"
+    },
+    "raw/q1024/attempt-001/result.json": {
+      "bytes": 292624,
+      "sha256": "633295d5ab158ba9afb54b01cee859b024917c5e114b7d9664465b61082fe2ab"
+    },
+    "raw/result.json": {
+      "bytes": 410433,
+      "sha256": "52eb56a2d0337e7a4433e0bd5867e8dc54fbaec6900aebfb2ca022a6bebdc06d"
+    },
+    "raw/run-identity.json": {
+      "bytes": 234,
+      "sha256": "cf20e735a82ddc3d50437c5c12c6095abac80ca5c2de7b5100aaf8d9f70bf14a"
+    },
+    "raw/runtime/EntityFX.MqttY.Contracts.Mqtt.dll": {
+      "bytes": 61440,
+      "sha256": "00bdc081d1d4f3cc49b872ac3eb7d894e82c714bfec79a8bc535385ed83fe478"
+    },
+    "raw/runtime/EntityFX.MqttY.Contracts.Scenarios.dll": {
+      "bytes": 9728,
+      "sha256": "109b038d53e4423cd62a851e97a8d620e01e877262e7a7f7c6e4a28435f042ec"
+    },
+    "raw/runtime/EntityFX.MqttY.Contracts.dll": {
+      "bytes": 57344,
+      "sha256": "84290d5c994fd8e91d6c1017f8deb66ece23cc8698995c841c35d49e0b59569d"
+    },
+    "raw/runtime/EntityFX.MqttY.Federation.App.deps.json": {
+      "bytes": 9705,
+      "sha256": "377abf2a122a5713f2215176c7ff47fb4b365e1139927eeb1359c43ef989303e"
+    },
+    "raw/runtime/EntityFX.MqttY.Federation.App.dll": {
+      "bytes": 175616,
+      "sha256": "9022c231ab1a48db8bf80a76f64bab597deab1ba08267d7a3ea06ee1f5946aff"
+    },
+    "raw/runtime/EntityFX.MqttY.Federation.App.runtimeconfig.json": {
+      "bytes": 253,
+      "sha256": "ded3aeb5856a11db0b654a785574490cab55839ebfb17efe9e39b89618fc5b91"
+    },
+    "raw/runtime/EntityFX.MqttY.Plugin.Mqtt.dll": {
+      "bytes": 332288,
+      "sha256": "c5f9712871abdb621473c3ed7862ee67d3d206ed11ceb8fc45affc165124cad0"
+    },
+    "raw/runtime/EntityFX.MqttY.dll": {
+      "bytes": 135168,
+      "sha256": "e66776f56aef02e891d3ffe35e45303b03541a8f29902a1f5d5aecb980c08ed3"
+    },
+    "raw/runtime/Microsoft.Extensions.Configuration.Abstractions.dll": {
+      "bytes": 29448,
+      "sha256": "3124386219566a2c386e6999d83a7d507584de46cde4ae733a8af3c373c42b8c"
+    },
+    "raw/runtime/Microsoft.Extensions.Configuration.Binder.dll": {
+      "bytes": 44704,
+      "sha256": "4449f40e0645a61067c5e206e956cc5bc3b4421593b3c27188d8c71ef45c64a6"
+    },
+    "raw/runtime/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+      "bytes": 62640,
+      "sha256": "ac9cd953b7eeb03cf48e343c5ace6fc9b48ac968b68d1cb30ad1d6111178bf4d"
+    },
+    "raw/runtime/Microsoft.Extensions.DependencyInjection.dll": {
+      "bytes": 94512,
+      "sha256": "df0ae00b1599acae93d9f4df2bcc6d0ba109221ccc44d2d1486183f84a5fec78"
+    },
+    "raw/runtime/Microsoft.Extensions.Logging.Abstractions.dll": {
+      "bytes": 66224,
+      "sha256": "ab36e8201d41dd751cbb712704dbe8492bdd0ab1bff6fb35371cf59bcd982181"
+    },
+    "raw/runtime/Microsoft.Extensions.Logging.dll": {
+      "bytes": 52520,
+      "sha256": "37b87b16ac688d5619168554a22cca2677e1115f21c2d5ebe2f39c024fee2b7f"
+    },
+    "raw/runtime/Microsoft.Extensions.Options.dll": {
+      "bytes": 66312,
+      "sha256": "fbb309a36bc91d90ec2984397bff4f75f35ac92909e0acd952c5264c5ac0a753"
+    },
+    "raw/runtime/Microsoft.Extensions.Primitives.dll": {
+      "bytes": 45336,
+      "sha256": "f9f47907a041067d9bc1b9a9f516009b6ca0a9c6325ce83527883cc0d053dfa5"
+    },
+    "raw/runtime/System.Diagnostics.DiagnosticSource.dll": {
+      "bytes": 164512,
+      "sha256": "d6935e993b69f8abd934f01b0d7dd8ca9616a7ea94c7af59ed07b2fd3cf93a97"
+    }
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "root": "/run/media/entityfx/hd250/mqtty-evidence/web-final-profile-check-v1-20261029",
+  "files": {
+    "job-status.json": {
+      "bytes": 663,
+      "sha256": "e7134f823d96122ba4d9cfd518b9c72ce2c1e4afa2c1142887e2364c8ebc6b72"
+    },
+    "profiles.json": {
+      "bytes": 3773,
+      "sha256": "94d2cd4c87210d4750f51b9a41ee4c385a43da5956d535b1948fc9b2b77e2c11"
+    },
+    "direct-command.json": {
+      "bytes": 324,
+      "sha256": "5f4f2fe89a19408ebd1b0c90bcafcac6df48c24b9cdb59d8f56d304407e48d8b"
+    },
+    "http-files.json": {
+      "bytes": 1541,
+      "sha256": "607be2a4cafb00e11acb67666a6229c235d4473914a51b9db0cfa89405b5c8a5"
+    },
+    "comparisons.json": {
+      "bytes": 1349,
+      "sha256": "4a8c52b01a5f1542fbada0228cf0808a93146319f584a3915b51d053ef5d6b49"
+    },
+    "result.json": {
+      "bytes": 769,
+      "sha256": "40edbe187dc7fcb027750fd244600c192d15e063fd4bcf92afb8db4f0497d845"
+    },
+    "direct-process.json": {
+      "bytes": 139,
+      "sha256": "d2ac9e2d8ec418a694030584ec9e562cd5c39b5c611981d8109e8408bb5ad8cf"
+    },
+    "direct-config.json": {
+      "bytes": 746,
+      "sha256": "fe83f3a85259c20d4627a2790f9bdd00104e9caba53315f152425dfd8408cfc5"
+    },
+    "launch.json": {
+      "bytes": 98,
+      "sha256": "ca4e6bc5d9280e750bf88dbb8a3402e7cf69e36e55cf455b14a3ac234b6a52aa"
+    },
+    "web/deliveries.ndjson": {
+      "bytes": 213024,
+      "sha256": "ff81ac73908c7b1511257b98fff21e2b7cb9b1cc76f20637741770fcde1a1347"
+    },
+    "web/topology.graphml": {
+      "bytes": 11838,
+      "sha256": "4ce9684b65bdc6d0bf203306257f513a0890917194cb2198dba87296709d6e7d"
+    },
+    "web/counters.json": {
+      "bytes": 5971,
+      "sha256": "aec8b63630d6535d91401a0c7e1eed4adee8f83fc5cddb2f3ac584c611de8d46"
+    },
+    "web/profile-snapshot.json": {
+      "bytes": 669148,
+      "sha256": "5172f9409dda3ca497eb9b4a47db8717957e2aeecc7487a618278747e171e503"
+    },
+    "web/connections.ndjson": {
+      "bytes": 10392,
+      "sha256": "720819766c9aeb06488422d0fc999546cbd98d7770ceb059b723c740a4b2f0b2"
+    },
+    "web/phases.json": {
+      "bytes": 308,
+      "sha256": "23af40db9c0fc074f444d9a851c617e244c5d4ac733476d860da5e10f5a98c5a"
+    },
+    "web/summary.json": {
+      "bytes": 1482,
+      "sha256": "8e788db92b2a9ce97eabb1877a070532efcbfdec3581cde98ea3b7c851919271"
+    },
+    "web/topology.puml": {
+      "bytes": 1070,
+      "sha256": "f142b721b74b1c66bcd8e2e048995cfd383900c73fee51634e0a128b4167f9b8"
+    },
+    "web/transport-resolution.json": {
+      "bytes": 649,
+      "sha256": "43bb52923d13d77dede0bf9d47136a3968a0af212bc2491e4e16a2207c3af946"
+    },
+    "web/latency-histogram.json": {
+      "bytes": 2317,
+      "sha256": "892a7dc8660f87227daa5c73578b1eb37ddbad8333a3763572d0b8f57b5e9125"
+    },
+    "web/subscriptions.ndjson": {
+      "bytes": 740,
+      "sha256": "10df0b9f80e19ce6b780b1431ed6a6f7460820bad0c1f302e692f8145a6f617d"
+    },
+    "web/sha256.json": {
+      "bytes": 1286,
+      "sha256": "9b289633563db9eba4f1a3aed558b1f4e35bda7e921045ec30ee1f693bf7e4d6"
+    },
+    "web/twin-validation.json": {
+      "bytes": 1083,
+      "sha256": "5cf03a5359cb737e17e01a52cdbe954ee442f70a62c9e8211725c4b659fb8689"
+    },
+    "web/publishes.ndjson": {
+      "bytes": 515945,
+      "sha256": "bf0432d899bae71bf4dda61df3cf5188199f83b95180dd3a40a9d613e1610280"
+    },
+    "web/experiment-manifest.json": {
+      "bytes": 10858,
+      "sha256": "89c760d951def071a545eb07bf079a4a026bd28abb674cd94299bd7ed76c6161"
+    },
+    "direct/trial.json": {
+      "bytes": 1781,
+      "sha256": "b41ce558db509925d3eb4c60acf3f3781a86a951fcf375a12216d4b3264afcfd"
+    },
+    "direct/20261029T181825663Z-22ee4b00fa454988a4a588c5f7975df6/deliveries.ndjson": {
+      "bytes": 213024,
+      "sha256": "ff81ac73908c7b1511257b98fff21e2b7cb9b1cc76f20637741770fcde1a1347"
+    },
+    "direct/20261029T181825663Z-22ee4b00fa454988a4a588c5f7975df6/topology.graphml": {
+      "bytes": 11838,
+      "sha256": "52c2a21ab996cc2686052c2c93ba6869bf95c066771c72a7c7d36f3c518796fa"
+    },
+    "direct/20261029T181825663Z-22ee4b00fa454988a4a588c5f7975df6/counters.json": {
+      "bytes": 5971,
+      "sha256": "c0c0b80e8846c122c61be1c7a94d0226c7c85d51ee35019bc9ab764361d82df8"
+    },
+    "direct/20261029T181825663Z-22ee4b00fa454988a4a588c5f7975df6/connections.ndjson": {
+      "bytes": 10392,
+      "sha256": "940003b768068ac4dfc7d6d3bef9dd4ec64e0a13fa22240d393e1268d0316f1e"
+    },
+    "direct/20261029T181825663Z-22ee4b00fa454988a4a588c5f7975df6/phases.json": {
+      "bytes": 308,
+      "sha256": "23af40db9c0fc074f444d9a851c617e244c5d4ac733476d860da5e10f5a98c5a"
+    },
+    "direct/20261029T181825663Z-22ee4b00fa454988a4a588c5f7975df6/summary.json": {
+      "bytes": 1482,
+      "sha256": "8e788db92b2a9ce97eabb1877a070532efcbfdec3581cde98ea3b7c851919271"
+    },
+    "direct/20261029T181825663Z-22ee4b00fa454988a4a588c5f7975df6/topology.puml": {
+      "bytes": 1070,
+      "sha256": "f154b493b7b91b7590465113a6652a38ce1f9cb02620304c06a97773f2092fcf"
+    },
+    "direct/20261029T181825663Z-22ee4b00fa454988a4a588c5f7975df6/transport-resolution.json": {
+      "bytes": 649,
+      "sha256": "43bb52923d13d77dede0bf9d47136a3968a0af212bc2491e4e16a2207c3af946"
+    },
+    "direct/20261029T181825663Z-22ee4b00fa454988a4a588c5f7975df6/latency-histogram.json": {
+      "bytes": 2317,
+      "sha256": "892a7dc8660f87227daa5c73578b1eb37ddbad8333a3763572d0b8f57b5e9125"
+    },
+    "direct/20261029T181825663Z-22ee4b00fa454988a4a588c5f7975df6/subscriptions.ndjson": {
+      "bytes": 740,
+      "sha256": "10df0b9f80e19ce6b780b1431ed6a6f7460820bad0c1f302e692f8145a6f617d"
+    },
+    "direct/20261029T181825663Z-22ee4b00fa454988a4a588c5f7975df6/publishes.ndjson": {
+      "bytes": 515945,
+      "sha256": "bf0432d899bae71bf4dda61df3cf5188199f83b95180dd3a40a9d613e1610280"
+    },
+    "direct/20261029T181825663Z-22ee4b00fa454988a4a588c5f7975df6/experiment-manifest.json": {
+      "bytes": 10894,
+      "sha256": "82009a8b81d146d542298de8aaccd5a8f6356cf5ff76cff02dd33bc4e25789d9"
+    }
+  },
+  "result": {
+    "status": "verified",
+    "jobId": "da613d0b932d42739fb62e8b1fa5e52e",
+    "totalTicks": 21014,
+    "totalSteps": 64966,
+    "profilesValidated": 4,
+    "missingPointsRejected": 4,
+    "byteEqualScientificFiles": 6,
+    "counterFieldsEqual": [
+      "brokers",
+      "receivers",
+      "receiverScope"
+    ],
+    "runtimeFilesRechecked": 54,
+    "elapsedSeconds": 6.123902522000208,
+    "directDirectory": "/run/media/entityfx/hd250/mqtty-evidence/web-final-profile-check-v1-20261029/direct/20261029T181825663Z-22ee4b00fa454988a4a588c5f7975df6",
+    "historicalInputsChanged": false,
+    "newNativeMeasurements": 0,
+    "fullBrowserFlowVerified": false,
+    "nativeReferenceScope": "No new independent native reference attached; API reports calibration only",
+    "newCalibrationAccuracyClaim": false
+  },
+  "health": {
+    "status": "ok",
+    "processId": 3783,
+    "processWorkingSetBytes": 168599552,
+    "dataDirectoryAvailable": true,
+    "runningJobs": 0,
+    "queuedJobs": 0
+  },
+  "service": "MainPID=3780\nMemoryCurrent=187584512\nCPUUsageNSec=8152032000\nActiveState=active\nSubState=running\n"
+}

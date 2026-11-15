@@ -1,0 +1,83 @@
+{
+  "program": {
+    "programIdentity": "queue-main-remaining-20261030-v1",
+    "source": "/run/media/entityfx/hd250/mqtty-evidence/network-full-3h-v1",
+    "baselineId": "matrix.star.federation.q2.r5000.w10.s42",
+    "baselineRowSha256": "eb9b1aa1f93d618f42d123ba05cf5ace6a41832c359d4525b36f645d48611bd0",
+    "localAcceptedIndexSha256": "b1a775d2f93921610db678f50104a674f67a1bf1cc04c22a74867c502305bee6",
+    "modelTimeoutSeconds": 1800,
+    "serviceHardWallSeconds": 1860,
+    "onlyNewCapacity": 4096,
+    "retryAllowed": false
+  },
+  "seal": {
+    "programIdentity": "queue-main-remaining-20261030-v1",
+    "files": {
+      "config.json": "9b256e86bbcc2bee3f2cf5683624525248ea2c10ed82651af2086743ef5e08fc",
+      "protocol.md": "a67b6499ede5a319e5212c5439284672eab5b81dfac19a1ff444e21f157e1df8",
+      "test_queue_remaining.py": "eda951bee2b427ddab7dc8cc9c92b0b6c0ad2131b37d31ce871a892853231899",
+      "run_queue_remaining.py": "884e6046c9a8f625678a050a5356b90b9bd206b6c49a83bf6717ecbc0a205de2",
+      "program.json": "ac8db3a3db03db4306259ca76b04b499249d739f650d922c1e2e9ecb7bbdec46",
+      "run_acceleration_pilot.py": "086ed09774e972b6c801bf7e55e639e580a7d533de74296d36a7b909c9a087eb"
+    }
+  },
+  "sealSha256": "25f5aa4e747e979a68131b25e127717388714478d1ac475347539b2e49f90def",
+  "tests": "test_known_cost_prevents_short_timeout (test_queue_remaining.AdmissionTests.test_known_cost_prevents_short_timeout) ... ok\ntest_missing_success_is_not_reusable (test_queue_remaining.AdmissionTests.test_missing_success_is_not_reusable) ... ok\ntest_only4096_from1024 (test_queue_remaining.AdmissionTests.test_only4096_from1024) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nOK\n",
+  "validation": {
+    "options": {
+      "schemaVersion": 1,
+      "mode": "federation",
+      "brokers": 4,
+      "topology": "star",
+      "links": null,
+      "publishers": 64,
+      "receiverSites": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "payloadBytes": 16,
+      "qos": 2,
+      "offeredRps": 5000,
+      "seed": 42,
+      "warmupSeconds": 1,
+      "measurementSeconds": 10,
+      "drainTimeoutSeconds": 30,
+      "tickPeriod": "00:00:00.0001000",
+      "queueCapacity": 4096,
+      "cacheCapacity": 100000,
+      "hopLimit": 4,
+      "ideal": true,
+      "brokerType": "Mosquitto",
+      "brokerProfilePath": null,
+      "network": {
+        "capacityBytesPerSecond": 125000000,
+        "throughputWindowTicks": 100,
+        "queueCapacity": 100000,
+        "transferTicks": 2
+      }
+    },
+    "profileSha256": null,
+    "edges": [
+      {
+        "a": 0,
+        "b": 4
+      },
+      {
+        "a": 1,
+        "b": 4
+      },
+      {
+        "a": 2,
+        "b": 4
+      },
+      {
+        "a": 3,
+        "b": 4
+      }
+    ]
+  },
+  "knownBaselineSeconds": 526.5441919779987,
+  "sourceFilesVerified": 281
+}

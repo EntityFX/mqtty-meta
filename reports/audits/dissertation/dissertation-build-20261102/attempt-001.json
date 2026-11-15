@@ -1,0 +1,26 @@
+{
+  "dateMsk": "2026-11-02",
+  "attempt": 1,
+  "status": "blockedToolVersionTimeout",
+  "errorType": "subprocess.TimeoutExpired",
+  "errorCommand": [
+    "C:\\Program Files\\MiKTeX\\miktex\\bin\\x64\\latexmk.EXE",
+    "--version"
+  ],
+  "timeoutSeconds": 15,
+  "execSessionId": 14040,
+  "execExitCode": 1,
+  "buildStarted": false,
+  "freshPdfProduced": false,
+  "sourceUnchangedAgainstPriorSnapshot": true,
+  "sourceFilesChecked": 260,
+  "observedStage": "MiKTeX first-use fndb refresh and font map/cache initialization",
+  "initializationExitCode": 0,
+  "underlyingLongTermToolHealthEstablished": false,
+  "step37Accepted": false,
+  "logsSha256": {
+    "attempt-001.latexmk.log": "a1000f205523ec1614af8c56d25bbafa94aeb44b272df4d160bc2568ed3bfeda",
+    "attempt-001.miktex-fc-cache.log": "b7f36d7349331506366ce6a44e07f2456c520efa2cfde881f24b76d85a5accd0",
+    "attempt-001.miktex.log": "9c547ed8d0287c7e577726119a76d4843c04794a615abcdd04436ed201ae518f"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "service": "mqtty-queue-capacity-micro-v1.service",
+  "observedMainPid": 4686,
+  "observedActiveState": "active",
+  "progressAtConfirmation": {
+    "status": "running",
+    "phase": "models",
+    "completed": 0,
+    "total": 2
+  },
+  "root": "/run/media/entityfx/hd250/mqtty-evidence/queue-capacity-micro-v1-20261029",
+  "identity": {
+    "startedEpoch": 1793225157.043537,
+    "deadlineEpoch": 1793225757.043537,
+    "hardWallSeconds": 600,
+    "modelTimeoutSeconds": 450,
+    "workers": 2,
+    "rssPerModelBytes": 2147483648,
+    "serviceMemoryMaxBytes": 6442450944
+  },
+  "configGateTestsPassed": 3,
+  "tddRed": "Missing queue_config_gate import, exit 1",
+  "frozenSourceFilesVerified": 281,
+  "protocolAtLaunchSha256": "cfe90be49720a6b633481e48effd0fef52f5f0a12004b34d45a9d0e9773abab5",
+  "protocolSnapshot": "protocol-at-launch.md",
+  "launcherSha256": "d8b694b8a57d200b09ecb6ab5ec6dbbb2a03e537c8fac6f341279e464b3a136b",
+  "allAttemptsPreserved": true,
+  "sourceCampaignChanged": false,
+  "researchAccuracyClaimed": false
+}

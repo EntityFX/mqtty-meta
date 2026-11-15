@@ -1,0 +1,4083 @@
+{
+  "status": "partialEvidenceAccepted",
+  "classification": "finiteWindowQueueCapacityContrast",
+  "completedPairAccepted": false,
+  "partialRunPromotedToCompleted": false,
+  "filesVerified": 56,
+  "sourceIdentityEqual": true,
+  "relativeEmissionScheduleEqual": true,
+  "sourcePayloadBytesEqual": false,
+  "payloadDifferenceIsAbsoluteTickFieldOnly": true,
+  "windows": [
+    {
+      "queueCapacity": 1024,
+      "status": "completed",
+      "observationSeconds": 40,
+      "measurementStartTick": 80547,
+      "actualObservationEndSeconds": 19.5664,
+      "metrics": {
+        "uniqueDeliveries": 38609,
+        "expectedDeliveries": 200000,
+        "queueDrops": 203360,
+        "fullyDeliveredPublications": 1492,
+        "receiverP99Ms": 8510.1
+      },
+      "independentCount": {
+        "sourcePublications": 50000,
+        "expectedPairs": 200000,
+        "uniquePairs": 38609,
+        "duplicateReceipts": 0,
+        "notObservedFraction": 0.806955,
+        "p99ReceivedMs": 8510.1,
+        "observationSeconds": 40.0,
+        "uniqueInLastModelSecond": 0,
+        "latestUniqueTick": 273288
+      },
+      "forwardingEventsInLastModelSecond": 0,
+      "curve": [
+        {
+          "seconds": 0.0,
+          "uniquePairs": 0,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 0.1,
+          "uniquePairs": 224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 0.2,
+          "uniquePairs": 460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 0.3,
+          "uniquePairs": 696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 0.4,
+          "uniquePairs": 932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 0.5,
+          "uniquePairs": 1166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 0.6,
+          "uniquePairs": 1401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 0.7000000000000001,
+          "uniquePairs": 1636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 0.8,
+          "uniquePairs": 1872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 0.9,
+          "uniquePairs": 2108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 1.0,
+          "uniquePairs": 2343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 1.1,
+          "uniquePairs": 2578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 1.2,
+          "uniquePairs": 2812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 1.3,
+          "uniquePairs": 3048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 1.4000000000000001,
+          "uniquePairs": 3284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 1.5,
+          "uniquePairs": 3520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 1.6,
+          "uniquePairs": 3755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 1.7000000000000002,
+          "uniquePairs": 3989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 1.8,
+          "uniquePairs": 4224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 1.9000000000000001,
+          "uniquePairs": 4460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 2.0,
+          "uniquePairs": 4696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 2.1,
+          "uniquePairs": 4932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 2.2,
+          "uniquePairs": 5166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 2.3000000000000003,
+          "uniquePairs": 5401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 2.4,
+          "uniquePairs": 5636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 2.5,
+          "uniquePairs": 5872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 2.6,
+          "uniquePairs": 6108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 2.7,
+          "uniquePairs": 6343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 2.8000000000000003,
+          "uniquePairs": 6578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 2.9000000000000004,
+          "uniquePairs": 6812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 3.0,
+          "uniquePairs": 7048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 3.1,
+          "uniquePairs": 7284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 3.2,
+          "uniquePairs": 7520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 3.3000000000000003,
+          "uniquePairs": 7755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 3.4000000000000004,
+          "uniquePairs": 7989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 3.5,
+          "uniquePairs": 8224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 3.6,
+          "uniquePairs": 8460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 3.7,
+          "uniquePairs": 8696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 3.8000000000000003,
+          "uniquePairs": 8932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 3.9000000000000004,
+          "uniquePairs": 9166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 4.0,
+          "uniquePairs": 9401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 4.1000000000000005,
+          "uniquePairs": 9636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 4.2,
+          "uniquePairs": 9872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 4.3,
+          "uniquePairs": 10108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 4.4,
+          "uniquePairs": 10343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 4.5,
+          "uniquePairs": 10578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 4.6000000000000005,
+          "uniquePairs": 10812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 4.7,
+          "uniquePairs": 11048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 4.8,
+          "uniquePairs": 11284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 4.9,
+          "uniquePairs": 11520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 5.0,
+          "uniquePairs": 11755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 5.1000000000000005,
+          "uniquePairs": 11989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 5.2,
+          "uniquePairs": 12224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 5.3,
+          "uniquePairs": 12460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 5.4,
+          "uniquePairs": 12696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 5.5,
+          "uniquePairs": 12932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 5.6000000000000005,
+          "uniquePairs": 13166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 5.7,
+          "uniquePairs": 13401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 5.800000000000001,
+          "uniquePairs": 13636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 5.9,
+          "uniquePairs": 13872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 6.0,
+          "uniquePairs": 14108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 6.1000000000000005,
+          "uniquePairs": 14343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 6.2,
+          "uniquePairs": 14578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 6.300000000000001,
+          "uniquePairs": 14812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 6.4,
+          "uniquePairs": 15048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 6.5,
+          "uniquePairs": 15284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 6.6000000000000005,
+          "uniquePairs": 15520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 6.7,
+          "uniquePairs": 15755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 6.800000000000001,
+          "uniquePairs": 15989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 6.9,
+          "uniquePairs": 16224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 7.0,
+          "uniquePairs": 16460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 7.1000000000000005,
+          "uniquePairs": 16696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 7.2,
+          "uniquePairs": 16932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 7.300000000000001,
+          "uniquePairs": 17166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 7.4,
+          "uniquePairs": 17401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 7.5,
+          "uniquePairs": 17636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 7.6000000000000005,
+          "uniquePairs": 17872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 7.7,
+          "uniquePairs": 18108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 7.800000000000001,
+          "uniquePairs": 18343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 7.9,
+          "uniquePairs": 18578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 8.0,
+          "uniquePairs": 18812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 8.1,
+          "uniquePairs": 19048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 8.200000000000001,
+          "uniquePairs": 19284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 8.3,
+          "uniquePairs": 19520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 8.4,
+          "uniquePairs": 19755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 8.5,
+          "uniquePairs": 19989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 8.6,
+          "uniquePairs": 20224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 8.700000000000001,
+          "uniquePairs": 20460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 8.8,
+          "uniquePairs": 20696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 8.9,
+          "uniquePairs": 20932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 9.0,
+          "uniquePairs": 21166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 9.1,
+          "uniquePairs": 21401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 9.200000000000001,
+          "uniquePairs": 21636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 9.3,
+          "uniquePairs": 21872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 9.4,
+          "uniquePairs": 22108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 9.5,
+          "uniquePairs": 22343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 9.6,
+          "uniquePairs": 22578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 9.700000000000001,
+          "uniquePairs": 22812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 9.8,
+          "uniquePairs": 23048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 9.9,
+          "uniquePairs": 23284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 10.0,
+          "uniquePairs": 23520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 10.1,
+          "uniquePairs": 23755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 10.200000000000001,
+          "uniquePairs": 23989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 10.3,
+          "uniquePairs": 24224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 10.4,
+          "uniquePairs": 24460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 10.5,
+          "uniquePairs": 24696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 10.6,
+          "uniquePairs": 24932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 10.700000000000001,
+          "uniquePairs": 25166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 10.8,
+          "uniquePairs": 25401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 10.9,
+          "uniquePairs": 25636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 11.0,
+          "uniquePairs": 25872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 11.1,
+          "uniquePairs": 26108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 11.200000000000001,
+          "uniquePairs": 26343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 11.3,
+          "uniquePairs": 26578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 11.4,
+          "uniquePairs": 26812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 11.5,
+          "uniquePairs": 27048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 11.600000000000001,
+          "uniquePairs": 27284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 11.700000000000001,
+          "uniquePairs": 27520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 11.8,
+          "uniquePairs": 27755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 11.9,
+          "uniquePairs": 27989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 12.0,
+          "uniquePairs": 28224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 12.100000000000001,
+          "uniquePairs": 28460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 12.200000000000001,
+          "uniquePairs": 28696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 12.3,
+          "uniquePairs": 28932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 12.4,
+          "uniquePairs": 29166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 12.5,
+          "uniquePairs": 29401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 12.600000000000001,
+          "uniquePairs": 29636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 12.700000000000001,
+          "uniquePairs": 29872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 12.8,
+          "uniquePairs": 30108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 12.9,
+          "uniquePairs": 30343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 13.0,
+          "uniquePairs": 30578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 13.100000000000001,
+          "uniquePairs": 30812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 13.200000000000001,
+          "uniquePairs": 31048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 13.3,
+          "uniquePairs": 31284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 13.4,
+          "uniquePairs": 31520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 13.5,
+          "uniquePairs": 31755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 13.600000000000001,
+          "uniquePairs": 31989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 13.700000000000001,
+          "uniquePairs": 32224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 13.8,
+          "uniquePairs": 32460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 13.9,
+          "uniquePairs": 32696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 14.0,
+          "uniquePairs": 32932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 14.100000000000001,
+          "uniquePairs": 33166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 14.200000000000001,
+          "uniquePairs": 33401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 14.3,
+          "uniquePairs": 33636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 14.4,
+          "uniquePairs": 33872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 14.5,
+          "uniquePairs": 34108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 14.600000000000001,
+          "uniquePairs": 34343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 14.700000000000001,
+          "uniquePairs": 34578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 14.8,
+          "uniquePairs": 34812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 14.9,
+          "uniquePairs": 35048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 15.0,
+          "uniquePairs": 35284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 15.100000000000001,
+          "uniquePairs": 35520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 15.200000000000001,
+          "uniquePairs": 35755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 15.3,
+          "uniquePairs": 35989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 15.4,
+          "uniquePairs": 36224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 15.5,
+          "uniquePairs": 36460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 15.600000000000001,
+          "uniquePairs": 36678,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 15.700000000000001,
+          "uniquePairs": 36873,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 15.8,
+          "uniquePairs": 37069,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 15.9,
+          "uniquePairs": 37265,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 16.0,
+          "uniquePairs": 37459,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 16.1,
+          "uniquePairs": 37620,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 16.2,
+          "uniquePairs": 37751,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 16.3,
+          "uniquePairs": 37873,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 16.400000000000002,
+          "uniquePairs": 38001,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 16.5,
+          "uniquePairs": 38122,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 16.6,
+          "uniquePairs": 38234,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 16.7,
+          "uniquePairs": 38328,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 16.8,
+          "uniquePairs": 38399,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 16.900000000000002,
+          "uniquePairs": 38411,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 17.0,
+          "uniquePairs": 38419,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 17.1,
+          "uniquePairs": 38429,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 17.2,
+          "uniquePairs": 38439,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 17.3,
+          "uniquePairs": 38447,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 17.400000000000002,
+          "uniquePairs": 38454,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 17.5,
+          "uniquePairs": 38460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 17.6,
+          "uniquePairs": 38469,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 17.7,
+          "uniquePairs": 38477,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 17.8,
+          "uniquePairs": 38485,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 17.900000000000002,
+          "uniquePairs": 38491,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 18.0,
+          "uniquePairs": 38500,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 18.1,
+          "uniquePairs": 38508,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 18.2,
+          "uniquePairs": 38517,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 18.3,
+          "uniquePairs": 38524,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 18.400000000000002,
+          "uniquePairs": 38532,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 18.5,
+          "uniquePairs": 38540,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 18.6,
+          "uniquePairs": 38550,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 18.7,
+          "uniquePairs": 38560,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 18.8,
+          "uniquePairs": 38568,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 18.900000000000002,
+          "uniquePairs": 38577,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 19.0,
+          "uniquePairs": 38586,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 19.1,
+          "uniquePairs": 38595,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 19.2,
+          "uniquePairs": 38603,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 19.3,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 19.400000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 19.5,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 19.6,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 19.7,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 19.8,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 19.900000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 20.0,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 20.1,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 20.2,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 20.3,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 20.400000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 20.5,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 20.6,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 20.7,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 20.8,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 20.900000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 21.0,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 21.1,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 21.2,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 21.3,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 21.400000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 21.5,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 21.6,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 21.7,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 21.8,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 21.900000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 22.0,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 22.1,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 22.2,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 22.3,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 22.400000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 22.5,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 22.6,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 22.700000000000003,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 22.8,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 22.900000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 23.0,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 23.1,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 23.200000000000003,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 23.3,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 23.400000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 23.5,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 23.6,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 23.700000000000003,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 23.8,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 23.900000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 24.0,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 24.1,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 24.200000000000003,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 24.3,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 24.400000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 24.5,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 24.6,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 24.700000000000003,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 24.8,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 24.900000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 25.0,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 25.1,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 25.200000000000003,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 25.3,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 25.400000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 25.5,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 25.6,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 25.700000000000003,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 25.8,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 25.900000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 26.0,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 26.1,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 26.200000000000003,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 26.3,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 26.400000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 26.5,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 26.6,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 26.700000000000003,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 26.8,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 26.900000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 27.0,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 27.1,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 27.200000000000003,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 27.3,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 27.400000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 27.5,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 27.6,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 27.700000000000003,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 27.8,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 27.900000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 28.0,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 28.1,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 28.200000000000003,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 28.3,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 28.400000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 28.5,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 28.6,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 28.700000000000003,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 28.8,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 28.900000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 29.0,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 29.1,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 29.200000000000003,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 29.3,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 29.400000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 29.5,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 29.6,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 29.700000000000003,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 29.8,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 29.900000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 30.0,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 30.1,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 30.200000000000003,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 30.3,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 30.400000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 30.5,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 30.6,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 30.700000000000003,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 30.8,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 30.900000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 31.0,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 31.1,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 31.200000000000003,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 31.3,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 31.400000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 31.5,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 31.6,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 31.700000000000003,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 31.8,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 31.900000000000002,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 32.0,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 32.1,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 32.2,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 32.300000000000004,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 32.4,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 32.5,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 32.6,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 32.7,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 32.800000000000004,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 32.9,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 33.0,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 33.1,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 33.2,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 33.300000000000004,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 33.4,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 33.5,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 33.6,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 33.7,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 33.800000000000004,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 33.9,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 34.0,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 34.1,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 34.2,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 34.300000000000004,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 34.4,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 34.5,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 34.6,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 34.7,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 34.800000000000004,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 34.9,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 35.0,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 35.1,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 35.2,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 35.300000000000004,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 35.4,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 35.5,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 35.6,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 35.7,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 35.800000000000004,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 35.9,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 36.0,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 36.1,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 36.2,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 36.300000000000004,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 36.4,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 36.5,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 36.6,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 36.7,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 36.800000000000004,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 36.9,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 37.0,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 37.1,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 37.2,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 37.300000000000004,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 37.4,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 37.5,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 37.6,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 37.7,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 37.800000000000004,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 37.9,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 38.0,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 38.1,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 38.2,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 38.300000000000004,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 38.4,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 38.5,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 38.6,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 38.7,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 38.800000000000004,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 38.9,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 39.0,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 39.1,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 39.2,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 39.300000000000004,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 39.4,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 39.5,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 39.6,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 39.7,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 39.800000000000004,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 39.9,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 40.0,
+          "uniquePairs": 38609,
+          "expectedPairs": 200000
+        }
+      ]
+    },
+    {
+      "queueCapacity": 4096,
+      "status": "failed",
+      "observationSeconds": 40,
+      "measurementStartTick": 123816,
+      "actualObservationEndSeconds": 40.0,
+      "metrics": {
+        "uniqueDeliveries": 76513,
+        "expectedDeliveries": 200000,
+        "queueDrops": 173286,
+        "fullyDeliveredPublications": 9065,
+        "receiverP99Ms": 27221.800000000003
+      },
+      "independentCount": {
+        "sourcePublications": 50000,
+        "expectedPairs": 200000,
+        "uniquePairs": 76513,
+        "duplicateReceipts": 0,
+        "notObservedFraction": 0.617435,
+        "p99ReceivedMs": 27221.800000000003,
+        "observationSeconds": 40.0,
+        "uniqueInLastModelSecond": 177,
+        "latestUniqueTick": 523731
+      },
+      "forwardingEventsInLastModelSecond": 2431,
+      "curve": [
+        {
+          "seconds": 0.0,
+          "uniquePairs": 0,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 0.1,
+          "uniquePairs": 224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 0.2,
+          "uniquePairs": 460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 0.3,
+          "uniquePairs": 696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 0.4,
+          "uniquePairs": 932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 0.5,
+          "uniquePairs": 1166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 0.6,
+          "uniquePairs": 1401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 0.7000000000000001,
+          "uniquePairs": 1636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 0.8,
+          "uniquePairs": 1872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 0.9,
+          "uniquePairs": 2108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 1.0,
+          "uniquePairs": 2343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 1.1,
+          "uniquePairs": 2578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 1.2,
+          "uniquePairs": 2812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 1.3,
+          "uniquePairs": 3048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 1.4000000000000001,
+          "uniquePairs": 3284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 1.5,
+          "uniquePairs": 3520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 1.6,
+          "uniquePairs": 3755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 1.7000000000000002,
+          "uniquePairs": 3989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 1.8,
+          "uniquePairs": 4224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 1.9000000000000001,
+          "uniquePairs": 4460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 2.0,
+          "uniquePairs": 4696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 2.1,
+          "uniquePairs": 4932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 2.2,
+          "uniquePairs": 5166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 2.3000000000000003,
+          "uniquePairs": 5401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 2.4,
+          "uniquePairs": 5636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 2.5,
+          "uniquePairs": 5872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 2.6,
+          "uniquePairs": 6108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 2.7,
+          "uniquePairs": 6343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 2.8000000000000003,
+          "uniquePairs": 6578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 2.9000000000000004,
+          "uniquePairs": 6812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 3.0,
+          "uniquePairs": 7048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 3.1,
+          "uniquePairs": 7284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 3.2,
+          "uniquePairs": 7520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 3.3000000000000003,
+          "uniquePairs": 7755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 3.4000000000000004,
+          "uniquePairs": 7989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 3.5,
+          "uniquePairs": 8224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 3.6,
+          "uniquePairs": 8460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 3.7,
+          "uniquePairs": 8696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 3.8000000000000003,
+          "uniquePairs": 8932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 3.9000000000000004,
+          "uniquePairs": 9166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 4.0,
+          "uniquePairs": 9401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 4.1000000000000005,
+          "uniquePairs": 9636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 4.2,
+          "uniquePairs": 9872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 4.3,
+          "uniquePairs": 10108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 4.4,
+          "uniquePairs": 10343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 4.5,
+          "uniquePairs": 10578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 4.6000000000000005,
+          "uniquePairs": 10812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 4.7,
+          "uniquePairs": 11048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 4.8,
+          "uniquePairs": 11284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 4.9,
+          "uniquePairs": 11520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 5.0,
+          "uniquePairs": 11755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 5.1000000000000005,
+          "uniquePairs": 11989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 5.2,
+          "uniquePairs": 12224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 5.3,
+          "uniquePairs": 12460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 5.4,
+          "uniquePairs": 12696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 5.5,
+          "uniquePairs": 12932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 5.6000000000000005,
+          "uniquePairs": 13166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 5.7,
+          "uniquePairs": 13401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 5.800000000000001,
+          "uniquePairs": 13636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 5.9,
+          "uniquePairs": 13872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 6.0,
+          "uniquePairs": 14108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 6.1000000000000005,
+          "uniquePairs": 14343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 6.2,
+          "uniquePairs": 14578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 6.300000000000001,
+          "uniquePairs": 14812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 6.4,
+          "uniquePairs": 15048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 6.5,
+          "uniquePairs": 15284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 6.6000000000000005,
+          "uniquePairs": 15520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 6.7,
+          "uniquePairs": 15755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 6.800000000000001,
+          "uniquePairs": 15989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 6.9,
+          "uniquePairs": 16224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 7.0,
+          "uniquePairs": 16460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 7.1000000000000005,
+          "uniquePairs": 16696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 7.2,
+          "uniquePairs": 16932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 7.300000000000001,
+          "uniquePairs": 17166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 7.4,
+          "uniquePairs": 17401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 7.5,
+          "uniquePairs": 17636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 7.6000000000000005,
+          "uniquePairs": 17872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 7.7,
+          "uniquePairs": 18108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 7.800000000000001,
+          "uniquePairs": 18343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 7.9,
+          "uniquePairs": 18578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 8.0,
+          "uniquePairs": 18812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 8.1,
+          "uniquePairs": 19048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 8.200000000000001,
+          "uniquePairs": 19284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 8.3,
+          "uniquePairs": 19520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 8.4,
+          "uniquePairs": 19755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 8.5,
+          "uniquePairs": 19989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 8.6,
+          "uniquePairs": 20224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 8.700000000000001,
+          "uniquePairs": 20460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 8.8,
+          "uniquePairs": 20696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 8.9,
+          "uniquePairs": 20932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 9.0,
+          "uniquePairs": 21166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 9.1,
+          "uniquePairs": 21401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 9.200000000000001,
+          "uniquePairs": 21636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 9.3,
+          "uniquePairs": 21872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 9.4,
+          "uniquePairs": 22108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 9.5,
+          "uniquePairs": 22343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 9.6,
+          "uniquePairs": 22578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 9.700000000000001,
+          "uniquePairs": 22812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 9.8,
+          "uniquePairs": 23048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 9.9,
+          "uniquePairs": 23284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 10.0,
+          "uniquePairs": 23520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 10.1,
+          "uniquePairs": 23755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 10.200000000000001,
+          "uniquePairs": 23989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 10.3,
+          "uniquePairs": 24224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 10.4,
+          "uniquePairs": 24460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 10.5,
+          "uniquePairs": 24696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 10.6,
+          "uniquePairs": 24932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 10.700000000000001,
+          "uniquePairs": 25166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 10.8,
+          "uniquePairs": 25401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 10.9,
+          "uniquePairs": 25636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 11.0,
+          "uniquePairs": 25872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 11.1,
+          "uniquePairs": 26108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 11.200000000000001,
+          "uniquePairs": 26343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 11.3,
+          "uniquePairs": 26578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 11.4,
+          "uniquePairs": 26812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 11.5,
+          "uniquePairs": 27048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 11.600000000000001,
+          "uniquePairs": 27284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 11.700000000000001,
+          "uniquePairs": 27520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 11.8,
+          "uniquePairs": 27755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 11.9,
+          "uniquePairs": 27989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 12.0,
+          "uniquePairs": 28224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 12.100000000000001,
+          "uniquePairs": 28460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 12.200000000000001,
+          "uniquePairs": 28696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 12.3,
+          "uniquePairs": 28932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 12.4,
+          "uniquePairs": 29166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 12.5,
+          "uniquePairs": 29401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 12.600000000000001,
+          "uniquePairs": 29636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 12.700000000000001,
+          "uniquePairs": 29872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 12.8,
+          "uniquePairs": 30108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 12.9,
+          "uniquePairs": 30343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 13.0,
+          "uniquePairs": 30578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 13.100000000000001,
+          "uniquePairs": 30812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 13.200000000000001,
+          "uniquePairs": 31048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 13.3,
+          "uniquePairs": 31284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 13.4,
+          "uniquePairs": 31520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 13.5,
+          "uniquePairs": 31755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 13.600000000000001,
+          "uniquePairs": 31989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 13.700000000000001,
+          "uniquePairs": 32224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 13.8,
+          "uniquePairs": 32460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 13.9,
+          "uniquePairs": 32696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 14.0,
+          "uniquePairs": 32932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 14.100000000000001,
+          "uniquePairs": 33166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 14.200000000000001,
+          "uniquePairs": 33401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 14.3,
+          "uniquePairs": 33636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 14.4,
+          "uniquePairs": 33872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 14.5,
+          "uniquePairs": 34108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 14.600000000000001,
+          "uniquePairs": 34343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 14.700000000000001,
+          "uniquePairs": 34578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 14.8,
+          "uniquePairs": 34812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 14.9,
+          "uniquePairs": 35048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 15.0,
+          "uniquePairs": 35284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 15.100000000000001,
+          "uniquePairs": 35520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 15.200000000000001,
+          "uniquePairs": 35755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 15.3,
+          "uniquePairs": 35989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 15.4,
+          "uniquePairs": 36224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 15.5,
+          "uniquePairs": 36460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 15.600000000000001,
+          "uniquePairs": 36696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 15.700000000000001,
+          "uniquePairs": 36932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 15.8,
+          "uniquePairs": 37166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 15.9,
+          "uniquePairs": 37401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 16.0,
+          "uniquePairs": 37636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 16.1,
+          "uniquePairs": 37872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 16.2,
+          "uniquePairs": 38108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 16.3,
+          "uniquePairs": 38343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 16.400000000000002,
+          "uniquePairs": 38578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 16.5,
+          "uniquePairs": 38812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 16.6,
+          "uniquePairs": 39048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 16.7,
+          "uniquePairs": 39284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 16.8,
+          "uniquePairs": 39520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 16.900000000000002,
+          "uniquePairs": 39755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 17.0,
+          "uniquePairs": 39989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 17.1,
+          "uniquePairs": 40224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 17.2,
+          "uniquePairs": 40460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 17.3,
+          "uniquePairs": 40696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 17.400000000000002,
+          "uniquePairs": 40932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 17.5,
+          "uniquePairs": 41166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 17.6,
+          "uniquePairs": 41401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 17.7,
+          "uniquePairs": 41636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 17.8,
+          "uniquePairs": 41872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 17.900000000000002,
+          "uniquePairs": 42108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 18.0,
+          "uniquePairs": 42343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 18.1,
+          "uniquePairs": 42578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 18.2,
+          "uniquePairs": 42812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 18.3,
+          "uniquePairs": 43048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 18.400000000000002,
+          "uniquePairs": 43284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 18.5,
+          "uniquePairs": 43520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 18.6,
+          "uniquePairs": 43755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 18.7,
+          "uniquePairs": 43989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 18.8,
+          "uniquePairs": 44224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 18.900000000000002,
+          "uniquePairs": 44460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 19.0,
+          "uniquePairs": 44696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 19.1,
+          "uniquePairs": 44932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 19.2,
+          "uniquePairs": 45166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 19.3,
+          "uniquePairs": 45401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 19.400000000000002,
+          "uniquePairs": 45636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 19.5,
+          "uniquePairs": 45872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 19.6,
+          "uniquePairs": 46108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 19.7,
+          "uniquePairs": 46343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 19.8,
+          "uniquePairs": 46578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 19.900000000000002,
+          "uniquePairs": 46812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 20.0,
+          "uniquePairs": 47048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 20.1,
+          "uniquePairs": 47284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 20.2,
+          "uniquePairs": 47520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 20.3,
+          "uniquePairs": 47755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 20.400000000000002,
+          "uniquePairs": 47989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 20.5,
+          "uniquePairs": 48224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 20.6,
+          "uniquePairs": 48460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 20.7,
+          "uniquePairs": 48696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 20.8,
+          "uniquePairs": 48932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 20.900000000000002,
+          "uniquePairs": 49166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 21.0,
+          "uniquePairs": 49401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 21.1,
+          "uniquePairs": 49636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 21.2,
+          "uniquePairs": 49872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 21.3,
+          "uniquePairs": 50108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 21.400000000000002,
+          "uniquePairs": 50343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 21.5,
+          "uniquePairs": 50578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 21.6,
+          "uniquePairs": 50812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 21.7,
+          "uniquePairs": 51048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 21.8,
+          "uniquePairs": 51284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 21.900000000000002,
+          "uniquePairs": 51520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 22.0,
+          "uniquePairs": 51755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 22.1,
+          "uniquePairs": 51989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 22.2,
+          "uniquePairs": 52224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 22.3,
+          "uniquePairs": 52460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 22.400000000000002,
+          "uniquePairs": 52696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 22.5,
+          "uniquePairs": 52932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 22.6,
+          "uniquePairs": 53166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 22.700000000000003,
+          "uniquePairs": 53401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 22.8,
+          "uniquePairs": 53636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 22.900000000000002,
+          "uniquePairs": 53872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 23.0,
+          "uniquePairs": 54108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 23.1,
+          "uniquePairs": 54343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 23.200000000000003,
+          "uniquePairs": 54578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 23.3,
+          "uniquePairs": 54812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 23.400000000000002,
+          "uniquePairs": 55048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 23.5,
+          "uniquePairs": 55284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 23.6,
+          "uniquePairs": 55520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 23.700000000000003,
+          "uniquePairs": 55755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 23.8,
+          "uniquePairs": 55989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 23.900000000000002,
+          "uniquePairs": 56224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 24.0,
+          "uniquePairs": 56460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 24.1,
+          "uniquePairs": 56696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 24.200000000000003,
+          "uniquePairs": 56932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 24.3,
+          "uniquePairs": 57166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 24.400000000000002,
+          "uniquePairs": 57401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 24.5,
+          "uniquePairs": 57636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 24.6,
+          "uniquePairs": 57872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 24.700000000000003,
+          "uniquePairs": 58108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 24.8,
+          "uniquePairs": 58343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 24.900000000000002,
+          "uniquePairs": 58578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 25.0,
+          "uniquePairs": 58812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 25.1,
+          "uniquePairs": 59048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 25.200000000000003,
+          "uniquePairs": 59284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 25.3,
+          "uniquePairs": 59520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 25.400000000000002,
+          "uniquePairs": 59755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 25.5,
+          "uniquePairs": 59989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 25.6,
+          "uniquePairs": 60224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 25.700000000000003,
+          "uniquePairs": 60460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 25.8,
+          "uniquePairs": 60696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 25.900000000000002,
+          "uniquePairs": 60932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 26.0,
+          "uniquePairs": 61166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 26.1,
+          "uniquePairs": 61401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 26.200000000000003,
+          "uniquePairs": 61636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 26.3,
+          "uniquePairs": 61872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 26.400000000000002,
+          "uniquePairs": 62108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 26.5,
+          "uniquePairs": 62343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 26.6,
+          "uniquePairs": 62578,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 26.700000000000003,
+          "uniquePairs": 62812,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 26.8,
+          "uniquePairs": 63048,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 26.900000000000002,
+          "uniquePairs": 63284,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 27.0,
+          "uniquePairs": 63520,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 27.1,
+          "uniquePairs": 63755,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 27.200000000000003,
+          "uniquePairs": 63989,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 27.3,
+          "uniquePairs": 64224,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 27.400000000000002,
+          "uniquePairs": 64460,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 27.5,
+          "uniquePairs": 64696,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 27.6,
+          "uniquePairs": 64932,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 27.700000000000003,
+          "uniquePairs": 65166,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 27.8,
+          "uniquePairs": 65401,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 27.900000000000002,
+          "uniquePairs": 65636,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 28.0,
+          "uniquePairs": 65872,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 28.1,
+          "uniquePairs": 66108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 28.200000000000003,
+          "uniquePairs": 66343,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 28.3,
+          "uniquePairs": 66570,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 28.400000000000002,
+          "uniquePairs": 66689,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 28.5,
+          "uniquePairs": 66807,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 28.6,
+          "uniquePairs": 66925,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 28.700000000000003,
+          "uniquePairs": 67043,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 28.8,
+          "uniquePairs": 67161,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 28.900000000000002,
+          "uniquePairs": 67277,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 29.0,
+          "uniquePairs": 67395,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 29.1,
+          "uniquePairs": 67513,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 29.200000000000003,
+          "uniquePairs": 67631,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 29.3,
+          "uniquePairs": 67749,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 29.400000000000002,
+          "uniquePairs": 67866,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 29.5,
+          "uniquePairs": 67983,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 29.6,
+          "uniquePairs": 68101,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 29.700000000000003,
+          "uniquePairs": 68219,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 29.8,
+          "uniquePairs": 68337,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 29.900000000000002,
+          "uniquePairs": 68455,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 30.0,
+          "uniquePairs": 68577,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 30.1,
+          "uniquePairs": 68757,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 30.200000000000003,
+          "uniquePairs": 68928,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 30.3,
+          "uniquePairs": 69102,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 30.400000000000002,
+          "uniquePairs": 69272,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 30.5,
+          "uniquePairs": 69452,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 30.6,
+          "uniquePairs": 69629,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 30.700000000000003,
+          "uniquePairs": 69804,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 30.8,
+          "uniquePairs": 69944,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 30.900000000000002,
+          "uniquePairs": 70029,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 31.0,
+          "uniquePairs": 70126,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 31.1,
+          "uniquePairs": 70233,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 31.200000000000003,
+          "uniquePairs": 70336,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 31.3,
+          "uniquePairs": 70426,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 31.400000000000002,
+          "uniquePairs": 70527,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 31.5,
+          "uniquePairs": 70631,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 31.6,
+          "uniquePairs": 70735,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 31.700000000000003,
+          "uniquePairs": 70841,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 31.8,
+          "uniquePairs": 70954,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 31.900000000000002,
+          "uniquePairs": 71044,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 32.0,
+          "uniquePairs": 71151,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 32.1,
+          "uniquePairs": 71251,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 32.2,
+          "uniquePairs": 71346,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 32.300000000000004,
+          "uniquePairs": 71449,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 32.4,
+          "uniquePairs": 71538,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 32.5,
+          "uniquePairs": 71634,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 32.6,
+          "uniquePairs": 71728,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 32.7,
+          "uniquePairs": 71833,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 32.800000000000004,
+          "uniquePairs": 71929,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 32.9,
+          "uniquePairs": 72027,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 33.0,
+          "uniquePairs": 72124,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 33.1,
+          "uniquePairs": 72210,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 33.2,
+          "uniquePairs": 72306,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 33.300000000000004,
+          "uniquePairs": 72408,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 33.4,
+          "uniquePairs": 72509,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 33.5,
+          "uniquePairs": 72604,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 33.6,
+          "uniquePairs": 72706,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 33.7,
+          "uniquePairs": 72792,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 33.800000000000004,
+          "uniquePairs": 72900,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 33.9,
+          "uniquePairs": 72991,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 34.0,
+          "uniquePairs": 73089,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 34.1,
+          "uniquePairs": 73191,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 34.2,
+          "uniquePairs": 73291,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 34.300000000000004,
+          "uniquePairs": 73386,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 34.4,
+          "uniquePairs": 73482,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 34.5,
+          "uniquePairs": 73577,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 34.6,
+          "uniquePairs": 73675,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 34.7,
+          "uniquePairs": 73768,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 34.800000000000004,
+          "uniquePairs": 73865,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 34.9,
+          "uniquePairs": 73963,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 35.0,
+          "uniquePairs": 74057,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 35.1,
+          "uniquePairs": 74149,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 35.2,
+          "uniquePairs": 74241,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 35.300000000000004,
+          "uniquePairs": 74345,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 35.4,
+          "uniquePairs": 74443,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 35.5,
+          "uniquePairs": 74532,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 35.6,
+          "uniquePairs": 74631,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 35.7,
+          "uniquePairs": 74726,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 35.800000000000004,
+          "uniquePairs": 74816,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 35.9,
+          "uniquePairs": 74904,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 36.0,
+          "uniquePairs": 75007,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 36.1,
+          "uniquePairs": 75096,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 36.2,
+          "uniquePairs": 75189,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 36.300000000000004,
+          "uniquePairs": 75288,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 36.4,
+          "uniquePairs": 75379,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 36.5,
+          "uniquePairs": 75469,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 36.6,
+          "uniquePairs": 75561,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 36.7,
+          "uniquePairs": 75651,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 36.800000000000004,
+          "uniquePairs": 75742,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 36.9,
+          "uniquePairs": 75835,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 37.0,
+          "uniquePairs": 75923,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 37.1,
+          "uniquePairs": 75974,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 37.2,
+          "uniquePairs": 75994,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 37.300000000000004,
+          "uniquePairs": 76013,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 37.4,
+          "uniquePairs": 76030,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 37.5,
+          "uniquePairs": 76047,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 37.6,
+          "uniquePairs": 76067,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 37.7,
+          "uniquePairs": 76088,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 37.800000000000004,
+          "uniquePairs": 76108,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 37.9,
+          "uniquePairs": 76132,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 38.0,
+          "uniquePairs": 76151,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 38.1,
+          "uniquePairs": 76172,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 38.2,
+          "uniquePairs": 76192,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 38.300000000000004,
+          "uniquePairs": 76210,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 38.4,
+          "uniquePairs": 76230,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 38.5,
+          "uniquePairs": 76247,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 38.6,
+          "uniquePairs": 76265,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 38.7,
+          "uniquePairs": 76282,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 38.800000000000004,
+          "uniquePairs": 76304,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 38.9,
+          "uniquePairs": 76319,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 39.0,
+          "uniquePairs": 76336,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 39.1,
+          "uniquePairs": 76354,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 39.2,
+          "uniquePairs": 76370,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 39.300000000000004,
+          "uniquePairs": 76392,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 39.4,
+          "uniquePairs": 76407,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 39.5,
+          "uniquePairs": 76423,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 39.6,
+          "uniquePairs": 76438,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 39.7,
+          "uniquePairs": 76459,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 39.800000000000004,
+          "uniquePairs": 76477,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 39.9,
+          "uniquePairs": 76497,
+          "expectedPairs": 200000
+        },
+        {
+          "seconds": 40.0,
+          "uniquePairs": 76513,
+          "expectedPairs": 200000
+        }
+      ]
+    }
+  ],
+  "termination": "modelDrainDeadline30Seconds",
+  "wallDeadlineReached": false,
+  "newModelRunsExecutedDuringAcceptance": 0,
+  "protectedLaTexFilesVerified": 6
+}

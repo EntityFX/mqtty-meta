@@ -1,0 +1,6 @@
+{
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"<stdin>\", line 15, in <module>\n  File \"/run/media/entityfx/hd250/mqtty-evidence/network-full-3h-v1/tools/dissertation/network_study_inputs.py\", line 127, in verify_snapshot\n    raise ValueError(\"Unexpected or missing snapshot files\")\nValueError: Unexpected or missing snapshot files\n",
+  "automaticRetry": false
+}

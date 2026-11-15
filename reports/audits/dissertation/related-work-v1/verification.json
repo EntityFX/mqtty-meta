@@ -1,0 +1,21 @@
+{
+  "files": {
+    "docs/dissertation/related-work-map.md": "0fa498e517488497cf24b7e4619acb1860c851bd563333e91240f4cb4aad4392",
+    "reports/audits/dissertation/related-work-v1/Review.md": "b13793233ed1f3211ea1f46fa79eabcda99f318d253fa974d2465dfe09de4cab",
+    "reports/audits/dissertation/related-work-v1/doi-registry.json": "a33adcde3283d9569c449c90efd25d04b19e716b34deb16a26cecfe45bbd4ec3",
+    "reports/audits/dissertation/related-work-v1/local-evidence.json": "cbccb763d426f29b79737db3335d1d4969f70fb63261a94bd7b098370cac0782",
+    "reports/audits/dissertation/related-work-v1/sources.json": "ec2737bfec046a6f1acd8aaf113ca7ee900824f3022464cc8e22515f746c4638"
+  },
+  "fullNativeAuditRepeated": false,
+  "historicalHoldoutArithmeticFromFourBrokerRows": {
+    "failed": 85,
+    "passed": 203,
+    "total": 288
+  },
+  "localEvidenceNeedlesAllLocated": true,
+  "localLinksChecked": true,
+  "primarySources": 6,
+  "registeredDoisVerified": 5,
+  "schemaVersion": 1,
+  "semanticLiteratureJudgement": "requires author and supervisor; not automatic acceptance"
+}

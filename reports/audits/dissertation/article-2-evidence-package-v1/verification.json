@@ -1,0 +1,32 @@
+{
+  "status": "compactArithmeticVerified",
+  "scope": "Stored summaries only; no new raw-ID or replay execution",
+  "arithmeticTolerance": {
+    "relative": 1e-10,
+    "absolute": 1e-12,
+    "scientificThresholdsChanged": false
+  },
+  "shortCases": 54,
+  "shortAggregateGroups": 18,
+  "aggregateValuesChecked": 378,
+  "shortHistoricalReplayReceiptCount": 6,
+  "longCampaign": {
+    "status": "budgetExhausted",
+    "verifiedCases": 106,
+    "plannedCases": 162,
+    "coveragePercent": 65.4320987654321,
+    "notVerifiedCases": 56,
+    "unresolvedErrorCases": 2,
+    "otherNotVerifiedCases": 54,
+    "attempts": 109,
+    "failedAttempts": 3,
+    "replaysDone": 0,
+    "replaysPlanned": 6,
+    "acceptedAsComplete": false,
+    "perCaseCoverageAvailableLocally": false
+  },
+  "step23Accepted": false,
+  "step24Accepted": false,
+  "humanScientificReviewPerformed": false,
+  "errors": []
+}

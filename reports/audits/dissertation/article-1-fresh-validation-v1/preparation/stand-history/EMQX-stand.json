@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "broker-stand.v1",
+  "deploymentMode": "singleHostSequential",
+  "cpuMode": "singleCorePinned",
+  "activeBroker": "EMQX",
+  "dockerContext": "native-local",
+  "controlInterface": "127.0.0.1",
+  "networkMode": "host",
+  "brokers": [
+    {
+      "name": "EMQX",
+      "mqttUri": "mqtt://127.0.0.1:4883",
+      "executable": "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/erts-16.3/bin/beam.smp",
+      "launcherExecutable": "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/bin/emqx",
+      "args": [
+        "foreground"
+      ],
+      "workingDirectory": "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx",
+      "configFiles": [
+        "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/etc/emqx.conf",
+        "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/etc/base.hocon",
+        "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/etc/vm.args"
+      ],
+      "versionArgs": [],
+      "brokerVersion": "6.3.0",
+      "startTimeoutSeconds": 60,
+      "environment": {
+        "DEBUG": "0"
+      },
+      "linuxLaunchMode": "systemdUser",
+      "runtime": "native",
+      "lifecycle": "managed",
+      "serviceName": "emqx",
+      "containerName": "emqx",
+      "loaded": true,
+      "executableSha256": "4ee6e399590d9b46eb5149bc54e27797146ef1df21d2fc007e0ae1ce01867a3e",
+      "launcherSha256": "4c08242d5d53034a2177f2f3b57bfbe16649b35a0bf537c73c8511cc190c54c3",
+      "singleHostMqttPort": 4883,
+      "distributedMqttPort": 1883,
+      "managementUri": null,
+      "cpuset": "0",
+      "memoryLimit": 4294967296
+    }
+  ]
+}

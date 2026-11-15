@@ -1,0 +1,22 @@
+{
+  "sources": {
+    "reports/data/model-evidence.json": "778b25feee8272e7d97deba5fae19086da2ba2a91a3b0a7b3a0c077e4cbdb015",
+    "reports/data/native-evidence.json": "7010fc352b64125a44aa9d7dbe54c9df76cb224631f2971d2f1579c44e5450de",
+    "reports/audits/dissertation/accuracy-analysis-v1/analysis.json": "46f1bb81917c54e6dbe04756b5536ed3206879f6510eda8d9de18c50d5eaa8da",
+    "reports/data/environment.json": "99404f0c2ce30ed8f24a569488feeaa6ea1e8cdb4eed55a53374eba2710e0d20"
+  },
+  "generatorSha256": "41eba93ebeaf715fe24a378e26bf35c47d2b0a96937130fd5c9bc8f8162c4731",
+  "files": {
+    "analysis.json": "d88d42e48358b8ec8802648d574a0c8f04738090d656f99714676e8a321d627a",
+    "boundaries.csv": "d147f26f2c39fb885e7d72b341aca48795d4db83ba3bb70c071c51af33438928",
+    "calibration-control.csv": "6dfec0f84f8c330a4163587ce5026bda6de4054b3850e0827ac7f728fb40a2bb",
+    "conditions.csv": "29b2ee58aa8b7ebbbbe6789b60c30e5d6c3cbb802c20d63d5c12443494b69676",
+    "Conditions.md": "665fa300005d890cbfde98c5b5354d01c80b4c6775ea0e9e5cc6911c95e88e5f",
+    "error-and-threshold.svg": "97b2e3995e5221663d668373c4a2b275c7682f331d02cd6e4e427d03564fdc2b",
+    "error-distributions.csv": "af4e38191d0a3e94ae0a7114af17e7a885b648168bd1f9a849240a4d5c858680",
+    "native-loss-resampling.csv": "4c1baf43cd806cfa1e49941b244010ca6ec1e7955886978dbfa310f55f20ae5c",
+    "native-vs-model.csv": "8c4cf2a4ed7e39478fa69c4846c4d3dc66b5eb783feb20eb3856d8f9d7bca35a",
+    "thresholds.csv": "8d8dddb68e865316a0d270128281ed30f7cf010cdbe13659476b03dd11f89ed9",
+    "workflow.svg": "67b9a6a50daa68ecf2320035e59e3d2f1dd2c60fa6f89d2ff7fa6765ca1eac5b"
+  }
+}

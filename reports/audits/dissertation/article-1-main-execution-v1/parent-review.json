@@ -1,0 +1,12 @@
+{
+  "parentReadCheck": "passed",
+  "jobs": 40,
+  "files": 70,
+  "forecastSeconds": 3600,
+  "hardBudgetSeconds": 21600,
+  "writeLogsInAllNativeRuns": true,
+  "profileFreezeBeforeControl": true,
+  "scientificThresholdsUnchanged": true,
+  "loggingNegligibilityNotClaimed": true,
+  "programSha256": "2312e7d9938d580b9ac8099a1d5dbfc4fef5074fb2a6024008d27e9cd3356dc7"
+}

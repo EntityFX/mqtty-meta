@@ -1,0 +1,19 @@
+{
+  "status": "ready",
+  "sourceFilesVerified": 281,
+  "sourceManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+  "inputSealSha256": "b5d542719f9e4c1b66e4396be0a70157dff471bb86295e6b510137b9efccf40a",
+  "aaRawScientificFilesChecked": 24,
+  "linuxTestsExitCode": 0,
+  "testsStdout": "",
+  "testsStderr": "test_fixed_interleaved_pairs (test_acceleration_comparison.ComparisonTests.test_fixed_interleaved_pairs) ... ok\ntest_main_budget_requires_verified_completed_pilot (test_acceleration_comparison.ComparisonTests.test_main_budget_requires_verified_completed_pilot) ... ok\ntest_summary_keeps_slowdown_and_uses_pair_order (test_acceleration_comparison.ComparisonTests.test_summary_keeps_slowdown_and_uses_pair_order) ... ok\ntest_aa_spread_gate (test_acceleration_pilot.ContractTests.test_aa_spread_gate) ... ok\ntest_changed_input_rejected (test_acceleration_pilot.ContractTests.test_changed_input_rejected) ... ok\ntest_existing_output_not_reused (test_acceleration_pilot.ContractTests.test_existing_output_not_reused) ... ok\ntest_path_escape_rejected (test_acceleration_pilot.ContractTests.test_path_escape_rejected) ... ok\ntest_scientific_mismatch_rejected (test_acceleration_pilot.ContractTests.test_scientific_mismatch_rejected) ... ok\ntest_cpu_and_memory_measured_and_nonzero_preserved (test_acceleration_pilot.LinuxProcessTests.test_cpu_and_memory_measured_and_nonzero_preserved) ... ok\ntest_deadline_kills_and_reaps_grandchild (test_acceleration_pilot.LinuxProcessTests.test_deadline_kills_and_reaps_grandchild) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.877s\n\nOK\n",
+  "evidenceDiskMounted": true,
+  "freeBytes": 121911287808,
+  "coreIds": {
+    "4": "4",
+    "6": "8"
+  },
+  "webLaunch": false,
+  "webReason": "No Web research service was running at the single host status check; external controlled process study",
+  "storageRemedy": "udisksctl mount -b /dev/sdb1 --no-user-interaction: Mounted /dev/sdb1 at /run/media/entityfx/hd250"
+}

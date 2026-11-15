@@ -1,0 +1,49 @@
+{
+  "scope": "Active thread goal: evidence, two articles and dissertation",
+  "source": "Explicit user revision: continue independent useful work; stop only for waiting",
+  "longProcessThresholdSeconds": 300,
+  "longProcessThresholdKind": "working assumption",
+  "afterLaunch": [
+    "confirm live handle",
+    "save progress and reproduction commands",
+    "continue useful independent tasks",
+    "pause goal and end turn only when only waiting remains"
+  ],
+  "stopCalculation": false,
+  "automaticPollingWhileWaiting": false,
+  "automaticContinuationWhileWaiting": false,
+  "statusRequestScope": "one observation and progress update",
+  "resumeOnUserRequest": true,
+  "policyDocument": "docs/dissertation/agent-work-policy.md",
+  "platformObjectiveTextEditable": false,
+  "conditionNowInUserGoalObjective": true,
+  "humanWritesArticles": true,
+  "agentWritesArticleProse": false,
+  "agentResponsibilities": [
+    "measurements",
+    "code improvements and tests",
+    "analysis",
+    "improvement proposals",
+    "article layouts, tables and figures"
+  ],
+  "latestUserClarification": "Продолжать независимые задачи, пока есть полезная работа; останавливаться только для ожидания",
+  "objectiveDocument": "reports/status/Goal.md",
+  "objectiveUpdatedByUser": true,
+  "platformStatusLastObserved": "usageLimited",
+  "humanChoosesPublicationVenues": true,
+  "explicitOneTimeContinuation": {
+    "authorizedByUser": true,
+    "scheduledFor": "2026-10-24T04:00:00+03:00",
+    "taskName": "MqttY-Goal-Resume-20261024-0400",
+    "recurring": false,
+    "generalNoPollingRuleStillApplies": true
+  },
+  "pauseImmediatelyAfterLongLaunch": false,
+  "continueIndependentWork": true,
+  "goalAttachmentUpdated": true,
+  "goalAttachmentBeforeSha256": "371364ac142459fa806e4c7633a8586a44db81b857049612e9092cf73234fc57",
+  "goalAttachmentAfterSha256": "af080e814729be94583f2ea5f0d152c4372a4e9a83e3e342d2fdd8a20a6a16f1",
+  "oneTimeTimerConsumed": true,
+  "objectiveDocumentReformulated": true,
+  "webLinuxDeploymentInScope": true
+}

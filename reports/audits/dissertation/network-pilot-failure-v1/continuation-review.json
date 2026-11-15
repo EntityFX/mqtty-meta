@@ -1,0 +1,12 @@
+{
+  "decision": "continue-unattempted-pilots-only",
+  "executionManifestSha256": "c5eb7c63eebbba98908086976c5e45a2a2ed3ccac638f834e59faf3b7b2a25a6",
+  "failedJobId": "pilot.star.federation.q1.r5000.w10.s42",
+  "failedAttemptSha256": "4bdb82104b24d1aad85921ad36e1f50153bb817a6bfd6b5b731366335fc6ebd6",
+  "failedSummarySha256": "0abb3711ec412cd91f2c24886a05bc274a45cd1f92686399ad57b9827908ab76",
+  "reviewer": "Scheduled technical investigation; not scientific acceptance",
+  "reason": "Completed measurement followed by fixed5s model drain timeout. Frozen seals, raw arithmetic, graph and config independently verified. Preserve failed attempt and execute only six unattempted pilots; do not retry failed point, change inputs or admit matrix. Underlying backlog vs pending-session cause remains unproven.",
+  "partialVerificationSha256": "855dc7976932bfd624412023b02850bb91d36f8c810aa3203e7b5ca9e7be27a5",
+  "pilotAccepted": false,
+  "matrixAdmitted": false
+}

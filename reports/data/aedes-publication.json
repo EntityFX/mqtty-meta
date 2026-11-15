@@ -1,0 +1,101 @@
+{
+  "sourceSeries": "overnight-20261016-service-v1",
+  "files": {
+    "assets/Aedes-calibration-completedRps.png": {
+      "source": "MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\reports\\assets\\Aedes-calibration-completedRps.png",
+      "sha256": "1c09f785064453af6e668c73b290fcd90b3424a2b625eac071e48545d14a3d62"
+    },
+    "assets/Aedes-calibration-deliveryLossRate.png": {
+      "source": "MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\reports\\assets\\Aedes-calibration-deliveryLossRate.png",
+      "sha256": "97fdd56059e5c789f870bcef62845180ef622dddc05fd89f0c2ffb7ccd75e137"
+    },
+    "assets/Aedes-calibration-latency.png": {
+      "source": "MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\reports\\assets\\Aedes-calibration-latency.png",
+      "sha256": "b0b96261acf4f5e9e13421a77e28e3e5642c0aefa390d1fbed40c025d0f13098"
+    },
+    "assets/Aedes-validation-completedRps.png": {
+      "source": "MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\reports\\assets\\Aedes-validation-completedRps.png",
+      "sha256": "7d9a9887ce936e3af01c8159554040c282cb0dd7d0d535394600bdab51bac6b2"
+    },
+    "assets/Aedes-validation-deliveryLossRate.png": {
+      "source": "MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\reports\\assets\\Aedes-validation-deliveryLossRate.png",
+      "sha256": "308639ba1bcf4c821b4fe5aa2e0a9140f0b19e545c3cb5829c73111225c0ecec"
+    },
+    "assets/Aedes-validation-latency.png": {
+      "source": "MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\reports\\assets\\Aedes-validation-latency.png",
+      "sha256": "b86161eb14f48878d8dbb8df8f69a79fc08e9bf29dd19d0d18c944b892a3ad9a"
+    },
+    "assets/Aedes-resources.png": {
+      "source": "MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\reports\\assets\\Aedes-resources.png",
+      "sha256": "832ad325db8a4c715393253293e5eddd6d8693b333a698ca02424658fcfa39b8"
+    },
+    "assets/Aedes-fidelity-errors.png": {
+      "source": "MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\reports\\assets\\Aedes-fidelity-errors.png",
+      "sha256": "34735eeb441007e58a98be1b41b4bfe236e57defa96f87e758d2defe2df702b8"
+    },
+    "assets/Aedes-measured-vs-simulated.png": {
+      "source": "MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\reports\\assets\\Aedes-measured-vs-simulated.png",
+      "sha256": "ed2c2ebecb8b7c96b2198768480bb399a81cb75924fc5b38143c38b8f7bc6b14"
+    },
+    "assets/Aedes-topology.png": {
+      "source": "MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\reports\\assets\\Aedes-topology.png",
+      "sha256": "82a300c7eee5f9f056b46efd8520547f6fb0220315a6cc8644415219f57b1802"
+    },
+    "Aedes-archives.json": {
+      "source": "MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\reports\\Aedes-archives.json",
+      "sha256": "ea7db7819b65dbba983e05864c7e6c2f6b5f08943ac66a018b577cb6dc8caacc"
+    },
+    "Aedes-native-results.csv": {
+      "source": "MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\reports\\Aedes-native-results.csv",
+      "sha256": "7e25774ff410a8486b885921a8d79fba5380bc483f884b4c30874dc1548c7324"
+    },
+    "Aedes-relay-results.csv": {
+      "source": "MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\reports\\Aedes-relay-results.csv",
+      "sha256": "d017fdd25ab9db25a2569f9bdb5e43902a3bc3c5e36aff30902ef76e78b3d986"
+    },
+    "Aedes-simulations.json": {
+      "source": "MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\reports\\Aedes-simulations.json",
+      "sha256": "9bb3e50c6570223f6148173d22fd9567aefc39555021cf7dc0b62d17b952c4f5"
+    },
+    "Aedes-attempts.json": {
+      "source": "MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\reports\\Aedes-attempts.json",
+      "sha256": "4c940cc5a37e622a0f84e97d8a049051760093c2fefeee5ac8b8d807781ad621"
+    },
+    "Aedes-summary.json": {
+      "source": "MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\reports\\Aedes-summary.json",
+      "sha256": "52609209483466fc267ab2c9dddda2ccb3ce5be0b9a96c725c71ea00be7627df"
+    },
+    "Aedes-report-manifest.json": {
+      "source": "MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\reports\\Aedes-report-manifest.json",
+      "sha256": "b22592b73c2db2d77b180aaad8efaf0468450513509659fce1afa788aa197c7f"
+    },
+    "data/aedes-final/environment.json": {
+      "source": "C:\\projects\\mqtty-meta\\MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\environment.json",
+      "sha256": "99404f0c2ce30ed8f24a569488feeaa6ea1e8cdb4eed55a53374eba2710e0d20"
+    },
+    "data/aedes-final/inputs/Aedes-stand.json": {
+      "source": "C:\\projects\\mqtty-meta\\MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\inputs\\Aedes-stand.json",
+      "sha256": "c5eb957faacaca5179e88e1846db5b2f079778af74bd3c067f5ccd249b18692a"
+    },
+    "data/aedes-final/series.json": {
+      "source": "C:\\projects\\mqtty-meta\\MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\series.json",
+      "sha256": "76127e04e90fabeba76baaccf8c74d3580e7b02299041a31f54bd1509673254f"
+    },
+    "data/aedes-final/native-origins.json": {
+      "source": "C:\\projects\\mqtty-meta\\MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\native-origins.json",
+      "sha256": "4d007ea53c0e3e8b00f8dc8a0acb618016e8db40ed5fa8bc7a88a164478e3714"
+    },
+    "data/aedes-final/inputs/Aedes-relay-example.json": {
+      "source": "C:\\projects\\mqtty-meta\\MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\inputs\\Aedes-relay-example.json",
+      "sha256": "2f7a80c35923161d658302a1cff6ed23e1c85eb48dc294308dd0b305e32e29f7"
+    },
+    "data/aedes-final/inputs/Aedes-calibration.json": {
+      "source": "C:\\projects\\mqtty-meta\\MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\inputs\\Aedes-calibration.json",
+      "sha256": "3bcf2008ff0b70fcc5db7f14500b851650be7cfac934fc0fda0f62d96edf494f"
+    },
+    "data/aedes-final/inputs/Aedes-validation.json": {
+      "source": "C:\\projects\\mqtty-meta\\MqttBenchmark\\artifacts\\overnight-20261016-service-v1\\inputs\\Aedes-validation.json",
+      "sha256": "5234ff26ceec724a4968fc3007c9bc49d1b7c330cbac8c4816caba64de3cf3d2"
+    }
+  }
+}

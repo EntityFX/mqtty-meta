@@ -1,0 +1,40 @@
+{
+  "brokers": {
+    "Aedes": {
+      "metadata": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-main-v1/stand/Aedes.json"
+    },
+    "Mosquitto": {
+      "metadata": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-main-v1/stand/Mosquitto.json"
+    },
+    "ActiveMQ": {
+      "metadata": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-main-v1/stand/ActiveMQ.json"
+    },
+    "EMQX": {
+      "metadata": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-main-v1/stand/EMQX.json"
+    }
+  },
+  "pinnedInputs": {
+    "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/launcher-v2/program.json": "b9d8ca76e082dfe1d4d7f4882468f981441f53e6ed0e92579912d54b2ba83087",
+    "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/launcher-v2/Aedes-stand.json": "c5eb957faacaca5179e88e1846db5b2f079778af74bd3c067f5ccd249b18692a",
+    "/usr/bin/node": "0ca513fedb9eade5784c94bed30bc710d116ffd7a5405c54833d4f53e4115de4",
+    "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/aedes/server.js": "067e26dd989e4d1cbfe715ab7629a030586e0121bc661573b672ed91ac866260",
+    "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/aedes/package-lock.json": "53f721cd2e135782d024a24f82e511ee4aef51541384f87de52f86b66b9c07dd",
+    "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/launcher-v2/Mosquitto-stand.json": "b40a2b5b8a7403536c7e3a6f8838578cc5853942e44a12e7156c221e67d4492d",
+    "/usr/sbin/mosquitto": "34cee46d71bd97aca34c75fcb844674ab787434468c06423a3a1f2825a213dea",
+    "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/mosquitto.conf": "6ecd37006bf53ea7ceb99d08f0a8d6029439caddb8b7e545725d0e9f77e13673",
+    "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/launcher-v2/ActiveMQ-stand.json": "7feb115e9d54d96ed1195ea31a36ff5d9f74ca53fb6b85f429ea72a2dcf17eb7",
+    "/usr/lib/jvm/java-17-openjdk-17.0.19.0.10-alt1.x86_64/bin/java": "f8eaf4b8c99f45b7382347c86137bf65afa6779bca7f333f43ce282464704e5d",
+    "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/activemq/apache-activemq-6.3.2/bin/activemq": "cc815f36648e6470213f55b2f9b30f877d176445458d288d9b0ca179659e213e",
+    "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/activemq/apache-activemq-6.3.2/conf/activemq.xml": "904ec768ef04e436cd0b3ce82decb0bf5b9bf17f929e2fb1a99d538f4ee63c94",
+    "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/launcher-v2/EMQX-stand.json": "b28c14e6f6d26042564da5ffd2182057be011e4e3ad1d4edc03e75b26a50e691",
+    "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/erts-16.3/bin/beam.smp": "4ee6e399590d9b46eb5149bc54e27797146ef1df21d2fc007e0ae1ce01867a3e",
+    "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/bin/emqx": "4c08242d5d53034a2177f2f3b57bfbe16649b35a0bf537c73c8511cc190c54c3",
+    "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/etc/emqx.conf": "141b842f4ad32603728f10a62baaebfb8de1aa6aa1044d73700f05ec84e4b274",
+    "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/etc/base.hocon": "f5bcfd5eca1d628c25c2bb3afd8585c005614964afa18c2544d940141289be4d",
+    "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/etc/vm.args": "b2823d3ae755ea9404d760e37daddeef8b1c424e64165eb02604cecd9c9bdd3a"
+  },
+  "cpuMode": "singleCorePinned",
+  "brokerCpu": "0",
+  "generatorCpu": "2-3",
+  "deployment": "singleHostSequential"
+}

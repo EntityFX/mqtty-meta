@@ -1,0 +1,28 @@
+{
+  "status": "completed",
+  "phase": "finished",
+  "controllerPid": 176244,
+  "startedUtc": "2026-10-24T23:32:32.789784+00:00",
+  "plannedNative": 48,
+  "plannedModel": 48,
+  "nativeCompleted": 48,
+  "modelCompleted": 48,
+  "completedPairs": 48,
+  "technicalErrors": 0,
+  "programSha256": "b9d8ca76e082dfe1d4d7f4882468f981441f53e6ed0e92579912d54b2ba83087",
+  "continuationBudgetSeconds": 19519,
+  "budgetStartedUtc": "2026-10-25T08:37:13.116539+00:00",
+  "priorControllerFailure": "Port reservation errno98",
+  "activeJob": null,
+  "elapsedSeconds": 291.2138017510006,
+  "remainingBudgetSeconds": 19212.78948254601,
+  "processedRows": 48,
+  "finishedUtc": "2026-10-25T08:42:04.330323+00:00",
+  "comparison": {
+    "metricRows": 192,
+    "failedMetrics": 100,
+    "passedMetrics": 92,
+    "notEvaluated": 0
+  },
+  "analysisDirectory": "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/series-attempt-001/analysis-176244"
+}

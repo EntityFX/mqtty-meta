@@ -1,0 +1,18 @@
+{
+  "os": "Linux-6.1.128-elbrus-def-alt1.2.3-e2k-with-glibc2.35",
+  "architecture": "e2k",
+  "processor": "",
+  "logicalCpuCount": 8,
+  "python": "3.12.13",
+  "dotnetInfo": "Пакет SDK для .NET (отражающий любой global.json):\n Version:   6.0.10.11\n Commit:    ff35e7336f\n\nСреда выполнения:\n OS Name:     altlinux\n OS Version:  11.2\n OS Platform: Linux\n RID:         elbrus.8.0-e2k-v4\n Base Path:   /home/user/runtimes/dotnet6-6.0.10.11/dotnet/sdk/6.0.110/\n\nglobal.json file:\n  Not found\n\nHost:\n  Version:      6.0.10\n  Architecture: e2k\n  Commit:       N/A\n\n.NET SDKs installed:\n  6.0.110 [/home/user/runtimes/dotnet6-6.0.10.11/dotnet/sdk]\n\n.NET runtimes installed:\n  Microsoft.AspNetCore.App 6.0.10 [/home/user/runtimes/dotnet6-6.0.10.11/dotnet/shared/Microsoft.AspNetCore.App]\n  Microsoft.NETCore.App 6.0.10 [/home/user/runtimes/dotnet6-6.0.10.11/dotnet/shared/Microsoft.NETCore.App]\n\nDownload .NET:\n  https://aka.ms/dotnet-download\n\nLearn about .NET Runtimes and SDKs:\n  https://aka.ms/dotnet/runtimes-sdk-info",
+  "freeDiskBytes": 45851672576,
+  "cachePolicy": "New process/JIT each run; ordinary OS filesystem cache; pilot excluded",
+  "runtimeEnvironment": {
+    "DOTNET_ROOT": "/home/user/runtimes/dotnet6-6.0.10.11/dotnet",
+    "DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER": "0",
+    "DOTNET_ThreadPool_UnfairSemaphoreSpinLimit": "0"
+  },
+  "hardware": "Архитектура:         e2k\nПорядок байт:        Little Endian\nCPU(s):              8\nOn-line CPU(s) list: 0-7\nID прроизводителя:   E8C/ATX\nИмя модели:          E8C\nСемейство ЦПУ:       4\nМодель:              2\nThread(s) per core:  1\nЯдер на сокет:       8\nСокетов:             1\nBogoMIPS:            2600,00\nL1d cache:           512 KiB (8 instances)\nL1i cache:           1 MiB (8 instances)\nL2 cache:            4 MiB (8 instances)\nL3 cache:            16 MiB (1 instance)\nL3 cache:            16 MiB\nNUMA node(s):        1\nNUMA node0 CPU(s):   0-7",
+  "meminfo": "MemFullSize:    33554432 kB\nMemTotal:       32788400 kB\nMemFree:        30570428 kB\nMemAvailable:   31573280 kB\nBuffers:           78048 kB\nCached:          1241360 kB\nSwapCached:            0 kB\nActive:           667936 kB\nInactive:        1169784 kB\nActive(anon):       1300 kB\nInactive(anon):   551660 kB\nActive(file):     666636 kB\nInactive(file):   618124 kB\nUnevictable:       22708 kB\nMlocked:           22708 kB\nSwapTotal:      16776188 kB\nSwapFree:       16776188 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:               468 kB\nWriteback:             0 kB\nAnonPages:        537716 kB\nMapped:           572592 kB\nShmem:             19604 kB\nKReclaimable:      65840 kB\nSlab:             129788 kB\nSReclaimable:      65840 kB\nSUnreclaim:        63948 kB\nKernelStack:       22848 kB\nPageTables:        19636 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    33170388 kB\nCommitted_AS:    4835672 kB\nVmallocTotal:   17179869184 kB\nVmallocUsed:       66316 kB\nVmallocChunk:          0 kB\nPercpu:             4352 kB\nAnonHugePages:    274432 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\n",
+  "loadavg": "0.27 0.10 0.03 1/399 9026\n"
+}

@@ -1,0 +1,654 @@
+{
+  "stage": "holdout",
+  "measurementSeconds": 2,
+  "runs": [
+    {
+      "key": "m16.q0.p1.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 25463.727520455326,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q0.p1.s42/20261019T051144114Z-d4f3ed5df1ee4c5bb3e79d4668f2d87b"
+    },
+    {
+      "key": "m16.q0.p1.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 25463.727520455326,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q0.p1.s43/20261019T051144159Z-890131ea365f42a9a8b1388d0899f8a9"
+    },
+    {
+      "key": "m16.q0.p1.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 25463.727520455326,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q0.p1.s44/20261019T051144200Z-6d9897cb5f4e42bc87b6073ffb77ee84"
+    },
+    {
+      "key": "m16.q0.p16.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 10892.248921761768,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q0.p16.s42/20261019T051212223Z-d2249a43eae441b88bb9445cf87e6e9b"
+    },
+    {
+      "key": "m16.q0.p16.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 10892.248921761768,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q0.p16.s43/20261019T051212275Z-6df0adac75a04cfea136ec2864d70191"
+    },
+    {
+      "key": "m16.q0.p16.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 10892.248921761768,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q0.p16.s44/20261019T051214322Z-e458259afaec4341be3158ba15bbe8f0"
+    },
+    {
+      "key": "m16.q0.p64.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 10258.452473739962,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q0.p64.s42/20261019T051344700Z-385272abb66842019bc41b36da2ecaed"
+    },
+    {
+      "key": "m16.q0.p64.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 10258.452473739962,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q0.p64.s43/20261019T051344690Z-d9922f41c69f417cba7c3fac95ff39d4"
+    },
+    {
+      "key": "m16.q0.p64.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 10258.452473739962,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q0.p64.s44/20261019T051346769Z-c141f21793144c8fad0542c17dd67e58"
+    },
+    {
+      "key": "m16.q0.p128.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 13962.512136102518,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q0.p128.s42/20261019T051911896Z-3b853d705e4842b9b722e147d7551c37"
+    },
+    {
+      "key": "m16.q0.p128.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 13962.512136102518,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q0.p128.s43/20261019T051918062Z-b1075e5c59f54bee9bfa9eea31dc1989"
+    },
+    {
+      "key": "m16.q0.p128.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 13962.512136102518,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q0.p128.s44/20261019T051920071Z-77ea5ef54dc14d2ea8993648c552d5b0"
+    },
+    {
+      "key": "m16.q1.p1.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 7300.372367171868,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q1.p1.s42/20261019T052946332Z-2cddb9d4f823412c9420ca16a17e9889"
+    },
+    {
+      "key": "m16.q1.p1.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 7300.372367171868,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q1.p1.s43/20261019T052948354Z-27ad7bb3eab64fa98347c75517f29f9d"
+    },
+    {
+      "key": "m16.q1.p1.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 7300.372367171868,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q1.p1.s44/20261019T052952369Z-fbd8e05fe28d43d28d0e840770395739"
+    },
+    {
+      "key": "m16.q1.p16.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 5534.740303209743,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q1.p16.s42/20261019T053008493Z-41f8c63919284a1ba2603a5e3a7e25b4"
+    },
+    {
+      "key": "m16.q1.p16.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 5534.740303209743,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q1.p16.s43/20261019T053010541Z-c08a3d0fcef545dcbc426bd91aee484b"
+    },
+    {
+      "key": "m16.q1.p16.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 5534.740303209743,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q1.p16.s44/20261019T053012591Z-daa81b0198d944a99e96980d69dfe9f7"
+    },
+    {
+      "key": "m16.q1.p64.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 5939.23088264143,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q1.p64.s42/20261019T053142932Z-3e10a6aa06e74030bc291f7f42e3c228"
+    },
+    {
+      "key": "m16.q1.p64.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 5939.23088264143,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q1.p64.s43/20261019T053145017Z-6c1454e90afa49f98ef3681e5a9b0307"
+    },
+    {
+      "key": "m16.q1.p64.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 5939.23088264143,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q1.p64.s44/20261019T053147115Z-1e8deb8c819e430fa146a93fb453c8fe"
+    },
+    {
+      "key": "m16.q1.p128.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 4931.450267820487,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q1.p128.s42/20261019T053722287Z-dbe4f39714bd482985cdbcebac13ecb3"
+    },
+    {
+      "key": "m16.q1.p128.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 4931.450267820487,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q1.p128.s43/20261019T053736419Z-5d29386657b94e0b965c9af57908f70d"
+    },
+    {
+      "key": "m16.q1.p128.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 4931.450267820487,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q1.p128.s44/20261019T053738453Z-3a2b3f21f03c411ca6ef8415d5ce54b9"
+    },
+    {
+      "key": "m16.q2.p1.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 5137.431071571985,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q2.p1.s42/20261019T054904741Z-03f4227cfa5640a7b311a0ba103f3080"
+    },
+    {
+      "key": "m16.q2.p1.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 5137.431071571985,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q2.p1.s43/20261019T054910768Z-138b48432d704ff089db4096c62ad203"
+    },
+    {
+      "key": "m16.q2.p1.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 5137.431071571985,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q2.p1.s44/20261019T054928892Z-bf846be48b6649edb2d16e61eea64820"
+    },
+    {
+      "key": "m16.q2.p16.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 5606.5174877109675,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q2.p16.s42/20261019T054935036Z-1cf0e83c32314bcd92ed7f9363d7167a"
+    },
+    {
+      "key": "m16.q2.p16.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 5606.5174877109675,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q2.p16.s43/20261019T054934996Z-8272640308c34273b0f5c517237664c0"
+    },
+    {
+      "key": "m16.q2.p16.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 5606.5174877109675,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q2.p16.s44/20261019T054953084Z-a9d0f1e761094532884eeffa8efb7680"
+    },
+    {
+      "key": "m16.q2.p64.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 5049.209998560226,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q2.p64.s42/20261019T055113473Z-0e03b26302624331924736937a888496"
+    },
+    {
+      "key": "m16.q2.p64.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 5049.209998560226,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q2.p64.s43/20261019T055113516Z-994751b1aea44f279f91228afce8c933"
+    },
+    {
+      "key": "m16.q2.p64.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 5049.209998560226,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q2.p64.s44/20261019T055129548Z-b06b4ce792464992a52a42f12caa2b42"
+    },
+    {
+      "key": "m16.q2.p128.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 5232.111268021894,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q2.p128.s42/20261019T055702700Z-6b29c135538843dd84421947228ee403"
+    },
+    {
+      "key": "m16.q2.p128.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 5232.111268021894,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q2.p128.s43/20261019T055706805Z-76e7b40012604341a34e5fc47756f9de"
+    },
+    {
+      "key": "m16.q2.p128.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 5232.111268021894,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m16.q2.p128.s44/20261019T055714883Z-4d9f44d2885f46789862ce296f7adffa"
+    },
+    {
+      "key": "m256.q0.p1.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 23106.12663986553,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q0.p1.s42/20261019T060849277Z-480905851f684eaa9c0608f4217a30b1"
+    },
+    {
+      "key": "m256.q0.p1.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 23106.12663986553,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q0.p1.s43/20261019T060909396Z-0839f9e2d80e472a82184260b5562ac2"
+    },
+    {
+      "key": "m256.q0.p1.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 23106.12663986553,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q0.p1.s44/20261019T060913447Z-71b24facc75c4ba48bfd046ed5acf812"
+    },
+    {
+      "key": "m256.q0.p16.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 10260.117014672183,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q0.p16.s42/20261019T060919478Z-eb2c7c9eb2cf4204bf277e2d3ce46d94"
+    },
+    {
+      "key": "m256.q0.p16.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 10260.117014672183,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q0.p16.s43/20261019T060933569Z-90ff23bec4d04e69b5b185b9fb2bcb4f"
+    },
+    {
+      "key": "m256.q0.p16.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 10260.117014672183,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q0.p16.s44/20261019T060937628Z-84f26b39326943b18defa6016c7be905"
+    },
+    {
+      "key": "m256.q0.p64.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 8513.244484362089,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q0.p64.s42/20261019T061053896Z-933418b961904e6fbec0900fdb322e7e"
+    },
+    {
+      "key": "m256.q0.p64.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 8513.244484362089,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q0.p64.s43/20261019T061109998Z-e0922556584141928029b34ead509ff7"
+    },
+    {
+      "key": "m256.q0.p64.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 8513.244484362089,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q0.p64.s44/20261019T061110172Z-a2eada9f281b4c5d830069e7dee461c3"
+    },
+    {
+      "key": "m256.q0.p128.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 13828.983145972927,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q0.p128.s42/20261019T061651299Z-2d8fc6d15a1b4f87a3e706e1322fb436"
+    },
+    {
+      "key": "m256.q0.p128.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 13828.983145972927,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q0.p128.s43/20261019T061659356Z-859add688e9948d688df1b694a875eb3"
+    },
+    {
+      "key": "m256.q0.p128.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 13828.983145972927,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q0.p128.s44/20261019T061707494Z-b0984622fe784d5892e5f6320302e3d9"
+    },
+    {
+      "key": "m256.q1.p1.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 7353.709190295627,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q1.p1.s42/20261019T063429095Z-2eccd2fa36514d7aae67d5a0eab4b513"
+    },
+    {
+      "key": "m256.q1.p1.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 7353.709190295627,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q1.p1.s43/20261019T063447144Z-314403e1d782497dab7ea086db6db300"
+    },
+    {
+      "key": "m256.q1.p1.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 7353.709190295627,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q1.p1.s44/20261019T063451238Z-c19691ecb5c34244b434c1e53a8c847a"
+    },
+    {
+      "key": "m256.q1.p16.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 5966.633936942252,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q1.p16.s42/20261019T063505447Z-9157c1ebf3d94a0d821dd931719e01f1"
+    },
+    {
+      "key": "m256.q1.p16.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 5966.633936942252,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q1.p16.s43/20261019T063509383Z-6cec10233c334788a16f769f36d06288"
+    },
+    {
+      "key": "m256.q1.p16.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 5966.633936942252,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q1.p16.s44/20261019T063513425Z-6617ddfe5abe4fabbb3a07ec8367cb50"
+    },
+    {
+      "key": "m256.q1.p64.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 6735.965895399975,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q1.p64.s42/20261019T063643787Z-0c99637b236c4e05820f9c8f2414eb05"
+    },
+    {
+      "key": "m256.q1.p64.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 6735.965895399975,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q1.p64.s43/20261019T063645806Z-385d9c4567f54170a02b0295b58c2bb6"
+    },
+    {
+      "key": "m256.q1.p64.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 6735.965895399975,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q1.p64.s44/20261019T063647865Z-865b1865f9ad495db0284b5803965cdf"
+    },
+    {
+      "key": "m256.q1.p128.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 5437.8827531723755,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q1.p128.s42/20261019T064225149Z-49e53777ae404e6e80dfa59cdec5b03c"
+    },
+    {
+      "key": "m256.q1.p128.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 5437.8827531723755,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q1.p128.s43/20261019T064231205Z-a3b8840fc1eb4f6ba5f7374808d84401"
+    },
+    {
+      "key": "m256.q1.p128.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 5437.8827531723755,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q1.p128.s44/20261019T064247287Z-96c8835721854573918652f5c4013d79"
+    },
+    {
+      "key": "m256.q2.p1.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 5036.900704872837,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q2.p1.s42/20261019T065425926Z-b657eed670154f2ebb14f65842a7cb84"
+    },
+    {
+      "key": "m256.q2.p1.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 5036.900704872837,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q2.p1.s43/20261019T065433955Z-f473f5ae0261464c82de6e6e40cd9d5f"
+    },
+    {
+      "key": "m256.q2.p1.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 5036.900704872837,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q2.p1.s44/20261019T065450032Z-5bdc1c5d0eee4e1eb324b6533be9c0a9"
+    },
+    {
+      "key": "m256.q2.p16.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 5288.2708047385395,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q2.p16.s42/20261019T065458110Z-1fa8e7010172407899b49254a817bed4"
+    },
+    {
+      "key": "m256.q2.p16.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 5288.2708047385395,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q2.p16.s43/20261019T065500175Z-abaa9ea28270463c9bbdc1ba22a42d0a"
+    },
+    {
+      "key": "m256.q2.p16.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 5288.2708047385395,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q2.p16.s44/20261019T065514384Z-ca614627a249427abc04cd0aca485a16"
+    },
+    {
+      "key": "m256.q2.p64.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 5397.18086022103,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q2.p64.s42/20261019T065636619Z-2f85a2a9d03c4356a2f7cd476acc89ab"
+    },
+    {
+      "key": "m256.q2.p64.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 5397.18086022103,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q2.p64.s43/20261019T065636646Z-a70ad6d211d74fff8385f6a80072dbed"
+    },
+    {
+      "key": "m256.q2.p64.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 5397.18086022103,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q2.p64.s44/20261019T065650728Z-e1ecaa5b75934c14b8ab34111257e14a"
+    },
+    {
+      "key": "m256.q2.p128.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 5141.487352462994,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q2.p128.s42/20261019T070234059Z-06cfcf9621714bd68e201a55b43bb016"
+    },
+    {
+      "key": "m256.q2.p128.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 5141.487352462994,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q2.p128.s43/20261019T070242103Z-66d84fb806d24109b70153c7320aee4e"
+    },
+    {
+      "key": "m256.q2.p128.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 5141.487352462994,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/brokers/ActiveMQ/simulations/holdout-2s-overnight-v1/m256.q2.p128.s44/20261019T070256207Z-56b0b48181ca442593a7caddfcedb394"
+    }
+  ]
+}

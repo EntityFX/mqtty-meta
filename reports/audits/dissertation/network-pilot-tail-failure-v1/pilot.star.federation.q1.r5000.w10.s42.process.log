@@ -1,0 +1,12 @@
+Статическая федерация: Federation; площадок 4; QoS 1; статус failed
+Физические связи: site0<->transit, site1<->transit, site2<->transit, site3<->transit
+transit — промежуточный сетевой узел без брокера и клиентов; межплощадочный трафик проходит через его очередь.
+subscriber@0: [######################] 14069; дубликатов 0
+subscriber@1: [########################] 15222; дубликатов 0
+subscriber@2: [########################] 15222; дубликатов 0
+subscriber@3: [######################] 14068; дубликатов 0
+Publish попытки/завершения: 50000/50000; source RPS=5000; delivery goodput=5858.1; loss=0.707095
+p99 ACK=0.8 мс; p99 получения=4406.1 мс; пересылок=99248; подавлено повторов=27909; queue drops=255912
+System.TimeoutException: drain timed out; partial evidence retained.
+   at EntityFX.MqttY.Federation.FederationRunner.<>c__DisplayClass0_0.<Run>g__Until|8(Func`1 condition)
+   at EntityFX.MqttY.Federation.FederationRunner.Run(FederationInput input, String output)

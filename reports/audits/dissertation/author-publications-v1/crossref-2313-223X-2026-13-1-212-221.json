@@ -1,0 +1,263 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        5,
+        19
+      ]
+    ],
+    "date-time": "2026-05-19T07:15:44Z",
+    "timestamp": 1779174944249,
+    "version": "3.51.4"
+  },
+  "reference-count": 13,
+  "publisher": "YUR-VAK",
+  "issue": "1",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            19
+          ]
+        ],
+        "date-time": "2026-05-19T00:00:00Z",
+        "timestamp": 1779148800000
+      },
+      "content-version": "unspecified",
+      "delay-in-days": 0,
+      "URL": "https://www.urvak.ru/contacts/"
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Computational nanotechnology"
+  ],
+  "abstract": "<jats:p>This paper presents an enhanced version of the MqttY simulator, designed for modeling Industrial Internet of Things (IIoT) networks based on the MQTT protocol. The key modification involved abandoning the asynchronous model in favor of a deterministic step-by-step simulation controlled by a single scheduler. This solution eliminates execution non-determinism, reduces overhead, and provides full control over the modeling process. To improve efficiency, the logic for network and device simulation separated, allowing for their parallel computation. The functionality and performance of the updated simulator tested on a previously developed Mqtt Relay reference architecture. The paper provides a comparative analysis of the new and previous versions based on a series of experiments, demonstrating a significant performance gain. The enhanced simulator enables fast and accurate modeling of complex scenarios with thousands of nodes, facilitating reliable testing and optimization of IoT systems prior to their industrial deployment.</jats:p>",
+  "DOI": "10.33693/2313-223x-2026-13-1-212-221",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2026,
+        5,
+        19
+      ]
+    ],
+    "date-time": "2026-05-19T07:02:50Z",
+    "timestamp": 1779174170000
+  },
+  "page": "212-221",
+  "source": "Crossref",
+  "is-referenced-by-count": 0,
+  "title": [
+    "Industrial IoT monitoring networks simulator – MqttY: large networks simulation accelerating"
+  ],
+  "prefix": "10.33693",
+  "volume": "13",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0009-0001-2475-4996",
+      "authenticated-orcid": false,
+      "given": "Artem V.",
+      "family": "Solopiy",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Kazan National Research Technical University named after A.N. Tupolev – KAI"
+        }
+      ],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-2214-426X",
+      "authenticated-orcid": false,
+      "given": "Roman K.",
+      "family": "Klassen",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Kazan National Research Technical University named after A.N. Tupolev – KAI"
+        }
+      ],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    }
+  ],
+  "member": "19458",
+  "published-online": {
+    "date-parts": [
+      [
+        2026,
+        5,
+        19
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "ref1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.14357/20718594200108"
+    },
+    {
+      "key": "ref2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.18127/j19997493-202503-04"
+    },
+    {
+      "key": "ref3",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2174/2210327913666221216152446"
+    },
+    {
+      "key": "ref4",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3502718.3524739"
+    },
+    {
+      "key": "ref5",
+      "unstructured": "Ashton K. That Internet of Things thing. RFID Journal. 2009. Vol. 22. No. 7. Pp. 97–114."
+    },
+    {
+      "key": "ref6",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-981-15-7345-3_47"
+    },
+    {
+      "key": "ref7",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.3390/jcp3030024"
+    },
+    {
+      "key": "ref8",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/ent.2016.027"
+    },
+    {
+      "key": "ref9",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.21105/joss.00265"
+    },
+    {
+      "key": "ref10",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.3390/computers12050101"
+    },
+    {
+      "key": "ref11",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s10586-019-02950-0"
+    },
+    {
+      "key": "ref12",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.procs.2020.04.286"
+    },
+    {
+      "key": "ref13",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/RusAutoCon63300.2025.10543210"
+    }
+  ],
+  "container-title": [
+    "Computational nanotechnology"
+  ],
+  "original-title": [],
+  "link": [
+    {
+      "URL": "https://journals.eco-vector.com/2313-223X/article/viewFile/707588/223715",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://journals.eco-vector.com/2313-223X/article/viewFile/707588/223715",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        5,
+        19
+      ]
+    ],
+    "date-time": "2026-05-19T07:03:22Z",
+    "timestamp": 1779174202000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://journals.eco-vector.com/2313-223X/article/view/707588"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2026,
+        5,
+        19
+      ]
+    ]
+  },
+  "references-count": 13,
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          19
+        ]
+      ]
+    }
+  },
+  "URL": "https://doi.org/10.33693/2313-223x-2026-13-1-212-221",
+  "relation": {},
+  "ISSN": [
+    "2587-9693",
+    "2313-223X"
+  ],
+  "issn-type": [
+    {
+      "value": "2587-9693",
+      "type": "electronic"
+    },
+    {
+      "value": "2313-223X",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2026,
+        5,
+        19
+      ]
+    ]
+  }
+}

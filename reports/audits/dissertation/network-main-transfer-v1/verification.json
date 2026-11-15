@@ -1,0 +1,59 @@
+{
+  "status": "fullDirectoryTransferredAndMetadataVerified",
+  "transfer": {
+    "status": "allTransferredFilesVerified",
+    "fileCount": 2854,
+    "sourceBytes": 9618618314,
+    "archiveBytes": 1048642907,
+    "archiveSha256": "5adfa393a075b29ab0a0c8dba4263e97231ede6bb8445daf9c4793df913af90b",
+    "indexSha256": "e9de034b233702b9ed42a376b35029425eb2097681dc2c48a5f5059dd6c3bc4d",
+    "localRoot": "C:\\temp\\mqtty-evidence\\network-full-3h-v1\\raw-001",
+    "extractionAndVerificationSeconds": 122.07800000009593,
+    "originalSourceRetained": true,
+    "scientificRerunsPerformed": false,
+    "scope": "Byte integrity and complete transfer of campaign directory; not a new scientific raw-ID recount"
+  },
+  "executionManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+  "frozenManifestFilesChecked": 281,
+  "outputSealReferencesChecked": 1802,
+  "scientificReceiptHashesChecked": 530,
+  "physicalAndClientGraphsChecked": 106,
+  "plannedMatrix": 162,
+  "availableSealedSummaries": 106,
+  "unresolvedErrorKeys": 2,
+  "notAttemptedKeys": 54,
+  "totalAttempts": 109,
+  "distinctAttemptedKeys": 108,
+  "replaysCompleted": 0,
+  "replaysPlanned": 6,
+  "failedAttempts": [
+    {
+      "id": "matrix.line.relay.q2.r5000.w10.s43",
+      "attempt": "runs/matrix.line.relay.q2.r5000.w10.s43/attempt-001",
+      "technicalError": "RuntimeError: jobRssLimit",
+      "returnCode": -9,
+      "laterRecovered": true
+    },
+    {
+      "id": "matrix.ring.federation.q2.r5000.w10.s43",
+      "attempt": "runs/matrix.ring.federation.q2.r5000.w10.s43/attempt-001",
+      "technicalError": "RuntimeError: executionBudgetExhausted",
+      "returnCode": -9,
+      "laterRecovered": false
+    },
+    {
+      "id": "matrix.ring.federation.q2.r5000.w10.s44",
+      "attempt": "runs/matrix.ring.federation.q2.r5000.w10.s44/attempt-001",
+      "technicalError": "RuntimeError: executionBudgetExhausted",
+      "returnCode": -9,
+      "laterRecovered": false
+    }
+  ],
+  "completeModeTripletsByMetadata": 34,
+  "plannedModeTriplets": 54,
+  "perCaseCoverageAvailableLocally": true,
+  "rawArithmeticRecountPerformed": false,
+  "scope": "Archive/file integrity, frozen inputs, saved result seals, summary identity and graph placement; no new ID/event arithmetic recount",
+  "scientificRerunsPerformed": false,
+  "baselineGlobalPercent": 40.4
+}

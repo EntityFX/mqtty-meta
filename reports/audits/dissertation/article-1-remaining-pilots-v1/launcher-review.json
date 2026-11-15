@@ -1,0 +1,17 @@
+{
+  "skill": "academic-research-suite experiment-agent",
+  "reviewer": "remaining_pilots_preflight",
+  "findings": [
+    {
+      "issue": "Lost POST response could orphan owned Web job",
+      "resolution": "Unique persisted name, one recovery query against prior IDs and cancellation of recovered owned job; tested"
+    },
+    {
+      "issue": "First-attempt launcher does not implement resume",
+      "resolution": "Protocol explicitly limits current launcher to first attempt; future confirmed continuation must reuse original deadline"
+    }
+  ],
+  "newGateTests": 8,
+  "existingGateTests": 12,
+  "noScientificThresholdChange": true
+}

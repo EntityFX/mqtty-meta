@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "broker-stand.v1",
+  "deploymentMode": "singleHostSequential",
+  "cpuMode": "singleCorePinned",
+  "activeBroker": "Aedes",
+  "dockerContext": "native-local",
+  "controlInterface": "127.0.0.1",
+  "networkMode": "host",
+  "brokers": [
+    {
+      "name": "Aedes",
+      "mqttUri": "mqtt://127.0.0.1:1883",
+      "executable": "/usr/bin/node",
+      "args": [
+        "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/aedes/server.js",
+        "1883"
+      ],
+      "configFiles": [
+        "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/aedes/server.js",
+        "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/aedes/package-lock.json"
+      ],
+      "versionArgs": [
+        "--version"
+      ],
+      "brokerVersion": "1.1.2",
+      "linuxLaunchMode": "systemdUser",
+      "runtime": "native",
+      "lifecycle": "managed",
+      "serviceName": "aedes",
+      "containerName": "aedes",
+      "loaded": true,
+      "executableSha256": "0ca513fedb9eade5784c94bed30bc710d116ffd7a5405c54833d4f53e4115de4",
+      "singleHostMqttPort": 1883,
+      "distributedMqttPort": 1883,
+      "managementUri": null,
+      "cpuset": "0",
+      "memoryLimit": 4294967296
+    }
+  ]
+}

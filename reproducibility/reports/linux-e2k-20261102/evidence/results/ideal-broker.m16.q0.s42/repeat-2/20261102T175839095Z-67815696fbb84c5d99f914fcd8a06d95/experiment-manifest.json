@@ -1,0 +1,102 @@
+{
+  "runId": "20261102T175839095Z-67815696fbb84c5d99f914fcd8a06d95",
+  "createdAtUtc": "2026-11-02T17:58:55.2334262+00:00",
+  "options": {
+    "topologyMode": "brokerFidelity",
+    "profileClientCountMode": "connectedClients",
+    "brokers": 1,
+    "networkLength": 1,
+    "clientsPerBroker": 1,
+    "publishQos": "atMostOnce",
+    "subscribeQos": "atMostOnce",
+    "payloadBytes": 16,
+    "brokerAssignmentMode": "ideal",
+    "mixedBrokerTypes": [],
+    "warmupTicks": 1000,
+    "measurementTicks": 10000,
+    "drainTimeoutTicks": 20000,
+    "offeredRps": 1000,
+    "randomSeed": 42,
+    "parallel": false,
+    "refreshStrategy": 0,
+    "enableCounters": true,
+    "fidelityMode": true,
+    "recordPublicationCohort": false,
+    "observeFullDrainWindow": false,
+    "loadMode": "openLoopRate",
+    "transportTiming": "fixed"
+  },
+  "assignedBrokerTypes": [
+    null
+  ],
+  "provenance": {
+    "mqttYCommitSha": "f5c0a4715b555c4348d2a2843177251f62c640ff",
+    "mqttBenchmarkCommitSha": "ab513df3d2b65462abcfba8084f066ae4b1bd0a1",
+    "brokerProfileSha256": "B09938696EAD7C7A77548FD4B3FE2134A20C303CEBFD3ACED592186BD2E6AB6A",
+    "brokerProfiles": [
+      {
+        "path": "/home/user/mqtty-develop-20261102-4801633c/profiles/broker-benchmark.v2.json",
+        "sha256": "b09938696ead7c7a77548fd4b3fe2134a20c303cebfd3aced592186bd2e6ab6a",
+        "provenance": null
+      }
+    ],
+    "referenceObservationsSha256": null
+  },
+  "operatingSystem": "Linux 6.1.128-elbrus-def-alt1.2.3 #1 SMP Wed Jun 11 15:28:44 UTC 2025",
+  "runtime": ".NET 6.0.10",
+  "processorCount": 8,
+  "tickPeriod": "00:00:00.0001000",
+  "phases": [
+    {
+      "name": "construct",
+      "startTick": 0,
+      "endTick": 0,
+      "status": "completed"
+    },
+    {
+      "name": "connect",
+      "startTick": 0,
+      "endTick": 7,
+      "status": "completed"
+    },
+    {
+      "name": "subscribe",
+      "startTick": 7,
+      "endTick": 14,
+      "status": "completed"
+    },
+    {
+      "name": "warmup",
+      "startTick": 14,
+      "endTick": 1014,
+      "status": "completed"
+    },
+    {
+      "name": "resetMeasurement",
+      "startTick": 1014,
+      "endTick": 1014,
+      "status": "completed"
+    },
+    {
+      "name": "measure",
+      "startTick": 1014,
+      "endTick": 11014,
+      "status": "completed"
+    },
+    {
+      "name": "drain",
+      "startTick": 11014,
+      "endTick": 11020,
+      "status": "completed"
+    }
+  ],
+  "measurementStartTick": 1014,
+  "measurementEndTick": 11014,
+  "brokerClientCounts": [
+    {
+      "broker": "mqb3",
+      "connectedClients": 2,
+      "profileClients": 2
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "byteOrderNotRequired": true,
+  "eventsFirst": 68,
+  "eventsSecond": 68,
+  "sameOrderedSnapshotsAndPerClientEvents": true,
+  "scope": "Separate diagnostic; does not replace the strict byte comparison or science criteria",
+  "webSha256": "64c7aec508ae205c16f77c419032ced32a53b8dd52594b1aab47b179c9847df6",
+  "directSha256": "fedda437147f5b76d05f6644e84c98b4f96ccaf3b926a5e49f4bacff95e023d5",
+  "strictReceiptPreserved": true,
+  "cause": "Snapshot iterates graph.Clients.Values from ConcurrentDictionary without stable client ordering"
+}

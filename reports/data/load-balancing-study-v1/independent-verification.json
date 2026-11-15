@@ -1,0 +1,55 @@
+{
+  "successful": 198,
+  "planned": 198,
+  "formulaCheckedRuns": 198,
+  "protocolAndLookupCheckedRuns": 198,
+  "replays": [
+    {
+      "caseId": "demo-r60000-q2-single48-s42",
+      "originalSummarySha256": "95babd01b491016e36b617c0454f42c0c10527fdae652e1345c1e198f1443abf",
+      "replaySummarySha256": "95babd01b491016e36b617c0454f42c0c10527fdae652e1345c1e198f1443abf",
+      "identical": true
+    },
+    {
+      "caseId": "demo-r60000-q2-roundRobin-s42",
+      "originalSummarySha256": "51d8a5a2aa98b2ab99db7e58b4d7ef934c5124db8593d2d59823393ab4a1c4d7",
+      "replaySummarySha256": "51d8a5a2aa98b2ab99db7e58b4d7ef934c5124db8593d2d59823393ab4a1c4d7",
+      "identical": true
+    },
+    {
+      "caseId": "mosquitto-r60000-q0-single16-s42",
+      "originalSummarySha256": "cd29cac78bee107fe806e8037864f7033113509cc3414798811a9e1b1be2c34a",
+      "replaySummarySha256": "cd29cac78bee107fe806e8037864f7033113509cc3414798811a9e1b1be2c34a",
+      "identical": true
+    },
+    {
+      "caseId": "mosquitto-r60000-q2-single16-s42",
+      "originalSummarySha256": "1db67c11222d9669d7010fb45a91d25a8ef3a6d300b447181ee6511611172c24",
+      "replaySummarySha256": "1db67c11222d9669d7010fb45a91d25a8ef3a6d300b447181ee6511611172c24",
+      "identical": true
+    },
+    {
+      "caseId": "mosquitto-r60000-q2-single64-s42",
+      "originalSummarySha256": "258a11d34acafbe5dcdd31d5fea5fe5e2854fb61979eb14ee3809dc6a81628f2",
+      "replaySummarySha256": "258a11d34acafbe5dcdd31d5fea5fe5e2854fb61979eb14ee3809dc6a81628f2",
+      "identical": true
+    },
+    {
+      "caseId": "mosquitto-r60000-q2-roundRobin-s42",
+      "originalSummarySha256": "3a66eb9efd27a018243ae0b4777d70b5c3f5974349b07d0100e21314e0b780b8",
+      "replaySummarySha256": "3a66eb9efd27a018243ae0b4777d70b5c3f5974349b07d0100e21314e0b780b8",
+      "identical": true
+    }
+  ],
+  "equalStrategyGroups": 36,
+  "strategyGroups": 36,
+  "reportingScriptSha256": "8a615e52a4531c2fe6426193da05cbe0663758d7ac8f213c0880065f7b8f496a",
+  "pythonVersion": "3.12.10",
+  "matplotlibVersion": "3.10.8",
+  "reportingSourcesSha256": {
+    "study.py": "586eabed514a59c729019ed5b96936d76e55ad487c0ea573f64aca354f6e2231",
+    "summarize.py": "8a615e52a4531c2fe6426193da05cbe0663758d7ac8f213c0880065f7b8f496a",
+    "topologies.py": "6e214e812a60cc0755d5a4317871f4eb2055ff7a827234fb3092e00a4fb8bee8"
+  },
+  "sourceProfileUnchanged": true
+}

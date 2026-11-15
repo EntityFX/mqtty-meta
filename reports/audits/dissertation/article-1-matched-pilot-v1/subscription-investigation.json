@@ -1,0 +1,76 @@
+{
+  "subscriptions": "{\"client\":\"mqrc18mqb18\",\"clientId\":\"mqrc18mqb18\",\"role\":\"subscriber\",\"topic\":\"telemetry/\\u002B\",\"state\":\"unsubscribed\",\"requestedQos\":1,\"grantedQos\":null,\"elapsedSeconds\":0}\n{\"client\":\"mqrc18mqb18\",\"clientId\":\"mqrc18mqb18\",\"role\":\"subscriber\",\"topic\":\"local/telemetry/\\u002B\",\"state\":\"unsubscribed\",\"requestedQos\":1,\"grantedQos\":null,\"elapsedSeconds\":0}\n{\"client\":\"mqrc18mqb18\",\"clientId\":\"mqrc18mqb18\",\"role\":\"subscriber\",\"topic\":\"telemetry/\\u002B\",\"state\":\"subscribed\",\"requestedQos\":1,\"grantedQos\":1,\"elapsedSeconds\":0.00014000000000000001}\n{\"client\":\"mqrc18mqb18\",\"clientId\":\"mqrc18mqb18\",\"role\":\"subscriber\",\"topic\":\"local/telemetry/\\u002B\",\"state\":\"subscribed\",\"requestedQos\":1,\"grantedQos\":1,\"elapsedSeconds\":0.00014000000000000001}\n",
+  "nativeSubscriptions": "{\"client\":\"subscriber\",\"clientId\":\"mb-db71079bf12241d193a851d41c1707dd\",\"topic\":\"mqttbenchmark/0bebaf77b51991d323c356fb7a6c7dc4\",\"requestedQos\":1,\"grantedQos\":1,\"elapsedSeconds\":0.1452127}\n{\"client\":\"subscriber\",\"clientId\":\"mb-db71079bf12241d193a851d41c1707dd\",\"topic\":\"mqttbenchmark/0bebaf77b51991d323c356fb7a6c7dc4/warmup\",\"requestedQos\":1,\"grantedQos\":1,\"elapsedSeconds\":0.1469058}\n",
+  "trial": {
+    "runDirectory": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-validation-v1/pilot-attempt-001/window-2/model/20261025T144158608Z-ccb1eccf7579413da337d2e7c3a1fba3",
+    "summary": {
+      "status": 0,
+      "measurementStartTick": 100014,
+      "measurementEndTick": 300014,
+      "simulated": {
+        "attempted": 111291,
+        "admitted": 111291,
+        "completed": 111291,
+        "expectedDeliveries": 111291,
+        "delivered": 9618,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 101673,
+        "completedRps": 55645.5,
+        "publishFailureRate": 0,
+        "deliveryLossRate": 0.9135779173518074,
+        "latencyP99Ms": 0.42
+      },
+      "reference": {
+        "attempted": 0,
+        "admitted": 0,
+        "completed": 0,
+        "expectedDeliveries": 0,
+        "delivered": 0,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "completedRps": 55936.77324884138,
+        "publishFailureRate": 0,
+        "deliveryLossRate": 0.9124559971701971,
+        "latencyP99Ms": 0.41943333333256305
+      },
+      "acceptanceCriteria": [
+        {
+          "name": "rps",
+          "reference": 55936.77324884138,
+          "simulated": 55645.5,
+          "error": 0.0052071871851745635,
+          "limit": 0.15,
+          "status": "passed"
+        },
+        {
+          "name": "publishFailureRate",
+          "reference": 0,
+          "simulated": 0,
+          "error": 0,
+          "limit": 0.05,
+          "status": "passed"
+        },
+        {
+          "name": "deliveryLossRate",
+          "reference": 0.9124559971701971,
+          "simulated": 0.9135779173518074,
+          "error": 0.0011219201816102808,
+          "limit": 0.05,
+          "status": "passed"
+        },
+        {
+          "name": "latencyP99Ms",
+          "reference": 0.41943333333256305,
+          "simulated": 0.42,
+          "error": 0.0013510291681744571,
+          "limit": 0.2,
+          "status": "passed"
+        }
+      ],
+      "error": null
+    }
+  },
+  "rawDirectory": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-validation-v1/pilot-attempt-001/window-2/model/20261025T144158608Z-ccb1eccf7579413da337d2e7c3a1fba3"
+}

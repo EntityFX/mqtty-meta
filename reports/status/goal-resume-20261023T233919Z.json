@@ -1,0 +1,170 @@
+{
+  "observedAtUtc": "2026-10-23T23:39:19.813780+00:00",
+  "network": {
+    "service": "MainPID=51204\nResult=success\nExecMainStatus=0\nMemoryCurrent=605151232\nActiveState=active\nSubState=running\n",
+    "progress": {
+      "status": "running",
+      "phase": "pilot",
+      "executionManifestSha256": "c5eb7c63eebbba98908086976c5e45a2a2ed3ccac638f834e59faf3b7b2a25a6",
+      "verified": 5,
+      "technicalErrors": 0,
+      "counts": {
+        "pilot": {
+          "done": 5,
+          "unresolvedErrors": 0,
+          "warnings": 0,
+          "total": 30
+        },
+        "matrix": {
+          "done": 0,
+          "unresolvedErrors": 0,
+          "warnings": 0,
+          "total": 162
+        },
+        "replay": {
+          "done": 0,
+          "unresolvedErrors": 0,
+          "warnings": 0,
+          "total": 6
+        },
+        "diagnostic": {
+          "done": 0,
+          "unresolvedErrors": 0,
+          "warnings": 0,
+          "total": 54
+        }
+      },
+      "attempts": {
+        "pilot": {
+          "total": 5,
+          "failed": 0
+        },
+        "matrix": {
+          "total": 0,
+          "failed": 0
+        },
+        "replay": {
+          "total": 0,
+          "failed": 0
+        },
+        "diagnostic": {
+          "total": 0,
+          "failed": 0
+        }
+      },
+      "warnings": 0,
+      "active": {
+        "id": "pilot.line.relay.q1.r1000.w10.s42",
+        "pid": 51647,
+        "elapsedSeconds": 126.33351319401118,
+        "rssBytes": 434900992,
+        "peakRssBytes": 434900992
+      },
+      "reason": null,
+      "observedAtUtc": "2026-10-23T23:39:19.673473+00:00"
+    },
+    "child": {
+      "pid": 51647,
+      "exists": true,
+      "stat": "51647 (dotnet) R 51204 51647 51647 0 -1 4194304 1067069 0 0 0 12409 239 0 0 20 0 8 0 11157327 24214466560 105438 18446744073709551615 94180950421504 94180950462753 140736094186480 0 0 0 0 4096 17662 0 0 0 17 4 0 0 0 0 0 94180950485536 94180950487157 94181598179328 140736094194278 140736094194549 140736094194549 140736094195679 0\n"
+    }
+  },
+  "sensitivity": {
+    "observedAtUtc": "2026-10-23T23:39:19.826972+00:00",
+    "root": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1",
+    "progress": {
+      "active": {
+        "Aedes.m16.q2.p128.s44.halfTick": {
+          "elapsedSeconds": 1483.5616031499958,
+          "peakRssBytes": 853143552,
+          "pid": 49927,
+          "rssBytes": 839368704
+        },
+        "Mosquitto.m16.q0.p128.s42.baseline": {
+          "elapsedSeconds": 646.4706364570011,
+          "peakRssBytes": 846479360,
+          "pid": 51083,
+          "rssBytes": 801558528
+        },
+        "Mosquitto.m16.q0.p128.s42.doubleWindow": {
+          "elapsedSeconds": 221.8241159809986,
+          "peakRssBytes": 846770176,
+          "pid": 51525,
+          "rssBytes": 740368384
+        },
+        "Mosquitto.m16.q0.p128.s42.halfTick": {
+          "elapsedSeconds": 627.4911093929986,
+          "peakRssBytes": 846110720,
+          "pid": 51114,
+          "rssBytes": 801333248
+        }
+      },
+      "counts": {
+        "matrix": {
+          "done": 62,
+          "failedCriteria": 13,
+          "total": 216
+        },
+        "pilot": {
+          "done": 8,
+          "failedCriteria": 4,
+          "total": 8
+        },
+        "replay": {
+          "done": 0,
+          "failedCriteria": 0,
+          "total": 6
+        }
+      },
+      "elapsedSeconds": 20099.076875611994,
+      "planSha256": "dfda8401e9e3f96aebece1b4baa116b58437c94752ecc0324b6e8c909243ae3c",
+      "reason": null,
+      "schedulerVersion": 2,
+      "status": "running",
+      "technicalErrors": 0,
+      "workers": 4
+    },
+    "progressMtimeUtc": "2026-10-23T23:39:19.666032+00:00",
+    "mountAvailable": true,
+    "processes": {
+      "49927": {
+        "alive": true,
+        "state": "R",
+        "startTicks": 11021589
+      },
+      "51083": {
+        "alive": true,
+        "state": "R",
+        "startTicks": 11105289
+      },
+      "51525": {
+        "alive": true,
+        "state": "R",
+        "startTicks": 11147699
+      },
+      "51114": {
+        "alive": true,
+        "state": "R",
+        "startTicks": 11107213
+      }
+    },
+    "limits": {
+      "timeoutSeconds": 1800,
+      "maxRssBytes": 3221225472,
+      "minFreeBytes": 5368709120
+    },
+    "limitsSource": "Frozen plan limits; v1 storage reserve is 5 GiB. Operational amendments must be supplied separately.",
+    "disk": {
+      "total": 244995190784,
+      "used": 72702558208,
+      "free": 159772950528
+    },
+    "service": {
+      "MainPID": "49274",
+      "Result": "success",
+      "ActiveState": "active",
+      "SubState": "running"
+    },
+    "collectionErrors": []
+  }
+}

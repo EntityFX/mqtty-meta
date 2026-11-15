@@ -1,0 +1,13 @@
+{
+  "pythonVersion": "3.12.10",
+  "matplotlibVersion": "3.10.8",
+  "missingLatencyExplicit": true,
+  "confidenceIntervalsOnlyForThreeApplicableSeeds": true,
+  "relaySvgOriginCaptionsOmitted": true,
+  "relaySvgPathsPreserved": true,
+  "sourcesSha256": {
+    "study.py": "5a1f3afa1df5c5d414c1b22f50ef763c79a50b87922dfea2f097bfdcff4a2e19",
+    "report.py": "86c54719ad0f1b560ed9e2c960dbc82506a85706dd9ec9ebed75ad5488d10328",
+    "archive.py": "f87eebc52c7f0fffe0dcefd73f4ca9930d6df7c92d93f82964120e5b7e740ec6"
+  }
+}

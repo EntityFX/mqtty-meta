@@ -1,0 +1,55 @@
+{
+  "/run/media/entityfx": {
+    "exists": false,
+    "isMount": false,
+    "entries": []
+  },
+  "/run/media/entityfx/hd250": {
+    "exists": false,
+    "isMount": false,
+    "entries": []
+  },
+  "/run/media/entityfx/hd250/mqtty-evidence": {
+    "exists": false,
+    "isMount": false,
+    "entries": []
+  },
+  "mounts": {
+    "returnCode": 0,
+    "stdout": "/dev udevfs devtmpfs\n/run runfs tmpfs\n/ /dev/sda2 ext4\n/proc proc proc\n/sys sysfs sysfs\n/sys/kernel/security securityfs securityfs\n/sys/fs/selinux selinuxfs selinuxfs\n/dev/shm tmpfs tmpfs\n/dev/pts devpts devpts\n/sys/fs/cgroup cgroup2 cgroup2\n/sys/fs/pstore pstore pstore\n/sys/fs/bpf bpf bpf\n/proc/sys/fs/binfmt_misc systemd-1 autofs\n/sys/kernel/tracing tracefs tracefs\n/sys/kernel/debug debugfs debugfs\n/dev/mqueue mqueue mqueue\n/dev/hugepages hugetlbfs hugetlbfs\n/run/credentials/systemd-journald.service tmpfs tmpfs\n/sys/kernel/config configfs configfs\n/sys/fs/fuse/connections fusectl fusectl\n/tmp tmpfs tmpfs\n/home /dev/sda5 ext4\n/run/user/500 tmpfs tmpfs\n/run/user/487 tmpfs tmpfs\n/run/user/500/gvfs gvfsd-fuse fuse.gvfsd-fuse\n/home/entityfx/thinclient_drives xrdp-chansrv fuse\n",
+    "stderr": ""
+  },
+  "unit": {
+    "returnCode": 0,
+    "stdout": "LoadState=not-found\nFragmentPath=\nActiveEnterTimestamp=\nInactiveEnterTimestamp=\n",
+    "stderr": ""
+  },
+  "journal": {
+    "returnCode": 0,
+    "stdout": "Oct 29 08:47:49 entityfx-pc systemd[1413]: Started mqtty-queue-short-v2.service - [systemd-run] /usr/bin/python3 /run/media/entityfx/hd250/mqtty-evidence/queue-capacity-short-v2-20261029/run_short.py.\nOct 29 08:49:24 entityfx-pc systemd[1413]: mqtty-queue-short-v2.service: Consumed 3min 7.344s CPU time, 1.4G memory peak.\n",
+    "stderr": ""
+  },
+  "webUnits": {
+    "returnCode": 0,
+    "stdout": "  UNIT LOAD ACTIVE SUB DESCRIPTION\n\n0 loaded units listed.\nTo show all installed unit files use 'systemctl list-unit-files'.\n",
+    "stderr": ""
+  },
+  "boot": {
+    "returnCode": 0,
+    "stdout": "2026-10-29 19:40:24\n",
+    "stderr": ""
+  },
+  "evidenceDisk": [
+    {
+      "name": "sdb1",
+      "label": "hd250",
+      "size": "232.9G",
+      "fstype": "ext4",
+      "uuid": "c1ca2de7-c618-4a3d-8ffc-59d37f42ccec",
+      "mountpoints": [
+        null
+      ],
+      "ro": false
+    }
+  ]
+}

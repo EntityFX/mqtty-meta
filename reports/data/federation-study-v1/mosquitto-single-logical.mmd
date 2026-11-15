@@ -1,0 +1,8 @@
+flowchart LR
+  S0["Площадка 0: publishers=16; subscribers=1; брокер=есть"]
+  S1["Площадка 1: publishers=16; subscribers=1; брокер=нет"]
+  S2["Площадка 2: publishers=16; subscribers=1; брокер=нет"]
+  S3["Площадка 3: publishers=16; subscribers=1; брокер=нет"]
+  S1 <-->|"MQTT к B0 ↔"| S0
+  S2 <-->|"MQTT к B0 ↔"| S0
+  S3 <-->|"MQTT к B0 ↔"| S0

@@ -1,0 +1,7 @@
+{
+  "status": "verified",
+  "sourceFilesVerified": 281,
+  "manifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+  "dotnetSha256": "86ec9896b9d07542995a2c7cf2ecb1622a7ed7e092b704a46926416f31bd4efc",
+  "mountReadOnly": true
+}

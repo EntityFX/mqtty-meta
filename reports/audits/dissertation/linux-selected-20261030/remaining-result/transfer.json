@@ -1,0 +1,22 @@
+{
+  "remoteArchive": "/run/media/entityfx/hd250/mqtty-evidence/queue-main-remaining-20261030-transfer-001/raw.tar.gz",
+  "archiveSha256": "c91627aa689f5a4f184ff66fc545e9e209c262f2c96afd82baa69e9b5ea6175f",
+  "archiveBytes": 25905836,
+  "sourceIndexSha256": "739c94e459b4f43210917131fa1a9bbd7c50bfd32ff3385b60cf36d92a57d0ad",
+  "files": 56,
+  "bytes": 253257867,
+  "sourcePostflight": {
+    "sourceFilesVerified": 281,
+    "sourceManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+    "programSealSha256": "25f5aa4e747e979a68131b25e127717388714478d1ac475347539b2e49f90def",
+    "unitState": "MainPID=0\nResult=exit-code\nExecMainStatus=1\n",
+    "sourcePostflightPassed": true,
+    "classification": "modelDrainDeadlineReached-partialEvidence",
+    "baselineRowSha256": "eb9b1aa1f93d618f42d123ba05cf5ace6a41832c359d4525b36f645d48611bd0"
+  },
+  "localArchive": "C:\\temp\\mqtty-evidence\\queue-main-remaining-20261030\\transfer-001\\raw.tar.gz",
+  "localRaw": "C:\\temp\\mqtty-evidence\\queue-main-remaining-20261030\\transfer-001\\contents\\raw",
+  "localProgram": "C:\\temp\\mqtty-evidence\\queue-main-remaining-20261030\\transfer-001\\contents\\program",
+  "status": "transferredVerified",
+  "newModelsExecuted": 0
+}

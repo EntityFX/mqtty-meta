@@ -1,0 +1,9 @@
+{
+  "reference": "/run/media/entityfx/hd250/mqtty-evidence/qos1-linux-diagnostics-v2",
+  "runtimeSha256": "9022c231ab1a48db8bf80a76f64bab597deab1ba08267d7a3ea06ee1f5946aff",
+  "helperSha256": "e34debe2c44b82a0d0d143375672c8afb89a3c9020c9d803d50e9396b4b313f5",
+  "verifierSha256": "3d7456c6857f5675bc1e15b9db19dedcd376bf5d18431ef1ee5efec6b1169e2c",
+  "totalProcessBudgetSeconds": 60,
+  "perProcessBudgetSeconds": 15,
+  "scope": "mechanism smoke; no accuracy claim or matrix admission"
+}

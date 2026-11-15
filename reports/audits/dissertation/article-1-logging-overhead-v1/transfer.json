@@ -1,0 +1,21 @@
+{
+  "archiveLocal": "C:/temp/mqtty-evidence/article1-logging-overhead-v1/article1-logging-overhead-v1-raw-001.tar.gz",
+  "archiveRemote": "/run/media/entityfx/hd250/mqtty-evidence/article1-logging-overhead-v1-raw-001.tar.gz",
+  "archiveSha256": "5773f8c4c2bb5c9b16f51c8ba5089a193a33b8bf431aa9f2facfa6d8a26a3bda",
+  "archiveBytes": 8261658,
+  "summarySha256": "e04cb62436e0eb0c0bdccdc811fb73b89fcebea421e18aea6c6e7658cc18bc5c",
+  "filesShaVerified": 55,
+  "exportAttempts": [
+    {
+      "outcome": "command preparation failed before execution",
+      "reason": "PowerShell escaping produced Python SyntaxError: unexpected character after line continuation character",
+      "experimentRepeated": false
+    },
+    {
+      "outcome": "success",
+      "method": "Python source through SSH standard input; new nonexisting archive",
+      "experimentRepeated": false
+    }
+  ],
+  "mainCampaignAdmitted": false
+}

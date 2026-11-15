@@ -1,0 +1,17 @@
+{
+  "deliveries.ndjson": "/api/simulations/da613d0b932d42739fb62e8b1fa5e52e/results/deliveries.ndjson",
+  "topology.graphml": "/api/simulations/da613d0b932d42739fb62e8b1fa5e52e/results/topology.graphml",
+  "counters.json": "/api/simulations/da613d0b932d42739fb62e8b1fa5e52e/results/counters.json",
+  "profile-snapshot.json": "/api/simulations/da613d0b932d42739fb62e8b1fa5e52e/results/profile-snapshot.json",
+  "connections.ndjson": "/api/simulations/da613d0b932d42739fb62e8b1fa5e52e/results/connections.ndjson",
+  "phases.json": "/api/simulations/da613d0b932d42739fb62e8b1fa5e52e/results/phases.json",
+  "summary.json": "/api/simulations/da613d0b932d42739fb62e8b1fa5e52e/results/summary.json",
+  "topology.puml": "/api/simulations/da613d0b932d42739fb62e8b1fa5e52e/results/topology.puml",
+  "transport-resolution.json": "/api/simulations/da613d0b932d42739fb62e8b1fa5e52e/results/transport-resolution.json",
+  "latency-histogram.json": "/api/simulations/da613d0b932d42739fb62e8b1fa5e52e/results/latency-histogram.json",
+  "subscriptions.ndjson": "/api/simulations/da613d0b932d42739fb62e8b1fa5e52e/results/subscriptions.ndjson",
+  "sha256.json": "/api/simulations/da613d0b932d42739fb62e8b1fa5e52e/results/sha256.json",
+  "twin-validation.json": "/api/simulations/da613d0b932d42739fb62e8b1fa5e52e/results/twin-validation.json",
+  "publishes.ndjson": "/api/simulations/da613d0b932d42739fb62e8b1fa5e52e/results/publishes.ndjson",
+  "experiment-manifest.json": "/api/simulations/da613d0b932d42739fb62e8b1fa5e52e/results/experiment-manifest.json"
+}

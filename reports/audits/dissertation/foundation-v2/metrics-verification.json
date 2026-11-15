@@ -1,0 +1,351 @@
+{
+  "arithmetic": {
+    "est": {
+      "ActiveMQ": {
+        "adaptedAllQos": 0.24589607482228112,
+        "adaptedBootstrap95": {
+          "firstPlaceFraction": 0.0,
+          "lower": 0.2378246982849692,
+          "upper": 0.2536577856328646
+        },
+        "strictQos12": 0.2392111128494992
+      },
+      "Aedes": {
+        "adaptedAllQos": 0.5520451841583667,
+        "adaptedBootstrap95": {
+          "firstPlaceFraction": 0.001,
+          "lower": 0.5460859997679564,
+          "upper": 0.5572252182395426
+        },
+        "strictQos12": 0.5058275083773836
+      },
+      "EMQX": {
+        "adaptedAllQos": 0.4505386420442959,
+        "adaptedBootstrap95": {
+          "firstPlaceFraction": 0.0,
+          "lower": 0.4456700893423703,
+          "upper": 0.45510217901559497
+        },
+        "strictQos12": 0.49176683350156897
+      },
+      "Mosquitto": {
+        "adaptedAllQos": 0.5623088326682103,
+        "adaptedBootstrap95": {
+          "firstPlaceFraction": 0.999,
+          "lower": 0.557075815637428,
+          "upper": 0.5663237963398033
+        },
+        "strictQos12": 0.5694248797046881
+      }
+    },
+    "externalArchivesChecked": false,
+    "method": "Separate standard-library arithmetic audit; no publisher scoring functions imported",
+    "modelAccuracy": {
+      "ActiveMQ": {
+        "fidelity": {
+          "criteria": {
+            "deliveryLossRate": {
+              "failed": 0,
+              "notApplicable": 0,
+              "passed": 72
+            },
+            "latencyP99Ms": {
+              "failed": 2,
+              "notApplicable": 24,
+              "passed": 46
+            },
+            "publishFailureRate": {
+              "failed": 0,
+              "notApplicable": 0,
+              "passed": 72
+            },
+            "rps": {
+              "failed": 1,
+              "notApplicable": 0,
+              "passed": 71
+            }
+          },
+          "passedAll": 70,
+          "passedAllPoints": 22,
+          "runs": 72
+        },
+        "holdout": {
+          "criteria": {
+            "deliveryLossRate": {
+              "failed": 33,
+              "notApplicable": 0,
+              "passed": 39
+            },
+            "latencyP99Ms": {
+              "failed": 4,
+              "notApplicable": 24,
+              "passed": 44
+            },
+            "publishFailureRate": {
+              "failed": 6,
+              "notApplicable": 0,
+              "passed": 66
+            },
+            "rps": {
+              "failed": 10,
+              "notApplicable": 0,
+              "passed": 62
+            }
+          },
+          "passedAll": 29,
+          "passedAllPoints": 9,
+          "runs": 72
+        }
+      },
+      "Aedes": {
+        "fidelity": {
+          "criteria": {
+            "deliveryLossRate": {
+              "failed": 0,
+              "notApplicable": 0,
+              "passed": 72
+            },
+            "latencyP99Ms": {
+              "failed": 5,
+              "notApplicable": 24,
+              "passed": 43
+            },
+            "publishFailureRate": {
+              "failed": 0,
+              "notApplicable": 0,
+              "passed": 72
+            },
+            "rps": {
+              "failed": 3,
+              "notApplicable": 0,
+              "passed": 69
+            }
+          },
+          "passedAll": 64,
+          "passedAllPoints": 20,
+          "runs": 72
+        },
+        "holdout": {
+          "criteria": {
+            "deliveryLossRate": {
+              "failed": 9,
+              "notApplicable": 0,
+              "passed": 63
+            },
+            "latencyP99Ms": {
+              "failed": 2,
+              "notApplicable": 24,
+              "passed": 46
+            },
+            "publishFailureRate": {
+              "failed": 0,
+              "notApplicable": 0,
+              "passed": 72
+            },
+            "rps": {
+              "failed": 3,
+              "notApplicable": 0,
+              "passed": 69
+            }
+          },
+          "passedAll": 58,
+          "passedAllPoints": 18,
+          "runs": 72
+        }
+      },
+      "EMQX": {
+        "fidelity": {
+          "criteria": {
+            "deliveryLossRate": {
+              "failed": 0,
+              "notApplicable": 0,
+              "passed": 72
+            },
+            "latencyP99Ms": {
+              "failed": 0,
+              "notApplicable": 24,
+              "passed": 48
+            },
+            "publishFailureRate": {
+              "failed": 0,
+              "notApplicable": 0,
+              "passed": 72
+            },
+            "rps": {
+              "failed": 0,
+              "notApplicable": 0,
+              "passed": 72
+            }
+          },
+          "passedAll": 72,
+          "passedAllPoints": 24,
+          "runs": 72
+        },
+        "holdout": {
+          "criteria": {
+            "deliveryLossRate": {
+              "failed": 6,
+              "notApplicable": 0,
+              "passed": 66
+            },
+            "latencyP99Ms": {
+              "failed": 10,
+              "notApplicable": 24,
+              "passed": 38
+            },
+            "publishFailureRate": {
+              "failed": 0,
+              "notApplicable": 0,
+              "passed": 72
+            },
+            "rps": {
+              "failed": 3,
+              "notApplicable": 0,
+              "passed": 69
+            }
+          },
+          "passedAll": 58,
+          "passedAllPoints": 19,
+          "runs": 72
+        }
+      },
+      "Mosquitto": {
+        "fidelity": {
+          "criteria": {
+            "deliveryLossRate": {
+              "failed": 0,
+              "notApplicable": 0,
+              "passed": 72
+            },
+            "latencyP99Ms": {
+              "failed": 0,
+              "notApplicable": 24,
+              "passed": 48
+            },
+            "publishFailureRate": {
+              "failed": 0,
+              "notApplicable": 0,
+              "passed": 72
+            },
+            "rps": {
+              "failed": 2,
+              "notApplicable": 0,
+              "passed": 70
+            }
+          },
+          "passedAll": 70,
+          "passedAllPoints": 22,
+          "runs": 72
+        },
+        "holdout": {
+          "criteria": {
+            "deliveryLossRate": {
+              "failed": 12,
+              "notApplicable": 0,
+              "passed": 60
+            },
+            "latencyP99Ms": {
+              "failed": 0,
+              "notApplicable": 24,
+              "passed": 48
+            },
+            "publishFailureRate": {
+              "failed": 0,
+              "notApplicable": 0,
+              "passed": 72
+            },
+            "rps": {
+              "failed": 2,
+              "notApplicable": 0,
+              "passed": 70
+            }
+          },
+          "passedAll": 58,
+          "passedAllPoints": 18,
+          "runs": 72
+        }
+      }
+    },
+    "native": {
+      "actualMeasurementSeconds": {
+        "max": 29.920571626,
+        "min": 20.00010567
+      },
+      "aggregateMetricChecks": 768,
+      "primaryRawQuantilesRecomputed": false,
+      "qos12QuantileMeanChecks": 384,
+      "runRateChecks": 2304,
+      "runs": 576
+    },
+    "nativeBetweenSeries": {
+      "ActiveMQ": {
+        "completedRps": 2,
+        "deliveryLossRate": 11,
+        "p99Ms": 1,
+        "publishFailureRate": 2
+      },
+      "Aedes": {
+        "completedRps": 0,
+        "deliveryLossRate": 3,
+        "p99Ms": 3,
+        "publishFailureRate": 0
+      },
+      "EMQX": {
+        "completedRps": 1,
+        "deliveryLossRate": 2,
+        "p99Ms": 6,
+        "publishFailureRate": 0
+      },
+      "Mosquitto": {
+        "completedRps": 0,
+        "deliveryLossRate": 4,
+        "p99Ms": 0,
+        "publishFailureRate": 0
+      }
+    },
+    "priorRawAudit": {
+      "archives": 24,
+      "broker": "ActiveMQ",
+      "primaryQuantilesRecomputed": false
+    },
+    "recomputedApplicableCriteria": 2112,
+    "relay": {
+      "completed": 360,
+      "nativeNetworkAccuracyValidated": false
+    },
+    "replays": {
+      "count": 6,
+      "scientificOutputsEqual": true,
+      "scope": "Selected same-seed same-runtime points; not independent-machine replication"
+    },
+    "sourceSha256": {
+      "data/ActiveMQ-diagnosis-20261019/diagnosis.json": "7e5e4a215f36ebbbc695322114596b0bc730e978446ba2db5338205a4069cffe",
+      "data/ActiveMQ/calibration/observations.json": "a066682d36b11f3fbead8d06ef112730bb3f4688968f8f27c986d991700e5feb",
+      "data/ActiveMQ/validation/observations.json": "74336cb03f1bb3de721e639e89c78b66b9d153d5a662d3b437aac1e74c15548d",
+      "data/Aedes/calibration/observations.json": "1ff2c53c99b1f7e58738d9779ec228482787d62bad4c75478da84720a74b786d",
+      "data/Aedes/validation/observations.json": "865f5552318afb49fd65b4be709b5dbf7a34d334e6c26ba15b24f7ad32608a68",
+      "data/EMQX/calibration/observations.json": "f132d7bbed093b4083dcb9946ea5124e8c6cbb0102dc937ab074eceff1dd9c6c",
+      "data/EMQX/validation/observations.json": "8af337a5dfcd91cbb782e7da6079ba50021ecd81b4fc43b742169a1d0fa4aa62",
+      "data/Mosquitto/calibration/observations.json": "6ae7dd7ebf4d089ce75bc1b61545a95dac8b96349cd4aa9ee9746406869a02a9",
+      "data/Mosquitto/validation/observations.json": "2be568685ed94eba695cdd90caa490cc1eedbb00d1ed3125c626a2f35649eba2",
+      "data/integral-assessment.json": "c511452ded0e29c24fac059fcf254a32c0a8930f04b0001270d3dbfdf1237876",
+      "data/model-evidence.json": "778b25feee8272e7d97deba5fae19086da2ba2a91a3b0a7b3a0c077e4cbdb015",
+      "data/native-evidence.json": "7010fc352b64125a44aa9d7dbe54c9df76cb224631f2971d2f1579c44e5450de",
+      "data/publication-validation.json": "0bb26b127480202c4d4c9ab0739c8a59734653dcdea4705037a256266dcd08d4",
+      "data/replay-results.json": "f096017b328a3450d0e916dac24d92a73a10ef80a8f122484a86ffc1cd04b756"
+    },
+    "verifierSha256": "bf847402a955265ce4b4c15b558d8c6f68fa36312bd50822a157d188b70625a5"
+  },
+  "fullRawRecountProvidedSeparately": true,
+  "raw": {
+    "nonSelectedSuccessArchives": 12,
+    "nonSuccessArchives": 4,
+    "processed": 592,
+    "selectedDiscrepancies": 0,
+    "selectedPassed": 576,
+    "technicalErrors": 0,
+    "total": 592
+  },
+  "scientificAcceptanceByAuthor": false,
+  "scope": "Source-linked event recount plus independent published arithmetic; no new physical measurements"
+}

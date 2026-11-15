@@ -1,0 +1,8 @@
+{
+  "broker": "EMQX",
+  "stage": "calibration",
+  "verified": true,
+  "originalSha256": "f132d7bbed093b4083dcb9946ea5124e8c6cbb0102dc937ab074eceff1dd9c6c",
+  "restoredAggregateSha256": "daebde7eb1392354ebf9976942ed6bc7208ac6f8f7498168f340304a9e27ca8b",
+  "note": "Scientific points and campaign identity match; inputSha256 differs between compact and restored representation."
+}

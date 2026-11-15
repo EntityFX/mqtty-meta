@@ -1,0 +1,7 @@
+{
+  "host": "10.10.144.66",
+  "exitCode": 0,
+  "stdout": "{\"TaskName\":\"MqttY-Load-Benchmark-20261103\",\"State\":4}\r\n",
+  "stderr": "",
+  "job": "MqttY-Load-Benchmark-20261103"
+}

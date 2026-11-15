@@ -1,0 +1,86 @@
+{
+  "processLog": "Статическая федерация: Federation; площадок 4; QoS 1; статус failed\nФизические связи: site0<->transit, site1<->transit, site2<->transit, site3<->transit\ntransit — промежуточный сетевой узел без брокера и клиентов; межплощадочный трафик проходит через его очередь.\nsubscriber@0: [######################] 14069; дубликатов 0\nsubscriber@1: [########################] 15222; дубликатов 0\nsubscriber@2: [########################] 15222; дубликатов 0\nsubscriber@3: [######################] 14068; дубликатов 0\nPublish попытки/завершения: 50000/50000; source RPS=5000; delivery goodput=5858.1; loss=0.707095\np99 ACK=0.8 мс; p99 получения=4406.1 мс; пересылок=99248; подавлено повторов=27909; queue drops=255912\nSystem.TimeoutException: drain timed out; partial evidence retained.\n   at EntityFX.MqttY.Federation.FederationRunner.<>c__DisplayClass0_0.<Run>g__Until|8(Func`1 condition)\n   at EntityFX.MqttY.Federation.FederationRunner.Run(FederationInput input, String output)\n",
+  "files": [
+    "last-process-state.json",
+    "command.json",
+    "result.json",
+    "process.log",
+    "output/manifest.json",
+    "output/transmissions.json",
+    "output/topology.graphml",
+    "output/topology-physical.svg",
+    "output/receivers.csv",
+    "output/delivery-receipts.json",
+    "output/topology-physical.mmd",
+    "output/phases.json",
+    "output/run-config.json",
+    "output/histograms.json",
+    "output/publications.json",
+    "output/sources.csv",
+    "output/topology-logical.mmd",
+    "output/report.md",
+    "output/summary.json",
+    "output/topology-logical.svg",
+    "output/network-evidence.json",
+    "output/sha256.json",
+    "output/.experiment",
+    "output/inputs/config.json"
+  ],
+  "summary": {
+    "status": "failed",
+    "error": "System.TimeoutException: drain timed out; partial evidence retained.\n   at EntityFX.MqttY.Federation.FederationRunner.<>c__DisplayClass0_0.<Run>g__Until|8(Func`1 condition)\n   at EntityFX.MqttY.Federation.FederationRunner.Run(FederationInput input, String output)",
+    "scheduledPublishes": 50000,
+    "apiAttempts": 50000,
+    "sourceCompleted": 50000,
+    "uniqueDeliveries": 58581,
+    "expectedDeliveries": 200000,
+    "phases": [
+      {
+        "name": "construct",
+        "startTick": 0,
+        "endTick": 0,
+        "status": "completed"
+      },
+      {
+        "name": "connect",
+        "startTick": 0,
+        "endTick": 17,
+        "status": "completed"
+      },
+      {
+        "name": "subscribe",
+        "startTick": 17,
+        "endTick": 26,
+        "status": "completed"
+      },
+      {
+        "name": "warmup",
+        "startTick": 26,
+        "endTick": 10026,
+        "status": "completed"
+      },
+      {
+        "name": "warmupDrain",
+        "startTick": 10026,
+        "endTick": 46790,
+        "status": "completed"
+      },
+      {
+        "name": "measure",
+        "startTick": 46790,
+        "endTick": 146790,
+        "status": "completed"
+      },
+      {
+        "name": "drain",
+        "startTick": 146790,
+        "endTick": 196790,
+        "status": "failed"
+      }
+    ],
+    "forwardQueueDrops": null,
+    "cacheCapacityExceeded": null,
+    "queueDrops": 255912,
+    "hopLimitExhausted": null
+  }
+}

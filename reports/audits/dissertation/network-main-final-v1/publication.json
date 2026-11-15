@@ -1,0 +1,19 @@
+{
+  "status": "pushedAndRemoteVerified",
+  "commit": "a9e61529a2107aa3d443cfb93ec4d21b9859aec1",
+  "remote": "origin/develop",
+  "remoteHeadMatches": true,
+  "committedByteHashesVerified": [
+    "reports/analysis/Network-main-final.md",
+    "reports/audits/dissertation/network-main-final-v1/acceptance.json",
+    "reports/audits/dissertation/network-main-final-v1/package-verification.json",
+    "reports/audits/dissertation/network-main-final-v1/source-file-index.json",
+    "reports/audits/dissertation/network-main-final-v1/raw-recount/verification.json",
+    "reports/audits/dissertation/network-main-final-v1/figures/manifest.json",
+    "reports/audits/dissertation/network-main-final-v1/cost-figures/manifest.json",
+    "reports/audits/dissertation/temp-cleanup-20261029/receipt.json",
+    "docs/overview/ExpertReview.md"
+  ],
+  "largeRawArchivesInGit": false,
+  "scientificInputsChanged": false
+}

@@ -1,0 +1,13 @@
+{
+  "preflightAttempt": 1,
+  "status": "failedBeforeLaunch",
+  "reason": "Unexpected or missing snapshot files",
+  "extra": [
+    {
+      "path": "tools/dissertation/__pycache__/network_study_inputs.cpython-312.pyc",
+      "sha256": "d4e13efb9110c675edac010c7dc2b126929146961d78766489212e46e0e22461"
+    }
+  ],
+  "missing": [],
+  "runtimeStarted": false
+}

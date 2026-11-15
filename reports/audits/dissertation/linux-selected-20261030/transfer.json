@@ -1,0 +1,22 @@
+{
+  "remoteArchive": "/run/media/entityfx/hd250/mqtty-evidence/linux-selected-20261030-transfer-001/raw.tar.gz",
+  "archiveSha256": "5012459915433ffe6b0eb7acbfd4e9fd0cb4a6473af7c087483953c43622e3de",
+  "archiveBytes": 90659686,
+  "sourceIndexSha256": "a3ddfed4b85ca96465526974a71cb7d55b009d3789f59e472627e2bb179e21c6",
+  "files": 897,
+  "bytes": 706198938,
+  "sourcePostflight": {
+    "sourceFilesVerified": 281,
+    "sourceManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+    "programSealSha256": "715016847b71507bfd75f5a601b6375749d2af499b61120d077ab3a5febe086b",
+    "unitState": "MainPID=0\nResult=exit-code\nExecMainStatus=2\nActiveState=failed\n",
+    "sourcePostflightPassed": true,
+    "excludedFromRaw": "broker-home executables/data/cache; conf/etc regular files retained",
+    "pinnedAbsoluteFilesVerified": 106
+  },
+  "localArchive": "C:\\temp\\mqtty-evidence\\linux-selected-20261030\\transfer-001\\raw.tar.gz",
+  "localRaw": "C:\\temp\\mqtty-evidence\\linux-selected-20261030\\transfer-001\\contents\\raw",
+  "localProgram": "C:\\temp\\mqtty-evidence\\linux-selected-20261030\\transfer-001\\contents\\program",
+  "status": "transferredVerified",
+  "newModelsExecuted": 0
+}

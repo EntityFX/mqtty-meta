@@ -1,0 +1,82 @@
+{
+  "checkedAtMsk": "2026-10-26T21:53:47+03:00",
+  "service": "mqtty-network-remaining-v1.service",
+  "mainPid": 325717,
+  "activeState": "active",
+  "subState": "running",
+  "stderrEmpty": true,
+  "progress": {
+    "status": "running",
+    "phase": "replay",
+    "executionManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+    "verified": 166,
+    "technicalErrors": 0,
+    "counts": {
+      "pilot": {
+        "done": 0,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 30
+      },
+      "matrix": {
+        "done": 162,
+        "unresolvedErrors": 0,
+        "warnings": 27,
+        "total": 162
+      },
+      "replay": {
+        "done": 4,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 6
+      },
+      "diagnostic": {
+        "done": 0,
+        "unresolvedErrors": 0,
+        "warnings": 0,
+        "total": 54
+      }
+    },
+    "attempts": {
+      "pilot": {
+        "total": 0,
+        "failed": 0
+      },
+      "matrix": {
+        "total": 165,
+        "failed": 3
+      },
+      "replay": {
+        "total": 4,
+        "failed": 0
+      },
+      "diagnostic": {
+        "total": 0,
+        "failed": 0
+      }
+    },
+    "warnings": 27,
+    "active": {
+      "workers": 2,
+      "jobs": {
+        "replay.star.federation.q2.r1000.w10.s42": {
+          "pid": 336220,
+          "elapsedSeconds": 301.01297380699543,
+          "rssBytes": 722755584,
+          "peakRssBytes": 845885440
+        },
+        "replay.star.federation.q2.r5000.w10.s42": {
+          "pid": 336442,
+          "elapsedSeconds": 113.3838144010515,
+          "rssBytes": 664023040,
+          "peakRssBytes": 786059264
+        }
+      },
+      "remainingSeconds": 13080.507967189536
+    },
+    "reason": null,
+    "observedAtUtc": "2026-10-26T18:53:46.580936+00:00"
+  },
+  "processesRestarted": false,
+  "localIndependentRecount": 106
+}

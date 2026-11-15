@@ -1,0 +1,16 @@
+  Determining projects to restore...
+C:\Program Files\dotnet\sdk\10.0.202\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net6.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [C:\projects\mqtty-meta\MqttBenchmark\artifacts\qos1-pending-probe-4uy6a7hz\Probe.csproj]
+C:\Program Files\dotnet\sdk\10.0.202\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net6.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [C:\projects\mqtty-meta\MqttBenchmark\artifacts\qos1-pending-probe-4uy6a7hz\Probe.csproj]
+  Restored C:\projects\mqtty-meta\MqttBenchmark\artifacts\qos1-pending-probe-4uy6a7hz\Probe.csproj (in 362 ms).
+C:\Program Files\dotnet\sdk\10.0.202\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net6.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [C:\projects\mqtty-meta\MqttBenchmark\artifacts\qos1-pending-probe-4uy6a7hz\Probe.csproj]
+  Probe -> C:\projects\mqtty-meta\MqttBenchmark\artifacts\qos1-pending-probe-4uy6a7hz\bin\Release\net6.0\Probe.dll
+
+Build succeeded.
+
+C:\Program Files\dotnet\sdk\10.0.202\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net6.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [C:\projects\mqtty-meta\MqttBenchmark\artifacts\qos1-pending-probe-4uy6a7hz\Probe.csproj]
+C:\Program Files\dotnet\sdk\10.0.202\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net6.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [C:\projects\mqtty-meta\MqttBenchmark\artifacts\qos1-pending-probe-4uy6a7hz\Probe.csproj]
+C:\Program Files\dotnet\sdk\10.0.202\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net6.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [C:\projects\mqtty-meta\MqttBenchmark\artifacts\qos1-pending-probe-4uy6a7hz\Probe.csproj]
+    3 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:03.56

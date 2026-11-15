@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "physical-two-host-functional-native-smoke-not-calibration",
+  "date": "2026-10-13",
+  "controller": "Windows 10 Enterprise LTSC 2019 build17763; PowerShell7.6.6; .NET6.0.36; Git OpenSSH10.5p1",
+  "brokerHost": "Simply Linux11.1 p11; Mosquitto2.0.15; PowerShell7.4.6",
+  "runCount": 1,
+  "identity": {
+    "campaignId": "windows-to-linux-002",
+    "configSha256": "1cf51be8b6c25ce78c172d2da55e52d9b3c0db7cfaeb8c639e724330057861d7",
+    "standSha256": "22cc2b0b83448e967c0c9e4871f10476dbbb0e8706f4f1609bd82e6fe093f2b9",
+    "deploymentMode": "singleHostSequential",
+    "cpuMode": "hostAllCores",
+    "mqttBenchmarkCommitSha": "89bba24c583eeda9fbc029625930ff2290542462"
+  },
+  "clock": {
+    "ready": true,
+    "method": "ssh-native-clock-roundtrip",
+    "offsetMs": -456.6762,
+    "uncertaintyMs": 19.88585,
+    "thresholdMs": 3000
+  },
+  "sealReferencesChecked": 45,
+  "sealMismatches": [],
+  "remoteControlScriptSha256": "bd3f536a68805ec995490b0ff574a8b559e72e8fe6dc4588e7a09b22be5271a7",
+  "rawLocation": "C:/Users/entityfx/mqtty-native-validation-20261013/windows-to-linux-002; audited copy in local validation scratch",
+  "limitations": [
+    "One short QoS1/16-byte/one-publisher/repeat1 campaign, not calibration or fidelity.",
+    "CLI provenance uses an isolated clean source snapshot; remote control script contains the subsequently committed Windows Git SSH selection fix.",
+    "Windows-to-Windows and 3+ physical hosts are not proved by this run."
+  ]
+}

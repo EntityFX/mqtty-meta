@@ -1,0 +1,7 @@
+{
+  "timeOrigin": "sharedMonotonic",
+  "qos": 1,
+  "measurementStartSeconds": 0.001326950005022809,
+  "measurementEndSeconds": 2.001326950005023,
+  "drainEndSeconds": 2.0014191329828463
+}

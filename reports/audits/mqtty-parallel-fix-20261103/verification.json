@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-03",
+  "branch": "develop",
+  "mqttyBaseDevelop": "e1cdfad318c3903eb7b1bb5ae430ddbba0b7c81f",
+  "previousMetaGitlink": "f5c0a4715b555c4348d2a2843177251f62c640ff",
+  "mqttyCommit": "40640a3f5a8d394c6bad6f51d5bbba4a853fff48",
+  "fixCommits": [
+    "2640ea7c77bdea0cb71350e3d4b8561ddc6e1f1a",
+    "40640a3f5a8d394c6bad6f51d5bbba4a853fff48"
+  ],
+  "existingCacheFixIncluded": true,
+  "changes": [
+    "Synchronized federation and load-balancing delivery ledgers and histogram snapshots",
+    "Concurrent transmission queue; no dropped event writes",
+    "Canonical event export retains all records and duplicates",
+    "Load-balancing native serial/parallel overloads preserve existing signatures and defaults",
+    "Original Refresh exception retained"
+  ],
+  "regressionTests": {
+    "passed": 98,
+    "failed": 0,
+    "newCases": 8,
+    "beforeLedgerFixFailed": 3,
+    "trx": "regression-final.trx"
+  },
+  "benchmarkControllerTestsPassed": 4,
+  "localPilot": {
+    "completed": 6,
+    "failed": 0,
+    "allStrictScientificFingerprintsMatch": true,
+    "packageSha256": "ea565089f36b98774f8d6863aea6fac94cb8a14417dc2e8baa0ad6f9203bec19"
+  },
+  "authorManuscriptAndDissertationFilesChecked": 327,
+  "authorManuscriptAndDissertationFilesChanged": 0,
+  "oldBenchmarksPreserved": true,
+  "receiptSha256": {
+    "adapter.json": "406e5dd9578fa23297c44712264bc53293bdb218d4024f2285481b1f70c66b69",
+    "admission.json": "13e8b07bb02b204a03aff3a97a7a37336aab2cc10ce95c8d0639a982f12bbb51",
+    "cases.json": "6f505ce22b80c1af21abe6eba1bbf126af52fa327381061f2de7e842006ba9f2",
+    "deployment.json": "e8ded40c94d92a18f950cb4d19292f4812e3d9b69cfd84afb9c12fd9e1b90804",
+    "local-environment.json": "642d60b0b3840e38191c8eea3a66685e37abdeb91422fd835e7fadc38dc8140b",
+    "local-pilot.json": "6e64d5586880d9f0a17770e2a16c0dd909ca120e99478ad54fabb39bc9e7f8dd",
+    "package-manifest.json": "ea565089f36b98774f8d6863aea6fac94cb8a14417dc2e8baa0ad6f9203bec19",
+    "package-receipt.json": "f8dff70e8060aa16e6b80623a023dc5a1825c1212f71625b35d6be7dff2caa6c",
+    "regression-before.trx": "715f5866b5d45cbec02ef71acfae065c9e0cfbe0eeab4849afa4470723bea2d0",
+    "regression-final.trx": "5e7ba7c16f6c7c0c38b63b79bfdaf5986dbc0f16b9326498bb5dd930b8839d99",
+    "remote-launch.json": "f93f2cd9e1a8f50ef27cd3eee3ddbe0856d4e5ce3178dea557639f6f847b7f42",
+    "windows-result.json": "d9c8cba5adb527bc034ff418e4a0ebf3e03eb1b40f2c747526263e8f5af3b4cb"
+  },
+  "remoteDeployment": {
+    "bothPreflightsPassed": true,
+    "bothStartsConfirmedAfterSSHReconnect": true,
+    "windowsControllerSummary": {
+      "status": "completed",
+      "attempts": 36,
+      "technicalSuccesses": 36,
+      "scientificMatches": 36,
+      "baselineMatches": 36
+    },
+    "elbrusStatusAtConfirmation": "running",
+    "fullRemoteArchivesRetrieved": false
+  }
+}

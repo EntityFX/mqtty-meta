@@ -1,0 +1,7 @@
+{
+  "acceptance-procedure.py": "f76f0083847805f63d059b57888d9ded97a2362c0c826a50855e5842c163fd59",
+  "transfer-procedure.py": "afb822a71f87fff7804d548711e6f725058abe1eca7aef4bd823048cb4842b9b",
+  "registry_gates.py": "35a3977a146d06f31f4ce7c9f483b9ae960c5979ec4976bf495093aa8f857ca6",
+  "test_registry_gates.py": "faa66d95feded60bda8527cb13704153eee593b6d3b2c08e1ff6360b560152a8",
+  "source-file-index.json": "b1a775d2f93921610db678f50104a674f67a1bf1cc04c22a74867c502305bee6"
+}

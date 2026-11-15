@@ -1,0 +1,11 @@
+{
+  "status": "validated",
+  "configurationsChecked": 252,
+  "simulationsExecuted": 0,
+  "windowsOnly": true,
+  "wallSeconds": 45.31200000003446,
+  "dllSha256": "4300c5bbef3d819e72ec18d9f0c1c3df13540ec18d0367f0be3bcda6998a0845",
+  "planSha256": "458f9d4803496409900c939c903cac036f57bf3a7ac6178cf1afc21c65bce02d",
+  "failures": [],
+  "unitTestsPassed": 4
+}

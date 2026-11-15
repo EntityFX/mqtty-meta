@@ -1,0 +1,11 @@
+{
+  "protectedFiles": {
+    "diss/Dissertation/chapter1.tex": "d589e69b33a6f1d7e1e2ee1a347a4a8900c1530642871bb6156f1437a014b0bd",
+    "diss/Dissertation/chapter2.tex": "71e7896339fd997ad75615244540d4db1358383a32189d3c2ca774a5d91c9780",
+    "diss/Dissertation/chapter3.tex": "b34eadafb2f5fb73d79cbedf13ea382eccb94cb8a3247a7209be74e9f0070998",
+    "diss/Dissertation/chapter4.tex": "38acdeb5a0b164932713eb07e6c0dfce408e3714cadb7dbe1d3498ce327edbb8",
+    "diss/common/characteristic.tex": "fca790613b1563bfa097f85f73b092db1578df2560b2f98116dc0dac82859c6c",
+    "diss/dissertation.tex": "a8d7650327fda0d8d7913d68a838a4f5352ffd7934ce76d8096ed4370417d444"
+  },
+  "scope": "Original LaTeX must remain unchanged"
+}

@@ -1,0 +1,100 @@
+{
+  "status": "technicalMicroExperimentsCompletedNoProfileValidation",
+  "newNativeRuns": 2,
+  "newModelRuns": 6,
+  "linuxContacted": true,
+  "plannedConditions": 16,
+  "candidateNativeRuns": 48,
+  "candidateModelRuns": 48,
+  "programFrozen": false,
+  "frozenInputsChanged": false,
+  "checks": [
+    {
+      "command": "python -m unittest discover -s tools/dissertation -p test_audit_twin_cohort.py -v",
+      "passed": 9,
+      "failed": 0
+    },
+    {
+      "command": "python -m unittest discover -s tools/dissertation -p test_native_audit.py -v",
+      "passed": 14,
+      "failed": 0
+    },
+    {
+      "command": "python -m unittest discover -s tools/dissertation -p test_twin_native_micro.py -v",
+      "passed": 3,
+      "failed": 0
+    },
+    {
+      "command": "dotnet test EntityFX.Tests.Integration.csproj --filter FullyQualifiedName~ClosedLoopBudgetMicroTests",
+      "passed": 2,
+      "failed": 0
+    }
+  ],
+  "blockers": [
+    "Native and model load policies must be aligned without new measured RPS feedback.",
+    "Native exact submission deadline and shared phase origin must be recorded.",
+    "Single model runner repeats payload and receiver counts receipts; per-publication ID and warmup cohort tracing need instrumentation.",
+    "Pilot determines sufficient sample count, window and wall-clock budget before scientific freeze."
+  ],
+  "sourceSha256": {
+    "docs/dissertation/article-1-compact-validation-protocol.md": "67075a53c4da4cd8e2af4e31ee23f500392bc1adf7b9c6b2cf28033410a99b04",
+    "tools/dissertation/audit_twin_cohort.py": "6cbbd194af097791b06cd3621f6fd7d0c929dc11d196794d6d2bc48086558038",
+    "tools/dissertation/test_audit_twin_cohort.py": "c67c3f6cce31bef0e99d14cb8afbbb59c50ae8bc2c3a43124fa7eddda67596ab",
+    "tools/dissertation/run_twin_native_micro.py": "628392e7c4cdf361a2bcaf8546aefeccbf3066a9d474b2cd84a45346b2321155",
+    "tools/dissertation/test_twin_native_micro.py": "5f505fe56be08a8f2eb9aab7f9e9a9a8a2f392aaaed4d92c7d1ef5e0df75a9ad",
+    "mqtty/src/EntityFX.MqttSimulator/EntityFX.Tests.Integration/ClosedLoopBudgetMicroTests.cs": "bfd14bccdf9ce5846deb9952f88598933a4428722257751a98ea9fd9bd567241",
+    "reports/analysis/Article-1-micro-experiments.md": "6e7027b8e602097bb6f9927878eae0cd8eb3132ebcb5fcbf3e8a8a1d2c530ab4"
+  },
+  "scope": "Two independent small-client Mosquitto technical trials and six ideal model load-policy simulations; no native/profile accuracy claim.",
+  "remoteMicro": {
+    "root": "/run/media/entityfx/hd250/mqtty-evidence/article1-native-micro-v1/attempt-001",
+    "service": "mqtty-article1-native-micro-v1.service",
+    "exitCode": 0,
+    "runtimeSeconds": 4.493,
+    "cpuMillisecondsFromSystemdOutput": 233,
+    "memoryPeakMiBFromSystemdOutput": 13.2,
+    "budget": {
+      "cpuQuotaPercent": 100,
+      "memoryMaxMiB": 512,
+      "runtimeMaxSeconds": 120
+    },
+    "stateAfterRun": "inactive/dead",
+    "mainPidAfterRun": 0,
+    "ownBrokerPid": 126824,
+    "ownBrokerExitCode": 0
+  },
+  "evidenceSha256": {
+    "native-linux\\local-recount.json": "19c55e052b8efafe01584bbf3785f1230ccf6543a275f664e33cd41bb982e04f",
+    "model-budget-micro\\qos1\\verification.json": "499d75bc1c2113fdb6fb6d2be4803b675e7fe344988651e327a446005899a7ec",
+    "model-budget-micro\\qos2\\verification.json": "b600d638fd8700a559390d288d4c3bcd10077dffce77a6a9a32cb774d61b0047",
+    "model-budget-micro\\qos1\\20261024T230821525Z-8c210b9ed11d4999aef3f1946cdebf62\\counters.json": "d30103a8605318841db538d16d4ef8dfe962a5fbf3b1201dcd72412bf40c0a21",
+    "model-budget-micro\\qos1\\20261024T230821525Z-8c210b9ed11d4999aef3f1946cdebf62\\experiment-manifest.json": "de835071d8a66350df8d95cc6284717c9802b71bcb552ebd7a44302b370d7146",
+    "model-budget-micro\\qos1\\20261024T230821525Z-8c210b9ed11d4999aef3f1946cdebf62\\latency-histogram.json": "cf5d7685f3de4bc94a4135fe3da24af9ad0510e4e4b795e24f8dba98311cc1d2",
+    "model-budget-micro\\qos1\\20261024T230821525Z-8c210b9ed11d4999aef3f1946cdebf62\\summary.json": "a557c2f4a728e6a50072340a97581baef38e584aee0295c2c8f6c3c0e77deb69",
+    "model-budget-micro\\qos1\\20261024T230822631Z-bf5f5f3d9853489ca1850f5cdbf8fcfa\\counters.json": "ea1b55a56a561bf09671558011c9f50d3126603778b57d28b8e4267e015b7906",
+    "model-budget-micro\\qos1\\20261024T230822631Z-bf5f5f3d9853489ca1850f5cdbf8fcfa\\experiment-manifest.json": "d6d4eb57bd0992a28f69606b23b9c0cfaba5ff93123aa134c396682561cb7a61",
+    "model-budget-micro\\qos1\\20261024T230822631Z-bf5f5f3d9853489ca1850f5cdbf8fcfa\\latency-histogram.json": "34cd74c74805da06eb62c5f48542d762694280e3eb90cb49ce47a70bfdf046b3",
+    "model-budget-micro\\qos1\\20261024T230822631Z-bf5f5f3d9853489ca1850f5cdbf8fcfa\\summary.json": "a3f7a8e7a385dfeecd2589a05e00d13e467aabdfab13993050c870019fab7ea3",
+    "model-budget-micro\\qos1\\20261024T230823273Z-5bff22b3c3cb44d58710fcefca056573\\counters.json": "d1455568776754550f7575b93dfa112416b9a9ee93cc3e2ddd359294dea1c641",
+    "model-budget-micro\\qos1\\20261024T230823273Z-5bff22b3c3cb44d58710fcefca056573\\experiment-manifest.json": "7517ecbaa082b87f04614871e915e2dbb95179deadc7c5a4fab81a1378d31fdc",
+    "model-budget-micro\\qos1\\20261024T230823273Z-5bff22b3c3cb44d58710fcefca056573\\latency-histogram.json": "34cd74c74805da06eb62c5f48542d762694280e3eb90cb49ce47a70bfdf046b3",
+    "model-budget-micro\\qos1\\20261024T230823273Z-5bff22b3c3cb44d58710fcefca056573\\summary.json": "a3f7a8e7a385dfeecd2589a05e00d13e467aabdfab13993050c870019fab7ea3",
+    "model-budget-micro\\qos2\\20261024T230824321Z-0a433dfc6671401d835f65f17713bb03\\counters.json": "36c1c0bbf709897957b169092e90a375f855a430eed551c09db1e5e09193bcfc",
+    "model-budget-micro\\qos2\\20261024T230824321Z-0a433dfc6671401d835f65f17713bb03\\experiment-manifest.json": "a3e080d89bc53d1fe55582f01e5c0ab803c4986176e19f196f8b85d104d12911",
+    "model-budget-micro\\qos2\\20261024T230824321Z-0a433dfc6671401d835f65f17713bb03\\latency-histogram.json": "42bf2f94c0595a648051900f0422d957e26a0125f70ce98c2dbeeeddd2ef7076",
+    "model-budget-micro\\qos2\\20261024T230824321Z-0a433dfc6671401d835f65f17713bb03\\summary.json": "5bb798a9aa7de51bb3a774b687b0322a3b76668537922cc6577224f54f4c27a5",
+    "model-budget-micro\\qos2\\20261024T230825071Z-c06823bbce0f480b8043ad354cad364f\\counters.json": "58da6d506a6e509b4320793dda526b074f9dd9b36c2cc664c4f4ee941b9cfd6a",
+    "model-budget-micro\\qos2\\20261024T230825071Z-c06823bbce0f480b8043ad354cad364f\\experiment-manifest.json": "b58b1e90d20dfe829282a361d7644bd629470620402d6305eac7a273fafd987e",
+    "model-budget-micro\\qos2\\20261024T230825071Z-c06823bbce0f480b8043ad354cad364f\\latency-histogram.json": "3443a05113d816d8264d7546663bea4cb8626f73619a6e5a3056fa6932bab8e0",
+    "model-budget-micro\\qos2\\20261024T230825071Z-c06823bbce0f480b8043ad354cad364f\\summary.json": "65d00bd1740c6fce29f929aff9572ae823e4222637b37470b10f8451719058f0",
+    "model-budget-micro\\qos2\\20261024T230825680Z-a5771fc9b92240079414b2fcc15b0db6\\counters.json": "59302fb6d8305156a508a22a0e445845eea8dd5946b35d7df3633f236b9e02f8",
+    "model-budget-micro\\qos2\\20261024T230825680Z-a5771fc9b92240079414b2fcc15b0db6\\experiment-manifest.json": "b49153fdcc8e3eaafc96edf16c010c59b16df97d9d6d7c8f0ae6754d92857278",
+    "model-budget-micro\\qos2\\20261024T230825680Z-a5771fc9b92240079414b2fcc15b0db6\\latency-histogram.json": "3443a05113d816d8264d7546663bea4cb8626f73619a6e5a3056fa6932bab8e0",
+    "model-budget-micro\\qos2\\20261024T230825680Z-a5771fc9b92240079414b2fcc15b0db6\\summary.json": "65d00bd1740c6fce29f929aff9572ae823e4222637b37470b10f8451719058f0",
+    "native-linux\\attempt-001\\summary.json": "8d048f0b22057a4f34425d2ed563029e525c1d9a1dfb189c5f92dd198f44461c",
+    "native-linux\\attempt-001\\qos1\\phases.json": "998b7643f49baa291febe006d602238a8392c786d1a5c67bd3185715952865df",
+    "native-linux\\attempt-001\\qos1\\verification.json": "a192989033b3cc9c4ad24275517c6217481d254e12af6ca283fd028170f841e1",
+    "native-linux\\attempt-001\\qos2\\phases.json": "2b19309fb341426a4e359d313d3d650ab8da8f9023a52717018e50c2b99b78f3",
+    "native-linux\\attempt-001\\qos2\\verification.json": "116f2ed886d2ce235305679bed722f92898749657b28fc4ca96ab96ed0ac84ae"
+  }
+}

@@ -1,0 +1,200 @@
+{"event": "attempt", "id": "2000000000000000", "elapsedSeconds": 0.0010481140052434057, "publisher": 0, "sequence": 0, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000000", "elapsedSeconds": 0.0012496499984990805, "latencyMs": 0.20195799879729748}
+{"event": "attempt", "id": "2000000000000001", "elapsedSeconds": 0.02106303899199702, "publisher": 0, "sequence": 1, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000001", "elapsedSeconds": 0.021334785997169092, "latencyMs": 0.2724149962887168}
+{"event": "attempt", "id": "2000000000000002", "elapsedSeconds": 0.04107482900144532, "publisher": 0, "sequence": 2, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000002", "elapsedSeconds": 0.0413627169909887, "latencyMs": 0.28847300563938916}
+{"event": "attempt", "id": "2000000000000003", "elapsedSeconds": 0.061072226002579555, "publisher": 0, "sequence": 3, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000003", "elapsedSeconds": 0.061428293003700674, "latencyMs": 0.3568090032786131}
+{"event": "attempt", "id": "2000000000000004", "elapsedSeconds": 0.08107007099897601, "publisher": 0, "sequence": 4, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000004", "elapsedSeconds": 0.08140769100282341, "latencyMs": 0.33824500860646367}
+{"event": "attempt", "id": "2000000000000005", "elapsedSeconds": 0.10107350200996734, "publisher": 0, "sequence": 5, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000005", "elapsedSeconds": 0.10140357501222752, "latencyMs": 0.3306669823359698}
+{"event": "attempt", "id": "2000000000000006", "elapsedSeconds": 0.12106028001289815, "publisher": 0, "sequence": 6, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000006", "elapsedSeconds": 0.12139099801424891, "latencyMs": 0.3312719927635044}
+{"event": "attempt", "id": "2000000000000007", "elapsedSeconds": 0.14106704900041223, "publisher": 0, "sequence": 7, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000007", "elapsedSeconds": 0.1413929550035391, "latencyMs": 0.32648100750520825}
+{"event": "attempt", "id": "2000000000000008", "elapsedSeconds": 0.16106338999816217, "publisher": 0, "sequence": 8, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000008", "elapsedSeconds": 0.16141578200040385, "latencyMs": 0.35303999902680516}
+{"event": "attempt", "id": "2000000000000009", "elapsedSeconds": 0.18106638299650513, "publisher": 0, "sequence": 9, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000009", "elapsedSeconds": 0.18138789301156066, "latencyMs": 0.3220610087737441}
+{"event": "attempt", "id": "200000000000000a", "elapsedSeconds": 0.20106842400855385, "publisher": 0, "sequence": 10, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000000a", "elapsedSeconds": 0.20142459799535573, "latencyMs": 0.3567549865692854}
+{"event": "attempt", "id": "200000000000000b", "elapsedSeconds": 0.22106883800006472, "publisher": 0, "sequence": 11, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000000b", "elapsedSeconds": 0.22143297700677067, "latencyMs": 0.36475699744187295}
+{"event": "attempt", "id": "200000000000000c", "elapsedSeconds": 0.2410596859990619, "publisher": 0, "sequence": 12, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000000c", "elapsedSeconds": 0.24140107500716113, "latencyMs": 0.34195100306533277}
+{"event": "attempt", "id": "200000000000000d", "elapsedSeconds": 0.26106913801049814, "publisher": 0, "sequence": 13, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000000d", "elapsedSeconds": 0.2614217940135859, "latencyMs": 0.35338097950443625}
+{"event": "attempt", "id": "200000000000000e", "elapsedSeconds": 0.2810686090087984, "publisher": 0, "sequence": 14, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000000e", "elapsedSeconds": 0.28139165899483487, "latencyMs": 0.32360799377784133}
+{"event": "attempt", "id": "200000000000000f", "elapsedSeconds": 0.301063390012132, "publisher": 0, "sequence": 15, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000000f", "elapsedSeconds": 0.3014283910160884, "latencyMs": 0.3656129993032664}
+{"event": "attempt", "id": "2000000000000010", "elapsedSeconds": 0.3210661729972344, "publisher": 0, "sequence": 16, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000010", "elapsedSeconds": 0.3213643940107431, "latencyMs": 0.29871900915168226}
+{"event": "attempt", "id": "2000000000000011", "elapsedSeconds": 0.3410657310159877, "publisher": 0, "sequence": 17, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000011", "elapsedSeconds": 0.3414438260078896, "latencyMs": 0.3787199966609478}
+{"event": "attempt", "id": "2000000000000012", "elapsedSeconds": 0.36105700000189245, "publisher": 0, "sequence": 18, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000012", "elapsedSeconds": 0.3614105510059744, "latencyMs": 0.3541120095178485}
+{"event": "attempt", "id": "2000000000000013", "elapsedSeconds": 0.3810637420101557, "publisher": 0, "sequence": 19, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000013", "elapsedSeconds": 0.3813596290128771, "latencyMs": 0.2963949809782207}
+{"event": "attempt", "id": "2000000000000014", "elapsedSeconds": 0.40106458999798633, "publisher": 0, "sequence": 20, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000014", "elapsedSeconds": 0.40142258201376535, "latencyMs": 0.3584689984563738}
+{"event": "attempt", "id": "2000000000000015", "elapsedSeconds": 0.4210599699872546, "publisher": 0, "sequence": 21, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000015", "elapsedSeconds": 0.4214038340141997, "latencyMs": 0.34455902641639113}
+{"event": "attempt", "id": "2000000000000016", "elapsedSeconds": 0.44105900698923506, "publisher": 0, "sequence": 22, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000016", "elapsedSeconds": 0.44140011598938145, "latencyMs": 0.3417600237298757}
+{"event": "attempt", "id": "2000000000000017", "elapsedSeconds": 0.46106522699119523, "publisher": 0, "sequence": 23, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000017", "elapsedSeconds": 0.4614408799970988, "latencyMs": 0.3762039996217936}
+{"event": "attempt", "id": "2000000000000018", "elapsedSeconds": 0.48105942000984214, "publisher": 0, "sequence": 24, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000018", "elapsedSeconds": 0.4813677220081445, "latencyMs": 0.30881998827680945}
+{"event": "attempt", "id": "2000000000000019", "elapsedSeconds": 0.5010687079920899, "publisher": 0, "sequence": 25, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000019", "elapsedSeconds": 0.5013898170145694, "latencyMs": 0.32216100953519344}
+{"event": "attempt", "id": "200000000000001a", "elapsedSeconds": 0.52106933601317, "publisher": 0, "sequence": 26, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000001a", "elapsedSeconds": 0.5213973330100998, "latencyMs": 0.32857898622751236}
+{"event": "attempt", "id": "200000000000001b", "elapsedSeconds": 0.5410647740063723, "publisher": 0, "sequence": 27, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000001b", "elapsedSeconds": 0.5414172830060124, "latencyMs": 0.3533039998728782}
+{"event": "attempt", "id": "200000000000001c", "elapsedSeconds": 0.5610706139996182, "publisher": 0, "sequence": 28, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000001c", "elapsedSeconds": 0.5613875830022153, "latencyMs": 0.3175539895892143}
+{"event": "attempt", "id": "200000000000001d", "elapsedSeconds": 0.5810692539962474, "publisher": 0, "sequence": 29, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000001d", "elapsedSeconds": 0.5814062129938975, "latencyMs": 0.3376200038474053}
+{"event": "attempt", "id": "200000000000001e", "elapsedSeconds": 0.6010613180114888, "publisher": 0, "sequence": 30, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000001e", "elapsedSeconds": 0.6013857010111678, "latencyMs": 0.3249509900342673}
+{"event": "attempt", "id": "200000000000001f", "elapsedSeconds": 0.6210736700159032, "publisher": 0, "sequence": 31, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000001f", "elapsedSeconds": 0.621389984007692, "latencyMs": 0.31697898521088064}
+{"event": "attempt", "id": "2000000000000020", "elapsedSeconds": 0.6410719020059332, "publisher": 0, "sequence": 32, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000020", "elapsedSeconds": 0.6414616529946215, "latencyMs": 0.39038999238982797}
+{"event": "attempt", "id": "2000000000000021", "elapsedSeconds": 0.6610672140086535, "publisher": 0, "sequence": 33, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000021", "elapsedSeconds": 0.6614063820161391, "latencyMs": 0.33988599898293614}
+{"event": "attempt", "id": "2000000000000022", "elapsedSeconds": 0.6810684759984724, "publisher": 0, "sequence": 34, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000022", "elapsedSeconds": 0.681411947007291, "latencyMs": 0.3439720021560788}
+{"event": "attempt", "id": "2000000000000023", "elapsedSeconds": 0.7010560939961579, "publisher": 0, "sequence": 35, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000023", "elapsedSeconds": 0.7014121809916105, "latencyMs": 0.3569819964468479}
+{"event": "attempt", "id": "2000000000000024", "elapsedSeconds": 0.7210603400017135, "publisher": 0, "sequence": 36, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000024", "elapsedSeconds": 0.7214256479928736, "latencyMs": 0.3658159985207021}
+{"event": "attempt", "id": "2000000000000025", "elapsedSeconds": 0.7410688519885298, "publisher": 0, "sequence": 37, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000025", "elapsedSeconds": 0.7414647650148254, "latencyMs": 0.39677502354606986}
+{"event": "attempt", "id": "2000000000000026", "elapsedSeconds": 0.7610684790124651, "publisher": 0, "sequence": 38, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000026", "elapsedSeconds": 0.7614638230006676, "latencyMs": 0.3959589812438935}
+{"event": "attempt", "id": "2000000000000027", "elapsedSeconds": 0.7810556610056665, "publisher": 0, "sequence": 39, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000027", "elapsedSeconds": 0.7814140970003791, "latencyMs": 0.35918698995374143}
+{"event": "attempt", "id": "2000000000000028", "elapsedSeconds": 0.801064236991806, "publisher": 0, "sequence": 40, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000028", "elapsedSeconds": 0.8014228770043701, "latencyMs": 0.35909502184949815}
+{"event": "attempt", "id": "2000000000000029", "elapsedSeconds": 0.8210679210023955, "publisher": 0, "sequence": 41, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000029", "elapsedSeconds": 0.8214061940088868, "latencyMs": 0.3388969926163554}
+{"event": "attempt", "id": "200000000000002a", "elapsedSeconds": 0.8410611849976704, "publisher": 0, "sequence": 42, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000002a", "elapsedSeconds": 0.8414066580007784, "latencyMs": 0.34603700623847544}
+{"event": "attempt", "id": "200000000000002b", "elapsedSeconds": 0.861062187992502, "publisher": 0, "sequence": 43, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000002b", "elapsedSeconds": 0.8614505570149049, "latencyMs": 0.3891840169671923}
+{"event": "attempt", "id": "200000000000002c", "elapsedSeconds": 0.8810672120016534, "publisher": 0, "sequence": 44, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000002c", "elapsedSeconds": 0.8814258580096066, "latencyMs": 0.35930800368078053}
+{"event": "attempt", "id": "200000000000002d", "elapsedSeconds": 0.9010547730140388, "publisher": 0, "sequence": 45, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000002d", "elapsedSeconds": 0.901379340008134, "latencyMs": 0.3253819886595011}
+{"event": "attempt", "id": "200000000000002e", "elapsedSeconds": 0.9210654599883128, "publisher": 0, "sequence": 46, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000002e", "elapsedSeconds": 0.9214228169876151, "latencyMs": 0.3580820048227906}
+{"event": "attempt", "id": "200000000000002f", "elapsedSeconds": 0.941070174012566, "publisher": 0, "sequence": 47, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000002f", "elapsedSeconds": 0.9414049579936545, "latencyMs": 0.3354859945829958}
+{"event": "attempt", "id": "2000000000000030", "elapsedSeconds": 0.9610600729938596, "publisher": 0, "sequence": 48, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000030", "elapsedSeconds": 0.9614137239987031, "latencyMs": 0.35421299980953336}
+{"event": "attempt", "id": "2000000000000031", "elapsedSeconds": 0.9810661200026516, "publisher": 0, "sequence": 49, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000031", "elapsedSeconds": 0.9814353910041973, "latencyMs": 0.37000299198552966}
+{"event": "attempt", "id": "2000000000000032", "elapsedSeconds": 1.0010587529977784, "publisher": 0, "sequence": 50, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000032", "elapsedSeconds": 1.0014322770002764, "latencyMs": 0.37403899477794766}
+{"event": "attempt", "id": "2000000000000033", "elapsedSeconds": 1.021062862011604, "publisher": 0, "sequence": 51, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000033", "elapsedSeconds": 1.0214454510132782, "latencyMs": 0.38322998443618417}
+{"event": "attempt", "id": "2000000000000034", "elapsedSeconds": 1.0410660989873577, "publisher": 0, "sequence": 52, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000034", "elapsedSeconds": 1.041442129004281, "latencyMs": 0.37670900928787887}
+{"event": "attempt", "id": "2000000000000035", "elapsedSeconds": 1.0610708199965302, "publisher": 0, "sequence": 53, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000035", "elapsedSeconds": 1.0614691259979736, "latencyMs": 0.3990640107076615}
+{"event": "attempt", "id": "2000000000000036", "elapsedSeconds": 1.0810600940021686, "publisher": 0, "sequence": 54, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000036", "elapsedSeconds": 1.0814154960098676, "latencyMs": 0.35605698940344155}
+{"event": "attempt", "id": "2000000000000037", "elapsedSeconds": 1.1010678980092052, "publisher": 0, "sequence": 55, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000037", "elapsedSeconds": 1.1014168619876727, "latencyMs": 0.3497120051179081}
+{"event": "attempt", "id": "2000000000000038", "elapsedSeconds": 1.1210653859889135, "publisher": 0, "sequence": 56, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000038", "elapsedSeconds": 1.121480641013477, "latencyMs": 0.4158689989708364}
+{"event": "attempt", "id": "2000000000000039", "elapsedSeconds": 1.1410683789872564, "publisher": 0, "sequence": 57, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000039", "elapsedSeconds": 1.1414357619942166, "latencyMs": 0.368015025742352}
+{"event": "attempt", "id": "200000000000003a", "elapsedSeconds": 1.1610769010148942, "publisher": 0, "sequence": 58, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000003a", "elapsedSeconds": 1.161452536995057, "latencyMs": 0.3762609849218279}
+{"event": "attempt", "id": "200000000000003b", "elapsedSeconds": 1.1810668040125165, "publisher": 0, "sequence": 59, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000003b", "elapsedSeconds": 1.1814537860045675, "latencyMs": 0.3876169794239104}
+{"event": "attempt", "id": "200000000000003c", "elapsedSeconds": 1.2010612479934935, "publisher": 0, "sequence": 60, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000003c", "elapsedSeconds": 1.2014356710133143, "latencyMs": 0.3750140022020787}
+{"event": "attempt", "id": "200000000000003d", "elapsedSeconds": 1.221067464997759, "publisher": 0, "sequence": 61, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000003d", "elapsedSeconds": 1.221430722012883, "latencyMs": 0.3639679925981909}
+{"event": "attempt", "id": "200000000000003e", "elapsedSeconds": 1.2410669900127687, "publisher": 0, "sequence": 62, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000003e", "elapsedSeconds": 1.2414029329956975, "latencyMs": 0.3365140000823885}
+{"event": "attempt", "id": "200000000000003f", "elapsedSeconds": 1.2610716990020592, "publisher": 0, "sequence": 63, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000003f", "elapsedSeconds": 1.2614274510124233, "latencyMs": 0.3565720107872039}
+{"event": "attempt", "id": "2000000000000040", "elapsedSeconds": 1.2810664970020298, "publisher": 0, "sequence": 64, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000040", "elapsedSeconds": 1.2813707999885082, "latencyMs": 0.30481501016765833}
+{"event": "attempt", "id": "2000000000000041", "elapsedSeconds": 1.3010717930155806, "publisher": 0, "sequence": 65, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000041", "elapsedSeconds": 1.301438477996271, "latencyMs": 0.3673699975479394}
+{"event": "attempt", "id": "2000000000000042", "elapsedSeconds": 1.321078231005231, "publisher": 0, "sequence": 66, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000042", "elapsedSeconds": 1.3214769430051092, "latencyMs": 0.39942600415088236}
+{"event": "attempt", "id": "2000000000000043", "elapsedSeconds": 1.3410707759903744, "publisher": 0, "sequence": 67, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000043", "elapsedSeconds": 1.3414518950157799, "latencyMs": 0.3817890246864408}
+{"event": "attempt", "id": "2000000000000044", "elapsedSeconds": 1.3610546179988887, "publisher": 0, "sequence": 68, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000044", "elapsedSeconds": 1.3613934110035188, "latencyMs": 0.3394109953660518}
+{"event": "attempt", "id": "2000000000000045", "elapsedSeconds": 1.381070825009374, "publisher": 0, "sequence": 69, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000045", "elapsedSeconds": 1.3813926659931894, "latencyMs": 0.32249599462375045}
+{"event": "attempt", "id": "2000000000000046", "elapsedSeconds": 1.4010702300001867, "publisher": 0, "sequence": 70, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000046", "elapsedSeconds": 1.4013962740136776, "latencyMs": 0.32674201065674424}
+{"event": "attempt", "id": "2000000000000047", "elapsedSeconds": 1.4210627090069465, "publisher": 0, "sequence": 71, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000047", "elapsedSeconds": 1.4214373829890974, "latencyMs": 0.3753789933398366}
+{"event": "attempt", "id": "2000000000000048", "elapsedSeconds": 1.4410678870044649, "publisher": 0, "sequence": 72, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000048", "elapsedSeconds": 1.4414278829935938, "latencyMs": 0.3606280079111457}
+{"event": "attempt", "id": "2000000000000049", "elapsedSeconds": 1.4610652709961869, "publisher": 0, "sequence": 73, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000049", "elapsedSeconds": 1.4614161450008396, "latencyMs": 0.35164901055395603}
+{"event": "attempt", "id": "200000000000004a", "elapsedSeconds": 1.4810678260109853, "publisher": 0, "sequence": 74, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000004a", "elapsedSeconds": 1.4814466229872778, "latencyMs": 0.37947899545542896}
+{"event": "attempt", "id": "200000000000004b", "elapsedSeconds": 1.5010609129967634, "publisher": 0, "sequence": 75, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000004b", "elapsedSeconds": 1.5014412860036828, "latencyMs": 0.38101800600998104}
+{"event": "attempt", "id": "200000000000004c", "elapsedSeconds": 1.5210631180088967, "publisher": 0, "sequence": 76, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000004c", "elapsedSeconds": 1.5214197490131482, "latencyMs": 0.35713298711925745}
+{"event": "attempt", "id": "200000000000004d", "elapsedSeconds": 1.5410629069956485, "publisher": 0, "sequence": 77, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000004d", "elapsedSeconds": 1.5414012690016534, "latencyMs": 0.33897001412697136}
+{"event": "attempt", "id": "200000000000004e", "elapsedSeconds": 1.5610691850015428, "publisher": 0, "sequence": 78, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000004e", "elapsedSeconds": 1.5614274429972284, "latencyMs": 0.3587589890230447}
+{"event": "attempt", "id": "200000000000004f", "elapsedSeconds": 1.5810639990086202, "publisher": 0, "sequence": 79, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000004f", "elapsedSeconds": 1.581408502010163, "latencyMs": 0.34536499879322946}
+{"event": "attempt", "id": "2000000000000050", "elapsedSeconds": 1.6010794170142617, "publisher": 0, "sequence": 80, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000050", "elapsedSeconds": 1.6014732230105437, "latencyMs": 0.3944739873986691}
+{"event": "attempt", "id": "2000000000000051", "elapsedSeconds": 1.6210635259922128, "publisher": 0, "sequence": 81, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000051", "elapsedSeconds": 1.6214587790018413, "latencyMs": 0.3959780151490122}
+{"event": "attempt", "id": "2000000000000052", "elapsedSeconds": 1.641070468001999, "publisher": 0, "sequence": 82, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000052", "elapsedSeconds": 1.6414025519916322, "latencyMs": 0.33268198603764176}
+{"event": "attempt", "id": "2000000000000053", "elapsedSeconds": 1.661077621014556, "publisher": 0, "sequence": 83, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000053", "elapsedSeconds": 1.6614450099878013, "latencyMs": 0.3681079833768308}
+{"event": "attempt", "id": "2000000000000054", "elapsedSeconds": 1.6810654930013698, "publisher": 0, "sequence": 84, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000054", "elapsedSeconds": 1.6814701090042945, "latencyMs": 0.4053679876960814}
+{"event": "attempt", "id": "2000000000000055", "elapsedSeconds": 1.7010756260133348, "publisher": 0, "sequence": 85, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000055", "elapsedSeconds": 1.7014464410021901, "latencyMs": 0.37149598938412964}
+{"event": "attempt", "id": "2000000000000056", "elapsedSeconds": 1.721069785009604, "publisher": 0, "sequence": 86, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000056", "elapsedSeconds": 1.7214319340127986, "latencyMs": 0.3628099802881479}
+{"event": "attempt", "id": "2000000000000057", "elapsedSeconds": 1.7410789360001218, "publisher": 0, "sequence": 87, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000057", "elapsedSeconds": 1.7415290880016983, "latencyMs": 0.4509110003709793}
+{"event": "attempt", "id": "2000000000000058", "elapsedSeconds": 1.7610696429910604, "publisher": 0, "sequence": 88, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000058", "elapsedSeconds": 1.7614244040159974, "latencyMs": 0.35535101778805256}
+{"event": "attempt", "id": "2000000000000059", "elapsedSeconds": 1.781066669995198, "publisher": 0, "sequence": 89, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000059", "elapsedSeconds": 1.7814297389995772, "latencyMs": 0.36380201345309615}
+{"event": "attempt", "id": "200000000000005a", "elapsedSeconds": 1.8010606690077111, "publisher": 0, "sequence": 90, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000005a", "elapsedSeconds": 1.8014296510082204, "latencyMs": 0.3695859923027456}
+{"event": "attempt", "id": "200000000000005b", "elapsedSeconds": 1.8210716870089527, "publisher": 0, "sequence": 91, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000005b", "elapsedSeconds": 1.821418048988562, "latencyMs": 0.3469429793767631}
+{"event": "attempt", "id": "200000000000005c", "elapsedSeconds": 1.8410761039995123, "publisher": 0, "sequence": 92, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000005c", "elapsedSeconds": 1.841417273011757, "latencyMs": 0.34171700826846063}
+{"event": "attempt", "id": "200000000000005d", "elapsedSeconds": 1.8610645399894565, "publisher": 0, "sequence": 93, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000005d", "elapsedSeconds": 1.8614432259928435, "latencyMs": 0.3795680240727961}
+{"event": "attempt", "id": "200000000000005e", "elapsedSeconds": 1.8810661569877993, "publisher": 0, "sequence": 94, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000005e", "elapsedSeconds": 1.8814119730086531, "latencyMs": 0.34651102032512426}
+{"event": "attempt", "id": "200000000000005f", "elapsedSeconds": 1.901071853004396, "publisher": 0, "sequence": 95, "payloadBytes": 16}
+{"event": "completed", "id": "200000000000005f", "elapsedSeconds": 1.9014362890156917, "latencyMs": 0.36515400279313326}
+{"event": "attempt", "id": "2000000000000060", "elapsedSeconds": 1.9210536410100758, "publisher": 0, "sequence": 96, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000060", "elapsedSeconds": 1.9213938160100952, "latencyMs": 0.34077599411830306}
+{"event": "attempt", "id": "2000000000000061", "elapsedSeconds": 1.941058914992027, "publisher": 0, "sequence": 97, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000061", "elapsedSeconds": 1.9414053290092852, "latencyMs": 0.34714301000349224}
+{"event": "attempt", "id": "2000000000000062", "elapsedSeconds": 1.9610719949996565, "publisher": 0, "sequence": 98, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000062", "elapsedSeconds": 1.9614167159888893, "latencyMs": 0.3453110111877322}
+{"event": "attempt", "id": "2000000000000063", "elapsedSeconds": 1.9810807509929873, "publisher": 0, "sequence": 99, "payloadBytes": 16}
+{"event": "completed", "id": "2000000000000063", "elapsedSeconds": 1.9813958599988837, "latencyMs": 0.3158070030622184}

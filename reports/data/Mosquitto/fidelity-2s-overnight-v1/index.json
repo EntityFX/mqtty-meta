@@ -1,0 +1,654 @@
+{
+  "stage": "fidelity",
+  "measurementSeconds": 2,
+  "runs": [
+    {
+      "key": "m16.q0.p1.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 33128.80075108961,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q0.p1.s42/20261017T022116275Z-7f9610b0b1f74655bcb497042b8a49fb"
+    },
+    {
+      "key": "m16.q0.p1.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 33128.80075108961,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q0.p1.s43/20261017T022116261Z-e327ed5710404195ab5da54abade34d0"
+    },
+    {
+      "key": "m16.q0.p1.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 33128.80075108961,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q0.p1.s44/20261017T022116276Z-700af15737ab4e28ab0f520f1b789c16"
+    },
+    {
+      "key": "m16.q0.p16.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 55576.902393953635,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q0.p16.s42/20261017T022116263Z-76276dfa52c24eb2ace4d7afb94716d7"
+    },
+    {
+      "key": "m16.q0.p16.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 55576.902393953635,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q0.p16.s43/20261017T022138165Z-1b7548a1eedd461a828004885686e307"
+    },
+    {
+      "key": "m16.q0.p16.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 55576.902393953635,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q0.p16.s44/20261017T022138205Z-b10bcd718535435ca7c9d5e57ba0871f"
+    },
+    {
+      "key": "m16.q0.p64.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 55109.80482701014,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q0.p64.s42/20261017T022138211Z-38b79c1256bf4cfbaca33246abdbc254"
+    },
+    {
+      "key": "m16.q0.p64.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 55109.80482701014,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q0.p64.s43/20261017T022258461Z-5af550f4adcc4c4aae571ae779941c03"
+    },
+    {
+      "key": "m16.q0.p64.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 55109.80482701014,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q0.p64.s44/20261017T022316505Z-1711f1039fca43c9ab9d682a9b19e089"
+    },
+    {
+      "key": "m16.q0.p128.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 53598.87980162347,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q0.p128.s42/20261017T022318520Z-1f4b1f3c62b4452eb1d55842e0a7644c"
+    },
+    {
+      "key": "m16.q0.p128.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 53598.87980162347,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q0.p128.s43/20261017T022705327Z-955f4af496064a928d11b850e1b43262"
+    },
+    {
+      "key": "m16.q0.p128.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 53598.87980162347,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q0.p128.s44/20261017T022823588Z-f177ac8e48be4ee9a02dd226f56b7787"
+    },
+    {
+      "key": "m16.q1.p1.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 7589.135773489994,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q1.p1.s42/20261017T022845634Z-61a2437419354c27a88c45b7d9846427"
+    },
+    {
+      "key": "m16.q1.p1.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 7589.135773489994,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q1.p1.s43/20261017T022905709Z-1010bde14db746b4b40c3dd51666fc09"
+    },
+    {
+      "key": "m16.q1.p1.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 7589.135773489994,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q1.p1.s44/20261017T022925837Z-c0a2dd9b742e4300a50b166e2313d827"
+    },
+    {
+      "key": "m16.q1.p16.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 55936.77324884138,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q1.p16.s42/20261017T022945904Z-956d8c1b6fe34f4f8a59ee2e847c2192"
+    },
+    {
+      "key": "m16.q1.p16.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 55936.77324884138,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q1.p16.s43/20261017T023128208Z-c94fe109aea9457f96e11851e8f68101"
+    },
+    {
+      "key": "m16.q1.p16.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 55936.77324884138,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q1.p16.s44/20261017T023314579Z-14c184b41a8546a8943c92bb3c6996a4"
+    },
+    {
+      "key": "m16.q1.p64.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 45521.629283102404,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q1.p64.s42/20261017T023410749Z-7eb255b8515041619a4344ee01787dfd"
+    },
+    {
+      "key": "m16.q1.p64.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 45521.629283102404,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q1.p64.s43/20261017T023456898Z-adceac942a724f7fa6d2a0cae772b350"
+    },
+    {
+      "key": "m16.q1.p64.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 45521.629283102404,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q1.p64.s44/20261017T023737493Z-1988a592e4854813a8bc55d123a747e4"
+    },
+    {
+      "key": "m16.q1.p128.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 47121.83122960406,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q1.p128.s42/20261017T024017957Z-42dc8289e2b043309bf1ee54e9c61263"
+    },
+    {
+      "key": "m16.q1.p128.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 47121.83122960406,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q1.p128.s43/20261017T024046072Z-b680ea2a87f741dea084e59fe78f8bdf"
+    },
+    {
+      "key": "m16.q1.p128.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 47121.83122960406,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q1.p128.s44/20261017T024054095Z-62d7197575a64fa38d01f16be96d49c6"
+    },
+    {
+      "key": "m16.q2.p1.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 6100.53617920976,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q2.p1.s42/20261017T024336578Z-8297dd12756d4cb8b7ec211f4757fb35"
+    },
+    {
+      "key": "m16.q2.p1.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 6100.53617920976,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q2.p1.s43/20261017T024400641Z-251e03acdcab4afb927ae2b16234cbeb"
+    },
+    {
+      "key": "m16.q2.p1.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 6100.53617920976,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q2.p1.s44/20261017T024424720Z-1cffa810675f40f0af1a6ca1076f0da5"
+    },
+    {
+      "key": "m16.q2.p16.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 33235.27708766068,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q2.p16.s42/20261017T024448870Z-efe47cff95aa41b28ff59ab6becce536"
+    },
+    {
+      "key": "m16.q2.p16.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 33235.27708766068,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q2.p16.s43/20261017T024649222Z-4058ace6ad034454b47076f4d2f6faca"
+    },
+    {
+      "key": "m16.q2.p16.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 33235.27708766068,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q2.p16.s44/20261017T024849626Z-1be756425bf3481b8278f3e4505f04ca"
+    },
+    {
+      "key": "m16.q2.p64.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 34822.03106911417,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q2.p64.s42/20261017T025048003Z-6d9af081fec94291a1b1210ba688c79d"
+    },
+    {
+      "key": "m16.q2.p64.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 34822.03106911417,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q2.p64.s43/20261017T025200194Z-2119367191ac40b8bfc28bb10e19373e"
+    },
+    {
+      "key": "m16.q2.p64.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 34822.03106911417,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q2.p64.s44/20261017T025208249Z-ea368d4f7ff24e1185b6f4044652a67a"
+    },
+    {
+      "key": "m16.q2.p128.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 34942.29736691253,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q2.p128.s42/20261017T025252384Z-2e14620df6da458087ce97fc6446d28d"
+    },
+    {
+      "key": "m16.q2.p128.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 34942.29736691253,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q2.p128.s43/20261017T025651117Z-3af9421dcaf447c8860fac85afa63392"
+    },
+    {
+      "key": "m16.q2.p128.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 34942.29736691253,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m16.q2.p128.s44/20261017T025805403Z-06de7bb0f2b5472588e12ec63aa66dec"
+    },
+    {
+      "key": "m256.q0.p1.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 31866.257195049304,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q0.p1.s42/20261017T025807411Z-3fdedc22e9394c5399c56c9609e7b0e2"
+    },
+    {
+      "key": "m256.q0.p1.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 31866.257195049304,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q0.p1.s43/20261017T025829514Z-c6289f4890954361b72bcee7e7a56b41"
+    },
+    {
+      "key": "m256.q0.p1.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 31866.257195049304,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q0.p1.s44/20261017T025851590Z-41e4853066414c04b8e458f756fde9ec"
+    },
+    {
+      "key": "m256.q0.p16.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 54047.02520612825,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q0.p16.s42/20261017T025913676Z-706db87626c34d1b87e5f0db2e407eef"
+    },
+    {
+      "key": "m256.q0.p16.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 54047.02520612825,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q0.p16.s43/20261017T030051941Z-6993a6972cab4990bbe4b497803d7b60"
+    },
+    {
+      "key": "m256.q0.p16.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 54047.02520612825,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q0.p16.s44/20261017T030232345Z-1eef5d1c2d1144b3bf2715f2e3896680"
+    },
+    {
+      "key": "m256.q0.p64.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 55993.595083243,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q0.p64.s42/20261017T030412663Z-0c9b79dd23e642c099aac2259d08ca31"
+    },
+    {
+      "key": "m256.q0.p64.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 55993.595083243,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q0.p64.s43/20261017T030456804Z-875f11f6478e49ee9c3cfe4699137b9c"
+    },
+    {
+      "key": "m256.q0.p64.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 55993.595083243,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q0.p64.s44/20261017T030831583Z-34c1999148424a5c9b609b74de22aab0"
+    },
+    {
+      "key": "m256.q0.p128.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 55039.56431791852,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q0.p128.s42/20261017T030943863Z-83c700b3637049d98aae7175e95b2b00"
+    },
+    {
+      "key": "m256.q0.p128.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 55039.56431791852,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q0.p128.s43/20261017T031023956Z-87a752fe8403407cb06f9e1bd1a710e9"
+    },
+    {
+      "key": "m256.q0.p128.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 55039.56431791852,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q0.p128.s44/20261017T031025953Z-666fc70fe26b40999cb3e0cabf6828ce"
+    },
+    {
+      "key": "m256.q1.p1.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 7279.7361224322985,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q1.p1.s42/20261017T031358668Z-d65cd6de021c43ee87441993af0e9d83"
+    },
+    {
+      "key": "m256.q1.p1.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 7279.7361224322985,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q1.p1.s43/20261017T031418699Z-309ba2fdad644026b68c76c58aa9c5ee"
+    },
+    {
+      "key": "m256.q1.p1.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 7279.7361224322985,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q1.p1.s44/20261017T031438823Z-3253be70f995452a9661131ea6bac73d"
+    },
+    {
+      "key": "m256.q1.p16.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 53327.19322294585,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q1.p16.s42/20261017T031458855Z-5fd2f20d414742b1900962560e9bb278"
+    },
+    {
+      "key": "m256.q1.p16.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 53327.19322294585,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q1.p16.s43/20261017T031647248Z-722c45e85ec440a3b5e6b7c25975839d"
+    },
+    {
+      "key": "m256.q1.p16.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 53327.19322294585,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q1.p16.s44/20261017T031831595Z-92d8c710e24a4e0686b9dfde8aec1de0"
+    },
+    {
+      "key": "m256.q1.p64.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 45797.23469091167,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q1.p64.s42/20261017T032019971Z-e9f275c1eaee4e19b6e7f239dd623b50"
+    },
+    {
+      "key": "m256.q1.p64.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 45797.23469091167,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q1.p64.s43/20261017T032023979Z-9fec402234ee4ebb96b40bff0981cb06"
+    },
+    {
+      "key": "m256.q1.p64.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 45797.23469091167,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q1.p64.s44/20261017T032104186Z-437cee5107ee4716b135d8217e7e9b3e"
+    },
+    {
+      "key": "m256.q1.p128.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 47941.90641730984,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q1.p128.s42/20261017T032128250Z-092a14436c4a44de8c4a48bf68f2c9f7"
+    },
+    {
+      "key": "m256.q1.p128.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 47941.90641730984,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q1.p128.s43/20261017T032625226Z-86a4c383c2414260ab6e75d6abb45d97"
+    },
+    {
+      "key": "m256.q1.p128.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 47941.90641730984,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q1.p128.s44/20261017T032631237Z-043d574b93564a39903b896292fa7e2f"
+    },
+    {
+      "key": "m256.q2.p1.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 5653.5578433580595,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q2.p1.s42/20261017T032639305Z-94a16f6aa7314cffa4b3314ee8a54398"
+    },
+    {
+      "key": "m256.q2.p1.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 5653.5578433580595,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q2.p1.s43/20261017T032703331Z-15a88c544d344eeb9bfa89b2043c8fa7"
+    },
+    {
+      "key": "m256.q2.p1.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 5653.5578433580595,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q2.p1.s44/20261017T032727502Z-a51ae77ced174ec89434195bf8049bec"
+    },
+    {
+      "key": "m256.q2.p16.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 32253.855312816395,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q2.p16.s42/20261017T032751562Z-f59ab83e70ec49e2832e87a7d92f8275"
+    },
+    {
+      "key": "m256.q2.p16.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 32253.855312816395,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q2.p16.s43/20261017T032949936Z-2bba305838404aae86ecf4864160bef3"
+    },
+    {
+      "key": "m256.q2.p16.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 32253.855312816395,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q2.p16.s44/20261017T033150343Z-7bce65d937734dd0a430accffaab4e7f"
+    },
+    {
+      "key": "m256.q2.p64.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 33310.797788168704,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q2.p64.s42/20261017T033318618Z-e49c7f6fc29a4f958e2afb5894784a75"
+    },
+    {
+      "key": "m256.q2.p64.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 33310.797788168704,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q2.p64.s43/20261017T033350727Z-25eba5082ea741d0a1d58ba73402c48c"
+    },
+    {
+      "key": "m256.q2.p64.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 33310.797788168704,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q2.p64.s44/20261017T033739381Z-03558639bce84c11bac071725e1bd313"
+    },
+    {
+      "key": "m256.q2.p128.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 33880.00986462605,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q2.p128.s42/20261017T033813492Z-9d9c6c0c92374db88ac67569d257fe55"
+    },
+    {
+      "key": "m256.q2.p128.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 33880.00986462605,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q2.p128.s43/20261017T033921763Z-c52687a7bbb84cf792370c214d3d476d"
+    },
+    {
+      "key": "m256.q2.p128.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 33880.00986462605,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Mosquitto/simulations/fidelity-2s-overnight-v1/m256.q2.p128.s44/20261017T034001898Z-b6afbe5c2eb24ff1bb37ab7570a81419"
+    }
+  ]
+}

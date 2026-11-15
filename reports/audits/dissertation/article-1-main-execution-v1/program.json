@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "artifact": "article1-matched-main-v1",
+  "budgetSeconds": 21600,
+  "jobs": [
+    {
+      "stage": "calibration",
+      "broker": "Aedes",
+      "repeat": 1,
+      "seed": 42,
+      "key": "calibration.Aedes.r1"
+    },
+    {
+      "stage": "calibration",
+      "broker": "Aedes",
+      "repeat": 2,
+      "seed": 43,
+      "key": "calibration.Aedes.r2"
+    },
+    {
+      "stage": "calibration",
+      "broker": "Aedes",
+      "repeat": 3,
+      "seed": 44,
+      "key": "calibration.Aedes.r3"
+    },
+    {
+      "stage": "calibration",
+      "broker": "Mosquitto",
+      "repeat": 1,
+      "seed": 42,
+      "key": "calibration.Mosquitto.r1"
+    },
+    {
+      "stage": "calibration",
+      "broker": "Mosquitto",
+      "repeat": 2,
+      "seed": 43,
+      "key": "calibration.Mosquitto.r2"
+    },
+    {
+      "stage": "calibration",
+      "broker": "Mosquitto",
+      "repeat": 3,
+      "seed": 44,
+      "key": "calibration.Mosquitto.r3"
+    },
+    {
+      "stage": "calibration",
+      "broker": "ActiveMQ",
+      "repeat": 1,
+      "seed": 42,
+      "key": "calibration.ActiveMQ.r1"
+    },
+    {
+      "stage": "calibration",
+      "broker": "ActiveMQ",
+      "repeat": 2,
+      "seed": 43,
+      "key": "calibration.ActiveMQ.r2"
+    },
+    {
+      "stage": "calibration",
+      "broker": "ActiveMQ",
+      "repeat": 3,
+      "seed": 44,
+      "key": "calibration.ActiveMQ.r3"
+    },
+    {
+      "stage": "calibration",
+      "broker": "EMQX",
+      "repeat": 1,
+      "seed": 42,
+      "key": "calibration.EMQX.r1"
+    },
+    {
+      "stage": "calibration",
+      "broker": "EMQX",
+      "repeat": 2,
+      "seed": 43,
+      "key": "calibration.EMQX.r2"
+    },
+    {
+      "stage": "calibration",
+      "broker": "EMQX",
+      "repeat": 3,
+      "seed": 44,
+      "key": "calibration.EMQX.r3"
+    },
+    {
+      "stage": "control",
+      "broker": "Aedes",
+      "repeat": 1,
+      "seed": 42,
+      "key": "control.Aedes.r1"
+    },
+    {
+      "stage": "control",
+      "broker": "Aedes",
+      "repeat": 2,
+      "seed": 43,
+      "key": "control.Aedes.r2"
+    },
+    {
+      "stage": "control",
+      "broker": "Aedes",
+      "repeat": 3,
+      "seed": 44,
+      "key": "control.Aedes.r3"
+    },
+    {
+      "stage": "control",
+      "broker": "Mosquitto",
+      "repeat": 1,
+      "seed": 42,
+      "key": "control.Mosquitto.r1"
+    },
+    {
+      "stage": "control",
+      "broker": "Mosquitto",
+      "repeat": 2,
+      "seed": 43,
+      "key": "control.Mosquitto.r2"
+    },
+    {
+      "stage": "control",
+      "broker": "Mosquitto",
+      "repeat": 3,
+      "seed": 44,
+      "key": "control.Mosquitto.r3"
+    },
+    {
+      "stage": "control",
+      "broker": "ActiveMQ",
+      "repeat": 1,
+      "seed": 42,
+      "key": "control.ActiveMQ.r1"
+    },
+    {
+      "stage": "control",
+      "broker": "ActiveMQ",
+      "repeat": 2,
+      "seed": 43,
+      "key": "control.ActiveMQ.r2"
+    },
+    {
+      "stage": "control",
+      "broker": "ActiveMQ",
+      "repeat": 3,
+      "seed": 44,
+      "key": "control.ActiveMQ.r3"
+    },
+    {
+      "stage": "control",
+      "broker": "EMQX",
+      "repeat": 1,
+      "seed": 42,
+      "key": "control.EMQX.r1"
+    },
+    {
+      "stage": "control",
+      "broker": "EMQX",
+      "repeat": 2,
+      "seed": 43,
+      "key": "control.EMQX.r2"
+    },
+    {
+      "stage": "control",
+      "broker": "EMQX",
+      "repeat": 3,
+      "seed": 44,
+      "key": "control.EMQX.r3"
+    },
+    {
+      "stage": "model",
+      "broker": "Aedes",
+      "repeat": 1,
+      "seed": 42,
+      "key": "model.Aedes.r1"
+    },
+    {
+      "stage": "model",
+      "broker": "Aedes",
+      "repeat": 2,
+      "seed": 43,
+      "key": "model.Aedes.r2"
+    },
+    {
+      "stage": "model",
+      "broker": "Aedes",
+      "repeat": 3,
+      "seed": 44,
+      "key": "model.Aedes.r3"
+    },
+    {
+      "stage": "model",
+      "broker": "Mosquitto",
+      "repeat": 1,
+      "seed": 42,
+      "key": "model.Mosquitto.r1"
+    },
+    {
+      "stage": "model",
+      "broker": "Mosquitto",
+      "repeat": 2,
+      "seed": 43,
+      "key": "model.Mosquitto.r2"
+    },
+    {
+      "stage": "model",
+      "broker": "Mosquitto",
+      "repeat": 3,
+      "seed": 44,
+      "key": "model.Mosquitto.r3"
+    },
+    {
+      "stage": "model",
+      "broker": "ActiveMQ",
+      "repeat": 1,
+      "seed": 42,
+      "key": "model.ActiveMQ.r1"
+    },
+    {
+      "stage": "model",
+      "broker": "ActiveMQ",
+      "repeat": 2,
+      "seed": 43,
+      "key": "model.ActiveMQ.r2"
+    },
+    {
+      "stage": "model",
+      "broker": "ActiveMQ",
+      "repeat": 3,
+      "seed": 44,
+      "key": "model.ActiveMQ.r3"
+    },
+    {
+      "stage": "model",
+      "broker": "EMQX",
+      "repeat": 1,
+      "seed": 42,
+      "key": "model.EMQX.r1"
+    },
+    {
+      "stage": "model",
+      "broker": "EMQX",
+      "repeat": 2,
+      "seed": 43,
+      "key": "model.EMQX.r2"
+    },
+    {
+      "stage": "model",
+      "broker": "EMQX",
+      "repeat": 3,
+      "seed": 44,
+      "key": "model.EMQX.r3"
+    },
+    {
+      "stage": "replay",
+      "broker": "Aedes",
+      "repeat": 1,
+      "seed": 42,
+      "key": "replay.Aedes.r1"
+    },
+    {
+      "stage": "replay",
+      "broker": "Mosquitto",
+      "repeat": 1,
+      "seed": 42,
+      "key": "replay.Mosquitto.r1"
+    },
+    {
+      "stage": "replay",
+      "broker": "ActiveMQ",
+      "repeat": 1,
+      "seed": 42,
+      "key": "replay.ActiveMQ.r1"
+    },
+    {
+      "stage": "replay",
+      "broker": "EMQX",
+      "repeat": 1,
+      "seed": 42,
+      "key": "replay.EMQX.r1"
+    }
+  ],
+  "phaseSeconds": {
+    "warmup": 1,
+    "measurement": 4,
+    "drain": 5,
+    "tick": 1e-05
+  },
+  "admission": {
+    "admitted": true,
+    "path": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-main-v1/admission.json",
+    "sha256": "a5d5cda00811ebb6fedcbf67a0642c6f60499dd55d998921a0f3dd2a971a22eb",
+    "scope": "Fixed observed MQTT tract and fixed measurement implementation; not isolated server performance or negligible logging overhead"
+  },
+  "files": {
+    "runtime/EntityFX.MqttBenchmark.Campaign.dll": "032376b49b713d24c20c397510231456ade7df6e8c92c37ab0d51f8df94e9a6b",
+    "runtime/EntityFX.MqttBenchmark.Campaign.pdb": "f964b2d9ac9e4fe3c88ef2e59238f4cd62f3508d2ad3020c2443e9b092cf160d",
+    "runtime/EntityFX.MqttBenchmark.dll": "e88e9894232ec5043853a0f49e943b428a17adc0496d3c3cd1790be37f76c527",
+    "runtime/EntityFX.MqttBenchmark.pdb": "60a3b9653c6d4a8f9cfd5e3e57c99b5d46a402c5083f056a6cd348d002f91d69",
+    "runtime/EntityFX.MqttY.Contracts.dll": "50a2bdfda958e62e5549f5f3f1832d6e12f742f4972f47b2c52750bad059ce54",
+    "runtime/EntityFX.MqttY.Contracts.Mqtt.dll": "bf195c0e34b8f5cb9035e686c9ad089164ac6aca28649c4159210e095b66ca6c",
+    "runtime/EntityFX.MqttY.Contracts.Mqtt.pdb": "d5e07b83704273a02268f9a756f058c7bc183e21c08d246e28c38ac83a8784dd",
+    "runtime/EntityFX.MqttY.Contracts.pdb": "8306554cd5b772557a0cba3fc77a6f52855cb725ab099a147e7a7d444eb3f77d",
+    "runtime/EntityFX.MqttY.Contracts.Scenarios.dll": "089adb344ad88afeb3eabe59eeefad233c5a0a5a08f8b600bc7c9d2053724628",
+    "runtime/EntityFX.MqttY.Contracts.Scenarios.pdb": "5472405afbe946c87e6ad8404f58a79ce478604079bf7d88b51ba29ef40ec888",
+    "runtime/EntityFX.MqttY.dll": "a9fdbc9a5158f81f5fe21d6bb1b39f761eed4c45a1f622f945f5c3848f1ce5e2",
+    "runtime/EntityFX.MqttY.pdb": "e7e134847a18723cfa955e0dd2c1ae441cd63123f0647ca2939c95b4265e26e1",
+    "runtime/EntityFX.MqttY.Plugin.Mqtt.dll": "5fd73694faf558e71252f1bb3b36c5c76f13b617dd220e81eacad68ae8edff52",
+    "runtime/EntityFX.MqttY.Plugin.Mqtt.pdb": "1a560d47ad36d45115ac9eabf0df03ec951f1152ee461654bcf5e919e382be3d",
+    "runtime/Microsoft.Extensions.Configuration.Abstractions.dll": "3124386219566a2c386e6999d83a7d507584de46cde4ae733a8af3c373c42b8c",
+    "runtime/Microsoft.Extensions.Configuration.Binder.dll": "4449f40e0645a61067c5e206e956cc5bc3b4421593b3c27188d8c71ef45c64a6",
+    "runtime/Microsoft.Extensions.DependencyInjection.Abstractions.dll": "ac9cd953b7eeb03cf48e343c5ace6fc9b48ac968b68d1cb30ad1d6111178bf4d",
+    "runtime/Microsoft.Extensions.DependencyInjection.dll": "df0ae00b1599acae93d9f4df2bcc6d0ba109221ccc44d2d1486183f84a5fec78",
+    "runtime/Microsoft.Extensions.Logging.Abstractions.dll": "ab36e8201d41dd751cbb712704dbe8492bdd0ab1bff6fb35371cf59bcd982181",
+    "runtime/Microsoft.Extensions.Logging.dll": "37b87b16ac688d5619168554a22cca2677e1115f21c2d5ebe2f39c024fee2b7f",
+    "runtime/Microsoft.Extensions.Options.dll": "fbb309a36bc91d90ec2984397bff4f75f35ac92909e0acd952c5264c5ac0a753",
+    "runtime/Microsoft.Extensions.Primitives.dll": "f9f47907a041067d9bc1b9a9f516009b6ca0a9c6325ce83527883cc0d053dfa5",
+    "runtime/MQTTnet.dll": "d45dd46c6de82ec943b9a6dce5ba93ab0c0e9fd3c56805112ba31dd7b8d0de44",
+    "runtime/MQTTnet.Extensions.ManagedClient.dll": "c4bd9db24a7db2b3f100ffc7e28f7966b70f6d17c7565c54897b0de5c9655212",
+    "runtime/System.Diagnostics.DiagnosticSource.dll": "d6935e993b69f8abd934f01b0d7dd8ca9616a7ea94c7af59ed07b2fd3cf93a97",
+    "runtime/TwinValidationProbe.deps.json": "6bbd93651f90089c87ea0e1075639fa3725f7b2af90c7f705a3c3d64001b3e2d",
+    "runtime/TwinValidationProbe.dll": "66b8afa80663327770476fb490fc95a147abedbe62c145d0a9c820fc1a524951",
+    "runtime/TwinValidationProbe.exe": "aa6b4071880f891a35d9fcb62bb5c2abe6bdbfda51ee96c4d0f942f00c6bb9f3",
+    "runtime/TwinValidationProbe.pdb": "bd7b780cecd7641d4d1147691ec26e3daf929ec3410e7dfc0c11064023232f4e",
+    "runtime/TwinValidationProbe.runtimeconfig.json": "ded3aeb5856a11db0b654a785574490cab55839ebfb17efe9e39b89618fc5b91",
+    "calibration/EntityFX.MqttY.Contracts.dll": "50a2bdfda958e62e5549f5f3f1832d6e12f742f4972f47b2c52750bad059ce54",
+    "calibration/EntityFX.MqttY.Contracts.Mqtt.dll": "bf195c0e34b8f5cb9035e686c9ad089164ac6aca28649c4159210e095b66ca6c",
+    "calibration/EntityFX.MqttY.Contracts.Mqtt.pdb": "d5e07b83704273a02268f9a756f058c7bc183e21c08d246e28c38ac83a8784dd",
+    "calibration/EntityFX.MqttY.Contracts.pdb": "8306554cd5b772557a0cba3fc77a6f52855cb725ab099a147e7a7d444eb3f77d",
+    "calibration/EntityFX.MqttY.Contracts.Scenarios.dll": "089adb344ad88afeb3eabe59eeefad233c5a0a5a08f8b600bc7c9d2053724628",
+    "calibration/EntityFX.MqttY.Contracts.Scenarios.pdb": "5472405afbe946c87e6ad8404f58a79ce478604079bf7d88b51ba29ef40ec888",
+    "calibration/EntityFX.MqttY.dll": "a9fdbc9a5158f81f5fe21d6bb1b39f761eed4c45a1f622f945f5c3848f1ce5e2",
+    "calibration/EntityFX.MqttY.MqttRelay.App.deps.json": "d28ff36a36e748ae105cb4105fe5a6e55e4fb779361f320c31d29a59aad52f58",
+    "calibration/EntityFX.MqttY.MqttRelay.App.dll": "e68bd0ea42b2e2ff805cd611e58bc5bedff14895721f02068e3a4b65a51a4a78",
+    "calibration/EntityFX.MqttY.MqttRelay.App.exe": "cb24839a5d377201c484fa636178772e1b72c191f3a6390bb94f8fc572ab2c77",
+    "calibration/EntityFX.MqttY.MqttRelay.App.pdb": "afa3d98692b572f6c736148265dcb20e4581ef8a9f10f374068b201b3456f46d",
+    "calibration/EntityFX.MqttY.MqttRelay.App.runtimeconfig.json": "ded3aeb5856a11db0b654a785574490cab55839ebfb17efe9e39b89618fc5b91",
+    "calibration/EntityFX.MqttY.pdb": "e7e134847a18723cfa955e0dd2c1ae441cd63123f0647ca2939c95b4265e26e1",
+    "calibration/EntityFX.MqttY.Plugin.Mqtt.dll": "5fd73694faf558e71252f1bb3b36c5c76f13b617dd220e81eacad68ae8edff52",
+    "calibration/EntityFX.MqttY.Plugin.Mqtt.pdb": "1a560d47ad36d45115ac9eabf0df03ec951f1152ee461654bcf5e919e382be3d",
+    "calibration/Microsoft.Extensions.Configuration.Abstractions.dll": "3124386219566a2c386e6999d83a7d507584de46cde4ae733a8af3c373c42b8c",
+    "calibration/Microsoft.Extensions.Configuration.Binder.dll": "4449f40e0645a61067c5e206e956cc5bc3b4421593b3c27188d8c71ef45c64a6",
+    "calibration/Microsoft.Extensions.DependencyInjection.Abstractions.dll": "ac9cd953b7eeb03cf48e343c5ace6fc9b48ac968b68d1cb30ad1d6111178bf4d",
+    "calibration/Microsoft.Extensions.DependencyInjection.dll": "df0ae00b1599acae93d9f4df2bcc6d0ba109221ccc44d2d1486183f84a5fec78",
+    "calibration/Microsoft.Extensions.Logging.Abstractions.dll": "ab36e8201d41dd751cbb712704dbe8492bdd0ab1bff6fb35371cf59bcd982181",
+    "calibration/Microsoft.Extensions.Logging.dll": "37b87b16ac688d5619168554a22cca2677e1115f21c2d5ebe2f39c024fee2b7f",
+    "calibration/Microsoft.Extensions.Options.dll": "fbb309a36bc91d90ec2984397bff4f75f35ac92909e0acd952c5264c5ac0a753",
+    "calibration/Microsoft.Extensions.Primitives.dll": "f9f47907a041067d9bc1b9a9f516009b6ca0a9c6325ce83527883cc0d053dfa5",
+    "calibration/System.Diagnostics.DiagnosticSource.dll": "d6935e993b69f8abd934f01b0d7dd8ca9616a7ea94c7af59ed07b2fd3cf93a97",
+    "runtime-manifest.json": "06c1d88b5777befcb60385cc543207ade9c68017e7e4c4507afbe31c7f9e04fc",
+    "launcher/independent_twin_recount.py": "137f91eb5ded0727938116ee6d587dbd35f6ee9ae849ce3e6421adfafb68739e",
+    "launcher/run_fresh_twin_pilot.py": "6715601ac8d451b7984f9d541a712abd7b261c63f708c9b81aa2ef522f829115",
+    "launcher/audit_twin_connections.py": "eb3096f509c9a15e6a1035bc14ed323f2ada46e3be828378d0c23ff2f238ee71",
+    "launcher/run_fresh_twin_series.py": "a4d3631b13ae67df912c765a6979752aa9fb61e4b53f2da707c09561076f7d59",
+    "launcher/run_remaining_twin_pilots.py": "f24ac9b137e8a9cfe6f02e5e3e57acd0de6418bb8341e9d8d6a67fe1550ca51e",
+    "launcher/run_matched_twin_pilot.py": "ee54c28ad330d4f43990095a1acc2f3e1d540b1d89c2b13acfc392965ac10043",
+    "launcher/test_matched_main_campaign.py": "da6c9d230247982756b89ee954e4db723614489b5bb83a2821a440583cf5c829",
+    "launcher/audit_twin_cohort.py": "6cbbd194af097791b06cd3621f6fd7d0c929dc11d196794d6d2bc48086558038",
+    "launcher/run_matched_main_campaign.py": "1732c4a7861b6708b3ece084ba749ab70c65d97fcc806f88d9b05c972c8fd280",
+    "stand/Aedes.json": "c5eb957faacaca5179e88e1846db5b2f079778af74bd3c067f5ccd249b18692a",
+    "stand/EMQX.json": "b28c14e6f6d26042564da5ffd2182057be011e4e3ad1d4edc03e75b26a50e691",
+    "stand/input-manifest.json": "c2f3246aa7e3ed66e3af1279920bc9f83322efa1b72a4ab92628178816b806d7",
+    "stand/Mosquitto.json": "b40a2b5b8a7403536c7e3a6f8838578cc5853942e44a12e7156c221e67d4492d",
+    "stand/ActiveMQ.json": "7feb115e9d54d96ed1195ea31a36ff5d9f74ca53fb6b85f429ea72a2dcf17eb7",
+    "admission.json": "a5d5cda00811ebb6fedcbf67a0642c6f60499dd55d998921a0f3dd2a971a22eb"
+  },
+  "pinnedFiles": {
+    "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/launcher-v2/program.json": "b9d8ca76e082dfe1d4d7f4882468f981441f53e6ed0e92579912d54b2ba83087",
+    "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/launcher-v2/Aedes-stand.json": "c5eb957faacaca5179e88e1846db5b2f079778af74bd3c067f5ccd249b18692a",
+    "/usr/bin/node": "0ca513fedb9eade5784c94bed30bc710d116ffd7a5405c54833d4f53e4115de4",
+    "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/aedes/server.js": "067e26dd989e4d1cbfe715ab7629a030586e0121bc661573b672ed91ac866260",
+    "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/aedes/package-lock.json": "53f721cd2e135782d024a24f82e511ee4aef51541384f87de52f86b66b9c07dd",
+    "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/launcher-v2/Mosquitto-stand.json": "b40a2b5b8a7403536c7e3a6f8838578cc5853942e44a12e7156c221e67d4492d",
+    "/usr/sbin/mosquitto": "34cee46d71bd97aca34c75fcb844674ab787434468c06423a3a1f2825a213dea",
+    "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/mosquitto.conf": "6ecd37006bf53ea7ceb99d08f0a8d6029439caddb8b7e545725d0e9f77e13673",
+    "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/launcher-v2/ActiveMQ-stand.json": "7feb115e9d54d96ed1195ea31a36ff5d9f74ca53fb6b85f429ea72a2dcf17eb7",
+    "/usr/lib/jvm/java-17-openjdk-17.0.19.0.10-alt1.x86_64/bin/java": "f8eaf4b8c99f45b7382347c86137bf65afa6779bca7f333f43ce282464704e5d",
+    "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/activemq/apache-activemq-6.3.2/bin/activemq": "cc815f36648e6470213f55b2f9b30f877d176445458d288d9b0ca179659e213e",
+    "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/activemq/apache-activemq-6.3.2/conf/activemq.xml": "904ec768ef04e436cd0b3ce82decb0bf5b9bf17f929e2fb1a99d538f4ee63c94",
+    "/run/media/entityfx/hd250/mqtty-evidence/article1-fresh-validation-v1/launcher-v2/EMQX-stand.json": "b28c14e6f6d26042564da5ffd2182057be011e4e3ad1d4edc03e75b26a50e691",
+    "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/erts-16.3/bin/beam.smp": "4ee6e399590d9b46eb5149bc54e27797146ef1df21d2fc007e0ae1ce01867a3e",
+    "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/bin/emqx": "4c08242d5d53034a2177f2f3b57bfbe16649b35a0bf537c73c8511cc190c54c3",
+    "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/etc/emqx.conf": "141b842f4ad32603728f10a62baaebfb8de1aa6aa1044d73700f05ec84e4b274",
+    "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/etc/base.hocon": "f5bcfd5eca1d628c25c2bb3afd8585c005614964afa18c2544d940141289be4d",
+    "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/etc/vm.args": "b2823d3ae755ea9404d760e37daddeef8b1c424e64165eb02604cecd9c9bdd3a"
+  },
+  "brokers": {
+    "Aedes": {
+      "metadata": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-main-v1/stand/Aedes.json"
+    },
+    "Mosquitto": {
+      "metadata": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-main-v1/stand/Mosquitto.json"
+    },
+    "ActiveMQ": {
+      "metadata": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-main-v1/stand/ActiveMQ.json"
+    },
+    "EMQX": {
+      "metadata": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-main-v1/stand/EMQX.json"
+    }
+  },
+  "standSha256": "c2f3246aa7e3ed66e3af1279920bc9f83322efa1b72a4ab92628178816b806d7",
+  "mqttBenchmarkCommit": "ab513df3d2b65462abcfba8084f066ae4b1bd0a1",
+  "mqttyCommit": "4c658536586f88a89cd3ff5ab0915903640cf3c9",
+  "runtimeManifestSha256": "06c1d88b5777befcb60385cc543207ade9c68017e7e4c4507afbe31c7f9e04fc",
+  "probeDll": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-main-v1/runtime/TwinValidationProbe.dll",
+  "calibrationDll": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-main-v1/calibration/EntityFX.MqttY.MqttRelay.App.dll",
+  "mqttyRepository": "/run/media/entityfx/hd250/mqtty-evidence/article1-matched-main-v1/mqtty-source",
+  "forecastSeconds": 3600,
+  "forecastBasis": "Conservative one-hour allowance: 24 native x 60s + 16 models x 90s + 720s for profile aggregation and startup; pilot times were shorter; hard immutable cap six hours.",
+  "modelExecution": "isolated-direct-probe; explicit exception: live Web remains unchanged and lacks new single-point format; local Web parity tested separately",
+  "nativePolicy": {
+    "recordPublicationCohort": true,
+    "observeFullDrainWindow": true,
+    "writeMessageEventLogs": true,
+    "measureRttBaseline": true,
+    "brokerCpu": "0",
+    "generatorCpu": "2-3",
+    "source": "MqttBenchmark",
+    "state": "Fresh broker process for every native measurement"
+  },
+  "comparisonPolicy": "Each model seed against mean of three independent control runs; additionally compare calibration-mean baseline; preserve native min/max",
+  "accuracyThresholds": {
+    "rpsRelative": 0.15,
+    "p99Relative": 0.2,
+    "failureAbsolute": 0.05,
+    "lossAbsolute": 0.05
+  },
+  "replayPolicy": "One seed-42 repeat per broker; summary/histogram/event files and canonical scientific counters; connection snapshot dictionary order is not a byte-level contract",
+  "resources": {
+    "memoryMaxGiB": 4,
+    "memoryScope": "Whole owned service group (native broker, generator and orchestrator), not broker-exclusive memory",
+    "swapMax": 0,
+    "cpuQuotaPercent": 300,
+    "allowedCpus": [
+      0,
+      2,
+      3
+    ],
+    "nativeBrokerCpus": [
+      0
+    ],
+    "nativeGeneratorCpus": [
+      2,
+      3
+    ],
+    "modelCpus": [
+      2,
+      3
+    ],
+    "webRestarted": false
+  }
+}

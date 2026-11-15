@@ -1,0 +1,52 @@
+{
+  "status": "mostlyCompletedRemainingArticleExtractionBlocked",
+  "items": [
+    {
+      "path": "C:/temp/mqtty-evidence/network-final-20261028/raw-002",
+      "originalBytes": 15780876135,
+      "remainingBytes": 0,
+      "remainingFiles": 0,
+      "removedBytes": 15780876135,
+      "directoryRemoved": true,
+      "retainedArchive": "C:/temp/mqtty-evidence/network-final-20261028/network-full-final.tar.gz",
+      "archiveSha256Verified": "e5d0ea8d89a5307c3317dd5148dac467efbb7e79ca289f736d07bb41ce35a3b5"
+    },
+    {
+      "path": "C:/temp/mqtty-evidence/network-full-3h-v1/raw-001",
+      "originalBytes": 9618618314,
+      "remainingBytes": 0,
+      "remainingFiles": 0,
+      "removedBytes": 9618618314,
+      "directoryRemoved": true,
+      "retainedArchive": "C:/temp/mqtty-evidence/network-full-3h-v1/network-full-3h-v1.tar.gz",
+      "archiveSha256Verified": "5adfa393a075b29ab0a0c8dba4263e97231ede6bb8445daf9c4793df913af90b"
+    },
+    {
+      "path": "C:/temp/mqtty-evidence/article1-matched-main-v1/raw-001",
+      "originalBytes": 1103107908,
+      "remainingBytes": 1083929295,
+      "remainingFiles": 644,
+      "removedBytes": 19178613,
+      "directoryRemoved": false,
+      "retainedArchive": "C:/temp/mqtty-evidence/article1-matched-main-v1/article1-matched-main-v1-raw-001.tar.gz",
+      "archiveSha256Verified": "ee12f39ce4992518f03fd3b921d8b0ff325664045a1aea2b56b11e665f3a1347"
+    }
+  ],
+  "bytesOfFilesRemoved": 25418673062,
+  "freeBytesAfter": 36146683904,
+  "freeBytesBeforeExact": null,
+  "importantArchivesRetained": true,
+  "unrelatedTempFilesDeleted": false,
+  "failures": [
+    {
+      "action": "Initial native PowerShell cleanup",
+      "reason": "Remove-Item: directory not empty in calibration.ActiveMQ.r1; two network roots removed before article extraction error"
+    },
+    {
+      "action": "Further deletion of article1-matched-main-v1/raw-001",
+      "reason": "Automatic approval review rejected action: blocked by policy; no further deletion attempted"
+    }
+  ],
+  "rawRecreation": "Extract retained tar.gz archives into a new empty folder before rerunning raw checks",
+  "initialProcedureSha256": "f356dbcaf2f9f6ecec303b741f8bd08efaf47ec1cf80c5b35535db86fb241f44"
+}

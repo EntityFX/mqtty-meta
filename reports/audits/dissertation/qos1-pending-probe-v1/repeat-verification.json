@@ -1,0 +1,23 @@
+{
+  "status": "verifiedMechanismOnly",
+  "controlEquivalentAfterSortingUnorderedNodeAndSessionCollections": true,
+  "refusalEquivalentAfterSortingUnorderedNodeAndSessionCollections": true,
+  "rawControlEqual": false,
+  "rawRefusalEqual": false,
+  "binaryHashesIdentical": true,
+  "sourceHashesIdentical": true,
+  "verificationHashes": {
+    "attempt-001/verification.json": "5457f49f9bab8132e7051ccf09ab53d05b5f71df5cf389898dcac23d8f4e4eb2",
+    "attempt-002/verification.json": "ae668a86f7d8c59ecbcdd71219ea569827e95aa24266d7342fb97ae1e6c93251",
+    "attempt-003/verification.json": "10837df698562d84c85ed906b2fe45c88b2e552ac5b0103584af0e801c301045"
+  },
+  "actualPilotCauseProven": false,
+  "nextDiagnostics": [
+    "site-level and transit Refused counters separately",
+    "all node incoming/outgoing queue counts",
+    "broker processing queue counts and ready ticks",
+    "pending MQTT states by node/session/packetId and age",
+    "federator queues and pending output client by target",
+    "progress deltas during drain; duplicate active packet IDs per session"
+  ]
+}

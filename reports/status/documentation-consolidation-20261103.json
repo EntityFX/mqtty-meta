@@ -1,0 +1,1260 @@
+{
+  "date": "2026-11-03",
+  "baseCommit": "8b27518e1d206f90d2da4fbac0aa30c542834803",
+  "branch": "develop",
+  "scope": "Tracked Markdown in the meta-repository; submodules and ignored local artifacts excluded. Historical prose remains at baseCommit, without duplicating it in another format.",
+  "markdownFiles": {
+    "before": 261,
+    "after": 117,
+    "reductionFactor": 2.2308
+  },
+  "markdownWorkingTreeBytes": {
+    "before": 2825369,
+    "after": 1351821,
+    "reductionFactor": 2.09
+  },
+  "markdownUtf8LfBytes": {
+    "before": 2815934,
+    "after": 1350291,
+    "reductionFactor": 2.0854
+  },
+  "newDocuments": [
+    "docs/plans/completion.md",
+    "reports/web/README.md"
+  ],
+  "modifiedDocuments": [
+    "docs/README.md",
+    "docs/dissertation/README.md",
+    "docs/dissertation/article-1-current-model-method.md",
+    "docs/dissertation/articles-and-work-plan.md",
+    "docs/dissertation/broker-twin-method-map.md",
+    "docs/dissertation/chapter-refresh-plan.md",
+    "docs/dissertation/metrics-contract.md",
+    "docs/dissertation/next-delivery-block-plan.md",
+    "docs/dissertation/reproduction-handoff.md",
+    "docs/mqtt-benchmark/README.md",
+    "docs/mqtt-benchmark/artifact-format.md",
+    "docs/mqtt-benchmark/brokers/ActiveMQ.md",
+    "docs/mqtt-benchmark/metrics.md",
+    "docs/mqtt-benchmark/runbook.md",
+    "docs/mqtty/README.md",
+    "docs/mqtty/calibration-v3.md",
+    "docs/mqtty/mqtt-relay.md",
+    "docs/overview/architecture.md",
+    "docs/overview/project-guide.md",
+    "docs/plans/MqttY.Web.single-broker-validation.md",
+    "reports/analysis/Article-1-logging-overhead.md",
+    "reports/analysis/Article-1-remaining-pilots.md",
+    "reports/analysis/Article-1-technical-notes.md",
+    "reports/analysis/Article-2-evidence-package.md",
+    "reports/analysis/Articles-final-review-20261101.md",
+    "reports/analysis/Linux-selected-20261030.md",
+    "reports/analysis/Network-main-final.md",
+    "reports/analysis/Network-main-recount.md",
+    "reports/audits/dissertation/acceleration-workers-20261102/Review.md",
+    "reports/history/README.md",
+    "reports/status/Goal.md",
+    "reports/status/Linux-work-queue.md",
+    "reports/status/Progress.md"
+  ],
+  "preservation": {
+    "protected": {
+      "checked": 1017,
+      "changed": [],
+      "pathSha256MapDigest": "11b0213b7a6fdccaeebcc31216c66e1848f528f09fc8ef00574ec3ab829649a5"
+    },
+    "nonMarkdown": {
+      "checked": 2914,
+      "changed": [],
+      "pathSha256MapDigest": "93c9b3a9c133972a766df7465495d27e550e3ef3b2793e7cac6d383ae0e10b98"
+    },
+    "immutableMarkdown": {
+      "checked": 50,
+      "changed": [],
+      "sha256": {
+        "README.md": "5fed14aac83871e2d185e919a8a755beafd82a1c297e903a6eec11ac40e56dfa",
+        "docs/dissertation/articles/article-1-twin-validation.md": "2b13e42c2f7ae3a237fd268d4cd256432d1209053bc9e7d0fa8a54323a0e3be6",
+        "docs/dissertation/articles/article-2-relay-federation.md": "d3d687bd438ba68ebe45bb3a85f0a56af3a19299af7272b7e3549c7dda687ebf",
+        "docs/dissertation/articles/citation-evidence.md": "561c2840ddfbd9e556ffaeb586a47f6dd75b0dd59eaf7527b73dc2a5db3ea7ad",
+        "docs/dissertation/drafts/README.md": "c4cd4ad3157348c77c22aa113d4efee0131b4b26864f89d980653906608c3ef1",
+        "docs/dissertation/drafts/chapter-1-problem-and-methods.md": "6c2193843548f17df7971f46257c49f5ff3465058741f68d1224ff2a0378d500",
+        "docs/dissertation/drafts/chapter-2-measurement.md": "82ed868eb00aa2ad85ddb315ff59937446d482e0735d004ec1ca9327866ed7ed",
+        "docs/dissertation/drafts/chapter-3-relay.md": "7fc08849259261ca32c71317d263bb3474be2a9b36334c90015d28260058c58b",
+        "docs/dissertation/drafts/chapter-4-validation.md": "a7f5199af1d55bda09b953e6b8e7f2385ffc217b48e4afdc220270400274a597",
+        "docs/dissertation/drafts/integration-map.md": "f025ce2dec4190fb9f0832c2ebeb93e85efa779a18291c0f07b30d65122420f0",
+        "docs/topologies/README.md": "5c61c341c715e0c01d57f5d8ce8038809cb978c63f0dbffdbedba8a6122f37da",
+        "docs/topologies/studies/load-pool3/README.md": "1941137bfbfc486f9a305f3e311222b69082c73495cb765a528eb3ca0681a3c6",
+        "docs/topologies/studies/main-line4/README.md": "21ae6aa3d03a110e4ff5de3076fb539ce441ea1b651a9ab957d856d9e7de89b7",
+        "docs/topologies/studies/main-ring4/README.md": "9424f3fec8a395a460318c5ee695f08be0904995c3e9a421a8d87ef038f56b05",
+        "docs/topologies/studies/relay-transit10/README.md": "0eb328cb07f400a8b48eda14896ef1515fd7a92ee97515a5e35db9c8de892c77",
+        "docs/topologies/studies/single64/README.md": "40eaa6e11e2bee554799f160d8b55f5d68023514215ec81c2769066b48e238c0",
+        "docs/topologies/templates/diamond/README.md": "def73808863e6dfb04797f1f1a152a2b17bcbe9124218ae08259057e37546bba",
+        "docs/topologies/templates/hierarchical/README.md": "fc7ebf9e2b25d35d3d3960cece3fed4b3ed1edc1ab2ccfe8deaa929d23566bed",
+        "docs/topologies/templates/line/README.md": "aa4c07bd439f655de797baf8564944c04e6ea77efb0cdb2d65cb229ec5809298",
+        "docs/topologies/templates/mesh/README.md": "a8595de316d69bb4f7f2be6a6a755c9e29c1673a76fc7136b26c326a8e4dba48",
+        "docs/topologies/templates/ring/README.md": "c9c99471bb99a98e3ea2b80cedcadda939afc3c63b9981e2aba9078c58c31fcc",
+        "docs/topologies/templates/star-transit/README.md": "b1af6a3e18025099e8f656f73b76d9ad88f134596b584b0959964fc1bcb4d50f",
+        "docs/topologies/templates/tree/README.md": "1f00a38a01e23aa952bc3b5a974766ee615e8926a0e15892d4645161e663c0a2",
+        "reports/README.md": "d5a678384d0356b1dddba0f8439111f7e9ebb4655909820751ebc8955114a070",
+        "reports/data/federation-full-mesh-v1/README.md": "9426878be73f96dc841c99808c9121f4befd4e24a083fe306d7b9a311b8510aa",
+        "reports/data/federation-study-v1/README.md": "43715e80b5c11f1744775fcbc34004a9e4f6f76b5129e612f1604f0b91822de0",
+        "reports/data/federation-transit-10-v1/README.md": "b77fe54b8efd9f9fb67a3cf75535f06f5b782f05930b1e6585278cdc7f8c1c66",
+        "reports/history/mqtt-benchmark/instrumentation-repair-20261018.md": "c5bbc9ab4834975fff4e9565dde9aa557e121c492e78da533dfa01d7233efe4c",
+        "reports/history/mqtt-benchmark/overnight-campaign-20261016.md": "ca74e39cbb9fb121510f73e7d110d4e2243f196ef8630b58827d5423440797e1",
+        "reports/history/mqtty/empirical-fidelity-deployment.md": "7f84497286f1200793eb6e98a5489bd2285a88a0abdf9225e14340aec3dddb90",
+        "reports/history/mqtty/empirical-service-budget-fix.md": "508140bb86c06d078679a60f59fd0cd49c030fe5207fb59b9fc7dbba28c23984",
+        "reports/history/mqtty/federation-bfs.md": "15fababfc32e1c5ba31fc5e2fd5274dd802a4d70ade327c4c67e8eea271799c3",
+        "reports/history/mqtty/mosquitto-fidelity-diagnosis.md": "cacd6b31d8419595f32c666e20af58608f80efddc9488a67a0b350ac4f15d2fc",
+        "reports/history/mqtty/service-budget-linux-deployment.md": "f25168c568420cdf4a7c9ec9e360bf2a4ffce534136f290952921f44601efbd5",
+        "reports/mqtt-benchmark/ActiveMQ-diagnosis.md": "ee531b6aef94e63bef95bd07048508c662f2fbcd0c437c44cb7feb5492c93e25",
+        "reports/mqtt-benchmark/Best-broker.md": "9536d4a60ff322e34211e5f1ef67ea062264b5d3652b37a51cf5b45c718d0686",
+        "reports/mqtt-benchmark/Broker-comparison.md": "907af07d5ad8813dee96ea0725f008ff927d17da5cf69db2178019b2b15044aa",
+        "reports/mqtt-benchmark/Full-vs-Compact.md": "c5b4a83f1e3b24a0edb0300de3e53ed3ce4b35261031d5473cdd88e455f47685",
+        "reports/mqtt-benchmark/brokers/ActiveMQ.md": "bac3fbdd1f1ce11cf12b27b482aa2fbc26111453456cccbae17cd0e98b36c692",
+        "reports/mqtt-benchmark/brokers/Aedes.md": "037599af68147570f1bf26b6faf1161f179bcd9e92caed19d0949d6e212d5189",
+        "reports/mqtt-benchmark/brokers/EMQX.md": "b2c06f8679b80cb8829d6877ee982b53c6a95b142131ed39bd8404459a778250",
+        "reports/mqtt-benchmark/brokers/Mosquitto.md": "4e2aca705027270a94a6a0d9740ae8fb1dc6d8b41ab238b5ae8c09d829da025a",
+        "reports/mqtty/federation/Federation-study.md": "0d71302552875d2367a66dbf0aefac3e7d96a87d35afd713bba02be469e2f767",
+        "reports/mqtty/federation/Federation-ten-brokers.md": "8150a01b5da205227967009bae7097a7b1623c54c66148331a101ac0de809af4",
+        "reports/mqtty/load-balancing/Load-balancing-Mosquitto.md": "590756b564268715dd5449e659a17a1f74b35967904ef7b3019aa3ffc8ef8214",
+        "reports/mqtty/load-balancing/Load-balancing-demo.md": "2fc34862dc8fd2ec3b36e39388e2002fb530793b795f59c0ab11bc1b49319b73",
+        "reports/mqtty/load-balancing/Load-balancing-study.md": "03ba3efd5e6cf3ba49bf9e3266fbc15ab52fbac383883e317a413d3568e96065",
+        "reports/mqtty/relay/MqttRelay-Mixed.md": "9ec5ac57bfd891c4c684223f6aea076f93ad53ac175477fc0295d518d752a945",
+        "reports/mqtty/validation/Evidence-assessment.md": "5ebbbae8c08060711278d4b217968553e1b1acd82ceff2dbe797cbe1311daadc",
+        "reports/mqtty/validation/Model-validation.md": "3c698fe88dafce0508aca036e4e4f63557c0efe8918b3f51e7c7f5fd1e04764d"
+      }
+    }
+  },
+  "submoduleWorkingHeadsUnchanged": {
+    "mqtty": "c7be868fb841245dfcd889abebe3c7f82afb5daf",
+    "MqttBenchmark": "ae121a6bf06ba003a43eeaff03d9f633f6915dd5",
+    "diss": "c59d8afae7f59bca5b9605cb6220cdabc4389822"
+  },
+  "originalPlanRowsPreserved": 42,
+  "originalPlanWeightPersonDays": 47,
+  "newScientificRuns": 0,
+  "archive": [
+    {
+      "path": "docs/dissertation/acceleration-benchmark-20261030.md",
+      "workingTreeSha256Before": "849bce6978e1b92fb3372b9fcaaf491a3c2f9a673b02232c38440f62a1d2f5fc",
+      "gitBlobSha256": "559351ba844efb2b48669c31fd27b3a892be118605042d6be93813799bc92437",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/acceleration-benchmark-20261030.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/agent-work-policy.md",
+      "workingTreeSha256Before": "abf68dad414f2b01d23cbcd5cc41d8b0205dfcaa2a75bf89e5d55e96d7aae5e4",
+      "gitBlobSha256": "fac216f76cbd661ef6d4834321e39ff710f2da16664f36feb3eb72dca21109a5",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/agent-work-policy.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/article-1-calibration-readiness-plan.md",
+      "workingTreeSha256Before": "2410efd6c6c58643a0f011f842308a4543019175479f368259d1c42eb4565807",
+      "gitBlobSha256": "f0d16aff937b45371b4e641b637c0379fbee67d85d0fd858715282a9fd49d354",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/article-1-calibration-readiness-plan.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/article-1-compact-validation-protocol.md",
+      "workingTreeSha256Before": "109b7aa2ca1e738804292c1d4ef24d6d849f28a23668ee4d2e91727676229245",
+      "gitBlobSha256": "3b64598f4a94b8cfc3f9e797fd13a69d67e0a9dfceb4de9f9c56ec0f9523175f",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/article-1-compact-validation-protocol.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/article-1-instrumentation-diagnostic-protocol.md",
+      "workingTreeSha256Before": "4407039bde710091cdb218dedfd275b4d4ecb4ce19517d78be27e763c36a4352",
+      "gitBlobSha256": "7cc1af4047a497c668aeda59a497dfb19bc1c7f260825d1c36d7a0c6c35076ae",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/article-1-instrumentation-diagnostic-protocol.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/article-1-logging-overhead-protocol.md",
+      "workingTreeSha256Before": "28f05992ac2cdfaa81fb5484ae8926850eac87c73f3ba32a4d9787d49ba2592d",
+      "gitBlobSha256": "911eb62a6c81d79cf2a325ebe646de242fb302284e77eae35316deda243b0ec8",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/article-1-logging-overhead-protocol.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/article-1-matched-pilot-protocol.md",
+      "workingTreeSha256Before": "d6c5ebff32f5cfc3af7a8c2232bfadd4da91a36d93f9c20de7342f3ab4e85c92",
+      "gitBlobSha256": "9eee6e0bfb1b9e7328c082756f066b91af20ba2a310ac3dac50c18a2b572b699",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/article-1-matched-pilot-protocol.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/article-1-matched-validation-plan.md",
+      "workingTreeSha256Before": "074e48523b15e6e4803331111a568f5c3c992c6a097737026acf157cc6af10d8",
+      "gitBlobSha256": "3c7def80f7dba8768ca88264d7b62365733754e47c8124158cea725a10c12586",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/article-1-matched-validation-plan.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/article-1-methodology-brainstorm.md",
+      "workingTreeSha256Before": "06c34141d1887d1be95827b478415756e13b200ee770a2d52e08b10d09545eaa",
+      "gitBlobSha256": "7df9f080b99a328dcc72cf2fd47a4ed9d266895ca217c05edf8f822c1a3157fe",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/article-1-methodology-brainstorm.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/article-1-remaining-pilots-protocol.md",
+      "workingTreeSha256Before": "3b72737d26deda5f29241924286d35e2cdd3f1a1ac03db5457de9d4857475bed",
+      "gitBlobSha256": "d2663cf833122cf4b093e7fa4537ed62285191b9477aa7d8dafbb37e95e79dbc",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/article-1-remaining-pilots-protocol.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/article-2-offline-revision-plan.md",
+      "workingTreeSha256Before": "f52e2d96c659612fbac099c93ddc8793b5b108403930c41dadeddb39e864bc28",
+      "gitBlobSha256": "4634c7026b5cb7eec80e043d076dddc7bb72159e7cd6474abe3b3dba939e0d39",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/article-2-offline-revision-plan.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/author-decisions.md",
+      "workingTreeSha256Before": "500483324d9f8647af4e2931ab0363e482d61f15c11ceb337bcb6819a976389b",
+      "gitBlobSha256": "77e7e11b157ac6634312263a9f561dc56ba3642da9b0f7c2884b53fb069e5f50",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/author-decisions.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/emqx-mailbox-diagnostic.md",
+      "workingTreeSha256Before": "12579eeff01652bc7bad83af30ea592c16e28b6227837543f2c7dfcedeae5fa5",
+      "gitBlobSha256": "bc50ddb48af05201acbbf1126c1667fbad611834e0da1e4079cffd2f11b0e81c",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/emqx-mailbox-diagnostic.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/expert-review-follow-up.md",
+      "workingTreeSha256Before": "2559bf594492168472f0df9764254a68330c5f7c1883bf1fb086de0739fcfba5",
+      "gitBlobSha256": "f234f4892aaae74e37a57528a979728e290d2a57e3c872ac4ae169fccdc7b437",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/expert-review-follow-up.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/network-runner.md",
+      "workingTreeSha256Before": "b6c97af40b31e2443e2a52a8d08249ffea75642862f7f7a1b65780aeddabfc40",
+      "gitBlobSha256": "458ee8d295c89d363c49aa0ecc5f3d36e0a70a8c0dded9862def9e836071e798",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/network-runner.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/network-study.md",
+      "workingTreeSha256Before": "270766327e71320d5007e38e0ecfb935c076783c6efb08a2b6853bdf26bafe15",
+      "gitBlobSha256": "224d8d407acfebd64027e0d07480f0092848c93a6bd17fafe9dc5ea00b459dd2",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/network-study.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/presentation/overview.md",
+      "workingTreeSha256Before": "837859b06b689bd38bc9d7a429013bc891ec95c95d5e8e372d567ff2620bf5af",
+      "gitBlobSha256": "050c3009539df91221992a8f0f45d94fdb618510fb738a097d1ec992ef3ad019",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/presentation/overview.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/queue-capacity-micro-protocol.md",
+      "workingTreeSha256Before": "b52b88ef86ee6102a3855703002d54ebb6bd016342d5e23236e08a23449dc3e1",
+      "gitBlobSha256": "2a261c24356d46fac474685c826099cd2f38d4de34b8cd413484c987cefce2ad",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/queue-capacity-micro-protocol.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/queue-capacity-short-protocol.md",
+      "workingTreeSha256Before": "ff1303b77d0f2121ba5807fc6aea4c663760b7294099de35017da5a11f7d2917",
+      "gitBlobSha256": "ff1303b77d0f2121ba5807fc6aea4c663760b7294099de35017da5a11f7d2917",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/queue-capacity-short-protocol.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/queue-causality-pilot-20261030.md",
+      "workingTreeSha256Before": "a14f13cf3a4590c74dd129cce135c0da9476e5c143632f3f02a4defe3928c16d",
+      "gitBlobSha256": "1d651454ce402caac2b7d4d3b5edc5a224c4eb98cc6c5f35d21cb64afe735b12",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/queue-causality-pilot-20261030.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/readiness-plan.md",
+      "workingTreeSha256Before": "ce74733dac9f41c3c2ef64565bba80f02fdb28a702bcbfbd15b5ed41954f589f",
+      "gitBlobSha256": "84da4bd0bef82ebab348637b7b4aa0812efddcd2e1c3ed5c26b1f6925070fe09",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/readiness-plan.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/related-work-map.md",
+      "workingTreeSha256Before": "e2ab9a6b9d1d579b3c426d880c83cb4a37bfeb09e7e42fa65e3132986e2813ba",
+      "gitBlobSha256": "8cb5ab728a6b724f53bfc80ff509b76da94fadba689e072dcf57932f64d0a843",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/related-work-map.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/research-superpowers.md",
+      "workingTreeSha256Before": "9f53b7956741bb9ffc5a435fc806ce20d7f4a3c330ec2b641ffc540cabfcbeee",
+      "gitBlobSha256": "ed8756bb70886ac71f5472bfa6927c10d70018cb2cf99487bf4ab6649cee8a86",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/research-superpowers.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/dissertation/sensitivity-study.md",
+      "workingTreeSha256Before": "1bd5d8199276cd40aa595b360c03d9ff50b5e2ccaa693e7dce6ffb4fb72257c4",
+      "gitBlobSha256": "fb367864bf57816cd5191328db96fedf81f53fae8dc73cb6afcbaecdc060d2f9",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/dissertation/sensitivity-study.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/mqtt-benchmark/architecture.md",
+      "workingTreeSha256Before": "c4633d07a49e4fff7cedd5139212970db499da1507b5f58cf762d69ffe434fdd",
+      "gitBlobSha256": "0ea958ba7affc423870c81997940c00ff44230dfa824525e02726a84b17ff932",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/architecture.md",
+      "currentEntryPoint": "docs/mqtt-benchmark/runbook.md"
+    },
+    {
+      "path": "docs/mqtt-benchmark/automation.md",
+      "workingTreeSha256Before": "0b1b01524fff0f6a1f8b93564f9d124c420abc8182ceaaa63c52dc5d8fb3a446",
+      "gitBlobSha256": "f4cdf4f6829560b74d44961c13e749b2c77b961a8eff004c5135df7df57ac5a4",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/automation.md",
+      "currentEntryPoint": "docs/mqtt-benchmark/runbook.md"
+    },
+    {
+      "path": "docs/mqtt-benchmark/brokers/Aedes.md",
+      "workingTreeSha256Before": "3770cdbecb1128146c0c4d3c6c9699a76fef733510bad17d0a7a58462cfd1b69",
+      "gitBlobSha256": "a48f9e5c7c2ee8820eaf7bfcae2f85a857b2342f9ef8bebbb81d8fed637105c0",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/brokers/Aedes.md",
+      "currentEntryPoint": "docs/mqtt-benchmark/runbook.md"
+    },
+    {
+      "path": "docs/mqtt-benchmark/brokers/EMQX.md",
+      "workingTreeSha256Before": "84538226b5ffa7a857d19cee927ff48ba85df588f699501ac1b257a1de49b0fd",
+      "gitBlobSha256": "903e7ec50ef1cea1c5436bb14f07824d732243f4f9d44cb30bbf1d12a393be73",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/brokers/EMQX.md",
+      "currentEntryPoint": "docs/mqtt-benchmark/runbook.md"
+    },
+    {
+      "path": "docs/mqtt-benchmark/brokers/Mosquitto.md",
+      "workingTreeSha256Before": "fada3f46e03fb75675528a7b76d8222423ae9f2fd89909cb8b05c1aa76421454",
+      "gitBlobSha256": "278cfd9e65dced9ffcb0393c91ee423ed96ef4796a08da288e6513ab40ebc1ed",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/brokers/Mosquitto.md",
+      "currentEntryPoint": "docs/mqtt-benchmark/runbook.md"
+    },
+    {
+      "path": "docs/mqtt-benchmark/campaign-v3.md",
+      "workingTreeSha256Before": "ee01f98d745df351366270c776d00acc4e4cb28f7602b5c67def9823043d299e",
+      "gitBlobSha256": "5b254e5c59be52b7697776a51ef7484b2270e85ab855b1cd2e9c5fad8bef30bc",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/campaign-v3.md",
+      "currentEntryPoint": "docs/mqtt-benchmark/runbook.md"
+    },
+    {
+      "path": "docs/mqtt-benchmark/data-processing.md",
+      "workingTreeSha256Before": "fc0524a4bf8dae8a2c863dd61f89c8a92f7360612d601e82f08725e45d711492",
+      "gitBlobSha256": "b1ca5937b67e928d7976d4533bbdb5d563c403d38c545ea8e73a128051751a3f",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/data-processing.md",
+      "currentEntryPoint": "docs/mqtt-benchmark/runbook.md"
+    },
+    {
+      "path": "docs/mqtt-benchmark/deployment-layouts.md",
+      "workingTreeSha256Before": "2a825aa465a6cde9cf24c13f03c01f042501341ef479c2210427e55c18b8a188",
+      "gitBlobSha256": "64f68fc1bbbacbe7fe4067a6a4af17a27c3dedfa0f763dfdbe60c2e1212d0e00",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/deployment-layouts.md",
+      "currentEntryPoint": "docs/mqtt-benchmark/runbook.md"
+    },
+    {
+      "path": "docs/mqtt-benchmark/deployment.md",
+      "workingTreeSha256Before": "507a785bd39c4ed6997088751d48377797b54c0993917e72008ae21a2fc46462",
+      "gitBlobSha256": "8d0effd1c8bf2749786166710b845fe98801e9e289751251aafc017821760c70",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/deployment.md",
+      "currentEntryPoint": "docs/mqtt-benchmark/runbook.md"
+    },
+    {
+      "path": "docs/mqtt-benchmark/docker-brokers.md",
+      "workingTreeSha256Before": "09f1ac780d344d50eb149e9527d3bd325f78765f229acdc9afcba117fd74905f",
+      "gitBlobSha256": "7e8bcbe7a6b154265988f4599d392608da45a2b548c8319e77bd990466942af8",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/docker-brokers.md",
+      "currentEntryPoint": "docs/mqtt-benchmark/runbook.md"
+    },
+    {
+      "path": "docs/mqtt-benchmark/local-stand.md",
+      "workingTreeSha256Before": "b20059350efd591f5967208caf10336ff3a8d81bd98c12eb167acfc28fe5e8dc",
+      "gitBlobSha256": "b753453ea3381691d74bb82c6234748a2873fb7460884d8b61dc388eff41944d",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/local-stand.md",
+      "currentEntryPoint": "docs/mqtt-benchmark/runbook.md"
+    },
+    {
+      "path": "docs/mqtt-benchmark/machine-preparation.md",
+      "workingTreeSha256Before": "58502259600793aa457c5a51090f306b833a10442f1e9b56a9600d73a7141812",
+      "gitBlobSha256": "f5e65aeeb2a12791272c5a62947091b63e52f9e7f75d69e79ea1ffec0712d1f3",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/machine-preparation.md",
+      "currentEntryPoint": "docs/mqtt-benchmark/runbook.md"
+    },
+    {
+      "path": "docs/mqtt-benchmark/quick-start.md",
+      "workingTreeSha256Before": "fc9f7322746a827b0e8508576291c11d427ff0406dd1da21cb9a0f8b82871cb4",
+      "gitBlobSha256": "be50ba8dce9e6db91a64c873b30f492048879ed5d5f199266854bd111ca4c6f3",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/quick-start.md",
+      "currentEntryPoint": "docs/mqtt-benchmark/runbook.md"
+    },
+    {
+      "path": "docs/mqtt-benchmark/stages.md",
+      "workingTreeSha256Before": "038dc13314bd54d8abb2ae9acafe7050b95c5aa353eff203de419694404c06a2",
+      "gitBlobSha256": "07e37b4838093ef396aa606b9fbe8220188e5c7a92be5c34e86e1d3ba6e75e28",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/stages.md",
+      "currentEntryPoint": "docs/mqtt-benchmark/runbook.md"
+    },
+    {
+      "path": "docs/mqtt-benchmark/two-machine-campaign.md",
+      "workingTreeSha256Before": "28e395336ecd2eb52877cb11b81f0ccc287785188ceb9d27167f5ddec3a6b779",
+      "gitBlobSha256": "2ae5bb89b61b44a74bc76b79917ae6378ff4903c14c6550583160a4d5d14e419",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/two-machine-campaign.md",
+      "currentEntryPoint": "docs/mqtt-benchmark/runbook.md"
+    },
+    {
+      "path": "docs/mqtt-benchmark/two-machine-stand.md",
+      "workingTreeSha256Before": "3bbd071b60649845c598656fab2d9e47cf42ac244d10733e2cf9642386ddbad4",
+      "gitBlobSha256": "d05314e8aef2f046b300d2e3a2c3fe63ee134b37fba46f44f4f0412f50d11b46",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtt-benchmark/two-machine-stand.md",
+      "currentEntryPoint": "docs/mqtt-benchmark/runbook.md"
+    },
+    {
+      "path": "docs/mqtty/architecture.md",
+      "workingTreeSha256Before": "3ae7586133399ca44bafbbd48a182f04ae58e43c39c2d1af8f30a06a8ab1ff6e",
+      "gitBlobSha256": "0559cc6dedeea05fbd058aaba2bcd4fa717a248621f63d10b87a297087329171",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtty/architecture.md",
+      "currentEntryPoint": "docs/mqtty/README.md"
+    },
+    {
+      "path": "docs/mqtty/custom-topology.md",
+      "workingTreeSha256Before": "42dd36d2dfdca0cb1708c055377db0b55a80788492c5a5b8f534d8035b5a9c58",
+      "gitBlobSha256": "8eb39e2abde88d35eb52320a9c1a4e4b7c01ee52d150f3067bf836755554f247",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtty/custom-topology.md",
+      "currentEntryPoint": "docs/mqtty/README.md"
+    },
+    {
+      "path": "docs/mqtty/empirical-fidelity.md",
+      "workingTreeSha256Before": "cf62b59bf2e44e097acf26cd56fd003534a67b21f675f36e57011637703ad705",
+      "gitBlobSha256": "67dd7ce6cb3fe8c17b9059729ebffb0913fdb5d28eee2d03ed320d8bad76be4e",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtty/empirical-fidelity.md",
+      "currentEntryPoint": "docs/mqtty/README.md"
+    },
+    {
+      "path": "docs/mqtty/empirical-service-budget.md",
+      "workingTreeSha256Before": "50b746bb01ead6100dc02dc12d8204fee2d31c49eae902804b4274ec9ca57a29",
+      "gitBlobSha256": "fbe2530ced28b13563a93efe4603b32508b0adebe1a13f6d46437681d041935c",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtty/empirical-service-budget.md",
+      "currentEntryPoint": "docs/mqtty/README.md"
+    },
+    {
+      "path": "docs/mqtty/federation/automation.md",
+      "workingTreeSha256Before": "35fd00320c8b2d7a6145496ba652a5beb27958daa6ccd57255bc00d4d5764ac7",
+      "gitBlobSha256": "376a91fe7cd5d25a20845ac55175b2224562c1e1a56036e33897dab9fc591e0a",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtty/federation/automation.md",
+      "currentEntryPoint": "docs/mqtty/README.md"
+    },
+    {
+      "path": "docs/mqtty/federation/design.md",
+      "workingTreeSha256Before": "85230d58cb105c281564dedce57e9c1a26b3c14644820023a790fe87c15c2740",
+      "gitBlobSha256": "07a4ad0c6e04e3abb4aa73131fbfe087fdee4431f54e4f242ac5f2955f93f453",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtty/federation/design.md",
+      "currentEntryPoint": "docs/mqtty/README.md"
+    },
+    {
+      "path": "docs/mqtty/load-balancing/automation.md",
+      "workingTreeSha256Before": "7da484e526ad691192e81bfacc9bb1eab85cecbcf62a9b1baf88f568d5a43ce5",
+      "gitBlobSha256": "387638a2448974a7236d09152f6c259f508aa07e1469de66b1bcd4a755fa8815",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtty/load-balancing/automation.md",
+      "currentEntryPoint": "docs/mqtty/README.md"
+    },
+    {
+      "path": "docs/mqtty/load-balancing/design.md",
+      "workingTreeSha256Before": "d4a3aa18fb29adfdd6f5f0bad26fdaa49bbb4df65c56e0c78dc588725a1a499a",
+      "gitBlobSha256": "67cf85a95c90044877841a0b7251cd7237f5c8f90bb4084ce4ffda9cad670e86",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtty/load-balancing/design.md",
+      "currentEntryPoint": "docs/mqtty/README.md"
+    },
+    {
+      "path": "docs/mqtty/network-experiments.md",
+      "workingTreeSha256Before": "2f3350a8f2da82dda52f2588c572929f10a23581c96b53f95caf0b76ed16324c",
+      "gitBlobSha256": "fbff7f27f173faed87e89c6aa1c911a82e982afb316de52fb692e58f6619e763",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtty/network-experiments.md",
+      "currentEntryPoint": "docs/mqtty/README.md"
+    },
+    {
+      "path": "docs/mqtty/testing-fixtures.md",
+      "workingTreeSha256Before": "ff753f7e42dd22022c93f634df57c440545aef65ffe60a27f57ab456d1bf0f8b",
+      "gitBlobSha256": "fc19569fbbf5090d818e57b6f859f1d3a681478f5c70cefc60f07ce65be79434",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtty/testing-fixtures.md",
+      "currentEntryPoint": "docs/mqtty/README.md"
+    },
+    {
+      "path": "docs/mqtty/validation.md",
+      "workingTreeSha256Before": "3afa58fac22c171ed18691dc43c4f2aedecb86e24698f8512d2df658df65d76f",
+      "gitBlobSha256": "9681cf4b5fc33c4280d6a58b218d0294f155ded49b9c15fcb648b04789096d59",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/mqtty/validation.md",
+      "currentEntryPoint": "docs/mqtty/README.md"
+    },
+    {
+      "path": "docs/overview/ExpertReview.md",
+      "workingTreeSha256Before": "aef0ccd031e033a5c9d7f80130f4a28d6e96d0aba8d9a2b80ade974967d1508c",
+      "gitBlobSha256": "aef0ccd031e033a5c9d7f80130f4a28d6e96d0aba8d9a2b80ade974967d1508c",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/overview/ExpertReview.md",
+      "currentEntryPoint": "docs/overview/project-guide.md"
+    },
+    {
+      "path": "docs/overview/README.md",
+      "workingTreeSha256Before": "9e141b97a1d47bed7541733f096d56a3df3ba7c5e36632dd735df7b7f4bf0355",
+      "gitBlobSha256": "4966a29cc4721488e9bf79e85d36f49c6442358554ee947075188b65e2938172",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/overview/README.md",
+      "currentEntryPoint": "docs/overview/project-guide.md"
+    },
+    {
+      "path": "docs/overview/questions-and-answers.md",
+      "workingTreeSha256Before": "b454ae0d2a4a48929c745116b97406e14e75424fc9cc7cb68caa269122be5762",
+      "gitBlobSha256": "f7a90c1f61f73f97778c0074a3a80fb1df401d2430686703419f707a6eb1aa46",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/overview/questions-and-answers.md",
+      "currentEntryPoint": "docs/overview/project-guide.md"
+    },
+    {
+      "path": "docs/plans/Acceleration-aa-20261030.md",
+      "workingTreeSha256Before": "0d669940b7e81bfafccb3c2fc79c047c2d059f89727c61f16b44958e1358c5a9",
+      "gitBlobSha256": "605fe5a97c8d4ce120f88bdefeb63ac356bb72d892df8429abb843b7fa9664cb",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/plans/Acceleration-aa-20261030.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/plans/Linux-items-2-4-5-20261030.md",
+      "workingTreeSha256Before": "87a900e1d01fbc6477d6c483b5eefe581160f1f913c234b1353e5f3dc5d153a4",
+      "gitBlobSha256": "e88c14b61ced014152ff8e9533e946eca657e31f84463543a48521fc95ad2cf9",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/plans/Linux-items-2-4-5-20261030.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/plans/MqttY.Web.SDD.md",
+      "workingTreeSha256Before": "9f3c22aae85a7876478fdb131cd0df41b0bdaccd70c8ac99b09a28759009dd3c",
+      "gitBlobSha256": "aba6c78f23b94fd4cd62a24a9cea4a01b9ae1250c9f2a2d760ba2ef1413e0ad5",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/plans/MqttY.Web.SDD.md",
+      "currentEntryPoint": "reports/web/README.md"
+    },
+    {
+      "path": "docs/plans/MqttY.Web.final-profile-check.md",
+      "workingTreeSha256Before": "bd73313f36f40ebecdb6b4594dabf42268e82dfb4dcb5068bacf59579a577a59",
+      "gitBlobSha256": "596433a5d89b46c5af421f25c14c740741ed1f3f48aa759f9c8784ad07b7a890",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/plans/MqttY.Web.final-profile-check.md",
+      "currentEntryPoint": "reports/web/README.md"
+    },
+    {
+      "path": "docs/plans/MqttY.Web.research-transition.md",
+      "workingTreeSha256Before": "dc941daa1b0cd57c774fba219372b687968700e778959c5cb36c3d5a989f4f7b",
+      "gitBlobSha256": "562c8f2037eb852baa91b766f78a9f8d80edd0f0127ec318552cddf019a29799",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/plans/MqttY.Web.research-transition.md",
+      "currentEntryPoint": "reports/web/README.md"
+    },
+    {
+      "path": "docs/plans/Queue-main-remaining-20261030.md",
+      "workingTreeSha256Before": "d8b4eadd7d9c5fa67b727abaaa178d99bb963bfcbfa65f18ad83efcfa97c8811",
+      "gitBlobSha256": "3dd9e6f2821b972096b164370938bace775ce0ffc80be2ae0d676fadbe5d1f77",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/plans/Queue-main-remaining-20261030.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/plans/Remaining-linux-runtime-estimate-20261030.md",
+      "workingTreeSha256Before": "0fe3c255a21d3e75f4364c458e8e52ce71a0d8a73bde08c8e10d2ee480d72d0b",
+      "gitBlobSha256": "713c308c5f8620e2fe82b4df222bd0bda1df9efa57c1cbc942b3acba743373ea",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/plans/Remaining-linux-runtime-estimate-20261030.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "docs/plans/Research-parallel-block-20261030.md",
+      "workingTreeSha256Before": "04b70cc1751f917c6ebfb6b8eb49a9fc18c10558fa62deed75a5f7c96e22e95a",
+      "gitBlobSha256": "58ba94b7f0572d99f72131c4a78148ced451548469c12c466a3ae756e89728c5",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/docs/plans/Research-parallel-block-20261030.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "reports/analysis/Article-1-bounded-review.md",
+      "workingTreeSha256Before": "682e499108b211a92ccf4570f2aa50a5abc53d979094ef65f1fdd5e307f5b6c5",
+      "gitBlobSha256": "682e499108b211a92ccf4570f2aa50a5abc53d979094ef65f1fdd5e307f5b6c5",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Article-1-bounded-review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/analysis/Article-1-emqx-recovery.md",
+      "workingTreeSha256Before": "401bc5e5951894f467f0e0b13e8e02c6ff931f621122344639ba6d87e8281154",
+      "gitBlobSha256": "401bc5e5951894f467f0e0b13e8e02c6ff931f621122344639ba6d87e8281154",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Article-1-emqx-recovery.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/analysis/Article-1-final-profile-web.md",
+      "workingTreeSha256Before": "51503cf4edaba9a136144cb76e450048cc7f30bae2cc95f5a205e7208463abb1",
+      "gitBlobSha256": "51503cf4edaba9a136144cb76e450048cc7f30bae2cc95f5a205e7208463abb1",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Article-1-final-profile-web.md",
+      "currentEntryPoint": "reports/web/README.md"
+    },
+    {
+      "path": "reports/analysis/Article-1-instrumentation-diagnostic.md",
+      "workingTreeSha256Before": "6ae4c38262dcecf1a31d2888b9ce7045073fd547dc83e13d43dba1bcaac5f6c0",
+      "gitBlobSha256": "6ae4c38262dcecf1a31d2888b9ce7045073fd547dc83e13d43dba1bcaac5f6c0",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Article-1-instrumentation-diagnostic.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/analysis/Article-1-matched-pilot.md",
+      "workingTreeSha256Before": "2e7449382be3338de028a6f5631bd4c0d8e8c466a1dc5d26c1e27d29230e8a4a",
+      "gitBlobSha256": "2e7449382be3338de028a6f5631bd4c0d8e8c466a1dc5d26c1e27d29230e8a4a",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Article-1-matched-pilot.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/analysis/Article-1-next-steps.md",
+      "workingTreeSha256Before": "62e54f348c40be5d737b22074a560a60cd8971d56e06269a4ab9458f80934c05",
+      "gitBlobSha256": "62e54f348c40be5d737b22074a560a60cd8971d56e06269a4ab9458f80934c05",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Article-1-next-steps.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/analysis/Article-1-review-response.md",
+      "workingTreeSha256Before": "844cd432fd47b6c4d3cf5216866caafe99251d9f18f4ac9fe9b814893644415a",
+      "gitBlobSha256": "844cd432fd47b6c4d3cf5216866caafe99251d9f18f4ac9fe9b814893644415a",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Article-1-review-response.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/analysis/Article-1-skills-validation.md",
+      "workingTreeSha256Before": "839c55c1ae821f9d473a5f331ea5325e4427e954b86b9604cca33ad55e561597",
+      "gitBlobSha256": "839c55c1ae821f9d473a5f331ea5325e4427e954b86b9604cca33ad55e561597",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Article-1-skills-validation.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/analysis/Article-2-main-acceptance.md",
+      "workingTreeSha256Before": "a71c1ad487a488629a215702a4b25c42d9621ea949ba08c2f679102da9825034",
+      "gitBlobSha256": "a71c1ad487a488629a215702a4b25c42d9621ea949ba08c2f679102da9825034",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Article-2-main-acceptance.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/analysis/Article-figure-package.md",
+      "workingTreeSha256Before": "eba709fea43e2b7860035a06a169123dbbc467496e55df979e3f48a2b5d1d998",
+      "gitBlobSha256": "eba709fea43e2b7860035a06a169123dbbc467496e55df979e3f48a2b5d1d998",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Article-figure-package.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/analysis/Articles-review-handoff.md",
+      "workingTreeSha256Before": "de452691e987a283b523cea06c509a64a4ecac955e2e779d2f72fe493dd10458",
+      "gitBlobSha256": "de452691e987a283b523cea06c509a64a4ecac955e2e779d2f72fe493dd10458",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Articles-review-handoff.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/analysis/Author-publications-for-articles.md",
+      "workingTreeSha256Before": "a1564b54e1873b522e28b7fea87421186fb3b89154a59cd0581c8f052c41565e",
+      "gitBlobSha256": "a1564b54e1873b522e28b7fea87421186fb3b89154a59cd0581c8f052c41565e",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Author-publications-for-articles.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/analysis/Bibliography-review.md",
+      "workingTreeSha256Before": "e69b52e3fde709f5ee26f7d2058726a45e5b190258112dd2a954391ef66ffc70",
+      "gitBlobSha256": "e69b52e3fde709f5ee26f7d2058726a45e5b190258112dd2a954391ef66ffc70",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Bibliography-review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/analysis/Broker-twins-package.md",
+      "workingTreeSha256Before": "8bd306499d1a16dfec418e82460dd8d257aaf1f0f2ba01235b8da1025eb70336",
+      "gitBlobSha256": "8bd306499d1a16dfec418e82460dd8d257aaf1f0f2ba01235b8da1025eb70336",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Broker-twins-package.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/analysis/EMQX-subscriber-shutdown.md",
+      "workingTreeSha256Before": "b61659ca7216af5662fdece49738da50cbf39f2f66e522ec3f787f3e05ce1211",
+      "gitBlobSha256": "b61659ca7216af5662fdece49738da50cbf39f2f66e522ec3f787f3e05ce1211",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/EMQX-subscriber-shutdown.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/analysis/Manuscript-offline-review.md",
+      "workingTreeSha256Before": "775e1958bf934c723a74ee2f1f84fd5e2630c3c46a773dfccf20a4d37255636f",
+      "gitBlobSha256": "775e1958bf934c723a74ee2f1f84fd5e2630c3c46a773dfccf20a4d37255636f",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Manuscript-offline-review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/analysis/Network-main-transfer.md",
+      "workingTreeSha256Before": "d9f9609e04187461f2a5ed178815be83ea8ddf878542835332e4c2cf44cd423c",
+      "gitBlobSha256": "d9f9609e04187461f2a5ed178815be83ea8ddf878542835332e4c2cf44cd423c",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Network-main-transfer.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/analysis/Network-pilot-review.md",
+      "workingTreeSha256Before": "30a6c0506bcf235b3590c26f8420e49a026c12f8be378ee41eb3b16688d2cdb9",
+      "gitBlobSha256": "30a6c0506bcf235b3590c26f8420e49a026c12f8be378ee41eb3b16688d2cdb9",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Network-pilot-review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/analysis/QoS1-pending-diagnosis.md",
+      "workingTreeSha256Before": "ce011f3db15f9bddeaf357a33dfd856bdafd627d10274f083b600cd2e3264f92",
+      "gitBlobSha256": "ce011f3db15f9bddeaf357a33dfd856bdafd627d10274f083b600cd2e3264f92",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/QoS1-pending-diagnosis.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/analysis/Queue-capacity-micro.md",
+      "workingTreeSha256Before": "cd96ea97d8e5546e62553d29e51db6a50c2e3f1f8557eee225c04dc409eade67",
+      "gitBlobSha256": "cd96ea97d8e5546e62553d29e51db6a50c2e3f1f8557eee225c04dc409eade67",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Queue-capacity-micro.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/analysis/Queue-capacity-short.md",
+      "workingTreeSha256Before": "180058a70ee33177ab267e43d76f1579573529c86433c497d15f60d29edd6220",
+      "gitBlobSha256": "180058a70ee33177ab267e43d76f1579573529c86433c497d15f60d29edd6220",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Queue-capacity-short.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/analysis/Queue-causality-pilot-20261030.md",
+      "workingTreeSha256Before": "1420383a6818189ea0ef7e7c0f88bffd01b7b6acee1e9cf202ae4a875cd379fa",
+      "gitBlobSha256": "1420383a6818189ea0ef7e7c0f88bffd01b7b6acee1e9cf202ae4a875cd379fa",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Queue-causality-pilot-20261030.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/analysis/Research-parallel-block-20261030.md",
+      "workingTreeSha256Before": "369d0ed480d987764b7012776ce1f313eb3a081b032ac96cf18df58f58dd7194",
+      "gitBlobSha256": "369d0ed480d987764b7012776ce1f313eb3a081b032ac96cf18df58f58dd7194",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Research-parallel-block-20261030.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/analysis/Web-experiment-readiness.md",
+      "workingTreeSha256Before": "fbea750578e269fee3a3149dcbb613d8b60d71ace7b757f7f0ba7d32cbe1037c",
+      "gitBlobSha256": "fbea750578e269fee3a3149dcbb613d8b60d71ace7b757f7f0ba7d32cbe1037c",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Web-experiment-readiness.md",
+      "currentEntryPoint": "reports/web/README.md"
+    },
+    {
+      "path": "reports/analysis/Web-research-transition.md",
+      "workingTreeSha256Before": "39cdf4303d5d59484fab3ab6bc8267e5f3883cb3af730977c743bdebdbfaf580",
+      "gitBlobSha256": "39cdf4303d5d59484fab3ab6bc8267e5f3883cb3af730977c743bdebdbfaf580",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/analysis/Web-research-transition.md",
+      "currentEntryPoint": "reports/web/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/acceleration-aa-20261030/README.md",
+      "workingTreeSha256Before": "11a9e08ab0a9bc0ec4420538124b65c8de0b7a6c6ff4a0672456b2b6d47c4d22",
+      "gitBlobSha256": "11a9e08ab0a9bc0ec4420538124b65c8de0b7a6c6ff4a0672456b2b6d47c4d22",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/acceleration-aa-20261030/README.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/article-1-final-v1/comparison-table.md",
+      "workingTreeSha256Before": "9b293502a35b9110c9e06fd0a4575237fe369301614f3393b683eddda577114d",
+      "gitBlobSha256": "9b293502a35b9110c9e06fd0a4575237fe369301614f3393b683eddda577114d",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/article-1-final-v1/comparison-table.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/article-1-fresh-validation-v1/final-analysis/Review.md",
+      "workingTreeSha256Before": "79ac5c9eb64c918b1559b0b6036c7f6537553c4b61b4053f0c02cc35a9b719ee",
+      "gitBlobSha256": "79ac5c9eb64c918b1559b0b6036c7f6537553c4b61b4053f0c02cc35a9b719ee",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/article-1-fresh-validation-v1/final-analysis/Review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/article-1-fresh-validation-v1/initial-analysis/Review.md",
+      "workingTreeSha256Before": "b248bf4589052b3beef11880355dda01d96715753742a35da742742b24ea7578",
+      "gitBlobSha256": "b248bf4589052b3beef11880355dda01d96715753742a35da742742b24ea7578",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/article-1-fresh-validation-v1/initial-analysis/Review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/article-1-instrumentation-diagnostic-v1/protocol-before-run.md",
+      "workingTreeSha256Before": "2ceacc00a60d9271275dcf5f3fea2704e53f2053d2ce6ecf563f7a660d01f561",
+      "gitBlobSha256": "2ceacc00a60d9271275dcf5f3fea2704e53f2053d2ce6ecf563f7a660d01f561",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/article-1-instrumentation-diagnostic-v1/protocol-before-run.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/article-1-logging-overhead-v1/protocol-before-run.md",
+      "workingTreeSha256Before": "4d3e2acb436d93a373b98ce1fa5c3f96763a742249130be51b3a53f090bbe543",
+      "gitBlobSha256": "4d3e2acb436d93a373b98ce1fa5c3f96763a742249130be51b3a53f090bbe543",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/article-1-logging-overhead-v1/protocol-before-run.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/article-1-matched-main-final-v1/Review.md",
+      "workingTreeSha256Before": "7cfe6e3e1815d48f3b358351c2fc6a334785c82edeced8d3a9a2f1419adfba38",
+      "gitBlobSha256": "7cfe6e3e1815d48f3b358351c2fc6a334785c82edeced8d3a9a2f1419adfba38",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/article-1-matched-main-final-v1/Review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/article-1-revision-v2/Conditions.md",
+      "workingTreeSha256Before": "665fa300005d890cbfde98c5b5354d01c80b4c6775ea0e9e5cc6911c95e88e5f",
+      "gitBlobSha256": "665fa300005d890cbfde98c5b5354d01c80b4c6775ea0e9e5cc6911c95e88e5f",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/article-1-revision-v2/Conditions.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/article-1-skills-validation-v1/Review.md",
+      "workingTreeSha256Before": "79ac5c9eb64c918b1559b0b6036c7f6537553c4b61b4053f0c02cc35a9b719ee",
+      "gitBlobSha256": "79ac5c9eb64c918b1559b0b6036c7f6537553c4b61b4053f0c02cc35a9b719ee",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/article-1-skills-validation-v1/Review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/article-2-evidence-package-v1/Comparison.md",
+      "workingTreeSha256Before": "3ebfd79d742c3b65a8f0669a0fdda8e64ea9c03c3e257caca32624bcd57c8654",
+      "gitBlobSha256": "3ebfd79d742c3b65a8f0669a0fdda8e64ea9c03c3e257caca32624bcd57c8654",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/article-2-evidence-package-v1/Comparison.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/article-figures-v1/Article-figure-package.md",
+      "workingTreeSha256Before": "0c09fb73c154d5cf4025ca5bd67f91b027bd9feb791934070af1d263619559a2",
+      "gitBlobSha256": "0c09fb73c154d5cf4025ca5bd67f91b027bd9feb791934070af1d263619559a2",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/article-figures-v1/Article-figure-package.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/article-revision-v3/baseline-table.md",
+      "workingTreeSha256Before": "c45746aa4fb6894bea9e4d22eb05c7a807c3c21110c38681f0799012d279800c",
+      "gitBlobSha256": "c45746aa4fb6894bea9e4d22eb05c7a807c3c21110c38681f0799012d279800c",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/article-revision-v3/baseline-table.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/articles-handoff-v4/Reader-guide.md",
+      "workingTreeSha256Before": "1f3e1c76c1dd49c3de8ccf9ba5fc603263c47bfeb7d9eb830b95990d8f2643b2",
+      "gitBlobSha256": "1f3e1c76c1dd49c3de8ccf9ba5fc603263c47bfeb7d9eb830b95990d8f2643b2",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/articles-handoff-v4/Reader-guide.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/articles-handoff-v5/Reader-guide.md",
+      "workingTreeSha256Before": "c04b5a1f9bb19d8f53249afa25c8dddb295012d07402a7be318bb248126761de",
+      "gitBlobSha256": "c04b5a1f9bb19d8f53249afa25c8dddb295012d07402a7be318bb248126761de",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/articles-handoff-v5/Reader-guide.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/articles-handoff-v6/Reader-guide.md",
+      "workingTreeSha256Before": "4c8f67eabfd3e5627e1e8df702ce1eeed991f6b4f95e29186f1a7179b614d583",
+      "gitBlobSha256": "4c8f67eabfd3e5627e1e8df702ce1eeed991f6b4f95e29186f1a7179b614d583",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/articles-handoff-v6/Reader-guide.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/articles-reading-20261030/independent-ai-review.md",
+      "workingTreeSha256Before": "a17310ac2303858fe8bc073063e40a9cec33111939870e88482092fd452fee47",
+      "gitBlobSha256": "a17310ac2303858fe8bc073063e40a9cec33111939870e88482092fd452fee47",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/articles-reading-20261030/independent-ai-review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/articles-reading-20261030/response.md",
+      "workingTreeSha256Before": "af6590233e9df4ddc82010aa921692231e217e7a9f9da3e24db1d23ba3a91570",
+      "gitBlobSha256": "af6590233e9df4ddc82010aa921692231e217e7a9f9da3e24db1d23ba3a91570",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/articles-reading-20261030/response.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/bounded-experiments-20261030/acceleration-protocol.md",
+      "workingTreeSha256Before": "8d8dfa909e28812312df2fa286a270d204f96cb828047cb0426685a5b7de01ff",
+      "gitBlobSha256": "8d8dfa909e28812312df2fa286a270d204f96cb828047cb0426685a5b7de01ff",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/bounded-experiments-20261030/acceleration-protocol.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/bounded-experiments-20261030/protocol.md",
+      "workingTreeSha256Before": "1d651454ce402caac2b7d4d3b5edc5a224c4eb98cc6c5f35d21cb64afe735b12",
+      "gitBlobSha256": "1d651454ce402caac2b7d4d3b5edc5a224c4eb98cc6c5f35d21cb64afe735b12",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/bounded-experiments-20261030/protocol.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/broker-twins-package-v1/Report.md",
+      "workingTreeSha256Before": "60b27269d2eb1fccec7ebb5f37d3d0fa3a7b7941d9d07a848e31cc7d9d425b72",
+      "gitBlobSha256": "60b27269d2eb1fccec7ebb5f37d3d0fa3a7b7941d9d07a848e31cc7d9d425b72",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/broker-twins-package-v1/Report.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/chapter-drafts-v2/review.md",
+      "workingTreeSha256Before": "e04fac1df63b73cd01d925476e31089d90863bee4dd1f384412eab21d8fe6c29",
+      "gitBlobSha256": "e04fac1df63b73cd01d925476e31089d90863bee4dd1f384412eab21d8fe6c29",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/chapter-drafts-v2/review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/control-history-v1/Manifest-review.md",
+      "workingTreeSha256Before": "0d73c6609759f6ec9ddb6d945f37cb155e48593235763301241cb0ed075cba0d",
+      "gitBlobSha256": "0d73c6609759f6ec9ddb6d945f37cb155e48593235763301241cb0ed075cba0d",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/control-history-v1/Manifest-review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/control-history-v1/Review.md",
+      "workingTreeSha256Before": "911457f000c93ae762460af3440fda1c9e682f6215778790c3d2450a4b3eac48",
+      "gitBlobSha256": "911457f000c93ae762460af3440fda1c9e682f6215778790c3d2450a4b3eac48",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/control-history-v1/Review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/linux-selected-20261030/README.md",
+      "workingTreeSha256Before": "8596a333deb10f203970256a9f2b6648209d9c0b58d133dc76b12440c3d9ecdb",
+      "gitBlobSha256": "8596a333deb10f203970256a9f2b6648209d9c0b58d133dc76b12440c3d9ecdb",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/linux-selected-20261030/README.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/linux-selected-20261030/article-revision-review.md",
+      "workingTreeSha256Before": "834346f8829a07b7d3218b94185178e6b6908b601fc280edbcf04f0ff00f0e48",
+      "gitBlobSha256": "834346f8829a07b7d3218b94185178e6b6908b601fc280edbcf04f0ff00f0e48",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/linux-selected-20261030/article-revision-review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/linux-selected-20261030/remaining-result/Figure-plan.md",
+      "workingTreeSha256Before": "20d6e8803fd00b74b61ba8ba121881fc1a49954c40f513681f7969f63e73242b",
+      "gitBlobSha256": "20d6e8803fd00b74b61ba8ba121881fc1a49954c40f513681f7969f63e73242b",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/linux-selected-20261030/remaining-result/Figure-plan.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/manuscript-offline-review-v1/Table.md",
+      "workingTreeSha256Before": "37455d00a012f69253f279bf9433fd2d46e0746595166f872002cb6602ea3637",
+      "gitBlobSha256": "37455d00a012f69253f279bf9433fd2d46e0746595166f872002cb6602ea3637",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/manuscript-offline-review-v1/Table.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/manuscript-offline-review-v1/independent-bounded-review.md",
+      "workingTreeSha256Before": "987a85685760a13e7e2419d60be13ceb68084417e99bf4c11e3a555a169c1cd7",
+      "gitBlobSha256": "987a85685760a13e7e2419d60be13ceb68084417e99bf4c11e3a555a169c1cd7",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/manuscript-offline-review-v1/independent-bounded-review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/manuscript-offline-review-v1/recheck.md",
+      "workingTreeSha256Before": "49d6fbd3e1c9fa7e62c456636e1dc24f48eb25d85bcc27b6be715940b3cf3eb6",
+      "gitBlobSha256": "49d6fbd3e1c9fa7e62c456636e1dc24f48eb25d85bcc27b6be715940b3cf3eb6",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/manuscript-offline-review-v1/recheck.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/metrics-contract-20261030/README.md",
+      "workingTreeSha256Before": "cb6d0509f40d90bd1b9f578ae03f631b7fe09cc8693868a8e6c324f7d7fa2d29",
+      "gitBlobSha256": "cb6d0509f40d90bd1b9f578ae03f631b7fe09cc8693868a8e6c324f7d7fa2d29",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/metrics-contract-20261030/README.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/metrics-contract-20261030/source-plan-at-review.md",
+      "workingTreeSha256Before": "0dba3bf56af0b1679364d188e3e3c217a0ad7bd1cd469483beecf1ae0d1f08ee",
+      "gitBlobSha256": "0dba3bf56af0b1679364d188e3e3c217a0ad7bd1cd469483beecf1ae0d1f08ee",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/metrics-contract-20261030/source-plan-at-review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/metrics-contract-20261030/verification.md",
+      "workingTreeSha256Before": "18bfddf037fbb49f5c50634c8191f39338b666d2bd7714c549eb5673da1b197f",
+      "gitBlobSha256": "18bfddf037fbb49f5c50634c8191f39338b666d2bd7714c549eb5673da1b197f",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/metrics-contract-20261030/verification.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/model-method-20261030/README.md",
+      "workingTreeSha256Before": "d4e14d0430727f7d6dfa60e8377d0a387c229498e4e43dcfc9c7f8107f07321b",
+      "gitBlobSha256": "d4e14d0430727f7d6dfa60e8377d0a387c229498e4e43dcfc9c7f8107f07321b",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/model-method-20261030/README.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/model-method-20261030/verification.md",
+      "workingTreeSha256Before": "30a40bf50a9f3dca37642e37a4ef94318759fc577169cea7ce8a4b1dde37f1cd",
+      "gitBlobSha256": "30a40bf50a9f3dca37642e37a4ef94318759fc577169cea7ce8a4b1dde37f1cd",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/model-method-20261030/verification.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/network-main-recount-v1/figures/Comparison.md",
+      "workingTreeSha256Before": "a29ed4ab299a924377f4937dbda8cbac86d8eec711b9f5322a7aaa6ae7934754",
+      "gitBlobSha256": "a29ed4ab299a924377f4937dbda8cbac86d8eec711b9f5322a7aaa6ae7934754",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/network-main-recount-v1/figures/Comparison.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/network-microtests-v1/Review.md",
+      "workingTreeSha256Before": "ed7a19f93906eabaf52bba057f2d0484a88b0c8463c5ced6ca7e02fa6c19cbbd",
+      "gitBlobSha256": "ed7a19f93906eabaf52bba057f2d0484a88b0c8463c5ced6ca7e02fa6c19cbbd",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/network-microtests-v1/Review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/network-model-review-v1/Review.md",
+      "workingTreeSha256Before": "7a970c771a3f7cc27c32abada4859eb31dac90c9f6695012ea612541d12be6a3",
+      "gitBlobSha256": "7a970c771a3f7cc27c32abada4859eb31dac90c9f6695012ea612541d12be6a3",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/network-model-review-v1/Review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/network-pilot-failure-v1/Diagnosis.md",
+      "workingTreeSha256Before": "648d30ab0407f13a74b73eef955ecfe72e640c8474424e9499351abd24e15716",
+      "gitBlobSha256": "648d30ab0407f13a74b73eef955ecfe72e640c8474424e9499351abd24e15716",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/network-pilot-failure-v1/Diagnosis.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/network-pilot-reuse-v1/Review.md",
+      "workingTreeSha256Before": "4b4e2e398bb6f30760c6a96277e66e53a0cda5779df8c291e76f99e0647fee1f",
+      "gitBlobSha256": "4b4e2e398bb6f30760c6a96277e66e53a0cda5779df8c291e76f99e0647fee1f",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/network-pilot-reuse-v1/Review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/network-pilot-tail-failure-v1/Diagnosis.md",
+      "workingTreeSha256Before": "f59dcf6e254cc187918b61d7a3c5d6d9a22c7683560a472e28ef4c1c4fa152fe",
+      "gitBlobSha256": "f59dcf6e254cc187918b61d7a3c5d6d9a22c7683560a472e28ef4c1c4fa152fe",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/network-pilot-tail-failure-v1/Diagnosis.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/network-runner-v1/Review.md",
+      "workingTreeSha256Before": "0b5f87dc36b775f30453df7ef7a917a29f47dbbb823368c1b60682116111e047",
+      "gitBlobSha256": "0b5f87dc36b775f30453df7ef7a917a29f47dbbb823368c1b60682116111e047",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/network-runner-v1/Review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/network-writer-fix-v1/Review.md",
+      "workingTreeSha256Before": "833244814787650437b41f047a47cdd4ee14846b4c8e2cb19922be42c9f015dc",
+      "gitBlobSha256": "833244814787650437b41f047a47cdd4ee14846b4c8e2cb19922be42c9f015dc",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/network-writer-fix-v1/Review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/overnight-optimization-v1/Health-review.md",
+      "workingTreeSha256Before": "14f63088414bec6c4232f77e54ffe41e8b930372576c6119ae68a7daff3af8c8",
+      "gitBlobSha256": "14f63088414bec6c4232f77e54ffe41e8b930372576c6119ae68a7daff3af8c8",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/overnight-optimization-v1/Health-review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/overnight-optimization-v1/Sensitivity-review.md",
+      "workingTreeSha256Before": "8d8e151bb54f6247782fd32632189b6a6a54a34007a7e8a82c493ee78b3ec98c",
+      "gitBlobSha256": "8d8e151bb54f6247782fd32632189b6a6a54a34007a7e8a82c493ee78b3ec98c",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/overnight-optimization-v1/Sensitivity-review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/parallel-block-20261030/topology-correction.md",
+      "workingTreeSha256Before": "fc7751de86bce346e7c750e4bc82ccf9a441f635addc9f0710c50e727d6780c5",
+      "gitBlobSha256": "fc7751de86bce346e7c750e4bc82ccf9a441f635addc9f0710c50e727d6780c5",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/parallel-block-20261030/topology-correction.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/qos1-linux-diagnostics-v2/Review.md",
+      "workingTreeSha256Before": "c32598a2e118073259cae284a2725debdc6da5e7c82fb3ad18d14319ff3a429d",
+      "gitBlobSha256": "c32598a2e118073259cae284a2725debdc6da5e7c82fb3ad18d14319ff3a429d",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/qos1-linux-diagnostics-v2/Review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/queue-capacity-micro-v1/protocol-at-launch.md",
+      "workingTreeSha256Before": "cfe90be49720a6b633481e48effd0fef52f5f0a12004b34d45a9d0e9773abab5",
+      "gitBlobSha256": "cfe90be49720a6b633481e48effd0fef52f5f0a12004b34d45a9d0e9773abab5",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/queue-capacity-micro-v1/protocol-at-launch.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/queue-causality-pilot-20261030/README.md",
+      "workingTreeSha256Before": "b4092775410b4df521e5f68b1508f129e0b801c03973ebc777a30a6ce4ea5959",
+      "gitBlobSha256": "b4092775410b4df521e5f68b1508f129e0b801c03973ebc777a30a6ce4ea5959",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/queue-causality-pilot-20261030/README.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/related-work-v1/Review.md",
+      "workingTreeSha256Before": "b13793233ed1f3211ea1f46fa79eabcda99f318d253fa974d2465dfe09de4cab",
+      "gitBlobSha256": "b13793233ed1f3211ea1f46fa79eabcda99f318d253fa974d2465dfe09de4cab",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/related-work-v1/Review.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/dissertation/sensitivity-final-v1/analysis/Sensitivity-final.md",
+      "workingTreeSha256Before": "383072e805c335bfd18217eecad08ddd30f64b08b152d015cc09d8dd6b18b560",
+      "gitBlobSha256": "383072e805c335bfd18217eecad08ddd30f64b08b152d015cc09d8dd6b18b560",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/dissertation/sensitivity-final-v1/analysis/Sensitivity-final.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/tools/monitor_sensitivity_updates_2026-10-24.md",
+      "workingTreeSha256Before": "0b0d1100dd7f567a5ea1b03c71d282994bcdf6cecd6b3cbc439fc859a4dd6685",
+      "gitBlobSha256": "0b0d1100dd7f567a5ea1b03c71d282994bcdf6cecd6b3cbc439fc859a4dd6685",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/tools/monitor_sensitivity_updates_2026-10-24.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/tools/network-monitor-switch.md",
+      "workingTreeSha256Before": "2629c75f41967f095d53d56e0b27cae98d03e1dd47b0b1df86d7810ad4c200ac",
+      "gitBlobSha256": "2629c75f41967f095d53d56e0b27cae98d03e1dd47b0b1df86d7810ad4c200ac",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/tools/network-monitor-switch.md",
+      "currentEntryPoint": "reports/README.md"
+    },
+    {
+      "path": "reports/audits/web-linux-v1/Review.md",
+      "workingTreeSha256Before": "64d7656d1e292077c526bfc1c3b93dc629c843db55ab9870213a36ab9118c594",
+      "gitBlobSha256": "64d7656d1e292077c526bfc1c3b93dc629c843db55ab9870213a36ab9118c594",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/audits/web-linux-v1/Review.md",
+      "currentEntryPoint": "reports/web/README.md"
+    },
+    {
+      "path": "reports/history/setup/platform-results.md",
+      "workingTreeSha256Before": "0a554b836262374b76a82774f4c239f37dc0df04db0d698173063a04773f997f",
+      "gitBlobSha256": "0a554b836262374b76a82774f4c239f37dc0df04db0d698173063a04773f997f",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/history/setup/platform-results.md",
+      "currentEntryPoint": "reports/history/README.md"
+    },
+    {
+      "path": "reports/history/setup/platform-validation.md",
+      "workingTreeSha256Before": "35a2e01f7f4807dc244e6ae0bc7282a67d5063c73fcaf8f08b41a293e302e1c9",
+      "gitBlobSha256": "35a2e01f7f4807dc244e6ae0bc7282a67d5063c73fcaf8f08b41a293e302e1c9",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/history/setup/platform-validation.md",
+      "currentEntryPoint": "reports/history/README.md"
+    },
+    {
+      "path": "reports/status/scheduled-20261026-0300/request.md",
+      "workingTreeSha256Before": "0978d60607a4b3aeea36c02e62438138d77c661fa38db701698bb9b5d6cc2916",
+      "gitBlobSha256": "0978d60607a4b3aeea36c02e62438138d77c661fa38db701698bb9b5d6cc2916",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/status/scheduled-20261026-0300/request.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "reports/status/scheduled-20261026-1100/request.md",
+      "workingTreeSha256Before": "ff47c6acbbb8b7e618c257a41b276e2fd346a2b6c5b7eee238fc4b77dd76bbe7",
+      "gitBlobSha256": "ff47c6acbbb8b7e618c257a41b276e2fd346a2b6c5b7eee238fc4b77dd76bbe7",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/status/scheduled-20261026-1100/request.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "reports/status/scheduled-resume-request.md",
+      "workingTreeSha256Before": "8c31c1c09b0771cb584f7b640b35d367ce07f8eedd64b686fc1837c05676727f",
+      "gitBlobSha256": "8c31c1c09b0771cb584f7b640b35d367ce07f8eedd64b686fc1837c05676727f",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/status/scheduled-resume-request.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    },
+    {
+      "path": "reports/status/scheduled-step33-20261102-0500.md",
+      "workingTreeSha256Before": "8ab608255145b2a9f64badf40e3654f1325304c4619a4ca4990fb97757c46e96",
+      "gitBlobSha256": "8ab608255145b2a9f64badf40e3654f1325304c4619a4ca4990fb97757c46e96",
+      "originalUrl": "https://github.com/EntityFX/mqtty-meta/blob/8b27518e1d206f90d2da4fbac0aa30c542834803/reports/status/scheduled-step33-20261102-0500.md",
+      "currentEntryPoint": "docs/plans/completion.md"
+    }
+  ],
+  "verification": {
+    "documentationUnitTests": {
+      "passed": 4,
+      "failed": 0,
+      "command": "python -m unittest discover -s tools/documentation -v"
+    },
+    "linuxE2kEvidence": {
+      "result": "PASS",
+      "retrievedHashes": 102,
+      "rawBundles": 12,
+      "baselineComparisons": 6,
+      "command": "python reproducibility/verify_evidence.py reproducibility/reports/linux-e2k-20261102"
+    },
+    "links": {
+      "beforeBrokenCount": 67,
+      "afterBrokenCount": 14,
+      "newBrokenLinks": [],
+      "remainingPreExistingBrokenLinks": [
+        {
+          "source": "docs/dissertation/article-2-contribution-and-related-work.md",
+          "target": "../../mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Topology/FederationTopologyBuilder.cs"
+        },
+        {
+          "source": "docs/dissertation/article-2-contribution-and-related-work.md",
+          "target": "../../mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Federation/StaticFederator.cs"
+        },
+        {
+          "source": "docs/dissertation/article-2-contribution-and-related-work.md",
+          "target": "../../mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Federation/FederationTopics.cs"
+        },
+        {
+          "source": "docs/dissertation/claim-evidence-map.md",
+          "target": "../../mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App"
+        },
+        {
+          "source": "docs/dissertation/network-forwarding-proofs.md",
+          "target": "../../mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Federation/StaticFederator.cs"
+        },
+        {
+          "source": "docs/dissertation/network-forwarding-proofs.md",
+          "target": "../../mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Federation/FloodingPolicy.cs"
+        },
+        {
+          "source": "docs/dissertation/network-forwarding-proofs.md",
+          "target": "../../mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Federation/FederationTopics.cs"
+        },
+        {
+          "source": "docs/mqtt-benchmark/runbook.md",
+          "target": "../../MqttBenchmark/docs/examples/four-brokers.linux.spec.json"
+        },
+        {
+          "source": "docs/mqtty/calibration-v3.md",
+          "target": "../../mqtty/doc/examples/RunSimulation.ps1"
+        },
+        {
+          "source": "docs/mqtty/mqtt-relay.md",
+          "target": "../../mqtty/doc/examples/mqtt-relay.v3.json"
+        },
+        {
+          "source": "docs/overview/architecture.md",
+          "target": "../../mqtty/doc/examples/custom-network/"
+        },
+        {
+          "source": "docs/overview/architecture.md",
+          "target": "../../mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/"
+        },
+        {
+          "source": "docs/overview/architecture.md",
+          "target": "../../mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.LoadBalancing.App/"
+        },
+        {
+          "source": "docs/overview/architecture.md",
+          "target": "../../mqtty/tools/"
+        }
+      ],
+      "note": "Remaining targets refer to newer submodule paths absent in the intentionally preserved working checkouts. No new broken local links."
+    },
+    "legacyLayoutAudit": {
+      "unchangedFromBefore": true,
+      "immutableBoundaries": {
+        "protectedDissertationFilesSha256": {
+          "checked": 265,
+          "changed": []
+        },
+        "unchangedScientificFilesSha256": {
+          "checked": 1131,
+          "changed": [
+            "reports/data/ActiveMQ-model-evidence.zip",
+            "reports/data/Aedes-model-evidence.zip",
+            "reports/data/EMQX-model-evidence.zip",
+            "reports/data/Mosquitto-model-evidence.zip",
+            "reports/data/MqttRelay-Mixed-model-evidence.zip",
+            "reports/data/native-members.zip",
+            "reports/data/replay-evidence.zip"
+          ]
+        }
+      },
+      "note": "The old manifest already differed for seven evidence ZIPs before this cleanup; the cleanup did not modify those files. This is not a clean pass of the historical audit."
+    }
+  }
+}

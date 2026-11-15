@@ -1,0 +1,86 @@
+{
+  "scope": "Technical known-count check with an independent small MQTT client; not model accuracy",
+  "brokerPath": "/usr/sbin/mosquitto",
+  "brokerSha256": "34cee46d71bd97aca34c75fcb844674ab787434468c06423a3a1f2825a213dea",
+  "brokerPid": 126824,
+  "brokerExitCode": 0,
+  "port": 46425,
+  "elapsedWallSeconds": 4.383969073998742,
+  "passed": true,
+  "trials": [
+    {
+      "qos": 1,
+      "scope": "One subscriber; attempts in [measurementStart, measurementEnd); observed through drainEnd",
+      "attempted": 100,
+      "completed": 100,
+      "failed": 0,
+      "pending": 0,
+      "measurementSeconds": 2.0,
+      "attemptedRps": 50.0,
+      "completedInWindow": 100,
+      "completedRpsInWindow": 50.0,
+      "completedDuringDrain": 0,
+      "completedCohortPerSubmissionSecond": 50.0,
+      "uniqueDeliveries": 100,
+      "completedIdsDelivered": 100,
+      "deliveredAfterFailedPublish": 0,
+      "firstDeliveriesDuringDrain": 0,
+      "duplicates": 0,
+      "outsideCohortDeliveryEvents": 0,
+      "publishFailureRate": 0.0,
+      "deliveryLossRate": 0.0,
+      "p99PublishMs": 0.3421079891268164,
+      "latencyStatus": "observed",
+      "outcomesSettled": true,
+      "expectedPublications": 100,
+      "subscriberErrors": [],
+      "pendingQos2Handshakes": 0,
+      "payloadSizes": [
+        16
+      ],
+      "inputsSha256": {
+        "publishes.ndjson": "e4a40f1c3b482e4b69320a88a2bf0361e6fa38226b8166997b12810bc0eeb217",
+        "deliveries.ndjson": "276e9ab54178cac434f7f6eb6767100bd4859d372ae7dfae7aa2e40acb9bca05",
+        "phases.json": "998b7643f49baa291febe006d602238a8392c786d1a5c67bd3185715952865df"
+      },
+      "knownAnswerPassed": true
+    },
+    {
+      "qos": 2,
+      "scope": "One subscriber; attempts in [measurementStart, measurementEnd); observed through drainEnd",
+      "attempted": 100,
+      "completed": 100,
+      "failed": 0,
+      "pending": 0,
+      "measurementSeconds": 2.0,
+      "attemptedRps": 50.0,
+      "completedInWindow": 100,
+      "completedRpsInWindow": 50.0,
+      "completedDuringDrain": 0,
+      "completedCohortPerSubmissionSecond": 50.0,
+      "uniqueDeliveries": 100,
+      "completedIdsDelivered": 100,
+      "deliveredAfterFailedPublish": 0,
+      "firstDeliveriesDuringDrain": 1,
+      "duplicates": 0,
+      "outsideCohortDeliveryEvents": 0,
+      "publishFailureRate": 0.0,
+      "deliveryLossRate": 0.0,
+      "p99PublishMs": 0.4158689989708364,
+      "latencyStatus": "observed",
+      "outcomesSettled": true,
+      "expectedPublications": 100,
+      "subscriberErrors": [],
+      "pendingQos2Handshakes": 0,
+      "payloadSizes": [
+        16
+      ],
+      "inputsSha256": {
+        "publishes.ndjson": "d8ff6e648d3b368533565029c6620da85728c175f0dda5969100efb319bd8778",
+        "deliveries.ndjson": "798dcfa08924708a0a5e63c46cf1e453a818d2430c425b6424eb205ccd5447ad",
+        "phases.json": "2b19309fb341426a4e359d313d3d650ab8da8f9023a52717018e50c2b99b78f3"
+      },
+      "knownAnswerPassed": true
+    }
+  ]
+}

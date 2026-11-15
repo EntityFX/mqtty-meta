@@ -1,0 +1,100 @@
+[
+  {
+    "broker": "Aedes",
+    "stage": "calibration",
+    "borrowed": true,
+    "rawSource": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/raw/Aedes-calibration",
+    "identity": {
+      "campaignId": "Aedes-calibration",
+      "configSha256": "3bcf2008ff0b70fcc5db7f14500b851650be7cfac934fc0fda0f62d96edf494f",
+      "standSha256": "c5eb957faacaca5179e88e1846db5b2f079778af74bd3c067f5ccd249b18692a",
+      "deploymentMode": "singleHostSequential",
+      "cpuMode": "singleCorePinned",
+      "mqttBenchmarkCommitSha": "3a689466009a0d5410f5dc88dc1282d72c27f7dd"
+    },
+    "verifiedAtSource": true,
+    "note": "Unverified aggregate will be verified by normal matrix resume/aggregate/restore before profiling"
+  },
+  {
+    "broker": "Aedes",
+    "stage": "validation",
+    "borrowed": false,
+    "successfulAttemptsRetainedAtSource": 24,
+    "reason": "Not a whole 72-key native matrix; no identities or partial repeats are merged"
+  },
+  {
+    "broker": "Aedes",
+    "stage": "pilot",
+    "borrowed": true,
+    "rawSource": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/raw/Aedes-pilot"
+  },
+  {
+    "broker": "Mosquitto",
+    "stage": "calibration",
+    "borrowed": true,
+    "rawSource": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/raw/Mosquitto-calibration",
+    "identity": {
+      "campaignId": "Mosquitto-calibration",
+      "configSha256": "54d0f823c7b6092f65bfcc3fe9a4d6394e636572bd1ca4aeb775996f406f308d",
+      "standSha256": "b40a2b5b8a7403536c7e3a6f8838578cc5853942e44a12e7156c221e67d4492d",
+      "deploymentMode": "singleHostSequential",
+      "cpuMode": "singleCorePinned",
+      "mqttBenchmarkCommitSha": "3a689466009a0d5410f5dc88dc1282d72c27f7dd"
+    },
+    "verifiedAtSource": false,
+    "note": "Unverified aggregate will be verified by normal matrix resume/aggregate/restore before profiling"
+  },
+  {
+    "broker": "Mosquitto",
+    "stage": "validation",
+    "borrowed": false,
+    "successfulAttemptsRetainedAtSource": 0,
+    "reason": "Not a whole 72-key native matrix; no identities or partial repeats are merged"
+  },
+  {
+    "broker": "Mosquitto",
+    "stage": "pilot",
+    "borrowed": true,
+    "rawSource": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/raw/Mosquitto-pilot"
+  },
+  {
+    "broker": "ActiveMQ",
+    "stage": "calibration",
+    "borrowed": false,
+    "successfulAttemptsRetainedAtSource": 0,
+    "reason": "Not a whole 72-key native matrix; no identities or partial repeats are merged"
+  },
+  {
+    "broker": "ActiveMQ",
+    "stage": "validation",
+    "borrowed": false,
+    "successfulAttemptsRetainedAtSource": 0,
+    "reason": "Not a whole 72-key native matrix; no identities or partial repeats are merged"
+  },
+  {
+    "broker": "ActiveMQ",
+    "stage": "pilot",
+    "borrowed": true,
+    "rawSource": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/raw/ActiveMQ-pilot"
+  },
+  {
+    "broker": "EMQX",
+    "stage": "calibration",
+    "borrowed": false,
+    "successfulAttemptsRetainedAtSource": 0,
+    "reason": "Not a whole 72-key native matrix; no identities or partial repeats are merged"
+  },
+  {
+    "broker": "EMQX",
+    "stage": "validation",
+    "borrowed": false,
+    "successfulAttemptsRetainedAtSource": 0,
+    "reason": "Not a whole 72-key native matrix; no identities or partial repeats are merged"
+  },
+  {
+    "broker": "EMQX",
+    "stage": "pilot",
+    "borrowed": true,
+    "rawSource": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-v1/raw/EMQX-pilot"
+  }
+]

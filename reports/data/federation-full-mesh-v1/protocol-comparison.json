@@ -1,0 +1,332 @@
+{
+  "oldProtocol": "static-federation-acceptance-v1",
+  "newProtocol": "static-federation-full-mesh-v1",
+  "notPooledAsReplicates": true,
+  "unchangedNonRelaySummaries": 36,
+  "cases": [
+    {
+      "id": "ideal-single-q0-s42",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-single-q0-s43",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-single-q0-s44",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-single-q1-s42",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-single-q1-s43",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-single-q1-s44",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-single-q2-s42",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-single-q2-s43",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-single-q2-s44",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-relay-q0-s42",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-relay-q0-s43",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-relay-q0-s44",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-relay-q1-s42",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-relay-q1-s43",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-relay-q1-s44",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-relay-q2-s42",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-relay-q2-s43",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-relay-q2-s44",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-federation-q0-s42",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-federation-q0-s43",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-federation-q0-s44",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-federation-q1-s42",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-federation-q1-s43",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-federation-q1-s44",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-federation-q2-s42",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-federation-q2-s43",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "ideal-federation-q2-s44",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-single-q0-s42",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-single-q0-s43",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-single-q0-s44",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-single-q1-s42",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-single-q1-s43",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-single-q1-s44",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-single-q2-s42",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-single-q2-s43",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-single-q2-s44",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-relay-q0-s42",
+      "identicalSummary": false,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-relay-q0-s43",
+      "identicalSummary": false,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-relay-q0-s44",
+      "identicalSummary": false,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-relay-q1-s42",
+      "identicalSummary": false,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-relay-q1-s43",
+      "identicalSummary": false,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-relay-q1-s44",
+      "identicalSummary": false,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-relay-q2-s42",
+      "identicalSummary": false,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-relay-q2-s43",
+      "identicalSummary": false,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-relay-q2-s44",
+      "identicalSummary": false,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-federation-q0-s42",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-federation-q0-s43",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-federation-q0-s44",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-federation-q1-s42",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-federation-q1-s43",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-federation-q1-s44",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-federation-q2-s42",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-federation-q2-s43",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    },
+    {
+      "id": "mosquitto-federation-q2-s44",
+      "identicalSummary": true,
+      "oldRelay": "perOriginBFSTree",
+      "newRelay": "fullMeshSourceOnlyExport"
+    }
+  ]
+}

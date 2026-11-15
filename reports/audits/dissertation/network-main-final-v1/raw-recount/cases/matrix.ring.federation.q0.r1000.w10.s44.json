@@ -1,0 +1,31 @@
+{
+  "id": "matrix.ring.federation.q0.r1000.w10.s44",
+  "attempt": "runs/matrix.ring.federation.q0.r1000.w10.s44/attempt-001",
+  "inputConfigSha256": "0573ad60fd631be3a547236198ad31c310da12791e7f31ce1f52d4c692a75917",
+  "status": "rawArithmeticPassed",
+  "summarySha256": "6f43fcecd3793721068ae2c57cb7049d39c5fd5d55a8f986a93dd6fbf614b301",
+  "metrics": {
+    "sourceCompletedRps": 1000,
+    "uniqueGoodput": 4000,
+    "deliveryLoss": 0,
+    "receiverP99Ms": 3.9000000000000004,
+    "publishP99Ms": null,
+    "forwardAttempts": 50000,
+    "forwardTopicPayloadBytes": 2235020,
+    "uniqueDuringDrain": 12,
+    "expectedDeliveries": 40000,
+    "uniqueDeliveries": 40000,
+    "fullyDeliveredPublications": 10000,
+    "sourceCompleted": 10000,
+    "sourceCompletedDuringDrain": 1,
+    "apiAttempts": 10000,
+    "queueDrops": 0,
+    "hopLimitDrops": 0,
+    "forwardRejected": 0,
+    "backpressureUnsent": 0,
+    "duplicateDeliveries": 0,
+    "suppressedDuplicates": 20000
+  },
+  "originalWarnings": [],
+  "verificationSeconds": 1.625
+}

@@ -1,0 +1,3275 @@
+{
+  "schemaVersion": 2,
+  "calibrationStatus": "provisional-legacy-v1",
+  "provenanceNote": "Payload dimensions and latency knots are provisional copies of legacy aggregate data; replace with generated benchmark calibration.",
+  "generatedAtUtc": "2026-09-09T00:00:00Z",
+  "mqttYCommitSha": "9655fe802fe5ce40491a34703837b1f4963fa67a",
+  "mqttBenchmarkCommitSha": "0e43d3f",
+  "inputCsvSha256": {},
+  "runCount": 0,
+  "warmupSeconds": 0,
+  "measurementSeconds": 0,
+  "repeats": 0,
+  "brokers": [
+    {
+      "name": "Mosquitto",
+      "messageSizes": [
+        {
+          "messageBytes": 16,
+          "qos": [
+            {
+              "qos": 0,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 57087.5,
+                  "publishFailureRate": 0.006004817166630173,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 75324.3,
+                  "publishFailureRate": 0.0503879227942478,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 81467.5,
+                  "publishFailureRate": 0.14977629115905117,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 25151.9,
+                  "publishFailureRate": 0.0757424555070061,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 31682.0,
+                  "publishFailureRate": 0.10218620227447522,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 36809.3,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 47322.4,
+                  "publishFailureRate": 0.00043179018237324,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 52806.3,
+                  "publishFailureRate": 0.0018697264025946399,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 59545.1,
+                  "publishFailureRate": 0.004043436008132776,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 63557.4,
+                  "publishFailureRate": 0.01098166854860407,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 67934.4,
+                  "publishFailureRate": 0.06960051147406492,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                }
+              ]
+            },
+            {
+              "qos": 1,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 3916.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.34,
+                    "p50Ms": 0.34,
+                    "p75Ms": 0.34,
+                    "p95Ms": 0.34,
+                    "p99Ms": 0.34,
+                    "maxMs": 0.34
+                  }
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 4254.5,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.82,
+                    "p50Ms": 0.82,
+                    "p75Ms": 0.82,
+                    "p95Ms": 0.82,
+                    "p99Ms": 0.82,
+                    "maxMs": 0.82
+                  }
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 4667.7,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.23,
+                    "p50Ms": 1.23,
+                    "p75Ms": 1.23,
+                    "p95Ms": 1.23,
+                    "p99Ms": 1.23,
+                    "maxMs": 1.23
+                  }
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 5499.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 2.1,
+                    "p50Ms": 2.1,
+                    "p75Ms": 2.1,
+                    "p95Ms": 2.1,
+                    "p99Ms": 2.1,
+                    "maxMs": 2.1
+                  }
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 6011.5,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 2.94,
+                    "p50Ms": 2.94,
+                    "p75Ms": 2.94,
+                    "p95Ms": 2.94,
+                    "p99Ms": 2.94,
+                    "maxMs": 2.94
+                  }
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 7256.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 3.84,
+                    "p50Ms": 3.84,
+                    "p75Ms": 3.84,
+                    "p95Ms": 3.84,
+                    "p99Ms": 3.84,
+                    "maxMs": 3.84
+                  }
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 9019.0,
+                  "publishFailureRate": 0.023927353096622302,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 5.57,
+                    "p50Ms": 5.57,
+                    "p75Ms": 5.57,
+                    "p95Ms": 5.57,
+                    "p99Ms": 5.57,
+                    "maxMs": 5.57
+                  }
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 22572.1,
+                  "publishFailureRate": 0.20829992187996096,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 7.02,
+                    "p50Ms": 7.02,
+                    "p75Ms": 7.02,
+                    "p95Ms": 7.02,
+                    "p99Ms": 7.02,
+                    "maxMs": 7.02
+                  }
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 37277.9,
+                  "publishFailureRate": 0.5891828670606445,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 6.22,
+                    "p50Ms": 6.22,
+                    "p75Ms": 6.22,
+                    "p95Ms": 6.22,
+                    "p99Ms": 6.22,
+                    "maxMs": 6.22
+                  }
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 35941.3,
+                  "publishFailureRate": 0.7087788514420272,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 7.54,
+                    "p50Ms": 7.54,
+                    "p75Ms": 7.54,
+                    "p95Ms": 7.54,
+                    "p99Ms": 7.54,
+                    "maxMs": 7.54
+                  }
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 53374.7,
+                  "publishFailureRate": 0.8807099497889136,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 11.81,
+                    "p50Ms": 11.81,
+                    "p75Ms": 11.81,
+                    "p95Ms": 11.81,
+                    "p99Ms": 11.81,
+                    "maxMs": 11.81
+                  }
+                }
+              ]
+            },
+            {
+              "qos": 2,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 2104.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.56,
+                    "p50Ms": 0.56,
+                    "p75Ms": 0.56,
+                    "p95Ms": 0.56,
+                    "p99Ms": 0.56,
+                    "maxMs": 0.56
+                  }
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 2387.7,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.4,
+                    "p50Ms": 1.4,
+                    "p75Ms": 1.4,
+                    "p95Ms": 1.4,
+                    "p99Ms": 1.4,
+                    "maxMs": 1.4
+                  }
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 2598.1,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 2.52,
+                    "p50Ms": 2.52,
+                    "p75Ms": 2.52,
+                    "p95Ms": 2.52,
+                    "p99Ms": 2.52,
+                    "maxMs": 2.52
+                  }
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 4170.6,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 4.32,
+                    "p50Ms": 4.32,
+                    "p75Ms": 4.32,
+                    "p95Ms": 4.32,
+                    "p99Ms": 4.32,
+                    "maxMs": 4.32
+                  }
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 5886.3,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 6.22,
+                    "p50Ms": 6.22,
+                    "p75Ms": 6.22,
+                    "p95Ms": 6.22,
+                    "p99Ms": 6.22,
+                    "maxMs": 6.22
+                  }
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 8437.7,
+                  "publishFailureRate": 0.006613202702168846,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 7.13,
+                    "p50Ms": 7.13,
+                    "p75Ms": 7.13,
+                    "p95Ms": 7.13,
+                    "p99Ms": 7.13,
+                    "maxMs": 7.13
+                  }
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 13167.9,
+                  "publishFailureRate": 0.1024666106380178,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 5.3,
+                    "p50Ms": 5.3,
+                    "p75Ms": 5.3,
+                    "p95Ms": 5.3,
+                    "p99Ms": 5.3,
+                    "maxMs": 5.3
+                  }
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 16297.5,
+                  "publishFailureRate": 0.30078580398669735,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 6.13,
+                    "p50Ms": 6.13,
+                    "p75Ms": 6.13,
+                    "p95Ms": 6.13,
+                    "p99Ms": 6.13,
+                    "maxMs": 6.13
+                  }
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 24439.2,
+                  "publishFailureRate": 0.6960638427010122,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 7.04,
+                    "p50Ms": 7.04,
+                    "p75Ms": 7.04,
+                    "p95Ms": 7.04,
+                    "p99Ms": 7.04,
+                    "maxMs": 7.04
+                  }
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 24517.9,
+                  "publishFailureRate": 0.7996894789936074,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 8.72,
+                    "p50Ms": 8.72,
+                    "p75Ms": 8.72,
+                    "p95Ms": 8.72,
+                    "p99Ms": 8.72,
+                    "maxMs": 8.72
+                  }
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 34052.0,
+                  "publishFailureRate": 0.9322947919899056,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 13.01,
+                    "p50Ms": 13.01,
+                    "p75Ms": 13.01,
+                    "p95Ms": 13.01,
+                    "p99Ms": 13.01,
+                    "maxMs": 13.01
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "messageBytes": 256,
+          "qos": [
+            {
+              "qos": 0,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 57087.5,
+                  "publishFailureRate": 0.006004817166630173,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 75324.3,
+                  "publishFailureRate": 0.0503879227942478,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 81467.5,
+                  "publishFailureRate": 0.14977629115905117,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 25151.9,
+                  "publishFailureRate": 0.0757424555070061,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 31682.0,
+                  "publishFailureRate": 0.10218620227447522,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 36809.3,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 47322.4,
+                  "publishFailureRate": 0.00043179018237324,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 52806.3,
+                  "publishFailureRate": 0.0018697264025946399,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 59545.1,
+                  "publishFailureRate": 0.004043436008132776,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 63557.4,
+                  "publishFailureRate": 0.01098166854860407,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 67934.4,
+                  "publishFailureRate": 0.06960051147406492,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                }
+              ]
+            },
+            {
+              "qos": 1,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 3916.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.34,
+                    "p50Ms": 0.34,
+                    "p75Ms": 0.34,
+                    "p95Ms": 0.34,
+                    "p99Ms": 0.34,
+                    "maxMs": 0.34
+                  }
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 4254.5,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.82,
+                    "p50Ms": 0.82,
+                    "p75Ms": 0.82,
+                    "p95Ms": 0.82,
+                    "p99Ms": 0.82,
+                    "maxMs": 0.82
+                  }
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 4667.7,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.23,
+                    "p50Ms": 1.23,
+                    "p75Ms": 1.23,
+                    "p95Ms": 1.23,
+                    "p99Ms": 1.23,
+                    "maxMs": 1.23
+                  }
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 5499.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 2.1,
+                    "p50Ms": 2.1,
+                    "p75Ms": 2.1,
+                    "p95Ms": 2.1,
+                    "p99Ms": 2.1,
+                    "maxMs": 2.1
+                  }
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 6011.5,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 2.94,
+                    "p50Ms": 2.94,
+                    "p75Ms": 2.94,
+                    "p95Ms": 2.94,
+                    "p99Ms": 2.94,
+                    "maxMs": 2.94
+                  }
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 7256.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 3.84,
+                    "p50Ms": 3.84,
+                    "p75Ms": 3.84,
+                    "p95Ms": 3.84,
+                    "p99Ms": 3.84,
+                    "maxMs": 3.84
+                  }
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 9019.0,
+                  "publishFailureRate": 0.023927353096622302,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 5.57,
+                    "p50Ms": 5.57,
+                    "p75Ms": 5.57,
+                    "p95Ms": 5.57,
+                    "p99Ms": 5.57,
+                    "maxMs": 5.57
+                  }
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 22572.1,
+                  "publishFailureRate": 0.20829992187996096,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 7.02,
+                    "p50Ms": 7.02,
+                    "p75Ms": 7.02,
+                    "p95Ms": 7.02,
+                    "p99Ms": 7.02,
+                    "maxMs": 7.02
+                  }
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 37277.9,
+                  "publishFailureRate": 0.5891828670606445,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 6.22,
+                    "p50Ms": 6.22,
+                    "p75Ms": 6.22,
+                    "p95Ms": 6.22,
+                    "p99Ms": 6.22,
+                    "maxMs": 6.22
+                  }
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 35941.3,
+                  "publishFailureRate": 0.7087788514420272,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 7.54,
+                    "p50Ms": 7.54,
+                    "p75Ms": 7.54,
+                    "p95Ms": 7.54,
+                    "p99Ms": 7.54,
+                    "maxMs": 7.54
+                  }
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 53374.7,
+                  "publishFailureRate": 0.8807099497889136,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 11.81,
+                    "p50Ms": 11.81,
+                    "p75Ms": 11.81,
+                    "p95Ms": 11.81,
+                    "p99Ms": 11.81,
+                    "maxMs": 11.81
+                  }
+                }
+              ]
+            },
+            {
+              "qos": 2,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 2104.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.56,
+                    "p50Ms": 0.56,
+                    "p75Ms": 0.56,
+                    "p95Ms": 0.56,
+                    "p99Ms": 0.56,
+                    "maxMs": 0.56
+                  }
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 2387.7,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.4,
+                    "p50Ms": 1.4,
+                    "p75Ms": 1.4,
+                    "p95Ms": 1.4,
+                    "p99Ms": 1.4,
+                    "maxMs": 1.4
+                  }
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 2598.1,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 2.52,
+                    "p50Ms": 2.52,
+                    "p75Ms": 2.52,
+                    "p95Ms": 2.52,
+                    "p99Ms": 2.52,
+                    "maxMs": 2.52
+                  }
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 4170.6,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 4.32,
+                    "p50Ms": 4.32,
+                    "p75Ms": 4.32,
+                    "p95Ms": 4.32,
+                    "p99Ms": 4.32,
+                    "maxMs": 4.32
+                  }
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 5886.3,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 6.22,
+                    "p50Ms": 6.22,
+                    "p75Ms": 6.22,
+                    "p95Ms": 6.22,
+                    "p99Ms": 6.22,
+                    "maxMs": 6.22
+                  }
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 8437.7,
+                  "publishFailureRate": 0.006613202702168846,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 7.13,
+                    "p50Ms": 7.13,
+                    "p75Ms": 7.13,
+                    "p95Ms": 7.13,
+                    "p99Ms": 7.13,
+                    "maxMs": 7.13
+                  }
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 13167.9,
+                  "publishFailureRate": 0.1024666106380178,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 5.3,
+                    "p50Ms": 5.3,
+                    "p75Ms": 5.3,
+                    "p95Ms": 5.3,
+                    "p99Ms": 5.3,
+                    "maxMs": 5.3
+                  }
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 16297.5,
+                  "publishFailureRate": 0.30078580398669735,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 6.13,
+                    "p50Ms": 6.13,
+                    "p75Ms": 6.13,
+                    "p95Ms": 6.13,
+                    "p99Ms": 6.13,
+                    "maxMs": 6.13
+                  }
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 24439.2,
+                  "publishFailureRate": 0.6960638427010122,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 7.04,
+                    "p50Ms": 7.04,
+                    "p75Ms": 7.04,
+                    "p95Ms": 7.04,
+                    "p99Ms": 7.04,
+                    "maxMs": 7.04
+                  }
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 24517.9,
+                  "publishFailureRate": 0.7996894789936074,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 8.72,
+                    "p50Ms": 8.72,
+                    "p75Ms": 8.72,
+                    "p95Ms": 8.72,
+                    "p99Ms": 8.72,
+                    "maxMs": 8.72
+                  }
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 34052.0,
+                  "publishFailureRate": 0.9322947919899056,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 13.01,
+                    "p50Ms": 13.01,
+                    "p75Ms": 13.01,
+                    "p95Ms": 13.01,
+                    "p99Ms": 13.01,
+                    "maxMs": 13.01
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ActiveMQ",
+      "messageSizes": [
+        {
+          "messageBytes": 16,
+          "qos": [
+            {
+              "qos": 0,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 48974.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 13372.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 30286.0,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 46586.1,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 57689.7,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 58505.3,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 50242.0,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 68007.5,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 52746.1,
+                  "publishFailureRate": 0.08439986754163338,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 15958.7,
+                  "publishFailureRate": 0.5358644501118512,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 20948.7,
+                  "publishFailureRate": 0.5873131549719792,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                }
+              ]
+            },
+            {
+              "qos": 1,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 3511.0,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.35,
+                    "p50Ms": 0.35,
+                    "p75Ms": 0.35,
+                    "p95Ms": 0.35,
+                    "p99Ms": 0.35,
+                    "maxMs": 0.35
+                  }
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 4068.1,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.83,
+                    "p50Ms": 0.83,
+                    "p75Ms": 0.83,
+                    "p95Ms": 0.83,
+                    "p99Ms": 0.83,
+                    "maxMs": 0.83
+                  }
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 4975.9,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.24,
+                    "p50Ms": 1.24,
+                    "p75Ms": 1.24,
+                    "p95Ms": 1.24,
+                    "p99Ms": 1.24,
+                    "maxMs": 1.24
+                  }
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 5219.9,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 2.18,
+                    "p50Ms": 2.18,
+                    "p75Ms": 2.18,
+                    "p95Ms": 2.18,
+                    "p99Ms": 2.18,
+                    "maxMs": 2.18
+                  }
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 6308.5,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 3.03,
+                    "p50Ms": 3.03,
+                    "p75Ms": 3.03,
+                    "p95Ms": 3.03,
+                    "p99Ms": 3.03,
+                    "maxMs": 3.03
+                  }
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 7083.5,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 3.96,
+                    "p50Ms": 3.96,
+                    "p75Ms": 3.96,
+                    "p95Ms": 3.96,
+                    "p99Ms": 3.96,
+                    "maxMs": 3.96
+                  }
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 8842.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 5.65,
+                    "p50Ms": 5.65,
+                    "p75Ms": 5.65,
+                    "p95Ms": 5.65,
+                    "p99Ms": 5.65,
+                    "maxMs": 5.65
+                  }
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 14596.1,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 7.1,
+                    "p50Ms": 7.1,
+                    "p75Ms": 7.1,
+                    "p95Ms": 7.1,
+                    "p99Ms": 7.1,
+                    "maxMs": 7.1
+                  }
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 27624.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 6.41,
+                    "p50Ms": 6.41,
+                    "p75Ms": 6.41,
+                    "p95Ms": 6.41,
+                    "p99Ms": 6.41,
+                    "maxMs": 6.41
+                  }
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 42301.3,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 7.22,
+                    "p50Ms": 7.22,
+                    "p75Ms": 7.22,
+                    "p95Ms": 7.22,
+                    "p99Ms": 7.22,
+                    "maxMs": 7.22
+                  }
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 49392.0,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 11.35,
+                    "p50Ms": 11.35,
+                    "p75Ms": 11.35,
+                    "p95Ms": 11.35,
+                    "p99Ms": 11.35,
+                    "maxMs": 11.35
+                  }
+                }
+              ]
+            },
+            {
+              "qos": 2,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 2301.7,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.52,
+                    "p50Ms": 0.52,
+                    "p75Ms": 0.52,
+                    "p95Ms": 0.52,
+                    "p99Ms": 0.52,
+                    "maxMs": 0.52
+                  }
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 2552.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.52,
+                    "p50Ms": 0.52,
+                    "p75Ms": 0.52,
+                    "p95Ms": 0.52,
+                    "p99Ms": 0.52,
+                    "maxMs": 0.52
+                  }
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 7205.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.48,
+                    "p50Ms": 1.48,
+                    "p75Ms": 1.48,
+                    "p95Ms": 1.48,
+                    "p99Ms": 1.48,
+                    "maxMs": 1.48
+                  }
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 13968.0,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.38,
+                    "p50Ms": 1.38,
+                    "p75Ms": 1.38,
+                    "p95Ms": 1.38,
+                    "p99Ms": 1.38,
+                    "maxMs": 1.38
+                  }
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 20086.6,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.46,
+                    "p50Ms": 1.46,
+                    "p75Ms": 1.46,
+                    "p95Ms": 1.46,
+                    "p99Ms": 1.46,
+                    "maxMs": 1.46
+                  }
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 25716.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 2.64,
+                    "p50Ms": 2.64,
+                    "p75Ms": 2.64,
+                    "p95Ms": 2.64,
+                    "p99Ms": 2.64,
+                    "maxMs": 2.64
+                  }
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 33145.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 4.51,
+                    "p50Ms": 4.51,
+                    "p75Ms": 4.51,
+                    "p95Ms": 4.51,
+                    "p99Ms": 4.51,
+                    "maxMs": 4.51
+                  }
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 27239.7,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 14.16,
+                    "p50Ms": 14.16,
+                    "p75Ms": 14.16,
+                    "p95Ms": 14.16,
+                    "p99Ms": 14.16,
+                    "maxMs": 14.16
+                  }
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 27784.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 18.48,
+                    "p50Ms": 18.48,
+                    "p75Ms": 18.48,
+                    "p95Ms": 18.48,
+                    "p99Ms": 18.48,
+                    "maxMs": 18.48
+                  }
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 23949.1,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 22.4,
+                    "p50Ms": 22.4,
+                    "p75Ms": 22.4,
+                    "p95Ms": 22.4,
+                    "p99Ms": 22.4,
+                    "maxMs": 22.4
+                  }
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 22723.5,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 41.54,
+                    "p50Ms": 41.54,
+                    "p75Ms": 41.54,
+                    "p95Ms": 41.54,
+                    "p99Ms": 41.54,
+                    "maxMs": 41.54
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "messageBytes": 256,
+          "qos": [
+            {
+              "qos": 0,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 48974.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 13372.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 30286.0,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 46586.1,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 57689.7,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 58505.3,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 50242.0,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 68007.5,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 52746.1,
+                  "publishFailureRate": 0.08439986754163338,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 15958.7,
+                  "publishFailureRate": 0.5358644501118512,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 20948.7,
+                  "publishFailureRate": 0.5873131549719792,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                }
+              ]
+            },
+            {
+              "qos": 1,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 3511.0,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.35,
+                    "p50Ms": 0.35,
+                    "p75Ms": 0.35,
+                    "p95Ms": 0.35,
+                    "p99Ms": 0.35,
+                    "maxMs": 0.35
+                  }
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 4068.1,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.83,
+                    "p50Ms": 0.83,
+                    "p75Ms": 0.83,
+                    "p95Ms": 0.83,
+                    "p99Ms": 0.83,
+                    "maxMs": 0.83
+                  }
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 4975.9,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.24,
+                    "p50Ms": 1.24,
+                    "p75Ms": 1.24,
+                    "p95Ms": 1.24,
+                    "p99Ms": 1.24,
+                    "maxMs": 1.24
+                  }
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 5219.9,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 2.18,
+                    "p50Ms": 2.18,
+                    "p75Ms": 2.18,
+                    "p95Ms": 2.18,
+                    "p99Ms": 2.18,
+                    "maxMs": 2.18
+                  }
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 6308.5,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 3.03,
+                    "p50Ms": 3.03,
+                    "p75Ms": 3.03,
+                    "p95Ms": 3.03,
+                    "p99Ms": 3.03,
+                    "maxMs": 3.03
+                  }
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 7083.5,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 3.96,
+                    "p50Ms": 3.96,
+                    "p75Ms": 3.96,
+                    "p95Ms": 3.96,
+                    "p99Ms": 3.96,
+                    "maxMs": 3.96
+                  }
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 8842.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 5.65,
+                    "p50Ms": 5.65,
+                    "p75Ms": 5.65,
+                    "p95Ms": 5.65,
+                    "p99Ms": 5.65,
+                    "maxMs": 5.65
+                  }
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 14596.1,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 7.1,
+                    "p50Ms": 7.1,
+                    "p75Ms": 7.1,
+                    "p95Ms": 7.1,
+                    "p99Ms": 7.1,
+                    "maxMs": 7.1
+                  }
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 27624.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 6.41,
+                    "p50Ms": 6.41,
+                    "p75Ms": 6.41,
+                    "p95Ms": 6.41,
+                    "p99Ms": 6.41,
+                    "maxMs": 6.41
+                  }
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 42301.3,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 7.22,
+                    "p50Ms": 7.22,
+                    "p75Ms": 7.22,
+                    "p95Ms": 7.22,
+                    "p99Ms": 7.22,
+                    "maxMs": 7.22
+                  }
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 49392.0,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 11.35,
+                    "p50Ms": 11.35,
+                    "p75Ms": 11.35,
+                    "p95Ms": 11.35,
+                    "p99Ms": 11.35,
+                    "maxMs": 11.35
+                  }
+                }
+              ]
+            },
+            {
+              "qos": 2,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 2301.7,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.52,
+                    "p50Ms": 0.52,
+                    "p75Ms": 0.52,
+                    "p95Ms": 0.52,
+                    "p99Ms": 0.52,
+                    "maxMs": 0.52
+                  }
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 2552.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.52,
+                    "p50Ms": 0.52,
+                    "p75Ms": 0.52,
+                    "p95Ms": 0.52,
+                    "p99Ms": 0.52,
+                    "maxMs": 0.52
+                  }
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 7205.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.48,
+                    "p50Ms": 1.48,
+                    "p75Ms": 1.48,
+                    "p95Ms": 1.48,
+                    "p99Ms": 1.48,
+                    "maxMs": 1.48
+                  }
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 13968.0,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.38,
+                    "p50Ms": 1.38,
+                    "p75Ms": 1.38,
+                    "p95Ms": 1.38,
+                    "p99Ms": 1.38,
+                    "maxMs": 1.38
+                  }
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 20086.6,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.46,
+                    "p50Ms": 1.46,
+                    "p75Ms": 1.46,
+                    "p95Ms": 1.46,
+                    "p99Ms": 1.46,
+                    "maxMs": 1.46
+                  }
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 25716.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 2.64,
+                    "p50Ms": 2.64,
+                    "p75Ms": 2.64,
+                    "p95Ms": 2.64,
+                    "p99Ms": 2.64,
+                    "maxMs": 2.64
+                  }
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 33145.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 4.51,
+                    "p50Ms": 4.51,
+                    "p75Ms": 4.51,
+                    "p95Ms": 4.51,
+                    "p99Ms": 4.51,
+                    "maxMs": 4.51
+                  }
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 27239.7,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 14.16,
+                    "p50Ms": 14.16,
+                    "p75Ms": 14.16,
+                    "p95Ms": 14.16,
+                    "p99Ms": 14.16,
+                    "maxMs": 14.16
+                  }
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 27784.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 18.48,
+                    "p50Ms": 18.48,
+                    "p75Ms": 18.48,
+                    "p95Ms": 18.48,
+                    "p99Ms": 18.48,
+                    "maxMs": 18.48
+                  }
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 23949.1,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 22.4,
+                    "p50Ms": 22.4,
+                    "p75Ms": 22.4,
+                    "p95Ms": 22.4,
+                    "p99Ms": 22.4,
+                    "maxMs": 22.4
+                  }
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 22723.5,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 41.54,
+                    "p50Ms": 41.54,
+                    "p75Ms": 41.54,
+                    "p95Ms": 41.54,
+                    "p99Ms": 41.54,
+                    "maxMs": 41.54
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Aedes",
+      "messageSizes": [
+        {
+          "messageBytes": 16,
+          "qos": [
+            {
+              "qos": 0,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 17642.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 18293.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 18187.3,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 17485.3,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 17761.3,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 18566.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 18298.8,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 19364.5,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 20437.1,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 22356.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 27041.9,
+                  "publishFailureRate": 0.16784323586730224,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                }
+              ]
+            },
+            {
+              "qos": 1,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 3491.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.45,
+                    "p50Ms": 0.45,
+                    "p75Ms": 0.45,
+                    "p95Ms": 0.45,
+                    "p99Ms": 0.45,
+                    "maxMs": 0.45
+                  }
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 3537.7,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.92,
+                    "p50Ms": 0.92,
+                    "p75Ms": 0.92,
+                    "p95Ms": 0.92,
+                    "p99Ms": 0.92,
+                    "maxMs": 0.92
+                  }
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 4684.6,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.34,
+                    "p50Ms": 1.34,
+                    "p75Ms": 1.34,
+                    "p95Ms": 1.34,
+                    "p99Ms": 1.34,
+                    "maxMs": 1.34
+                  }
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 5825.6,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.99,
+                    "p50Ms": 1.99,
+                    "p75Ms": 1.99,
+                    "p95Ms": 1.99,
+                    "p99Ms": 1.99,
+                    "maxMs": 1.99
+                  }
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 5881.8,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 2.84,
+                    "p50Ms": 2.84,
+                    "p75Ms": 2.84,
+                    "p95Ms": 2.84,
+                    "p99Ms": 2.84,
+                    "maxMs": 2.84
+                  }
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 5736.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 3.5,
+                    "p50Ms": 3.5,
+                    "p75Ms": 3.5,
+                    "p95Ms": 3.5,
+                    "p99Ms": 3.5,
+                    "maxMs": 3.5
+                  }
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 5897.7,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 5.07,
+                    "p50Ms": 5.07,
+                    "p75Ms": 5.07,
+                    "p95Ms": 5.07,
+                    "p99Ms": 5.07,
+                    "maxMs": 5.07
+                  }
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 5963.0,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 7.28,
+                    "p50Ms": 7.28,
+                    "p75Ms": 7.28,
+                    "p95Ms": 7.28,
+                    "p99Ms": 7.28,
+                    "maxMs": 7.28
+                  }
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 6165.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 12.07,
+                    "p50Ms": 12.07,
+                    "p75Ms": 12.07,
+                    "p95Ms": 12.07,
+                    "p99Ms": 12.07,
+                    "maxMs": 12.07
+                  }
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 6866.3,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 18.69,
+                    "p50Ms": 18.69,
+                    "p75Ms": 18.69,
+                    "p95Ms": 18.69,
+                    "p99Ms": 18.69,
+                    "maxMs": 18.69
+                  }
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 6981.8,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 38.24,
+                    "p50Ms": 38.24,
+                    "p75Ms": 38.24,
+                    "p95Ms": 38.24,
+                    "p99Ms": 38.24,
+                    "maxMs": 38.24
+                  }
+                }
+              ]
+            },
+            {
+              "qos": 2,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 1418.3,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.91,
+                    "p50Ms": 0.91,
+                    "p75Ms": 0.91,
+                    "p95Ms": 0.91,
+                    "p99Ms": 0.91,
+                    "maxMs": 0.91
+                  }
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 1736.0,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.85,
+                    "p50Ms": 1.85,
+                    "p75Ms": 1.85,
+                    "p95Ms": 1.85,
+                    "p99Ms": 1.85,
+                    "maxMs": 1.85
+                  }
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 2026.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 3.37,
+                    "p50Ms": 3.37,
+                    "p75Ms": 3.37,
+                    "p95Ms": 3.37,
+                    "p99Ms": 3.37,
+                    "maxMs": 3.37
+                  }
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 2486.0,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 5.8,
+                    "p50Ms": 5.8,
+                    "p75Ms": 5.8,
+                    "p95Ms": 5.8,
+                    "p99Ms": 5.8,
+                    "maxMs": 5.8
+                  }
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 2545.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 8.04,
+                    "p50Ms": 8.04,
+                    "p75Ms": 8.04,
+                    "p95Ms": 8.04,
+                    "p99Ms": 8.04,
+                    "maxMs": 8.04
+                  }
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 2921.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 9.37,
+                    "p50Ms": 9.37,
+                    "p75Ms": 9.37,
+                    "p95Ms": 9.37,
+                    "p99Ms": 9.37,
+                    "maxMs": 9.37
+                  }
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 3401.6,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 12.68,
+                    "p50Ms": 12.68,
+                    "p75Ms": 12.68,
+                    "p95Ms": 12.68,
+                    "p99Ms": 12.68,
+                    "maxMs": 12.68
+                  }
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 3464.0,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 16.18,
+                    "p50Ms": 16.18,
+                    "p75Ms": 16.18,
+                    "p95Ms": 16.18,
+                    "p99Ms": 16.18,
+                    "maxMs": 16.18
+                  }
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 3569.7,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 21.47,
+                    "p50Ms": 21.47,
+                    "p75Ms": 21.47,
+                    "p95Ms": 21.47,
+                    "p99Ms": 21.47,
+                    "maxMs": 21.47
+                  }
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 3512.8,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 24.54,
+                    "p50Ms": 24.54,
+                    "p75Ms": 24.54,
+                    "p95Ms": 24.54,
+                    "p99Ms": 24.54,
+                    "maxMs": 24.54
+                  }
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 3577.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 42.78,
+                    "p50Ms": 42.78,
+                    "p75Ms": 42.78,
+                    "p95Ms": 42.78,
+                    "p99Ms": 42.78,
+                    "maxMs": 42.78
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "messageBytes": 256,
+          "qos": [
+            {
+              "qos": 0,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 17642.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 18293.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 18187.3,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 17485.3,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 17761.3,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 18566.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 18298.8,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 19364.5,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 20437.1,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 22356.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 27041.9,
+                  "publishFailureRate": 0.16784323586730224,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                }
+              ]
+            },
+            {
+              "qos": 1,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 3491.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.45,
+                    "p50Ms": 0.45,
+                    "p75Ms": 0.45,
+                    "p95Ms": 0.45,
+                    "p99Ms": 0.45,
+                    "maxMs": 0.45
+                  }
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 3537.7,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.92,
+                    "p50Ms": 0.92,
+                    "p75Ms": 0.92,
+                    "p95Ms": 0.92,
+                    "p99Ms": 0.92,
+                    "maxMs": 0.92
+                  }
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 4684.6,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.34,
+                    "p50Ms": 1.34,
+                    "p75Ms": 1.34,
+                    "p95Ms": 1.34,
+                    "p99Ms": 1.34,
+                    "maxMs": 1.34
+                  }
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 5825.6,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.99,
+                    "p50Ms": 1.99,
+                    "p75Ms": 1.99,
+                    "p95Ms": 1.99,
+                    "p99Ms": 1.99,
+                    "maxMs": 1.99
+                  }
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 5881.8,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 2.84,
+                    "p50Ms": 2.84,
+                    "p75Ms": 2.84,
+                    "p95Ms": 2.84,
+                    "p99Ms": 2.84,
+                    "maxMs": 2.84
+                  }
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 5736.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 3.5,
+                    "p50Ms": 3.5,
+                    "p75Ms": 3.5,
+                    "p95Ms": 3.5,
+                    "p99Ms": 3.5,
+                    "maxMs": 3.5
+                  }
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 5897.7,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 5.07,
+                    "p50Ms": 5.07,
+                    "p75Ms": 5.07,
+                    "p95Ms": 5.07,
+                    "p99Ms": 5.07,
+                    "maxMs": 5.07
+                  }
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 5963.0,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 7.28,
+                    "p50Ms": 7.28,
+                    "p75Ms": 7.28,
+                    "p95Ms": 7.28,
+                    "p99Ms": 7.28,
+                    "maxMs": 7.28
+                  }
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 6165.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 12.07,
+                    "p50Ms": 12.07,
+                    "p75Ms": 12.07,
+                    "p95Ms": 12.07,
+                    "p99Ms": 12.07,
+                    "maxMs": 12.07
+                  }
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 6866.3,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 18.69,
+                    "p50Ms": 18.69,
+                    "p75Ms": 18.69,
+                    "p95Ms": 18.69,
+                    "p99Ms": 18.69,
+                    "maxMs": 18.69
+                  }
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 6981.8,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 38.24,
+                    "p50Ms": 38.24,
+                    "p75Ms": 38.24,
+                    "p95Ms": 38.24,
+                    "p99Ms": 38.24,
+                    "maxMs": 38.24
+                  }
+                }
+              ]
+            },
+            {
+              "qos": 2,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 1418.3,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.91,
+                    "p50Ms": 0.91,
+                    "p75Ms": 0.91,
+                    "p95Ms": 0.91,
+                    "p99Ms": 0.91,
+                    "maxMs": 0.91
+                  }
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 1736.0,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.85,
+                    "p50Ms": 1.85,
+                    "p75Ms": 1.85,
+                    "p95Ms": 1.85,
+                    "p99Ms": 1.85,
+                    "maxMs": 1.85
+                  }
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 2026.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 3.37,
+                    "p50Ms": 3.37,
+                    "p75Ms": 3.37,
+                    "p95Ms": 3.37,
+                    "p99Ms": 3.37,
+                    "maxMs": 3.37
+                  }
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 2486.0,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 5.8,
+                    "p50Ms": 5.8,
+                    "p75Ms": 5.8,
+                    "p95Ms": 5.8,
+                    "p99Ms": 5.8,
+                    "maxMs": 5.8
+                  }
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 2545.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 8.04,
+                    "p50Ms": 8.04,
+                    "p75Ms": 8.04,
+                    "p95Ms": 8.04,
+                    "p99Ms": 8.04,
+                    "maxMs": 8.04
+                  }
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 2921.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 9.37,
+                    "p50Ms": 9.37,
+                    "p75Ms": 9.37,
+                    "p95Ms": 9.37,
+                    "p99Ms": 9.37,
+                    "maxMs": 9.37
+                  }
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 3401.6,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 12.68,
+                    "p50Ms": 12.68,
+                    "p75Ms": 12.68,
+                    "p95Ms": 12.68,
+                    "p99Ms": 12.68,
+                    "maxMs": 12.68
+                  }
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 3464.0,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 16.18,
+                    "p50Ms": 16.18,
+                    "p75Ms": 16.18,
+                    "p95Ms": 16.18,
+                    "p99Ms": 16.18,
+                    "maxMs": 16.18
+                  }
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 3569.7,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 21.47,
+                    "p50Ms": 21.47,
+                    "p75Ms": 21.47,
+                    "p95Ms": 21.47,
+                    "p99Ms": 21.47,
+                    "maxMs": 21.47
+                  }
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 3512.8,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 24.54,
+                    "p50Ms": 24.54,
+                    "p75Ms": 24.54,
+                    "p95Ms": 24.54,
+                    "p99Ms": 24.54,
+                    "maxMs": 24.54
+                  }
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 3577.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 42.78,
+                    "p50Ms": 42.78,
+                    "p75Ms": 42.78,
+                    "p95Ms": 42.78,
+                    "p99Ms": 42.78,
+                    "maxMs": 42.78
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "EMQX",
+      "messageSizes": [
+        {
+          "messageBytes": 16,
+          "qos": [
+            {
+              "qos": 0,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 14569.7,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 27405.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 35767.7,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 47862.1,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 40933.7,
+                  "publishFailureRate": 0.2952348999846907,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 50518.5,
+                  "publishFailureRate": 0.34440343267214496,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 59018.6,
+                  "publishFailureRate": 0.970886579259194,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 63016.9,
+                  "publishFailureRate": 0.9871616382069139,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 68871.2,
+                  "publishFailureRate": 0.9981008017385118,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 78823.7,
+                  "publishFailureRate": 0.9990463950985977,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 82345.4,
+                  "publishFailureRate": 0.9997129976444757,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                }
+              ]
+            },
+            {
+              "qos": 1,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 3157.6,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.39,
+                    "p50Ms": 0.39,
+                    "p75Ms": 0.39,
+                    "p95Ms": 0.39,
+                    "p99Ms": 0.39,
+                    "maxMs": 0.39
+                  }
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 5927.1,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.51,
+                    "p50Ms": 0.51,
+                    "p75Ms": 0.51,
+                    "p95Ms": 0.51,
+                    "p99Ms": 0.51,
+                    "maxMs": 0.51
+                  }
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 10247.8,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.63,
+                    "p50Ms": 0.63,
+                    "p75Ms": 0.63,
+                    "p95Ms": 0.63,
+                    "p99Ms": 0.63,
+                    "maxMs": 0.63
+                  }
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 17348.9,
+                  "publishFailureRate": 0.28227588353513966,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.01,
+                    "p50Ms": 1.01,
+                    "p75Ms": 1.01,
+                    "p95Ms": 1.01,
+                    "p99Ms": 1.01,
+                    "maxMs": 1.01
+                  }
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 27643.8,
+                  "publishFailureRate": 0.8574446559983987,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.92,
+                    "p50Ms": 1.92,
+                    "p75Ms": 1.92,
+                    "p95Ms": 1.92,
+                    "p99Ms": 1.92,
+                    "maxMs": 1.92
+                  }
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 36460.6,
+                  "publishFailureRate": 0.9718426391251919,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 2.16,
+                    "p50Ms": 2.16,
+                    "p75Ms": 2.16,
+                    "p95Ms": 2.16,
+                    "p99Ms": 2.16,
+                    "maxMs": 2.16
+                  }
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 46292.9,
+                  "publishFailureRate": 0.9860619475398693,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 3.89,
+                    "p50Ms": 3.89,
+                    "p75Ms": 3.89,
+                    "p95Ms": 3.89,
+                    "p99Ms": 3.89,
+                    "maxMs": 3.89
+                  }
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 49467.6,
+                  "publishFailureRate": 0.9905635140061468,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 4.79,
+                    "p50Ms": 4.79,
+                    "p75Ms": 4.79,
+                    "p95Ms": 4.79,
+                    "p99Ms": 4.79,
+                    "maxMs": 4.79
+                  }
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 51360.6,
+                  "publishFailureRate": 0.9935307132116102,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 5.77,
+                    "p50Ms": 5.77,
+                    "p75Ms": 5.77,
+                    "p95Ms": 5.77,
+                    "p99Ms": 5.77,
+                    "maxMs": 5.77
+                  }
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 51032.5,
+                  "publishFailureRate": 0.992903215271314,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 7.02,
+                    "p50Ms": 7.02,
+                    "p75Ms": 7.02,
+                    "p95Ms": 7.02,
+                    "p99Ms": 7.02,
+                    "maxMs": 7.02
+                  }
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 54819.1,
+                  "publishFailureRate": 0.995370832046271,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 12.43,
+                    "p50Ms": 12.43,
+                    "p75Ms": 12.43,
+                    "p95Ms": 12.43,
+                    "p99Ms": 12.43,
+                    "maxMs": 12.43
+                  }
+                }
+              ]
+            },
+            {
+              "qos": 2,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 1757.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.77,
+                    "p50Ms": 0.77,
+                    "p75Ms": 0.77,
+                    "p95Ms": 0.77,
+                    "p99Ms": 0.77,
+                    "maxMs": 0.77
+                  }
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 3420.3,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.07,
+                    "p50Ms": 1.07,
+                    "p75Ms": 1.07,
+                    "p95Ms": 1.07,
+                    "p99Ms": 1.07,
+                    "maxMs": 1.07
+                  }
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 6036.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.4,
+                    "p50Ms": 1.4,
+                    "p75Ms": 1.4,
+                    "p95Ms": 1.4,
+                    "p99Ms": 1.4,
+                    "maxMs": 1.4
+                  }
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 10824.5,
+                  "publishFailureRate": 0.8014356277098936,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 4.15,
+                    "p50Ms": 4.15,
+                    "p75Ms": 4.15,
+                    "p95Ms": 4.15,
+                    "p99Ms": 4.15,
+                    "maxMs": 4.15
+                  }
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 16515.0,
+                  "publishFailureRate": 0.9492986174185084,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 3.38,
+                    "p50Ms": 3.38,
+                    "p75Ms": 3.38,
+                    "p95Ms": 3.38,
+                    "p99Ms": 3.38,
+                    "maxMs": 3.38
+                  }
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 20351.5,
+                  "publishFailureRate": 0.9663940145378072,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 3.66,
+                    "p50Ms": 3.66,
+                    "p75Ms": 3.66,
+                    "p95Ms": 3.66,
+                    "p99Ms": 3.66,
+                    "maxMs": 3.66
+                  }
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 26622.2,
+                  "publishFailureRate": 0.9845542635416262,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 4.42,
+                    "p50Ms": 4.42,
+                    "p75Ms": 4.42,
+                    "p95Ms": 4.42,
+                    "p99Ms": 4.42,
+                    "maxMs": 4.42
+                  }
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 27678.8,
+                  "publishFailureRate": 0.9901862433989872,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 4.99,
+                    "p50Ms": 4.99,
+                    "p75Ms": 4.99,
+                    "p95Ms": 4.99,
+                    "p99Ms": 4.99,
+                    "maxMs": 4.99
+                  }
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 27911.0,
+                  "publishFailureRate": 0.990202201996582,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 6.87,
+                    "p50Ms": 6.87,
+                    "p75Ms": 6.87,
+                    "p95Ms": 6.87,
+                    "p99Ms": 6.87,
+                    "maxMs": 6.87
+                  }
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 27899.6,
+                  "publishFailureRate": 0.992275874922938,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 9.08,
+                    "p50Ms": 9.08,
+                    "p75Ms": 9.08,
+                    "p95Ms": 9.08,
+                    "p99Ms": 9.08,
+                    "maxMs": 9.08
+                  }
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 29006.5,
+                  "publishFailureRate": 0.9912169212453287,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 13.99,
+                    "p50Ms": 13.99,
+                    "p75Ms": 13.99,
+                    "p95Ms": 13.99,
+                    "p99Ms": 13.99,
+                    "maxMs": 13.99
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "messageBytes": 256,
+          "qos": [
+            {
+              "qos": 0,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 14569.7,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 27405.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 35767.7,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 47862.1,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 40933.7,
+                  "publishFailureRate": 0.2952348999846907,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 50518.5,
+                  "publishFailureRate": 0.34440343267214496,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 59018.6,
+                  "publishFailureRate": 0.970886579259194,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 63016.9,
+                  "publishFailureRate": 0.9871616382069139,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 68871.2,
+                  "publishFailureRate": 0.9981008017385118,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 78823.7,
+                  "publishFailureRate": 0.9990463950985977,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 82345.4,
+                  "publishFailureRate": 0.9997129976444757,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": null
+                }
+              ]
+            },
+            {
+              "qos": 1,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 3157.6,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.39,
+                    "p50Ms": 0.39,
+                    "p75Ms": 0.39,
+                    "p95Ms": 0.39,
+                    "p99Ms": 0.39,
+                    "maxMs": 0.39
+                  }
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 5927.1,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.51,
+                    "p50Ms": 0.51,
+                    "p75Ms": 0.51,
+                    "p95Ms": 0.51,
+                    "p99Ms": 0.51,
+                    "maxMs": 0.51
+                  }
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 10247.8,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.63,
+                    "p50Ms": 0.63,
+                    "p75Ms": 0.63,
+                    "p95Ms": 0.63,
+                    "p99Ms": 0.63,
+                    "maxMs": 0.63
+                  }
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 17348.9,
+                  "publishFailureRate": 0.28227588353513966,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.01,
+                    "p50Ms": 1.01,
+                    "p75Ms": 1.01,
+                    "p95Ms": 1.01,
+                    "p99Ms": 1.01,
+                    "maxMs": 1.01
+                  }
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 27643.8,
+                  "publishFailureRate": 0.8574446559983987,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.92,
+                    "p50Ms": 1.92,
+                    "p75Ms": 1.92,
+                    "p95Ms": 1.92,
+                    "p99Ms": 1.92,
+                    "maxMs": 1.92
+                  }
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 36460.6,
+                  "publishFailureRate": 0.9718426391251919,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 2.16,
+                    "p50Ms": 2.16,
+                    "p75Ms": 2.16,
+                    "p95Ms": 2.16,
+                    "p99Ms": 2.16,
+                    "maxMs": 2.16
+                  }
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 46292.9,
+                  "publishFailureRate": 0.9860619475398693,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 3.89,
+                    "p50Ms": 3.89,
+                    "p75Ms": 3.89,
+                    "p95Ms": 3.89,
+                    "p99Ms": 3.89,
+                    "maxMs": 3.89
+                  }
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 49467.6,
+                  "publishFailureRate": 0.9905635140061468,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 4.79,
+                    "p50Ms": 4.79,
+                    "p75Ms": 4.79,
+                    "p95Ms": 4.79,
+                    "p99Ms": 4.79,
+                    "maxMs": 4.79
+                  }
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 51360.6,
+                  "publishFailureRate": 0.9935307132116102,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 5.77,
+                    "p50Ms": 5.77,
+                    "p75Ms": 5.77,
+                    "p95Ms": 5.77,
+                    "p99Ms": 5.77,
+                    "maxMs": 5.77
+                  }
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 51032.5,
+                  "publishFailureRate": 0.992903215271314,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 7.02,
+                    "p50Ms": 7.02,
+                    "p75Ms": 7.02,
+                    "p95Ms": 7.02,
+                    "p99Ms": 7.02,
+                    "maxMs": 7.02
+                  }
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 54819.1,
+                  "publishFailureRate": 0.995370832046271,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 12.43,
+                    "p50Ms": 12.43,
+                    "p75Ms": 12.43,
+                    "p95Ms": 12.43,
+                    "p99Ms": 12.43,
+                    "maxMs": 12.43
+                  }
+                }
+              ]
+            },
+            {
+              "qos": 2,
+              "samples": [
+                {
+                  "clients": 1,
+                  "capacityRps": 1757.4,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 0.77,
+                    "p50Ms": 0.77,
+                    "p75Ms": 0.77,
+                    "p95Ms": 0.77,
+                    "p99Ms": 0.77,
+                    "maxMs": 0.77
+                  }
+                },
+                {
+                  "clients": 2,
+                  "capacityRps": 3420.3,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.07,
+                    "p50Ms": 1.07,
+                    "p75Ms": 1.07,
+                    "p95Ms": 1.07,
+                    "p99Ms": 1.07,
+                    "maxMs": 1.07
+                  }
+                },
+                {
+                  "clients": 4,
+                  "capacityRps": 6036.2,
+                  "publishFailureRate": 0.0,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 1.4,
+                    "p50Ms": 1.4,
+                    "p75Ms": 1.4,
+                    "p95Ms": 1.4,
+                    "p99Ms": 1.4,
+                    "maxMs": 1.4
+                  }
+                },
+                {
+                  "clients": 8,
+                  "capacityRps": 10824.5,
+                  "publishFailureRate": 0.8014356277098936,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 4.15,
+                    "p50Ms": 4.15,
+                    "p75Ms": 4.15,
+                    "p95Ms": 4.15,
+                    "p99Ms": 4.15,
+                    "maxMs": 4.15
+                  }
+                },
+                {
+                  "clients": 12,
+                  "capacityRps": 16515.0,
+                  "publishFailureRate": 0.9492986174185084,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 3.38,
+                    "p50Ms": 3.38,
+                    "p75Ms": 3.38,
+                    "p95Ms": 3.38,
+                    "p99Ms": 3.38,
+                    "maxMs": 3.38
+                  }
+                },
+                {
+                  "clients": 16,
+                  "capacityRps": 20351.5,
+                  "publishFailureRate": 0.9663940145378072,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 3.66,
+                    "p50Ms": 3.66,
+                    "p75Ms": 3.66,
+                    "p95Ms": 3.66,
+                    "p99Ms": 3.66,
+                    "maxMs": 3.66
+                  }
+                },
+                {
+                  "clients": 24,
+                  "capacityRps": 26622.2,
+                  "publishFailureRate": 0.9845542635416262,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 4.42,
+                    "p50Ms": 4.42,
+                    "p75Ms": 4.42,
+                    "p95Ms": 4.42,
+                    "p99Ms": 4.42,
+                    "maxMs": 4.42
+                  }
+                },
+                {
+                  "clients": 32,
+                  "capacityRps": 27678.8,
+                  "publishFailureRate": 0.9901862433989872,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 4.99,
+                    "p50Ms": 4.99,
+                    "p75Ms": 4.99,
+                    "p95Ms": 4.99,
+                    "p99Ms": 4.99,
+                    "maxMs": 4.99
+                  }
+                },
+                {
+                  "clients": 48,
+                  "capacityRps": 27911.0,
+                  "publishFailureRate": 0.990202201996582,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 6.87,
+                    "p50Ms": 6.87,
+                    "p75Ms": 6.87,
+                    "p95Ms": 6.87,
+                    "p99Ms": 6.87,
+                    "maxMs": 6.87
+                  }
+                },
+                {
+                  "clients": 64,
+                  "capacityRps": 27899.6,
+                  "publishFailureRate": 0.992275874922938,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 9.08,
+                    "p50Ms": 9.08,
+                    "p75Ms": 9.08,
+                    "p95Ms": 9.08,
+                    "p99Ms": 9.08,
+                    "maxMs": 9.08
+                  }
+                },
+                {
+                  "clients": 128,
+                  "capacityRps": 29006.5,
+                  "publishFailureRate": 0.9912169212453287,
+                  "conditionalDeliveryLossRate": 0.0,
+                  "processingLatencyQuantiles": {
+                    "minMs": 13.99,
+                    "p50Ms": 13.99,
+                    "p75Ms": 13.99,
+                    "p95Ms": 13.99,
+                    "p99Ms": 13.99,
+                    "maxMs": 13.99
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,408 @@
+{
+  "conditionCounts": [
+    {
+      "broker": "Aedes",
+      "stage": "fidelity",
+      "conditions": 24,
+      "allSeedsPassed": 20,
+      "someSeedsPassed": 3,
+      "noSeedPassed": 1,
+      "passedSeedRuns": 64,
+      "totalSeedRuns": 72
+    },
+    {
+      "broker": "Aedes",
+      "stage": "holdout",
+      "conditions": 24,
+      "allSeedsPassed": 18,
+      "someSeedsPassed": 3,
+      "noSeedPassed": 3,
+      "passedSeedRuns": 58,
+      "totalSeedRuns": 72
+    },
+    {
+      "broker": "Mosquitto",
+      "stage": "fidelity",
+      "conditions": 24,
+      "allSeedsPassed": 22,
+      "someSeedsPassed": 2,
+      "noSeedPassed": 0,
+      "passedSeedRuns": 70,
+      "totalSeedRuns": 72
+    },
+    {
+      "broker": "Mosquitto",
+      "stage": "holdout",
+      "conditions": 24,
+      "allSeedsPassed": 18,
+      "someSeedsPassed": 2,
+      "noSeedPassed": 4,
+      "passedSeedRuns": 58,
+      "totalSeedRuns": 72
+    },
+    {
+      "broker": "ActiveMQ",
+      "stage": "fidelity",
+      "conditions": 24,
+      "allSeedsPassed": 22,
+      "someSeedsPassed": 2,
+      "noSeedPassed": 0,
+      "passedSeedRuns": 70,
+      "totalSeedRuns": 72
+    },
+    {
+      "broker": "ActiveMQ",
+      "stage": "holdout",
+      "conditions": 24,
+      "allSeedsPassed": 9,
+      "someSeedsPassed": 2,
+      "noSeedPassed": 13,
+      "passedSeedRuns": 29,
+      "totalSeedRuns": 72
+    },
+    {
+      "broker": "EMQX",
+      "stage": "fidelity",
+      "conditions": 24,
+      "allSeedsPassed": 24,
+      "someSeedsPassed": 0,
+      "noSeedPassed": 0,
+      "passedSeedRuns": 72,
+      "totalSeedRuns": 72
+    },
+    {
+      "broker": "EMQX",
+      "stage": "holdout",
+      "conditions": 24,
+      "allSeedsPassed": 19,
+      "someSeedsPassed": 1,
+      "noSeedPassed": 4,
+      "passedSeedRuns": 58,
+      "totalSeedRuns": 72
+    }
+  ],
+  "thresholds": [
+    {
+      "multiplier": 0.5,
+      "rpsLimit": 0.075,
+      "p99Limit": 0.1,
+      "absoluteRateLimit": 0.025,
+      "allSeedsConditionsPassed": 49,
+      "conditions": 96
+    },
+    {
+      "multiplier": 0.75,
+      "rpsLimit": 0.11249999999999999,
+      "p99Limit": 0.15000000000000002,
+      "absoluteRateLimit": 0.037500000000000006,
+      "allSeedsConditionsPassed": 52,
+      "conditions": 96
+    },
+    {
+      "multiplier": 1.0,
+      "rpsLimit": 0.15,
+      "p99Limit": 0.2,
+      "absoluteRateLimit": 0.05,
+      "allSeedsConditionsPassed": 64,
+      "conditions": 96
+    },
+    {
+      "multiplier": 1.25,
+      "rpsLimit": 0.1875,
+      "p99Limit": 0.25,
+      "absoluteRateLimit": 0.0625,
+      "allSeedsConditionsPassed": 72,
+      "conditions": 96
+    },
+    {
+      "multiplier": 1.5,
+      "rpsLimit": 0.22499999999999998,
+      "p99Limit": 0.30000000000000004,
+      "absoluteRateLimit": 0.07500000000000001,
+      "allSeedsConditionsPassed": 75,
+      "conditions": 96
+    },
+    {
+      "multiplier": 2.0,
+      "rpsLimit": 0.3,
+      "p99Limit": 0.4,
+      "absoluteRateLimit": 0.1,
+      "allSeedsConditionsPassed": 84,
+      "conditions": 96
+    },
+    {
+      "multiplier": 3.0,
+      "rpsLimit": 0.44999999999999996,
+      "p99Limit": 0.6000000000000001,
+      "absoluteRateLimit": 0.15000000000000002,
+      "allSeedsConditionsPassed": 88,
+      "conditions": 96
+    }
+  ],
+  "errorDistributions": [
+    {
+      "broker": "Aedes",
+      "metric": "rps",
+      "nConditions": 24,
+      "median": 0.006416704263096417,
+      "p90": 0.1227952606378458,
+      "maximum": 0.22428640096241334
+    },
+    {
+      "broker": "Aedes",
+      "metric": "latencyP99Ms",
+      "nConditions": 16,
+      "median": 0.041966142456130964,
+      "p90": 0.11108923561549028,
+      "maximum": 0.7490168157874366
+    },
+    {
+      "broker": "Aedes",
+      "metric": "publishFailureRate",
+      "nConditions": 24,
+      "median": 0,
+      "p90": 0,
+      "maximum": 0
+    },
+    {
+      "broker": "Aedes",
+      "metric": "deliveryLossRate",
+      "nConditions": 24,
+      "median": 0,
+      "p90": 0.055322210884018605,
+      "maximum": 0.3804487736709756
+    },
+    {
+      "broker": "Mosquitto",
+      "metric": "rps",
+      "nConditions": 24,
+      "median": 0.0058877405527270115,
+      "p90": 0.0475625977626426,
+      "maximum": 0.18151000981611506
+    },
+    {
+      "broker": "Mosquitto",
+      "metric": "latencyP99Ms",
+      "nConditions": 16,
+      "median": 0.015303295111489533,
+      "p90": 0.05784568885903261,
+      "maximum": 0.1398314544033771
+    },
+    {
+      "broker": "Mosquitto",
+      "metric": "publishFailureRate",
+      "nConditions": 24,
+      "median": 0,
+      "p90": 0.0008271075180166132,
+      "maximum": 0.014334205435303242
+    },
+    {
+      "broker": "Mosquitto",
+      "metric": "deliveryLossRate",
+      "nConditions": 24,
+      "median": 0.0008588105039352145,
+      "p90": 0.11289839881770114,
+      "maximum": 0.24739779695317066
+    },
+    {
+      "broker": "ActiveMQ",
+      "metric": "rps",
+      "nConditions": 24,
+      "median": 0.05610970769475801,
+      "p90": 0.171224504090461,
+      "maximum": 0.538936151306343
+    },
+    {
+      "broker": "ActiveMQ",
+      "metric": "latencyP99Ms",
+      "nConditions": 16,
+      "median": 0.05257112602541873,
+      "p90": 0.3157262905173958,
+      "maximum": 0.35016007052360437
+    },
+    {
+      "broker": "ActiveMQ",
+      "metric": "publishFailureRate",
+      "nConditions": 24,
+      "median": 0,
+      "p90": 0.00018537827896309404,
+      "maximum": 0.2971471634088404
+    },
+    {
+      "broker": "ActiveMQ",
+      "metric": "deliveryLossRate",
+      "nConditions": 24,
+      "median": 0.01853821108922571,
+      "p90": 0.14270676882075128,
+      "maximum": 0.3358792132311417
+    },
+    {
+      "broker": "EMQX",
+      "metric": "rps",
+      "nConditions": 24,
+      "median": 4.9255748183569605e-05,
+      "p90": 0.037907425364151634,
+      "maximum": 0.2010627086471598
+    },
+    {
+      "broker": "EMQX",
+      "metric": "latencyP99Ms",
+      "nConditions": 16,
+      "median": 0.15911885889714306,
+      "p90": 0.21609514983008643,
+      "maximum": 0.23950475309531133
+    },
+    {
+      "broker": "EMQX",
+      "metric": "publishFailureRate",
+      "nConditions": 24,
+      "median": 0,
+      "p90": 0,
+      "maximum": 0
+    },
+    {
+      "broker": "EMQX",
+      "metric": "deliveryLossRate",
+      "nConditions": 24,
+      "median": 0,
+      "p90": 0.0006887709178696744,
+      "maximum": 0.5687383135320913
+    }
+  ],
+  "boundaries": [
+    {
+      "broker": "Aedes",
+      "runs": 72,
+      "uncertainReceipts": 1462,
+      "totalReceipts": 30967479,
+      "example": "Aedes.m256.q1.p128.r1",
+      "exampleReceipts": 5155,
+      "exampleDefinitelyAfter": 1509,
+      "exampleUncertain": 0,
+      "exampleLateLower": 0.292725509214355,
+      "exampleLateUpper": 0.292725509214355
+    },
+    {
+      "broker": "Mosquitto",
+      "runs": 72,
+      "uncertainReceipts": 1825,
+      "totalReceipts": 18202333,
+      "example": "Mosquitto.m16.q0.p128.r2",
+      "exampleReceipts": 68817,
+      "exampleDefinitelyAfter": 55779,
+      "exampleUncertain": 72,
+      "exampleLateLower": 0.8105410000435939,
+      "exampleLateUpper": 0.8115872531496577
+    },
+    {
+      "broker": "ActiveMQ",
+      "runs": 72,
+      "uncertainReceipts": 71,
+      "totalReceipts": 7674964,
+      "example": "ActiveMQ.m256.q0.p128.r3",
+      "exampleReceipts": 41705,
+      "exampleDefinitelyAfter": 34320,
+      "exampleUncertain": 0,
+      "exampleLateLower": 0.8229229109219518,
+      "exampleLateUpper": 0.8229229109219518
+    },
+    {
+      "broker": "EMQX",
+      "runs": 72,
+      "uncertainReceipts": 103,
+      "totalReceipts": 9125622,
+      "example": "EMQX.m16.q1.p128.r1",
+      "exampleReceipts": 173480,
+      "exampleDefinitelyAfter": 318,
+      "exampleUncertain": 0,
+      "exampleLateLower": 0.0018330643301821535,
+      "exampleLateUpper": 0.0018330643301821535
+    }
+  ],
+  "jointP99PassLossFailSeedRuns": 46,
+  "duplicateReceiptsInNativeControl": {
+    "Aedes": 0,
+    "Mosquitto": 24,
+    "ActiveMQ": 0,
+    "EMQX": 0
+  },
+  "versions": {
+    "Aedes": [
+      {
+        "affinityCpus": "0",
+        "brokerVersion": "1.1.2",
+        "executable": {
+          "path": "/usr/bin/node",
+          "sha256": "0ca513fedb9eade5784c94bed30bc710d116ffd7a5405c54833d4f53e4115de4"
+        },
+        "executableVersion": "v22.13.1",
+        "host": {
+          "architecture": 1,
+          "machine": "entityfx-pc",
+          "os": "Simply Linux 11.1 (Giuseppe)"
+        },
+        "memoryLimitBytes": 4294967296,
+        "memoryLimitEnforcement": "systemd-user-cgroup-v2",
+        "runtimeVersion": "PowerShell 7.4.6 controller"
+      }
+    ],
+    "Mosquitto": [
+      {
+        "affinityCpus": "0",
+        "brokerVersion": "2.0.15",
+        "executable": {
+          "path": "/usr/sbin/mosquitto",
+          "sha256": "34cee46d71bd97aca34c75fcb844674ab787434468c06423a3a1f2825a213dea"
+        },
+        "executableVersion": "mosquitto version 2.0.15  mosquitto is an MQTT v5.0/v3.1.1/v3.1 broker.  Usage: mosquitto [-c config_file] [-d] [-h] [-p port]   -c : specify the broker config file.  -d : put the broker into the background after starting.  -h : display this help.  -p : start the broker listening on the specified port.       Not recommended in conjunction with the -c option.  -v : verbose mode - enable all logging types. This overrides       any logging options given in the config file.  See https://mosquitto.org/ for more information. ",
+        "host": {
+          "architecture": 1,
+          "machine": "entityfx-pc",
+          "os": "Simply Linux 11.1 (Giuseppe)"
+        },
+        "memoryLimitBytes": 4294967296,
+        "memoryLimitEnforcement": "systemd-user-cgroup-v2",
+        "runtimeVersion": "PowerShell 7.4.6 controller"
+      }
+    ],
+    "ActiveMQ": [
+      {
+        "affinityCpus": "0",
+        "brokerVersion": "6.3.2",
+        "executable": {
+          "path": "/usr/lib/jvm/java-17-openjdk-17.0.19.0.10-alt1.x86_64/bin/java",
+          "sha256": "f8eaf4b8c99f45b7382347c86137bf65afa6779bca7f333f43ce282464704e5d"
+        },
+        "executableVersion": "openjdk version \"17.0.19\" 2026-04-21 OpenJDK Runtime Environment (Red_Hat-17.0.19.0.10-alt1) (build 17.0.19+10) OpenJDK 64-Bit Server VM (Red_Hat-17.0.19.0.10-alt1) (build 17.0.19+10, mixed mode, sharing)",
+        "host": {
+          "architecture": 1,
+          "machine": "entityfx-pc",
+          "os": "Simply Linux 11.1 (Giuseppe)"
+        },
+        "memoryLimitBytes": 4294967296,
+        "memoryLimitEnforcement": "systemd-user-cgroup-v2",
+        "runtimeVersion": "PowerShell 7.4.6 controller"
+      }
+    ],
+    "EMQX": [
+      {
+        "affinityCpus": "0",
+        "brokerVersion": "6.3.0",
+        "executable": {
+          "path": "/run/media/entityfx/hd250/mqtty-evidence/two-machine-20261014-1340-linux-local/brokers-native/emqx/erts-16.3/bin/beam.smp",
+          "sha256": "4ee6e399590d9b46eb5149bc54e27797146ef1df21d2fc007e0ae1ce01867a3e"
+        },
+        "executableVersion": null,
+        "host": {
+          "architecture": 1,
+          "machine": "entityfx-pc",
+          "os": "Simply Linux 11.1 (Giuseppe)"
+        },
+        "memoryLimitBytes": 4294967296,
+        "memoryLimitEnforcement": "systemd-user-cgroup-v2",
+        "runtimeVersion": "PowerShell 7.4.6 controller"
+      }
+    ]
+  },
+  "scope": "Retrospective descriptive grid; seed runs clustered within condition; no prospective validation"
+}

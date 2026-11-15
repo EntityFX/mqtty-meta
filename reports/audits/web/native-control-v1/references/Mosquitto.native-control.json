@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "mqtt-native-control-v1",
+  "name": "Статья 1: Mosquitto, отдельный натурный контроль",
+  "broker": "Mosquitto",
+  "profileSha256": "59e75155ca04b3448df9db59c4233b3c58ce003d53b7a1e655d427708d32255b",
+  "calibrationCampaignId": "article1-matched-main-v1-calibration",
+  "controlCampaignId": "article1-matched-main-v1-control",
+  "profileFrozenUtc": "2026-10-26T05:31:45.388487+00:00",
+  "programSha256": "2312e7d9938d580b9ac8099a1d5dbfc4fef5074fb2a6024008d27e9cd3356dc7",
+  "auditSha256": "1198d8fe28c3995228e99cc23d1aae85b5cbae853c01594c5734d3852d6d2cd4",
+  "workload": {
+    "payloadBytes": 16,
+    "qos": 1,
+    "publishers": 16,
+    "subscribers": 1,
+    "warmupSeconds": 1,
+    "measurementSeconds": 4,
+    "drainSeconds": 5,
+    "loadPolicy": "closedLoopPerPublisher"
+  },
+  "runs": [
+    {
+      "id": "control.Mosquitto.r1",
+      "stage": "control",
+      "measurementStartedUtc": "2026-10-26T05:32:27.7107756+00:00",
+      "publicationsSha256": "829ec83f05aeed3ea225521623eabbbea3f7b09182fe24b4a14bdf1aabc7fe03",
+      "deliveriesSha256": "fd8d34abc532498aec5ed15fd1402aa26d38d594c6969c7ffd3dc96c84c57395",
+      "phasesSha256": "11c64173b5480c18cb56ac1980801b6abe1809d70b3c8390a4867d8aae96b94f",
+      "attempted": 86413,
+      "completed": 86413,
+      "failed": 0,
+      "completedIdsDelivered": 82156,
+      "pending": 0,
+      "measurementSeconds": 4.0,
+      "p99PublishMs": 3.105299999999943
+    },
+    {
+      "id": "control.Mosquitto.r2",
+      "stage": "control",
+      "measurementStartedUtc": "2026-10-26T05:32:41.3419408+00:00",
+      "publicationsSha256": "e675c8ed5ca16df5406258add57070094d28eaeccedf772043a9bcc02e4c570a",
+      "deliveriesSha256": "9acd07846c0cb9582fb66dfb7e59476c8180a19181bdb031e1632d4f84dd1fe8",
+      "phasesSha256": "7a6389f2a8752383103cba9896c0eca4d3a02ec2efe3bb36756a3ab90993a29f",
+      "attempted": 81243,
+      "completed": 81243,
+      "failed": 0,
+      "completedIdsDelivered": 78740,
+      "pending": 0,
+      "measurementSeconds": 4.0,
+      "p99PublishMs": 3.304099999999835
+    },
+    {
+      "id": "control.Mosquitto.r3",
+      "stage": "control",
+      "measurementStartedUtc": "2026-10-26T05:32:54.9373817+00:00",
+      "publicationsSha256": "6ebc3d416f5c8ed26cc20bac975f5bd0999da43e84fe884f374d99155f8e7a97",
+      "deliveriesSha256": "4467084dfab455da318670456ecceca0be232beae1ff29924f88881e08a59910",
+      "phasesSha256": "0c0b1d2e4168e7eae3d1edfce578595c9a42e95a8e6d9789c0fe5823a7e5bd36",
+      "attempted": 83887,
+      "completed": 83887,
+      "failed": 0,
+      "completedIdsDelivered": 82082,
+      "pending": 0,
+      "measurementSeconds": 4.0,
+      "p99PublishMs": 3.3028000000003885
+    }
+  ]
+}

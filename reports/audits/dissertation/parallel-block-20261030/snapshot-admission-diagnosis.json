@@ -1,0 +1,15 @@
+{
+  "extra": [
+    {
+      "path": "tools/dissertation/__pycache__/network_study_inputs.cpython-312.pyc",
+      "bytes": 16953,
+      "mtime": 1793312778.110312,
+      "sha256": "cc13bb685e36862811b307561c5dc7e81ab46c5a1a499ca6de285178693aaaec"
+    }
+  ],
+  "missing": [],
+  "hashChanges": [],
+  "manifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+  "interruptedUnboundedDiagnosticPid": 5545,
+  "note": "Previous read-only diagnostic mistakenly traversed mutable results; replaced with the original verifier scope program/runtime/tools; no model started"
+}

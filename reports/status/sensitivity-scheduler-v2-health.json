@@ -1,0 +1,98 @@
+{
+  "observedAtUtc": "2026-10-23T23:02:00.942486+00:00",
+  "root": "/run/media/entityfx/hd250/mqtty-evidence/dissertation-sensitivity-v1",
+  "progress": {
+    "active": {
+      "Aedes.m16.q2.p128.s43.baseline": {
+        "elapsedSeconds": 24.070178463996854,
+        "peakRssBytes": 851341312,
+        "pid": 49281,
+        "rssBytes": 851243008
+      },
+      "Aedes.m16.q2.p128.s43.doubleWindow": {
+        "elapsedSeconds": 24.102186335003353,
+        "peakRssBytes": 851476480,
+        "pid": 49283,
+        "rssBytes": 725209088
+      },
+      "Aedes.m16.q2.p128.s43.halfTick": {
+        "elapsedSeconds": 24.04743275200599,
+        "peakRssBytes": 851189760,
+        "pid": 49279,
+        "rssBytes": 851136512
+      },
+      "Aedes.m16.q2.p128.s44.baseline": {
+        "elapsedSeconds": 24.099344594986178,
+        "peakRssBytes": 851128320,
+        "pid": 49284,
+        "rssBytes": 851120128
+      }
+    },
+    "counts": {
+      "matrix": {
+        "done": 48,
+        "failedCriteria": 13,
+        "total": 216
+      },
+      "pilot": {
+        "done": 8,
+        "failedCriteria": 4,
+        "total": 8
+      },
+      "replay": {
+        "done": 0,
+        "failedCriteria": 0,
+        "total": 6
+      }
+    },
+    "elapsedSeconds": 17859.856831430006,
+    "planSha256": "dfda8401e9e3f96aebece1b4baa116b58437c94752ecc0324b6e8c909243ae3c",
+    "reason": null,
+    "schedulerVersion": 2,
+    "status": "running",
+    "technicalErrors": 0,
+    "workers": 4
+  },
+  "progressMtimeUtc": "2026-10-23T23:02:00.444675+00:00",
+  "mountAvailable": true,
+  "processes": {
+    "49281": {
+      "alive": true,
+      "state": "R",
+      "startTicks": 10943627
+    },
+    "49283": {
+      "alive": true,
+      "state": "R",
+      "startTicks": 10943628
+    },
+    "49279": {
+      "alive": true,
+      "state": "R",
+      "startTicks": 10943627
+    },
+    "49284": {
+      "alive": true,
+      "state": "R",
+      "startTicks": 10943628
+    }
+  },
+  "limits": {
+    "timeoutSeconds": 1800,
+    "maxRssBytes": 3221225472,
+    "minFreeBytes": 5368709120
+  },
+  "limitsSource": "Frozen plan limits; v1 storage reserve is 5 GiB. Operational amendments must be supplied separately.",
+  "disk": {
+    "total": 244995190784,
+    "used": 72424521728,
+    "free": 160050987008
+  },
+  "service": {
+    "MainPID": "49274",
+    "Result": "success",
+    "ActiveState": "active",
+    "SubState": "running"
+  },
+  "collectionErrors": []
+}

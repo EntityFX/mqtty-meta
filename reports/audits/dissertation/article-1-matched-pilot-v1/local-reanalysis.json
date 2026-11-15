@@ -1,0 +1,283 @@
+{
+  "status": "recountVerified",
+  "archiveSha256": "83f531f0f5cc6024a9a1dfaa843070f734b1f3c4f421a86c6a5e26d7282f6006",
+  "localRawDirectory": "C:\\temp\\mqtty-evidence\\article1-matched-pilot-v1\\downloaded",
+  "rawFilesVerified": 10,
+  "metricsIdenticalToOriginal": true,
+  "window2TechnicalGateAdmitted": true,
+  "mainCampaignAdmitted": false,
+  "preservedOriginalFailure": true,
+  "validatorSha256": "0d7138dff73afb1717132ba6adf978e5c6aca0807fa97025b1b3867a60c6ef6a",
+  "observations": {
+    "native": {
+      "metrics": {
+        "scope": "One subscriber; attempts in [measurementStart, measurementEnd); observed through drainEnd",
+        "attempted": 26137,
+        "completed": 26137,
+        "failed": 0,
+        "pending": 0,
+        "measurementSeconds": 2.0,
+        "attemptedRps": 13068.5,
+        "completedInWindow": 26121,
+        "completedRpsInWindow": 13060.5,
+        "completedDuringDrain": 16,
+        "completedCohortPerSubmissionSecond": 13068.5,
+        "uniqueDeliveries": 25213,
+        "completedIdsDelivered": 25213,
+        "deliveredAfterFailedPublish": 0,
+        "firstDeliveriesDuringDrain": 64,
+        "duplicates": 0,
+        "outsideCohortDeliveryEvents": 9509,
+        "publishFailureRate": 0.0,
+        "deliveryLossRate": 0.03535218272946394,
+        "p99PublishMs": 22.674399999999878,
+        "latencyStatus": "observed",
+        "outcomesSettled": true
+      },
+      "revisedGate": {
+        "admitted": true,
+        "issues": [],
+        "connection": {
+          "status": "continuousConnected",
+          "stateAtStart": "connected",
+          "changesInWindow": [],
+          "subscriberEvents": [
+            {
+              "client": "subscriber",
+              "clientId": "mb-db71079bf12241d193a851d41c1707dd",
+              "state": "connected",
+              "elapsedSeconds": 0.1116583,
+              "reason": null
+            },
+            {
+              "client": "subscriber",
+              "clientId": "mb-db71079bf12241d193a851d41c1707dd",
+              "state": "disconnected",
+              "elapsedSeconds": 8.272177,
+              "reason": "NormalDisconnection"
+            }
+          ],
+          "windowStart": 1.1562137,
+          "windowEnd": 8.1562137,
+          "scope": "Observed connection events only; subscription and packet-level correctness not established"
+        },
+        "classification": "instrumentationObservation",
+        "scope": "Technical pilot gate, not an accuracy claim"
+      },
+      "originalGate": {
+        "admitted": true,
+        "issues": [],
+        "connection": {
+          "status": "continuousConnected",
+          "stateAtStart": "connected",
+          "changesInWindow": [],
+          "subscriberEvents": [
+            {
+              "client": "subscriber",
+              "clientId": "mb-db71079bf12241d193a851d41c1707dd",
+              "state": "connected",
+              "elapsedSeconds": 0.1116583,
+              "reason": null
+            },
+            {
+              "client": "subscriber",
+              "clientId": "mb-db71079bf12241d193a851d41c1707dd",
+              "state": "disconnected",
+              "elapsedSeconds": 8.272177,
+              "reason": "NormalDisconnection"
+            }
+          ],
+          "windowStart": 1.1562137,
+          "windowEnd": 8.1562137,
+          "scope": "Observed connection events only; subscription and packet-level correctness not established"
+        },
+        "classification": "instrumentationObservation",
+        "scope": "Technical pilot gate, not an accuracy claim"
+      },
+      "rawSha256": {
+        "publishes.ndjson": "323cf819aaa283a64b432363f227145bc46a323fbb45f23f2f850ec9aff1a829",
+        "deliveries.ndjson": "062675133b149e7b378b0906fa56629e20d420e2d8fab569d1080f21ae4eaa82",
+        "connections.ndjson": "8d11f1085fbfd85b9e0f5a2452554e9662fd62ec17d875b2030b87d331c13fb4",
+        "subscriptions.ndjson": "86ca6ff2413116df332a88dbe92798ae93c72fa3c9b10619cf17e01d33a0c95f",
+        "phases.json": "26eb1721dc8c2d0c2573adfc35da0a010fc0cd1a72d23fb5a1e15648f9223f5d"
+      }
+    },
+    "model": {
+      "metrics": {
+        "scope": "One subscriber; attempts in [measurementStart, measurementEnd); observed through drainEnd",
+        "attempted": 111291,
+        "completed": 111291,
+        "failed": 0,
+        "pending": 0,
+        "measurementSeconds": 2.0,
+        "attemptedRps": 55645.5,
+        "completedInWindow": 111276,
+        "completedRpsInWindow": 55638.0,
+        "completedDuringDrain": 15,
+        "completedCohortPerSubmissionSecond": 55645.5,
+        "uniqueDeliveries": 9618,
+        "completedIdsDelivered": 9618,
+        "deliveredAfterFailedPublish": 0,
+        "firstDeliveriesDuringDrain": 1,
+        "duplicates": 0,
+        "outsideCohortDeliveryEvents": 4965,
+        "publishFailureRate": 0.0,
+        "deliveryLossRate": 0.9135779173518074,
+        "p99PublishMs": 0.42000000000000004,
+        "latencyStatus": "observed",
+        "outcomesSettled": true
+      },
+      "revisedGate": {
+        "admitted": true,
+        "issues": [],
+        "connection": {
+          "status": "continuousConnected",
+          "stateAtStart": "connected",
+          "changesInWindow": [],
+          "subscriberEvents": [
+            {
+              "client": "mqrc18mqb18",
+              "clientId": "mqrc18mqb18",
+              "role": "subscriber",
+              "connected": false,
+              "state": "disconnected",
+              "phase": "connectStarted",
+              "elapsedSeconds": 0
+            },
+            {
+              "client": "mqrc18mqb18",
+              "clientId": "mqrc18mqb18",
+              "role": "subscriber",
+              "connected": true,
+              "state": "connected",
+              "phase": "stateChange",
+              "elapsedSeconds": 7.000000000000001e-05
+            },
+            {
+              "client": "mqrc18mqb18",
+              "clientId": "mqrc18mqb18",
+              "role": "subscriber",
+              "connected": true,
+              "state": "connected",
+              "phase": "measurementStart",
+              "elapsedSeconds": 1.00014
+            },
+            {
+              "client": "mqrc18mqb18",
+              "clientId": "mqrc18mqb18",
+              "role": "subscriber",
+              "connected": true,
+              "state": "connected",
+              "phase": "observationEnd",
+              "elapsedSeconds": 8.00014
+            }
+          ],
+          "windowStart": 1.00014,
+          "windowEnd": 8.00014,
+          "scope": "Observed connection events only; subscription and packet-level correctness not established"
+        },
+        "classification": "instrumentationObservation",
+        "scope": "Technical pilot gate, not an accuracy claim"
+      },
+      "originalGate": {
+        "admitted": false,
+        "issues": [
+          "Missing, mismatched or late subscriber SUBACK evidence"
+        ],
+        "connection": {
+          "status": "continuousConnected",
+          "stateAtStart": "connected",
+          "changesInWindow": [],
+          "subscriberEvents": [
+            {
+              "client": "mqrc18mqb18",
+              "clientId": "mqrc18mqb18",
+              "role": "subscriber",
+              "connected": false,
+              "state": "disconnected",
+              "phase": "connectStarted",
+              "elapsedSeconds": 0
+            },
+            {
+              "client": "mqrc18mqb18",
+              "clientId": "mqrc18mqb18",
+              "role": "subscriber",
+              "connected": true,
+              "state": "connected",
+              "phase": "stateChange",
+              "elapsedSeconds": 7.000000000000001e-05
+            },
+            {
+              "client": "mqrc18mqb18",
+              "clientId": "mqrc18mqb18",
+              "role": "subscriber",
+              "connected": true,
+              "state": "connected",
+              "phase": "measurementStart",
+              "elapsedSeconds": 1.00014
+            },
+            {
+              "client": "mqrc18mqb18",
+              "clientId": "mqrc18mqb18",
+              "role": "subscriber",
+              "connected": true,
+              "state": "connected",
+              "phase": "observationEnd",
+              "elapsedSeconds": 8.00014
+            }
+          ],
+          "windowStart": 1.00014,
+          "windowEnd": 8.00014,
+          "scope": "Observed connection events only; subscription and packet-level correctness not established"
+        },
+        "classification": "instrumentationObservation",
+        "scope": "Technical pilot gate, not an accuracy claim"
+      },
+      "rawSha256": {
+        "publishes.ndjson": "0ac0b9ea2851c0bf1f09594ac696ecf996a5fae415e55506aa7944b6b9532e61",
+        "deliveries.ndjson": "fcd309d6f7fc5077727e93cd4534eca7b6641cc1daaa6803ab1ae24969167ef1",
+        "connections.ndjson": "7d91d5bc50ce9b44c1de16dfbb32d97de365365b4c498b9eb305458d97ad3144",
+        "subscriptions.ndjson": "10df0b9f80e19ce6b780b1431ed6a6f7460820bad0c1f302e692f8145a6f617d",
+        "phases.json": "3ddadd1470309a612576077fe0115d78bd001a7595c0f51222a870765f3b1023"
+      }
+    }
+  },
+  "comparison": [
+    {
+      "metric": "Completed cohort RPS",
+      "native": 13068.5,
+      "model": 55645.5,
+      "error": 3.2579867620614453,
+      "limit": 0.15,
+      "status": "failed",
+      "scope": "Old profile vs new pilot; diagnostic only"
+    },
+    {
+      "metric": "Publish p99 ms",
+      "native": 22.674399999999878,
+      "model": 0.42000000000000004,
+      "error": 0.9814769078784883,
+      "limit": 0.2,
+      "status": "failed",
+      "scope": "Old profile vs new pilot; diagnostic only"
+    },
+    {
+      "metric": "API failure fraction",
+      "native": 0.0,
+      "model": 0.0,
+      "error": 0.0,
+      "limit": 0.05,
+      "status": "passed",
+      "scope": "Old profile vs new pilot; diagnostic only"
+    },
+    {
+      "metric": "Delivery loss fraction",
+      "native": 0.03535218272946394,
+      "model": 0.9135779173518074,
+      "error": 0.8782257346223434,
+      "limit": 0.05,
+      "status": "failed",
+      "scope": "Old profile vs new pilot; diagnostic only"
+    }
+  ]
+}

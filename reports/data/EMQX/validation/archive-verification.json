@@ -1,0 +1,529 @@
+{
+  "broker": "EMQX",
+  "stage": "validation",
+  "verified": true,
+  "originalSha256": "8af337a5dfcd91cbb782e7da6079ba50021ecd81b4fc43b742169a1d0fa4aa62",
+  "restoredAggregateSha256": "b59a62c6f43afb536745a1c2ada24f5ab8bb52b5c673fae605a7256824d187bc",
+  "attemptRestorations": [
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q0.p1.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q0.p1.r1/attempt-01.zip",
+      "archiveSha256": "b5d98297ca28485f09e4956f1e436bd4708693102c981eb3bf8d7af91efeb721"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q0.p1.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q0.p1.r2/attempt-01.zip",
+      "archiveSha256": "b067158889bd9cfe27e16a4d15d8f73120c666908d466e5c4a2e3f54bb98cd8b"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q0.p1.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q0.p1.r3/attempt-01.zip",
+      "archiveSha256": "d4ba9d12af63580661c2d36636c0879e804ea71cfe80688136f7bf2b42ce43a6"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q0.p128.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q0.p128.r1/attempt-01.zip",
+      "archiveSha256": "ea73add445636acbd84fe5b5a308096a5e4666087ffa7ae593bcb6fc6ed8eb2e"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q0.p128.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q0.p128.r2/attempt-01.zip",
+      "archiveSha256": "43be3ea8dc1591a113f49312b9fff72a07878b170e74156b02248dab3ce35c3a"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q0.p128.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q0.p128.r3/attempt-01.zip",
+      "archiveSha256": "1bbc4d105d760592b893b7e329b36396de3d9a8a672f92f8ff7c1d2fe6735278"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q0.p16.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q0.p16.r1/attempt-01.zip",
+      "archiveSha256": "aa27648008a3e91d1f5a14b9b1cbc074c22d395e4c0cd182732b20b08228b836"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q0.p16.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q0.p16.r2/attempt-01.zip",
+      "archiveSha256": "72f9d5e1f557b699887056569647a1d92748841fe60dfcc5f9cd9262c8600098"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q0.p16.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q0.p16.r3/attempt-01.zip",
+      "archiveSha256": "4dab6e04f2ab5a4597e8d0c8c0059d286cfac2466675996b32b40ae95145d9d0"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q0.p64.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q0.p64.r1/attempt-01.zip",
+      "archiveSha256": "546749af77a4257a280e7ec197a88a7004b4cdb5ab74046679b140c914c813f1"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q0.p64.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q0.p64.r2/attempt-01.zip",
+      "archiveSha256": "54ba10ca13c0113e8cecffe19dd4ab6308fd24f822c32623bb04d4b168ca54c4"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q0.p64.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q0.p64.r3/attempt-01.zip",
+      "archiveSha256": "da9faceac0c2e11c599834cbe04af88c165b3eb220708ebe75c9701fbbe8ebb7"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q1.p1.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q1.p1.r1/attempt-01.zip",
+      "archiveSha256": "7897a89683ecfa0c9c2e138c6beedbd3e542f9004253b5d011ae6d74fc859568"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q1.p1.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q1.p1.r2/attempt-01.zip",
+      "archiveSha256": "8a4ce8210c2c69a73c04b61c2c238c52210ba8af109b4b5db39c762d82edf61c"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q1.p1.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q1.p1.r3/attempt-01.zip",
+      "archiveSha256": "79304c2623175cb4f7eaa9876fbdfc1388928c1a3fe31959dd25d9e7a6fc9bb1"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q1.p128.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q1.p128.r1/attempt-01.zip",
+      "archiveSha256": "4cc5cac16c5fcd5a87b6a0d960fe98ce92b49183dd0456f26dc1e5ffdccc0e26"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q1.p128.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q1.p128.r2/attempt-01.zip",
+      "archiveSha256": "cd4aa18f5ccca1d39053a78d8b99b36e2f2d15f2174e5bd6da1a735ed1c2c970"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q1.p128.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q1.p128.r3/attempt-01.zip",
+      "archiveSha256": "7ea88faacd20f3aedf00eec00f107a4a93765f484c7bcf6242f71969b2104bd2"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q1.p16.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q1.p16.r1/attempt-01.zip",
+      "archiveSha256": "388f57747edca1a40fd7d5f65763cbce40091719783a26823e651ac8b0501177"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q1.p16.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q1.p16.r2/attempt-01.zip",
+      "archiveSha256": "d172dae3a0285a74deea0c30c867d396352eff92bc5aac84ed25ea0e47051c90"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q1.p16.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q1.p16.r3/attempt-01.zip",
+      "archiveSha256": "f624d360f45b70711bc5b630024c39247b058d62030115cc0de3534fca891ad2"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q1.p64.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q1.p64.r1/attempt-01.zip",
+      "archiveSha256": "5607d7c6efcd3518cccfbb417e3fbc81a348418918ad060041888bcb2d64d99f"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q1.p64.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q1.p64.r2/attempt-01.zip",
+      "archiveSha256": "679ee22959ea21c936b46780ebb2e9519fc1eabfdc802a86a658708158ce6a10"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q1.p64.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q1.p64.r3/attempt-01.zip",
+      "archiveSha256": "0e8f113bd5b732db0f8dac64cca31d08d3f552fa1ce96c2737d4a59b691442f6"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q2.p1.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q2.p1.r1/attempt-01.zip",
+      "archiveSha256": "39f5da0ffe062d483d54cb1a8396a74f8bfc5348953e1fb26a34970e937c6bab"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q2.p1.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q2.p1.r2/attempt-01.zip",
+      "archiveSha256": "3b24f0a5fcbfa13602350eac20a0df1a8a5392ca0e0e02c62b19df05b3bb9c03"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q2.p1.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q2.p1.r3/attempt-01.zip",
+      "archiveSha256": "89069942e0865cf65eccb5bfc3160cf5be413a04643a7022d152865998e942bf"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q2.p128.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q2.p128.r1/attempt-01.zip",
+      "archiveSha256": "e8ac7c0deeb10546d759789f414a8ec901e14c87e241e51778e3fb9850325184"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q2.p128.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q2.p128.r2/attempt-01.zip",
+      "archiveSha256": "545cb98e9b933e29960a2aef2227ad8d59564690fc0cd752e5846e7966914756"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q2.p128.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q2.p128.r3/attempt-01.zip",
+      "archiveSha256": "37c288667af6e5d2c3d72456d88968d808acef340b8d44e9eb98faa5d44090a6"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q2.p16.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q2.p16.r1/attempt-01.zip",
+      "archiveSha256": "af4ebb8dc2e308499f037f014883f6719ce68ec1144d7a67b90ec110939f49cf"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q2.p16.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q2.p16.r2/attempt-01.zip",
+      "archiveSha256": "8c8e4014b7afc75ccb97693f330ab85c07f7d1697fe0657b17ccd1f832891d44"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q2.p16.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q2.p16.r3/attempt-01.zip",
+      "archiveSha256": "6d59f6a3d76517280a5874e20dcf13f95e0b744700e2a118751fb237aae584dd"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q2.p64.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q2.p64.r1/attempt-01.zip",
+      "archiveSha256": "a4a7237db1458f694378719e23519aabfb157cc0880e685f89e0739df9cdccb2"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q2.p64.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q2.p64.r2/attempt-01.zip",
+      "archiveSha256": "478832b59ca4e17e5bd199df62462d4dab6ba99794f8c0bf32c44b1cc70a06dc"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m16.q2.p64.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m16.q2.p64.r3/attempt-01.zip",
+      "archiveSha256": "c0aaf2381200afbc3a42e5cdd0db596dae38c176227af596fffcf81f70e368c3"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q0.p1.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q0.p1.r1/attempt-01.zip",
+      "archiveSha256": "0ae102a78411dd129a6cfcea6ab36585d1ae9febe6a717bc159d64703f3c7ed5"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q0.p1.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q0.p1.r2/attempt-01.zip",
+      "archiveSha256": "710254c2e145fa986fa22bf1a0f19ae1082833f102c9847f63f594199863b078"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q0.p1.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q0.p1.r3/attempt-01.zip",
+      "archiveSha256": "0da2de72923fe0924893aebaac830045b2337adaefa822cd89adefa94c05c1ac"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q0.p128.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q0.p128.r1/attempt-01.zip",
+      "archiveSha256": "964e8d66bb71f0739f73c72a2a3fa8cc7e1a8921ea2296db48444687fdf1b926"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q0.p128.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q0.p128.r2/attempt-01.zip",
+      "archiveSha256": "8def7f4c47fc3e2667de17c79c26417eaf503ad723fcf57d2055d4462a4f3227"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q0.p128.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q0.p128.r3/attempt-01.zip",
+      "archiveSha256": "fc54dd79394ec1dba7d8e55143489623c7492badacae81352cccd439ce01428c"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q0.p16.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q0.p16.r1/attempt-01.zip",
+      "archiveSha256": "4f42a007ad1a22630210c3ba4350f2865b6da13f7ad9c03feb9c64b359311bb1"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q0.p16.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q0.p16.r2/attempt-01.zip",
+      "archiveSha256": "03134549ab2698554b44c37416433a9ce8139ccabb561b2d61bc17f537d5c300"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q0.p16.r2/attempt-02",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q0.p16.r2/attempt-02.zip",
+      "archiveSha256": "1c9e3d71f9ac31589a0b7d0775f13692ea29b08c78e35889ffd7c2cf8314a012"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q0.p16.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q0.p16.r3/attempt-01.zip",
+      "archiveSha256": "c0a377737603e48993c38e559acb1d44c014a9e812a05326024f9a359a9630f4"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q0.p64.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q0.p64.r1/attempt-01.zip",
+      "archiveSha256": "4c7c11cf08180af0c30709bf85e817b93cfa6af72435a6f745ba5332c7c29b69"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q0.p64.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q0.p64.r2/attempt-01.zip",
+      "archiveSha256": "aff5d2c4a30552369909785fac0ab98f4e352a1c20e2e5426e922f33a985d70c"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q0.p64.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q0.p64.r3/attempt-01.zip",
+      "archiveSha256": "1e4ec264c05a090b89aff151ed669d3607e9bea6b669de89aea42941249e0b25"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q1.p1.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q1.p1.r1/attempt-01.zip",
+      "archiveSha256": "323ec2309b57ea33d68e26ece1c24d8981e96bdd6ecd18f742cd4a65d2b7ae95"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q1.p1.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q1.p1.r2/attempt-01.zip",
+      "archiveSha256": "12c642bf74da77ef1dcdf89985aaf1d25eb2001c92d0dc3310b0181f76fbcbf2"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q1.p1.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q1.p1.r3/attempt-01.zip",
+      "archiveSha256": "ea9922fa538c8f70d18bc3b830919a9bb696ce438e07bf7642905ed54e07380f"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q1.p128.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q1.p128.r1/attempt-01.zip",
+      "archiveSha256": "eabf4d181a7ac5bd3047bee91ba20e3fa4efbe84e56257b31154a47baac54be9"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q1.p128.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q1.p128.r2/attempt-01.zip",
+      "archiveSha256": "ccba35ed0a1b60e7984b521969d6e02a9932c2940c8f266cf6fbe7c440764342"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q1.p128.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q1.p128.r3/attempt-01.zip",
+      "archiveSha256": "f89d0a834df8d60fc0c1707285d673ac4bbc1e5a88ab060608304aea7e738f3a"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q1.p16.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q1.p16.r1/attempt-01.zip",
+      "archiveSha256": "e3147192698177d86773d6de29b0499fed17fb7f86a104d0dc0418184612204e"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q1.p16.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q1.p16.r2/attempt-01.zip",
+      "archiveSha256": "1a2c8ffd7d7976bbfee058bd158af911697bca9b693ad85a89c62adc364556bb"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q1.p16.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q1.p16.r3/attempt-01.zip",
+      "archiveSha256": "ae3127e1bffd5fcb9466f5c0b0739cc9620761006bd749721777471999008887"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q1.p16.r3/attempt-02",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q1.p16.r3/attempt-02.zip",
+      "archiveSha256": "9d27196feedf6bdfce88a1503492a978758ab782bb147fe257c3a65d6af416c8"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q1.p64.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q1.p64.r1/attempt-01.zip",
+      "archiveSha256": "a27cf5bb3f94d4e9405b30be8f4561e3c892f029620ee884cabda669b9b09f71"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q1.p64.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q1.p64.r2/attempt-01.zip",
+      "archiveSha256": "9a5de8e04ca38c96bd665c15158f0b99326fdfc086e4f11627f8e2c42f1c1c73"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q1.p64.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q1.p64.r3/attempt-01.zip",
+      "archiveSha256": "98d2f5a773f258b96ff746cb78769a332a987ed51f61264500563a93b60c6569"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q2.p1.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q2.p1.r1/attempt-01.zip",
+      "archiveSha256": "89ed2ae39439af60f9c063e820af96da2d2fc298fa9b110f1df56b4ff7d19103"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q2.p1.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q2.p1.r2/attempt-01.zip",
+      "archiveSha256": "fdd5e9f0893c54e859bbdf4a96ede83105e5bc337cbcec4c36eb0c6358af4c88"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q2.p1.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q2.p1.r3/attempt-01.zip",
+      "archiveSha256": "588178525a9ac21c0fc06a12aef0adda609a80ba4e6df0f78f0dc39778ce9cf8"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q2.p128.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q2.p128.r1/attempt-01.zip",
+      "archiveSha256": "53a770b0419b24d5b1ff2011453a5daf964ae0a9b44d26612afcb633b4c5bad4"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q2.p128.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q2.p128.r2/attempt-01.zip",
+      "archiveSha256": "118f97288fa28604532fdb06b0f9d45029af485e95bf0b48dd72d28f2c1ff84c"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q2.p128.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q2.p128.r3/attempt-01.zip",
+      "archiveSha256": "891e8f9c036c640eeb09c3cb615f047c74e2b1f0097fa89188d160feedd89d22"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q2.p16.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q2.p16.r1/attempt-01.zip",
+      "archiveSha256": "08bafa5773ec1d234acb425a3db55c57826eb1d218632a1b473bc63e355be98f"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q2.p16.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q2.p16.r2/attempt-01.zip",
+      "archiveSha256": "0016a4615c804778b50864afb88ee68b70d650a43eafaef1ea0262bd01b94f65"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q2.p16.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q2.p16.r3/attempt-01.zip",
+      "archiveSha256": "ed0b59740f8158a98ce3f2e73917125c57ef3924089551454bbb2e818aa2ebf7"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q2.p64.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q2.p64.r1/attempt-01.zip",
+      "archiveSha256": "9c9b8e02e8d0caa3ba7fc00f4cf071c37eb2fa3e013046cb739ce40458a3eb91"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q2.p64.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q2.p64.r2/attempt-01.zip",
+      "archiveSha256": "af52d8400da612f9263116ac1e41488881c88c8e92a423ff8b0403841d3f96b6"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/EMQX-validation/attempts/EMQX.m256.q2.p64.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/evidence/attempts/EMQX-validation/EMQX.m256.q2.p64.r3/attempt-01.zip",
+      "archiveSha256": "3bff4df2500670c594857c5c9b9f310c58b2271ca2ccf9996d4594b8c219ce00"
+    }
+  ],
+  "interruptedAttemptCount": 0,
+  "note": "Scientific points and campaign identity match; sealed archives verified; unsealed interruptions copied byte-for-byte and retained at source, not declared archived. Input hashes may differ between compact and restored representation."
+}

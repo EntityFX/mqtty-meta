@@ -1,0 +1,8 @@
+{
+  "sameJsonValues": true,
+  "sameBytes": false,
+  "equalAfterCrLfNormalization": true,
+  "windowsSummarySha256": "d971dbec8451139ab4b282dc1abf61dc3cc46c0b1080f868c67c8cd9be2c812a",
+  "linuxSummarySha256": "7a683ccf53eb87132f0440b9c64ac77b9f5bcbb4ded6c0512bfa0b504399e566",
+  "scope": "One identical model condition on two hosts; not native portability or all-condition proof"
+}

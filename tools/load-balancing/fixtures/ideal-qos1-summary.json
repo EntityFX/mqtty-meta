@@ -1,0 +1,223 @@
+{
+  "status": "completed",
+  "error": null,
+  "configuredOfferedRps": 1000,
+  "scheduledPublishes": 50,
+  "apiAttempts": 50,
+  "sendRejected": 0,
+  "backpressureUnsent": 0,
+  "publisherPendingBeforeDrain": 2,
+  "publisherPendingAfterDrain": 0,
+  "measurementStartTick": 134,
+  "measurementEndTick": 634,
+  "finalTick": 658,
+  "graphErrors": 0,
+  "measurementSeconds": 0.05,
+  "tickMilliseconds": 0.1,
+  "backendCompletedRps": 1000,
+  "uniqueGoodput": 1000,
+  "attemptDeliveryLoss": 0,
+  "backendPublishFailureRate": 0,
+  "backendDeliveryLossRate": 0,
+  "publishP50Ms": 1.6,
+  "publishP95Ms": 1.6,
+  "publishP99Ms": 1.6,
+  "receiverP50Ms": 1.6,
+  "receiverP95Ms": 1.6,
+  "receiverP99Ms": 1.6,
+  "uniqueReceivedBeforeDrain": 48,
+  "uniqueReceivedDuringDrain": 2,
+  "delivery": {
+    "measurementCreated": 50,
+    "uniqueDelivered": 50,
+    "duplicateDeliveries": 0,
+    "unexpectedDeliveries": 0,
+    "warmupDeliveries": 10,
+    "unknownDeliveries": 0,
+    "backends": [
+      {
+        "backend": 0,
+        "measurementCreated": 13,
+        "uniqueDelivered": 13,
+        "duplicateDeliveries": 0,
+        "unexpectedDeliveries": 0,
+        "latencyHistogramTicks": {
+          "16": 13
+        }
+      },
+      {
+        "backend": 1,
+        "measurementCreated": 13,
+        "uniqueDelivered": 13,
+        "duplicateDeliveries": 0,
+        "unexpectedDeliveries": 0,
+        "latencyHistogramTicks": {
+          "16": 13
+        }
+      },
+      {
+        "backend": 2,
+        "measurementCreated": 12,
+        "uniqueDelivered": 12,
+        "duplicateDeliveries": 0,
+        "unexpectedDeliveries": 0,
+        "latencyHistogramTicks": {
+          "16": 12
+        }
+      },
+      {
+        "backend": 3,
+        "measurementCreated": 12,
+        "uniqueDelivered": 12,
+        "duplicateDeliveries": 0,
+        "unexpectedDeliveries": 0,
+        "latencyHistogramTicks": {
+          "16": 12
+        }
+      }
+    ],
+    "latencyHistogramTicks": {
+      "16": 50
+    },
+    "tickMilliseconds": 0.1
+  },
+  "backends": [
+    {
+      "backend": 0,
+      "publishers": 2,
+      "metrics": {
+        "attempted": 13,
+        "admitted": 13,
+        "completed": 13,
+        "expectedDeliveries": 13,
+        "delivered": 13,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 260,
+        "latencyP50Ms": 1.6,
+        "latencyP95Ms": 1.6,
+        "latencyP99Ms": 1.6,
+        "latencyHistogramTicks": {
+          "16": 13
+        }
+      },
+      "completedBeforeDrain": 12,
+      "uniqueReceived": 13,
+      "uniqueReceivedBeforeDrain": 12
+    },
+    {
+      "backend": 1,
+      "publishers": 2,
+      "metrics": {
+        "attempted": 13,
+        "admitted": 13,
+        "completed": 13,
+        "expectedDeliveries": 13,
+        "delivered": 13,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 260,
+        "latencyP50Ms": 1.6,
+        "latencyP95Ms": 1.6,
+        "latencyP99Ms": 1.6,
+        "latencyHistogramTicks": {
+          "16": 13
+        }
+      },
+      "completedBeforeDrain": 12,
+      "uniqueReceived": 13,
+      "uniqueReceivedBeforeDrain": 12
+    },
+    {
+      "backend": 2,
+      "publishers": 2,
+      "metrics": {
+        "attempted": 12,
+        "admitted": 12,
+        "completed": 12,
+        "expectedDeliveries": 12,
+        "delivered": 12,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 240,
+        "latencyP50Ms": 1.6,
+        "latencyP95Ms": 1.6,
+        "latencyP99Ms": 1.6,
+        "latencyHistogramTicks": {
+          "16": 12
+        }
+      },
+      "completedBeforeDrain": 12,
+      "uniqueReceived": 12,
+      "uniqueReceivedBeforeDrain": 12
+    },
+    {
+      "backend": 3,
+      "publishers": 2,
+      "metrics": {
+        "attempted": 12,
+        "admitted": 12,
+        "completed": 12,
+        "expectedDeliveries": 12,
+        "delivered": 12,
+        "rateRejected": 0,
+        "publishFailed": 0,
+        "deliveryDropped": 0,
+        "rps": 240,
+        "latencyP50Ms": 1.6,
+        "latencyP95Ms": 1.6,
+        "latencyP99Ms": 1.6,
+        "latencyHistogramTicks": {
+          "16": 12
+        }
+      },
+      "completedBeforeDrain": 12,
+      "uniqueReceived": 12,
+      "uniqueReceivedBeforeDrain": 12
+    }
+  ],
+  "publishLatencyHistogramTicks": {
+    "16": 50
+  },
+  "phases": [
+    {
+      "phase": "construct",
+      "startTick": 0,
+      "endTick": 0,
+      "status": "completed"
+    },
+    {
+      "phase": "connect",
+      "startTick": 0,
+      "endTick": 17,
+      "status": "completed"
+    },
+    {
+      "phase": "subscribe",
+      "startTick": 17,
+      "endTick": 34,
+      "status": "completed"
+    },
+    {
+      "phase": "warmup",
+      "startTick": 34,
+      "endTick": 134,
+      "status": "completed"
+    },
+    {
+      "phase": "measure",
+      "startTick": 134,
+      "endTick": 634,
+      "status": "completed"
+    },
+    {
+      "phase": "drain",
+      "startTick": 634,
+      "endTick": 658,
+      "status": "completed"
+    }
+  ]
+}

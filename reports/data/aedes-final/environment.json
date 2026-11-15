@@ -1,0 +1,28 @@
+{
+  "capturedUtc": "2026-10-16T19:51:06.879841+00:00",
+  "originalStandEnvironment": "/run/media/entityfx/hd250/mqtty-evidence/compact-20261016-6h-v1/controller/environment.json",
+  "originalStandEnvironmentSha256": "5518d35098a5d50c789e14cf3ec548a38a658d1a87f9640ae412c0ba01feb3d7",
+  "uname": "Linux entityfx-pc 6.12.85-6.12-alt1 #1 SMP PREEMPT_DYNAMIC Fri May  8 17:43:26 UTC 2026 x86_64 GNU/Linux\n",
+  "cpu": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           46 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  24\nOn-line CPU(s) list:                     0-23\nVendor ID:                               GenuineIntel\nModel name:                              Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz\nCPU family:                              6\nModel:                                   63\nThread(s) per core:                      2\nCore(s) per socket:                      12\nSocket(s):                               1\nStepping:                                2\nCPU(s) scaling MHz:                      49%\nCPU max MHz:                             3300.0000\nCPU min MHz:                             1200.0000\nBogoMIPS:                                4988.80\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts vnmi md_clear flush_l1d\nVirtualization:                          VT-x\nL1d cache:                               384 KiB (12 instances)\nL1i cache:                               384 KiB (12 instances)\nL2 cache:                                3 MiB (12 instances)\nL3 cache:                                30 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-23\nVulnerability Gather data sampling:      Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             KVM: Mitigation: Split huge pages\nVulnerability L1tf:                      Mitigation; PTE Inversion; VMX conditional cache flushes, SMT vulnerable\nVulnerability Mds:                       Mitigation; Clear CPU buffers; SMT vulnerable\nVulnerability Meltdown:                  Mitigation; PTI\nVulnerability Mmio stale data:           Mitigation; Clear CPU buffers; SMT vulnerable\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Not affected\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP conditional; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Mitigation; IBPB before exit to userspace\n",
+  "simulatorCommit": "115885e012053d0112413e07743b061369ebea93",
+  "benchmarkCommit": "3a689466009a0d5410f5dc88dc1282d72c27f7dd",
+  "inputSha256": {
+    "inputs/EMQX-validation.json": "fa43bfd97cca3ab2881edb32fdcedac3ef1ed6f2f3811b1979117fe752cd9361",
+    "inputs/Mosquitto-pilot.json": "f380835b48ecd9f24cf243751962cea8acd00298980552a3cf38ea6261cd1473",
+    "inputs/ActiveMQ-pilot.json": "147576e50dd1e4196ec021907ee7c3656ff7392d9fc200ce5ebb4bfdfe257af4",
+    "inputs/Mosquitto-validation.json": "9f9a7dfc67b0cee00291654ca8eefdfba74dd91231698a8cb63ed0064b964f7e",
+    "inputs/Aedes-pilot.json": "ac1b6b844a71e5696f8db054cd0665a3ac78a277ad95b94c4e2ad5437e855f9c",
+    "inputs/ActiveMQ-stand.json": "7feb115e9d54d96ed1195ea31a36ff5d9f74ca53fb6b85f429ea72a2dcf17eb7",
+    "inputs/EMQX-stand.json": "b28c14e6f6d26042564da5ffd2182057be011e4e3ad1d4edc03e75b26a50e691",
+    "inputs/ActiveMQ-calibration.json": "977923ade5a9c5b0c56c9dba67c2f1ae73a47832d29526b297dece21f778677b",
+    "inputs/ActiveMQ-validation.json": "07a63647ff5bef24eb5872ed7a4ee59903e546360d63e322faa6555ddee720cf",
+    "inputs/Mosquitto-stand.json": "b40a2b5b8a7403536c7e3a6f8838578cc5853942e44a12e7156c221e67d4492d",
+    "inputs/Aedes-validation.json": "5234ff26ceec724a4968fc3007c9bc49d1b7c330cbac8c4816caba64de3cf3d2",
+    "inputs/EMQX-calibration.json": "822d369e6ec32d82618f0e3e217b7e808f78dc05303d8544c2d7e475cf99aa9c",
+    "inputs/EMQX-pilot.json": "6fcb5fb33c6ffb8c6705fd7fb74c15198001ec97614016e9683cb8869abe93e1",
+    "inputs/Aedes-stand.json": "c5eb957faacaca5179e88e1846db5b2f079778af74bd3c067f5ccd249b18692a",
+    "inputs/Mosquitto-calibration.json": "54d0f823c7b6092f65bfcc3fe9a4d6394e636572bd1ca4aeb775996f406f308d",
+    "inputs/Aedes-calibration.json": "3bcf2008ff0b70fcc5db7f14500b851650be7cfac934fc0fda0f62d96edf494f"
+  },
+  "diagnosticStateSha256": "1872bd8818f47d7dfeb6add2bb395db88a80d6ed852843c097ed9b090b3daa90"
+}

@@ -1,0 +1,332 @@
+{
+  "originalSource": "8c79c7cdafe94d7106c2e4d63989a53daf131f4b",
+  "finalSource": "a8dc3230a67cce1fce6e91ecfba7e0dae767f227",
+  "change": "SVG layout and Mermaid arrow presentation only",
+  "identicalMainSummaries": 54,
+  "comparisons": [
+    {
+      "id": "ideal-single-q0-s42",
+      "originalSummarySha256": "a77e244dea2abd0fd3b02b5117350399cfc8075450e4cf3c719b95b46b36227d",
+      "finalSummarySha256": "a77e244dea2abd0fd3b02b5117350399cfc8075450e4cf3c719b95b46b36227d",
+      "identical": true
+    },
+    {
+      "id": "ideal-single-q0-s43",
+      "originalSummarySha256": "a77e244dea2abd0fd3b02b5117350399cfc8075450e4cf3c719b95b46b36227d",
+      "finalSummarySha256": "a77e244dea2abd0fd3b02b5117350399cfc8075450e4cf3c719b95b46b36227d",
+      "identical": true
+    },
+    {
+      "id": "ideal-single-q0-s44",
+      "originalSummarySha256": "a77e244dea2abd0fd3b02b5117350399cfc8075450e4cf3c719b95b46b36227d",
+      "finalSummarySha256": "a77e244dea2abd0fd3b02b5117350399cfc8075450e4cf3c719b95b46b36227d",
+      "identical": true
+    },
+    {
+      "id": "ideal-single-q1-s42",
+      "originalSummarySha256": "3a1bbd10108c0e6cd30272123df2d49dcf965a4aaf59217f114d46ae5444cf2c",
+      "finalSummarySha256": "3a1bbd10108c0e6cd30272123df2d49dcf965a4aaf59217f114d46ae5444cf2c",
+      "identical": true
+    },
+    {
+      "id": "ideal-single-q1-s43",
+      "originalSummarySha256": "3a1bbd10108c0e6cd30272123df2d49dcf965a4aaf59217f114d46ae5444cf2c",
+      "finalSummarySha256": "3a1bbd10108c0e6cd30272123df2d49dcf965a4aaf59217f114d46ae5444cf2c",
+      "identical": true
+    },
+    {
+      "id": "ideal-single-q1-s44",
+      "originalSummarySha256": "3a1bbd10108c0e6cd30272123df2d49dcf965a4aaf59217f114d46ae5444cf2c",
+      "finalSummarySha256": "3a1bbd10108c0e6cd30272123df2d49dcf965a4aaf59217f114d46ae5444cf2c",
+      "identical": true
+    },
+    {
+      "id": "ideal-single-q2-s42",
+      "originalSummarySha256": "fb63f60434c9232396758af137a2577a3867073f8bc1adf9831098b28081c1e1",
+      "finalSummarySha256": "fb63f60434c9232396758af137a2577a3867073f8bc1adf9831098b28081c1e1",
+      "identical": true
+    },
+    {
+      "id": "ideal-single-q2-s43",
+      "originalSummarySha256": "fb63f60434c9232396758af137a2577a3867073f8bc1adf9831098b28081c1e1",
+      "finalSummarySha256": "fb63f60434c9232396758af137a2577a3867073f8bc1adf9831098b28081c1e1",
+      "identical": true
+    },
+    {
+      "id": "ideal-single-q2-s44",
+      "originalSummarySha256": "fb63f60434c9232396758af137a2577a3867073f8bc1adf9831098b28081c1e1",
+      "finalSummarySha256": "fb63f60434c9232396758af137a2577a3867073f8bc1adf9831098b28081c1e1",
+      "identical": true
+    },
+    {
+      "id": "ideal-relay-q0-s42",
+      "originalSummarySha256": "48ad4b2df95810519c4aff4ca2fc090d263fb0ebef67f3b0c873a5b2fc1a0842",
+      "finalSummarySha256": "48ad4b2df95810519c4aff4ca2fc090d263fb0ebef67f3b0c873a5b2fc1a0842",
+      "identical": true
+    },
+    {
+      "id": "ideal-relay-q0-s43",
+      "originalSummarySha256": "48ad4b2df95810519c4aff4ca2fc090d263fb0ebef67f3b0c873a5b2fc1a0842",
+      "finalSummarySha256": "48ad4b2df95810519c4aff4ca2fc090d263fb0ebef67f3b0c873a5b2fc1a0842",
+      "identical": true
+    },
+    {
+      "id": "ideal-relay-q0-s44",
+      "originalSummarySha256": "48ad4b2df95810519c4aff4ca2fc090d263fb0ebef67f3b0c873a5b2fc1a0842",
+      "finalSummarySha256": "48ad4b2df95810519c4aff4ca2fc090d263fb0ebef67f3b0c873a5b2fc1a0842",
+      "identical": true
+    },
+    {
+      "id": "ideal-relay-q1-s42",
+      "originalSummarySha256": "045dc29e7fde9741fcbbd90554fa6bbf1330dce27866e4cf846426394e8eae8e",
+      "finalSummarySha256": "045dc29e7fde9741fcbbd90554fa6bbf1330dce27866e4cf846426394e8eae8e",
+      "identical": true
+    },
+    {
+      "id": "ideal-relay-q1-s43",
+      "originalSummarySha256": "045dc29e7fde9741fcbbd90554fa6bbf1330dce27866e4cf846426394e8eae8e",
+      "finalSummarySha256": "045dc29e7fde9741fcbbd90554fa6bbf1330dce27866e4cf846426394e8eae8e",
+      "identical": true
+    },
+    {
+      "id": "ideal-relay-q1-s44",
+      "originalSummarySha256": "045dc29e7fde9741fcbbd90554fa6bbf1330dce27866e4cf846426394e8eae8e",
+      "finalSummarySha256": "045dc29e7fde9741fcbbd90554fa6bbf1330dce27866e4cf846426394e8eae8e",
+      "identical": true
+    },
+    {
+      "id": "ideal-relay-q2-s42",
+      "originalSummarySha256": "5823ebec9dde5b095b62577558d4195fefe48887bb3dc0f8583c39b056246461",
+      "finalSummarySha256": "5823ebec9dde5b095b62577558d4195fefe48887bb3dc0f8583c39b056246461",
+      "identical": true
+    },
+    {
+      "id": "ideal-relay-q2-s43",
+      "originalSummarySha256": "5823ebec9dde5b095b62577558d4195fefe48887bb3dc0f8583c39b056246461",
+      "finalSummarySha256": "5823ebec9dde5b095b62577558d4195fefe48887bb3dc0f8583c39b056246461",
+      "identical": true
+    },
+    {
+      "id": "ideal-relay-q2-s44",
+      "originalSummarySha256": "5823ebec9dde5b095b62577558d4195fefe48887bb3dc0f8583c39b056246461",
+      "finalSummarySha256": "5823ebec9dde5b095b62577558d4195fefe48887bb3dc0f8583c39b056246461",
+      "identical": true
+    },
+    {
+      "id": "ideal-federation-q0-s42",
+      "originalSummarySha256": "0900f1809795d70e4ef9df48183c3741ffda9972838d00be0810f8b6e4f7b003",
+      "finalSummarySha256": "0900f1809795d70e4ef9df48183c3741ffda9972838d00be0810f8b6e4f7b003",
+      "identical": true
+    },
+    {
+      "id": "ideal-federation-q0-s43",
+      "originalSummarySha256": "0900f1809795d70e4ef9df48183c3741ffda9972838d00be0810f8b6e4f7b003",
+      "finalSummarySha256": "0900f1809795d70e4ef9df48183c3741ffda9972838d00be0810f8b6e4f7b003",
+      "identical": true
+    },
+    {
+      "id": "ideal-federation-q0-s44",
+      "originalSummarySha256": "0900f1809795d70e4ef9df48183c3741ffda9972838d00be0810f8b6e4f7b003",
+      "finalSummarySha256": "0900f1809795d70e4ef9df48183c3741ffda9972838d00be0810f8b6e4f7b003",
+      "identical": true
+    },
+    {
+      "id": "ideal-federation-q1-s42",
+      "originalSummarySha256": "05d1ce0d186349cc95153fad943fd57fc1691215cd6c215091bce4e611c5d7f8",
+      "finalSummarySha256": "05d1ce0d186349cc95153fad943fd57fc1691215cd6c215091bce4e611c5d7f8",
+      "identical": true
+    },
+    {
+      "id": "ideal-federation-q1-s43",
+      "originalSummarySha256": "05d1ce0d186349cc95153fad943fd57fc1691215cd6c215091bce4e611c5d7f8",
+      "finalSummarySha256": "05d1ce0d186349cc95153fad943fd57fc1691215cd6c215091bce4e611c5d7f8",
+      "identical": true
+    },
+    {
+      "id": "ideal-federation-q1-s44",
+      "originalSummarySha256": "05d1ce0d186349cc95153fad943fd57fc1691215cd6c215091bce4e611c5d7f8",
+      "finalSummarySha256": "05d1ce0d186349cc95153fad943fd57fc1691215cd6c215091bce4e611c5d7f8",
+      "identical": true
+    },
+    {
+      "id": "ideal-federation-q2-s42",
+      "originalSummarySha256": "c3d4afa66de9cdab0415a3361447e7c1907a07772ed7c152be08417fdb9ce5bc",
+      "finalSummarySha256": "c3d4afa66de9cdab0415a3361447e7c1907a07772ed7c152be08417fdb9ce5bc",
+      "identical": true
+    },
+    {
+      "id": "ideal-federation-q2-s43",
+      "originalSummarySha256": "c3d4afa66de9cdab0415a3361447e7c1907a07772ed7c152be08417fdb9ce5bc",
+      "finalSummarySha256": "c3d4afa66de9cdab0415a3361447e7c1907a07772ed7c152be08417fdb9ce5bc",
+      "identical": true
+    },
+    {
+      "id": "ideal-federation-q2-s44",
+      "originalSummarySha256": "c3d4afa66de9cdab0415a3361447e7c1907a07772ed7c152be08417fdb9ce5bc",
+      "finalSummarySha256": "c3d4afa66de9cdab0415a3361447e7c1907a07772ed7c152be08417fdb9ce5bc",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-single-q0-s42",
+      "originalSummarySha256": "1eaea8bb8bd1685abe985d6b42d9789d234297e51423af520e972805ca893fb8",
+      "finalSummarySha256": "1eaea8bb8bd1685abe985d6b42d9789d234297e51423af520e972805ca893fb8",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-single-q0-s43",
+      "originalSummarySha256": "9b57134d9766b35bc73ed09efc74b53081cbe7ba4f0c912762d7422b9f2f46e1",
+      "finalSummarySha256": "9b57134d9766b35bc73ed09efc74b53081cbe7ba4f0c912762d7422b9f2f46e1",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-single-q0-s44",
+      "originalSummarySha256": "c1c5d36e8f94b5c978d42948dc86d67f907f2dd39a75578304f847f4618f5b99",
+      "finalSummarySha256": "c1c5d36e8f94b5c978d42948dc86d67f907f2dd39a75578304f847f4618f5b99",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-single-q1-s42",
+      "originalSummarySha256": "3735d384f376ae8c6bd1077ad75934085929078fc8d182af046afe36c0f85a8d",
+      "finalSummarySha256": "3735d384f376ae8c6bd1077ad75934085929078fc8d182af046afe36c0f85a8d",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-single-q1-s43",
+      "originalSummarySha256": "0dbd7d8f3d348a0538af734b965745550a6c81fd201dd476e445078d19328c3b",
+      "finalSummarySha256": "0dbd7d8f3d348a0538af734b965745550a6c81fd201dd476e445078d19328c3b",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-single-q1-s44",
+      "originalSummarySha256": "3682c945af9bdc335db5fca05efc249ac3871e0f470fc70c5fd8c9967584444e",
+      "finalSummarySha256": "3682c945af9bdc335db5fca05efc249ac3871e0f470fc70c5fd8c9967584444e",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-single-q2-s42",
+      "originalSummarySha256": "dcec54f9a0b7341fa0237cccdf80d28480514be0f00a9a6a260f39134d1c7bc3",
+      "finalSummarySha256": "dcec54f9a0b7341fa0237cccdf80d28480514be0f00a9a6a260f39134d1c7bc3",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-single-q2-s43",
+      "originalSummarySha256": "cd9a05aeda584ac665a269608e82869184f6db4079f360ff97610dd4c6720c12",
+      "finalSummarySha256": "cd9a05aeda584ac665a269608e82869184f6db4079f360ff97610dd4c6720c12",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-single-q2-s44",
+      "originalSummarySha256": "7ff3eb789a8644046252a8ccdcce28fa6c3cf593cf26cb1498de9985159265b0",
+      "finalSummarySha256": "7ff3eb789a8644046252a8ccdcce28fa6c3cf593cf26cb1498de9985159265b0",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-relay-q0-s42",
+      "originalSummarySha256": "f977f3c73a1cfb4a173ba928033c5c3bac39a8b8ae0f2d3f1c38364ccb87219b",
+      "finalSummarySha256": "f977f3c73a1cfb4a173ba928033c5c3bac39a8b8ae0f2d3f1c38364ccb87219b",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-relay-q0-s43",
+      "originalSummarySha256": "f977f3c73a1cfb4a173ba928033c5c3bac39a8b8ae0f2d3f1c38364ccb87219b",
+      "finalSummarySha256": "f977f3c73a1cfb4a173ba928033c5c3bac39a8b8ae0f2d3f1c38364ccb87219b",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-relay-q0-s44",
+      "originalSummarySha256": "f977f3c73a1cfb4a173ba928033c5c3bac39a8b8ae0f2d3f1c38364ccb87219b",
+      "finalSummarySha256": "f977f3c73a1cfb4a173ba928033c5c3bac39a8b8ae0f2d3f1c38364ccb87219b",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-relay-q1-s42",
+      "originalSummarySha256": "4b06be41810c2b2d61ddd3bacddd300011d5e730ef090abc68645ffd9c506b4f",
+      "finalSummarySha256": "4b06be41810c2b2d61ddd3bacddd300011d5e730ef090abc68645ffd9c506b4f",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-relay-q1-s43",
+      "originalSummarySha256": "5053dda6dece022ac798bdbd5fec452afc95864ef3ec06aa68eadb52ae40e818",
+      "finalSummarySha256": "5053dda6dece022ac798bdbd5fec452afc95864ef3ec06aa68eadb52ae40e818",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-relay-q1-s44",
+      "originalSummarySha256": "7ba0c0a7b7c1e000a8d6fad49102bc48ea639042c83c3bda88df4917c76d9302",
+      "finalSummarySha256": "7ba0c0a7b7c1e000a8d6fad49102bc48ea639042c83c3bda88df4917c76d9302",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-relay-q2-s42",
+      "originalSummarySha256": "d6a4ebb37ef1dbc92bcab51dfdd67f2af516098a2811b7e8e779c7eeb7cce36d",
+      "finalSummarySha256": "d6a4ebb37ef1dbc92bcab51dfdd67f2af516098a2811b7e8e779c7eeb7cce36d",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-relay-q2-s43",
+      "originalSummarySha256": "3a4d11e1a0e65d30e51d1480a0116cebccf8cabf40b1ab02eede74d28d560bdb",
+      "finalSummarySha256": "3a4d11e1a0e65d30e51d1480a0116cebccf8cabf40b1ab02eede74d28d560bdb",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-relay-q2-s44",
+      "originalSummarySha256": "36bd7f59deb6dfc09ba7d6a4c528cab1c83f6d09168bc4cb83ed43f9ca6b1196",
+      "finalSummarySha256": "36bd7f59deb6dfc09ba7d6a4c528cab1c83f6d09168bc4cb83ed43f9ca6b1196",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-federation-q0-s42",
+      "originalSummarySha256": "1577bff309f620d6261504c0f3098c13b658fe67b7c8c072d3c389ec58e1f187",
+      "finalSummarySha256": "1577bff309f620d6261504c0f3098c13b658fe67b7c8c072d3c389ec58e1f187",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-federation-q0-s43",
+      "originalSummarySha256": "1577bff309f620d6261504c0f3098c13b658fe67b7c8c072d3c389ec58e1f187",
+      "finalSummarySha256": "1577bff309f620d6261504c0f3098c13b658fe67b7c8c072d3c389ec58e1f187",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-federation-q0-s44",
+      "originalSummarySha256": "1577bff309f620d6261504c0f3098c13b658fe67b7c8c072d3c389ec58e1f187",
+      "finalSummarySha256": "1577bff309f620d6261504c0f3098c13b658fe67b7c8c072d3c389ec58e1f187",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-federation-q1-s42",
+      "originalSummarySha256": "ce6fa9752a50699663378c3bc055da8dba21584a05c81f2efc4dcb9acc358d9a",
+      "finalSummarySha256": "ce6fa9752a50699663378c3bc055da8dba21584a05c81f2efc4dcb9acc358d9a",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-federation-q1-s43",
+      "originalSummarySha256": "2ece56e9bdcdcbc22cc51367fdd40dbdbe1cfc8b7742693aaa04ffcd147a63bc",
+      "finalSummarySha256": "2ece56e9bdcdcbc22cc51367fdd40dbdbe1cfc8b7742693aaa04ffcd147a63bc",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-federation-q1-s44",
+      "originalSummarySha256": "5a9fcc5835b548b2a8093f1150801a03cf79d3aefaada28a3809841356d5af5e",
+      "finalSummarySha256": "5a9fcc5835b548b2a8093f1150801a03cf79d3aefaada28a3809841356d5af5e",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-federation-q2-s42",
+      "originalSummarySha256": "9439203992dfa6e6ac301375cb33cd0b1c90d19fc70698eb3b3713b845a7153c",
+      "finalSummarySha256": "9439203992dfa6e6ac301375cb33cd0b1c90d19fc70698eb3b3713b845a7153c",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-federation-q2-s43",
+      "originalSummarySha256": "23046d4a8538775ccc78df29617afd89b1a22d1af446ae00d994b486d981d2f6",
+      "finalSummarySha256": "23046d4a8538775ccc78df29617afd89b1a22d1af446ae00d994b486d981d2f6",
+      "identical": true
+    },
+    {
+      "id": "mosquitto-federation-q2-s44",
+      "originalSummarySha256": "bc9d974f4d6852791d2e3c307a9f32d86a67e17edff01f728ad25b8ad0daaf2c",
+      "finalSummarySha256": "bc9d974f4d6852791d2e3c307a9f32d86a67e17edff01f728ad25b8ad0daaf2c",
+      "identical": true
+    }
+  ]
+}

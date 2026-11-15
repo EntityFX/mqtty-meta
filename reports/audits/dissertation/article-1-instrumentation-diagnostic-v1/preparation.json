@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "fixedBeforeRuns": true,
+  "protocol": "docs/dissertation/article-1-instrumentation-diagnostic-protocol.md",
+  "cohortToggleIsNotLoggingOnly": true,
+  "workloadCode": {
+    "file": "MqttBenchmark/src/EntityFX.MqttBenchmark.Campaign/Workload/CampaignWorkloadRunner.cs",
+    "sha256": "2bbd4778bada306cb26dd372ea20d13635aa695b283a13399df06e08142d0aad",
+    "warmupSubscriptionLines": [
+      44,
+      64,
+      66
+    ],
+    "fixedDeadlineLines": [
+      82,
+      146
+    ],
+    "phaseAndConnectionLines": [
+      37,
+      125
+    ]
+  },
+  "validationCode": {
+    "file": "MqttBenchmark/src/EntityFX.MqttBenchmark.Campaign/CampaignDefinition.cs",
+    "sha256": "1f93b7db90b8a8f768f4af312c8850dddc4de286fb42858c5b4b0a813bd9f935",
+    "fullDrainRequiresCohortLine": 97
+  },
+  "attemptedABBA": false,
+  "selectedDiagnostic": "four new ActiveMQ repetitions, all cohort enabled",
+  "testEvidence": {
+    "red": "ModuleNotFoundError before launcher existed",
+    "localPassed": 3,
+    "linuxPassed": 3
+  },
+  "launch": {
+    "service": "mqtty-article1-instrumentation-diagnostic-v1.service",
+    "invocation": "444750c23f2c4657a4c9c168fe142c58",
+    "runtimeMaxSeconds": 900,
+    "memoryMax": "2G",
+    "cpuQuota": "300%",
+    "killMode": "control-group",
+    "root": "/run/media/entityfx/hd250/mqtty-evidence/article1-instrumentation-diagnostic-v1"
+  },
+  "mainCampaignAdmitted": false
+}

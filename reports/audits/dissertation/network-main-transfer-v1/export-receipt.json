@@ -1,0 +1,13 @@
+{
+  "status": "exportCompleted",
+  "sourceRoot": "/run/media/entityfx/hd250/mqtty-evidence/network-full-3h-v1",
+  "fileCount": 2854,
+  "sourceBytes": 9618618314,
+  "archiveBytes": 1048642907,
+  "archiveSha256": "5adfa393a075b29ab0a0c8dba4263e97231ede6bb8445daf9c4793df913af90b",
+  "indexSha256": "e9de034b233702b9ed42a376b35029425eb2097681dc2c48a5f5059dd6c3bc4d",
+  "inspectionSha256": "a66ca09a70d57aa2407941a29f3f9da2774a18eabe91acbaedd69507c5e45ae8",
+  "elapsedSeconds": 131.9078263840056,
+  "sourceChanged": false,
+  "scientificRerunsPerformed": false
+}

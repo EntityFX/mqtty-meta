@@ -1,0 +1,18 @@
+[
+  {
+    "host": "10.100.101.14",
+    "remoteDirectory": "/home/user/mqtty-benchmark-fixed-20261103-001",
+    "archiveSha256": "bdd28574fa1dda02937f2d903159576d6963a8ce396a48458906f858fabfa2c9",
+    "preflightExitCode": 0,
+    "stdout": "PASS preflight /home/user/mqtty-benchmark-fixed-20261103-001/preflight\n",
+    "stderr": ""
+  },
+  {
+    "host": "10.10.144.66",
+    "remoteDirectory": "/C:/Users/sysadm/mqtty-benchmark-fixed-20261103-001",
+    "archiveSha256": "bdd28574fa1dda02937f2d903159576d6963a8ce396a48458906f858fabfa2c9",
+    "preflightExitCode": 0,
+    "stdout": "PASS preflight C:\\Users\\sysadm\\mqtty-benchmark-fixed-20261103-001\\preflight\r\n",
+    "stderr": ""
+  }
+]

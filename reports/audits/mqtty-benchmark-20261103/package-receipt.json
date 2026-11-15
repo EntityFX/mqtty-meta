@@ -1,0 +1,11 @@
+{
+  "archive": "mqtty-benchmark.tar.gz",
+  "archiveSha256": "e412d8dedef939d1c34fd5417fd0cca030d743a17a59db29c2fd8666dad48756",
+  "archiveBytes": 11209657,
+  "manifestSha256": "292dd92f7ec3fc87e418593cf874bfaf95d87b1a5f47465371595077db7d5313",
+  "sourceCommits": {
+    "mqtty": "f5c0a4715b555c4348d2a2843177251f62c640ff",
+    "MqttBenchmark": "ab513df3d2b65462abcfba8084f066ae4b1bd0a1"
+  },
+  "simulationsStarted": 0
+}

@@ -1,0 +1,562 @@
+{
+  "broker": "Mosquitto",
+  "stage": "validation",
+  "verified": true,
+  "originalSha256": "2be568685ed94eba695cdd90caa490cc1eedbb00d1ed3125c626a2f35649eba2",
+  "restoredAggregateSha256": "c6cb0673f7379254c783a642d33244b2b59d37f58d3f87ceff25546cab35f904",
+  "attemptRestorations": [
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q0.p1.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q0.p1.r1/attempt-01.zip",
+      "archiveSha256": "e16ab6e7a48dbbca1f0d07df3b45839e13194fd1946fd59621bf9c5f0947642c"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q0.p1.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q0.p1.r2/attempt-01.zip",
+      "archiveSha256": "1c91d13e636943da9a45311eb2cf80b8958887aa89bbea29acdc17c5131e5dd4"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q0.p1.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q0.p1.r3/attempt-01.zip",
+      "archiveSha256": "948807cc9a111789073f0b9085fc4f719abb1ebe65e9468142c4073f2471d4db"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q0.p128.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q0.p128.r1/attempt-01.zip",
+      "archiveSha256": "adc3e35d5e16c3ed222e8edb85588ccf0c4a3173ceb9387c2a8686a2da2ddca6"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q0.p128.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q0.p128.r2/attempt-01.zip",
+      "archiveSha256": "f733af1cd95bdbcb98c0a72742e865fed463a9395810f49af36e7ec471999445"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q0.p128.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q0.p128.r3/attempt-01.zip",
+      "archiveSha256": "0ca17ec78062564deec52db7e1af304aec51db2c4112f01b8253fe778969963e"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q0.p16.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q0.p16.r1/attempt-01.zip",
+      "archiveSha256": "7236199e236ff79a978400cae9f5419d5d46aff623b40a97ab8565b27a89f87f"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q0.p16.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q0.p16.r2/attempt-01.zip",
+      "archiveSha256": "f15bda4b5419cf126a64d47882b4ed9ef7bfde3b316372e97e9dd666873e3f81"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q0.p16.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q0.p16.r3/attempt-01.zip",
+      "archiveSha256": "111d923021bdfd79672d61e0ccdeab976d144958c32dfeb8b60cc3495b204d1f"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q0.p64.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q0.p64.r1/attempt-01.zip",
+      "archiveSha256": "97b315ab2c77887ff592e3157705075848e5cf256b0742cfc6e3962904a75dcf"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q0.p64.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q0.p64.r2/attempt-01.zip",
+      "archiveSha256": "9f7b3c4eb6babc308da645503a7597d66b2b885330975023f04d242e45a60571"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q0.p64.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q0.p64.r3/attempt-01.zip",
+      "archiveSha256": "2cdaca87c4304f97c77d78e783f8c3ebb62ec4b0f31457889151f0244eef356a"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q1.p1.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q1.p1.r1/attempt-01.zip",
+      "archiveSha256": "6c55610b5ab75838d8e1abb302211dc02e3f12f1da82ac84632a0bcf4ad1646e"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q1.p1.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q1.p1.r2/attempt-01.zip",
+      "archiveSha256": "a99d9ebe6408641af39a07ce387a9673316ccc575952d024f7cf6fc5c32ec280"
+    },
+    {
+      "status": "interrupted-unsealed",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q1.p1.r3/attempt-01",
+      "fileSha256": {
+        "deliveries.ndjson": "9119062c42e05fa51ea354442d8dc3aab35c595b61f12f8dc933d3cd785a4791",
+        "started.json": "52d19cb203319d67e1076e39d4f57e71d49b6faa35c087e2dccf2493ee072c2f",
+        "load-generator-measurement-started.json": "591522c4b8c9435505f8a21a7ee3577705196d67a0d82cb63c7e3dca275875dd",
+        "external-sampler-ready.json": "8b6b13a1caf5b0cdecaae9b434d44b0ef21d29d1138bd297596e9e1f0563ec79",
+        "load-generator-started.json": "1688ae883796a45761eb1498db966d03a2d15d869cf4550ed67f8ea7c74635fc",
+        "load-generator-samples.ndjson": "2c2b446f52df03897288670c3abdcd8c7d72408daf7e25b9d6094a369bc21ea7",
+        "load-generator-measurement-ended.json": "6b4103970fedeb15100c8153a4732a4be1666e2839651d2d6ecf7eecbbdb9ccb",
+        "load-generator-summary.json": "a5ca7836c798708786cb64f4db65cf419a82a99a201fadfd4b7e8273edb2991c",
+        "protocol.json": "21146152dd3af1c7a1bbd8e41c5eee7b0ae8725b3fdf26998ac291fdea5613dd",
+        "load-generator-provenance.json": "4a7c6200d68a0821da9838bb94eb1beda4d001e1d5c1e6f8c59b7cf05b8927c6",
+        "publishes.ndjson": "af62ceaf935f04f9d5e60f39ea295083300e9573aeaa0366bb102396fbb2ddfc",
+        "stand/controller-clock.json": "b5893c82c1c95bd1a6cd92cb0c63632043cfb4ab2c49038b54c1d2337b0316b3",
+        "stand/measurement-started.json": "9e02b79e53a87e93d6227e221d84836258e7db6d7c03188d6fcd117fa09fcedc",
+        "stand/controller-stop-started.json": "5423ee14bc619aea0beb8cc7f4210fff8342881fc4fedc029ca02ba5e2c089bd",
+        "stand/controller-capture-started.json": "5946f2d66d8b46d761d022b717ad78dcdc170d97238d3d5a63da451011d92dba",
+        "stand/health-readiness.json": "3467c1d91c40a20a9268247bd964b3379b74808064e5e731c69a2aa0dd790d5e",
+        "stand/versions.json": "8555b90fdc035897c94f0b2078e50a207dcbda8422b7439cd4e2b5adbddfb2a8",
+        "stand/controller-validate.json": "8fac377ec9e449fc53fd83b6e4f80ba6cfcf7208b5b273f7be08159a0530ef8a",
+        "stand/controller-health-started.json": "aba0b926c1b472e11e3d389dd2c4c37c745f66edc4e7efed4ff0959aa7d50717",
+        "stand/controller-clock-started.json": "57014e5f24548a5331cfb07378302004dd32715fe15d7ddddd6dd4f07adf5ea9",
+        "stand/controller-fence.json": "df87c3ca568ad99e31ff5fb6f9e8837139e6c91ee4cbda3ce3aa946cfe44f83c",
+        "stand/controller-health.json": "e76535f0dc68e7bb262005e914f1bb3a0c49efd98bd8f6521663f893e379ee9c",
+        "stand/telemetry.ndjson": "231eb1baabdfcd8c61a9d5d83210ee591368b47b4887fb64839f7f3e906e4829",
+        "stand/controller-fence-started.json": "23d57571881a9fcee802b98b8375c178fc5fabd5b84adf63ea4474c00fe674b1",
+        "stand/controller-validate-started.json": "0cd1c54b24f419b5126e26f56f553a7a268fa860248e68a4077bfa6f280d8108",
+        "stand/controller-start.json": "8365f52bbb76b68691d25e15a83ed9b698283cbbd2cab2975251a3cf359bcd28",
+        "stand/telemetry-ready.json": "512324ba57c727de0d434cfbf347b00f9c9b38c0f19d4dab545c648a9dce732b",
+        "stand/controller-start-started.json": "fe7da462ff8ba716aa038241e3df5a503c3ee8f82c430726118c16f7e28ac08e",
+        "stand/clock-alignment.json": "45ff880737256269a926861d9b52578db3f07f724c08779d89cd7d4720a6ff6b",
+        "stand/controller-stop.json": "2ac5dc62915ffb20ba15e04d1370a08d48dc548899bef34a3762a19543d78ec8",
+        "stand/workload-end-fence.json": "62bfa38cd8affcc5a4317820ff739804c620b06e34ac977183dfdcb2c83a17a0",
+        "stand/stand.selected.json": "2c2753895e662385e44650ec08f7f47bdb69d1954cf86f8fa78132952c96d588",
+        "stand/run-provenance.json": "51990eda394193817ac4e02553dcaa1b637574157ced736e6b19a8dcca95090f",
+        "stand/inventory-check/stand.source.json": "b40a2b5b8a7403536c7e3a6f8838578cc5853942e44a12e7156c221e67d4492d",
+        "stand/inventory-check/controller-validate.json": "1d8f418846fd2a719669e9a5f058030e107c88e3b86cf584aee33322991c4e80",
+        "stand/inventory-check/controller-validate-started.json": "c2da5295347ebd75472a531c8417c6895cda1d440632ba33586d93c79e761d10",
+        "stand/logs/broker.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stand/logs/launch-broker.sh": "222c1cc67d030aa99ed03b0af12a9127537a0cae966af55fba10782ded6298dc",
+        "stand/logs/broker.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "archiveVerified": false,
+      "originalRetained": true
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q1.p1.r3/attempt-02",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q1.p1.r3/attempt-02.zip",
+      "archiveSha256": "6f2e17c9a959a93c360be241987f7b6b48a9b7c7c5fac2cf37cbc26f40bf5147"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q1.p128.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q1.p128.r1/attempt-01.zip",
+      "archiveSha256": "9f8b730312f1b43eb6cc26db038abd5ccd1201d3be193d45680d51cb54bfd6bb"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q1.p128.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q1.p128.r2/attempt-01.zip",
+      "archiveSha256": "bc3adeab3f449cf758945e5f63ac7a0b661f61acfc500fd323c6b1d09b2ea54f"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q1.p128.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q1.p128.r3/attempt-01.zip",
+      "archiveSha256": "8fcc49439db5ee2d14b94d500a4fbd1d14ae8eb78ef83ba5156c6b3686c19904"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q1.p16.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q1.p16.r1/attempt-01.zip",
+      "archiveSha256": "fcde9f5180f9c68b2c5059ebeccc4ad642392540ced562179ffab4de0e04fa07"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q1.p16.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q1.p16.r2/attempt-01.zip",
+      "archiveSha256": "466e969749ba9a1df33a9fce379b34368bfdcda95cbef387f99dca7d00e3fe4b"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q1.p16.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q1.p16.r3/attempt-01.zip",
+      "archiveSha256": "0f5b4e2d31a30e78c3aedbc028f032a273b9b0c7f2237298ae2da975669f858b"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q1.p64.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q1.p64.r1/attempt-01.zip",
+      "archiveSha256": "36b36f87bbcb0c24c2716108ac32c6d284e3e5cfba4a7b4052605851813da04b"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q1.p64.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q1.p64.r2/attempt-01.zip",
+      "archiveSha256": "3c5c32951be541b63e70187673cce31bae814ccc7f76ff7ea131214b9bf728ba"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q1.p64.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q1.p64.r3/attempt-01.zip",
+      "archiveSha256": "204bbb89cda2beecf4ab4a2929b6b829730cbcf45ad513ff9c0546a8a30459dd"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q2.p1.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q2.p1.r1/attempt-01.zip",
+      "archiveSha256": "dc87be70d55c695e710a36577f59b3dc4e3000a44e43287d48eb4c597486770a"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q2.p1.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q2.p1.r2/attempt-01.zip",
+      "archiveSha256": "760aaa8e9d10dc50b76daca496fd259cefb0f4e4b4997353d7e2f5f1e1e5984c"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q2.p1.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q2.p1.r3/attempt-01.zip",
+      "archiveSha256": "169cde41445c59eadcb11f7d1cfe600e32ab8502106e53ea1ce1e9b5d2d95f05"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q2.p128.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q2.p128.r1/attempt-01.zip",
+      "archiveSha256": "2fbca7727904567dc714a7b3303f5942df5b37add31d89468ddf0407f66a0eff"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q2.p128.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q2.p128.r2/attempt-01.zip",
+      "archiveSha256": "da5d546c9c528f8d6712cf3387d401ccbd777d6ba526ce47ade767de0522f8cb"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q2.p128.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q2.p128.r3/attempt-01.zip",
+      "archiveSha256": "6ab7307a2b2f08f299b27b3d348bb3cd309dbe9a474aa7cf08c1b5e05609e096"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q2.p16.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q2.p16.r1/attempt-01.zip",
+      "archiveSha256": "10fb7d9d913fb301d10a22b70691a88ec99d116f65738dce8e0569d9117b0b22"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q2.p16.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q2.p16.r2/attempt-01.zip",
+      "archiveSha256": "53fa9eb34725ea44b958b686dd0fb48f174119f5c79998faceb630d0831d23f8"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q2.p16.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q2.p16.r3/attempt-01.zip",
+      "archiveSha256": "bdb5f314bf491eb02b324949a34bfbe3e9a8cc0f158cfa9649d83e80b5990d47"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q2.p64.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q2.p64.r1/attempt-01.zip",
+      "archiveSha256": "a350d697d441ff127e0c8991b305139ab8bd5352935b067784b549ef1b4aef51"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q2.p64.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q2.p64.r2/attempt-01.zip",
+      "archiveSha256": "d2150f13790cbebc16be3158e235a2dacb3bcb99a217c872efc93d1d928df130"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m16.q2.p64.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m16.q2.p64.r3/attempt-01.zip",
+      "archiveSha256": "a03315a6da53ce9ba68eed205922ffa0fbec6013e0246b77b75a95fa97a7e21d"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q0.p1.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q0.p1.r1/attempt-01.zip",
+      "archiveSha256": "5ae9cf36d4b088a3308b3a287d1d04e7d363cbdab648940ddb3daf378e6b19d5"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q0.p1.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q0.p1.r2/attempt-01.zip",
+      "archiveSha256": "156173ad45a47407de147ed06642dd45c996c75e2d6b488418f134ec98adcb54"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q0.p1.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q0.p1.r3/attempt-01.zip",
+      "archiveSha256": "f02c190d128bf621306b3a5680a1cad202767c2f0a0380a354ac9fd4c2579684"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q0.p128.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q0.p128.r1/attempt-01.zip",
+      "archiveSha256": "89f653fb736d06b989d29e3ed95de0cea0a3ddd8a900f65afc1a3c2141db1a2b"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q0.p128.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q0.p128.r2/attempt-01.zip",
+      "archiveSha256": "7fc9532bef7e6ba1459480f1fc3a28c77790d70230cc916c270e9cabadafcdf3"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q0.p128.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q0.p128.r3/attempt-01.zip",
+      "archiveSha256": "0b05b4bc481bb55435423392cbf8ceafbc34f609d755bafa43eb1e9690e40ef0"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q0.p16.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q0.p16.r1/attempt-01.zip",
+      "archiveSha256": "9333c00bea51ba5726c75e978c80afcc450aad162583807076ae49db4690cc21"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q0.p16.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q0.p16.r2/attempt-01.zip",
+      "archiveSha256": "cb4204eaa8d4063319eac411a23279a1a0a61a716cfedd5a49d918e5a81c6bbd"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q0.p16.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q0.p16.r3/attempt-01.zip",
+      "archiveSha256": "d48ea942becdc5f0ba1df314d1ef3a6a59543daa40c2ee735326cd5f451c2c97"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q0.p64.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q0.p64.r1/attempt-01.zip",
+      "archiveSha256": "42a187c28e0467dc764cf3c08e568ed2376bd68ee5372d45f415363e938cfeff"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q0.p64.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q0.p64.r2/attempt-01.zip",
+      "archiveSha256": "60de9b630878c49032d72d51b56343fd33fb514d892bc543719fecda64ab8e4a"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q0.p64.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q0.p64.r3/attempt-01.zip",
+      "archiveSha256": "7320e42ede8a5cb7c3f86155aae07feb0376b3abff3d7e6ef90d2b57a9775adb"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q1.p1.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q1.p1.r1/attempt-01.zip",
+      "archiveSha256": "a02f62cf5e96e483ca465dc7276171555e678f192e5eb24167801ae7d0e21625"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q1.p1.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q1.p1.r2/attempt-01.zip",
+      "archiveSha256": "bcdc5e1a9546ee8caa11141d54110fdfec89decb4df8254a73284e9d9e97a7a5"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q1.p1.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q1.p1.r3/attempt-01.zip",
+      "archiveSha256": "12bf7b41666b892be13f5f4ca3a98849e2af850050042b9a6af236e594743973"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q1.p128.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q1.p128.r1/attempt-01.zip",
+      "archiveSha256": "6a66c62990cf4025a02b9551ac4bd0f8056a98dc5d9e7954e095d5e45b2b1f86"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q1.p128.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q1.p128.r2/attempt-01.zip",
+      "archiveSha256": "7c39570d645a85c2b51bdf58492f86d61b55288cdf2afcf8eed70ccca422ebd2"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q1.p128.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q1.p128.r3/attempt-01.zip",
+      "archiveSha256": "205788a63f995ab33fd2b6713c502badb68dd3a584e25d43c40e629a41e6e9a1"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q1.p16.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q1.p16.r1/attempt-01.zip",
+      "archiveSha256": "868e8123592ec887bb088774b487ab017b5ac9b117ccf871007a041f8e61bef9"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q1.p16.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q1.p16.r2/attempt-01.zip",
+      "archiveSha256": "ddfd9bf40cf7ee5e1d29081a748c7bfcad16ec3c7fabe3998996c2913622aa06"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q1.p16.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q1.p16.r3/attempt-01.zip",
+      "archiveSha256": "b38eec889dadc89f702d54a9003481bd85dc22b48885c64d939fa177f5f688a5"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q1.p64.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q1.p64.r1/attempt-01.zip",
+      "archiveSha256": "c65676b2c0dd6a72eb45dc17a979d082650c465912a34a70447241a19ca385ac"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q1.p64.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q1.p64.r2/attempt-01.zip",
+      "archiveSha256": "3b3373a17417ce42fa8bdb6ab086205cb5268a66547da0237475b64995b76139"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q1.p64.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q1.p64.r3/attempt-01.zip",
+      "archiveSha256": "495329ebf896f988498893fc91bf528affefe5c1841a2e3ae0befe5fed31ede2"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q2.p1.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q2.p1.r1/attempt-01.zip",
+      "archiveSha256": "95d98fc198c69e88d7ddb15fe07d1970b2bc0b5ca473b7f458f3b8d94d0d0a85"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q2.p1.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q2.p1.r2/attempt-01.zip",
+      "archiveSha256": "47d3ecdf670372b7bc10bb94089943fbc4a41f1a0ba8a42b93f0f597d29a8a9f"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q2.p1.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q2.p1.r3/attempt-01.zip",
+      "archiveSha256": "2c062b5ea4b5d90ecfbb5b93a1f5887aca2bb0330dfaea85d1dffeebe5378174"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q2.p128.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q2.p128.r1/attempt-01.zip",
+      "archiveSha256": "6de6fbf47e287064219f176dc08942d940de399b8fd7010981e05d0581d4d9ce"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q2.p128.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q2.p128.r2/attempt-01.zip",
+      "archiveSha256": "4732d645c2f20eadbb9a14ae02265283b19ba872b055c704eada96d008ce51f8"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q2.p128.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q2.p128.r3/attempt-01.zip",
+      "archiveSha256": "e71c936934ace1d366bb1372c393693ae1bdf784a0b52f486bc466882bb5fbbf"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q2.p16.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q2.p16.r1/attempt-01.zip",
+      "archiveSha256": "eb520e08d4b041daff4495c42c0d5892e0c8c93831894f2aa4e51b6361ada512"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q2.p16.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q2.p16.r2/attempt-01.zip",
+      "archiveSha256": "3af50c3d3cbc8f262ac3e523e95f533e1c8c46363afac2613a6be4c6690544e1"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q2.p16.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q2.p16.r3/attempt-01.zip",
+      "archiveSha256": "39026e8a082fb5d75d9681363ceb4bf6e8fd3a5ec84eeccd85f0f9f739e4d525"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q2.p64.r1/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q2.p64.r1/attempt-01.zip",
+      "archiveSha256": "3e3e3b3a53e7731aece0267a51bddd52433ae60c3fa823453606d04161d1cd63"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q2.p64.r2/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q2.p64.r2/attempt-01.zip",
+      "archiveSha256": "f655731be813d1dfc4d4c372e1e817525ca5eb1160d9b8d45f16256ac49ed784"
+    },
+    {
+      "status": "sealed-archive",
+      "source": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261018-instrumentation-v2/raw/Mosquitto-validation/attempts/Mosquitto.m256.q2.p64.r3/attempt-01",
+      "archiveVerified": true,
+      "archivePath": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/attempts/Mosquitto-validation/Mosquitto.m256.q2.p64.r3/attempt-01.zip",
+      "archiveSha256": "44576c12077aaef43cc071544d58a6530f3f4165b75807fa5616a24538eaea1d"
+    }
+  ],
+  "interruptedAttemptCount": 1,
+  "note": "Scientific points and campaign identity match; sealed archives verified; unsealed interruptions copied byte-for-byte and retained at source, not declared archived. Input hashes may differ between compact and restored representation."
+}

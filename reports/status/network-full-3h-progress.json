@@ -1,0 +1,59 @@
+{
+  "status": "budgetExhausted",
+  "phase": "matrix",
+  "executionManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+  "verified": 106,
+  "technicalErrors": 2,
+  "counts": {
+    "pilot": {
+      "done": 0,
+      "unresolvedErrors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    "matrix": {
+      "done": 106,
+      "unresolvedErrors": 2,
+      "warnings": 16,
+      "total": 162
+    },
+    "replay": {
+      "done": 0,
+      "unresolvedErrors": 0,
+      "warnings": 0,
+      "total": 6
+    },
+    "diagnostic": {
+      "done": 0,
+      "unresolvedErrors": 0,
+      "warnings": 0,
+      "total": 54
+    }
+  },
+  "attempts": {
+    "pilot": {
+      "total": 0,
+      "failed": 0
+    },
+    "matrix": {
+      "total": 109,
+      "failed": 3
+    },
+    "replay": {
+      "total": 0,
+      "failed": 0
+    },
+    "diagnostic": {
+      "total": 0,
+      "failed": 0
+    }
+  },
+  "warnings": 16,
+  "active": {
+    "workers": 2,
+    "jobs": {},
+    "remainingSeconds": 0
+  },
+  "reason": "executionBudgetExhausted",
+  "observedAtUtc": "2026-10-24T21:01:41.067005+00:00"
+}

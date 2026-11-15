@@ -1,0 +1,12 @@
+{
+  "snapshotSha256": "833add19e9b4ca3bdfb713d4fe42d0cee606976a6408bac12b11c0e85ed82011",
+  "partialVerificationSha256": "855dc7976932bfd624412023b02850bb91d36f8c810aa3203e7b5ca9e7be27a5",
+  "attempted": 24,
+  "completed": 23,
+  "failed": 1,
+  "notYetAttempted": 6,
+  "publicationAttemptDenominatorReplaced": false,
+  "partialLossMeaning": "Fraction of expected ID,receiver pairs not observed by fixed end of drain; not established eventual loss",
+  "failedReceiverP99Omitted": true,
+  "failureLogObservationSha256": "83d2f9898b107254cfa0f9a152248c0b0939a9e59d05e88fe786409eda920d99"
+}

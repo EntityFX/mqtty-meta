@@ -1,0 +1,654 @@
+{
+  "stage": "fidelity",
+  "measurementSeconds": 2,
+  "runs": [
+    {
+      "key": "m16.q0.p1.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 30673.97407368607,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q0.p1.s42/20261016T202505242Z-d81162b22cd64deebf29fc625e322cec"
+    },
+    {
+      "key": "m16.q0.p1.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 30673.97407368607,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q0.p1.s43/20261016T202505314Z-9d601124bd8a4ab1a1198797dab8483e"
+    },
+    {
+      "key": "m16.q0.p1.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 30673.97407368607,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q0.p1.s44/20261016T202505198Z-36416b2d11ab46328cc5714f56bd1954"
+    },
+    {
+      "key": "m16.q0.p16.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 54717.36425707844,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q0.p16.s42/20261016T202505255Z-57d634137aa4473ba6e2f815f49caace"
+    },
+    {
+      "key": "m16.q0.p16.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 54717.36425707844,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q0.p16.s43/20261016T202527489Z-e1f3d5cd28df4064ae603ce882cfa2eb"
+    },
+    {
+      "key": "m16.q0.p16.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 54717.36425707844,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q0.p16.s44/20261016T202527492Z-1344db1f68934443a5606089795ed78e"
+    },
+    {
+      "key": "m16.q0.p64.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 54879.85292418662,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q0.p64.s42/20261016T202527481Z-0fe597adfa534c7fbf07c7deb255be37"
+    },
+    {
+      "key": "m16.q0.p64.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 54879.85292418662,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q0.p64.s43/20261016T202645637Z-7762cbcd61ab41949e92c54c297620d3"
+    },
+    {
+      "key": "m16.q0.p64.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 54879.85292418662,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q0.p64.s44/20261016T202707661Z-ee9194e285944c4ea9b937faf9b84c3d"
+    },
+    {
+      "key": "m16.q0.p128.s42",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 53828.642520193534,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q0.p128.s42/20261016T202709753Z-b5384398428344afb0a82cff5a22850d"
+    },
+    {
+      "key": "m16.q0.p128.s43",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 53828.642520193534,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q0.p128.s43/20261016T203104537Z-0c761a9af2c2461bbefec0a7364a651c"
+    },
+    {
+      "key": "m16.q0.p128.s44",
+      "bytes": 16,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 53828.642520193534,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q0.p128.s44/20261016T203216803Z-ed397a5c977a45fc8dc038b816e3de53"
+    },
+    {
+      "key": "m16.q1.p1.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 9050.99189547945,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q1.p1.s42/20261016T203242875Z-deefc4853e6d4d2d88f3371c968e4146"
+    },
+    {
+      "key": "m16.q1.p1.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 9050.99189547945,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q1.p1.s43/20261016T203304939Z-e106a4680d5e40aab9c15e615d5686ba"
+    },
+    {
+      "key": "m16.q1.p1.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 9050.99189547945,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q1.p1.s44/20261016T203327031Z-bbe677fc2c5a4d0a92e7494ba4550870"
+    },
+    {
+      "key": "m16.q1.p16.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 18424.34465057939,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q1.p16.s42/20261016T203347128Z-657034e676dc4eaa96a2e4dd163a2abb"
+    },
+    {
+      "key": "m16.q1.p16.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 18424.34465057939,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q1.p16.s43/20261016T203533471Z-a29dfcd04ed9409baf0d0af3ef69cfc5"
+    },
+    {
+      "key": "m16.q1.p16.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 18424.34465057939,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q1.p16.s44/20261016T203709795Z-6b1df1d05d944e19a3ea29c9c1cc8b19"
+    },
+    {
+      "key": "m16.q1.p64.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 20179.382680945022,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q1.p64.s42/20261016T203759939Z-92e8d628d3dc447eba8fd0c359dbdb7e"
+    },
+    {
+      "key": "m16.q1.p64.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 20179.382680945022,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q1.p64.s43/20261016T203852135Z-4aa908993a844b0b9ce90c00e4df89a7"
+    },
+    {
+      "key": "m16.q1.p64.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 20179.382680945022,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q1.p64.s44/20261016T204148724Z-c71345a862694801b15679663ff353c0"
+    },
+    {
+      "key": "m16.q1.p128.s42",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 19488.199309239833,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q1.p128.s42/20261016T204256913Z-27f55fd7d78b4c888a09a32d277d3078"
+    },
+    {
+      "key": "m16.q1.p128.s43",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 19488.199309239833,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q1.p128.s43/20261016T204337081Z-ed5aff93eb654fe2afbfeb7fc5675157"
+    },
+    {
+      "key": "m16.q1.p128.s44",
+      "bytes": 16,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 19488.199309239833,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q1.p128.s44/20261016T204431343Z-267c97e320534c64975701fb8f67c01f"
+    },
+    {
+      "key": "m16.q2.p1.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 3117.0596696404555,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q2.p1.s42/20261016T204723961Z-3b691f4cfb274e90a3817a4d96ba8ab8"
+    },
+    {
+      "key": "m16.q2.p1.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 3117.0596696404555,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q2.p1.s43/20261016T204743960Z-ffbfa86d2bf24019973e00ea48ef5ea2"
+    },
+    {
+      "key": "m16.q2.p1.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 3117.0596696404555,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q2.p1.s44/20261016T204804064Z-63c69eaa6df14508a043000702dcd031"
+    },
+    {
+      "key": "m16.q2.p16.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 7480.849592834281,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q2.p16.s42/20261016T204824157Z-1165d3ff64e245a4a09cf7d909e32a93"
+    },
+    {
+      "key": "m16.q2.p16.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 7480.849592834281,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q2.p16.s43/20261016T205004480Z-00e60a5d12384ea3a72f2a533f684222"
+    },
+    {
+      "key": "m16.q2.p16.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 7480.849592834281,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q2.p16.s44/20261016T205142786Z-75913d81884c4d8686cedf6e6037f5c5"
+    },
+    {
+      "key": "m16.q2.p64.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 7473.742981057895,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q2.p64.s42/20261016T205321035Z-0efdc26a660d471d8b310a3c76aa6af3"
+    },
+    {
+      "key": "m16.q2.p64.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 7473.742981057895,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q2.p64.s43/20261016T205441323Z-7bb29c1248594edcb312629b46d573ae"
+    },
+    {
+      "key": "m16.q2.p64.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 7473.742981057895,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q2.p64.s44/20261016T205509399Z-85ff4f5140fd4d28a1f2d6b096c2f16a"
+    },
+    {
+      "key": "m16.q2.p128.s42",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 7280.472751547802,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q2.p128.s42/20261016T205625684Z-c0dfa6037077428dbc9b94f8a8c35fb3"
+    },
+    {
+      "key": "m16.q2.p128.s43",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 7280.472751547802,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q2.p128.s43/20261016T205936234Z-1dfd60efdf1a4a05b7a5f9ad1b1bcedf"
+    },
+    {
+      "key": "m16.q2.p128.s44",
+      "bytes": 16,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 7280.472751547802,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m16.q2.p128.s44/20261016T210102661Z-c5042e0c1ae24bc5a632de6b94c36982"
+    },
+    {
+      "key": "m256.q0.p1.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 25731.212299430306,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q0.p1.s42/20261016T210130783Z-5d9342d35efe400ba84e9e800bf86005"
+    },
+    {
+      "key": "m256.q0.p1.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 25731.212299430306,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q0.p1.s43/20261016T210152814Z-316ff67ee9844d38bb1a1f8d45331acb"
+    },
+    {
+      "key": "m256.q0.p1.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 25731.212299430306,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q0.p1.s44/20261016T210214899Z-d4ec71505864407e9278eeee046065fe"
+    },
+    {
+      "key": "m256.q0.p16.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 54735.86355324375,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q0.p16.s42/20261016T210236986Z-070e53bb291849528d15b9205fb1bb9b"
+    },
+    {
+      "key": "m256.q0.p16.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 54735.86355324375,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q0.p16.s43/20261016T210419397Z-a20ab5d9153c4a52aaa56007ee659478"
+    },
+    {
+      "key": "m256.q0.p16.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 54735.86355324375,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q0.p16.s44/20261016T210601618Z-6b72e562cf174957964dc50d2dc8805e"
+    },
+    {
+      "key": "m256.q0.p64.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 53749.37773318486,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q0.p64.s42/20261016T210739904Z-250487879a8a4a98943249fa0848a2d2"
+    },
+    {
+      "key": "m256.q0.p64.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 53749.37773318486,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q0.p64.s43/20261016T210932292Z-1d245e334675420ba8de4ee1d8d90ceb"
+    },
+    {
+      "key": "m256.q0.p64.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 53749.37773318486,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q0.p64.s44/20261016T211244953Z-04b51d6d73bb46809aa87b469914e023"
+    },
+    {
+      "key": "m256.q0.p128.s42",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 50991.90453661358,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q0.p128.s42/20261016T211313030Z-803dec957d5a4b18841089d32b263027"
+    },
+    {
+      "key": "m256.q0.p128.s43",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 50991.90453661358,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q0.p128.s43/20261016T211419207Z-b41e1a7223fa405586f08e1d82d69ba7"
+    },
+    {
+      "key": "m256.q0.p128.s44",
+      "bytes": 256,
+      "qos": 0,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 50991.90453661358,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q0.p128.s44/20261016T211503361Z-d4a28ae3f1404a8691b1be36da48207b"
+    },
+    {
+      "key": "m256.q1.p1.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 8779.059376161043,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q1.p1.s42/20261016T211819921Z-39ca1db64f22415fac3a2aab6b9713d9"
+    },
+    {
+      "key": "m256.q1.p1.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 8779.059376161043,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q1.p1.s43/20261016T211840005Z-c2199d1cb76143d6be1c3bfcf0a557ac"
+    },
+    {
+      "key": "m256.q1.p1.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 8779.059376161043,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q1.p1.s44/20261016T211900056Z-b4d3580d36b94382961a187e31ed5842"
+    },
+    {
+      "key": "m256.q1.p16.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 18114.87615749889,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q1.p16.s42/20261016T211920173Z-d3e89796d50c490789b210d8b65d1adf"
+    },
+    {
+      "key": "m256.q1.p16.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 18114.87615749889,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q1.p16.s43/20261016T212104518Z-17b99e3dfce24fd49d8a3ef34e2599f9"
+    },
+    {
+      "key": "m256.q1.p16.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 18114.87615749889,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q1.p16.s44/20261016T212240858Z-2bd8243f8a5b41e199f422fa29d4ee23"
+    },
+    {
+      "key": "m256.q1.p64.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 18899.170998936363,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q1.p64.s42/20261016T212427246Z-b2ee82acb50c46528790a28510cb0d26"
+    },
+    {
+      "key": "m256.q1.p64.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 18899.170998936363,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q1.p64.s43/20261016T212431220Z-86acef9bd9d24b4189a5a5cde8f54cd9"
+    },
+    {
+      "key": "m256.q1.p64.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 18899.170998936363,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q1.p64.s44/20261016T212513414Z-9d5c4ad2a60e494d90cdaa2df3f56ba7"
+    },
+    {
+      "key": "m256.q1.p128.s42",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 19702.412046582904,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q1.p128.s42/20261016T212535494Z-c4d9c78eaabf43ccad6a713f488097db"
+    },
+    {
+      "key": "m256.q1.p128.s43",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 19702.412046582904,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q1.p128.s43/20261016T213026438Z-14e2dbcf7a68484a8a6798a690c84494"
+    },
+    {
+      "key": "m256.q1.p128.s44",
+      "bytes": 256,
+      "qos": 1,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 19702.412046582904,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q1.p128.s44/20261016T213040456Z-078110527ad2427f9af15c3d00f57923"
+    },
+    {
+      "key": "m256.q2.p1.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 42,
+      "offeredRps": 3101.953972368621,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q2.p1.s42/20261016T213108566Z-026a894ea99e47728b4e809c1b574404"
+    },
+    {
+      "key": "m256.q2.p1.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 43,
+      "offeredRps": 3101.953972368621,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q2.p1.s43/20261016T213128689Z-daa16d47fa7449b9ac9309dbfa561567"
+    },
+    {
+      "key": "m256.q2.p1.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 1,
+      "seed": 44,
+      "offeredRps": 3101.953972368621,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q2.p1.s44/20261016T213148766Z-2e5ae52133d24038bbaee0d31ce652fd"
+    },
+    {
+      "key": "m256.q2.p16.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 42,
+      "offeredRps": 7443.331299866865,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q2.p16.s42/20261016T213208860Z-277cd8b6010841798ff8b2c49f54fd01"
+    },
+    {
+      "key": "m256.q2.p16.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 43,
+      "offeredRps": 7443.331299866865,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q2.p16.s43/20261016T213347214Z-42a5723cafb0494ca8a7867d99c3ae4a"
+    },
+    {
+      "key": "m256.q2.p16.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 16,
+      "seed": 44,
+      "offeredRps": 7443.331299866865,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q2.p16.s44/20261016T213525532Z-fefac6dc3c2f4fc0b0258557f042b2bc"
+    },
+    {
+      "key": "m256.q2.p64.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 42,
+      "offeredRps": 7151.58261175171,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q2.p64.s42/20261016T213705871Z-409b07f285d24c11b1949fe6fd159108"
+    },
+    {
+      "key": "m256.q2.p64.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 43,
+      "offeredRps": 7151.58261175171,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q2.p64.s43/20261016T213711877Z-97f914b9444340cb8d670e7af5ad4873"
+    },
+    {
+      "key": "m256.q2.p64.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 64,
+      "seed": 44,
+      "offeredRps": 7151.58261175171,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q2.p64.s44/20261016T214216965Z-c19b7fc6a09b426e978b4273e55042a4"
+    },
+    {
+      "key": "m256.q2.p128.s42",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 42,
+      "offeredRps": 7284.516975270376,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q2.p128.s42/20261016T214255116Z-c94b07dd533444828e4ba57d86f468cc"
+    },
+    {
+      "key": "m256.q2.p128.s43",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 43,
+      "offeredRps": 7284.516975270376,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q2.p128.s43/20261016T214311186Z-2db5f9027b5746e4a0cc23a279be6098"
+    },
+    {
+      "key": "m256.q2.p128.s44",
+      "bytes": 256,
+      "qos": 2,
+      "publishers": 128,
+      "seed": 44,
+      "offeredRps": 7284.516975270376,
+      "directory": "/run/media/entityfx/hd250/mqtty-evidence/overnight-20261016-service-v1/evidence/brokers/Aedes/simulations/fidelity-2s-overnight-v1/m256.q2.p128.s44/20261016T214337281Z-3f434278ced44afba70732c4694f2699"
+    }
+  ]
+}

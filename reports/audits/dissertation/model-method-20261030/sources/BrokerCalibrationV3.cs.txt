@@ -1,0 +1,327 @@
+0001 using System.Security.Cryptography;
+0002 using System.Text.Json;
+0003 using System.Text.Json.Nodes;
+0004 using EntityFX.MqttY.Contracts.Mqtt;
+0005 using EntityFX.MqttY.Contracts.Mqtt.BrokerProfile;
+0006 
+0007 namespace EntityFX.MqttY.Plugin.Mqtt.BrokerProfile;
+0008 
+0009 /// <summary>Explicit conversion of observations into admission and processing parameters.
+0010 /// Rate rejection is a model assumption, not a measurement inferred from successful throughput.</summary>
+0011 public static class BrokerCalibrationV3
+0012 {
+0013     private static readonly string[] Knots = { "minMs", "p50Ms", "p75Ms", "p95Ms", "p99Ms", "maxMs" };
+0014     private static readonly string[] Brokers = { "Aedes", "Mosquitto", "EMQX", "ActiveMQ" };
+0015     private static readonly JsonSerializerOptions Json = new() { PropertyNamingPolicy = JsonNamingPolicy.CamelCase, WriteIndented = true };
+0016 
+0017     public static byte[] Calibrate(byte[] observationsBytes, string mqttYCommitSha, double rateRejectionRate = 0, string? broker = null,
+0018         string? coverageProtocol = null)
+0019     {
+0020         var compact = Compact(coverageProtocol);
+0021         var singlePoint = coverageProtocol == MqttBrokerProfile.SinglePointCoverage;
+0022         if ((compact || singlePoint) && broker == null) throw Invalid("Limited coverage requires an explicit single broker.");
+0023         Hash(mqttYCommitSha, 40);
+0024         Rate(rateRejectionRate);
+0025         var source = Parse(observationsBytes);
+0026         Fields(source, "schemaVersion", "runCount", "provenance", "points");
+0027         Header(source, singlePoint ? 3 : compact ? 36 : broker == null ? 288 : 72);
+0028         if (broker != null && !Brokers.Contains(broker)) throw Invalid("Unknown calibration broker.");
+0029         ValidateObservationProvenance(Object(source, "provenance"));
+0030         var outputPoints = new JsonArray();
+0031         foreach (var point in Points(source, broker, compact, singlePoint))
+0032         {
+0033             Fields(point, "broker", "messageBytes", "qos", "publishers", "repeats", "attemptedRps", "completedRps",
+0034                 "publishFailureRate", "deliveryLossRate", "observedLatencyQuantiles", "observedLatencyStatistics", "rttBaselineMs");
+0035             var attempted = Statistics(Object(point, "attemptedRps"));
+0036             var completed = Statistics(Object(point, "completedRps"));
+0037             var failure = Statistics(Object(point, "publishFailureRate"), 1);
+0038             var loss = Statistics(Object(point, "deliveryLossRate"), 1);
+0039             ValidateTargets(attempted, completed, failure, loss);
+0040             var qos = Integer(point, "qos");
+0041             var rtt = Number(point, "rttBaselineMs");
+0042             if (rtt < 0) throw Invalid("RTT must be non-negative.");
+0043             var observed = Quantiles(point["observedLatencyQuantiles"], qos);
+0044             if (qos == 0)
+0045             {
+0046                 if (point["observedLatencyStatistics"] != null) throw Invalid("QoS0 latency statistics must be null.");
+0047             }
+0048             else
+0049             {
+0050                 var statistics = Object(point, "observedLatencyStatistics");
+0051                 Fields(statistics, Knots);
+0052                 foreach (var knot in Knots)
+0053                     Equal(Number(observed!, knot), Statistics(Object(statistics, knot)), "Latency statistics/quantiles differ.");
+0054             }
+0055             var conditional = ConditionalFailure(failure, rateRejectionRate);
+0056             outputPoints.Add(new JsonObject
+0057             {
+0058                 ["broker"] = Text(point, "broker"), ["messageBytes"] = Integer(point, "messageBytes"),
+0059                 ["qos"] = qos, ["publishers"] = Integer(point, "publishers"), ["repeats"] = 3,
+0060                 ["attemptedRps"] = attempted, ["targetCompletedRps"] = completed,
+0061                 ["targetPublishFailureRate"] = failure, ["rateRejectionRate"] = rateRejectionRate,
+0062                 ["capacityRps"] = attempted * (1 - rateRejectionRate),
+0063                 ["conditionalPublishFailureRate"] = conditional, ["conditionalDeliveryLossRate"] = loss,
+0064                 ["observedLatencyQuantiles"] = Clone(observed),
+0065                 ["processingLatencyQuantiles"] = Processing(observed, qos, rtt),
+0066                 ["latencyStatus"] = qos == 0 ? "notApplicable" : "observed",
+0067                 ["rttBaselineMs"] = rtt
+0068             });
+0069         }
+0070         var output = new JsonObject
+0071         {
+0072             ["schemaVersion"] = 3, ["artifactType"] = singlePoint ? "broker-calibration-single-point-v1" : compact ? "broker-calibration-compact-v1" : "broker-calibration", ["runCount"] = Integer(source, "runCount"),
+0073             ["profileClientCountMode"] = "publishers",
+0074             ["provenance"] = new JsonObject
+0075             {
+0076                 ["observationsSha256"] = Convert.ToHexString(SHA256.HashData(observationsBytes)).ToLowerInvariant(),
+0077                 ["mqttYCommitSha"] = mqttYCommitSha,
+0078                 ["method"] = "conditional-failure-rtt-v1",
+0079                 ["observations"] = Clone(source["provenance"])
+0080             },
+0081             ["points"] = outputPoints
+0082         };
+0083         if (compact || singlePoint) output["provenance"]!["coverageProtocol"] = coverageProtocol;
+0084         return JsonSerializer.SerializeToUtf8Bytes(output, Json);
+0085     }
+0086 
+0087     internal static IReadOnlyDictionary<string, MqttBrokerProfile> ReadProfiles(byte[] bytes)
+0088     {
+0089         var source = Parse(bytes);
+0090         Fields(source, "schemaVersion", "artifactType", "runCount", "profileClientCountMode", "provenance", "points");
+0091         var compact = Text(source, "artifactType") == "broker-calibration-compact-v1";
+0092         var singlePoint = Text(source, "artifactType") == "broker-calibration-single-point-v1";
+0093         var scope = singlePoint || compact || Integer(source, "runCount") == 72
+0094             ? Text(ObjectInPoints(source), "broker") : null;
+0095         Header(source, singlePoint ? 3 : compact ? 36 : scope == null ? 288 : 72);
+0096         if ((!singlePoint && !compact && Text(source, "artifactType") != "broker-calibration") || Text(source, "profileClientCountMode") != "publishers")
+0097             throw Invalid("Expected broker-calibration artifact indexed by publishers.");
+0098         var provenance = Object(source, "provenance");
+0099         if (compact || singlePoint)
+0100         {
+0101             Fields(provenance, "observationsSha256", "mqttYCommitSha", "method", "observations", "coverageProtocol");
+0102             if (Text(provenance, "coverageProtocol") != (singlePoint ? MqttBrokerProfile.SinglePointCoverage : "compact-v1"))
+0103                 throw Invalid("Limited coverage must match the artifact type.");
+0104         }
+0105         else Fields(provenance, "observationsSha256", "mqttYCommitSha", "method", "observations");
+0106         Hash(Text(provenance, "observationsSha256"), 64);
+0107         Hash(Text(provenance, "mqttYCommitSha"), 40);
+0108         if (Text(provenance, "method") != "conditional-failure-rtt-v1") throw Invalid("Unknown calibration method.");
+0109         ValidateObservationProvenance(Object(provenance, "observations"));
+0110         var profiles = new Dictionary<string, MqttBrokerProfile>(StringComparer.Ordinal);
+0111         var points = Points(source, scope, compact, singlePoint).ToArray();
+0112         foreach (var point in points)
+0113         {
+0114             Fields(point, "broker", "messageBytes", "qos", "publishers", "repeats", "attemptedRps", "targetCompletedRps",
+0115                 "targetPublishFailureRate", "rateRejectionRate", "capacityRps", "conditionalPublishFailureRate",
+0116                 "conditionalDeliveryLossRate", "observedLatencyQuantiles", "processingLatencyQuantiles", "latencyStatus", "rttBaselineMs");
+0117             var attempted = Number(point, "attemptedRps");
+0118             var completed = Number(point, "targetCompletedRps");
+0119             var failure = Number(point, "targetPublishFailureRate");
+0120             ValidateTargets(attempted, completed, failure, Number(point, "conditionalDeliveryLossRate"));
+0121             var rate = Number(point, "rateRejectionRate");
+0122             Equal(ConditionalFailure(failure, rate), Number(point, "conditionalPublishFailureRate"), "Conditional failure formula mismatch.");
+0123             Equal(attempted * (1 - rate), Number(point, "capacityRps"), "Capacity/rate assumption mismatch.");
+0124             var qos = Integer(point, "qos");
+0125             var rtt = Number(point, "rttBaselineMs");
+0126             if (rtt < 0) throw Invalid("RTT must be non-negative.");
+0127             if (Text(point, "latencyStatus") != (qos == 0 ? "notApplicable" : "observed")) throw Invalid("Latency applicability mismatch.");
+0128             var observed = Quantiles(point["observedLatencyQuantiles"], qos);
+0129             var processing = Quantiles(point["processingLatencyQuantiles"], qos);
+0130             var expected = Processing(observed, qos, rtt);
+0131             if (qos != 0) foreach (var knot in Knots)
+0132                 Equal(Number(expected!, knot), Number(processing!, knot), "RTT subtraction mismatch.");
+0133         }
+0134         foreach (var broker in points.GroupBy(p => Text(p, "broker")))
+0135         {
+0136             var profile = new MqttBrokerProfile
+0137             {
+0138                 BrokerType = broker.Key,
+0139                 CoverageProtocol = singlePoint ? MqttBrokerProfile.SinglePointCoverage : null,
+0140                 RequireObservedPublisherCount = singlePoint,
+0141                 MessageSizes = broker.GroupBy(p => Integer(p, "messageBytes")).ToDictionary(g => g.Key, g =>
+0142                     new MqttMessageSizeProfile(g.Key, g.GroupBy(p => (MqttQos)Integer(p, "qos")).ToDictionary(q => q.Key, q =>
+0143                         new CalibratedMqttQosProfile(q.OrderBy(p => Integer(p, "publishers")).Select(p =>
+0144                             new CalibratedMqttQosSample(Integer(p, "publishers"), Number(p, "capacityRps"),
+0145                                 Number(p, "conditionalPublishFailureRate"), Number(p, "conditionalDeliveryLossRate"),
+0146                                 p["processingLatencyQuantiles"]?.Deserialize<LatencyQuantiles>(Json))
+0147                             {
+0148                                 AttemptedRps = Number(p, "attemptedRps"), TargetCompletedRps = Number(p, "targetCompletedRps"),
+0149                                 TargetPublishFailureRate = Number(p, "targetPublishFailureRate"),
+0150                                 ObservedLatencyQuantiles = p["observedLatencyQuantiles"]?.Deserialize<LatencyQuantiles>(Json),
+0151                                 RttBaselineMs = Number(p, "rttBaselineMs")
+0152                             }).ToArray()))))
+0153             };
+0154             profile.Validate();
+0155             profiles.Add(broker.Key, profile);
+0156         }
+0157         return profiles;
+0158     }
+0159 
+0160     private static double ConditionalFailure(double target, double rate)
+0161     {
+0162         Rate(target); Rate(rate);
+0163         if (rate > target || rate == 1) throw Invalid("Uncalibratable point: rate rejection exceeds target failure or admits no messages.");
+0164         return (target - rate) / (1 - rate);
+0165     }
+0166 
+0167     private static void ValidateTargets(double attempted, double completed, double failure, double loss)
+0168     {
+0169         Rate(failure); Rate(loss);
+0170         if (attempted <= 0 || completed < 0 || completed > attempted) throw Invalid("Invalid attempted/completed RPS.");
+0171         // Rates and failure probabilities are means across repeats. Their ratio need not equal
+0172         // the mean failure probability when repeat attempted rates differ.
+0173     }
+0174 
+0175     private static JsonObject? Processing(JsonObject? observed, int qos, double rtt)
+0176     {
+0177         if (qos == 0) return null;
+0178         var result = new JsonObject();
+0179         foreach (var knot in Knots) result[knot] = Math.Max(0, Number(observed!, knot) - qos * rtt);
+0180         return result;
+0181     }
+0182 
+0183     private static JsonObject? Quantiles(JsonNode? value, int qos)
+0184     {
+0185         if (qos == 0)
+0186         {
+0187             if (value != null) throw Invalid("QoS0 latency must be null/notApplicable.");
+0188             return null;
+0189         }
+0190         if (value is not JsonObject result) throw Invalid("QoS1/2 latency quantiles are required.");
+0191         Fields(result, Knots);
+0192         double previous = 0;
+0193         foreach (var knot in Knots)
+0194         {
+0195             var number = Number(result, knot);
+0196             if (number < previous) throw Invalid("Latency knots must be nonnegative and ordered.");
+0197             previous = number;
+0198         }
+0199         return result;
+0200     }
+0201 
+0202     private static JsonObject ObjectInPoints(JsonObject source) =>
+0203         source["points"] is JsonArray { Count: > 0 } points && points[0] is JsonObject first
+0204             ? first : throw Invalid("Calibration points are required.");
+0205 
+0206     private static bool Compact(string? protocol) => protocol switch
+0207     {
+0208         null => false,
+0209         "compact-v1" => true,
+0210         MqttBrokerProfile.SinglePointCoverage => false,
+0211         _ => throw Invalid("Unknown coverage protocol.")
+0212     };
+0213 
+0214     private static IEnumerable<JsonObject> Points(JsonObject source, string? broker = null, bool compact = false, bool singlePoint = false)
+0215     {
+0216         var count = singlePoint ? 1 : compact ? 12 : broker == null ? 96 : 24;
+0217         if (source["points"] is not JsonArray points || points.Count != count) throw Invalid($"Requires all {count} points / {count * 3} runs.");
+0218         var keys = new HashSet<(string, int, int, int)>();
+0219         foreach (var value in points)
+0220         {
+0221             if (value is not JsonObject point) throw Invalid("Point must be an object.");
+0222             var key = (Text(point, "broker"), Integer(point, "messageBytes"), Integer(point, "qos"), Integer(point, "publishers"));
+0223             if (!Brokers.Contains(key.Item1) || (broker != null && key.Item1 != broker) || key.Item2 is not (16 or 256) || key.Item3 is < 0 or > 2 ||
+0224                 (compact ? key.Item4 is not (1 or 16) : key.Item4 is not (1 or 16 or 64 or 128)) || Integer(point, "repeats") != 3 || !keys.Add(key))
+0225                 throw Invalid("Unknown or duplicate point key, or wrong repeats.");
+0226             if (singlePoint && (key.Item2 != 16 || key.Item3 != 1 || key.Item4 != 16))
+0227                 throw Invalid("single-point-v1 requires exactly 16 bytes, QoS 1 and 16 publishers.");
+0228             yield return point;
+0229         }
+0230     }
+0231 
+0232     private static void Header(JsonObject source, int runCount = 288)
+0233     {
+0234         if (Integer(source, "schemaVersion") != 3 || Integer(source, "runCount") != runCount)
+0235             throw Invalid($"Expected schemaVersion 3 and {runCount} successful runs.");
+0236     }
+0237 
+0238     private static void ValidateObservationProvenance(JsonObject provenance)
+0239     {
+0240         Fields(provenance, "identity", "inputSha256");
+0241         var identity = Object(provenance, "identity");
+0242         Fields(identity, "campaignId", "configSha256", "standSha256", "deploymentMode", "cpuMode", "mqttBenchmarkCommitSha");
+0243         Text(identity, "campaignId");
+0244         Hash(Text(identity, "configSha256"), 64); Hash(Text(identity, "standSha256"), 64);
+0245         Hash(Text(identity, "mqttBenchmarkCommitSha"), 40);
+0246         if (Text(identity, "deploymentMode") is not ("singleHostSequential" or "distributedHosts") ||
+0247             Text(identity, "cpuMode") is not ("singleCorePinned" or "hostAllCores")) throw Invalid("Unknown deployment/CPU mode.");
+0248         var inputs = Object(provenance, "inputSha256");
+0249         if (inputs.Count == 0) throw Invalid("Input hashes are required.");
+0250         foreach (var input in inputs)
+0251         {
+0252             if (string.IsNullOrWhiteSpace(input.Key) || Path.IsPathRooted(input.Key) || input.Key.Split('/', '\\').Contains(".."))
+0253                 throw Invalid("Input hash paths must be relative.");
+0254             Hash(Text(inputs, input.Key), 64);
+0255         }
+0256     }
+0257 
+0258     private static double Statistics(JsonObject value, double maximum = double.MaxValue)
+0259     {
+0260         Fields(value, "mean", "standardDeviation", "ci95HalfWidth", "ci95Lower", "ci95Upper", "min", "max", "count");
+0261         var mean = Number(value, "mean");
+0262         var half = Number(value, "ci95HalfWidth");
+0263         var deviation = Number(value, "standardDeviation");
+0264         var min = Number(value, "min");
+0265         var max = Number(value, "max");
+0266         // Averaging three binary64 values rounds the additions and division. Allow a
+0267         // small multiple of machine epsilon at the data's scale, not an absolute
+0268         // floor of 1 (which would hide large relative errors in very small rates).
+0269         const double meanRelativeTolerance = 8 * 2.2204460492503131e-16;
+0270         // Scale each comparison separately: a large maximum must not conceal a
+0271         // mean materially below a tiny positive minimum.
+0272         var lowerTolerance = Math.Max(double.Epsilon, meanRelativeTolerance * Math.Max(Math.Abs(mean), Math.Abs(min)));
+0273         var upperTolerance = Math.Max(double.Epsilon, meanRelativeTolerance * Math.Max(Math.Abs(mean), Math.Abs(max)));
+0274         if (Integer(value, "count") != 3 || deviation < 0 || half < 0 ||
+0275             min < 0 || max > maximum || min > max || mean < 0 || mean > maximum ||
+0276             min - mean > lowerTolerance || mean - max > upperTolerance)
+0277             throw Invalid("Invalid statistics/count.");
+0278         Equal(4.30265272975 * deviation / Math.Sqrt(3), half, "Invalid Student-t CI95 for three repeats.");
+0279         Equal(mean - half, Number(value, "ci95Lower"), "Invalid CI lower bound.");
+0280         Equal(mean + half, Number(value, "ci95Upper"), "Invalid CI upper bound.");
+0281         return mean;
+0282     }
+0283 
+0284     private static JsonObject Parse(byte[] bytes)
+0285     {
+0286         try
+0287         {
+0288             using var document = JsonDocument.Parse(bytes);
+0289             ValidateUniqueProperties(document.RootElement);
+0290             return JsonNode.Parse(bytes) as JsonObject ?? throw Invalid("Expected JSON object.");
+0291         }
+0292         catch (JsonException error) { throw new InvalidDataException("Invalid JSON.", error); }
+0293     }
+0294 
+0295     private static void ValidateUniqueProperties(JsonElement element)
+0296     {
+0297         if (element.ValueKind == JsonValueKind.Object)
+0298         {
+0299             var names = new HashSet<string>(StringComparer.Ordinal);
+0300             foreach (var property in element.EnumerateObject())
+0301             {
+0302                 if (!names.Add(property.Name)) throw Invalid("Duplicate JSON property.");
+0303                 ValidateUniqueProperties(property.Value);
+0304             }
+0305         }
+0306         else if (element.ValueKind == JsonValueKind.Array)
+0307             foreach (var item in element.EnumerateArray()) ValidateUniqueProperties(item);
+0308     }
+0309 
+0310     private static void Fields(JsonObject value, params string[] expected)
+0311     {
+0312         if (value.Count != expected.Length || expected.Any(field => !value.ContainsKey(field)))
+0313             throw Invalid("Missing or unknown schema field.");
+0314     }
+0315     private static JsonObject Object(JsonObject value, string name) => value[name] as JsonObject ?? throw Invalid($"Missing object {name}.");
+0316     private static string Text(JsonObject value, string name) => value[name] is JsonValue item && item.TryGetValue<string>(out var text) &&
+0317         !string.IsNullOrWhiteSpace(text) ? text : throw Invalid($"Missing string {name}.");
+0318     private static double Number(JsonObject value, string name) => value[name] is JsonValue item && item.TryGetValue<double>(out var number) &&
+0319         double.IsFinite(number) ? number : throw Invalid($"Missing finite number {name}.");
+0320     private static int Integer(JsonObject value, string name) => value[name] is JsonValue item && item.TryGetValue<int>(out var number)
+0321         ? number : throw Invalid($"Missing integer {name}.");
+0322     private static void Rate(double rate) { if (!double.IsFinite(rate) || rate < 0 || rate > 1) throw Invalid("Rate must be in [0,1]."); }
+0323     private static void Hash(string text, int length) { if (text.Length != length || text.Any(c => !Uri.IsHexDigit(c))) throw Invalid("Invalid provenance hash/commit."); }
+0324     private static void Equal(double expected, double actual, string message) { if (Math.Abs(expected - actual) > 1e-10 * Math.Max(1, Math.Abs(expected))) throw Invalid(message); }
+0325     private static JsonNode? Clone(JsonNode? value) => value == null ? null : JsonNode.Parse(value.ToJsonString());
+0326     private static InvalidDataException Invalid(string message) => new(message);
+0327 }

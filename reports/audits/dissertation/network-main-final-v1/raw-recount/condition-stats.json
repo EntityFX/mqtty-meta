@@ -1,0 +1,7184 @@
+[
+  {
+    "topology": "line",
+    "qos": 0,
+    "offeredRps": 1000,
+    "mode": "federation",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 5,
+        "min": 5,
+        "max": 5
+      },
+      "publishP99Ms": {
+        "n": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 30000,
+        "min": 30000,
+        "max": 30000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 1341012,
+        "min": 1341012,
+        "max": 1341012
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 14,
+        "min": 14,
+        "max": 14
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 1,
+        "min": 1,
+        "max": 1
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "line",
+    "qos": 0,
+    "offeredRps": 1000,
+    "mode": "relay",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 3,
+        "min": 3,
+        "max": 3
+      },
+      "publishP99Ms": {
+        "n": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 30000,
+        "min": 30000,
+        "max": 30000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 1080000,
+        "min": 1080000,
+        "max": 1080000
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 11,
+        "min": 11,
+        "max": 11
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 1,
+        "min": 1,
+        "max": 1
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "line",
+    "qos": 0,
+    "offeredRps": 1000,
+    "mode": "single",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 2,
+        "min": 2,
+        "max": 2
+      },
+      "publishP99Ms": {
+        "n": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 8,
+        "min": 8,
+        "max": 8
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 1,
+        "min": 1,
+        "max": 1
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "line",
+    "qos": 0,
+    "offeredRps": 5000,
+    "mode": "federation",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 5,
+        "min": 5,
+        "max": 5
+      },
+      "publishP99Ms": {
+        "n": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 150000,
+        "min": 150000,
+        "max": 150000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 6795012,
+        "min": 6795012,
+        "max": 6795012
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 63,
+        "min": 63,
+        "max": 63
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 2,
+        "min": 2,
+        "max": 2
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "line",
+    "qos": 0,
+    "offeredRps": 5000,
+    "mode": "relay",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 3,
+        "min": 3,
+        "max": 3
+      },
+      "publishP99Ms": {
+        "n": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 150000,
+        "min": 150000,
+        "max": 150000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 5400000,
+        "min": 5400000,
+        "max": 5400000
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 48,
+        "min": 48,
+        "max": 48
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 2,
+        "min": 2,
+        "max": 2
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "line",
+    "qos": 0,
+    "offeredRps": 5000,
+    "mode": "single",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 2,
+        "min": 2,
+        "max": 2
+      },
+      "publishP99Ms": {
+        "n": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 28,
+        "min": 28,
+        "max": 28
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 4,
+        "min": 4,
+        "max": 4
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "line",
+    "qos": 1,
+    "offeredRps": 1000,
+    "mode": "federation",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 7.4,
+        "min": 7.4,
+        "max": 7.4
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 0.8,
+        "min": 0.8,
+        "max": 0.8
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 30000,
+        "min": 30000,
+        "max": 30000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 1341012,
+        "min": 1341012,
+        "max": 1341012
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 17,
+        "min": 17,
+        "max": 17
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 1,
+        "min": 1,
+        "max": 1
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "line",
+    "qos": 1,
+    "offeredRps": 1000,
+    "mode": "relay",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 3,
+        "min": 3,
+        "max": 3
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 0.8,
+        "min": 0.8,
+        "max": 0.8
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 30000,
+        "min": 30000,
+        "max": 30000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 1080000,
+        "min": 1080000,
+        "max": 1080000
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 11,
+        "min": 11,
+        "max": 11
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 1,
+        "min": 1,
+        "max": 1
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "line",
+    "qos": 1,
+    "offeredRps": 1000,
+    "mode": "single",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 2,
+        "min": 2,
+        "max": 2
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 2,
+        "min": 2,
+        "max": 2
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 8,
+        "min": 8,
+        "max": 8
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 2,
+        "min": 2,
+        "max": 2
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "line",
+    "qos": 1,
+    "offeredRps": 5000,
+    "mode": "federation",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 5969,
+        "min": 5969,
+        "max": 5969
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0.70155,
+        "min": 0.70155,
+        "max": 0.70155
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 3996.7000000000003,
+        "min": 3996.7000000000003,
+        "max": 3996.7000000000003
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 0.8,
+        "min": 0.8,
+        "max": 0.8
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 58440,
+        "min": 58440,
+        "max": 58440
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 2649792,
+        "min": 2649792,
+        "max": 2649792
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 15253,
+        "min": 15253,
+        "max": 15253
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 59690,
+        "min": 59690,
+        "max": 59690
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 2509,
+        "min": 2509,
+        "max": 2509
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 4,
+        "min": 4,
+        "max": 4
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 102222,
+        "min": 102222,
+        "max": 102222
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "line",
+    "qos": 1,
+    "offeredRps": 5000,
+    "mode": "relay",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 3,
+        "min": 3,
+        "max": 3
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 0.8,
+        "min": 0.8,
+        "max": 0.8
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 150000,
+        "min": 150000,
+        "max": 150000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 5400000,
+        "min": 5400000,
+        "max": 5400000
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 48,
+        "min": 48,
+        "max": 48
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 4,
+        "min": 4,
+        "max": 4
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "line",
+    "qos": 1,
+    "offeredRps": 5000,
+    "mode": "single",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 2,
+        "min": 2,
+        "max": 2
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 2,
+        "min": 2,
+        "max": 2
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 28,
+        "min": 28,
+        "max": 28
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 7,
+        "min": 7,
+        "max": 7
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "line",
+    "qos": 2,
+    "offeredRps": 1000,
+    "mode": "federation",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 3286.3,
+        "min": 3286.3,
+        "max": 3286.3
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0.17842499999999994,
+        "min": 0.17842499999999994,
+        "max": 0.17842499999999994
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 5056,
+        "min": 5056,
+        "max": 5056
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 27049,
+        "min": 27049,
+        "max": 27049
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 1208217,
+        "min": 1208217,
+        "max": 1208217
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 9352,
+        "min": 9352,
+        "max": 9352
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 32863,
+        "min": 32863,
+        "max": 32863
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 5276,
+        "min": 5276,
+        "max": 5276
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 2,
+        "min": 2,
+        "max": 2
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 7137,
+        "min": 7137,
+        "max": 7137
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "line",
+    "qos": 2,
+    "offeredRps": 1000,
+    "mode": "relay",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 9,
+        "min": 9,
+        "max": 9
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 30000,
+        "min": 30000,
+        "max": 30000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 1080000,
+        "min": 1080000,
+        "max": 1080000
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 31,
+        "min": 31,
+        "max": 31
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 2,
+        "min": 2,
+        "max": 2
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "line",
+    "qos": 2,
+    "offeredRps": 1000,
+    "mode": "single",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 6,
+        "min": 6,
+        "max": 6
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 4,
+        "min": 4,
+        "max": 4
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 19,
+        "min": 19,
+        "max": 19
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 3,
+        "min": 3,
+        "max": 3
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "line",
+    "qos": 2,
+    "offeredRps": 5000,
+    "mode": "federation",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 3883.8,
+        "min": 3883.8,
+        "max": 3883.8
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0.80581,
+        "min": 0.80581,
+        "max": 0.80581
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 8993.4,
+        "min": 8993.4,
+        "max": 8993.4
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 36294,
+        "min": 36294,
+        "max": 36294
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 1644314,
+        "min": 1644314,
+        "max": 1644314
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 15318,
+        "min": 15318,
+        "max": 15318
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 38838,
+        "min": 38838,
+        "max": 38838
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 1132,
+        "min": 1132,
+        "max": 1132
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 8,
+        "min": 8,
+        "max": 8
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 108308,
+        "min": 108308,
+        "max": 108308
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "line",
+    "qos": 2,
+    "offeredRps": 5000,
+    "mode": "relay",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 9,
+        "min": 9,
+        "max": 9
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 150000,
+        "min": 150000,
+        "max": 150000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 5400000,
+        "min": 5400000,
+        "max": 5400000
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 148,
+        "min": 148,
+        "max": 148
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 8,
+        "min": 8,
+        "max": 8
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "line",
+    "qos": 2,
+    "offeredRps": 5000,
+    "mode": "single",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 6,
+        "min": 6,
+        "max": 6
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 4,
+        "min": 4,
+        "max": 4
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 84,
+        "min": 84,
+        "max": 84
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 14,
+        "min": 14,
+        "max": 14
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "ring",
+    "qos": 0,
+    "offeredRps": 1000,
+    "mode": "federation",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 3.9000000000000004,
+        "min": 3.9000000000000004,
+        "max": 3.9000000000000004
+      },
+      "publishP99Ms": {
+        "n": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 2235020,
+        "min": 2235020,
+        "max": 2235020
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 12,
+        "min": 12,
+        "max": 12
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 1,
+        "min": 1,
+        "max": 1
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      }
+    }
+  },
+  {
+    "topology": "ring",
+    "qos": 0,
+    "offeredRps": 1000,
+    "mode": "relay",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 2.8000000000000003,
+        "min": 2.8000000000000003,
+        "max": 2.8000000000000003
+      },
+      "publishP99Ms": {
+        "n": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 30000,
+        "min": 30000,
+        "max": 30000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 1080000,
+        "min": 1080000,
+        "max": 1080000
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 11,
+        "min": 11,
+        "max": 11
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 1,
+        "min": 1,
+        "max": 1
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "ring",
+    "qos": 0,
+    "offeredRps": 1000,
+    "mode": "single",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "publishP99Ms": {
+        "n": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 8,
+        "min": 8,
+        "max": 8
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 1,
+        "min": 1,
+        "max": 1
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "ring",
+    "qos": 0,
+    "offeredRps": 5000,
+    "mode": "federation",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 3.9000000000000004,
+        "min": 3.9000000000000004,
+        "max": 3.9000000000000004
+      },
+      "publishP99Ms": {
+        "n": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 250000,
+        "min": 250000,
+        "max": 250000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 11325020,
+        "min": 11325020,
+        "max": 11325020
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 57,
+        "min": 57,
+        "max": 57
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 2,
+        "min": 2,
+        "max": 2
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 100000,
+        "min": 100000,
+        "max": 100000
+      }
+    }
+  },
+  {
+    "topology": "ring",
+    "qos": 0,
+    "offeredRps": 5000,
+    "mode": "relay",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 2.8000000000000003,
+        "min": 2.8000000000000003,
+        "max": 2.8000000000000003
+      },
+      "publishP99Ms": {
+        "n": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 150000,
+        "min": 150000,
+        "max": 150000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 5400000,
+        "min": 5400000,
+        "max": 5400000
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 48,
+        "min": 48,
+        "max": 48
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 2,
+        "min": 2,
+        "max": 2
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "ring",
+    "qos": 0,
+    "offeredRps": 5000,
+    "mode": "single",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "publishP99Ms": {
+        "n": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 25,
+        "min": 25,
+        "max": 25
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 3,
+        "min": 3,
+        "max": 3
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "ring",
+    "qos": 1,
+    "offeredRps": 1000,
+    "mode": "federation",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 5.5,
+        "min": 5.5,
+        "max": 5.5
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 0.8,
+        "min": 0.8,
+        "max": 0.8
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 2235020,
+        "min": 2235020,
+        "max": 2235020
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 16,
+        "min": 16,
+        "max": 16
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 1,
+        "min": 1,
+        "max": 1
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      }
+    }
+  },
+  {
+    "topology": "ring",
+    "qos": 1,
+    "offeredRps": 1000,
+    "mode": "relay",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 2.8000000000000003,
+        "min": 2.8000000000000003,
+        "max": 2.8000000000000003
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 0.8,
+        "min": 0.8,
+        "max": 0.8
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 30000,
+        "min": 30000,
+        "max": 30000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 1080000,
+        "min": 1080000,
+        "max": 1080000
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 11,
+        "min": 11,
+        "max": 11
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 1,
+        "min": 1,
+        "max": 1
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "ring",
+    "qos": 1,
+    "offeredRps": 1000,
+    "mode": "single",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 8,
+        "min": 8,
+        "max": 8
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 2,
+        "min": 2,
+        "max": 2
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "ring",
+    "qos": 1,
+    "offeredRps": 5000,
+    "mode": "federation",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 6028.8,
+        "min": 6028.8,
+        "max": 6028.8
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0.6985600000000001,
+        "min": 0.6985600000000001,
+        "max": 0.6985600000000001
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 4846,
+        "min": 4846,
+        "max": 4846
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 0.8,
+        "min": 0.8,
+        "max": 0.8
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 83810,
+        "min": 83810,
+        "max": 83810
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 3802843,
+        "min": 3802843,
+        "max": 3802843
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 15851,
+        "min": 15851,
+        "max": 15851
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 60288,
+        "min": 60288,
+        "max": 60288
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 2086,
+        "min": 2086,
+        "max": 2086
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 4,
+        "min": 4,
+        "max": 4
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 151674,
+        "min": 151674,
+        "max": 151674
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 10924,
+        "min": 10924,
+        "max": 10924
+      }
+    }
+  },
+  {
+    "topology": "ring",
+    "qos": 1,
+    "offeredRps": 5000,
+    "mode": "relay",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 2.8000000000000003,
+        "min": 2.8000000000000003,
+        "max": 2.8000000000000003
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 0.8,
+        "min": 0.8,
+        "max": 0.8
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 150000,
+        "min": 150000,
+        "max": 150000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 5400000,
+        "min": 5400000,
+        "max": 5400000
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 48,
+        "min": 48,
+        "max": 48
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 4,
+        "min": 4,
+        "max": 4
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "ring",
+    "qos": 1,
+    "offeredRps": 5000,
+    "mode": "single",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 25,
+        "min": 25,
+        "max": 25
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 6,
+        "min": 6,
+        "max": 6
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "ring",
+    "qos": 2,
+    "offeredRps": 1000,
+    "mode": "federation",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 3477.3,
+        "min": 3477.3,
+        "max": 3477.3
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0.13067499999999999,
+        "min": 0.13067499999999999,
+        "max": 0.13067499999999999
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 7619.6,
+        "min": 7619.6,
+        "max": 7619.6
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 45769,
+        "min": 45769,
+        "max": 45769
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 2044625,
+        "min": 2044625,
+        "max": 2044625
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 11261,
+        "min": 11261,
+        "max": 11261
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 34773,
+        "min": 34773,
+        "max": 34773
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 6265,
+        "min": 6265,
+        "max": 6265
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 2,
+        "min": 2,
+        "max": 2
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 7864,
+        "min": 7864,
+        "max": 7864
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 16566,
+        "min": 16566,
+        "max": 16566
+      }
+    }
+  },
+  {
+    "topology": "ring",
+    "qos": 2,
+    "offeredRps": 1000,
+    "mode": "relay",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 8.4,
+        "min": 8.4,
+        "max": 8.4
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 30000,
+        "min": 30000,
+        "max": 30000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 1080000,
+        "min": 1080000,
+        "max": 1080000
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 30,
+        "min": 30,
+        "max": 30
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 2,
+        "min": 2,
+        "max": 2
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "ring",
+    "qos": 2,
+    "offeredRps": 1000,
+    "mode": "single",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 4.800000000000001,
+        "min": 4.800000000000001,
+        "max": 4.800000000000001
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 3.2,
+        "min": 3.2,
+        "max": 3.2
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 14,
+        "min": 14,
+        "max": 14
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 3,
+        "min": 3,
+        "max": 3
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "ring",
+    "qos": 2,
+    "offeredRps": 5000,
+    "mode": "federation",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 3901,
+        "min": 3901,
+        "max": 3901
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0.80495,
+        "min": 0.80495,
+        "max": 0.80495
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 8487.7,
+        "min": 8487.7,
+        "max": 8487.7
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 53028,
+        "min": 53028,
+        "max": 53028
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 2405578,
+        "min": 2405578,
+        "max": 2405578
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 15490,
+        "min": 15490,
+        "max": 15490
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 39010,
+        "min": 39010,
+        "max": 39010
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 1197,
+        "min": 1197,
+        "max": 1197
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 8,
+        "min": 8,
+        "max": 8
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 141190,
+        "min": 141190,
+        "max": 141190
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 11414,
+        "min": 11414,
+        "max": 11414
+      }
+    }
+  },
+  {
+    "topology": "ring",
+    "qos": 2,
+    "offeredRps": 5000,
+    "mode": "relay",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 8.4,
+        "min": 8.4,
+        "max": 8.4
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 150000,
+        "min": 150000,
+        "max": 150000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 5400000,
+        "min": 5400000,
+        "max": 5400000
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 144,
+        "min": 144,
+        "max": 144
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 8,
+        "min": 8,
+        "max": 8
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "ring",
+    "qos": 2,
+    "offeredRps": 5000,
+    "mode": "single",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 4.800000000000001,
+        "min": 4.800000000000001,
+        "max": 4.800000000000001
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 3.2,
+        "min": 3.2,
+        "max": 3.2
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 71,
+        "min": 71,
+        "max": 71
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 12,
+        "min": 12,
+        "max": 12
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "star",
+    "qos": 0,
+    "offeredRps": 1000,
+    "mode": "federation",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 3,
+        "min": 3,
+        "max": 3
+      },
+      "publishP99Ms": {
+        "n": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 90000,
+        "min": 90000,
+        "max": 90000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 4023036,
+        "min": 4023036,
+        "max": 4023036
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 11,
+        "min": 11,
+        "max": 11
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 1,
+        "min": 1,
+        "max": 1
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 60000,
+        "min": 60000,
+        "max": 60000
+      }
+    }
+  },
+  {
+    "topology": "star",
+    "qos": 0,
+    "offeredRps": 1000,
+    "mode": "relay",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 2.8000000000000003,
+        "min": 2.8000000000000003,
+        "max": 2.8000000000000003
+      },
+      "publishP99Ms": {
+        "n": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 30000,
+        "min": 30000,
+        "max": 30000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 1080000,
+        "min": 1080000,
+        "max": 1080000
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 11,
+        "min": 11,
+        "max": 11
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 1,
+        "min": 1,
+        "max": 1
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "star",
+    "qos": 0,
+    "offeredRps": 1000,
+    "mode": "single",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "publishP99Ms": {
+        "n": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 8,
+        "min": 8,
+        "max": 8
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 1,
+        "min": 1,
+        "max": 1
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "star",
+    "qos": 0,
+    "offeredRps": 5000,
+    "mode": "federation",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 3,
+        "min": 3,
+        "max": 3
+      },
+      "publishP99Ms": {
+        "n": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 450000,
+        "min": 450000,
+        "max": 450000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 20385036,
+        "min": 20385036,
+        "max": 20385036
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 54,
+        "min": 54,
+        "max": 54
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 2,
+        "min": 2,
+        "max": 2
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 300000,
+        "min": 300000,
+        "max": 300000
+      }
+    }
+  },
+  {
+    "topology": "star",
+    "qos": 0,
+    "offeredRps": 5000,
+    "mode": "relay",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 2.8000000000000003,
+        "min": 2.8000000000000003,
+        "max": 2.8000000000000003
+      },
+      "publishP99Ms": {
+        "n": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 150000,
+        "min": 150000,
+        "max": 150000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 5400000,
+        "min": 5400000,
+        "max": 5400000
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 50,
+        "min": 50,
+        "max": 50
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 2,
+        "min": 2,
+        "max": 2
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "star",
+    "qos": 0,
+    "offeredRps": 5000,
+    "mode": "single",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "publishP99Ms": {
+        "n": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 27,
+        "min": 27,
+        "max": 27
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 3,
+        "min": 3,
+        "max": 3
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "star",
+    "qos": 1,
+    "offeredRps": 1000,
+    "mode": "federation",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 1568.7,
+        "min": 1568.7,
+        "max": 1568.7
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 0.8,
+        "min": 0.8,
+        "max": 0.8
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 90000,
+        "min": 90000,
+        "max": 90000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 4023036,
+        "min": 4023036,
+        "max": 4023036
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 4120,
+        "min": 4120,
+        "max": 4120
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 1,
+        "min": 1,
+        "max": 1
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 60000,
+        "min": 60000,
+        "max": 60000
+      }
+    }
+  },
+  {
+    "topology": "star",
+    "qos": 1,
+    "offeredRps": 1000,
+    "mode": "relay",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 2.8000000000000003,
+        "min": 2.8000000000000003,
+        "max": 2.8000000000000003
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 0.8,
+        "min": 0.8,
+        "max": 0.8
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 30000,
+        "min": 30000,
+        "max": 30000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 1080000,
+        "min": 1080000,
+        "max": 1080000
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 11,
+        "min": 11,
+        "max": 11
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 1,
+        "min": 1,
+        "max": 1
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "star",
+    "qos": 1,
+    "offeredRps": 1000,
+    "mode": "single",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 8,
+        "min": 8,
+        "max": 8
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 2,
+        "min": 2,
+        "max": 2
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "star",
+    "qos": 1,
+    "offeredRps": 5000,
+    "mode": "federation",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 5858.1,
+        "min": 5858.1,
+        "max": 5858.1
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0.707095,
+        "min": 0.707095,
+        "max": 0.707095
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 4406.1,
+        "min": 4406.1,
+        "max": 4406.1
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 0.8,
+        "min": 0.8,
+        "max": 0.8
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 99518,
+        "min": 99518,
+        "max": 99518
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 4513476,
+        "min": 4513476,
+        "max": 4513476
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 14144,
+        "min": 14144,
+        "max": 14144
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 58581,
+        "min": 58581,
+        "max": 58581
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 2151,
+        "min": 2151,
+        "max": 2151
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 4,
+        "min": 4,
+        "max": 4
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 255912,
+        "min": 255912,
+        "max": 255912
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 28181,
+        "min": 28181,
+        "max": 28181
+      }
+    }
+  },
+  {
+    "topology": "star",
+    "qos": 1,
+    "offeredRps": 5000,
+    "mode": "relay",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 2.8000000000000003,
+        "min": 2.8000000000000003,
+        "max": 2.8000000000000003
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 0.8,
+        "min": 0.8,
+        "max": 0.8
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 150000,
+        "min": 150000,
+        "max": 150000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 5400000,
+        "min": 5400000,
+        "max": 5400000
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 50,
+        "min": 50,
+        "max": 50
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 4,
+        "min": 4,
+        "max": 4
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "star",
+    "qos": 1,
+    "offeredRps": 5000,
+    "mode": "single",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 27,
+        "min": 27,
+        "max": 27
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 7,
+        "min": 7,
+        "max": 7
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "star",
+    "qos": 2,
+    "offeredRps": 1000,
+    "mode": "federation",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 3594,
+        "min": 3594,
+        "max": 3594
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0.10150000000000003,
+        "min": 0.10150000000000003,
+        "max": 0.10150000000000003
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 8164.900000000001,
+        "min": 8164.900000000001,
+        "max": 8164.900000000001
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 64768,
+        "min": 64768,
+        "max": 64768
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 2889001,
+        "min": 2889001,
+        "max": 2889001
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 12428,
+        "min": 12428,
+        "max": 12428
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 35940,
+        "min": 35940,
+        "max": 35940
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 8546,
+        "min": 8546,
+        "max": 8546
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 2,
+        "min": 2,
+        "max": 2
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 17196,
+        "min": 17196,
+        "max": 17196
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 38800,
+        "min": 38800,
+        "max": 38800
+      }
+    }
+  },
+  {
+    "topology": "star",
+    "qos": 2,
+    "offeredRps": 1000,
+    "mode": "relay",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 8.4,
+        "min": 8.4,
+        "max": 8.4
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 30000,
+        "min": 30000,
+        "max": 30000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 1080000,
+        "min": 1080000,
+        "max": 1080000
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 32,
+        "min": 32,
+        "max": 32
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 2,
+        "min": 2,
+        "max": 2
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "star",
+    "qos": 2,
+    "offeredRps": 1000,
+    "mode": "single",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 1000,
+        "min": 1000,
+        "max": 1000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 4000,
+        "min": 4000,
+        "max": 4000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 4.800000000000001,
+        "min": 4.800000000000001,
+        "max": 4.800000000000001
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 3.2,
+        "min": 3.2,
+        "max": 3.2
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 18,
+        "min": 18,
+        "max": 18
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 40000,
+        "min": 40000,
+        "max": 40000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 3,
+        "min": 3,
+        "max": 3
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 10000,
+        "min": 10000,
+        "max": 10000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "star",
+    "qos": 2,
+    "offeredRps": 5000,
+    "mode": "federation",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 3860.9,
+        "min": 3860.9,
+        "max": 3860.9
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0.806955,
+        "min": 0.806955,
+        "max": 0.806955
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 8510.1,
+        "min": 8510.1,
+        "max": 8510.1
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 67351,
+        "min": 67351,
+        "max": 67351
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 3052814,
+        "min": 3052814,
+        "max": 3052814
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 15089,
+        "min": 15089,
+        "max": 15089
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 38609,
+        "min": 38609,
+        "max": 38609
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 1492,
+        "min": 1492,
+        "max": 1492
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 8,
+        "min": 8,
+        "max": 8
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 203360,
+        "min": 203360,
+        "max": 203360
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 30911,
+        "min": 30911,
+        "max": 30911
+      }
+    }
+  },
+  {
+    "topology": "star",
+    "qos": 2,
+    "offeredRps": 5000,
+    "mode": "relay",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 8.4,
+        "min": 8.4,
+        "max": 8.4
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 1.6,
+        "min": 1.6,
+        "max": 1.6
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 150000,
+        "min": 150000,
+        "max": 150000
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 5400000,
+        "min": 5400000,
+        "max": 5400000
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 150,
+        "min": 150,
+        "max": 150
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 8,
+        "min": 8,
+        "max": 8
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "topology": "star",
+    "qos": 2,
+    "offeredRps": 5000,
+    "mode": "single",
+    "matchedSeeds": [
+      42,
+      43,
+      44
+    ],
+    "metrics": {
+      "sourceCompletedRps": {
+        "n": 3,
+        "mean": 5000,
+        "min": 5000,
+        "max": 5000
+      },
+      "uniqueGoodput": {
+        "n": 3,
+        "mean": 20000,
+        "min": 20000,
+        "max": 20000
+      },
+      "deliveryLoss": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "receiverP99Ms": {
+        "n": 3,
+        "mean": 4.800000000000001,
+        "min": 4.800000000000001,
+        "max": 4.800000000000001
+      },
+      "publishP99Ms": {
+        "n": 3,
+        "mean": 3.2,
+        "min": 3.2,
+        "max": 3.2
+      },
+      "forwardAttempts": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardTopicPayloadBytes": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "uniqueDuringDrain": {
+        "n": 3,
+        "mean": 83,
+        "min": 83,
+        "max": 83
+      },
+      "expectedDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "uniqueDeliveries": {
+        "n": 3,
+        "mean": 200000,
+        "min": 200000,
+        "max": 200000
+      },
+      "fullyDeliveredPublications": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompleted": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "sourceCompletedDuringDrain": {
+        "n": 3,
+        "mean": 14,
+        "min": 14,
+        "max": 14
+      },
+      "apiAttempts": {
+        "n": 3,
+        "mean": 50000,
+        "min": 50000,
+        "max": 50000
+      },
+      "queueDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "hopLimitDrops": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "forwardRejected": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "backpressureUnsent": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "duplicateDeliveries": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      },
+      "suppressedDuplicates": {
+        "n": 3,
+        "mean": 0,
+        "min": 0,
+        "max": 0
+      }
+    }
+  }
+]

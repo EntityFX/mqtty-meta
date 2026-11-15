@@ -1,0 +1,443 @@
+{
+  "status": "verified",
+  "pairs": 6,
+  "rawFilesVerified": 174,
+  "metricValuesCompared": 252,
+  "calculatorSha256": "137f91eb5ded0727938116ee6d587dbd35f6ee9ae849ce3e6421adfafb68739e",
+  "indexSha256": "0eae956bf2eb3c376ea600f2a04fe10f8e7753c7fe2b5e482f178cad2296dacd",
+  "rows": [
+    {
+      "key": "Aedes.w2",
+      "broker": "Aedes",
+      "windowSeconds": 2,
+      "native": {
+        "metrics": {
+          "attempted": 30077,
+          "completed": 30077,
+          "failed": 0,
+          "pending": 0,
+          "measurementSeconds": 2.0,
+          "attemptedRps": 15038.5,
+          "completedInWindow": 30061,
+          "completedRpsInWindow": 15030.5,
+          "completedDuringDrain": 16,
+          "completedCohortPerSubmissionSecond": 15038.5,
+          "uniqueDeliveries": 30077,
+          "completedIdsDelivered": 30077,
+          "deliveredAfterFailedPublish": 0,
+          "firstDeliveriesDuringDrain": 37,
+          "duplicates": 0,
+          "outsideCohortDeliveryEvents": 7825,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.0,
+          "p99PublishMs": 3.5190000000000055,
+          "latencyStatus": "observed",
+          "outcomesSettled": true
+        },
+        "connection": {
+          "continuous": true,
+          "subscriberIdentities": 1,
+          "confirmedSubscriptions": 2
+        }
+      },
+      "model": {
+        "metrics": {
+          "attempted": 36606,
+          "completed": 36606,
+          "failed": 0,
+          "pending": 0,
+          "measurementSeconds": 2.0,
+          "attemptedRps": 18303.0,
+          "completedInWindow": 36590,
+          "completedRpsInWindow": 18295.0,
+          "completedDuringDrain": 16,
+          "completedCohortPerSubmissionSecond": 18303.0,
+          "uniqueDeliveries": 36606,
+          "completedIdsDelivered": 36606,
+          "deliveredAfterFailedPublish": 0,
+          "firstDeliveriesDuringDrain": 16,
+          "duplicates": 0,
+          "outsideCohortDeliveryEvents": 18352,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.0,
+          "p99PublishMs": 1.3200000000000003,
+          "latencyStatus": "observed",
+          "outcomesSettled": true
+        },
+        "connection": {
+          "continuous": true,
+          "subscriberIdentities": 1,
+          "confirmedSubscriptions": 2
+        }
+      },
+      "errors": {
+        "rps": 0.21707617116068756,
+        "p99": 0.6248934356351241,
+        "failure": 0.0,
+        "loss": 0.0
+      },
+      "oldProfileAllCriteriaPassed": false
+    },
+    {
+      "key": "Aedes.w4",
+      "broker": "Aedes",
+      "windowSeconds": 4,
+      "native": {
+        "metrics": {
+          "attempted": 67065,
+          "completed": 67065,
+          "failed": 0,
+          "pending": 0,
+          "measurementSeconds": 4.0,
+          "attemptedRps": 16766.25,
+          "completedInWindow": 67050,
+          "completedRpsInWindow": 16762.5,
+          "completedDuringDrain": 15,
+          "completedCohortPerSubmissionSecond": 16766.25,
+          "uniqueDeliveries": 67065,
+          "completedIdsDelivered": 67065,
+          "deliveredAfterFailedPublish": 0,
+          "firstDeliveriesDuringDrain": 42,
+          "duplicates": 0,
+          "outsideCohortDeliveryEvents": 7888,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.0,
+          "p99PublishMs": 2.824299999999994,
+          "latencyStatus": "observed",
+          "outcomesSettled": true
+        },
+        "connection": {
+          "continuous": true,
+          "subscriberIdentities": 1,
+          "confirmedSubscriptions": 2
+        }
+      },
+      "model": {
+        "metrics": {
+          "attempted": 72144,
+          "completed": 72144,
+          "failed": 0,
+          "pending": 0,
+          "measurementSeconds": 4.0,
+          "attemptedRps": 18036.0,
+          "completedInWindow": 72128,
+          "completedRpsInWindow": 18032.0,
+          "completedDuringDrain": 16,
+          "completedCohortPerSubmissionSecond": 18036.0,
+          "uniqueDeliveries": 72144,
+          "completedIdsDelivered": 72144,
+          "deliveredAfterFailedPublish": 0,
+          "firstDeliveriesDuringDrain": 16,
+          "duplicates": 0,
+          "outsideCohortDeliveryEvents": 18352,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.0,
+          "p99PublishMs": 1.3200000000000003,
+          "latencyStatus": "observed",
+          "outcomesSettled": true
+        },
+        "connection": {
+          "continuous": true,
+          "subscriberIdentities": 1,
+          "confirmedSubscriptions": 2
+        }
+      },
+      "errors": {
+        "rps": 0.07573249832252292,
+        "p99": 0.5326275537301267,
+        "failure": 0.0,
+        "loss": 0.0
+      },
+      "oldProfileAllCriteriaPassed": false
+    },
+    {
+      "key": "ActiveMQ.w2",
+      "broker": "ActiveMQ",
+      "windowSeconds": 2,
+      "native": {
+        "metrics": {
+          "attempted": 25486,
+          "completed": 25486,
+          "failed": 0,
+          "pending": 0,
+          "measurementSeconds": 2.0,
+          "attemptedRps": 12743.0,
+          "completedInWindow": 25470,
+          "completedRpsInWindow": 12735.0,
+          "completedDuringDrain": 16,
+          "completedCohortPerSubmissionSecond": 12743.0,
+          "uniqueDeliveries": 25486,
+          "completedIdsDelivered": 25486,
+          "deliveredAfterFailedPublish": 0,
+          "firstDeliveriesDuringDrain": 18372,
+          "duplicates": 0,
+          "outsideCohortDeliveryEvents": 5596,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.0,
+          "p99PublishMs": 6.345400000000154,
+          "latencyStatus": "observed",
+          "outcomesSettled": true
+        },
+        "connection": {
+          "continuous": true,
+          "subscriberIdentities": 1,
+          "confirmedSubscriptions": 2
+        }
+      },
+      "model": {
+        "metrics": {
+          "attempted": 11961,
+          "completed": 11961,
+          "failed": 0,
+          "pending": 0,
+          "measurementSeconds": 2.0,
+          "attemptedRps": 5980.5,
+          "completedInWindow": 11945,
+          "completedRpsInWindow": 5972.5,
+          "completedDuringDrain": 16,
+          "completedCohortPerSubmissionSecond": 5980.5,
+          "uniqueDeliveries": 5773,
+          "completedIdsDelivered": 5773,
+          "deliveredAfterFailedPublish": 0,
+          "firstDeliveriesDuringDrain": 4,
+          "duplicates": 0,
+          "outsideCohortDeliveryEvents": 2954,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.5173480478220884,
+          "p99PublishMs": 23.650000000000002,
+          "latencyStatus": "observed",
+          "outcomesSettled": true
+        },
+        "connection": {
+          "continuous": true,
+          "subscriberIdentities": 1,
+          "confirmedSubscriptions": 2
+        }
+      },
+      "errors": {
+        "rps": 0.5306835125166758,
+        "p99": 2.7271094020864606,
+        "failure": 0.0,
+        "loss": 0.5173480478220884
+      },
+      "oldProfileAllCriteriaPassed": false
+    },
+    {
+      "key": "ActiveMQ.w4",
+      "broker": "ActiveMQ",
+      "windowSeconds": 4,
+      "native": {
+        "metrics": {
+          "attempted": 50307,
+          "completed": 50307,
+          "failed": 0,
+          "pending": 0,
+          "measurementSeconds": 4.0,
+          "attemptedRps": 12576.75,
+          "completedInWindow": 50291,
+          "completedRpsInWindow": 12572.75,
+          "completedDuringDrain": 16,
+          "completedCohortPerSubmissionSecond": 12576.75,
+          "uniqueDeliveries": 19227,
+          "completedIdsDelivered": 19227,
+          "deliveredAfterFailedPublish": 0,
+          "firstDeliveriesDuringDrain": 2277,
+          "duplicates": 0,
+          "outsideCohortDeliveryEvents": 6239,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.6178066670642256,
+          "p99PublishMs": 12.37079999999969,
+          "latencyStatus": "observed",
+          "outcomesSettled": true
+        },
+        "connection": {
+          "continuous": true,
+          "subscriberIdentities": 1,
+          "confirmedSubscriptions": 2
+        }
+      },
+      "model": {
+        "metrics": {
+          "attempted": 24026,
+          "completed": 24026,
+          "failed": 0,
+          "pending": 0,
+          "measurementSeconds": 4.0,
+          "attemptedRps": 6006.5,
+          "completedInWindow": 24010,
+          "completedRpsInWindow": 6002.5,
+          "completedDuringDrain": 16,
+          "completedCohortPerSubmissionSecond": 6006.5,
+          "uniqueDeliveries": 11552,
+          "completedIdsDelivered": 11552,
+          "deliveredAfterFailedPublish": 0,
+          "firstDeliveriesDuringDrain": 5,
+          "duplicates": 0,
+          "outsideCohortDeliveryEvents": 2954,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.5191875468242737,
+          "p99PublishMs": 23.160000000000004,
+          "latencyStatus": "observed",
+          "outcomesSettled": true
+        },
+        "connection": {
+          "continuous": true,
+          "subscriberIdentities": 1,
+          "confirmedSubscriptions": 2
+        }
+      },
+      "errors": {
+        "rps": 0.5224123879380603,
+        "p99": 0.8721505480648449,
+        "failure": 0.0,
+        "loss": 0.0986191202399519
+      },
+      "oldProfileAllCriteriaPassed": false
+    },
+    {
+      "key": "EMQX.w2",
+      "broker": "EMQX",
+      "windowSeconds": 2,
+      "native": {
+        "metrics": {
+          "attempted": 20192,
+          "completed": 20192,
+          "failed": 0,
+          "pending": 0,
+          "measurementSeconds": 2.0,
+          "attemptedRps": 10096.0,
+          "completedInWindow": 20176,
+          "completedRpsInWindow": 10088.0,
+          "completedDuringDrain": 16,
+          "completedCohortPerSubmissionSecond": 10096.0,
+          "uniqueDeliveries": 20192,
+          "completedIdsDelivered": 20192,
+          "deliveredAfterFailedPublish": 0,
+          "firstDeliveriesDuringDrain": 31,
+          "duplicates": 0,
+          "outsideCohortDeliveryEvents": 9620,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.0,
+          "p99PublishMs": 3.1172999999998865,
+          "latencyStatus": "observed",
+          "outcomesSettled": true
+        },
+        "connection": {
+          "continuous": true,
+          "subscriberIdentities": 1,
+          "confirmedSubscriptions": 2
+        }
+      },
+      "model": {
+        "metrics": {
+          "attempted": 20530,
+          "completed": 20530,
+          "failed": 0,
+          "pending": 0,
+          "measurementSeconds": 2.0,
+          "attemptedRps": 10265.0,
+          "completedInWindow": 20514,
+          "completedRpsInWindow": 10257.0,
+          "completedDuringDrain": 16,
+          "completedCohortPerSubmissionSecond": 10265.0,
+          "uniqueDeliveries": 20530,
+          "completedIdsDelivered": 20530,
+          "deliveredAfterFailedPublish": 0,
+          "firstDeliveriesDuringDrain": 16,
+          "duplicates": 0,
+          "outsideCohortDeliveryEvents": 10223,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.0,
+          "p99PublishMs": 2.9600000000000004,
+          "latencyStatus": "observed",
+          "outcomesSettled": true
+        },
+        "connection": {
+          "continuous": true,
+          "subscriberIdentities": 1,
+          "confirmedSubscriptions": 2
+        }
+      },
+      "errors": {
+        "rps": 0.01673930269413629,
+        "p99": 0.05046033426359087,
+        "failure": 0.0,
+        "loss": 0.0
+      },
+      "oldProfileAllCriteriaPassed": true
+    },
+    {
+      "key": "EMQX.w4",
+      "broker": "EMQX",
+      "windowSeconds": 4,
+      "native": {
+        "metrics": {
+          "attempted": 39774,
+          "completed": 39774,
+          "failed": 0,
+          "pending": 0,
+          "measurementSeconds": 3.9999999999999996,
+          "attemptedRps": 9943.500000000002,
+          "completedInWindow": 39758,
+          "completedRpsInWindow": 9939.500000000002,
+          "completedDuringDrain": 16,
+          "completedCohortPerSubmissionSecond": 9943.500000000002,
+          "uniqueDeliveries": 39774,
+          "completedIdsDelivered": 39774,
+          "deliveredAfterFailedPublish": 0,
+          "firstDeliveriesDuringDrain": 35,
+          "duplicates": 0,
+          "outsideCohortDeliveryEvents": 9431,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.0,
+          "p99PublishMs": 3.1849999999999454,
+          "latencyStatus": "observed",
+          "outcomesSettled": true
+        },
+        "connection": {
+          "continuous": true,
+          "subscriberIdentities": 1,
+          "confirmedSubscriptions": 2
+        }
+      },
+      "model": {
+        "metrics": {
+          "attempted": 41152,
+          "completed": 41152,
+          "failed": 0,
+          "pending": 0,
+          "measurementSeconds": 4.0,
+          "attemptedRps": 10288.0,
+          "completedInWindow": 41136,
+          "completedRpsInWindow": 10284.0,
+          "completedDuringDrain": 16,
+          "completedCohortPerSubmissionSecond": 10288.0,
+          "uniqueDeliveries": 41152,
+          "completedIdsDelivered": 41152,
+          "deliveredAfterFailedPublish": 0,
+          "firstDeliveriesDuringDrain": 16,
+          "duplicates": 0,
+          "outsideCohortDeliveryEvents": 10223,
+          "publishFailureRate": 0.0,
+          "deliveryLossRate": 0.0,
+          "p99PublishMs": 2.95,
+          "latencyStatus": "observed",
+          "outcomesSettled": true
+        },
+        "connection": {
+          "continuous": true,
+          "subscriberIdentities": 1,
+          "confirmedSubscriptions": 2
+        }
+      },
+      "errors": {
+        "rps": 0.03464574847890563,
+        "p99": 0.07378335949762929,
+        "failure": 0.0,
+        "loss": 0.0
+      },
+      "oldProfileAllCriteriaPassed": true
+    }
+  ],
+  "scope": "Independent arithmetic implementation; raw connection evidence; not a new calibration or blind validation"
+}

@@ -1,0 +1,15 @@
+{
+  "documents": 103,
+  "localLinksChecked": 1092,
+  "brokenLinks": [],
+  "immutableBoundaries": {
+    "protectedDissertationFilesSha256": {
+      "checked": 265,
+      "changed": []
+    },
+    "unchangedScientificFilesSha256": {
+      "checked": 1131,
+      "changed": []
+    }
+  }
+}

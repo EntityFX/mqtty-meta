@@ -1,0 +1,21 @@
+{
+  "available": true,
+  "mountPresent": true,
+  "system": "Linux entityfx-pc 6.12.85-6.12-alt1 #1 SMP PREEMPT_DYNAMIC Fri May  8 17:43:26 UTC 2026 x86_64 GNU/Linux",
+  "freeMemory": [
+    "MemTotal:       16211276 kB",
+    "MemFree:          342916 kB",
+    "MemAvailable:   14195972 kB"
+  ],
+  "freeDiskBytes": 123783811072,
+  "runningServices": "  dbus.service       loaded active running D-Bus User Message Bus\n  docker.service     loaded active running Docker Application Container Engine (Rootless)\n  mqtty-web.service  loaded active running MqttY.Web local simulation host with evidence-disk monitoring\n  pulseaudio.service loaded active running Sound Service\n",
+  "webHealth": {
+    "status": "ok",
+    "processId": 4261,
+    "processWorkingSetBytes": 215265280,
+    "dataDirectoryAvailable": true,
+    "runningJobs": 0,
+    "queuedJobs": 0
+  },
+  "liveWebJobs": []
+}

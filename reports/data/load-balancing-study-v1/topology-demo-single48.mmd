@@ -1,0 +1,15 @@
+flowchart LR
+  CTRL["Назначение перед CONNECT: Все publishers → B0"]
+  subgraph C["Общий сетевой сегмент clients"]
+    P["Publishers: 48"]
+    R["Receivers: 1; Rj подключён к Bj"]
+  end
+  CTRL -.-> P
+  subgraph H01["backend0-hop1"]
+    N01["Сетевой сегмент 1"]
+  end
+  subgraph H02["backend0-hop2"]
+    B0["B0: Идеальная модель; N=48"]
+  end
+  C <--> H01
+  H01 <--> H02

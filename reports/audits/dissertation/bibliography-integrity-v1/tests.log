@@ -1,0 +1,16 @@
+test_bib_nested_quoted_concatenated_and_inheritance (test_audit_bibliography.BibliographyAuditTests.test_bib_nested_quoted_concatenated_and_inheritance) ... ok
+test_cli_refuses_to_overwrite_previous_evidence (test_audit_bibliography.BibliographyAuditTests.test_cli_refuses_to_overwrite_previous_evidence) ... ok
+test_comments_escape_multiline_optional_and_verbatim (test_audit_bibliography.BibliographyAuditTests.test_comments_escape_multiline_optional_and_verbatim) ... ok
+test_conservative_branches_and_resources_deduplicated (test_audit_bibliography.BibliographyAuditTests.test_conservative_branches_and_resources_deduplicated) ... ok
+test_definitions_not_actual_citations_and_dynamic_keys_reported (test_audit_bibliography.BibliographyAuditTests.test_definitions_not_actual_citations_and_dynamic_keys_reported) ... ok
+test_deterministic_json_and_source_seals (test_audit_bibliography.BibliographyAuditTests.test_deterministic_json_and_source_seals) ... ok
+test_duplicates_missing_nocite_and_ranges (test_audit_bibliography.BibliographyAuditTests.test_duplicates_missing_nocite_and_ranges) ... ok
+test_external_tex_inputs_reported_and_includeonly_not_executed (test_audit_bibliography.BibliographyAuditTests.test_external_tex_inputs_reported_and_includeonly_not_executed) ... ok
+test_graph_root_parent_resolution_missing_and_cycle (test_audit_bibliography.BibliographyAuditTests.test_graph_root_parent_resolution_missing_and_cycle) ... ok
+test_malformed_bib_and_duplicate_field (test_audit_bibliography.BibliographyAuditTests.test_malformed_bib_and_duplicate_field) ... ok
+test_unreachable_drafts_are_protected_but_not_audited_as_main (test_audit_bibliography.BibliographyAuditTests.test_unreachable_drafts_are_protected_but_not_audited_as_main) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.404s
+
+OK

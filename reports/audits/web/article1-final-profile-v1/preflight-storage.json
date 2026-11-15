@@ -1,0 +1,87 @@
+{
+  "root": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host",
+  "releases": [
+    {
+      "path": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/releases/00224422b4ee2113a34ca53163b75cfd57f553c83b78646b254a1c0f5cca8997",
+      "commit": "b7537bd3a0772d303dfd7256f195d1189cf8be0b",
+      "releaseId": "00224422b4ee2113a34ca53163b75cfd57f553c83b78646b254a1c0f5cca8997"
+    },
+    {
+      "path": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/releases/055df4c3e81c15bcf5e8320fd440bf5e3b9b44ac8e68be0b570011938abfc0dd",
+      "commit": "de226d0bb81a803a9e85065918867f798cda09fc",
+      "releaseId": "055df4c3e81c15bcf5e8320fd440bf5e3b9b44ac8e68be0b570011938abfc0dd"
+    },
+    {
+      "path": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/releases/10587525c3a4f204948401b926ab1ec8d6f9fca944bf999c9ef9263d567963aa",
+      "commit": "d71b4fd28b68b72638f9ca060aafd4cea6ea5738",
+      "releaseId": "10587525c3a4f204948401b926ab1ec8d6f9fca944bf999c9ef9263d567963aa"
+    },
+    {
+      "path": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/releases/1e319c88594de1cd56d47003aef24a036aea65974ebe482dabce1f0154f7eb12",
+      "commit": "922acf14139b59edecb9a24224f67b104cfefda9",
+      "releaseId": "1e319c88594de1cd56d47003aef24a036aea65974ebe482dabce1f0154f7eb12"
+    },
+    {
+      "path": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/releases/2185a0d34d7c4d41714649e65774f6162ee134a4ec089ea572e0f042f239797c",
+      "commit": "309973b3eeb3ea80ea14f5a97099722215a15adc",
+      "releaseId": "2185a0d34d7c4d41714649e65774f6162ee134a4ec089ea572e0f042f239797c"
+    },
+    {
+      "path": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/releases/955795f9f9be66456a4b1e5d734e26602978f96870f58c7dec16afcd50ca5691",
+      "commit": "dd36b4d30eb406ccf0b245a2f8f0a6b2cf22eafe",
+      "releaseId": "955795f9f9be66456a4b1e5d734e26602978f96870f58c7dec16afcd50ca5691"
+    },
+    {
+      "path": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/releases/a797ee7c31d0a15f18301f8206625dae0d580bcdf5c8826a960b157b2869fdef",
+      "commit": "12601f534f9da3673057b072f8bd6a0c67fd8aed",
+      "releaseId": "a797ee7c31d0a15f18301f8206625dae0d580bcdf5c8826a960b157b2869fdef"
+    },
+    {
+      "path": "/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/releases/e29d860594f09e68f12026a3efc82629b01b546f5541e52761fe3d97fca2b2b9",
+      "commit": "3327b118fb4d6683fe8e8f30a074175b2479c29b",
+      "releaseId": "e29d860594f09e68f12026a3efc82629b01b546f5541e52761fe3d97fca2b2b9"
+    }
+  ],
+  "monitor": {
+    "releaseId": "00224422b4ee2113a34ca53163b75cfd57f553c83b78646b254a1c0f5cca8997",
+    "mqttyCommit": "b7537bd3a0772d303dfd7256f195d1189cf8be0b",
+    "pid": 236776,
+    "hostPid": 236775,
+    "startedEpoch": 1792959312.5420432,
+    "observedEpoch": 1793050687.848129,
+    "state": "stopped",
+    "rssBytes": 169680896,
+    "dataBytes": 492297513,
+    "diskFreeBytes": 125664768000,
+    "http": {
+      "ok": true,
+      "statusCode": 200,
+      "body": {
+        "status": "ok",
+        "processId": 236776,
+        "processWorkingSetBytes": 169680896,
+        "dataDirectoryAvailable": true,
+        "runningJobs": 0,
+        "queuedJobs": 0
+      }
+    },
+    "httpConsecutiveFailures": 0,
+    "exitCode": 0,
+    "reason": "service stop requested"
+  },
+  "dataEntries": [
+    "tmp",
+    "profiles",
+    "topologies",
+    "jobs",
+    "runtime",
+    "workers",
+    "simulations",
+    "presets",
+    "monitoring",
+    "profile-snapshots",
+    "logs"
+  ],
+  "unitExists": true,
+  "unitText": "[Unit]\nDescription=MqttY.Web local simulation host with evidence-disk monitoring\nAfter=network.target\n\n[Service]\nType=simple\nExecStartPre=/usr/bin/mountpoint -q \"/run/media/entityfx/hd250\"\nExecStart=/usr/bin/python3 \"/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/releases/00224422b4ee2113a34ca53163b75cfd57f553c83b78646b254a1c0f5cca8997/linux_web_host.py\" serve --release \"/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host/releases/00224422b4ee2113a34ca53163b75cfd57f553c83b78646b254a1c0f5cca8997\" --mount \"/run/media/entityfx/hd250\" --root \"/run/media/entityfx/hd250/mqtty-evidence/web-linux-v1/host\"\nRestart=no\nKillMode=control-group\nTimeoutStopSec=20\nMemoryMax=2G\nMemorySwapMax=0\nCPUQuota=150%\nTasksMax=256\nUMask=0077\nNoNewPrivileges=yes\nStandardOutput=null\nStandardError=journal\nLogRateLimitIntervalSec=30s\nLogRateLimitBurst=20\n\n[Install]\nWantedBy=default.target\n"
+}

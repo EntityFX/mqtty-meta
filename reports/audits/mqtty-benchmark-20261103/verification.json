@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-03",
+  "unitTests": {
+    "passed": 4,
+    "command": "python -m unittest discover -s reproducibility -p test_benchmark.py -v"
+  },
+  "localCountedAttempts": 30,
+  "serialNativeMatches": 15,
+  "parallelCompleted": 14,
+  "parallelFailures": 1,
+  "protectedManuscriptAndSubmoduleFilesChecked": 1017,
+  "protectedFilesChanged": 0,
+  "newBrokenLinksInEditedDocuments": 0,
+  "mainRetries": 0,
+  "remoteCompletionChecked": false,
+  "supersededLocalCandidates": [
+    "benchmark-20261103-001 (checkout preparation failure)",
+    "benchmark-20261103-002 (2-second sizing/native pilot)",
+    "benchmark-20261103-003 (original shell stopped at first parallel failure; retained separately)"
+  ],
+  "note": "The completed table uses benchmark-20261103-004 only. Parallel refresh is an instrumented diagnostic mode; existing source runners remain sequential."
+}

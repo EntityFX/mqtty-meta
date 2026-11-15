@@ -1,0 +1,23 @@
+{
+  "linuxProbe": "for x in latexmk xelatex biber kpsewhich pdfinfo pdftotext docker; do command -v \"$x\" || true; done",
+  "linuxStdout": "/bin/pdfinfo\n/bin/pdftotext\n/bin/docker\n",
+  "linuxDockerImages": [
+    "alpine:latest"
+  ],
+  "linuxBuildExecuted": false,
+  "linuxPackagesInstalled": false,
+  "windowsKnownPaths": [
+    {
+      "path": "C:/Program Files/MiKTeX/miktex/bin/x64/xelatex.exe",
+      "exists": false
+    },
+    {
+      "path": "C:/Users/entityfx/AppData/Local/Programs/MiKTeX/miktex/bin/x64/xelatex.exe",
+      "exists": false
+    },
+    {
+      "path": "C:/texlive",
+      "exists": false
+    }
+  ]
+}

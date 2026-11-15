@@ -1,0 +1,8 @@
+{
+  "mqttyCommit": "4c658536586f88a89cd3ff5ab0915903640cf3c9",
+  "files": 63,
+  "payloadBytes": 5923256,
+  "manifestSha256": "583346863b1d9544a1fde5acc45fc7fba28a44b2939dc2d5a0aa6a4b944fa2c6",
+  "archiveSha256": "0b7849f5e4658d9fa08baf0bee39b652877ca91c8f20113693d5068d79083a8e",
+  "testsPassed": 3
+}

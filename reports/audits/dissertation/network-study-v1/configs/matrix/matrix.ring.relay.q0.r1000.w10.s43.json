@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "mode": "relay",
+  "brokers": 4,
+  "topology": "ring",
+  "publishers": 64,
+  "receiverSites": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "payloadBytes": 16,
+  "qos": 0,
+  "offeredRps": 1000,
+  "seed": 43,
+  "warmupSeconds": 1,
+  "measurementSeconds": 10,
+  "drainTimeoutSeconds": 5,
+  "tickPeriod": "00:00:00.0001000",
+  "queueCapacity": 1024,
+  "cacheCapacity": 100000,
+  "hopLimit": 4,
+  "ideal": true,
+  "brokerType": "Mosquitto",
+  "brokerProfilePath": null,
+  "network": {
+    "capacityBytesPerSecond": 125000000,
+    "throughputWindowTicks": 100,
+    "queueCapacity": 100000,
+    "transferTicks": 2
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "status": "completed",
+  "packageSha256": "292dd92f7ec3fc87e418593cf874bfaf95d87b1a5f47465371595077db7d5313",
+  "resultSha256": "8df0a613dd732cb249bd5af7f7cde9e6563176f54d63f0dfc9e3753a606688c9",
+  "timeUnit": "seconds",
+  "measurement": "Process launch through completion, including JIT and artifact writing; validation excluded",
+  "rows": [
+    {
+      "engine": "relay",
+      "serial": {
+        "attempts": 5,
+        "completed": 5,
+        "secondsAllAttempts": [
+          4.7061058999970555,
+          5.774484999943525,
+          6.85393980005756,
+          9.489485800033435,
+          5.8103877999819815
+        ],
+        "secondsCompleted": [
+          4.7061058999970555,
+          5.774484999943525,
+          6.85393980005756,
+          9.489485800033435,
+          5.8103877999819815
+        ],
+        "medianCompletedSeconds": 5.8103877999819815,
+        "minCompletedSeconds": 4.7061058999970555,
+        "maxCompletedSeconds": 9.489485800033435,
+        "allScientificResultsMatchSerial": true
+      },
+      "parallel": {
+        "attempts": 5,
+        "completed": 5,
+        "secondsAllAttempts": [
+          6.129159900010563,
+          5.851719400030561,
+          5.1769641999853775,
+          5.701504399999976,
+          8.345687400083989
+        ],
+        "secondsCompleted": [
+          6.129159900010563,
+          5.851719400030561,
+          5.1769641999853775,
+          5.701504399999976,
+          8.345687400083989
+        ],
+        "medianCompletedSeconds": 5.851719400030561,
+        "minCompletedSeconds": 5.1769641999853775,
+        "maxCompletedSeconds": 8.345687400083989,
+        "allScientificResultsMatchSerial": false
+      },
+      "parallelComparisonValid": false,
+      "validatedSpeedup": null
+    },
+    {
+      "engine": "federation",
+      "serial": {
+        "attempts": 5,
+        "completed": 5,
+        "secondsAllAttempts": [
+          4.701477199909277,
+          4.849193899892271,
+          4.341079200035892,
+          4.611299699987285,
+          7.4702793000033125
+        ],
+        "secondsCompleted": [
+          4.701477199909277,
+          4.849193899892271,
+          4.341079200035892,
+          4.611299699987285,
+          7.4702793000033125
+        ],
+        "medianCompletedSeconds": 4.701477199909277,
+        "minCompletedSeconds": 4.341079200035892,
+        "maxCompletedSeconds": 7.4702793000033125,
+        "allScientificResultsMatchSerial": true
+      },
+      "parallel": {
+        "attempts": 5,
+        "completed": 4,
+        "secondsAllAttempts": [
+          4.413491999963298,
+          2.350213799974881,
+          4.434788499958813,
+          3.9923609000397846,
+          4.748897399986163
+        ],
+        "secondsCompleted": [
+          4.413491999963298,
+          4.434788499958813,
+          3.9923609000397846,
+          4.748897399986163
+        ],
+        "medianCompletedSeconds": 4.424140249961056,
+        "minCompletedSeconds": 3.9923609000397846,
+        "maxCompletedSeconds": 4.748897399986163,
+        "allScientificResultsMatchSerial": false
+      },
+      "parallelComparisonValid": false,
+      "validatedSpeedup": null
+    },
+    {
+      "engine": "load-balancer",
+      "serial": {
+        "attempts": 5,
+        "completed": 5,
+        "secondsAllAttempts": [
+          3.6692159000085667,
+          4.095162799931131,
+          3.303994599962607,
+          3.4795272999908775,
+          3.357284599915147
+        ],
+        "secondsCompleted": [
+          3.6692159000085667,
+          4.095162799931131,
+          3.303994599962607,
+          3.4795272999908775,
+          3.357284599915147
+        ],
+        "medianCompletedSeconds": 3.4795272999908775,
+        "minCompletedSeconds": 3.303994599962607,
+        "maxCompletedSeconds": 4.095162799931131,
+        "allScientificResultsMatchSerial": true
+      },
+      "parallel": {
+        "attempts": 5,
+        "completed": 5,
+        "secondsAllAttempts": [
+          3.4861413000617176,
+          3.6178611000068486,
+          3.2621113000204787,
+          4.39872599998489,
+          3.3914976000087336
+        ],
+        "secondsCompleted": [
+          3.4861413000617176,
+          3.6178611000068486,
+          3.2621113000204787,
+          4.39872599998489,
+          3.3914976000087336
+        ],
+        "medianCompletedSeconds": 3.4861413000617176,
+        "minCompletedSeconds": 3.2621113000204787,
+        "maxCompletedSeconds": 4.39872599998489,
+        "allScientificResultsMatchSerial": true
+      },
+      "parallelComparisonValid": true,
+      "validatedSpeedup": 0.9981027733813534
+    }
+  ],
+  "scope": "Parallel means Refresh(true, 0) within one graph; no concurrent independent jobs"
+}

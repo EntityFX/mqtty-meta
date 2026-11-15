@@ -1,0 +1,110 @@
+{
+  "Aedes": {
+    "sha256": "5172f9409dda3ca497eb9b4a47db8717957e2aeecc7487a618278747e171e503",
+    "presetId": "article1-final-aedes-5172f940",
+    "relativePath": "profiles/article1-final-Aedes-5172f9409dda3ca497eb9b4a47db8717957e2aeecc7487a618278747e171e503.json",
+    "validation": {
+      "valid": true,
+      "profileSha256": "5172f9409dda3ca497eb9b4a47db8717957e2aeecc7487a618278747e171e503",
+      "referenceScope": "calibration only",
+      "warmupTicks": 1000,
+      "measurementTicks": 10000,
+      "drainTicks": 10000
+    },
+    "missingPointRejected": true,
+    "request": {
+      "name": "Final profile API check Aedes",
+      "brokerPresetId": "article1-final-aedes-5172f940",
+      "publishers": 16,
+      "qos": 1,
+      "seed": 42,
+      "warmupSeconds": 0.01,
+      "measurementSeconds": 0.1,
+      "drainSeconds": 0.1,
+      "tickSeconds": 1e-05,
+      "timeLimitSeconds": 120,
+      "validateOnly": true
+    }
+  },
+  "Mosquitto": {
+    "sha256": "59e75155ca04b3448df9db59c4233b3c58ce003d53b7a1e655d427708d32255b",
+    "presetId": "article1-final-mosquitto-59e75155",
+    "relativePath": "profiles/article1-final-Mosquitto-59e75155ca04b3448df9db59c4233b3c58ce003d53b7a1e655d427708d32255b.json",
+    "validation": {
+      "valid": true,
+      "profileSha256": "59e75155ca04b3448df9db59c4233b3c58ce003d53b7a1e655d427708d32255b",
+      "referenceScope": "calibration only",
+      "warmupTicks": 1000,
+      "measurementTicks": 10000,
+      "drainTicks": 10000
+    },
+    "missingPointRejected": true,
+    "request": {
+      "name": "Final profile API check Mosquitto",
+      "brokerPresetId": "article1-final-mosquitto-59e75155",
+      "publishers": 16,
+      "qos": 1,
+      "seed": 42,
+      "warmupSeconds": 0.01,
+      "measurementSeconds": 0.1,
+      "drainSeconds": 0.1,
+      "tickSeconds": 1e-05,
+      "timeLimitSeconds": 120,
+      "validateOnly": true
+    }
+  },
+  "ActiveMQ": {
+    "sha256": "26964895f2aa9c7975e569331ef1f89a469a7d8752f61cecae70c2eb04d873db",
+    "presetId": "article1-final-activemq-26964895",
+    "relativePath": "profiles/article1-final-ActiveMQ-26964895f2aa9c7975e569331ef1f89a469a7d8752f61cecae70c2eb04d873db.json",
+    "validation": {
+      "valid": true,
+      "profileSha256": "26964895f2aa9c7975e569331ef1f89a469a7d8752f61cecae70c2eb04d873db",
+      "referenceScope": "calibration only",
+      "warmupTicks": 1000,
+      "measurementTicks": 10000,
+      "drainTicks": 10000
+    },
+    "missingPointRejected": true,
+    "request": {
+      "name": "Final profile API check ActiveMQ",
+      "brokerPresetId": "article1-final-activemq-26964895",
+      "publishers": 16,
+      "qos": 1,
+      "seed": 42,
+      "warmupSeconds": 0.01,
+      "measurementSeconds": 0.1,
+      "drainSeconds": 0.1,
+      "tickSeconds": 1e-05,
+      "timeLimitSeconds": 120,
+      "validateOnly": true
+    }
+  },
+  "EMQX": {
+    "sha256": "b4350c2db84389de9c5d4ac8b8934bbd3a26f2cdd9d0b1a7e3b6d7d9ff6500d3",
+    "presetId": "article1-final-emqx-b4350c2d",
+    "relativePath": "profiles/article1-final-EMQX-b4350c2db84389de9c5d4ac8b8934bbd3a26f2cdd9d0b1a7e3b6d7d9ff6500d3.json",
+    "validation": {
+      "valid": true,
+      "profileSha256": "b4350c2db84389de9c5d4ac8b8934bbd3a26f2cdd9d0b1a7e3b6d7d9ff6500d3",
+      "referenceScope": "calibration only",
+      "warmupTicks": 1000,
+      "measurementTicks": 10000,
+      "drainTicks": 10000
+    },
+    "missingPointRejected": true,
+    "request": {
+      "name": "Final profile API check EMQX",
+      "brokerPresetId": "article1-final-emqx-b4350c2d",
+      "publishers": 16,
+      "qos": 1,
+      "seed": 42,
+      "warmupSeconds": 0.01,
+      "measurementSeconds": 0.1,
+      "drainSeconds": 0.1,
+      "tickSeconds": 1e-05,
+      "timeLimitSeconds": 120,
+      "validateOnly": true
+    }
+  }
+}

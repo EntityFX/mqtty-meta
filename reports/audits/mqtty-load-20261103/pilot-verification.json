@@ -1,0 +1,115 @@
+{
+  "protocolSha256": "d65c9a56d496a2f854b9347754362fcf071645c5911ffac0189fd81ddbe08968",
+  "scope": "pilots-only",
+  "attemptsChecked": 18,
+  "sealedFilesChecked": 176,
+  "timerSidecarsChecked": 16,
+  "processFailures": [
+    {
+      "attempt": "pilot-b64-r4000-r1-serial-timed",
+      "returnCode": 2,
+      "timedOut": false
+    },
+    {
+      "attempt": "pilot-b64-r4000-r1-parallel-timed",
+      "returnCode": 2,
+      "timedOut": false
+    }
+  ],
+  "arithmeticFailures": [],
+  "scienceMismatches": [],
+  "controllerDisagreements": [],
+  "rows": [
+    {
+      "attempt": "pilot-b4-r250-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b4-r250-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b4-r1000-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b4-r1000-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b4-r4000-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b4-r4000-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b16-r250-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b16-r250-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b16-r1000-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b16-r1000-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b16-r4000-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b16-r4000-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b64-r250-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b64-r250-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b64-r1000-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b64-r1000-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b64-r4000-r1-serial-timed",
+      "arithmeticPass": false,
+      "serialScienceMatch": false
+    },
+    {
+      "attempt": "pilot-b64-r4000-r1-parallel-timed",
+      "arithmeticPass": false,
+      "serialScienceMatch": false
+    }
+  ],
+  "status": "DIAGNOSTIC"
+}

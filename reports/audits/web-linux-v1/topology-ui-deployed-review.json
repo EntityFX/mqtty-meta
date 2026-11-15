@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "target": "Linux Web through SSH tunnel; deployed static assets; no request interception",
+  "viewport": [
+    1440,
+    1080
+  ],
+  "canvasHeightPx": 972,
+  "mobileCanvasHeightPx": 759.59375,
+  "draggedNode": "client-0-0",
+  "dragTransform": "translate(-39.88229184697934 53.1763891293059)",
+  "transferredCoordinates": {
+    "x": 650.1177081530207,
+    "y": 423.1763891293059
+  },
+  "checks": [
+    "tall canvas",
+    "mouse drag",
+    "connected edges follow",
+    "coordinates survive opening editor",
+    "click preserved",
+    "drag suppresses click",
+    "small viewport",
+    "no JavaScript page errors"
+  ],
+  "pageErrors": [],
+  "sourceHashes": {
+    "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Web.App/wwwroot/css/app.css": "0944596bc0f6a9c62625d0803b7e59be9a8e204c031eabfc4defb106ec00a65a",
+    "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Web.App/wwwroot/js/graph-renderer.js": "b8eaaadcb909a6f4321cf0e3a8e76269b62aca85f5b5219bdb663a86fc11e459",
+    "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Web.App/wwwroot/js/topology-generator.js": "03377b4000d8f230ac4f862e2e88b6703b9d708e4d9598ba270f732d2a4c9d55",
+    "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Web.App/wwwroot/js/designer.js": "718a15a14ca8aa2c67441215f88e6e6f2a00a987325750aa006259c3f99b7fd9"
+  },
+  "screenshots": {
+    "topology-large-drag.png": "a1137a1123f097461025fe2513abbce61d7d53b5dcbc3a07236d1f1864de135a",
+    "topology-mobile.png": "af4e4ac91f4f3224379b0e63ccbb17bd5f25d6384e1e2b41838da421e15c20bb"
+  }
+}

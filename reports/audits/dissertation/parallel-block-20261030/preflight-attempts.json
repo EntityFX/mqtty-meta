@@ -1,0 +1,9 @@
+[
+  {
+    "attempt": 1,
+    "scope": "read-only Linux preflight, not experiment",
+    "status": "localReceiptFailed",
+    "error": "NameError: name 'Path' is not defined",
+    "reasonForSecondRead": "Fix local receipt writer; no remote process or data changed"
+  }
+]

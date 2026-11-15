@@ -1,0 +1,18 @@
+{
+  "remoteHost": "192.168.5.1",
+  "remotePath": "/run/media/entityfx/hd250/mqtty-evidence/load-balancing-study-v1/load-balancing-study-v1.tar.gz",
+  "sha256": "27295cc2ca9f6d06f4e0261eb101d9fd71b6e4066683da35b415afb95cfba777",
+  "bytes": 99509627,
+  "localAllMembersVerified": true,
+  "remoteArchiveHashVerified": true,
+  "remoteRunRegistriesVerified": 204,
+  "remoteRegisteredFilesVerified": 2338,
+  "remoteArchiveFileMembers": 3097,
+  "mount": {
+    "target": "/run/media/entityfx/hd250",
+    "source": "/dev/sdb1",
+    "fstype": "ext4",
+    "uuid": "c1ca2de7-c618-4a3d-8ffc-59d37f42ccec"
+  },
+  "sourceCopiesRetained": true
+}

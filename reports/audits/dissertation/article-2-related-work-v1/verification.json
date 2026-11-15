@@ -1,0 +1,113 @@
+{
+  "status": "targetedRelatedWorkVerified",
+  "checkedDate": "2026-10-26",
+  "checksPassed": 43,
+  "checks": [
+    "Empirical sections 6-8 unchanged",
+    "Existing five bibliography records unchanged",
+    "All three author publications retained",
+    "Six numbered bibliography entries",
+    "Numbered citation resolves 1",
+    "Numbered citation resolves 2",
+    "Numbered citation resolves 3",
+    "Numbered citation resolves 4",
+    "Numbered citation resolves 5",
+    "Numbered citation resolves 1",
+    "Numbered citation resolves 2",
+    "Numbered citation resolves 1",
+    "Numbered citation resolves 6",
+    "Local link ../../../reports/data/federation-full-mesh-v1/ideal-relay-physical.svg",
+    "Local link ../../../reports/data/federation-full-mesh-v1/ideal-relay-logical.svg",
+    "Local link ../../../reports/data/federation-full-mesh-v1/ideal-relay-physical.mmd",
+    "Local link ../../../reports/data/federation-full-mesh-v1/ideal-relay-logical.mmd",
+    "Local link ../../../reports/data/federation-full-mesh-v1/mosquitto-federation-physical.svg",
+    "Local link ../network-forwarding-proofs.md",
+    "Local link ../../../reports/data/federation-full-mesh-v1/ideal-comparison.svg",
+    "Local link ../../../reports/audits/dissertation/article-2-evidence-package-v2/Comparison.md",
+    "Local link ../../../reports/audits/dissertation/network-main-recount-v1/figures/comparison-5000.svg",
+    "Local link ../../../reports/audits/dissertation/network-main-recount-v1/figures/topology-physical.svg",
+    "Local link ../../../reports/audits/dissertation/network-main-recount-v1/figures/topology-logical.svg",
+    "Local link ../../../reports/analysis/Network-main-recount.md",
+    "Local link ../../mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Topology/FederationTopologyBuilder.cs",
+    "Local link ../../mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Plugin.Mqtt/Application/Mqtt/MqttRelay.cs",
+    "Local link ../../mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Federation/StaticFederator.cs",
+    "Local link ../../mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Federation/FederationTopics.cs",
+    "Local link network-model-contract.md",
+    "Local link network-forwarding-proofs.md",
+    "Local link ../../reports/analysis/Network-main-recount.md",
+    "Local link articles/citation-evidence.md",
+    "Local link ../../reports/audits/dissertation/article-2-related-work-v1/citations/",
+    "Local link ../article-1-contribution-and-related-work.md",
+    "Local link ../../../reports/audits/dissertation/article-2-related-work-v1/citations/citation-evidence.md",
+    "Local link ../article-2-contribution-and-related-work.md",
+    "Client topic requirements disclosed",
+    "Review scope limited",
+    "Implementation unchanged FederationTopologyBuilder.cs",
+    "Implementation unchanged StaticFederator.cs",
+    "Implementation unchanged FederationTopics.cs",
+    "Implementation unchanged MqttRelay.cs"
+  ],
+  "citationStaticAudit": {
+    "scope": "Three-source package, not full manuscript",
+    "sources": 3,
+    "minCitations": 3,
+    "errors": 0,
+    "warnings": 0,
+    "result": "PASS",
+    "renderedBibliographyOrPdfChecked": false
+  },
+  "externalSources": [
+    {
+      "id": "ribas2022federation",
+      "url": "https://thescipub.com/pdf/jcssp.2022.687.694.pdf",
+      "doi": "10.3844/jcssp.2022.687.694",
+      "basis": "Full-text selected sections: title page, Related Work, Application Framework, Implementation, pp. 687-692",
+      "claim": "External federator, control messages, beacons, No Local, LRU; no claim of measured superiority"
+    },
+    {
+      "id": "mosquittoBridges",
+      "url": "https://mosquitto.org/man/mosquitto-conf-5.html",
+      "basis": "Official manual Configuring Bridges: address, topic, try_private",
+      "publicationYear": null,
+      "documentationVersionNotPinned": true
+    },
+    {
+      "id": "oasis2014mqtt",
+      "url": "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html",
+      "basis": "Official title/editor information and section 4.3, QoS 1 note",
+      "year": 2014
+    }
+  ],
+  "files": {
+    "docs\\dissertation\\articles\\article-2-relay-federation.md": "52e97f9703a926b99187bd024446b16fa2b464cb1a3ff2b011aabd999d8ed531",
+    "docs\\dissertation\\article-2-contribution-and-related-work.md": "b86ab3f95bb506d3c56718901c17a8be7c015abee8079de363677c403ae8e36c",
+    "docs\\dissertation\\articles\\citation-evidence.md": "6a26f336e2904fa76897f5395cb8554ea17fd2cfa3d21515235301344a7aa140",
+    "reports\\audits\\dissertation\\article-2-related-work-v1\\citations\\citation-evidence.md": "a496985adbc2cb91b3b0a3d1ba3ef4990609b8a243e7855484d287c0adc12d21",
+    "reports\\audits\\dissertation\\article-2-related-work-v1\\citations\\references.bib": "4726e1d71484c3f77034dbf155eff7a29fc10c3dd3b3f25b41ef12544b0827ba",
+    "reports\\audits\\dissertation\\article-2-related-work-v1\\citations\\claims.tex": "43933d0345488d76b4463d76bd43954e28215639759bdf1f9ad3db6bdcc2f374"
+  },
+  "sourceCodeSha256": {
+    "mqtty\\src\\EntityFX.MqttSimulator\\EntityFX.MqttY.Federation.App\\Topology\\FederationTopologyBuilder.cs": "f8f6f3790b1e5fe8faefc0517145e8e4d1e2e44c9c2713f028ba0a9a37d8511e",
+    "mqtty\\src\\EntityFX.MqttSimulator\\EntityFX.MqttY.Federation.App\\Federation\\StaticFederator.cs": "3344d00773d110bc158fb6f4fcb119323b8f52212443ba5c5bdceb151ae9aa20",
+    "mqtty\\src\\EntityFX.MqttSimulator\\EntityFX.MqttY.Federation.App\\Federation\\FederationTopics.cs": "22c0453dec66b9880e0683b2b8c06848b335de150c538cd0ab0ae9f0519a53d1",
+    "mqtty\\src\\EntityFX.MqttSimulator\\EntityFX.MqttY.Plugin.Mqtt\\Application\\Mqtt\\MqttRelay.cs": "43d8e6aa654ba01f0129e47e74e5babe3a727a51dc9964c76ea749b5cf028dd4"
+  },
+  "empiricalResultsChanged": false,
+  "scientificThresholdsChanged": false,
+  "linuxContacted": false,
+  "newExperiments": 0,
+  "technicalStep": 18,
+  "technicalWeightPersonDays": 1.0,
+  "scientificNoveltyApprovedByAuthor": false,
+  "independentHumanReview": false,
+  "plannedProgress": {
+    "previousPercent": 41.5,
+    "newWeightPersonDays": 20.5,
+    "totalWeightPersonDays": 47,
+    "newPercent": 43.6
+  },
+  "planningFilesSha256": {
+    "docs/dissertation/next-delivery-block-plan.md": "6ccaafd0a0ebc66f1e9fd498e2dc8b292e395b71017d1efbaeb13e2c0b82f083",
+    "docs/dissertation/articles-and-work-plan.md": "dd345a0c717db0e551688dd518c595cc9ad857fd8d36fafc6c6f8421fb55a33a"
+  }
+}

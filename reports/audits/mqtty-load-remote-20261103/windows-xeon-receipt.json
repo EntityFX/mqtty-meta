@@ -1,0 +1,14 @@
+{
+  "archive": "windows-xeon.tar.gz",
+  "archiveSha256": "a0a0140be2faa20a9ced43a6f44b812e15904b3ea4fc5db6eb76db4cc71acc81",
+  "bytes": 6559101,
+  "protocolSha256": "dc7d48e04e9a803960139d7829d6f51c21a346b92551134d806bc5818e6952eb",
+  "parentLocalProtocolSha256": "d65c9a56d496a2f854b9347754362fcf071645c5911ffac0189fd81ddbe08968",
+  "mqttyCommit": "24e15dce2a2839456e32627ddf02b90dd96cbd60",
+  "mainAttempts": 112,
+  "controls": 12,
+  "pilotAttempts": 16,
+  "timeoutSeconds": 180,
+  "mainWallLimitSeconds": 7200,
+  "pilotWallLimitSeconds": 1800
+}

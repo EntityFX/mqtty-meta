@@ -1,0 +1,16 @@
+{
+  "host": "10.10.144.66",
+  "confirmationEpoch": 1793713611.4402502,
+  "reconnected": true,
+  "stdout": "{\"TaskName\":\"MqttY-Load-Benchmark-20261103\",\"State\":3}\r\n{\"LastTaskResult\":1}\r\n",
+  "stderr": "",
+  "exitCode": 0,
+  "observed": {
+    "remote-job-status.json": null,
+    "attempts.json": {
+      "rows": 0,
+      "verified": 0
+    },
+    "remote-stderr.log": "Traceback (most recent call last):\r\n  File \"C:\\Users\\sysadm\\mqtty-load-benchmark-20261103-001\\controller\\remote_load_campaign.py\", line 14, in <module>\r\n    import benchmark as b\r\nModuleNotFoundError: No module named 'benchmark'\r\n"
+  }
+}

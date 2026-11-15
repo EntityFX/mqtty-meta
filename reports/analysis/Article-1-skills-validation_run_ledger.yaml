@@ -1,0 +1,201 @@
+ledger: ars-run-ledger/1.0
+created_at: '2026-10-25T13:13:46Z'
+entries:
+- seq: 1
+  kind: initial_instructions
+  at: '2026-10-25T13:13:46Z'
+  user_words: Установи навыки и продолжим исследование с навыками
+  prev_hash: null
+  hash: 8c80011858e820f115d10058207cec3dbed01097bec0d33e4154a1bbdd17f45f
+- seq: 2
+  kind: tool_receipt
+  at: '2026-10-25T13:13:47Z'
+  step: comparison_arithmetic
+  command: python tools/dissertation/analyse_fresh_twin_results.py --summary reports/audits/dissertation/article-1-fresh-validation-v1/final-summary.json
+    --comparison reports/audits/dissertation/article-1-fresh-validation-v1/final-native-vs-model.csv
+    --output reports/audits/dissertation/article-1-skills-validation-v1
+  status: passed
+  exit_status: 0
+  retries_used: 0
+  input_sha256:
+    ../audits/dissertation/article-1-fresh-validation-v1/final-summary.json: 22feba662dfeb4e79478140d601432a20f35947eb4b2bc682ee7d10f846ac75d
+    ../audits/dissertation/article-1-fresh-validation-v1/final-native-vs-model.csv: 66d10a7b477f6a86eda1713da06b982689b6d512c75ddff3e10c665f0895d5e2
+  prev_hash: 8c80011858e820f115d10058207cec3dbed01097bec0d33e4154a1bbdd17f45f
+  hash: 5e0f53ff2e2f12d370e45ea68334452877f9861b67f3db2c919c8ea3e0379ae6
+- seq: 3
+  kind: tool_receipt
+  at: '2026-10-25T13:13:47Z'
+  step: saved_diagnostics
+  command: Local Python recount of condition groups, phase completion shares, input
+    SHA-256 and existing replay receipt hashes; see diagnostics.json
+  status: passed
+  exit_status: 0
+  retries_used: 0
+  input_sha256:
+    ../audits/dissertation/article-1-skills-validation-v1/diagnostics.json: 8a64d14b730a83b711135d71445cc5857eeae78390e2d426f8d246cfea0ce470
+    ../audits/dissertation/article-1-fresh-validation-v1/phase-evidence.json: 5dc47600cb66605cdbd1ca2921d2e1df13f04c4d3955547da2d75c13ba05e78e
+    ../audits/dissertation/article-1-fresh-validation-v1/replay-summary.json: f3c73503c5460b82ceb142fbdec9c201fb1f243f4b6d4087f5046141db7ce0fc
+  prev_hash: 5e0f53ff2e2f12d370e45ea68334452877f9861b67f3db2c919c8ea3e0379ae6
+  hash: 749d6ef4b58584181af5f42c3a35d702ebf7729266971f3d290966019f235ba5
+- seq: 4
+  kind: file_reference
+  at: '2026-10-25T13:13:48Z'
+  path: Article-1-skills-validation.md
+  role: validation_report
+  sha256: ad07fc8ff441983b99bec09ba8566c40b97da9061c54957ee18bf763e880782b
+  prev_hash: 749d6ef4b58584181af5f42c3a35d702ebf7729266971f3d290966019f235ba5
+  hash: 99524c417094d211256695119dcbb04cb8e711429135a913d175f3f8053f6756
+- seq: 5
+  kind: file_reference
+  at: '2026-10-25T13:13:48Z'
+  path: ../status/research-skills-installation.json
+  role: installation_receipt
+  sha256: c59a7877efb4dba11fcadefb6e2d22a2706352e69403382255c088080cd66acb
+  prev_hash: 99524c417094d211256695119dcbb04cb8e711429135a913d175f3f8053f6756
+  hash: 186dd06a9a3e130c75842647829d0696a2c1ac440771d32ebef560e1519025fe
+- seq: 6
+  kind: tool_receipt
+  at: '2026-10-25T13:18:09Z'
+  step: saved_diagnostics
+  command: Local verification of saved comparison groups and input seals, plus raw
+    trace metadata for three EMQX repetitions
+  status: passed
+  exit_status: 0
+  retries_used: 0
+  input_sha256:
+    ../audits/dissertation/article-1-skills-validation-v1/diagnostics.json: dc68724696bbd657541e29b7c440a8b0c01f3ca1c8b891dc605233732162279c
+    ../audits/dissertation/article-1-fresh-validation-v1/phase-evidence.json: 5dc47600cb66605cdbd1ca2921d2e1df13f04c4d3955547da2d75c13ba05e78e
+    ../audits/dissertation/article-1-fresh-validation-v1/replay-summary.json: f3c73503c5460b82ceb142fbdec9c201fb1f243f4b6d4087f5046141db7ce0fc
+  prev_hash: 186dd06a9a3e130c75842647829d0696a2c1ac440771d32ebef560e1519025fe
+  hash: f252ee27a3cee410e220b7f88f5d0d584b8d21e4c7fcdac9b86f6c38c9e6f0c8
+- seq: 7
+  kind: tool_receipt
+  at: '2026-10-25T13:18:09Z'
+  step: emqx_raw_inspection
+  command: SSH read-only Python inspection of existing EMQX.q1.p128.r1/r2/r3 native
+    logs; local validation of hashes against final-summary.json and subscriber disconnect
+    times against phase boundaries
+  status: passed
+  exit_status: 0
+  retries_used: 0
+  input_sha256:
+    ../audits/dissertation/article-1-skills-validation-v1/emqx-raw-trace.json: 66f8d5ded2aefdd1e3a389b1f9e3b039e73efe9d9ed2b265098fb9712bdd75d5
+    ../audits/dissertation/article-1-skills-validation-v1/emqx-connection-detail.json: 6b3171c2cabbddcf59cc40f5defea28c218202da67b6318db8983612c5bbb612
+    ../audits/dissertation/article-1-fresh-validation-v1/final-summary.json: 22feba662dfeb4e79478140d601432a20f35947eb4b2bc682ee7d10f846ac75d
+  prev_hash: f252ee27a3cee410e220b7f88f5d0d584b8d21e4c7fcdac9b86f6c38c9e6f0c8
+  hash: 0fad843bb0fd589a42ff54a01ec9762c46d7558a1e72ccd69b34c9a939ab13d5
+- seq: 8
+  kind: file_reference
+  at: '2026-10-25T13:18:09Z'
+  path: Article-1-skills-validation.md
+  role: validation_report
+  sha256: c4fda2e5899f71eca24f787503f4b57d831693812f9b4d99517f9e4db88a1553
+  prev_hash: 0fad843bb0fd589a42ff54a01ec9762c46d7558a1e72ccd69b34c9a939ab13d5
+  hash: 86fdac56cbe4f13cbcb71c5d0dd99b0aaf40715e7af26de5747591a66b737f7c
+- seq: 9
+  kind: file_reference
+  at: '2026-10-25T13:18:10Z'
+  path: ../../docs/dissertation/articles/article-1-twin-validation.md
+  role: clarified_article
+  sha256: 3a1ac5c64032f41d9119fd08f15037b7f6462bf0bf72ac472f50db458924223c
+  prev_hash: 86fdac56cbe4f13cbcb71c5d0dd99b0aaf40715e7af26de5747591a66b737f7c
+  hash: bd8c8118d10e0fbcfa64ff983eaabed3d40f3c450a193f2efed5df5b6ecdee84
+- seq: 10
+  kind: tool_receipt
+  at: '2026-10-25T13:32:12Z'
+  step: full_raw_audit
+  command: systemd-run --user --unit=mqtty-article1-raw-audit-v1 --property=RuntimeMaxSec=1800
+    --property=MemoryMax=2G --property=CPUQuota=100% /usr/bin/python3 run_final_twin_raw_audit.py;
+    see raw-audit-launch.json for full argv; verified completed 96/96, Result=success
+  status: passed
+  exit_status: 0
+  retries_used: 0
+  input_sha256:
+    ../audits/dissertation/article-1-skills-validation-v1/raw-audit-result.json: fce0e8731675b9f7b8db694c06846ed60640875c7fd930f1d81097e20f7f6956
+    ../audits/dissertation/article-1-fresh-validation-v1/final-summary.json: 22feba662dfeb4e79478140d601432a20f35947eb4b2bc682ee7d10f846ac75d
+  prev_hash: bd8c8118d10e0fbcfa64ff983eaabed3d40f3c450a193f2efed5df5b6ecdee84
+  hash: 512b073dc3dce6695bcca1f451fae3e4e248f5bad45cd7b2b3a4e030e12ba079
+- seq: 11
+  kind: tool_receipt
+  at: '2026-10-25T13:32:12Z'
+  step: author_citations
+  command: ORCID works API, three Crossref records and publisher metadata checks;
+    in-text citations and references checked locally
+  status: passed
+  exit_status: 0
+  retries_used: 0
+  input_sha256:
+    ../audits/dissertation/author-publications-v1/sources.json: a285c503309f02cf3a369bf6410bec22f6207b409e63eba20651cf9f0b6bfaf5
+    ../../docs/dissertation/articles/article-1-twin-validation.md: 6c2712c7eb04c118c91cc2720802693043ba9a3b08dd2e72419a94260fe5883a
+  prev_hash: 512b073dc3dce6695bcca1f451fae3e4e248f5bad45cd7b2b3a4e030e12ba079
+  hash: a4c6d74f3512e77adc91acd683ea5796d1be077c1eb97e83a436ebeae1c41490
+- seq: 12
+  kind: file_reference
+  at: '2026-10-25T13:32:12Z'
+  path: Article-1-skills-validation.md
+  role: validation_report
+  sha256: b0916934eceb9578904f1f62e147969f7372dd0429de0f7ae611091a26ce14eb
+  prev_hash: a4c6d74f3512e77adc91acd683ea5796d1be077c1eb97e83a436ebeae1c41490
+  hash: 770e2aaf2b8b7e1d7177f6b6553d0b7dfb1d512f4571f1776525e55b18dc03a0
+- seq: 13
+  kind: file_reference
+  at: '2026-10-25T13:32:13Z'
+  path: ../../docs/dissertation/articles/article-1-twin-validation.md
+  role: clarified_article
+  sha256: 6c2712c7eb04c118c91cc2720802693043ba9a3b08dd2e72419a94260fe5883a
+  prev_hash: 770e2aaf2b8b7e1d7177f6b6553d0b7dfb1d512f4571f1776525e55b18dc03a0
+  hash: 973c1e5b04e6eceb764be753b7f9319a400e27b0ab665b4df2fe72d45ac8c7cd
+- seq: 14
+  kind: tool_receipt
+  at: '2026-10-25T13:48:23Z'
+  step: mailbox_probe
+  command: Two separate frozen-runtime native diagnostic arms with effective EMQX
+    max_mailbox_size 1000 and 5000; systemd unit bounded to 600 seconds; final results
+    and arithmetic verified
+  status: passed
+  exit_status: 0
+  retries_used: 0
+  input_sha256:
+    ../audits/dissertation/article-1-skills-validation-v1/mailbox-probe-status.json: 11f2904732d4e922e2fbf318d74dbbff0e9ec0b91e857c7a85f4dd77aa25f61f
+    ../audits/dissertation/article-1-skills-validation-v1/mailbox-probe-verification.json: f816d1c2d0e70af808eba0480079a526b26598bed94baa0f58c74170110d6666
+    ../audits/dissertation/article-1-skills-validation-v1/emqx-broker-investigation.json: a431135384b1597611c8df3d9077e2a2d87212497c4176d92aaa847cbe76624c
+  prev_hash: 973c1e5b04e6eceb764be753b7f9319a400e27b0ab665b4df2fe72d45ac8c7cd
+  hash: b98ab29767f098cb0503373e616d8b1358697e602cf285c9e43d6ff97009e1fb
+- seq: 15
+  kind: file_reference
+  at: '2026-10-25T13:48:23Z'
+  path: EMQX-subscriber-shutdown.md
+  role: diagnostic_report
+  sha256: b61659ca7216af5662fdece49738da50cbf39f2f66e522ec3f787f3e05ce1211
+  prev_hash: b98ab29767f098cb0503373e616d8b1358697e602cf285c9e43d6ff97009e1fb
+  hash: 3861f2dda00214303f57683dbdedccc94c3dc594aa78e7dea9e0b9977eeb51db
+- seq: 16
+  kind: file_reference
+  at: '2026-10-25T13:48:23Z'
+  path: Article-1-skills-validation.md
+  role: validation_report
+  sha256: 839c55c1ae821f9d473a5f331ea5325e4427e954b86b9604cca33ad55e561597
+  prev_hash: 3861f2dda00214303f57683dbdedccc94c3dc594aa78e7dea9e0b9977eeb51db
+  hash: 9ff8a94275460031d2620698d355d860342befa682eab979133257e1cf711ae0
+- seq: 17
+  kind: file_reference
+  at: '2026-10-25T13:48:24Z'
+  path: ../../docs/dissertation/articles/article-1-twin-validation.md
+  role: clarified_article
+  sha256: 54f8fbdf2bc1d913e2760998b0b5987b317bd5ea70a3d105b17d1231c06ded98
+  prev_hash: 9ff8a94275460031d2620698d355d860342befa682eab979133257e1cf711ae0
+  hash: 0f969d883e6fe417ca2cfc61e6248cd214f2c5302a92c7b2d4b49d972202a6f0
+- seq: 18
+  kind: tool_receipt
+  at: '2026-10-25T13:48:24Z'
+  step: author_citations
+  command: Rechecked seven in-text numeric citation identifiers against seven references
+    after diagnostic clarification; all three author DOI retained
+  status: passed
+  exit_status: 0
+  retries_used: 0
+  input_sha256:
+    ../audits/dissertation/author-publications-v1/sources.json: a285c503309f02cf3a369bf6410bec22f6207b409e63eba20651cf9f0b6bfaf5
+    ../../docs/dissertation/articles/article-1-twin-validation.md: 54f8fbdf2bc1d913e2760998b0b5987b317bd5ea70a3d105b17d1231c06ded98
+  prev_hash: 0f969d883e6fe417ca2cfc61e6248cd214f2c5302a92c7b2d4b49d972202a6f0
+  hash: be15227ddae426ca549f14b64dbc8b2931d992fb97c9b1e3a08c212db4110828

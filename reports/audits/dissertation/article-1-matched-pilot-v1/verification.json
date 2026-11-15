@@ -1,0 +1,23 @@
+{
+  "checkedAtUtc": "2026-10-25T14:42:52.106970+00:00",
+  "tests": {
+    "mqtty": 96,
+    "nativeTransport": 10,
+    "python": 28
+  },
+  "commands": [
+    "dotnet test <MqttBenchmark.Tests.csproj> --filter 'FullyQualifiedName~PublicationCohortTests|FullyQualifiedName~CampaignTransportTests' (MQB_ENABLE_INTEGRATION=1)",
+    "dotnet test <EntityFX.Tests.Integration.csproj> --filter 'FullyQualifiedName~PublicationCohortModelTests|FullyQualifiedName~MqttRelayExperimentTests|FullyQualifiedName~ExperimentV3Tests|FullyQualifiedName~LoadBalancingTests|FullyQualifiedName~FederationTests'",
+    "python -m unittest test_matched_twin_pilot test_audit_twin_connections test_audit_twin_cohort test_fresh_series_recovery"
+  ],
+  "redGreenObserved": [
+    "Missing native clientId caused 2 test failures",
+    "Missing model role caused 2 failures",
+    "Missing horizon option caused compilation failures before implementation",
+    "Missing subscriptions file caused 4 failures",
+    "Different subscription QoS caused 1 failure before requested-QoS fix",
+    "Python pilot-gate module missing before implementation"
+  ],
+  "releaseBuildExitCode": 0,
+  "scientificSeriesCompleted": false
+}

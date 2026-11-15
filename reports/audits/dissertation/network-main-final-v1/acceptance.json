@@ -1,0 +1,119 @@
+{
+  "status": "fullMatrixAndReplaysAccepted",
+  "matrixRawPassed": 162,
+  "matrixRawFailed": 0,
+  "modeTriplets": 54,
+  "conditionModeRows": 54,
+  "replaysRawPassed": 6,
+  "replayScientificFileComparisons": 36,
+  "replayChecks": [
+    {
+      "id": "replay.star.single.q2.r1000.w10.s42",
+      "replayOf": "matrix.star.single.q2.r1000.w10.s42",
+      "rawArithmeticPassed": true,
+      "scientificFilesByteEqual": [
+        "summary.json",
+        "histograms.json",
+        "publications.json",
+        "delivery-receipts.json",
+        "transmissions.json",
+        "network-evidence.json"
+      ],
+      "summaryEqual": true
+    },
+    {
+      "id": "replay.star.single.q2.r5000.w10.s42",
+      "replayOf": "matrix.star.single.q2.r5000.w10.s42",
+      "rawArithmeticPassed": true,
+      "scientificFilesByteEqual": [
+        "summary.json",
+        "histograms.json",
+        "publications.json",
+        "delivery-receipts.json",
+        "transmissions.json",
+        "network-evidence.json"
+      ],
+      "summaryEqual": true
+    },
+    {
+      "id": "replay.star.relay.q2.r1000.w10.s42",
+      "replayOf": "matrix.star.relay.q2.r1000.w10.s42",
+      "rawArithmeticPassed": true,
+      "scientificFilesByteEqual": [
+        "summary.json",
+        "histograms.json",
+        "publications.json",
+        "delivery-receipts.json",
+        "transmissions.json",
+        "network-evidence.json"
+      ],
+      "summaryEqual": true
+    },
+    {
+      "id": "replay.star.relay.q2.r5000.w10.s42",
+      "replayOf": "matrix.star.relay.q2.r5000.w10.s42",
+      "rawArithmeticPassed": true,
+      "scientificFilesByteEqual": [
+        "summary.json",
+        "histograms.json",
+        "publications.json",
+        "delivery-receipts.json",
+        "transmissions.json",
+        "network-evidence.json"
+      ],
+      "summaryEqual": true
+    },
+    {
+      "id": "replay.star.federation.q2.r1000.w10.s42",
+      "replayOf": "matrix.star.federation.q2.r1000.w10.s42",
+      "rawArithmeticPassed": true,
+      "scientificFilesByteEqual": [
+        "summary.json",
+        "histograms.json",
+        "publications.json",
+        "delivery-receipts.json",
+        "transmissions.json",
+        "network-evidence.json"
+      ],
+      "summaryEqual": true
+    },
+    {
+      "id": "replay.star.federation.q2.r5000.w10.s42",
+      "replayOf": "matrix.star.federation.q2.r5000.w10.s42",
+      "rawArithmeticPassed": true,
+      "scientificFilesByteEqual": [
+        "summary.json",
+        "histograms.json",
+        "publications.json",
+        "delivery-receipts.json",
+        "transmissions.json",
+        "network-evidence.json"
+      ],
+      "summaryEqual": true
+    }
+  ],
+  "frozenManifestFilesVerified": 281,
+  "executionManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+  "transfer": {
+    "status": "allFilesVerified",
+    "archive": {
+      "archive": "/run/media/entityfx/hd250/mqtty-evidence/network-final-transfer-20261028/network-full-final.tar.gz",
+      "bytes": 1688195284,
+      "sha256": "e5d0ea8d89a5307c3317dd5148dac467efbb7e79ca289f736d07bb41ce35a3b5",
+      "files": 4412,
+      "totalRawBytes": 15780876135
+    },
+    "rawRoot": "C:\\temp\\mqtty-evidence\\network-final-20261028\\raw-002",
+    "verifiedFiles": 4412,
+    "totalRawBytes": 15780876135,
+    "fileIndexSha256": "b1a775d2f93921610db678f50104a674f67a1bf1cc04c22a74867c502305bee6",
+    "originalRaw001Preserved": true
+  },
+  "transitRawCases": 54,
+  "newSimulationsExecuted": false,
+  "historicalInputsChanged": false,
+  "warningMatrixRuns": 27,
+  "warningReplayRuns": 2,
+  "historicalTechnicalAttempts": 3,
+  "scope": "Raw arithmetic and declared scientific byte equality; not physical accuracy, no claim of all-file equality or independent human review"
+}

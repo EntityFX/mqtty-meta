@@ -1,0 +1,54 @@
+{
+  "scope": "Ideal technical load-policy check; not native/model validation",
+  "qos": 2,
+  "ceilingRps": 40000,
+  "doubledCeilingRps": 80000,
+  "lowRate": {
+    "Attempted": 2,
+    "Admitted": 2,
+    "Completed": 2,
+    "ExpectedDeliveries": 2,
+    "Delivered": 2,
+    "RateRejected": 0,
+    "PublishFailed": 0,
+    "DeliveryDropped": 0,
+    "CompletedRps": 10,
+    "PublishFailureRate": 0,
+    "DeliveryLossRate": 0,
+    "LatencyP99Ms": 1.2000000000000002
+  },
+  "ceilingRate": {
+    "Attempted": 616,
+    "Admitted": 616,
+    "Completed": 616,
+    "ExpectedDeliveries": 616,
+    "Delivered": 616,
+    "RateRejected": 0,
+    "PublishFailed": 0,
+    "DeliveryDropped": 0,
+    "CompletedRps": 3080,
+    "PublishFailureRate": 0,
+    "DeliveryLossRate": 0,
+    "LatencyP99Ms": 1.2000000000000002
+  },
+  "doubledCeilingRate": {
+    "Attempted": 616,
+    "Admitted": 616,
+    "Completed": 616,
+    "ExpectedDeliveries": 616,
+    "Delivered": 616,
+    "RateRejected": 0,
+    "PublishFailed": 0,
+    "DeliveryDropped": 0,
+    "CompletedRps": 3080,
+    "PublishFailureRate": 0,
+    "DeliveryLossRate": 0,
+    "LatencyP99Ms": 1.2000000000000002
+  },
+  "equalScientificCounters": true,
+  "rawDirectories": [
+    "C:\\projects\\mqtty-meta\\reports\\audits\\dissertation\\article-1-compact-readiness-v1\\model-budget-micro\\qos2\\20261024T230824321Z-0a433dfc6671401d835f65f17713bb03",
+    "C:\\projects\\mqtty-meta\\reports\\audits\\dissertation\\article-1-compact-readiness-v1\\model-budget-micro\\qos2\\20261024T230825071Z-c06823bbce0f480b8043ad354cad364f",
+    "C:\\projects\\mqtty-meta\\reports\\audits\\dissertation\\article-1-compact-readiness-v1\\model-budget-micro\\qos2\\20261024T230825680Z-a5771fc9b92240079414b2fcc15b0db6"
+  ]
+}

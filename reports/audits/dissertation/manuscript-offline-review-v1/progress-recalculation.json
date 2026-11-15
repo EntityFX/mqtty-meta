@@ -1,0 +1,234 @@
+{
+  "status": "recalculated",
+  "plan": "docs/dissertation/articles-and-work-plan.md",
+  "steps": [
+    {
+      "step": "01",
+      "personDays": 0.5,
+      "technicallyCredited": false
+    },
+    {
+      "step": "02",
+      "personDays": 0.5,
+      "technicallyCredited": false
+    },
+    {
+      "step": "03",
+      "personDays": 2.0,
+      "technicallyCredited": true
+    },
+    {
+      "step": "04",
+      "personDays": 1.5,
+      "technicallyCredited": true
+    },
+    {
+      "step": "05",
+      "personDays": 1.0,
+      "technicallyCredited": false
+    },
+    {
+      "step": "06",
+      "personDays": 0.5,
+      "technicallyCredited": true
+    },
+    {
+      "step": "07",
+      "personDays": 1.0,
+      "technicallyCredited": false
+    },
+    {
+      "step": "08",
+      "personDays": 1.0,
+      "technicallyCredited": true
+    },
+    {
+      "step": "09",
+      "personDays": 1.5,
+      "technicallyCredited": true
+    },
+    {
+      "step": "10",
+      "personDays": 2.0,
+      "technicallyCredited": true
+    },
+    {
+      "step": "11",
+      "personDays": 1.0,
+      "technicallyCredited": true
+    },
+    {
+      "step": "12",
+      "personDays": 1.5,
+      "technicallyCredited": true
+    },
+    {
+      "step": "13",
+      "personDays": 1.0,
+      "technicallyCredited": true
+    },
+    {
+      "step": "14",
+      "personDays": 2.0,
+      "technicallyCredited": true
+    },
+    {
+      "step": "15",
+      "personDays": 0.5,
+      "technicallyCredited": false
+    },
+    {
+      "step": "16",
+      "personDays": 0.5,
+      "technicallyCredited": false
+    },
+    {
+      "step": "17",
+      "personDays": 0.5,
+      "technicallyCredited": false
+    },
+    {
+      "step": "18",
+      "personDays": 1.0,
+      "technicallyCredited": true
+    },
+    {
+      "step": "19",
+      "personDays": 1.5,
+      "technicallyCredited": true
+    },
+    {
+      "step": "20",
+      "personDays": 1.0,
+      "technicallyCredited": true
+    },
+    {
+      "step": "21",
+      "personDays": 1.0,
+      "technicallyCredited": true
+    },
+    {
+      "step": "22",
+      "personDays": 1.5,
+      "technicallyCredited": true
+    },
+    {
+      "step": "23",
+      "personDays": 1.5,
+      "technicallyCredited": true
+    },
+    {
+      "step": "24",
+      "personDays": 1.0,
+      "technicallyCredited": true
+    },
+    {
+      "step": "25",
+      "personDays": 2.0,
+      "technicallyCredited": true
+    },
+    {
+      "step": "26",
+      "personDays": 0.5,
+      "technicallyCredited": false
+    },
+    {
+      "step": "27",
+      "personDays": 0.5,
+      "technicallyCredited": false
+    },
+    {
+      "step": "28",
+      "personDays": 0.5,
+      "technicallyCredited": false
+    },
+    {
+      "step": "29",
+      "personDays": 0.5,
+      "technicallyCredited": true
+    },
+    {
+      "step": "30",
+      "personDays": 1.0,
+      "technicallyCredited": false
+    },
+    {
+      "step": "31",
+      "personDays": 2.0,
+      "technicallyCredited": false
+    },
+    {
+      "step": "32",
+      "personDays": 1.5,
+      "technicallyCredited": false
+    },
+    {
+      "step": "33",
+      "personDays": 1.5,
+      "technicallyCredited": false
+    },
+    {
+      "step": "34",
+      "personDays": 2.0,
+      "technicallyCredited": false
+    },
+    {
+      "step": "35",
+      "personDays": 1.5,
+      "technicallyCredited": false
+    },
+    {
+      "step": "36",
+      "personDays": 1.0,
+      "technicallyCredited": false
+    },
+    {
+      "step": "37",
+      "personDays": 1.0,
+      "technicallyCredited": false
+    },
+    {
+      "step": "38",
+      "personDays": 0.5,
+      "technicallyCredited": false
+    },
+    {
+      "step": "39",
+      "personDays": 1.0,
+      "technicallyCredited": false
+    },
+    {
+      "step": "40",
+      "personDays": 1.5,
+      "technicallyCredited": false
+    },
+    {
+      "step": "41",
+      "personDays": 1.0,
+      "technicallyCredited": false
+    },
+    {
+      "step": "42",
+      "personDays": 0.5,
+      "technicallyCredited": false
+    }
+  ],
+  "totalSteps": 42,
+  "creditedSteps": 19,
+  "baselinePersonDays": 47.0,
+  "creditedPersonDays": 25.0,
+  "remainingPersonDays": 22.0,
+  "globalPercent": 53.2,
+  "localSteps": [
+    "03",
+    "04",
+    "05",
+    "06"
+  ],
+  "localCreditedPersonDays": 4.0,
+  "localTotalPersonDays": 5.0,
+  "localPercent": 80.0,
+  "newCreditForThisReview": 0,
+  "basis": "Original planned effort; AI editorial checks do not satisfy independent human review",
+  "planSha256": "bc278311c50facf6ce397fb4d35e16015163ddcf67de7db0f37116b01efe3602"
+}

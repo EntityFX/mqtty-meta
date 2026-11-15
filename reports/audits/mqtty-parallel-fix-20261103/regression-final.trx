@@ -1,0 +1,946 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="966f4bd1-7679-47bd-90c6-adf5249066c7" name="SolopiyA@RU1202197828 2026-11-03 10:53:28" runUser="RUSSIA\SolopiyA" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-03T10:53:28.0627734+03:00" queuing="2026-11-03T10:53:28.0627738+03:00" start="2026-11-03T10:53:24.0688951+03:00" finish="2026-11-03T10:53:39.7893356+03:00" />
+  <TestSettings name="default" id="600c80de-7d31-4e14-a0c8-a0e52ee18d65">
+    <Deployment runDeploymentRoot="SolopiyA_RU1202197828_2026-11-03_10_53_28" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="15581261-1b21-4b27-87ce-ed8c08b21775" testId="e3f702cd-3591-f3b1-8e40-7aa4649b96fd" testName="LineAndDiamond_RemoteDeliveryIsFinite (line,0)" computerName="RU1202197828" duration="00:00:00.0510300" startTime="2026-11-03T10:53:31.4259485+03:00" endTime="2026-11-03T10:53:31.4772435+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="15581261-1b21-4b27-87ce-ed8c08b21775" />
+    <UnitTestResult executionId="6abe71be-64d4-47f1-8952-9a0b643d459f" testId="b4be65cc-1341-7438-30ea-2156cdae022f" testName="TransitTopology_PreservesOtherModes (Federation,1)" computerName="RU1202197828" duration="00:00:00.0663585" startTime="2026-11-03T10:53:36.5694636+03:00" endTime="2026-11-03T10:53:36.6360041+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6abe71be-64d4-47f1-8952-9a0b643d459f" />
+    <UnitTestResult executionId="529c7190-642b-4a31-8e5f-7958ecfa638b" testId="f7987584-2c3e-7700-9d36-c24839c66a49" testName="Demo_CliValidatesArgumentsAndCanRunWithoutFiles" computerName="RU1202197828" duration="00:00:00.0370005" startTime="2026-11-03T10:53:37.1865463+03:00" endTime="2026-11-03T10:53:37.2236672+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="529c7190-642b-4a31-8e5f-7958ecfa638b" />
+    <UnitTestResult executionId="3391a8c3-a180-4c11-974e-549f67ceb3e6" testId="84fce2a8-233d-b584-310c-3b3ed2c6f03d" testName="ConnectionPolicies_ReservePendingConnectionsAndKeepDeterministicMaps" computerName="RU1202197828" duration="00:00:00.0035661" startTime="2026-11-03T10:53:37.2237296+03:00" endTime="2026-11-03T10:53:37.2276643+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3391a8c3-a180-4c11-974e-549f67ceb3e6" />
+    <UnitTestResult executionId="92e796dd-5f43-4ee8-88b4-04f3869e6a91" testId="5e1656dd-deda-7078-0d57-e0aed786eae6" testName="RouteRebuild_InvalidatesCachedRouteAndKeepsReturnedSnapshot (True)" computerName="RU1202197828" duration="00:00:00.0000942" startTime="2026-11-03T10:53:39.6494259+03:00" endTime="2026-11-03T10:53:39.6495853+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="92e796dd-5f43-4ee8-88b4-04f3869e6a91" />
+    <UnitTestResult executionId="d98e62ef-1092-4db9-8dc0-c31415bcebad" testId="e6c5a99c-cb48-177f-6d6b-22d1dba660ab" testName="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions (Relay,2)" computerName="RU1202197828" duration="00:00:00.0764434" startTime="2026-11-03T10:53:31.1365060+03:00" endTime="2026-11-03T10:53:31.2131586+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d98e62ef-1092-4db9-8dc0-c31415bcebad" />
+    <UnitTestResult executionId="3c73292f-b55c-41d3-b095-66bba2f6ade7" testId="0bfbce6c-70b9-6f76-26ef-751fc4223ded" testName="CoreConstructors_RejectNonpositiveTickValues" computerName="RU1202197828" duration="00:00:00.0022617" startTime="2026-11-03T10:53:27.9748561+03:00" endTime="2026-11-03T10:53:27.9772005+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3c73292f-b55c-41d3-b095-66bba2f6ade7" />
+    <UnitTestResult executionId="999987d7-d206-4366-a604-d4baf01b5d8c" testId="6d231588-0821-dd12-8188-c776364ed741" testName="NodeOutgoing_DeliversExactPacketsInFifoOrder" computerName="RU1202197828" duration="00:00:00.0010534" startTime="2026-11-03T10:53:28.0516293+03:00" endTime="2026-11-03T10:53:28.0527877+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="999987d7-d206-4366-a604-d4baf01b5d8c" />
+    <UnitTestResult executionId="d184563f-ed44-4917-86b4-a952662a7a2a" testId="7b88cdbc-9b72-d154-373a-aa2a761f1642" testName="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions (Single,0)" computerName="RU1202197828" duration="00:00:00.0284324" startTime="2026-11-03T10:53:30.9094368+03:00" endTime="2026-11-03T10:53:30.9385549+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d184563f-ed44-4917-86b4-a952662a7a2a" />
+    <UnitTestResult executionId="cb106b9d-bd58-44ec-8138-cedefb1725bc" testId="2d0bf556-7367-dad3-0217-f145fac93cb6" testName="TransitTopology_PreservesOtherModes (Single,1)" computerName="RU1202197828" duration="00:00:00.0318095" startTime="2026-11-03T10:53:36.4751065+03:00" endTime="2026-11-03T10:53:36.5070781+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cb106b9d-bd58-44ec-8138-cedefb1725bc" />
+    <UnitTestResult executionId="48c38d56-7eaa-40da-b97a-44df46a05549" testId="c073766c-328b-3cdb-eaf2-d9bae8c13e83" testName="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions (Federation,1)" computerName="RU1202197828" duration="00:00:00.0754615" startTime="2026-11-03T10:53:31.2651048+03:00" endTime="2026-11-03T10:53:31.3408078+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="48c38d56-7eaa-40da-b97a-44df46a05549" />
+    <UnitTestResult executionId="72fdcf16-2019-4fcd-9c65-b7c4a76544ae" testId="4a9d767a-9c46-9037-9603-f89b8b3ea525" testName="NodeIncoming_DeferredPacketRetainsIdentityWithoutLossOrDuplication" computerName="RU1202197828" duration="00:00:00.0055577" startTime="2026-11-03T10:53:27.9679600+03:00" endTime="2026-11-03T10:53:27.9736523+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="72fdcf16-2019-4fcd-9c65-b7c4a76544ae" />
+    <UnitTestResult executionId="786bae91-4ee8-4f0a-b853-24bb01f7918e" testId="feb54af5-4456-bbbf-fd3b-d82d6642edf7" testName="Network_DeliversExactPacketsInFifoOrder" computerName="RU1202197828" duration="00:00:00.0009493" startTime="2026-11-03T10:53:28.0528304+03:00" endTime="2026-11-03T10:53:28.0540355+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="786bae91-4ee8-4f0a-b853-24bb01f7918e" />
+    <UnitTestResult executionId="0912aac3-4a74-4e36-8b7a-52f36725dd9f" testId="3a66da58-f37d-1ca5-0935-8577a4cabfcf" testName="RuntimeConnectTimeout_PreservesReasonAndEvidenceBundle" computerName="RU1202197828" duration="00:00:00.0337043" startTime="2026-11-03T10:53:39.3863357+03:00" endTime="2026-11-03T10:53:39.4201455+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0912aac3-4a74-4e36-8b7a-52f36725dd9f" />
+    <UnitTestResult executionId="3cc3faa2-af0a-444e-8171-1efaa6d0656a" testId="b0e54fea-fb03-5afe-7b5f-cea169d5e8d8" testName="CombinedP99_UsesMergedHistogramInsteadOfMeanBackendP99" computerName="RU1202197828" duration="00:00:00.0004424" startTime="2026-11-03T10:53:39.4202085+03:00" endTime="2026-11-03T10:53:39.4207477+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3cc3faa2-af0a-444e-8171-1efaa6d0656a" />
+    <UnitTestResult executionId="5f844dff-9544-4f40-aedf-8adc8eacb34e" testId="e81afdcd-cd16-6518-54af-d06d5756838c" testName="DeliveryLedger_RejectsImpossibleClockAndInvalidInputs" computerName="RU1202197828" duration="00:00:00.0004656" startTime="2026-11-03T10:53:37.2463873+03:00" endTime="2026-11-03T10:53:37.2469043+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5f844dff-9544-4f40-aedf-8adc8eacb34e" />
+    <UnitTestResult executionId="caf18afa-a35d-4efb-85bb-d2ea6136c840" testId="9e3b8d64-e79e-8843-635d-5d0ebc66bd19" testName="ConnectionPolicies_RejectEmptyInputsAndUnknownMode" computerName="RU1202197828" duration="00:00:00.0006147" startTime="2026-11-03T10:53:37.2277109+03:00" endTime="2026-11-03T10:53:37.2284183+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="caf18afa-a35d-4efb-85bb-d2ea6136c840" />
+    <UnitTestResult executionId="97f2c8bb-7e40-4923-b2f8-08a2f708b107" testId="1d4be76c-b9a9-5fe7-a129-d5c07347e75a" testName="TransitTopology_PreservesOtherModes (Federation,2)" computerName="RU1202197828" duration="00:00:00.0669041" startTime="2026-11-03T10:53:36.6360727+03:00" endTime="2026-11-03T10:53:36.7031519+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="97f2c8bb-7e40-4923-b2f8-08a2f708b107" />
+    <UnitTestResult executionId="51e6d4e4-485d-48c7-aa3f-a8616d19b258" testId="fd62d2fb-859a-f1b2-c4b5-49c6da18f01a" testName="ExistingOutput_IsNeverOverwritten" computerName="RU1202197828" duration="00:00:00.0042668" startTime="2026-11-03T10:53:39.3818554+03:00" endTime="2026-11-03T10:53:39.3862819+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="51e6d4e4-485d-48c7-aa3f-a8616d19b258" />
+    <UnitTestResult executionId="26b32077-48e0-4622-a5f0-4b7fe43c7245" testId="6dbb437e-7f56-e6c8-0310-53bc342bcc77" testName="SourceQuantiles_UseMergedHistogram_NotMeanOfBackendQuantiles" computerName="RU1202197828" duration="00:00:00.0025341" startTime="2026-11-03T10:53:36.9228218+03:00" endTime="2026-11-03T10:53:36.9254976+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="26b32077-48e0-4622-a5f0-4b7fe43c7245" />
+    <UnitTestResult executionId="49f53878-79c8-417c-866d-0cb24191b873" testId="506ccd4e-d534-9df6-e6d1-2e5ba806a07e" testName="Relay_WithoutSubscribers_StillExportsOnceToEveryPeer (0)" computerName="RU1202197828" duration="00:00:00.0399268" startTime="2026-11-03T10:53:33.5432001+03:00" endTime="2026-11-03T10:53:33.5833186+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="49f53878-79c8-417c-866d-0cb24191b873" />
+    <UnitTestResult executionId="00f6604a-03c2-42ed-9e36-09f4a7b372a1" testId="45145b64-6b6b-007e-68a4-33b1cde4eb2d" testName="GenericResponseTimeout_PreservesRefreshBoundaryWithoutGraphTickAdvance" computerName="RU1202197828" duration="00:00:00.4371607" startTime="2026-11-03T10:53:27.4270848+03:00" endTime="2026-11-03T10:53:27.9095142+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="00f6604a-03c2-42ed-9e36-09f4a7b372a1" />
+    <UnitTestResult executionId="fe614233-91ad-468f-b97b-0b1d2a66aa2e" testId="ed875e80-2456-4ea7-978b-550f07cce4f5" testName="Relay_ConnectsEveryBrokerToEveryOtherBroker_WithoutReexportingImports" computerName="RU1202197828" duration="00:00:01.7175287" startTime="2026-11-03T10:53:31.8254003+03:00" endTime="2026-11-03T10:53:33.5431118+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fe614233-91ad-468f-b97b-0b1d2a66aa2e" />
+    <UnitTestResult executionId="8e033d5c-a3d3-4296-86ba-143feea30b86" testId="deeff11a-22b7-4feb-fd57-e8e4c8361ae0" testName="ColdRouteCache_ConcurrentMissesPreserveEveryRoute (True)" computerName="RU1202197828" duration="00:00:00.0723786" startTime="2026-11-03T10:53:39.5752596+03:00" endTime="2026-11-03T10:53:39.6477983+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8e033d5c-a3d3-4296-86ba-143feea30b86" />
+    <UnitTestResult executionId="f3127a64-b2cb-45c4-9caa-ae4516797e6f" testId="0cd28347-393c-4d6f-3714-970c18ffdc99" testName="Refresh_KeepsRealAndVirtualCounterTimesDistinct" computerName="RU1202197828" duration="00:00:00.0179510" startTime="2026-11-03T10:53:28.0322628+03:00" endTime="2026-11-03T10:53:28.0503655+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f3127a64-b2cb-45c4-9caa-ae4516797e6f" />
+    <UnitTestResult executionId="3472a13c-bb22-4248-a258-c1ed1010b4ad" testId="6a13f237-0a36-7fb7-6ee4-67e1f5e02c7d" testName="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions (Single,2)" computerName="RU1202197828" duration="00:00:00.0278789" startTime="2026-11-03T10:53:30.9613811+03:00" endTime="2026-11-03T10:53:30.9894573+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3472a13c-bb22-4248-a258-c1ed1010b4ad" />
+    <UnitTestResult executionId="67da6a05-bd39-4036-85af-b2d51462b77d" testId="bb7e5ec0-bd72-4c91-e144-df1ccdfd99b2" testName="Matrix_Loads144ComparableCasesAndRejectsObservationHashSubstitution" computerName="RU1202197828" duration="00:00:00.0773210" startTime="2026-11-03T10:53:39.1773665+03:00" endTime="2026-11-03T10:53:39.2548058+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="67da6a05-bd39-4036-85af-b2d51462b77d" />
+    <UnitTestResult executionId="c40f5346-935a-4212-82bd-6f67fb8a291d" testId="bde3554e-c67e-2837-addf-63448a91db0f" testName="LineAndDiamond_RemoteDeliveryIsFinite (custom,0)" computerName="RU1202197828" duration="00:00:00.0589219" startTime="2026-11-03T10:53:31.6132629+03:00" endTime="2026-11-03T10:53:31.6724707+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c40f5346-935a-4212-82bd-6f67fb8a291d" />
+    <UnitTestResult executionId="3c9df550-8b24-4d17-97a2-63df8376b7b1" testId="2ff64bf5-398c-a083-2473-625784e58304" testName="EqualStaticAssignments_ProduceEqualDirectRoundRobinAndLeastConnectionsSummaries (0)" computerName="RU1202197828" duration="00:00:00.2137964" startTime="2026-11-03T10:53:38.1212878+03:00" endTime="2026-11-03T10:53:38.3352973+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3c9df550-8b24-4d17-97a2-63df8376b7b1" />
+    <UnitTestResult executionId="e6fcc6bf-e2e1-40f0-b44b-b6af797c1fcf" testId="4b25935c-b8cf-b554-b8a7-ef712c6b0bee" testName="Command_RejectsMalformedNestedProfileInputsBeforeCreatingOutput (unknown)" computerName="RU1202197828" duration="00:00:00.0185175" startTime="2026-11-03T10:53:38.7898924+03:00" endTime="2026-11-03T10:53:38.8086602+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e6fcc6bf-e2e1-40f0-b44b-b6af797c1fcf">
+      <Output>
+        <StdErr>Unknown or duplicate configuration field: unexpectedField.</StdErr>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4d6c9088-793f-4cce-8464-d327c350ecd0" testId="12cc8687-eacd-035f-fb22-85b83997709c" testName="Matrix_RejectsIncompatibleProfileProvenance (method)" computerName="RU1202197828" duration="00:00:00.0476857" startTime="2026-11-03T10:53:39.1281936+03:00" endTime="2026-11-03T10:53:39.1760292+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d6c9088-793f-4cce-8464-d327c350ecd0" />
+    <UnitTestResult executionId="488fc44f-2e20-45e6-8ef8-695795dbfbb4" testId="fadf37cc-afc2-46ba-6b77-556db470c02c" testName="Diagnostics_DoNotChangeScientificFiles_AndAreSealed (2)" computerName="RU1202197828" duration="00:00:00.4232916" startTime="2026-11-03T10:53:29.6243392+03:00" endTime="2026-11-03T10:53:30.0478901+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="488fc44f-2e20-45e6-8ef8-695795dbfbb4" />
+    <UnitTestResult executionId="4e4b24c3-ae63-4c38-8d90-de703f2be83e" testId="19833825-1de7-64d2-11b8-0aad4563e7c1" testName="NodeIncoming_DeliversExactPacketsInFifoOrder" computerName="RU1202197828" duration="00:00:00.0010125" startTime="2026-11-03T10:53:28.0504445+03:00" endTime="2026-11-03T10:53:28.0515778+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4e4b24c3-ae63-4c38-8d90-de703f2be83e" />
+    <UnitTestResult executionId="89d9d598-db63-41fb-8352-e2636ddc9151" testId="ad49be57-9ddb-a497-f542-789f7041834d" testName="Matrix_RejectsIncompatibleProfileProvenance (deploymentMode)" computerName="RU1202197828" duration="00:00:00.0511353" startTime="2026-11-03T10:53:39.0768497+03:00" endTime="2026-11-03T10:53:39.1281351+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="89d9d598-db63-41fb-8352-e2636ddc9151" />
+    <UnitTestResult executionId="13a668c4-a82b-4e6b-9221-4854fad35613" testId="a0abe68e-6013-a62d-4fb1-a5cdf01f6c36" testName="Relay_WithoutSubscribers_StillExportsOnceToEveryPeer (2)" computerName="RU1202197828" duration="00:00:00.0439659" startTime="2026-11-03T10:53:33.6211687+03:00" endTime="2026-11-03T10:53:33.6653075+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="13a668c4-a82b-4e6b-9221-4854fad35613" />
+    <UnitTestResult executionId="c9ff774c-1a5e-4bcc-b42d-0e08e3725cc1" testId="6b663d1e-d716-8977-b758-7f880cbee399" testName="EvidenceExport_IsIndependentOfCallbackOrderAndRetainsDuplicates" computerName="RU1202197828" duration="00:00:00.0031701" startTime="2026-11-03T10:53:39.6718717+03:00" endTime="2026-11-03T10:53:39.6750947+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c9ff774c-1a5e-4bcc-b42d-0e08e3725cc1" />
+    <UnitTestResult executionId="57e7c061-a65a-4fcd-a2db-c76631fb208d" testId="bab4a8e0-bca4-3c92-c0dc-dea48dba646b" testName="Command_RejectsMalformedNestedProfileInputsBeforeCreatingOutput (null)" computerName="RU1202197828" duration="00:00:00.0032629" startTime="2026-11-03T10:53:38.8123465+03:00" endTime="2026-11-03T10:53:38.8157557+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="57e7c061-a65a-4fcd-a2db-c76631fb208d">
+      <Output>
+        <StdErr>The requested operation requires an element of type 'Object', but the target element has type 'Null'.</StdErr>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0864215f-b9f4-40e4-b1f3-33b893698970" testId="57805160-dd04-ff5f-b1a8-8559b4186c19" testName="LineAndDiamond_RemoteDeliveryIsFinite (line,1)" computerName="RU1202197828" duration="00:00:00.0514425" startTime="2026-11-03T10:53:31.4773280+03:00" endTime="2026-11-03T10:53:31.5289813+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0864215f-b9f4-40e4-b1f3-33b893698970" />
+    <UnitTestResult executionId="e59ae90c-673a-443f-940e-b45b11dcb87f" testId="863a1a42-3fa8-4bdf-db25-32ea07704ef2" testName="Network_RejectsInvalidCapacityQueueWindowAndTransferTicks" computerName="RU1202197828" duration="00:00:00.0020297" startTime="2026-11-03T10:53:27.9772540+03:00" endTime="2026-11-03T10:53:27.9793711+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e59ae90c-673a-443f-940e-b45b11dcb87f" />
+    <UnitTestResult executionId="4b6334dc-329c-4eae-982c-8e2705580d64" testId="bf68a4ce-60bd-25f3-dfdf-2572d5dd6f28" testName="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions (Federation,2)" computerName="RU1202197828" duration="00:00:00.0846054" startTime="2026-11-03T10:53:31.3409227+03:00" endTime="2026-11-03T10:53:31.4258616+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4b6334dc-329c-4eae-982c-8e2705580d64" />
+    <UnitTestResult executionId="d63a1178-3c1a-40d8-a215-bef75397e5b2" testId="db2f657b-3796-1ccc-febc-a6e0c3060231" testName="EqualStaticAssignments_ProduceEqualDirectRoundRobinAndLeastConnectionsSummaries (1)" computerName="RU1202197828" duration="00:00:00.2128016" startTime="2026-11-03T10:53:38.3353880+03:00" endTime="2026-11-03T10:53:38.5483981+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d63a1178-3c1a-40d8-a215-bef75397e5b2" />
+    <UnitTestResult executionId="8d6b7528-dfa6-42ce-b58a-f20262efed9f" testId="4d21a8f2-19fc-373f-731a-969ef976c953" testName="RuntimeDrainTimeout_RetainsPartialMeasurementAndReportsIncompleteDelivery" computerName="RU1202197828" duration="00:00:00.0787256" startTime="2026-11-03T10:53:39.4207700+03:00" endTime="2026-11-03T10:53:39.4995634+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8d6b7528-dfa6-42ce-b58a-f20262efed9f" />
+    <UnitTestResult executionId="c0a9e4fb-95a5-4282-b278-b01fb54a0fca" testId="882bae56-753f-976b-7679-537cbd8a5cee" testName="Network_EnforcesByteCapacityOverConfiguredRollingWindow" computerName="RU1202197828" duration="00:00:00.0211522" startTime="2026-11-03T10:53:27.9950164+03:00" endTime="2026-11-03T10:53:28.0163264+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c0a9e4fb-95a5-4282-b278-b01fb54a0fca" />
+    <UnitTestResult executionId="7feb2df0-83f7-4f0d-b50c-2e7a90c61831" testId="124b71df-f6ab-c2f4-133c-3b4dc53af275" testName="TransitTopology_PreservesOtherModes (Federation,0)" computerName="RU1202197828" duration="00:00:00.0427784" startTime="2026-11-03T10:53:36.5264380+03:00" endTime="2026-11-03T10:53:36.5693820+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7feb2df0-83f7-4f0d-b50c-2e7a90c61831" />
+    <UnitTestResult executionId="85be8dd9-e766-4c72-956c-8cf0a0a5d5ca" testId="ea2ef502-a4a8-2ca5-4a68-c34b2173ffa1" testName="LineAndDiamond_RemoteDeliveryIsFinite (line,2)" computerName="RU1202197828" duration="00:00:00.0828724" startTime="2026-11-03T10:53:31.5290730+03:00" endTime="2026-11-03T10:53:31.6121634+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="85be8dd9-e766-4c72-956c-8cf0a0a5d5ca" />
+    <UnitTestResult executionId="d3ce5692-1fa6-4d4b-abde-af1d1ab124ea" testId="a2548e11-669e-2c05-1c34-ba91c108c0cb" testName="SameSequenceAtDifferentOrigins_IsNotADuplicate" computerName="RU1202197828" duration="00:00:00.0236667" startTime="2026-11-03T10:53:36.8897465+03:00" endTime="2026-11-03T10:53:36.9135159+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d3ce5692-1fa6-4d4b-abde-af1d1ab124ea" />
+    <UnitTestResult executionId="c4329374-fb8c-41e7-aa8d-738d79e08348" testId="88727246-86af-d950-4a1d-4bf4e3123af2" testName="Validation_RejectsCacheBudgetUnknownFieldsDisconnectedAndRepeatedEdges" computerName="RU1202197828" duration="00:00:00.0035336" startTime="2026-11-03T10:53:36.9191015+03:00" endTime="2026-11-03T10:53:36.9227192+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c4329374-fb8c-41e7-aa8d-738d79e08348" />
+    <UnitTestResult executionId="f416dbb8-6b7c-4964-93f6-fa7a42d80fcb" testId="11819ff9-0948-180f-58be-e37b3e1c543e" testName="Configuration_RejectsExcessiveLedgerAndTopologyBudgetsBeforeAllocation" computerName="RU1202197828" duration="00:00:00.0010349" startTime="2026-11-03T10:53:38.8158331+03:00" endTime="2026-11-03T10:53:38.8169919+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f416dbb8-6b7c-4964-93f6-fa7a42d80fcb" />
+    <UnitTestResult executionId="fc89ef7c-cac6-44b0-8e22-d14b1f554a2d" testId="1f94ed63-55cd-af63-bfdf-fd05f2eb3442" testName="StandaloneRunConfiguration_ReplaysWithoutOriginalConfigFile" computerName="RU1202197828" duration="00:00:00.1267550" startTime="2026-11-03T10:53:39.2548634+03:00" endTime="2026-11-03T10:53:39.3817648+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fc89ef7c-cac6-44b0-8e22-d14b1f554a2d" />
+    <UnitTestResult executionId="d1d17486-7d8d-40f1-abf1-ac599d46f225" testId="ef345aa9-bab3-3854-12ce-9b8f400bfb35" testName="Diagnostics_DoNotChangeScientificFiles_AndAreSealed (0)" computerName="RU1202197828" duration="00:00:01.2277930" startTime="2026-11-03T10:53:28.0540829+03:00" endTime="2026-11-03T10:53:29.2868805+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d1d17486-7d8d-40f1-abf1-ac599d46f225" />
+    <UnitTestResult executionId="bd9e0711-f4dc-4e82-88c9-0f14ee177fb7" testId="ad9f3067-4a29-422d-2b2f-af3704cb335b" testName="ColdRouteCache_ConcurrentMissesPreserveEveryRoute (False)" computerName="RU1202197828" duration="00:00:00.0751653" startTime="2026-11-03T10:53:39.4996210+03:00" endTime="2026-11-03T10:53:39.5751796+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bd9e0711-f4dc-4e82-88c9-0f14ee177fb7" />
+    <UnitTestResult executionId="8d73279f-2c2e-4d3f-a69f-22c8e484ad74" testId="62f937f2-b1c6-bde6-4539-1f5e154573c3" testName="Matrix_RejectsIncompatibleProfileProvenance (benchmarkCommit)" computerName="RU1202197828" duration="00:00:00.0596318" startTime="2026-11-03T10:53:38.9597264+03:00" endTime="2026-11-03T10:53:39.0194952+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8d73279f-2c2e-4d3f-a69f-22c8e484ad74" />
+    <UnitTestResult executionId="7e1d4dee-dff7-4268-ab4a-d100ee458af6" testId="770b8861-f1b5-3fd5-df12-f5d51f914d6c" testName="IndependentBackends_DoNotShareSubscriptions" computerName="RU1202197828" duration="00:00:00.0087368" startTime="2026-11-03T10:53:38.7523224+03:00" endTime="2026-11-03T10:53:38.7612312+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7e1d4dee-dff7-4268-ab4a-d100ee458af6" />
+    <UnitTestResult executionId="49ea496e-0056-498d-8f03-ea87152d5867" testId="6c024371-f29a-e14a-e66a-6ddce11d9bd6" testName="Command_RejectsMalformedNestedProfileInputsBeforeCreatingOutput (duplicate)" computerName="RU1202197828" duration="00:00:00.0031975" startTime="2026-11-03T10:53:38.8088783+03:00" endTime="2026-11-03T10:53:38.8122856+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="49ea496e-0056-498d-8f03-ea87152d5867">
+      <Output>
+        <StdErr>Unknown or duplicate configuration field: brokerType.</StdErr>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="894e8e44-70dc-4d2d-b7b9-16343d0fad02" testId="b7f2315e-7dcf-c77a-0bb6-7ebb8d5f9e3e" testName="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions (Relay,0)" computerName="RU1202197828" duration="00:00:00.0818223" startTime="2026-11-03T10:53:30.9895343+03:00" endTime="2026-11-03T10:53:31.0715609+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="894e8e44-70dc-4d2d-b7b9-16343d0fad02" />
+    <UnitTestResult executionId="83e568d4-ecaa-45d1-b7c9-a1103aed823c" testId="66d818cf-9ae3-3eb0-1800-6651dc67cb6e" testName="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions (Single,1)" computerName="RU1202197828" duration="00:00:00.0224180" startTime="2026-11-03T10:53:30.9386380+03:00" endTime="2026-11-03T10:53:30.9613053+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="83e568d4-ecaa-45d1-b7c9-a1103aed823c" />
+    <UnitTestResult executionId="810c31ae-c89b-4838-b4b8-6d123b4c86bd" testId="d2a7413d-74d7-75c4-a96b-6b2182b9b45b" testName="Prepare_RequiresExactObservedPublisherCountsWithoutInterpolation" computerName="RU1202197828" duration="00:00:00.0022617" startTime="2026-11-03T10:53:38.7612935+03:00" endTime="2026-11-03T10:53:38.7636656+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="810c31ae-c89b-4838-b4b8-6d123b4c86bd" />
+    <UnitTestResult executionId="93253440-f60d-4c30-a44e-513d54427fd7" testId="7678d24d-9e1b-c9f3-cbc0-9bf1fae0df40" testName="Matrix_RejectsIncompatibleProfileProvenance (mqttYCommit)" computerName="RU1202197828" duration="00:00:00.1425116" startTime="2026-11-03T10:53:38.8170298+03:00" endTime="2026-11-03T10:53:38.9596719+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="93253440-f60d-4c30-a44e-513d54427fd7" />
+    <UnitTestResult executionId="29d22ced-c3c0-4505-96e9-41d1d81e4cbd" testId="979638e9-4894-69a2-e43e-d962918d746c" testName="Matrix_RejectsIncompatibleProfileProvenance (cpuMode)" computerName="RU1202197828" duration="00:00:00.0570811" startTime="2026-11-03T10:53:39.0195584+03:00" endTime="2026-11-03T10:53:39.0767918+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="29d22ced-c3c0-4505-96e9-41d1d81e4cbd" />
+    <UnitTestResult executionId="94356e61-6fd9-4419-86b8-f2a2999b7516" testId="2f7f507c-5f0e-051d-7171-71c9587df94c" testName="PendingCapture_IsReadOnly_AndLimitsDoNotHideTotals" computerName="RU1202197828" duration="00:00:00.0826353" startTime="2026-11-03T10:53:30.0480283+03:00" endTime="2026-11-03T10:53:30.1309105+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="94356e61-6fd9-4419-86b8-f2a2999b7516" />
+    <UnitTestResult executionId="bf45b0e6-5aa4-4f5c-a1c8-c024aa4bd1ca" testId="1f010d7b-4c55-6da6-eb9f-5d4998241242" testName="SavedRun_ReplaysExactly_SealsPayloadsAndRejectsMovedClients" computerName="RU1202197828" duration="00:00:00.1874281" startTime="2026-11-03T10:53:36.9822594+03:00" endTime="2026-11-03T10:53:37.1698174+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bf45b0e6-5aa4-4f5c-a1c8-c024aa4bd1ca" />
+    <UnitTestResult executionId="b6d84249-12d9-413d-987b-b839887b85a7" testId="052d77e0-ac8c-af03-e43f-7f19db7ec109" testName="IdealRun_DeliversMeasurementCohortAndFreezesSessionAssignments (2)" computerName="RU1202197828" duration="00:00:00.0837186" startTime="2026-11-03T10:53:37.8611974+03:00" endTime="2026-11-03T10:53:37.9451279+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b6d84249-12d9-413d-987b-b839887b85a7" />
+    <UnitTestResult executionId="73897646-f519-48e8-9afd-fe29c118dd5a" testId="b86d97e8-7b38-da59-5030-363074037577" testName="OptInPublisherMetrics_ExcludeServicePublishersFailuresAndOldGeneration" computerName="RU1202197828" duration="00:00:00.0053077" startTime="2026-11-03T10:53:36.9136201+03:00" endTime="2026-11-03T10:53:36.9190687+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="73897646-f519-48e8-9afd-fe29c118dd5a" />
+    <UnitTestResult executionId="e5dc2bc2-3445-4949-85ef-c14eb431e5cc" testId="5c1a4a9a-4781-33c2-baeb-0408944d20fe" testName="IdealRun_DeliversMeasurementCohortAndFreezesSessionAssignments (1)" computerName="RU1202197828" duration="00:00:00.0803781" startTime="2026-11-03T10:53:37.7795880+03:00" endTime="2026-11-03T10:53:37.8601463+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e5dc2bc2-3445-4949-85ef-c14eb431e5cc" />
+    <UnitTestResult executionId="b8fbabc7-ff39-450f-942b-cb1e758658b9" testId="72a47302-bf4b-d1f8-0edb-9bcdcb246fa7" testName="TechnicalFailure_SavesReasonAndSealedPartialFiles" computerName="RU1202197828" duration="00:00:00.0478060" startTime="2026-11-03T10:53:36.9343010+03:00" endTime="2026-11-03T10:53:36.9821973+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b8fbabc7-ff39-450f-942b-cb1e758658b9" />
+    <UnitTestResult executionId="e4c71abd-e376-49fd-8e93-97df0d1f6b2c" testId="e56e7647-4386-690a-9b9a-2032900207e5" testName="HopLimitAndQueueOverflow_AreVisibleLoss_NotInfiniteExecution" computerName="RU1202197828" duration="00:00:00.0960791" startTime="2026-11-03T10:53:36.7562321+03:00" endTime="2026-11-03T10:53:36.8524363+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e4c71abd-e376-49fd-8e93-97df0d1f6b2c" />
+    <UnitTestResult executionId="81324e98-e8ed-4786-bc77-0d68a40b24f9" testId="fd9e2762-320d-a95b-a9c5-fdb2c366dac3" testName="Quiescence_FollowsPacketsThroughAllQueuesAndEmptyTopology" computerName="RU1202197828" duration="00:00:00.0154349" startTime="2026-11-03T10:53:27.9794165+03:00" endTime="2026-11-03T10:53:27.9949468+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="81324e98-e8ed-4786-bc77-0d68a40b24f9" />
+    <UnitTestResult executionId="0f621cb6-39d2-47cc-b511-aa73abfe6da4" testId="c5d78a8f-227d-86fe-fbc4-fe1c7ba19722" testName="SingleLocalReceiver_PreservesPayloadAndDoesNotConfuseWarmupOrRepeatedIds" computerName="RU1202197828" duration="00:00:00.0012678" startTime="2026-11-03T10:53:36.8882618+03:00" endTime="2026-11-03T10:53:36.8896897+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0f621cb6-39d2-47cc-b511-aa73abfe6da4" />
+    <UnitTestResult executionId="45959136-49e3-474b-aeed-efab18c3f226" testId="4efece39-bff7-efa1-3dd1-4cdd9b329012" testName="TenBrokerRelay_UsesAnEmptyTransitNetwork_ForEveryPhysicalPath" computerName="RU1202197828" duration="00:00:02.7810227" startTime="2026-11-03T10:53:33.6653814+03:00" endTime="2026-11-03T10:53:36.4466375+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="45959136-49e3-474b-aeed-efab18c3f226" />
+    <UnitTestResult executionId="53f0a2bc-a492-4fc9-a0cb-ececf6f5ed9a" testId="fb671f4f-afad-5d01-20e6-b94ddd9d8bc0" testName="Network_RejectsAtConfiguredQueueCapacity" computerName="RU1202197828" duration="00:00:00.0024378" startTime="2026-11-03T10:53:28.0164027+03:00" endTime="2026-11-03T10:53:28.0189593+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="53f0a2bc-a492-4fc9-a0cb-ececf6f5ed9a" />
+    <UnitTestResult executionId="a68cef70-db65-400e-9307-35804e56fd2d" testId="327ff532-edf5-e550-f392-c6c772366257" testName="PreparedProfile_RequiresExactN_AndRetainsItsSnapshot" computerName="RU1202197828" duration="00:00:00.0086267" startTime="2026-11-03T10:53:36.9255410+03:00" endTime="2026-11-03T10:53:36.9342611+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a68cef70-db65-400e-9307-35804e56fd2d" />
+    <UnitTestResult executionId="c39e12dd-be2e-411d-b191-e6fac0dcd3a2" testId="e387965f-9f9e-2eb1-8ad8-dbc04df3d3de" testName="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions (Federation,0)" computerName="RU1202197828" duration="00:00:00.0515282" startTime="2026-11-03T10:53:31.2132381+03:00" endTime="2026-11-03T10:53:31.2649824+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c39e12dd-be2e-411d-b191-e6fac0dcd3a2" />
+    <UnitTestResult executionId="62b546db-3e35-41db-b989-c7a7d3d04c88" testId="3318474b-9364-735d-cbb7-5a28c0999bfa" testName="Cli_AcceptsDiagnosticRun_RejectsDuplicateFlag_AndLeavesConfigUnchanged" computerName="RU1202197828" duration="00:00:00.1392766" startTime="2026-11-03T10:53:30.7698682+03:00" endTime="2026-11-03T10:53:30.9093547+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="62b546db-3e35-41db-b989-c7a7d3d04c88" />
+    <UnitTestResult executionId="a17ac46e-2093-4832-b02f-27803f668c92" testId="0fb6b141-6d39-09d9-4868-1cfb8d811d17" testName="LineAndDiamond_RemoteDeliveryIsFinite (custom,2)" computerName="RU1202197828" duration="00:00:00.0836933" startTime="2026-11-03T10:53:31.7376849+03:00" endTime="2026-11-03T10:53:31.8253262+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a17ac46e-2093-4832-b02f-27803f668c92" />
+    <UnitTestResult executionId="2782e418-1e7a-4771-90cf-7ee02b2a3e53" testId="5693b544-3a2f-f2f2-43c5-9a5d5d53c945" testName="DeliveryLedger_SnapshotCannotChangeWhenLaterMessagesArrive" computerName="RU1202197828" duration="00:00:00.0011383" startTime="2026-11-03T10:53:37.2451368+03:00" endTime="2026-11-03T10:53:37.2463643+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2782e418-1e7a-4771-90cf-7ee02b2a3e53" />
+    <UnitTestResult executionId="994f0c9f-a71d-4a0d-b23a-03d36f9b1a02" testId="4793a0b2-9e46-d005-320e-5c310502f115" testName="DrainTimeout_RetainsPartialEvidenceAndReason" computerName="RU1202197828" duration="00:00:00.0159394" startTime="2026-11-03T10:53:37.1698799+03:00" endTime="2026-11-03T10:53:37.1859361+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="994f0c9f-a71d-4a0d-b23a-03d36f9b1a02" />
+    <UnitTestResult executionId="d9dc63ff-9d31-428d-86fc-1ed3e0daf5ff" testId="b4597fdf-7680-9c72-33b4-ff16dcdbe835" testName="IdealRun_DeliversMeasurementCohortAndFreezesSessionAssignments (0)" computerName="RU1202197828" duration="00:00:00.5324592" startTime="2026-11-03T10:53:37.2469271+03:00" endTime="2026-11-03T10:53:37.7795168+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d9dc63ff-9d31-428d-86fc-1ed3e0daf5ff" />
+    <UnitTestResult executionId="9de0da5f-c2d1-4a37-9cfa-e4173f969091" testId="583bbc1d-d64b-ae20-3172-760741f0b5e1" testName="NodeRefresh_SnapshotsIncomingQueueBeforeOutgoingCallbacks" computerName="RU1202197828" duration="00:00:00.0009442" startTime="2026-11-03T10:53:27.9737427+03:00" endTime="2026-11-03T10:53:27.9748103+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9de0da5f-c2d1-4a37-9cfa-e4173f969091" />
+    <UnitTestResult executionId="cc08e892-b5e3-4485-a8b0-f477afe5c9dc" testId="5747c9cd-30b7-c8bf-244b-87d559ecf62b" testName="ConnectionPolicies_RejectUnusedBackendsAndInvalidSinglePool" computerName="RU1202197828" duration="00:00:00.0014186" startTime="2026-11-03T10:53:37.2284616+03:00" endTime="2026-11-03T10:53:37.2299520+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cc08e892-b5e3-4485-a8b0-f477afe5c9dc" />
+    <UnitTestResult executionId="3897bef2-cf65-4fbb-939b-0f8fac33356a" testId="6c3f295a-d352-723b-8319-c60cae5546c4" testName="TransmissionLedger_ConcurrentPublishersRetainEveryEvent" computerName="RU1202197828" duration="00:00:00.0066356" startTime="2026-11-03T10:53:39.6624610+03:00" endTime="2026-11-03T10:53:39.6691897+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3897bef2-cf65-4fbb-939b-0f8fac33356a" />
+    <UnitTestResult executionId="2c5fcb1f-f95a-482e-baee-b06d727d05d6" testId="4b1ea91b-3cf0-5357-9275-c86d49316469" testName="TransitNetwork_AddsModelledLatency_AndCliAcceptsStar" computerName="RU1202197828" duration="00:00:00.0528079" startTime="2026-11-03T10:53:36.7032181+03:00" endTime="2026-11-03T10:53:36.7561704+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2c5fcb1f-f95a-482e-baee-b06d727d05d6" />
+    <UnitTestResult executionId="0d8c24da-83a6-467e-b937-4f6ae6755041" testId="cf46338a-03a3-cc8b-2dd2-904d38bf3c40" testName="TransitTopology_PreservesOtherModes (Single,2)" computerName="RU1202197828" duration="00:00:00.0190587" startTime="2026-11-03T10:53:36.5071555+03:00" endTime="2026-11-03T10:53:36.5263761+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0d8c24da-83a6-467e-b937-4f6ae6755041" />
+    <UnitTestResult executionId="88df307d-1634-4752-888c-193ad9b2dc18" testId="fb1a47ed-0e14-58a6-fbe5-f18e59f918f9" testName="Diagnostics_DoNotChangeScientificFiles_AndAreSealed (1)" computerName="RU1202197828" duration="00:00:00.3369745" startTime="2026-11-03T10:53:29.2870089+03:00" endTime="2026-11-03T10:53:29.6242442+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="88df307d-1634-4752-888c-193ad9b2dc18" />
+    <UnitTestResult executionId="221b0adb-5e85-425a-8617-5c8f9c55c41e" testId="653c6d67-714c-b7b1-fa66-d8ada2c14c71" testName="RouteRebuild_InvalidatesCachedRouteAndKeepsReturnedSnapshot (False)" computerName="RU1202197828" duration="00:00:00.0007612" startTime="2026-11-03T10:53:39.6478878+03:00" endTime="2026-11-03T10:53:39.6488182+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="221b0adb-5e85-425a-8617-5c8f9c55c41e" />
+    <UnitTestResult executionId="ed096409-6120-450a-9a86-985019b00eba" testId="f8ac4a5e-328b-d729-4683-f7ea3f19cfa2" testName="NoSubscribers_HasNoDeliveryDenominator" computerName="RU1202197828" duration="00:00:00.0348474" startTime="2026-11-03T10:53:36.8525008+03:00" endTime="2026-11-03T10:53:36.8874771+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ed096409-6120-450a-9a86-985019b00eba" />
+    <UnitTestResult executionId="2e06be1d-d0f1-4031-b37b-fa959369ef67" testId="ed3a5ae7-8173-dfa8-6625-91064f4470ed" testName="EqualStaticAssignments_ProduceEqualDirectRoundRobinAndLeastConnectionsSummaries (2)" computerName="RU1202197828" duration="00:00:00.2035922" startTime="2026-11-03T10:53:38.5484661+03:00" endTime="2026-11-03T10:53:38.7522220+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2e06be1d-d0f1-4031-b37b-fa959369ef67" />
+    <UnitTestResult executionId="f275139c-125d-4e13-ab52-d70a09bed3af" testId="a928721b-07b2-5bd5-310e-b08618de9cd9" testName="BalancingLedger_ConcurrentBackendsKeepGlobalCountsAndHistogram" computerName="RU1202197828" duration="00:00:00.0025166" startTime="2026-11-03T10:53:39.6692401+03:00" endTime="2026-11-03T10:53:39.6718488+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f275139c-125d-4e13-ab52-d70a09bed3af" />
+    <UnitTestResult executionId="72422178-ca09-493a-8c21-ffff42e4524e" testId="19bd37a7-132b-bd22-5efc-e09cbac2a282" testName="SameInputAndSeed_ReproduceScientificSummaryExactly" computerName="RU1202197828" duration="00:00:00.1758437" startTime="2026-11-03T10:53:37.9452019+03:00" endTime="2026-11-03T10:53:38.1211959+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="72422178-ca09-493a-8c21-ffff42e4524e" />
+    <UnitTestResult executionId="94efa85d-fecd-401b-a9b3-19e632201a5c" testId="60ab1b9d-0b71-2aff-41f9-6fcbef33b2bc" testName="TransitTopology_PreservesOtherModes (Single,0)" computerName="RU1202197828" duration="00:00:00.0273540" startTime="2026-11-03T10:53:36.4472714+03:00" endTime="2026-11-03T10:53:36.4750459+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="94efa85d-fecd-401b-a9b3-19e632201a5c" />
+    <UnitTestResult executionId="cdc69524-c408-4c63-9222-b9be78070592" testId="36c7cf82-da57-3043-970b-30394b580df6" testName="ConfigurationFile_RejectsUnknownAndDuplicateFields" computerName="RU1202197828" duration="00:00:00.0240676" startTime="2026-11-03T10:53:38.7650840+03:00" endTime="2026-11-03T10:53:38.7892239+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cdc69524-c408-4c63-9222-b9be78070592" />
+    <UnitTestResult executionId="5eb8bc70-9789-4a46-bd87-0b8aab0cf6d1" testId="f8a0ae20-12c7-ca44-c311-e72f26336059" testName="Configuration_RejectsUnrepresentableDurationsAndInvalidModes" computerName="RU1202197828" duration="00:00:00.0012865" startTime="2026-11-03T10:53:38.7637030+03:00" endTime="2026-11-03T10:53:38.7650594+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5eb8bc70-9789-4a46-bd87-0b8aab0cf6d1" />
+    <UnitTestResult executionId="e6455a74-1289-48f9-b80d-15572f272f60" testId="457003b1-0bc1-d712-0c17-57a1489c4c4c" testName="LineAndDiamond_RemoteDeliveryIsFinite (custom,1)" computerName="RU1202197828" duration="00:00:00.0647340" startTime="2026-11-03T10:53:31.6726107+03:00" endTime="2026-11-03T10:53:31.7375827+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e6455a74-1289-48f9-b80d-15572f272f60" />
+    <UnitTestResult executionId="34d6f798-e037-4af9-b2d6-894ec8b888f8" testId="8e54ab1e-58e0-1658-39a8-8239cb8bb4a5" testName="FederationLedger_ConcurrentReceiversKeepEveryReceiptAndHistogramEntry" computerName="RU1202197828" duration="00:00:00.0127356" startTime="2026-11-03T10:53:39.6496089+03:00" endTime="2026-11-03T10:53:39.6624118+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34d6f798-e037-4af9-b2d6-894ec8b888f8" />
+    <UnitTestResult executionId="ab4761aa-fdff-4796-ad3b-2fdf5d3036c1" testId="b2e99512-ea0d-0150-ac40-925c3a19c432" testName="Relay_WithoutSubscribers_StillExportsOnceToEveryPeer (1)" computerName="RU1202197828" duration="00:00:00.0375174" startTime="2026-11-03T10:53:33.5834071+03:00" endTime="2026-11-03T10:53:33.6210901+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ab4761aa-fdff-4796-ad3b-2fdf5d3036c1" />
+    <UnitTestResult executionId="8dde0e06-51b5-4ec1-92b0-ea1abba90d35" testId="5c71cf0c-7152-48e3-2de5-3ee187e6d56f" testName="DrainTimeout_PreservesPartialDiagnostics_AndExactCounters" computerName="RU1202197828" duration="00:00:00.6385911" startTime="2026-11-03T10:53:30.1310105+03:00" endTime="2026-11-03T10:53:30.7697841+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8dde0e06-51b5-4ec1-92b0-ea1abba90d35" />
+    <UnitTestResult executionId="9509fcd2-7df6-413a-8eb8-05557e3dcfde" testId="b6ecce68-cb57-1e45-430d-2806342ae81f" testName="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions (Relay,1)" computerName="RU1202197828" duration="00:00:00.0645799" startTime="2026-11-03T10:53:31.0716327+03:00" endTime="2026-11-03T10:53:31.1364254+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9509fcd2-7df6-413a-8eb8-05557e3dcfde" />
+    <UnitTestResult executionId="706fbced-ce72-4ec9-9125-e57d54d22fb1" testId="ca8ef1bd-e1d8-17b4-4f24-3326ada64d6b" testName="DeliveryLedger_SeparatesWarmupWrongBackendUnknownAndDuplicates" computerName="RU1202197828" duration="00:00:00.0149888" startTime="2026-11-03T10:53:37.2299851+03:00" endTime="2026-11-03T10:53:37.2450790+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="706fbced-ce72-4ec9-9125-e57d54d22fb1" />
+    <UnitTestResult executionId="9a0a9757-b44a-40f9-9688-b91a113340c7" testId="a0c0d6a0-0b05-451b-2a32-4fd420805e41" testName="Forwarding_DefersExactPacketWhenDestinationQueueIsFull" computerName="RU1202197828" duration="00:00:00.0464229" startTime="2026-11-03T10:53:27.9210667+03:00" endTime="2026-11-03T10:53:27.9678009+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9a0a9757-b44a-40f9-9688-b91a113340c7" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="NodeRefresh_SnapshotsIncomingQueueBeforeOutgoingCallbacks" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="583bbc1d-d64b-ae20-3172-760741f0b5e1">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Mechanism" />
+      </TestCategory>
+      <Execution id="9de0da5f-c2d1-4a37-9cfa-e4173f969091" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.DeterministicCoreTests" name="NodeRefresh_SnapshotsIncomingQueueBeforeOutgoingCallbacks" />
+    </UnitTest>
+    <UnitTest name="NodeIncoming_DeliversExactPacketsInFifoOrder" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="19833825-1de7-64d2-11b8-0aad4563e7c1">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Mechanism" />
+      </TestCategory>
+      <Execution id="4e4b24c3-ae63-4c38-8d90-de703f2be83e" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.DeterministicCoreTests" name="NodeIncoming_DeliversExactPacketsInFifoOrder" />
+    </UnitTest>
+    <UnitTest name="Demo_CliValidatesArgumentsAndCanRunWithoutFiles" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="f7987584-2c3e-7700-9d36-c24839c66a49">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="529c7190-642b-4a31-8e5f-7958ecfa638b" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="Demo_CliValidatesArgumentsAndCanRunWithoutFiles" />
+    </UnitTest>
+    <UnitTest name="Command_RejectsMalformedNestedProfileInputsBeforeCreatingOutput (null)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="bab4a8e0-bca4-3c92-c0dc-dea48dba646b">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="57e7c061-a65a-4fcd-a2db-c76631fb208d" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="Command_RejectsMalformedNestedProfileInputsBeforeCreatingOutput" />
+    </UnitTest>
+    <UnitTest name="NodeIncoming_DeferredPacketRetainsIdentityWithoutLossOrDuplication" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="4a9d767a-9c46-9037-9603-f89b8b3ea525">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Mechanism" />
+      </TestCategory>
+      <Execution id="72fdcf16-2019-4fcd-9c65-b7c4a76544ae" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.DeterministicCoreTests" name="NodeIncoming_DeferredPacketRetainsIdentityWithoutLossOrDuplication" />
+    </UnitTest>
+    <UnitTest name="Validation_RejectsCacheBudgetUnknownFieldsDisconnectedAndRepeatedEdges" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="88727246-86af-d950-4a1d-4bf4e3123af2">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="c4329374-fb8c-41e7-aa8d-738d79e08348" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="Validation_RejectsCacheBudgetUnknownFieldsDisconnectedAndRepeatedEdges" />
+    </UnitTest>
+    <UnitTest name="ColdRouteCache_ConcurrentMissesPreserveEveryRoute (False)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="ad9f3067-4a29-422d-2b2f-af3704cb335b">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="bd9e0711-f4dc-4e82-88c9-0f14ee177fb7" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.ParallelModelSafetyTests" name="ColdRouteCache_ConcurrentMissesPreserveEveryRoute" />
+    </UnitTest>
+    <UnitTest name="LineAndDiamond_RemoteDeliveryIsFinite (line,1)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="57805160-dd04-ff5f-b1a8-8559b4186c19">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="0864215f-b9f4-40e4-b1f3-33b893698970" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="LineAndDiamond_RemoteDeliveryIsFinite" />
+    </UnitTest>
+    <UnitTest name="LineAndDiamond_RemoteDeliveryIsFinite (custom,1)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="457003b1-0bc1-d712-0c17-57a1489c4c4c">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="e6455a74-1289-48f9-b80d-15572f272f60" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="LineAndDiamond_RemoteDeliveryIsFinite" />
+    </UnitTest>
+    <UnitTest name="OptInPublisherMetrics_ExcludeServicePublishersFailuresAndOldGeneration" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="b86d97e8-7b38-da59-5030-363074037577">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="73897646-f519-48e8-9afd-fe29c118dd5a" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="OptInPublisherMetrics_ExcludeServicePublishersFailuresAndOldGeneration" />
+    </UnitTest>
+    <UnitTest name="BalancingLedger_ConcurrentBackendsKeepGlobalCountsAndHistogram" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="a928721b-07b2-5bd5-310e-b08618de9cd9">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="f275139c-125d-4e13-ab52-d70a09bed3af" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.ParallelModelSafetyTests" name="BalancingLedger_ConcurrentBackendsKeepGlobalCountsAndHistogram" />
+    </UnitTest>
+    <UnitTest name="Refresh_KeepsRealAndVirtualCounterTimesDistinct" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="0cd28347-393c-4d6f-3714-970c18ffdc99">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Mechanism" />
+      </TestCategory>
+      <Execution id="f3127a64-b2cb-45c4-9caa-ae4516797e6f" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.DeterministicCoreTests" name="Refresh_KeepsRealAndVirtualCounterTimesDistinct" />
+    </UnitTest>
+    <UnitTest name="DrainTimeout_RetainsPartialEvidenceAndReason" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="4793a0b2-9e46-d005-320e-5c310502f115">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="994f0c9f-a71d-4a0d-b23a-03d36f9b1a02" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="DrainTimeout_RetainsPartialEvidenceAndReason" />
+    </UnitTest>
+    <UnitTest name="IdealRun_DeliversMeasurementCohortAndFreezesSessionAssignments (0)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="b4597fdf-7680-9c72-33b4-ff16dcdbe835">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="d9dc63ff-9d31-428d-86fc-1ed3e0daf5ff" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="IdealRun_DeliversMeasurementCohortAndFreezesSessionAssignments" />
+    </UnitTest>
+    <UnitTest name="Quiescence_FollowsPacketsThroughAllQueuesAndEmptyTopology" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="fd9e2762-320d-a95b-a9c5-fdb2c366dac3">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Mechanism" />
+      </TestCategory>
+      <Execution id="81324e98-e8ed-4786-bc77-0d68a40b24f9" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.DeterministicCoreTests" name="Quiescence_FollowsPacketsThroughAllQueuesAndEmptyTopology" />
+    </UnitTest>
+    <UnitTest name="TransitNetwork_AddsModelledLatency_AndCliAcceptsStar" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="4b1ea91b-3cf0-5357-9275-c86d49316469">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="2c5fcb1f-f95a-482e-baee-b06d727d05d6" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="TransitNetwork_AddsModelledLatency_AndCliAcceptsStar" />
+    </UnitTest>
+    <UnitTest name="IdealRun_DeliversMeasurementCohortAndFreezesSessionAssignments (2)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="052d77e0-ac8c-af03-e43f-7f19db7ec109">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="b6d84249-12d9-413d-987b-b839887b85a7" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="IdealRun_DeliversMeasurementCohortAndFreezesSessionAssignments" />
+    </UnitTest>
+    <UnitTest name="TransmissionLedger_ConcurrentPublishersRetainEveryEvent" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="6c3f295a-d352-723b-8319-c60cae5546c4">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="3897bef2-cf65-4fbb-939b-0f8fac33356a" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.ParallelModelSafetyTests" name="TransmissionLedger_ConcurrentPublishersRetainEveryEvent" />
+    </UnitTest>
+    <UnitTest name="Forwarding_DefersExactPacketWhenDestinationQueueIsFull" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="a0c0d6a0-0b05-451b-2a32-4fd420805e41">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Mechanism" />
+      </TestCategory>
+      <Execution id="9a0a9757-b44a-40f9-9688-b91a113340c7" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.DeterministicCoreTests" name="Forwarding_DefersExactPacketWhenDestinationQueueIsFull" />
+    </UnitTest>
+    <UnitTest name="StandaloneRunConfiguration_ReplaysWithoutOriginalConfigFile" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="1f94ed63-55cd-af63-bfdf-fd05f2eb3442">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="fc89ef7c-cac6-44b0-8e22-d14b1f554a2d" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="StandaloneRunConfiguration_ReplaysWithoutOriginalConfigFile" />
+    </UnitTest>
+    <UnitTest name="HopLimitAndQueueOverflow_AreVisibleLoss_NotInfiniteExecution" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="e56e7647-4386-690a-9b9a-2032900207e5">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="e4c71abd-e376-49fd-8e93-97df0d1f6b2c" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="HopLimitAndQueueOverflow_AreVisibleLoss_NotInfiniteExecution" />
+    </UnitTest>
+    <UnitTest name="Relay_ConnectsEveryBrokerToEveryOtherBroker_WithoutReexportingImports" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="ed875e80-2456-4ea7-978b-550f07cce4f5">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="fe614233-91ad-468f-b97b-0b1d2a66aa2e" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="Relay_ConnectsEveryBrokerToEveryOtherBroker_WithoutReexportingImports" />
+    </UnitTest>
+    <UnitTest name="Command_RejectsMalformedNestedProfileInputsBeforeCreatingOutput (duplicate)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="6c024371-f29a-e14a-e66a-6ddce11d9bd6">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="49ea496e-0056-498d-8f03-ea87152d5867" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="Command_RejectsMalformedNestedProfileInputsBeforeCreatingOutput" />
+    </UnitTest>
+    <UnitTest name="Cli_AcceptsDiagnosticRun_RejectsDuplicateFlag_AndLeavesConfigUnchanged" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="3318474b-9364-735d-cbb7-5a28c0999bfa">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="62b546db-3e35-41db-b989-c7a7d3d04c88" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationDiagnosticsTests" name="Cli_AcceptsDiagnosticRun_RejectsDuplicateFlag_AndLeavesConfigUnchanged" />
+    </UnitTest>
+    <UnitTest name="ConfigurationFile_RejectsUnknownAndDuplicateFields" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="36c7cf82-da57-3043-970b-30394b580df6">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="cdc69524-c408-4c63-9222-b9be78070592" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="ConfigurationFile_RejectsUnknownAndDuplicateFields" />
+    </UnitTest>
+    <UnitTest name="GenericResponseTimeout_PreservesRefreshBoundaryWithoutGraphTickAdvance" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="45145b64-6b6b-007e-68a4-33b1cde4eb2d">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Mechanism" />
+      </TestCategory>
+      <Execution id="00f6604a-03c2-42ed-9e36-09f4a7b372a1" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.DeterministicCoreTests" name="GenericResponseTimeout_PreservesRefreshBoundaryWithoutGraphTickAdvance" />
+    </UnitTest>
+    <UnitTest name="ConnectionPolicies_RejectUnusedBackendsAndInvalidSinglePool" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="5747c9cd-30b7-c8bf-244b-87d559ecf62b">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="cc08e892-b5e3-4485-a8b0-f477afe5c9dc" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="ConnectionPolicies_RejectUnusedBackendsAndInvalidSinglePool" />
+    </UnitTest>
+    <UnitTest name="TechnicalFailure_SavesReasonAndSealedPartialFiles" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="72a47302-bf4b-d1f8-0edb-9bcdcb246fa7">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="b8fbabc7-ff39-450f-942b-cb1e758658b9" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="TechnicalFailure_SavesReasonAndSealedPartialFiles" />
+    </UnitTest>
+    <UnitTest name="Command_RejectsMalformedNestedProfileInputsBeforeCreatingOutput (unknown)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="4b25935c-b8cf-b554-b8a7-ef712c6b0bee">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="e6fcc6bf-e2e1-40f0-b44b-b6af797c1fcf" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="Command_RejectsMalformedNestedProfileInputsBeforeCreatingOutput" />
+    </UnitTest>
+    <UnitTest name="Network_RejectsAtConfiguredQueueCapacity" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="fb671f4f-afad-5d01-20e6-b94ddd9d8bc0">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Mechanism" />
+      </TestCategory>
+      <Execution id="53f0a2bc-a492-4fc9-a0cb-ececf6f5ed9a" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.DeterministicCoreTests" name="Network_RejectsAtConfiguredQueueCapacity" />
+    </UnitTest>
+    <UnitTest name="RouteRebuild_InvalidatesCachedRouteAndKeepsReturnedSnapshot (False)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="653c6d67-714c-b7b1-fa66-d8ada2c14c71">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="221b0adb-5e85-425a-8617-5c8f9c55c41e" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.ParallelModelSafetyTests" name="RouteRebuild_InvalidatesCachedRouteAndKeepsReturnedSnapshot" />
+    </UnitTest>
+    <UnitTest name="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions (Single,2)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="6a13f237-0a36-7fb7-6ee4-67e1f5e02c7d">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="3472a13c-bb22-4248-a258-c1ed1010b4ad" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions" />
+    </UnitTest>
+    <UnitTest name="EqualStaticAssignments_ProduceEqualDirectRoundRobinAndLeastConnectionsSummaries (0)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="2ff64bf5-398c-a083-2473-625784e58304">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="3c9df550-8b24-4d17-97a2-63df8376b7b1" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="EqualStaticAssignments_ProduceEqualDirectRoundRobinAndLeastConnectionsSummaries" />
+    </UnitTest>
+    <UnitTest name="CombinedP99_UsesMergedHistogramInsteadOfMeanBackendP99" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="b0e54fea-fb03-5afe-7b5f-cea169d5e8d8">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="3cc3faa2-af0a-444e-8171-1efaa6d0656a" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="CombinedP99_UsesMergedHistogramInsteadOfMeanBackendP99" />
+    </UnitTest>
+    <UnitTest name="TenBrokerRelay_UsesAnEmptyTransitNetwork_ForEveryPhysicalPath" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="4efece39-bff7-efa1-3dd1-4cdd9b329012">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="45959136-49e3-474b-aeed-efab18c3f226" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="TenBrokerRelay_UsesAnEmptyTransitNetwork_ForEveryPhysicalPath" />
+    </UnitTest>
+    <UnitTest name="TransitTopology_PreservesOtherModes (Single,2)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="cf46338a-03a3-cc8b-2dd2-904d38bf3c40">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="0d8c24da-83a6-467e-b937-4f6ae6755041" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="TransitTopology_PreservesOtherModes" />
+    </UnitTest>
+    <UnitTest name="TransitTopology_PreservesOtherModes (Federation,1)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="b4be65cc-1341-7438-30ea-2156cdae022f">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="6abe71be-64d4-47f1-8952-9a0b643d459f" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="TransitTopology_PreservesOtherModes" />
+    </UnitTest>
+    <UnitTest name="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions (Relay,0)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="b7f2315e-7dcf-c77a-0bb6-7ebb8d5f9e3e">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="894e8e44-70dc-4d2d-b7b9-16343d0fad02" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions" />
+    </UnitTest>
+    <UnitTest name="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions (Relay,1)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="b6ecce68-cb57-1e45-430d-2806342ae81f">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="9509fcd2-7df6-413a-8eb8-05557e3dcfde" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions" />
+    </UnitTest>
+    <UnitTest name="Relay_WithoutSubscribers_StillExportsOnceToEveryPeer (0)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="506ccd4e-d534-9df6-e6d1-2e5ba806a07e">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="49f53878-79c8-417c-866d-0cb24191b873" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="Relay_WithoutSubscribers_StillExportsOnceToEveryPeer" />
+    </UnitTest>
+    <UnitTest name="EvidenceExport_IsIndependentOfCallbackOrderAndRetainsDuplicates" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="6b663d1e-d716-8977-b758-7f880cbee399">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="c9ff774c-1a5e-4bcc-b42d-0e08e3725cc1" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.ParallelModelSafetyTests" name="EvidenceExport_IsIndependentOfCallbackOrderAndRetainsDuplicates" />
+    </UnitTest>
+    <UnitTest name="Matrix_RejectsIncompatibleProfileProvenance (method)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="12cc8687-eacd-035f-fb22-85b83997709c">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="4d6c9088-793f-4cce-8464-d327c350ecd0" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="Matrix_RejectsIncompatibleProfileProvenance" />
+    </UnitTest>
+    <UnitTest name="NodeOutgoing_DeliversExactPacketsInFifoOrder" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="6d231588-0821-dd12-8188-c776364ed741">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Mechanism" />
+      </TestCategory>
+      <Execution id="999987d7-d206-4366-a604-d4baf01b5d8c" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.DeterministicCoreTests" name="NodeOutgoing_DeliversExactPacketsInFifoOrder" />
+    </UnitTest>
+    <UnitTest name="NoSubscribers_HasNoDeliveryDenominator" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="f8ac4a5e-328b-d729-4683-f7ea3f19cfa2">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="ed096409-6120-450a-9a86-985019b00eba" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="NoSubscribers_HasNoDeliveryDenominator" />
+    </UnitTest>
+    <UnitTest name="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions (Relay,2)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="e6c5a99c-cb48-177f-6d6b-22d1dba660ab">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="d98e62ef-1092-4db9-8dc0-c31415bcebad" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions" />
+    </UnitTest>
+    <UnitTest name="SameInputAndSeed_ReproduceScientificSummaryExactly" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="19bd37a7-132b-bd22-5efc-e09cbac2a282">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="72422178-ca09-493a-8c21-ffff42e4524e" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="SameInputAndSeed_ReproduceScientificSummaryExactly" />
+    </UnitTest>
+    <UnitTest name="Matrix_RejectsIncompatibleProfileProvenance (mqttYCommit)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="7678d24d-9e1b-c9f3-cbc0-9bf1fae0df40">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="93253440-f60d-4c30-a44e-513d54427fd7" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="Matrix_RejectsIncompatibleProfileProvenance" />
+    </UnitTest>
+    <UnitTest name="TransitTopology_PreservesOtherModes (Federation,2)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="1d4be76c-b9a9-5fe7-a129-d5c07347e75a">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="97f2c8bb-7e40-4923-b2f8-08a2f708b107" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="TransitTopology_PreservesOtherModes" />
+    </UnitTest>
+    <UnitTest name="SingleLocalReceiver_PreservesPayloadAndDoesNotConfuseWarmupOrRepeatedIds" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="c5d78a8f-227d-86fe-fbc4-fe1c7ba19722">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="0f621cb6-39d2-47cc-b511-aa73abfe6da4" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="SingleLocalReceiver_PreservesPayloadAndDoesNotConfuseWarmupOrRepeatedIds" />
+    </UnitTest>
+    <UnitTest name="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions (Single,0)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="7b88cdbc-9b72-d154-373a-aa2a761f1642">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="d184563f-ed44-4917-86b4-a952662a7a2a" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions" />
+    </UnitTest>
+    <UnitTest name="SavedRun_ReplaysExactly_SealsPayloadsAndRejectsMovedClients" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="1f010d7b-4c55-6da6-eb9f-5d4998241242">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="bf45b0e6-5aa4-4f5c-a1c8-c024aa4bd1ca" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="SavedRun_ReplaysExactly_SealsPayloadsAndRejectsMovedClients" />
+    </UnitTest>
+    <UnitTest name="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions (Federation,0)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="e387965f-9f9e-2eb1-8ad8-dbc04df3d3de">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="c39e12dd-be2e-411d-b191-e6fac0dcd3a2" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions" />
+    </UnitTest>
+    <UnitTest name="Network_EnforcesByteCapacityOverConfiguredRollingWindow" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="882bae56-753f-976b-7679-537cbd8a5cee">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Mechanism" />
+      </TestCategory>
+      <Execution id="c0a9e4fb-95a5-4282-b278-b01fb54a0fca" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.DeterministicCoreTests" name="Network_EnforcesByteCapacityOverConfiguredRollingWindow" />
+    </UnitTest>
+    <UnitTest name="Prepare_RequiresExactObservedPublisherCountsWithoutInterpolation" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="d2a7413d-74d7-75c4-a96b-6b2182b9b45b">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="810c31ae-c89b-4838-b4b8-6d123b4c86bd" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="Prepare_RequiresExactObservedPublisherCountsWithoutInterpolation" />
+    </UnitTest>
+    <UnitTest name="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions (Federation,2)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="bf68a4ce-60bd-25f3-dfdf-2572d5dd6f28">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="4b6334dc-329c-4eae-982c-8e2705580d64" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions" />
+    </UnitTest>
+    <UnitTest name="Network_RejectsInvalidCapacityQueueWindowAndTransferTicks" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="863a1a42-3fa8-4bdf-db25-32ea07704ef2">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Mechanism" />
+      </TestCategory>
+      <Execution id="e59ae90c-673a-443f-940e-b45b11dcb87f" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.DeterministicCoreTests" name="Network_RejectsInvalidCapacityQueueWindowAndTransferTicks" />
+    </UnitTest>
+    <UnitTest name="ConnectionPolicies_ReservePendingConnectionsAndKeepDeterministicMaps" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="84fce2a8-233d-b584-310c-3b3ed2c6f03d">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="3391a8c3-a180-4c11-974e-549f67ceb3e6" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="ConnectionPolicies_ReservePendingConnectionsAndKeepDeterministicMaps" />
+    </UnitTest>
+    <UnitTest name="Diagnostics_DoNotChangeScientificFiles_AndAreSealed (1)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="fb1a47ed-0e14-58a6-fbe5-f18e59f918f9">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="88df307d-1634-4752-888c-193ad9b2dc18" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationDiagnosticsTests" name="Diagnostics_DoNotChangeScientificFiles_AndAreSealed" />
+    </UnitTest>
+    <UnitTest name="DeliveryLedger_SeparatesWarmupWrongBackendUnknownAndDuplicates" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="ca8ef1bd-e1d8-17b4-4f24-3326ada64d6b">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="706fbced-ce72-4ec9-9125-e57d54d22fb1" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="DeliveryLedger_SeparatesWarmupWrongBackendUnknownAndDuplicates" />
+    </UnitTest>
+    <UnitTest name="Relay_WithoutSubscribers_StillExportsOnceToEveryPeer (1)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="b2e99512-ea0d-0150-ac40-925c3a19c432">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="ab4761aa-fdff-4796-ad3b-2fdf5d3036c1" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="Relay_WithoutSubscribers_StillExportsOnceToEveryPeer" />
+    </UnitTest>
+    <UnitTest name="SameSequenceAtDifferentOrigins_IsNotADuplicate" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="a2548e11-669e-2c05-1c34-ba91c108c0cb">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="d3ce5692-1fa6-4d4b-abde-af1d1ab124ea" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="SameSequenceAtDifferentOrigins_IsNotADuplicate" />
+    </UnitTest>
+    <UnitTest name="RuntimeConnectTimeout_PreservesReasonAndEvidenceBundle" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="3a66da58-f37d-1ca5-0935-8577a4cabfcf">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="0912aac3-4a74-4e36-8b7a-52f36725dd9f" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="RuntimeConnectTimeout_PreservesReasonAndEvidenceBundle" />
+    </UnitTest>
+    <UnitTest name="Matrix_RejectsIncompatibleProfileProvenance (cpuMode)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="979638e9-4894-69a2-e43e-d962918d746c">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="29d22ced-c3c0-4505-96e9-41d1d81e4cbd" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="Matrix_RejectsIncompatibleProfileProvenance" />
+    </UnitTest>
+    <UnitTest name="CoreConstructors_RejectNonpositiveTickValues" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="0bfbce6c-70b9-6f76-26ef-751fc4223ded">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Mechanism" />
+      </TestCategory>
+      <Execution id="3c73292f-b55c-41d3-b095-66bba2f6ade7" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.DeterministicCoreTests" name="CoreConstructors_RejectNonpositiveTickValues" />
+    </UnitTest>
+    <UnitTest name="PendingCapture_IsReadOnly_AndLimitsDoNotHideTotals" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="2f7f507c-5f0e-051d-7171-71c9587df94c">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="94356e61-6fd9-4419-86b8-f2a2999b7516" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationDiagnosticsTests" name="PendingCapture_IsReadOnly_AndLimitsDoNotHideTotals" />
+    </UnitTest>
+    <UnitTest name="PreparedProfile_RequiresExactN_AndRetainsItsSnapshot" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="327ff532-edf5-e550-f392-c6c772366257">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="a68cef70-db65-400e-9307-35804e56fd2d" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="PreparedProfile_RequiresExactN_AndRetainsItsSnapshot" />
+    </UnitTest>
+    <UnitTest name="LineAndDiamond_RemoteDeliveryIsFinite (line,0)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="e3f702cd-3591-f3b1-8e40-7aa4649b96fd">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="15581261-1b21-4b27-87ce-ed8c08b21775" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="LineAndDiamond_RemoteDeliveryIsFinite" />
+    </UnitTest>
+    <UnitTest name="EqualStaticAssignments_ProduceEqualDirectRoundRobinAndLeastConnectionsSummaries (2)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="ed3a5ae7-8173-dfa8-6625-91064f4470ed">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="2e06be1d-d0f1-4031-b37b-fa959369ef67" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="EqualStaticAssignments_ProduceEqualDirectRoundRobinAndLeastConnectionsSummaries" />
+    </UnitTest>
+    <UnitTest name="SourceQuantiles_UseMergedHistogram_NotMeanOfBackendQuantiles" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="6dbb437e-7f56-e6c8-0310-53bc342bcc77">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="26b32077-48e0-4622-a5f0-4b7fe43c7245" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="SourceQuantiles_UseMergedHistogram_NotMeanOfBackendQuantiles" />
+    </UnitTest>
+    <UnitTest name="ExistingOutput_IsNeverOverwritten" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="fd62d2fb-859a-f1b2-c4b5-49c6da18f01a">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="51e6d4e4-485d-48c7-aa3f-a8616d19b258" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="ExistingOutput_IsNeverOverwritten" />
+    </UnitTest>
+    <UnitTest name="Configuration_RejectsUnrepresentableDurationsAndInvalidModes" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="f8a0ae20-12c7-ca44-c311-e72f26336059">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="5eb8bc70-9789-4a46-bd87-0b8aab0cf6d1" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="Configuration_RejectsUnrepresentableDurationsAndInvalidModes" />
+    </UnitTest>
+    <UnitTest name="IndependentBackends_DoNotShareSubscriptions" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="770b8861-f1b5-3fd5-df12-f5d51f914d6c">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="7e1d4dee-dff7-4268-ab4a-d100ee458af6" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="IndependentBackends_DoNotShareSubscriptions" />
+    </UnitTest>
+    <UnitTest name="LineAndDiamond_RemoteDeliveryIsFinite (custom,2)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="0fb6b141-6d39-09d9-4868-1cfb8d811d17">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="a17ac46e-2093-4832-b02f-27803f668c92" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="LineAndDiamond_RemoteDeliveryIsFinite" />
+    </UnitTest>
+    <UnitTest name="IdealRun_DeliversMeasurementCohortAndFreezesSessionAssignments (1)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="5c1a4a9a-4781-33c2-baeb-0408944d20fe">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="e5dc2bc2-3445-4949-85ef-c14eb431e5cc" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="IdealRun_DeliversMeasurementCohortAndFreezesSessionAssignments" />
+    </UnitTest>
+    <UnitTest name="TransitTopology_PreservesOtherModes (Federation,0)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="124b71df-f6ab-c2f4-133c-3b4dc53af275">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="7feb2df0-83f7-4f0d-b50c-2e7a90c61831" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="TransitTopology_PreservesOtherModes" />
+    </UnitTest>
+    <UnitTest name="ColdRouteCache_ConcurrentMissesPreserveEveryRoute (True)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="deeff11a-22b7-4feb-fd57-e8e4c8361ae0">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="8e033d5c-a3d3-4296-86ba-143feea30b86" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.ParallelModelSafetyTests" name="ColdRouteCache_ConcurrentMissesPreserveEveryRoute" />
+    </UnitTest>
+    <UnitTest name="Relay_WithoutSubscribers_StillExportsOnceToEveryPeer (2)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="a0abe68e-6013-a62d-4fb1-a5cdf01f6c36">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="13a668c4-a82b-4e6b-9221-4854fad35613" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="Relay_WithoutSubscribers_StillExportsOnceToEveryPeer" />
+    </UnitTest>
+    <UnitTest name="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions (Single,1)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="66d818cf-9ae3-3eb0-1800-6651dc67cb6e">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="83e568d4-ecaa-45d1-b7c9-a1103aed823c" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions" />
+    </UnitTest>
+    <UnitTest name="LineAndDiamond_RemoteDeliveryIsFinite (line,2)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="ea2ef502-a4a8-2ca5-4a68-c34b2173ffa1">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="85be8dd9-e766-4c72-956c-8cf0a0a5d5ca" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="LineAndDiamond_RemoteDeliveryIsFinite" />
+    </UnitTest>
+    <UnitTest name="FederationLedger_ConcurrentReceiversKeepEveryReceiptAndHistogramEntry" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="8e54ab1e-58e0-1658-39a8-8239cb8bb4a5">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="34d6f798-e037-4af9-b2d6-894ec8b888f8" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.ParallelModelSafetyTests" name="FederationLedger_ConcurrentReceiversKeepEveryReceiptAndHistogramEntry" />
+    </UnitTest>
+    <UnitTest name="TransitTopology_PreservesOtherModes (Single,0)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="60ab1b9d-0b71-2aff-41f9-6fcbef33b2bc">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="94efa85d-fecd-401b-a9b3-19e632201a5c" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="TransitTopology_PreservesOtherModes" />
+    </UnitTest>
+    <UnitTest name="EqualStaticAssignments_ProduceEqualDirectRoundRobinAndLeastConnectionsSummaries (1)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="db2f657b-3796-1ccc-febc-a6e0c3060231">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="d63a1178-3c1a-40d8-a215-bef75397e5b2" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="EqualStaticAssignments_ProduceEqualDirectRoundRobinAndLeastConnectionsSummaries" />
+    </UnitTest>
+    <UnitTest name="Diagnostics_DoNotChangeScientificFiles_AndAreSealed (2)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="fadf37cc-afc2-46ba-6b77-556db470c02c">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="488fc44f-2e20-45e6-8ef8-695795dbfbb4" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationDiagnosticsTests" name="Diagnostics_DoNotChangeScientificFiles_AndAreSealed" />
+    </UnitTest>
+    <UnitTest name="DrainTimeout_PreservesPartialDiagnostics_AndExactCounters" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="5c71cf0c-7152-48e3-2de5-3ee187e6d56f">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="8dde0e06-51b5-4ec1-92b0-ea1abba90d35" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationDiagnosticsTests" name="DrainTimeout_PreservesPartialDiagnostics_AndExactCounters" />
+    </UnitTest>
+    <UnitTest name="DeliveryLedger_SnapshotCannotChangeWhenLaterMessagesArrive" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="5693b544-3a2f-f2f2-43c5-9a5d5d53c945">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="2782e418-1e7a-4771-90cf-7ee02b2a3e53" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="DeliveryLedger_SnapshotCannotChangeWhenLaterMessagesArrive" />
+    </UnitTest>
+    <UnitTest name="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions (Federation,1)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="c073766c-328b-3cdb-eaf2-d9bae8c13e83">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="48c38d56-7eaa-40da-b97a-44df46a05549" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="AllModes_DeliverToEverySubscriber_AndCountOnlySourceCompletions" />
+    </UnitTest>
+    <UnitTest name="RuntimeDrainTimeout_RetainsPartialMeasurementAndReportsIncompleteDelivery" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="4d21a8f2-19fc-373f-731a-969ef976c953">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="8d6b7528-dfa6-42ce-b58a-f20262efed9f" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="RuntimeDrainTimeout_RetainsPartialMeasurementAndReportsIncompleteDelivery" />
+    </UnitTest>
+    <UnitTest name="Network_DeliversExactPacketsInFifoOrder" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="feb54af5-4456-bbbf-fd3b-d82d6642edf7">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Mechanism" />
+      </TestCategory>
+      <Execution id="786bae91-4ee8-4f0a-b853-24bb01f7918e" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.DeterministicCoreTests" name="Network_DeliversExactPacketsInFifoOrder" />
+    </UnitTest>
+    <UnitTest name="ConnectionPolicies_RejectEmptyInputsAndUnknownMode" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="9e3b8d64-e79e-8843-635d-5d0ebc66bd19">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="caf18afa-a35d-4efb-85bb-d2ea6136c840" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="ConnectionPolicies_RejectEmptyInputsAndUnknownMode" />
+    </UnitTest>
+    <UnitTest name="TransitTopology_PreservesOtherModes (Single,1)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="2d0bf556-7367-dad3-0217-f145fac93cb6">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="cb106b9d-bd58-44ec-8138-cedefb1725bc" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="TransitTopology_PreservesOtherModes" />
+    </UnitTest>
+    <UnitTest name="Matrix_Loads144ComparableCasesAndRejectsObservationHashSubstitution" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="bb7e5ec0-bd72-4c91-e144-df1ccdfd99b2">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="67da6a05-bd39-4036-85af-b2d51462b77d" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="Matrix_Loads144ComparableCasesAndRejectsObservationHashSubstitution" />
+    </UnitTest>
+    <UnitTest name="Configuration_RejectsExcessiveLedgerAndTopologyBudgetsBeforeAllocation" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="11819ff9-0948-180f-58be-e37b3e1c543e">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="f416dbb8-6b7c-4964-93f6-fa7a42d80fcb" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="Configuration_RejectsExcessiveLedgerAndTopologyBudgetsBeforeAllocation" />
+    </UnitTest>
+    <UnitTest name="DeliveryLedger_RejectsImpossibleClockAndInvalidInputs" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="e81afdcd-cd16-6518-54af-d06d5756838c">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="5f844dff-9544-4f40-aedf-8adc8eacb34e" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="DeliveryLedger_RejectsImpossibleClockAndInvalidInputs" />
+    </UnitTest>
+    <UnitTest name="Diagnostics_DoNotChangeScientificFiles_AndAreSealed (0)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="ef345aa9-bab3-3854-12ce-9b8f400bfb35">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="d1d17486-7d8d-40f1-abf1-ac599d46f225" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationDiagnosticsTests" name="Diagnostics_DoNotChangeScientificFiles_AndAreSealed" />
+    </UnitTest>
+    <UnitTest name="Matrix_RejectsIncompatibleProfileProvenance (benchmarkCommit)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="62f937f2-b1c6-bde6-4539-1f5e154573c3">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="8d73279f-2c2e-4d3f-a69f-22c8e484ad74" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="Matrix_RejectsIncompatibleProfileProvenance" />
+    </UnitTest>
+    <UnitTest name="RouteRebuild_InvalidatesCachedRouteAndKeepsReturnedSnapshot (True)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="5e1656dd-deda-7078-0d57-e0aed786eae6">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="92e796dd-5f43-4ee8-88b4-04f3869e6a91" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.ParallelModelSafetyTests" name="RouteRebuild_InvalidatesCachedRouteAndKeepsReturnedSnapshot" />
+    </UnitTest>
+    <UnitTest name="Matrix_RejectsIncompatibleProfileProvenance (deploymentMode)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="ad49be57-9ddb-a497-f542-789f7041834d">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+        <TestCategoryItem TestCategory="LoadBalancing" />
+      </TestCategory>
+      <Execution id="89d9d598-db63-41fb-8352-e2636ddc9151" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.LoadBalancingTests" name="Matrix_RejectsIncompatibleProfileProvenance" />
+    </UnitTest>
+    <UnitTest name="LineAndDiamond_RemoteDeliveryIsFinite (custom,0)" storage="c:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\entityfx.mqttsimulator\entityfx.tests.integration\bin\release\net6.0\entityfx.tests.integration.dll" id="bde3554e-c67e-2837-addf-63448a91db0f">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Regression" />
+      </TestCategory>
+      <Execution id="c40f5346-935a-4212-82bd-6f67fb8a291d" />
+      <TestMethod codeBase="C:\projects\mqtty-meta\reproducibility\artifacts\route-cache-fix-20261103-001\mqtty\src\EntityFX.MqttSimulator\EntityFX.Tests.Integration\bin\Release\net6.0\EntityFX.Tests.Integration.dll" adapterTypeName="executor://mstestadapter/v2" className="EntityFX.Tests.Integration.FederationTests" name="LineAndDiamond_RemoteDeliveryIsFinite" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="e3f702cd-3591-f3b1-8e40-7aa4649b96fd" executionId="15581261-1b21-4b27-87ce-ed8c08b21775" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b4be65cc-1341-7438-30ea-2156cdae022f" executionId="6abe71be-64d4-47f1-8952-9a0b643d459f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f7987584-2c3e-7700-9d36-c24839c66a49" executionId="529c7190-642b-4a31-8e5f-7958ecfa638b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="84fce2a8-233d-b584-310c-3b3ed2c6f03d" executionId="3391a8c3-a180-4c11-974e-549f67ceb3e6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5e1656dd-deda-7078-0d57-e0aed786eae6" executionId="92e796dd-5f43-4ee8-88b4-04f3869e6a91" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e6c5a99c-cb48-177f-6d6b-22d1dba660ab" executionId="d98e62ef-1092-4db9-8dc0-c31415bcebad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0bfbce6c-70b9-6f76-26ef-751fc4223ded" executionId="3c73292f-b55c-41d3-b095-66bba2f6ade7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6d231588-0821-dd12-8188-c776364ed741" executionId="999987d7-d206-4366-a604-d4baf01b5d8c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b88cdbc-9b72-d154-373a-aa2a761f1642" executionId="d184563f-ed44-4917-86b4-a952662a7a2a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2d0bf556-7367-dad3-0217-f145fac93cb6" executionId="cb106b9d-bd58-44ec-8138-cedefb1725bc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c073766c-328b-3cdb-eaf2-d9bae8c13e83" executionId="48c38d56-7eaa-40da-b97a-44df46a05549" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4a9d767a-9c46-9037-9603-f89b8b3ea525" executionId="72fdcf16-2019-4fcd-9c65-b7c4a76544ae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="feb54af5-4456-bbbf-fd3b-d82d6642edf7" executionId="786bae91-4ee8-4f0a-b853-24bb01f7918e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3a66da58-f37d-1ca5-0935-8577a4cabfcf" executionId="0912aac3-4a74-4e36-8b7a-52f36725dd9f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b0e54fea-fb03-5afe-7b5f-cea169d5e8d8" executionId="3cc3faa2-af0a-444e-8171-1efaa6d0656a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e81afdcd-cd16-6518-54af-d06d5756838c" executionId="5f844dff-9544-4f40-aedf-8adc8eacb34e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9e3b8d64-e79e-8843-635d-5d0ebc66bd19" executionId="caf18afa-a35d-4efb-85bb-d2ea6136c840" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1d4be76c-b9a9-5fe7-a129-d5c07347e75a" executionId="97f2c8bb-7e40-4923-b2f8-08a2f708b107" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fd62d2fb-859a-f1b2-c4b5-49c6da18f01a" executionId="51e6d4e4-485d-48c7-aa3f-a8616d19b258" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6dbb437e-7f56-e6c8-0310-53bc342bcc77" executionId="26b32077-48e0-4622-a5f0-4b7fe43c7245" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="506ccd4e-d534-9df6-e6d1-2e5ba806a07e" executionId="49f53878-79c8-417c-866d-0cb24191b873" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="45145b64-6b6b-007e-68a4-33b1cde4eb2d" executionId="00f6604a-03c2-42ed-9e36-09f4a7b372a1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ed875e80-2456-4ea7-978b-550f07cce4f5" executionId="fe614233-91ad-468f-b97b-0b1d2a66aa2e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="deeff11a-22b7-4feb-fd57-e8e4c8361ae0" executionId="8e033d5c-a3d3-4296-86ba-143feea30b86" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0cd28347-393c-4d6f-3714-970c18ffdc99" executionId="f3127a64-b2cb-45c4-9caa-ae4516797e6f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6a13f237-0a36-7fb7-6ee4-67e1f5e02c7d" executionId="3472a13c-bb22-4248-a258-c1ed1010b4ad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bb7e5ec0-bd72-4c91-e144-df1ccdfd99b2" executionId="67da6a05-bd39-4036-85af-b2d51462b77d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bde3554e-c67e-2837-addf-63448a91db0f" executionId="c40f5346-935a-4212-82bd-6f67fb8a291d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2ff64bf5-398c-a083-2473-625784e58304" executionId="3c9df550-8b24-4d17-97a2-63df8376b7b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4b25935c-b8cf-b554-b8a7-ef712c6b0bee" executionId="e6fcc6bf-e2e1-40f0-b44b-b6af797c1fcf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="12cc8687-eacd-035f-fb22-85b83997709c" executionId="4d6c9088-793f-4cce-8464-d327c350ecd0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fadf37cc-afc2-46ba-6b77-556db470c02c" executionId="488fc44f-2e20-45e6-8ef8-695795dbfbb4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="19833825-1de7-64d2-11b8-0aad4563e7c1" executionId="4e4b24c3-ae63-4c38-8d90-de703f2be83e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ad49be57-9ddb-a497-f542-789f7041834d" executionId="89d9d598-db63-41fb-8352-e2636ddc9151" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a0abe68e-6013-a62d-4fb1-a5cdf01f6c36" executionId="13a668c4-a82b-4e6b-9221-4854fad35613" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6b663d1e-d716-8977-b758-7f880cbee399" executionId="c9ff774c-1a5e-4bcc-b42d-0e08e3725cc1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bab4a8e0-bca4-3c92-c0dc-dea48dba646b" executionId="57e7c061-a65a-4fcd-a2db-c76631fb208d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="57805160-dd04-ff5f-b1a8-8559b4186c19" executionId="0864215f-b9f4-40e4-b1f3-33b893698970" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="863a1a42-3fa8-4bdf-db25-32ea07704ef2" executionId="e59ae90c-673a-443f-940e-b45b11dcb87f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bf68a4ce-60bd-25f3-dfdf-2572d5dd6f28" executionId="4b6334dc-329c-4eae-982c-8e2705580d64" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="db2f657b-3796-1ccc-febc-a6e0c3060231" executionId="d63a1178-3c1a-40d8-a215-bef75397e5b2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4d21a8f2-19fc-373f-731a-969ef976c953" executionId="8d6b7528-dfa6-42ce-b58a-f20262efed9f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="882bae56-753f-976b-7679-537cbd8a5cee" executionId="c0a9e4fb-95a5-4282-b278-b01fb54a0fca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="124b71df-f6ab-c2f4-133c-3b4dc53af275" executionId="7feb2df0-83f7-4f0d-b50c-2e7a90c61831" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ea2ef502-a4a8-2ca5-4a68-c34b2173ffa1" executionId="85be8dd9-e766-4c72-956c-8cf0a0a5d5ca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a2548e11-669e-2c05-1c34-ba91c108c0cb" executionId="d3ce5692-1fa6-4d4b-abde-af1d1ab124ea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="88727246-86af-d950-4a1d-4bf4e3123af2" executionId="c4329374-fb8c-41e7-aa8d-738d79e08348" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="11819ff9-0948-180f-58be-e37b3e1c543e" executionId="f416dbb8-6b7c-4964-93f6-fa7a42d80fcb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f94ed63-55cd-af63-bfdf-fd05f2eb3442" executionId="fc89ef7c-cac6-44b0-8e22-d14b1f554a2d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ef345aa9-bab3-3854-12ce-9b8f400bfb35" executionId="d1d17486-7d8d-40f1-abf1-ac599d46f225" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ad9f3067-4a29-422d-2b2f-af3704cb335b" executionId="bd9e0711-f4dc-4e82-88c9-0f14ee177fb7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="62f937f2-b1c6-bde6-4539-1f5e154573c3" executionId="8d73279f-2c2e-4d3f-a69f-22c8e484ad74" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="770b8861-f1b5-3fd5-df12-f5d51f914d6c" executionId="7e1d4dee-dff7-4268-ab4a-d100ee458af6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6c024371-f29a-e14a-e66a-6ddce11d9bd6" executionId="49ea496e-0056-498d-8f03-ea87152d5867" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b7f2315e-7dcf-c77a-0bb6-7ebb8d5f9e3e" executionId="894e8e44-70dc-4d2d-b7b9-16343d0fad02" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="66d818cf-9ae3-3eb0-1800-6651dc67cb6e" executionId="83e568d4-ecaa-45d1-b7c9-a1103aed823c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d2a7413d-74d7-75c4-a96b-6b2182b9b45b" executionId="810c31ae-c89b-4838-b4b8-6d123b4c86bd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7678d24d-9e1b-c9f3-cbc0-9bf1fae0df40" executionId="93253440-f60d-4c30-a44e-513d54427fd7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="979638e9-4894-69a2-e43e-d962918d746c" executionId="29d22ced-c3c0-4505-96e9-41d1d81e4cbd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2f7f507c-5f0e-051d-7171-71c9587df94c" executionId="94356e61-6fd9-4419-86b8-f2a2999b7516" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f010d7b-4c55-6da6-eb9f-5d4998241242" executionId="bf45b0e6-5aa4-4f5c-a1c8-c024aa4bd1ca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="052d77e0-ac8c-af03-e43f-7f19db7ec109" executionId="b6d84249-12d9-413d-987b-b839887b85a7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b86d97e8-7b38-da59-5030-363074037577" executionId="73897646-f519-48e8-9afd-fe29c118dd5a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5c1a4a9a-4781-33c2-baeb-0408944d20fe" executionId="e5dc2bc2-3445-4949-85ef-c14eb431e5cc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="72a47302-bf4b-d1f8-0edb-9bcdcb246fa7" executionId="b8fbabc7-ff39-450f-942b-cb1e758658b9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e56e7647-4386-690a-9b9a-2032900207e5" executionId="e4c71abd-e376-49fd-8e93-97df0d1f6b2c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fd9e2762-320d-a95b-a9c5-fdb2c366dac3" executionId="81324e98-e8ed-4786-bc77-0d68a40b24f9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c5d78a8f-227d-86fe-fbc4-fe1c7ba19722" executionId="0f621cb6-39d2-47cc-b511-aa73abfe6da4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4efece39-bff7-efa1-3dd1-4cdd9b329012" executionId="45959136-49e3-474b-aeed-efab18c3f226" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fb671f4f-afad-5d01-20e6-b94ddd9d8bc0" executionId="53f0a2bc-a492-4fc9-a0cb-ececf6f5ed9a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="327ff532-edf5-e550-f392-c6c772366257" executionId="a68cef70-db65-400e-9307-35804e56fd2d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e387965f-9f9e-2eb1-8ad8-dbc04df3d3de" executionId="c39e12dd-be2e-411d-b191-e6fac0dcd3a2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3318474b-9364-735d-cbb7-5a28c0999bfa" executionId="62b546db-3e35-41db-b989-c7a7d3d04c88" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0fb6b141-6d39-09d9-4868-1cfb8d811d17" executionId="a17ac46e-2093-4832-b02f-27803f668c92" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5693b544-3a2f-f2f2-43c5-9a5d5d53c945" executionId="2782e418-1e7a-4771-90cf-7ee02b2a3e53" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4793a0b2-9e46-d005-320e-5c310502f115" executionId="994f0c9f-a71d-4a0d-b23a-03d36f9b1a02" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b4597fdf-7680-9c72-33b4-ff16dcdbe835" executionId="d9dc63ff-9d31-428d-86fc-1ed3e0daf5ff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="583bbc1d-d64b-ae20-3172-760741f0b5e1" executionId="9de0da5f-c2d1-4a37-9cfa-e4173f969091" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5747c9cd-30b7-c8bf-244b-87d559ecf62b" executionId="cc08e892-b5e3-4485-a8b0-f477afe5c9dc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6c3f295a-d352-723b-8319-c60cae5546c4" executionId="3897bef2-cf65-4fbb-939b-0f8fac33356a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4b1ea91b-3cf0-5357-9275-c86d49316469" executionId="2c5fcb1f-f95a-482e-baee-b06d727d05d6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cf46338a-03a3-cc8b-2dd2-904d38bf3c40" executionId="0d8c24da-83a6-467e-b937-4f6ae6755041" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fb1a47ed-0e14-58a6-fbe5-f18e59f918f9" executionId="88df307d-1634-4752-888c-193ad9b2dc18" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="653c6d67-714c-b7b1-fa66-d8ada2c14c71" executionId="221b0adb-5e85-425a-8617-5c8f9c55c41e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f8ac4a5e-328b-d729-4683-f7ea3f19cfa2" executionId="ed096409-6120-450a-9a86-985019b00eba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ed3a5ae7-8173-dfa8-6625-91064f4470ed" executionId="2e06be1d-d0f1-4031-b37b-fa959369ef67" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a928721b-07b2-5bd5-310e-b08618de9cd9" executionId="f275139c-125d-4e13-ab52-d70a09bed3af" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="19bd37a7-132b-bd22-5efc-e09cbac2a282" executionId="72422178-ca09-493a-8c21-ffff42e4524e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="60ab1b9d-0b71-2aff-41f9-6fcbef33b2bc" executionId="94efa85d-fecd-401b-a9b3-19e632201a5c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="36c7cf82-da57-3043-970b-30394b580df6" executionId="cdc69524-c408-4c63-9222-b9be78070592" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f8a0ae20-12c7-ca44-c311-e72f26336059" executionId="5eb8bc70-9789-4a46-bd87-0b8aab0cf6d1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="457003b1-0bc1-d712-0c17-57a1489c4c4c" executionId="e6455a74-1289-48f9-b80d-15572f272f60" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8e54ab1e-58e0-1658-39a8-8239cb8bb4a5" executionId="34d6f798-e037-4af9-b2d6-894ec8b888f8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b2e99512-ea0d-0150-ac40-925c3a19c432" executionId="ab4761aa-fdff-4796-ad3b-2fdf5d3036c1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5c71cf0c-7152-48e3-2de5-3ee187e6d56f" executionId="8dde0e06-51b5-4ec1-92b0-ea1abba90d35" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b6ecce68-cb57-1e45-430d-2806342ae81f" executionId="9509fcd2-7df6-413a-8eb8-05557e3dcfde" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ca8ef1bd-e1d8-17b4-4f24-3326ada64d6b" executionId="706fbced-ce72-4ec9-9125-e57d54d22fb1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a0c0d6a0-0b05-451b-2a32-4fd420805e41" executionId="9a0a9757-b44a-40f9-9688-b91a113340c7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="98" executed="98" passed="98" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>

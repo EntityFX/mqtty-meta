@@ -1,0 +1,141 @@
+{
+  "id": "hierarchical",
+  "title": "Три площадки через транзит",
+  "kind": "template",
+  "runnable": false,
+  "graphSemantics": "Schematic bidirectional physical links; MQTT routes not specified",
+  "nodes": [
+    {
+      "id": "T0",
+      "label": "Транзит",
+      "role": "network",
+      "x": 500,
+      "y": 90
+    },
+    {
+      "id": "B1",
+      "label": "Брокер 1",
+      "role": "broker",
+      "x": 180,
+      "y": 300
+    },
+    {
+      "id": "B2",
+      "label": "Брокер 2",
+      "role": "broker",
+      "x": 90,
+      "y": 490
+    },
+    {
+      "id": "B3",
+      "label": "Брокер 3",
+      "role": "broker",
+      "x": 270,
+      "y": 490
+    },
+    {
+      "id": "B4",
+      "label": "Брокер 4",
+      "role": "broker",
+      "x": 500,
+      "y": 300
+    },
+    {
+      "id": "B5",
+      "label": "Брокер 5",
+      "role": "broker",
+      "x": 410,
+      "y": 490
+    },
+    {
+      "id": "B6",
+      "label": "Брокер 6",
+      "role": "broker",
+      "x": 590,
+      "y": 490
+    },
+    {
+      "id": "B7",
+      "label": "Брокер 7",
+      "role": "broker",
+      "x": 820,
+      "y": 300
+    },
+    {
+      "id": "B8",
+      "label": "Брокер 8",
+      "role": "broker",
+      "x": 730,
+      "y": 490
+    },
+    {
+      "id": "B9",
+      "label": "Брокер 9",
+      "role": "broker",
+      "x": 910,
+      "y": 490
+    }
+  ],
+  "links": [
+    {
+      "source": "T0",
+      "target": "B1",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "T0",
+      "target": "B4",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "T0",
+      "target": "B7",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B1",
+      "target": "B2",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B1",
+      "target": "B3",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B2",
+      "target": "B3",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B4",
+      "target": "B5",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B4",
+      "target": "B6",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B5",
+      "target": "B6",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B7",
+      "target": "B8",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B7",
+      "target": "B9",
+      "direction": "bidirectional"
+    },
+    {
+      "source": "B8",
+      "target": "B9",
+      "direction": "bidirectional"
+    }
+  ]
+}

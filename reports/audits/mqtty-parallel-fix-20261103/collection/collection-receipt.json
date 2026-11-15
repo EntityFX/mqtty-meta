@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-03",
+  "sourceArchivesVerified": 2,
+  "verifiedAttempts": 72,
+  "countedTimingAttempts": 60,
+  "pilotsExcluded": 12,
+  "rawFileHashesChecked": 1080,
+  "primaryEventRecounts": 48,
+  "balancingReconciliations": 24,
+  "tableMediansIndependentlyChecked": true,
+  "scientificBinaryHashesAndInputsMatch": true,
+  "unitTestsPassed": 7,
+  "unitTestCommand": "python -m unittest discover -s reproducibility -p \"test_*benchmark*.py\" -v",
+  "sourceCodeSha256": {
+    "reproducibility/verify_benchmark_results.py": "e5f386ec56a5e1a17bc1c39127b2b42822595c40cf5de32ffc71e3b1f2c2daa0",
+    "reproducibility/summarize_benchmark.py": "7e0eb65204a7800378dc917bc85730bc23c6385872b9dc925e423b7482f764d6",
+    "reproducibility/plot_benchmark.py": "a27d033d5924c322e17ebf96f50beaa709bbdf8600da2600c99af87e863d642e"
+  },
+  "chartVisualInspection": {
+    "status": "PASS",
+    "surface": "PNG rendered and inspected",
+    "pairedPoints": 30,
+    "medianRatioMarkers": 6,
+    "outlierRetained": true,
+    "labelsReadable": true
+  },
+  "protectedAuthorFilesChecked": 327,
+  "protectedAuthorFilesChanged": 0,
+  "newMeasurementRuns": 0,
+  "artifactFilesSha256": {
+    "analysis.json": "48a262696006dd9dc4e87885482edc939893576b8ff4a46714775ada1e964a3c",
+    "comparison.csv": "d90e9b4abf9499665f2a1e5070e855b0af96eb8d59d0067b1120b3e55119ee49",
+    "completion.json": "6a48cde23ae282111689cd52c7d9228bda0ceae874ef3f3886654a1496d0d93f",
+    "linux-e2k-environment.json": "df06a8212e762f9a74b3d2babe7974c43f9543942046573c33b50ff294b493a4",
+    "linux-e2k-result.json": "3680cb832090be01616f5bd9fd6692b95dd0a06d8e89bedc6c40bee4cd83b249",
+    "linux-e2k-retrieval.json": "c62f7d54fbb1bcc9124024b60f9ee0a4ae460e1d519ef5f186d6d76ea2f72bbb",
+    "linux-e2k-summary.json": "65cbd7a5e0d5ed99cec03ebc82cd9e71b83df39513521f09cb58643e79835451",
+    "linux-e2k-verification.json": "c4838fdbc9a61372d1bbaf26f7da332784ce8a9b22d0093e06beca9883a35141",
+    "paired-performance.png": "9c1cd78288aadbacc93a0975b7e61f4e1f4b54f48f77542c4870c1a57f6525eb",
+    "windows-xeon-environment.json": "c18f94b4fc20c0176562248f3080c0d02077fbb9e5a4e92018c5f4ba9aeb1cc5",
+    "windows-xeon-result.json": "d9c8cba5adb527bc034ff418e4a0ebf3e03eb1b40f2c747526263e8f5af3b4cb",
+    "windows-xeon-retrieval.json": "399ae4dd53a9de1bfc1916ef563ed18bce30381ed42744be124e3e56f62bb8b5",
+    "windows-xeon-summary.json": "60099a8064bda471e184d0baf94da2c283474daef2edd5d8155b7f22bba3bbe6",
+    "windows-xeon-verification.json": "53a1a06a231d9820dcf9f0eb2d43434d01139bffcbd57d4e471038b21d2df3a2"
+  }
+}

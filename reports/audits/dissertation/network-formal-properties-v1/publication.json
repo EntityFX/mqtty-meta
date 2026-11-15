@@ -1,0 +1,13 @@
+{
+  "commit": "f226220",
+  "remote": "origin/develop",
+  "pushExitCode": 0,
+  "metaSourceAndDocumentHashesMatchGit": true,
+  "submoduleSourcesMatchHeadAfterNewlineNormalization": [
+    "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Federation/StaticFederator.cs",
+    "mqtty/src/EntityFX.MqttSimulator/EntityFX.MqttY.Federation.App/Federation/FloodingPolicy.cs"
+  ],
+  "linuxCheckedOnce": true,
+  "newMqttSimulations": 0,
+  "step32Complete": false
+}

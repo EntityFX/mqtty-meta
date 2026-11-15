@@ -1,0 +1,7 @@
+{
+  "packageSha256": "292dd92f7ec3fc87e418593cf874bfaf95d87b1a5f47465371595077db7d5313",
+  "timeoutSeconds": 600,
+  "countedAttemptsPerEngineAndMode": 5,
+  "parallelFailuresRetained": true,
+  "scope": "Serial vs parallel graph refresh, three engines; correctness required for speedup claims"
+}

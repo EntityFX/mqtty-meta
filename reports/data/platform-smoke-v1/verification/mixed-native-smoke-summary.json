@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "kind": "mixed-native-distributed-functional-smoke-not-calibration",
+  "date": "2026-10-13",
+  "physicalHostCount": 2,
+  "controllerLocation": "Linux host, co-located with Aedes",
+  "brokerHosts": {
+    "Aedes": "Linux native via SSH",
+    "Mosquitto": "Windows native via SSH"
+  },
+  "deploymentMode": "distributedHosts",
+  "inventoryGeneration": "MergeNativeStands.ps1 from independently pinned one-broker exports; selected broker nativeHost routes control",
+  "identity": {
+    "campaignId": "mixed-native-run-001",
+    "configSha256": "f59946c8cb013224c09cf2bd796eafc55844c2b857f5edc0b02330134a0d82a9",
+    "standSha256": "ee4d2e2697db81bd07ae8c9de7b6e4942d3630050f5367dc2fa5944a1b38a8e9",
+    "deploymentMode": "distributedHosts",
+    "cpuMode": "hostAllCores",
+    "mqttBenchmarkCommitSha": "47e6cf4e4cf2f0ab812136e8e5cbec13f38869d7"
+  },
+  "runCount": 2,
+  "runs": [
+    {
+      "broker": "Mosquitto",
+      "status": "success",
+      "key": "Mosquitto.m16.q1.p1.r1"
+    },
+    {
+      "broker": "Aedes",
+      "status": "success",
+      "key": "Aedes.m16.q1.p1.r1"
+    }
+  ],
+  "aggregateSha256": "a63d176883efcf59c7b2334f394f3905c6ba2a6746d51ee644bdb46f97627f2d",
+  "sealReferencesChecked": 89,
+  "sealMismatches": [],
+  "rawLocation": "/tmp/mqtty-doc-tools/mixed-native-run-001",
+  "limitations": [
+    "Two short keys, not calibration/fidelity.",
+    "This is two physical hosts and two broker targets; it is not a verification on three physical machines.",
+    "Container transports and Windows-to-Windows are not validated by this campaign."
+  ]
+}

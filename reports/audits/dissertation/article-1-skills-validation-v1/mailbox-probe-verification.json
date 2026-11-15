@@ -1,0 +1,26 @@
+{
+  "completedArms": 2,
+  "verified": true,
+  "elapsedSeconds": 53.21380053900066,
+  "rows": [
+    {
+      "limit": 1000,
+      "mailboxAtShutdown": 1389,
+      "subscriberDisconnectedSeconds": 0.504904,
+      "measurementStartSeconds": 1.2925121,
+      "measurementPublishes": 25769,
+      "deliveryLossRate": 1.0,
+      "profileAccuracyValidation": false
+    },
+    {
+      "limit": 5000,
+      "mailboxAtShutdown": 5482,
+      "subscriberDisconnectedSeconds": 1.0480676,
+      "measurementStartSeconds": 1.2796472,
+      "measurementPublishes": 26906,
+      "deliveryLossRate": 1.0,
+      "profileAccuracyValidation": false
+    }
+  ],
+  "frozenInputsUnchanged": true
+}

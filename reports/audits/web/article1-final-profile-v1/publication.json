@@ -1,0 +1,14 @@
+{
+  "status": "published",
+  "commit": "ea3884ff39868e7d9ce84968419e7ef05f6ca7f4",
+  "remoteHeadConfirmed": true,
+  "committedEvidenceVerified": [
+    "reports/analysis/Queue-capacity-short.md",
+    "reports/analysis/Article-1-final-profile-web.md",
+    "reports/audits/dissertation/queue-capacity-short-v2/acceptance.json",
+    "reports/audits/web/article1-final-profile-v1/verification.json"
+  ],
+  "globalPercent": 53.2,
+  "localPercent": 80,
+  "primaryDissertationModified": false
+}

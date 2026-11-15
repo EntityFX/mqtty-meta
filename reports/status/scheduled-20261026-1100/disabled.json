@@ -1,0 +1,8 @@
+{
+  "taskName": "MqttY-Article1-Check-20261026-1100",
+  "state": "Disabled",
+  "reason": "User requested the detailed check now instead of waiting until 11:00 MSK",
+  "changedAtUtc": "2026-10-26T05:47:05.2972689+00:00",
+  "replacement": "Immediate audit in the active conversation",
+  "recurring": false
+}

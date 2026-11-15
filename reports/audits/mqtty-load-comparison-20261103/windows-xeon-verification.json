@@ -1,0 +1,714 @@
+{
+  "protocolSha256": "dc7d48e04e9a803960139d7829d6f51c21a346b92551134d806bc5818e6952eb",
+  "scope": "full-campaign",
+  "attemptsChecked": 140,
+  "sealedFilesChecked": 1540,
+  "timerSidecarsChecked": 134,
+  "processFailures": [],
+  "arithmeticFailures": [],
+  "scienceMismatches": [],
+  "controllerDisagreements": [],
+  "rows": [
+    {
+      "attempt": "pilot-b4-r250-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b4-r250-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b4-r1000-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b4-r1000-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b4-r4000-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b4-r4000-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b16-r250-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b16-r250-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b16-r1000-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b16-r1000-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b16-r4000-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b16-r4000-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b64-r250-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b64-r250-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b64-r1000-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "pilot-b64-r1000-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r250-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r250-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r250-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r250-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r1000-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r1000-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r1000-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r1000-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r4000-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r4000-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r4000-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r4000-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r250-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r250-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r1000-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r1000-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r1000-r2-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r1000-r2-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r4000-r2-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r4000-r2-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r4000-r2-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r4000-r2-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r250-r2-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r250-r2-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r250-r2-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r250-r2-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r250-r2-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r250-r2-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r1000-r2-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r1000-r2-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r1000-r2-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r1000-r2-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r4000-r3-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r4000-r3-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r4000-r3-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r4000-r3-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r1000-r3-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r1000-r3-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r250-r3-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r250-r3-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r1000-r3-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r1000-r3-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r1000-r3-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r1000-r3-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r250-r3-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r250-r3-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r250-r3-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r250-r3-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r1000-r4-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r1000-r4-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r4000-r4-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r4000-r4-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r4000-r4-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r4000-r4-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r250-r4-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r250-r4-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r1000-r4-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r1000-r4-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r250-r4-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r250-r4-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r250-r4-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r250-r4-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r1000-r4-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r1000-r4-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r1000-r5-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r1000-r5-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r4000-r5-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r4000-r5-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r1000-r5-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r1000-r5-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r1000-r5-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r1000-r5-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r250-r5-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r250-r5-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r250-r5-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r250-r5-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r4000-r5-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r4000-r5-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r250-r5-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r250-r5-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r4000-r6-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r4000-r6-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r250-r6-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r250-r6-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r1000-r6-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r1000-r6-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r1000-r6-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r1000-r6-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r250-r6-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r250-r6-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r4000-r6-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r4000-r6-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r250-r6-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r250-r6-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r1000-r6-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r1000-r6-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r1000-r7-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r1000-r7-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r250-r7-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r250-r7-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r250-r7-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r250-r7-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r4000-r7-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b4-r4000-r7-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r1000-r7-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r1000-r7-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r4000-r7-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r4000-r7-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r250-r7-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b64-r250-r7-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r1000-r7-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "main-b16-r1000-r7-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "control-b4-r1000-r1-serial-plain",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "control-b4-r1000-r1-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "control-b4-r1000-r1-parallel-plain",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "control-b4-r1000-r1-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "control-b4-r1000-r2-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "control-b4-r1000-r2-serial-plain",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "control-b4-r1000-r2-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "control-b4-r1000-r2-parallel-plain",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "control-b4-r1000-r3-serial-plain",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "control-b4-r1000-r3-serial-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "control-b4-r1000-r3-parallel-plain",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    },
+    {
+      "attempt": "control-b4-r1000-r3-parallel-timed",
+      "arithmeticPass": true,
+      "serialScienceMatch": true
+    }
+  ],
+  "status": "PASS"
+}

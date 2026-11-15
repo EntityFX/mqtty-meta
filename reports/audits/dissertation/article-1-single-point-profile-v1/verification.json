@@ -1,0 +1,190 @@
+{
+  "status": "verified",
+  "coverageProtocol": "single-point-v1",
+  "mqttyCommit": "4c658536586f88a89cd3ff5ab0915903640cf3c9",
+  "allowedPoint": {
+    "payloadBytes": 16,
+    "qos": 1,
+    "publishers": 16,
+    "nativeRepeats": 3,
+    "brokerScope": "one explicit broker"
+  },
+  "integrationTestsPassed": 96,
+  "integrationTestsFailed": 0,
+  "webTestsPassed": 39,
+  "webTestsFailed": 0,
+  "newSinglePointCases": 28,
+  "regressionScope": "Selected calibration, empirical fidelity, statistics, cohort tests; complete Web test project. Not the complete integration suite.",
+  "redEvidence": "Initial positive cases fail Unknown coverage protocol; CLI positive case fails unsupported coverage before change.",
+  "preservedIntermediateFailure": "single-point-final:94 passed,1 failed because new CLI test omitted required experiment settings. Fixture corrected; production validation retained.",
+  "checks": [
+    "Reject missing, duplicate, unsupported point, broker mismatch, wrong repeats and runCount",
+    "Reject relabelled coverage and modified capacity",
+    "Legacy full and compact coverage retained",
+    "Empirical snapshots tied to observation/campaign SHA; unequal repeat counts weighted by completions",
+    "Independent control requires distinct campaign and matching coverage",
+    "Same empirical single-point profile gives byte-identical scientific files through direct runner and Web adapter",
+    "Unsupported publisher count rejected before execution; mixed coverage profile set rejected"
+  ],
+  "linuxDeploymentChanged": false,
+  "scientificInputsChanged": false,
+  "mainCampaignAdmitted": false,
+  "mainCampaignCompleted": 0,
+  "mainCampaignPlanned": 40,
+  "trx": [
+    {
+      "file": "C:\\temp\\mqtty-evidence\\single-point-v1\\single-point-red.trx",
+      "sha256": "b4978a98ab130e5010389fc54d47ed57112a0cf10694043ffc6bf95a7ac1f9e4",
+      "counters": {
+        "total": "25",
+        "executed": "25",
+        "passed": "15",
+        "failed": "10",
+        "error": "0",
+        "timeout": "0",
+        "aborted": "0",
+        "inconclusive": "0",
+        "passedButRunAborted": "0",
+        "notRunnable": "0",
+        "notExecuted": "0",
+        "disconnected": "0",
+        "warning": "0",
+        "completed": "0",
+        "inProgress": "0",
+        "pending": "0"
+      }
+    },
+    {
+      "file": "C:\\temp\\mqtty-evidence\\single-point-v1\\single-point-cli-red.trx",
+      "sha256": "9729253c226a90ea9f58d4802003e6015e37fbdf92997fbc3aca9ef4c9b52e4e",
+      "counters": {
+        "total": "1",
+        "executed": "1",
+        "passed": "0",
+        "failed": "1",
+        "error": "0",
+        "timeout": "0",
+        "aborted": "0",
+        "inconclusive": "0",
+        "passedButRunAborted": "0",
+        "notRunnable": "0",
+        "notExecuted": "0",
+        "disconnected": "0",
+        "warning": "0",
+        "completed": "0",
+        "inProgress": "0",
+        "pending": "0"
+      }
+    },
+    {
+      "file": "C:\\temp\\mqtty-evidence\\single-point-v1\\single-point-final.trx",
+      "sha256": "72f6c278efaf4eadca60d27c621397bb99a0afae751e782c4ede84b69a6e110c",
+      "counters": {
+        "total": "95",
+        "executed": "95",
+        "passed": "94",
+        "failed": "1",
+        "error": "0",
+        "timeout": "0",
+        "aborted": "0",
+        "inconclusive": "0",
+        "passedButRunAborted": "0",
+        "notRunnable": "0",
+        "notExecuted": "0",
+        "disconnected": "0",
+        "warning": "0",
+        "completed": "0",
+        "inProgress": "0",
+        "pending": "0"
+      }
+    },
+    {
+      "file": "C:\\temp\\mqtty-evidence\\single-point-v1\\single-point-verified.trx",
+      "sha256": "e438c34e625325cd0b2faf516496ee450266e2ce473cb43b2a8bc76738942ea9",
+      "counters": {
+        "total": "95",
+        "executed": "95",
+        "passed": "95",
+        "failed": "0",
+        "error": "0",
+        "timeout": "0",
+        "aborted": "0",
+        "inconclusive": "0",
+        "passedButRunAborted": "0",
+        "notRunnable": "0",
+        "notExecuted": "0",
+        "disconnected": "0",
+        "warning": "0",
+        "completed": "0",
+        "inProgress": "0",
+        "pending": "0"
+      }
+    },
+    {
+      "file": "C:\\temp\\mqtty-evidence\\single-point-v1\\single-point-complete.trx",
+      "sha256": "de894ab893f63f2494631351dc2db8ef9bba1ae6edda8a271a936059027ada4b",
+      "counters": {
+        "total": "96",
+        "executed": "96",
+        "passed": "96",
+        "failed": "0",
+        "error": "0",
+        "timeout": "0",
+        "aborted": "0",
+        "inconclusive": "0",
+        "passedButRunAborted": "0",
+        "notRunnable": "0",
+        "notExecuted": "0",
+        "disconnected": "0",
+        "warning": "0",
+        "completed": "0",
+        "inProgress": "0",
+        "pending": "0"
+      }
+    },
+    {
+      "file": "C:\\temp\\mqtty-evidence\\single-point-v1\\single-point-web.trx",
+      "sha256": "1219d15ae941d245435b16ec3741964bb8a9fee4f871d550a168f6a1b50e825f",
+      "counters": {
+        "total": "2",
+        "executed": "2",
+        "passed": "2",
+        "failed": "0",
+        "error": "0",
+        "timeout": "0",
+        "aborted": "0",
+        "inconclusive": "0",
+        "passedButRunAborted": "0",
+        "notRunnable": "0",
+        "notExecuted": "0",
+        "disconnected": "0",
+        "warning": "0",
+        "completed": "0",
+        "inProgress": "0",
+        "pending": "0"
+      }
+    },
+    {
+      "file": "C:\\temp\\mqtty-evidence\\single-point-v1\\single-point-web-regression.trx",
+      "sha256": "cc422f962576c351da5dbaba42d439a915e7c01b0c8a2b71b5abdb0ab239a503",
+      "counters": {
+        "total": "39",
+        "executed": "39",
+        "passed": "39",
+        "failed": "0",
+        "error": "0",
+        "timeout": "0",
+        "aborted": "0",
+        "inconclusive": "0",
+        "passedButRunAborted": "0",
+        "notRunnable": "0",
+        "notExecuted": "0",
+        "disconnected": "0",
+        "warning": "0",
+        "completed": "0",
+        "inProgress": "0",
+        "pending": "0"
+      }
+    }
+  ]
+}

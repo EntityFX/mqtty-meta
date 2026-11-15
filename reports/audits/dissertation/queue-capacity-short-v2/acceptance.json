@@ -1,0 +1,67 @@
+{
+  "status": "accepted",
+  "classification": "completedWithoutBaselineOverflow",
+  "rawRunsPassed": 2,
+  "filesVerified": 77,
+  "pinnedFilesVerified": 24,
+  "sourceSnapshotFilesVerified": 281,
+  "sourceManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+  "singleChangedFactor": "queueCapacity",
+  "sharedWallSeconds": 94.97972917556763,
+  "results": [
+    {
+      "queueCapacity": 1024,
+      "metrics": {
+        "apiAttempts": 2000,
+        "sourceCompleted": 2000,
+        "expectedDeliveries": 8000,
+        "uniqueDeliveries": 8000,
+        "uniqueDuringDrain": 3312,
+        "fullyDeliveredPublications": 2000,
+        "deliveryLoss": 0,
+        "receiverP99Ms": 1510.3000000000002,
+        "publishP99Ms": 1.6,
+        "queueDrops": 0,
+        "duplicateDeliveries": 0,
+        "forwardAttempts": 18000,
+        "suppressedDuplicates": 12000
+      },
+      "processWallSeconds": 93.20873007699993,
+      "peakRssBytes": 778752000
+    },
+    {
+      "queueCapacity": 4096,
+      "metrics": {
+        "apiAttempts": 2000,
+        "sourceCompleted": 2000,
+        "expectedDeliveries": 8000,
+        "uniqueDeliveries": 8000,
+        "uniqueDuringDrain": 3312,
+        "fullyDeliveredPublications": 2000,
+        "deliveryLoss": 0,
+        "receiverP99Ms": 1510.3000000000002,
+        "publishP99Ms": 1.6,
+        "queueDrops": 0,
+        "duplicateDeliveries": 0,
+        "forwardAttempts": 18000,
+        "suppressedDuplicates": 12000
+      },
+      "processWallSeconds": 94.20397478800442,
+      "peakRssBytes": 773980160
+    }
+  ],
+  "byteEqualFiles": {
+    "summary.json": true,
+    "histograms.json": true,
+    "publications.json": true,
+    "delivery-receipts.json": true,
+    "transmissions.json": true,
+    "network-evidence.json": true
+  },
+  "archiveSha256": "2dbabbb350ed110d8adc22595c91a338a3f17e70b62035df9c20ab270adb582b",
+  "scientificallyInformativeForOverload": false,
+  "causalQueueClaimEstablished": false,
+  "automaticRetryPerformed": false,
+  "newExperimentsDuringAcceptance": 0,
+  "fullSeriesRuntimeChanged": false
+}

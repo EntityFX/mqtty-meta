@@ -1,0 +1,16 @@
+{
+  "archiveSha256": "cded1491c0800a19347b8d84aae59eae7e154546aa0f3f63372045876e5fb816",
+  "bytes": 52072,
+  "files": 102,
+  "host": "10.100.101.14",
+  "remoteDirectory": "/home/user/mqtty-develop-20261102-4801633c",
+  "metaCommit": "487b23c9269229a54246cf0013e9df40817ebbd1",
+  "sourceCommits": {
+    "mqtty": "f5c0a4715b555c4348d2a2843177251f62c640ff",
+    "MqttBenchmark": "ab513df3d2b65462abcfba8084f066ae4b1bd0a1"
+  },
+  "launcherPid": 7370,
+  "firstSimulationPid": 7385,
+  "verifiedPackageFiles": 31,
+  "status": "launched"
+}

@@ -1,0 +1,85 @@
+{
+  "programIdentity": "acceleration-workers-20261102-v1",
+  "mode": "pilot",
+  "phase": "completed",
+  "finishedModels": 2,
+  "total": 2,
+  "deadlineEpoch": 1793585763.378869,
+  "hardWallSeconds": 600,
+  "inputSealSha256": "b5d542719f9e4c1b66e4396be0a70157dff471bb86295e6b510137b9efccf40a",
+  "sourceManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+  "status": "completed",
+  "equivalencePassed": true,
+  "primaryWalls": [
+    93.66104176399676
+  ],
+  "batches": [
+    {
+      "workers": 2,
+      "jobs": [
+        {
+          "job": 1,
+          "pid": 5184,
+          "returnCode": 0,
+          "wallSeconds": 91.58991276300003,
+          "sampledTreeRssPeakBytes": 777089024,
+          "userSeconds": 87.07,
+          "systemSeconds": 3.49,
+          "maxRssBytes": 775254016
+        },
+        {
+          "job": 2,
+          "pid": 5185,
+          "returnCode": 0,
+          "wallSeconds": 93.12135764100094,
+          "sampledTreeRssPeakBytes": 780767232,
+          "userSeconds": 88.41,
+          "systemSeconds": 3.41,
+          "maxRssBytes": 779194368
+        }
+      ],
+      "error": null,
+      "modelMakespanSeconds": 93.12384043999919,
+      "simultaneousSampledRssPeakBytes": 1553731584,
+      "sumIndividualMaxRssBytes": 1554448384,
+      "cpuUserSeconds": 175.48,
+      "cpuSystemSeconds": 6.9,
+      "attemptedJobs": 2,
+      "expectedJobs": 2,
+      "primaryWallSeconds": 93.66104176399676,
+      "cgroupAfter": {
+        "cpuUsec": 184671626,
+        "memoryCurrentBytes": 61779968,
+        "memoryPeakBytes": 1499578368,
+        "memoryEvents": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+      }
+    }
+  ],
+  "scientificSha256": {
+    "summary.json": "5bff7ccca54314d5e7e0cdc93cd3e0936eef377533f1f842456ffdfa86fef73a",
+    "histograms.json": "a8c415b765ccceff0faeb2654736b8965d28a25e2bc8242a9afe7dc790719509",
+    "publications.json": "ce3ff5a4b941b9bc4d0c70e703df42bd87767bf9241c2e72fccb575204e649d7",
+    "delivery-receipts.json": "56ef22e245fa5697e67a01b20600b9233e496bb10cae5ec3c84cdf7cca5cd1aa",
+    "transmissions.json": "e9a14e7db1887a29d02fd79f4c527c3127c8b6cd7fa62218dc6ea22b67626bda",
+    "network-evidence.json": "4f42797638450cba9d8bfe1f7e2bac87d19e03e1030e9e24a6eb18e73d61a2a9"
+  },
+  "sourceUnchanged": true,
+  "pinnedInputsUnchanged": true,
+  "controllerCpuSeconds": 2.127604309,
+  "controllerMaxRssBytes": 80007168,
+  "cgroupBefore": {
+    "cpuUsec": 236076,
+    "memoryCurrentBytes": 16162816,
+    "memoryPeakBytes": 16162816,
+    "memoryEvents": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+  },
+  "cgroupAfter": {
+    "cpuUsec": 184774339,
+    "memoryCurrentBytes": 62038016,
+    "memoryPeakBytes": 1499578368,
+    "memoryEvents": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+  },
+  "wallSeconds": 93.95740109100007,
+  "retryPerformed": false,
+  "automaticNextExperiment": false
+}

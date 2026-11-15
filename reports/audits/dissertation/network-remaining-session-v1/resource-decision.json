@@ -1,0 +1,7 @@
+{
+  "executionManifestSha256": "24ae3654a610545f2a13ebc796eeddcaa898d9bde2103ee722592e211b8bffa7",
+  "controllerSha256": "e4a6dffab3895b1f51e85aca2aa1689e1b1dcfc497976ada8f7e89e836766fb2",
+  "workers": 2,
+  "jobRssLimitBytes": 4294967296,
+  "reason": "Retain inspected 4GiB worker cap and two workers within 10GiB cgroup; explicit additional session; scientific inputs unchanged"
+}

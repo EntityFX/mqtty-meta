@@ -1,0 +1,41 @@
+{
+  "attempts": [
+    {
+      "stage": "adapter-red",
+      "status": "expectedFailure",
+      "reason": "Unknown engine: twinValidation"
+    },
+    {
+      "stage": "api-red",
+      "status": "expectedFailure",
+      "reason": "POST api/twin-validations returned 404"
+    },
+    {
+      "stage": "synthetic-fixture",
+      "status": "correctedFixture",
+      "reason": "Initial schema-3 fixture did not satisfy empiricalServiceBudget; regenerated empirical fixture using existing calibrator"
+    },
+    {
+      "stage": "direct-comparison",
+      "status": "correctedFixture",
+      "reason": "Literal 100000 differs from the existing publishers/tick double formula; test now uses identical formula"
+    },
+    {
+      "stage": "local-browser",
+      "status": "fixed",
+      "reason": "HTML min/step caused stepMismatch; no request or simulation started"
+    },
+    {
+      "stage": "linux-browser-attempt-001",
+      "status": "correctedTestPreset",
+      "reason": "Option id is mosquitto-default; test selected mosquittodefault. No job was launched."
+    },
+    {
+      "stage": "frozen-parity-attempt-001",
+      "status": "strictFailedPreserved",
+      "reason": "Different client enumeration within simultaneous connection snapshots; separate diagnostic verified all 68 events. No simulation rerun or threshold change."
+    }
+  ],
+  "mainCampaignStarted": false,
+  "scientificCriteriaChanged": false
+}
