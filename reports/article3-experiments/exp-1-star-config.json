@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "name": "Exp-1 Star Federation - 4 региона, 12 полей, QoS 1",
+  "engine": "federation",
+  "topology": "star",
+  "mode": "federation",
+  "brokers": 4,
+  "publishers": 48,
+  "subscribersPerBroker": 1,
+  "qos": 1,
+  "payloadBytes": 16,
+  "offeredRps": 1000,
+  "warmupSeconds": 1,
+  "measurementSeconds": 30,
+  "drainSeconds": 5,
+  "tickSeconds": 0.1,
+  "seed": 42,
+  "outputDirectory": "results/exp-1-star",
+  "fieldsPerRegion": 3,
+  "irrigationControllersPerField": 7,
+  "network": {
+    "fieldToRegion": {
+      "capacityBytesPerSecond": 500000,
+      "latencyMs": 100,
+      "packetLossPercent": 5.0,
+      "queueCapacity": 1024
+    },
+    "regionToRegion": {
+      "capacityBytesPerSecond": 10000000,
+      "latencyMs": 20,
+      "packetLossPercent": 0.5,
+      "queueCapacity": 4096
+    }
+  },
+  "failureScenarios": []
+}
